@@ -431,6 +431,41 @@ Cost is `reported` only when the provider states it. There is no rate card in th
 tree, so `basis` stays `unknown` rather than quietly becoming an estimate that
 later gets summed with a measurement. Adding an estimator is a labelled change.
 
+### The subprocess host
+
+`agents/installed/` holds the CLI agents — OpenClaw and Claude Code. One host
+underneath (`SubprocessAgent`), one transport (the fintel MCP server in
+`environment/mcp_server.py`), two thin adapters that differ only in argv and
+config-file format.
+
+The MCP server lives in `environment/` rather than `agents/` because it rebuilds
+the environment from the session directory — which requires `market.factory` —
+and `agents/` is barred from importing `market/`. The server reads `cell.json`
+and `bindings.json` from its session dir, rebuilds the `Environment`, and exposes
+exactly the tools the strategy declared. It writes the agent's answer to
+`result.json` and exits.
+
+One cell per process is structural, not policed. The MCP server is a stdio
+subprocess that dies when the CLI exits, so a reused gateway cannot keep serving
+the first cell it ever loaded — the failure the old slot pool masked. If a
+long-lived gateway is ever introduced, the rule it must carry is in the deferred
+items: refuse a second cell, fail loudly, let the adapter restart.
+
+Error patterns map CLI output to typed outcomes, the same way `llm.py` maps
+provider responses. A rate limit, a safety refusal and a context overflow are
+three different events; the old pipeline reported all three as an agent that
+produced no views.
+
+### Fingerprint
+
+`agents/fingerprint.py` covers every adapter uniformly: agent name and version,
+model pin, channel, prompt hash, data kinds, and adapter parameters. The old
+repo fingerprinted OpenClaw only — `build_fingerprint()` returned
+`mission_text: None` for plugin agents, so two runs could differ in configuration
+and the platform couldn't tell. Here the channel is part of the digest, so a
+channel ablation is a different run, not the same run that happened to use a
+different path.
+
 ## 8. Artifacts
 
 Every level writes the same trio: `config.json` (asked), `lock.json`

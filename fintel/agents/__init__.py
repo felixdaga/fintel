@@ -20,6 +20,7 @@ from fintel.agents.base import (
     SafetyRefusal,
 )
 from fintel.agents.factory import AGENTS, build, names, register
+from fintel.agents.fingerprint import Fingerprint, fingerprint
 from fintel.agents.llm import LLM, Completion, OpenRouter, ToolCall
 from fintel.agents.llm_agent import LLMAgent
 from fintel.agents.run import classify, invoke
@@ -27,6 +28,7 @@ from fintel.agents.scripted import ConstantAgent, ScriptedAgent
 
 __all__ = [
     "AGENTS",
+    "Fingerprint",
     "LLM",
     "Abstained",
     "Agent",
@@ -46,6 +48,7 @@ __all__ = [
     "ToolCall",
     "build",
     "classify",
+    "fingerprint",
     "invoke",
     "names",
     "register",
