@@ -13,6 +13,7 @@ from pathlib import Path
 ENV_CACHE = "FINTEL_CACHE"
 ENV_OFFLINE = "FINTEL_OFFLINE"
 ENV_MASSIVE_KEY = "MASSIVE_API_KEY"
+ENV_BRAVE_KEY = "BRAVE_API_KEY"
 
 _TRUE = {"1", "true", "yes", "on"}
 
@@ -26,6 +27,7 @@ class MarketConfig:
     cache_root: Path
     offline: bool = False
     massive_api_key: str | None = None
+    brave_api_key: str | None = None
 
     def __post_init__(self) -> None:
         if not isinstance(self.cache_root, Path):
@@ -38,6 +40,7 @@ class MarketConfig:
             cache_root=Path(root).expanduser(),
             offline=os.environ.get(ENV_OFFLINE, "").lower() in _TRUE,
             massive_api_key=os.environ.get(ENV_MASSIVE_KEY) or None,
+            brave_api_key=os.environ.get(ENV_BRAVE_KEY) or None,
         )
 
     def dir(self, *parts: str) -> Path:

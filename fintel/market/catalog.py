@@ -153,6 +153,70 @@ def has_universe(name: str) -> bool:
     return name in _UNIVERSES
 
 
+# ── validation: a strategy's data list must match the catalog ────────────────
+
+
+def check_bindings(bindings: list) -> list[str]:
+    """Every problem with a manifest's `[[data]]` list, as readable messages.
+
+    Returns all findings rather than raising on the first, so one preflight run
+    tells you everything to fix. An unregistered `module:Callable` is allowed —
+    that's how a package ships its own source — but a bare name that isn't in
+    the library is a typo, and a param the source doesn't accept is a setting
+    that would otherwise be silently ignored.
+    """
+    problems: list[str] = []
+    seen: dict[str, str] = {}
+
+    for binding in bindings:
+        kind, name = binding.kind, binding.source
+        if kind in seen:
+            problems.append(
+                f"kind {kind!r} is bound twice, to {seen[kind]!r} and {name!r}; "
+                f"one source per kind"
+            )
+        seen[kind] = name
+
+        if not has_source(name):
+            if ":" not in name:
+                by_kind = [s.name for s in sources(kind=kind)]
+                hint = f"sources for {kind!r}: {by_kind}" if by_kind else f"kinds: {kinds()}"
+                problems.append(f"unknown source {name!r}; {hint}")
+            continue
+
+        info = source(name)
+        if info.kind != kind:
+            problems.append(
+                f"source {name!r} serves kind {info.kind!r}, but it's bound to {kind!r}"
+            )
+        accepted = {p.name for p in info.params}
+        for unknown in sorted(set(binding.params) - accepted):
+            problems.append(
+                f"source {name!r} does not accept param {unknown!r}; accepted: {sorted(accepted)}"
+            )
+
+    # Computed kinds need their upstream kinds bound in the same manifest.
+    for binding in bindings:
+        if not has_source(binding.source):
+            continue
+        for upstream_kind in source(binding.source).derives_from:
+            if upstream_kind not in seen:
+                problems.append(
+                    f"source {binding.source!r} is computed from {upstream_kind!r}; "
+                    f"add a [[data]] block binding kind = {upstream_kind!r}"
+                )
+    return problems
+
+
+def required_env(bindings: list) -> list[str]:
+    """Credentials the declared bindings need, so preflight can say so once."""
+    out: set[str] = set()
+    for binding in bindings:
+        if has_source(binding.source):
+            out.update(source(binding.source).requires_env)
+    return sorted(out)
+
+
 # ── builtin field rosters ────────────────────────────────────────────────────
 
 PRICE_FIELDS: tuple[Field, ...] = (
@@ -205,6 +269,76 @@ NEWS_FIELDS: tuple[Field, ...] = (
     Field("insights", "list", "Provider sentiment annotations"),
 )
 
+FILING_TEXT_FIELDS: tuple[Field, ...] = (
+    Field("id", "text", "Accession number, or form:date:section"),
+    Field("ticker", "text", "Subject symbol"),
+    Field("form_type", "text", "8-K | 10-K"),
+    Field("filing_date", "date", "When the filing became public — the PIT stamp"),
+    Field("period_end", "date", "Period covered, for 10-K sections"),
+    Field("section", "text", "business | risk_factors | 8-K"),
+    Field("text", "text", "Extracted filing text"),
+)
+
+RATIO_FIELD_DESCRIPTIONS: dict[str, tuple[str, str | None]] = {
+    "as_of": ("Decision date the ratios were computed for", None),
+    "price": ("Last close strictly before the decision date", "usd"),
+    "filing_date": ("Filing date of the trailing anchor", None),
+    "period_end": ("Period end of the trailing anchor", None),
+    "shares_diluted": ("Weighted-average diluted shares", "shares"),
+    "market_cap": ("price x diluted shares", "usd"),
+    "enterprise_value": ("Market cap + debt - cash", "usd"),
+    "net_debt": ("Total debt - cash", "usd"),
+    "book_value_per_share": ("Total equity / diluted shares", "usd"),
+    "ebit": ("Operating income; a proxy for EBITDA, no D&A in source", "usd"),
+    "pe_diluted": ("Price / trailing diluted EPS, only when EPS > 0", "ratio"),
+    "pe_basic": ("Price / trailing basic EPS, only when EPS > 0", "ratio"),
+    "p_b": ("Price / book value per share", "ratio"),
+    "p_s": ("Market cap / trailing revenue", "ratio"),
+    "p_fcf": ("Market cap / trailing free cash flow", "ratio"),
+    "p_ocf": ("Market cap / trailing operating cash flow", "ratio"),
+    "ev_to_sales": ("Enterprise value / trailing revenue", "ratio"),
+    "ev_to_ebit": ("Enterprise value / EBIT — not EV/EBITDA", "ratio"),
+    "earnings_yield": ("Trailing diluted EPS / price", "ratio"),
+    "fcf_yield": ("Trailing free cash flow / market cap", "ratio"),
+    "gross_margin": ("Gross profit / revenue", "ratio"),
+    "operating_margin": ("Operating income / revenue", "ratio"),
+    "net_margin": ("Net income / revenue", "ratio"),
+    "fcf_margin": ("Free cash flow / revenue", "ratio"),
+    "roe": ("Trailing net income / total equity", "ratio"),
+    "roa": ("Trailing net income / total assets", "ratio"),
+    "debt_to_equity": ("Total debt / total equity", "ratio"),
+    "debt_to_assets": ("Total debt / total assets", "ratio"),
+    "notes": ("Why any field is None, and trailing-window provenance", None),
+}
+
+SENTIMENT_FIELDS: tuple[Field, ...] = (
+    Field("as_of", "date", "Decision date"),
+    Field("series", "list", "Daily {date, score in [-1,1], n}; silent days omitted"),
+    Field("n_articles", "number", "Articles in the window", "count"),
+    Field("n_scored", "number", "Article-insights carrying a sentiment", "count"),
+    Field("mean_score", "number", "Unweighted mean of daily scores, None when empty", "ratio"),
+)
+
+WEB_SEARCH_FIELDS: tuple[Field, ...] = (
+    Field("query", "text", "Query as sent to the provider"),
+    Field("search_window", "text", "{from, to} freshness bounds enforcing PIT"),
+    Field("sources", "list", "Provider results"),
+)
+
+
+def _ratio_fields() -> tuple[Field, ...]:
+    from fintel.market.data.ratios import RATIO_FIELDS
+
+    out = []
+    for name in RATIO_FIELDS:
+        description, unit = RATIO_FIELD_DESCRIPTIONS.get(name, ("", None))
+        dtype: DType = "list" if name == "notes" else ("date" if name == "as_of" else "number")
+        if name in {"filing_date", "period_end"}:
+            dtype = "date"
+        out.append(Field(name, dtype, description, unit))
+    return tuple(out)
+
+
 LOOKBACK = Param("lookback_days", "number", 365, "Calendar days of history to serve")
 
 
@@ -246,6 +380,75 @@ def register_builtins() -> None:
             params=(Param("lookback_days", "number", 90), Param("limit", "number")),
             requires_env=("MASSIVE_API_KEY",),
             description="Per-ticker articles, clamped on published_at.",
+        ),
+        replace=True,
+    )
+    register_source(
+        SourceInfo(
+            name="massive_filing_text",
+            kind="filing_text",
+            provider="massive",
+            target="fintel.market.factory:massive_filing_text",
+            fields=FILING_TEXT_FIELDS,
+            params=(
+                Param("lookback_days", "number", 730),
+                Param("forms", "list", None, "Subset of 8-K / 10-K"),
+                Param("sections", "list", None, "10-K sections: business, risk_factors"),
+                Param("max_chars", "number", None, "Truncate each text to this many chars"),
+            ),
+            requires_env=("MASSIVE_API_KEY",),
+            description="8-K item text and 10-K sections, clamped on filing_date.",
+        ),
+        replace=True,
+    )
+    register_source(
+        SourceInfo(
+            name="valuation_ratios",
+            kind="ratios",
+            provider="computed",
+            target="fintel.market.factory:valuation_ratios",
+            fields=_ratio_fields(),
+            params=(
+                Param("window_days", "number", 365, "Trailing window length"),
+                Param("filings_lookback_days", "number", 1460),
+            ),
+            derives_from=("prices", "fundamentals"),
+            description=(
+                "Trailing valuation, profitability and leverage ratios. Uses the "
+                "annual+delta trailing formula, not a naive 4-quarter sum."
+            ),
+        ),
+        replace=True,
+    )
+    register_source(
+        SourceInfo(
+            name="news_sentiment",
+            kind="news_sentiment",
+            provider="computed",
+            target="fintel.market.factory:news_sentiment",
+            fields=SENTIMENT_FIELDS,
+            params=(Param("lookback_days", "number", 90),),
+            derives_from=("news",),
+            description="Daily net sentiment from provider insights. Silent days omitted.",
+        ),
+        replace=True,
+    )
+    register_source(
+        SourceInfo(
+            name="web_search",
+            kind="web_search",
+            provider="brave",
+            target="fintel.market.factory:web_search",
+            fields=WEB_SEARCH_FIELDS,
+            params=(
+                Param("lookback_days", "number", 30),
+                Param("max_results", "number", 10),
+            ),
+            requires_env=("BRAVE_API_KEY",),
+            description=(
+                "Freshness-windowed search. PIT rests on the provider window, since "
+                "results carry no date to clamp on afterwards."
+            ),
         ),
         replace=True,
     )

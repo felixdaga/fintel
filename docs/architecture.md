@@ -111,15 +111,45 @@ could serve this", and registering a `SourceInfo` adds to the library without
 editing the platform. A source with no declared fields is refused — an
 undocumented source can't be picked from a catalog.
 
-The manifest then binds kind → source, and the factory rejects a binding whose
-source serves a different kind, or params the source doesn't accept, before any
-agent asks a question and silently gets nothing.
+The catalog is the whole library, not a subset — a kind is in it only once it's
+fetchable under PIT control, because "declared but unwired" is the failure mode
+where a strategy runs and quietly sees nothing:
+
+| kind | source | PIT clamp |
+|---|---|---|
+| `prices` | `massive_prices`, `synthetic_prices` | bar date `< decision_date` |
+| `fundamentals` | `massive_fundamentals` | `filing_date < decision_date` |
+| `news` | `massive_news` | `published_at < decision_date` |
+| `filing_text` | `massive_filing_text` | `filing_date < decision_date` |
+| `ratios` | `valuation_ratios` (computed) | inherited from upstreams |
+| `news_sentiment` | `news_sentiment` (computed) | inherited from upstream |
+| `web_search` | `web_search` | provider freshness window ends `decision_date - 1` |
+
+`web_search` is the one kind PIT can't be enforced on after the fact: results
+carry no reliable date to clamp, so the provider's freshness window *is* the
+control, and the cache is keyed by that window so a replay can't widen it.
+
+### Strategy selects, catalog validates
+
+The manifest binds kind → source and may set params; it cannot invent a source.
+`catalog.check_bindings()` returns every finding at once — unknown source, wrong
+kind for the source, a param the source doesn't accept, a kind bound twice, a
+computed kind whose upstream is unbound — so one preflight tells you everything
+to fix rather than one thing per run. `catalog.required_env()` reports the
+credentials a binding list needs. A bare name not in the catalog is a typo and is
+rejected; a `module:Callable` is how a package ships its own source and is
+allowed.
 
 **Computed kinds** are sources like any other; they just declare
 `derives_from=("prices", "fundamentals")` instead of a vendor. The factory
 builds plain sources first, then injects the upstreams. Upstream kinds must be
 bound explicitly in the same manifest — defaulting them would let a package's
 ratios quietly change provider.
+
+Computed kinds derive on demand from already-clamped upstream data. The old
+pipeline instead precomputed daily `ratios/` and `news_sentiment/` series from
+the full cache and re-filtered per day, which meant a second PIT implementation
+to keep correct alongside the first.
 
 ```
 DataSource.fetch(query, cutoff)         kind-keyed, PIT-clamped
@@ -247,8 +277,8 @@ missing one — it reads as finished.
 | `initial_cash`, `cost_bps` on the manifest | There is no execution engine to consume them. |
 | **`EnvironmentSpec`** / isolation options in `JobConfig` | `environment/factory.py` exists. Until then slot sizing has no home and shouldn't get a placeholder. |
 | **Memory levels** beyond what an adapter uses | With capabilities agent-owned, the old `off/log/agent_authored/feedback` ladder is an agent concern. `agent_authored` was accepted in config and raised at runtime in the old repo — don't reintroduce that shape. |
-| **Valuation ratios** as a computed kind | The composition seam is built and tested; the port is ~600 lines of pure TTM math (`valuation/ratios.py`, with a `RATIO_FIELDS` roster that becomes the catalog field list). Deliberately a separate step so the math can be diffed against the original rather than paraphrased. |
 | **`yfinance_prices`** | One `SourceInfo` plus a bars fetcher writing to the same `PriceStore`. The seam is proven by a second registered `prices` source in the tests; this is the real vendor, and it wants a network test to be worth anything. |
-| **`filing_text`, `news_sentiment`, `web_search`** | All three exist in the old repo and none are agent-reachable yet, since `environment/access.py` is what exposes a kind. Port alongside that layer, not before. |
+| **Agent reachability** for every catalog kind | All seven kinds fetch under PIT today, but `environment/access.py` is what turns a kind into a tool or evidence. The catalog is deliberately complete ahead of that, so exposure is a mapping exercise rather than a data port. |
+| **Factor returns** (Ken French) | Used by the old repo for factor neutralisation, which is strategy-owned judgment rather than a served kind. It wants a home in the scoring/strategy layer, not the catalog. |
 | **Symbol renames** (`META`/`FB` pre-2022-06-09) | The old code handled this with a SPLICE map in study scripts, so the runtime path silently served garbage for pre-rename `META`. Belongs in the data layer, once there's a rename table to key it on. |
 | **Index weights** | The constituents dataset carries membership only. `UniverseReport.weights_available` is `False` and nothing pretends otherwise; a price/cap-weighted benchmark needs a different source. |

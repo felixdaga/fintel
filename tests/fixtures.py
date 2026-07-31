@@ -128,9 +128,65 @@ STUB_FUNDAMENTALS_INFO = SourceInfo(
 )
 
 
+# ── fundamentals shaped so a real trailing window can be assembled ───────────
+# Annual anchor, one new quarter, and its prior-year counterpart.
+
+_ANNUAL_HISTORY: tuple[dict, ...] = (
+    {
+        "filing_date": "2022-05-01", "period_end": "2022-03-31", "timeframe": "quarterly",
+        "revenue": 200.0, "net_income": 20.0, "shares_diluted": 100.0,
+    },
+    {
+        "filing_date": "2023-02-01", "period_end": "2022-12-31", "timeframe": "annual",
+        "revenue": 1000.0, "net_income": 150.0, "gross_profit": 400.0,
+        "operating_income": 200.0, "shares_diluted": 100.0,
+    },
+    {
+        "filing_date": "2023-05-01", "period_end": "2023-03-31", "timeframe": "quarterly",
+        "revenue": 250.0, "net_income": 30.0, "shares_diluted": 100.0,
+        "total_assets": 5000.0, "total_equity": 2000.0, "total_debt": 800.0, "cash": 300.0,
+    },
+)  # fmt: skip
+
+
+@dataclass
+class AnnualFundamentals:
+    name: str = "annual_fundamentals"
+    kinds: tuple[str, ...] = ("fundamentals",)
+
+    def fetch(self, query: dict, cutoff: Cutoff) -> list[dict]:
+        require(query, "symbol", self.name)
+        # Ascending by availability, like every real record source.
+        return cutoff.clamp_records(list(_ANNUAL_HISTORY), "filing_date")
+
+
+def annual_fundamentals(**_: object) -> AnnualFundamentals:
+    return AnnualFundamentals()
+
+
+ANNUAL_FUNDAMENTALS_INFO = SourceInfo(
+    name="annual_fundamentals",
+    kind="fundamentals",
+    provider="testing",
+    target="tests.fixtures:annual_fundamentals",
+    fields=(
+        Field("filing_date", "date"),
+        Field("period_end", "date"),
+        Field("timeframe", "text"),
+        Field("revenue", "number", unit="usd"),
+        Field("net_income", "number", unit="usd"),
+    ),
+)
+
+
 def register_all() -> None:
     """What a third party ships: register, and it's pickable by name."""
     from fintel.market import catalog
 
-    for info in (FLAT_PRICES_INFO, SIMPLE_RATIOS_INFO, STUB_FUNDAMENTALS_INFO):
+    for info in (
+        FLAT_PRICES_INFO,
+        SIMPLE_RATIOS_INFO,
+        STUB_FUNDAMENTALS_INFO,
+        ANNUAL_FUNDAMENTALS_INFO,
+    ):
         catalog.register_source(info, replace=True)

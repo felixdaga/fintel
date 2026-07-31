@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 PRICE_COLUMNS = ("date", "open", "high", "low", "close", "volume")
 
 
-def _atomic_write(path: Path, text: str) -> None:
+def atomic_write(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(f".{os.getpid()}.{uuid.uuid4().hex}.tmp")
     tmp.write_text(text)
@@ -57,7 +57,7 @@ class RecordCache:
         return cov.from_json(blob.get("_coverage")), list(blob.get("records") or [])
 
     def write(self, symbol: str, coverage: list[Span], records: list[dict]) -> None:
-        _atomic_write(
+        atomic_write(
             self.path(symbol),
             json.dumps({"_coverage": cov.to_json(coverage), "records": records}, default=str),
         )
@@ -112,7 +112,7 @@ class PriceStore:
         out["date"] = pd.to_datetime(out["date"]).dt.date
         out = out.sort_values("date").drop_duplicates("date").reset_index(drop=True)
         out.to_parquet(path, index=False)
-        _atomic_write(self._sidecar(symbol), json.dumps({"_coverage": cov.to_json(coverage)}))
+        atomic_write(self._sidecar(symbol), json.dumps({"_coverage": cov.to_json(coverage)}))
 
     def merge(self, symbol: str, fresh: pd.DataFrame, span: Span) -> pd.DataFrame:
         existing = self.read(symbol)

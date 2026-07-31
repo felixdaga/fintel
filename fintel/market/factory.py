@@ -17,10 +17,14 @@ from fintel.market import catalog
 from fintel.market.calendar import TradingCalendar
 from fintel.market.constituents import INDEX_PRESETS, historical_universe
 from fintel.market.data.base import DataSource
+from fintel.market.data.filings import MassiveFilingText
 from fintel.market.data.http import MassiveClient
 from fintel.market.data.massive import FUNDAMENTALS, NEWS, MassivePrices, MassiveRecords
+from fintel.market.data.ratios import ValuationRatios
+from fintel.market.data.sentiment import NewsSentiment
 from fintel.market.data.store import PriceStore, RecordCache
 from fintel.market.data.synthetic import SyntheticPrices
+from fintel.market.data.web import WebSearch
 from fintel.market.schedule import CustomDates, Quarterly, Schedule, SinglePoint
 from fintel.market.settings import MarketConfig
 from fintel.market.universe import STATIC_PRESETS, Universe, static_preset, symbol_universe
@@ -135,6 +139,39 @@ def massive_news(*, config: MarketConfig, **_: Any) -> MassiveRecords:
         cache=RecordCache(root=config.cache_root, kind="news"),
         client=_client(config),
         name="massive_news",
+    )
+
+
+def massive_filing_text(*, config: MarketConfig, **params: Any) -> MassiveFilingText:
+    keep = {k: v for k, v in params.items() if k in {"forms", "sections", "lookback_days"}}
+    if "forms" in keep:
+        keep["forms"] = tuple(keep["forms"])
+    if "sections" in keep:
+        keep["sections"] = tuple(keep["sections"])
+    return MassiveFilingText(
+        cache=RecordCache(root=config.cache_root, kind="filing_text"),
+        client=_client(config),
+        **keep,
+    )
+
+
+def valuation_ratios(*, upstream: dict[str, DataSource], **params: Any) -> ValuationRatios:
+    return ValuationRatios(
+        upstream=upstream,
+        **{k: v for k, v in params.items() if k == "window_days"},
+    )
+
+
+def news_sentiment(*, upstream: dict[str, DataSource], **_: Any) -> NewsSentiment:
+    return NewsSentiment(upstream=upstream)
+
+
+def web_search(*, config: MarketConfig, **params: Any) -> WebSearch:
+    key = None if config.offline else config.brave_api_key
+    return WebSearch(
+        cache_root=config.cache_root,
+        api_key=key,
+        **{k: v for k, v in params.items() if k in {"lookback_days", "max_results"}},
     )
 
 
