@@ -312,6 +312,44 @@ root.
 `strategy` · `market.catalog` (sources, universes) · `market.schedule` ·
 `environment` · `agents` · `scoring` · `environment.evidence`
 
+### Where agent adapters live
+
+`agents/` holds one adapter per agent, the way Harbor's `agents/installed/`
+holds Claude Code, Cursor, OpenClaw and ~27 others behind one `AgentFactory`
+name map. Registration copies Harbor almost verbatim: a `name -> "module:Class"`
+map plus a `module:Class` escape hatch, so a custom agent needs no entry.
+
+The contract is `decide(environment) -> AgentResponse`. A returned value, not a
+`submit()` callback — the platform can then check what came back, and an adapter
+cannot forget to produce anything. The `Environment` is the whole capability
+surface, so an adapter chooses a channel rather than reaching for data itself.
+
+Where Harbor's shape does **not** transfer: its adapters vary in how an agent is
+*installed and launched*, never in how it gets data, because a Harbor agent gets
+a terminal and the data is the filesystem. Ours vary mostly in *data delivery*,
+and some have no CLI at all — an in-process LangGraph desk needs no install step
+and no argv. So `BaseInstalledAgent` maps to one family of ours, not to all of
+them, and it belongs in `agents/installed/` rather than at the root.
+
+Worth taking from Harbor:
+
+* **Declarative `CLI_FLAGS` / `ENV_VARS`** descriptors that build argv and env
+  from kwargs, instead of a hand-rolled config class per adapter.
+* **`ERROR_PATTERNS` mapping output to typed errors.** The important one. It is
+  the same empty-vs-failed distinction `DataAccess` already makes, applied to
+  agents: a rate limit is retryable, a safety refusal is a real abstention and
+  must *not* be retried, and a context-window overflow is a config bug, not a
+  flake. The old runner collapsed all three into empty views and retried blindly.
+* **`SUPPORTS_*` class flags**, checked before launch so a mismatch fails fast.
+  This is what "capabilities" honestly is — a property the adapter declares, not
+  something a strategy requests.
+* **`install()` / `setup()` split from `run()`**, so a CLI is installed once per
+  trial rather than per cell.
+
+Deliberately *not* in the adapter: per-symbol fan-out. Four old adapters each
+grew their own `ThreadPoolExecutor` and progress plumbing. Cells are the
+platform's unit, so `evaluate/` fans out and an adapter only ever sees one cell.
+
 ## 8. Artifacts
 
 Every level writes the same trio: `config.json` (asked), `lock.json`
@@ -323,9 +361,10 @@ runs/<job_id>/
   r1/ … rK/
     config.json  lock.json  result.json  run.log
     trials/<YYYY-MM-DD>/
-      decision.json
+      decision.json          reduced once, after the fan-in
       result.json
-      trace/<cell>.jsonl
+      cells/<cell>.json      one writer each
+      trace/<cell>.jsonl     one writer each
   report/
     report.md  report.json
 ```
