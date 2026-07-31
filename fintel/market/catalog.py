@@ -35,12 +35,19 @@ class Field:
 
 @dataclass(frozen=True)
 class Param:
-    """A query knob a strategy may set in its `[[data]]` block."""
+    """A query knob a strategy may set in its `[[data]]` block.
+
+    `per_call` is whether an *agent* may also override it mid-run. Most knobs are
+    just "how much history", which is fair game. Some define what the number
+    means — the trailing window behind a P/E — and letting an agent change those
+    would make two readings in one run incomparable.
+    """
 
     name: str
     dtype: DType
     default: Any = None
     description: str = ""
+    per_call: bool = True
 
 
 @dataclass(frozen=True)
@@ -54,6 +61,10 @@ class SourceInfo:
     requires_env: tuple[str, ...] = ()
     derives_from: tuple[str, ...] = ()  # upstream kinds, for computed sources
     description: str = ""
+    # What identifies one fetch. The environment turns this into the required
+    # argument of the generated tool, so the tool surface follows the catalog
+    # instead of being a hand-maintained list that drifts from it.
+    subject: Literal["symbol", "query", "none"] = "symbol"
 
     @property
     def is_computed(self) -> bool:
@@ -62,6 +73,10 @@ class SourceInfo:
     @property
     def field_names(self) -> tuple[str, ...]:
         return tuple(f.name for f in self.fields)
+
+    @property
+    def call_params(self) -> tuple[Param, ...]:
+        return tuple(p for p in self.params if p.per_call)
 
 
 @dataclass(frozen=True)
@@ -409,7 +424,9 @@ def register_builtins() -> None:
             target="fintel.market.factory:valuation_ratios",
             fields=_ratio_fields(),
             params=(
-                Param("window_days", "number", 365, "Trailing window length"),
+                # The strategy owns the window: two readings in one run must mean
+                # the same thing.
+                Param("window_days", "number", 365, "Trailing window length", per_call=False),
                 Param("filings_lookback_days", "number", 1460),
             ),
             derives_from=("prices", "fundamentals"),
@@ -445,6 +462,7 @@ def register_builtins() -> None:
                 Param("max_results", "number", 10),
             ),
             requires_env=("BRAVE_API_KEY",),
+            subject="query",
             description=(
                 "Freshness-windowed search. PIT rests on the provider window, since "
                 "results carry no date to clamp on afterwards."

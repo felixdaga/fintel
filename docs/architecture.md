@@ -155,9 +155,8 @@ to keep correct alongside the first.
 DataSource.fetch(query, cutoff)         kind-keyed, PIT-clamped
         │
    environment/access.py                the ONE agent-facing data path
-        ├── mcp/            get_data(kind, **q) + per-kind tools, generated
-        │                   from the run's declared bindings
-        └── evidence/       pre-rendered text pack for non-tool agents
+        ├── tools.py        typed tools, generated from the run's bindings
+        └── evidence.py     pre-rendered text pack for non-tool agents
 ```
 
 `fetch` takes a `Cutoff`, never a bare date, so a source cannot be called
@@ -173,7 +172,59 @@ separate: different module, different name (`PriceLookup.price_at`, not
 importing it. In the old code the clamped and unclamped paths were two methods
 on one class, one typo apart.
 
-## 5. Layers
+## 5. The environment
+
+Where the three inputs meet, for exactly one agent invocation:
+
+| | brings |
+|---|---|
+| **strategy** | which kinds, with which params; what one cell decides on |
+| **market** | the universe *at the decision date*, and the bound clamped sources |
+| **runtime** | where the cell may write, and how much it may ask for |
+
+A `Cell` is the identity of one invocation — run, date, symbols, scope — and it
+owns the `Cutoff`. That's the load-bearing decision in this layer. The old MCP
+server worked out which cell it was serving by walking process ancestry for the
+CLI's pid and reading `cli-pids/<pid>/bundle.json`; under a gateway that spawns
+the server itself the walk finds nothing, so every concurrent cell fell back to
+one shared directory and contaminated its neighbours. It then cached the first
+bundle it ever loaded, so a reused process served a stale decision date. Cell
+identity is now constructed, frozen and passed explicitly, and a test forbids any
+module but `cell.py` from building a `Cutoff`.
+
+**Reads are policy-checked, then clamped, then recorded** — one path,
+`DataAccess.read`. The old code implemented the clamp in the data source, again
+in the bundle builder, again per-tool in the server, again in the dossier
+renderers and again in the memory store. They disagreed: `get_fundamentals` used
+`filing_date <= decision_date` where its source used `<`, `get_filings` had no
+upper bound and trusted its input, the bundled price path served frozen bars
+without re-checking, and a `web_search` cache hit skipped the check its live path
+performed.
+
+**Absence and failure are different answers.** Every read returns a `Reading`
+whose status is `ok`, `empty`, `failed` or `denied`. The old tools returned `[]`
+for a missing API key, a source that raised, an unconfigured provider, and a
+company with genuinely no news — indistinguishable to the agent and to a reviewer
+reading the trace afterwards. `AccessLog.summary()` reports `degraded` so a run
+that half-failed is never scored as a run against a quiet market.
+
+**The universe is enforced on reads.** The old server gated it only at submission
+— "data tools accept any symbol" — so an agent scored on the Dow could read
+anything cached. Widening it is a strategy's explicit choice via `peers`, which
+grants reads without granting decisions.
+
+**The tool surface is generated** from the bindings and the catalog, so a run that
+binds three kinds has three tools, each described by the entry of the source
+actually bound. The old list of twenty static tools had to be kept in agreement
+with the catalog, the builder and the prompt text, and drifted from all three. A
+param the strategy owns — the trailing window behind a P/E — is marked
+`per_call=False` and never offered to an agent, since two readings in one run must
+mean the same thing.
+
+Tools and evidence are two presentations of one `access`, not two data paths, so
+an agent with tools and an agent with text see the same world.
+
+## 6. Layers
 
 Imports flow one way only. Enforced by `tests/test_architecture.py`.
 
@@ -194,7 +245,7 @@ L10  cli/          parse flags, build config, call evaluate. nothing else.
 `scoring/` reads artifacts, never imports `evaluate/`. That keeps it pure and
 re-runnable against finished runs.
 
-## 6. Extension points
+## 7. Extension points
 
 Two shapes, both resolving `module:Callable` through `utils/import_path`:
 
@@ -211,7 +262,7 @@ root.
 `strategy` · `market.catalog` (sources, universes) · `market.schedule` ·
 `environment` · `agents` · `scoring` · `environment.evidence`
 
-## 7. Artifacts
+## 8. Artifacts
 
 Every level writes the same trio: `config.json` (asked), `lock.json`
 (digests, for replay comparison), `result.json` (happened).
@@ -233,7 +284,7 @@ runs/<job_id>/
 `RunConfig` records the effective world post-override and is self-describing, so
 `fintel report <job_id>` reads identity from the lock and needs no `--strategy`.
 
-## 8. CLI
+## 9. CLI
 
 ```
 fintel backtest <package> --agent <name> [--k N] [--universe ...] [--dry-run]
@@ -245,7 +296,7 @@ fintel runs     list | show <job_id>
 Agent-specific settings go through `--agent-opt`, validated against a schema the
 agent adapter declares. Adding an agent requires no CLI edit.
 
-## 9. Invariants
+## 10. Invariants
 
 Each has a test in `tests/test_architecture.py`. Convention alone is what let the
 previous attempt drift.
@@ -262,8 +313,10 @@ previous attempt drift.
 10. Only `market/realized.py` may read past the decision date, and nothing
     agent-facing may import it.
 11. Every registered data source declares its fields.
+12. Only `environment/cell.py` may construct a `Cutoff`. Everywhere else it
+    arrives from the cell, so PIT has exactly one point of decision.
 
-## 10. Not yet wired
+## 11. Not yet wired
 
 Nothing enters the tree without a consumer and a test. These are deliberately
 absent rather than stubbed, because an unwired declaration is worse than a
@@ -278,7 +331,9 @@ missing one — it reads as finished.
 | **`EnvironmentSpec`** / isolation options in `JobConfig` | `environment/factory.py` exists. Until then slot sizing has no home and shouldn't get a placeholder. |
 | **Memory levels** beyond what an adapter uses | With capabilities agent-owned, the old `off/log/agent_authored/feedback` ladder is an agent concern. `agent_authored` was accepted in config and raised at runtime in the old repo — don't reintroduce that shape. |
 | **`yfinance_prices`** | One `SourceInfo` plus a bars fetcher writing to the same `PriceStore`. The seam is proven by a second registered `prices` source in the tests; this is the real vendor, and it wants a network test to be worth anything. |
-| **Agent reachability** for every catalog kind | All seven kinds fetch under PIT today, but `environment/access.py` is what turns a kind into a tool or evidence. The catalog is deliberately complete ahead of that, so exposure is a mapping exercise rather than a data port. |
+| **Tool transport** (MCP wiring) | `environment/tools.py` produces the descriptors and dispatches calls; binding those to a protocol needs a real agent adapter, so it lands with `agents/`. Kept transport-free so the surface is testable without a subprocess. |
+| **Process-level isolation** — slot pools, gateway restarts | `environment/` isolates a cell's *state*: its directory, its policy, its cutoff. Isolating concurrent *processes* is launch mechanics specific to one CLI, so it belongs with that adapter. The old repo's pool was the only thing actually preventing concurrent cross-talk, while the pid-based scheme it sat next to did nothing. |
+| **Memory** as a readable kind | It's an agent capability, not market data, so it isn't in the catalog. The environment will expose it once an adapter defines what memory means for a strategy. |
 | **Factor returns** (Ken French) | Used by the old repo for factor neutralisation, which is strategy-owned judgment rather than a served kind. It wants a home in the scoring/strategy layer, not the catalog. |
 | **Symbol renames** (`META`/`FB` pre-2022-06-09) | The old code handled this with a SPLICE map in study scripts, so the runtime path silently served garbage for pre-rename `META`. Belongs in the data layer, once there's a rename table to key it on. |
 | **Index weights** | The constituents dataset carries membership only. `UniverseReport.weights_available` is `False` and nothing pretends otherwise; a price/cap-weighted benchmark needs a different source. |

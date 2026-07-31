@@ -203,23 +203,42 @@ def _registries(mod) -> dict[str, dict[str, str]]:
 @pytest.mark.parametrize("package", sorted(LAYERS))
 def test_factory_registries_resolve(package: str):
     """Every `module:Attr` string a factory advertises must actually import.
-    This is the check that would have caught the dangling `delorean.config`."""
+    This is the check that would have caught the dangling `delorean.config`.
+
+    Not every factory is a registry — `environment.factory` assembles one cell's
+    world and has nothing pluggable by name. So an empty result is allowed here,
+    and each package that *should* keep a registry pins it below, since otherwise
+    losing one would silently downgrade this test to a no-op."""
     try:
         mod = importlib.import_module(f"fintel.{package}.factory")
     except ModuleNotFoundError:
         pytest.skip(f"fintel.{package} has no factory")
     from fintel.utils.import_path import resolve
 
-    registries = _registries(mod)
-    assert registries, f"fintel.{package}.factory advertises no name registry"
-    for name, registry in registries.items():
+    for name, registry in _registries(mod).items():
         for key, target in registry.items():
             assert resolve(target) is not None, f"{package}.{name}[{key}] -> {target}"
 
 
 def test_market_registers_its_schedule_builtins():
     """Guard the guard: if a registry stops being discoverable the check above
-    silently degrades to a skip."""
+    silently degrades to a no-op."""
     from fintel.market import factory
 
     assert set(_registries(factory)) == {"SCHEDULES"}
+
+
+def test_environment_never_reaches_for_a_bare_decision_date():
+    """The cutoff must come from the cell. If `environment/` could build its own
+    `Cutoff`, there would be a second place for PIT to be decided — which is the
+    exact defect this layer exists to remove."""
+    env_dir = ROOT / "fintel" / "environment"
+    offenders = [
+        str(path.relative_to(ROOT))
+        for path in env_dir.rglob("*.py")
+        if "Cutoff(" in path.read_text() and path.name != "cell.py"
+    ]
+    assert not offenders, (
+        "only environment/cell.py may construct a Cutoff; found one in:\n"
+        + "\n".join(offenders)
+    )

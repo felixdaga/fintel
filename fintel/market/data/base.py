@@ -2,8 +2,8 @@
 
 `fetch` takes a `Cutoff`, never a bare date. A source cannot be called without
 the point-in-time boundary, and the boundary cannot be mistaken for an ordinary
-parameter. The unclamped price path for scoring lives in `market/valuation.py`
-under a different name for the same reason — see docs/architecture.md §9.
+parameter. The unclamped price path for scoring lives in `market/realized.py`
+under a different name for the same reason — see docs/architecture.md.
 """
 
 from __future__ import annotations
