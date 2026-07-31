@@ -221,8 +221,58 @@ param the strategy owns — the trailing window behind a P/E — is marked
 `per_call=False` and never offered to an agent, since two readings in one run must
 mean the same thing.
 
-Tools and evidence are two presentations of one `access`, not two data paths, so
-an agent with tools and an agent with text see the same world.
+### Three delivery channels, one path
+
+Agents differ in how they want data, not in what they may see. All three channels
+are thin presentations of `DataAccess.read`:
+
+| channel | for | built from |
+|---|---|---|
+| in-process call | a desk that fetches directly in Python | `access.read(kind, **q)` |
+| typed tools | anything doing function-calling — MCP, an LLM's native tools, or an in-process framework wrapper | `ToolSurface.descriptors()` + `call()` |
+| rendered text | a single-turn agent that needs everything in one dump | `evidence.build(access)` |
+
+This is why `tools.py` carries no transport. The old repo had an MCP server *and*
+a LangChain `Toolkit` reimplementing the same tools over the same session, each
+with its own PIT filters to keep in agreement — two implementations of one idea,
+which is how they drifted apart. A multi-role desk narrows its per-role tool set
+with `ToolSurface.subset(kinds)`, which shares the underlying access, so a role
+boundary can't become a second data path with its own rules.
+
+There is no data bundle. Pre-freezing market data into a per-cell file was one of
+three jobs the old `bundle.json` did, and it was already vestigial: `fundamentals`
+and `ratios` were written on every cell and read by no tool, and `news` was always
+`{}`. The other two jobs survive — cell identity is `cell.json`, and a subprocess
+that needs to rebuild access gets the bindings, which are declarative and small.
+
+Repeated identical reads inside one cell are memoized, so an agent re-reading
+prices mid-reasoning cannot see two different answers. Failures are never
+memoized — a transient blip must not become an outage for the rest of the cell.
+
+### Nothing shared between concurrent cells
+
+Every artifact a cell writes is named after that cell: `cells/<cell>.json` and
+`trace/<cell>.jsonl`. The old layout had every symbol on a date write into one
+`decisions/<date>.json`, so concurrent cells overwrote each other and a run could
+finish with views missing and no error at all. `decision.json` still exists but is
+a *reduction*, written once after the fan-in.
+
+The shared cache needs two separate guarantees, and it turned out to be missing
+both:
+
+* **Atomic writes**, so a reader — which takes no lock — can never observe a
+  half-written file. Parquet was being written in place, so a concurrent reader
+  saw a truncated file, logged it as unreadable, and treated a populated cache as
+  a miss.
+* **A lock around read-modify-write**, because atomicity alone doesn't prevent a
+  lost update: two cells fetching different spans of one symbol both read the old
+  coverage, both append their own, and the last writer erases the other's records.
+  Merging therefore lives on the store, which re-reads inside the lock, rather
+  than in each source.
+
+`tests/test_concurrency.py` covers both. The lost-update test was verified to
+fail 25 times out of 25 with the lock removed, so it is a real guard and not a
+test that merely passes.
 
 ## 6. Layers
 
@@ -332,7 +382,13 @@ missing one — it reads as finished.
 | **Memory levels** beyond what an adapter uses | With capabilities agent-owned, the old `off/log/agent_authored/feedback` ladder is an agent concern. `agent_authored` was accepted in config and raised at runtime in the old repo — don't reintroduce that shape. |
 | **`yfinance_prices`** | One `SourceInfo` plus a bars fetcher writing to the same `PriceStore`. The seam is proven by a second registered `prices` source in the tests; this is the real vendor, and it wants a network test to be worth anything. |
 | **Tool transport** (MCP wiring) | `environment/tools.py` produces the descriptors and dispatches calls; binding those to a protocol needs a real agent adapter, so it lands with `agents/`. Kept transport-free so the surface is testable without a subprocess. |
-| **Process-level isolation** — slot pools, gateway restarts | `environment/` isolates a cell's *state*: its directory, its policy, its cutoff. Isolating concurrent *processes* is launch mechanics specific to one CLI, so it belongs with that adapter. The old repo's pool was the only thing actually preventing concurrent cross-talk, while the pid-based scheme it sat next to did nothing. |
+| **Process-level isolation** — slot pools, gateway restarts | `environment/` isolates a cell's *state*: its directory, its policy, its cutoff. Isolating concurrent *processes* is launch mechanics specific to one CLI, so it belongs with that adapter. The old repo's pool was the only thing actually preventing concurrent cross-talk, while the pid-based scheme it sat next to did nothing. **The pool did not fix sequential staleness**: a reused process kept the first cell it ever loaded, and `_require_bundle` never reloaded despite a docstring saying it did. When the transport lands it must carry the rule below. |
+
+**Rule for whoever builds the tool transport:** a server process serves exactly
+one cell and refuses a second. Its session directory path already encodes the
+cell, so a reused process pointed at a new cell is detectable — it must fail
+loudly and let the adapter restart it, never serve the cell it remembers. That is
+the failure the slot pool masked rather than fixed.
 | **Memory** as a readable kind | It's an agent capability, not market data, so it isn't in the catalog. The environment will expose it once an adapter defines what memory means for a strategy. |
 | **Factor returns** (Ken French) | Used by the old repo for factor neutralisation, which is strategy-owned judgment rather than a served kind. It wants a home in the scoring/strategy layer, not the catalog. |
 | **Symbol renames** (`META`/`FB` pre-2022-06-09) | The old code handled this with a SPLICE map in study scripts, so the runtime path silently served garbage for pre-rename `META`. Belongs in the data layer, once there's a rename table to key it on. |

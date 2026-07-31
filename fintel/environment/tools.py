@@ -111,21 +111,48 @@ def spec_for(kind: str, source_name: str, *, decision_date: str) -> ToolSpec:
 
 @dataclass
 class ToolSurface:
-    """The tools this cell has, and the dispatcher behind them."""
+    """The tools this cell has, and the dispatcher behind them.
+
+    Deliberately transport-free: `descriptors()` yields schemas and `call()`
+    dispatches, so MCP, an LLM's native function-calling, and an in-process
+    framework wrapper are all thin adapters over the same surface rather than
+    three implementations of it. The old repo had exactly that duplication — an
+    MCP server and a LangChain `Toolkit` reimplementing the same tools over the
+    same session, each with its own PIT filters to keep in agreement.
+    """
 
     access: DataAccess
     bound: dict[str, str]  # kind -> source name
+    only: tuple[str, ...] | None = None  # restrict to these kinds
 
     def descriptors(self) -> tuple[ToolSpec, ...]:
         decision_date = self.access.cell.decision_date.isoformat()
         out = []
         for kind in self.access.kinds:
+            if self.only is not None and kind not in self.only:
+                continue
             source_name = self.bound.get(kind)
             # A package-supplied source has no catalog entry to describe; it is
             # still readable, just not advertised as a typed tool.
             if source_name and catalog.has_source(source_name):
                 out.append(spec_for(kind, source_name, decision_date=decision_date))
         return tuple(out)
+
+    def subset(self, kinds: tuple[str, ...]) -> ToolSurface:
+        """A narrower surface over the same access, for one role.
+
+        A multi-role desk gives its fundamentals analyst prices and filings and
+        its narrative analyst news and filing text. Both still read through the
+        one clamped, recorded path, so a role boundary can't become a second
+        data path with its own PIT rules.
+        """
+        unknown = sorted(set(kinds) - set(self.access.kinds))
+        if unknown:
+            raise ValueError(
+                f"cannot build a tool subset for {unknown}: not available to this cell "
+                f"(has {list(self.access.kinds)})"
+            )
+        return ToolSurface(access=self.access, bound=self.bound, only=tuple(kinds))
 
     @property
     def names(self) -> tuple[str, ...]:

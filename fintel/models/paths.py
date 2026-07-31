@@ -2,8 +2,16 @@
 
 runs/<job_id>/config.json result.json job.log
               r1/config.json lock.json result.json run.log memory.jsonl
-                 trials/<date>/decision.json result.json trace/<cell>.jsonl
+                 trials/<date>/decision.json result.json
+                               cells/<cell>.json      one writer each
+                               trace/<cell>.jsonl     one writer each
               report/report.md report.json
+
+Anything a cell writes is named after that cell. The old layout had every symbol
+on a decision date write into one `decisions/<date>.json`, so concurrent cells
+overwrote each other and a run could finish with views missing and no error.
+`decision.json` still exists, but it is a *reduction* — written once by the trial
+coordinator after its cells are done, never concurrently.
 """
 
 from __future__ import annotations
@@ -21,11 +29,25 @@ class TrialPaths:
 
     @property
     def decision(self) -> Path:
+        """The reduced decision for this date. Single writer, after the fan-in."""
         return self.root / "decision.json"
 
     @property
     def result(self) -> Path:
         return self.root / "result.json"
+
+    @property
+    def cells_dir(self) -> Path:
+        return self.root / "cells"
+
+    def cell(self, cell: str) -> Path:
+        """One cell's own output. No other cell may write here."""
+        return self.cells_dir / f"{cell}.json"
+
+    def cell_files(self) -> list[Path]:
+        if not self.cells_dir.is_dir():
+            return []
+        return sorted(self.cells_dir.glob("*.json"))
 
     @property
     def trace_dir(self) -> Path:

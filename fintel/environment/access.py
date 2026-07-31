@@ -22,9 +22,10 @@ status says which happened.
 
 from __future__ import annotations
 
+import json
 import logging
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from typing import Any, Literal
 
 from fintel.environment.cell import Cell
@@ -38,6 +39,10 @@ ReadingStatus = Literal["ok", "empty", "failed", "denied"]
 # What a source may be asked that isn't a declared param. `symbol` and `query`
 # identify the subject of a fetch; the rest is the source's own vocabulary.
 SUBJECT_KEYS = ("symbol", "query")
+
+
+def _cache_key(kind: str, query: dict) -> str:
+    return kind + "|" + json.dumps(query, sort_keys=True, default=str)
 
 
 def _is_empty(data: Any) -> bool:
@@ -70,6 +75,7 @@ class Reading:
     detail: str = ""
     source: str = ""
     latency_ms: float = 0.0
+    cached: bool = False
 
     @property
     def ok(self) -> bool:
@@ -85,6 +91,8 @@ class Reading:
             "source": self.source,
             "latency_ms": round(self.latency_ms, 2),
         }
+        if self.cached:
+            out["cached"] = True
         if self.detail:
             out["detail"] = self.detail
         if isinstance(self.data, (list, tuple)):
@@ -113,7 +121,9 @@ class DataAccess:
     sources: dict[str, DataSource]
     policy: AccessPolicy
     on_read: Any = None  # Callable[[Reading], None]
+    memoize: bool = True
     _readings: list[Reading] = field(default_factory=list, init=False)
+    _cache: dict[str, Reading] = field(default_factory=dict, init=False)
 
     @property
     def kinds(self) -> tuple[str, ...]:
@@ -126,6 +136,13 @@ class DataAccess:
 
     def read(self, kind: str, **query: Any) -> Reading:
         started = time.perf_counter()
+        key = _cache_key(kind, query)
+        if self.memoize and key in self._cache:
+            # A repeated question inside one cell is the same question: an agent
+            # re-reading prices mid-reasoning must not see a different answer.
+            # Recorded again, marked, so read counts stay honest.
+            cached = self._cache[key]
+            return self._finish(replace(cached, latency_ms=0.0, cached=True), started, store=False)
         try:
             self.policy.check_kind(kind)
             source = self.sources.get(kind)
@@ -179,10 +196,13 @@ class DataAccess:
             started,
         )
 
-    def _finish(self, reading: Reading, started: float) -> Reading:
-        from dataclasses import replace
-
-        reading = replace(reading, latency_ms=(time.perf_counter() - started) * 1000)
+    def _finish(self, reading: Reading, started: float, *, store: bool = True) -> Reading:
+        if not reading.cached:
+            reading = replace(reading, latency_ms=(time.perf_counter() - started) * 1000)
+        # Never memoize a failure: it may be transient, and a sticky one would
+        # turn a blip into an outage for the rest of the cell.
+        if store and self.memoize and reading.status in ("ok", "empty"):
+            self._cache[_cache_key(reading.kind, reading.query)] = reading
         self._readings.append(reading)
         if self.on_read is not None:
             self.on_read(reading)

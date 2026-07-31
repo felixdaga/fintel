@@ -108,12 +108,7 @@ class MassivePrices:
             if fresh is not None and not fresh.empty:
                 self.store.merge(symbol, fresh, (lo, hi))
             else:
-                # Record the attempt so a genuinely dataless span isn't re-fetched.
-                self.store.write(
-                    symbol,
-                    self.store.read(symbol) or _empty_bars(),
-                    [*self.store.coverage(symbol), (lo, hi)],
-                )
+                self.store.record_empty_span(symbol, (lo, hi))
         return self.store.read(symbol)
 
     def _fetch_bars(self, symbol: Symbol, start: Date, end: Date) -> pd.DataFrame | None:
@@ -317,15 +312,18 @@ class MassiveRecords:
                 through,
             )
             return records
-        merged = {self.spec.identity(r): r for r in records}
+        fresh: dict[str, dict] = {}
         for lo, hi in gaps:
             for item in self._fetch_span(symbol, lo, hi):
                 rec = self.spec.normalise(item)
-                merged[self.spec.identity(rec)] = rec
-            coverage = cov.coalesce([*coverage, (lo, hi)])
-        out = sorted(merged.values(), key=lambda r: str(r.get(self.spec.cutoff_field, "")))
-        self.cache.write(symbol, coverage, out)
-        return out
+                fresh[self.spec.identity(rec)] = rec
+        return self.cache.merge(
+            symbol,
+            list(fresh.values()),
+            gaps,
+            key=self.spec.identity,
+            sort=lambda r: str(r.get(self.spec.cutoff_field, "")),
+        )
 
     def _fetch_span(self, symbol: Symbol, lo: Date, hi: Date) -> list[dict]:
         assert self.client is not None

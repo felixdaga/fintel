@@ -100,17 +100,20 @@ class MassiveFilingText:
             )
             return records
 
-        merged = {r["id"]: r for r in records}
+        fresh: dict[str, dict] = {}
         for lo, hi in gaps:
             for form in self.forms:
                 sections = self.sections if form.upper() == "10-K" else (None,)
                 for section in sections:
                     for rec in self._fetch_one(symbol, form, section, lo, hi):
-                        merged[rec["id"]] = rec
-            coverage = cov.coalesce([*coverage, (lo, hi)])
-        out = sorted(merged.values(), key=lambda r: (r["filing_date"], r["id"]))
-        self.cache.write(symbol, coverage, out)
-        return out
+                        fresh[rec["id"]] = rec
+        return self.cache.merge(
+            symbol,
+            list(fresh.values()),
+            gaps,
+            key=lambda r: r["id"],
+            sort=lambda r: (r["filing_date"], r["id"]),
+        )
 
     def _fetch_one(
         self, symbol: Symbol, form: str, section: str | None, lo: Date, hi: Date

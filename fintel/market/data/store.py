@@ -10,7 +10,10 @@ from __future__ import annotations
 import json
 import logging
 import os
+import time
 import uuid
+from collections.abc import Callable, Iterator
+from contextlib import contextmanager
 from dataclasses import dataclass
 from datetime import date as Date
 from pathlib import Path
@@ -18,11 +21,18 @@ from pathlib import Path
 import pandas as pd
 
 from fintel.market.data import coverage as cov
+from fintel.market.data.base import DataError
 from fintel.market.data.coverage import Span
+
+try:
+    import fcntl
+except ImportError:  # pragma: no cover - Windows
+    fcntl = None  # type: ignore[assignment]
 
 logger = logging.getLogger(__name__)
 
 PRICE_COLUMNS = ("date", "open", "high", "low", "close", "volume")
+LOCK_TIMEOUT_S = 60.0
 
 
 def atomic_write(path: Path, text: str) -> None:
@@ -33,6 +43,41 @@ def atomic_write(path: Path, text: str) -> None:
         os.replace(tmp, path)
     except FileNotFoundError:
         tmp.unlink(missing_ok=True)
+
+
+@contextmanager
+def locked(target: Path, *, timeout: float = LOCK_TIMEOUT_S) -> Iterator[None]:
+    """Serialise read-modify-write on one cache file.
+
+    Atomic writes alone don't make a merge safe. Two cells fetching different
+    spans of the same symbol both read the old coverage, both append their own,
+    and whichever writes last erases the other's records — a lost update that
+    looks like a cache that simply doesn't have the data. Callers must re-read
+    inside the lock, which is why merging lives on the store rather than in each
+    source.
+    """
+    target.parent.mkdir(parents=True, exist_ok=True)
+    lock_path = target.with_name(target.name + ".lock")
+    if fcntl is None:
+        yield
+        return
+    with lock_path.open("w") as handle:
+        deadline = time.monotonic() + timeout
+        while True:
+            try:
+                fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                break
+            except OSError:
+                if time.monotonic() >= deadline:
+                    raise DataError(
+                        f"timed out after {timeout:.0f}s waiting to write {target.name}; "
+                        f"another process may be stuck holding {lock_path.name}"
+                    ) from None
+                time.sleep(0.05)
+        try:
+            yield
+        finally:
+            fcntl.flock(handle, fcntl.LOCK_UN)
 
 
 @dataclass(frozen=True)
@@ -61,6 +106,27 @@ class RecordCache:
             self.path(symbol),
             json.dumps({"_coverage": cov.to_json(coverage), "records": records}, default=str),
         )
+
+    def merge(
+        self,
+        symbol: str,
+        records: list[dict],
+        spans: list[Span],
+        *,
+        key: Callable[[dict], str],
+        sort: Callable[[dict], str],
+    ) -> list[dict]:
+        """Fold fresh records into whatever is on disk now, under a lock.
+
+        Re-reads inside the lock so a concurrent writer's records survive.
+        """
+        with locked(self.path(symbol)):
+            coverage, existing = self.read(symbol)
+            merged = {key(record): record for record in existing}
+            merged.update({key(record): record for record in records})
+            out = sorted(merged.values(), key=sort)
+            self.write(symbol, cov.coalesce([*coverage, *spans]), out)
+            return out
 
 
 @dataclass(frozen=True)
@@ -106,19 +172,42 @@ class PriceStore:
         return [(df["date"].iloc[0], df["date"].iloc[-1])]
 
     def write(self, symbol: str, df: pd.DataFrame, coverage: list[Span]) -> None:
+        """Replace the cached frame. Atomic, so a concurrent reader — which takes
+        no lock — can never observe a half-written parquet. Writing in place made
+        readers see truncated files and treat a populated cache as a miss."""
         path = self.path(symbol)
         path.parent.mkdir(parents=True, exist_ok=True)
         out = df.copy()
         out["date"] = pd.to_datetime(out["date"]).dt.date
         out = out.sort_values("date").drop_duplicates("date").reset_index(drop=True)
-        out.to_parquet(path, index=False)
+
+        tmp = path.with_suffix(f".{os.getpid()}.{uuid.uuid4().hex}.tmp")
+        try:
+            out.to_parquet(tmp, index=False)
+            os.replace(tmp, path)
+        finally:
+            tmp.unlink(missing_ok=True)
         atomic_write(self._sidecar(symbol), json.dumps({"_coverage": cov.to_json(coverage)}))
 
     def merge(self, symbol: str, fresh: pd.DataFrame, span: Span) -> pd.DataFrame:
-        existing = self.read(symbol)
-        combined = fresh if existing is None else pd.concat([existing, fresh], ignore_index=True)
-        self.write(symbol, combined, [*self.coverage(symbol), span])
-        return self.read(symbol) or combined
+        """Add a fetched span to the cache. Re-reads under the lock, so a
+        concurrent writer's bars are not lost."""
+        with locked(self.path(symbol)):
+            existing = self.read(symbol)
+            combined = (
+                fresh if existing is None else pd.concat([existing, fresh], ignore_index=True)
+            )
+            self.write(symbol, combined, [*self.coverage(symbol), span])
+            out = self.read(symbol)
+        return out if out is not None else combined
+
+    def record_empty_span(self, symbol: str, span: Span) -> None:
+        """Remember that a span was fetched and held nothing, so it isn't re-fetched.
+        Without this, 'never asked' and 'asked, nothing there' are the same state."""
+        with locked(self.path(symbol)):
+            existing = self.read(symbol)
+            frame = existing if existing is not None else pd.DataFrame(columns=PRICE_COLUMNS)
+            self.write(symbol, frame, [*self.coverage(symbol), span])
 
     def symbols(self) -> list[str]:
         d = self.root / "prices"
