@@ -403,6 +403,34 @@ handling is exercised on every commit rather than only when a provider happens t
 rate-limit us. `ConstantAgent` is a genuine baseline, not a stub: an agent that
 cannot beat a fixed score has shown nothing.
 
+`tests/test_agents.py` holds the conformance suite. It is parametrised over the
+registry and asserts that the registry and the suite's roster are the same set, so
+an adapter cannot be added without being held to the contract.
+
+### The in-process host
+
+`LLMAgent` is one adapter covering what used to be two. The old repo had a
+single-call agent that consumed a rendered dossier and a separate tool-loop
+analyst, duplicating prompt assembly, output parsing and usage collection — so the
+two could never be compared cleanly. Here `channel` picks `pack` or `tools` and
+nothing else changes, which is what makes switching it a measurement.
+
+* `agents/emit.py` is the only parser from model output to `View`. The old repo
+  coerced in three places with different field names and different silent drops,
+  so two agents could disagree because their parsers did. Scores are clamped
+  rather than rejected, since a model emitting 1.4 means "very positive" and the
+  adjustment is recorded. The schema also gives the model an explicit `abstain`,
+  because without one "no views" means both "no opinion" and "something broke".
+* `agents/llm.py` names provider failures. A rate limit, a policy refusal and a
+  prompt that didn't fit are three events, and the old pipeline reported all three
+  as an agent that produced no views. Some arrive as a *successful* response —
+  `finish_reason: content_filter` is a refusal, `length` is a truncation — so the
+  body is inspected too.
+
+Cost is `reported` only when the provider states it. There is no rate card in the
+tree, so `basis` stays `unknown` rather than quietly becoming an estimate that
+later gets summed with a measurement. Adding an estimator is a labelled change.
+
 ## 8. Artifacts
 
 Every level writes the same trio: `config.json` (asked), `lock.json`

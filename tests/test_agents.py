@@ -26,10 +26,32 @@ from fintel.models.decision import AgentResponse, View
 from fintel.models.trace import Usage, total
 from tests.test_environment import DAY, an_environment
 
+
+class AlwaysSubmits:
+    """A model that answers immediately, so the LLM adapter can be held to the
+    same contract as the others without a network or a key."""
+
+    model = "fake/model"
+
+    def complete(self, messages, *, tools=(), force_tool=None, max_tokens=None):
+        from fintel.agents.emit import SUBMIT_TOOL
+        from fintel.agents.llm import Completion, ToolCall
+
+        payload = {"views": [{"symbol": "AAPL", "score": 0.2, "rationale": "fine"}]}
+        return Completion(
+            tool_calls=(ToolCall(id="c1", name=SUBMIT_TOOL, arguments=payload),),
+            model=self.model,
+            finish_reason="tool_calls",
+        )
+
+
 # Every adapter the factory can build, with kwargs cheap enough to construct.
+# A new adapter added to the registry and not to this map fails the suite, which
+# is the point: conformance is inherited by existing, not opted into.
 CONFORMANT: dict[str, dict] = {
     "constant": {},
     "scripted": {},
+    "llm": {"llm": AlwaysSubmits(), "channel": "pack"},
 }
 
 
@@ -275,6 +297,15 @@ def test_the_valid_names_are_the_resolvable_ones():
     then fail to import. Deriving one from the other makes that impossible."""
     for name in agents.names():
         assert agents.build(name, **CONFORMANT.get(name, {})) is not None
+
+
+def test_every_registered_agent_is_held_to_the_contract():
+    """Guards the suite itself: registering an adapter without adding it here
+    would let it skip every conformance check above."""
+    assert set(agents.names()) == set(CONFORMANT), (
+        "adapters in the registry but not in CONFORMANT (or vice versa): "
+        f"{set(agents.names()) ^ set(CONFORMANT)}"
+    )
 
 
 def test_a_custom_adapter_needs_no_registry_entry():

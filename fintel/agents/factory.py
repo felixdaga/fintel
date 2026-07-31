@@ -16,6 +16,7 @@ from fintel.utils.import_path import resolve
 AGENTS: dict[str, str] = {
     "scripted": "fintel.agents.scripted:ScriptedAgent",
     "constant": "fintel.agents.scripted:ConstantAgent",
+    "llm": "fintel.agents.llm_agent:LLMAgent",
 }
 
 
