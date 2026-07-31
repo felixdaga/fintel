@@ -137,19 +137,45 @@ def test_no_legacy_imports():
     assert not violations, "imports from _legacy:\n" + "\n".join(violations)
 
 
+def _registries(mod) -> dict[str, dict[str, str]]:
+    """Upper-case `{name: "module:Attr"}` maps — a factory may keep several
+    (universes, schedules, sources) rather than one blessed BUILTINS."""
+    out = {}
+    for attr in dir(mod):
+        if not attr.isupper():
+            continue
+        value = getattr(mod, attr)
+        if (
+            isinstance(value, dict)
+            and value
+            and all(
+                isinstance(k, str) and isinstance(v, str) and ":" in v for k, v in value.items()
+            )
+        ):
+            out[attr] = value
+    return out
+
+
 @pytest.mark.parametrize("package", sorted(LAYERS))
-def test_factory_builtins_resolve(package: str):
-    """Every `module:Class` string in a factory's BUILTINS must import. This is
-    the check that would have caught the dangling `delorean.config` imports."""
+def test_factory_registries_resolve(package: str):
+    """Every `module:Attr` string a factory advertises must actually import.
+    This is the check that would have caught the dangling `delorean.config`."""
     try:
         mod = importlib.import_module(f"fintel.{package}.factory")
     except ModuleNotFoundError:
         pytest.skip(f"fintel.{package} has no factory")
-    builtins = getattr(mod, "BUILTINS", None)
-    if not isinstance(builtins, dict):
-        pytest.skip(f"fintel.{package}.factory has no BUILTINS dict")
     from fintel.utils.import_path import resolve
 
-    for name, target in builtins.items():
-        if isinstance(target, str):
-            assert resolve(target) is not None, f"{package}.{name} -> {target}"
+    registries = _registries(mod)
+    assert registries, f"fintel.{package}.factory advertises no name registry"
+    for name, registry in registries.items():
+        for key, target in registry.items():
+            assert resolve(target) is not None, f"{package}.{name}[{key}] -> {target}"
+
+
+def test_market_registers_its_schedule_builtins():
+    """Guard the guard: if a registry stops being discoverable the check above
+    silently degrades to a skip."""
+    from fintel.market import factory
+
+    assert set(_registries(factory)) == {"SCHEDULES"}
