@@ -33,7 +33,19 @@ LAYERS: dict[str, int] = {
 }
 
 # scoring/ and pit/ read artifacts; they must never reach into orchestration.
-FORBIDDEN: set[tuple[str, str]] = {("scoring", "evaluate"), ("pit", "evaluate")}
+#
+# agents/ is barred from market/ and pit/ even though the ladder would permit
+# both: an adapter that can build a DataSource or a Cutoff can fetch its own
+# data, and then its scores are not comparable with an adapter that went through
+# the clamped, recorded path. The old repo lost exactly this — one agent's
+# toolkit reached the live web while another had no web access at all, so a
+# comparison between them measured the evidence channel, not the agent.
+FORBIDDEN: set[tuple[str, str]] = {
+    ("scoring", "evaluate"),
+    ("pit", "evaluate"),
+    ("agents", "market"),
+    ("agents", "pit"),
+}
 
 
 def _modules() -> list[Path]:

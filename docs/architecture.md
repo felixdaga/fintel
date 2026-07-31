@@ -350,6 +350,59 @@ Deliberately *not* in the adapter: per-symbol fan-out. Four old adapters each
 grew their own `ThreadPoolExecutor` and progress plumbing. Cells are the
 platform's unit, so `evaluate/` fans out and an adapter only ever sees one cell.
 
+### Seven agents, two hosts
+
+The old repo's agents look like seven kinds of thing and are really points in a
+small cube: *where the code runs*, *how data arrives*, *how the answer returns*.
+Collapsed, only two hosts matter.
+
+* **In-process** — the LangGraph desks, the single-call HTTP agent, the
+  baselines. These consume `DataAccess` and tool objects directly, which is why
+  we do not copy Harbor's choice to subprocess its LangGraph adapter; Harbor does
+  that because its agents need a terminal and arbitrary dependencies.
+* **Subprocess CLI + MCP config** — OpenClaw and Claude Code. Same host, and
+  they differ only in config file format and whether the instruction arrives by
+  argv or stdin.
+
+`openclaw_per_ticker` was never a host, just fan-out. Scope lives on the `Cell`,
+so one adapter serves both single-name and portfolio instead of two config kinds.
+
+### What makes agents comparable
+
+Running one strategy against several agents is the product, so the axis that
+must not vary is the environment. Four things enforce that:
+
+1. **`agents/` cannot import `market/` or `pit/`.** Guarded in
+   `tests/test_architecture.py`. An adapter able to build a `DataSource` or a
+   `Cutoff` can fetch its own data, and then a comparison measures the evidence
+   channel instead of the agent. The old repo lost precisely this: one agent's
+   toolkit reached the live web while another had no web access at all.
+2. **Typed outcomes.** `Outcome` separates `abstained` and `refused` — real
+   answers — from `timeout`, `rate_limited`, `parse_error` and `crashed`. Only
+   `RETRYABLE` outcomes are retried, because re-rolling a refusal does not
+   recover an answer, it manufactures a different one. `AgentResponse` refuses to
+   be `ok` with no views, so the ambiguity the old runner lived with is
+   unrepresentable rather than merely discouraged.
+3. **A cost basis.** `Usage.basis` records whether a price was `reported` by the
+   provider or `estimated` from a rate card, and a sum of both degrades to
+   `mixed` and stops being `comparable`. A subprocess CLI usually gives tokens
+   but no price while an HTTP agent gives the real charge, so this is the normal
+   case, not an edge one. The old rollup stamped the total `authoritative`
+   whenever *any* leg reported a cost.
+4. **The channel is a platform knob.** Because tools and pack are two renderings
+   of one `DataAccess`, the same adapter can be run over either. The old code
+   could only ablate this *inside* one agent, via `evidence_mode`, so the
+   comparison never transferred to another agent.
+
+`agents/run.py:invoke` is the only place an agent is called and the only place an
+exception becomes an outcome. It never raises, because in the old runner an
+adapter exception aborted the whole date and erased every other symbol's work.
+
+`ScriptedAgent` can reach every outcome and every channel on demand, so error
+handling is exercised on every commit rather than only when a provider happens to
+rate-limit us. `ConstantAgent` is a genuine baseline, not a stub: an agent that
+cannot beat a fixed score has shown nothing.
+
 ## 8. Artifacts
 
 Every level writes the same trio: `config.json` (asked), `lock.json`
