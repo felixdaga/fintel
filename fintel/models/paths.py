@@ -1,0 +1,108 @@
+"""On-disk layout. Path conventions only — no reading, no parsing.
+
+runs/<job_id>/config.json result.json job.log
+              r1/config.json lock.json result.json run.log memory.jsonl
+                 trials/<date>/decision.json result.json trace/<cell>.jsonl
+              report/report.md report.json
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from datetime import date
+from pathlib import Path
+
+from fintel.models import ids
+
+
+@dataclass(frozen=True)
+class TrialPaths:
+    root: Path
+
+    @property
+    def decision(self) -> Path:
+        return self.root / "decision.json"
+
+    @property
+    def result(self) -> Path:
+        return self.root / "result.json"
+
+    @property
+    def trace_dir(self) -> Path:
+        return self.root / "trace"
+
+    def trace(self, cell: str) -> Path:
+        return self.trace_dir / f"{cell}.jsonl"
+
+
+@dataclass(frozen=True)
+class RunPaths:
+    root: Path
+
+    @property
+    def config(self) -> Path:
+        return self.root / "config.json"
+
+    @property
+    def lock(self) -> Path:
+        return self.root / "lock.json"
+
+    @property
+    def result(self) -> Path:
+        return self.root / "result.json"
+
+    @property
+    def log(self) -> Path:
+        return self.root / "run.log"
+
+    @property
+    def memory(self) -> Path:
+        return self.root / "memory.jsonl"
+
+    @property
+    def trials_dir(self) -> Path:
+        return self.root / "trials"
+
+    def trial(self, decision_date: date) -> TrialPaths:
+        return TrialPaths(root=self.trials_dir / ids.trial_id(decision_date))
+
+    def trial_dirs(self) -> list[Path]:
+        if not self.trials_dir.is_dir():
+            return []
+        return sorted(p for p in self.trials_dir.iterdir() if p.is_dir())
+
+
+@dataclass(frozen=True)
+class JobPaths:
+    root: Path
+
+    @classmethod
+    def under(cls, output_root: str | Path, job_id: str) -> JobPaths:
+        return cls(root=Path(output_root) / job_id)
+
+    @property
+    def config(self) -> Path:
+        return self.root / "config.json"
+
+    @property
+    def result(self) -> Path:
+        return self.root / "result.json"
+
+    @property
+    def log(self) -> Path:
+        return self.root / "job.log"
+
+    @property
+    def report_dir(self) -> Path:
+        return self.root / "report"
+
+    def run(self, k_index: int) -> RunPaths:
+        return RunPaths(root=self.root / f"r{k_index}")
+
+    def run_dirs(self) -> list[Path]:
+        if not self.root.is_dir():
+            return []
+        return sorted(
+            (p for p in self.root.iterdir() if p.is_dir() and p.name.startswith("r")),
+            key=lambda p: int(p.name[1:]) if p.name[1:].isdigit() else 0,
+        )
