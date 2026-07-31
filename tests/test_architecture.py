@@ -21,15 +21,15 @@ ROOT = Path(fintel.__file__).parent
 LAYERS: dict[str, int] = {
     "models": 0,
     "utils": 1,
-    "pit": 2,
-    "market": 2,
-    "environment": 3,
-    "agents": 4,
-    "strategy": 5,
-    "evaluate": 6,
-    "scoring": 7,
-    "report": 8,
-    "cli": 9,
+    "pit": 2,  # strictly below market: every source clamps through it
+    "market": 3,
+    "environment": 4,
+    "agents": 5,
+    "strategy": 6,
+    "evaluate": 7,
+    "scoring": 8,
+    "report": 9,
+    "cli": 10,
 }
 
 # scoring/ and pit/ read artifacts; they must never reach into orchestration.
@@ -123,6 +123,50 @@ def test_every_module_imports_cleanly():
         except Exception as exc:  # noqa: BLE001
             failures.append(f"{mod.name}: {type(exc).__name__}: {exc}")
     assert not failures, "import failures:\n" + "\n".join(failures)
+
+
+def _imports_symbol(path: Path, module: str, attr: str) -> bool:
+    """True if `path` reaches `module.attr`, written either way."""
+    tree = ast.parse(path.read_text(), filename=str(path))
+    full = f"{module}.{attr}"
+    for node in ast.walk(tree):
+        if isinstance(node, ast.ImportFrom) and node.module and node.level == 0:
+            if node.module == full:
+                return True
+            if node.module == module and any(a.name == attr for a in node.names):
+                return True
+        elif isinstance(node, ast.Import):
+            if any(a.name == full or a.name.startswith(full + ".") for a in node.names):
+                return True
+    return False
+
+
+# `market.realized` is the only module allowed to read past the decision date.
+# Anything the agent can reach must not be able to.
+AGENT_FACING_PACKAGES = {"environment", "agents", "pit"}
+
+
+def test_agent_facing_layers_cannot_read_realized_prices():
+    violations = [
+        str(path.relative_to(ROOT))
+        for path in _modules()
+        if _package_of(path) in AGENT_FACING_PACKAGES
+        and _imports_symbol(path, "fintel.market", "realized")
+    ]
+    assert not violations, "these import the unclamped scoring price path:\n" + "\n".join(
+        violations
+    )
+
+
+def test_the_realized_guard_can_actually_detect_a_violation(tmp_path):
+    """A guard nobody has seen fail is a guard nobody knows works."""
+    offender = tmp_path / "offender.py"
+    offender.write_text("from fintel.market.realized import PriceLookup\n")
+    assert _imports_symbol(offender, "fintel.market", "realized")
+    offender.write_text("from fintel.market import realized\n")
+    assert _imports_symbol(offender, "fintel.market", "realized")
+    offender.write_text("from fintel.market.data import store\n")
+    assert not _imports_symbol(offender, "fintel.market", "realized")
 
 
 def test_no_legacy_imports():

@@ -75,8 +75,12 @@ preset = "dow30"              # active constituents as of each decision date
 
 [[data]]
 kind = "prices"
-source = "massive_prices"
-params = { lookback_days = 365 }
+source = "massive_prices"     # swap for any source serving `prices`
+lookback_days = 365
+
+[[data]]
+kind = "fundamentals"
+source = "massive_fundamentals"
 
 [scoring]
 kpi = "single_name_ir"        # builtin name, or "mypkg.scoring:FactorNeutralIR"
@@ -89,37 +93,72 @@ ignored key. Unknown keys inside a `[[data]]` / `[universe]` / `[decision.schedu
 block are kept as `params` and handed to whatever the factory resolves — that is
 the extension seam, and it means a new source needs no schema change here.
 
-## 4. Data access — one path, two presentations
+## 4. The market library
+
+Three things are separable, and keeping them separate is what makes providers
+swappable:
+
+| | | |
+|---|---|---|
+| **kind** | what the agent asks for | `prices` |
+| **source** | who answers | `massive_prices`, `yfinance_prices`, `synthetic_prices` |
+| **fields** | what comes back | `open`, `high`, `low`, `close`, `volume` |
+
+`market/catalog.py` is the library: every source registers its kind, provider,
+field roster, accepted params and required env vars, so you can browse what
+exists before picking. `market.catalog.sources(kind="prices")` answers "what
+could serve this", and registering a `SourceInfo` adds to the library without
+editing the platform. A source with no declared fields is refused — an
+undocumented source can't be picked from a catalog.
+
+The manifest then binds kind → source, and the factory rejects a binding whose
+source serves a different kind, or params the source doesn't accept, before any
+agent asks a question and silently gets nothing.
+
+**Computed kinds** are sources like any other; they just declare
+`derives_from=("prices", "fundamentals")` instead of a vendor. The factory
+builds plain sources first, then injects the upstreams. Upstream kinds must be
+bound explicitly in the same manifest — defaulting them would let a package's
+ratios quietly change provider.
 
 ```
-DataSource.fetch(query, as_of)          kind-keyed, PIT-clamped
+DataSource.fetch(query, cutoff)         kind-keyed, PIT-clamped
         │
-   environment/access.py                the ONE data path
+   environment/access.py                the ONE agent-facing data path
         ├── mcp/            get_data(kind, **q) + per-kind tools, generated
-        │                   from the run's declared data bindings
+        │                   from the run's declared bindings
         └── evidence/       pre-rendered text pack for non-tool agents
 ```
 
-Nothing downstream hardcodes a kind name. A package that ships its own
-`DataSource` for a novel kind gets caching, PIT, a tool, and an evidence
-section without touching the platform.
+`fetch` takes a `Cutoff`, never a bare date, so a source cannot be called
+without the point-in-time boundary and the boundary can't be mistaken for an
+ordinary parameter.
+
+### The one deliberate exception
+
+Scoring must read *after* the decision date — that's the measurement.
+`market/realized.py` is the only module allowed to, and it is deliberately
+separate: different module, different name (`PriceLookup.price_at`, not
+`fetch`), and a test forbidding `environment/`, `agents/` and `pit/` from
+importing it. In the old code the clamped and unclamped paths were two methods
+on one class, one typo apart.
 
 ## 5. Layers
 
 Imports flow one way only. Enforced by `tests/test_architecture.py`.
 
 ```
-L0  models/       pure schemas. no I/O.
-L1  utils/        generic. no domain knowledge.
-L2  pit/          the platform guarantee: clamp + trace audit
-    market/       universes, schedule, data catalog, valuation
-L3  environment/  session, access, mcp, evidence, isolation
-L4  agents/       adapters + agent-side context
-L5  strategy/     package load, lock, preflight
-L6  evaluate/     job, run, trial, cell, queue, store
-L7  scoring/      KPI protocol + generic ensemble harness + builtins
-L8  report/       renderers
-L9  cli/          parse flags, build config, call evaluate. nothing else.
+L0   models/       pure schemas. no I/O.
+L1   utils/        generic. no domain knowledge.
+L2   pit/          the platform guarantee: clamp + audit
+L3   market/       calendar, universes, schedules, data catalog, realized prices
+L4   environment/  session, access, mcp, evidence, isolation
+L5   agents/       adapters + agent-side context
+L6   strategy/     package load, lock, preflight
+L7   evaluate/     job, run, trial, cell, queue, store
+L8   scoring/      KPI protocol + generic ensemble harness + builtins
+L9   report/       renderers
+L10  cli/          parse flags, build config, call evaluate. nothing else.
 ```
 
 `scoring/` reads artifacts, never imports `evaluate/`. That keeps it pure and
@@ -127,11 +166,19 @@ re-runnable against finished runs.
 
 ## 6. Extension points
 
-One shape everywhere: a `factory.py` with a builtin `{name: "module:Class"}`
-map plus `module:Class` import-path resolution, via `utils/import_path.build`.
-The live path must go through it — a factory nothing calls is a dead factory.
+Two shapes, both resolving `module:Callable` through `utils/import_path`:
 
-`strategy` · `market.data` · `market.universe` · `market.schedule` ·
+- **Catalog registration** for things you browse before choosing — data sources
+  and universes. Carries metadata, so `--list-sources` is possible.
+- **A `factory.py` name map** for things chosen structurally — schedules, agents,
+  KPIs, environments.
+
+Either way the live path goes through the same resolver, and a custom callable
+receives its declared params plus `config=` only if it asks for one — so a
+trivial extension stays trivial while a cache-backed one still gets the cache
+root.
+
+`strategy` · `market.catalog` (sources, universes) · `market.schedule` ·
 `environment` · `agents` · `scoring` · `environment.evidence`
 
 ## 7. Artifacts
@@ -180,8 +227,11 @@ previous attempt drift.
 5. `scoring/` and `pit/` never import `evaluate/`.
 6. No scoring change merges without the ICIR reference test passing.
 7. One naming scheme per identity, in `models/ids.py`.
-8. Every `module:Class` in a factory's `BUILTINS` resolves.
+8. Every `module:Callable` a factory or the catalog advertises resolves.
 9. Nothing outside `_legacy/` imports `_legacy/`.
+10. Only `market/realized.py` may read past the decision date, and nothing
+    agent-facing may import it.
+11. Every registered data source declares its fields.
 
 ## 10. Not yet wired
 
@@ -197,3 +247,8 @@ missing one — it reads as finished.
 | `initial_cash`, `cost_bps` on the manifest | There is no execution engine to consume them. |
 | **`EnvironmentSpec`** / isolation options in `JobConfig` | `environment/factory.py` exists. Until then slot sizing has no home and shouldn't get a placeholder. |
 | **Memory levels** beyond what an adapter uses | With capabilities agent-owned, the old `off/log/agent_authored/feedback` ladder is an agent concern. `agent_authored` was accepted in config and raised at runtime in the old repo — don't reintroduce that shape. |
+| **Valuation ratios** as a computed kind | The composition seam is built and tested; the port is ~600 lines of pure TTM math (`valuation/ratios.py`, with a `RATIO_FIELDS` roster that becomes the catalog field list). Deliberately a separate step so the math can be diffed against the original rather than paraphrased. |
+| **`yfinance_prices`** | One `SourceInfo` plus a bars fetcher writing to the same `PriceStore`. The seam is proven by a second registered `prices` source in the tests; this is the real vendor, and it wants a network test to be worth anything. |
+| **`filing_text`, `news_sentiment`, `web_search`** | All three exist in the old repo and none are agent-reachable yet, since `environment/access.py` is what exposes a kind. Port alongside that layer, not before. |
+| **Symbol renames** (`META`/`FB` pre-2022-06-09) | The old code handled this with a SPLICE map in study scripts, so the runtime path silently served garbage for pre-rename `META`. Belongs in the data layer, once there's a rename table to key it on. |
+| **Index weights** | The constituents dataset carries membership only. `UniverseReport.weights_available` is `False` and nothing pretends otherwise; a price/cap-weighted benchmark needs a different source. |
