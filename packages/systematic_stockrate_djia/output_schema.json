@@ -1,0 +1,113 @@
+{
+  "$defs": {
+    "SourceRef": {
+      "description": "A pointer the agent uses to cite which datum influenced a view.\n\nUsed downstream (Layer 2) for pitfall mining: \"the agent claimed X\nbecause of source Y; was Y actually informative?\"",
+      "properties": {
+        "source_type": {
+          "enum": [
+            "price",
+            "news",
+            "filing",
+            "fundamentals",
+            "ratios",
+            "news_sentiment",
+            "transcript",
+            "memory",
+            "web_search",
+            "other"
+          ],
+          "title": "Source Type",
+          "type": "string"
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "relevance": {
+          "default": 1.0,
+          "maximum": 1.0,
+          "minimum": 0.0,
+          "title": "Relevance",
+          "type": "number"
+        },
+        "excerpt": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Excerpt"
+        }
+      },
+      "required": [
+        "source_type",
+        "source_id"
+      ],
+      "title": "SourceRef",
+      "type": "object"
+    }
+  },
+  "description": "A qualitative opinion the agent expresses about one symbol.\n\nThe signal layer is the only thing that interprets these. It decides\nhow scores map to weights, what conviction means for sizing, and which\nconstraints apply.",
+  "properties": {
+    "symbol": {
+      "title": "Symbol",
+      "type": "string"
+    },
+    "score": {
+      "maximum": 1.0,
+      "minimum": -1.0,
+      "title": "Score",
+      "type": "number"
+    },
+    "conviction": {
+      "default": 0.5,
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Conviction",
+      "type": "number"
+    },
+    "time_horizon": {
+      "default": "quarter",
+      "enum": [
+        "day",
+        "week",
+        "month",
+        "quarter",
+        "year",
+        "multi_year"
+      ],
+      "title": "Time Horizon",
+      "type": "string"
+    },
+    "rationale": {
+      "default": "",
+      "title": "Rationale",
+      "type": "string"
+    },
+    "key_factors": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Key Factors",
+      "type": "array"
+    },
+    "sources_cited": {
+      "items": {
+        "$ref": "#/$defs/SourceRef"
+      },
+      "title": "Sources Cited",
+      "type": "array"
+    }
+  },
+  "required": [
+    "symbol",
+    "score"
+  ],
+  "title": "View",
+  "type": "object",
+  "$comment": "This is the submit_views output contract every agent implementation must satisfy (delorean.models.types.View, generated via View.model_json_schema() -- see ADR-007's agent-ownership table: the output contract is Strategy Package-owned because the analytics pipeline downstream depends on it, not any one agent)."
+}

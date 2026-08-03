@@ -24,7 +24,20 @@ Channel = str  # "tools" | "pack" | "direct"
 
 @runtime_checkable
 class Agent(Protocol):
-    """A decision-maker for one cell."""
+    """A decision-maker for one cell.
+
+    Standard requirements every adapter must satisfy (enforced by preflight /
+    conformance, not by this Protocol's structural type):
+
+      * ``mission_text`` / ``output_schema_text`` — accept the strategy pack's
+        content (builtins declare the fields; custom adapters may ignore).
+      * ``pit_enforcement`` — ``"access"`` (in-process: all reads via
+        ``env.access``) or ``"cli_deny"`` (subprocess: apply the platform PIT
+        deny list + isolate the fintel MCP server at launch). Missing or
+        unknown values fail preflight.
+      * ``preflight_checks`` — optional classmethod; problems fail the job
+        before any cell runs.
+    """
 
     name: str
     version: str

@@ -417,3 +417,84 @@ def test_the_prompt_tells_the_model_its_memory_postdates_the_date(tmp_path):
     system = fake.calls[0]["messages"][0]["content"]
     assert "postdates the decision date" in system
     assert "empty" in system and "failed" in system
+
+
+# ── strategy pack mission + output schema ───────────────────────────────────
+
+
+def test_a_pack_mission_replaces_the_generic_fallback(tmp_path):
+    fake = Fake(submitted())
+    agent = LLMAgent(llm=fake, channel="pack", mission_text="Be a momentum analyst.")
+    agents.invoke(agent, an_environment(tmp_path))
+    system = fake.calls[0]["messages"][0]["content"]
+    assert "Be a momentum analyst." in system
+    assert "equity analyst. Judge" not in system  # the generic MISSION fallback
+
+
+def test_no_pack_mission_falls_back_to_the_generic_default(tmp_path):
+    fake = Fake(submitted())
+    agents.invoke(LLMAgent(llm=fake, channel="pack"), an_environment(tmp_path))
+    system = fake.calls[0]["messages"][0]["content"]
+    assert "equity analyst. Judge" in system
+
+
+def test_the_output_schema_reaches_the_pack_channel_prompt(tmp_path):
+    fake = Fake(submitted())
+    agent = LLMAgent(llm=fake, channel="pack", output_schema_text='{"score": "..."}')
+    agents.invoke(agent, an_environment(tmp_path))
+    user = fake.calls[0]["messages"][1]["content"]
+    assert "## Output schema" in user
+    assert '{"score": "..."}' in user
+
+
+def test_the_output_schema_reaches_the_tools_channel_prompt(tmp_path):
+    fake = Fake(submitted())
+    agent = LLMAgent(llm=fake, channel="tools", output_schema_text="see mission.md")
+    agents.invoke(agent, an_environment(tmp_path))
+    user = fake.calls[0]["messages"][1]["content"]
+    assert "## Output schema" in user
+    assert "see mission.md" in user
+
+
+def test_no_output_schema_means_no_schema_block(tmp_path):
+    fake = Fake(submitted())
+    agents.invoke(LLMAgent(llm=fake, channel="pack"), an_environment(tmp_path))
+    user = fake.calls[0]["messages"][1]["content"]
+    assert "## Output schema" not in user
+
+
+def test_the_tools_channel_prompt_carries_a_rendered_tools_manual(tmp_path):
+    """On top of the native `tools=` schemas, the tools channel gets a prose
+    manual — the task-level framing a bare JSON schema doesn't carry."""
+    fake = Fake(asked("get_prices", symbol="AAPL"), submitted())
+    env = an_environment(tmp_path, kinds=("prices",))
+    agents.invoke(LLMAgent(llm=fake, channel="tools"), env)
+    user = fake.calls[0]["messages"][1]["content"]
+    assert "## Tools" in user
+    assert "get_prices" in user
+
+
+def test_the_pack_channel_prompt_has_no_tools_manual(tmp_path):
+    """It has no tools to call, so it shouldn't be told about any."""
+    fake = Fake(submitted())
+    agents.invoke(LLMAgent(llm=fake, channel="pack"), an_environment(tmp_path, kinds=("prices",)))
+    user = fake.calls[0]["messages"][1]["content"]
+    assert "## Tools" not in user
+
+
+# ── preflight ─────────────────────────────────────────────────────────────────
+
+
+def test_llm_preflight_passes_with_a_prebuilt_client():
+    assert LLMAgent.preflight_checks(llm=Fake()) == []
+
+
+def test_llm_preflight_flags_a_missing_api_key(monkeypatch):
+    monkeypatch.delenv("OPENROUTER_API_KEY", raising=False)
+    problems = LLMAgent.preflight_checks()
+    assert problems and "OPENROUTER_API_KEY" in problems[0]
+
+
+def test_llm_preflight_passes_with_an_api_key_set(monkeypatch):
+    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-test")
+    assert LLMAgent.preflight_checks() == []

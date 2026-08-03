@@ -1,9 +1,5 @@
-"""Installed CLI agents: OpenClaw and Claude Code.
-
-One host underneath (SubprocessAgent), one transport (the fintel MCP server),
-two thin adapters that differ only in argv and config-file format. The
-one-cell-per-process rule is structural: the MCP server is a stdio subprocess
-that dies with the CLI, so a reused gateway cannot keep serving the first cell.
+"""Installed agents: CLI hosts (OpenClaw, Claude Code) and in-process desks
+that ship as named adapters (Optimized).
 """
 
 from fintel.agents.base import (
@@ -25,6 +21,7 @@ from fintel.agents.installed.base import (
 )
 from fintel.agents.installed.claude_code import ClaudeCodeAgent
 from fintel.agents.installed.openclaw import OpenClawAgent
+from fintel.agents.installed.optimized import OptimizedFintelAgent
 
 __all__ = [
     "ERROR_PATTERNS",
@@ -36,6 +33,7 @@ __all__ = [
     "ErrorPattern",
     "MalformedOutput",
     "OpenClawAgent",
+    "OptimizedFintelAgent",
     "ProviderUnavailable",
     "RateLimited",
     "SafetyRefusal",

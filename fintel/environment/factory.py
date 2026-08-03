@@ -19,10 +19,12 @@ from fintel.environment.access import DataAccess
 from fintel.environment.base import Environment
 from fintel.environment.cell import Cell
 from fintel.environment.policy import AccessPolicy, PolicyBuilder
+from fintel.environment.progress import Progress
 from fintel.environment.session import SessionDir
 from fintel.environment.tools import ToolSurface
 from fintel.environment.trace import AccessLog
 from fintel.market.data.base import DataSource
+from fintel.market.settings import MarketConfig
 from fintel.models.common import DecisionScope, Symbol
 
 
@@ -99,12 +101,17 @@ def build_environment(
     kinds: tuple[str, ...] | None = None,
     peers: bool = False,
     runtime: RuntimeConfig | None = None,
+    market_config: MarketConfig | None = None,
+    nerve: Progress | None = None,
 ) -> Environment:
     """Assemble one cell's environment.
 
     `kinds` defaults to whatever is bound, so a caller can't accidentally grant a
     kind the strategy didn't declare — the policy is built from the declaration,
     and `DataAccess.kinds` is the intersection with what's actually bound.
+
+    `market_config` is carried so a subprocess MCP server can rebuild against
+    the same cache the orchestrator used (written into bindings.json).
     """
     runtime = runtime or RuntimeConfig()
     policy = build_policy(
@@ -134,4 +141,6 @@ def build_environment(
             bound={kind: getattr(src, "name", "") for kind, src in sources.items()},
         ),
         session=session,
+        market_config=market_config,
+        nerve=nerve,
     )

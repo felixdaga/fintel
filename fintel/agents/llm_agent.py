@@ -15,11 +15,12 @@ from __future__ import annotations
 import uuid
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
-from typing import Any
+from typing import Any, ClassVar
 
-from fintel.agents import emit
+from fintel.agents import emit, prompts
 from fintel.agents.base import MalformedOutput
 from fintel.agents.llm import LLM, Completion, as_tool_spec
+from fintel.agents.pit_policy import PitEnforcement
 from fintel.environment import Environment
 from fintel.models.common import Outcome
 from fintel.models.decision import AgentResponse
@@ -54,10 +55,17 @@ class LLMAgent:
     model: str | None = None
     channel: str = "pack"
     mission: str = MISSION
+    # The strategy pack's mission.md / output_schema.json, wired in by
+    # `simulate.cell.build_agent`. `mission` above is the generic fallback used
+    # only when no pack mission is supplied (e.g. bare unit tests).
+    mission_text: str = ""
+    output_schema_text: str = ""
     max_rounds: int = 6
     max_tokens: int | None = 4000
     name: str = "llm"
     version: str = "1"
+    # Standard adapter requirement: no native tool surface; PIT is access.
+    pit_enforcement: ClassVar[PitEnforcement] = "access"
     steps: list[TraceStep] = field(default_factory=list, init=False)
 
     def __post_init__(self) -> None:
@@ -67,6 +75,18 @@ class LLMAgent:
             self.llm = OpenRouter.from_env(self.model)
         if self.channel not in ("pack", "tools"):
             raise ValueError(f"channel must be 'pack' or 'tools', not {self.channel!r}")
+
+    @staticmethod
+    def preflight_checks(**params: Any) -> list[str]:
+        """No key needed if the caller supplies a pre-built `llm` client
+        (tests, or a custom provider) — only `OpenRouter.from_env` needs one."""
+        import os
+
+        if params.get("llm") is not None:
+            return []
+        if not os.environ.get("OPENROUTER_API_KEY"):
+            return ["OPENROUTER_API_KEY is not set; the llm agent cannot call OpenRouter"]
+        return []
 
     def decide(self, env: Environment) -> AgentResponse:
         self.steps = []
@@ -82,22 +102,44 @@ class LLMAgent:
 
     # ── channels ────────────────────────────────────────────────────────────
 
+    def _system_prompt(self) -> str:
+        """The strategy's own mission if the pack supplied one, else the
+        generic fallback (bare unit tests, or a package with no mission.md)."""
+        body = self.mission_text.strip() or self.mission
+        return f"{body}\n\n{RULES}"
+
+    def _schema_block(self) -> str:
+        if not self.output_schema_text.strip():
+            return ""
+        return f"\n\n## Output schema (from the strategy pack)\n{self.output_schema_text.strip()}"
+
     def _one_shot(
         self, env: Environment, symbols: tuple[str, ...], submit: dict
     ) -> tuple[dict | None, str]:
-        """Everything up front, one forced call. The floor for a reading agent."""
+        """Everything up front, one forced call. The floor for a reading agent.
+
+        No tools manual here: the pack channel has no tools to call, so listing
+        them would promise a capability this delivery doesn't have.
+        """
         messages = [
-            {"role": "system", "content": f"{self.mission}\n\n{RULES}"},
+            {"role": "system", "content": self._system_prompt()},
             {
                 "role": "user",
                 "content": (
                     f"Decision date: {env.cell.decision_date.isoformat()}.\n"
                     f"Score: {', '.join(symbols)}.\n\n"
                     f"{env.evidence(symbol=symbols[0] if len(symbols) == 1 else None)}"
+                    f"{self._schema_block()}"
                 ),
             },
         ]
         completion = self._call(messages, tools=(submit,), force_tool=emit.SUBMIT_TOOL)
+        if env.nerve is not None:
+            env.nerve.emit(
+                "agent_stage", cell=env.cell.name,
+                decision_date=env.cell.decision_date.isoformat(),
+                stage="one_shot", text=""
+            )
         call = completion.call_named(emit.SUBMIT_TOOL)
         if call is None:
             raise MalformedOutput(
@@ -109,20 +151,29 @@ class LLMAgent:
     def _tool_loop(
         self, env: Environment, symbols: tuple[str, ...], submit: dict
     ) -> tuple[dict | None, str]:
-        """The model asks for what it wants, within a bounded number of rounds."""
+        """The model asks for what it wants, within a bounded number of rounds.
+
+        The tools are also passed natively via `tools=` below, which is what
+        actually governs what the model can call; the rendered manual in the
+        user message adds the task-level "how to use these together" framing
+        that a bare JSON schema per tool doesn't carry.
+        """
         data_tools = [
             as_tool_spec(spec.name, spec.description, spec.schema)
             for spec in env.tools.descriptors()
         ]
         tools = (*data_tools, submit)
+        manual = prompts.render_tools(env.tools.descriptors())
         messages: list[dict] = [
-            {"role": "system", "content": f"{self.mission}\n\n{RULES}"},
+            {"role": "system", "content": self._system_prompt()},
             {
                 "role": "user",
                 "content": (
                     f"Decision date: {env.cell.decision_date.isoformat()}.\n"
-                    f"Score: {', '.join(symbols)}.\n"
+                    f"Score: {', '.join(symbols)}.\n\n"
+                    f"## Tools\n{manual}\n\n"
                     f"Gather the evidence you need with the tools, then submit."
+                    f"{self._schema_block()}"
                 ),
             },
         ]
@@ -136,6 +187,15 @@ class LLMAgent:
                 # so a model that would browse forever still returns something.
                 force_tool=emit.SUBMIT_TOOL if last_round else None,
             )
+            if env.nerve is not None:
+                env.nerve.emit(
+                    "agent_stage",
+                    cell=env.cell.name,
+                    decision_date=env.cell.decision_date.isoformat(),
+                    stage="round",
+                    round=round_index + 1,
+                    text=(completion.text or "")[:80],
+                )
             submitted = completion.call_named(emit.SUBMIT_TOOL)
             if submitted is not None:
                 return submitted.arguments, ""
@@ -147,11 +207,31 @@ class LLMAgent:
                 continue
             messages.append(self._assistant_turn(completion))
             for call in completion.tool_calls:
+                if env.nerve is not None:
+                    env.nerve.emit(
+                        "agent_tool_call",
+                        cell=env.cell.name,
+                        decision_date=env.cell.decision_date.isoformat(),
+                        tool=call.name,
+                        args=str(call.arguments)[:120],
+                    )
+                payload = env.tools.call(call.name, call.arguments)
+                if env.nerve is not None:
+                    env.nerve.emit(
+                        "agent_tool_result",
+                        cell=env.cell.name,
+                        decision_date=env.cell.decision_date.isoformat(),
+                        tool=call.name,
+                        ok=(payload.get("status") != "failed"),
+                        text=(payload.get("detail") or "")[:80]
+                        if payload.get("status") == "failed"
+                        else "",
+                    )
                 messages.append(
                     {
                         "role": "tool",
                         "tool_call_id": call.id,
-                        "content": self._render(env.tools.call(call.name, call.arguments)),
+                        "content": self._render(payload),
                     }
                 )
         return None, f"no answer after {self.max_rounds} rounds"

@@ -351,6 +351,14 @@ def _ratio_fields() -> tuple[Field, ...]:
         if name in {"filing_date", "period_end"}:
             dtype = "date"
         out.append(Field(name, dtype, description, unit))
+    out.append(Field("date", "date", "Trading day of the latest snapshot in entries"))
+    out.append(
+        Field(
+            "entries",
+            "list",
+            "Daily ratio snapshots (oldest→newest), one per trading day in the lookback",
+        )
+    )
     return tuple(out)
 
 
@@ -427,11 +435,18 @@ def register_builtins() -> None:
                 # The strategy owns the window: two readings in one run must mean
                 # the same thing.
                 Param("window_days", "number", 365, "Trailing window length", per_call=False),
+                Param(
+                    "lookback_days",
+                    "number",
+                    365,
+                    "Calendar days of daily ratio history to serve",
+                ),
                 Param("filings_lookback_days", "number", 1460),
             ),
             derives_from=("prices", "fundamentals"),
             description=(
-                "Trailing valuation, profitability and leverage ratios. Uses the "
+                "Daily trailing valuation, profitability and leverage ratios "
+                "(Delorean-shaped history: one entry per trading day). Uses the "
                 "annual+delta trailing formula, not a naive 4-quarter sum."
             ),
         ),

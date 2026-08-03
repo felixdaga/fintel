@@ -43,6 +43,42 @@ class MarketConfig:
             brave_api_key=os.environ.get(ENV_BRAVE_KEY) or None,
         )
 
+    def to_dict(self, *, secrets: bool = False) -> dict:
+        """Serialize for bindings.json. Keys stay out of the session dir by
+        default (session layout forbids secrets); the MCP subprocess picks them
+        up from its own env block instead."""
+        data = {
+            "cache_root": str(self.cache_root),
+            "offline": self.offline,
+        }
+        if secrets:
+            if self.massive_api_key:
+                data["massive_api_key"] = self.massive_api_key
+            if self.brave_api_key:
+                data["brave_api_key"] = self.brave_api_key
+        return data
+
+    @classmethod
+    def from_dict(cls, data: dict | None) -> MarketConfig:
+        """Rebuild from bindings.json. Missing keys fall back to the process
+        env — what the OpenClaw MCP server env block already injects."""
+        data = data or {}
+        if "cache_root" not in data:
+            raise ValueError(
+                "bindings.json is missing config.cache_root; the orchestrator "
+                "must persist MarketConfig before launching a subprocess agent"
+            )
+        return cls(
+            cache_root=Path(data["cache_root"]).expanduser(),
+            offline=bool(data.get("offline", False)),
+            massive_api_key=data.get("massive_api_key")
+            or os.environ.get(ENV_MASSIVE_KEY)
+            or None,
+            brave_api_key=data.get("brave_api_key")
+            or os.environ.get(ENV_BRAVE_KEY)
+            or None,
+        )
+
     def dir(self, *parts: str) -> Path:
         p = self.cache_root.joinpath(*parts)
         p.mkdir(parents=True, exist_ok=True)

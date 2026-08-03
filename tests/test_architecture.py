@@ -26,13 +26,14 @@ LAYERS: dict[str, int] = {
     "environment": 4,
     "agents": 5,
     "strategy": 6,
-    "evaluate": 7,
-    "scoring": 8,
-    "report": 9,
-    "cli": 10,
+    "simulate": 7,  # the simulation: job → run → trial → cell → decisions
+    "evaluate": 8,  # the evaluation: scoring + report over finished runs (not yet wired)
+    "cli": 9,
 }
 
-# scoring/ and pit/ read artifacts; they must never reach into orchestration.
+# evaluate/ (scoring) and pit/ read artifacts; they must never reach into the
+# simulation. (evaluate/ is not yet wired, but the guard is in place for when it
+# lands.)
 #
 # agents/ is barred from market/ and pit/ even though the ladder would permit
 # both: an adapter that can build a DataSource or a Cutoff can fetch its own
@@ -41,8 +42,8 @@ LAYERS: dict[str, int] = {
 # toolkit reached the live web while another had no web access at all, so a
 # comparison between them measured the evidence channel, not the agent.
 FORBIDDEN: set[tuple[str, str]] = {
-    ("scoring", "evaluate"),
-    ("pit", "evaluate"),
+    ("evaluate", "simulate"),
+    ("pit", "simulate"),
     ("agents", "market"),
     ("agents", "pit"),
 }

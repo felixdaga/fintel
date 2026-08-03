@@ -1,7 +1,7 @@
 """On-disk layout. Path conventions only — no reading, no parsing.
 
 runs/<job_id>/config.json result.json job.log
-              r1/config.json lock.json result.json run.log memory.jsonl
+              r1/config.json lock.json fingerprint.json result.json run.log memory.jsonl
                  trials/<date>/decision.json result.json
                                cells/<cell>.json      one writer each
                                trace/<cell>.jsonl     one writer each
@@ -74,6 +74,18 @@ class RunPaths:
         return self.root / "result.json"
 
     @property
+    def fingerprint(self) -> Path:
+        """The agent's identity for this run: model, channel, prompt hash. The
+        strategy's own identity is `lock`; together they pin what produced it."""
+        return self.root / "fingerprint.json"
+
+    @property
+    def echo(self) -> Path:
+        """The run echo: every input gathered before any cell runs. See
+        `environment/echo.py` — printed at run start and persisted here."""
+        return self.root / "echo.json"
+
+    @property
     def log(self) -> Path:
         return self.root / "run.log"
 
@@ -125,6 +137,12 @@ class JobPaths:
         if not self.root.is_dir():
             return []
         return sorted(
-            (p for p in self.root.iterdir() if p.is_dir() and p.name.startswith("r")),
-            key=lambda p: int(p.name[1:]) if p.name[1:].isdigit() else 0,
+            (
+                p
+                for p in self.root.iterdir()
+                if p.is_dir()
+                and p.name.startswith("r")
+                and p.name[1:].isdigit()  # r1, r2, … — not "report" or "result"
+            ),
+            key=lambda p: int(p.name[1:]),
         )

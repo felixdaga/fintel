@@ -5,7 +5,7 @@ from __future__ import annotations
 from pydantic import BaseModel, ConfigDict, Field
 
 from fintel.models.agent import AgentSpec
-from fintel.models.common import DecisionScope, Status, Symbol
+from fintel.models.common import DecisionScope, HealthStatus, Status, Symbol
 from fintel.models.market import DataBinding, ScheduleRef, UniverseRef
 from fintel.models.strategy import ScoringSpec
 from fintel.models.trace import Usage
@@ -78,4 +78,5 @@ class RunResult(BaseModel):
     n_views: int = 0
     trials: list[TrialResult] = Field(default_factory=list)
     usage: Usage = Field(default_factory=Usage)
+    health: HealthStatus = "ok"
     error: str | None = None

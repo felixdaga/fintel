@@ -7,7 +7,15 @@ from functools import reduce
 
 from pydantic import BaseModel, ConfigDict, Field
 
-from fintel.models.common import PORTFOLIO_CELL, DecisionScope, Status, Symbol
+from fintel.models.common import (
+    PORTFOLIO_CELL,
+    DecisionScope,
+    HealthStatus,
+    Outcome,
+    Status,
+    Symbol,
+)
+from fintel.models.decision import View
 from fintel.models.trace import Usage
 
 
@@ -33,6 +41,33 @@ class CellResult(BaseModel):
     duration_ms: int = 0
     usage: Usage = Field(default_factory=Usage)
     error: str | None = None
+    health: HealthStatus = "ok"
+    health_issues: list[str] = Field(default_factory=list)
+
+
+class CellRecord(BaseModel):
+    """The rich on-disk record for one cell: `runs/<job>/rK/trials/<date>/cells/<cell>.json`.
+
+    `CellResult` is the reduced form the trial/run/job roll up; `CellRecord` is
+    the full per-cell artifact a reviewer reads — the outcome, the views (with
+    their cited sources), the usage, the environment summary and health, and
+    timing. Promoting it from a raw dict to a model gives a typed round-trip
+    (the views' `sources_cited` survive a read-back as `SourceRef`, not bare
+    dicts) and one schema to point the CLI's reader at.
+    """
+
+    cell: str
+    symbols: list[Symbol]
+    decision_date: str
+    scope: DecisionScope
+    outcome: Outcome
+    detail: str = ""
+    n_views: int = 0
+    usage: Usage = Field(default_factory=Usage)
+    views: dict[Symbol, View] = Field(default_factory=dict)
+    environment: dict = Field(default_factory=dict)
+    elapsed_ms: int = 0
+    started_at: str = ""
 
 
 class TrialConfig(BaseModel):
@@ -62,6 +97,7 @@ class TrialResult(BaseModel):
     finished_at: str | None = None
     duration_ms: int = 0
     error: str | None = None
+    health: HealthStatus = "ok"
 
     @property
     def usage(self) -> Usage:

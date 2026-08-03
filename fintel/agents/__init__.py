@@ -19,17 +19,26 @@ from fintel.agents.base import (
     RateLimited,
     SafetyRefusal,
 )
-from fintel.agents.factory import AGENTS, build, names, register
+from fintel.agents.factory import AGENTS, build, names, preflight, register
 from fintel.agents.fingerprint import Fingerprint, fingerprint
 from fintel.agents.llm import LLM, Completion, OpenRouter, ToolCall
 from fintel.agents.llm_agent import LLMAgent
+from fintel.agents.pit_policy import (
+    CLAUDE_CODE_DENY,
+    FINTEL_MCP_SERVER,
+    OPENCLAW_DENY,
+    PitEnforcement,
+)
 from fintel.agents.run import classify, invoke
 from fintel.agents.scripted import ConstantAgent, ScriptedAgent
 
 __all__ = [
     "AGENTS",
+    "CLAUDE_CODE_DENY",
+    "FINTEL_MCP_SERVER",
     "Fingerprint",
     "LLM",
+    "OPENCLAW_DENY",
     "Abstained",
     "Agent",
     "AgentError",
@@ -41,6 +50,7 @@ __all__ = [
     "LLMAgent",
     "MalformedOutput",
     "OpenRouter",
+    "PitEnforcement",
     "ProviderUnavailable",
     "RateLimited",
     "SafetyRefusal",
@@ -51,5 +61,6 @@ __all__ = [
     "fingerprint",
     "invoke",
     "names",
+    "preflight",
     "register",
 ]

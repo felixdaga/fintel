@@ -17,6 +17,9 @@ AGENTS: dict[str, str] = {
     "scripted": "fintel.agents.scripted:ScriptedAgent",
     "constant": "fintel.agents.scripted:ConstantAgent",
     "llm": "fintel.agents.llm_agent:LLMAgent",
+    "optimized": "fintel.agents.installed.optimized:OptimizedFintelAgent",
+    "openclaw": "fintel.agents.installed.openclaw:OpenClawAgent",
+    "claude-code": "fintel.agents.installed.claude_code:ClaudeCodeAgent",
 }
 
 
@@ -46,3 +49,61 @@ def build(name: str, **params: Any) -> Agent:
         return cls(**params)
     except TypeError as exc:
         raise TypeError(f"cannot build agent {name!r} with {sorted(params)}: {exc}") from exc
+
+
+def preflight(name: str, **params: Any) -> list[str]:
+    """Whether a named agent can actually run, without building or invoking it.
+
+    Always checks the standard adapter requirements (``pit_enforcement`` must
+    be ``access`` or ``cli_deny``), then the adapter's own ``preflight_checks``
+    hook if it declares one. An adapter with no hook still has to declare PIT
+    enforcement — that is not optional.
+    """
+    target = AGENTS.get(name, name if ":" in name else None)
+    if target is None:
+        return [f"unknown agent {name!r}. Available: {', '.join(names())}."]
+    cls = resolve(target)
+    problems: list[str] = []
+    problems.extend(_check_pit_enforcement(name, cls))
+
+    hook = getattr(cls, "preflight_checks", None)
+    if hook is not None:
+        problems.extend(hook(**params))
+    return problems
+
+
+def _check_pit_enforcement(name: str, cls: type) -> list[str]:
+    allowed = ("access", "cli_deny")
+    enforcement = getattr(cls, "pit_enforcement", None)
+    if enforcement is None:
+        return [
+            f"agent {name!r} does not declare pit_enforcement "
+            f"(must be one of {allowed})"
+        ]
+    if enforcement not in allowed:
+        return [
+            f"agent {name!r} has unknown pit_enforcement {enforcement!r} "
+            f"(must be one of {allowed})"
+        ]
+    if enforcement != "cli_deny":
+        return []
+    # SubprocessAgent.enforce_pit_policy raises NotImplementedError; a real
+    # cli_deny adapter must override it. Identity check against the base.
+    try:
+        from fintel.agents.installed.base import SubprocessAgent
+    except ImportError:
+        return []
+    if not isinstance(cls, type) or not issubclass(cls, SubprocessAgent):
+        # Custom cli_deny host — must still expose the hook.
+        if not callable(getattr(cls, "enforce_pit_policy", None)):
+            return [
+                f"agent {name!r} declares pit_enforcement='cli_deny' but "
+                "has no enforce_pit_policy"
+            ]
+        return []
+    if cls.enforce_pit_policy is SubprocessAgent.enforce_pit_policy:
+        return [
+            f"agent {name!r} declares pit_enforcement='cli_deny' but "
+            "does not override enforce_pit_policy"
+        ]
+    return []

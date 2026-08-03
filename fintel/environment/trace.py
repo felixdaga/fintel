@@ -29,15 +29,24 @@ def _now() -> str:
 
 @dataclass
 class AccessLog:
-    """Append-only. `path=None` keeps the record in memory, for tests and dry runs."""
+    """Append-only. `path=None` keeps the record in memory, for tests and dry runs.
+
+    `attach=True` means another process already opened this cell's log (the
+    orchestrator). The MCP server attaches so its reads land in the same
+    ``access.jsonl`` without a second ``cell_opened``.
+    """
 
     cell: Cell
     path: Path | None = None
     events: list[dict] = field(default_factory=list)
+    attach: bool = False
 
     def __post_init__(self) -> None:
         if self.path is not None:
             self.path.parent.mkdir(parents=True, exist_ok=True)
+        if self.attach:
+            self.append("mcp_attached", run_id=self.cell.run_id, cell=self.cell.name)
+            return
         self.append(
             "cell_opened",
             run_id=self.cell.run_id,
@@ -85,13 +94,23 @@ class AccessLog:
 
     def summary(self) -> dict:
         """Enough for a cell record to be honest about data quality."""
-        counts = self.counts()
-        return {
-            "n_reads": len(self.reads),
-            "by_status": counts,
-            "kinds_used": list(self.kinds_used()),
-            "degraded": bool(counts.get("failed") or counts.get("denied")),
-        }
+        return summary_from_events(self.events)
+
+
+def summary_from_events(events: list[dict]) -> dict:
+    """Summarise a loaded (or in-memory) event list — includes MCP attaches."""
+    reads = [e for e in events if e.get("event") == "read"]
+    counts: dict[str, int] = {}
+    for read in reads:
+        status = str(read.get("status", "unknown"))
+        counts[status] = counts.get(status, 0) + 1
+    kinds = sorted({r["kind"] for r in reads if r.get("kind")})
+    return {
+        "n_reads": len(reads),
+        "by_status": counts,
+        "kinds_used": kinds,
+        "degraded": bool(counts.get("failed") or counts.get("denied")),
+    }
 
 
 def load(path: str | Path) -> list[dict]:

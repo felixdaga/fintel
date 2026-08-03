@@ -27,6 +27,11 @@ class ScoringSpec(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     kpi: str  # builtin name or module:Class
+    # The signal: how the decision's metrics become THE signal. Resolved by the
+    # evaluation layer (`evaluate/signals.py`); the platform owns the mechanics
+    # around it (transform, ensemble, holdings), the strategy owns what the
+    # signal *is*. Defaults to the view's score (single-name).
+    signal: str = "single_name"
     params: dict = Field(default_factory=dict)
     transform: str = "rank_range"
     horizons: list[int] = Field(default_factory=lambda: [1, 2, 3])

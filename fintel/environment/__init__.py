@@ -8,6 +8,7 @@ from fintel.environment.access import DataAccess, Reading
 from fintel.environment.base import Environment
 from fintel.environment.cell import Cell
 from fintel.environment.factory import RuntimeConfig, build_environment, cells_for
+from fintel.environment.health import CellHealth, audit_events, audit_job, audit_session
 from fintel.environment.policy import AccessDenied, AccessPolicy
 from fintel.environment.session import SessionDir
 from fintel.environment.tools import ToolSurface
@@ -18,12 +19,16 @@ __all__ = [
     "AccessLog",
     "AccessPolicy",
     "Cell",
+    "CellHealth",
     "DataAccess",
     "Environment",
     "Reading",
     "RuntimeConfig",
     "SessionDir",
     "ToolSurface",
+    "audit_events",
+    "audit_job",
+    "audit_session",
     "build_environment",
     "cells_for",
 ]

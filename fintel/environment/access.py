@@ -55,7 +55,11 @@ def _is_empty(data: Any) -> bool:
     if data is None:
         return True
     if isinstance(data, dict):
-        substantive = {k: v for k, v in data.items() if k not in ("as_of", "notes")}
+        # History wrappers (ratios.entries, news_sentiment.series) count even when
+        # top-level scalar fields are mostly None.
+        if data.get("entries") or data.get("series"):
+            return False
+        substantive = {k: v for k, v in data.items() if k not in ("as_of", "notes", "date")}
         return not any(v not in (None, [], {}, "") for v in substantive.values())
     if hasattr(data, "empty"):  # DataFrame
         return bool(data.empty)
@@ -207,6 +211,18 @@ class DataAccess:
         if self.on_read is not None:
             self.on_read(reading)
         return reading
+
+    def deny(self, kind: str, query: dict, detail: str) -> Reading:
+        """Record a refusal that never reached a source (bad tool args, unknown tool).
+
+        Schema-level denials used to return a payload without touching the log —
+        which is how a cell could look clean while every MCP call failed with
+        ``requires ['symbol']; got ['kwargs']``.
+        """
+        return self._finish(
+            Reading(kind=kind, query=dict(query), status="denied", detail=detail),
+            time.perf_counter(),
+        )
 
     def summary(self) -> dict[str, int]:
         """Counts by status, for the cell record. A run whose reads mostly failed

@@ -11,6 +11,11 @@ TimeHorizon = str
 DecisionScope = Literal["single_name", "portfolio"]
 Status = Literal["ok", "partial", "empty", "failed", "timeout", "skipped"]
 
+# Harness / environment grade — orthogonal to agent outcome and Status.
+# A cell can be Status=ok (agent returned views) while HealthStatus=broken
+# (every tool call failed). Scoring should treat broken as non-comparable.
+HealthStatus = Literal["ok", "degraded", "broken"]
+
 PORTFOLIO_CELL = "__portfolio__"
 
 # How one agent invocation ended. Zero views is not one state but several, and

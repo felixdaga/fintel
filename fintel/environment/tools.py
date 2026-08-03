@@ -159,34 +159,38 @@ class ToolSurface:
         return tuple(spec.name for spec in self.descriptors())
 
     def call(self, name: str, arguments: dict | None = None) -> dict:
-        """Dispatch by tool name. Always returns a payload, never raises."""
+        """Dispatch by tool name. Always returns a payload, never raises.
+
+        Schema-level refusals are recorded as ``denied`` reads so the access
+        log (and post-run health) sees them — not only successful fetches.
+        """
         specs = {spec.name: spec for spec in self.descriptors()}
         spec = specs.get(name)
+        args = dict(arguments or {})
         if spec is None:
-            return {
-                "status": "denied",
-                "data": None,
-                "error": (
+            return self.access.deny(
+                kind=name,
+                query=args,
+                detail=(
                     f"no tool named {name!r} in this run; available: {sorted(specs)}. "
                     f"Data kinds are declared by the strategy."
                 ),
-            }
-        args = dict(arguments or {})
+            ).payload()
         missing = [key for key in spec.required if not args.get(key)]
         if missing:
-            return {
-                "status": "denied",
-                "data": None,
-                "error": f"{name} requires {missing}; got {sorted(args)}",
-            }
+            return self.access.deny(
+                kind=spec.kind,
+                query=args,
+                detail=f"{name} requires {missing}; got {sorted(args)}",
+            ).payload()
         unknown = sorted(set(args) - set(spec.schema["properties"]))
         if unknown:
-            return {
-                "status": "denied",
-                "data": None,
-                "error": (
+            return self.access.deny(
+                kind=spec.kind,
+                query=args,
+                detail=(
                     f"{name} does not accept {unknown}; accepted: "
                     f"{sorted(spec.schema['properties'])}"
                 ),
-            }
+            ).payload()
         return self.access.read(spec.kind, **args).payload()

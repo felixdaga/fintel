@@ -230,7 +230,21 @@ def normalise_article(item: dict) -> dict:
 
 @dataclass(frozen=True)
 class RecordSpec:
-    """How one dated-record kind is fetched, clamped and de-duplicated."""
+    """How one dated-record kind is fetched, clamped and de-duplicated.
+
+    Two fetch strategies, picked by ``chunk_days``:
+
+    * ``chunk_days=None`` (default) — a single ``client.paginate`` over the
+      span, following ``next_url`` cursors sequentially. Right for kinds with
+      few records per span (fundamentals: ~8 filings in 730 days).
+    * ``chunk_days=N`` — split the span into N-day chunks and fetch each with a
+      single ``client.get`` (no cursor following) at ``chunk_limit`` results,
+      concurrently up to ``chunk_workers``. Right for high-volume kinds
+      (news: popular tickers have 1500+ articles in 90 days; a single
+      ``limit=1000`` call silently drops older articles, and sequential
+      ``limit=100`` cursoring is catastrophically slow). Ported from delorean's
+      ``MassiveNewsSource._fetch_news``.
+    """
 
     kind: str
     endpoint: str
@@ -240,6 +254,10 @@ class RecordSpec:
     identity: Callable[[dict], Any]
     lookback_days: int
     extra_filter: Callable[[dict, Date], bool] | None = None
+    # Chunked-concurrent fetch (news). None = paginate (fundamentals).
+    chunk_days: int | None = None
+    chunk_limit: int = 1000  # API max for /v2/reference/news
+    chunk_workers: int = 10
 
 
 FUNDAMENTALS = RecordSpec(
@@ -263,6 +281,13 @@ NEWS = RecordSpec(
     normalise=normalise_article,
     identity=lambda r: r.get("id") or (r.get("title"), r.get("published_at")),
     lookback_days=90,
+    # High-volume kind: popular tickers have 1500+ articles in 90 days. A single
+    # limit=1000 call drops older articles and sequential limit=100 cursoring
+    # hangs for minutes. 30-day chunks fetched concurrently (10 workers) cover
+    # a 90-day window in ~3 round-trips. Ported from delorean.
+    chunk_days=30,
+    chunk_limit=1000,
+    chunk_workers=10,
 )
 
 
@@ -327,6 +352,8 @@ class MassiveRecords:
 
     def _fetch_span(self, symbol: Symbol, lo: Date, hi: Date) -> list[dict]:
         assert self.client is not None
+        if self.spec.chunk_days is not None:
+            return self._fetch_span_chunked(symbol, lo, hi)
         return self.client.paginate(
             self.spec.endpoint,
             {
@@ -337,3 +364,46 @@ class MassiveRecords:
                 "sort": self.spec.date_param,
             },
         )
+
+    def _fetch_span_chunked(self, symbol: Symbol, lo: Date, hi: Date) -> list[dict]:
+        """Fetch a span as date-chunked, concurrent single GETs.
+
+        Each chunk is one round-trip at ``chunk_limit`` results (no
+        ``next_url`` cursoring), so a high-volume kind like news doesn't spend
+        dozens of sequential round-trips following cursors. Chunks run
+        concurrently up to ``chunk_workers``; the HTTP client's 429 backoff
+        self-heals bursts. Dedup by article identity happens in the caller
+        (``_ensure`` keys ``fresh`` by ``spec.identity``), so chunks may
+        overlap by a day without double-counting.
+        """
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        from datetime import timedelta
+
+        assert self.client is not None
+        chunk_days = self.spec.chunk_days
+        chunks: list[tuple[Date, Date]] = []
+        cursor = lo
+        while cursor <= hi:
+            chunk_end = min(cursor + timedelta(days=chunk_days - 1), hi)
+            chunks.append((cursor, chunk_end))
+            cursor = chunk_end + timedelta(days=1)
+
+        params_base = {
+            "ticker": symbol,
+            "order": "desc",
+            "limit": self.spec.chunk_limit,
+        }
+
+        def _fetch_chunk(cgte: Date, clte: Date) -> list[dict]:
+            params = dict(params_base)
+            params[f"{self.spec.date_param}.gte"] = cgte.isoformat()
+            params[f"{self.spec.date_param}.lte"] = clte.isoformat()
+            return self.client.get(self.spec.endpoint, params).get("results") or []
+
+        out: list[dict] = []
+        workers = min(self.spec.chunk_workers, max(1, len(chunks)))
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            futures = {pool.submit(_fetch_chunk, cg, cl): (cg, cl) for cg, cl in chunks}
+            for fut in as_completed(futures):
+                out.extend(fut.result())
+        return out

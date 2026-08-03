@@ -36,15 +36,15 @@ def make_env(tmp_path, *, symbols=("AAPL",)):
 
     fixtures.register_all()
     bindings = [DataBinding(kind="prices", source="flat_prices")]
-    sources = build_data_sources(
-        bindings, config=MarketConfig(cache_root=tmp_path / "cache", offline=True)
-    )
+    market_config = MarketConfig(cache_root=tmp_path / "cache", offline=True)
+    sources = build_data_sources(bindings, config=market_config)
     return build_environment(
         cell=Cell(run_id="test-r1", decision_date=DAY, symbols=symbols),
         sources=sources,
         universe=list(UNIVERSE),
         kinds=KINDS,
         runtime=RuntimeConfig(session_root=tmp_path / "sessions"),
+        market_config=market_config,
     )
 
 
@@ -63,6 +63,11 @@ class _Script(SubprocessAgent):
 
     def build_command(self, env, mcp_server_cmd):
         return [self.binary]
+
+    def enforce_pit_policy(self, env, mcp_server_cmd):
+        # Test double: no real profile to patch. Production CLI adapters
+        # (openclaw, claude-code) override with the real deny + MCP isolation.
+        return None
 
 
 def test_a_cli_that_writes_a_result_is_collected(tmp_path):
@@ -148,6 +153,33 @@ def test_bindings_are_written_for_the_mcp_server(tmp_path):
     bindings = json.loads((env.session.path / "bindings.json").read_text())
     assert any(b["kind"] == "prices" for b in bindings["bindings"])
     assert "AAPL" in bindings["universe"]
+    assert bindings["config"]["cache_root"] == str(tmp_path / "cache")
+    assert bindings["config"]["offline"] is True
+    # Session dir must not hold secrets.
+    assert "massive_api_key" not in bindings["config"]
+    assert "brave_api_key" not in bindings["config"]
+
+
+def test_market_config_roundtrips_through_bindings_without_secrets(tmp_path, monkeypatch):
+    cfg = MarketConfig(
+        cache_root=tmp_path / "cache",
+        offline=False,
+        massive_api_key="secret-massive",
+        brave_api_key="secret-brave",
+    )
+    dumped = cfg.to_dict(secrets=False)
+    assert "massive_api_key" not in dumped
+    monkeypatch.setenv("MASSIVE_API_KEY", "from-env")
+    monkeypatch.setenv("BRAVE_API_KEY", "from-env-brave")
+    restored = MarketConfig.from_dict(dumped)
+    assert restored.cache_root == tmp_path / "cache"
+    assert restored.massive_api_key == "from-env"
+    assert restored.brave_api_key == "from-env-brave"
+
+
+def test_market_config_from_dict_requires_cache_root():
+    with pytest.raises(ValueError, match="cache_root"):
+        MarketConfig.from_dict({})
 
 
 def test_a_failure_is_recorded_not_raised(tmp_path):
@@ -221,3 +253,63 @@ def test_the_fingerprint_is_serializable():
     assert d["digest"] == fp.digest
     assert d["adapter_params"]["max_rounds"] == 5
     json.dumps(d)
+
+
+# ── mission + tools manual + output schema ──────────────────────────────────
+
+
+def test_compose_instruction_carries_mission_tools_and_schema(tmp_path):
+    """Every CLI adapter gets the same composed instruction: the base helper,
+    not a hand-rolled per-adapter string."""
+    env = make_env(tmp_path)
+    agent = _Script(
+        binary="unused",
+        mission_text="Be a value analyst.",
+        output_schema_text='{"score": "..."}',
+    )
+    instruction = agent._compose_instruction(env)
+    assert "Be a value analyst." in instruction
+    assert "## Tools" in instruction
+    assert "get_prices" in instruction  # rendered from the bound catalog source
+    assert "## Output schema" in instruction
+    assert '{"score": "..."}' in instruction
+
+
+def test_compose_instruction_defaults_to_no_mission_or_schema(tmp_path):
+    env = make_env(tmp_path)
+    instruction = _Script(binary="unused")._compose_instruction(env)
+    assert "## Output schema" not in instruction
+    assert "## Tools" in instruction  # always tool-calling: MCP is the transport
+
+
+# ── preflight ─────────────────────────────────────────────────────────────────
+
+
+def test_preflight_checks_flag_a_missing_binary():
+    problems = _Script.preflight_checks(binary="definitely-not-a-real-cli-xyz")
+    assert problems and "not found on PATH" in problems[0]
+
+
+def test_preflight_checks_pass_for_a_real_binary():
+    assert _Script.preflight_checks(binary="python3") == []
+
+
+def test_openclaw_preflight_flags_a_missing_profile():
+    from fintel.agents.installed.openclaw import OpenClawAgent
+
+    problems = OpenClawAgent.preflight_checks(profile="definitely-not-a-real-profile-xyz")
+    assert any("has no config" in p for p in problems)
+
+
+def test_agent_factory_preflight_delegates_to_the_hook():
+    from fintel import agents
+
+    assert agents.preflight("scripted") == []  # no hook declared, assumed ready
+    assert agents.preflight("openclaw", profile="definitely-not-a-real-profile-xyz")
+
+
+def test_agent_factory_preflight_reports_unknown_agents():
+    from fintel import agents
+
+    problems = agents.preflight("not-a-real-agent")
+    assert problems and "unknown agent" in problems[0]

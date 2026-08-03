@@ -13,9 +13,10 @@ tools, pack and direct access really are one path.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Any
+from typing import Any, ClassVar
 
 from fintel.agents.base import AgentError
+from fintel.agents.pit_policy import PitEnforcement
 from fintel.environment import Environment
 from fintel.environment.tools import tool_name
 from fintel.models.common import Outcome, Symbol
@@ -32,6 +33,14 @@ class ConstantAgent:
     rationale: str = "constant baseline"
     name: str = "constant"
     version: str = "1"
+    # Every adapter accepts these uniformly (the platform passes them without
+    # checking whether a given agent has any use for them). A fixed-score
+    # baseline has none — declared and ignored, not silently dropped.
+    mission_text: str = ""
+    output_schema_text: str = ""
+    # Standard adapter requirement: in-process hosts have no native tool
+    # surface; PIT is the Environment.access chokepoint.
+    pit_enforcement: ClassVar[PitEnforcement] = "access"
 
     def decide(self, env: Environment) -> AgentResponse:
         views = {
@@ -60,6 +69,9 @@ class ScriptedAgent:
     cost_basis: CostBasis = "unknown"
     name: str = "scripted"
     version: str = "1"
+    mission_text: str = ""
+    output_schema_text: str = ""
+    pit_enforcement: ClassVar[PitEnforcement] = "access"
     seen: dict[str, Any] = field(default_factory=dict, init=False)
 
     def decide(self, env: Environment) -> AgentResponse:
@@ -93,7 +105,22 @@ class ScriptedAgent:
         if self.channel == "pack":
             return env.evidence(symbol=subject)
         if self.channel == "tools":
-            return env.tools.call(tool_name(kind), {"symbol": subject})
+            if env.nerve is not None:
+                env.nerve.emit(
+                    "agent_tool_call", cell=env.cell.name,
+                    decision_date=env.cell.decision_date.isoformat(),
+                    tool=tool_name(kind),
+                    args=str({"symbol": subject})[:120],
+                )
+            payload = env.tools.call(tool_name(kind), {"symbol": subject})
+            if env.nerve is not None:
+                env.nerve.emit(
+                    "agent_tool_result", cell=env.cell.name,
+                    decision_date=env.cell.decision_date.isoformat(),
+                    tool=tool_name(kind),
+                    ok=(payload.get("status") != "failed"),
+                )
+            return payload
         if self.channel == "direct":
             return env.access.read(kind, symbol=subject)
         raise AgentError(f"unknown channel {self.channel!r}")

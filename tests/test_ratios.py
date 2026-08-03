@@ -8,6 +8,7 @@ from __future__ import annotations
 
 from datetime import date
 
+import pandas as pd
 import pytest
 
 from fintel.market.data.ratios import RATIO_FIELDS, ValuationRatios, compute_ratios
@@ -353,4 +354,73 @@ def test_ratios_source_composes_upstream_kinds(tmp_path):
     assert isinstance(built["ratios"], ValuationRatios)
     assert out["price"] == pytest.approx(30.0)
     assert out["pe_diluted"] is not None
-    assert set(out) == set(RATIO_FIELDS)
+    assert set(RATIO_FIELDS) <= set(out)
+    assert "entries" in out
+    assert isinstance(out["entries"], list)
+    assert len(out["entries"]) >= 1
+    assert out["date"] == out["entries"][-1]["date"]
+    # Daily series is oldest→newest and strictly before the decision date.
+    dates = [e["date"] for e in out["entries"]]
+    assert dates == sorted(dates)
+    assert all(d < "2024-06-03" for d in dates)
+
+
+def test_daily_ratio_series_matches_delorean_shape():
+    """One entry per trading day; TTM advances only when a filing becomes public."""
+    from fintel.market.data.ratios import build_daily_ratio_series
+
+    filings = [
+        {
+            "filing_date": "2024-01-15",
+            "period_end": "2023-12-31",
+            "timeframe": "annual",
+            "revenue": 1000.0,
+            "gross_profit": 400.0,
+            "operating_income": 200.0,
+            "net_income": 150.0,
+            "eps_diluted": 1.5,
+            "eps_basic": 1.6,
+            "shares_diluted": 100.0,
+            "total_assets": 5000.0,
+            "total_equity": 2000.0,
+            "total_debt": 800.0,
+            "cash": 300.0,
+            "operating_cash_flow": 250.0,
+            "free_cash_flow": 180.0,
+        },
+        {
+            "filing_date": "2024-05-01",
+            "period_end": "2024-03-31",
+            "timeframe": "quarterly",
+            "fiscal_period": "Q1",
+            "revenue": 280.0,
+            "gross_profit": 110.0,
+            "operating_income": 55.0,
+            "net_income": 40.0,
+            "eps_diluted": 0.4,
+            "eps_basic": 0.42,
+            "shares_diluted": 100.0,
+            "total_assets": 5100.0,
+            "total_equity": 2050.0,
+            "total_debt": 790.0,
+            "cash": 310.0,
+            "operating_cash_flow": 70.0,
+            "free_cash_flow": 50.0,
+        },
+    ]
+    days = pd.bdate_range("2024-01-10", "2024-05-10")
+    prices = pd.DataFrame({
+        "date": [d.date() for d in days],
+        "close": [30.0 + i * 0.1 for i in range(len(days))],
+    })
+    entries = build_daily_ratio_series(filings=filings, prices=prices)
+    assert entries
+    assert all("date" in e and "pe_diluted" in e for e in entries)
+    # No entry before the first public filing.
+    assert all(e["date"] >= "2024-01-15" for e in entries)
+    # Price tracks the bar for that day.
+    by_date = {e["date"]: e for e in entries}
+    mid = next(d for d in by_date if "2024-02" in d)
+    assert by_date[mid]["price"] == pytest.approx(
+        float(prices.loc[prices["date"].astype(str).str[:10] == mid, "close"].iloc[0])
+    )

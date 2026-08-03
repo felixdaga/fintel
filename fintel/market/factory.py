@@ -156,10 +156,12 @@ def massive_filing_text(*, config: MarketConfig, **params: Any) -> MassiveFiling
 
 
 def valuation_ratios(*, upstream: dict[str, DataSource], **params: Any) -> ValuationRatios:
-    return ValuationRatios(
-        upstream=upstream,
-        **{k: v for k, v in params.items() if k == "window_days"},
-    )
+    keep = {
+        k: v
+        for k, v in params.items()
+        if k in {"window_days", "lookback_days", "filings_lookback_days"}
+    }
+    return ValuationRatios(upstream=upstream, **keep)
 
 
 def news_sentiment(*, upstream: dict[str, DataSource], **_: Any) -> NewsSentiment:

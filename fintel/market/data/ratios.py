@@ -9,10 +9,11 @@ Any ratio whose denominator is missing, zero, or non-positive where positivity
 is required comes back None — never a silent zero, never a NaN that propagates
 through an agent's reasoning.
 
-Computed on demand from already-clamped upstream data, so PIT is enforced once
-in the upstream sources. The old code precomputed a daily `cache/ratios/` series
-from the full cache and re-filtered per day, which meant a second PIT
-implementation to keep correct.
+History shape matches Delorean's ``cache/ratios/SYMBOL.json``: one entry per
+trading day, using that day's close and a TTM built from filings with
+``filing_date <= day``. Computed on demand from already-clamped upstream data,
+so PIT is enforced once in the upstream sources; the daily march never sees a
+bar or filing at or after the decision date.
 """
 
 from __future__ import annotations
@@ -21,11 +22,15 @@ from dataclasses import dataclass, field
 from datetime import date as Date
 from typing import Any
 
+import pandas as pd
+
 from fintel.market.data.base import DataSource, require
 from fintel.market.data.ttm import build_trailing_filing_carryforward
 from fintel.pit import Cutoff
 
-# The published roster. Order is the reading order surfaced to an agent.
+# The published roster for one day's snapshot. Order is the reading order
+# surfaced to an agent. ``date`` / ``entries`` are history wrappers added by
+# ``ValuationRatios.fetch``, not by ``compute_ratios``.
 RATIO_FIELDS: tuple[str, ...] = (
     # anchors
     "as_of",
@@ -62,6 +67,9 @@ RATIO_FIELDS: tuple[str, ...] = (
     # provenance
     "notes",
 )
+
+DEFAULT_LOOKBACK_DAYS = 365
+DEFAULT_FILINGS_LOOKBACK_DAYS = 1460
 
 
 def as_float(value: Any) -> float | None:
@@ -201,28 +209,125 @@ def compute_ratios(*, filing: dict | None, price: float | None, as_of: Date) -> 
     return out
 
 
+def build_daily_ratio_series(
+    *,
+    filings: list[dict],
+    prices: pd.DataFrame | None,
+    window_days: int = 365,
+) -> list[dict]:
+    """One ratio entry per trading day — Delorean ``compute_ratios_cache`` math.
+
+    Each day's ratios use:
+      • price = that day's closing price
+      • filing = TTM from all filings whose ``filing_date <= day`` (PIT)
+
+    Returns entries oldest→newest. Empty when there are no bars or no public
+    filing yet for any day in the window.
+    """
+    if prices is None or not len(prices) or "close" not in prices.columns:
+        return []
+    if "date" not in prices.columns:
+        return []
+
+    frame = prices.copy()
+    frame["date"] = pd.to_datetime(frame["date"]).dt.date
+    frame = frame.sort_values("date").reset_index(drop=True)
+
+    dated_filings = sorted(
+        [f for f in filings if f.get("filing_date")],
+        key=lambda f: str(f["filing_date"])[:10],
+    )
+
+    entries: list[dict[str, Any]] = []
+    active_filings: list[dict] = []
+    filing_idx = 0
+    ttm_cache: dict | None = None
+
+    for _, row in frame.iterrows():
+        day: Date = row["date"]
+        day_str = day.isoformat()
+        close = as_float(row["close"])
+        if close is None:
+            continue
+
+        advanced = False
+        while filing_idx < len(dated_filings):
+            fd = str(dated_filings[filing_idx].get("filing_date", ""))[:10]
+            if fd and fd <= day_str:
+                active_filings.append(dated_filings[filing_idx])
+                filing_idx += 1
+                advanced = True
+            else:
+                break
+
+        if not active_filings:
+            continue
+
+        if advanced or ttm_cache is None:
+            ttm_cache = build_trailing_filing_carryforward(
+                active_filings, window_days=window_days
+            )
+
+        ratio_dict = compute_ratios(filing=ttm_cache, price=close, as_of=day)
+        entry: dict[str, Any] = {"date": day_str}
+        entry.update(ratio_dict)
+        entries.append(entry)
+
+    return entries
+
+
 @dataclass
 class ValuationRatios:
-    """Trailing ratios from whichever price and fundamentals sources are bound."""
+    """Daily trailing-ratio history from whichever price/fundamentals are bound.
+
+    ``fetch`` returns the latest snapshot fields (same roster as before) plus
+    ``date`` and ``entries`` — the Delorean-shaped daily series inside the
+    requested lookback, all strictly before the decision date.
+    """
 
     upstream: dict[str, DataSource] = field(default_factory=dict)
     window_days: int = 365
+    lookback_days: int = DEFAULT_LOOKBACK_DAYS
+    filings_lookback_days: int = DEFAULT_FILINGS_LOOKBACK_DAYS
     name: str = "valuation_ratios"
     kinds: tuple[str, ...] = ("ratios",)
 
     def fetch(self, query: dict, cutoff: Cutoff) -> dict:
         symbol = require(query, "symbol", self.name)
+        lookback = int(query.get("lookback_days", self.lookback_days))
+        filings_lookback = int(
+            query.get("filings_lookback_days", self.filings_lookback_days)
+        )
+        # Cover the price window plus enough history for a clean TTM at the
+        # start of that window (annual+delta needs ~2y of filings).
+        fund_lookback = max(filings_lookback, lookback + self.window_days + 400)
+
         filings = self.upstream["fundamentals"].fetch(
-            {"symbol": symbol, "lookback_days": query.get("filings_lookback_days", 1460)}, cutoff
+            {"symbol": symbol, "lookback_days": fund_lookback}, cutoff
         )
-        bars = self.upstream["prices"].fetch({"symbol": symbol, "lookback_days": 30}, cutoff)
-
-        price = None
-        if bars is not None and len(bars) and "close" in bars.columns:
-            price = as_float(bars["close"].iloc[-1])
-
-        # Newest-first is what the trailing builder documents as its input.
-        trailing = build_trailing_filing_carryforward(
-            list(reversed(filings or [])), window_days=self.window_days
+        bars = self.upstream["prices"].fetch(
+            {"symbol": symbol, "lookback_days": lookback}, cutoff
         )
-        return compute_ratios(filing=trailing, price=price, as_of=cutoff.decision_date)
+
+        entries = build_daily_ratio_series(
+            filings=list(filings or []),
+            prices=bars,
+            window_days=self.window_days,
+        )
+        # Belt-and-suspenders: never return a bar on/after the decision date.
+        ceil = cutoff.decision_date.isoformat()
+        entries = [e for e in entries if (e.get("date") or "") < ceil]
+
+        if not entries:
+            empty = compute_ratios(
+                filing=None, price=None, as_of=cutoff.decision_date
+            )
+            empty["date"] = None
+            empty["entries"] = []
+            return empty
+
+        latest = entries[-1]
+        out = {key: latest.get(key) for key in RATIO_FIELDS}
+        out["date"] = latest.get("date")
+        out["entries"] = entries
+        return out

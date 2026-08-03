@@ -83,6 +83,49 @@ def render_records(reading: Reading, *, limit: int, keys: tuple[str, ...]) -> st
     return "\n".join(lines)
 
 
+def render_ratios(reading: Reading, *, history_points: int = 12) -> str:
+    """Latest snapshot plus sparse path — Delorean Toolkit valuation shape."""
+    data = reading.data
+    if not isinstance(data, dict) or reading.status != "ok":
+        return _status_line(reading)
+    entries = data.get("entries") if isinstance(data.get("entries"), list) else []
+    latest = entries[-1] if entries else data
+    keys = (
+        "pe_diluted", "ev_to_ebit", "fcf_yield", "p_b", "p_s",
+        "earnings_yield", "net_margin", "roe", "debt_to_equity",
+        "gross_margin", "operating_margin",
+    )
+    kv = "  ".join(f"{k}={number(latest.get(k))}" for k in keys if latest.get(k) is not None)
+    lines = [
+        f"latest {latest.get('date') or data.get('date') or data.get('as_of')}: "
+        + (kv or "No values could be computed.")
+    ]
+    if len(entries) >= 2:
+        n_pts = min(len(entries), history_points)
+        if n_pts <= 1:
+            sampled = [entries[-1]]
+        else:
+            idxs = [round(i * (len(entries) - 1) / (n_pts - 1)) for i in range(n_pts)]
+            seen: set[int] = set()
+            sampled = []
+            for i in idxs:
+                if i in seen:
+                    continue
+                seen.add(i)
+                sampled.append(entries[i])
+        hist_keys = ("pe_diluted", "ev_to_ebit", "fcf_yield", "p_b", "net_margin", "roe")
+        lines.append(f"sparse history ({len(sampled)} pts, oldest→newest):")
+        for e in sampled:
+            parts = " ".join(
+                f"{k}={number(e.get(k))}" for k in hist_keys if e.get(k) is not None
+            )
+            lines.append(f"  {e.get('date')}: {parts}" if parts else f"  {e.get('date')}: (n/a)")
+    notes = latest.get("notes") or data.get("notes")
+    if notes:
+        lines.append("notes: " + "; ".join(str(n) for n in notes))
+    return "\n".join(lines)
+
+
 def render_mapping(reading: Reading) -> str:
     data = reading.data
     if not isinstance(data, dict) or reading.status != "ok":
@@ -91,7 +134,7 @@ def render_mapping(reading: Reading) -> str:
     body = [
         f"{k}={number(v)}"
         for k, v in data.items()
-        if k not in ("notes", "as_of", "series") and v is not None
+        if k not in ("notes", "as_of", "series", "entries", "date") and v is not None
     ]
     out = ["  ".join(body) if body else "No values could be computed."]
     series = data.get("series")
@@ -115,7 +158,7 @@ RENDERERS: dict[str, dict] = {
             r, limit=6, keys=("filing_date", "period_end", "timeframe")
         ),
     },
-    "ratios": {"title": "Valuation ratios (trailing)", "render": render_mapping},
+    "ratios": {"title": "Valuation ratios (trailing)", "render": render_ratios},
     "news": {
         "title": "News (newest first)",
         "render": lambda r: render_records(r, limit=12, keys=("published_at", "title")),

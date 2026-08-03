@@ -59,9 +59,11 @@ def test_ratio_field_roster_is_published_in_full():
     from fintel.market.data.ratios import RATIO_FIELDS
 
     catalog.register_builtins()
-    assert catalog.source("valuation_ratios").field_names == RATIO_FIELDS
+    names = catalog.source("valuation_ratios").field_names
+    assert names[: len(RATIO_FIELDS)] == RATIO_FIELDS
+    assert "date" in names and "entries" in names
     described = [f for f in catalog.fields_for("valuation_ratios") if f.description]
-    assert len(described) == len(RATIO_FIELDS)
+    assert len(described) >= len(RATIO_FIELDS)
 
 
 def test_credential_requirements_are_declared():

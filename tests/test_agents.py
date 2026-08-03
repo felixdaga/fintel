@@ -54,6 +54,12 @@ CONFORMANT: dict[str, dict] = {
     "llm": {"llm": AlwaysSubmits(), "channel": "pack"},
 }
 
+# CLI adapters (OpenClaw, Claude Code) can't join CONFORMANT: invoking them for
+# real needs the actual binary and, for OpenClaw, patches a real
+# `~/.openclaw-<profile>/openclaw.json` — not something a unit test should do.
+# They get their own lighter, non-invoking checks below.
+SUBPROCESS_ADAPTERS: frozenset[str] = frozenset({"openclaw", "claude-code"})
+
 
 def envir(tmp_path, **kw):
     return an_environment(tmp_path, **kw)
@@ -301,11 +307,46 @@ def test_the_valid_names_are_the_resolvable_ones():
 
 def test_every_registered_agent_is_held_to_the_contract():
     """Guards the suite itself: registering an adapter without adding it here
-    would let it skip every conformance check above."""
-    assert set(agents.names()) == set(CONFORMANT), (
+    (or to `SUBPROCESS_ADAPTERS`) would let it skip every check below."""
+    invocable = set(agents.names()) - SUBPROCESS_ADAPTERS
+    assert invocable == set(CONFORMANT), (
         "adapters in the registry but not in CONFORMANT (or vice versa): "
-        f"{set(agents.names()) ^ set(CONFORMANT)}"
+        f"{invocable ^ set(CONFORMANT)}"
     )
+
+
+@pytest.mark.parametrize("name", sorted(SUBPROCESS_ADAPTERS))
+def test_subprocess_adapters_satisfy_the_protocol_without_invoking(name):
+    """Built, not invoked — real invocation needs the CLI installed and, for
+    OpenClaw, writes into the operator's real profile config."""
+    agent = agents.build(name)
+    assert isinstance(agent, agents.Agent)
+    assert agent.name and agent.version
+
+
+@pytest.mark.parametrize("name", sorted(SUBPROCESS_ADAPTERS))
+def test_subprocess_adapters_carry_mission_and_schema(name):
+    """The same platform-supplied context every other adapter accepts."""
+    agent = agents.build(name, mission_text="score it", output_schema_text="{}")
+    assert agent.mission_text == "score it"
+    assert agent.output_schema_text == "{}"
+
+
+@pytest.mark.parametrize("name", sorted(agents.names()))
+def test_every_adapter_declares_pit_enforcement(name):
+    """Standard requirement: access (in-process) or cli_deny (subprocess)."""
+    kwargs = CONFORMANT.get(name, {})
+    agent = agents.build(name, **kwargs)
+    assert getattr(type(agent), "pit_enforcement", None) in ("access", "cli_deny")
+
+
+@pytest.mark.parametrize("name", sorted(SUBPROCESS_ADAPTERS))
+def test_subprocess_adapters_are_cli_deny_and_override_enforce(name):
+    agent = agents.build(name)
+    assert type(agent).pit_enforcement == "cli_deny"
+    from fintel.agents.installed.base import SubprocessAgent
+
+    assert type(agent).enforce_pit_policy is not SubprocessAgent.enforce_pit_policy
 
 
 def test_a_custom_adapter_needs_no_registry_entry():
