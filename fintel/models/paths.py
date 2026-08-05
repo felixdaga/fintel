@@ -1,11 +1,16 @@
 """On-disk layout. Path conventions only — no reading, no parsing.
 
-runs/<job_id>/config.json result.json job.log
-              r1/config.json lock.json fingerprint.json result.json run.log memory.jsonl
+runs/<job_id>/config.json result.json job.log health.json prefetch.json
+              r1/config.json result.json run.log
                  trials/<date>/decision.json result.json
                                cells/<cell>.json      one writer each
                                trace/<cell>.jsonl     one writer each
+                 sessions/…                           agent workspace
               report/report.md report.json
+
+Per run: ``config.json`` (asked + fingerprint digest) and ``result.json``
+(happened). The run echo is emitted to the nerve / ``run.log`` at start, not
+written as a sibling JSON file. Package-level ``strategy.lock`` is separate.
 
 Anything a cell writes is named after that cell. The old layout had every symbol
 on a decision date write into one `decisions/<date>.json`, so concurrent cells
@@ -63,27 +68,12 @@ class RunPaths:
 
     @property
     def config(self) -> Path:
+        """Asked inputs + fingerprint digest. Self-describing run identity."""
         return self.root / "config.json"
-
-    @property
-    def lock(self) -> Path:
-        return self.root / "lock.json"
 
     @property
     def result(self) -> Path:
         return self.root / "result.json"
-
-    @property
-    def fingerprint(self) -> Path:
-        """The agent's identity for this run: model, channel, prompt hash. The
-        strategy's own identity is `lock`; together they pin what produced it."""
-        return self.root / "fingerprint.json"
-
-    @property
-    def echo(self) -> Path:
-        """The run echo: every input gathered before any cell runs. See
-        `environment/echo.py` — printed at run start and persisted here."""
-        return self.root / "echo.json"
 
     @property
     def log(self) -> Path:

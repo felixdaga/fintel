@@ -129,21 +129,15 @@ def _kind_from(sources: dict[str, DataSource], kind: str, decision_dates: list[D
 
 
 def _lookback_days(kind: str, src: DataSource, bindings: list[Any] | None) -> int | None:
-    # Source-declared default (MassiveRecords spec, MassiveFilingText, prices fetch default).
+    # The source instance carries the resolved lookback (binding → catalog
+    # default), baked in by the factory. `bindings` is kept for signature
+    # stability only; the instance is the single source of truth.
+    lb = getattr(src, "lookback_days", None)
+    if lb is not None:
+        return int(lb)
     spec = getattr(src, "spec", None)
     if spec is not None and hasattr(spec, "lookback_days"):
         return int(spec.lookback_days)
-    if hasattr(src, "lookback_days"):
-        return int(src.lookback_days)
-    # Binding override.
-    if bindings:
-        for b in bindings:
-            if getattr(b, "kind", None) == kind:
-                v = (b.params or {}).get("lookback_days")
-                if v is not None:
-                    return int(v)
-    if kind == "prices":
-        return 365
     return None
 
 

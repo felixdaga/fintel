@@ -19,6 +19,7 @@ from pathlib import Path
 
 from fintel.environment.access import Reading
 from fintel.environment.cell import Cell
+from fintel.market.render import estimate_tokens
 
 logger = logging.getLogger(__name__)
 
@@ -40,6 +41,12 @@ class AccessLog:
     path: Path | None = None
     events: list[dict] = field(default_factory=list)
     attach: bool = False
+    # Optional live emit surface. When wired, every read also fires a
+    # ``data_read`` nerve event (with raw/capped char counts) so the run grid
+    # can show per-source data flow live, and a ``data_supply`` summary at
+    # cell close. The trace log is written regardless; this only adds the
+    # live channel.
+    nerve: Any = None
 
     def __post_init__(self) -> None:
         if self.path is not None:
@@ -68,7 +75,24 @@ class AccessLog:
         return record
 
     def record(self, reading: Reading) -> dict:
-        return self.append("read", **reading.record())
+        rec = self.append("read", **reading.record())
+        if self.nerve is not None:
+            try:
+                self.nerve.emit(
+                    "data_read",
+                    cell=self.cell.name,
+                    kind=reading.kind,
+                    source=reading.source,
+                    status=reading.status,
+                    cached=bool(reading.cached),
+                    raw_chars=reading.raw_chars,
+                    capped_chars=reading.capped_chars,
+                    raw_tokens=estimate_tokens(reading.raw_chars),
+                    capped_tokens=estimate_tokens(reading.capped_chars),
+                )
+            except Exception:  # noqa: BLE001 — nerve must not lose a read
+                logger.debug("nerve data_read emit failed", exc_info=True)
+        return rec
 
     def denied(self, what: str, detail: str) -> dict:
         return self.append("denied", what=what, detail=detail)
@@ -105,11 +129,30 @@ def summary_from_events(events: list[dict]) -> dict:
         status = str(read.get("status", "unknown"))
         counts[status] = counts.get(status, 0) + 1
     kinds = sorted({r["kind"] for r in reads if r.get("kind")})
+    # Per-kind char + token ledger: raw (fetched) vs capped (predicted rendered).
+    # The supply-side honesty check — a source silently feeding 100k chars to
+    # a cell shows up here without a hand-measurement script. Tokens are an
+    # estimate (chars/4); see fintel.market.render.CHARS_PER_TOKEN.
+    by_kind: dict[str, dict[str, int]] = {}
+    for r in reads:
+        kind = r.get("kind")
+        if not kind:
+            continue
+        slot = by_kind.setdefault(
+            kind, {"n_reads": 0, "raw_chars": 0, "capped_chars": 0,
+                   "raw_tokens": 0, "capped_tokens": 0}
+        )
+        slot["n_reads"] += 1
+        slot["raw_chars"] += int(r.get("raw_chars", 0) or 0)
+        slot["capped_chars"] += int(r.get("capped_chars", 0) or 0)
+        slot["raw_tokens"] += estimate_tokens(int(r.get("raw_chars", 0) or 0))
+        slot["capped_tokens"] += estimate_tokens(int(r.get("capped_chars", 0) or 0))
     return {
         "n_reads": len(reads),
         "by_status": counts,
         "kinds_used": kinds,
         "degraded": bool(counts.get("failed") or counts.get("denied")),
+        "chars_by_kind": by_kind,
     }
 
 

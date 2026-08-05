@@ -62,9 +62,13 @@ def main() -> None:
 
     run_root = OUT / job.job_id / "r1"
     log_path = run_root / "run.log"
-    echo_path = run_root / "echo.json"
-    print(f"   echo.json:  {'present' if echo_path.is_file() else 'MISSING'}")
-    print(f"   run.log:    {'present' if log_path.is_file() else 'MISSING'}")
+    cfg_path = run_root / "config.json"
+    print(f"   config.json:  {'present' if cfg_path.is_file() else 'MISSING'}")
+    print(f"   run.log:      {'present' if log_path.is_file() else 'MISSING'}")
+    if cfg_path.is_file():
+        import json as _json
+        fp = _json.loads(cfg_path.read_text()).get("fingerprint") or {}
+        print(f"   fingerprint:  digest={fp.get('digest', '?')[:16]}…")
     if log_path.is_file():
         events = [json.loads(l)["event"] for l in log_path.read_text().splitlines() if l.strip()]
         from collections import Counter

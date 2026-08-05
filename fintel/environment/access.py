@@ -24,13 +24,17 @@ from __future__ import annotations
 
 import json
 import logging
+import threading
 import time
+from concurrent.futures import Future
 from dataclasses import dataclass, field, replace
 from typing import Any, Literal
 
 from fintel.environment.cell import Cell
 from fintel.environment.policy import AccessDenied, AccessPolicy
 from fintel.market.data.base import DataError, DataSource
+from fintel.market.render import estimate_tokens, fetched_chars, predict_capped_chars
+from fintel.pit import Cutoff
 
 logger = logging.getLogger(__name__)
 
@@ -43,6 +47,76 @@ SUBJECT_KEYS = ("symbol", "query")
 
 def _cache_key(kind: str, query: dict) -> str:
     return kind + "|" + json.dumps(query, sort_keys=True, default=str)
+
+
+class DedupSource:
+    """Single-flight proxy over a shared ``DataSource``.
+
+    The wrapped source is shared across every cell in a run (built once in
+    ``run_run`` and threaded into each ``DataAccess``). When N concurrent cells
+    issue the *same* ``(query, cutoff)`` fetch — a thundering herd, classically
+    the symbol-independent macro bundle fetched once per cell — only the first
+    call hits the network; the rest block on the same in-flight result and share
+    it. Symbol-specific kinds (prices, fundamentals, …) have distinct queries
+    per cell, so they are unaffected — each cell still fetches its own.
+
+    Only *in-flight* calls are deduped. The key is dropped the instant the fetch
+    finishes (success or failure), so a later, non-concurrent call fetches
+    fresh. A transient failure is therefore never made sticky — this is herd
+    protection, not a result cache. Per-cell memoization (``DataAccess._cache``)
+    still handles repeated reads *within* one cell; this handles the cross-cell
+    burst the per-cell cache structurally cannot see.
+    """
+
+    def __init__(self, inner: DataSource, lock: threading.Lock, inflight: dict) -> None:
+        # Bypass __getattr__ during init so the private attrs land in __dict__.
+        object.__setattr__(self, "_inner", inner)
+        object.__setattr__(self, "_lock", lock)
+        object.__setattr__(self, "_inflight", inflight)
+
+    @property
+    def name(self) -> str:
+        return getattr(self._inner, "name", "")
+
+    @property
+    def kinds(self) -> tuple[str, ...]:
+        return getattr(self._inner, "kinds", ())
+
+    def __getattr__(self, attr: str) -> Any:
+        # Forward any other attribute (lookback_days, spec, …) to the inner
+        # source. __getattr__ runs only when normal lookup fails, so the
+        # properties above and _inner/_lock/_inflight never recurse here.
+        return getattr(self._inner, attr)
+
+    def fetch(self, query: dict, cutoff: Cutoff) -> Any:
+        key = json.dumps(query, sort_keys=True, default=str) + "|" + cutoff.decision_date.isoformat()
+        with self._lock:
+            fut = self._inflight.get(key)
+            lead = fut is None
+            if lead:
+                fut = Future()
+                self._inflight[key] = fut
+        if lead:
+            try:
+                fut.set_result(self._inner.fetch(query, cutoff))
+            except BaseException as exc:  # noqa: BLE001 - waiters must see it
+                fut.set_exception(exc)
+            finally:
+                with self._lock:
+                    self._inflight.pop(key, None)
+        return fut.result()
+
+
+def dedup_sources(sources: dict[str, DataSource]) -> dict[str, DedupSource]:
+    """Wrap every source behind one shared single-flight layer.
+
+    One lock and one in-flight map for the whole run, so every cell dedups
+    against the same table. Applied at the run level (``run_run``) so all cell
+    reads go through it regardless of which kind or source.
+    """
+    lock = threading.Lock()
+    inflight: dict[str, Future] = {}
+    return {k: DedupSource(s, lock, inflight) for k, s in sources.items()}
 
 
 def _is_empty(data: Any) -> bool:
@@ -80,6 +154,11 @@ class Reading:
     source: str = ""
     latency_ms: float = 0.0
     cached: bool = False
+    # Char accounting (see fintel.market.render). raw_chars is exact for the
+    # fetched payload; capped_chars is the predicted rendered size after the
+    # per-kind render caps. Both are 0 for failures/empties/denials.
+    raw_chars: int = 0
+    capped_chars: int = 0
 
     @property
     def ok(self) -> bool:
@@ -94,6 +173,10 @@ class Reading:
             "status": self.status,
             "source": self.source,
             "latency_ms": round(self.latency_ms, 2),
+            "raw_chars": self.raw_chars,
+            "capped_chars": self.capped_chars,
+            "raw_tokens": estimate_tokens(self.raw_chars),
+            "capped_tokens": estimate_tokens(self.capped_chars),
         }
         if self.cached:
             out["cached"] = True
@@ -158,7 +241,7 @@ class DataAccess:
             for key in SUBJECT_KEYS:
                 if key == "symbol" and key in query:
                     self.policy.check_symbol(query[key])
-            clamped = self.policy.clamp_query(query)
+            clamped = self.policy.clamp_query(kind, query)
         except AccessDenied as exc:
             return self._finish(
                 Reading(kind=kind, query=dict(query), status="denied", detail=str(exc)),
@@ -203,6 +286,16 @@ class DataAccess:
     def _finish(self, reading: Reading, started: float, *, store: bool = True) -> Reading:
         if not reading.cached:
             reading = replace(reading, latency_ms=(time.perf_counter() - started) * 1000)
+        # Char accounting: exact for the fetched payload, predicted after the
+        # per-kind render caps. Failures/empties/denials carry 0 — there is no
+        # payload to render. See fintel.market.render.
+        if reading.status == "ok" and reading.data is not None:
+            rc = self.policy.render_cap_map.get(reading.kind, {})
+            reading = replace(
+                reading,
+                raw_chars=fetched_chars(reading.data),
+                capped_chars=predict_capped_chars(reading.kind, reading.data, rc),
+            )
         # Never memoize a failure: it may be transient, and a sticky one would
         # turn a blip into an outage for the rest of the cell.
         if store and self.memoize and reading.status in ("ok", "empty"):

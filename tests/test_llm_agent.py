@@ -28,7 +28,7 @@ from fintel.agents.llm import (
     parse_completion,
     usage_of,
 )
-from fintel.agents.llm_agent import LLMAgent
+from fintel.agents.installed.llm_agent import LLMAgent
 from tests.test_environment import an_environment
 
 DECIDABLE = frozenset({"AAPL"})

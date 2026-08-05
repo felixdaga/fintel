@@ -75,7 +75,13 @@ def describe(info: catalog.SourceInfo, cutoff_note: str) -> str:
     return "\n".join(lines)
 
 
-def spec_for(kind: str, source_name: str, *, decision_date: str) -> ToolSpec:
+def spec_for(
+    kind: str,
+    source_name: str,
+    *,
+    decision_date: str,
+    lookback_default: int | None = None,
+) -> ToolSpec:
     info = catalog.source(source_name)
     properties: dict[str, dict] = {}
     required: list[str] = []
@@ -92,7 +98,11 @@ def spec_for(kind: str, source_name: str, *, decision_date: str) -> ToolSpec:
             "type": _JSON_TYPE.get(param.dtype, "string"),
             "description": param.description or f"{param.name} for this lookup.",
         }
-        if param.default is not None:
+        # The strategy's lookback (baked into the source) is the default the agent
+        # sees — one knob, not a catalog default that disagrees with the binding.
+        if param.name == "lookback_days" and lookback_default is not None:
+            entry["default"] = lookback_default
+        elif param.default is not None:
             entry["default"] = param.default
         properties[param.name] = entry
 
@@ -135,7 +145,20 @@ class ToolSurface:
             # A package-supplied source has no catalog entry to describe; it is
             # still readable, just not advertised as a typed tool.
             if source_name and catalog.has_source(source_name):
-                out.append(spec_for(kind, source_name, decision_date=decision_date))
+                src = self.access.sources.get(kind)
+                lb = getattr(src, "lookback_days", None) if src is not None else None
+                if lb is None and src is not None:
+                    spec = getattr(src, "spec", None)
+                    if spec is not None and hasattr(spec, "lookback_days"):
+                        lb = spec.lookback_days
+                out.append(
+                    spec_for(
+                        kind,
+                        source_name,
+                        decision_date=decision_date,
+                        lookback_default=lb,
+                    )
+                )
         return tuple(out)
 
     def subset(self, kinds: tuple[str, ...]) -> ToolSurface:

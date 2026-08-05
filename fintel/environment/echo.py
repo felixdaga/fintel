@@ -1,11 +1,12 @@
-"""The run echo: every input to a run, gathered into one artifact and printed.
+"""The run echo: every input to a run, gathered into one snapshot and printed.
 
 The point is to never go blind into a run. Before any cell executes, a reviewer
 sees the whole world the run is about to act on: which agent and model, which
 universe and schedule, which data bindings, the *exact* tool schemas the agent
 will be offered (every param), the injected prompt (mission + output schema +
 the composed instruction), the PIT policy, and the fingerprint that pins
-reproducibility.
+reproducibility. The rendered block is emitted as a nerve ``run_echo`` event
+(terminal + ``run.log``); the fingerprint digest is sealed into ``config.json``.
 
 Everything gathered here already exists in memory at `run_run` time — RunConfig,
 the manifest, the built sources, the tool descriptors, the mission/schema text,
@@ -188,8 +189,9 @@ def render_echo(echo: dict) -> str:
 
     Compact but complete: agent, universe, schedule, data, tools (with params),
     prompt lengths, PIT policy, fingerprint digest, probe/prefetch outcomes.
-    The full text of the mission/schema/instruction is in `echo.json`; the
-    terminal shows lengths plus a snippet so the line stays scannable.
+    Full mission/schema/instruction text lives in the strategy pack; the
+    terminal shows lengths plus a snippet so the line stays scannable. The
+    block is also recorded on the ``run_echo`` nerve event in ``run.log``.
     """
     lines: list[str] = []
     a = echo["agent"]

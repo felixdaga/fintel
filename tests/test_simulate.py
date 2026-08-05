@@ -242,8 +242,12 @@ def test_run_job_single_name_constant_agent(tmp_path):
     # One run, one trial, two cells (single_name scope)
     run_root = job_root / "r1"
     assert (run_root / "config.json").is_file()
-    assert (run_root / "lock.json").is_file()
     assert (run_root / "result.json").is_file()
+    assert not (run_root / "lock.json").exists()
+    assert not (run_root / "echo.json").exists()
+    assert not (run_root / "fingerprint.json").exists()
+    cfg = json.loads((run_root / "config.json").read_text())
+    assert cfg.get("fingerprint", {}).get("digest")
 
     trial_root = run_root / "trials" / "2024-01-02"
     assert (trial_root / "decision.json").is_file()
@@ -332,7 +336,7 @@ def test_run_job_scripted_agent_with_reads(tmp_path):
 # ── mission / output schema / fingerprint / agent preflight ─────────────────
 
 
-def test_run_job_writes_a_fingerprint_next_to_the_run(tmp_path):
+def test_run_job_writes_a_fingerprint_into_config(tmp_path):
     package = _write_package(tmp_path / "pkg")
     job = _job_config(package)
     job.__dict__["output_root"] = str(tmp_path / "runs")
@@ -341,7 +345,8 @@ def test_run_job_writes_a_fingerprint_next_to_the_run(tmp_path):
 
     run_job(job, market_config=MarketConfig(cache_root=tmp_path / "cache", offline=True))
 
-    fp = json.loads((tmp_path / "runs" / "test-job-001" / "r1" / "fingerprint.json").read_text())
+    cfg = json.loads((tmp_path / "runs" / "test-job-001" / "r1" / "config.json").read_text())
+    fp = cfg["fingerprint"]
     assert fp["agent_name"] == "constant"
     assert fp["data_kinds"] == ["prices"]
     assert fp["digest"]
@@ -358,10 +363,10 @@ def test_two_runs_of_the_same_package_have_the_same_fingerprint(tmp_path):
         job = _job_config(package)
         job.__dict__["output_root"] = str(tmp_path / f"runs{i}")
         run_job(job, market_config=MarketConfig(cache_root=tmp_path / f"cache{i}", offline=True))
-        fp = json.loads(
-            (tmp_path / f"runs{i}" / "test-job-001" / "r1" / "fingerprint.json").read_text()
+        cfg = json.loads(
+            (tmp_path / f"runs{i}" / "test-job-001" / "r1" / "config.json").read_text()
         )
-        digests.append(fp["digest"])
+        digests.append(cfg["fingerprint"]["digest"])
     assert digests[0] == digests[1]
 
 

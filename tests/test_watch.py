@@ -59,7 +59,7 @@ def test_render_produces_a_frame_with_run_and_cell():
     assert "jan" in frame and "NVDA" in frame
     assert "2026-01-02" in frame
     assert "done:ok" in frame
-    assert "press q to quit" in frame
+    assert "press q" in frame and "to quit" in frame
 
 
 def test_apply_disambiguates_same_symbol_across_dates():

@@ -8,6 +8,9 @@ shape of every artifact is declared once here, so the CLI's reader layer
 (`cli/present.py`) and a re-run can point at the same schema rather than
 re-deriving it at each call site.
 
+Per run the durable pair is `config.json` + `result.json`. The run echo is a
+nerve event (not a writer here).
+
 Single-writer rules are still enforced by the callers (the trial writes
 `decision.json` only after all cells; the job writes `result.json` once).
 This module just makes each write a one-liner that can't drop the
@@ -53,20 +56,8 @@ def write_run_config(config_path: Path, config: BaseModel) -> None:
     write_model(config_path, config)
 
 
-def write_run_lock(lock_path: Path, lock: BaseModel) -> None:
-    write_model(lock_path, lock)
-
-
 def write_job_config(config_path: Path, config: BaseModel) -> None:
     write_model(config_path, config)
-
-
-def write_echo(echo_path: Path, echo: dict) -> None:
-    write_json(echo_path, echo)
-
-
-def write_fingerprint(fingerprint_path: Path, fingerprint) -> None:
-    write_json(fingerprint_path, fingerprint.to_dict())
 
 
 def write_health(health_path: Path, health: dict) -> None:

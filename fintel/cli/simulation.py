@@ -101,7 +101,7 @@ def run_simulation(args: Namespace) -> int:
     if use_watch:
         # One CLI, all features: background job (quiet) + live multi-track dashboard.
         # One track per repeat (r1..rK); preflight/probe shown as a header.
-        result = _run_with_dashboard(job, market, job_root)
+        result = _run_with_dashboard(job, market, job_root, getattr(args, "watch_mode", "auto"))
     else:
         # Synchronous: verbose nerve lines (or quiet), no dashboard. Used for
         # --no-watch, non-tty/CI, and --quiet.
@@ -117,7 +117,7 @@ def run_simulation(args: Namespace) -> int:
     return 0
 
 
-def _run_with_dashboard(job: JobConfig, market, job_root: Path):
+def _run_with_dashboard(job: JobConfig, market, job_root: Path, watch_mode: str = "auto"):
     """Run the job in a background thread (quiet — logs only) and show the live
     in-place dashboard in the foreground. One track per repeat (r1..rK); the
     job-level preflight/probe is shown as a shared header drained from job.log.
@@ -137,8 +137,8 @@ def _run_with_dashboard(job: JobConfig, market, job_root: Path):
 
     t = threading.Thread(target=_runner, name="fintel-job", daemon=False)
     t.start()
-    # Blocks until every run reports done (or 'q'). Preflight header comes from job.log.
-    watch_run_logs(run_logs, tags=tags, job_log=job_log)
+    # Blocks until every run reports done (or 'q'/Ctrl-C). Preflight header from job.log.
+    watch_run_logs(run_logs, tags=tags, job_log=job_log, mode=watch_mode)
     t.join()
     return box["result"]
 

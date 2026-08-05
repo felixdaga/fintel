@@ -1,10 +1,12 @@
 """The run echo — every input gathered before any cell runs.
 
-Pins that `run_job` writes `echo.json` next to the run, that it carries the
-full input surface (agent, universe, schedule, data, tools with their *exact*
-schemas, the injected prompt, the PIT policy, the fingerprint), and that the
-terminal renderer is scannable. The echo is the 'never go blind' artifact: if
-a run misbehaves, the echo alone tells you what world the agent was acting on.
+Pins that `run_job` emits a `run_echo` nerve event (terminal + run.log) carrying
+the full input surface summary (agent, universe, schedule, data, tools with
+their *exact* schemas, the injected prompt, the PIT policy, the fingerprint),
+and that the terminal renderer is scannable. The fingerprint digest is sealed
+into `r1/config.json` (not a sibling file). The echo is the 'never go blind'
+signal: if a run misbehaves, the log echo + config tell you what world the
+agent was acting on.
 """
 
 from __future__ import annotations
@@ -17,7 +19,7 @@ from fintel.environment.echo import build_echo, render_echo
 from fintel.environment.nerve import Nerve
 
 
-def test_run_job_writes_echo_next_to_the_run(tmp_path):
+def test_run_job_emits_echo_and_seals_fingerprint_in_config(tmp_path):
     from fintel.market.settings import MarketConfig
     from fintel.simulate.job import run_job
 
@@ -26,35 +28,24 @@ def test_run_job_writes_echo_next_to_the_run(tmp_path):
     job.__dict__["output_root"] = str(tmp_path / "runs")
     run_job(job, market_config=MarketConfig(cache_root=tmp_path / "cache", offline=True))
 
-    echo_path = tmp_path / "runs" / "test-job-001" / "r1" / "echo.json"
-    assert echo_path.is_file(), "echo.json was not written next to the run"
-    echo = json.loads(echo_path.read_text())
+    run_root = tmp_path / "runs" / "test-job-001" / "r1"
+    assert not (run_root / "echo.json").exists()
+    assert not (run_root / "lock.json").exists()
+    assert not (run_root / "fingerprint.json").exists()
 
-    assert echo["agent"]["name"] == "constant"
-    assert echo["strategy"]["name"] == "test"
-    assert echo["universe"]["resolved_symbols"]  # universe resolved
-    assert echo["schedule"]["resolved_dates"]  # schedule resolved
-    assert echo["data"] == [{"kind": "prices", "source": "synthetic_prices"}]
-    # The tools surface is derived from the catalog: one tool per bound kind,
-    # each carrying its full JSON schema (every param) — not just a name.
-    assert len(echo["tools"]) == 1
-    tool = echo["tools"][0]
-    assert tool["kind"] == "prices"
-    assert tool["name"] == "get_prices"
-    assert tool["schema"]["type"] == "object"
-    assert "symbol" in tool["schema"]["properties"]
-    assert "symbol" in tool["required"]
-    # The injected prompt: mission + output schema + a composed instruction
-    # that names the decision date and the universe.
-    assert "mission text" in echo["prompt"]["mission"]
-    assert echo["prompt"]["output_schema"]
-    instr = echo["prompt"]["composed_instruction"]
-    assert "Decision date:" in instr
-    assert "## Tools" in instr
-    assert "submit_views" in instr
-    # PIT policy and fingerprint are part of the echo.
-    assert "pit_enforcement" in echo["agent"]
-    assert echo["fingerprint"]["digest"]
+    cfg = json.loads((run_root / "config.json").read_text())
+    assert cfg["agent"]["name"] == "constant"
+    assert cfg["fingerprint"]["digest"]
+    assert cfg["fingerprint"]["agent_name"] == "constant"
+    assert cfg["fingerprint"]["data_kinds"] == ["prices"]
+
+    log = [json.loads(l) for l in (run_root / "run.log").read_text().splitlines() if l.strip()]
+    echo_ev = next(e for e in log if e.get("event") == "run_echo")
+    block = echo_ev["echo"]
+    assert "== run echo" in block
+    assert "constant" in block
+    assert "get_prices" in block
+    assert "fingerprint:" in block
 
 
 def test_echo_records_package_supplied_source_without_catalog_entry(tmp_path):

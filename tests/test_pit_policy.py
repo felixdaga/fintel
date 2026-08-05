@@ -96,7 +96,7 @@ def test_preflight_rejects_an_adapter_without_pit_enforcement():
 
 
 def test_preflight_rejects_cli_deny_without_enforce_override():
-    from fintel.agents.installed.base import SubprocessAgent
+    from fintel.agents.adapters.base import SubprocessAgent
 
     class Incomplete(SubprocessAgent):
         name = "incomplete"
@@ -114,7 +114,7 @@ def test_preflight_rejects_cli_deny_without_enforce_override():
 
 
 def test_openclaw_enforce_applies_deny_and_isolates_mcp(tmp_path, monkeypatch):
-    from fintel.agents.installed.openclaw import OpenClawAgent
+    from fintel.agents.adapters.openclaw import OpenClawAgent
     from fintel.environment import Cell, RuntimeConfig, build_environment
     from fintel.market.factory import build_data_sources
     from fintel.market.settings import MarketConfig
@@ -173,7 +173,7 @@ def test_openclaw_enforce_applies_deny_and_isolates_mcp(tmp_path, monkeypatch):
 
 
 def test_claude_build_command_passes_disallowed_tools(tmp_path):
-    from fintel.agents.installed.claude_code import ClaudeCodeAgent
+    from fintel.agents.adapters.claude_code import ClaudeCodeAgent
     from fintel.environment import Cell, RuntimeConfig, build_environment
     from fintel.market.factory import build_data_sources
     from fintel.market.settings import MarketConfig

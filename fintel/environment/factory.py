@@ -77,6 +77,8 @@ def build_policy(
     kinds: tuple[str, ...],
     universe: list[Symbol],
     peers: bool = False,
+    lookback_caps: dict[str, int] | None = None,
+    render_caps: dict[str, dict[str, int]] | None = None,
     limits: dict | None = None,
 ) -> AccessPolicy:
     """What this cell may read and decide.
@@ -84,13 +86,50 @@ def build_policy(
     A single-name cell decides on its own symbol only. Whether it may *read* the
     rest of the universe is the strategy's call: comparing against peers is
     ordinary analysis, but it is also a wider information set, so it's explicit.
+
+    `lookback_caps` is per-kind, read from each bound source's `lookback_days`
+    (which the factory baked from the strategy binding). A caller may request
+    less history, never more than the strategy declared.
     """
     return PolicyBuilder(
         kinds=kinds,
         decidable=cell.symbols,
         peers=tuple(universe) if peers else (),
+        lookback_caps=dict(lookback_caps or {}),
+        render_caps=dict(render_caps or {}),
         limits=limits or {},
     ).build()
+
+
+def _lookback_caps_from(sources: dict[str, DataSource]) -> dict[str, int]:
+    """Per-kind lookback cap from each source's resolved `lookback_days`."""
+    caps: dict[str, int] = {}
+    for kind, src in sources.items():
+        lb = getattr(src, "lookback_days", None)
+        if lb is None:
+            spec = getattr(src, "spec", None)
+            if spec is not None and hasattr(spec, "lookback_days"):
+                lb = spec.lookback_days
+        if lb is not None:
+            caps[kind] = int(lb)
+    return caps
+
+
+def _render_caps_from(sources: dict[str, DataSource]) -> dict[str, dict[str, int]]:
+    """Per-kind render caps carried by each source (e.g. snippet_max_chars for
+    web_search, summary_max_chars for news). These are evidence-rendering
+    knobs, not fetch knobs; the source acts as a carrier for the resolved
+    binding/catalog default so the policy can surface them to the renderer.
+    """
+    out: dict[str, dict[str, int]] = {}
+    for kind, src in sources.items():
+        rc = getattr(src, "render_caps", None)
+        if rc:
+            out[kind] = dict(rc)
+        smc = getattr(src, "snippet_max_chars", None)
+        if smc is not None and kind == "web_search":
+            out.setdefault(kind, {})["snippet_max_chars"] = int(smc)
+    return out
 
 
 def build_environment(
@@ -114,11 +153,15 @@ def build_environment(
     the same cache the orchestrator used (written into bindings.json).
     """
     runtime = runtime or RuntimeConfig()
+    lookback_caps = _lookback_caps_from(sources)
+    render_caps = _render_caps_from(sources)
     policy = build_policy(
         cell=cell,
         kinds=kinds if kinds is not None else tuple(sources),
         universe=universe,
         peers=peers,
+        lookback_caps=lookback_caps,
+        render_caps=render_caps,
         limits=runtime.limits,
     )
 
@@ -129,7 +172,7 @@ def build_environment(
         session.create(reset=runtime.reset_sessions)
         trace_path = session.trace if runtime.trace else None
 
-    log = AccessLog(cell=cell, path=trace_path)
+    log = AccessLog(cell=cell, path=trace_path, nerve=nerve)
     access = DataAccess(cell=cell, sources=sources, policy=policy, on_read=log.record)
     return Environment(
         cell=cell,

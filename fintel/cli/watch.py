@@ -17,6 +17,7 @@ so the prior terminal contents are restored on exit.
 from __future__ import annotations
 
 import json
+import os
 import select
 import sys
 import termios
@@ -33,6 +34,8 @@ _CLEAR_LINE = "\033[K"
 _CLEAR_SCREEN = "\033[2J"
 _HIDE_CURSOR = "\033[?25l"
 _SHOW_CURSOR = "\033[?25h"
+# Cursor up N lines (used by stream mode to rewrite in place without alt screen).
+_CUU = lambda n: f"\033[{n}A" if n > 0 else ""
 
 # Colors.
 _C = {"g": "\033[32m", "r": "\033[31m", "y": "\033[33m", "c": "\033[36m", "d": "\033[2m", "b": "\033[1m", "x": "\033[0m"}
@@ -97,6 +100,14 @@ class _Run:
     started_mono: float = 0.0
     done: bool = False
     _offset: int = 0
+    # Running usage total across completed cells (live cost). cost_usd stays
+    # None until a cell reports a real charge; basis tracks provenance.
+    n_llm_calls: int = 0
+    tokens_in: int = 0
+    tokens_out: int = 0
+    cost_usd: float | None = None
+    cost_basis: str = "unknown"
+    n_cells_done: int = 0
 
     def cell(self, name: str, date: str) -> _Cell:
         key = f"{name}@{date}"
@@ -159,6 +170,20 @@ def _apply(run: _Run, ev: dict, now: float) -> None:
         c.reads = ev.get("n_reads", 0) or 0
         c.elapsed_ms = ev.get("elapsed_ms", 0.0) or 0.0
         c.last_mono = now
+        # Live cost rollup: add this cell's usage to the running total.
+        run.n_cells_done += 1
+        run.n_llm_calls += int(ev.get("n_llm_calls", 0) or 0)
+        run.tokens_in += int(ev.get("tokens_in", 0) or 0)
+        run.tokens_out += int(ev.get("tokens_out", 0) or 0)
+        cell_cost = ev.get("cost_usd")
+        if cell_cost is not None:
+            run.cost_usd = (run.cost_usd or 0.0) + float(cell_cost)
+        # basis: reported wins; once unknown stays unknown unless a real cost lands.
+        cb = ev.get("cost_basis", "unknown")
+        if cb == "reported" or (run.cost_usd is not None and cb in ("reported", "estimated")):
+            run.cost_basis = cb if run.cost_basis != "reported" else "reported"
+        elif run.cost_basis != "reported":
+            run.cost_basis = cb
 
 
 def _drain(run: _Run) -> None:
@@ -226,7 +251,41 @@ def _stage_color(stage: str) -> str:
     }.get(stage, "c")  # any adapter-defined stage → active
 
 
-def _render(runs: list[_Run], now: float, preflight: _Preflight | None = None) -> str:
+def _fmt_tok(n: int) -> str:
+    """Compact token count: 1234 -> 1.2k, 1234567 -> 1.2M."""
+    if n >= 1_000_000:
+        return f"{n / 1_000_000:.1f}M"
+    if n >= 1_000:
+        return f"{n / 1_000:.1f}k"
+    return str(n)
+
+
+def _cost_line(run: _Run) -> str:
+    """One-line live usage rollup for a run, shown at the top of its block.
+
+    `cost_usd` stays None until a cell reports a real charge; `basis` travels
+    with the number so an estimate never reads as a measurement.
+    """
+    if run.cost_usd is not None:
+        cost = f"${run.cost_usd:.4f}"
+    else:
+        cost = _c("d", "n/a")
+    basis = run.cost_basis
+    bc = {"reported": "g", "estimated": "y", "mixed": "y", "unknown": "d"}.get(basis, "d")
+    return (
+        _c("d", "cost ") + _c(bc, cost)
+        + _c("d", f"  ({basis})")
+        + _c("d", "  tok ") + _fmt_tok(run.tokens_in) + _c("d", "→") + _fmt_tok(run.tokens_out)
+        + _c("d", f"  {run.n_llm_calls} calls  {run.n_cells_done} cells")
+    )
+
+
+def _render_lines(runs: list[_Run], now: float, preflight: _Preflight | None = None) -> list[str]:
+    """The dashboard body as a list of plain lines (no cursor/positioning escapes).
+
+    Callers add their own positioning (alt-screen home+clear, or stream cursor-up)
+    so the same body serves both render modes.
+    """
     lines: list[str] = []
     lines.append(_c("b", "fintel nerve") + _c("d", "  live dashboard  ") + _c("d", time.strftime("%H:%M:%S")))
     # Shared job-level preflight header (probe is run once, before any track).
@@ -243,6 +302,8 @@ def _render(runs: list[_Run], now: float, preflight: _Preflight | None = None) -
         st = run.status
         stc = {"done": "g", "failed": "r", "running": "c", "starting": "d"}.get(st, "d")
         head = f"{_c('b', run.tag)}  {_c(stc, st)}  {_c('d', f'{elapsed:5.1f}s')}"
+        # Live cost rollup (total across completed cells), shown at the top.
+        head += "   " + _cost_line(run)
         # preflight / probes line
         if run.probes:
             bits = []
@@ -271,11 +332,29 @@ def _render(runs: list[_Run], now: float, preflight: _Preflight | None = None) -
                     f"{_col('r' if c.errors else 'd', str(c.errors), 3, 'right')} "
                     f"{idle:4.0f}s  {tail}"
                 )
-                lines.append(row + _CLEAR_LINE)
+                lines.append(row)
         lines.append(_c("d", "─" * 78))
-    lines.append(_c("d", "press q to quit"))
+    lines.append(_c("d", "press q (or Ctrl-C) to quit"))
+    return lines
+
+
+def _render(runs: list[_Run], now: float, preflight: _Preflight | None = None) -> str:
     # Home + clear, then each line with a trailing clear-to-EOL, then clear to EOS.
-    return _HOME + _CLEAR_SCREEN + "\n".join(l + _CLEAR_LINE for l in lines) + "\n" + "\033[J"
+    body = "\n".join(l + _CLEAR_LINE for l in _render_lines(runs, now, preflight))
+    return _HOME + _CLEAR_SCREEN + body + "\n" + "\033[J"
+
+
+def _auto_mode() -> str:
+    """Pick a render mode from the environment.
+
+    Cursor/VS Code's integrated terminal (xterm.js) handles the alternate-screen
+    buffer poorly — the dashboard can render blank or fail to restore on exit —
+    so default to stream mode there. A real terminal gets the full alt-screen app.
+    """
+    tp = (os.environ.get("TERM_PROGRAM") or "").lower()
+    if tp in ("cursor", "vscode", "vsce"):
+        return "stream"
+    return "alt"
 
 
 def watch_run_logs(
@@ -283,41 +362,59 @@ def watch_run_logs(
     tags: list[str] | None = None,
     poll_s: float = 0.3,
     job_log: Path | None = None,
+    mode: str = "auto",
 ) -> int:
+    if mode == "auto":
+        mode = _auto_mode()
     runs: list[_Run] = []
     for i, p in enumerate(paths):
         tag = (tags[i] if tags and i < len(tags) else p.parent.parent.parent.name)
         runs.append(_Run(tag=tag, path=p))
     preflight = _Preflight()
     pf_offset = [0]
-    interactive = sys.stdout.isatty() and sys.stdin.isatty()
-    sys.stdout.write((_ALT_ON + _HIDE_CURSOR) if interactive else "")
+    interactive = sys.stdout.isatty()
+    use_alt = interactive and mode == "alt"
+    use_stream = interactive and mode == "stream"
+
+    sys.stdout.write((_ALT_ON + _HIDE_CURSOR) if use_alt else "")
     sys.stdout.flush()
     old = None
+    if use_alt:
+        try:
+            old = termios.tcgetattr(sys.stdin.fileno())
+            tty.setcbreak(sys.stdin.fileno())
+        except (termios.error, ValueError):
+            old = None
+    prev_lines = 0
     try:
-        if interactive:
-            try:
-                old = termios.tcgetattr(sys.stdin.fileno())
-                tty.setcbreak(sys.stdin.fileno())
-            except (termios.error, ValueError):
-                old = None
         while True:
             for run in runs:
                 _drain(run)
             if job_log is not None:
                 _drain_preflight(preflight, job_log, pf_offset)
-            frame = _render(runs, time.monotonic(), preflight=preflight)
-            if interactive:
-                sys.stdout.write(frame)
+            lines = _render_lines(runs, time.monotonic(), preflight=preflight)
+            body = "\n".join(l + _CLEAR_LINE for l in lines) + "\n"
+            if use_alt:
+                sys.stdout.write(_HOME + _CLEAR_SCREEN + body + "\033[J")
+            elif use_stream:
+                # Rewrite in place without taking over the screen: move the cursor
+                # up to the top of the previous frame, then overwrite each line.
+                # No alt screen, no cursor hiding — robust in Cursor's terminal.
+                if prev_lines:
+                    sys.stdout.write(_CUU(prev_lines))
+                sys.stdout.write(body)
+                prev_lines = len(lines) + 1  # +1 for the trailing newline
             else:
-                # Plain frames for piped/captured output: clear screen each frame.
-                sys.stdout.write(_CLEAR_SCREEN + _HOME + frame)
+                # Non-interactive / captured: clear-and-home each frame.
+                sys.stdout.write(_CLEAR_SCREEN + _HOME + body)
             sys.stdout.flush()
-            if interactive and old is not None:
+            if use_alt and old is not None:
                 r, _, _ = select.select([sys.stdin], [], [], poll_s)
                 if r and sys.stdin.read(1) in ("q", "\x03"):
                     break
             else:
+                # Stream mode: no raw stdin — quit via Ctrl-C (caught below) or
+                # auto-exit when all runs report done.
                 time.sleep(poll_s)
             if all(r.done for r in runs):
                 time.sleep(0.5)
@@ -325,7 +422,7 @@ def watch_run_logs(
     except KeyboardInterrupt:
         pass
     finally:
-        sys.stdout.write((_SHOW_CURSOR + _ALT_OFF) if interactive else "")
+        sys.stdout.write((_SHOW_CURSOR + _ALT_OFF) if use_alt else "")
         sys.stdout.flush()
         if old is not None:
             termios.tcsetattr(sys.stdin.fileno(), termios.TCSADRAIN, old)
@@ -353,9 +450,21 @@ def resolve_paths(job_ids: list[str], output_root: Path) -> list[Path]:
 def run_watch(args) -> int:
     root = Path(getattr(args, "output_root", "runs"))
     job_ids = list(args.job_ids)
+    mode = getattr(args, "watch_mode", "auto")
+    wait_s = int(getattr(args, "wait", 0) or 0)
     paths = resolve_paths(job_ids, root)
+    if not paths and wait_s > 0:
+        import time as _time
+        print(
+            f"waiting for {job_ids} under {root} (up to {wait_s}s)...",
+            file=sys.stderr, flush=True,
+        )
+        deadline = _time.monotonic() + wait_s
+        while not paths and _time.monotonic() < deadline:
+            _time.sleep(1.0)
+            paths = resolve_paths(job_ids, root)
     if not paths:
         print(f"no run.log found for {job_ids} under {root}", file=sys.stderr)
         return 1
     tags = [p.parent.parent.parent.name for p in paths]
-    return watch_run_logs(paths, tags=tags)
+    return watch_run_logs(paths, tags=tags, mode=mode)

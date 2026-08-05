@@ -15,7 +15,7 @@ import pytest
 
 from fintel import agents
 from fintel.agents.fingerprint import fingerprint
-from fintel.agents.installed import (
+from fintel.agents.adapters import (
     AgentError,
     RateLimited,
     SafetyRefusal,
@@ -295,7 +295,7 @@ def test_preflight_checks_pass_for_a_real_binary():
 
 
 def test_openclaw_preflight_flags_a_missing_profile():
-    from fintel.agents.installed.openclaw import OpenClawAgent
+    from fintel.agents.adapters.openclaw import OpenClawAgent
 
     problems = OpenClawAgent.preflight_checks(profile="definitely-not-a-real-profile-xyz")
     assert any("has no config" in p for p in problems)

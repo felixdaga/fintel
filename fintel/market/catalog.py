@@ -232,6 +232,28 @@ def required_env(bindings: list) -> list[str]:
     return sorted(out)
 
 
+def resolve_lookback(binding) -> int | None:
+    """The one lookback value for a kind.
+
+    Strategy ``[[data]].lookback_days`` wins; the catalog ``Param.default`` is
+    the fallback when the strategy omits it. Returns ``None`` when neither
+    declares one — a custom ``module:Callable`` source with no catalog entry and
+    no strategy value; callers supply a fallback.
+
+    This is the single source of truth. The factory bakes the resolved value
+    into each source instance, so prefetch, probe, tool schemas, the access
+    cap, and evidence packs all read the same number from one place.
+    """
+    v = (binding.params or {}).get("lookback_days")
+    if v is not None:
+        return int(v)
+    if has_source(binding.source):
+        for p in source(binding.source).params:
+            if p.name == "lookback_days" and p.default is not None:
+                return int(p.default)
+    return None
+
+
 # ── builtin field rosters ────────────────────────────────────────────────────
 
 PRICE_FIELDS: tuple[Field, ...] = (
@@ -341,6 +363,35 @@ WEB_SEARCH_FIELDS: tuple[Field, ...] = (
 )
 
 
+# ── external macro & news (free, PIT-safe) ───────────────────────────────────
+# FRED macroeconomic series (https://fred.stlouisfed.org). True time series, so
+# PIT is enforced on the observation date — safe for historical backtests.
+MACRO_FIELDS: tuple[Field, ...] = (
+    Field("series_id", "text", "FRED series ID"),
+    Field("title", "text", "Series title"),
+    Field("units", "text", "Units of measurement"),
+    Field("frequency", "text", "Reporting frequency"),
+    Field("observations", "list", "[{date, value}] oldest→newest, PIT < decision_date"),
+    Field("latest_date", "date", "Most recent observation date in window"),
+    Field("latest_value", "number", "Most recent observation value"),
+    Field("change", "number", "latest - first in window"),
+    Field("change_pct", "number", "(latest/first - 1) * 100"),
+)
+
+# Alpha Vantage News & Sentiment (https://www.alphavantage.co). Honours
+# historical time_from/time_to windows, so PIT-safe for backtests. The value
+# over `news` is the per-article sentiment score and per-ticker relevance.
+AV_NEWS_FIELDS: tuple[Field, ...] = (
+    Field("title", "text", "Headline"),
+    Field("url", "text", "Article link"),
+    Field("published_at", "date", "Publication date — the PIT stamp"),
+    Field("source", "text", "Publisher / source domain"),
+    Field("overall_sentiment_score", "number", "Article sentiment score [-1, 1]", "ratio"),
+    Field("overall_sentiment_label", "text", "Bearish/Neutral/Bullish"),
+    Field("ticker_sentiment", "list", "[{ticker, relevance_score, ticker_sentiment_score, ticker_sentiment_label}]"),
+)
+
+
 def _ratio_fields() -> tuple[Field, ...]:
     from fintel.market.data.ratios import RATIO_FIELDS
 
@@ -400,7 +451,13 @@ def register_builtins() -> None:
             provider="massive",
             target="fintel.market.factory:massive_news",
             fields=NEWS_FIELDS,
-            params=(Param("lookback_days", "number", 90), Param("limit", "number")),
+            params=(Param("lookback_days", "number", 90), Param("limit", "number"),
+                     # Render cap: how much of each news summary the evidence
+                     # pack shows the agent. Default owned here (markets module);
+                     # a strategy may override via `[[data]].params`.
+                     Param("summary_max_chars", "number", 640,
+                           "Max chars of each news summary rendered to the agent",
+                           per_call=False)),
             requires_env=("MASSIVE_API_KEY",),
             description="Per-ticker articles, clamped on published_at.",
         ),
@@ -441,7 +498,6 @@ def register_builtins() -> None:
                     365,
                     "Calendar days of daily ratio history to serve",
                 ),
-                Param("filings_lookback_days", "number", 1460),
             ),
             derives_from=("prices", "fundamentals"),
             description=(
@@ -475,12 +531,33 @@ def register_builtins() -> None:
             params=(
                 Param("lookback_days", "number", 30),
                 Param("max_results", "number", 10),
+                # Render cap: how much of each web snippet the evidence pack
+                # shows the agent. A fetch-time `max_results` bounds the
+                # *number* of results; this bounds the *text* of each. The
+                # default lives here (markets module) alongside other data
+                # defaults; a strategy may override it via `[[data]].params`
+                # like `lookback_days`.
+                Param(
+                    "snippet_max_chars", "number", 640,
+                    "Max chars of each web snippet rendered to the agent",
+                    per_call=False,
+                ),
+                # Post-fetch PIT: Brave's freshness window is soft; the response
+                # carries sources[url].age = [human, YYYY-MM-DD, relative, ISO].
+                # When on, drop results whose age date falls outside the search
+                # window. Undated results are kept. Strategies may disable.
+                Param(
+                    "clamp_by_age", "bool", True,
+                    "Post-filter Brave results using sources[url].age vs the "
+                    "search window (undated kept)",
+                    per_call=False,
+                ),
             ),
             requires_env=("BRAVE_API_KEY",),
             subject="query",
             description=(
-                "Freshness-windowed search. PIT rests on the provider window, since "
-                "results carry no date to clamp on afterwards."
+                "Freshness-windowed search. PIT: provider window ends "
+                "decision_date-1, then optional post-clamp on Brave age dates."
             ),
         ),
         replace=True,
@@ -498,6 +575,54 @@ def register_builtins() -> None:
                 Param("daily_vol", "number", 0.015),
             ),
             description="Deterministic seeded walk on real trading days. No network or key.",
+        ),
+        replace=True,
+    )
+    # ── external free, PIT-safe vendors (TradingAgents dataflows ports) ──────
+    register_source(
+        SourceInfo(
+            name="fred_macro",
+            kind="macro",
+            provider="fred",
+            target="fintel.market.factory:fred_macro",
+            fields=MACRO_FIELDS,
+            params=(
+                Param("lookback_days", "number", 365, "Calendar days of history to serve"),
+                Param(
+                    "indicator",
+                    "text",
+                    None,
+                    "Friendly alias (cpi, unemployment, 10y_treasury) or raw FRED series ID",
+                ),
+            ),
+            requires_env=("FRED_API_KEY",),
+            subject="none",
+            description=(
+                "FRED macro time series (rates, yields, inflation, labour, growth). "
+                "True dated observations, PIT-clamped on observation date — safe for "
+                "historical backtests. Omit `indicator` for the curated default bundle."
+            ),
+        ),
+        replace=True,
+    )
+    register_source(
+        SourceInfo(
+            name="alphavantage_news",
+            kind="av_news",
+            provider="alpha_vantage",
+            target="fintel.market.factory:alphavantage_news",
+            fields=AV_NEWS_FIELDS,
+            params=(
+                Param("lookback_days", "number", 30),
+                Param("limit", "number", 50),
+            ),
+            requires_env=("ALPHA_VANTAGE_API_KEY",),
+            subject="symbol",
+            description=(
+                "Alpha Vantage News & Sentiment: per-ticker articles with per-article "
+                "sentiment score and per-ticker relevance. Honours historical windows, "
+                "so PIT-safe for backtests."
+            ),
         ),
         replace=True,
     )

@@ -65,7 +65,11 @@ class Nerve(Progress):
     stream: TextIO = field(default_factory=lambda: sys.stderr)
     verbose: bool = True
     log_path: Path | None = None
-    stall_threshold_s: float = 60.0
+    # Above the LLM client timeout (180s): a single in-flight LLM call emits no
+    # staging event, so a 60s threshold false-flags cells that are simply blocked
+    # on a long specialist/PM call. A hung call errors out via the LLM timeout
+    # before this trips; this threshold is the backstop for a truly dead cell.
+    stall_threshold_s: float = 200.0
     grid_interval_s: float = 2.0
     tracker: StageTracker = field(default_factory=StageTracker)
     _lock: threading.Lock = field(default_factory=threading.Lock, repr=False)
@@ -196,6 +200,17 @@ def _format(event: str, fields: dict[str, Any]) -> str:
         tag = "ok" if ok else "ERROR"
         text = f"  {fields.get('text', '')[:80]}" if not ok else ""
         return f"     ← {fields.get('tool')}  [{tag}]{text}"
+    if event == "data_read":
+        # Tokens are an estimate (chars/4), so they carry a leading ~ to keep
+        # them visually distinct from the exact char counts.
+        cached = " cached" if fields.get("cached") else ""
+        return (
+            f"     read {fields.get('kind'):14} [{fields.get('status','?'):6}] "
+            f"{fields.get('source',''):14}  "
+            f"raw={fields.get('raw_chars',0)}c/~{fields.get('raw_tokens',0)}t  "
+            f"capped={fields.get('capped_chars',0)}c/~{fields.get('capped_tokens',0)}t"
+            f"{cached}"
+        )
     if event == "agent_stalled":
         return (
             f"     !! {fields.get('cell')} stalled: {fields.get('reason')} "

@@ -178,6 +178,11 @@ def run_cell(
         health=health.status,
         n_reads=health.n_reads,
         elapsed_ms=elapsed_ms,
+        n_llm_calls=response.usage.n_llm_calls,
+        tokens_in=response.usage.tokens_in,
+        tokens_out=response.usage.tokens_out,
+        cost_usd=response.usage.cost_usd,
+        cost_basis=response.usage.basis,
         detail="; ".join(health.issues[:2]) if health.issues else response.detail,
     )
     return CellOutcome(result=result, response=response)

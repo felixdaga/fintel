@@ -28,7 +28,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from fintel.agents.installed.base import SubprocessAgent
+from fintel.agents.adapters.base import SubprocessAgent
 from fintel.agents.pit_policy import (
     FINTEL_MCP_SERVER,
     OPENCLAW_DENY,

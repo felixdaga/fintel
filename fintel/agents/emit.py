@@ -42,8 +42,22 @@ VIEW_PROPERTIES: dict[str, Any] = {
     },
     "sources_cited": {
         "type": "array",
-        "items": {"type": "string"},
-        "description": "Which data kinds actually moved this view, e.g. prices, filing_text.",
+        "description": (
+            "The specific data points that moved this view. Each entry is an "
+            "object with source_type (the data kind, e.g. prices, fundamentals, "
+            "ratios, news, web_search, macro, news_sentiment), source_id (the "
+            "date or identifier of that point), and excerpt (the exact value or "
+            "short verbatim quote). A bare string is accepted for back-compat and "
+            "is treated as a source_type only."
+        ),
+        "items": {
+            "type": "object",
+            "properties": {
+                "source_type": {"type": "string"},
+                "source_id": {"type": "string"},
+                "excerpt": {"type": "string"},
+            },
+        },
     },
 }
 
@@ -148,13 +162,38 @@ def parse_views(
             time_horizon=str(raw.get("time_horizon") or "quarter"),
             rationale=str(raw.get("rationale") or ""),
             key_factors=[str(f) for f in raw.get("key_factors") or [] if str(f).strip()],
-            sources_cited=[
-                SourceRef(source_type=str(s), source_id=str(s))
-                for s in raw.get("sources_cited") or []
-                if str(s).strip()
-            ],
+            sources_cited=_parse_sources(raw.get("sources_cited")),
         )
     return views, notes
+
+
+def _parse_sources(raw: Any) -> list[SourceRef]:
+    """Turn a sources_cited entry list into SourceRef objects.
+
+    Accepts both the provenance form (objects with source_type / source_id /
+    excerpt) and the legacy form (bare strings, treated as a source_type only).
+    Drops anything unusable rather than failing the whole view.
+    """
+    out: list[SourceRef] = []
+    if not isinstance(raw, list):
+        return out
+    for src in raw:
+        if isinstance(src, dict):
+            st = str(src.get("source_type") or "").strip()
+            sid = str(src.get("source_id") or "").strip()
+            if not st:
+                continue
+            out.append(
+                SourceRef(
+                    source_type=st,
+                    source_id=sid or st,
+                    excerpt=(str(src.get("excerpt")).strip() or None) if src.get("excerpt") is not None else None,
+                )
+            )
+        elif isinstance(src, str) and src.strip():
+            s = src.strip()
+            out.append(SourceRef(source_type=s, source_id=s))
+    return out
 
 
 def abstained(payload: dict) -> str | None:

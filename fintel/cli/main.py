@@ -76,6 +76,13 @@ def build_parser() -> argparse.ArgumentParser:
         help="Disable the live in-place dashboard (run synchronously with verbose lines)",
     )
     simulation.add_argument(
+        "--watch-mode",
+        choices=["auto", "alt", "stream"],
+        default="auto",
+        help="Dashboard render mode: auto (default; stream in Cursor, alt elsewhere), "
+        "alt (full-screen, needs a real terminal), stream (in-place without alt screen)",
+    )
+    simulation.add_argument(
         "--no-prefetch",
         action="store_true",
         help="Skip cache warm-up (cold fills at cell time; faster start, slower cells)",
@@ -90,7 +97,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--cache-root",
         default=None,
         help="Cache directory (default: <output-root>/cache). "
-        "Point at delorean's cache to reuse it.",
+        "Shared across jobs; one central cache root.",
     )
     simulation.add_argument(
         "--offline",
@@ -122,6 +129,20 @@ def build_parser() -> argparse.ArgumentParser:
     runs_watch = runs_sub.add_parser("watch", help="Live in-place dashboard for one or more jobs")
     runs_watch.add_argument("job_ids", nargs="+", help="job id(s) or run.log path(s)")
     runs_watch.add_argument("--output-root", default="runs")
+    runs_watch.add_argument(
+        "--watch-mode",
+        choices=["auto", "alt", "stream"],
+        default="auto",
+        help="Render mode: auto (default; stream in Cursor, alt elsewhere), alt, stream",
+    )
+    runs_watch.add_argument(
+        "--wait",
+        type=int,
+        default=0,
+        metavar="SECONDS",
+        help="If the job(s) don't exist yet, poll up to SECONDS for them to appear "
+        "(lets you start the TUI before the simulation). Default 0 (no wait).",
+    )
 
     rep = sub.add_parser("report", help="Evaluate a finished job (KPI + stochasticity + holdings)")
     rep.add_argument("job_id", help="Job id under --output-root")
@@ -130,6 +151,36 @@ def build_parser() -> argparse.ArgumentParser:
         "--cache-root",
         default=None,
         help="Price cache root (default: <output-root>/cache)",
+    )
+
+    cache = sub.add_parser("cache", help="Inspect the central data cache (read-only)")
+    cache_sub = cache.add_subparsers(dest="cache_command", required=True)
+    cache_status = cache_sub.add_parser(
+        "status", help="Show cached date ranges per kind/symbol (gap-aware)"
+    )
+    cache_status.add_argument(
+        "--source",
+        default=None,
+        help="Show only this catalog source (default: all registered sources)",
+    )
+    cache_status.add_argument(
+        "--symbol",
+        default=None,
+        help="Show only this symbol (default: all symbols on disk)",
+    )
+    cache_status.add_argument(
+        "--window",
+        default=None,
+        metavar="FROM..TO",
+        help="Highlight gaps inside this window (ISO dates, e.g. 2024-01-01..2025-12-31)",
+    )
+    cache_status.add_argument(
+        "--cache-root",
+        default=None,
+        help="Cache directory (default: <output-root>/cache)",
+    )
+    cache_status.add_argument(
+        "--output-root", default="runs", help="Output root (default: runs)"
     )
 
     return parser
@@ -155,6 +206,10 @@ def main(argv: list[str] | None = None) -> int:
         from fintel.cli.report import run_report
 
         return run_report(args)
+    if args.command == "cache":
+        from fintel.cli.cache import run_cache
+
+        return run_cache(args)
 
     parser.print_help()
     return 2

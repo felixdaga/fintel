@@ -62,12 +62,13 @@ class MassivePrices:
     client: MassiveClient | None = None
     history_start: Date = field(default_factory=default_history_start)
     adjusted: bool = True
+    lookback_days: int = 365
     name: str = "massive_prices"
     kinds: tuple[str, ...] = ("prices",)
 
     def fetch(self, query: dict, cutoff: Cutoff) -> pd.DataFrame:
         symbol = require(query, "symbol", self.name)
-        lookback = int(query.get("lookback_days", 365))
+        lookback = int(query.get("lookback_days", self.lookback_days))
         df = self._ensure(symbol, cutoff.decision_date - timedelta(days=1))
         if df is None:
             return pd.DataFrame(columns=list(query.get("fields") or []))
@@ -298,6 +299,12 @@ class MassiveRecords:
     spec: RecordSpec
     cache: RecordCache
     client: MassiveClient | None = None
+    lookback_days: int | None = None  # binding override; falls back to spec default
+    # Render caps carried for the evidence pack (not used for fetching).
+    # Populated per-kind by the factory (e.g. massive_news sets
+    # summary_max_chars); empty for kinds that have no render caps. The
+    # policy surfaces these to the renderer. See catalog.py.
+    render_caps: dict = field(default_factory=dict)
     name: str = "massive_records"
 
     @property
@@ -306,7 +313,12 @@ class MassiveRecords:
 
     def fetch(self, query: dict, cutoff: Cutoff) -> list[dict]:
         symbol = require(query, "symbol", self.name)
-        lookback = int(query.get("lookback_days", self.spec.lookback_days))
+        default_lb = (
+            self.lookback_days
+            if self.lookback_days is not None
+            else self.spec.lookback_days
+        )
+        lookback = int(query.get("lookback_days", default_lb))
         through = cutoff.decision_date - timedelta(days=1)
         since = cutoff.decision_date - timedelta(days=lookback)
         records = self._ensure(symbol, since, through)

@@ -155,7 +155,7 @@ class SubprocessAgent:
         # catcher never found the transcript and emitted no staging events.)
         self._prepare_session(env)
 
-        from fintel.agents.installed.catcher import _TranscriptCatcher
+        from fintel.agents.adapters.catcher import _TranscriptCatcher
 
         catcher = _TranscriptCatcher(
             transcript_path=self.session_transcript_path(env),

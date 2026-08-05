@@ -119,8 +119,8 @@ def run_job(
     #   · a job nerve  → `<job>/job.log`   for job-level events (preflight, probe,
     #     prefetch, job_done) that happen before/after any run.
     #   · a run nerve  → `<run>/run.log`   for run-level events (run echo, trial,
-    #     cell, live agent staging) — the live log the operator watches, kept
-    #     next to that run's `echo.json`.
+    #     cell, live agent staging) — the live log the operator watches. The run
+    #     echo is emitted here (not as a sibling echo.json).
     # If the caller passed a Progress (tests, or a custom sink) it receives
     # everything — both levels funnel into the one sink.
     if progress is None:

@@ -17,7 +17,9 @@ from fintel.market import catalog
 from fintel.market.calendar import TradingCalendar
 from fintel.market.constituents import INDEX_PRESETS, historical_universe
 from fintel.market.data.base import DataSource
+from fintel.market.data.av_news import AlphaVantageNews
 from fintel.market.data.filings import MassiveFilingText
+from fintel.market.data.fred import FredMacro
 from fintel.market.data.http import MassiveClient
 from fintel.market.data.massive import FUNDAMENTALS, NEWS, MassivePrices, MassiveRecords
 from fintel.market.data.ratios import ValuationRatios
@@ -117,27 +119,34 @@ def _client(config: MarketConfig) -> MassiveClient | None:
 
 
 def massive_prices(*, config: MarketConfig, **params: Any) -> MassivePrices:
+    keep = {k: v for k, v in params.items() if k in {"adjusted", "history_start", "lookback_days"}}
     return MassivePrices(
         store=PriceStore(root=config.cache_root),
         client=_client(config),
-        **{k: v for k, v in params.items() if k in {"adjusted", "history_start"}},
+        **keep,
     )
 
 
-def massive_fundamentals(*, config: MarketConfig, **_: Any) -> MassiveRecords:
+def massive_fundamentals(*, config: MarketConfig, **params: Any) -> MassiveRecords:
     return MassiveRecords(
         spec=FUNDAMENTALS,
         cache=RecordCache(root=config.cache_root, kind="fundamentals"),
         client=_client(config),
+        lookback_days=params.get("lookback_days"),
         name="massive_fundamentals",
     )
 
 
-def massive_news(*, config: MarketConfig, **_: Any) -> MassiveRecords:
+def massive_news(*, config: MarketConfig, **params: Any) -> MassiveRecords:
+    # Default mirrors catalog `massive_news` Param default; strategy binding
+    # may override via [[data]].params.
+    summary_max_chars = int(params.get("summary_max_chars", 640))
     return MassiveRecords(
         spec=NEWS,
         cache=RecordCache(root=config.cache_root, kind="news"),
         client=_client(config),
+        lookback_days=params.get("lookback_days"),
+        render_caps={"summary_max_chars": summary_max_chars},
         name="massive_news",
     )
 
@@ -156,11 +165,10 @@ def massive_filing_text(*, config: MarketConfig, **params: Any) -> MassiveFiling
 
 
 def valuation_ratios(*, upstream: dict[str, DataSource], **params: Any) -> ValuationRatios:
-    keep = {
-        k: v
-        for k, v in params.items()
-        if k in {"window_days", "lookback_days", "filings_lookback_days"}
-    }
+    # window_days is strategy-owned (defines what the P/E means); lookback_days
+    # is the data range. filings_lookback_days is internal to ValuationRatios
+    # (derived from lookback + window), not strategy-visible.
+    keep = {k: v for k, v in params.items() if k in {"window_days", "lookback_days"}}
     return ValuationRatios(upstream=upstream, **keep)
 
 
@@ -170,15 +178,36 @@ def news_sentiment(*, upstream: dict[str, DataSource], **_: Any) -> NewsSentimen
 
 def web_search(*, config: MarketConfig, **params: Any) -> WebSearch:
     key = None if config.offline else config.brave_api_key
+    keep = {
+        k: v
+        for k, v in params.items()
+        if k in {"lookback_days", "max_results", "snippet_max_chars", "clamp_by_age"}
+    }
+    if "clamp_by_age" in keep:
+        keep["clamp_by_age"] = bool(keep["clamp_by_age"])
     return WebSearch(
         cache_root=config.cache_root,
         api_key=key,
-        **{k: v for k, v in params.items() if k in {"lookback_days", "max_results"}},
+        **keep,
     )
 
 
 def synthetic_prices(**params: Any) -> SyntheticPrices:
     return SyntheticPrices(**{k: v for k, v in params.items() if k in {"base_price", "daily_vol"}})
+
+
+def fred_macro(*, config: MarketConfig, **params: Any) -> FredMacro:
+    """FRED macro series. Key from config (env-loaded); None when offline."""
+    key = None if config.offline else config.fred_api_key
+    keep = {k: v for k, v in params.items() if k in {"lookback_days", "indicators"}}
+    return FredMacro(api_key=key or "", **keep)
+
+
+def alphavantage_news(*, config: MarketConfig, **params: Any) -> AlphaVantageNews:
+    """Alpha Vantage News & Sentiment. Key from config (env-loaded); None when offline."""
+    key = None if config.offline else config.alphavantage_api_key
+    keep = {k: v for k, v in params.items() if k in {"lookback_days", "limit"}}
+    return AlphaVantageNews(api_key=key or "", **keep)
 
 
 def build_data_source(

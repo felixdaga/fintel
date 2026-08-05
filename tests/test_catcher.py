@@ -7,7 +7,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from fintel.agents.installed.catcher import _TranscriptCatcher
+from fintel.agents.adapters.catcher import _TranscriptCatcher
 
 
 def _wait_for(condition, *, timeout: float = 2.0, interval: float = 0.05) -> None:

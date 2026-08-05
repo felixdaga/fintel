@@ -16,10 +16,10 @@ from fintel.utils.import_path import resolve
 AGENTS: dict[str, str] = {
     "scripted": "fintel.agents.scripted:ScriptedAgent",
     "constant": "fintel.agents.scripted:ConstantAgent",
-    "llm": "fintel.agents.llm_agent:LLMAgent",
-    "optimized": "fintel.agents.installed.optimized:OptimizedFintelAgent",
-    "openclaw": "fintel.agents.installed.openclaw:OpenClawAgent",
-    "claude-code": "fintel.agents.installed.claude_code:ClaudeCodeAgent",
+    "llm": "fintel.agents.installed.llm_agent:LLMAgent",
+    "optimized": "fintel.agents.adapters.optimized:OptimizedFintelAgent",
+    "openclaw": "fintel.agents.adapters.openclaw:OpenClawAgent",
+    "claude-code": "fintel.agents.adapters.claude_code:ClaudeCodeAgent",
 }
 
 
@@ -90,7 +90,7 @@ def _check_pit_enforcement(name: str, cls: type) -> list[str]:
     # SubprocessAgent.enforce_pit_policy raises NotImplementedError; a real
     # cli_deny adapter must override it. Identity check against the base.
     try:
-        from fintel.agents.installed.base import SubprocessAgent
+        from fintel.agents.adapters.base import SubprocessAgent
     except ImportError:
         return []
     if not isinstance(cls, type) or not issubclass(cls, SubprocessAgent):

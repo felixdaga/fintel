@@ -1,8 +1,6 @@
 """2t2d real run: 2 tickers x 2 dates, real LLM + real massive data.
 
-Replicates the delorean-next 2t2d smoke against the same keys delorean used:
-  - OpenRouter key from ~/.openclaw/openclaw.json
-  - MASSIVE_API_KEY from ~/.openclaw-delorean/openclaw.json (mcp env)
+Keys come from fintel's local ``.env/keys.env`` via ``bootstrap_env``.
 
 Uses the in-process `llm` agent on the `tools` channel (the fully-wired host):
 the model calls the fintel data tools, which fetch from massive under PIT

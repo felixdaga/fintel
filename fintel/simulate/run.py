@@ -15,9 +15,9 @@ from __future__ import annotations
 
 import time
 from datetime import date as Date
-from pathlib import Path
 
 from fintel.environment.factory import RuntimeConfig
+from fintel.environment.access import dedup_sources
 from fintel.market.calendar import TradingCalendar
 from fintel.market.factory import (
     build_data_sources,
@@ -27,14 +27,11 @@ from fintel.market.factory import (
 from fintel.market.settings import MarketConfig
 from fintel.models.common import Symbol
 from fintel.models.paths import RunPaths
-from fintel.models.run import RunConfig, RunLock, RunResult
+from fintel.models.run import RunConfig, RunResult
 from fintel.models.trial import TrialConfig
 from fintel.environment.progress import Progress
 from fintel.simulate.artifacts import (
-    write_echo,
-    write_fingerprint,
     write_run_config,
-    write_run_lock,
     write_run_result,
 )
 from fintel.simulate.queue import map_parallel
@@ -71,13 +68,13 @@ def run_run(
     `mission_text`/`output_schema_text` are the strategy pack's mission.md and
     output_schema.json (read once by `run_job`, passed down here rather than
     re-read per trial). They flow to every cell's agent unchanged; a fingerprint
-    of them (plus the agent config) is written to `paths.fingerprint` before any
+    of them (plus the agent config) is sealed into `config.json` before any
     trial runs, so a crash still leaves a readable identity for the run.
     """
     # The run nerve: the live emit surface for this run, writing `<run>/run.log`
-    # (next to `echo.json`) and streaming to the terminal. Built here, not in
-    # run_job, so each of K repeats gets its own run.log in its own run folder.
-    # A caller-supplied `progress` (tests, custom sink) overrides it.
+    # and streaming to the terminal. Built here, not in run_job, so each of K
+    # repeats gets its own run.log in its own run folder. A caller-supplied
+    # `progress` (tests, custom sink) overrides it.
     if progress is None:
         from fintel.environment.nerve import Nerve
 
@@ -101,24 +98,29 @@ def run_run(
         )
         trial_concurrency = 1
 
-    # Freeze the run's identity before any work, so a crash leaves a readable lock.
-    write_run_config(paths.config, run_config)
-    write_run_lock(paths.lock, RunLock(fingerprint=run_config.run_id, code_version=_code_version()))
-
     calendar = TradingCalendar()
     schedule = build_schedule(run_config.schedule, calendar=calendar)
     decision_dates = schedule.dates()
 
     universe = build_universe(run_config.universe, config=market_config)
     sources = build_data_sources(run_config.data, config=market_config)
+    # Single-flight the shared sources so a thundering herd of concurrent cells
+    # issuing the same (query, cutoff) fetch — classically the symbol-independent
+    # macro bundle, fetched once per cell — collapses to one network call. Applied
+    # to every kind/source here so all cell reads dedup against one in-flight table.
+    sources = dedup_sources(sources)
 
     fingerprint = _build_fingerprint(run_config, sources, mission_text)
-    write_fingerprint(paths.fingerprint, fingerprint)
+    # Freeze identity once sources + fingerprint are known: config carries the
+    # digest (no sibling fingerprint.json / hollow lock.json).
+    write_run_config(
+        paths.config,
+        run_config.model_copy(update={"fingerprint": fingerprint.to_dict()}),
+    )
 
-    # The run echo: every input gathered before any cell runs. Printed to the
-    # terminal and persisted to `echo.json`, so a reviewer never goes blind into
-    # a run — agent, universe, schedule, data, the *exact* tool schemas (every
-    # param), the injected prompt, the PIT policy, and the fingerprint.
+    # Run echo: every input gathered before any cell runs. Emitted to the nerve
+    # (terminal + run.log) — not persisted as a sibling echo.json. Full prompt
+    # text still lives in the strategy pack; the log keeps the scannable summary.
     from fintel.environment.echo import build_echo, render_echo
 
     echo = build_echo(
@@ -129,7 +131,6 @@ def run_run(
         output_schema_text=output_schema_text,
         fingerprint=fingerprint.to_dict(),
     )
-    write_echo(paths.echo, echo)
     progress.emit("run_echo", echo=render_echo(echo))
 
     runtime = RuntimeConfig(
@@ -252,15 +253,6 @@ def _build_fingerprint(run_config: RunConfig, sources: dict, mission_text: str):
         data_kinds=tuple(sorted(sources)),
         adapter_params=params,
     )
-
-
-def _code_version() -> str:
-    try:
-        from fintel import __version__
-
-        return __version__
-    except Exception:
-        return "unknown"
 
 
 def _now_iso() -> str:

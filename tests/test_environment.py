@@ -223,8 +223,12 @@ def test_a_declared_but_unbound_kind_is_denied_not_silently_empty():
 
 def test_oversized_lookbacks_are_trimmed_rather_than_refused():
     spy = Spy()
+    # The cap is the strategy's per-kind lookback (lookback_caps), not a global
+    # max_lookback_days. A caller may request less, never more.
     policy = AccessPolicy(
-        kinds=frozenset({"prices"}), decidable=frozenset({"AAPL"}), max_lookback_days=365
+        kinds=frozenset({"prices"}),
+        decidable=frozenset({"AAPL"}),
+        lookback_caps=frozenset({("prices", 365)}),
     )
     DataAccess(cell=a_cell(), sources={"prices": spy}, policy=policy).read(
         "prices", symbol="AAPL", lookback_days=99999
@@ -372,11 +376,12 @@ def test_a_tool_schema_follows_whichever_source_is_bound(tmp_path):
 
 
 def test_a_strategy_owned_param_is_not_offered_to_the_agent(tmp_path):
-    """window_days defines what a P/E means; two readings in one run must agree."""
+    """window_days defines what a P/E means; two readings in one run must agree.
+    filings_lookback_days is internal to the ratios source, not strategy-visible."""
     env = an_environment(tmp_path, kinds=("prices", "fundamentals", "ratios"))
     spec = next(s for s in env.tools.descriptors() if s.name == "get_ratios")
     assert "window_days" not in spec.schema["properties"]
-    assert "filings_lookback_days" in spec.schema["properties"]
+    assert "filings_lookback_days" not in spec.schema["properties"]
 
 
 def test_web_search_asks_for_a_query_not_a_symbol(tmp_path):

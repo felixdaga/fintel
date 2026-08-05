@@ -8,7 +8,7 @@ Agent evaluation where the benchmark is an investment outcome. You bring a
 **Platform** — the infrastucture and plumbing
 
 - point-in-time guarantee: clamping, and the post-run trace audit
-- isolation and reproducibility: `config.json` / `lock.json` / `result.json`
+- isolation and reproducibility: `config.json` / `result.json` (fingerprint sealed in config)
 - orchestration: Job → Run → Trial → Cell, retry, resume, K repeats
 - data serving: cache, PIT clamp, kind → tool / evidence exposure
 - agent adapters
@@ -135,12 +135,13 @@ where a strategy runs and quietly sees nothing:
 | `filing_text`    | `massive_filing_text`                | `filing_date < decision_date`                      |
 | `ratios`         | `valuation_ratios` (computed)        | inherited from upstreams                           |
 | `news_sentiment` | `news_sentiment` (computed)          | inherited from upstream                            |
-| `web_search`     | `web_search`                         | provider freshness window ends `decision_date - 1` |
+| `web_search`     | `web_search`                         | provider freshness window ends `decision_date - 1`; optional post-clamp on Brave `sources[url].age` (`clamp_by_age`, default on) |
 
 
-`web_search` is the one kind PIT can't be enforced on after the fact: results
-carry no reliable date to clamp, so the provider's freshness window *is* the
-control, and the cache is keyed by that window so a replay can't widen it.
+`web_search` PIT is two layers: the provider freshness window (cache-keyed so a
+replay can't widen it), then — when catalog/`[[data]]` `clamp_by_age` is on —
+a post-filter using Brave's `sources[url].age` YYYY-MM-DD against that window.
+Undated results are kept. Strategies drive the knob like other source params.
 
 ### Strategy selects, catalog validates
 
@@ -389,9 +390,10 @@ into one snapshot: agent + model, PIT mode and deny list, strategy name + digest
 universe, schedule/dates, bound data kinds, the generated tool surface with each
 tool's param schema, the mission/schema/instruction sizes, and the fingerprint.
 `render_echo()` turns it into the human-readable block printed at run start and
-persisted to `rK/echo.json`. It mirrors agent prompt construction exactly, so
-the echo is a faithful record of what the agent was actually given. Prompt
-helpers are inlined here to keep `environment/` from importing `agents/`.
+recorded on the `run_echo` nerve event in `run.log`. It mirrors agent prompt
+construction exactly, so the echo is a faithful record of what the agent was
+actually given. Prompt helpers are inlined here to keep `environment/` from
+importing `agents/`. The fingerprint digest is also sealed into `rK/config.json`.
 
 ### Staging (`environment/staging.py`)
 
@@ -414,8 +416,9 @@ so a multi-date run (same symbol, different dates) is disambiguated in the grid.
 
 A run-level reachability check for the bound data sources, run before any cell.
 For each kind it calls `DataSource.fetch(query, cutoff)` with a synthetic query
-using that source's declared lookback (so quarterly fundamentals reliably
-return data, not an empty 30-day window), and classifies the result as `ok`,
+using that kind's resolved lookback — the strategy's `[[data]].lookback_days`,
+falling back to the catalog `Param.default` (so quarterly fundamentals reliably
+return data, not an empty 30-day window) — and classifies the result as `ok`,
 `empty`, or `failed`. `empty` is reachable — a quiet kind is not a broken kind.
 The probe emits one `probe_kind` event per kind and a `probe_ok` summary. It
 lives in `market/` (not `environment/`) because it calls the market primitive
@@ -426,10 +429,13 @@ directly, keeping the layer ladder intact.
 Warms the cache for an entire run before any cell runs, so a cell never pays the
 latency of a cold fetch mid-reasoning. Two design points:
 
-- **Per-kind lookback.** Each kind fetches only its own required history
-(`_lookback_days`), not the global maximum. News needs ~90 days; fundamentals
-need ~730. Applying the max to all kinds once forced news to fetch years of
-data and hang the run.
+- **One lookback per kind.** The strategy's `[[data]].lookback_days` (catalog
+default when omitted) is the single value every caller uses — prefetch, probe,
+the tool schema default, the access cap, and evidence packs all read the same
+number, baked into each source instance by the factory. There is no separate
+`spec.lookback_days`, `EvidenceConfig.*_lookback_days`, or `max_lookback_days`
+knob to drift out of agreement. A caller may request *less* history, never more
+than the strategy declared; the access policy clamps to that cap.
 - **Chunked concurrent fetch for high-volume kinds.** `MassiveRecords` (news)
 splits a span into `chunk_days`-day chunks and fetches them concurrently with
 `chunk_workers` at `limit=1000`, instead of paginating sequentially at
@@ -478,7 +484,7 @@ root.
 
 ### Where agent adapters live
 
-`agents/` holds one adapter per agent, the way Harbor's `agents/installed/`
+`agents/` holds one adapter per agent, the way Harbor's `agents/adapters/`
 holds Claude Code, Cursor, OpenClaw and ~27 others behind one `AgentFactory`
 name map. Registration copies Harbor almost verbatim: a `name -> "module:Class"`
 map plus a `module:Class` escape hatch, so a custom agent needs no entry.
@@ -493,7 +499,7 @@ Where Harbor's shape does **not** transfer: its adapters vary in how an agent is
 a terminal and the data is the filesystem. Ours vary mostly in *data delivery*,
 and some have no CLI at all — an in-process desk needs no install step and no
 argv. So `BaseInstalledAgent` maps to one family of ours, not to all of them,
-and it belongs in `agents/installed/` rather than at the root.
+and it belongs in `agents/adapters/` rather than at the root.
 
 Worth taking from Harbor:
 
@@ -585,7 +591,7 @@ later gets summed with a measurement. Adding an estimator is a labelled change.
 
 ### The subprocess host
 
-`agents/installed/` holds the CLI agents — OpenClaw and Claude Code. One host
+`agents/adapters/` holds the CLI agents — OpenClaw and Claude Code. One host
 underneath (`SubprocessAgent`), one transport (the fintel MCP server in
 `environment/mcp_server.py`), two thin adapters that differ only in argv and
 config-file format.
@@ -616,7 +622,7 @@ Error patterns map CLI output to typed outcomes, the same way `llm.py` maps
 provider responses. A rate limit, a safety refusal and a context overflow are
 three different events.
 
-### Transcript catcher (`agents/installed/catcher.py`)
+### Transcript catcher (`agents/adapters/catcher.py`)
 
 For a CLI agent the model's reasoning turns are not in-process; the catcher
 tails the agent's transcript file and emits staging events to the nerve:
@@ -633,11 +639,12 @@ model pin, channel, prompt hash, data kinds, and adapter parameters. The
 channel is part of the digest, so a channel ablation is a different run, not the
 same run that happened to use a different path.
 
-`run_run` writes one to `r1/fingerprint.json` before any trial runs, built from
-the declared `RunConfig` (not a live agent instance, so fingerprinting has none
-of the side effects — HTTP client setup, profile reads — that building the real
-adapter does) plus the mission text's hash. Two runs of the same package
-produce the same digest; a changed mission, model, or channel changes it.
+`run_run` seals one into `r1/config.json` (`fingerprint` field) before any trial
+runs, built from the declared `RunConfig` (not a live agent instance, so
+fingerprinting has none of the side effects — HTTP client setup, profile reads —
+that building the real adapter does) plus the mission text's hash. Two runs of
+the same package produce the same digest; a changed mission, model, or channel
+changes it.
 
 ### Mission, tools manual, and output schema
 
@@ -723,36 +730,46 @@ which would make it non-hermetic.
 
 ## 10. Artifacts
 
-Every level writes the same trio: `config.json` (asked), `lock.json`
-(digests, for replay comparison), `result.json` (happened).
+Every level writes the same pair: `config.json` (asked + fingerprint digest)
+and `result.json` (happened). The run echo is emitted to the nerve / `run.log`
+at start (not a sibling JSON file). Package-level `strategy.lock` is separate
+from the run folder.
 
 ```
 runs/<job_id>/
   config.json  result.json  job.log  prefetch.json  health.json
   r1/ … rK/
-    config.json  lock.json  result.json  run.log  echo.json  fingerprint.json
+    config.json  result.json  run.log
     trials/<YYYY-MM-DD>/
       decision.json          reduced once, after the fan-in
       result.json
       cells/<cell>.json      one writer each  (CellRecord)
       trace/<cell>.jsonl     one writer each
+    sessions/…               agent workspace (access.jsonl, dossier, …)
   report/                   evaluation output (fintel report)
     report.json  report.md
-  cache/                     shared, atomic, lock-merged
+  cache/                     shared central cache (one root, atomic, lock-merged)
 ```
 
 `r1` exists even when K=1 — predictable tooling beats a special case.
-`RunConfig` records the effective world post-override and is self-describing.
+`RunConfig` records the effective world post-override (including `fingerprint`)
+and is self-describing.
+
+**One central cache root.** `runs/cache/` is the single shared cache (default
+`<output-root>/cache`, overridable with `--cache-root` or `FINTEL_CACHE`).
+Every kind lives under it as `<cache_root>/<kind>/<symbol>.{parquet,json}`.
+`fintel cache status` reads the gap-aware coverage sidecars back out — per
+symbol, coverage is a list of `[from, through]` intervals, not a lone min/max,
+so a cache warmed through 2026 with a hole in 2024 honestly reports the gap.
 
 ### Semantic writers (`simulate/artifacts.py`)
 
 One typed writer per artifact kind — `write_cell`, `write_decision`,
 `write_trial_result`, `write_run_result`, `write_job_result`, `write_run_config`,
-`write_run_lock`, `write_echo`, `write_fingerprint`, `write_prefetch`,
-`write_health`. Each wraps `store.write_json`/`store.write_model` with knowledge
-of the specific model and path, so a `CellRecord` (with its typed `SourceRef`s)
-round-trips correctly and callers never touch raw JSON. This is the only place
-that knows which model goes in which file.
+`write_prefetch`, `write_health`. Each wraps `store.write_json`/`store.write_model`
+with knowledge of the specific model and path, so a `CellRecord` (with its typed
+`SourceRef`s) round-trips correctly and callers never touch raw JSON. This is the
+only place that knows which model goes in which file.
 
 ### CLI presenter (`cli/present.py`)
 

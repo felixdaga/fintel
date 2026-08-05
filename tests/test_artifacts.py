@@ -4,7 +4,7 @@ Pins `artifacts.write_*` against `present.load_*`: a `CellRecord` written
 through `write_cell` reads back through `load_cell_record` with its views'
 `sources_cited` surviving as `SourceRef` (the quirk the raw-dict form had — a
 read-back gave bare dicts, not the typed model). Also pins the
-job/run/trial/decision/echo/health/prefetch writers as one-liners that can't
+job/run/trial/decision/health/prefetch writers as one-liners that can't
 drop the `model_dump(mode="json")`.
 """
 
@@ -31,7 +31,6 @@ from fintel.models.trial import CellRecord, TrialResult
 from fintel.simulate.artifacts import (
     write_cell,
     write_decision,
-    write_echo,
     write_health,
     write_job_result,
     write_run_result,
@@ -106,10 +105,7 @@ def test_trial_run_job_result_writers_round_trip(tmp_path: Path):
     assert load_job_result(tmp_path / "job").status == "ok"
 
 
-def test_echo_and_health_and_prefetch_writers(tmp_path: Path):
-    write_echo(tmp_path / "echo.json", {"run_id": "r1", "agent": {"name": "x"}})
-    assert json.loads((tmp_path / "echo.json").read_text())["run_id"] == "r1"
-
+def test_health_and_prefetch_writers(tmp_path: Path):
     write_health(tmp_path / "health.json", {"status": "ok", "n_cells": 2})
     assert load_health(tmp_path)["n_cells"] == 2
 

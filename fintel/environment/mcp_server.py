@@ -77,8 +77,14 @@ def rebuild_environment(session_path: Path):
     peers = bindings_data.get("peers", False)
     kinds = tuple(bindings_data.get("kinds", [])) or tuple(sources)
 
+    from fintel.environment.factory import _lookback_caps_from
+
     policy = build_policy(
-        cell=cell, kinds=kinds, universe=universe, peers=peers
+        cell=cell,
+        kinds=kinds,
+        universe=universe,
+        peers=peers,
+        lookback_caps=_lookback_caps_from(sources),
     )
     log = AccessLog(cell=cell, path=session_path / TRACE_FILE, attach=True)
     access = DataAccess(cell=cell, sources=sources, policy=policy, on_read=log.record)
@@ -101,7 +107,7 @@ def write_result(session_path: Path, payload: dict) -> None:
 
 
 def serve() -> None:
-    """Run the MCP stdio server. Entry point for `python -m fintel.agents.installed.mcp_server`."""
+    """Run the MCP stdio server. Entry point for `python -m fintel.environment.mcp_server`."""
     from mcp.server.fastmcp import FastMCP
 
     session_path = session_dir_from_env()

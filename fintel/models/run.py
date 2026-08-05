@@ -1,4 +1,4 @@
-"""One of K repeats: the frozen effective config, its lock, and its result."""
+"""One of K repeats: the frozen effective config and its result."""
 
 from __future__ import annotations
 
@@ -24,7 +24,8 @@ class RunConfig(BaseModel):
     """The effective world after package defaults + job overrides.
 
     Self-describing on purpose: a finished or crashed run is reproducible from
-    this file alone, without re-deriving any default.
+    this file alone, without re-deriving any default. The reproducibility
+    digest lives here as ``fingerprint`` (formerly a sibling ``fingerprint.json``).
     """
 
     model_config = ConfigDict(extra="forbid")
@@ -45,21 +46,9 @@ class RunConfig(BaseModel):
     schedule_dates: list[str]
     data: list[DataBinding]
     scoring: ScoringSpec
-
-
-class RunLock(BaseModel):
-    """Digests for replay comparison. `fintel report` reads identity from here,
-    which is why it needs no `--strategy`."""
-
-    model_config = ConfigDict(extra="forbid")
-
-    schema_version: int = 1
-    fingerprint: str
-    code_version: str
-    strategy_digest: str | None = None
-    cache_digest: str | None = None
-    model: dict = Field(default_factory=dict)
-    prompts: dict = Field(default_factory=dict)
+    # Agent/model/prompt/data-kinds digest. Filled by run_run before trials;
+    # empty when a RunConfig is only being assembled upstream.
+    fingerprint: dict = Field(default_factory=dict)
 
 
 class RunResult(BaseModel):

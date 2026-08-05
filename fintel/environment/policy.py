@@ -36,12 +36,28 @@ class AccessPolicy:
     kinds: frozenset[str]
     decidable: frozenset[Symbol]
     peers: frozenset[Symbol] = frozenset()
+    # Per-kind lookback cap (from the strategy binding). A caller may request
+    # less, never more. `max_lookback_days` is the fallback for kinds without a
+    # binding-declared lookback (e.g. a custom `module:Callable` source).
+    lookback_caps: frozenset[tuple[str, int]] = frozenset()
+    # Per-kind render caps carried from the binding/catalog (e.g.
+    # web_search.snippet_max_chars, news.summary_max_chars). These bound
+    # how the evidence pack is rendered to the agent, not what is fetched.
+    render_caps: frozenset[tuple[str, tuple[tuple[str, int], ...]]] = frozenset()
     max_lookback_days: int = 3650
     max_results: int = 500
 
     @property
     def readable(self) -> frozenset[Symbol]:
         return self.decidable | self.peers
+
+    @property
+    def lookback_cap_map(self) -> dict[str, int]:
+        return dict(self.lookback_caps)
+
+    @property
+    def render_cap_map(self) -> dict[str, dict[str, int]]:
+        return {kind: dict(caps) for kind, caps in self.render_caps}
 
     def check_kind(self, kind: str) -> None:
         if kind not in self.kinds:
@@ -66,20 +82,24 @@ class AccessPolicy:
                 f"views may only be submitted for {sorted(self.decidable)}"
             )
 
-    def clamp_query(self, query: dict) -> dict:
+    def clamp_query(self, kind: str, query: dict) -> dict:
         """Bound the size of a request without failing it.
 
         A lookback wider than the cap is trimmed rather than refused: the agent
         asked a legitimate question slightly too greedily, and an error here
         would cost a whole cell. Refusal is reserved for the boundaries that
-        actually change the experiment — kinds and symbols.
+        actually change the experiment — kinds and symbols. The lookback cap
+        is the strategy's `lookback_days` for that kind, so a caller cannot
+        exceed the range the prefetch warmed.
         """
         out = dict(query)
-        caps = (("lookback_days", self.max_lookback_days), ("max_results", self.max_results))
-        for key, cap in caps:
-            value = out.get(key)
-            if isinstance(value, (int, float)) and not isinstance(value, bool):
-                out[key] = max(1, min(int(value), cap))
+        cap = self.lookback_cap_map.get(kind, self.max_lookback_days)
+        lb = out.get("lookback_days")
+        if isinstance(lb, (int, float)) and not isinstance(lb, bool):
+            out["lookback_days"] = max(1, min(int(lb), cap))
+        mr = out.get("max_results")
+        if isinstance(mr, (int, float)) and not isinstance(mr, bool):
+            out["max_results"] = max(1, min(int(mr), self.max_results))
         return out
 
 
@@ -90,13 +110,24 @@ class PolicyBuilder:
     kinds: tuple[str, ...] = ()
     decidable: tuple[Symbol, ...] = ()
     peers: tuple[Symbol, ...] = ()
+    lookback_caps: dict = field(default_factory=dict)
+    render_caps: dict = field(default_factory=dict)
     limits: dict = field(default_factory=dict)
 
     def build(self) -> AccessPolicy:
+        caps = dict(self.lookback_caps)
+        # `limits` may also supply lookback_caps/max_lookback_days for tests.
+        caps.update(self.limits.get("lookback_caps", {}))
+        rcaps = {kind: dict(c) for kind, c in self.render_caps.items()}
+        rcaps.update(self.limits.get("render_caps", {}))
         return AccessPolicy(
             kinds=frozenset(self.kinds),
             decidable=frozenset(self.decidable),
             peers=frozenset(self.peers) - frozenset(self.decidable),
+            lookback_caps=frozenset(caps.items()),
+            render_caps=frozenset(
+                (kind, tuple(c.items())) for kind, c in rcaps.items()
+            ),
             **{
                 k: v
                 for k, v in self.limits.items()

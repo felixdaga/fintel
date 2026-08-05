@@ -315,6 +315,81 @@ def test_query_hash_is_stable_and_short():
     assert len(query_hash("apple")) == 12
 
 
+def test_parse_brave_age_prefers_ymd_never_relative():
+    from fintel.market.data.web import parse_brave_age
+
+    assert parse_brave_age(
+        ["Thursday, July 30, 2026", "2026-07-30", "4 days ago", "2026-07-30T12:00:00Z"]
+    ) == date(2026, 7, 30)
+    assert parse_brave_age(["", "", "4 days ago", "2026-07-30T00:00:00Z"]) == date(2026, 7, 30)
+    assert parse_brave_age([]) is None
+    assert parse_brave_age(None) is None
+
+
+def test_web_search_clamps_by_brave_age(tmp_path):
+    """Soft freshness leaks are dropped when sources[url].age is outside the window."""
+    import json
+
+    from fintel.market.data.web import clamp_brave_by_age
+
+    since, through = date(2026, 4, 16), date(2026, 4, 23)
+    in_url = "https://example.com/apr"
+    out_url = "https://example.com/jul"
+    undated_url = "https://example.com/undated"
+    payload = {
+        "grounding": {
+            "generic": [
+                {"url": in_url, "title": "in", "snippets": ["a"]},
+                {"url": out_url, "title": "leak", "snippets": ["b"]},
+                {"url": undated_url, "title": "?", "snippets": ["c"]},
+            ]
+        },
+        "sources": {
+            in_url: {"age": ["Wed", "2026-04-20", "x", "2026-04-20T00:00:00Z"]},
+            out_url: {"age": ["Thu", "2026-07-30", "x", "2026-07-30T00:00:00Z"]},
+            undated_url: {"age": []},
+        },
+    }
+    clamped = clamp_brave_by_age(payload, since, through)
+    urls = [g["url"] for g in clamped["grounding"]["generic"]]
+    assert urls == [in_url, undated_url]
+    assert set(clamped["sources"]) == {in_url, undated_url}
+
+    src = WebSearch(cache_root=tmp_path, clamp_by_age=True)
+    path = src.path("apple earnings", since, through)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(
+            {
+                "query": "apple earnings",
+                "search_window": {"from": since.isoformat(), "to": through.isoformat()},
+                "sources": payload,
+            }
+        )
+    )
+    # decision_date = through + 1 day to recreate the same window with lookback=7
+    cut = Cutoff(decision_date=date(2026, 4, 24))
+    out = src.fetch({"query": "apple earnings", "lookback_days": 7}, cut)
+    assert [g["url"] for g in out["sources"]["grounding"]["generic"]] == [
+        in_url,
+        undated_url,
+    ]
+
+    # Off: full cached payload reaches the caller unchanged.
+    raw = WebSearch(cache_root=tmp_path, clamp_by_age=False).fetch(
+        {"query": "apple earnings", "lookback_days": 7}, cut
+    )
+    assert len(raw["sources"]["grounding"]["generic"]) == 3
+
+
+def test_web_search_catalog_exposes_clamp_by_age():
+    info = catalog.source("web_search")
+    names = {p.name: p for p in info.params}
+    assert names["clamp_by_age"].dtype == "bool"
+    assert names["clamp_by_age"].default is True
+    assert names["clamp_by_age"].per_call is False
+
+
 # ── the whole library builds together ────────────────────────────────────────
 
 

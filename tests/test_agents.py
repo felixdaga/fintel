@@ -60,6 +60,12 @@ CONFORMANT: dict[str, dict] = {
 # They get their own lighter, non-invoking checks below.
 SUBPROCESS_ADAPTERS: frozenset[str] = frozenset({"openclaw", "claude-code"})
 
+# LLM-backed specialist pipelines (the optimized agents) need a live
+# OpenRouter key and network to decide, so they can't join the invocation
+# contract either. They get the same lighter, non-invoking checks as the
+# subprocess adapters below.
+LLM_KEY_REQUIRED: frozenset[str] = frozenset({"optimized"})
+
 
 def envir(tmp_path, **kw):
     return an_environment(tmp_path, **kw)
@@ -307,8 +313,9 @@ def test_the_valid_names_are_the_resolvable_ones():
 
 def test_every_registered_agent_is_held_to_the_contract():
     """Guards the suite itself: registering an adapter without adding it here
-    (or to `SUBPROCESS_ADAPTERS`) would let it skip every check below."""
-    invocable = set(agents.names()) - SUBPROCESS_ADAPTERS
+    (or to `SUBPROCESS_ADAPTERS`/`LLM_KEY_REQUIRED`) would let it skip every
+    check below."""
+    invocable = set(agents.names()) - SUBPROCESS_ADAPTERS - LLM_KEY_REQUIRED
     assert invocable == set(CONFORMANT), (
         "adapters in the registry but not in CONFORMANT (or vice versa): "
         f"{invocable ^ set(CONFORMANT)}"
@@ -332,6 +339,23 @@ def test_subprocess_adapters_carry_mission_and_schema(name):
     assert agent.output_schema_text == "{}"
 
 
+@pytest.mark.parametrize("name", sorted(LLM_KEY_REQUIRED))
+def test_llm_adapters_satisfy_the_protocol_without_invoking(name):
+    """Built, not invoked — real invocation needs a live OpenRouter key/network."""
+    agent = agents.build(name)
+    assert isinstance(agent, agents.Agent)
+    assert agent.name and agent.version
+    assert type(agent).pit_enforcement == "access"
+
+
+@pytest.mark.parametrize("name", sorted(LLM_KEY_REQUIRED))
+def test_llm_adapters_carry_mission_and_schema(name):
+    """The same platform-supplied context every other adapter accepts."""
+    agent = agents.build(name, mission_text="score it", output_schema_text="{}")
+    assert agent.mission_text == "score it"
+    assert agent.output_schema_text == "{}"
+
+
 @pytest.mark.parametrize("name", sorted(agents.names()))
 def test_every_adapter_declares_pit_enforcement(name):
     """Standard requirement: access (in-process) or cli_deny (subprocess)."""
@@ -344,7 +368,7 @@ def test_every_adapter_declares_pit_enforcement(name):
 def test_subprocess_adapters_are_cli_deny_and_override_enforce(name):
     agent = agents.build(name)
     assert type(agent).pit_enforcement == "cli_deny"
-    from fintel.agents.installed.base import SubprocessAgent
+    from fintel.agents.adapters.base import SubprocessAgent
 
     assert type(agent).enforce_pit_policy is not SubprocessAgent.enforce_pit_policy
 

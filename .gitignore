@@ -6,3 +6,10 @@ __pycache__/
 .ruff_cache/
 runs/
 cache/
+.env/
+!.env.example
+
+# Native in-process agents live under fintel/agents/installed/
+# (`llm_agent.py`, `optimized_agent.py`). The fintel host for the optimized
+# pipeline lives under adapters/optimized.py and is tracked.
+

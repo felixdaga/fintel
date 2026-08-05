@@ -16,7 +16,6 @@ from __future__ import annotations
 from fintel.simulate.artifacts import (
     write_cell,
     write_decision,
-    write_echo,
     write_job_result,
     write_run_result,
     write_trial_result,
@@ -48,7 +47,6 @@ __all__ = [
     "run_trial",
     "write_cell",
     "write_decision",
-    "write_echo",
     "write_json",
     "write_job_result",
     "write_model",

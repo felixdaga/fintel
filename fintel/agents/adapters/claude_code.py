@@ -22,7 +22,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from fintel.agents.installed.base import CliFlag, SubprocessAgent
+from fintel.agents.adapters.base import CliFlag, SubprocessAgent
 from fintel.agents.pit_policy import (
     CLAUDE_CODE_DENY,
     FINTEL_MCP_SERVER,

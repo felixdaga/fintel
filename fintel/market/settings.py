@@ -14,6 +14,8 @@ ENV_CACHE = "FINTEL_CACHE"
 ENV_OFFLINE = "FINTEL_OFFLINE"
 ENV_MASSIVE_KEY = "MASSIVE_API_KEY"
 ENV_BRAVE_KEY = "BRAVE_API_KEY"
+ENV_FRED_KEY = "FRED_API_KEY"
+ENV_AV_KEY = "ALPHA_VANTAGE_API_KEY"
 
 _TRUE = {"1", "true", "yes", "on"}
 
@@ -28,6 +30,8 @@ class MarketConfig:
     offline: bool = False
     massive_api_key: str | None = None
     brave_api_key: str | None = None
+    fred_api_key: str | None = None
+    alphavantage_api_key: str | None = None
 
     def __post_init__(self) -> None:
         if not isinstance(self.cache_root, Path):
@@ -41,6 +45,8 @@ class MarketConfig:
             offline=os.environ.get(ENV_OFFLINE, "").lower() in _TRUE,
             massive_api_key=os.environ.get(ENV_MASSIVE_KEY) or None,
             brave_api_key=os.environ.get(ENV_BRAVE_KEY) or None,
+            fred_api_key=os.environ.get(ENV_FRED_KEY) or None,
+            alphavantage_api_key=os.environ.get(ENV_AV_KEY) or None,
         )
 
     def to_dict(self, *, secrets: bool = False) -> dict:

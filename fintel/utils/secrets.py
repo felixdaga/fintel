@@ -1,69 +1,83 @@
-"""Pull API keys from the openclaw profiles the delorean runs used.
+"""Load API keys from fintel's local ``.env/`` directory.
 
-fintel itself never stores secrets. The keys live where the operator put them
-for openclaw: the OpenRouter key in ``~/.openclaw/openclaw.json`` (under
-``models.providers.openrouter.apiKey``) and the data-source keys (MASSIVE,
-BRAVE) in the delorean profile's MCP env block at
-``~/.openclaw-delorean/openclaw.json`` (``mcp.servers.delorean.env``).
-
-``bootstrap_env`` copies those into ``os.environ`` (without overwriting a value
-the shell already set), so a run configured against the same profiles delorean
-used needs no extra setup. This is the only place that reads those files.
+Keys live in ``<repo>/.env/keys.env`` (gitignored). ``bootstrap_env`` copies
+them into ``os.environ`` without overwriting values already set in the shell.
+This is the only secrets path — OpenClaw profiles are not read.
 """
 
 from __future__ import annotations
 
-import json
 import os
+import re
 from pathlib import Path
 
-DEFAULT_PROFILE = Path.home() / ".openclaw"
-DELOREAN_PROFILE = Path.home() / ".openclaw-delorean"
+# fintel/utils/secrets.py → repo root
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_ENV_DIR = _REPO_ROOT / ".env"
+KEYS_FILENAME = "keys.env"
+
+_KEY_LINE = re.compile(
+    r"^(?:export\s+)?([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)$"
+)
 
 
-def _load(path: Path) -> dict:
-    try:
-        return json.loads(path.read_text())
-    except (OSError, json.JSONDecodeError):
+def env_dir(path: Path | str | None = None) -> Path:
+    return Path(path) if path else DEFAULT_ENV_DIR
+
+
+def keys_path(directory: Path | str | None = None) -> Path:
+    return env_dir(directory) / KEYS_FILENAME
+
+
+def load_dotenv(path: Path | str) -> dict[str, str]:
+    """Parse a KEY=VALUE env file. Missing file → empty dict."""
+    file = Path(path)
+    if not file.is_file():
         return {}
-
-
-def openrouter_key(profile_dir: Path | str | None = None) -> str | None:
-    base = Path(profile_dir) if profile_dir else DEFAULT_PROFILE
-    data = _load(base / "openclaw.json")
-    return ((data.get("models") or {}).get("providers") or {}).get(
-        "openrouter", {}
-    ).get("apiKey")
-
-
-def mcp_env(profile_dir: Path | str | None = None) -> dict[str, str]:
-    """The ``mcp.servers.<name>.env`` blocks from a profile, flattened.
-
-    delorean kept its data keys in ``mcp.servers.delorean.env``; we surface every
-    server's env so a profile with keys under a different server name still works.
-    """
-    base = Path(profile_dir) if profile_dir else DELOREAN_PROFILE
-    data = _load(base / "openclaw.json")
-    servers = (data.get("mcp") or {}).get("servers") or {}
     out: dict[str, str] = {}
-    for _name, cfg in servers.items():
-        for k, v in (cfg.get("env") or {}).items():
-            out.setdefault(k, str(v))
+    try:
+        text = file.read_text(encoding="utf-8")
+    except OSError:
+        return {}
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        m = _KEY_LINE.match(line)
+        if not m:
+            continue
+        key, value = m.group(1), m.group(2).strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+            value = value[1:-1]
+        out[key] = value
     return out
+
+
+def load_env_dir(directory: Path | str | None = None) -> dict[str, str]:
+    """Load ``keys.env`` plus any other ``*.env`` files in the directory.
+
+    Later files in sorted order override earlier ones; ``keys.env`` is loaded
+    last so it wins over optional extras.
+    """
+    root = env_dir(directory)
+    if not root.is_dir():
+        return {}
+    merged: dict[str, str] = {}
+    extras = sorted(p for p in root.glob("*.env") if p.name != KEYS_FILENAME)
+    for path in extras:
+        merged.update(load_dotenv(path))
+    merged.update(load_dotenv(root / KEYS_FILENAME))
+    return merged
 
 
 def bootstrap_env(
     *,
-    profile: Path | str | None = None,
-    delorean_profile: Path | str | None = None,
+    env_dir: Path | str | None = None,
     extra: dict[str, str] | None = None,
 ) -> dict[str, str]:
-    """Populate ``os.environ`` from the openclaw profiles. Returns what was set.
+    """Populate ``os.environ`` from ``.env/``. Returns what was newly set.
 
-    Never overwrites a variable already present in the environment, so an
-    explicit shell export always wins. The OpenRouter key is exported as
-    ``OPENROUTER_API_KEY``; everything in the delorean MCP env is exported
-    under its own name (MASSIVE_API_KEY, BRAVE_API_KEY, ...).
+    Never overwrites a variable already present in the environment.
     """
     populated: dict[str, str] = {}
 
@@ -73,12 +87,19 @@ def bootstrap_env(
         os.environ[name] = value
         populated[name] = value
 
-    _set("OPENROUTER_API_KEY", openrouter_key(profile))
-    for name, value in mcp_env(delorean_profile).items():
+    for name, value in load_env_dir(env_dir).items():
         _set(name, value)
     for name, value in (extra or {}).items():
         _set(name, value)
     return populated
 
 
-__all__ = ["bootstrap_env", "mcp_env", "openrouter_key"]
+__all__ = [
+    "DEFAULT_ENV_DIR",
+    "KEYS_FILENAME",
+    "bootstrap_env",
+    "env_dir",
+    "keys_path",
+    "load_dotenv",
+    "load_env_dir",
+]
