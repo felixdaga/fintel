@@ -58,15 +58,16 @@ concurrency engine cover every level.
 
 ```toml
 schema_version = 1
-name = "systematic_stockrate_djia"
-description = "Score each DJIA-30 constituent independently, quarterly, scored via pooled single-name IR."
+name = "my_strategy"
+description = "Score each name independently; scored via pooled single-name IR."
 
 [universe]
-preset = "dow30"              # active constituents as of each decision date
+preset = "dow30"              # or symbols = ["AAPL", "MSFT", …]
 
 [decision]
 scope = "single_name"
-schedule = { kind = "custom_dates", start = "2022-07-01", end = "2026-04-01", dates = [...] }
+schedule = { kind = "custom_dates", start = "2026-01-01", end = "2026-06-30", dates = [...] }
+# also: kind = "quarterly" with start/end
 
 [[data]]
 kind = "prices"
@@ -91,7 +92,7 @@ signal = "single_name"
 kpi = "single_name_ir"
 metric_key = "icir"
 transform = "single_name"        # a post-step on the signal; builtin or module:Callable
-horizons = [1, 2, 3, 4]
+horizons = [1, 2, 4, 8]          # steps on the decision-date grid
 # Strategy-owned params passed to the KPI + holdings. `holdings=true` opts into
 # the default signal->weights->returns mechanics.
 params = { holdings = true, active_budget = 0.5, cost_bps = 5.0 }
@@ -131,8 +132,9 @@ where a strategy runs and quietly sees nothing:
 | ---------------- | ------------------------------------ | -------------------------------------------------- |
 | `prices`         | `massive_prices`, `synthetic_prices` | bar date `< decision_date`                         |
 | `fundamentals`   | `massive_fundamentals`               | `filing_date < decision_date`                      |
-| `news`           | `massive_news`                       | `published_at < decision_date`                     |
+| `news`           | `massive_news`, `alphavantage_news`  | `published_at < decision_date`                     |
 | `filing_text`    | `massive_filing_text`                | `filing_date < decision_date`                      |
+| `macro`          | `fred_macro`                         | observation date `< decision_date`                 |
 | `ratios`         | `valuation_ratios` (computed)        | inherited from upstreams                           |
 | `news_sentiment` | `news_sentiment` (computed)          | inherited from upstream                            |
 | `web_search`     | `web_search`                         | provider freshness window ends `decision_date - 1`; optional post-clamp on Brave `sources[url].age` (`clamp_by_age`, default on) |
@@ -815,7 +817,7 @@ makes the agent re-entrant by construction, so `cell_concurrency > 1` is safe.
 
 ### Two axes of concurrency
 
-Runtime concurrency is two independent axes:
+Runtime concurrency is two independent nested axes, plus an optional flat pool:
 
 - **Cells within a trial** (`cell_concurrency`) — tickers decide concurrently.
 Auto = the universe size at each date, so all tickers run at once. Safe
@@ -823,9 +825,14 @@ regardless of memory: memory writes happen after the whole trial completes,
 never per-cell, so intra-date concurrency never races on shared state.
 - **Runs across K repeats** (`max_concurrent`) — repeats run in parallel. Auto
 = K, so all repeats run at once.
+- **Flat shared pool** (`shared_concurrency`) — keep N cells in flight across
+*all* (date, ticker) pairs in a run. A finished cell immediately takes the next
+work item from any remaining date. Replaces the nested cell × trial fan-out.
+Blocked when memory or feedback couples dates (independent cells only).
 
-Peak in-flight sessions = resolved `max_concurrent` × resolved
-`cell_concurrency` (e.g. 3 × 10 = 30).
+Peak in-flight sessions without shared = resolved `max_concurrent` × resolved
+`cell_concurrency` (e.g. 3 × 10 = 30). With shared = `max_concurrent` ×
+`shared_concurrency`.
 
 ### The sequential requirement
 
@@ -835,6 +842,7 @@ portfolio + memory. The `memory_on` guard in `run_run` forces
 `trial_concurrency` back to 1 when memory is on, so a misconfigured job that
 asked for parallel dates can't race on shared state. Memory isn't wired yet, so
 the guard is dormant; it activates the moment a strategy declares memory.
+`shared_concurrency` is harder: it raises if memory or feedback is on.
 
 > **Concurrency vs parallelism.** The runtime uses threads, which give
 > *concurrency* for the I/O-bound work that dominates a backtest (LLM HTTP
@@ -932,23 +940,39 @@ decision shape — `decision.json` keyed by symbol → `View` (score in [-1, 1])
 
 ## 13. CLI
 
+One entry point (`fintel`). Operator guides live under `docs/`:
+
+| Guide | Covers |
+| ----- | ------ |
+| [`add_strategy_package_guide.md`](add_strategy_package_guide.md) | Author a package; bind catalog data or bring your own source |
+| [`run_and_monitor_guide.md`](run_and_monitor_guide.md) | `simulation`, TUI watch, backfill, health, cache |
+| [`evaluate_results_guide.md`](evaluate_results_guide.md) | Artifacts, `report`, KPIs, holdings, deeper notebook analytics |
+| [`add_new_agents_guide.md`](add_new_agents_guide.md) | Wire a new agent adapter |
+| [`data_pipeline.md`](data_pipeline.md) | Cache, lookbacks, prefetch → tools → PIT |
+
 ```
 fintel simulation <package> --agent <name> [--k N] [--max-concurrent N]
                                           [--universe AAPL,MSFT] [--dates 2025-01-02]
-                                          [--agent-opt k=v] [--cell-concurrency 1]
-                                          [--trial-concurrency 1] [--job-id …]
+                                          [--agent-opt k=v] [--cell-concurrency N]
+                                          [--trial-concurrency N] [--shared-concurrency N]
+                                          [--job-id …] [--watch-mode auto|alt|stream]
                                           [--no-prefetch] [--prefetch-workers 8]
                                           [--cache-root …] [--offline] [--quiet] [--no-watch]
+                                          [--no-bootstrap]
+fintel backfill <job_id> [--run K] [--cell-concurrency N]
 fintel runs     list | show <job_id> | watch <job_id…>
 fintel health   <job_id|session_dir>
-fintel report   <job_id>            # evaluate a finished job: KPI + stochasticity + holdings
+fintel report   <job_id> [--cache-root …]
+fintel cache    status [--source …] [--symbol …] [--window FROM..TO]
 ```
 
 `fintel simulation` is the one entry point for a run. In a real terminal (TTY)
 it launches the job in a background thread and renders the live in-place
-dashboard in the foreground — one command, no scripts. With `--no-watch`, or in
-a non-TTY/CI context, it runs synchronously with verbose nerve lines to stderr
-and no dashboard.
+dashboard in the foreground. With `--no-watch`, or in a non-TTY/CI context, it
+runs synchronously with verbose nerve lines to stderr and no dashboard.
+
+`fintel backfill` reruns only failed cells on a finished repeat and rewrites
+cell/trial/run/job artifacts in place.
 
 `fintel report <job_id>` runs the evaluation layer over a finished job: it
 reads the strategy's `ScoringSpec` from the frozen run config (`rK/config.json`),
@@ -956,18 +980,24 @@ runs the full pipeline (§12), and writes `report.json` + `report.md` under
 `<job>/report/`, printing the markdown to stdout. The strategy declares the
 KPI/signal/transform/horizons/params; the platform runs the mechanics.
 
+`fintel cache status` is read-only inspection of the central cache (gap-aware
+coverage sidecars). See [`data_pipeline.md`](data_pipeline.md).
+
 Agent-specific settings go through `--agent-opt`, validated against a schema the
-agent adapter declares. Adding an agent requires no CLI edit.
+agent adapter declares. Adding an agent requires no CLI edit. Secrets load from
+`.env/keys.env` unless `--no-bootstrap` is set.
 
 ### The live dashboard (`cli/watch.py`)
 
 `fintel runs watch <job_id…>` (and the `simulation` foreground) tails one or more
-`run.log` files and renders a single updating screen: a shared `preflight` header
-drained from `job.log` (probe[kind:status]), then **one track per repeat**
-(r1…rK), each showing its cells with `date / stage / round / calls / err / idle / last tool or reasoning`. Cells are keyed by `(cell, decision_date)` so a
-multi-date run with the same symbol doesn't collide. It uses ANSI alt-screen +
-cbreak in a TTY and degrades to plain frames when piped. Press `q` to detach
-(the job keeps running; re-attach with `fintel runs watch`).
+`run.log` / `backfill.log` files and renders a single updating screen: a shared
+`preflight` header drained from `job.log` (probe[kind:status]), then **one track
+per repeat** (r1…rK), each showing its cells with
+`date / stage / round / calls / err / idle / last tool or reasoning`. Cells are
+keyed by `(cell, decision_date)` so a multi-date run with the same symbol doesn't
+collide. Modes: `alt` (full-screen TTY), `stream` (in-place, Cursor-friendly),
+`auto` (picks). Press `q` to detach (the job keeps running; re-attach with
+`fintel runs watch`).
 
 ### Health vs outcome
 

@@ -18,7 +18,7 @@ from fintel.models.common import HealthStatus, Status, Symbol
 from fintel.models.decision import AgentResponse, View
 from fintel.models.job import JobResult, RunSummary
 from fintel.models.run import RunResult
-from fintel.models.trace import Usage, total
+from fintel.models.trace import total
 from fintel.models.trial import CellResult, TrialResult
 
 

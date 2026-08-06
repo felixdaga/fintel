@@ -16,6 +16,7 @@ import logging
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
+from typing import Any
 
 from fintel.environment.access import Reading
 from fintel.environment.cell import Cell

@@ -19,21 +19,17 @@ from fintel.models.decision import SourceRef, View
 
 SUBMIT_TOOL = "submit_views"
 
+# Tool-facing view fields. Platform ``View`` still carries conviction /
+# time_horizon with defaults on parse — they are not solicited from the model
+# (unused by single_name signal; wastes reasoning).
 VIEW_PROPERTIES: dict[str, Any] = {
     "symbol": {"type": "string", "description": "Ticker this view is about."},
     "score": {
         "type": "number",
         "minimum": -1,
         "maximum": 1,
-        "description": "Conviction-weighted direction: -1 most negative, +1 most positive.",
+        "description": "Direction on [-1, +1]: -1 most negative, +1 most positive.",
     },
-    "conviction": {
-        "type": "number",
-        "minimum": 0,
-        "maximum": 1,
-        "description": "How strongly this is held, independent of direction.",
-    },
-    "time_horizon": {"type": "string", "description": "Thesis horizon, e.g. quarter, year."},
     "rationale": {"type": "string", "description": "Why, in a few sentences."},
     "key_factors": {
         "type": "array",
@@ -94,7 +90,7 @@ def submit_description(symbols: tuple[Symbol, ...]) -> str:
     return (
         "Submit your final answer. Call this exactly once, when you are done "
         f"gathering evidence. You are deciding on: {', '.join(symbols) or 'the assigned symbols'}. "
-        "If you have no conviction, set abstain=true with a reason rather than "
+        "If you have no view, set abstain=true with a reason rather than "
         "submitting a score you don't believe."
     )
 

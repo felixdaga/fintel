@@ -1,0 +1,241 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 74379,
+    "tokens_out": 10104,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.075561066112,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "MMM scores at the extreme negative end of the range due to near-full alignment of all three pillars on the downside. Pillar 1 (fundamental health & trajectory): Earnings are deteriorating sharply \u2014 Q1 2026 EPS of $1.23 represents a -39.7% YoY decline, net income fell -41.3% to $659M, net margins compressed 670bp to 11.2%, and total equity eroded -29.1% in two quarters to just $3.31B against $32.1B in liabilities. Operating cash flow collapsed -67.3% QoQ. Revenue is essentially flat (+1.3% YoY) with no organic growth engine. The franchise itself (material science IP, switching costs) is durable but impaired by open-ended PFAS litigation risk (new Minnesota lawsuit May 2026 seeking $30K/day penalties, NY AG suit unresolved) and declining revenue from ~$32B to ~$30B. Pillar 2 (valuation vs own history): The P/E has nearly doubled from 18.7x to 33.5x \u2014 now at the 99th percentile of its 12-month range \u2014 while earnings power has declined ~40%. Earnings yield of 3.0% is deeply uncompetitive vs the 10-year Treasury at 4.68%. The market is paying twice as much for a shrinking earnings base. Pillar 3 (near-term catalyst): The Q2 2026 beat ($6.5B sales, $933M net income, raised guidance) and Microsoft AI partnership are incremental positives, but they do not reverse the structural deterioration or resolve the PFAS overhang. The stock has already rallied +22.4% in the quarter following the Q1 miss, suggesting the beat is priced in. In a rising-rate, widening-spread environment, this configuration \u2014 elevated P/E on deteriorating earnings with unresolved litigation \u2014 is particularly vulnerable. Downside risk to ~$87 (50% below current) if multiples revert to historical norms.",
+      "key_factors": [
+        "Q1 2026 EPS diluted $1.23, down -39.7% YoY from $2.04; net income $659M, down -41.3% YoY from $1.12B",
+        "Net margin compressed 670bp to 11.2% from 17.9% in prior periods, indicating elevated non-operating charges eroding bottom line",
+        "Total equity eroded -29.1% in two quarters to $3.31B (from $4.67B in Q3 2025); equity-to-asset ratio just 9.3% with liabilities of $32.12B dwarfing equity by 9.7x",
+        "P/E diluted at 33.5x on 2026-07-30, near 99th percentile of 12-month range (17.7-34.7x), while earnings power declined ~40%",
+        "Earnings yield of 3.0% deeply uncompetitive vs 10-year Treasury yield of 4.68%",
+        "Operating cash flow collapsed -67.3% QoQ to $574M in Q1 2026 from $1.76B in Q3 2025",
+        "PFAS litigation remains open-ended: new Minnesota lawsuit (May 2026) seeking up to $30K/day penalties; NY AG suit unresolved",
+        "Revenue essentially flat (+1.3% YoY) with no organic growth engine; 2025 revenue declined from ~$32B to ~$30B",
+        "Stock rallied +22.4% in the quarter following the Q1 earnings miss, disconnecting price from fundamental trajectory",
+        "Q2 2026 beat ($6.5B sales, $933M net income, raised guidance) is incremental positive but already priced in after 22% rally",
+        "Adjusted EPS declined from ~$8.00 in 2024 to ~$6.40 in 2025; dividend of ~$6.00/share leaves thin coverage",
+        "Employee count fell from 85,000 (end-2023) to 60,500 (end-2025), signaling restructuring intensity rather than growth"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 filing",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=1.23 (YoY from 2.04, -39.7%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 filing",
+          "relevance": 1.0,
+          "excerpt": "net_income=659.00M (YoY from 1.12B, -41.3%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 filing",
+          "relevance": 1.0,
+          "excerpt": "revenue=6.03B (YoY +1.3%, QoQ -7.5%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 filing",
+          "relevance": 1.0,
+          "excerpt": "total_equity=3.31B (down 29.1% from 4.67B in Q3 2025)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 filing",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=574.00M (QoQ -67.3% from 1.76B)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=33.516 (range 17.7..34.7; near 12-month high)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.112 (vs. 0.179 prior periods, -670bp compression)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.03 (vs. DGS10=4.68%, deeply uncompetitive)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "close=176.07 (12-month range 139.34..184.90, 81st percentile)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.680% (up from 4.45% in May; rate headwind for elevated multiples)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout.com (structural risk)",
+          "relevance": 1.0,
+          "excerpt": "On May 1, 2026, the Minnesota Pollution Control Agency filed a new lawsuit against 3M, alleging ongoing groundwater and surface water contamination\u2026 seeks civil penalties of up to $30,000 per violation per day"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout.com (structural risk)",
+          "relevance": 1.0,
+          "excerpt": "employee numbers dropping from 85,000 at the end of 2023 to 61,500 in 2024, and further to 60,500 by the end of 2025"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Simply Wall St (2026-07-29)",
+          "relevance": 1.0,
+          "excerpt": "second-quarter 2026 results showing sales of US$6,500 million and net income of US$933 million, alongside completing a US$5,733.53 million share repurchase program"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news (2026-07-27)",
+          "relevance": 1.0,
+          "excerpt": "Adjusted EPS of roughly $6.40 per share compared with around $8.00 per share in 2024"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news (2026-07-27)",
+          "relevance": 1.0,
+          "excerpt": "operating cash flow close to $5.0 billion and stable net debt in the region of $12 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Yahoo Finance (news headline)",
+          "relevance": 1.0,
+          "excerpt": "3M continues to face challenges in its Consumer segment, reporting a 1.3% decline in organic revenues"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3759,
+        "capped_chars": 3759,
+        "raw_tokens": 940,
+        "capped_tokens": 940
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 245187,
+        "capped_chars": 245187,
+        "raw_tokens": 61297,
+        "capped_tokens": 61297
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30602,
+        "capped_chars": 30602,
+        "raw_tokens": 7650,
+        "capped_tokens": 7650
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 922,
+        "capped_chars": 922,
+        "raw_tokens": 230,
+        "capped_tokens": 230
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7926,
+        "capped_chars": 1850,
+        "raw_tokens": 1982,
+        "capped_tokens": 462
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 111159,
+        "capped_chars": 78197,
+        "raw_tokens": 27791,
+        "capped_tokens": 19549
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 113432,
+  "started_at": "2026-08-06T03:40:18+00:00"
+}

@@ -1,0 +1,174 @@
+{
+  "symbol": "IBM",
+  "decision_date": "2026-04-24",
+  "cell": "IBM",
+  "agent": "optimized",
+  "version": "1.0.0",
+  "model": "xiaomi/mimo-v2.5-pro",
+  "ticker": "IBM",
+  "pipeline": "quant\u2016qual \u2192 verify \u2192 final_pm",
+  "quantitative_report": "# IBM \u2014 Quantitative Fundamental Attractiveness Report\n**Decision Date: 2026-04-24**\n\n---\n\n## 1. Revenue, Earnings, and Margin Trajectory\n\nIBM's most recent quarter (Q1 2026, period_end 2026-03-31) shows revenue of $15.92B, a solid +9.5% YoY gain versus Q1 2025's $14.54B, but a meaningful sequential contraction of -6.2% from Q2 2025's $16.98B. EPS tells a starker story: diluted EPS of $1.28 rose +14.3% YoY from $1.12 but collapsed -44.6% QoQ from $2.31. Net income followed the same pattern ($1.22B vs. $1.05B YoY; vs. $2.19B QoQ). Only three quarters are in-window, and TTM is unavailable, so I rely on both YoY and QoQ readings.\n\n**Gross margin** compressed sequentially to 56.2% (gross profit $8.95B on revenue $15.92B) from Q2 2025's 58.8% ($9.98B/$16.98B), though it improved YoY from Q1 2025's 55.2% ($8.03B/$14.54B). The YoY gross profit growth of +11.4% modestly outpaced revenue growth\u2014positive.\n\n**Operating margin** fell sharply to 8.7% (operating income $1.39B) from Q2 2025's 15.3% ($2.60B), and was only modestly above Q1 2025's 8.0% ($1.16B). The QoQ operating income decline of -46.5% ($1.39B vs. $2.60B) is the most concerning near-term signal. It suggests either a seasonal spending step-up, project-related costs, or a one-time item in Q2 2025 that inflated that quarter.\n\n## 2. Cash Generation and Balance-Sheet Resilience\n\n**Cash generation is the strongest fundamental datapoint.** Operating cash flow in Q1 2026 was $5.17B, up +18.3% YoY from Q1 2025's $4.37B and +203.9% QoQ from Q2 2025's $1.70B. Free cash flow is unavailable, but operating cash flow substantially exceeds net income ($5.17B vs. $1.22B), indicating robust non-cash add-backs and working-capital conversion typical of IBM's subscription/annuity model. The Q2 2025 OCF figure of $1.70B looks anomalous; Q1 quarters have consistently generated far more cash\u2014likely a seasonal pattern tied to annual renewals.\n\n**Balance sheet:** Total equity improved to $33.06B from $27.59B (Q2 2025) and $26.95B (Q1 2025), a +22.7% YoY increase. However, total liabilities also grew ($123.17B vs. $118.71B), leaving the **equity ratio at just 21.2%** ($33.06B/$156.23B). The implied debt-to-equity is approximately 3.7x\u2014elevated. ROE of 32.5% (latest ratio) benefits from this leverage; on a thinner equity base, it flatters returns but magnifies risk. Total assets grew to $156.23B, partly reflecting the Q1 seasonal cash accumulation.\n\n## 3. Earnings Quality\n\nEarnings quality is mixed. Positives: revenue and EPS grew YoY; cash flow conversion is strong (OCF/net income \u2248 4.2x); gross margins improved YoY. Negatives: the massive QoQ EPS decline (-44.6%) with only partial revenue softness (-6.2%) implies cost-side pressure or a favorable one-time item in Q2 2025. Without TTM data or segment breakdowns, I cannot decompose whether the Q2 2025 operating income spike ($2.60B) was structural or inflated. The operating margin variance (8.0% \u2192 15.3% \u2192 8.7%) is wide and warrants caution about earnings durability.\n\n## 4. Valuation vs. Own History\n\nThe valuation compression is dramatic. **P/E diluted has fallen to 20.5x** from a window high of 50.8x (Dec 2025) and a starting point of 39.6x (Apr 2025). **P/B is 6.66x**, down from 10.74x in Dec 2025\u2014its lowest in the 365-day window. **Net margin has improved to 15.6%** from 8.7% a year ago, and **ROE to 32.5%** from 20.3%. The earnings yield of 4.9% now sits above the 10-year Treasury yield of 4.34%, a crossover that did not exist at any prior observation in the window (P/E of 20.5x = 4.9% yield vs. rates that were lower then). This is a meaningful re-rating: the market is pricing IBM at the lowest multiple in over a year despite the best profitability metrics in the series.\n\nHowever, the P/B compression partly reflects the equity base growing faster than earnings quality can justify; 6.66x book on a 21% equity-ratio balance sheet means the market is still pricing significant intangible/goodwill value.\n\n## 5. Price Context\n\nPrice has declined -21.6% over the last quarter (from $294.67 on 2026-01-22 to $231.08 on 2026-04-23), reaching within 4.7% of the 52-week low of $220.72. The selloff aligns with the valuation derating, not an earnings miss\u2014the Q1 2026 results beat Q1 2025 on every metric. This suggests macro-driven de-risking rather than fundamental deterioration.\n\n## 6. Macro and Sentiment Overlays\n\nThe macro environment has deteriorated meaningfully:\n- **WTI oil surged +64%** over the 90-day window to $99.27/barrel\u2014a potential cost headwind for enterprise spending and inflation expectations.\n- **VIX peaked at 31.05** on 2026-03-27 (now 19.31) during a volatility episode that coincided with IBM's sharpest drawdown.\n- **Corporate bond spreads widened**: Moody's Baa yield at 6.02%, up from 5.83%.\n- **Yield curve (T10Y2Y)** narrowed to 0.51% from 0.66%, signaling growing economic uncertainty.\n- Fed funds stable at 3.64%.\n\nNews sentiment turned sharply negative on 2026-04-23 at -0.875 (8 articles scored), a stark reversal from the generally positive 0.521 mean over the 90-day window. This is a single-day signal with limited reliability but flags acute headline risk.\n\n## 7. Strongest Quantitative Upside and Downside\n\n**Upside drivers (quantitative):**\n- P/E at 20.5x vs. 1-year average ~43x\u2014if earnings stabilize at current levels, mean-reversion in multiple alone implies ~100% price appreciation.\n- Earnings yield (4.9%) now exceeds the risk-free rate (4.34% 10Y), a rare crossover for IBM in this dataset.\n- Operating cash flow of $5.17B in Q1 alone demonstrates durable cash generation that can service the leveraged balance sheet.\n- YoY revenue growth of +9.5% and EPS growth of +14.3% confirm the business is expanding.\n\n**Downside risks (quantitative):**\n- The QoQ EPS decline of -44.6% signals potential earnings volatility; if Q1 2026's run-rate ($1.28 EPS) is the new normal, annualized EPS \u2248 $5.12, making 20.5x still a ~$105 stock\u2014implying >50% downside from current levels.\n- Balance sheet leverage (equity ratio 21.2%) limits financial flexibility; in a rising-rate/corporate-spread environment, refinancing risk is non-trivial.\n- Macro headwinds (oil +64%, VIX elevated, corporate spreads widening) could compress enterprise IT spending, pressuring IBM's revenue trajectory.\n- The recent -0.875 sentiment reading on the decision date may foreshadow negative catalysts not yet in fundamentals.\n\n## 8. Provisional Conclusion\n\nIBM presents a **moderately attractive fundamental setup with significant caveats**. The YoY trajectory is positive across revenue, earnings, margins, and cash flow. The valuation has compressed to its lowest level in over a year, with the earnings yield now exceeding the risk-free rate\u2014a technically cheap signal. However, the QoQ earnings collapse (-44.6%) raises questions about durability, the balance sheet remains thin (21.2% equity ratio), and the macro backdrop (spiking oil, widening credit spreads, elevated VIX) creates headwinds for a company whose revenue depends on enterprise discretionary and capital spending. The sharp price decline (-21.6% quarterly) has partially priced these risks, but without a fourth quarter of data to establish TTM trends, the earnings trajectory has too few datapoints to call durable with confidence. The setup is **interesting for mean-reversion but requires confirmation of Q1 2026's earnings quality before sizing conviction.**\n\n---\n\n## key evidence\nfundamentals | 2026-03-31 | revenue=15.92B, eps_diluted=1.28, operating_income=1.39B, net_income=1.22B\nfundamentals | 2026-03-31 | operating_cash_flow=5.17B (+18.3% YoY from 4.37B)\nfundamentals | 2026-03-31 | total_equity=33.06B, total_assets=156.23B, equity_ratio=21.2%\nfundamentals | Q1 2026 | QoQ: revenue=-6.2%, eps_diluted=-44.6%, gross_profit=-10.3%\nfundamentals | Q1 2026 | YoY: revenue=+9.5%, eps_diluted=+14.3%, gross_profit=+11.4%\nratios | 2026-04-23 | pe_diluted=20.459, p_b=6.656, earnings_yield=0.049, roe=0.325, net_margin=0.156\nprices | 2026-04-23 | close=231.08, quarterly_delta=-21.6%, low_52wk=220.72\nmacro | 2026-04-23 | DGS10=4.34%, DCOILWTICO=99.27 (+64.2%), DBAA=6.02%",
+  "qualitative_report": "## IBM \u2014 Qualitative Franchise & Narrative Report\n**Decision date: 2026-04-24 | Evidence cutoff: 2026-04-23**\n\n---\n\n### 1. Business / Franchise Read\n\nIBM is a diversified enterprise-technology provider operating across three principal segments: Software (~45% of 2025 revenue), Consulting (~31%), and Infrastructure (~20%), with a residual Financing tail. The structural narrative \u2014 drawn from multiple sources \u2014 centers on a post-Kyndryl transformation toward higher-margin, recurring software and AI-driven services, anchored by two strategic pillars: **hybrid cloud** (powered by the $34B Red Hat acquisition) and **enterprise AI** (the watsonx platform).\n\nThe franchise quality rests on several interlocking advantages:\n\n- **Regulated-industry moat.** IBM's hybrid cloud architecture \u2014 running models on-premise via Red Hat OpenShift alongside public cloud \u2014 appeals specifically to banking, healthcare, and government clients where full public-cloud migration is infeasible due to data-sovereignty and compliance requirements. This insulates IBM from hyperscaler price wars and creates high switching costs. (Structural web_search, fourweekmba, Investopedia, ad-hoc-news.de)\n- **Integrated stack.** IBM uniquely bundles high-performance hardware (IBM Z mainframes), hybrid cloud software (Red Hat, HashiCorp, Confluent), AI platforms (watsonx), and deep consulting capabilities. This integration cross-sells and creates client lock-in, with watsonx crossing $5B in cumulative book of business by late 2025, ~80% landing in Consulting engagements. (Structural web_search, fourweekmba)\n- **Recurring revenue base.** Software ARR reached $24.6B as of Q1 2026, up 10% year-over-year, signaling durable subscription growth. Remaining performance obligations stood at ~$69B after the Confluent close. (Web_search updates, Insider Monkey earnings call transcript)\n\n**Inference:** IBM's competitive position is defensible in its target niche (regulated enterprise) but remains structurally challenged in pure public-cloud and commodity AI workloads against Microsoft, AWS, and Google. The franchise is real but narrower than headline segment growth implies.\n\n---\n\n### 2. Recent Dated Developments\n\n**Q1 2026 Earnings (22 April 2026):** IBM delivered a solid quarter \u2014 revenue $15.9B, up 9% reported / 6% constant currency; operating EPS $1.91, beating consensus of $1.81\u2013$1.82; free cash flow $2.2B, up 13% YoY, described as the \"highest first quarter free cash flow in a decade.\" Software grew 11% (Red Hat +13%, Data +19%, Automation +10%), Infrastructure grew 15% (IBM Z +51%), and Consulting grew a modest 4%. Operating pre-tax margin expanded 140 bps. (News, 2026-04-22 Benzinga; PRNewswire; Insider Monkey transcript)\n\n**Guidance reiterated, not raised.** IBM maintained its full-year 2026 outlook of >5% constant-currency revenue growth and ~$1B higher year-over-year free cash flow. The market punished the stock (\u22127% to \u22129% on 23 April) for not raising guidance despite the beat \u2014 interpreted as signal that growth deceleration (software slowed from 14% to 11% QoQ) limits upside conviction. (News, 2026-04-23 Motley Fool, Benzinga)\n\n**Confluent acquisition closed mid-March 2026.** IBM completed the $11B\u2013$11.6B acquisition of Confluent, bolstering data-streaming capabilities for AI workloads. Analysts flagged ~$600M in expected 2026 dilution and integration risk; total debt rose $5.1B YTD to $66.4B. (Web_search structural, ad-hoc-news.de; web_search updates, stocktitan.net)\n\n**FedRAMP authorization (1 April 2026).** Eleven IBM AI/automation products \u2014 including watsonx offerings \u2014 received FedRAMP authorization through an AWS collaboration, opening regulated federal AI procurement. Fifteen new IBM Consulting agentic AI solutions were added to the AWS Marketplace. (Web_search structural/risk, bellwetherbrief catalyst)\n\n**Geopolitical headwinds.** The Iran conflict and Strait of Hormuz disruptions were cited by both IBM and ServiceNow as causing deal delays and revenue headwinds in Q1 (ServiceNow quantified a 75 bps hit). Software sector sold off broadly on 23 April, with the software ETF down ~6%. (News, 2026-04-23 Motley Fool)\n\n**Analyst target cuts.** BMO Capital cut IBM's target from $350 to $290 (Market Perform, 19 March); JPMorgan cut from $317 to $283 (Neutral, 18 March); Stifel cut from $340 to $290 but held Buy. Concerns centered on Red Hat deceleration and acquisition dilution. (Web_search structural, ad-hoc-news.de, 25 March 2026)\n\n---\n\n### 3. Material Risks and Offsets\n\n| Risk | Severity | Evidence & Notes |\n|---|---|---|\n| **Consulting softness / federal contract cancellations** | High | 15 federal contracts ($100M) already cancelled; consulting signings fell 15.6% in a prior quarter; Q1 2026 consulting grew only 1% at CC. Federal spending represents ~10% of consulting. (Structural web_search, bellwetherbrief) |\n| **AI commoditization / pricing pressure** | Medium-High | Seeking Alpha flagged AI commoditization as eroding margin durability; ServiceNow's non-seat-based pricing shift signals broader enterprise-software disruption risk. IBM acknowledged generative AI \"remains in early stages\" with inherent risks. (Structural risk, bellwetherbrief; news, 2026-04-23) |\n| **Growth deceleration in Software** | Medium | Software growth cooled to 11% (8% CC) in Q1 2026 vs. 14% prior quarter; Red Hat growth had decelerated before the Q1 sequential acceleration. Market reaction to maintained (not raised) guidance signals investor sensitivity. (News, 2026-04-23 Benzinga) |\n| **Balance-sheet leverage from Confluent** | Medium | Debt rose to $66.4B; Confluent expected to dilute ~$600M in 2026. Integration execution risk in a high-rate environment. (Web_search structural, ad-hoc-news.de) |\n| **Geopolitical / macro disruption** | Medium | Iran war causing enterprise deal delays; oil-price surges and risk-off rotation hit tech broadly. (News, 2026-04-23) |\n| **Mainframe cycle dependency** | Medium | IBM Z grew 51% in Q1 \u2014 a cyclical tailwind that will normalize. When it does, the growth mix becomes more consulting/software dependent, where growth is lower. (Inferred from Q1 data; structural sources flagged this risk in late 2025) |\n\n**Key offset:** IBM's moat in regulated, mission-critical environments is structurally intact. The FedRAMP authorization, watsonx bookings momentum ($5B+ cumulative), and accelerating Red Hat consumption (OpenShift at $2B ARR) provide tangible evidence that the hybrid-cloud-plus-AI thesis is converting. Free cash flow generation remains robust, supporting both the dividend (31st consecutive annual increase) and acquisition-funded growth.\n\n---\n\n### 4. Qualitative Assessment\n\n**Neutral-to-Positive on fundamental attractiveness, with material caveats.**\n\nIBM's Q1 2026 results confirm that the hybrid-cloud-and-AI transformation is producing real revenue and margin expansion. Software and Infrastructure both delivered double-digit growth; free cash flow hit a decade-high for Q1; and the ARR and RPO trajectory suggest durable recurring revenue. The franchise in regulated enterprise environments \u2014 where compliance, sovereignty, and mission-critical requirements limit hyperscaler substitution \u2014 is genuine and competitively defensible.\n\nHowever, the market's punishing reaction to a beat-and-maintain quarter (stock down ~8%) reflects a legitimate structural concern: IBM's growth is heavily propped up by a mainframe cycle (IBM Z +51%) that will inevitably cool, while the secular growth engine (Software) is decelerating rather than accelerating. The federal-contract headwinds and consulting signings weakness raise questions about the cross-sell flywheel that links consulting to software adoption. And the Confluent acquisition, while strategically logical, adds leverage and integration risk at a moment when organic growth momentum appears to be plateauing.\n\nThe AI narrative cuts both ways: watsonx bookings are scaling, but enterprise AI commoditization \u2014 where cheaper or more capable models from hyperscalers and startups erode IBM's pricing power \u2014 remains an unresolved structural risk that Seeking Alpha and the broader software selloff on 23 April both highlight.\n\n**Bottom line:** IBM is a defensible, cash-generative franchise with a credible (if narrow) competitive moat in regulated enterprise technology. The stock's valuation has compressed (EV/EBITDA from ~17.5x to ~14x), which partially prices in the growth questions. The narrative supports a qualified positive view on fundamental quality, but the growth trajectory is not strong enough to overcome concerns about cyclical normalization and AI-driven disruption without clearer evidence of sustained software acceleration beyond the mainframe tailwind.\n\n---\n\n## Key Evidence\n\nweb_search structural | fourweekmba.com (2026-04-22) | \"Watsonx had crossed $5B in cumulative book of business by late 2025, with roughly 80% landing in Consulting engagements\"\nweb_search structural | bellwetherbrief.com | \"15 canceled federal contracts worth $100 million\" and \"15.6% drop in signings as clients delay discretionary projects\"\nweb_search structural | ad-hoc-news.de (2026-03-25) | \"IBM's mid-March 2026 acquisition of Confluent for $11 billion...expected to deliver $600 million in dilution for 2026\"; \"Debt...totaled $66.4 billion, up $5.1 billion year to date\"\nnews | 2026-04-22 Benzinga | \"IBM reported Q1 2026 earnings of $1.91 per share, beating analyst estimates of $1.81, with revenue of $15.92 billion exceeding the $15.62 billion consensus\"\nnews | 2026-04-23 Benzinga | \"revenue growth slowed to 9% from 12.2% in the prior quarter. Software segment growth cooled to 11.3% from 14%\"\nweb_search updates | Insider Monkey earnings call (2026-04-22) | \"ARR was solid at $24.6 billion, up 10% since last year\"; \"OpenShift is now $2 billion ARR business with strong growth\"; \"IBM Z continues to outperform prior programs, growing 48%\"\nnews | 2026-04-23 Motley Fool | \"IBM fell 9% after reiterating 2026 guidance without raising it\"\nweb_search structural | bellwetherbrief.com | \"11 AI and automation products, including multiple watsonx offerings, received FedRAMP authorization\" (1 April 2026)",
+  "verification": {
+    "recommendation": "KEEP",
+    "severity": "minor",
+    "verified_points": [
+      "YoY revenue +9.5% equals 15.92B/14.54B; YoY EPS diluted +14.3% equals 1.28/1.12; YoY gross profit +11.4% equals 8.95B/8.03B \u2014 all consistent with raw income statement.",
+      "QoQ revenue -6.2% equals (15.92-16.98)/16.98; QoQ EPS -44.6% equals (1.28-2.31)/2.31; QoQ gross profit -10.3% equals (8.95-9.98)/9.98 \u2014 all consistent with raw data.",
+      "YoY OCF +18.3% equals 5.17B/4.37B; QoQ OCF +203.9% equals (5.17-1.70)/1.70 \u2014 consistent with raw cash flow series.",
+      "Balance sheet: total_equity=33.06B, total_assets=156.23B, equity_ratio=21.2% (33.06/156.23) \u2014 matches raw pack.",
+      "P/E diluted=20.459, P/B=6.656, earnings_yield=0.049, ROE=0.325, net_margin=0.156 \u2014 all match raw ratio pack for 2026-04-23.",
+      "Price close=231.08, quarterly delta=-21.6%, 52-week low=220.72 \u2014 matches raw price data.",
+      "Macro: DGS10=4.34%, DCOILWTICO=99.27 (+64.2%), DBAA=6.02%, VIX peak=31.05 on 2026-03-27 \u2014 all verified against raw macro series.",
+      "Qual report: Q1 2026 operating EPS $1.91 beating consensus $1.81\u2013$1.82 \u2014 confirmed by news sources (Benzinga 2026-04-22, Insider Monkey transcript).",
+      "Qual report: Software revenue $7.1B up 11%, Infrastructure $3.3B up 15%, Consulting $5.3B up 4% \u2014 matches stocktitan.net and PRNewswire filing data.",
+      "Qual report: FCF $2.2B up 13% YoY, 'highest first quarter free cash flow in a decade' \u2014 confirmed by Insider Monkey earnings call transcript (James Kavanaugh).",
+      "Qual report: ARR $24.6B up 10% YoY, OpenShift $2B ARR \u2014 confirmed by Insider Monkey transcript.",
+      "Qual report: Confluent acquisition $11B\u2013$11.6B closed mid-March 2026, debt $66.4B up $5.1B YTD \u2014 confirmed by ad-hoc-news.de and PRNewswire.",
+      "Qual report: 15 federal contracts ($100M) cancelled, consulting signings fell 15.6% \u2014 confirmed by bellwetherbrief.com structural source.",
+      "Qual report: FedRAMP authorization for 11 AI/automation products on April 1 \u2014 confirmed by bellwetherbrief.com catalyst section.",
+      "News sentiment -0.875 on 2026-04-23 (8 articles) \u2014 matches raw news sentiment series."
+    ],
+    "unsupported_claims": [
+      "Quant report states 'P/E diluted has fallen to 20.5x from a window high of 50.8x (Dec 2025)' \u2014 raw pack shows pe_diluted=50.816 on 2025-12-10, so 50.8x is a valid rounding. However, the report also says 'a starting point of 39.6x (Apr 2025)' \u2014 raw pack shows pe_diluted=39.614 on 2025-04-24, which is the first observation in the 365-day window, so 'starting point' is accurate. Minor: the report rounds 20.459 to 20.5x, which is acceptable.",
+      "Quant report states 'P/B is 6.66x, down from 10.74x in Dec 2025\u2014its lowest in the 365-day window' \u2014 raw pack shows p_b=6.656 on 2026-04-23 and p_b=10.744 on 2025-12-10. The range in the pack is p_b 6.7..10.8, so 6.656 is below the stated range floor of 6.7. The claim 'lowest in the 365-day window' is supported by the sparse history showing 6.656 as the minimum. Minor rounding discrepancy (6.66 vs 6.656).",
+      "Quant report states 'Net margin has improved to 15.6% from 8.7% a year ago, and ROE to 32.5% from 20.3%' \u2014 raw pack shows net_margin=0.156 (15.6%) and roe=0.325 (32.5%) on 2026-04-23, and net_margin=0.087 (8.7%) and roe=0.203 (20.3%) on 2025-04-24. Verified.",
+      "Quant report states 'The Q2 2025 operating income spike ($2.60B) was structural or inflated' \u2014 raw pack shows operating_income=2.60B for 2025-06-30. Verified.",
+      "Quant report states 'WTI oil surged +64% over the 90-day window to $99.27/barrel' \u2014 raw pack shows DCOILWTICO latest=99.27 with \u0394=38.81 (+64.2%). The 90-day lookback start value would be ~60.46 (2026-01-26). Verified.",
+      "Qual report states 'EV/EBITDA from ~17.5x to ~14x' \u2014 this figure does not appear in the raw quantitative pack (ev_to_ebit=n/a). The qual report cites this from the Seeking Alpha structural source, which is within the qual evidence pack. However, the quant pack has no EV/EBITDA data to cross-verify. This is not an unsupported claim per se since it's sourced from qual evidence, but the PM should note it cannot be independently verified from the quant data.",
+      "Qual report states 'IBM Z grew 51% in Q1' in the risk table \u2014 the Insider Monkey transcript says 'growing 48%' (constant currency) and the PRNewswire/stocktitan sources say 'IBM Z up 51 percent, up 48 percent at constant currency.' The 51% is the reported (USD) figure and 48% is constant currency. The qual report uses 51% in the main text and 48% in the risk table ('IBM Z continues to outperform prior programs, growing 48%'). This is internally inconsistent within the qual report \u2014 the risk table cites 48% (CC) while the main text and PRNewswire confirm 51% (reported). Minor inconsistency.",
+      "Qual report states 'Software growth cooled to 11% (8% CC) in Q1 2026 vs. 14% prior quarter' \u2014 the 14% figure refers to Q4 2025 software growth per the stockintent.com source. However, the raw quant pack only has Q1 2026, Q2 2025, and Q1 2025 data (no Q4 2025). The 14% is sourced from the qual web context (stockintent.com shows Q4 Software +14% YoY). This is not in the quant pack but is in the qual evidence, so it's acceptable as a qual-sourced claim."
+    ],
+    "corrections": [
+      {
+        "id": "C1",
+        "issue": "Quant\u2194Qual EPS metric mismatch: The quant report uses GAAP diluted EPS of $1.28, while the qual report cites operating (non-GAAP) EPS of $1.91. Both figures are correct per their respective sources (quant from raw fundamentals pack, qual from earnings call/Benzinga). However, the quant report's YoY EPS growth of +14.3% (1.28/1.12) and the qual report's +19% operating EPS growth are measuring different things. The PM should be aware these are not contradictory but represent GAAP vs. non-GAAP views of the same quarter.",
+        "required_action": "No correction needed \u2014 both figures are sourced correctly. Advisory note for PM: the 14.3% GAAP EPS growth and 19% non-GAAP operating EPS growth reflect different earnings definitions; the gap is driven by acquisition-related amortization and other non-GAAP adjustments."
+      },
+      {
+        "id": "C2",
+        "issue": "Qual report risk table cites IBM Z growth as 48% (constant currency) while the main text and multiple sources confirm 51% (reported). The Insider Monkey transcript quote says '48%' in the context of constant currency discussion. This is a minor internal inconsistency within the qual report.",
+        "required_action": "Clarify that IBM Z grew 51% as reported and 48% at constant currency; use reported figure for consistency with GAAP revenue figures cited elsewhere."
+      },
+      {
+        "id": "C3",
+        "issue": "The quant report's downside scenario calculates 'annualized EPS \u2248 $5.12' by multiplying Q1 2026 GAAP EPS of $1.28 \u00d7 4. This is a simplistic annualization that ignores IBM's typical Q1 seasonality (Q1 is historically the weakest cash/earnings quarter). The raw pack shows Q2 2025 EPS was $2.31, nearly double Q1 2025's $1.12, demonstrating strong intra-year variability. Annualizing Q1 alone materially understates likely full-year earnings.",
+        "required_action": "PM should note that the $5.12 annualized EPS downside case is overly conservative; using the 3-quarter average EPS of ~$1.57 or the qual-sourced consensus of ~$10.78\u2013$12.38 for 2026 would be more representative."
+      }
+    ]
+  },
+  "pm_emit_path": "submit_views",
+  "final_decision": "",
+  "submit_args": {
+    "views": [
+      {
+        "symbol": "IBM",
+        "score": 0.25,
+        "rationale": "IBM presents a moderately attractive setup anchored by genuine fundamental positives \u2014 strong YoY revenue growth (+9.5%), robust cash generation ($5.17B Q1 OCF, highest Q1 FCF in a decade per management), and a defensible franchise in regulated enterprise hybrid cloud/AI. Valuation has compressed dramatically: P/E at 20.5x vs. a 1-year average ~43x, and earnings yield (4.9%) now exceeds the 10Y Treasury (4.34%), a rare crossover. However, material caveats temper conviction: (1) QoQ EPS collapsed -44.6% with wide operating margin variance (8.0%\u219215.3%\u21928.7%) suggesting earnings volatility rather than smooth trajectory; (2) the mainframe cycle (IBM Z +51%) is a cyclical tailwind that will normalize, exposing slower underlying software growth (11% vs. 14% prior quarter); (3) balance sheet leverage is elevated at 21.2% equity ratio with $66.4B debt post-Confluent; (4) macro headwinds (oil +64%, widening credit spreads, geopolitical deal delays) create near-term enterprise spending risk. The stock's -21.6% quarterly decline has partially priced these risks, and the beat-and-maintain selloff (-8% on 4/23) may represent a short-term overshoot. FedRAMP authorization (1 April) and watsonx $5B+ cumulative bookings provide credible near-term catalysts for federal AI adoption. Net: a defensible, cash-generative franchise trading at a meaningful discount to its own history, but with enough earnings volatility and cyclical risk to cap the score at mildly attractive rather than strongly so.",
+        "key_factors": [
+          "YoY revenue +9.5% ($15.92B vs $14.54B) and YoY EPS diluted +14.3% ($1.28 vs $1.12) confirm business expansion",
+          "Operating cash flow $5.17B in Q1 2026, +18.3% YoY, described as 'highest first quarter free cash flow in a decade'",
+          "P/E diluted compressed to 20.5x from 50.8x (Dec 2025) and 39.6x (Apr 2025) \u2014 lowest in 365-day window",
+          "Earnings yield 4.9% now exceeds 10Y Treasury yield 4.34%, a crossover not seen at any prior observation in the window",
+          "QoQ EPS decline of -44.6% ($1.28 vs $2.31) and operating margin variance (8.0%\u219215.3%\u21928.7%) signal earnings volatility",
+          "IBM Z grew +51% reported in Q1 \u2014 a cyclical mainframe tailwind that will normalize, masking slower software growth",
+          "Software growth cooled to 11% (8% CC) from 14% prior quarter; guidance maintained not raised, triggering -8% selloff",
+          "Balance sheet leverage: equity ratio 21.2%, debt $66.4B post-Confluent acquisition ($11B), expected $600M 2026 dilution",
+          "Macro headwinds: WTI oil +64% to $99.27, Moody's Baa spread at 6.02%, VIX peaked 31.05, geopolitical deal delays",
+          "FedRAMP authorization for 11 AI/automation products (1 April 2026) opens federal AI procurement \u2014 near-term catalyst",
+          "Software ARR $24.6B up 10% YoY; watsonx crossed $5B cumulative book of business; OpenShift at $2B ARR",
+          "15 federal contracts ($100M) cancelled; consulting signings fell 15.6%; consulting grew only 1% CC in Q1",
+          "News sentiment collapsed to -0.875 on 2026-04-23 (8 articles) from 0.521 mean over 90-day window"
+        ],
+        "sources_cited": [
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-31",
+            "excerpt": "revenue=15.92B, eps_diluted=1.28, operating_income=1.39B, net_income=1.22B"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-31",
+            "excerpt": "operating_cash_flow=5.17B (+18.3% YoY from 4.37B)"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-31",
+            "excerpt": "total_equity=33.06B, total_assets=156.23B, equity_ratio=21.2%"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "Q1 2026",
+            "excerpt": "QoQ: revenue=-6.2%, eps_diluted=-44.6%, gross_profit=-10.3%"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "Q1 2026",
+            "excerpt": "YoY: revenue=+9.5%, eps_diluted=+14.3%, gross_profit=+11.4%"
+          },
+          {
+            "source_type": "ratios",
+            "source_id": "2026-04-23",
+            "excerpt": "pe_diluted=20.459, p_b=6.656, earnings_yield=0.049, roe=0.325, net_margin=0.156"
+          },
+          {
+            "source_type": "prices",
+            "source_id": "2026-04-23",
+            "excerpt": "close=231.08, quarterly_delta=-21.6%, low_52wk=220.72"
+          },
+          {
+            "source_type": "macro",
+            "source_id": "2026-04-23",
+            "excerpt": "DGS10=4.34%, DCOILWTICO=99.27 (+64.2%), DBAA=6.02%"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-04-22 Benzinga",
+            "excerpt": "IBM reported Q1 2026 earnings of $1.91 per share, beating analyst estimates of $1.81, with revenue of $15.92 billion exceeding the $15.62 billion consensus"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-04-23 Benzinga",
+            "excerpt": "revenue growth slowed to 9% from 12.2% in the prior quarter. Software segment growth cooled to 11.3% from 14%"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-04-23 Motley Fool",
+            "excerpt": "IBM fell 9% after reiterating 2026 guidance without raising it"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "Insider Monkey earnings call 2026-04-22",
+            "excerpt": "ARR was solid at $24.6 billion, up 10% since last year; OpenShift is now $2 billion ARR business with strong growth; IBM Z continues to outperform prior programs, growing 48%"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "fourweekmba.com 2026-04-22",
+            "excerpt": "Watsonx had crossed $5B in cumulative book of business by late 2025, with roughly 80% landing in Consulting engagements"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "bellwetherbrief.com",
+            "excerpt": "15 canceled federal contracts worth $100 million; 15.6% drop in signings as clients delay discretionary projects"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "ad-hoc-news.de 2026-03-25",
+            "excerpt": "IBM's mid-March 2026 acquisition of Confluent for $11 billion...expected to deliver $600 million in dilution for 2026; Debt...totaled $66.4 billion, up $5.1 billion year to date"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "bellwetherbrief.com",
+            "excerpt": "11 AI and automation products, including multiple watsonx offerings, received FedRAMP authorization"
+          },
+          {
+            "source_type": "news_sentiment",
+            "source_id": "2026-04-23",
+            "excerpt": "sentiment=-0.875 (8 articles), 90-day mean=0.521"
+          }
+        ]
+      }
+    ]
+  },
+  "error": null
+}

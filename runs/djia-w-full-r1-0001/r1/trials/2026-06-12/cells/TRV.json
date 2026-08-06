@@ -1,0 +1,215 @@
+{
+  "cell": "TRV",
+  "symbols": [
+    "TRV"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 70397,
+    "tokens_out": 10175,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.07045232867199999,
+    "basis": "reported"
+  },
+  "views": {
+    "TRV": {
+      "symbol": "TRV",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "TRV presents a moderately attractive case anchored by a compelling valuation disconnect. The stock trades at 8.7x diluted P/E \u2014 near its 365-day trough of 8.3x \u2014 while profitability metrics are at multi-quarter highs: net margin 15.5%, ROE 23.8%, and seven consecutive quarters of >$1B pre-tax underwriting income. The earnings yield of 11.5% offers a 700+ bp spread over the 10-year Treasury at 4.45%. The market has aggressively de-rated the stock from 14.3x to 8.7x over twelve months despite improving fundamentals, creating a meaningful valuation gap if earnings are even partially sustainable. Balance sheet is strengthening (equity +13.5% YoY to $31.99B) and operating cash flow generation is healthy ($2.20B in Q1 2026). Analysts have been revising estimates upward (Zacks consensus FY2026 EPS $28.03, 12 analysts raised estimates in last 60 days). However, the case is tempered by several factors: the YoY earnings surge (+357.6%) is largely base-effect recovery from a catastrophically weak Q1 2025 ($1.70 EPS), TTM data is incomplete (Q4 2025 missing), QoQ earnings declined -5.6%, and structural risks persist \u2014 escalating catastrophe losses ($1.85B in 2021 to $3.33B in 2024), social inflation, and the homeowners-pricing dilemma. The consensus rating is 'Hold' with 3-year earnings-decline forecasts. The low P/E may partly reflect the market pricing in mean reversion rather than pure undervaluation. Score of +0.35 reflects: strong Pillar 1 (solid fundamentals and improving trajectory, though cyclical), strong Pillar 2 (clearly cheap vs own history at 8.7x vs 14.3x a year ago on better earnings), and a modest Pillar 3 boost from upward analyst estimate revisions and defensive rotation tailwinds, partially offset by the earnings-sustainability question and missing Q4 2025 data that prevents full TTM normalization.",
+      "key_factors": [
+        "P/E diluted at 8.729x (2026-06-11) near 365-day trough of 8.3x, down from 14.3x a year ago \u2014 40% de-rating despite improving profitability",
+        "Net margin expanded to 15.5% and ROE to 23.8% (both at multi-quarter highs), up from 9.1% and 15.2% respectively in June 2025",
+        "Seven consecutive quarters of >$1B pre-tax underwriting income demonstrates operational consistency",
+        "Q1 2026 EPS of $7.78 vs Q1.70 YoY (+357.6%) \u2014 but Q1 2025 was catastrophically weak, base effect is significant",
+        "Earnings yield of 11.5% vs 10-year Treasury at 4.45% \u2014 700+ bp spread provides valuation cushion",
+        "Zacks consensus FY2026 EPS raised to $28.03; 12 analysts raised estimates in last 60 days; average earnings surprise >40%",
+        "Catastrophe losses escalated from $1..5B (2021) to $3.33B (2024) \u2014 structural risk to underwriting margins",
+        "TTM data incomplete (Q4 2025 missing) \u2014 cannot fully normalize earnings; QoQ EPS declined -5.6% from Q3 2025's $8.24",
+        "Balance sheet strengthening: total equity +13.5% YoY to $31.99B; expanded $1.2B revolving credit facility (up to $1.8B)",
+        "Consensus 'Hold' rating and 3-year earnings-decline forecasts temper enthusiasm; market may be pricing in cyclical mean reversion"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=11.92B, operating_income=2.12B, net_income=1.71B, eps_diluted=7.78"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=11.81B, operating_income=468M, net_income=395M, eps_diluted=1.70"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 YoY",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=+357.6%, net_income=+333.2%, operating_cash_flow=+61.6%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_equity=31.99B, total_liabilities=110.32B, operating_cash_flow=2.20B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=8.729x, p_b=2.075x, net_margin=0.155, roe=0.238, earnings_yield=0.115"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-12",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=14.347x, net_margin=0.091, roe=0.152"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range (2025-06-12..2026-06-11)",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted 8.3..14.4, p_b 1.9..2.2, net_margin 0.1..0.2"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.45%, DCOILWTICO=91.58, DBAA=6.0%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de (05/15/2026, citing Zacks)",
+          "relevance": 1.0,
+          "excerpt": "12 analysts have raised their earnings estimates over the last 60 days, pushing the Zacks Consensus Estimate up by 0.77 USD to 28.03 USD per share, and the company has delivered an average earnings surprise of more than 40% in recent quarters"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Kavout (Q1 2026 earnings)",
+          "relevance": 1.0,
+          "excerpt": "pre-tax underwriting income of $1.2 billion, marking its seventh consecutive quarter of exceeding $1 billion; pre-tax catastrophe losses of $761 million; prior-year reserve development of $413 million pre-tax"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "asyousow.org (shareholder proposal)",
+          "relevance": 1.0,
+          "excerpt": "Its catastrophe losses increased from $1.85 billion in 2021 to $3.33 billion in 2024"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Simply Wall St (05/27/2026)",
+          "relevance": 1.0,
+          "excerpt": "new US$1.2b revolving credit facility replacing a prior US$1.0b facility"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "TRV",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4405,
+        "capped_chars": 4405,
+        "raw_tokens": 1101,
+        "capped_tokens": 1101
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221219,
+        "capped_chars": 221219,
+        "raw_tokens": 55305,
+        "capped_tokens": 55305
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30935,
+        "capped_chars": 30935,
+        "raw_tokens": 7734,
+        "capped_tokens": 7734
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 458,
+        "capped_chars": 458,
+        "raw_tokens": 114,
+        "capped_tokens": 114
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 3652,
+        "capped_chars": 581,
+        "raw_tokens": 913,
+        "capped_tokens": 145
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 87366,
+        "capped_chars": 70118,
+        "raw_tokens": 21842,
+        "capped_tokens": 17529
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 144306,
+  "started_at": "2026-08-06T02:49:02+00:00"
+}

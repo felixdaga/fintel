@@ -1,0 +1,241 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 130219,
+    "tokens_out": 12870,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.1170466364,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.45,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "NVDA presents a compelling fundamental case: Q1 FY26 revenue of $81.6B (+85.2% YoY), EPS of $2.39 (+214.5% YoY), gross margin expanding to 74.9%, operating margin to 65.6%, and quarterly OCF of $50.3B on a near-zero leverage balance sheet (D/E 4.3%). The franchise is structurally dominant with 87.4% data center AI chip revenue share and 90% discrete GPU share. Critically, the market has not kept pace \u2014 P/E has compressed ~49% from its May 2026 peak of 63x to 31.9x, the lowest in the 365-day window, while earnings inflected dramatically. The new ACIE segment growing 31% QoQ vs Hyperscale's 12% reveals a broadening customer base that reduces hyperscaler dependency. However, several factors cap the score below +0.5: (1) net income exceeding operating income by $4.78B is anomalous and may overstate normalized earnings; (2) earnings yield of 3.1% still trails the 10-year Treasury at 4.71% in a tightening rate environment; (3) material competitive threats from Amazon Trainium ($20B annual pace), Meta in-house chips, and AMD's Azure expansion are medium-term risks; (4) China revenue headwind is worsening with Chinese companies planning to allocate ~50% of AI budgets to domestic suppliers. The Q2 guidance of ~$91B and FY27 consensus of ~$385B provide near-term visibility, and TSMC's capex raise confirms sustained demand. The PIT leak (Safe Superintelligence partnership dated 2026-07-27) has been excluded from this assessment. Score of +0.45 reflects strong fundamentals and attractive relative valuation offset by earnings quality questions, rate headwinds, and structural competitive risks that prevent a full +0.5.",
+      "key_factors": [
+        "Q1 FY26 revenue $81.6B (+85.2% YoY), EPS $2.39 (+214.5% YoY) \u2014 four consecutive quarters of accelerating growth",
+        "Gross margin 74.9%, operating margin 65.6% \u2014 both expanding at massive scale, operating leverage still being unlocked",
+        "P/E compressed ~49% from May 2026 peak of 63x to 31.9x (current), lowest in 365-day window \u2014 market has under-reacted to earnings inflection",
+        "87.4% data center AI chip revenue share (Q1 2026, Axis Intelligence) and 90% discrete GPU share (Jon Peddie Research) \u2014 structural dominance",
+        "ACIE segment grew 31% QoQ vs Hyperscale 12% \u2014 growth engine broadening beyond hyperscaler dependency, reducing concentration risk",
+        "Q2 FY27 guidance ~$91B assuming virtually no China data center revenue; FY27 consensus ~$385B (~79% YoY growth)",
+        "Balance sheet fortress: $195.47B equity, $8.47B debt (D/E 4.3%), $50.34B quarterly OCF",
+        "Net income $58.32B exceeds operating income $53.54B by $4.78B \u2014 anomalous, may overstate normalized earnings",
+        "Earnings yield 3.1% vs 10-year Treasury 4.71% \u2014 still a premium to risk-free rates in tightening environment",
+        "Competitive threats: Amazon Trainium at $20B annual pace with $225B pre-committed contracts; Meta in-house chips starting Sept 2026; AMD expanding Azure partnership",
+        "China headwind worsening: Bloomberg survey shows Chinese companies planning ~50% AI budget allocation to domestic suppliers (up from ~30%)",
+        "TSMC raised capex to $60-64B and announced $100B Arizona investment \u2014 confirms sustained demand signals for Nvidia supply chain"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26",
+          "relevance": 1.0,
+          "excerpt": "revenue=81.61B, eps_diluted=2.39, net_income=58.32B, operating_cash_flow=50.34B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-04-27 (YoY base)",
+          "relevance": 1.0,
+          "excerpt": "revenue=44.06B, eps_diluted=0.76 \u2014 YoY growth: revenue=+85.2%, eps=+214.5%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26",
+          "relevance": 1.0,
+          "excerpt": "gross_profit=61.16B/revenue=81.61B \u2192 gross_margin=74.9%; operating_income=53.54B \u2192 operating_margin=65.6%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26",
+          "relevance": 1.0,
+          "excerpt": "total_equity=195.47B, total_debt=8.47B \u2192 debt_to_equity=4.3%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=31.901, p_b=26.049, earnings_yield=0.031, net_margin=0.63"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-18",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=62.981 (prior peak) \u2014 compression of ~49% to current 31.9x"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.71% (10y yield), FEDFUNDS=3.63%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "axis-intelligence.com (Q1 2026)",
+          "relevance": 1.0,
+          "excerpt": "NVIDIA held 87.4% of combined merchant data center AI chip revenue in Q1 2026, generating $75.2 billion in a single quarter from its data center segment alone"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "axis-intelligence.com (Q1 2026)",
+          "relevance": 1.0,
+          "excerpt": "Nvidia held 90% of discrete add-in-board GPU shipments in Q1 2026, according to Jon Peddie Research"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "techcache.substack.com",
+          "relevance": 1.0,
+          "excerpt": "ACIE grew 31% [sequentially] while Hyperscale grew 12%... Management split the business because ACIE was large, growing faster, and telling a different story about where Nvidia's growth has been coming from recently"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23 \u2014 Motley Fool",
+          "relevance": 1.0,
+          "excerpt": "Nvidia's stock hasn't been this cheap since 2019... at a P/E ratio of 31. Wall Street expects 82% revenue growth this fiscal year and 42% next year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (barchart)",
+          "relevance": 1.0,
+          "excerpt": "According to a new Bloomberg survey of Chinese tech companies, businesses in China expect to allocate nearly half of their AI accelerator budgets to domestic chipmakers over the next year. That represents a sharp increase from roughly 30% today"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-17 \u2014 Motley Fool",
+          "relevance": 1.0,
+          "excerpt": "TSMC reported strong Q2 earnings with revenue up 33% and EPS up 77%... announced a $100 billion additional investment in Arizona manufacturing... TSMC's CEO indicated strong demand signals from cloud providers"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-19",
+          "relevance": 1.0,
+          "excerpt": "Amazon's Trainium chip business is running at a '$20 billion annual pace' with $225B in pre-committed contracts"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-20",
+          "relevance": 1.0,
+          "excerpt": "Meta is accelerating in-house AI chip development starting September 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-22",
+          "relevance": 1.0,
+          "excerpt": "AMD expanded its Microsoft Azure partnership for AI inference"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4649,
+        "capped_chars": 4649,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242299,
+        "capped_chars": 242299,
+        "raw_tokens": 60575,
+        "capped_tokens": 60575
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30496,
+        "capped_chars": 30496,
+        "raw_tokens": 7624,
+        "capped_tokens": 7624
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4449,
+        "capped_chars": 4449,
+        "raw_tokens": 1112,
+        "capped_tokens": 1112
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 470893,
+        "capped_chars": 110189,
+        "raw_tokens": 117723,
+        "capped_tokens": 27547
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 83264,
+        "capped_chars": 63143,
+        "raw_tokens": 20817,
+        "capped_tokens": 15785
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 171996,
+  "started_at": "2026-08-06T03:04:09+00:00"
+}

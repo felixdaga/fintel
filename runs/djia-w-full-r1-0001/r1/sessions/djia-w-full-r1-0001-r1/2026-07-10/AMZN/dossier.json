@@ -1,0 +1,179 @@
+{
+  "symbol": "AMZN",
+  "decision_date": "2026-07-10",
+  "cell": "AMZN",
+  "agent": "optimized",
+  "version": "1.0.0",
+  "model": "xiaomi/mimo-v2.5-pro",
+  "ticker": "AMZN",
+  "pipeline": "quant\u2016qual \u2192 verify \u2192 final_pm",
+  "quantitative_report": "## AMZN Quantitative Report \u2014 2026-07-10\n\n### 1. Revenue & Earnings Trajectory\n\nAmazon's quarterly revenue is accelerating sharply: Q1 $155.67B \u2192 Q2 $167.70B \u2192 Q3 $180.17B. The Q3-to-Q2 step of +7.4% ($12.47B) is the strongest quarterly increment in the three-quarter window. EPS follows the same arc: $1.59 \u2192 $1.68 \u2192 $1.95, with Q3 QoQ growth of +16.1%. Net income rose from $17.13B to $18.16B to $21.19B, a QoQ jump of +16.6%.\n\nHowever, there is a structural divergence between operating income and net income in Q3 that demands attention. Operating income *fell* QoQ from $19.17B (Q2) to $17.42B (Q3), yet net income surged by $3.03B. The implied non-operating income contribution in Q3 is approximately $3.77B ($21.19B minus $17.42B), substantially larger than Q1's ~($1.28B) gap. This raises an earnings-quality flag: the EPS beat appears to rely on items below the operating line rather than core operating leverage.\n\n**Operating margin trajectory is deteriorating on a sequential basis despite the top-line acceleration:**\n- Q1: operating_margin = 17.42 / 155.67 = 11.2%\n- Q2: operating_margin = 19.17 / 167.70 = 11.4%\n- Q3: operating_margin = 17.42 / 180.17 = 9.7%\n\nGross margin is more stable (Q1: 50.6%, Q2: 51.8%, Q3: 50.8%), suggesting cost pressures are concentrated in SG&A/fulfillment rather than COGS. The ratio snapshot confirms a steady 50% gross margin and 11% net margin, but the quarterly detail reveals compression at the operating level that the trailing ratio masks.\n\n### 2. Cash Generation & Balance-Sheet Resilience\n\nCash generation is robust and accelerating. Operating cash flow: Q1 $17.02B \u2192 Q2 $32.52B \u2192 Q3 $35.52B. The Q3-to-Q2 QoQ growth of +9.3% is solid. Cumulative nine-month operating cash flow is $85.06B \u2014 a strong conversion rate relative to the $56.48B cumulative net income, implying ~1.5x cash conversion. Free cash flow is unavailable, but the operating cash flow trajectory alone is convincing.\n\nThe balance sheet is strengthening materially. Equity expanded from $305.87B (Q1) to $333.77B (Q2) to $369.63B (Q3) \u2014 a $63.76B increase over two quarters. Total debt is stable and declining: $58.75B \u2192 $56.08B \u2192 $55.10B. The debt-to-equity ratio of 0.149 (from ratios) confirms a conservative capital structure. With total assets of $727.92B, the company carries $55.10B in debt against $369.63B in equity \u2014 a highly resilient leverage profile.\n\n### 3. Valuation Versus Own History\n\nThe current PE of 35.03x sits in the upper half of the 365-day window (28.2\u201339.0), closer to the midpoint than the peak. Within the sparse history (12 observations), the PE has oscillated: a trough of ~29.5x in Feb\u2013Mar 2026 and a peak of ~38.6x in May 2026. The current reading is neither distressed nor extreme.\n\nP/B at 7.25x is mid-range (5.8\u20138.3). P/S at 3.88x is elevated but not extreme for a company with the margin profile shown. Earnings yield of 2.9% against a 10-year Treasury yield of 4.54% represents a negative equity risk premium of ~164 bps \u2014 a meaningful headwind in the current rate regime. This spread was narrower when the PE was at its ~29.5x trough (implied earnings yield ~3.4%).\n\nThe ROE of 20.7% is slightly below the year-ago 21.6%, consistent with equity expanding faster than earnings \u2014 a function of retained earnings growth.\n\n### 4. Price Context\n\nPrice as of 2026-07-09: $247.04. The 365-day range is $196.00\u2013$278.56; the stock sits 11.3% below its high and 26.0% above its low. The quarterly path shows a +11.7% gain from the 2026-04-08 close of $221.25, partially recovering from the prior quarter's -8.2% decline. The stock has traded in a wide $82.56 range, indicating elevated volatility. Price has moved in line with the earnings acceleration, but the $278.56 peak (May timeframe) coincided with the PE peak of ~38.6x \u2014 suggesting the market priced in more optimism than the fundamentals now justify given the Q3 operating margin compression.\n\n### 5. Macro & Sentiment Overlays\n\nThe rate environment is a modest headwind. The 10-year yield at 4.54% versus AMZN's earnings yield of 2.9% keeps the valuation under pressure. The 10Y-2Y spread has compressed to 0.38% from 0.52% in mid-April, signaling a flattening curve. Oil prices have collapsed from ~$100 to $73.15 (-27.4%), which is a potential margin tailwind for Amazon's logistics-intensive operations, though this is not yet visible in the Q3 operating margin data (which predates the sharpest oil decline). VIX at 15.84 is subdued, indicating benign risk appetite. Initial jobless claims at 217K are elevated but not alarming.\n\nNews sentiment is moderately positive (90-day mean of 0.365) with high day-to-day variance. The latest reading of 0.50 on 2026-07-09 is consistent with the mean. This is a neutral signal \u2014 no extreme euphoria or distress.\n\n### 6. Strongest Quantitative Upside & Downside\n\n**Upside:** Revenue acceleration is the dominant positive \u2014 Q3's $180.17B represents a $12.47B QoQ step, the largest in the window. Operating cash flow of $35.52B in a single quarter is exceptional. The balance sheet has $314.53B of equity net of debt, providing substantial financial flexibility. If operating margins stabilize near the Q1/Q2 levels (~11.2\u201311.4%) as the revenue base grows, earnings power expands materially.\n\n**Downside:** The Q3 operating margin compression from 11.4% to 9.7% is the most concerning data point. The $3.77B gap between operating income and net income in Q3 suggests non-operating gains are inflating reported EPS; this is not sustainable or repeatable. The PE-to-earnings-yield spread versus Treasuries (negative ~164 bps) leaves the stock vulnerable if rates stay elevated. The declining 10Y-2Y spread (0.38%) flags macro risk. A re-rating to the PE trough of ~29.5x from the current 35.0x would imply ~16% downside from multiple compression alone, before any earnings disappointment.\n\n### 7. Provisional Quantitative Conclusion\n\nAmazon presents a mixed fundamental picture. Revenue acceleration and cash generation are genuinely strong, and the balance sheet is fortress-grade. However, the Q3 operating margin compression to 9.7% (from 11.4% in Q2) combined with a large non-operating income tailwind to net income raises a clear earnings-quality concern. The market is paying 35x diluted earnings that appear partially inflated by below-the-line items, against a rate backdrop where the 10-year yield exceeds the earnings yield by 164 bps. The PE is mid-range versus its own history but may not be justified if the operating margin deterioration persists. **Quantitatively, the name is not compelling at current levels \u2014 the fundamental trajectory is decelerating at the operating level even as headline EPS accelerates, and valuation offers no margin of safety in this rate regime.** A re-entry would be more attractive at the ~29.5x PE trough, which would better price the operating leverage risk.\n\n---\n\n## key evidence\n\nfundamentals | 2025-09-30 | operating_income=17.42B vs net_income=21.19B (gap=$3.77B non-operating)\nfundamentals | 2025-09-30 | operating_margin=9.7% (vs Q2 11.4%, Q1 11.2% \u2014 declining)\nfundamentals | 2025-09-30 | revenue=180.17B QoQ +7.4% (accelerating)\nfundamentals | 2025-09-30 | operating_cash_flow=35.52B (QoQ +9.3%, cumulative 9mo $85.06B)\nfundamentals | 2025-09-30 | total_equity=369.63B total_debt=55.10B debt_to_equity=0.149\nratios | 2026-07-09 | pe_diluted=35.03x (window 28.2\u201339.0, trough ~29.5x Feb\u2013Mar 2026)\nratios | 2026-07-09 | earnings_yield=0.029 vs DGS10=4.54% (negative spread ~164bp)\nmacro | 2026-07-09 | T10Y2Y=0.38% (compressed from 0.52% in Apr, flattening curve)",
+  "qualitative_report": "# Amazon.com, Inc. (AMZN) \u2014 Qualitative Franchise Assessment\n**Decision date: 2026-07-10**\n\n---\n\n## 1. Business / Franchise Read\n\nAmazon operates a diversified platform spanning e-commerce, cloud computing (AWS), advertising, subscriptions (Prime), third-party seller services, and physical retail. The franchise is best understood as a multi-sided flywheel: the retail business\u2014deliberately run at razor-thin margins\u2014attracts massive customer traffic (~250M+ Prime members globally), which in turn feeds high-margin services (AWS, advertising, seller fees, Prime subscriptions) that generate the real earnings. In FY2025, total net sales were $716.9B with $77.7B net income; AWS alone produced $45.6B of operating income, roughly 57% of the company's $80B total, on only ~18% of revenue. Advertising reached ~$68.5B (up ~22% YoY) and operates at very high margins. Services now constitute close to 60% of revenue, up from ~50% in 2021\u2014Amazon has structurally shifted from a retailer running services to a services company running a store.\n\n**Competitive position:** Amazon commands ~40.5% of U.S. e-commerce (per Statista/Upcounting, 2026), the largest share by far, though this has plateaued from a ~41.8% peak in 2021. AWS holds an estimated 31% of the global cloud market (largest share). In advertising, Amazon's retail-media platform rivals YouTube while delivering higher purchase-intent conversion. The logistics network (1,500+ fulfillment centers, 80,000 trailers, 24,000 containers) constitutes a structural moat no competitor can economically replicate at scale. Third-party sellers generate over 60% of units sold, creating a self-reinforcing marketplace flywheel.\n\n**Structural growth vectors:** AWS is reaccelerating\u2014Q1 2026 revenue hit $37.6B (+28% YoY), the fastest pace in 15 quarters. Advertising continues growing at 20%+. Amazon is investing ~$200B in 2026 capital expenditures (up from ~$125B in 2025), almost entirely for AI data centers, custom silicon (Graviton, Trainium chips at a $10B+ annualized run rate growing triple-digit percentages), and logistics automation. Project Kuiper satellite internet has 150+ satellites deployed. The company is exploring selling Trainium chips externally\u2014CEO Andy Jassy has suggested this could be a $50B annual run-rate opportunity currently, exceeding $100B within years. Global digital advertising is projected to grow from $567.9B in 2025 to $2.06T by 2033 (17.6% CAGR), with retail media as a key growth area. AWS could benefit from a Jefferies IT-executive survey showing 95% of CIOs plan to increase cloud budgets and 56% specifically plan to spend more on AWS.\n\n## 2. Dated Recent Developments\n\n**Capital allocation / AI infrastructure (June\u2013July 2026):** Amazon announced a $25B corporate bond offering for AI infrastructure (2026-07-09). The company's ~$200B annual capex commitment for 2026 remains the dominant investor concern. AWS raised GPU access prices by up to 20%, signaling strong demand and helping offset infrastructure costs (2026-06-30). A new \u20ac10B robotics and fulfillment expansion in Europe was announced (June 2026 per TradingKey).\n\n**Earnings outlook (July 2026):** Q2 2026 earnings are expected around July 30. Analysts project EPS of $1.82 (up 8.3% YoY) on revenue of ~$196B (2026-07-09, Benzinga/Barchart). BNP Paribas maintains Outperform with a $345 price target, expecting broad-based strength led by accelerating AWS growth (2026-07-09). For Q3, BNP expects revenue of ~$207B and operating income of ~$26B\u2014above consensus. Q1 2026 had already delivered $181.5B revenue (+17% YoY), net income nearly doubling to $30.26B, and a record 13.1% operating margin.\n\n**Anthropic investment / AI ecosystem (July 2026):** Amazon's $8B Anthropic investment has grown more than ninefold to ~$74.2B in paper value (2026-07-09). Anthropic confidentially filed for an IPO on June 1 at a $965B valuation; a fall listing could unlock major windfall gains for Amazon. Amazon also has a $15B investment in OpenAI, per one report (2026-07-05).\n\n**Competitive dynamics:** Meta is planning to launch \"Meta Compute\"\u2014a cloud business selling excess AI computing capacity to compete with AWS, Microsoft, and Alphabet (2026-07-03/06). However, analysts view AWS's enterprise relationships, comprehensive software services, and deep customer base as durable, with Meta likely competing only at the commodity compute layer (2026-07-03). Amazon is exploring selling Trainium chips to third-party customers, potentially challenging Nvidia by matching Blackwell performance at lower costs through 144-chip UltraServers (2026-07-06). A new competitor Vibeperk launched offering lower prices than Amazon in cross-border e-commerce (2026-07-07).\n\n**Regulatory / legal (June\u2013July 2026):** The FTC has drafted a potential antitrust complaint alleging Amazon misled advertisers through hidden ad pricing (reserve pricing). Civil penalties could run into billions\u2014a prior FTC settlement over Prime practices was $2.5B (2026-06-23, Yahoo Finance). The full FTC antitrust trial (alleging illegal e-commerce monopolization, joined by 17 state AGs) is scheduled for October 2026, with worst-case scenarios including forced breakup (2026-06-14). Germany's competition regulator ordered Amazon to cease price controls on its German marketplace and return ~$70M in profits (2026-06-22, Weiss Ratings). The European Commission is drafting rules designating AWS as a \"gatekeeper\" under the Digital Markets Act (DMA), which could impose interoperability requirements and ban customer lock-in, with penalties up to 10% of global turnover (2026-06-22). EU cloud procurement sovereignty rules may limit AWS's government contracts (2026-06-14).\n\n**Stock / sentiment (June\u2013July 2026):** AMZN stock fell 12\u201313% in June into correction territory, underperforming peers. Concerns center on capex intensity, FCF compression (TTM FCF collapsed to $11.2B vs. $139.5B operating cash flow), and regulatory overhang. Insider selling of ~$51.6M over three months with zero insider purchases was noted (June 2026). Multiple Motley Fool and analyst pieces characterize the stock as historically cheap on price-to-cash-from-operations metrics (2026-07-07), with hedge funds (Pershing Square, Appaloosa) increasing positions (2026-06-27).\n\n## 3. Material Qualitative Risks and Offsets\n\n**Risk \u2014 Capital intensity and FCF compression:** The ~$200B 2026 capex plan has crushed free cash flow ($11.2B TTM vs. $139.5B OCF). If AI demand softens or AWS growth stalls, this spending becomes very difficult to justify. This is the single largest near-term investor concern.\n\n**Offset:** AWS is growing 28% with expanding margins. Cloud spending surveys show durable enterprise demand. The capex is directed at custom silicon and data centers that lower long-run unit costs. Amazon has a long history of front-loading investment for outsized returns (AWS itself took years of losses before dominance).\n\n**Risk \u2014 Regulatory / antitrust:** The October 2026 FTC trial (potential forced breakup), the advertising-pricing complaint (billions in potential penalties), German antitrust rulings, and EU DMA gatekeeper designation for AWS all create meaningful downside scenarios. The advertising business\u2014Amazon's highest-margin growth engine\u2014is specifically under FTC scrutiny.\n\n**Offset:** Amazon has absorbed regulatory blows before ($2.5B Prime settlement). Structural remedies that materially break the flywheel would require aggressive judicial action. EU enforcement timelines are long. Market consensus and S&P Global's 66 analyst recommendations remain strongly positive with average targets ~$312.\n\n**Risk \u2014 Competition:** Meta's entry into cloud computing, Google's AI infrastructure investments, Shopify's e-commerce gains, and custom chip competition from Microsoft and Google all represent structural competitive pressure. Amazon's U.S. e-commerce share has plateaued at ~40.5%.\n\n**Offset:** AWS's enterprise moat (software services, customer lock-in, 18+ years of ecosystem building) is not easily replicated by a compute-commodity entrant. Advertising benefits from unique purchase-intent data. The logistics network remains uneconomical to replicate.\n\n**Risk \u2014 Macro:** Elevated interest rates, persistent inflation, and cautious consumer spending could pressure the retail business simultaneously. A recession would compress margins across retail, Prime, and advertising.\n\n**Offset:** AWS and advertising are relatively insulated from consumer cyclicality. Services revenue (~60% of mix) provides structural resilience.\n\n## 4. Qualitative Assessment\n\n**Positive overall.** Amazon possesses a durable, diversified franchise with multiple reinforcing competitive advantages. The core thesis\u2014scale-driven flywheel monetized through high-margin services\u2014remains intact. AWS is reaccelerating at 28% growth, advertising is a stealth profit engine growing 20%+, and the Prime ecosystem locks in 250M+ members. The Anthropic stake represents a potentially transformative embedded asset (~$74B paper value). The stock appears to trade at historically modest valuations (P/S ~3.5x, P/E ~28x) relative to the quality and growth of the franchise.\n\nThe dominant near-term headwind is the capex supercycle compressing FCF and creating uncertainty around ROI timelines. Regulatory risks (FTC trial, EU DMA) are non-trivial but require extreme judicial outcomes to structurally impair the business. The market is pricing in significant execution risk from AI spending without fully crediting AWS demand acceleration or advertising margin expansion. Inferences: the franchise is being offered at a discount to its structural quality precisely because of near-term noise around capex, regulation, and sentiment rotation away from mega-cap tech\u2014none of which fundamentally alters the long-term earning power.\n\n---\n\n## Key Evidence\n\nsource_type | source_id | excerpt\nweb_search | deepresearchglobal.com | \"AWS alone produced $45.6 billion of operating income, roughly 57% of the company's total $80 billion\" (FY2025)\nweb_search | swotpal.com | \"AWS reaccelerated to $37.6B revenue (+28% YoY) in Q1 2026 \u2014 Amazon's fastest cloud growth in 15 quarters\" (Amazon IR, Apr 2026)\nweb_search | businessmodelanalyst.com | \"In 2025, Amazon generated $716.9 billion in net sales and $77.7 billion in net income\u2026 AWS alone produced $45.6 billion of operating income, roughly 57% of the company's total $80 billion\" / \"Free cash flow (TTM) $11.2B Down sharply\"\nnews | 2026-07-09 \u2014 Motley Fool | \"Amazon's announcement of $25 billion in corporate bonds for AI infrastructure signals continued acceleration in hyperscaler spending\"\nnews | 2026-07-09 \u2014 Motley Fool | \"Amazon's $8 billion investment has grown more than ninefold to $74.2 billion\" (Anthropic)\nnews | 2026-06-23 \u2014 Yahoo Finance | \"FTC has drafted a potential complaint against the company, alleging it misled advertisers through hidden ad pricing practices, and the penalty could run into the billions\"\nweb_search | tradingkey.com (Jun 12) | \"The Federal Trade Commission's antitrust trial against Amazon, alleging anticompetitive behavior, is expected to commence in mid-2026 or later\" / \"$200 billion for capital expenditures in 2026\"\nnews | 2026-07-09 \u2014 Benzinga | \"BNP Paribas\u2026 maintained its Outperform rating and $345 price forecast\u2026 expects Amazon to report second-quarter results during the week of July 27, with broad-based strength led by accelerating growth in AWS\"\nweb_search | upcounting.com (Jun 23) | \"Amazon accounts for roughly 40.5% of the US retail ecommerce market\u2026 peaked at around 41.8% back in 2021\"",
+  "verification": {
+    "recommendation": "KEEP",
+    "severity": "minor",
+    "verified_points": [
+      "Q3 2025 revenue $180.17B, QoQ +7.4% matches raw pack (180.17B vs 167.70B = +7.4%)",
+      "Q3 2025 EPS $1.95, QoQ +16.1% matches raw pack (1.95/1.68 - 1 = +16.1%)",
+      "Q3 2025 operating income $17.42B vs net income $21.19B, gap $3.77B matches raw pack",
+      "Q3 2025 operating margin 9.7% matches raw pack (17.42/180.17 = 9.66%)",
+      "Q2 2025 operating margin 11.4% matches raw pack (19.17/167.70 = 11.43%)",
+      "Q1 2025 operating margin 11.2% matches raw pack (18.41/155.67 = 11.83% \u2014 quant report says 11.2% but actual is ~11.8%)",
+      "Q3 2025 OCF $35.52B, QoQ +9.3% matches raw pack (35.52/32.52 - 1 = +9.2%)",
+      "Cumulative 9-month OCF $85.06B matches raw pack (17.02+32.52+35.52=85.06)",
+      "Q3 2025 total equity $369.63B, total debt $55.10B, D/E 0.149 matches raw pack",
+      "PE diluted 35.03x on 2026-07-09 matches raw pack",
+      "Earnings yield 2.9% vs DGS10 4.54%, negative spread ~164bp matches raw pack",
+      "T10Y2Y spread 0.38% on 2026-07-09 matches raw pack",
+      "Price $247.04 on 2026-07-09 matches raw pack",
+      "365-day price range $196.00\u2013$278.56 matches raw pack",
+      "PE trough ~29.5x in Feb\u2013Mar 2026 matches raw pack (29.483 on 2026-02-26, 29.532 on 2026-03-31)",
+      "PE peak ~38.6x in May 2026 matches raw pack (38.576 on 2026-05-04)",
+      "Qual report FY2025 revenue $716.9B and net income $77.7B consistent with web context sources",
+      "Qual report AWS $45.6B operating income ~57% of $80B total consistent with web context",
+      "Qual report Q1 2026 AWS revenue $37.6B +28% YoY consistent with web context (swotpal.com)",
+      "Qual report advertising ~$68.5B up ~22% YoY consistent with web context (businessmodelanalyst.com)",
+      "Qual report ~$200B 2026 capex consistent with multiple web context sources",
+      "Qual report FTC antitrust trial October 2026 consistent with web context",
+      "Qual report Anthropic $8B investment grown to ~$74.2B consistent with news (2026-07-09 Motley Fool)",
+      "Qual report TTM FCF $11.2B vs OCF $139.5B consistent with web context (businessmodelanalyst.com)",
+      "Qual report 40.5% US e-commerce share consistent with web context (upcounting.com)",
+      "Qual report 31% global cloud market share consistent with web context (businessofapps.com)"
+    ],
+    "unsupported_claims": [
+      "Quant report Q1 operating margin stated as 11.2% but raw pack shows operating_income=18.41B / revenue=155.67B = 11.83%. The 11.2% figure appears to be a rounding or calculation error (17.42/155.67 would give 11.2% but 17.42 is Q3 operating income, not Q1).",
+      "Qual report states 'P/E ~28x' in the assessment section but raw pack shows PE diluted=35.03x on 2026-07-09. The 28x figure is not sourced from the raw evidence and conflicts with the quant report's own 35.03x figure.",
+      "Qual report states Q1 2026 revenue of $181.5B (+17% YoY) and net income nearly doubling to $30.26B with 13.1% operating margin \u2014 these are Q1 2026 figures from web context, not from the raw quantitative pack which only covers through Q3 2025 (period_end 2025-09-30). The qual report is citing forward-looking data not in the quant pack.",
+      "Qual report states 'Amazon also has a $15B investment in OpenAI, per one report (2026-07-05)' \u2014 this is sourced from a single Motley Fool article and is not corroborated by other sources in the evidence; the claim is presented with appropriate hedging ('per one report').",
+      "Qual report states 'Amazon's $8B Anthropic investment has grown more than ninefold to ~$74.2B in paper value' citing 2026-07-09 news \u2014 this is a PIT-dated claim from the news pack and is appropriately sourced, but the valuation is based on a single funding round and may not reflect liquidation value."
+    ],
+    "corrections": [
+      {
+        "id": "C1",
+        "issue": "Quant report Q1 operating margin error: states 11.2% but raw pack shows 18.41B/155.67B = 11.83%. The 11.2% figure appears to use Q3 operating income (17.42B) divided by Q1 revenue (155.67B). This error propagates into the narrative of 'deteriorating' margins \u2014 the actual Q1-to-Q2 margin improvement is smaller (11.83% to 11.43%) and Q3 compression is from 11.43% to 9.66%, not from 11.2%.",
+        "required_action": "Correct Q1 operating margin to 11.8% and note the margin trajectory is 11.8% \u2192 11.4% \u2192 9.7%, which still shows Q3 compression but with a different Q1 baseline."
+      },
+      {
+        "id": "C2",
+        "issue": "Qual report states 'P/E ~28x' in the qualitative assessment section, conflicting with the raw pack's PE diluted of 35.03x and the quant report's own 35.03x figure. The 28x may be a forward P/E from web context but is not labeled as such and could mislead the PM.",
+        "required_action": "Clarify whether 28x refers to forward P/E (from web context) vs trailing P/E (35.03x from raw pack), or remove the unsupported figure."
+      },
+      {
+        "id": "C3",
+        "issue": "Qual report cites Q1 2026 financials ($181.5B revenue, $30.26B net income, 13.1% operating margin) that are not in the raw quantitative pack (which ends at Q3 2025 period_end 2025-09-30). These figures come from web context and news sources. While not necessarily wrong, they represent a different time period than the quant pack's fundamentals.",
+        "required_action": "Note that Q1 2026 figures are sourced from web context/news, not the raw quantitative evidence pack, to avoid PM confusion about data provenance."
+      }
+    ]
+  },
+  "pm_emit_path": "submit_views",
+  "final_decision": "",
+  "submit_args": {
+    "views": [
+      {
+        "symbol": "AMZN",
+        "score": 0.15,
+        "rationale": "Amazon presents a mixed but net-positive fundamental picture. The franchise is genuinely world-class: AWS reaccelerated to 28% YoY growth in Q1 2026 ($37.6B revenue), advertising is a stealth profit engine at ~$68.5B growing 20%+, and the Prime ecosystem locks in 250M+ members. The balance sheet is fortress-grade with $369.6B equity, $55.1B debt, and D/E of 0.149. Operating cash flow is exceptional at $35.5B in Q3 2025 alone, with 9-month cumulative of $85.06B. However, the quantitative picture reveals a critical earnings-quality concern: Q3 2025 operating margin compressed to 9.7% (from 11.4% in Q2 and 11.8% in Q1 per corrected figures), while net income surged due to a $3.77B gap between operating income and net income \u2014 suggesting non-operating gains are inflating reported EPS. The PE of 35x trailing diluted earnings is mid-range vs its own 28.2\u201339.0x window but offers no margin of safety given the negative 164bp equity risk premium vs 10-year Treasuries at 4.54%. TTM FCF has collapsed to $11.2B vs $139.5B OCF due to the ~$200B 2026 capex supercycle, which is the dominant investor concern. Regulatory overhang is material: the FTC antitrust trial is scheduled for October 2026 with potential forced breakup scenarios, and the advertising-pricing complaint could yield billions in penalties. The Anthropic stake (~$74B paper value on an $8B investment) and potential IPO represent a significant embedded optionality. Q2 2026 earnings expected July 30 with analyst consensus of $1.82 EPS on ~$196B revenue could serve as a near-term catalyst if AWS growth continues accelerating. The stock is 11.3% below its 365-day high of $278.56, having corrected 12-13% in June. On balance, the franchise quality and growth vectors are strong, but operating margin deterioration, FCF compression from capex, regulatory risk, and a not-cheap trailing valuation temper the score to mildly positive.",
+        "key_factors": [
+          "Q3 2025 operating margin compressed to 9.7% from 11.4% (Q2) and 11.8% (Q1 corrected) \u2014 operating income fell QoQ from $19.17B to $17.42B despite revenue growth",
+          "$3.77B gap between Q3 operating income ($17.42B) and net income ($21.19B) flags earnings quality concern from non-operating items",
+          "Revenue accelerating: Q1 $155.67B \u2192 Q2 $167.70B \u2192 Q3 $180.17B (+7.4% QoQ in Q3, strongest step)",
+          "Operating cash flow robust: $35.5B in Q3, cumulative 9-month $85.06B, ~1.5x cash conversion vs net income",
+          "Balance sheet fortress: equity $369.6B, debt $55.1B, D/E 0.149",
+          "PE diluted 35.03x mid-range vs 365-day window 28.2\u201339.0x; earnings yield 2.9% vs 10Y Treasury 4.54% = negative 164bp spread",
+          "TTM FCF collapsed to $11.2B vs $139.5B OCF due to ~$200B 2026 capex for AI data centers",
+          "AWS reaccelerated to 28% YoY growth in Q1 2026 ($37.6B revenue), fastest in 15 quarters",
+          "Advertising ~$68.5B (up ~22% YoY), high-margin growth engine",
+          "Anthropic investment: $8B grew to ~$74.2B paper value; confidential IPO filing at $965B valuation (June 1 2026)",
+          "FTC antitrust trial October 2026 with potential forced breakup; advertising-pricing complaint could yield billions in penalties",
+          "Q2 2026 earnings expected ~July 30: analyst consensus $1.82 EPS on ~$196B revenue; BNP Paribas $345 PT, Outperform",
+          "Stock at $247.04, 11.3% below 365-day high of $278.56, corrected 12-13% in June",
+          "$25B corporate bond offering for AI infrastructure announced 2026-07-09",
+          "Insider selling ~$51.6M over three months with zero insider purchases noted June 2026"
+        ],
+        "sources_cited": [
+          {
+            "source_type": "fundamentals",
+            "source_id": "2025-09-30",
+            "excerpt": "operating_income=17.42B vs net_income=21.19B (gap=$3.77B non-operating)"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2025-09-30",
+            "excerpt": "operating_margin=9.7% (vs Q2 11.4%, Q1 11.2% \u2014 declining)"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2025-09-30",
+            "excerpt": "revenue=180.17B QoQ +7.4% (accelerating)"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2025-09-30",
+            "excerpt": "operating_cash_flow=35.52B (QoQ +9.3%, cumulative 9mo $85.06B)"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2025-09-30",
+            "excerpt": "total_equity=369.63B total_debt=55.10B debt_to_equity=0.149"
+          },
+          {
+            "source_type": "ratios",
+            "source_id": "2026-07-09",
+            "excerpt": "pe_diluted=35.03x (window 28.2\u201339.0, trough ~29.5x Feb\u2013Mar 2026)"
+          },
+          {
+            "source_type": "ratios",
+            "source_id": "2026-07-09",
+            "excerpt": "earnings_yield=0.029 vs DGS10=4.54% (negative spread ~164bp)"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "swotpal.com",
+            "excerpt": "AWS reaccelerated to $37.6B revenue (+28% YoY) in Q1 2026 \u2014 Amazon's fastest cloud growth in 15 quarters"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "deepresearchglobal.com",
+            "excerpt": "AWS alone produced $45.6 billion of operating income, roughly 57% of the company's total $80 billion"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "businessmodelanalyst.com",
+            "excerpt": "Free cash flow (TTM) $11.2B Down sharply"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-07-09 \u2014 Motley Fool",
+            "excerpt": "Amazon's $8 billion investment has grown more than ninefold to $74.2 billion (Anthropic)"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-07-09 \u2014 Benzinga",
+            "excerpt": "BNP Paribas maintained its Outperform rating and $345 price forecast\u2026 expects Amazon to report second-quarter results during the week of July 27"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-06-23 \u2014 Yahoo Finance",
+            "excerpt": "FTC has drafted a potential complaint against the company, alleging it misled advertisers through hidden ad pricing practices, and the penalty could run into the billions"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "tradingkey.com",
+            "excerpt": "$200 billion for capital expenditures in 2026"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-07-09 \u2014 Motley Fool",
+            "excerpt": "Amazon's announcement of $25 billion in corporate bonds for AI infrastructure signals continued acceleration in hyperscaler spending"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "upcounting.com",
+            "excerpt": "Amazon accounts for roughly 40.5% of the US retail ecommerce market"
+          }
+        ]
+      }
+    ]
+  },
+  "error": null
+}

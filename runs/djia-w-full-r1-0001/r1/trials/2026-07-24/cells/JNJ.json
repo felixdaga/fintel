@@ -1,0 +1,204 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 88117,
+    "tokens_out": 8902,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0764353756,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "JNJ presents a rare case of all three pillars aligning negatively. Pillar 1 (Fundamentals): While revenue growth is solid (+6.6% YoY to $25.31B), earnings are flat (EPS $2.27 vs $2.29 YoY) due to margin compression \u2014 net margin fell from 25% to 21.5%, ROE declined from 0.289 to 0.248. The incremental revenue dollar is flowing to cost, not profit. Stelara's 56% biosimilar-driven decline is a structural headwind, and the Tremfya transition is not yet complete (immunology declined 4.6% operationally). Pillar 2 (Valuation): PE of 30.1x sits at the absolute top of its 365-day range (17.6\u201331.1x), representing ~67% multiple expansion over the past year \u2014 all while fundamentals deteriorated. Earnings yield of 3.3% is 140bp below the 10-year Treasury yield of 4.71%, implying a negative equity risk premium for a mature healthcare name. P/B expanded from 5.2x to 7.4x while ROE compressed. The market is paying a historically elevated multiple for historically diminished returns. Pillar 3 (Near-term catalyst): The OTTAVA FDA approval is a positive but is already priced in (stock popped ~2%). The more material near-term risk is continued Stelara erosion, restructuring, restructuring restructuring restructuring$FTC restructuring, restructuring costs restructuring restructuring$1.1",
+      "key_factors": [],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-28 Q2",
+          "relevance": 1.0,
+          "excerpt": "revenue=25.31B, eps_diluted=2.27, net_income=5.53B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-29 Q2 (YoY comp)",
+          "relevance": 1.0,
+          "excerpt": "revenue=23.74B, eps_diluted=2.29 \u2014 YoY: revenue +6.6%, eps -0.9%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=30.073 (range 17.6..31.1 over 365d window)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.033, roe=0.248, net_margin=0.215"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-24",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=18.101, roe=0.289, net_margin=0.25 \u2014 historical baseline"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.71% \u2014 earnings yield (3.3%) below risk-free rate by ~140bp"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "close=259.27, quarterly delta=+14.7%; window high=269.43"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nai500.com (Jul 2026)",
+          "relevance": 1.0,
+          "excerpt": "Tremfya sales surging 73% to $2 billion... Stelara sales plunged 56%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.dcatvci.org (Jul 2026)",
+          "relevance": 1.0,
+          "excerpt": "oncology drugs posted first-half revenues of $14.38 billion, representing a 19.9% gain year over year"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16",
+          "relevance": 1.0,
+          "excerpt": "A concerning 2% decline in Abiomed heart pump sales, potentially linked to a negative UK study"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "FDA approving its Ottava Robotic surgical system... approval came months earlier than anticipated"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st (Jul 2026)",
+          "relevance": 1.0,
+          "excerpt": "Net margin 21.5% compared with 25% a year earlier... bears argue margin pressure will persist as loss of exclusivity, tariffs of about US$500m in 2026 and restructuring weigh on profitability"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 5347,
+        "capped_chars": 5347,
+        "raw_tokens": 1337,
+        "capped_tokens": 1337
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223579,
+        "capped_chars": 223579,
+        "raw_tokens": 55895,
+        "capped_tokens": 55895
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30496,
+        "capped_chars": 30496,
+        "raw_tokens": 7624,
+        "capped_tokens": 7624
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2493,
+        "capped_chars": 2493,
+        "raw_tokens": 623,
+        "capped_tokens": 623
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 60199,
+        "capped_chars": 14303,
+        "raw_tokens": 15050,
+        "capped_tokens": 3576
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 113570,
+        "capped_chars": 88620,
+        "raw_tokens": 28393,
+        "capped_tokens": 22155
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 123647,
+  "started_at": "2026-08-06T03:02:17+00:00"
+}

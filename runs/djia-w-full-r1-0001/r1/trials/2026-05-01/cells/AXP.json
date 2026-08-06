@@ -1,0 +1,225 @@
+{
+  "cell": "AXP",
+  "symbols": [
+    "AXP"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 79392,
+    "tokens_out": 11564,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.079291160712,
+    "basis": "reported"
+  },
+  "views": {
+    "AXP": {
+      "symbol": "AXP",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "AXP presents a moderately attractive fundamental picture with strong earnings trajectory, elite ROE, and a meaningful valuation discount to its own recent history, partially offset by OCF softness and macro headwinds. Pillar 1 (fundamentals): Revenue grew +9.3% YoY to $10.52B in Q1 2026, EPS diluted +17.6% YoY to $4.28, operating margin expanded to 35.9%, and ROE is 33%. The closed-loop franchise with premium cardholders, 15%+ millennial/Gen-Z acquisition growth, and 60%+ U.S. corporate T&E share underpins durable competitive position. OCF declined -20.2% YoY (3.80B vs 4.76B) which is the key quality flag, though structural OCF volatility in AXP's lending model provides partial context. Pillar 2 (valuation): PE diluted at 19.75x is near the floor of its 365-day range (18.3-25.3x), representing a ~5-turn derating from the Dec 2025 peak of ~24.7x despite no earnings deterioration. P/B at 6.52x is also near its 12-month low (6.0-8.2x). The market has de-rated AXP while fundamentals held, creating a favorable asymmetric setup. Pillar 3 (catalyst): Q1 2026 earnings beat (EPS $4.28 vs $4.02 consensus) with reaffirmed guidance of $17.30-$17.90 EPS for 2026, 16% dividend increase, and $2.3B capital returned in Q1 alone. The market's negative reaction to maintained guidance (rather than a raise) appears overdone given the beat and reinvestment rationale. However, WTI crude at $108.64/bbl (+76% in ~3 months) is a material macro risk for consumer credit, and BAA spreads at 6.1% exceeding the 5.1% earnings yield limit the relative appeal. These caution flags cap the score at moderately positive rather than strongly positive.",
+      "key_factors": [
+        "YoY revenue growth +9.3% ($9.63B Q1 2025 \u2192 $10.52B Q1 2026) with sequential acceleration across all four quarters",
+        "YoY EPS diluted growth +17.6% ($3.64 \u2192 $4.28) outpacing revenue, indicating positive operating leverage",
+        "Operating margin expanded to 35.9% in Q1 2026 from 34.6% in Q1 2025; net margin at 26.6%",
+        "ROE of 33% (range 30-33% over lookback), well above ~15% industry benchmark",
+        "PE diluted at 19.75x near 365-day floor (18.3-25.3x range), representing ~5-turn derating from Dec 2025 peak of ~24.7x with no earnings miss",
+        "P/B at 6.52x near 12-month low (6.0-8.2x range)",
+        "Q1 2026 earnings beat: EPS $4.28 vs $4.02 consensus, revenue $18.9B +11% YoY, ROE 35.2%",
+        "Guidance reaffirmed: 9-10% revenue growth, EPS $17.30-$17.90 for 2026; $6B marketing + $5B technology investment",
+        "Dividend raised 16% in Q1 2026; $2.3B returned ($1.7B buybacks + $652M dividends); share count down ~11.5% over 5 years",
+        "OCF declined -20.2% YoY ($4.76B \u2192 $3.80B) contrasting with earnings growth \u2014 key quality concern",
+        "WTI crude at $108.64/bbl (+76% over ~63 days) \u2014 material macro headwind for consumer credit",
+        "BAA corporate bond yield at 6.1% exceeds 5.1% earnings yield; 10Y-2Y spread narrowed to 0.52%",
+        "Net write-off rate at 2.3%, 30+ day delinquencies at 1.3% \u2014 credit quality remains pristine",
+        "Millennial/Gen-Z cardmember acquisitions growing 15%+ annually; 64% of new proprietary cards from younger cohorts"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=10.52B, eps_diluted=4.28, net_income=2.97B, operating_income=3.78B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 \u2192 2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "YoY revenue=+9.3%, YoY eps_diluted=+17.6%, YoY net_income=+15.0%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 \u2192 2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow YoY: 4.76B \u2192 3.80B (\u221220.2%)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=19.752x (365d range: 18.3\u201325.3x), p_b=6.519x (range: 6.0\u20138.2x), roe=0.33, net_margin=0.266"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "sparse history",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted peaked 24.694x on 2025-12-17, now 19.752x \u2014 ~5-turn derating"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "close=323.05, 365d_high=387.49, quarterly_delta=\u22129.9%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=108.64 (+76% over 63d), DGS10=4.4%, DBAA=6.1%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Reuters, 2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "AmEx sailed past Wall Street expectations\u2026 billed business rose 9% to $428 billion FX-adjusted\u2026 'Credit numbers are incredibly strong\u2026 we see no noise or concerns there'"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Motley Fool, 2026-04-28",
+          "relevance": 1.0,
+          "excerpt": "Despite delivering strong Q1 2026 results with 11% revenue growth and 18% EPS increase, the stock fell 15% year-to-date as the market reacted negatively to management's decision to reinvest earnings rather than raise guidance"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ca.investing.com (update/Q1 2026)",
+          "relevance": 1.0,
+          "excerpt": "Revenue grew 11% to $18.9B\u2026 EPS of $4.28, up 18% YoY\u2026 ROE of 35%\u2026 Net card fees grew 16% FX-adjusted\u2026 spend growth stepped up to 10%, the highest level in 3 years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stockintent.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Management guided for 9-10% revenue growth in 2026, with EPS targeted at $17.30-$17.90\u2026 $6 billion in marketing spend and $5 billion in technology investment for 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "swotpal.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "145M+ cards in force with $1.6T+ annual billed business\u2026 Millennial/Gen Z Gold and Platinum acquisitions growing 15%+ annually\u2026 60%+ market share in US corporate T&E spending"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "koalagains.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "ROE of 34.73% versus industry benchmark of 15.00%\u2026 share base shrank roughly 11.5% over five years\u2026 EPS skyrocketed by 3.7x versus net income 3.2x"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AXP",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4463,
+        "capped_chars": 4463,
+        "raw_tokens": 1116,
+        "capped_tokens": 1116
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 227127,
+        "capped_chars": 227127,
+        "raw_tokens": 56782,
+        "capped_tokens": 56782
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 782,
+        "capped_chars": 782,
+        "raw_tokens": 196,
+        "capped_tokens": 196
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30858,
+        "capped_chars": 30858,
+        "raw_tokens": 7714,
+        "capped_tokens": 7714
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2219,
+        "capped_chars": 2219,
+        "raw_tokens": 555,
+        "capped_tokens": 555
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 24132,
+        "capped_chars": 3993,
+        "raw_tokens": 6033,
+        "capped_tokens": 998
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 110610,
+        "capped_chars": 84544,
+        "raw_tokens": 27653,
+        "capped_tokens": 21136
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 167929,
+  "started_at": "2026-08-06T02:31:17+00:00"
+}

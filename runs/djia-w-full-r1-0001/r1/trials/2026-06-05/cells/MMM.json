@@ -1,0 +1,215 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 70175,
+    "tokens_out": 12345,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0727344964,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "MMM is extremely unattractive across all three pillars. Pillar 1 (fundamental health & trajectory): Net income collapsed 41% YoY in Q1 2026 despite stable operating income, signaling severe below-the-line deterioration (likely interest expense on $12.6B+ debt). Total equity eroded 27% in twelve months to just $3.31B against $32.1B in liabilities, yielding a dangerously thin 9.3% equity-to-assets ratio. Operating cash flow is erratic (swinging from -$954M to +$1.76B across quarters) and the Q1 2026 OCF of $574M barely covers the implied interest burden. Revenue is flat at ~$6B/quarter with no growth trajectory. Pillar 2 (valuation vs own history): PE diluted of 29.08x sits at the ceiling of its 12-month range (17.7\u201329.5x), having expanded ~59% from ~18.3x a year ago while EPS declined ~40%. Earnings yield of 3.4% does not clear the 10-year Treasury yield of 4.47%, producing a negative risk premium. P/B of 24.58x is mechanically inflated by the eroded equity base, not by value. The market is paying peak multiples for deteriorating earnings power. Pillar 3 (near-term catalyst): The Australian government filed a A$2B (~$1.4B) PFAS lawsuit on 2026-06-02, adding a new jurisdiction to an already material and hard-to-bound legal tail. This is a dated downside catalyst that extends PFAS liability uncertainty and could pressure the stock further. Next earnings on 2026-07-21 could serve as a re-rating event if the below-the-line drag persists. All three pillars align negatively: deteriorating fundamentals, peak valuation, and a fresh downside catalyst.",
+      "key_factors": [
+        "Q1 2026 EPS diluted $1.23 vs Q1 2025 $2.04 \u2014 YoY decline of 39.7%; net income fell 41.3% from $1.12B to $659M despite operating income improving from $1.25B to $1.40B, indicating severe below-the-line drag (likely interest expense on heavy debt)",
+        "Total equity eroded 27% in twelve months: $4.52B (Q1 2025) to $3.31B (Q1 2026), with total liabilities of $32.12B \u2014 equity cushion just 9.3% of total assets; debt-to-equity approaching 3.5\u20134.0x",
+        "PE diluted at 29.08x (2026-06-04) at ceiling of 12-month range 17.7\u201329.5x; one year ago stock traded at ~18.3x \u2014 multiple expanded ~59% while earnings collapsed ~40%",
+        "Earnings yield 3.4% vs 10-year Treasury yield 4.47% \u2014 negative risk premium; stock does not compensate for balance-sheet risk",
+        "P/B 24.58x at ceiling of 17.1\u201325.0 range, mechanically inflated by shrinking equity denominator, not by value creation",
+        "Operating cash flow erratic: -$79M (Q1 2025), -$954M (Q2 2025), +$1.76B (Q3 2025), +$574M (Q1 2026) \u2014 Q1 2026 OCF barely covers implied interest on $12.6B+ debt",
+        "Australian government filed A$2B (~$1.4B) PFAS lawsuit on 2026-06-02 over contamination at 28 defense sites \u2014 extends PFAS litigation tail into new jurisdiction",
+        "Revenue flat and range-bound: Q1 2026 $6.03B (up 1.3% YoY, down 7.5% QoQ from Q3 2025 $6.52B) with no discernible growth trajectory",
+        "Gross margin stable at 40.8% (Q1 2026) vs 41.7% (Q1 2025); operating margin improved to 23.2% from 21.0% \u2014 operating performance is not the problem, the erosion is below the operating line",
+        "Next earnings date 2026-07-21 \u2014 potential re-rating event if below-the-line drag persists or worsens"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=1.23 (vs Q1 2025 eps_diluted=2.04; YoY -39.7%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "net_income=659.00M (vs Q1 2025 net_income=1.12B; YoY -41.3%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_equity=3.31B (vs Q1 2025 total_equity=4.52B; down 27%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=574.00M (vs Q3 2025 operating_cash_flow=1.76B; QoQ -67.3%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "total_debt=12.60B; total_equity=4.67B (debt/equity ~2.7x)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=29.08 (range 17.7..29.5; at ceiling)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.034 (vs DGS10=4.47%; negative risk premium)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "relevance": 1.0,
+          "excerpt": "p_b=24.583 (range 17.1..25.0; at ceiling)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-02",
+          "relevance": 1.0,
+          "excerpt": "the Australian government has filed a claim seeking more than AUD 2 billion, or roughly USD 1.4 billion, from 3M over alleged contamination at 28 defense sites linked to PFAS-containing firefighting foams"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (Barchart)",
+          "relevance": 1.0,
+          "excerpt": "3M launched 84 new products in Q1, up 35% year over year, cut cost of poor quality by 100 bps, and grew backlogs across industrial and data centers"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (Barchart)",
+          "relevance": 1.0,
+          "excerpt": "MMM slipped 14.5% from its 52-week high of $177.41\u2026 consensus 'Moderate Buy' rating\u2026 mean price target of $175.33"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de (structural/business)",
+          "relevance": 1.0,
+          "excerpt": "Following the spin-off of its health care business into Solventum in 2024, 3M has refocused on its remaining industrial, safety and consumer operations while emphasizing operational efficiency and portfolio simplification"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 246994,
+        "capped_chars": 246994,
+        "raw_tokens": 61748,
+        "capped_tokens": 61748
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30934,
+        "capped_chars": 30934,
+        "raw_tokens": 7734,
+        "capped_tokens": 7734
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 921,
+        "capped_chars": 921,
+        "raw_tokens": 230,
+        "capped_tokens": 230
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 1510,
+        "capped_chars": 590,
+        "raw_tokens": 378,
+        "capped_tokens": 148
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 100764,
+        "capped_chars": 77833,
+        "raw_tokens": 25191,
+        "capped_tokens": 19458
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 159457,
+  "started_at": "2026-08-06T03:32:46+00:00"
+}

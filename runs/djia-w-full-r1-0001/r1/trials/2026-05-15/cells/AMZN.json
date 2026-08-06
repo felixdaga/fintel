@@ -1,0 +1,241 @@
+{
+  "cell": "AMZN",
+  "symbols": [
+    "AMZN"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 131057,
+    "tokens_out": 10546,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.11813770139999999,
+    "basis": "reported"
+  },
+  "views": {
+    "AMZN": {
+      "symbol": "AMZN",
+      "score": 0.15,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Amazon's fundamental health and trajectory are strong: accelerating revenue (+7.4% QoQ to $180.17B in Q3 2025), robust operating cash flow ($35.52B in Q3, $85B+ cumulative 3Q), a fortress balance sheet (debt-to-equity 0.149, equity +20.8% over 3Q), and Q1 2026 results showing AWS reaccelerating to 28% YoY growth with operating margin at an all-time high of 13.1%. The franchise is among the strongest in global equities with a self-reinforcing ecosystem across e-commerce (38.5-40.5% US share), AWS (~30% global cloud share, $364B backlog), advertising ($70B+ trailing, 24% growth), and Prime (215M+ members). ASCS launch into the $1.3T 3PL market and OpenAI model access on AWS are credible structural growth vectors. However, valuation is the binding constraint: P/E of 37.89x sits at the very top of its 365-day range (28.2-39.0x), having expanded +25.7% from the March trough without a corresponding margin inflection (net margin flat at 11.1%). The stock surged +33.9% in one quarter against only +7.4% QoQ revenue growth \u2014 a ~5x leverage of price to fundamentals. Q3 2025 operating margin actually compressed to 9.7% from 11.4% in Q2. Rising 10Y yields (4.47%) and oil ($104.66/bbl) are macro headwinds for a 38x P/E stock with logistics cost exposure. The $200B 2026 capex commitment compresses trailing FCF to ~$11.2B. Near-term catalysts exist (Q1 2026 beat, ASCS launch, OpenAI partnership shift) but are largely priced in after the +34% run. Net: excellent business, but the stock is priced near-perfection at the top of its valuation range, leaving limited upside from current levels.",
+      "key_factors": [
+        "Revenue accelerating: Q3 2025 $180.17B (+7.4% QoQ), Q1 2026 $181.52B (+16.6% YoY, beat by $4.35B)",
+        "Operating cash flow robust: $35.52B in Q3 2025, $85.06B cumulative 3Q, OCF/NI ratio ~1.68x",
+        "Balance sheet fortress: equity $369.63B (+20.8% over 3Q), debt $55.10B (declining), D/E 0.149",
+        "AWS reaccelerating: 28% YoY growth in Q1 2026 (fastest in 15 quarters), $364B cloud backlog, operating margin all-time high 13.1%",
+        "P/E at 37.89x \u2014 top of 365-day range (28.2-39.0x), +25.7% multiple expansion from March trough with flat net margin at 11.1%",
+        "Stock +33.9% in one quarter vs +7.4% QoQ revenue growth \u2014 price has run well ahead of fundamentals",
+        "Q3 2025 operating margin compressed to 9.7% from 11.4% in Q2 despite revenue acceleration",
+        "$200B 2026 capex (53% increase) compresses trailing FCF to ~$11.2B \u2014 deliberate but creates execution risk",
+        "Macro headwinds: 10Y yield 4.47% (+42bp), WTI $104.66/bbl (+67%), both negative for 38x P/E stock with logistics exposure",
+        "ASCS launch (May 2026) into $1.3T 3PL market \u2014 structural growth vector analogous to AWS playbook",
+        "OpenAI models now available on AWS (May 2026) \u2014 strengthens AI model marketplace position",
+        "Regulatory risk: FTC trial late 2026, EU tech sovereignty package May 27, Cerence ITC complaint"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "relevance": 1.0,
+          "excerpt": "revenue=180.17B eps_diluted=1.95 operating_income=17.42B operating_cash_flow=35.52B"
+        },
+        {
+          "source_type": "fundamentalsentials",
+          "source_id": "2025-09-30 Q3 QoQ",
+          "relevance": 1.0,
+          "excerpt": "revenue_qoq=+7.4% eps_diluted_qoq=+16.1% operating_income_qoq=-9.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=37.891 p_b=7.84 net_margin=0.111 roe=0.207 debt_to_equity=0.149"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-03-11",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=30.153 (trough in 365d window)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "window 365d",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted range=28.2..39.0 net_margin range=0.1..0.1 (flat)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "total_equity=369.63B total_debt=55.10B (equity +20.8% over 3Q; debt declining)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "close=267.22 quarterly_delta=+33.9% range_pct=86th percentile of 196.00-278.56"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.47% DCOILWTICO=104.66 VIX=17.26"
+        },
+        {
+          "source_type": "news",
+          "source_id": "investing.com (May 8, 2026)",
+          "relevance": 1.0,
+          "excerpt": "AWS reaccelerating to 28% growth at record 50% segment operating income gains, a backlog coverage ratio of 2.4x that no cloud business of this size has ever shown, an advertising engine compounding at 24% toward $90 billion with 80% incremental margins, an operating margin at an all-time high of 13.1%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "investing.com (May 6, 2026)",
+          "relevance": 1.0,
+          "excerpt": "AWS revenue grew 28% year-over-year to $37.59 billion\u2026 The company's $364 billion cloud backlog and heavy AI investments position it well for future growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kalkine.com (Apr 2026)",
+          "relevance": 1.0,
+          "excerpt": "Amazon committed approximately $200 billion in capital expenditure for full-year 2026, a 53% increase from the $131.8 billion deployed in 2025\u2026 trailing twelve-month free cash flow compressed to $11.2 billion from $38.2 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga (May 5, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Amazon launched Amazon Supply Chain Services (ASCS), opening its logistics network to third-party customers and targeting the $1.3 trillion 3PL market"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "matrixbcg.com (May 1, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Amazon holds an estimated 38.5 percent of the US e-commerce market, roughly six times Walmart's share\u2026 As of late 2025 AWS held a 30% market share"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga (May 14, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Amazon is discontinuing its Rufus chatbot and replacing it with Alexa for Shopping, a new AI-powered shopping assistant"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "financialcontent.com (Apr 2026)",
+          "relevance": 1.0,
+          "excerpt": "TheThe's ant ant ant ant ant ant ant ant antant"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kalkine.com (Apr 2026)",
+          "relevance": 1.0,
+          "excerpt": "Amazon committed approximately $200 billion in capital expenditure for full-year 2026, a 53% increase from the $131.8 billion deployed in 2025\u2026 trailing twelve-month free cash flow compressed to $11.2 billion from $38.2 billion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMZN",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3859,
+        "capped_chars": 3859,
+        "raw_tokens": 965,
+        "capped_tokens": 965
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231822,
+        "capped_chars": 231822,
+        "raw_tokens": 57956,
+        "capped_tokens": 57956
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30909,
+        "capped_chars": 30909,
+        "raw_tokens": 7727,
+        "capped_tokens": 7727
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4412,
+        "capped_chars": 4412,
+        "raw_tokens": 1103,
+        "capped_tokens": 1103
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 401315,
+        "capped_chars": 88955,
+        "raw_tokens": 100329,
+        "capped_tokens": 22239
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 123914,
+        "capped_chars": 85956,
+        "raw_tokens": 30979,
+        "capped_tokens": 21490
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 143861,
+  "started_at": "2026-08-06T02:36:13+00:00"
+}

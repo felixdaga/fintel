@@ -1,0 +1,223 @@
+{
+  "symbol": "AAPL",
+  "decision_date": "2026-05-15",
+  "cell": "AAPL",
+  "agent": "optimized",
+  "version": "1.0.0",
+  "model": "xiaomi/mimo-v2.5-pro",
+  "ticker": "AAPL",
+  "pipeline": "quant\u2016qual \u2192 verify \u2192 final_pm",
+  "quantitative_report": "# AAPL \u2014 Quantitative Fundamental Attractiveness Report\n**Decision date: 2026-05-15 | Data strictly PIT \u2264 2026-05-14**\n\n---\n\n## 1. Revenue, Earnings, and Margin Trajectory\n\nThe most recent quarterly filing (2026-03-28, Q2 FY2026) shows revenue of $111.18B and diluted EPS of $2.01. Year-over-year against Q2 FY2025 (2025-03-29, rev=$95.36B, eps=$1.65), this represents revenue growth of **+16.6%** and EPS growth of **+21.8%** \u2014 accelerating earnings outpacing top-line expansion, consistent with margin improvement.\n\nGross margin improved to **49.3%** in Q2 FY2026 (gross profit $54.78B / revenue $111.18B) versus 47.1% a year earlier ($44.87B / $95.36B). Operating margin held at **32.3%** ($35.88B / $111.18B), roughly flat to Q2 FY2025's 31.0% ($29.59B / $95.36B). Net margin was **26.6%** ($29.58B / $111.18B), up from 26.0% a year prior. The ratio panel confirms the margin expansion trend: net_margin rose from 0.243 (May\u2013January observation window) to **0.272** by 2026-05-14.\n\nThe **QoQ decline** \u2014 revenue \u221222.7%, EPS \u221229.2% \u2014 is seasonal noise, not signal. Apple's Q1 (Oct\u2013Dec holiday quarter, rev=$143.76B, eps=$2.84) is always the fiscal year's peak. Comparing Q2 sequentially to Q1 in prior years confirms this pattern: Q2 FY2025 (rev=$95.36B) sat below Q1 FY2025 (rev=$124.30B) by a similar magnitude. The YoY comparison is the correct frame here, and it is unequivocally positive.\n\n*Note: TTM is flagged incomplete in the source data; I do not compute or cite a trailing-twelve-month aggregate.*\n\n## 2. Earnings Quality and Balance-Sheet Resilience\n\n**Cash generation** remains strong. Operating cash flow in Q2 FY2026 was **$28.70B** versus $23.95B a year ago \u2014 a **+19.8% YoY increase**, nearly matching the earnings growth rate, which indicates that earnings are converting into cash at a consistent clip. The QoQ decline of \u221246.8% (from $53.92B holiday quarter) is the same seasonal distortion noted above.\n\n**Balance sheet trajectory is decisively positive.** Over five quarters, total equity expanded from $66.76B (2024-12-28) to **$106.49B** (2026-03-28) \u2014 a 59.5% increase \u2014 while total debt fell from $94.80B to **$82.70B** (\u221212.8%). Debt-to-equity improved to **0.777**, down from 1.42 a year and a half earlier ($94.80B / $66.76B). Total assets remained relatively stable at $371.08B vs. $344.08B. This is textbook deleveraging: growing equity cushion with shrinking obligations.\n\n**Caveat on reported ROE (1.151x).** The ratio panel shows ROE surging from ~1.46 to 1.15 (= 115% at the notation scale), which is arithmetically inconsistent with the balance-sheet equity expansion from $88.19B to $106.49B over the same period. This likely reflects a TTM-earnings-to-current-equity computation where the TTM numerator is inflated relative to the expanded equity base, or a data-processing anomaly. I do not rely on this ratio for the thesis; the underlying balance-sheet trends speak clearly enough.\n\n## 3. Valuation Versus Own History\n\nThe stock trades at a **P/E (diluted) of 35.8x** as of 2026-05-14. Over the 365-day lookback window, this multiple ranged from **30.2x to 43.1x**. Current valuation sits in the **lower-middle** of that range \u2014 below the 12-month average, but well above the floor.\n\nTracking the sparse history (12 observations), the multiple expanded from 32.7x (2025-05-15) to a peak of **42.0x** (2025-11-28), then contracted to a trough of **32.6x** (2026-04-13) before ticking back to 35.8x. The market was willing to pay a premium (40\u201342x) through late 2025, then de-rated through Q1 2026. The current reading represents a partial re-rating off that trough.\n\nOther valuations: P/B = **41.2x** (range 38.3\u201365.0, near the floor); P/S = **9.7x**; earnings yield = **2.8%** (against 10-year Treasury at 4.47%, a wide gap that historically pressures richly-valued growth equities).\n\n## 4. Price Context\n\nAAPL closed at **$298.21** on 2026-05-14, within 1% of the 365-day high of **$300.92** and up **54%** from the low of $193.46. The quarterly price path shows +13.9% over the latest ~63 trading days (from $261.73 on 2026-02-12), preceded by a \u22124.9% dip and a prior +18.0% leg.\n\nPrice has recovered sharply alongside the fundamental story: YoY earnings growth of +21.8% and margin expansion justified much of the re-rating. However, with the stock near all-time highs and a P/E back to 35.8x, the market is again pricing in continued acceleration. There is limited \"cheapness\" embedded in current levels.\n\n## 5. Macro and Sentiment Overlays\n\n**Macro:** The 10-year Treasury yield stands at **4.47%** (up ~42 bps over 90 days), while the 2-year is at **4.00%** \u2014 a positive spread of 0.47% indicating a normal (non-inverted) curve, benign for risk assets. However, the earnings yield of 2.8% sits **167 bps below** the 10-year, a historically wide negative spread for mega-cap growth. Oil has surged to **$104.66/bbl** (+67% over 90 days), which pressures consumer discretionary spending and supply-chain costs \u2014 a modest headwind for hardware sales. VIX has fallen to **17.26** from a 90-day high of ~31, indicating normalized volatility. Fed funds at 3.63% suggest a gradual easing cycle is underway, but the pace is slow.\n\n**Sentiment:** The 90-day mean sentiment score is **+0.251** (n=517 articles), mildly positive. Recent readings (May 1\u201314) skew solidly positive (0.17\u20130.75 range), consistent with a constructive narrative, but sentiment is the weakest input and does not substitute for the fundamental picture.\n\n## 6. Strongest Quantitative Upside and Downside\n\n**Upside:** YoY revenue growth of +16.6% and EPS growth of +21.8% demonstrate genuine operating momentum. If sustained, continued earnings expansion could justify a re-rating back toward the 40\u201342x range observed in late 2025, implying ~15\u201317% upside from the current multiple alone \u2014 before any earnings growth. Margin improvement (net_margin 24.3% \u2192 27.2%) adds leverage. The balance-sheet deleveraging story (equity +59.5%, debt \u221212.8% over 5 quarters) provides financial flexibility and reduces risk.\n\n**Downside:** The earnings yield of 2.8% vs. a 4.47% risk-free rate creates a persistent valuation headwind. A reversion to the 30\u201332x trough observed in early 2026 represents ~10\u201316% multiple compression. Oil at $104.66 could compress consumer demand. The stock is already near its 52-week high, limiting near-term valuation margin of safety. Any deceleration in the +16.6% revenue growth trend would likely trigger de-rating from current multiples.\n\n## 7. Provisional Quantitative Conclusion\n\nApple's fundamental trajectory is **strong on merits**: accelerating YoY revenue and earnings growth, widening margins, robust cash generation, and a rapidly strengthening balance sheet. However, the stock is priced for continued execution at 35.8x earnings \u2014 in the upper-middle of its range \u2014 with a compressed earnings yield versus risk-free rates. The business fundamentals are genuinely attractive; the valuation offers limited margin of safety at current levels, sitting closer to \"fairly priced for quality\" than \"cheap.\" A return to the 30\u201332x trough would create a meaningfully more compelling entry point from a pure quantitative lens. Provisionally: **moderately attractive on fundamentals, neutral-to-cautious on valuation.**\n\n---\n\n## key evidence\n\nfundamentals | 2026-03-28 | revenue=111.18B, eps_diluted=2.01, YoY revenue=+16.6%, YoY eps=+21.8%\nfundamentals | 2026-03-28 | gross_profit=54.78B, gross_margin=49.3% (vs 47.1% YoY Q2)\nfundamentals | 2026-03-28 | net_income=29.58B, operating_cash_flow=28.70B (YoY OCF +19.8%)\nfundamentals | 2026-03-28 | total_equity=106.49B (vs 66.76B 5Q prior), total_debt=82.70B (vs 94.80B)\nratios | 2026-05-14 | pe_diluted=35.8x (365d range 30.2..43.1), earnings_yield=0.028, net_margin=0.272\nratios | sparse-history | pe_diluted peak=42.0x (2025-11-28), trough=32.6x (2026-04-13)\nmacro | 2026-05-14 | DGS10=4.47%, FEDFUNDS=3.63%, DCOILWTICO=104.66",
+  "qualitative_report": "# AAPL \u2014 Qualitative Franchise & Structural Assessment\n\n**Decision date:** 2026-05-15\n\n---\n\n## 1. Business Model & Franchise Quality\n\nApple's franchise rests on a vertically integrated ecosystem spanning hardware (iPhone, Mac, iPad, Wearables) and high-margin Services (App Store, Apple Music, iCloud, Apple Pay, AppleCare). FY2025 revenue reached $416 billion with $112 billion in net income. The structural thesis is straightforward: hardware creates the installed base, and Services \u2014 growing at 12\u201316% YoY with ~75\u201377% gross margins versus ~38\u201339% for Products \u2014 converts that base into durable, recurring, high-margin revenue. Services crossed $100 billion annually in FY2025 and reached $31 billion in the March 2026 quarter alone (record, +16% YoY).\n\nThe installed base of active devices now exceeds 2.35 billion, and customer retention is approximately 93% \u2014 the highest in consumer electronics. This ecosystem lock-in is the moat. Every additional device deepens switching costs: iCloud, iMessage, Apple Watch, AirPods, and Apple Pay all interoperate exclusively. No competitor replicates this integration at scale.\n\niPhone still accounts for roughly half of revenue, introducing hardware cycle dependency. However, the mix shift toward Services is structurally advancing: Services' share of quarterly revenue now exceeds 28%, and its gross margin contribution is disproportionate. Apple is simultaneously pursuing a dual-pronged hardware strategy \u2014 premium pricing on flagship models and aggressive entry-price expansion with devices like the iPhone 17e at $599 \u2014 to grow the installed base and feed future Services monetization.\n\n## 2. Recent Developments (Dated)\n\n**Q2 FY2026 earnings (reported ~May 1, 2026):** Revenue of $111.2 billion (+17% YoY, March quarter record), iPhone revenue $57 billion (+22%), EPS $2.01 (+22%), gross margin 49.3%. Guidance calls for 14\u201317% Q3 revenue growth and 47.5\u201348.5% gross margins \u2014 both above Street expectations. Greater China revenue surged 28% to a quarterly record, with the first half up 33%.\n\n**Capital allocation (May 1, 2026):** Board authorized an additional $100 billion share repurchase and raised the quarterly dividend 4% to $0.27/share. First-half 2026 operating cash flow reached $83 billion (+53% YoY) against only $4.3 billion in capex. The company retired its net-cash-neutral target, now evaluating cash and debt independently. Net cash stood at $62 billion with $147 billion in total liquidity.\n\n**CEO transition (May 1, 2026 call):** Tim Cook will become executive chairman; John Ternus named incoming CEO. Management emphasized continuity of capital allocation discipline.\n\n**Apple\u2013Intel partnership exploration (Bloomberg, ~May 5\u20136, 2026):** Apple is in early-stage talks with Intel and Samsung to diversify chip manufacturing away from TSMC concentration. No orders placed; supply chain resilience is the stated motivation.\n\n**Geopolitical (May 13, 2026):** Tim Cook accompanied President Trump to China for trade talks, signaling Apple's diplomatic engagement on market access and tariff issues.\n\n**Technical:** RSI reached 78.1 as of May 12, placing AAPL in overbought territory. Stock up ~8% YTD, trailing AI infrastructure names.\n\n## 3. Material Risks & Offsets\n\n**Regulatory \u2014 the most consequential near-term risk.** Apple faces EU Digital Markets Act proceedings (including a \u20ac500 million fine), a U.S. DOJ antitrust lawsuit alleging smartphone monopolization, and India competition authority investigations. The App Store commission structure is directly threatened: external payment links and fee restrictions, if sustained or expanded, could compress Services gross margins. A DOJ remedy reversing Google's search default payments would remove a significant licensing revenue stream. These are not hypothetical \u2014 they are active proceedings with material downside scenarios.\n\n**China exposure (~18% of revenue).** Huawei, Xiaomi, and local competitors exert pricing pressure. Apple Intelligence has not rolled out at full feature parity in mainland China; regulatory approval and a domestic AI partner remain open questions. Tariff overhang persists despite Trump-Xi engagement.\n\n**Supply chain concentration in TSMC/Taiwan.** Geopolitical risk remains structural. The Intel/Samsung manufacturing talks signal awareness but no concrete diversification yet. Rising memory costs are already pressuring Products gross margins (down 200 bps sequentially), with Bernstein expecting peak pressure in the December quarter.\n\n**Leadership transition.** Cook-to-Ternus is the first CEO change since Jobs-to-Cook. While management signaled continuity, execution risk during a period of regulatory, AI, and supply chain complexity is non-trivial.\n\n**iPhone replacement cycles stretching past four years in many markets**, capping unit volume growth even as ASPs hold. The global smartphone market contracted 4\u20136% YoY in Q1 2026.\n\n**AI positioning \u2014 inference, not infrastructure.** Apple spends approximately $14 billion annually on AI, far below peers ($125\u2013200B). Its strategy \u2014 edge-based AI integrated into 2.5 billion devices \u2014 is capital-efficient but slower to monetize. Apple Intelligence drives upgrades indirectly rather than generating direct AI revenue.\n\n**Offsets:** Services growth trajectory, $83B half-year operating cash flow, $62B net cash, $147B liquidity, relentless buybacks ($36B deployed in six months), 93% customer retention, and the structural installed-base flywheel all provide durable buffers against cyclical and regulatory headwinds.\n\n## 4. Qualitative Assessment\n\n**Positive.** Apple's franchise quality remains elite. The ecosystem moat \u2014 2.35 billion devices, 93% retention, 75%+ Services margins \u2014 is among the most durable in global equities. Q2 FY2026 results demonstrate accelerating growth (17% revenue, 22% EPS) with capital discipline ($4.3B capex versus $83B operating cash flow). The Services mix shift is a genuine structural tailwind. The dual hardware strategy \u2014 premium pricing plus installed-base expansion \u2014 is the right playbook for a contracting smartphone market. Bernstein's \"once-in-a-generation opportunity\" framing is directionally sound if execution holds.\n\nThe risk layer, however, is meaningful and underappreciated by momentum. App Store regulatory exposure could structurally compress the highest-margin segment. China revenue concentration creates geopolitical and competitive vulnerability. The leadership transition coincides with peak complexity. And the stock's overbought technical condition (RSI 78.1) suggests limited near-term margin of safety.\n\nOn balance, the franchise read is strong and the narrative supports fundamental attractiveness. The risks are real but addressable, and the capital return machine provides downside support. The primary qualification is regulatory: an adverse App Store ruling would materially impair the Services thesis that underpins the valuation premium.\n\n---\n\n## Key Evidence\n\nsource_type | source_id | excerpt\n---|---|---\nweb_search | dcf-model.com (structural) | \"Services segment... accounting for nearly 29.16% of their quarterly revenue in Q3 FY2025... gross margins are structurally ~75\u201377% versus ~38\u201339% for Products\"\nweb_search | capitalblueprint.substack.com (structural) | \"Services have grown from a footnote a decade ago into a $109.2 billion annual business by FY2025, crossing the $100 billion threshold\"\nweb_search | talktoglobe.com (competitive) | \"93% of customers never leave... Apple captures 50% of all global smartphone revenue despite shipping only 18-25% of units\"\nnews | 2026-05-02 Motley Fool | \"Apple authorized an additional $100 billion share repurchase program... generated $82 billion in operating cash flow... capital expenditures of only $4.3 billion in the first half of fiscal 2026\"\nnews | 2026-05-01 Benzinga | \"17% revenue growth to $111.2 billion... iPhone 17 demand (22% sales increase)... Services revenue grew 16% to $31 billion... new $100 billion stock buyback program\"\nweb_search | stocktitan.net (risk, 10-Q) | \"EU Digital Markets Act investigations and fines, U.S. Department of Justice antitrust litigation... could lead to further business changes, penalties or revenue impacts\"\nweb_search | ainvest.com (strategy) | \"Bernstein analyst Mark Newman frames it as a 'once in a generation opportunity' to gain share over the next 12-24 months\"\nnews | 2026-05-05 Benzinga | \"Apple is in early-stage talks with Intel and Samsung to diversify its chip manufacturing away from TSMC dependence\"",
+  "verification": {
+    "recommendation": "KEEP",
+    "severity": "minor",
+    "verified_points": [
+      "YoY revenue +16.6% equals 111.18/95.36-1 = 16.6%, confirmed from raw pack quarterly trajectory.",
+      "YoY EPS +21.8% equals 2.01/1.65-1 = 21.8%, confirmed from raw pack quarterly trajectory.",
+      "Gross margin 49.3% equals 54.78/111.18 = 49.3%, confirmed from raw pack income statement.",
+      "Operating margin 32.3% equals 35.88/111.18 = 32.3%, confirmed from raw pack income statement.",
+      "Net margin 26.6% equals 29.58/111.18 = 26.6%, confirmed from raw pack income statement.",
+      "YoY OCF +19.8% equals 28.70/23.95-1 = 19.8%, confirmed from raw pack cash flow series.",
+      "Equity expanded from 66.76B (2024-12-28) to 106.49B (2026-03-28) = +59.5%, confirmed from raw pack balance sheet.",
+      "Debt fell from 94.80B to 82.70B = -12.8%, confirmed from raw pack balance sheet.",
+      "Debt-to-equity 0.777 confirmed in raw pack ratios.",
+      "P/E 35.8x confirmed in raw pack ratios (pe_diluted=35.826).",
+      "P/E 365d range 30.2-43.1 confirmed in raw pack ratios.",
+      "Earnings yield 0.028 confirmed in raw pack ratios.",
+      "10-year Treasury 4.47% confirmed in raw pack macro (DGS10=4.47 on 2026-05-14).",
+      "Fed funds 3.63% confirmed in raw pack macro (FEDFUNDS=3.63 on 2026-05-01).",
+      "WTI oil 104.66 confirmed in raw pack macro (DCOILWTICO=104.66 on 2026-05-14).",
+      "VIX 17.26 confirmed in raw pack macro (VIXCLS=17.26 on 2026-05-14).",
+      "Close 298.21 on 2026-05-14 confirmed in raw pack prices.",
+      "365d high 300.92 and low 193.46 confirmed in raw pack prices.",
+      "QoQ revenue -22.7% equals 111.18/143.76-1 = -22.7%, confirmed.",
+      "QoQ EPS -29.2% equals 2.01/2.84-1 = -29.6% (report says -29.2%, minor rounding difference from 2.01/2.84 = 0.708, so -29.2% is approximately correct if using a slightly different Q1 EPS).",
+      "Qual report's claim of 17% revenue growth and 22% EPS growth aligns with quant's +16.6% and +21.8% (rounding to nearest whole percent).",
+      "Qual report's Services revenue of $31B and 16% YoY growth consistent with news evidence (Benzinga 2026-05-01: 'Services revenue grew 16% to $31 billion').",
+      "Qual report's $100B buyback and $0.27 dividend confirmed in multiple news sources and earnings call transcript.",
+      "Qual report's 2.35B active devices confirmed in multiple web context sources.",
+      "Qual report's 93% retention rate confirmed in talktoglobe.com source.",
+      "Qual report's $83B first-half OCF confirmed in Motley Fool 2026-05-04 source ($82B) and panabee source ($82.6B).",
+      "Qual report's $62B net cash confirmed in panabee and alpha-sense sources.",
+      "Qual report's $147B total liquidity confirmed in panabee and alpha-sense sources.",
+      "Qual report's $4.3B capex in first half confirmed in Motley Fool 2026-05-04 source.",
+      "Qual report's CEO transition (Cook to Ternus) confirmed in earnings call transcript and multiple news sources.",
+      "Qual report's Apple-Intel partnership talks confirmed in Benzinga 2026-05-05 source.",
+      "Qual report's Tim Cook China trip confirmed in Benzinga 2026-05-13 source.",
+      "Qual report's RSI 78.1 confirmed in Benzinga 2026-05-12 source (Apple RSI 78.1).",
+      "Qual report's EU DMA fine of \u20ac500M confirmed in stocktitan.net 10-Q source.",
+      "Qual report's DOJ antitrust lawsuit confirmed in stocktitan.net 10-Q source.",
+      "Qual report's iPhone 17e at $599 confirmed in ainvest.com source.",
+      "Qual report's Greater China revenue +28% confirmed in alpha-sense source and companieshistory.com.",
+      "Qual report's guidance of 14-17% Q3 revenue growth confirmed in alpha-sense source.",
+      "Qual report's guidance of 47.5-48.5% gross margins confirmed in alpha-sense source.",
+      "Qual report's Products gross margin 38.7% and Services gross margin 76.7% confirmed in alpha-sense source.",
+      "Qual report's $14B annual AI spend confirmed in talktoglobe.com source.",
+      "Qual report's memory cost headwinds and Products gross margin down 200bps sequentially confirmed in alpha-sense source (Products gross margin 38.7%, down 200 bps sequentially).",
+      "Quant report correctly flags TTM as incomplete and does not compute it, consistent with raw pack TTM flag."
+    ],
+    "unsupported_claims": [
+      "Quant report states 'net_margin rose from 0.243 (May\u2013January observation window) to 0.272 by 2026-05-14' \u2014 the raw pack shows net_margin=0.243 from 2025-05-15 through 2026-01-02, then 0.270 from 2026-02-05 through 2026-04-13, then 0.272 on 2026-05-14. The claim is directionally correct but the phrasing 'May\u2013January' is imprecise; the 0.243 reading persisted through 2026-01-02, not just 'May\u2013January.' Minor issue.",
+      "Quant report states 'ROE surging from ~1.46 to 1.15 (= 115% at the notation scale)' \u2014 the raw pack shows ROE declining from 1.457 (2025-05-15) to 1.151 (2026-05-14). The report correctly flags this as likely a data anomaly and does not rely on it. However, the phrasing 'surging' is misleading for a declining series; the report appears to use 'surging' loosely to mean 'moving to' rather than 'increasing.' The report itself notes the inconsistency, so this is a minor presentation issue.",
+      "Qual report states 'FY2025 revenue reached $416 billion with $112 billion in net income' \u2014 the dcf-model.com source confirms '$416.16 billion' revenue and '$112.01 billion' net income for FY2025. However, the ad-hoc-news.de source states 'fiscal 2025 revenue of $394.4 billion for the full year ended September 28, 2025.' This discrepancy exists in the raw evidence itself (394.4B vs 416B), not an invention by the qual report. The qual report uses the $416B figure which is supported by multiple sources. Not an unsupported claim by the specialist.",
+      "Qual report states 'Services crossed $100 billion annually in FY2025' \u2014 confirmed by capitalblueprint.substack.com source ('$109.2 billion annual business by FY2025, crossing the $100 billion threshold'). Supported.",
+      "Qual report states 'installed base of active devices now exceeds 2.35 billion' \u2014 confirmed by multiple sources. Supported.",
+      "Qual report states 'customer retention is approximately 93%' \u2014 confirmed by talktoglobe.com source. Supported.",
+      "Qual report states 'Services' share of quarterly revenue now exceeds 28%' \u2014 the dcf-model.com source states '29.16% of their quarterly revenue in Q3 FY2025' and marketreportanalytics.com states 'approximately 28% in Q2 FY25.' The qual report's 'exceeds 28%' is supported by these sources for recent quarters.",
+      "Qual report states 'iPhone still accounts for roughly half of revenue' \u2014 confirmed by capitalblueprint.substack.com ('approximately 50.4% of total revenue') and ad-hoc-news.de ('roughly 52% of fiscal 2025 revenue'). Supported.",
+      "Qual report states 'global smartphone market contracted 4\u20136% YoY in Q1 2026' \u2014 confirmed by Forbes source ('down 4.1% (IDC) and 6% (Counterpoint)'). Supported.",
+      "Qual report states 'Apple spends approximately $14 billion annually on AI' \u2014 confirmed by talktoglobe.com source. Supported.",
+      "Qual report states 'Bernstein's once-in-a-generation opportunity framing' \u2014 confirmed by ainvest.com source. Supported.",
+      "Qual report states 'Products gross margin down 200 bps sequentially' \u2014 confirmed by alpha-sense source ('Products gross margin was 38.7%, down 200 basis points sequentially'). Supported.",
+      "Qual report states 'Bernstein expects peak pressure in the December quarter' \u2014 this specific claim about Bernstein expecting peak pressure in December quarter is not directly quoted in the raw evidence. The ainvest.com source mentions 'Bernstein expects this pressure to build before easing, with the December quarter representing the peak.' This is supported by the ainvest.com web context source. Supported.",
+      "Qual report states 'iPhone replacement cycles stretching past four years in many markets' \u2014 confirmed by heygotrade.com source ('iPhone average holding period has stretched past four years in many markets'). Supported.",
+      "Qual report states 'Greater China revenue surged 28% to a quarterly record' \u2014 confirmed by alpha-sense source and companieshistory.com. Supported.",
+      "Qual report states 'first half up 33%' for Greater China \u2014 confirmed by alpha-sense source ('First half of the year in Greater China grew at 33%'). Supported.",
+      "Qual report states 'retired its net-cash-neutral target' \u2014 confirmed by earnings call transcript. Supported.",
+      "Qual report states '$36B deployed in six months' for buybacks \u2014 confirmed by alpha-sense source ('$36.0 billion toward share repurchases'). Supported.",
+      "Qual report states 'first-half 2026 operating cash flow reached $83 billion (+53% YoY)' \u2014 the panabee source states '$82.6 billion' and '53% year-over-year increase.' The Motley Fool 2026-05-04 source states '$82 billion.' The qual report rounds to $83B which is a minor rounding. Supported.",
+      "Qual report states 'only $4.3 billion in capex' \u2014 confirmed by Motley Fool 2026-05-04 source and panabee source. Supported.",
+      "Qual report states 'net cash stood at $62 billion with $147 billion in total liquidity' \u2014 confirmed by panabee and alpha-sense sources. Supported.",
+      "Qual report states 'Q2 FY2026 earnings (reported ~May 1, 2026)' \u2014 the filing date in the raw quant pack is 2026-05-01, and multiple news sources are dated 2026-05-01. Supported.",
+      "Qual report states 'iPhone revenue $57 billion (+22%)' \u2014 confirmed by alpha-sense source ('iPhone revenue grew 22% year-over-year to $57 billion'). Supported.",
+      "Qual report states 'guidance calls for 14\u201317% Q3 revenue growth and 47.5\u201348.5% gross margins' \u2014 confirmed by alpha-sense source. Supported.",
+      "Qual report states 'Apple\u2013Intel partnership exploration (Bloomberg, ~May 5\u20136, 2026)' \u2014 confirmed by Benzinga 2026-05-05 source. Supported.",
+      "Qual report states 'Tim Cook accompanied President Trump to China for trade talks' on May 13, 2026 \u2014 confirmed by Benzinga 2026-05-13 source. Supported.",
+      "Qual report states 'RSI reached 78.1 as of May 12' \u2014 confirmed by Benzinga 2026-05-12 source. Supported.",
+      "Qual report states 'Stock up ~8% YTD' \u2014 the raw pack shows close of 298.21 on 2026-05-14. The quarterly path shows 233.33 on 2025-08-13, 275.25 on 2025-11-11, 261.73 on 2026-02-12, 298.21 on 2026-05-14. YTD from ~275 (end of 2025) to 298.21 is ~8.4%. The Benzinga 2026-05-12 source states 'Apple's 8% gain.' Supported.",
+      "Qual report states 'EU Digital Markets Act proceedings (including a \u20ac500 million fine)' \u2014 confirmed by stocktitan.net source. Supported.",
+      "Qual report states 'U.S. DOJ antitrust lawsuit alleging smartphone monopolization' \u2014 confirmed by stocktitan.net source. Supported.",
+      "Qual report states 'India competition authority investigations' \u2014 confirmed by simplywall.st source. Supported.",
+      "Qual report states 'A DOJ remedy reversing Google's search default payments would remove a significant licensing revenue stream' \u2014 confirmed by stocktitan.net source ('A reversal of the order on appeal could result in imposition of certain remedies initially proposed by the DOJ, such as those prohibiting Google from offering the Company commercial terms for search distribution'). Supported.",
+      "Qual report states 'Huawei, Xiaomi, and local competitors exert pricing pressure' in China \u2014 confirmed by heygotrade.com source. Supported.",
+      "Qual report states 'Apple Intelligence has not rolled out at full feature parity in mainland China' \u2014 confirmed by heygotrade.com source. Supported.",
+      "Qual report states 'Rising memory costs are already pressuring Products gross margins (down 200 bps sequentially)' \u2014 confirmed by alpha-sense source. Supported.",
+      "Qual report states 'Bernstein expecting peak pressure in the December quarter' \u2014 confirmed by ainvest.com source. Supported.",
+      "Qual report states 'Cook-to-Ternus is the first CEO change since Jobs-to-Cook' \u2014 this is a factual claim about historical CEO transitions. The earnings call transcript confirms Cook becoming executive chairman and Ternus named incoming CEO. The claim about it being the first change since Jobs-to-Cook is not explicitly stated in the supplied evidence but is widely known. This is a minor unsupported historical claim but does not affect the investment thesis.",
+      "Qual report states 'global smartphone market contracted 4\u20136% YoY in Q1 2026' \u2014 confirmed by Forbes source. Supported."
+    ],
+    "corrections": [
+      {
+        "id": "C1",
+        "issue": "Quant report's QoQ EPS decline stated as -29.2% but raw calculation yields -29.6% (2.01/2.84-1). The report may be using a slightly different Q1 EPS figure or rounding differently. This is a minor numerical discrepancy that does not affect the directional conclusion.",
+        "required_action": "No action required; the difference is immaterial and the report correctly identifies this as seasonal noise."
+      },
+      {
+        "id": "C2",
+        "issue": "Qual report states 'Cook-to-Ternus is the first CEO change since Jobs-to-Cook' \u2014 this historical claim is not explicitly sourced in the supplied evidence packs. While likely accurate, it falls outside the strict evidence boundary.",
+        "required_action": "PM should note this is an unsourced historical claim; does not materially affect the thesis."
+      },
+      {
+        "id": "C3",
+        "issue": "The raw evidence contains a discrepancy between dcf-model.com ($416B FY2025 revenue) and ad-hoc-news.de ($394.4B FY2025 revenue). The qual report uses the $416B figure consistently, which is supported by the majority of sources. The $394.4B figure from ad-hoc-news.de may reflect a different fiscal year definition or data error in that source.",
+        "required_action": "PM should be aware of the source discrepancy on FY2025 revenue; the $416B figure is better supported by multiple corroborating sources."
+      }
+    ]
+  },
+  "verification_flag": null,
+  "pm_emit_path": "submit_views",
+  "final_decision": "",
+  "submit_args": {
+    "views": [
+      {
+        "symbol": "AAPL",
+        "score": 0.35,
+        "rationale": "Apple's fundamental health and trajectory are genuinely strong: Q2 FY2026 showed +16.6% YoY revenue growth and +21.8% EPS growth, gross margin expanded to 49.3% from 47.1% YoY, operating cash flow grew +19.8% YoY, and the balance sheet has deleveraged dramatically (equity +59.5%, debt -12.8% over 5 quarters). Services revenue hit a record $31B (+16% YoY) with 75%+ gross margins, and the 2.35B installed base with 93% retention underpins the ecosystem moat. However, valuation is not cheap: P/E of 35.8x sits in the lower-middle of the 30.2-43.1x 12-month range, and the 2.8% earnings yield is 167bps below the 10-year Treasury at 4.47%. The stock is near all-time highs at $298.21. Pillar 2 (valuation) is neutral \u2014 not expensive vs own history peak of 42x, but not a bargain either. Pillar 3 gets a modest positive bump: the $100B buyback authorization (May 1, 2026), Q3 guidance of 14-17% revenue growth above Street expectations, and the CEO transition signaling continuity are credible near-term fundamental catalysts. Regulatory risk (DOJ antitrust, EU DMA) and China exposure (~18% of revenue) are real but partially offset by $147B liquidity and $62B net cash. Net: strong franchise with accelerating growth, but priced for continued execution with limited margin of safety \u2014 mildly to moderately attractive.",
+        "key_factors": [
+          "Q2 FY2026 YoY revenue +16.6% ($111.18B) and EPS +21.8% ($2.01) \u2014 accelerating growth",
+          "Gross margin expanded to 49.3% from 47.1% YoY; net margin improved to 27.2% from 24.3%",
+          "Operating cash flow $28.70B in Q2, +19.8% YoY; first-half OCF $83B (+53% YoY) vs only $4.3B capex",
+          "Balance sheet deleveraging: equity grew from $66.76B to $106.49B over 5 quarters; debt fell from $94.80B to $82.70B",
+          "Services revenue record $31B in Q2 (+16% YoY), ~28%+ of revenue, 75-77% gross margins; installed base 2.35B devices, 93% retention",
+          "P/E 35.8x vs 12-month range 30.2-43.1x \u2014 lower-middle, not cheap but below the 42x peak",
+          "Earnings yield 2.8% vs 10-year Treasury 4.47% \u2014 167bps negative spread, a persistent valuation headwind",
+          "$100B buyback authorization (May 1, 2026) and 4% dividend raise; $147B total liquidity, $62B net cash",
+          "Q3 guidance: 14-17% revenue growth, 47.5-48.5% gross margins \u2014 above Street expectations",
+          "Regulatory risk: DOJ antitrust lawsuit, EU DMA proceedings with \u20ac500M fine, India competition investigations threatening App Store commissions",
+          "China revenue ~18% of total, surged 28% in Q2 but faces Huawei/local competition and tariff overhang",
+          "RSI 78.1 (overbought); stock at $298.21 near 365-day high of $300.92, up 54% from low",
+          "Oil at $104.66/bbl (+67% over 90 days) pressures consumer discretionary spending and supply-chain costs"
+        ],
+        "sources_cited": [
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-28",
+            "excerpt": "revenue=111.18B, eps_diluted=2.01, YoY revenue=+16.6%, YoY eps=+21.8%"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-28",
+            "excerpt": "gross_profit=54.78B, gross_margin=49.3% (vs 47.1% YoY Q2)"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-28",
+            "excerpt": "net_income=29.58B, operating_cash_flow=28.70B (YoY OCF +19.8%)"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-28",
+            "excerpt": "total_equity=106.49B (vs 66.76B 5Q prior), total_debt=82.70B (vs 94.80B)"
+          },
+          {
+            "source_type": "ratios",
+            "source_id": "2026-05-14",
+            "excerpt": "pe_diluted=35.8x (365d range 30.2..43.1), earnings_yield=0.028, net_margin=0.272"
+          },
+          {
+            "source_type": "ratios",
+            "source_id": "sparse-history",
+            "excerpt": "pe_diluted peak=42.0x (2025-11-28), trough=32.6x (2026-04-13)"
+          },
+          {
+            "source_type": "macro",
+            "source_id": "2026-05-14",
+            "excerpt": "DGS10=4.47%, FEDFUNDS=3.63%, DCOILWTICO=104.66"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-05-02 Motley Fool",
+            "excerpt": "Apple authorized an additional $100 billion share repurchase program... generated $82 billion in operating cash flow... capital expenditures of only $4.3 billion in the first half of fiscal 2026"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-05-01 Benzinga",
+            "excerpt": "17% revenue growth to $111.2 billion... iPhone 17 demand (22% sales increase)... Services revenue grew 16% to $31 billion... new $100 billion stock buyback program"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "dcf-model.com (structural)",
+            "excerpt": "Services segment... accounting for nearly 29.16% of their quarterly revenue in Q3 FY2025... gross margins are structurally ~75\u201377% versus ~38\u201339% for Products"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "capitalblueprint.substack.com (structural)",
+            "excerpt": "Services have grown from a footnote a decade ago into a $109.2 billion annual business by FY2025, crossing the $100 billion threshold"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "talktoglobe.com (competitive)",
+            "excerpt": "93% of customers never leave... Apple captures 50% of all global smartphone revenue despite shipping only 18-25% of units"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "stocktitan.net (risk, 10-Q)",
+            "excerpt": "EU Digital Markets Act investigations and fines, U.S. Department of Justice antitrust litigation... could lead to further business changes, penalties or revenue impacts"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "ainvest.com (strategy)",
+            "excerpt": "Bernstein analyst Mark Newman frames it as a 'once in a generation opportunity' to gain share over the next 12-24 months"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-05-05 Benzinga",
+            "excerpt": "Apple is in early-stage talks with Intel and Samsung to diversify its chip manufacturing away from TSMC dependence"
+          }
+        ]
+      }
+    ]
+  },
+  "error": null
+}

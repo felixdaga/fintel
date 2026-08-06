@@ -1,0 +1,243 @@
+{
+  "cell": "MSFT",
+  "symbols": [
+    "MSFT"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 123986,
+    "tokens_out": 11811,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.11184130911199999,
+    "basis": "reported"
+  },
+  "views": {
+    "MSFT": {
+      "symbol": "MSFT",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Microsoft presents a strong fundamental case: revenue growing 18.3% YoY to $82.9B, EPS +23.4% YoY, operating margins at 46.3%, OCF surging 26% YoY to $46.7B with 1.47x coverage of net income, and a fortress balance sheet with ~$38B net cash and 0.12 D/E. The valuation has de-rated meaningfully \u2014 PE at 29.9x sits in the lower quartile of its 25.4x\u201342.8x one-year range, representing ~30% compression from the Aug 2025 peak of 41.1x despite earnings growing 23%. This disconnect between accelerating fundamentals and multiple compression is the core bull case. However, material caveats temper the score below +0.5: (1) the $190B capex guidance for 2026 \u2014 $35B above consensus \u2014 compresses FCF and raises return-on-capital questions, with Goldman warning 90% of OCF consumed by AI capex; (2) loss of OpenAI exclusivity removes a key Azure differentiator; (3) Google Cloud growing 63% vs Azure's 40% signals competitive pressure; (4) the earnings yield of 3.3% remains below the 10Y Treasury at 4.41%, and oil at $98.38 (+52% in 90 days) creates data-center cost headwinds. The near-term catalyst is mixed \u2014 Q3 earnings beat on revenue and EPS but the capex shock drove a 5% selloff, and the May 27 EU sovereignty package is a potential headwind. Net: excellent franchise with elite margins and growth, de-rated to a more reasonable valuation, but capex intensity and competitive dynamics prevent a higher conviction score.",
+      "key_factors": [
+        "Revenue $82.89B in Q3 FY2026, +18.3% YoY; EPS diluted $4.27, +23.4% YoY \u2014 strong top-and-bottom-line growth trajectory",
+        "Operating margin 46.3% (improved from 45.7% YoY), gross margin 67.6%, net margin 35.7% \u2014 elite profitability sustained",
+        "Operating cash flow $46.68B, +26% YoY, OCF/NI = 1.47x \u2014 cash conversion strong, no earnings quality concerns",
+        "Balance sheet fortress: $78.27B cash, $40.26B debt, net cash ~$38B, D/E = 0.119 \u2014 minimal financial risk",
+        "PE de-rated to 29.9x from 41.1x (Aug 2025), now in lower quartile of 25.4x\u201342.8x range \u2014 ~30% multiple compression despite 23% earnings growth",
+        "EV/EBIT at 22.7x (range 19.2x\u201334.1x), P/B at 8.65x (range 7.3x\u201312.6x) \u2014 all valuation metrics in lower half of range",
+        "AI business annual run rate $37B, +123% YoY; Copilot at 20M paid commercial seats with <5% penetration of 400M+ user base \u2014 significant monetization runway",
+        "$627B commercial RPO provides multi-year revenue visibility supporting demand-driven capex",
+        "Capex guided $190B for calendar 2026, $35B above consensus; Q4 capex >$40B \u2014 FCF compression risk and return-on-capital questions",
+        "OpenAI exclusive license ended; AWS and Google Cloud can now offer OpenAI models \u2014 structural negative for Azure AI differentiation",
+        "Google Cloud grew 63% YoY vs Azure 40% \u2014 competitive gap widening with Anthropic $200B commitment to Google",
+        "EU Tech Sovereignty Package (May 27) may restrict US cloud providers from sensitive government data \u2014 regulatory headwind for European public sector",
+        "Earnings yield 3.3% below 10Y Treasury 4.41%; oil at $98.38 (+52% in 90 days) creates data-center cost headwinds",
+        "RPO grew only $2B sequentially vs $233B prior quarter \u2014 questions about breadth of demand beyond OpenAI"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=82.89B, net_income=31.78B, eps_diluted=4.27, operating_income=38.40B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "Q3 YoY",
+          "relevance": 1.0,
+          "excerpt": "revenue_yoy=+18.3%, eps_diluted_yoy=+23.4%, operating_cash_flow_yoy=+26.0%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 cash_flow",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=46.68B (vs net_income=31.78B, OCF/NI=1.47x)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance_sheet",
+          "relevance": 1.0,
+          "excerpt": "total_equity=414.37B, total_debt=40.26B, cash=78.27B, net_cash\u224838B, debt_to_equity=0.119"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=29.9x (range 25.4..42.8), ev_to_ebit=22.7x (range 19.2..34.1), p_b=8.65x (range 7.3..12.6)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "operating_margin=0.463, gross_margin=0.688, net_margin=0.357, roe=0.289"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "close=420.77, high_52w=555.45, low_52w=356.28, quarterly_delta=+6.9% (prior quarter \u221223.5%)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.41%, DCOILWTICO=98.38 (+52.5% over 90d), earnings_yield=3.3% vs 10y=4.41%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC (2026-04-29)",
+          "relevance": 1.0,
+          "excerpt": "Microsoft's revenue grew 18% year over year\u2026 Azure and other cloud services surged 40%\u2026 Annualized revenue from AI altogether now stands at $37 billion, up 123%\u2026 $627 billion in commercial remaining performance obligations"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "GlobalDataCenterHub (~April 2026)",
+          "relevance": 1.0,
+          "excerpt": "The selloff was not about earnings quality. It was about the disclosed 2026 calendar capex plan of approximately $190 billion, which exceeded analyst consensus of $154.6 billion by roughly $35 billion, and the explicit attribution of $25 billion of that figure to component price inflation"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Yahoo Finance (2026-04-30)",
+          "relevance": 1.0,
+          "excerpt": "Shares fell\u2026 after company said it anticipates Q4 capital expenditures of $40 billion, and said capex for the calendar year 2026 would reach $190 billion\u2026 Microsoft stock fell as much as 5% on Thursday"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Motley Fool (2026-05-03)",
+          "relevance": 1.0,
+          "excerpt": "The commercial backlog barely increased sequentially ($2B gain vs. $233B prior quarter), with much of the growth attributed to OpenAI rather than broad-based demand"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Motley Fool (2026-05-06)",
+          "relevance": 1.0,
+          "excerpt": "Microsoft's exclusive license to OpenAI's models has ended, allowing Amazon Web Services (AWS) to now offer OpenAI models to its customers"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Motley Fool (2026-05-04)",
+          "relevance": 1.0,
+          "excerpt": "Google Cloud achieved 63% revenue growth in Q1 2026, significantly outpacing Microsoft Azure (40%) and Amazon AWS (28%)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga (2026-05-07)",
+          "relevance": 1.0,
+          "excerpt": "The European Union is considering implementing regulations to restrict US cloud providers' access to sensitive government data as part of its upcoming 'Tech Sovereignty Package' to be presented on May 27"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga (2026-05-01)",
+          "relevance": 1.0,
+          "excerpt": "Goldman flagged that major cloud companies are spending ~90% of operating cash flow on AI capex, with combined hyperscaler capex now ~$670 billion for 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MSFT",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3930,
+        "capped_chars": 3930,
+        "raw_tokens": 982,
+        "capped_tokens": 982
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242228,
+        "capped_chars": 242228,
+        "raw_tokens": 60557,
+        "capped_tokens": 60557
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4414,
+        "capped_chars": 4414,
+        "raw_tokens": 1104,
+        "capped_tokens": 1104
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 421239,
+        "capped_chars": 89988,
+        "raw_tokens": 105310,
+        "capped_tokens": 22497
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 95396,
+        "capped_chars": 72320,
+        "raw_tokens": 23848,
+        "capped_tokens": 18079
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 163473,
+  "started_at": "2026-08-06T02:34:30+00:00"
+}

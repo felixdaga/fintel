@@ -26,7 +26,7 @@ from typing import Any
 
 import httpx
 
-from fintel.market.data.base import DataError, require
+from fintel.market.data.base import DataError
 from fintel.pit import Cutoff
 
 logger = logging.getLogger(__name__)

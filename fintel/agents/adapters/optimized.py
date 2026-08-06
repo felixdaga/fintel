@@ -33,7 +33,8 @@ from typing import Any, ClassVar
 
 from fintel.agents import emit
 from fintel.agents.evidence import (
-    DJIA_COMPANY_NAMES,
+    QUAL_KINDS,
+    QUANT_KINDS,
     EvidenceConfig,
     FintelEvidence,
     _pit_company_name,
@@ -41,6 +42,8 @@ from fintel.agents.evidence import (
 from fintel.agents.installed.optimized_agent import (
     AgentResult,
     CallRecord,
+)
+from fintel.agents.installed.optimized_agent import (
     OptimizedAgent as OptimizedPipeline,
 )
 from fintel.agents.llm import OpenRouter
@@ -76,7 +79,7 @@ class OptimizedFintelAgent:
     web_structural_lookback_days: int = 30
     web_update_lookback_days: int = 7
     web_snippets_per_query: int = 5
-    company_names: dict[str, str] = field(default_factory=lambda: dict(DJIA_COMPANY_NAMES))
+    company_names: dict[str, str] = field(default_factory=dict)
 
     # Strategy-pack context (wired by simulate.cell.build_agent; optional).
     mission_text: str = ""
@@ -177,6 +180,14 @@ class OptimizedFintelAgent:
             with _stage(nerve, "evidence_qualitative", cell_name, decision_date, sym):
                 qual = builder.qualitative_block()
 
+            # Which kinds are actually bound for this cell, intersected with
+            # the agent's quant/qual partition. Passed to the pipeline so the
+            # specialist user prompt declares what's in the pack rather than
+            # hardcoding a specific strategy's bindings.
+            bound = set(env.access.kinds)
+            quant_kinds = tuple(k for k in QUANT_KINDS if k in bound)
+            qual_kinds = tuple(k for k in QUAL_KINDS if k in bound)
+
             submit_tool = {
                 "type": "function",
                 "function": {
@@ -190,6 +201,8 @@ class OptimizedFintelAgent:
                 symbol=sym, trade_date=decision_date,
                 quant_evidence=quant, qual_evidence=qual,
                 submit_tool=submit_tool,
+                quant_kinds=quant_kinds,
+                qual_kinds=qual_kinds,
             )
 
             for idx, c in enumerate(result.calls):
@@ -212,7 +225,11 @@ class OptimizedFintelAgent:
         if views:
             outcome = "ok"
         elif errors:
-            outcome = "crashed"
+            # All symbols failed to produce a view. These are PM output
+            # failures (didn't call submit_views, no view for symbol,
+            # malformed payload) — model behavior a retry may fix, not a
+            # code bug. "parse_error" is retryable; "crashed" is not.
+            outcome = "parse_error"
             detail = "; ".join(errors)[:2000]
         else:
             outcome = "abstained"
@@ -310,6 +327,7 @@ def _dossier(sym: str, result: AgentResult) -> dict[str, Any]:
         "quantitative_report": result.quant_report,
         "qualitative_report": result.qual_report,
         "verification": result.verification,
+        "verification_flag": result.verification_flag,
         "pm_emit_path": "submit_views",
         "final_decision": result.decision_md[:5000],
         "submit_args": result.submit_args,

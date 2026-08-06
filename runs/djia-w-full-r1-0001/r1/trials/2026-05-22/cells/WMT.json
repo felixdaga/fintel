@@ -1,0 +1,231 @@
+{
+  "cell": "WMT",
+  "symbols": [
+    "WMT"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 101223,
+    "tokens_out": 11712,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.09536055647200001,
+    "basis": "reported"
+  },
+  "views": {
+    "WMT": {
+      "symbol": "WMT",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Walmart's fundamental health is solid \u2014 consistent revenue growth (+5.8% YoY in Q3 FY2026), stable gross margins (~25%), robust cash generation ($9.1B quarterly OCF), and a resilient balance sheet. The franchise is durable with a wide moat in grocery and a rapidly scaling high-margin digital ecosystem (advertising +37%, marketplace +50%). However, the trajectory is deteriorating: operating margin has compressed sequentially from 4.31% (Q1) to 4.11% (Q2) to 3.73% (Q3), operating income was flat YoY despite 5.8% revenue growth, and QoQ EPS declined -12.5%. The valuation is extreme \u2014 a 50.1x trailing PE (up 54% from 32.6x a year ago) with a 2.0% earnings yield versus a 4.57% 10-year Treasury, implying a -257bp negative risk premium. The PE expansion has far outpaced the earnings improvement. The near-term catalyst is negative: Q1 FY27 earnings (reported 2026-05-21) beat revenue but management issued cautious FY27 EPS guidance of $2.75\u2013$2.85, well below consensus of $2.97, and explicitly warned of consumer headwinds from rising gas prices ($100/barrel WTI) and fading tax-return support. Shares dropped ~8% on the report. The stock is priced for perfection at a technology-company multiple for a mature retailer with ~3% operating margins, in a stagflationary macro environment (CPI 3.8%, PPI +1.4% MoM, consumer sentiment at record low). Any earnings disappointment from margin compression, tariff costs, or consumer softening could trigger a sharp de-rating \u2014 reversion to even 44x PE implies ~12% downside from the multiple alone. All three pillars align negatively: deteriorating operating trajectory, extreme valuation, and a negative near-term catalyst.",
+      "key_factors": [
+        "Q3 FY2026 operating margin compressed to 3.73%, lowest in four quarters (down from Q1 4.31%, Q2 4.11%, prior Q3 3.96%) \u2014 operating income flat YoY at $6.70B despite 5.8% revenue growth",
+        "Trailing PE diluted of 50.1x (2026-05-21) represents a +54% re-rating from 32.6x in May 2025, far outpacing the 35% EPS growth; earnings yield of 2.0% sits 257bp below the 10-year Treasury yield of 4.57%",
+        "Q1 FY27 guidance disappointed: adjusted EPS $2.75\u2013$2.85 vs consensus $2.97; Q2 EPS guidance $0.72\u2013$0.74 vs consensus $0.75; shares fell ~8% on 2026-05-21",
+        "CFO explicitly warned elevated gas prices (WTI $100.20/barrel, +51% over 90 days) and fading tax-return tailwinds will pressure consumers in Q2; consumer sentiment at record low in May 2026",
+        "Grocery market share slowly eroding from 20.4% (2024) to 19.9% (2026) per Numerator data; Kroger's new CEO announced aggressive price cuts (2026-05-21)",
+        "Amazon launched 30-minute 'Amazon Now' delivery (2026-05-12) and AI shopping assistant (2026-05-14), intensifying competitive pressure in convenience-sensitive segments",
+        "High-margin digital flywheel is a genuine offset: advertising revenue +37%, membership +17.4%, marketplace +50% in Q1 FY27; these structurally improve unit economics",
+        "Tariff refund optionality of ~$2.4B (0.5% of U.S. sales) excluded from guidance provides potential upside tailwind not in current estimates"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=179.50B, net_income=6.09B, eps_diluted=0.77, operating_income=6.70B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2024-10-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=169.59B, eps_diluted=0.57 (YoY comp: revenue +5.8%, eps +35.1%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-31",
+          "relevance": 1.0,
+          "excerpt": "operating_margin=3.73% (down from Q2's 4.11% and prior Q3's 3.96%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=9.10B (QoQ -29.7% from Q2's 12.94B)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=50.126 (1-year range 32.6..55.4), earnings_yield=0.02, p_b=10.814"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-22",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=32.642, roe=0.252 (starting point of PE expansion)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.57% (\u0394+13.4% over 90d), DCOILWTICO=100.2 (\u0394+51.0% over 90d)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "close=121.34, quarterly_delta=-1.3%, 1yr_range=93.43..135.16"
+        },
+        {
+          "source_type": "news",
+          "source_id": "CNBC (2026-05-21)",
+          "relevance": 1.0,
+          "excerpt": "Walmart issued a worse-than-expected financial outlook\u2026adjusted earnings per share to be between $2.75 and $2.85, lower than expectations of $2.91\u2026shares dropped about 8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga (2026-05-21)",
+          "relevance": 1.0,
+          "excerpt": "revenue expectations at $177.8 billion (up 7.3% YoY) with strong e-commerce growth of 26% and marketplace sales up 50%\u2026warned that elevated cost pressures may lead to higher retail price inflation"
+        },
+        {
+          "source_type": "news",
+          "source_id": "CNBC (2026-05-21)",
+          "relevance": 1.0,
+          "excerpt": "higher tax returns muted some of the pressure related to higher fuel prices and as we're in a period of time right now where those tax refunds are largely not coming in, I think consumers are going to feel more of that pressure"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Yahoo Finance (2026-05-20)",
+          "relevance": 1.0,
+          "excerpt": "Not included in the guidance are IEEPA tariff refunds, but the company said it could be eligible for a return worth roughly 0.5% of its US annual sales\u2026roughly $2.4 billion tailwind"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.supermarketnews.com",
+          "relevance": 1.0,
+          "excerpt": "Walmart's leading share of the grocery market continues to decline\u2026currently holds a 19.9% share, down from 20% in 2025 and 20.4% in 2024"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "henryfund.tippie.uiowa.edu",
+          "relevance": 1.0,
+          "excerpt": "At a valuation multiple more commonly associated with higher-growth technology firms than mature retailers, investors appear to be capitalizing future execution well ahead of realized earnings"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "strategy.transforml.co",
+          "relevance": 1.0,
+          "excerpt": "Walmart's primary challenge is the 'omnichannel dilemma': maintaining its foundational low-cost structure and profit margins as sales increasingly shift to the inherently higher-cost e-commerce channel"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "WMT",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4559,
+        "capped_chars": 4559,
+        "raw_tokens": 1140,
+        "capped_tokens": 1140
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242703,
+        "capped_chars": 242703,
+        "raw_tokens": 60676,
+        "capped_tokens": 60676
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31263,
+        "capped_chars": 31263,
+        "raw_tokens": 7816,
+        "capped_tokens": 7816
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3524,
+        "capped_chars": 3524,
+        "raw_tokens": 881,
+        "capped_tokens": 881
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 62541,
+        "capped_chars": 14140,
+        "raw_tokens": 15635,
+        "capped_tokens": 3535
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 126012,
+        "capped_chars": 104427,
+        "raw_tokens": 31502,
+        "capped_tokens": 26107
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 181051,
+  "started_at": "2026-08-06T02:41:36+00:00"
+}

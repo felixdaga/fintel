@@ -1,0 +1,219 @@
+{
+  "cell": "WMT",
+  "symbols": [
+    "WMT"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 81626,
+    "tokens_out": 10746,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.083741112,
+    "basis": "reported"
+  },
+  "views": {
+    "WMT": {
+      "symbol": "WMT",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Walmart is a structurally durable franchise with excellent physical scale, a rapidly growing advertising flywheel (Walmart Connect +46% to $6.4B), and improving e-commerce economics. However, the stock is priced at an extreme premium that far exceeds the fundamental trajectory. Trailing P/E of 54.5x sits at the very top of its 12-month range (32.6x\u201355.3x), representing ~65% multiple expansion over the past year while EPS grew only 35% YoY. The most recent quarter (Q3 FY2026) showed sequential EPS decline of -12.5% and operating margin compression from 4.11% to 3.73%, indicating the earnings leverage may be peaking. At a 1.8% earnings yield versus 4.4% 10-year Treasury, the stock requires sustained high growth that the sequential deceleration contradicts. Management's own FY2027 guidance (3.5-4.5% revenue growth, $2.75-$2.85 EPS) came in well below consensus (~5% rev, ~$2.97 EPS), signaling conservatism that further challenges the premium multiple. Grocery market share is declining (20.4% in 2024 to 19.9% in 2026), and macro headwinds from $108+ oil and elevated interest rates create additional cost and demand pressure. A DCF analysis values the stock at $83.24 versus a current price of $131.93. The risk/reward is deeply unfavorable: even a reversion to the midpoint of the historical P/E range (~44x) implies ~19% downside. The franchise quality is real, but the price has massively overshot the fundamentals.",
+      "key_factors": [
+        "Trailing P/E of 54.5x at the very top of 12-month range (32.6x\u201355.3x), up ~65% in 12 months from 33.1x, while trailing EPS grew only 35% YoY \u2014 multiple expansion nearly double the earnings growth",
+        "Q3 FY2026 sequential earnings decline: EPS -12.5% QoQ ($0.77 vs $0.88), net income -14.9% QoQ ($6.09B vs $7.15B), operating margin compressed from 4.11% to 3.73%",
+        "Earnings yield of 1.8% versus 10-year Treasury yield of 4.4% \u2014 requires significant continued growth to justify the spread, contradicted by sequential deceleration",
+        "FY2027 guidance below consensus: revenue growth 3.5%-4.5% vs ~5% expected, adjusted EPS $2.75-$2.85 vs ~$2.97 expected; CFO cited 'somewhat unstable' backdrop",
+        "Grocery market share declining: 20.4% (2024) to 19.9% (2026), CPG share from 21.1% to 20.4% per Numerator/Supermarket News data",
+        "DCF intrinsic value estimate of $83.24 (Wedbush/Henry Fund, Apr 2026) versus current price of $131.93 \u2014 implies ~37% overvaluation",
+        "P/B of 11.76x at ceiling of 12-month range (8.2x\u201311.9x); WTI crude at $108.64/barrel is a material cost headwind for logistics-intensive retailer",
+        "Franchise quality is strong: Walmart Connect advertising grew 46% to $6.4B, global e-commerce $150.4B, ROIC improved from 5% to 18% over 5 years, $40B+ operating cash flow \u2014 but this is already priced in and then some"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=54.501 (range 32.6..55.3), p_b=11.757 (range 8.2..11.9), earnings_yield=0.018"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-01",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=33.145, p_b=8.351 (12-months-ago baseline)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=179.50B, eps_diluted=0.77, net_income=6.09B, operating_income=6.70B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "Q3 QoQ",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=-12.5%, net_income=-14.9%, operating_cash_flow=-29.7%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "Q3 YoY",
+          "relevance": 1.0,
+          "excerpt": "revenue=+5.8%, eps_diluted=+35.1%, net_income=+29.1%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.4%, DCOILWTICO=108.64"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "close=131.93, 52w_range=91.89..134.69"
+        },
+        {
+          "source_type": "news",
+          "source_id": "finance.yahoo.com (Apr 28, 2026)",
+          "relevance": 1.0,
+          "excerpt": "For fiscal year 2027, the retail giant expects revenue to increase by 3.5%-4.5%, alongside adjusted earnings of $2.75-$2.85. That was conservative compared with the nearly 5% growth and adjusted earnings of $2.97 per share that Wall Street predicted"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.supermarketnews.com (Apr 2026)",
+          "relevance": 1.0,
+          "excerpt": "Walmart currently holds a 19.9% share, down from 20% in 2025 and 20.4% in 2024"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.wedbush.com (Apr 2026)",
+          "relevance": 1.0,
+          "excerpt": "Our DCF and Economic Profit models produce a consistent intrinsic value of $83.24 as of today"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "markets.financialcontent.com (Apr 2026)",
+          "relevance": 1.0,
+          "excerpt": "Walmart Connect grew its revenue by 46% to $6.4 billion in FY2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "henryfund.tippie.uiowa.edu (Apr 2026)",
+          "relevance": 1.0,
+          "excerpt": "Walmart's ROIC has improved dramatically over the past five years, rising from 5% in fiscal 2021 to 18% in fiscal 2026"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=9.10B (Q2=12.94B, Q1=5.41B)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "WMT",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4559,
+        "capped_chars": 4559,
+        "raw_tokens": 1140,
+        "capped_tokens": 1140
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241007,
+        "capped_chars": 241007,
+        "raw_tokens": 60252,
+        "capped_tokens": 60252
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30858,
+        "capped_chars": 30858,
+        "raw_tokens": 7714,
+        "capped_tokens": 7714
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3538,
+        "capped_chars": 3538,
+        "raw_tokens": 884,
+        "capped_tokens": 884
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 29835,
+        "capped_chars": 8949,
+        "raw_tokens": 7459,
+        "capped_tokens": 2237
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88972,
+        "capped_chars": 68439,
+        "raw_tokens": 22243,
+        "capped_tokens": 17109
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 127693,
+  "started_at": "2026-08-06T03:27:57+00:00"
+}

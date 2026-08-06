@@ -22,7 +22,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from fintel.models.strategy import StrategyManifest, StrategyPaths
+from fintel.models.strategy import StrategyPaths
 
 LOCK_VERSION = 1
 

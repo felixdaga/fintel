@@ -1,0 +1,228 @@
+{
+  "cell": "AAPL",
+  "symbols": [
+    "AAPL"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 112931,
+    "tokens_out": 11378,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.103713758712,
+    "basis": "reported"
+  },
+  "views": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Apple presents a strong fundamental case anchored by accelerating earnings (+18.3% YoY EPS growth in Q1 FY2026, +17% revenue growth in Q2 FY2026), expanding margins (gross margin up to 48.2% in Q1, 49.3% in Q2 per CNBC), and exceptional cash generation ($53.92B OCF in Q1 alone). The franchise is durable: Services at 26%+ of revenue with 70%+ margins, an all-time-high installed base, and a capital-light AI strategy that preserves shareholder returns. The balance sheet is strengthening \u2014 debt down $6.3B YoY, equity up 32%. Valuation has compressed to 34.1x PE, in the lower third of its 30.2\u201343.1x 12-month range, while fundamentals are clearly improving \u2014 a favorable divergence. The Q2 FY2026 earnings beat (Apr 30) with 14\u201317% June-quarter guidance well above Street expectations, plus the $100B buyback authorization and abandonment of the net-cash-neutral target, constitute a credible near-term re-rating catalyst. Offsetting: oil at $108.64/bbl (+76% surge) threatens supply-chain costs and consumer demand; 10Y yields at 4.40% compress the equity risk premium; and regulatory risk to Services margins (70% probability per qualitative assessment) is material. The score of +0.35 reflects solid fundamentals and trajectory (pillar 1), fair-to-slightly-cheap valuation vs own history (pillar 2), and a modest catalyst boost from the Q2 beat and guidance raise (pillar 3), tempered by the hostile macro backdrop and regulatory overhang.",
+      "key_factors": [
+        "Q1 FY2026 revenue $143.76B (+15.7% YoY), EPS $2.84 (+18.3% YoY) \u2014 accelerating growth trajectory",
+        "Q2 FY2026 revenue $111.18B (+17% YoY), EPS $2.01, Services $30.98B (+16% YoY), gross margin 49.3% \u2014 double beat with strong forward guidance of 14-17% June-quarter growth vs ~9.5% Street expectation",
+        "Gross margin expanding: 48.2% in Q1 (up from 46.9% YoY), 49.3% in Q2 \u2014 structural mix improvement toward high-margin Services",
+        "Operating cash flow $53.92B in Q1 (+80.1% YoY), $28B+ in Q2 \u2014 exceptional cash generation enabling aggressive buybacks",
+        "Balance sheet deleveraging: total debt down from $94.80B to $88.50B, equity up from $66.76B to $88.19B (+32.1%)",
+        "PE at 34.12x in lower third of 30.2\u201343.1x range; multiple has compressed ~7 turns from Nov 2025 peak of ~41x while earnings accelerated",
+        "$100B additional buyback authorization + 4% dividend increase + abandonment of net-cash-neutral target \u2014 major capital allocation catalyst (Apr 30, 2026)",
+        "CEO transition: Tim Cook to Executive Chairman Sep 1, 2026; John Ternus (25-year veteran) as successor \u2014 managed, low-risk continuity",
+        "Macro headwinds: WTI oil $108.64/bbl (+76%), 10Y yield 4.40%, yield curve narrowing to 0.52% \u2014 risk to consumer demand and cost structure",
+        "Regulatory risk: 70% probability of adverse App Store policy changes; could reduce Services revenue 5-15%",
+        "China risk: Greater China 15.5% of revenue ($64.4B FY2025); Q2 up 28% to $20.5B but geopolitical exposure remains material"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-27 Q1",
+          "relevance": 1.0,
+          "excerpt": "revenue=143.76B, eps_diluted=2.84, net_income=42.10B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-27 Q1 vs 2024-12-28 Q1",
+          "relevance": 1.0,
+          "excerpt": "YoY revenue=+15.7%, eps_diluted=+18.3%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-27 Q1",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=53.92B (YoY +80.1% vs 29.93B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-27 Q1",
+          "relevance": 1.0,
+          "excerpt": "gross_margin=48.2% (69.23B/143.76B), up from 46.9% YoY"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-27",
+          "relevance": 1.0,
+          "excerpt": "total_debt=88.50B (down from 94.80B at 2024-12-28), total_equity=88.19B (up from 66.76B)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=34.12x (range 30.2\u201343.1x, lower third)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.27, roe=1.335, p_b=45.57"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=108.64 (\u0394+76.4% from ~61.6), DGS10=4.40"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga (2026-04-30)",
+          "relevance": 1.0,
+          "excerpt": "Apple delivered a strong fiscal Q2 earnings beat with $111.18B in revenue (up 17% YoY) and $2.01 EPS, exceeding expectations. The company guided for June-quarter revenue growth of 14-17%, well ahead of Street expectations of ~9%."
+        },
+        {
+          "source_type": "news",
+          "source_id": "CNBC (2026-04-30)",
+          "relevance": 1.0,
+          "excerpt": "Services revenue in the quarter rose about 16% from $26.65 billion a year ago... Gross margin has been steadily moving up in recent years, reaching 49.3% in the latest quarter."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "The Motley Fool (2026-04-30)",
+          "relevance": 1.0,
+          "excerpt": "We are no longer providing net cash neutral as a formal target... our Board has authorized an additional $100 billion for share repurchases, and we are also raising our dividend by 4% to $0.27 per share."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "deepresearchglobal.com (2026)",
+          "relevance": 1.0,
+          "excerpt": "Regulatory and Antitrust Pressure (Probability: 70%)... Forced changes to App Store policies could reduce Services revenue by 5-15%. China Geopolitical Risk (Probability: 60%)... Greater China represents 15.5% of revenue ($64.4B in FY2025)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "markets.financialcontent.com (2026)",
+          "relevance": 1.0,
+          "excerpt": "Services: Comprising the App Store, Apple Pay, iCloud+, and the newly launched Apple Intelligence+, this segment now accounts for over 26% of total revenue. It boasts margins significantly higher (70%+) than the hardware business (35-40%)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Counterpointresearch.com (2026-04-13)",
+          "relevance": 1.0,
+          "excerpt": "North America's foldable smartphone market is expected to grow 48% YoY in 2026, with Apple set to capture a 46% share."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AAPL",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3891,
+        "capped_chars": 3891,
+        "raw_tokens": 973,
+        "capped_tokens": 973
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231020,
+        "capped_chars": 231020,
+        "raw_tokens": 57755,
+        "capped_tokens": 57755
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30858,
+        "capped_chars": 30858,
+        "raw_tokens": 7714,
+        "capped_tokens": 7714
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4293,
+        "capped_chars": 4293,
+        "raw_tokens": 1073,
+        "capped_tokens": 1073
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 229008,
+        "capped_chars": 49357,
+        "raw_tokens": 57252,
+        "capped_tokens": 12339
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 110610,
+        "capped_chars": 86704,
+        "raw_tokens": 27652,
+        "capped_tokens": 21677
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 170995,
+  "started_at": "2026-08-06T02:31:10+00:00"
+}

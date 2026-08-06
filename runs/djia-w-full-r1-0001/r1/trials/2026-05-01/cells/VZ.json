@@ -1,0 +1,227 @@
+{
+  "cell": "VZ",
+  "symbols": [
+    "VZ"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 73904,
+    "tokens_out": 10673,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0732112164,
+    "basis": "reported"
+  },
+  "views": {
+    "VZ": {
+      "symbol": "VZ",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "VZ is a stable, cash-generative telecom with genuine Q1 2026 turnaround signals (first positive postpaid phone net adds since 2013, record EBITDA, raised EPS guidance to $4.95\u2013$4.99, initiated buybacks). However, the stock has already re-rated +20.6% in one quarter on modest fundamental improvement, pushing P/E to 19.8x (73rd percentile of 1-year range) with only a ~70 bps equity risk premium over 10Y Treasuries. The business faces structural headwinds: 2\u20133% revenue growth ceiling in a saturated market, 2.67x D/E leverage exposed to rising rates (10Y at 4.40%, corporate bonds at 6.1%), oil at $108.64/bbl creating unquantified but real energy cost pressure, and consumer division leadership uncertainty. The quant report's 'Unattractive' verdict is based on trailing data through Q2 2025, but the qual report's Q1 2026 data actually confirms the same pattern: the stock has moved far ahead of fundamentals. A mean reversion in P/E to ~17.5x implies ~12% downside. The turnaround is real but priced in; the risk/reward skews unfavorably at current levels.",
+      "key_factors": [
+        "P/E at 19.8x (73rd percentile of 1-year range) after +20.6% price advance on only +3% revenue growth \u2014 classic multiple expansion",
+        "Equity risk premium of ~70 bps over 10Y Treasury (4.40%) is historically thin for a 2.67x D/E telecom",
+        "Q1 2026: revenue $34.4B up 2.9% YoY, adjusted EPS $1.28 beat, record EBITDA $13.4B, raised FY EPS guidance to $4.95\u2013$4.99",
+        "First positive postpaid phone net additions (55K) since 2013; consumer postpaid phone churn below 85 bps in March",
+        "FCF guidance of $21.5B+ and 20-year dividend growth streak (~6% yield) support cash-flow thesis but do not justify the multiple",
+        "Oil at $108.64/bbl (+76% over lookback) is a forward margin headwind not yet reflected in trailing operating margins of ~23.7%",
+        "Rising corporate bond yields (Moody's Baa at 6.1%) increase refinancing cost for 2.67x leveraged balance sheet",
+        "Consumer division leadership search introduces execution uncertainty in the core 77% revenue segment",
+        "Revenue growth ceiling of 2\u20133% for mobility/broadband; wireless service revenue guided flat \u2014 structural saturation",
+        "$5B OpEx savings program and 13,000 headcount reduction support near-term EPS growth but are finite and execution-dependent"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=34.50B, operating_income=8.17B, net_income=5.12B, eps_diluted=1.18"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=33.48B, eps_diluted=1.15"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30 QoQ",
+          "relevance": 1.0,
+          "excerpt": "revenue=+3.0%, eps_diluted=+2.6%, operating_cash_flow=+15.3%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30",
+          "relevance": 1.0,
+          "excerpt": "total_liabilities=278.92B, total_equity=104.36B (D/E\u22482.67x)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=19.775x, earnings_yield=0.051, p_b=2.078x"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-01-22",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=16.254x (trough in 365d window)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "close=48.03, quarterly_delta=+20.6%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.40%, DCOILWTICO=108.64 ($/bbl), DBAA=6.10%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.verizon.com",
+          "relevance": 1.0,
+          "excerpt": "Total operating revenue was $34.4 billion, up 2.9 percent year-over-year\u2026 total postpaid phone net additions of 55,000, the first time the company generated positive first-quarter total postpaid phone net additions since 2013"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "relevance": 1.0,
+          "excerpt": "Adjusted EPS of $1.28 beating estimates\u2026 raised full-year EPS guidance to $4.95-$4.99\u2026 record quarterly adjusted EBITDA of $13.4 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.insidermonkey.com",
+          "relevance": 1.0,
+          "excerpt": "We are on track to deliver our full year free cash flow guidance of $21.5 billion or more"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "relevance": 1.0,
+          "excerpt": "The Frontier acquisition increased the net unsecured debt to adjusted EBITDA ratio to 2.6x, though management has already repaid approximately half of the acquired debt\u2026 $1.1 billion in severance payments during the quarter, reflecting a leaner workforce of 13,000 fewer employees"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-29 (Motley Fool)",
+          "relevance": 1.0,
+          "excerpt": "Verizon offers a higher 6% yield, consistently grows its dividend (up 2.5% in 2026), and trades at a lower valuation multiple"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.fierce-network.com",
+          "relevance": 1.0,
+          "excerpt": "Verizon's in turn-around mode\u2026 Under new CEO Dan Schulman, the company is undergoing massive changes\u2026 it needs to do better at the 'basic stuff'"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "VZ",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 2216,
+        "capped_chars": 2216,
+        "raw_tokens": 554,
+        "capped_tokens": 554
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 244914,
+        "capped_chars": 244914,
+        "raw_tokens": 61228,
+        "capped_tokens": 61228
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30858,
+        "capped_chars": 30858,
+        "raw_tokens": 7714,
+        "capped_tokens": 7714
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2163,
+        "capped_chars": 2163,
+        "raw_tokens": 541,
+        "capped_tokens": 541
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 35132,
+        "capped_chars": 8677,
+        "raw_tokens": 8783,
+        "capped_tokens": 2169
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 120424,
+        "capped_chars": 97540,
+        "raw_tokens": 30106,
+        "capped_tokens": 24386
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 159641,
+  "started_at": "2026-08-06T02:31:51+00:00"
+}

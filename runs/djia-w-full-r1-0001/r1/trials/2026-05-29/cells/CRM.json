@@ -1,0 +1,237 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 92132,
+    "tokens_out": 16048,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.09298273139999999,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "CRM presents a compelling earnings-improvement-at-compressed-valuation setup. Revenue grew 13.3% YoY to $11.13B, EPS surged 52.2% to $2.42, and net margin expanded from 12.7% to 18.7% \u2014 all backed by $6.7B operating cash flow confirming cash-real earnings. The PE at 19.1x sits at the floor of its 1-year range (19.1\u201357.6x), with earnings yield of 5.2% exceeding the 10Y Treasury at 4.45%. The franchise is durable: 20%+ global CRM market share, 150K+ customers, 90%+ recurring revenue, and Agentforce ARR crossing $1.2B (up 205% YoY) signals a credible AI pivot. Aggressive capital returns ($25B ASR reducing share count ~10%) further support per-share value. However, the balance sheet has undergone a dramatic structural shift \u2014 debt surged from $8.44B to $39.28B (D/E from 0.14x to 1.15x), equity halved from $61.33B to $34.23B, and P/B sits at the ceiling of its range (4.48x). In a rising-rate environment (10Y at 4.45%, Baa at 6.02%), this leverage introduces meaningful refinancing and interest burden risk. Guidance was slightly soft (Q2 revenue below consensus, RPO missed by ~$700M), and management is banking on a second-half reacceleration. Tableau and Marketing/Commerce softness are real headwinds. Agentforce remains sub-5% of total revenue, so the AI transition is early. The score reflects strong Pillar 1 fundamentals (earnings acceleration, margin expansion, cash generation) and clearly attractive Pillar 2 valuation vs own history, tempered by the balance-sheet risk that caps the upside and the lack of a clear near-term catalyst beyond the earnings beat that has already been delivered. The stock's 30%+ YTD decline and three consecutive quarterly drops suggest the market is pricing in risk before proof \u2014 creating opportunity if execution continues, but the leverage makes this a qualified rather than high-conviction call.",
+      "key_factors": [
+        "Revenue Q1 FY27: $11.13B, +13.3% YoY from $9.83B \u2014 accelerating growth with two consecutive quarters of solid sequential gains",
+        "EPS diluted Q1 FY27: $2.42, +52.2% YoY from $1.59 \u2014 earnings growth materially outpacing revenue",
+        "Net margin expanded from 12.7% (prior regime) to 18.7% as of 2026-05-28; non-GAAP operating margin hit record 34.8%",
+        "Operating cash flow Q1 FY27: $6.70B, well exceeding net income of $2.11B \u2014 earnings are cash-backed",
+        "PE diluted at 19.1x \u2014 floor of 365-day range (19.1\u201357.6x), down from 56.0x one year prior; earnings yield 5.2% exceeds 10Y Treasury 4.45%",
+        "Total debt surged from $8.44B (Q2 2025) to $39.28B (Q1 2026); D/E from 0.14x to 1.15x \u2014 fundamental change in financial risk profile",
+        "Total equity compressed from $61.33B to $34.23B; P/B at 4.48x (top of 365-day range) reflects thinner asset backing",
+        "Agentforce ARR surpassed $1.2B, up 205% YoY; combined Agentforce + Data 360 ARR ~$3.4B \u2014 fastest-growing product ramp in company history",
+        "Agentforce still less than 5% of total sales \u2014 AI transition is early and not yet material to the revenue base",
+        "Q2 revenue guidance $11.27\u2013$11.35B slightly below $11.36B consensus; RPO of $67.9B missed $68.61B consensus",
+        "Tableau bookings/renewals worsening and marketing/commerce weakness flagged by management",
+        "$25B accelerated share repurchase in Q1 FY27 reduced diluted share count ~10% YoY; dividend raised to $0.44/share",
+        "Stock down 30%+ YTD and ~28% from 365-day high of $276.80; three consecutive quarterly declines",
+        "10Y Treasury yield at 4.45%, Baa corporate bonds at 6.02% \u2014 rising rates increase cost of servicing $39.28B debt stack"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1",
+          "relevance": 1.0,
+          "excerpt": "revenue=11.13B, eps_diluted=2.42, net_income=2.11B, operating_income=2.35B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "YoY Q1 2026 vs Q1 2025",
+          "relevance": 1.0,
+          "excerpt": "revenue=+13.3%, eps_diluted=+52.2%, net_income=+36.7%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 balance sheet",
+          "relevance": 1.0,
+          "excerpt": "total_debt=39.28B, total_equity=34.23B, debt_to_equity=1.147x"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-07-31 balance sheet",
+          "relevance": 1.0,
+          "excerpt": "total_debt=8.44B, total_equity=61.33B (prior regime)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 cash flow",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=6.70B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=19.126 (365d range: 19.1..57.6), earnings_yield=0.052, net_margin=0.187, p_b=4.482"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-29",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=55.983, net_margin=0.127, roe=0.079 (prior regime baseline)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.45%, DBAA=6.02% (debt service cost context for 39.28B leverage)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.salesforce.com",
+          "relevance": 1.0,
+          "excerpt": "Agentforce and Data 360 annual recurring revenue reaches nearly $3.4 billion, up over 200% Y/Y, including $1.2 billion Agentforce ARR, up 205% Y/Y"
+        },
+        {
+          "source_type": "news",
+          "source_id": "cnbc.com",
+          "relevance": 1.0,
+          "excerpt": "Revenue: $11.13 billion vs. $11.05 billion expected\u2026EPS: $3.88 adjusted vs. $3.12 expected"
+        },
+        {
+          "source_type": "news",
+          "source_id": "cnbc.com",
+          "relevance": 1.0,
+          "excerpt": "RPO\u2026stood at $67.9 billion\u2026consensus among analysts polled by StreetAccount was $68.61 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "cnbc.com",
+          "relevance": 1.0,
+          "excerpt": "Guidance factors in continuing challenges in marketing and commerce, worsening performance in Tableau bookings and renewals, and higher license revenue volatility following\u2026Informatica"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga",
+          "relevance": 1.0,
+          "excerpt": "Agentforce still represents less than 5% of total sales\u2026stock declined after the company provided Q2 revenue guidance of $11.27-$11.35 billion, slightly below analyst expectations"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradersunion.com",
+          "relevance": 1.0,
+          "excerpt": "Salesforce\u2026approving a $25 billion share buyback and raising the dividend to $0.44 per share"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "relevance": 1.0,
+          "excerpt": "AI tools\u2026could enable companies to achieve more with fewer resources, potentially impacting Salesforce's per-seat licensing model"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3822,
+        "capped_chars": 3822,
+        "raw_tokens": 956,
+        "capped_tokens": 956
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 253448,
+        "capped_chars": 253448,
+        "raw_tokens": 63362,
+        "capped_tokens": 63362
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30916,
+        "capped_chars": 30916,
+        "raw_tokens": 7729,
+        "capped_tokens": 7729
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2181,
+        "capped_chars": 2181,
+        "raw_tokens": 545,
+        "capped_tokens": 545
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 43839,
+        "capped_chars": 10407,
+        "raw_tokens": 10960,
+        "capped_tokens": 2602
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 109712,
+        "capped_chars": 85022,
+        "raw_tokens": 27428,
+        "capped_tokens": 21256
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 244624,
+  "started_at": "2026-08-06T02:41:59+00:00"
+}

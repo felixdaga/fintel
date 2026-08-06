@@ -1,0 +1,215 @@
+{
+  "cell": "WMT",
+  "symbols": [
+    "WMT"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 75957,
+    "tokens_out": 11338,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.074976811632,
+    "basis": "reported"
+  },
+  "views": {
+    "WMT": {
+      "symbol": "WMT",
+      "score": 0.15,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Walmart is a wide-moat franchise with durable competitive advantages (31% online grocery share, 15 consecutive quarters of 10%+ e-commerce growth, 46% advertising growth to $6.4B). Revenue grew +7.3% YoY and EPS +19.6% YoY in Q1 FY2026, with stable gross margins (~25.1%) and improving ROE (21.6% to 23%). However, the near-term picture is mixed: operating cash flow declined -12.4% YoY and -47.9% QoQ despite rising net income, creating an earnings-quality concern. Quarterly EPS is non-monotonic ($0.56\u2192$0.88\u2192$0.77\u2192$0.67), with Q1 FY2026 the weakest of the last three quarters. Valuation has compressed to 38.7x PE (floor of 365-day range 37.6-55.4x), which is cheap vs own history but still demanding in absolute terms given a 2.6% earnings yield vs 4.49% 10Y Treasury. The Cleveland Research note flagging slowing U.S. comps and the ~20% decline from May highs reflect repricing of near-term execution risk. The oil collapse (-39%) is a genuine margin tailwind. Net: strong franchise, fair-to-slightly-cheap vs own history, but deteriorating cash conversion and still-elevated absolute multiple cap the score. A modest positive tilt reflects the structural quality and valuation floor, with the August earnings report as a potential re-rating event if cash flow normalizes.",
+      "key_factors": [
+        "Q1 FY2026 revenue $177.75B (+7.3% YoY) and EPS $0.67 (+19.6% YoY) \u2014 solid top/bottom line growth",
+        "Operating cash flow deteriorated: $4.74B in Q1 FY2026, -12.4% YoY and -47.9% QoQ, while net income grew \u2014 earnings quality red flag",
+        "Gross margin stable at 25.1% (Q1 FY2026) vs 24.9% (Q1 FY2025); operating margin slightly compressed 4.21% vs 4.30%",
+        "ROE improved to 23% from 21.6% mid-2025; net margin expanded to 3.2% from 2.8%",
+        "PE compressed to 38.7x (floor of 365-day range 37.6-55.4x) \u2014 cheap vs own history but 2.6% earnings yield vs 4.49% 10Y yield remains demanding",
+        "Wide moat: 31% online grocery share, 15 consecutive quarters of 10%+ e-commerce growth, advertising business grew 46% to ~$6.4B",
+        "Cleveland Research note (2026-07-01) flagged slowing U.S. comps; stock fell 4.5-5% on the day, ~20% off May highs",
+        "WTI crude oil collapsed -39% from $114.58 to $69.73 \u2014 genuine margin tailwind for logistics-intensive retailer",
+        "Next earnings August 20, 2026 with consensus EPS $0.74 (+8.3% YoY) \u2014 potential re-rating catalyst if cash flow normalizes",
+        "DCF intrinsic value ~$99/share (simplywall.st) vs current ~$112 \u2014 suggests limited upside from fundamental perspective"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1",
+          "relevance": 1.0,
+          "excerpt": "revenue=177.75B, net_income=5.49B, eps_diluted=0.67, operating_cash_flow=4.74B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "Q1 YoY",
+          "relevance": 1.0,
+          "excerpt": "revenue=+7.3%, eps_diluted=+19.6%, operating_cash_flow=-12.4%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "Q1 QoQ",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=-13.0%, operating_cash_flow=-47.9%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "margin trajectory",
+          "relevance": 1.0,
+          "excerpt": "gross_margin\u224825.1%, operating_margin=4.21% (Q1 FY2026) vs 4.30% (Q1 FY2025)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=38.692 (range 37.6..55.4), p_b=8.885 (range 8.4..12.0), earnings_yield=0.026"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.032, roe=0.23 (improved from 0.028/0.216 in mid-2025)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.49%, DCOILWTICO=69.73 (\u221239% from April)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "grabon.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Walmart's global e-commerce revenue exceeded $150 billion for the first time, growing 24% year-over-year... 15th consecutive quarter of at least 10% year-over-year growth... Walmart's global advertising business grew 46% to nearly $6.4 billion in FY2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "morningstar.com (structural/competitive)",
+          "relevance": 1.0,
+          "excerpt": "Walmart's leading 31% online grocery share and 20% digital penetration underscore the effective conversion of its store scale into digital traction"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-01, The Motley Fool",
+          "relevance": 1.0,
+          "excerpt": "Walmart shares fell 4.5% after Cleveland Research issued a negative note citing slower same-store sales and concerns about the company lowering prices to clear excess inventory... 38x earnings valuation leaves little margin for safety"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st (update, 2026-07-02)",
+          "relevance": 1.0,
+          "excerpt": "Discounted Cash Flow (DCF) intrinsic value estimate indicating the shares trade at a premium... estimated intrinsic value of about $98.74 per share... Walmart currently trades at about 38.1x earnings, well above the Consumer Retailing industry average of 18.5x"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-04 (updates)",
+          "relevance": 1.0,
+          "excerpt": "Walmart Finalizes Purchase of TV Ad Platform Vibe.co"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "WMT",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4568,
+        "capped_chars": 4568,
+        "raw_tokens": 1142,
+        "capped_tokens": 1142
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242302,
+        "capped_chars": 242302,
+        "raw_tokens": 60576,
+        "capped_tokens": 60576
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30321,
+        "capped_chars": 30321,
+        "raw_tokens": 7580,
+        "capped_tokens": 7580
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3301,
+        "capped_chars": 3301,
+        "raw_tokens": 825,
+        "capped_tokens": 825
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 51745,
+        "capped_chars": 12167,
+        "raw_tokens": 12936,
+        "capped_tokens": 3042
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 86700,
+        "capped_chars": 61219,
+        "raw_tokens": 21675,
+        "capped_tokens": 15305
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 157384,
+  "started_at": "2026-08-06T02:56:39+00:00"
+}

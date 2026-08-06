@@ -1,0 +1,223 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 75905,
+    "tokens_out": 11584,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.07574835640000001,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "CVX presents an extremely unfavorable fundamental-attractiveness profile with all three pillars aligned negatively. Pillar 1 (fundamentals): Earnings are in sharp decline \u2014 Q1 2026 GAAP diluted EPS of $1.11 is down -44.5% YoY from $2.00, operating cash flow collapsed -51.6% YoY to $2.51B, and net margin compressed from 7.4% to 4.7%. The balance sheet expanded ~28.5% in total assets (likely Hess acquisition) but ROE has fallen from 10.5% to 5.9%, meaning the larger capital base is not generating proportional returns. The non-contiguous quarterly EPS sequence ($2.00\u2192$1.45\u2192$1.82\u2192$1.11) with Q4 2025 missing still shows Q1 2026 as a clear trough, and the cash flow deterioration is unambiguous. Pillar 2 (valuation): The stock trades at 30.4x trailing P/E (near the top of its 16.0\u201334.8x 1-year range) precisely when fundamentals are at their worst. The 3.3% earnings yield falls below the 10-year Treasury yield of 4.40%, meaning investors are being paid less than risk-free to hold commodity-exposed equity. The forward P/E of 11.9x cited by Motley Fool implies consensus expects a massive earnings recovery to ~$14.50 EPS, which requires a WTI recovery from $72.67 back toward $90\u2013$100+ \u2014 a speculative bet on oil, not a fundamental discount. Pillar 3 (near-term catalyst): The dominant near-term catalyst is the Hess/Guyana arbitration with ExxonMobil/CNOOC, which is binary and could 'neutralize Chevron's primary growth engine' if lost. WTI crude has declined -30.6% in under three months (from $104.69 to $72.67) with no clear floor, and the U.S.-Iran peace agreement on June 15 adds further supply-side pressure. Project Kilby (AI data center power, mid-teen IRR, 20-year PPA) is strategically interesting but too small relative to the overall franchise to offset the macro headwinds. The combination of deteriorating earnings, collapsing cash flows, stretched trailing valuation, hostile commodity environment, and binary acquisition risk creates a deeply unfavorable setup.",
+      "key_factors": [
+        "Q1 2026 GAAP diluted EPS of $1.11, down -44.5% YoY from $2.00 (SEC filing 2026-05-07)",
+        "Q1 2026 operating cash flow of $2.51B, down -51.6% YoY from $5.19B and -73.2% QoQ from Q3 2025's $9.38B",
+        "Q1 2026 net margin compressed to 4.7% from 7.4% in Q1 2025; operating margin fell from ~11.7% to ~8.1%",
+        "ROE declined to 5.9% (annualized) from 10.5% a year ago despite 28.5% growth in total assets to $329.55B",
+        "Trailing P/E of 30.4x on 2026-06-25, near the top of the 16.0\u201334.8x 1-year range, while earnings are at a trough",
+        "Earnings yield of 3.3% falls below the 10-year Treasury yield of 4.40%, creating a negative equity risk premium",
+        "WTI crude declined -30.6% from $104.69/bbl (2026-03-30) to $72.67/bbl (2026-06-25), the primary driver of earnings deterioration",
+        "Forward P/E of 11.9x (Motley Fool) implies consensus expects ~$14.50 EPS recovery, requiring WTI to return to $90\u2013$100+ \u2014 speculative",
+        "Hess acquisition arbitration with ExxonMobil/CNOOC is unresolved; losing could 'neutralize Chevron's primary growth engine'",
+        "Total liabilities nearly doubled from $106.32B to $140.18B YoY, raising fixed charges during commodity downturn",
+        "Dividend not well covered by earnings or free cash flow per analyst assessment; 4.1% yield at risk if oil stays depressed",
+        "Project Kilby ($7B, mid-teen IRR, 20-year PPA with Microsoft) is strategically interesting but too small to offset macro headwinds"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=1.11 (YoY -44.5% from 2.00)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=2.51B (YoY -51.6% from 5.19B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "net_margin=4.7% (vs 7.4% Q1 2025)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "operating_income=3.95B (vs 5.58B Q1 2025, -29.2%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "total_liabilities=140.18B (vs 106.32B Q1 2025)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=30.361x (range 16.0\u201334.8x; 1yr low 16.1x)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "relevance": 1.0,
+          "excerpt": "roe=0.059 (vs 0.105 in Jun 2025)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-25",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=72.67 (vs 104.69 on 2026-03-30, -30.6%)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-25",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.40% vs earnings_yield=3.3% (negative equity risk premium)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-25",
+          "relevance": 1.0,
+          "excerpt": "Chevron stock has outperformed the S&P 500, surging 14.5% in 2026 while maintaining a 4.1% dividend yield... trading at 11.9x forward earnings"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "relevance": 1.0,
+          "excerpt": "The proposed acquisition of Hess Corporation is stalled by an arbitration claim from Exxon Mobil and CNOOC regarding a right of first refusal on key Guyana assets, which could neutralize Chevron's primary growth engine if the arbitration is lost."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-24",
+          "relevance": 1.0,
+          "excerpt": "The $7 billion project targets mid-teen IRR and represents a strategic shift for traditional energy producers to capitalize on AI infrastructure demand."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "The U.S. strategic energy reserve is at its lowest level since 1983, and global reserves also need replenishment before supply-demand balance is restored."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225241,
+        "capped_chars": 225241,
+        "raw_tokens": 56310,
+        "capped_tokens": 56310
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30557,
+        "capped_chars": 30557,
+        "raw_tokens": 7639,
+        "capped_tokens": 7639
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3336,
+        "capped_chars": 3336,
+        "raw_tokens": 834,
+        "capped_tokens": 834
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 28313,
+        "capped_chars": 6672,
+        "raw_tokens": 7078,
+        "capped_tokens": 1668
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108146,
+        "capped_chars": 86336,
+        "raw_tokens": 27037,
+        "capped_tokens": 21585
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 138736,
+  "started_at": "2026-08-06T02:52:11+00:00"
+}

@@ -1,0 +1,216 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 80835,
+    "tokens_out": 11721,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0794394464,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "JNJ is extremely unattractive on all three pillars. Pillar 1 (fundamentals): The company is priced at peak multiples while normalized earnings are deteriorating. Q4 operating margin compressed to 24.9% from 31.2% in Q3, operating cash flow collapsed 72.6% QoQ to $2.51B, and sequential revenue growth has decelerated to +0.3%. The Q1 2025 EPS outlier ($4.54 vs ~$2.14-2.29 in subsequent quarters) inflates TTM metrics; normalized annual EPS is ~$8.56-8.72, not the reported figure. Stelara biosimilar erosion (-41.3% in FY2025) remains a material headwind not yet fully offset. Pillar 2 (valuation): PE of 26.93x sits at the absolute ceiling of the 12-month range (16.6-26.9x), representing a 59% re-rating from 16.96x one year ago \u2014 this occurred while margins and ROE (0.317\u21920.259) are declining, not expanding. P/B of 6.98x is near its ceiling. The 3.7% earnings yield sits 87bps below the 10Y Treasury yield of 4.57%, inverting the historical defensive-valuation relationship. Mean reversion in the PE from 26.9x to the 12-month median of ~19.7x implies ~27% downside absent earnings growth. Pillar 3 (catalyst): The Q1 2025 one-time gain will roll out of the TTM window in the next filing, mechanically inflating reported PE further if price holds \u2014 this is a near-term de-rating catalyst, not a positive one. The VIX decline to 16.76 suggests the defensive bid is fading. All three pillars align to the downside.",
+      "key_factors": [
+        "Q4 operating margin compressed to 24.9% from 31.2% in Q3 (operating income $5.99B vs $7.49B on similar revenue)",
+        "Q4 operating cash flow collapsed 72.6% QoQ to $2.51B from Q3's $9.17B",
+        "Sequential revenue growth decelerated sharply: Q1\u2192Q2 +8.5%, Q2\u2192Q3 +1.1%, Q3\u2192Q4 +0.3%",
+        "Q1 2025 EPS of $4.54 is an outlier (likely one-time gain); normalized quarterly EPS ~$2.14-2.29, annualized ~$8.56",
+        "PE of 26.93x at 12-month ceiling (range 16.6-26.9x), up 59% from 16.96x one year ago \u2014 while margins and ROE are declining",
+        "P/B of 6.98x near ceiling of 4.6-7.6 range; ROE fell from 0.317 to 0.259; net margin fell from 0.273 to 0.218",
+        "Earnings yield of 3.7% sits 87bps below 10Y Treasury yield of 4.57% \u2014 inverting defensive valuation relationship",
+        "Stelara revenue fell 41.3% to $6.08B in FY2025 due to US biosimilar launches; drag persists through 2026-2027",
+        "Q1 2025 one-time gain rolling out of TTM window will mechanically inflate reported PE further",
+        "VIX fell to 16.76 (down 20.2% over 90 days), suggesting defensive bid fading; 10Y yield up 54bps to 4.57%",
+        "Morningstar fair value estimate of $190 vs current price of $231.73 \u2014 stock trades at ~22% premium to fair value"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29 Q4",
+          "relevance": 1.0,
+          "excerpt": "revenue=24.06B, eps_diluted=2.14, operating_income=5.99B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-28 Q3",
+          "relevance": 1.0,
+          "excerpt": "operating_margin implied=31.2% (7.49B/23.99B) vs Q4=24.9%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29 Q4",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=2.51B (QoQ -72.6% from Q3 9.17B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-30 Q1",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=4.54, operating_income=13.63B \u2014 outlier likely one-time gain"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=26.931 (12mo range 16.6\u201326.9, at ceiling)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "p_b=6.979 (12mo range 4.6\u20137.6, near ceiling), net_margin=0.218, roe=0.259"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-22",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=16.96 \u2014 +59% re-rating in 12 months"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.57% vs earnings_yield=0.037 (3.7%) \u2014 risk-free yield exceeds earnings yield"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "daveahern.substack.com",
+          "relevance": 1.0,
+          "excerpt": "Stelara (ustekinumab) at $6.08 billion (down 41.3% as US biosimilars launched in January 2025)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.morningstar.com",
+          "relevance": 1.0,
+          "excerpt": "Our $190 fair value estimate reflects our increased confidence in the launch of new products like Inlexzo ($3 billion peak) and Icotyde ($7 billion peak)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "roboforex.com",
+          "relevance": 1.0,
+          "excerpt": "The company forecasts 2026 revenue of approximately 100.5 billion USD, representing a 5.7\u20136.7% increase from 2025, with adjusted EPS expected to be around 11.53 USD"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "strategy.transforml.co",
+          "relevance": 1.0,
+          "excerpt": "J&J is fighting a multi-front war: it must offset the massive revenue erosion from the STELARA patent cliff\u2026 while simultaneously facing direct biosimilar competition from firms like Amgen. Furthermore, J&J must navigate significant IRA pricing pressures on other blockbusters like XARELTO and manage the persistent reputational and financial risk of talc litigation."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4593,
+        "capped_chars": 4593,
+        "raw_tokens": 1148,
+        "capped_tokens": 1148
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223566,
+        "capped_chars": 223566,
+        "raw_tokens": 55892,
+        "capped_tokens": 55892
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31263,
+        "capped_chars": 31263,
+        "raw_tokens": 7816,
+        "capped_tokens": 7816
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2628,
+        "capped_chars": 2628,
+        "raw_tokens": 657,
+        "capped_tokens": 657
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 36495,
+        "capped_chars": 9012,
+        "raw_tokens": 9124,
+        "capped_tokens": 2253
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108918,
+        "capped_chars": 89733,
+        "raw_tokens": 27229,
+        "capped_tokens": 22434
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 161961,
+  "started_at": "2026-08-06T02:39:48+00:00"
+}

@@ -1,0 +1,215 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 79362,
+    "tokens_out": 10931,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.07872224382399999,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Home Depot presents a deteriorating fundamental picture with accelerating margin compression, extreme balance-sheet leverage, and a valuation that offers zero equity risk premium over Treasuries. The stock is cheaper than it was, but it is cheaper because earnings are declining \u2014 not because the market has mispriced stable earnings power. Without evidence of margin stabilization or a clear earnings inflection, the quantitative case for fundamental attractiveness is weak. The strong OCF is the best counterargument, but it must be weighed against the structural leverage risk in a rising-rate environment.",
+      "key_factors": [
+        "EPS diluted fell to $3.30 from $3.45 YoY (-4.3%) and from $3.62 QoQ (-8.8%) \u2014 revenue growth not translating to earnings",
+        "Gross margin compressed to 33.0% from 33.8% YoY; operating margin dropped to 11.9% from 12.9% \u2014 accelerating margin erosion",
+        "Operating cash flow surged to $6.03B (+39.5% YoY) \u2014 strongest fundamental element, but insufficient to offset leverage risk",
+        "Total liabilities of $94.03B against equity of $13.87B yields D/E of 6.78x \u2014 extreme leverage leaves minimal room for earnings downturn",
+        "PE diluted of 23.7x sits below 365-day midpoint of 24.6x but earnings yield of 4.2% is below 10-year Treasury yield of 4.68% \u2014 zero equity risk premium",
+        "DIY customer retrenching on big-ticket projects amid housing affordability pressure; management stated 'larger discretionary projects remain under pressure'",
+        "Tariff headwinds (10-12.5% across 86 countries) increase cost exposure for HD's imported merchandise assortment",
+        "Q2 earnings due August 18 with consensus EPS of $4.71, marginally above $4.68 year-ago \u2014 little room for disappointment",
+        "Organizational realignment (2026-07-30) created Office of Pro Acceleration \u2014 proactive but unproven near-term catalyst",
+        "WTI crude oil fell from ~$110 to ~$85 (-22%) \u2014 potential logistics/input cost relief with a lag"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=3.30 (YoY from 3.45 = -4.3%; QoQ from 3.62 = -8.8%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=6.03B (YoY from 4.33B = +39.5%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03",
+          "relevance": 1.0,
+          "excerpt": "gross_margin=33.0% (vs 33.8% Q1 FY2025, 33.4% Q3 FY2025)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03",
+          "relevance": 1.0,
+          "excerpt": "total_liabilities=94.03B total_equity=13.87B (D/E=6.78x)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03",
+          "relevance": 1.0,
+          "excerpt": "operating_margin=11.9% (vs 12.9% prior two quarters)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=23.695x (365d range 20.3..28.8; earnings_yield=0.042)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.68% (above HD earnings_yield of 4.2%; zero equity risk premium)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=85.15 (down from 109.76 on 2026-05-04; -22% potential cost relief)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ir.homedepot.com (2026-07-30)",
+          "relevance": 1.0,
+          "excerpt": "announced leadership portfolio changes to accelerate innovation and capture greater share of a large and fragmented total addressable market worth $1.2 trillion... The Pro customer represents an approximately $700 billion total addressable market opportunity"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com / finance.yahoo.com",
+          "relevance": 1.0,
+          "excerpt": "larger discretionary projects remain under pressure... housing affordability pressure... The Pro segment outperformed DIY... increases cyclicality and risk exposure"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st (2026-07-29)",
+          "relevance": 1.0,
+          "excerpt": "President Trump's latest round of broad import tariffs, covering 86 countries and set at 10% or 12.5%... Home Depot because its large import exposure sits directly in the firing line"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart.com (2026-07-24)",
+          "relevance": 1.0,
+          "excerpt": "HD is set to report its Q2 earnings on Tuesday, August 18, 2026... analysts expect the company to report diluted EPS of $4.71, up marginally from $4.68"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3778,
+        "capped_chars": 3778,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224648,
+        "capped_chars": 224648,
+        "raw_tokens": 56162,
+        "capped_tokens": 56162
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30602,
+        "capped_chars": 30602,
+        "raw_tokens": 7650,
+        "capped_tokens": 7650
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1748,
+        "capped_chars": 1748,
+        "raw_tokens": 437,
+        "capped_tokens": 437
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 8124,
+        "capped_chars": 1461,
+        "raw_tokens": 2031,
+        "capped_tokens": 365
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 114207,
+        "capped_chars": 84861,
+        "raw_tokens": 28552,
+        "capped_tokens": 21215
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 141658,
+  "started_at": "2026-08-06T03:04:46+00:00"
+}

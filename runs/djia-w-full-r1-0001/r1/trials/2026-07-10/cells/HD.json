@@ -1,0 +1,213 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 67410,
+    "tokens_out": 11204,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.069966720872,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "HD presents a deteriorating fundamental picture with margin compression across all P&L levels, declining earnings despite revenue growth, and a valuation that does not compensate for the risks. The stock is trading at a P/E of 24.08x with an earnings yield of 4.2% below the 10-year Treasury yield of 4.54%, offering no valuation cushion for a cyclical business facing margin headwinds. The balance sheet is highly leveraged with a debt-to-equity ratio of 6.8x, limiting flexibility in a stress scenario. While operating cash flow is strong, the divergence from declining earnings suggests potential non-repeatable working capital benefits. The housing market remains constrained by elevated mortgage rates, and acquisition integration risks are material. The stock has declined ~20% from its 52-week high but appears to be rationally tracking its earnings deterioration rather than overshooting it. Without evidence of margin stabilization or reversal, the fundamental trajectory does not support a constructive view.",
+      "key_factors": [
+        "Margin compression: Gross margin declined to ~33.0% in Q1 FY2026 from ~33.8% YoY; operating margin fell to ~11.9% from ~12.9% YoY; net margin eroded from 9.0% to 8.4% over the past year",
+        "Earnings decline despite revenue growth: Q1 FY2026 diluted EPS of $3.30 declined -4.3% YoY (from $3.45) while revenue grew +4.8% YoY to $41.77B",
+        "Valuation unattractive vs. risk-free rate: P/E diluted of 24.08x (2026-07-09) with earnings yield of 4.2% below the 10-year Treasury yield of 4.54%",
+        "High leverage: Debt-to-equity ratio of 6.8x ($94.03B liabilities / $13.87B equity) limits balance sheet flexibility",
+        "Housing market headwinds: Elevated mortgage rates suppressing home turnover and renovation demand; 10-year Treasury yield at 4.54%",
+        "Acquisition integration risk: SRS, GMS, and Mingledorff's deals have compressed GAAP operating margins to 11.9% and eroded ROIC from 31.3% to 25.4%",
+        "Competitive pressure: Lowe's offers faster projected sales growth (8% vs. 4%) at cheaper valuation (P/E ~19 vs. HD's ~25)",
+        "Price context: Stock has declined ~20.6% from 52-week high of $426.75 to $338.73, consistent with fundamental deterioration"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03",
+          "relevance": 1.0,
+          "excerpt": "revenue=41.77B, eps_diluted=3.30, operating_income=4.98B (Q1 FY2026)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "YoY Q1",
+          "relevance": 1.0,
+          "excerpt": "revenue=+4.8%, eps_diluted=-4.3%, net_income=-4.2%, gross_profit=+2.4%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "YoY Q1",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=6.03B vs 4.33B (+39.5%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03",
+          "relevance": 1.0,
+          "excerpt": "total_equity=13.87B, total_liabilities=94.03B (D/E=6.8x)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=24.078, earnings_yield=0.042, net_margin=0.084, roe=1.01"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "365d range",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=20.3..28.8 (current at mid-range)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10\u21922026-07-09",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted compressed from 25.35x to 24.08x; net_margin from 0.09 to 0.084"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-09",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.54%, DGS2=4.16% (earnings yield 4.2% below risk-free)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "hudson-labs.com",
+          "relevance": 1.0,
+          "excerpt": "GAAP operating margins to 11.9% and eroded trailing twelve-month Return on Invested Capital (ROIC) to 25.4% from 31.3%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (competitive)",
+          "relevance": 1.0,
+          "excerpt": "the company sees a $700-billion opportunity within the professional contractor segment...The recent acquisition of Mingledorff's expands Home Depot's reach into the $100-billion HVAC distribution market, increasing its total addressable market to $1.2 trillion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com (update)",
+          "relevance": 1.0,
+          "excerpt": "Wolfe Research downgraded the stock to Peer Perform, citing housing lock-in uncertainties and the execution risks of the professional-contractor transition"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "hudson-laws.com",
+          "relevance": 1.0,
+          "excerpt": "Once we return to an excess cash position, which we anticipate will be sometime in the first half of 2027, we would expect to return to share repurchases."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3778,
+        "capped_chars": 3778,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224644,
+        "capped_chars": 224644,
+        "raw_tokens": 56161,
+        "capped_tokens": 56161
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30296,
+        "capped_chars": 30296,
+        "raw_tokens": 7574,
+        "capped_tokens": 7574
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1840,
+        "capped_chars": 1840,
+        "raw_tokens": 460,
+        "capped_tokens": 460
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 17860,
+        "capped_chars": 3233,
+        "raw_tokens": 4465,
+        "capped_tokens": 808
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 70506,
+        "capped_chars": 48593,
+        "raw_tokens": 17627,
+        "capped_tokens": 12147
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 140537,
+  "started_at": "2026-08-06T02:57:07+00:00"
+}

@@ -1,0 +1,221 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 82109,
+    "tokens_out": 10399,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.07656011027199999,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "CRM presents a compelling but conditional investment case. The franchise is genuinely dominant \u2014 #1 CRM vendor for 13 consecutive years with 20% global market share, 150K+ customers, ~90% Fortune 500 penetration, and $67.9B RPO providing strong forward visibility. Revenue accelerated to +13.3% YoY ($11.13B Q1 FY2027), EPS grew +52.2% YoY to $2.42, and net margin expanded to 18.7% (pack ratio) from 12.7% prior regime. Agentforce ARR hit $1.2B (+205% YoY) with a $1.6B VA contract validating federal demand. The trailing PE at 19.6x is 64% below its 12-month average of ~50-55x, and the 5.1% earnings yield now exceeds the 4.68% 10Y Treasury \u2014 a historically unusual condition for this name. However, the balance sheet has been radically transformed: debt quadrupled from $8.44B to $39.28B while equity halved from $61.33B to $34.23B, consistent with a large leveraged acquisition (likely Informatica). The margin expansion that drives the low PE may partly reflect acquisition accounting rather than pure operating leverage \u2014 the ROE surge from 7.9% to 23.4% is mechanically inflated by the equity decline. The trailing-vs-forward PE gap (19.6x vs ~13x forward) implies consensus expects ~50% earnings growth, which is aggressive. Risks include AI cannibalization of seat-based revenue, Tableau/Commerce Cloud softness flagged by Evercore ISI, and security concerns from ShinyHunters breach claims. The near-term catalyst is Q2 FY2027 earnings (~Sep 2026) where Salesforce has beaten estimates four consecutive quarters, and continued Agentforce deal momentum could re-rate the stock. Score reflects strong franchise quality and historically cheap valuation, tempered by balance-sheet risk and uncertainty about margin sustainability.",
+      "key_factors": [
+        "Revenue +13.3% YoY to $11.13B (Q1 FY2027), accelerating from FY2026's +10% growth rate",
+        "EPS +52.2% YoY to $2.42; net margin expanded to 18.7% (pack ratio) from 12.7% prior regime",
+        "Trailing PE collapsed to 19.6x from 54.2x a year ago \u2014 64% below 12-month average; earnings yield 5.1% exceeds 10Y Treasury at 4.68%",
+        "Balance sheet transformation: debt quadrupled from $8.44B to $39.28B, equity halved from $61.33B to $34.23B (D/E 1.15x) \u2014 likely leveraged Informatica acquisition",
+        "ROE surge from 7.9% to 23.4% is mechanically inflated by equity decline; margin expansion sustainability uncertain",
+        "Agentforce ARR $1.2B (+205% YoY); $1.6B VA ceiling contract validates federal AI-agent demand",
+        "#1 CRM vendor 13 consecutive years, 20% global share, 150K+ customers, $67.9B RPO",
+        "AI cannibalization risk to seat-based revenue; Tableau/Commerce Cloud headwinds per Evercore ISI (2026-07-14)",
+        "Q2 FY2027 earnings ~Sep 2026 as near-term catalyst; four consecutive EPS beats",
+        "Forward PE ~12-13x (web-sourced) vs trailing 19.6x implies ~50% earnings growth expected by consensus"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=11.13B eps_diluted=2.42 net_income=2.11B operating_cash_flow=6.70B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-04-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=9.83B eps_diluted=1.59 net_income=1.54B (YoY comparison base)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "total_debt=39.28B total_equity=34.23B (vs 2025-07-31: total_debt=8.44B total_equity=61.33B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "growth panel",
+          "relevance": 1.0,
+          "excerpt": "YoY: revenue=+13.3% eps_diluted=+52.2% net_income=+36.7%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=19.618 earnings_yield=0.051 net_margin=0.187 roe=0.234 debt_to_equity=1.147"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-31",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=54.181 net_margin=0.127 roe=0.079 (prior regime baseline)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.6800000000 (10Y yield; earnings yield of 5.1% now exceeds risk-free rate)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "close=180.71 52-week_high=269.11 quarterly_delta=-0.3%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "quantumrun.com (2026-07-20)",
+          "relevance": 1.0,
+          "excerpt": "IDC ranks Salesforce the #1 CRM vendor for the thirteenth straight year with 20.0% global share."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "deepresearchglobal.com",
+          "relevance": 1.0,
+          "excerpt": "RPO was $67.9 billion, and current RPO... was $33.6 billion... cRPO: $33.6B, up 14% Y/Y"
+        },
+        {
+          "source_type": "news",
+          "source_id": "The Motley Fool (2026-07-27)",
+          "relevance": 1.0,
+          "excerpt": "The Department of Veterans Affairs awarded Salesforce a $1.6 billion ceiling contract for its AI agent products (Agentforce) over three years... Agentforce ARR reached $1.2 billion in Q1 FY2027, up 205% year-over-year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com (2026-07-14)",
+          "relevance": 1.0,
+          "excerpt": "Evercore ISI lowered its price target on Salesforce... to $250 from $260... headwinds in Tableau and Commerce Cloud"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "prnewswire.com / simplywall.st (2026-07-21/22)",
+          "relevance": 1.0,
+          "excerpt": "Security advisory issued for Salesforce users following high profile breach claims involving groups such as ShinyHunters."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3822,
+        "capped_chars": 3822,
+        "raw_tokens": 956,
+        "capped_tokens": 956
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 249257,
+        "capped_chars": 249257,
+        "raw_tokens": 62314,
+        "capped_tokens": 62314
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30602,
+        "capped_chars": 30602,
+        "raw_tokens": 7650,
+        "capped_tokens": 7650
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2220,
+        "capped_chars": 2220,
+        "raw_tokens": 555,
+        "capped_tokens": 555
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 20677,
+        "capped_chars": 5824,
+        "raw_tokens": 5169,
+        "capped_tokens": 1456
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102921,
+        "capped_chars": 70896,
+        "raw_tokens": 25731,
+        "capped_tokens": 17725
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 132778,
+  "started_at": "2026-08-06T03:04:31+00:00"
+}

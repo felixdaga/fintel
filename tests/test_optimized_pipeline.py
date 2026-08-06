@@ -61,8 +61,7 @@ class FakeLLM:
         if force_tool == "submit_views":
             return FakeCompletion(tool_calls=[FakeToolCall("submit_views", {
                 "views": [{
-                    "symbol": "AAPL", "score": 0.4, "conviction": 0.5,
-                    "time_horizon": "year", "rationale": "cheap vs history",
+                    "symbol": "AAPL", "score": 0.4, "rationale": "cheap vs history",
                     "key_factors": ["pe_diluted=36.2x"],
                     "sources_cited": [
                         {"source_type": "prices", "source_id": "2026-04-23", "excerpt": "close=177.19"},
@@ -121,7 +120,9 @@ def test_submit_args_round_trip_into_typed_views_with_provenance():
     assert notes == []
     v = views["AAPL"]
     assert v.score == 0.4
-    assert v.time_horizon == "year"
+    # Platform defaults — not solicited from the model in submit_views.
+    assert v.time_horizon == "quarter"
+    assert v.conviction == 0.5
     assert len(v.sources_cited) == 2
     assert v.sources_cited[0].source_type == "prices"
     assert v.sources_cited[0].source_id == "2026-04-23"

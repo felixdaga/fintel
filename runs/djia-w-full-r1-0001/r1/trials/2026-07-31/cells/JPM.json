@@ -1,0 +1,239 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 90817,
+    "tokens_out": 12380,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.10492639819999999,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.25,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "JPM's fundamental health and trajectory are unambiguously strong: Q1 2026 delivered record revenue ($49.84B, +10% YoY) and EPS ($5.94, +17.2% YoY), Q2 2026 was even stronger with record net income of $21.2B ($7.70/share, +47% YoY) and revenue of $57.3B across every segment, ROE improved from 15.5% to 16.2%, and net margins are stable at 31.5%. The franchise is best-in-class with top market share across IB fees, trading, deposits, payments, and card issuance, and AUM crossed $5T. Consensus EPS estimates have been revised up 7.38% in the past 30 days with zero negative revisions. However, Pillar 2 (valuation) tempers the score significantly: P/B at 2.62x is near the top of its 2.2x-2.8x range after a 14% two-month re-rating, PE at 16.2x is mid-range but the stock is at the 96th percentile of its 52-week range ($350.85 vs $359.30 high), and the market has already priced much of the earnings improvement. Balance sheet leverage has increased (12.4x to 13.5x) with equity-to-assets declining from 8.1% to 7.4%. Pillar 3 (near-term catalyst) is mixed: the Q2 earnings beat is already reported and priced, but upward estimate revisions and the $50B buyback authorization provide ongoing support. The Epstein-related allegations introduce unquantified tail risk around leadership. Dimon's own warnings about peak conditions and one-time events (SpaceX IPO) caution against extrapolating Q2's extraordinary results. Net: excellent franchise with strong trajectory, but valuation has already re-rated substantially, leaving a balanced rather than compelling risk-reward at current levels.",
+      "key_factors": [
+        "Q1 2026 revenue $49.84B (+10% YoY), EPS $5.94 (+17.2% YoY), net income $16.49B (+12.6% YoY) \u2014 accelerating growth trajectory",
+        "Q2 2026 record net income $21.2B ($7.70/share, +47% YoY), revenue $57.3B, IB fees +30%, markets +35%, equity markets +86% \u2014 but CEO Dimon cautioned these reflect 'peak conditions supercharged by one-time events like the SpaceX IPO'",
+        "ROE improved from 15.5% to 16.2% YoY; net margin stable at 31.5%; operating margin 39.9% \u2014 best-in-class among large banks (vs BAC 12.20% ROE, C 10.15% ROE)",
+        "P/B at 2.62x near top of 2.2x-2.8x range after 14% two-month re-rating from May trough of 2.29x; PE at 16.2x mid-range vs 1-year 13.7x-17.8x; stock at 96th percentile of 52-week range ($350.85 vs $279.10-$359.30)",
+        "Balance sheet leverage increased from 12.4x to 13.5x YoY; equity-to-assets declined from 8.1% to 7.4% \u2014 asset growth outpacing capital accretion",
+        "Consensus EPS estimates revised up 7.38% in past 30 days (5 up, 0 down); full-year 2026 consensus EPS $24.63 implies 21% YoY growth",
+        "$50B share repurchase program active; quarterly dividend $1.50/share; TTM payout ratio 29.2%; CET1 capital $291B at 14.3% ratio",
+        "Epstein-related DOJ allegations implicating Dimon (Jul 2026) introduce unquantified regulatory/reputational tail risk; Senator Warren demanded answers by July 24",
+        "Dimon warned markets underestimating interconnected risks \u2014 geopolitical tensions, sticky inflation, large fiscal deficits, elevated asset prices \u2014 that 'could cause meaningful disruptions if they collide'",
+        "10Y Treasury yield rose from 4.45% to 4.68% (+5.2%) over 90 days; earnings yield spread of 152bp over risk-free has narrowed; rising rates increase funding costs"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=49.84B eps_diluted=5.94 net_income=16.49B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 vs 2025-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue_yoy=+10.0% eps_yoy=+17.2% net_income_yoy=+12.6%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=16.204 p_b=2.622 roe=0.162 net_margin=0.315 earnings_yield=0.062"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-26",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=14.167 p_b=2.292 (trough)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_assets=4900.48B total_equity=364.04B (leverage=13.5x, equity_ratio=7.4%)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "close=350.85 (52w range 279.10\u2013359.30; 96th percentile)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-29\u21922026-07-30",
+          "relevance": 1.0,
+          "excerpt": "quarterly_delta=+13.5%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.68% T10Y2Y=0.45% FEDFUNDS=3.63%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.jpmorganchase.com (2Q26 Earnings Press Release)",
+          "relevance": 1.0,
+          "excerpt": "Net revenue - reported $57,347... Investment Banking fees up 30% YoY... Markets revenue up 35%... Equity Markets up 86%... AUM to over $5 trillion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.morningstar.com",
+          "relevance": 1.0,
+          "excerpt": "top market share in global investment banking fees, institutional trading revenue, domestic deposit market share, payment volume, domestic merchant acquiring, and credit card issuance"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.marketbeat.com",
+          "relevance": 1.0,
+          "excerpt": "Net Margins 21.86% | Return on Equity 18.23% | Return on Assets 1.33% versus BAC 17.56% / 12.20% / 0.98%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-22 (Motley Fool)",
+          "relevance": 1.0,
+          "excerpt": "JPMorgan Chase achieved a record $21.2 billion quarterly profit, up 41% year-over-year... CEO Jamie Dimon cautioned that these extraordinary results reflect peak conditions supercharged by one-time events like the SpaceX IPO"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-28 (Motley Fool)",
+          "relevance": 1.0,
+          "excerpt": "CEO Jamie Dimon warned of underlying risks including geopolitical tensions, sticky inflation, large fiscal deficits, and elevated asset prices"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.kavout.com (Jamie Dimon's UK Lobbying Allegations)",
+          "relevance": 1.0,
+          "excerpt": "New Department of Justice documents and a letter from Senator Elizabeth Warren allege JPMorgan CEO Jamie Dimon was advised by Jeffrey Epstein on lobbying UK officials against a bankers' bonus tax in 2009"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.kavout.com (JPMorgan's Latest Dividend Declaration)",
+          "relevance": 1.0,
+          "excerpt": "$50 billion share repurchase program authorized July 1, 2025... quarterly dividend of $1.50 per share... TTM dividend payout ratio of 29.2%... $291 billion in CET1 capital"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (Earnings Estimates Rising for JPM)",
+          "relevance": 1.0,
+          "excerpt": "Over the last 30 days, five estimates have moved higher... compared to no negative revisions. As a result, the Zacks Consensus Estimate has increased 7.38%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 236025,
+        "capped_chars": 236025,
+        "raw_tokens": 59006,
+        "capped_tokens": 59006
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30602,
+        "capped_chars": 30602,
+        "raw_tokens": 7650,
+        "capped_tokens": 7650
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3561,
+        "capped_chars": 3561,
+        "raw_tokens": 890,
+        "capped_tokens": 890
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 129374,
+        "capped_chars": 14639,
+        "raw_tokens": 32344,
+        "capped_tokens": 3660
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 104251,
+        "capped_chars": 75391,
+        "raw_tokens": 26063,
+        "capped_tokens": 18848
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 155522,
+  "started_at": "2026-08-06T03:39:52+00:00"
+}

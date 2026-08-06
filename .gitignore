@@ -4,10 +4,20 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 .ruff_cache/
-runs/
+.mypy_cache/
+.ipynb_checkpoints/
+runs/*
 cache/
 .env/
 !.env.example
+
+# Demo run shipped with the repo
+!runs/djia-w-full-r1-0001/
+
+# Local secrets / editor noise
+*.pem
+*.key
+.DS_Store
 
 # Native in-process agents live under fintel/agents/installed/
 # (`llm_agent.py`, `optimized_agent.py`). The fintel host for the optimized

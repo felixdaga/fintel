@@ -21,8 +21,8 @@ from fintel.agents.base import (
 )
 from fintel.agents.factory import AGENTS, build, names, preflight, register
 from fintel.agents.fingerprint import Fingerprint, fingerprint
-from fintel.agents.llm import LLM, Completion, OpenRouter, ToolCall
 from fintel.agents.installed.llm_agent import LLMAgent
+from fintel.agents.llm import LLM, Completion, OpenRouter, ToolCall
 from fintel.agents.pit_policy import (
     CLAUDE_CODE_DENY,
     FINTEL_MCP_SERVER,

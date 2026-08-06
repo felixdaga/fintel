@@ -13,10 +13,9 @@ import ast
 import csv
 import json
 import logging
-import os
-import time
 from dataclasses import dataclass, field
-from datetime import UTC, date as Date, datetime, timedelta
+from datetime import date as Date
+from datetime import timedelta
 from pathlib import Path
 from typing import Any
 
@@ -40,46 +39,9 @@ _CASHFLOW_KEYS = [
     "operating_cash_flow", "capex", "free_cash_flow",
 ]
 
-DJIA_COMPANY_NAMES: dict[str, str] = {
-    "AAPL": "Apple",
-    "AMGN": "Amgen",
-    "AMZN": "Amazon",
-    "AXP": "American Express",
-    "BA": "Boeing",
-    "CAT": "Caterpillar",
-    "CRM": "Salesforce",
-    "CSCO": "Cisco",
-    "CVX": "Chevron",
-    "DIS": "Disney",
-    "DOW": "Dow",
-    "GOOGL": "Alphabet",
-    "GS": "Goldman Sachs",
-    "HD": "Home Depot",
-    "HON": "Honeywell",
-    "IBM": "IBM",
-    "INTC": "Intel",
-    "JNJ": "Johnson & Johnson",
-    "JPM": "JPMorgan Chase",
-    "KO": "Coca-Cola",
-    "MCD": "McDonalds",
-    "MMM": "3M",
-    "MRK": "Merck",
-    "MSFT": "Microsoft",
-    "NKE": "Nike",
-    "NVDA": "Nvidia",
-    "PG": "Procter & Gamble",
-    "SHW": "Sherwin-Williams",
-    "TRV": "Travelers",
-    "UNH": "UnitedHealth",
-    "V": "Visa",
-    "VZ": "Verizon",
-    "WBA": "Walgreens",
-    "WMT": "Walmart",
-}
-# Stale entries (DOW, INTC, VZ, WBA) are retained deliberately: this map serves
-# any decision date, and a historical backtest needs names for names that have
-# since left the index. For current dates the point-in-time resolver below is
-# the primary source; this dict is only the fallback.
+# Company-name fallback moved to the strategy package (company_names.json).
+# A different universe ships its own; the PIT constituents resolver is the
+# primary source and this dict is only the static fallback when it lacks a name.
 
 
 # ── Point-in-time company naming ───────────────────────────────────────────
@@ -107,7 +69,6 @@ def _load_pit_names(constituents_dir: Path) -> list[tuple[str, str, str, str]]:
     if not constituents_dir.exists():
         _PIT_NAMES_CACHE[key] = rows
         return rows
-    import csv
 
     for csv_path in sorted(constituents_dir.glob("*.csv")):
         try:
@@ -281,7 +242,7 @@ class EvidenceConfig:
     web_structural_lookback_days: int = 30
     web_update_lookback_days: int = 7
     web_snippets_per_query: int = 5
-    company_names: dict[str, str] = field(default_factory=lambda: dict(DJIA_COMPANY_NAMES))
+    company_names: dict[str, str] = field(default_factory=dict)
 
 
 @dataclass

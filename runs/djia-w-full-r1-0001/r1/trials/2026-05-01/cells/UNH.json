@@ -1,0 +1,186 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 56945,
+    "tokens_out": 7291,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.053876099999999996,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": 0.25,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "UNH is a best-in-class managed-care franchise with durable structural advantages (vertical integration of payer/provider/PBM/analytics, dominant MA position, recurring inelastic revenue). Q1 2026 delivered a decisive operational beat: adjusted EPS of $7.23 vs $6.58 consensus (~10% beat), revenue of $111.7B up 2% YoY, MLR improved 90bp to 83.9%, and FY2026 guidance raised to >$18.25 from >$17.75. Management accelerated $2B buybacks and is de-leveraging (debt-to-capital 42.9%, targeting 40% year-end). The CMS 2.48% MA rate increase for 2027 is a material tailwind vs the initially proposed 0.09%. However, the stock has already re-rated ~30% in one month to ~19x forward earnings, Optum revenues are flat with Optum Health down 3%, MA membership shed 965K seniors, medical cost inflation remains elevated with Q1 benefiting from seasonal factors, and a DOJ probe into Optum Rx is unresolved. The franchise quality is high and the turnaround is showing early results, but the sharp re-rating and unresolved headwinds (elevated utilization, Optum trough, regulatory risk) mean the easy value has been captured. Score reflects strong fundamentals and positive trajectory offset by valuation that is no longer clearly cheap after the rally, with a modest positive bump from the CMS rate catalyst.",
+      "key_factors": [
+        "Q1 2026 adjusted EPS $7.23 vs $6.58 consensus (~10% beat); revenue $111.7B up 2% YoY",
+        "MLR improved 90bp to 83.9% from 84.8% in Q1 2025, driven by pricing discipline and cost management",
+        "FY2026 adjusted EPS guidance raised to >$18.25 from >$17.75",
+        "Operating cash flows $8.9B in Q1 (1.4x net income); debt-to-capital reduced to 42.9%, targeting 40% year-end",
+        "$2B accelerated share buybacks; Optum UK divestiture completed with $525M gain",
+        "CMS approved 2.48% Medicare Advantage rate increase for 2027 vs initially proposed 0.09%",
+        "Stock re-rated ~30% in one month to ~19x forward earnings \u2014 easy value likely captured",
+        "Optum revenues flat at $63.7B; Optum Health down 3% \u2014 growth engine in trough",
+        "MA membership loss of 965K seniors; medical cost inflation remains elevated with Q1 seasonal benefit",
+        "DOJ probe into Optum Rx unresolved; regulatory overhang persists",
+        "$1.5B AI investment with projected 2:1 return; OptumReal processing ~500M claims YTD"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "news",
+          "source_id": "2026-04-22 (Benzinga)",
+          "relevance": 1.0,
+          "excerpt": "raised its 2026 earnings guidance to over $18.25 per share after beating Q1 expectations with adjusted earnings of $7.23 versus consensus of $6.58"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fiercehealthcare.com (earnings call)",
+          "relevance": 1.0,
+          "excerpt": "lower MLR reflects strong medical cost management and favorable reserve development \u2014 MLR of 83.9% vs 84.8% in Q1 2025; $1.5 billion into AI initiatives with conservative 2:1 return; OptumHealth revenues down by 3%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "blockonomi.com (update)",
+          "relevance": 1.0,
+          "excerpt": "Medicare regulators approved a 2.48% rate increase for Medicare Advantage in 2027, a significant improvement over the initially proposed 0.09%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-24 (Motley Fool)",
+          "relevance": 1.0,
+          "excerpt": "stock has surged 30% in one month... At 19x forward earnings and facing headwinds like Medicare Advantage membership declines and weaker Optum performance, the author recommends staying on the sidelines"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "seekingalpha.com (structural risk)",
+          "relevance": 1.0,
+          "excerpt": "persistent margin pressure from medical cost inflation outpacing CMS rate increases... major risk model reset deferred to 2028... expanding DOJ probe into Optum Rx"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investopedia.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "UnitedHealth Group's primary revenue source is insurance premiums, accounting for 79% of revenue... revenue reached $447.57 billion in 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de (structural competitive)",
+          "relevance": 1.0,
+          "excerpt": "UnitedHealth Group holds a dominant competitive position in U.S. health insurance, with market share leadership in Medicare Advantage... Rivals like CVS Health/Aetna, Cigna/Evernorth, and Humana trail in scale"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3782,
+        "capped_chars": 3782,
+        "raw_tokens": 946,
+        "capped_tokens": 946
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225322,
+        "capped_chars": 225322,
+        "raw_tokens": 56330,
+        "capped_tokens": 56330
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30858,
+        "capped_chars": 30858,
+        "raw_tokens": 7714,
+        "capped_tokens": 7714
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1567,
+        "capped_chars": 1567,
+        "raw_tokens": 392,
+        "capped_tokens": 392
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 33704,
+        "capped_chars": 6850,
+        "raw_tokens": 8426,
+        "capped_tokens": 1712
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 78580,
+        "capped_chars": 61534,
+        "raw_tokens": 19645,
+        "capped_tokens": 15384
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 104431,
+  "started_at": "2026-08-06T02:31:48+00:00"
+}

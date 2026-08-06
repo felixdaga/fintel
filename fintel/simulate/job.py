@@ -15,25 +15,29 @@ import time
 from datetime import date as Date
 from pathlib import Path
 
-from fintel.market.calendar import TradingCalendar
-from fintel.market.factory import build_data_sources, build_schedule, build_universe
-from fintel.market.prefetch import prefetch as warm_cache, prefetch_window
-from fintel.market.probe import probe as probe_sources
-from fintel.market.settings import MarketConfig
-from fintel.models.agent import AgentSpec
-from fintel.models.common import Symbol
-from fintel.models.ids import new_job_id, run_id
-from fintel.models.job import JobConfig, JobResult
-from fintel.models.market import DataBinding, ScheduleRef, UniverseRef
-from fintel.models.paths import JobPaths
-from fintel.models.run import RunConfig, StrategyRef
-from fintel.models.strategy import StrategyManifest
 from fintel.agents.factory import preflight as agent_preflight
 from fintel.environment.health import audit_job
 from fintel.environment.progress import Progress
-
+from fintel.market.calendar import TradingCalendar
+from fintel.market.factory import build_data_sources, build_schedule, build_universe
+from fintel.market.prefetch import prefetch as warm_cache
+from fintel.market.prefetch import prefetch_window
+from fintel.market.probe import probe as probe_sources
+from fintel.market.settings import MarketConfig
+from fintel.models.common import Symbol
+from fintel.models.ids import new_job_id, run_id
+from fintel.models.job import JobConfig, JobResult
+from fintel.models.market import UniverseRef
+from fintel.models.paths import JobPaths
+from fintel.models.run import RunConfig, StrategyRef
+from fintel.models.strategy import StrategyManifest
+from fintel.simulate.artifacts import (
+    write_health,
+    write_job_config,
+    write_job_result,
+    write_prefetch,
+)
 from fintel.simulate.queue import map_parallel
-from fintel.simulate.artifacts import write_health, write_job_config, write_job_result, write_prefetch
 from fintel.simulate.record import reduce_job
 from fintel.simulate.run import run_run
 from fintel.strategy import build_lock, load, preflight
@@ -100,6 +104,14 @@ def run_job(
     # JSON schema alone).
     mission_text = paths.mission.read_text() if paths.mission.is_file() else ""
     output_schema_text = paths.output_schema.read_text() if paths.output_schema.is_file() else ""
+    company_names: dict[str, str] = {}
+    if paths.company_names.is_file():
+        import json
+
+        try:
+            company_names = json.loads(paths.company_names.read_text())
+        except (json.JSONDecodeError, ValueError):
+            logger.warning("company_names.json is not valid JSON; ignored")
 
     # Lock the *package* identity (not the effective config).
     from fintel.market import catalog
@@ -283,9 +295,12 @@ def run_job(
                 paths=job_paths.run(k),
                 cell_concurrency=job_config.cell_concurrency,
                 trial_concurrency=job_config.trial_concurrency,
+                shared_concurrency=job_config.shared_concurrency,
                 memory_on=_memory_on(manifest),
+                feedback_on=_feedback_on(manifest),
                 mission_text=mission_text,
                 output_schema_text=output_schema_text,
+                company_names=company_names,
                 strategy_description=manifest.description,
                 progress=run_progress,
                 quiet=quiet,
@@ -374,6 +389,17 @@ def _memory_on(manifest: StrategyManifest) -> bool:
     """
     # When memory lands, this becomes something like:
     #   return getattr(manifest, "memory_level", "off") != "off"
+    return False
+
+
+def _feedback_on(manifest: StrategyManifest) -> bool:
+    """Whether this run feeds prior-date outcomes into later dates.
+
+    Same independence rule as memory: shared_concurrency / parallel dates are
+    only legal when feedback is off. Not wired yet — stub returns False.
+    """
+    # When feedback lands, this becomes something like:
+    #   return getattr(manifest, "feedback", "off") != "off"
     return False
 
 

@@ -1,0 +1,247 @@
+{
+  "cell": "MSFT",
+  "symbols": [
+    "MSFT"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 120244,
+    "tokens_out": 12159,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.10601500159999999,
+    "basis": "reported"
+  },
+  "views": {
+    "MSFT": {
+      "symbol": "MSFT",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "MSFT presents a strong fundamental case: accelerating revenue (+18.3% YoY to $82.89B), expanding operating margins (46.3% vs 45.7% YoY), outstanding cash conversion (OCF $46.68B, 121.6% of operating income), and a fortress balance sheet (net cash $38.01B, D/E 0.119). The AI business at $37B annual run rate (+123% YoY) and M365 Copilot at 20M paid seats (+250% YoY) demonstrate genuine monetization traction. Valuation has de-rated meaningfully \u2014 P/E at 29.1x sits at the 22nd percentile of its 365-day range (25.4x\u201342.8x) despite no fundamental deterioration, driven by macro repricing (rates, oil) rather than business regression. The ~32% P/E compression (not 'nearly in half' as quant report overstated) from 42.8x peak creates a more favorable entry point. However, several factors temper conviction: (1) the $190B 2026 capex plan (~$35B above consensus) pressures FCF and signals capital intensity that may compress margins \u2014 cloud gross margin guided from 69% to 64%; (2) Azure growth has plateaued at 39-40% constant currency for three consecutive quarters despite massive investment, with commercial backlog growing only $2B sequentially; (3) the earnings yield of 3.4% sits 107bps below the 10-year Treasury at 4.47%, leaving the stock rate-sensitive; (4) EU tech sovereignty restrictions (May 27 presentation) and data center siting backlash (71% opposition per Gallup) create regulatory/execution headwinds. The OpenAI partnership restructuring caps revenue-sharing at $38B and ends Azure exclusivity, though it extends licensing through 2032. The Q2 FY26 EPS anomaly ($5.16 vs operating income trend) is likely non-recurring. On balance, elite franchise quality and attractive valuation vs own history support a mildly-to-moderately positive score, but the capex overhang, Azure growth plateau, and rate sensitivity prevent a stronger conviction. Pillar 3 (near-term catalyst): Q4 FY26 earnings in late July could serve as a re-rating event if Azure re-accelerates as management guides for H2 CY2026, but this is not yet confirmed data \u2014 it is management guidance only.",
+      "key_factors": [
+        "Revenue accelerating: +18.3% YoY to $82.89B in Q3 FY26, monotonic four-quarter step-up from $70.07B",
+        "Operating margin expanding: 46.3% in Q3 FY26 vs 45.7% YoY, operating income +20.0% YoY to $38.40B",
+        "Cash conversion outstanding: OCF $46.68B in Q3 FY26, 121.6% of operating income, +26.0% YoY",
+        "Fortress balance sheet: net cash $38.01B, D/E 0.119, total equity $414.37B (+28.7% YoY)",
+        "P/E de-rated to 29.1x (22nd percentile of 365d range 25.4x\u201342.8x) despite +23.4% YoY EPS growth \u2014 compression driven by macro not fundamentals",
+        "AI business at $37B annual run rate (+123% YoY), M365 Copilot at 20M paid seats (+250% YoY)",
+        "Capex guidance $190B for 2026 (~$35B above consensus), $25B attributed to component inflation; FCF margin reportedly fell from 29% to 19.1%",
+        "Azure growth plateaued at 39-40% constant currency for three consecutive quarters; commercial backlog grew only $2B sequentially",
+        "Earnings yield 3.4% vs 10-year Treasury 4.47% \u2014 negative 107bps equity risk premium, rate-sensitive",
+        "OpenAI restructuring: caps revenue-sharing at $38B, ends Azure exclusivity, extends licensing through 2032; OpenAI IPO at $1T could monetize MSFT's 26.79% stake worth ~$228B",
+        "EU tech sovereignty package (May 27) may restrict US cloud providers' access to government data; 71% of Americans oppose local data center construction per Gallup survey",
+        "Q2 FY26 EPS anomaly ($5.16) likely non-operating; underlying Q1-to-Q3 EPS trajectory shows +14.8% sequential growth"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=82.89B, operating_income=38.40B, net_income=31.78B, eps_diluted=4.27"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 (YoY comp)",
+          "relevance": 1.0,
+          "excerpt": "revenue=70.07B, eps_diluted=3.46 \u2014 YoY: revenue=+18.3%, eps=+23.4%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31 (Q2 anomaly)",
+          "relevance": 1.0,
+          "excerpt": "net_income=38.46B, eps_diluted=5.16 vs operating_income=38.27B \u2014 non-operating inflates Q2"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=46.68B, QoQ=+30.5%, YoY=+26.0%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_equity=414.37B, total_debt=40.26B, cash=78.27B, debt_to_equity=0.119"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=29.137, ev_to_ebit=22.054, p_b=8.419, earnings_yield=0.034 \u2014 all near low end of 365d range (pe range 25.4..42.8)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-10-28 (peak)",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=42.844, ev_to_ebit=34.105 \u2014 de-rating of ~32% in PE with growing earnings"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "close=409.43, 52w_high=555.45 \u2014 down 26.3% from peak while earnings grew"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.47%, earnings_yield=3.4% \u2014 negative 107bps equity risk premium"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnbc.com",
+          "relevance": 1.0,
+          "excerpt": "Revenue from Microsoft's Azure and other cloud services surged 40%. Annualized revenue from AI altogether now stands at $37 billion, up 123%. Microsoft now has $627 billion in commercial remaining performance obligations\u2026up by $2 billion from the prior quarter."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fifthperson.com",
+          "relevance": 1.0,
+          "excerpt": "Nearly 60% of service customers have already moved to usage-based credits. GitHub is similarly pivoting to a consumption model in June 2026. Total commercial remaining obligation surged 99% to US$627 billion due to large OpenAI commitments. Excluding this, growth would have grown 26%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.globaldatacenterhub.com",
+          "relevance": 1.0,
+          "excerpt": "The selloff was not about earnings quality. It was about the disclosed 2026 calendar capex plan of approximately $190 billion, which exceeded analyst consensus of $154.6 billion by roughly $35 billion, and the explicit attribution of $25 billion of that figure to component price inflation."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-12",
+          "relevance": 1.0,
+          "excerpt": "OpenAI's planned IPO at a $1 trillion valuation presents a significant opportunity for Microsoft, which holds a 26.79% stake worth $228.3 billion\u2014a 17.6x return on its $13 billion investment."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "The European Union is considering implementing regulations to restrict US cloud providers' access to sensitive government data as part of its upcoming 'Tech Sovereignty Package' to be presented on May 27."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-03",
+          "relevance": 1.0,
+          "excerpt": "Azure growth remained flat at 39% constant-currency across three quarters, while capital expenditures are projected to reach $190B in 2026 (up 61% from 2025), pressuring free cash flow which fell 22% year-over-year."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "A Gallup survey reveals 71% of Americans oppose building AI data centers in their local areas\u2026The opposition is stronger than resistance to nuclear power plants (53%)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "benzinga.com",
+          "relevance": 1.0,
+          "excerpt": "Among its top 4 peers, Microsoft has a stronger financial position with a lower debt-to-equity ratio of 0.15."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MSFT",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3930,
+        "capped_chars": 3930,
+        "raw_tokens": 982,
+        "capped_tokens": 982
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242692,
+        "capped_chars": 242692,
+        "raw_tokens": 60673,
+        "capped_tokens": 60673
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30909,
+        "capped_chars": 30909,
+        "raw_tokens": 7727,
+        "capped_tokens": 7727
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4406,
+        "capped_chars": 4406,
+        "raw_tokens": 1102,
+        "capped_tokens": 1102
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 342390,
+        "capped_chars": 76513,
+        "raw_tokens": 85598,
+        "capped_tokens": 19128
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88600,
+        "capped_chars": 64039,
+        "raw_tokens": 22149,
+        "capped_tokens": 16010
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 172006,
+  "started_at": "2026-08-06T02:37:07+00:00"
+}

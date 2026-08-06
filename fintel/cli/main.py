@@ -50,6 +50,15 @@ def build_parser() -> argparse.ArgumentParser:
         help="Concurrent dates within a run (default 1)",
     )
     simulation.add_argument(
+        "--shared-concurrency",
+        type=int,
+        default=None,
+        help=(
+            "Flat cell pool across dates (keep N cells in flight). "
+            "Replaces cell×trial fan-out; blocked when memory/feedback is on"
+        ),
+    )
+    simulation.add_argument(
         "--max-concurrent",
         type=int,
         default=1,
@@ -107,7 +116,28 @@ def build_parser() -> argparse.ArgumentParser:
     simulation.add_argument(
         "--no-bootstrap",
         action="store_true",
-        help="Do not load keys from ~/.openclaw profiles",
+        help="Do not load keys from .env/keys.env",
+    )
+
+    backfill = sub.add_parser(
+        "backfill", help="Rerun error cells from a finished job"
+    )
+    backfill.add_argument("job_id", help="Job id under --output-root")
+    backfill.add_argument(
+        "--run", type=int, default=1, dest="run_index",
+        help="Which repeat (rK) to backfill (default 1)",
+    )
+    backfill.add_argument(
+        "--cell-concurrency", type=int, default=1,
+        help="Flat pool size for rerunning error cells (default 1)",
+    )
+    backfill.add_argument(
+        "--output-root", default="runs",
+        help="Directory for job artifacts (default: runs)",
+    )
+    backfill.add_argument(
+        "--quiet", action="store_true",
+        help="Suppress live progress (still writes logs)",
     )
 
     health = sub.add_parser("health", help="Audit access traces for a finished job")
@@ -127,7 +157,11 @@ def build_parser() -> argparse.ArgumentParser:
     runs_show.add_argument("job_id")
     runs_show.add_argument("--output-root", default="runs")
     runs_watch = runs_sub.add_parser("watch", help="Live in-place dashboard for one or more jobs")
-    runs_watch.add_argument("job_ids", nargs="+", help="job id(s) or run.log path(s)")
+    runs_watch.add_argument(
+        "job_ids",
+        nargs="+",
+        help="job id(s) or nerve log path(s) (run.log / backfill.log)",
+    )
     runs_watch.add_argument("--output-root", default="runs")
     runs_watch.add_argument(
         "--watch-mode",
@@ -194,6 +228,10 @@ def main(argv: list[str] | None = None) -> int:
         from fintel.cli.simulation import run_simulation
 
         return run_simulation(args)
+    if args.command == "backfill":
+        from fintel.cli.backfill import run_backfill_cli
+
+        return run_backfill_cli(args)
     if args.command == "health":
         from fintel.cli.health import run_health
 

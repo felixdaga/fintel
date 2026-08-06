@@ -1,0 +1,227 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 77357,
+    "tokens_out": 9672,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.075975781592,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.25,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "IBM presents a moderately attractive but conditional investment case. Pillar 1 (Fundamentals): Q1 2026 showed genuine strength \u2014 revenue +9.5% YoY to $15.92B, EPS +14.3% YoY, and exceptional OCF of $5.17B (+18.3% YoY). Software grew 11% with ARR at $24.6B and $69B remaining performance obligation providing forward visibility. However, the net margin jump from 0.091 (sustained for 9 observations) to 0.156 is a single-quarter discontinuity that may not be durable \u2014 if margins revert to 9%, earnings power roughly halves. ROE's jump from 0.211 to 0.325 is similarly a single-observation artifact, not a confirmed trend. Balance sheet leverage at 3.72x D/E is heavy, though equity grew 22.7% YoY. Consulting showed signs of weakness (signings down 15.6%, 15 federal contract cancellations worth $100M), though Q1 2026 Consulting actually grew 4% YoY to $5.27B. The z17 mainframe cycle (IBM Z +51% YoY) inflates headline numbers cyclically. Pillar 2 (Valuation): PE at 20.5x is at the absolute floor of the 365-day range (20.0-51.2), and P/B at 6.66x is similarly compressed. The stock is down -20.2% over the past quarter to $231.31, -28.8% below its 365-day high. Earnings yield of 4.9% now roughly matches the 10-year Treasury at 4.41%, offering slim equity-risk premium. The cheapness is entirely conditional on sustaining the margin step-up \u2014 at the prior 9% net margin regime, PE would be 40-45x, squarely in historical range. Pillar 3 (Catalyst): FedRAMP authorization of 11 AI/automation products (April 2026) opens federal/regulated-industry routes. Management reaffirmed >5% CC revenue growth guidance and ~$1B higher YoY FCF. The Confluent integration ($11.6B) adds real-time data streaming capability. These are credible but not transformative near-term catalysts. Net assessment: IBM's franchise in hybrid cloud and enterprise AI for is defensible, and the valuation reset creates a modestly attractive entry if margins hold. But the margin discontinuity, heavy leverage, mainframe cyclicality, and consulting headwinds warrant caution. Score of +0.25 reflects mildly-to-moderately attractive fundamentals with meaningful uncertainty on margin durability.",
+      "key_factors": [
+        "Q1 2026 revenue $15.92B (+9.5% YoY), EPS $1.28 (+14.3% YoY), OCF $5.17B (+18.3% YoY) \u2014 genuine fundamental strength",
+        "Net margin jumped from 0.091 (9 consecutive observations) to 0.156 \u2014 single-quarter discontinuity; if margins revert, earnings power halves and PE returns to 40-45x",
+        "PE at 20.5x is at 365-day floor (20.0-51.2 range); P/B at 6.66x also at lows; stock -20.2% over past quarter to $231.31",
+        "Software ARR $24.6B, $69B remaining performance obligation (69% within 2 years) \u2014 strong forward revenue visibility",
+        "Debt-to-equity 3.72x (liabilities $123.17B vs equity $33.06B); long-term debt $57.7B post-Confluent acquisition",
+        "IBM Z revenue +51% YoY in Q1 2026 \u2014 cyclical z17 cycle, not structural; will normalize",
+        "Consulting: 15 federal contract cancellations ($100M), signings down 15.6%; but Q1 2026 Consulting grew 4% YoY to $5.27B",
+        "FedRAMP authorization of 11 AI/automation products (April 2026) via AWS \u2014 broadens federal/regulated-industry route",
+        "10-year Treasury at 4.41% vs IBM earnings yield 4.9% \u2014 slim ~50bp equity-risk premium",
+        "OCF variance high across 3 available quarters ($1.70B, $4.37B, $5.17B) \u2014 annualizing Q1 overstates sustainable cash generation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=15.92B, net_income=1.22B, eps_diluted=1.28, operating_cash_flow=5.17B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "YoY_2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=+9.5%, eps_diluted=+14.3%, net_income=+15.3%, operating_cash_flow=+18.3%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_liabilities=123.17B, total_equity=33.06B (debt-to-equity=3.72\u00d7)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=20.479, p_b=6.662, earnings_yield=0.049, net_margin=0.156, roe=0.325"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-08..2026-04-06",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted range 20.0..51.2, net_margin=0.091 sustained for 9 consecutive observations"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "close=231.31, quarterly delta=-20.2%, 365d high=324.90"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.41%, DCOILWTICO=98.38"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan.net (Q1 2026 filing)",
+          "relevance": 1.0,
+          "excerpt": "Software revenue of $7,052 million increased 11.3 percent...Consulting...$5,272...Infrastructure...$3,326 increased 15.3 percent...Operating cash flow improved to $5,169 million"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan.net (Q1 2026 results)",
+          "relevance": 1.0,
+          "excerpt": "Across Software, our annual recurring revenue (ARR) was solid at $24.6 billion...$69B remaining performance obligation, with roughly 69% recognizable in the next two years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bellwetherbrief.com (risk analysis)",
+          "relevance": 1.0,
+          "excerpt": "15 federal contract cancellations representing $100 million in future payments, a segment that accounts for up to 10% of the division"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bellwetherbrief.com (bull case)",
+          "relevance": 1.0,
+          "excerpt": "IBM's z17 mainframe is...the most secure, high-performance edge for real-time AI inference...IBM mainframes handling 70% of the world's transactional workflows"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dailypolitical.com (update)",
+          "relevance": 1.0,
+          "excerpt": "IBM reported $1.91 EPS for the quarter, beating analysts' consensus estimates of $1.81 by $0.10...revenue of $15.92 billion...compared to consensus estimate of $15.60 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de (FedRAMP catalyst)",
+          "relevance": 1.0,
+          "excerpt": "11 AI and automation products, including multiple watsonx offerings, received Federal Risk and Authorization Management Program (FedRAMP) authorization through its strategic collaboration with Amazon Web Services"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dailypolitical.com (update)",
+          "relevance": 1.0,
+          "excerpt": "long-term debt to $57.7B...investing outflows of $10,489 million, largely from acquisitions"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224592,
+        "capped_chars": 224592,
+        "raw_tokens": 56148,
+        "capped_tokens": 56148
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2778,
+        "capped_chars": 2778,
+        "raw_tokens": 694,
+        "capped_tokens": 694
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 34145,
+        "capped_chars": 7119,
+        "raw_tokens": 8536,
+        "capped_tokens": 1780
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 130177,
+        "capped_chars": 80337,
+        "raw_tokens": 32545,
+        "capped_tokens": 20084
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 172881,
+  "started_at": "2026-08-06T02:34:11+00:00"
+}

@@ -1,0 +1,234 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 82355,
+    "tokens_out": 10526,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.080576618304,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Boeing is in early-stage operational recovery with Q1 2026 revenue +14% YoY to $22.22B and net income near breakeven (-$7M), but the stock at $234.15 (81.57x P/E, 1.2% earnings yield) prices in a multi-year earnings ramp that is not yet supported by cash generation (OCF still -$179M), durable margins (2.5% net margin), or balance-sheet resilience (7.84x debt/equity, $46.96B debt). The franchise is structurally damaged: Airbus projects to 58% market share vs Boeing's ~39% by decade-end, China is effectively lost to 125% tariffs, 777X remains uncertified, and BCA is still loss-making (-6.1% operating margin in Q1 2026). Oil at $99.27/barrel adds material cost and demand headwinds. The 1.2% earnings yield is less than one-third the 4.34% risk-free rate. While the $695B backlog and Pentagon budget tailwind provide long-term support, the current valuation already reflects the good news and leaves no margin for the significant execution risks that remain. All three pillars align negatively: deteriorated fundamentals still in early recovery, extreme valuation vs opportunity cost, and no credible near-term catalyst to re-rate higher given the stock has already given back its Q4 2025 gains.",
+      "key_factors": [
+        "Q1 2026 revenue $22.22B (+14% YoY) but net income only -$7M (near breakeven), EPS -$0.11 \u2014 recovery from deep losses but not yet profitable",
+        "P/E diluted 81.57x and earnings yield 1.2% vs 10Y Treasury 4.34% \u2014 market pricing in massive future earnings ramp from near-zero base",
+        "Operating cash flow still negative at -$179M in Q1 2026 despite near-breakeven net income \u2014 balance-sheet repair not self-sustaining",
+        "Debt/equity 7.84x ($46.96B debt vs $5.99B equity) \u2014 razor-thin equity cushion, no room for operational setbacks",
+        "BCA operating margin -6.1% in Q1 2026; BCA reported $7.08B operating loss in FY2025 \u2014 commercial airplanes segment remains structurally loss-making",
+        "Airbus projected to reach ~58% global market share vs Boeing ~39% by decade-end (Roland Berger) \u2014 structural market share loss",
+        "125% Chinese tariff has effectively priced Boeing out of new Chinese airline orders \u2014 loss of world's second-largest aviation market",
+        "WTI crude oil at $99.27/barrel (+64.2% over lookback) \u2014 material headwind to Boeing's costs and airline customer demand",
+        "737 MAX production ramp from 42 to 47-52/month unproven; 777X certification delayed until at least 2027",
+        "Record $695B backlog and Pentagon $1.5T FY2027 defense budget provide long-term support but do not change near-term cash flow or margin trajectory",
+        "FCF guidance $1-3B positive for 2026 but constrained by $4B capex, 777X development costs, and DOJ settlement payment"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=22.22B, net_income=-7.00M, eps_diluted=-0.11, operating_income=448.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 YoY",
+          "relevance": 1.0,
+          "excerpt": "revenue=+14.0%, eps_diluted=-31.2%, gross_profit=+5.3%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance_sheet",
+          "relevance": 1.0,
+          "excerpt": "total_equity=5.99B (vs -3.30B prior), total_debt=46.96B (vs 53.14B prior)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=-179.00M (still negative)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=81.569, p_b=30.818, earnings_yield=0.012, debt_to_equity=7.844"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.025 (first positive in window, vs -0.166 a year prior)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=99.27 (\u0394=+64.2% over lookback), DGS10=4.34%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "close=234.15, 251-bar range: low=169.00 high=254.35, quarterly delta=-6.9%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "macroter.com (~Apr 2026)",
+          "relevance": 1.0,
+          "excerpt": "Roland Berger projects Boeing's market share declining from roughly 50% to approximately 39% by the end of the decade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "macroter.com (~Apr 2026)",
+          "relevance": 1.0,
+          "excerpt": "The 125% Chinese tariff on U.S. imports has effectively priced Boeing out of many new Chinese airline orders"
+        },
+        {
+          "source_type": "news",
+          "source_id": "CNBC (Apr 22, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Boeing CEO says 'all systems are go' to increase 737 production\u2026 Loss per share: 20 cents adjusted vs. a loss of 83 cents expected"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Motley Fool (Apr 23, 2026)",
+          "relevance": 1.0,
+          "excerpt": "The Pentagon proposed a $1.5 trillion defense budget for fiscal 2027\u2026 About 52% of the additional spending will go toward military hardware"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com (~Apr 2026)",
+          "relevance": 1.0,
+          "excerpt": "Free cash flow for 2026 is structurally constrained by three specific outflows: an elevated $4 billion capital expenditure budget\u2026 777X program (delayed until 2027), and a structured payment linked to a corporate settlement with the Department of Justice"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "boeing.mediaroom.com (Apr 22, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Total company backlog grew to a record $695 billion, including over 6,100 commercial airplanes"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investopedia.com (Mar 26, 2026)",
+          "relevance": 1.0,
+          "excerpt": "The only sector that contributed to the company's operating profit was its Global Services segment. The segment generated an operating profit of $13.47 billion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215013,
+        "capped_chars": 215013,
+        "raw_tokens": 53753,
+        "capped_tokens": 53753
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30859,
+        "capped_chars": 30859,
+        "raw_tokens": 7715,
+        "capped_tokens": 7715
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2547,
+        "capped_chars": 2547,
+        "raw_tokens": 637,
+        "capped_tokens": 637
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 36738,
+        "capped_chars": 7584,
+        "raw_tokens": 9184,
+        "capped_tokens": 1896
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 105364,
+        "capped_chars": 83751,
+        "raw_tokens": 26340,
+        "capped_tokens": 20938
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 160451,
+  "started_at": "2026-08-06T02:28:34+00:00"
+}

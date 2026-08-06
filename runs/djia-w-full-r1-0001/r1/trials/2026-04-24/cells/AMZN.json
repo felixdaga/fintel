@@ -1,0 +1,241 @@
+{
+  "cell": "AMZN",
+  "symbols": [
+    "AMZN"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 122830,
+    "tokens_out": 11928,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.11191061811200001,
+    "basis": "reported"
+  },
+  "views": {
+    "AMZN": {
+      "symbol": "AMZN",
+      "score": 0.25,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Amazon is a structurally durable franchise with multiple self-reinforcing growth engines (AWS at 32% cloud share with $244B backlog, $85B advertising run rate, dominant e-commerce). Revenue grew +13.4% YoY and EPS +36.4% YoY in Q3 2025, with robust OCF growth of +36.8% YoY and a fortress balance sheet (D/E 0.149). However, the stock has re-rated from 29x to 36x PE in two months on pure multiple expansion with no earnings acceleration \u2014 net margin and ROE are identical at both points. Operating income was flat YoY in Q3 despite 13.4% revenue growth, suggesting margin pressure beneath the surface. WTI crude at $99.27 (+64% in 90 days) is a material cost headwind for a logistics-intensive business, and the 3.5% fuel surcharge on 3P sellers signals management sees this pressure. The $200B capex commitment for 2026 has compressed FCF to $11.2B from $38.2B. At 36x PE near the 365-day high of $258.79, the stock is priced at the upper end of its range and demands continued elevated execution. The Q1 2026 earnings report on April 29 is a credible near-term catalyst \u2014 BofA models AWS growth of 28% and EBIT of $21.4B above consensus \u2014 but this is a verification event rather than a clear re-rating catalyst, and the stock has already rallied ~30% in recent weeks. The franchise quality supports a premium, but valuation already embeds much of the upside, warranting a mildly positive but not strongly bullish score.",
+      "key_factors": [
+        "AWS dominance: 32% global cloud IaaS/PaaS share, $128.7B FY2025 revenue, $244B backlog growing 40% YoY, reaccelerating to 24% growth",
+        "Advertising at $85B annualized run rate growing 23% YoY with 70%+ gross margins \u2014 high-margin compounding engine",
+        "Q3 2025: revenue +13.4% YoY ($180.17B), EPS diluted +36.4% YoY ($1.95), OCF +36.8% YoY ($35.52B)",
+        "Balance sheet fortress: total equity $369.63B, total debt $55.10B, D/E 0.149, equity +42.6% YoY",
+        "Operating income flat YoY in Q3 ($17.42B vs $17.41B) despite 13.4% revenue growth \u2014 margin pressure beneath headline EPS",
+        "PE re-rated from 29.0x (Feb 2026 trough) to 36.2x (Apr 23) on pure multiple expansion \u2014 net margin 11.1% and ROE 20.7% unchanged",
+        "WTI crude at $99.27 (+64% in 90 days) \u2014 material cost headwind for logistics-intensive operations; 3.5% fuel surcharge imposed on 3P sellers",
+        "$200B capex commitment for 2026 (53% increase); FCF compressed to $11.2B from $38.2B per web sources",
+        "Stock at $255.08 near 365-day high of $258.79, up ~42.6% from low of $178.85 \u2014 priced for continued execution",
+        "Q1 2026 earnings April 29: consensus EPS ~$1.69, BofA models AWS growth 28% and EBIT $21.4B above consensus \u2014 near-term verification catalyst",
+        "Custom silicon (Trainium/Graviton/Inferentia) at >$20B annualized revenue with triple-digit growth \u2014 structural cost advantage",
+        "California antitrust price-fixing lawsuit trial scheduled Jan 2027 \u2014 regulatory tail risk but not franchise-threatening"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=180.17B, net_income=21.19B, eps_diluted=1.95, operating_cash_flow=35.52B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "Q3 2025 YoY",
+          "relevance": 1.0,
+          "excerpt": "revenue=+13.4%, eps_diluted=+36.4%, net_income=+38.2%, operating_cash_flow=+36.8%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 balance",
+          "relevance": 1.0,
+          "excerpt": "total_equity=369.63B, total_debt=55.10B, debt_to_equity=0.149"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 vs 2024-09-30",
+          "relevance": 1.0,
+          "excerpt": "operating_income=17.42B vs 17.41B (flat YoY despite +13.4% revenue growth)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=36.17x, p_b=7.484x, earnings_yield=0.028, net_margin=0.111, roe=0.207"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "window range",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted 28.2..40.9, p_b 5.8..8.3"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=99.27 (\u0394+64.2% over 90 days from ~60.46)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "close=255.08, range_low=178.85, range_high=258.79"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "gurufocus.com",
+          "relevance": 1.0,
+          "excerpt": "Amazon's AWS maintained its dominance in the global cloud infrastructure market, capturing a 32% share in Q4 2025...backlog reaching $244 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com",
+          "relevance": 1.0,
+          "excerpt": "AWS generated $128.7 billion in FY2025 revenue versus Microsoft Azure's $75 billion and Google Cloud Platform's $58.7 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "financialcontent.com",
+          "relevance": 1.0,
+          "excerpt": "AWS at a $142 billion annualized revenue run rate with 24% year-over-year growth...custom silicon at scale will save Amazon tens of billions of capex dollars per year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com",
+          "relevance": 1.0,
+          "excerpt": "Graviton, Trainium, and Nitro collectively produce more than $20 billion in annualized revenue growing at triple-digit percentage rates year-over-year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kalkine.com",
+          "relevance": 1.0,
+          "excerpt": "Amazon committed approximately $200 billion in capital expenditure for full-year 2026, a 53% increase from the $131.8 billion deployed in 2025...free cash flow compressed to $11.2 billion from $38.2 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-21 \u2014 nytimes.com",
+          "relevance": 1.0,
+          "excerpt": "California accused Amazon of price fixing by pressuring major brands like Levi's and Hanes to ask competing retailers to raise prices...trial scheduled for January 2027"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-14 \u2014 motleyfool.com",
+          "relevance": 1.0,
+          "excerpt": "Amazon announced an $11.6 billion acquisition of satellite service provider Globalstar to advance its Leo satellite internet project and compete with SpaceX's Starlink"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dataintelo.com",
+          "relevance": 1.0,
+          "excerpt": "Amazon held an estimated 37.6% share of total U.S. e-commerce retail sales in 2025, representing more than four times the share of its closest domestic competitor"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMZN",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4630,
+        "capped_chars": 4630,
+        "raw_tokens": 1158,
+        "capped_tokens": 1158
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231834,
+        "capped_chars": 231834,
+        "raw_tokens": 57958,
+        "capped_tokens": 57958
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30859,
+        "capped_chars": 30859,
+        "raw_tokens": 7715,
+        "capped_tokens": 7715
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4370,
+        "capped_chars": 4370,
+        "raw_tokens": 1092,
+        "capped_tokens": 1092
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 329721,
+        "capped_chars": 75746,
+        "raw_tokens": 82430,
+        "capped_tokens": 18936
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 114971,
+        "capped_chars": 93790,
+        "raw_tokens": 28743,
+        "capped_tokens": 23447
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 195084,
+  "started_at": "2026-08-06T02:28:34+00:00"
+}

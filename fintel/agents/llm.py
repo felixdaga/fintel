@@ -33,8 +33,12 @@ logger = logging.getLogger(__name__)
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 ENV_OPENROUTER_KEY = "OPENROUTER_API_KEY"
 
-# Body patterns, checked after status. Order matters: the specific ones first,
-# since a provider often wraps a real refusal in a generic error envelope.
+# Body patterns for *HTTP error* responses only (`classify_status`). These
+# scan provider error messages, not model prose — a 400/429 response body is
+# the provider telling us why it failed, not the model's analysis. The
+# false-positive class ("safety litigation" in 3M's 10-K) came from scanning
+# *successful* completion text in `check_finish`, which we no longer do.
+# Order matters: specific needles first.
 BODY_PATTERNS: tuple[tuple[str, type[AgentError]], ...] = (
     ("context length", ContextOverflow),
     ("maximum context", ContextOverflow),
@@ -42,8 +46,6 @@ BODY_PATTERNS: tuple[tuple[str, type[AgentError]], ...] = (
     ("prompt is too long", ContextOverflow),
     ("content filter", SafetyRefusal),
     ("content_policy", SafetyRefusal),
-    ("safety", SafetyRefusal),
-    ("blocked by", SafetyRefusal),
     ("rate limit", RateLimited),
     ("too many requests", RateLimited),
     ("quota", RateLimited),
@@ -89,8 +91,12 @@ class LLM(Protocol):
 def classify_status(status: int, body: str) -> AgentError:
     """Name a failed HTTP response.
 
-    An unknown 5xx is transient and worth retrying; an unknown 4xx is our
-    request being wrong, which a retry only reproduces at cost.
+    The status code is the primary signal; body needles refine 4xx codes
+    that providers overload (400 may be context overflow, content filter,
+    or a genuine bad request). Body scanning is safe here because this is
+    a *provider error message*, not model prose — the false-positive class
+    ("safety litigation" in a 10-K) came from scanning *successful*
+    completion text in ``check_finish``, which we no longer do.
     """
     lowered = body.lower()
     if status == 429:
@@ -100,11 +106,20 @@ def classify_status(status: int, body: str) -> AgentError:
             return exc(f"HTTP {status}: {body[:200]}")
     if status in TRANSIENT_STATUS:
         return ProviderUnavailable(f"HTTP {status}: {body[:200]}")
+    if status == 403:
+        return SafetyRefusal(f"HTTP 403: {body[:200]}")
     return AgentError(f"HTTP {status}: {body[:200]}")
 
 
-def check_finish(reason: str, text: str) -> None:
-    """Some failures arrive as a successful response with a telling reason."""
+def check_finish(reason: str, text: str = "") -> None:
+    """Failures that arrive as HTTP 200 with a telling `finish_reason`.
+
+    Only the provider's finish reason is trusted here. Scanning `text` for
+    error needles (as we do for HTTP error bodies) false-positives on ordinary
+    model prose — e.g. a qualitative note that mentions "safety litigation".
+    `text` is accepted for call-site compatibility but ignored.
+    """
+    _ = text
     if reason == "content_filter":
         return _raise(SafetyRefusal("provider stopped the response on content policy"))
     if reason == "length":
@@ -114,9 +129,6 @@ def check_finish(reason: str, text: str) -> None:
                 "or narrow the prompt"
             )
         )
-    for needle, exc in BODY_PATTERNS:
-        if needle in text.lower()[:400]:
-            return _raise(exc(f"provider error in body: {text[:200]}"))
     return None
 
 

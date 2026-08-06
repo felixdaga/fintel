@@ -6,9 +6,7 @@ from datetime import date as Date
 from datetime import timedelta
 from pathlib import Path
 
-import pytest
-
-from fintel.market.data.massive import FUNDAMENTALS, NEWS, MassivePrices, MassiveRecords
+from fintel.market.data.massive import FUNDAMENTALS, MassivePrices, MassiveRecords
 from fintel.market.data.store import PriceStore, RecordCache
 from fintel.market.prefetch import prefetch, prefetch_window
 

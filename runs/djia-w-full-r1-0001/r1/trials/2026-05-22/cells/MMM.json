@@ -1,0 +1,215 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 75585,
+    "tokens_out": 10648,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0724588114,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "MMM presents a deeply unattractive fundamental picture across all three pillars. Pillar 1 (fundamentals): GAAP EPS collapsed -39.7% YoY to $1.23 in Q1 2026 despite flat revenue, indicating severe below-the-line charges or non-operating drags. The balance sheet is critically impaired \u2014 equity of $3.31B against $32.12B in liabilities (9.7x leverage) leaves virtually no cushion. Operating cash flow is volatile, ranging from -$954M (Q2 2025) to $1.76B (Q3 2025), with the most recent quarter at just $574M (9.5% of revenue). Net margin has compressed from 17.9% to 11.2%. The franchise itself (materials science, 3,500+ patents, qualification-driven stickiness) is real but is being overwhelmed by PFAS litigation tail risk ($7.8B in environmental liabilities, with management unable to bound potential losses), elevated leverage, and cyclical demand softness. Pillar 2 (valuation): P/E has expanded to 28.9x \u2014 the top of its 365-day range (17.7\u201329.0x) \u2014 precisely when earnings are deteriorating. The stock's earnings yield of 3.5% sits below the 10-year Treasury yield of 4.57%, which is fundamentally unjustifiable for a declining-earnings, over-leveraged industrial. P/B at 24.4x is at the absolute ceiling of its range. Pillar 3 (near-term catalyst): The June 2026 NJ PFAS settlement hearing and July 24, 2026 class-certification deadline represent downside catalysts, not upside. The adjusted EPS guidance discrepancy ($8.50\u2013$8.70 vs. a narrower $8.20\u2013$8.50 citing higher litigation costs) signals potential further earnings pressure. Rising rates (+13.4% on 10Y) and surging oil ($100.20/bbl, +51%) compound margin and financing risks. The Q1 adjusted EPS beat ($2.14 vs $1.98 consensus) and orders/backlog momentum are genuine positives but insufficient to offset the structural balance-sheet fragility, litigation overhang, and rich valuation.",
+      "key_factors": [
+        "GAAP EPS $1.23 in Q1 2026, down -39.7% YoY from $2.04 in Q1 2025 \u2014 severe earnings deterioration despite flat revenue",
+        "Total equity $3.31B vs total liabilities $32.12B (liability/equity = 9.7x) \u2014 critically thin equity cushion, -26.8% erosion over four quarters from $4.52B",
+        "Operating cash flow highly volatile: -$954M in Q2 2025, $1.76B in Q3 2025, $574M in Q1 2026 (9.5% of revenue) \u2014 unreliable cash generation",
+        "P/E diluted at 28.9x on 2026-05-21, at the top of the 365-day range (17.7\u201329.0x), vs prior stable range of ~18\u201321x \u2014 paying a premium for deteriorating earnings",
+        "Earnings yield 3.5% below 10-year Treasury yield of 4.57% \u2014 negative risk premium for a leveraged, declining-earnings industrial",
+        "Net margin compressed from 17.9% (stable through 2025) to 11.2% (latest) \u2014 -37% compression in profitability",
+        "PFAS litigation: $7.8B in environmental liabilities, management unable to bound potential losses; NJ settlement hearing June 2026, class-certification deadline July 24, 2026 \u2014 open-ended downside tail risk",
+        "Macro headwinds: 10Y yield +13.4% to 4.57%, WTI crude +51% to $100.20/bbl, Baa spreads widened to 6.16% \u2014 rising input costs and refinancing pressure for over-leveraged balance sheet",
+        "Adjusted EPS guidance narrowed to ~$8.20\u2013$8.50 (per ad-hoc-news.de) citing higher litigation costs and inflationary pressures, vs initial $8.50\u2013$8.70 \u2014 potential further earnings pressure",
+        "Q1 2026 adjusted EPS $2.14 beat consensus $1.98 by $0.16; orders and backlog grew double digits; 84 new products launched (+35% YoY) \u2014 operational positives insufficient to offset structural risks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=1.23 (YoY -39.7% vs Q1 2025 $2.04)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_equity=3.31B, total_liabilities=32.12B (liability/equity=9.7x)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=574M (9.5% of revenue; prior quarter Q3 2025=1.76B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=-954M (demonstrates cash generation volatility)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=28.858 (vs 365d range 17.7..29.0; prior stable range ~18-21x)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.112 (vs 0.179 stable through 2025; -37% compression)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.035 (below 10y_yield=4.57%)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.57% (+13.4% over 90d), DCOILWTICO=100.2 (+51%)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ts2.tech (2026-05-03)",
+          "relevance": 1.0,
+          "excerpt": "3M lists $7.8 billion under 'other environmental liabilities' linked to PFAS; Wisconsin Greystone PFAS levels 'hundreds of times' above proposed threshold; class-certification deadline July 24, 2026; NJ PFAS settlement hearing June 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de (05/09/2026)",
+          "relevance": 1.0,
+          "excerpt": "Management narrowed full-year 2026 adjusted EPS guidance to ~$8.20-$8.50, citing higher litigation-related costs and inflationary pressures on raw materials and logistics"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stockmarketinfo.io (conference transcript)",
+          "relevance": 1.0,
+          "excerpt": "EPS $2.14 beat by $0.16; operating margin +30 bps to 23.8%; adjusted FCF $540M (+10%); FY guidance: organic sales ~3%, EPS $8.50-$8.70, FCF >$4.5B; orders up double digits, backlog grew double digits; 84 new products in Q1 (+35% YoY)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stockmarketinfo.io",
+          "relevance": 1.0,
+          "excerpt": "Q1 2026: revenue $6.03B (+1.3% YoY), net income $653M (-41.5% YoY), equity fell to $3.31B from $4.75B (-30%), net debt ~$8.8B"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247225,
+        "capped_chars": 247225,
+        "raw_tokens": 61806,
+        "capped_tokens": 61806
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31263,
+        "capped_chars": 31263,
+        "raw_tokens": 7816,
+        "capped_tokens": 7816
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 967,
+        "capped_chars": 967,
+        "raw_tokens": 242,
+        "capped_tokens": 242
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 6460,
+        "capped_chars": 1822,
+        "raw_tokens": 1615,
+        "capped_tokens": 456
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 97445,
+        "capped_chars": 76312,
+        "raw_tokens": 24361,
+        "capped_tokens": 19078
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 145081,
+  "started_at": "2026-08-06T03:30:21+00:00"
+}

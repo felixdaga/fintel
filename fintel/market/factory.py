@@ -16,8 +16,8 @@ from typing import Any
 from fintel.market import catalog
 from fintel.market.calendar import TradingCalendar
 from fintel.market.constituents import INDEX_PRESETS, historical_universe
-from fintel.market.data.base import DataSource
 from fintel.market.data.av_news import AlphaVantageNews
+from fintel.market.data.base import DataSource
 from fintel.market.data.filings import MassiveFilingText
 from fintel.market.data.fred import FredMacro
 from fintel.market.data.http import MassiveClient

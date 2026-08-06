@@ -21,6 +21,7 @@ from fintel.agents.base import (
     RateLimited,
     SafetyRefusal,
 )
+from fintel.agents.installed.llm_agent import LLMAgent
 from fintel.agents.llm import (
     Completion,
     ToolCall,
@@ -28,7 +29,6 @@ from fintel.agents.llm import (
     parse_completion,
     usage_of,
 )
-from fintel.agents.installed.llm_agent import LLMAgent
 from tests.test_environment import an_environment
 
 DECIDABLE = frozenset({"AAPL"})
@@ -118,6 +118,30 @@ def test_a_content_filter_finish_is_a_refusal_not_an_empty():
         parse_completion(payload, model="m")
 
 
+def test_model_prose_mentioning_safety_is_not_a_refusal():
+    """Regression: BODY_PATTERNS must not scan successful completion text.
+    3M qualitative writeups often say 'safety litigation' in the first 400
+    chars and were mis-tagged as SafetyRefusal → cell outcome refused."""
+    from fintel.agents.llm import parse_completion
+
+    payload = {
+        "choices": [
+            {
+                "message": {
+                    "content": (
+                        "# 3M Company (MMM) — Qualitative Franchise & Risk Assessment\n"
+                        "3M faces material safety litigation and PFAS exposure risks.\n"
+                    )
+                },
+                "finish_reason": "stop",
+            }
+        ],
+        "usage": {"prompt_tokens": 10, "completion_tokens": 20},
+    }
+    completion = parse_completion(payload, model="m")
+    assert "safety litigation" in completion.text
+
+
 def test_a_truncated_response_says_so():
     payload = {"choices": [{"message": {"content": "half a th"}, "finish_reason": "length"}]}
     with pytest.raises(ContextOverflow):
@@ -146,12 +170,16 @@ def test_an_empty_response_is_a_parse_error():
         parse_completion({"choices": []}, model="m")
 
 
-def test_a_provider_error_in_a_200_body_is_still_a_failure():
-    """A 200 carrying 'rate limit' in the text used to read as a quiet no-answer."""
+def test_a_provider_error_in_a_200_body_is_treated_as_model_text():
+    """A 200 with finish_reason 'stop' carrying 'rate limit' in the text is
+    model prose, not a real rate limit (that arrives as HTTP 429). Scanning
+    successful completion text for error needles false-positives on ordinary
+    model output — e.g. a 3M qualitative report mentioning 'safety litigation'."""
     message = {"content": "API Error: rate limit"}
     payload = {"choices": [{"message": message, "finish_reason": "stop"}]}
-    with pytest.raises(RateLimited):
-        parse_completion(payload, model="m")
+    completion = parse_completion(payload, model="m")
+    assert completion.text == "API Error: rate limit"
+    assert completion.finish_reason == "stop"
 
 
 # ── cost basis comes from the provider or not at all ─────────────────────────

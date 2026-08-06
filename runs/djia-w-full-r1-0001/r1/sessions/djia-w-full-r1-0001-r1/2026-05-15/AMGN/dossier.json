@@ -1,0 +1,190 @@
+{
+  "symbol": "AMGN",
+  "decision_date": "2026-05-15",
+  "cell": "AMGN",
+  "agent": "optimized",
+  "version": "1.0.0",
+  "model": "xiaomi/mimo-v2.5-pro",
+  "ticker": "AMGN",
+  "pipeline": "quant\u2016qual \u2192 verify \u2192 final_pm",
+  "quantitative_report": "## AMGN \u2014 Quantitative Fundamental Report (Decision Date: 2026-05-15)\n\n### 1. Revenue, Earnings, Margin, Cash-Flow, and Balance-Sheet Trajectory\n\n**Revenue** shows modest but positive YoY growth: Q1 2026 revenue of $8.62B is +5.8% versus Q1 2025's $8.15B. However, the sequential picture is weaker \u2014 Q1 2026 is down -9.8% QoQ from Q3 2025's $9.56B. Note that Q4 2025 data is absent from the supplied filing window, rendering the TTM trajectory unreliable per the growth panel's explicit warning. The available four-quarter sequence (Q1\u2192Q3\u2192Q2\u2192Q1) contains a fiscal gap and cannot be treated as contiguous trailing twelve months.\n\n**Earnings** are volatile quarter-to-quarter. Q1 2026 EPS of $3.34 is +4.4% YoY ($3.20 in Q1 2025) but -43.7% QoQ from Q3 2025's anomalous $5.93. Q2 2025 EPS was only $2.65. This volatility suggests non-operating items or lumpy revenue recognition; it is not a smooth earnings stream.\n\n**Margins** are expanding on the gross-profit line. Q1 2026 gross profit of $5.87B grew +13.4% YoY against only +5.8% revenue growth, implying cost-of-revenue discipline (Q1 2026 cost of revenue $2.74B vs Q1 2025's $2.97B on higher sales). Gross margin of 68.3% and net margin of 21% per the latest ratio snapshot are at the top of their 365-day ranges (net_margin window: 0.10\u20130.20). Operating income of $2.67B yields an operating margin of ~31%, well above Q1 2025's $1.18B (14.5% margin).\n\n**Cash flow** is positive but lumpy. Q1 2026 OCF of $2.19B is +57.4% YoY versus Q1 2025's $1.39B, a strong signal. However, Q3 2025 produced $4.68B in OCF while Q2 2025 was $2.28B \u2014 a nearly 2\u00d7 range. Free cash flow is unavailable; OCF is used as the cash-generation proxy.\n\n**Balance sheet** is the primary concern. Total equity is only $9.19B against $57.32B in total debt (debt/equity = 6.238). Total assets of $92.50B support the structure, but equity cushion is thin \u2014 and deteriorating: equity fell from $9.62B in Q3 2025 to $9.19B in Q1 2026 while debt rose from $54.59B to $57.32B. (Note: Q1 and Q2 2025 balance-sheet entries show negative total_liabilities, likely a data anomaly; the Q3 2025 and Q1 2026 figures are used as the more reliable readings.)\n\n### 2. Earnings Quality and Balance-Sheet Resilience\n\nEarnings quality is mixed. The YoY expansion in gross profit (+13.4%) outpacing revenue (+5.8%) is a genuine quality signal \u2014 operating leverage is working. However, the extreme QoQ EPS volatility ($2.65 \u2192 $5.93 \u2192 $3.34 across three quarters) raises questions about non-recurring items or acquisition-related accounting (the elevated debt load is consistent with a leveraged acquisition posture).\n\nBalance-sheet resilience is low. At 6.2\u00d7 debt/equity, AMGN is among the most leveraged large-cap pharma names. With 10-year Treasury yields at 4.47% and Baa corporate spreads at 6.09%, refinancing costs are elevated. The company must generate substantial free cash flow to service this debt; quarterly OCF averaging roughly $2.5\u20132.7B (Q1 2026 and Q2 2025) provides coverage, but the lumpiness is a risk if a weak OCF quarter coincides with debt obligations.\n\n### 3. Valuation versus Own History\n\nThe valuation de-rating is the most striking feature. PE (diluted) of 23.45\u00d7 on 2026-05-14 sits at the floor of its 365-day range (22.6\u201349.7\u00d7). As recently as March 2026, PE was 48.4\u00d7. The collapse from ~48\u00d7 to ~23\u00d7 occurred as the new Q1 2026 filing was incorporated into trailing earnings, mechanically lifting the EPS denominator while price fell -8.2% from $366.20 to $336.23.\n\nP/B at 19.9\u00d7 is also near its floor (19.2\u201328.0\u00d7). Earnings yield of 4.3% is now competitive with the 10-year Treasury yield of 4.47%, a rare condition for a pharma growth name \u2014 historically, AMGN traded at earnings yields well below the risk-free rate (implied by PE multiples in the 35\u201349\u00d7 range through most of the lookback).\n\nThe re-rating is not purely mechanical: gross margin expanding to 68.3% and net margin to 21% (versus a 0.10\u20130.20 range) suggest the trailing earnings improvement has a fundamental basis, not just a denominator effect.\n\n### 4. Price Context\n\nAMGN closed at $336.23 on 2026-05-14. The 365-day range is $264.15\u2013$391.29, placing the stock ~14% below its high and ~27% above its low. The quarterly path shows a peak at $366.20 (Feb 2026) followed by an -8.2% decline to current levels. Prior quarters had been positive: +8.2% (Nov\u2192Feb) and +17.0% (Aug\u2192Nov). The price decline has moved in tandem with \u2014 but amplified by \u2014 the PE compression as the new earnings data reset valuations. Price has not yet reflected the improved margin trajectory.\n\n### 5. Macro and Sentiment Overlays\n\n**Macro** presents a mixed-to-headwind backdrop. The 10-year yield at 4.47% (+42 bps over 90 days) and 2-year at 4.00% (+57 bps) signal a tightening bias that pressures long-duration equities. However, the T10Y2Y spread at 0.47% remains positive (no recession signal). Oil at $104.66/bbl (+67% over the window) is a material input-cost risk for a company with 31.7% cost-of-revenue ratio, though AMGN's gross margin expansion suggests it has, so far, absorbed this. The VIX at 17.26 is moderate and declining, indicating no acute risk-off regime.\n\n**News sentiment** is mildly positive (mean 0.487, 90-day; recent readings predominantly 1.0). With only 43 articles scored, this is a thin signal and does not substitute for the fundamental picture.\n\n### 6. Strongest Quantitative Upside and Downside\n\n**Upside:** The valuation gap is the primary quantitative case. At 23.4\u00d7 PE with a 4.3% earnings yield \u2014 essentially at parity with the risk-free rate \u2014 AMGN is priced for zero growth premium. If the margin expansion trajectory (gross profit +13.4% YoY on +5.8% revenue) is sustained and earnings normalize, a re-rating toward even the midpoint of the historical range (~35\u00d7) on stable EPS of ~$3.34/quarter implies substantial re-pricing. OCF growing +57.4% YoY provides a cash-generation backstop.\n\n**Downside:** Balance-sheet leverage at 6.2\u00d7 debt/equity is the critical risk. In a rising-rate environment (Fed funds 3.63%, 10Y at 4.47%), debt service costs escalate. A single quarter of weak OCF (as low as $1.39B in Q1 2025) could strain coverage. The QoQ earnings volatility (-43.7% EPS decline) signals that current margins may not be sustainable. If the PE floor of 22.6\u00d7 represents fair value rather than an overshoot, the stock is near fair value rather than cheap.\n\n### 7. Provisional Quantitative Conclusion\n\nAMGN presents a **moderately attractive** fundamental profile with significant caveats. The positives \u2014 expanding margins, positive revenue growth, strong OCF momentum, and a PE at historical lows \u2014 form a coherent value argument. The earnings yield approaching the risk-free rate is a rare quantitative signal for a quality pharma franchise. However, the extreme balance-sheet leverage (6.2\u00d7 D/E), persistent quarterly earnings volatility, and a rising-rate macro environment introduce meaningful risk. The valuation discount appears partly justified by the balance sheet, not purely a market mispricing. On balance, the margin expansion and cash-flow trajectory outweigh the leverage risk at current valuations, but the setup is asymmetric: upside requires continued execution, while downside could be sharp if debt servicing becomes pressured.\n\n## key evidence\nfundamentals | 2026-03-31 | revenue=8.62B, YoY=+5.8%, gross_profit_yoy=+13.4%, operating_cash_flow_yoy=+57.4%\nfundamentals | 2026-03-31 | total_equity=9.19B, total_debt=57.32B\nratios | 2026-05-14 | pe_diluted=23.45 (range 22.6..49.7 over 365d)\nratios | 2026-05-14 | debt_to_equity=6.238, p_b=19.903 (range 19.2..28.0)\nratios | 2026-05-14 | earnings_yield=0.043, net_margin=0.21, gross_margin=0.683\nfundamentals | 2026-03-31 | eps_diluted=3.34, QoQ=-43.7% (vs Q3 2025 eps=5.93)\nprices | 2026-05-14 | close=336.23, quarterly_delta=-8.2%\nmacro | 2026-05-14 | DGS10=4.47%, DCOILWTICO=104.66",
+  "qualitative_report": "# Amgen Inc. (AMGN) \u2014 Qualitative Franchise Assessment\n\n**Decision date:** 2026-05-15 | **Analyst coverage cutoff:** 2026-05-14\n\n---\n\n## 1. Business / Franchise Read\n\nAmgen is the world's largest pure-play biotechnology company, generating ~$36.8B in 2025 revenue across oncology, inflammation, bone health, cardiovascular disease, nephrology, and rare disease. The franchise rests on three structural pillars: (a) large-scale biologics manufacturing \u2014 decades of infrastructure investment and regulatory know-how that smaller players cannot replicate; (b) a diversified specialty-portfolio spanning mature cash generators (Enbrel, Prolia) and newer growth assets (Repatha, EVENITY, TEPEZZA, KRYSTEXXA, UPLIZNA, BLINCYTO); and (c) disciplined capital allocation under long-tenured CEO Robert Bradway, including 14 consecutive years of dividend increases and strategic M&A (Otezla $13.4B in 2019; Horizon Therapeutics $27.8B in 2023) that reshaped the portfolio toward rare disease.\n\nThe business model is a full-stack specialty biopharma operation \u2014 target selection through manufacturing to commercialization \u2014 selling primarily via three U.S. wholesalers (McKesson, Cencora, Cardinal Health) that account for nearly 80% of gross revenues. Gross margins track near the branded-pharma average (~75% within ~2pp), supported by manufacturing scale. The company reported $1.5B of free cash flow in Q1 2026, a 50% year-over-year jump.\n\nAmgen now has 17 products annualizing at $1B+ based on Q1 2026 sales \u2014 evidence of meaningful portfolio breadth. Six key growth drivers collectively contributed 70% of Q1 sales and grew 24% year-over-year, indicating the replacement engine is functioning.\n\n---\n\n## 2. Dated Recent Developments\n\n**Earnings beat (April 30, 2026):** Q1 2026 revenue of $8.62B (+5.8% YoY) beat consensus of $8.5B by 1.4%. Adjusted EPS of $5.15 beat consensus of $4.77 by 8%. Management raised full-year 2026 guidance to $37.1B\u2013$38.5B revenue and $21.70\u2013$23.10 non-GAAP EPS.\n\n**Prolia erosion materializing:** Prolia sales fell 33.85% to $727M in Q1 2026 as U.S. patents expired in February 2025 and biosimilar competition intensified \u2014 a magnitude management had warned about but that nonetheless represents the largest single headwind to near-term revenue.\n\n**Tavneos regulatory crisis (April 28, 2026):** The FDA proposed withdrawing Tavneos, citing allegations of manipulated clinical results and \"untrue statements of material fact\" from its original developer ChemoCentryx. Amgen acquired Tavneos in a deal valued at nearly $4B. This introduces meaningful risk to a rare-disease asset and contributed to the stock declining ~6.5% post-earnings despite the beat.\n\n**IRS tax dispute disclosed (April 30, 2026):** Management disclosed a draft Notice of Proposed Adjustment (NOPA) for 2016\u20132018 that \"could have a material financial impact if sustained.\" Combined with the Tavneos overhang, this weighed on investor sentiment.\n\n**MariTide obesity pipeline:** Amgen committed ~$2.6B in 2026 capital expenditure, with a substantial portion dedicated to MariTide manufacturing readiness. The MARITIME Phase 3 program spans chronic weight management, type 2 diabetes, cardiovascular outcomes, heart failure, and obstructive sleep apnea. However, MariTide faces intense competition from established GLP-1 leaders (Eli Lilly, Novo Nordisk), and one source noted it as \"competitively challenged.\"\n\n**Pipeline breadth (May 14, 2026):** Amgen is among 200+ companies advancing oligonucleotide therapies, with 600+ pipeline drugs across clinical stages \u2014 context for its olpasiran cardiovascular program.\n\n---\n\n## 3. Material Qualitative Risks and Offsets\n\n**Risks:**\n- **Patent cliff is real and deepening.** Prolia/Xgeva U.S. patents expired in 2025; Enbrel's final U.S. patent expiry is 2028\u20132029. Management explicitly guided for \"accelerated sales erosion\" in 2026. The Prolia franchise alone generated $4.41B in 2025 \u2014 a 33.85% decline in one quarter signals multi-billion-dollar revenue headwinds.\n- **Tavneos withdrawal risk.** FDA citing data integrity issues from the original developer is a serious regulatory concern on a ~$4B acquisition. Outcome uncertain.\n- **IRS tax dispute.** A potential material financial adjustment for 2016\u20132018 adds balance-sheet uncertainty.\n- **MariTide execution risk.** The GLP-1 market is dominated by Lilly and Novo Nordisk. Inference: Amgen is a late entrant, and clinical differentiation must be compelling to justify large commercial investment.\n- **Pricing pressure.** One structural source notes that Amgen's pricing power on older drugs is below the sub-industry average by ~15%, reflecting weak negotiating leverage against consolidated payers.\n\n**Offsets:**\n- **Growth portfolio is delivering.** EVENITY grew 34% YoY; TEPEZZA grew 29%; Repatha contributed $876M in Q1 2026; biosimilars generated $2.2B in 2024 (+16%). Six growth drivers collectively growing 24% is evidence the replacement engine works.\n- **Manufacturing moat.** Global biologics manufacturing scale is a genuine structural barrier \u2014 billions in infrastructure, decades of regulatory expertise.\n- **Cash generation supports capital returns.** Free cash flow of $1.5B in Q1 2026 (+50% YoY) and a top-5 revenue position in U.S. biotech enable dividends, buybacks, and continued R&D investment.\n- **Rare-disease portfolio** from Horizon acquisition is in orphan-designated markets with limited direct competition and high growth rates.\n\n---\n\n## 4. Qualitative Assessment\n\n**Assessment: Mixed \u2014 durable franchise navigating a genuine transition**\n\nAmgen possesses a structurally attractive biopharma franchise: scale manufacturing, diversified specialty portfolio, strong cash generation, and a management team with a disciplined capital-allocation track record. The growth engine is demonstrably working \u2014 16 brands with double-digit growth in Q1, 17 products at $1B+ run rate. The rare-disease and cardiovascular franchises provide high-margin, less-competitive revenue streams.\n\nHowever, the patent cliff is not a \"headline risk\" \u2014 it is a confirmed, material, and accelerating revenue headwind. Prolia's 34% decline in a single quarter, combined with Enbrel's approaching expiry, creates a multi-billion-dollar hole that the growth portfolio must fill in real time. The Tavneos FDA withdrawal proposal is a fresh and idiosyncratic risk on a meaningful acquisition, and the IRS dispute adds balance-sheet optionality to the downside. MariTide's competitive positioning in a well-established GLP-1 market remains unproven.\n\nOn balance, the structural franchise quality is solid \u2014 Amgen is not a \"bad business\" \u2014 but the near-term earnings trajectory is compressed by patent cliffs, and several idiosyncratic risks (Tavneos, IRS) have emerged to further qualify the narrative. The stock's post-earnings decline despite a beat reflects this tension. The qualitative picture supports a \"hold with execution-dependent upside\" rather than a clear-cut attractiveness signal.\n\n---\n\n## Key Evidence\n\nweb_search | stockstory.org Q1 2026 | \"Revenue: $8.62 billion vs analyst estimates of $8.5 billion (5.8% year-on-year growth, 1.4% beat). Adjusted EPS: $5.15 vs analyst estimates of $4.77 (8% beat).\"\n\nweb_search | koalagains.com structural | \"Prolia...a severe 33.85% revenue crash to $727M in the first quarter of 2026, marking a massive vulnerability as biosimilars begin to flood the market.\"\n\nweb_search | trefis.com | \"FDA proposed that Amgen withdraw its drug Tavneos from the market...citing allegations of manipulated clinical results and 'untrue statements of material fact' in the original approval submissions from ChemoCentryx.\"\n\nweb_search | umbrex.com structural | \"Amgen reported FY2023 revenue of approximately $28.2 billion...major therapeutic areas include inflammation, oncology and hematology, bone health, cardiovascular disease, nephrology, and rare disease.\"\n\nweb_search | investing.com Q1 transcript | \"Free cash flow: $1.5 billion in Q1 2026.\" \"We expect 2026 total revenues in the range of $37.1 billion-$38.5 billion.\"\n\nweb_search | trefis.com | \"Key risks AMGN key risks include significant revenue erosion from imminent patent expirations and biosimilar competition for blockbuster drugs including Enbrel and Prolia.\"\n\nweb_search | ad-hoc-news.de 2026-05-12 | \"Amgen holds a top-5 position by revenue, with superior free cash flow enabling $5 billion+ annual dividends and buybacks.\"\n\nweb_search | bbntimes.com Bradway profile | \"Amgen has since launched an ambitious MARITIME Phase 3 program...In 2026, the company has committed roughly 2.6 billion dollars in capital expenditure, a substantial portion dedicated to MariTide manufacturing readiness.\"",
+  "verification": {
+    "recommendation": "KEEP",
+    "severity": "minor",
+    "verified_points": [
+      "YoY revenue +5.8% matches pack: 8.62B vs 8.15B = +5.76%, consistent with reported +5.8%.",
+      "YoY EPS +4.4% matches pack: 3.34/3.20 = +4.38%, consistent with reported +4.4%.",
+      "YoY gross profit +13.4% matches pack: 5.87B/5.18B = +13.32%, consistent with reported +13.4%.",
+      "YoY OCF +57.4% matches pack: 2.19B/1.39B = +57.6%, consistent with reported +57.4%.",
+      "QoQ EPS -43.7% matches pack: 3.34/5.93 = -43.7%.",
+      "Debt/equity 6.238 matches pack: 57.32B/9.19B = 6.237.",
+      "PE diluted 23.45 on 2026-05-14 matches pack exactly.",
+      "P/B 19.903 matches pack exactly.",
+      "Earnings yield 0.043 matches pack exactly.",
+      "Net margin 0.21 matches pack exactly.",
+      "Gross margin 0.683 matches pack exactly.",
+      "Price close 336.23 on 2026-05-14 matches pack exactly.",
+      "Quarterly price delta -8.2% matches pack: 336.23/366.20 - 1 = -8.17%.",
+      "DGS10 4.47% on 2026-05-14 matches pack exactly.",
+      "DCOILWTICO 104.66 on 2026-05-14 matches pack exactly.",
+      "FEDFUNDS 3.63% on 2026-05-01 matches pack exactly.",
+      "T10Y2Y 0.47% on 2026-05-14 matches pack exactly.",
+      "VIX 17.26 on 2026-05-14 matches pack exactly.",
+      "DBAA 6.09% on 2026-05-14 matches pack exactly.",
+      "Quant report correctly flags TTM as incomplete and non-contiguous (Q1,Q3,Q2,Q1 with fiscal gap).",
+      "Qual report's Q1 2026 revenue of $8.62B and +5.8% YoY match quant pack.",
+      "Qual report's Prolia 33.85% decline to $727M is sourced from koalagains.com in the qual evidence pack.",
+      "Qual report's Tavneos FDA withdrawal proposal (April 28, 2026) is sourced from trefis.com in the qual evidence pack.",
+      "Qual report's adjusted EPS of $5.15 beating consensus of $4.77 is sourced from stockstory.org in the qual evidence pack.",
+      "Qual report's FCF of $1.5B in Q1 2026 is sourced from investing.com earnings call transcript in the qual evidence pack.",
+      "Qual report's 17 products annualizing at $1B+ is sourced from investing.com Q1 slides in the qual evidence pack.",
+      "Qual report's six growth drivers contributing 70% of Q1 sales and growing 24% YoY is sourced from investing.com earnings call transcript in the qual evidence pack.",
+      "Qual report's $27.8B Horizon Therapeutics acquisition in 2023 is sourced from koalagains.com in the qual evidence pack.",
+      "Qual report's 14 consecutive years of dividend increases is sourced from koalagains.com in the qual evidence pack.",
+      "Qual report's ~$36.8B 2025 revenue is consistent with koalagains.com ($36.75B) and statista (~$37B) in the qual evidence pack.",
+      "Qual report's ~80% wholesale concentration (McKesson, Cencora, Cardinal Health) is sourced from stockstory.org in the qual evidence pack.",
+      "Qual report's IRS NOPA disclosure (April 30, 2026) for 2016-2018 is sourced from tradingkey.com in the qual evidence pack.",
+      "Qual report's ~$2.6B 2026 capex is sourced from bbntimes.com in the qual evidence pack.",
+      "Qual report's Enbrel final U.S. patent expiry 2028-2029 is sourced from trefis.com in the qual evidence pack.",
+      "Qual report's Prolia/Xgeva U.S. patents expired in 2025 is sourced from trefis.com in the qual evidence pack.",
+      "Qual report's stock declined ~6.5% post-earnings is sourced from marketwise.com in the qual evidence pack.",
+      "Qual report's pricing power ~15% below sub-industry average is sourced from koalagains.com in the qual evidence pack.",
+      "Qual report's gross margins within ~2pp of 75% branded-pharma average is sourced from koalagains.com in the qual evidence pack.",
+      "Qual report's EVENITY grew 34% YoY is sourced from koalagains.com (34.36%) in the qual evidence pack.",
+      "Qual report's TEPEZZA grew 29% is sourced from koalagains.com (28.61%) in the qual evidence pack.",
+      "Qual report's Repatha $876M in Q1 2026 is sourced from koalagains.com in the qual evidence pack.",
+      "Qual report's biosimilars $2.2B in 2024 (+16%) is sourced from investing.com Q4 2024 summary in the qual evidence pack.",
+      "Qual report's Otezla $13.4B acquisition in 2019 is sourced from koalagains.com in the qual evidence pack.",
+      "Qual report's MariTide described as 'competitively challenged' is sourced from trefis.com in the qual evidence pack.",
+      "Qual report's MARITIME Phase 3 program scope is sourced from bbntimes.com in the qual evidence pack.",
+      "News sentiment mean 0.487 with 43 articles matches pack exactly.",
+      "Quant report's 2-year yield at 4.00% matches pack: DGS2 on 2026-05-14 = 4.00%.",
+      "Quant report's 2-year yield +57 bps over 90 days matches pack: 4.00 - 3.43 = 0.57.",
+      "Quant report's 10-year yield +42 bps over 90 days matches pack: 4.47 - 4.05 = 0.42.",
+      "Quant report's oil +67% over window matches pack: (104.66-62.53)/62.53 = 67.4%."
+    ],
+    "unsupported_claims": [
+      "Qual report states 'Gross margins track near the branded-pharma average (~75% within ~2pp)' \u2014 the koalagains source says 'within ~2% of the typical 75% baseline,' which is consistent. However, the quant pack shows gross_margin=0.683 (68.3%), which is ~6.7pp below 75%, not within 2pp. The qual report's claim of ~75% within 2pp conflicts with the quant evidence of 68.3%. The koalagains source may be referring to a different metric or time period, but the current quant data shows a wider gap. This is a minor inconsistency between qual narrative and quant data.",
+      "Qual report states '16 brands with double-digit growth in Q1' \u2014 the investing.com source says '16 brands achieving double-digit growth,' which matches. However, the qual report also says '17 products annualizing at $1B+ run rate' in the same sentence, and the investing.com source separately says '17 products annualizing at $1 billion or more.' These are two distinct claims from the same source and are internally consistent. No issue.",
+      "Quant report states 'net margin of 21% per the latest ratio snapshot are at the top of their 365-day ranges (net_margin window: 0.10\u20130.20)' \u2014 the pack shows net_margin range 0.10\u20130.20, and the latest is 0.21, which is actually 1pp above the stated range ceiling. The quant report says 'at the top of their 365-day ranges' but 0.21 exceeds the 0.20 upper bound. This is a minor imprecision \u2014 the claim should note the latest reading is slightly above the historical range, not merely at the top.",
+      "Quant report states 'As recently as March 2026, PE was 48.4\u00d7' \u2014 the pack shows 2026-03-11 pe_diluted=48.388, which rounds to 48.4\u00d7. This is verified.",
+      "Quant report states 'price fell -8.2% from $366.20 to $336.23' \u2014 the pack shows quarterly delta of -8.2% and the two price points match. Verified.",
+      "Quant report states 'P/B at 19.9\u00d7 is also near its floor (19.2\u201328.0\u00d7)' \u2014 the pack shows p_b=19.903 with range 19.2..28.0. Verified.",
+      "Quant report states 'Earnings yield of 4.3% is now competitive with the 10-year Treasury yield of 4.47%' \u2014 both figures match the pack exactly. Verified.",
+      "Quant report states 'PE (diluted) of 23.45\u00d7 on 2026-05-14 sits at the floor of its 365-day range (22.6\u201349.7\u00d7)' \u2014 the pack shows pe_diluted=23.45 with range 22.6..49.7. Verified.",
+      "Quant report states 'equity fell from $9.62B in Q3 2025 to $9.19B in Q1 2026 while debt rose from $54.59B to $57.32B' \u2014 the pack shows Q3 2025 total_equity=9.62B, total_debt=54.59B and Q1 2026 total_equity=9.19B, total_debt=57.32B. Verified.",
+      "Quant report states 'Q1 and Q2 2025 balance-sheet entries show negative total_liabilities, likely a data anomaly' \u2014 the pack shows Q2 2025 total_liabilities=-7.43B and Q1 2025 total_liabilities=-6.21B. Verified as present in the data."
+    ],
+    "corrections": [
+      {
+        "id": "C1",
+        "issue": "Quant report states net margin of 21% is 'at the top of their 365-day ranges (net_margin window: 0.10\u20130.20)' but 0.21 actually exceeds the stated 0.20 upper bound by 1pp. The report should note the latest reading breaks above the historical range, not merely sits at the top.",
+        "required_action": "Minor phrasing correction: acknowledge 0.21 exceeds the 0.20 range ceiling rather than stating it is 'at the top.'"
+      },
+      {
+        "id": "C2",
+        "issue": "Qual report states gross margins 'track near the branded-pharma average (~75% within ~2pp),' citing koalagains. The quant pack shows gross_margin=0.683 (68.3%), which is ~6.7pp below 75%. The koalagains source may refer to a different time period or metric, but the current quant evidence shows a materially wider gap than 2pp.",
+        "required_action": "Flag for PM awareness: the ~75% within 2pp claim from the qual source may not reflect current trailing gross margin of 68.3% shown in the quant pack. The PM should reconcile whether the koalagains figure refers to a different period or adjusted metric."
+      }
+    ]
+  },
+  "pm_emit_path": "submit_views",
+  "final_decision": "",
+  "submit_args": {
+    "views": [
+      {
+        "symbol": "AMGN",
+        "score": 0.25,
+        "rationale": "AMGN presents a moderately attractive setup anchored by a rare valuation dislocation: PE of 23.4\u00d7 sits at the floor of its 365-day range (22.6\u201349.7\u00d7), with earnings yield of 4.3% essentially at parity with the 10-year Treasury yield of 4.47% \u2014 a condition unseen for this franchise in the lookback period. The fundamental basis for the de-rating is partly real (Prolia -33.85% patent cliff, Tavneos FDA withdrawal risk, IRS tax dispute) and partly mechanical (Q1 2026 EPS reset the trailing denominator). However, the underlying business trajectory is healthier than the price action suggests: Q1 2026 revenue beat consensus by 1.4%, adjusted EPS beat by 8%, gross profit grew +13.4% YoY on only +5.8% revenue growth (operating leverage), OCF grew +57.4% YoY, and six growth drivers collectively grew 24% YoY with 17 products at $1B+ run rate. Management raised full-year guidance to $37.1B\u2013$38.5B revenue and $21.70\u2013$23.10 non-GAAP EPS. The primary offset is balance-sheet leverage at 6.2\u00d7 debt/equity ($57.32B debt vs $9.19B equity), which is elevated and deteriorating, and the patent cliff is a confirmed multi-billion-dollar headwind. The Tavneos overhang and IRS dispute add idiosyncratic risk. On balance, the valuation discount appears to overstate the fundamental deterioration \u2014 the growth engine is demonstrably working and margins are expanding \u2014 but the leverage and near-term headwinds prevent a higher conviction score. The Q1 earnings beat and guidance raise serve as a modest near-term catalyst, though the stock declined post-earnings due to Tavneos/IRS noise, leaving the re-rating incomplete.",
+        "key_factors": [
+          "PE of 23.4\u00d7 at floor of 365-day range (22.6\u201349.7\u00d7), down from 48.4\u00d7 in March 2026 \u2014 rare valuation dislocation for a quality pharma franchise",
+          "Earnings yield of 4.3% essentially at parity with 10-year Treasury yield of 4.47%, implying zero growth premium priced in",
+          "Q1 2026 revenue $8.62B beat consensus $8.5B by 1.4%; adjusted EPS $5.15 beat consensus $4.77 by 8%; management raised FY2026 guidance to $37.1B\u2013$38.5B revenue, $21.70\u2013$23.10 non-GAAP EPS",
+          "Gross profit grew +13.4% YoY on +5.8% revenue growth, indicating operating leverage; gross margin at 68.3%, net margin at 21% (above 365-day range ceiling of 0.20)",
+          "OCF of $2.19B in Q1 2026 grew +57.4% YoY; free cash flow of $1.5B in Q1 2026 grew +50% YoY",
+          "Six growth drivers grew 24% YoY; 17 products at $1B+ annualized run rate; EVENITY +34%, TEPEZZA +29%",
+          "Balance-sheet leverage: debt/equity of 6.238 ($57.32B debt vs $9.19B equity), deteriorating from Q3 2025 \u2014 primary fundamental risk",
+          "Prolia revenue crashed -33.85% to $727M in Q1 2026 as U.S. patents expired Feb 2025; Enbrel patent expiry 2028\u20132029 is the next major cliff",
+          "FDA proposed Tavneos withdrawal (April 28, 2026) citing manipulated clinical data from original developer ChemoCentryx \u2014 idiosyncratic risk on ~$4B acquisition",
+          "IRS disclosed draft NOPA for 2016\u20132018 that could have material financial impact \u2014 additional balance-sheet uncertainty",
+          "MariTide obesity pipeline faces intense GLP-1 competition from Lilly and Novo Nordisk; ~$2.6B capex committed in 2026 for manufacturing readiness",
+          "Macro headwind: 10-year yield at 4.47% (+42bps over 90 days), oil at $104.66/bbl (+67%) \u2014 rising-rate environment pressures leveraged balance sheet"
+        ],
+        "sources_cited": [
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-31",
+            "excerpt": "revenue=8.62B, YoY=+5.8%, gross_profit_yoy=+13.4%, operating_cash_flow_yoy=+57.4%"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-31",
+            "excerpt": "total_equity=9.19B, total_debt=57.32B"
+          },
+          {
+            "source_type": "ratios",
+            "source_id": "2026-05-14",
+            "excerpt": "pe_diluted=23.45 (range 22.6..49.7 over 365d)"
+          },
+          {
+            "source_type": "ratios",
+            "source_id": "2026-05-14",
+            "excerpt": "debt_to_equity=6.238, p_b=19.903 (range 19.2..28.0)"
+          },
+          {
+            "source_type": "ratios",
+            "source_id": "2026-05-14",
+            "excerpt": "earnings_yield=0.043, net_margin=0.21, gross_margin=0.683"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-31",
+            "excerpt": "eps_diluted=3.34, QoQ=-43.7% (vs Q3 2025 eps=5.93)"
+          },
+          {
+            "source_type": "prices",
+            "source_id": "2026-05-14",
+            "excerpt": "close=336.23, quarterly_delta=-8.2%"
+          },
+          {
+            "source_type": "macro",
+            "source_id": "2026-05-14",
+            "excerpt": "DGS10=4.47%, DCOILWTICO=104.66"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "stockstory.org Q1 2026",
+            "excerpt": "Revenue: $8.62 billion vs analyst estimates of $8.5 billion (5.8% year-on-year growth, 1.4% beat). Adjusted EPS: $5.15 vs analyst estimates of $4.77 (8% beat)."
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "koalagains.com structural",
+            "excerpt": "Prolia...a severe 33.85% revenue crash to $727M in the first quarter of 2026, marking a massive vulnerability as biosimilars begin to flood the market."
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "trefis.com",
+            "excerpt": "FDA proposed that Amgen withdraw its drug Tavneos from the market...citing allegations of manipulated clinical results and 'untrue statements of material fact' in the original approval submissions from ChemoCentryx."
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "investing.com Q1 transcript",
+            "excerpt": "Free cash flow: $1.5 billion in Q1 2026. We expect 2026 total revenues in the range of $37.1 billion-$38.5 billion."
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "trefis.com",
+            "excerpt": "Key risks AMGN key risks include significant revenue erosion from imminent patent expirations and biosimilar competition for blockbuster drugs including Enbrel and Prolia."
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "bbntimes.com Bradway profile",
+            "excerpt": "Amgen has since launched an ambitious MARITIME Phase 3 program...In 2026, the company has committed roughly 2.6 billion dollars in capital expenditure, a substantial portion dedicated to MariTide manufacturing readiness."
+          }
+        ]
+      }
+    ]
+  },
+  "error": null
+}

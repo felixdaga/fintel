@@ -1,0 +1,229 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 77861,
+    "tokens_out": 12763,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.082648430312,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "IBM presents a compelling value-at-floor-of-range setup with improving fundamentals. Pillar 1 (fundamentals): Q1 2026 showed strong YoY improvement \u2014 revenue +9.5%, EPS +14.3%, net income +15.3%, operating cash flow +18.3% \u2014 with gross margin expanding to 56.2% from 55.2%. Software ARR reached $24.6B (+$3B YoY), $69B RPO provides multi-year visibility, and segment profit grew +21.3% YoY. The franchise is defensible: Red Hat OpenShift, watsonx ($5B+ book), IBM Z handling 70% of global transactional workflows, and HashiCorp adding hybrid-cloud capabilities. However, consulting is soft (+0.9% cc), federal contract cancellations ($100M) create headwinds, and the balance sheet carries elevated leverage (liabilities/equity 3.73x, long-term debt $57.7B post-Confluent). Pillar 2 (valuation): PE at 19.3x is at the absolute floor of its 365-day range (19.0\u201351.2), having compressed 60%+ from 46x a year ago while fundamentals improved. P/B at 6.29x is also at floor (6.2\u201310.8). Earnings yield of 5.2% exceeds the 10Y Treasury (4.47%) by 73bps. The advisory note that adjusted EPS of $1.91 implies a PE of ~12.5x makes the valuation case even more compelling, though I anchor to the GAAP figure for conservatism. Pillar 3 (catalyst): The dividend increase to $1.69/quarter (~3.1% yield) signals management confidence in FCF durability; FedRAMP expansion of 11 AI/automation products opens a regulated federal route-to-market; and the Confluent integration provides a data-streaming capability that deepens the platform. These are dated, fundamental catalysts. The principal risks \u2014 high leverage in a rising-rate environment, consulting softness, and quarterly earnings volatility \u2014 cap the score below +0.5. The verification note that the price decline decelerated (not accelerated as the quant report stated) is a minor narrative correction but does not change the fundamental picture.",
+      "key_factors": [
+        "Q1 2026 YoY revenue +9.5% ($15.92B), EPS +14.3% ($1.28 GAAP), net income +15.3% ($1.22B), operating cash flow +18.3% ($5.17B)",
+        "PE diluted at 19.3x \u2014 floor of 365-day range (19.0\u201351.2), down from 46.1x one year ago; P/B at 6.29x also at floor (6.2\u201310.8)",
+        "Software ARR $24.6B (+$3B YoY), $69B RPO with 69% recognizable within two years providing revenue visibility",
+        "Segment profit +21.3% YoY to $3.3B; gross margin expanded to 56.2% from 55.2% YoY",
+        "watsonx crossed $5B cumulative book of business with ~80% landing in Consulting engagements, driving cross-sell",
+        "Dividend raised to $1.69/quarter ($6.76 annualized, ~3.1% yield) signaling management FCF confidence",
+        "FedRAMP expansion: 11 AI/automation products authorized through IBM-AWS collaboration, opening regulated federal market",
+        "Confluent acquisition ($11.6B) completed, adding data-streaming capabilities; HashiCorp ($6.4B) UK CMA cleared Feb 2025",
+        "Consulting revenue +0.9% cc in Q1 2026; 15 federal contract cancellations worth $100M; signings down 15.6%",
+        "Long-term debt $57.7B post-Confluent; liabilities/equity 3.73x; rising rates (10Y at 4.47%, Baa at 6.09%) increase refinancing cost",
+        "Adjusted EPS $1.91 vs GAAP $1.28 \u2014 advisory note flags PE could be ~12.5x on adjusted basis, materially lower than 19.3x GAAP",
+        "Price at $218.37, near 52-week low of $212.34, down ~30% from Nov 2025 peak of ~$314 while fundamentals improved YoY"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "revenue=15.92B, eps_diluted=1.28, net_income=1.22B, YoY rev=+9.5%, YoY eps=+14.3%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=5.17B, YoY=+18.3%, QoQ=+203.9%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "total_liabilities=123.17B, total_equity=33.06B (leverage ratio=3.73x)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=19.333 (365d range 19.0..51.2, floor)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "p_b=6.29 (365d range 6.2..10.8, floor)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.156 (up from 0.091 persisting since May 2025)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "roe=0.325 (top of 0.2..0.3 range), earnings_yield=0.052"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "close=218.37, 52-week low=212.34, quarterly delta=-15.9%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.47%, DBAA=6.09%, DCOILWTICO=104.66"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan.net / Q1 2026 filing",
+          "relevance": 1.0,
+          "excerpt": "Software revenue $7,052M (+11.3%), Consulting $5,272M (+4.0%), Infrastructure $3,326M (+15.3%); segment profit $3,300M (+21.3%); operating cash flow $5,169M; long-term debt $57.7B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fourweekmba.com",
+          "relevance": 1.0,
+          "excerpt": "watsonx had crossed $5B in cumulative book of business by late 2025, with roughly 80% landing in Consulting engagements"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan.net",
+          "relevance": 1.0,
+          "excerpt": "$69B remaining performance obligation, with roughly 69% recognizable in the next two years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bellwetherbrief.com",
+          "relevance": 1.0,
+          "excerpt": "15 federal contract cancellations worth $100 million and consulting signings down 15.6%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "IBM posted adjusted EPS $1.91 vs $1.81 estimate; revenue $15.92B up 9.5% YoY; dividend raised to $1.69/quarter ($6.76 annualized, ~3.1% yield)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224591,
+        "capped_chars": 224591,
+        "raw_tokens": 56148,
+        "capped_tokens": 56148
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30909,
+        "capped_chars": 30909,
+        "raw_tokens": 7727,
+        "capped_tokens": 7727
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2679,
+        "capped_chars": 2679,
+        "raw_tokens": 670,
+        "capped_tokens": 670
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 40085,
+        "capped_chars": 8598,
+        "raw_tokens": 10021,
+        "capped_tokens": 2150
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 97470,
+        "capped_chars": 69251,
+        "raw_tokens": 24367,
+        "capped_tokens": 17313
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 202421,
+  "started_at": "2026-08-06T02:36:57+00:00"
+}

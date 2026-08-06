@@ -8,8 +8,6 @@ grid. The nerve owns emission; this module owns the accumulated state.
 
 from __future__ import annotations
 
-import time
-
 from fintel.environment.staging import StageTracker
 
 

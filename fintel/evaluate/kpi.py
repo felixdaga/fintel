@@ -15,8 +15,8 @@ per the abstraction in docs/architecture.md §1.
 
 from __future__ import annotations
 
+from collections.abc import Callable
 from datetime import date as Date
-from typing import Any, Callable
 
 from fintel.market.realized import PriceLookup
 from fintel.models.common import Symbol

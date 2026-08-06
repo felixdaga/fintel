@@ -1,0 +1,235 @@
+{
+  "cell": "AAPL",
+  "symbols": [
+    "AAPL"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 102257,
+    "tokens_out": 11339,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.09552980139999999,
+    "basis": "reported"
+  },
+  "views": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "score": 0.15,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Apple's fundamental health and trajectory are strong: Q2 FY2026 revenue grew +16.6% YoY to $111.18B, EPS grew +21.8% YoY to $2.01, gross margin expanded 230bps to 49.3%, and operating cash flow grew +19.8% YoY. The balance sheet is fortress-grade with equity up to $106.49B and debt declining to $82.70B. Services at ~$31B/quarter at 76%+ gross margins and market share gains across all product categories reinforce franchise durability. However, Pillar 2 (valuation) is a significant constraint: P/E of 37.1x yields only 2.7%, a 179bps negative spread to the 10-year Treasury at 4.49%. The stock has already rallied +20.7% in one quarter, sitting just 2.8% below its 52-week high, suggesting the Q2 beat is largely priced in. Pillar 3 offers modest positive optionality: the Q3 earnings date (July 30) will test whether price increases offset memory cost inflation, and the foldable iPhone pipeline (10M units at ~$2,500) and Intel foundry partnership are credible medium-term catalysts. But near-term, memory cost inflation, regulatory overhang (DOJ, EU DMA, Italy probe), and the AI strategy lag temper enthusiasm. Net: a quality compounder at a full valuation with balanced risk-reward \u2014 mildly attractive but not compelling at current levels.",
+      "key_factors": [
+        "Q2 FY2026 revenue $111.18B (+16.6% YoY), EPS $2.01 (+21.8% YoY) \u2014 strong fundamental trajectory",
+        "Gross margin expanded to 49.3% from 47.0% YoY; operating margin 32.3% vs 31.0% \u2014 genuine margin improvement",
+        "Operating cash flow $28.70B (+19.8% YoY), tracking net income growth \u2014 high earnings quality",
+        "Balance sheet deleveraging: equity $106.49B (+59.5% vs prior year), debt $82.70B (-12.8%), D/E 0.777",
+        "Services revenue ~$31B in March 2026 quarter at ~76% gross margin \u2014 recurring high-margin revenue engine",
+        "Market share gains projected: iPhone 25%, iPad 39%, Mac 23% in 2026 per Counterpoint Research",
+        "P/E of 37.1x with earnings yield 2.7% \u2014 179bps below 10-year Treasury yield of 4.49%; valuation demands sustained high-teens growth",
+        "Stock rallied +20.7% in one quarter to $308.63, just 2.8% below 52-week high of $317.40 \u2014 Q2 beat largely priced in",
+        "Memory cost inflation and tariff headwinds ($1.1B tariff costs); June price increases testing pricing power",
+        "Regulatory overhang: DOJ lawsuit, EU DMA, Italy iCloud probe threatening App Store commission model",
+        "Q3 earnings July 30, 2026 \u2014 first read on price increase pass-through and margin impact; near-term catalyst",
+        "Foldable iPhone pipeline (10M units at ~$2,500) and Intel foundry partnership \u2014 credible medium-term growth levers"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "relevance": 1.0,
+          "excerpt": "revenue=111.18B, net_income=29.58B, eps_diluted=2.01"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2 YoY",
+          "relevance": 1.0,
+          "excerpt": "revenue_yoy=+16.6%, eps_diluted_yoy=+21.8%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "relevance": 1.0,
+          "excerpt": "gross_margin=49.3% (54.78B/111.18B), operating_margin=32.3% (35.88B/111.18B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=28.70B (YoY +19.8% vs 23.95B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28",
+          "relevance": 1.0,
+          "excerpt": "total_equity=106.49B, total_debt=82.70B, debt_to_equity=0.777"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=37.08x (range 30.5\u201343.1x), earnings_yield=0.027, net_margin=0.272"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.49%, DGS2=4.14%, T10Y2Y=0.35%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "close=308.63, quarterly_delta=+20.7%, range_high=317.40"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com (2026)",
+          "relevance": 1.0,
+          "excerpt": "Services revenue hit an all-time record above $31 billion in the March 2026 quarter...at roughly 76% gross margin"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "9to5mac.com (Jun 25, 2026)",
+          "relevance": 1.0,
+          "excerpt": "iPhone gaining two percentage points to reach 25% and iPad's market share growing from 35% in 2025 to 39% in 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Investing.com (Jul 1, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Apple is lobbying the U.S. administration to secure clearance to procure memory chips from CXMT...CEO Tim Cook admitted cost pressure is 'unsustainable'"
+        },
+        {
+          "source_type": "news",
+          "source_id": "The Motley Fool (Jul 4, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Apple's first foldable smartphone priced around $2,500 with production targets of 10 million units"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Investing.com (Jun 23, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Apple has partnered with Intel to design and manufacture chips in the United States, addressing supply chain pressures including rising memory chip costs and overdependence on TSMC"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradersunion.com (June 2026)",
+          "relevance": 1.0,
+          "excerpt": "Italy's antitrust regulator has launched an investigation into Apple for potential violations of digital market rules involving iCloud"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foreignpolicyjournal.com (June 2026)",
+          "relevance": 1.0,
+          "excerpt": "The central investment debate revolves around the durability of the App Store's commission model in the face of mounting regulatory pressure globally"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AAPL",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4671,
+        "capped_chars": 4671,
+        "raw_tokens": 1168,
+        "capped_tokens": 1168
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230111,
+        "capped_chars": 230111,
+        "raw_tokens": 57528,
+        "capped_tokens": 57528
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30321,
+        "capped_chars": 30321,
+        "raw_tokens": 7580,
+        "capped_tokens": 7580
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4355,
+        "capped_chars": 4355,
+        "raw_tokens": 1089,
+        "capped_tokens": 1089
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 262948,
+        "capped_chars": 59236,
+        "raw_tokens": 65737,
+        "capped_tokens": 14809
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 86670,
+        "capped_chars": 68791,
+        "raw_tokens": 21668,
+        "capped_tokens": 17198
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 178070,
+  "started_at": "2026-08-06T02:54:04+00:00"
+}

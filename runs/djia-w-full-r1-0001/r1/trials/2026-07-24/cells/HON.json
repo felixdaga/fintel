@@ -1,0 +1,239 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 74857,
+    "tokens_out": 12215,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0740944964,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "HON is extremely unattractive at current levels. The Q2 2026 headline EPS of $17.83 is entirely driven by a ~$3.45B one-time Quantinuum deconsolidation gain, rendering the trailing P/E of 9.5x a statistical artifact. Stripping the non-recurring item, operating income declined 5.5% YoY despite 4.3% revenue growth, with gross margin compressing 170bps and operating margin compressing 240bps. Cash generation is deteriorating (OCF -3.3% YoY, Q1 2026 OCF negative). The balance sheet carries $31.5B debt at 1.67x D/E in a rising-rate environment (10Y at 4.71%). On normalized earnings (~$7.50-$9.80 annualized from clean quarters), the stock at $246.27 trades at 25-33x, at or above the top of its historical 22-36x range. The recent Aerospace spin-off removes the highest-quality recurring-revenue segment, leaving a smaller, more cyclically exposed entity facing PFAS liability overhang, Process Automation weakness, and elevated leverage. The stock is near 52-week highs ($252) on what appears to be mispricing of the one-time gain, creating significant downside risk of 12-33% once the market reprices normalized earnings. No credible near-term fundamental catalyst exists to re-rate the stock higher; the Q2 beat and guidance raise are already priced in and the underlying operating trajectory is deteriorating.",
+      "key_factors": [
+        "Q2 2026 GAAP EPS of $17.83 is entirely driven by ~$3.45B one-time Quantinuum deconsolidation gain (net income $5.69B vs operating income $2.24B); adjusted EPS was $4.52 beating consensus $1.80 but still includes stub Aerospace period",
+        "Operating income declined -5.5% YoY ($2.24B vs $2.37B) despite +4.3% revenue growth; gross margin compressed -170bps (39.3% to 37.6%), operating margin compressed -240bps (25.4% to 23.0%)",
+        "Cash generation deteriorating: Q2 2026 OCF $1.28B (-3.3% YoY), Q1 2026 OCF negative at -$650M; free cash flow data unavailable",
+        "Balance sheet carries $31.5B total debt at 1.67x D/E; Q1 2026 leverage spiked to ~2.19x before Q2 gain restored equity; rising rate environment (10Y at 4.71%) increases interest cost risk",
+        "Normalized PE of 25-33x (using clean-quarter EPS of $2.45 and $1.29 annualized) is at or above top of historical 22-36x range; the 9.5x headline PE is a statistical artifact",
+        "Stock at $246.27 near 52-week high of $252, up +12% over past quarter, while underlying operating fundamentals are flat-to-declining",
+        "Aerospace spin-off (June 29, 2026) removed ~$15B revenue high-margin recurring-revenue segment; remaining Honeywell Technologies is ~$20B annualized revenue, more cyclically exposed",
+        "PFAS legacy liability may exceed existing balance sheet provisions per recent court filings; unquantified structural overhang",
+        "Process Automation organic sales declined 1% with segment margin contracting 180bps to 22.1%; only Building Automation showed strong momentum (9% organic growth, 27.1% margin)",
+        "Honeywell Technologies standalone Q2: adjusted EPS $1.95 up 10%, orders up 16% organically with ~$20B backlog, segment margin 19.0% expanding 100bps \u2014 positive but insufficient to offset valuation and structural concerns"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-30",
+          "relevance": 1.0,
+          "excerpt": "operating_income=2.24B (down -5.5% YoY from 2.37B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-30",
+          "relevance": 1.0,
+          "excerpt": "net_income=5.69B vs operating_income=2.24B (implies ~$3.45B non-recurring gain)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "net_income=795M eps_diluted=1.29 (normal baseline quarter)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30",
+          "relevance": 1.0,
+          "excerpt": "gross_profit=3.66B operating_margin\u224825.4% (prior-year benchmark)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-30",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=1.28B (vs 1.32B YoY, -3.3%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_equity=14.67B total_debt=32.11B (debt/equity\u22482.19x trough)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=9.549 (artificially low from non-recurring EPS)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=35.659 (pre-gain PE, more representative of historical valuation)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "p_b=4.161 (range 4.2\u201310.4, depressed by one-time equity gain)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.71% (rising rate environment, +0.36 over period)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "sec.gov (Honeywell Aerospace filing, June 2026)",
+          "relevance": 1.0,
+          "excerpt": "With more than $17 billion in annual revenue for 2025 and a global installed base spanning virtually every commercial and defense aircraft platform\u2026systems are installed on approximately 90% of the in-service aerospace fleet and directly integrated into the design of over 250 in-production platforms"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.honeywell.com (Q2 2026 results, July 23, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Sales of $5.2 billion, up 3% reported and up 4% organic; Orders up 16% leading to ~$20 billion backlog; Segment margin of 19.0%; Adjusted EPS of $1.95, up 10% year-over-year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.honeywell.com (Q2 2026 results, July 23, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Building Automation\u2026sales grew 9% organically\u2026Segment margin expanded 90 basis points to 27.1%\u2026Orders increased 13% year over year led by robust growth in data center and hospitality verticals"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com (July 23, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Legacy Environmental Liability Scrutiny: Recent regulatory updates and evolving litigation regarding 'forever chemicals' (PFAS) have increased investor concern over un-accrued remediation costs, with recent court filings suggesting that legacy liabilities may exceed existing balance sheet provisions"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.honeywell.com (IR page, June 2026)",
+          "relevance": 1.0,
+          "excerpt": "4% - 6% Annual organic sales growth; ~24% Segment margin; ~$6.00 Adj. earnings per share (10%+ annual growth); >$3B Free cash flow (90%+ FCF conversion)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "tickerreport.com (July 23, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Q3 2026 guidance at 2.050-2.200 EPS and revenue guidance of $4.9 billion-$5.0 billion; Q4 2026 guidance at 2.280-2.430 EPS"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3815,
+        "capped_chars": 3815,
+        "raw_tokens": 954,
+        "capped_tokens": 954
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 248460,
+        "capped_chars": 248460,
+        "raw_tokens": 62115,
+        "capped_tokens": 62115
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30496,
+        "capped_chars": 30496,
+        "raw_tokens": 7624,
+        "capped_tokens": 7624
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1524,
+        "capped_chars": 1524,
+        "raw_tokens": 381,
+        "capped_tokens": 381
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 13655,
+        "capped_chars": 3504,
+        "raw_tokens": 3414,
+        "capped_tokens": 876
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88919,
+        "capped_chars": 68019,
+        "raw_tokens": 22229,
+        "capped_tokens": 17005
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 156664,
+  "started_at": "2026-08-06T03:02:10+00:00"
+}

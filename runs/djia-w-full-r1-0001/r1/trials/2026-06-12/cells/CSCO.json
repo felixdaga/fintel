@@ -1,0 +1,233 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 70814,
+    "tokens_out": 10864,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.07116558323200001,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "CSCO has genuine fundamental momentum \u2014 Q3 FY2026 record revenue of $15.8B (+12% YoY), networking orders up 50%+ YoY, AI orders raised to $9B, and a multi-year campus refresh cycle. However, the stock has already priced this in and then some: P/E has expanded 65% in twelve months to 43.8x (top of 1-year range), earnings yield of 2.3% sits 215bp below the 10Y Treasury, and the stock has risen ~57% in one quarter alone. The quality of growth is deteriorating \u2014 OCF declined 18.7% YoY in Q2 while earnings grew 31%, OCF/NI conversion was only 57%, gross margin compressed 200bp in Q3 due to hardware-heavy AI mix, and RPO growth (4-5%) is materially lagging revenue growth (10-12%), suggesting the hardware boom is not converting to durable recurring revenue. Security segment is flat despite favorable market dynamics. Insider selling (47 sales, 0 purchases over 6 months) signals limited near-term conviction. At 43.8x with negative earnings yield spread, any earnings miss or guidance reset compresses the multiple aggressively \u2014 the risk/reward is asymmetrically to the downside.",
+      "key_factors": [
+        "P/E diluted expanded 65% in 12 months to 43.8x (top of 26.2-46.8x range) \u2014 no valuation cushion for disappointment",
+        "Earnings yield 2.3% vs 10Y Treasury 4.45% = -215bp negative spread; stock priced for sustained >20% earnings growth",
+        "Q2 FY2026 operating cash flow $1.82B declined -18.7% YoY and -43.3% QoQ while net income grew +31.1% YoY; OCF/NI conversion only 57%",
+        "Q3 FY2026 non-GAAP gross margin 66.0% declined 2.0pp due to unfavorable product mix and increased memory costs from hardware-heavy AI orders",
+        "RPO growth (4-5% YoY) materially lagging revenue growth (10-12% YoY) \u2014 negative spread suggests hardware boom not converting to durable recurring revenue",
+        "Security revenue flat in Q3 FY2026, down 2% YTD \u2014 underperforming despite favorable cybersecurity market dynamics",
+        "Stock price +56.7% in one quarter (from $77.74 to $121.83) vs revenue +10% YoY \u2014 price action driven overwhelmingly by multiple expansion",
+        "Insider selling: 47 open market sales with 0 purchases over 6 months ending Feb 2026",
+        "Q3 FY2026 record revenue $15.8B (+12% YoY), networking orders +50% YoY, AI orders raised to $9B \u2014 genuine momentum but already priced in",
+        "Total debt increased 22% YoY to $24.6B; debt-to-equity 0.515x \u2014 moderate but rising leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24",
+          "relevance": 1.0,
+          "excerpt": "revenue=15.35B, eps_diluted=0.80, operating_income=3.78B, net_income=3.17B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=1.82B (QoQ -43.3%, YoY -18.7% vs earnings +31.1% YoY)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24",
+          "relevance": 1.0,
+          "excerpt": "total_debt=24.60B, total_equity=47.72B, debt_to_equity=0.515"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=43.822 (range 26.2..46.8 over 365d; 26.606 one year prior)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.023 (vs DGS10=4.45%, spread=-215bp)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "p_b=10.171 (range 5.6..10.9), roe=0.232, net_margin=0.188"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "close=121.83, quarterly delta=+56.7% (from 77.74 on 2026-03-12)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.45%, DCOILWTICO=91.58, FEDFUNDS=3.63%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.cisco.com (Q3 FY2026, ended April 25, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Total product orders up 35% year over year; up 19% excluding hyperscalers. Growth in networking product orders accelerated to more than 50% year over year. $5.3 billion of orders taken year to date; raising expected FY26 orders to $9 billion, up from $5 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.cisco.com (Q3 FY2026)",
+          "relevance": 1.0,
+          "excerpt": "Revenue: $15.8 billion, up 12%... Networking \u00b7 $8,815 \u00b7 25%... Security \u00b7 $2,008 \u00b7 \u2014%... Collaboration \u00b7 $1,024 \u00b7 (1)%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.cisco.com (Q3 FY2026)",
+          "relevance": 1.0,
+          "excerpt": "GAAP gross margin of 63.6% and non-GAAP gross margin of 66.0%... Networking, up 25% and Observability up 3%. Collaboration was down 1%. Security was flat"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.cisco.com (Q3 FY2026)",
+          "relevance": 1.0,
+          "excerpt": "Remaining Performance Obligations (RPO) \u2014 $43.5 billion, up 4% in total. Product RPO was up 6%... long-term RPO was $11.7 billion, up 6%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "gurufocus.com",
+          "relevance": 1.0,
+          "excerpt": "total gross margin decreased by 2.0 percentage points in the third quarter of fiscal 2026, primarily due to unfavorable product mix and increased memory costs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "relevance": 1.0,
+          "excerpt": "Total RPO growth decelerated to 5% YoY in Q2 FY2026, lagging far behind the 10% total revenue growth. Product RPO grew only 8% in the last quarter, a 600 basis point negative spread compared to the 14% growth in product revenue"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "relevance": 1.0,
+          "excerpt": "Key risks CSCO key risks include [1] market share erosion from intense competition in its core networking and cybersecurity businesses, and [2] challenges executing its strategic transition from hardware to a software-subscription model, including the complex integration of its Splunk acquisition"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230751,
+        "capped_chars": 230751,
+        "raw_tokens": 57688,
+        "capped_tokens": 57688
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30935,
+        "capped_chars": 30935,
+        "raw_tokens": 7734,
+        "capped_tokens": 7734
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1656,
+        "capped_chars": 1656,
+        "raw_tokens": 414,
+        "capped_tokens": 414
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 19171,
+        "capped_chars": 3842,
+        "raw_tokens": 4793,
+        "capped_tokens": 960
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88548,
+        "capped_chars": 68918,
+        "raw_tokens": 22137,
+        "capped_tokens": 17229
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 131866,
+  "started_at": "2026-08-06T02:47:07+00:00"
+}

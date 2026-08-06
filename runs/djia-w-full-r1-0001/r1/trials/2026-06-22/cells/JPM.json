@@ -1,0 +1,216 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 88069,
+    "tokens_out": 10257,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0831225864,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "JPM's fundamental trajectory is clearly constructive: Q1 2026 delivered record net income of $16.49B, EPS of $5.94 (+17.2% YoY), revenue of $49.84B (+10.0% YoY), and operating margin expanding to 41.1% from 37.5% a year prior. ROE improved to 16.2% from 15.5%, and the franchise remains best-in-class with 20%+ ROTCE, $4.48T AUM (+18% YoY), and diversified revenue streams across CCB, CIB, CB, and AWM. Valuation is mid-range at 15.0x P/E (vs. 17.8x peak in Jan 2026), meaning the market has compressed the multiple by ~16% even as fundamentals strengthened \u2014 a modestly asymmetric setup. The P/B of 2.43x is justified by the ROE premium vs. peers. On the risk side, the yield curve has flattened materially (10Y-2Y at 0.27%, -45% over 90 days), posing a direct threat to NII; nonaccrual loans surged 53% in Q1 signaling emerging credit stress; expenses are rising toward $106B; and the DOJ debanking probe adds legal uncertainty. operating cash remains O. Q.,....2.2.2.2222222222222222221122222222222222122222222222222222221221121122111122122222121222122212212222222222222221",
+      "key_factors": [],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=49.84B, net_income=16.49B, eps_diluted=5.94, operating_income=20.48B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 YoY",
+          "relevance": 1.0,
+          "excerpt": "revenue=+10.0%, eps_diluted=+17.2%, net_income=+12.6%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 YoY",
+          "relevance": 1.0,
+          "excerpt": "operating_margin implied 41.1% (vs 37.5% Q1 2025)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=15.02, p_b=2.43, roe=0.162, earnings_yield=0.067"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-01-06",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=17.833 (window high \u2014 multiple compression since)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "T10Y2Y=0.27 (\u0394=-44.9% over 90d \u2014 flattening yield curve)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "close=325.22, quarterly delta=+12.9%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.investing.com",
+          "relevance": 1.0,
+          "excerpt": "core return on tangible common equity of 20% and $41.7 billion remaining on its share buyback authorization and raised its dividend for 15 consecutive years and AWM assets under management reaching $4.48 trillion, up 18% with $52 billion in long-term net inflows"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-16",
+          "relevance": 1.0,
+          "excerpt": "JPMorgan Chase's stock climbed nearly 4% on Tuesday following reports that the bank plans to expand its digital banking services into at least three new European markets\u2014France, Italy, and Spain\u2014within the next five years"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "JPMorgan Chase, Bank of America, and Wells Fargo over allegations of politically motivated account closures \u2014 DOJ subpoenas in debanking probe"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-13",
+          "relevance": 1.0,
+          "excerpt": "JPMorgan Chase's 7% net interest income growth target for 2026 has become more achievable as interest rate expectations have shifted from anticipated cuts to potential increases due to rising inflation"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.tradingkey.com",
+          "relevance": 1.0,
+          "excerpt": "Dimon indicated that the bank's annual expenses could exceed prior estimates by approximately $1 billion, potentially reaching $106 billion and potential allocation of $10 billion to $20 billion for deals over the next two years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "relevance": 1.0,
+          "excerpt": "Q1 2026 net income of $16.5 billion, with EPS of $5.94, up 17% and nonperforming exposure rose 11% and nonaccrual loans surged 53%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-09",
+          "relevance": 1.0,
+          "excerpt": "JPMorgan Chase trades at a price-to-book ratio of 2.4, representing a 71% premium to Bank of America's 1.4 multiple"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 237658,
+        "capped_chars": 237658,
+        "raw_tokens": 59414,
+        "capped_tokens": 59414
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30574,
+        "capped_chars": 30574,
+        "raw_tokens": 7644,
+        "capped_tokens": 7644
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3565,
+        "capped_chars": 3565,
+        "raw_tokens": 891,
+        "capped_tokens": 891
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 182641,
+        "capped_chars": 18122,
+        "raw_tokens": 45660,
+        "capped_tokens": 4530
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98230,
+        "capped_chars": 77807,
+        "raw_tokens": 24556,
+        "capped_tokens": 19451
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 175324,
+  "started_at": "2026-08-06T03:34:38+00:00"
+}

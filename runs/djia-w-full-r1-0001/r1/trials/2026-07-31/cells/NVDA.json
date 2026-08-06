@@ -1,0 +1,245 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 129712,
+    "tokens_out": 10160,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.11305223140000001,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.55,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "NVDA presents a rare combination of elite fundamental trajectory and historically compressed valuation. Q1 FY2027 delivered $81.6B revenue (+85% YoY), $2.39 EPS (+214.5% YoY), 74.9% gross margins, and $50.3B operating cash flow \u2014 all record figures. The balance sheet is a fortress with $195.5B equity against $8.5B debt (D/E 0.043). The PE has compressed from 57x to 29.8x at the floor of its one-year range, driven entirely by the earnings explosion rather than price decline \u2014 the stock is actually -6.8% over three months while earnings more than doubled. This is a significant disconnect. The franchise is near-monopolistic (87% data center AI revenue share, 90% discrete GPU share) with deep CUDA switching costs, and growth is broadening beyond hyperscalers (ACIE segment +31% QoQ vs Hyperscale +12%). Hyperscaler capex commitments of ~$725B for 2026 and projected >$1T for 2027 provide multi-year demand visibility. Vera Rubin production is confirmed, and the SK Hynix partnership secures HBM supply. The principal risk is the rate environment: at 3.4% earnings yield vs 4.68% 10-year Treasury, the market is not compensated for equity risk, which explains the PE compression. China export controls and hyperscaler custom silicon are genuine but partially priced headwinds. The circular financing reports ($250B-$350B guarantees) are unconfirmed and bear monitoring. Q2 earnings on Aug 26 (consensus $2.08 EPS, $91B revenue guidance) provide a near-term catalyst \u2014 if the trajectory continues, the stock re-rates from its historically low multiple. Score reflects strong fundamentals and trajectory (pillar 1), compelling valuation vs own history (pillar 2), and a modest catalyst boost from the upcoming earnings event (pillar 3).",
+      "key_factors": [
+        "Q1 FY2027 revenue $81.6B (+85.2% YoY, +43.2% QoQ) \u2014 acceleration not deceleration in the quarterly sequence ($44.1B\u2192$46.7B\u2192$57.0B\u2192$81.6B)",
+        "EPS diluted $2.39 (+214.5% YoY, +83.8% QoQ) with net income $58.3B in a single quarter",
+        "Gross margin 74.9%, operating margin 65.6%, net margin 63% \u2014 structural step-change in profitability",
+        "Operating cash flow $50.3B in Q1 (+112% QoQ); free cash flow $48.6B against ~$1.8B capex \u2014 capital-light model",
+        "Balance sheet: $195.5B equity, $8.5B debt, D/E 0.043 \u2014 near-unassailable resilience",
+        "PE diluted 29.8x at floor of 29.0x-66.8x 365-day range (was 57.0x one year ago) \u2014 earnings-driven compression, not price decline",
+        "Stock at $195.04, -6.8% over 3 months while earnings more than doubled \u2014 significant fundamental-price disconnect",
+        "87% data center AI revenue share (Axis Intelligence Q1 2026), 90% discrete GPU share (JPR Q1 2026) \u2014 near-monopoly franchise",
+        "ACIE segment grew 31% QoQ vs Hyperscale 12% \u2014 growth broadening beyond Big Four hyperscalers",
+        "Hyperscaler capex ~$725B for 2026 (+77% YoY), projected >$1T for 2027; Alphabet raised 2026 capex to $195-205B (July 27)",
+        "Vera Rubin confirmed in production by Jensen Huang (July 26); $1T combined Blackwell+Vera Rubin demand projected through 2027",
+        "SK Group $500B+ partnership for AI factories with Vera Rubin accelerators and HBM co-development (July 25)",
+        "Key risk: earnings yield 3.4% below 10-year Treasury 4.68% \u2014 rate environment constrains PE ceiling",
+        "Key risk: circular financing reports ($250B-$350B guarantees for Ohio/OpenAI) unconfirmed but caused -5% drop on July 28",
+        "Key risk: China export controls; Moonshot AI GB300 deployment in Thailand flagged July 28; China revenue zeroed in guidance",
+        "Near-term catalyst: Q2 FY2027 earnings Aug 26 (consensus EPS ~$2.08, revenue guidance $91B)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 Q1",
+          "relevance": 1.0,
+          "excerpt": "revenue=81.61B, eps_diluted=2.39, gross_profit=61.16B, operating_income=53.54B, net_income=58.32B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 Q1",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=50.34B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 balance_sheet",
+          "relevance": 1.0,
+          "excerpt": "total_equity=195.47B, total_debt=8.47B, debt_to_equity=0.043"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 Q1 YoY",
+          "relevance": 1.0,
+          "excerpt": "revenue=+85.2%, eps_diluted=+214.5%, net_income=+210.6%, gross_profit=+129.3%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=29.805, p_b=24.337, earnings_yield=0.034, net_margin=0.63, roe=0.817"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-31",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=57.019, p_b=52.211 (one-year-ago baseline)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.68% (10y yield exceeds NVDA earnings yield of 3.4%)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "close=195.04, quarterly_delta=-6.8%, range_high=236.54, range_low=164.07"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "aibusinessweekly.net",
+          "relevance": 1.0,
+          "excerpt": "Q1 FY2027: record revenue of $81.6 billion, up 85% from a year ago\u2026 Record data center revenue was $75.2 billion, up 92% from a year ago\u2026 GAAP and non-GAAP gross margins were 74.9% and 75.0%\u2026 Free cash flow for the quarter was $48.6 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "axis-intelligence.com",
+          "relevance": 1.0,
+          "excerpt": "Nvidia held 90% of discrete add-in-board GPU shipments in Q1 2026\u2026 Nvidia's data center revenue of $75.2 billion in Q1 FY2027 represented 87.4% of the combined $86.075 billion in data center revenues"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "techcache.substack.com",
+          "relevance": 1.0,
+          "excerpt": "Hyperscale at $38B and ACIE at $37B. But the growth rates are very different. Hyperscale grew 12% sequentially, while ACIE grew 31%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-28",
+          "relevance": 1.0,
+          "excerpt": "Nvidia shares dropped 4.97% following reports that the chipmaker is in discussions to guarantee $250 billion in financing for a data center project in Ohio and potentially another $350 billion to finance OpenAI's AI chip purchases"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-28",
+          "relevance": 1.0,
+          "excerpt": "Moonshot purchased servers equipped with Nvidia's GB300 processors and deployed them in Thailand"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-27",
+          "relevance": 1.0,
+          "excerpt": "Alphabet raised its 2026 capex guidance to $195-205 billion (from $180-190 billion)\u2026 plans to deploy Nvidia's next-generation Vera Rubin chips"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-26",
+          "relevance": 1.0,
+          "excerpt": "Nvidia CEO Jensen Huang dismissed reports of delays\u2026 confirming that the chips are already in production with 'giant amounts of production incoming'"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-25",
+          "relevance": 1.0,
+          "excerpt": "SK Telecom will construct a 2-gigawatt AI factory using NVIDIA's DSX platform and Vera Rubin accelerators, expected to launch in 2027. SK hynix will establish a long-term partnership with NVIDIA to supply and codevelop next-generation AI memory including HBM"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4649,
+        "capped_chars": 4649,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242304,
+        "capped_chars": 242304,
+        "raw_tokens": 60576,
+        "capped_tokens": 60576
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30602,
+        "capped_chars": 30602,
+        "raw_tokens": 7650,
+        "capped_tokens": 7650
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4446,
+        "capped_chars": 4446,
+        "raw_tokens": 1112,
+        "capped_tokens": 1112
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 412856,
+        "capped_chars": 96605,
+        "raw_tokens": 103214,
+        "capped_tokens": 24151
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103678,
+        "capped_chars": 81753,
+        "raw_tokens": 25919,
+        "capped_tokens": 20438
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 121530,
+  "started_at": "2026-08-06T03:06:36+00:00"
+}

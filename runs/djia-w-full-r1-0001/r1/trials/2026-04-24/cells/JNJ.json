@@ -1,0 +1,228 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 74859,
+    "tokens_out": 10161,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0734291614,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "JNJ is a high-quality franchise (AAA-rated, 64-year dividend streak, diversified Innovative Medicine + MedTech segments) but the stock is fundamentally unattractive at current levels across all three pillars. Pillar 1 (Fundamentals): Margins are actively compressing \u2014 gross margin fell from 69.6% (Q3) to 66.3% (Q4), operating margin from 31.2% to 24.9%, net margin from 27.3% (Nov 2025) to 21.8% (latest). Q4 operating cash flow collapsed 72.6% QoQ to $2.51B. Stelara sales plunged 59% YoY due to biosimilar competition, and adjusted EPS is expected to decline ~15% in 2026. While the oncology pipeline (Darzalex $4B/qtr, Icotyde peak est. ~$14.9B) provides replacement runway, the near-term earnings trajectory is deteriorating. Pillar 2 (Valuation): P/E diluted of 26.8x sits at the absolute ceiling of its 365-day range (16.3\u201326.8x), representing a 56% re-rating from 17.2x one year ago \u2014 this expansion has occurred simultaneously with declining profitability. Even using Guggenheim's adjusted EPS of $11.61, the forward P/E is ~20x, which is fair but not cheap for a business with a 15% EPS decline ahead. Morningstar's fair value estimate is $190, 19% below current price. The 3.7% earnings yield offers negative equity risk premium versus the 4.34% 10-year Treasury. Pillar 3 (Near-term catalyst): The Q1 2026 earnings beat and guidance raise above $100B are already priced in. The Stelara cliff and Imbruvica erosion from Lilly's Jaypirca represent near-term downside risks, while Icotyde's early traction (1,500 Rxs in first 4 weeks) is promising but too early to re-rate. WTI crude at $99.27 (+64% in 90 days) creates ongoing input-cost headwinds. The combination of peak multiple, deteriorating margins, patent cliff headwinds, and unfavorable macro (rising rates, surging oil) creates asymmetric downside risk of 25-28% to a normalized fair value of $165-172 on ~$8.60 GAAP EPS at 19-20x.",
+      "key_factors": [
+        "P/E diluted at 26.8x \u2014 absolute ceiling of 365-day range (16.3\u201326.8x), up 56% from 17.2x one year ago",
+        "Gross margin compressed from 69.6% (Q3) to 66.3% (Q4); operating margin from 31.2% to 24.9%; net margin from 27.3% (Nov 2025) to 21.8% (latest)",
+        "Q4 operating cash flow collapsed 72.6% QoQ to $2.51B, lowest in four-quarter series",
+        "Stelara sales plunged 59% YoY due to biosimilar competition; adjusted EPS expected to decline ~15% in 2026",
+        "Earnings yield of 3.7% offers negative equity risk premium vs 10-year Treasury at 4.34%",
+        "Morningstar fair value estimate $190 \u2014 stock trading ~19% above; price rallied 57.8% from 52-week low to $230.65",
+        "WTI crude surged +64% over 90 days to $99.27 \u2014 direct cost-of-revenue headwind",
+        "Lilly's Jaypirca showing competitive advantage over JNJ's Imbruvica in head-to-head Phase 3 data",
+        "Icotyde early traction (1,500 Rxs in 4 weeks, peak est. raised to ~$14.9B) provides long-term replacement runway but too early to re-rate",
+        "Q1 2026 revenue beat ($24.06B vs $23.6B consensus) and guidance raise above $100B already priced in at peak multiple",
+        "AAA credit rating, 64 consecutive years of dividend increases, $22.05B cash balance provide balance-sheet resilience but do not offset earnings-quality and valuation risks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29",
+          "relevance": 1.0,
+          "excerpt": "gross_profit=15.96B cost_of_revenue=8.11B gross_margin=66.3% (vs Q3 69.6%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=2.51B (QoQ: -72.6% from Q3 9.17B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29",
+          "relevance": 1.0,
+          "excerpt": "operating_income=5.99B net_margin=21.8% (vs Q3 operating_income=7.49B, net_margin=21.5%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-30",
+          "relevance": 1.0,
+          "excerpt": "operating_income=13.63B net_income=11.00B eps_diluted=4.54 (one-time outlier)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=26.805 (52-week range: 16.3\u201326.8, at ceiling)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-04-24",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=17.218 (one-year-ago comparison point)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.218 roe=0.259 (vs Nov 2025: 0.273 / 0.317)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.34% DCOILWTICO=99.27"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-14, Benzinga",
+          "relevance": 1.0,
+          "excerpt": "sales of $24.06 billion up 9.9% YoY\u2026 Cancer drug revenue surged 22.8%\u2026 Stelara, which saw sales plummet 59% year-over-year due to generic competition\u2026 free cash flow fell 55.6% YoY to $1.50 billion\u2026 increased its dividend by 3.1% to $1.34 per share, marking 64 consecutive years of growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.investing.com (updates)",
+          "relevance": 1.0,
+          "excerpt": "Guggenheim set its fiscal year 2026 estimates for sales at $100.57 billion and earnings per share at $11.61\u2026 increased its unadjusted peak revenue estimate for Icotyde to approximately $14.9 billion from approximately $10 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-13, Benzinga",
+          "relevance": 1.0,
+          "excerpt": "Eli Lilly announced positive Phase 3 trial results for Jaypirca\u2026 Head-to-head data also demonstrated Jaypirca's competitive advantage over Johnson & Johnson's Imbruvica"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.morningstar.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "we just raised our fair value estimate for J&J stock to $190 per share from $182\u2026 This overvalued stock currently trades 19% above our fair value estimate"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.biospace.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Johnson & Johnson kicked off Q1 earnings with a 'modest beat' and an audacious goal: to hit $100 billion in revenue in 2026\u2026 J&J raised its full year 2026 revenue guidance"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "markets.financialcontent.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Today, J&J operates through two primary reporting segments: Innovative Medicine (65% of Revenue)\u2026 MedTech (35% of Revenue)\u2026 Since the $16.6 billion acquisition of Abiomed in late 2022 and the 2024 acquisition of Shockwave Medical, J&J has repositioned this segment toward high-growth cardiovascular care"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4593,
+        "capped_chars": 4593,
+        "raw_tokens": 1148,
+        "capped_tokens": 1148
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223578,
+        "capped_chars": 223578,
+        "raw_tokens": 55894,
+        "capped_tokens": 55894
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30859,
+        "capped_chars": 30859,
+        "raw_tokens": 7715,
+        "capped_tokens": 7715
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2674,
+        "capped_chars": 2674,
+        "raw_tokens": 668,
+        "capped_tokens": 668
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 59478,
+        "capped_chars": 16212,
+        "raw_tokens": 14870,
+        "capped_tokens": 4053
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88267,
+        "capped_chars": 48889,
+        "raw_tokens": 22066,
+        "capped_tokens": 12222
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 180753,
+  "started_at": "2026-08-06T02:28:34+00:00"
+}

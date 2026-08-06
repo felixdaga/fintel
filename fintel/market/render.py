@@ -22,7 +22,8 @@ environment stays generic and never hardcodes a source's payload shape.
 from __future__ import annotations
 
 import json
-from typing import Any, Callable
+from collections.abc import Callable
+from typing import Any
 
 from .catalog import source as _catalog_source  # noqa: F401  (ensures registry ready)
 

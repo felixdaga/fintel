@@ -63,6 +63,7 @@ def run_simulation(args: Namespace) -> int:
         max_concurrent=args.max_concurrent,
         cell_concurrency=args.cell_concurrency,
         trial_concurrency=args.trial_concurrency,
+        shared_concurrency=args.shared_concurrency,
         output_root=str(Path(args.output_root).resolve()),
         universe=universe,
         schedule=schedule,

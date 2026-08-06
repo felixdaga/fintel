@@ -1,0 +1,209 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 88144,
+    "tokens_out": 9796,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.083372129392,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "JNJ is a high-quality franchise with durable competitive positions, a AAA balance sheet, and a pipeline delivering positive clinical readouts (ERLEADA PROTEUS, nipocalimab JASMINE/ENERGY). However, the stock is extremely unattractive at current levels on all three pillars. Pillar 1 (fundamentals): revenue is flat QoQ ($24.06B Q4 vs $23.99B Q3), margins are compressing (gross margin 66.3% vs 69.5% QoQ, operating margin 24.9% vs 31.2%), operating cash flow collapsed -72.6% QoQ ($2.51B vs $9.17B), and TTM earnings are artificially inflated by a Q1 one-time item ($11B net income vs normalized ~$5.3B quarterly run-rate). ROE has declined from 0.317 to 0.259. Pillar 2 (valuation): PE diluted stands at 27.7x \u2014 the absolute ceiling of its 365-day range (16.6\u201327.7) and ~59% above the 17.4x level of a year ago \u2014 with no corresponding fundamental improvement to justify it. Earnings yield of 3.6% sits 85bp below the 10-year Treasury yield of 4.45%, removing the traditional defensive valuation floor. On normalized earnings the true PE is essentially the same ~27x. P/B at 7.18 is near its high. Pillar 3 (near-term catalyst): The Q1 one-time gain rolls off TTM in coming quarters, mechanically depressing reported earnings and likely triggering multiple compression \u2014 this is a near-term downside catalyst, not an upside one. The combination of deteriorating earnings quality, margin compression, cash flow weakness, and extreme valuation versus own history with a pending negative earnings event makes JNJ strongly unattractive.",
+      "key_factors": [
+        "PE diluted at 27.7x \u2014 absolute top of 365-day range (16.6\u201327.7), up ~59% from 17.4x one year ago with flat-to-declining underlying profitability",
+        "Earnings yield 3.6% sits 85bp below 10-year Treasury yield of 4.45% \u2014 risk-free rate dominates, removing traditional defensive valuation support",
+        "Q1 2025 one-time item ($11B net income, $4.54 EPS) inflates TTM earnings; normalized quarterly run-rate is ~$5.3B net income / ~$2.14-$2.29 EPS",
+        "Gross margin compressed from 69.5% (Q3) to 66.3% (Q4); operating margin narrowed from 31.2% to 24.9% QoQ",
+        "Operating cash flow collapsed -72.6% QoQ from $9.17B (Q3) to $2.51B (Q4), with only 48% cash conversion on $5.24B net income",
+        "ROE declined from 0.317 to 0.259 alongside margin compression",
+        "Revenue essentially flat QoQ ($24.06B Q4 vs $23.99B Q3) after step-up from Q1 to Q2, indicating plateau",
+        "Near-term downside catalyst: Q1 one-time gain rolling off TTM will mechanically depress reported earnings, likely triggering multiple compression",
+        "Pipeline positives (ERLEADA PROTEUS Phase 3, nipocalimab JASMINE Phase 2, IMAAVY ENERGY Phase 2/3) are real but already reflected in the expanded multiple",
+        "Talc litigation favorable verdict (June 7) is directionally positive but does not resolve ultimate liability uncertainty"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29 Q4",
+          "relevance": 1.0,
+          "excerpt": "revenue=24.06B, net_income=5.24B, eps_diluted=2.14, operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-30 Q1 (one-time)",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=4.54, net_income=11.00B, operating_income=13.63B (vs Q2-Q4 avg ~5.3B net income)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "QoQ growth panel",
+          "relevance": 1.0,
+          "excerpt": "gross_profit=-4.4%, operating_cash_flow=-72.6%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "TTM (4 quarters)",
+          "relevance": 1.0,
+          "excerpt": "revenue=93.69B, operating_cash_flow=19.73B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=27.698 (365d range: 16.6\u201327.7), p_b=7.178, net_margin=0.218, roe=0.259, earnings_yield=0.036"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-12",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=17.41, net_margin=0.244, roe=0.279"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.45% (vs earnings_yield=3.6%, spread=-85bp)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-31 (GlobeNewswire)",
+          "relevance": 1.0,
+          "excerpt": "Phase 3 PROTEUS study results showing ERLEADA combined with hormone therapy before and after prostate cancer surgery significantly reduces metastasis/death risk by 20% and increases pathologic complete response rates 9-fold"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-03 (GlobeNewswire)",
+          "relevance": 1.0,
+          "excerpt": "nipocalimab met its primary endpoint in the Phase 2 JASMINE study by significantly reducing SLE disease activity at 24 weeks and sustained improvements through 52 weeks; Phase 3 GARDENIA study is ongoing; FDA Fast Track Designation granted January 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-11 (Benzinga)",
+          "relevance": 1.0,
+          "excerpt": "IMAAVY (nipocalimab-aahu) achieved its primary endpoint in the Phase 2/3 ENERGY study for warm autoimmune hemolytic anemia; FDA Priority Review granted"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-07 (ts2.tech)",
+          "relevance": 1.0,
+          "excerpt": "Johnson & Johnson jumped 2.02% to $232.77 after a Los Angeles jury found the company not negligent in a talc cancer lawsuit"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4593,
+        "capped_chars": 4593,
+        "raw_tokens": 1148,
+        "capped_tokens": 1148
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223578,
+        "capped_chars": 223578,
+        "raw_tokens": 55894,
+        "capped_tokens": 55894
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30935,
+        "capped_chars": 30935,
+        "raw_tokens": 7734,
+        "capped_tokens": 7734
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2534,
+        "capped_chars": 2534,
+        "raw_tokens": 634,
+        "capped_tokens": 634
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 27639,
+        "capped_chars": 7209,
+        "raw_tokens": 6910,
+        "capped_tokens": 1802
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 112384,
+        "capped_chars": 92196,
+        "raw_tokens": 28096,
+        "capped_tokens": 23050
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 120063,
+  "started_at": "2026-08-06T02:47:32+00:00"
+}

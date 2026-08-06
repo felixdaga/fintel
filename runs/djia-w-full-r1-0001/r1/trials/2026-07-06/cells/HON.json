@@ -1,0 +1,227 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 67376,
+    "tokens_out": 11653,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.071368247824,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "HON is fundamentally unattractive across all three pillars. Pillar 1 (fundamentals): EPS collapsed 41.9% YoY to $1.29, operating cash flow swung to -$650M, total equity declined 18.6% while debt rose 18.6% to $32.11B, and operating margin compressed 200bp. The earnings quality is poor \u2014 $795M net income against -$650M OCF indicates reported earnings are not converting to cash. The recent aerospace spinoff (June 29, 2026) adds execution risk with $1.5\u20132B in separation expenses, and the stock dropped 6%+ on its debut. Pillar 2 (valuation): P/E of 35.8x is near the absolute ceiling of its 12-month range (21.6\u201337.0x) despite net margins falling from 15.1% to 10.9% and ROE declining from 31.7% to 28.0%. The earnings yield of 2.8% sits 170bp below the 10-year Treasury yield of 4.49%, implying a negative equity risk premium. The market has expanded the multiple ~40% while fundamentals deteriorated \u2014 paying more for less. Pillar 3 (catalyst): The July 23 Q2 earnings call is a near-term event, but consensus expects diluted EPS of $4.83, down 12.2% YoY, and the revenue miss in Q1 suggests demand softness. This is a downside risk catalyst, not an upside re-rating catalyst. The stock is down 50.8% over 52 weeks, underperforming the S&P 500 by 71.5pp. All three pillars align negatively: deteriorating fundamentals, peak valuation on declining earnings, and a near-term earnings event that is more likely to disappoint than re-rate upward.",
+      "key_factors": [
+        "Q1 2026 EPS diluted = $1.29, down 41.9% YoY from $2.22 in Q1 2025",
+        "Q1 2026 operating cash flow = -$650M vs +$597M in Q1 2025 \u2014 negative OCF against $795M net income signals poor earnings quality",
+        "Total debt rose 18.6% to $32.11B while total equity declined 18.6% to $14.67B; debt-to-equity now 2.189x",
+        "Operating margin compressed 200bp from 25.3% to 23.3% YoY in Q1 2026",
+        "P/E diluted = 35.79x on 2026-07-02, near ceiling of 12-month range 21.6\u201337.0x; net margin fell from 15.1% to 10.9% while multiple expanded ~40%",
+        "Earnings yield of 2.8% vs 10-year Treasury yield of 4.49% \u2014 negative equity risk premium of ~170bp",
+        "Aerospace spinoff completed 2026-06-29 with $1.5\u20132B estimated separation expenses; HON Technologies dropped 6%+ on debut",
+        "Q2 2026 consensus EPS of $4.83, down 12.2% YoY from $5.50; Q1 revenue of $9.1B missed $9.3B consensus",
+        "Stock down 50.8% over trailing 52 weeks vs S&P 500 +20.7% \u2014 severe underperformance",
+        "P/B ratio of 10.0x at top of 12-month range (6.8\u201310.4x)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=1.29 (YoY vs Q1 2025 $2.22, -41.9%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "net_income=795.00M (YoY vs Q1 2025 $1.47B, -45.8%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=-650.00M (vs Q1 2025 +$597M)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_debt=32.11B (vs Q1 2025 $27.08B, +18.6%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_equity=14.67B (vs Q1 2025 $18.02B, -18.6%)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=35.791x (12mo range 21.6..37.0; near ceiling)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.028 (vs DGS10=4.49%, negative ERP)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-28",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.109 (dropped from 0.151 pre-Q1 release)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.49% | T10Y2Y=0.35% (flattening curve)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-30",
+          "relevance": 1.0,
+          "excerpt": "Honeywell Technologies dropping over 6% and Honeywell Aerospace falling nearly 5% on market debuts following June 29 spinoff completion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Barchart 2026-07-01",
+          "relevance": 1.0,
+          "excerpt": "analysts expect HON to report a profit of $4.83 per share on a diluted basis, down 12.2% from $5.50 per share in the year-ago quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Barchart 2026-07-01",
+          "relevance": 1.0,
+          "excerpt": "revenue was $9.1 billion, missing analyst estimates of $9.3 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st 2026-06-19",
+          "relevance": 1.0,
+          "excerpt": "tariff exposure, softer end market sentiment and portfolio reshaping costs, including an estimated US$1.5b to US$2b of separation expenses, as potential headwinds"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Barchart 2026-07-01",
+          "relevance": 1.0,
+          "excerpt": "HON stock has significantly underperformed the S&P 500 Index's 20.7% gains over the past 52 weeks, with shares down 50.8% during this period"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3050,
+        "capped_chars": 3050,
+        "raw_tokens": 762,
+        "capped_tokens": 762
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 248810,
+        "capped_chars": 248810,
+        "raw_tokens": 62202,
+        "capped_tokens": 62202
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30321,
+        "capped_chars": 30321,
+        "raw_tokens": 7580,
+        "capped_tokens": 7580
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1523,
+        "capped_chars": 1523,
+        "raw_tokens": 381,
+        "capped_tokens": 381
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 18881,
+        "capped_chars": 4483,
+        "raw_tokens": 4720,
+        "capped_tokens": 1121
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 72101,
+        "capped_chars": 52482,
+        "raw_tokens": 18026,
+        "capped_tokens": 13120
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 155185,
+  "started_at": "2026-08-06T02:54:41+00:00"
+}

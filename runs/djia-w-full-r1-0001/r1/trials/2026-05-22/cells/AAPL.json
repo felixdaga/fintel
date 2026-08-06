@@ -1,0 +1,233 @@
+{
+  "cell": "AAPL",
+  "symbols": [
+    "AAPL"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 114029,
+    "tokens_out": 11222,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.104841534072,
+    "basis": "reported"
+  },
+  "views": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "score": 0.2,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Apple's fundamental health is genuinely strong: Q2 FY2026 delivered +16.6% revenue growth, +21.8% EPS growth, gross margin expansion to 49.3% from 47.1% YoY, and robust cash generation ($28.7B OCF). The Services flywheel ($31B quarterly at 76.7% gross margin) is structurally improving blended margins, and the balance sheet is de-leveraging with equity up 59% and debt down 10% YoY. The franchise is durable with 2.35B active devices and 92% retention. However, the stock is priced for this excellence and then some: at 36.6x trailing PE with a 2.7% earnings yield that sits 190bps below the 10-year Treasury yield of 4.57%, the valuation demands continued acceleration. The stock is at $304.99, essentially at its 52-week high of $305.54, meaning the market has already recognized the earnings momentum. ROE is declining (1.508 to 1.151) as equity grows faster than earnings, and management guided sequential margin compression to 47.5-48.5% for the June quarter due to rising memory costs. The near-term catalysts are mixed: Cook's Beijing trip and potential tariff relief are positive, but the India CCI antitrust probe (ruling not until July 15) and rising oil at $100/bbl are headwinds. The leadership transition to Ternus appears orderly but adds execution uncertainty. This is a high-quality franchise at a full price \u2014 mildly attractive on balance, but the valuation caps upside and the rate environment is unfavorable.",
+      "key_factors": [
+        "Q2 FY2026 revenue $111.18B (+16.6% YoY), EPS $2.01 (+21.8% YoY), gross margin 49.3% vs 47.1% prior year \u2014 strong fundamental trajectory",
+        "Services revenue $31B quarterly at 76.7% gross margin, growing 16% YoY, driving structural blended margin expansion",
+        "Balance sheet de-leveraging: equity expanded from $66.8B to $106.5B (+59.4%), debt declined from $92.2B to $82.7B (-10.3%)",
+        "PE at 36.6x (range 30.2-43.1 over 365 days) with 2.7% earnings yield vs 4.57% 10-year Treasury \u2014 190bps negative spread",
+        "Stock at $304.99, essentially at 52-week high of $305.54, up 57.6% from low \u2014 market has priced in the earnings momentum",
+        "ROE declining from 1.508 to 1.151 as equity base grows faster than net income \u2014 return on capital compressing",
+        "Management guided June quarter gross margin 47.5-48.5% (sequential compression) due to rising DRAM/NAND costs from AI demand",
+        "Tim Cook's Beijing trip (May 14-15) signals potential tariff relief \u2014 asymmetric near-term positive catalyst",
+        "India CCI antitrust investigation into App Store 30% fee ongoing; ruling not until July 15, 2026 \u2014 regulatory overhang on Services margins",
+        "Leadership transition: Cook to executive chairman, John Ternus as incoming CEO \u2014 orderly but adds execution uncertainty"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "relevance": 1.0,
+          "excerpt": "revenue=111.18B net_income=29.58B eps_diluted=2.01 gross_profit=54.78B operating_income=35.88B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2 YoY",
+          "relevance": 1.0,
+          "excerpt": "revenue=+16.6% eps_diluted=+21.8% net_income=+19.4% gross_profit=+22.1% operating_cash_flow=+19.8%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "relevance": 1.0,
+          "excerpt": "gross_margin=49.3% (54.78B/111.18B) vs 2025-03-29 Q2 gross_margin=47.1% (44.87B/95.36B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28",
+          "relevance": 1.0,
+          "excerpt": "total_equity=106.49B total_debt=82.70B vs 2025-03-29 total_equity=66.80B total_debt=92.20B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=36.641 earnings_yield=0.027 p_b=42.175 roe=1.151 net_margin=0.272"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 365d",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted 30.2..43.1 p_b 38.3..65.0 roe 1.151..1.508 net_margin 0.2..0.3"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "close=304.99 52wk_range=193.46..305.54 quarterly_delta=+15.3%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.57% DCOILWTICO=100.20"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "apple.com Q2 2026 earnings",
+          "relevance": 1.0,
+          "excerpt": "quarterly revenue of $111.2 billion, up 17 percent year over year\u2026 Services achieved yet another all-time record\u2026 EPS was $2.01, up 22 percent year over year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "capitalblueprint.substack.com",
+          "relevance": 1.0,
+          "excerpt": "Services have grown from a footnote a decade ago into a $109.2 billion annual business by FY2025\u2026 Services' gross margins are structurally ~75\u201377% versus ~38\u201339% for Products"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "companieshistory.com",
+          "relevance": 1.0,
+          "excerpt": "Apple held a 20% global smartphone market share in Q1 2026 per Omdia, ranking second behind Samsung at 22%\u2026 Greater China revenue up 28% to $20.5 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "panabee.com",
+          "relevance": 1.0,
+          "excerpt": "six-month operating cash flow rising 53% Y/Y to $83 billion\u2026 Board authorized an additional $100 billion for share repurchases\u2026 dividend increase from $0.26 to $0.27 per share"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-18 Benzinga",
+          "relevance": 1.0,
+          "excerpt": "India's Delhi High Court has ordered Apple to fully cooperate with the Competition Commission of India's antitrust investigation into the iPhone App Store's mandatory 30% in-app payment system"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-19 Investing.com",
+          "relevance": 1.0,
+          "excerpt": "Apple's Services segment, generating nearly $31 billion in quarterly revenue, is being undervalued by the market as a hardware business\u2026 Evercore ISI analysts argue Services could add $13 per share to Apple's stock price if valued appropriately"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ainvest.com",
+          "relevance": 1.0,
+          "excerpt": "Bernstein analyst Mark Newman frames it as a 'once in a generation opportunity' to gain share over the next 12-24 months\u2026 Apple's dual-pronged strategy of premium pricing and budget devices like iPhone 17e to expand installed base"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AAPL",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4671,
+        "capped_chars": 4671,
+        "raw_tokens": 1168,
+        "capped_tokens": 1168
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231015,
+        "capped_chars": 231015,
+        "raw_tokens": 57754,
+        "capped_tokens": 57754
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31263,
+        "capped_chars": 31263,
+        "raw_tokens": 7816,
+        "capped_tokens": 7816
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4337,
+        "capped_chars": 4337,
+        "raw_tokens": 1084,
+        "capped_tokens": 1084
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 204832,
+        "capped_chars": 44064,
+        "raw_tokens": 51208,
+        "capped_tokens": 11016
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 125288,
+        "capped_chars": 98891,
+        "raw_tokens": 31322,
+        "capped_tokens": 24724
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 149368,
+  "started_at": "2026-08-06T02:38:31+00:00"
+}

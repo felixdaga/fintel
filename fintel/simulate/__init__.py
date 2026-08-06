@@ -13,6 +13,7 @@ debugging surface.
 
 from __future__ import annotations
 
+from fintel.environment.progress import NullProgress
 from fintel.simulate.artifacts import (
     write_cell,
     write_decision,
@@ -20,9 +21,9 @@ from fintel.simulate.artifacts import (
     write_run_result,
     write_trial_result,
 )
+from fintel.simulate.backfill import BackfillReport, run_backfill
 from fintel.simulate.cell import CellOutcome, build_agent, expect_tools, run_cell
 from fintel.simulate.job import run_job
-from fintel.environment.progress import NullProgress
 from fintel.simulate.queue import map_parallel
 from fintel.simulate.record import reduce_decision, reduce_job, reduce_run, reduce_trial
 from fintel.simulate.run import run_run
@@ -30,6 +31,7 @@ from fintel.simulate.store import read_json, read_model, write_json, write_model
 from fintel.simulate.trial import run_trial
 
 __all__ = [
+    "BackfillReport",
     "CellOutcome",
     "NullProgress",
     "build_agent",
@@ -41,6 +43,7 @@ __all__ = [
     "reduce_job",
     "reduce_run",
     "reduce_trial",
+    "run_backfill",
     "run_cell",
     "run_job",
     "run_run",

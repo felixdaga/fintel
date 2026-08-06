@@ -1,0 +1,213 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 92953,
+    "tokens_out": 9921,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0842662114,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "JNJ presents a rare case of all three pillars aligning negatively. Pillar 1 (fundamentals): While revenue is growing +6.6% YoY to $25.31B, earnings are flat (EPS -0.9% YoY, $2.27 vs $2.29), net margins are compressing (21.8% vs 23.3% YoY), and ROE has declined from 28.9% to 24.8%. The Stelara patent cliff is a massive headwind (-56% Q2 sales), and while Tremfya (+73%) and oncology (+16% operational) are partially offsetting, the earnings translation is poor. The franchise is real \u2014 28 products >$1B, oncology momentum, 64-year dividend streak \u2014 but the current earnings trajectory is deteriorating, not improving. Pillar 2 (valuation): This is the most alarming dimension. PE has expanded 69% in twelve months from 17.6x to 29.7x while ROE and margins declined. The 3.4% earnings yield sits 128bps below the 10-year Treasury yield of 4.68%, meaning the market is paying a premium for deteriorating earnings power. P/B at 7.3x is near its 365-day ceiling of 8.0x. A reversion to even the midpoint of the PE range (~24x) implies ~19% downside. Pillar 3 (catalyst): The $5.5B talc settlement (2026-07-28) is a potential de-risking event, but it is not finalized and faces continued legal opposition. The Ottava FDA clearance (2026-07-30) is strategically positive but years from material revenue. Neither catalyst is sufficient to offset the valuation-fundamental disconnect. The stock is +28% YTD and +56% from its October 2025 low, with price having dramatically outpaced the underlying business. This is a classic defensive-multiple expansion with no earnings acceleration to support it.",
+      "key_factors": [
+        "Revenue growth +6.6% YoY to $25.31B in Q2 2026, but EPS flat at $2.27 (-0.9% YoY) \u2014 earnings not translating from topline",
+        "PE expanded 69% in 12 months from 17.6x (Jul 2025) to 29.7x (Jul 2026) while ROE declined from 28.9% to 24.8% and net margin from 25.0% to 21.5%",
+        "Earnings yield of 3.4% sits 128bps below 10-year Treasury yield of 4.68% \u2014 no valuation support from risk-free rate comparison",
+        "Stelara sales plunged 56% to $740M in Q2 due to biosimilar erosion; Tremfya (+73% to $2.0B) partially offsets but transition is incomplete",
+        "Stock at $255.82 is +56% from Oct 2025 low of $164.23 and +28% YTD, within 7% of 52-week high of $274.90 \u2014 price has outrun fundamentals",
+        "Proposed $5.5B talc settlement (2026-07-28) is not finalized; Red River Talc bankruptcy with $6.48B proposal faces continued legal opposition",
+        "Ottava surgical robot FDA clearance (2026-07-30) is strategically positive but years from material revenue contribution",
+        "P/B at 7.3x near 365-day ceiling of 8.0x; PE at 29.7x within 5% of 365-day high of 31.1x \u2014 stretched on all metrics"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-28 (Q2)",
+          "relevance": 1.0,
+          "excerpt": "revenue=25.31B, eps_diluted=2.27, net_income=5.53B, operating_income=6.75B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "YoY Q2 2026 vs Q2 2025",
+          "relevance": 1.0,
+          "excerpt": "revenue=+6.6%, eps_diluted=-0.9%, net_income=-0.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=29.673, p_b=7.346, earnings_yield=0.034, roe=0.248, net_margin=0.215"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-31",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=17.586, roe=0.289, net_margin=0.25"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.680%, FEDFUNDS=3.630%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "close=255.82, 52w_high=274.90, 52w_low=164.23"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.investing.com",
+          "relevance": 1.0,
+          "excerpt": "Adjusted earnings per share of $2.90 on revenue of $25.3 billion, beating consensus estimates of $2.86 and $25.02 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.investing.com",
+          "relevance": 1.0,
+          "excerpt": "Oncology led the way with $7.4 billion in sales, growing 16.1% operationally"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nai500.com",
+          "relevance": 1.0,
+          "excerpt": "Tremfya was a standout performer, with sales surging 73% to $2 billion, rapidly filling the gap left by Stelara, whose sales plunged 56% (to $740 million) due to patent expiration"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-28 (GlobeNewswire)",
+          "relevance": 1.0,
+          "excerpt": "Johnson & Johnson has agreed to an uncapped $5.5 billion settlement resolving claims from approximately 70,000 women and families who alleged the company's talc products...contained asbestos"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-30 (Motley Fool)",
+          "relevance": 1.0,
+          "excerpt": "FDA clearance for its Ottava surgical robot, 64 consecutive years of dividend increases, and $100 billion revenue target"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "relevance": 1.0,
+          "excerpt": "Talc Settlement Litigation Deadlock: Ongoing legal challenges to the proposed $6.48 billion settlement via the Red River Talc bankruptcy filing continue to create significant liability uncertainty"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 5347,
+        "capped_chars": 5347,
+        "raw_tokens": 1337,
+        "capped_tokens": 1337
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223499,
+        "capped_chars": 223499,
+        "raw_tokens": 55875,
+        "capped_tokens": 55875
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30602,
+        "capped_chars": 30602,
+        "raw_tokens": 7650,
+        "capped_tokens": 7650
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2728,
+        "capped_chars": 2728,
+        "raw_tokens": 682,
+        "capped_tokens": 682
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 60428,
+        "capped_chars": 16477,
+        "raw_tokens": 15107,
+        "capped_tokens": 4119
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 114793,
+        "capped_chars": 87250,
+        "raw_tokens": 28698,
+        "capped_tokens": 21814
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 106262,
+  "started_at": "2026-08-06T03:39:43+00:00"
+}

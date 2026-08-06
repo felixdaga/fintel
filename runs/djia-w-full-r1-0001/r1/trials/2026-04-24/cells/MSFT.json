@@ -1,0 +1,235 @@
+{
+  "cell": "MSFT",
+  "symbols": [
+    "MSFT"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 112461,
+    "tokens_out": 11127,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.10241732140000001,
+    "basis": "reported"
+  },
+  "views": {
+    "MSFT": {
+      "symbol": "MSFT",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Microsoft presents a moderately attractive setup anchored by elite fundamental health and a meaningful valuation discount to its own history, partially offset by near-term execution uncertainty. Pillar 1 (fundamentals): Revenue accelerated QoQ to $81.27B (+4.6%), net income surged to $38.46B (+38.6%), margins remain elite (gross 68.0%, operating 47.1%, net 35.7%), and the balance sheet carries $49.2B net cash with 0.119 debt-to-equity. Azure grew 39% YoY and the $625B RPO backlog provides multi-year visibility. However, OCF declined 20.6% QoQ despite the net income surge \u2014 a genuine quality flag that demands corroboration. Pillar 2 (valuation): P/E has compressed ~30% from 41.4x to 29.6x, near the floor of its 12-month range, while profitability metrics are flat-to-improving. EV/EBIT similarly compressed from ~33x to 22.4x. The de-rating is valuation-driven, not fundamental-deterioration-driven. Forward P/E of ~22x (per external estimates) vs. 10-year average of ~29x suggests meaningful reversion potential. Pillar 3 (catalyst): Q3 FY2026 earnings on April 29, 2026 is a dated, fundamental catalyst \u2014 consensus ~$4.04-$4.07 EPS, ~$81.3-81.4B revenue, with Azure constant-currency growth guided at 37-38%. A clean print validating the Q2 earnings step-up and demonstrating Azure capacity-to-revenue conversion could trigger re-rating. The Code Red Copilot overhaul and Fairwater campus early launch are supportive but less dated. Offsetting risks: 45% OpenAI RPO concentration, Copilot adoption at only 15M of 450M seats, $120B+ annualized capex creating depreciation headwinds, and elevated macro headwinds (10Y at 4.34%, oil at $99.27). These cap the score below +0.5 despite the strong franchise quality.",
+      "key_factors": [
+        "Revenue accelerated QoQ to $81.27B (+4.6%) with net income surging to $38.46B (+38.6%) and EPS diluted at $5.16 (+38.7% QoQ)",
+        "Elite margins sustained: gross 68.0%, operating 47.1%, net 35.7%, ROE 28.9% \u2014 no compression signal",
+        "Balance sheet fortress: $49.2B net cash (cash $89.46B - debt $40.26B), debt-to-equity 0.119, AAA credit rating",
+        "OCF declined 20.6% QoQ to $35.76B despite net income surge \u2014 cash < earnings is a quality flag requiring Q3 validation",
+        "P/E compressed ~30% from 41.4x (Oct 2025) to 29.6x (Apr 2026), near floor of 25.4-42.8x range, without fundamental deterioration",
+        "EV/EBIT compressed from ~33x to 22.4x, near floor of 19.2-34.1x range",
+        "Azure grew 39% YoY in Q2 FY26; $625B commercial RPO provides multi-year revenue visibility",
+        "Q3 FY2026 earnings April 29 is dated catalyst: consensus ~$4.04-$4.07 EPS, Azure guided 37-38% CC growth",
+        "Copilot adoption lagging at 15M paid seats vs 450M M365 subscribers; Code Red overhaul underway under CEO Nadella",
+        "45% of $625B RPO from OpenAI \u2014 concentration risk with reports of OpenAI exploring AWS",
+        "Capex surged to $29.9B in Q2 alone, $120B+ annualized run rate, creating elevated depreciation headwinds",
+        "Macro headwinds: 10Y yield 4.34%, WTI oil $99.27 (+64%), partially justifying multiple compression but not 30% for a net-cash, 35%-margin business"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=81.27B, net_income=38.46B, eps_diluted=5.16"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31 QoQ",
+          "relevance": 1.0,
+          "excerpt": "revenue_qoq=+4.6%, eps_diluted_qoq=+38.7%, operating_cash_flow_qoq=-20.6%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=35.76B vs net_income=38.46B (cash < earnings)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31",
+          "relevance": 1.0,
+          "excerpt": "net_cash=49.20B (cash=89.46B - debt=40.26B), debt_to_equity=0.119"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=29.587 (range 25.4..42.8), ev_to_ebit=22.401 (range 19.2..34.1)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-10-07",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=41.415 (trailing peak, 12 observations)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "close=415.75 vs 52wk high=555.45 (drawdown ~25%)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.34%, DCOILWTICO=99.27 (up 64% over window)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "carboncredits.com (2026-Q2 FY26)",
+          "relevance": 1.0,
+          "excerpt": "Intelligent Cloud revenue was $32.9 billion, up 29%\u2026Remaining performance obligations hit $625 billion, up 110% YoY"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com/ca (2026)",
+          "relevance": 1.0,
+          "excerpt": "Q2 2026 alone, the company allocated a record $29.9 billion to capex\u2026FCF margins remain above 20%, and the company's AAA-rated balance sheet with $89.46 billion in cash"
+        },
+        {
+          "source_type": "news",
+          "source_id": "The Motley Fool (2026-04-18)",
+          "relevance": 1.0,
+          "excerpt": "only 15 million paid Copilot seats out of 450 million Microsoft 365 subscribers\u2026CEO Satya Nadella is reportedly leading a 'Code Red' overhaul"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga (2026-04-15)",
+          "relevance": 1.0,
+          "excerpt": "Reports of a rift between Microsoft and OpenAI, with OpenAI exploring Amazon Web Services for cloud infrastructure\u2026Microsoft's stock has declined 20% year-to-date"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com (2026)",
+          "relevance": 1.0,
+          "excerpt": "Approximately 45% of our commercial [remaining performance obligations] balance is from OpenAI"
+        },
+        {
+          "source_type": "news",
+          "source_id": "CRN (2026-04-17)",
+          "relevance": 1.0,
+          "excerpt": "Microsoft reportedly plans to offer buyouts to select U.S. employees, with about 7 percent\u2026totaling up to around 9,000 employees"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Reuters (2026-04-21)",
+          "relevance": 1.0,
+          "excerpt": "Microsoft must face a mass lawsuit alleging it overcharged thousands of British businesses\u2026claim was worth up to 2.1 billion pounds ($2.8 billion)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MSFT",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3145,
+        "capped_chars": 3145,
+        "raw_tokens": 786,
+        "capped_tokens": 786
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241316,
+        "capped_chars": 241316,
+        "raw_tokens": 60329,
+        "capped_tokens": 60329
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30859,
+        "capped_chars": 30859,
+        "raw_tokens": 7715,
+        "capped_tokens": 7715
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4421,
+        "capped_chars": 4421,
+        "raw_tokens": 1105,
+        "capped_tokens": 1105
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 312925,
+        "capped_chars": 69638,
+        "raw_tokens": 78231,
+        "capped_tokens": 17410
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 113179,
+        "capped_chars": 72101,
+        "raw_tokens": 28295,
+        "capped_tokens": 18025
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 200497,
+  "started_at": "2026-08-06T02:28:34+00:00"
+}

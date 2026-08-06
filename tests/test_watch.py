@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from fintel.cli.watch import _Run, _apply, _render, resolve_paths
+from fintel.cli.watch import _apply, _Run, resolve_paths
 
 
 def _feed(run: _Run, events: list[dict]) -> None:
@@ -54,7 +54,9 @@ def test_render_produces_a_frame_with_run_and_cell():
     )
     import time
 
-    frame = _render([run], time.monotonic())
+    from fintel.cli.watch import _render_lines
+
+    frame = "\n".join(_render_lines([run], time.monotonic(), collapse_done=False))
     assert "fintel nerve" in frame
     assert "jan" in frame and "NVDA" in frame
     assert "2026-01-02" in frame

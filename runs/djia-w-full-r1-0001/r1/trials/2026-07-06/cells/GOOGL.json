@@ -1,0 +1,225 @@
+{
+  "cell": "GOOGL",
+  "symbols": [
+    "GOOGL"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 113026,
+    "tokens_out": 11497,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.1013859764,
+    "basis": "reported"
+  },
+  "views": {
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "GOOGL is a world-class franchise with accelerating revenue ($102.35B in Q3-25, +6.1% QoQ), prolific cash generation ($48.41B OCF in Q3-25), and a fortress balance sheet ($98.5B cash, D/E 38.7%). Google Cloud is growing 63% YoY with a $462B backlog, and the AI stack (Gemini, TPU, 16B tokens/min API usage) is generating real commercial returns. However, the stock has undergone a dramatic re-rating that has pushed it into extremely overvalued territory on a trailing basis: P/E has expanded 80% in twelve months (19.6x \u2192 35.3x, 82nd percentile of its range), P/B at 11.35x (90th percentile), and earnings yield of 2.8% sits 169bp below the 10-year Treasury yield of 4.49% \u2014 an unusual inversion even for premium growth names. Critically, this multiple expansion has occurred while operating margins are compressing (33.9% \u2192 32.4% \u2192 30.5% over three quarters), signaling negative operating leverage. The market is paying peak multiples for a business exhibiting early signs of margin deterioration. The $180-190B 2026 capex guidance and $85B equity raise further compress near-term FCF (margin dropped from 21% to 9.2% in Q1 2026) and dilute shareholders. While the qual report cites a 22.6x normalized P/E from Morningstar, this is a forward/adjusted metric distinct from the 35.3x trailing diluted P/E in the quant pack \u2014 the trailing multiple is what matters for valuation discipline. The Dow inclusion (June 29, 2026) and Berkshire's $10B participation provide structural demand support, but these are one-time flows, not fundamental catalysts that justify the valuation. A reversion to a ~28x median P/E implies ~20% downside even with flat earnings. The risk/reward skews heavily unfavorable: the business is priced for perfection while the margin trajectory is imperfect, and the earnings yield inversion against risk-free rates creates a fragile valuation regime where any earnings disappointment or rate increase triggers outsized multiple compression.",
+      "key_factors": [
+        "P/E expanded 80% in 12 months from 19.6x (Jul-25) to 35.3x (Jul-26), now at 82nd percentile of 19.3-39.5x range \u2014 peak valuation territory",
+        "Operating margin compression: Q1-25 33.9% \u2192 Q2-25 32.4% \u2192 Q3-25 30.5% despite 13.4% revenue growth \u2014 negative operating leverage emerging",
+        "Earnings yield 2.8% sits 169bp below 10-year Treasury yield of 4.49% \u2014 unusual inversion requiring sustained high-teens growth just to break even on opportunity cost",
+        "2026 capex guidance of $180-190B and $85B equity raise compress FCF margin from 21% to 9.2% in Q1 2026, with recovery not expected until 2028",
+        "P/B at 11.35x (90th percentile of 6.2-12.7x range) and P/S of 11.39x reflect ~$5T market cap pricing in sustained high-teens earnings growth",
+        "Google Cloud 63% YoY growth to $20.03B with $462B backlog and 32.9% operating margin \u2014 strongest qualitative positive but already priced in at current multiples",
+        "Dow Jones inclusion June 29, 2026 and Berkshire $10B cornerstone investment provide one-time structural demand but are not recurring fundamental catalysts",
+        "AI talent departures (John Jumper, Noam Shazeer) on June 22, 2026 triggered ~$225-250B market cap decline \u2014 narrative negative, not structural impairment but signals competitive intensity"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=102.35B, operating_income=31.23B, net_income=34.98B, eps_diluted=2.87"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30\u21922025-09-30",
+          "relevance": 1.0,
+          "excerpt": "operating_margin: Q2=32.4% \u2192 Q3=30.5% (declining despite revenue growth)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=48.41B (+74.5% QoQ)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "cash=98.50B, total_equity=386.87B, total_liabilities=149.60B (D/E=38.7%)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=35.348 (82nd percentile of 19.3..39.5 range)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "p_b=11.353, earnings_yield=0.028, roe=0.321, net_margin=0.322"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-07",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=19.577 (starting point of +80% expansion)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.49%, earnings_yield=0.028 (yield inversion of 169bp)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com (2026-06-22)",
+          "relevance": 1.0,
+          "excerpt": "Google Cloud hit $20.03 billion (+63% YoY) with a record $462 billion backlog\u2026 free cash flow margin dropped from 21% to 9.2%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks.com",
+          "relevance": 1.0,
+          "excerpt": "63% Cloud revenue growth, nearly 800% growth for GenAI\u2011built products, and a nearly doubled Cloud backlog\u2026 16B tokens/min API usage, Gemini Enterprise PMAU +40% QoQ, 350M paid subscriptions"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de (2026-06-26)",
+          "relevance": 1.0,
+          "excerpt": "Alphabet is planning to raise around $80 billion by issuing new shares to finance a large-scale expansion of its AI data center footprint\u2026 Berkshire Hathaway\u2026 is reportedly prepared to purchase $10 billion of Alphabet stock"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Motley Fool (2026-06-22)",
+          "relevance": 1.0,
+          "excerpt": "Alphabet's stock tumbled 6% after two senior AI researchers departed\u2026 A Nobel Prize-winning researcher from Google DeepMind who co-created AlphaFold joined Anthropic, while Noam Shazeer, VP of Engineering and co-lead of Gemini AI models, also left"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Investing.com (2026-06-30)",
+          "relevance": 1.0,
+          "excerpt": "Alphabet replaced Verizon in the Dow Jones Industrial Average, driving a ~5% rally in its first session as a component"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "morningstar.com",
+          "relevance": 1.0,
+          "excerpt": "GOOGL normalized P/E 22.64 vs. AMZN 38.74, AAPL 35.93; current ratio 2.72; interest coverage 131.63; ROIC 27.38%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GOOGL",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3924,
+        "capped_chars": 3924,
+        "raw_tokens": 981,
+        "capped_tokens": 981
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223203,
+        "capped_chars": 223203,
+        "raw_tokens": 55801,
+        "capped_tokens": 55801
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30321,
+        "capped_chars": 30321,
+        "raw_tokens": 7580,
+        "capped_tokens": 7580
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4435,
+        "capped_chars": 4435,
+        "raw_tokens": 1109,
+        "capped_tokens": 1109
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 460161,
+        "capped_chars": 85465,
+        "raw_tokens": 115040,
+        "capped_tokens": 21366
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 78561,
+        "capped_chars": 52221,
+        "raw_tokens": 19640,
+        "capped_tokens": 13056
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 159722,
+  "started_at": "2026-08-06T02:54:30+00:00"
+}

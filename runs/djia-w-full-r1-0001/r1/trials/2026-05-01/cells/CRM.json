@@ -1,0 +1,234 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 72147,
+    "tokens_out": 11511,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.073382229832,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Salesforce presents a moderately attractive setup combining improving fundamentals with significant valuation compression. The business exhibits textbook SaaS operating leverage: Q2 FY26 revenue grew +4.1% QoQ to $10.24B while operating income surged +20.1% QoQ and EPS diluted +23.3% QoQ, with operating margin reaching 22.8% \u2014 the highest in the available 3-quarter window. The balance sheet is fortress-grade with $61.3B equity against $8.44B debt (D/E 0.138). Full-year FY26 revenue of $41.5B (up 10% YoY) and FY27 guidance of $45.8B confirm sustained double-digit growth on a $40B+ base. Agentforce ARR surpassed $500M (up 330% YoY) with 18,500 deals closed, representing a credible AI monetization pivot. Valuation has compressed meaningfully: trailing PE at 37.0x is at the floor of its 1-year range (34.6\u201361.1), while forward P/E of ~19.9x (based on FY27 consensus) and P/B at 2.91x (range 2.7\u20134.8) suggest the market is pricing in significant disruption risk. The stock has declined ~33% from $264.81 to $176.53 while fundamentals improved \u2014 a hallmark of multiple compression rather than fundamental deterioration. Near-term catalysts include the $50B buyback authorization with $25B accelerated share repurchase already underway, and Q1 FY27 earnings (consensus $2.30 EPS, +18.6% YoY) which could re-rate the stock if the margin expansion trajectory continues. Key risks temper conviction: OCF volatility ($740M in Q2 vs $6.48B in Q1) raises cash-earnings conversion questions, only 3 quarters of data are available in the quant window preventing YoY trend confirmation, the macro backdrop (4.4% 10-year, 6.1% Baa spreads) may cap multiple re-expansion, and the structural question of whether AI-agent consumption revenue will fully replace per-seat pricing remains unanswered. The score of +0.35 reflects a solid fundamental franchise with improving trajectory and meaningful valuation discount, partially offset by OCF uncertainty and the AI transition risk, with a modest catalyst boost from the buyback and upcoming earnings.",
+      "key_factors": [
+        "Operating margin expanded to 22.8% in Q2 FY26 (highest in 3-quarter window) on only 4.1% QoQ revenue growth \u2014 clear operating leverage inflection",
+        "Trailing PE compressed to 37.0x, floor of 1-year range (34.6\u201361.1); forward P/E ~19.9x on FY27 consensus EPS; P/B at 2.91x near range floor (2.7\u20134.8)",
+        "Balance sheet fortress: $61.3B equity, $8.44B debt, D/E 0.138 \u2014 zero leverage risk",
+        "Full-year FY26 revenue $41.5B (+10% YoY), FY27 guidance $45.8B \u2014 sustained double-digit growth on $40B+ base",
+        "Agentforce ARR surpassed $500M (up 330% YoY), 18,500 deals closed \u2014 fastest-growing product in company history",
+        "$50B buyback authorization with $25B accelerated share repurchase already initiated \u2014 management conviction at depressed prices",
+        "Stock declined ~33% ($264.81\u2192$176.53) while fundamentals improved \u2014 multiple compression, not fundamental deterioration",
+        "OCF volatility: $740M in Q2 vs $6.48B in Q1 raises cash-earnings conversion questions; only 3 quarters available, no YoY confirmation",
+        "Macro headwinds: 4.4% 10-year yield, 6.1% Baa spreads may cap multiple re-expansion",
+        "Structural risk: AI-driven seat contraction could undermine per-seat pricing model before AI-agent revenue fully offsets",
+        "Q1 FY27 earnings (consensus $2.30 EPS, +18.6% YoY) is a dated near-term catalyst for potential re-rating"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-07-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=10.24B, operating_income=2.33B, net_income=1.89B, eps_diluted=1.96, gross_profit=7.99B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-07-31 Q2 QoQ",
+          "relevance": 1.0,
+          "excerpt": "revenue=+4.1%, eps_diluted=+23.3%, operating_cash_flow=-88.6%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-07-31",
+          "relevance": 1.0,
+          "excerpt": "operating_margin=22.8% (2.33B/10.24B), net_margin=18.5% (1.89B/10.24B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-07-31",
+          "relevance": 1.0,
+          "excerpt": "total_equity=61.33B, total_debt=8.44B, debt_to_equity=0.138"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-07-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=740.00M (vs Q1 6.48B)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=37.025 (window range 34.6..61.1), p_b=2.911 (range 2.7..4.8)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "close=176.53, 52w_high=296.05, quarterly_delta=-17.5%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.4%, DBAA=6.1%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "sqmagazine.co.uk (Apr 2026)",
+          "relevance": 1.0,
+          "excerpt": "Agentforce ARR alone surpassed half a billion dollars in Q3 FY26, up 330% year-over-year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "matrixbcg.com (2026-04-23)",
+          "relevance": 1.0,
+          "excerpt": "As of fiscal year ending January 2026, Salesforce holds about 22 percent of the global CRM market, more than double its nearest competitor"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart.com (2026-04-28)",
+          "relevance": 1.0,
+          "excerpt": "$11.2 billion in quarterly revenue (up 12%), $41.5 billion full-year revenue (up 10%), and a sharp 15% increase in operating cash flow to $15 billion, alongside total RPO reaching $72.4 billion (up 14%)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga (2026-04-20)",
+          "relevance": 1.0,
+          "excerpt": "Agentforce's strong performance at Pearson and PenFed, where AI agents achieved 40% improvements in query resolution and IT ticket reduction respectively"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (2026-04-30)",
+          "relevance": 1.0,
+          "excerpt": "recently announced $50 billion buyback authorization and $25 billion accelerated share repurchase plan"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (2026-04-25)",
+          "relevance": 1.0,
+          "excerpt": "At US$181.32, Salesforce trades about 32% below the US$268.25 analyst target / 19.9x P/E"
+        },
+        {
+          "source_type": "news",
+          "source_id": "The Motley Fool (2026-04-27)",
+          "relevance": 1.0,
+          "excerpt": "Michael Burry\u2026opening a new stake in Salesforce, which he views as offering better value"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3818,
+        "capped_chars": 3818,
+        "raw_tokens": 954,
+        "capped_tokens": 954
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 251878,
+        "capped_chars": 251878,
+        "raw_tokens": 62970,
+        "capped_tokens": 62970
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30858,
+        "capped_chars": 30858,
+        "raw_tokens": 7714,
+        "capped_tokens": 7714
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2659,
+        "capped_chars": 2659,
+        "raw_tokens": 665,
+        "capped_tokens": 665
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 23494,
+        "capped_chars": 5334,
+        "raw_tokens": 5874,
+        "capped_tokens": 1334
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 123529,
+        "capped_chars": 86523,
+        "raw_tokens": 30882,
+        "capped_tokens": 21630
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 159883,
+  "started_at": "2026-08-06T02:31:21+00:00"
+}

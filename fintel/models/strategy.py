@@ -85,6 +85,13 @@ class StrategyPaths:
         return self.root / self.manifest.output_schema_file
 
     @property
+    def company_names(self) -> Path:
+        """Optional universe-name fallback (JSON dict symbol→name). Loaded by
+        the simulate layer and passed to agents that need it (e.g. the optimized
+        agent's evidence config for web-search query naming)."""
+        return self.root / "company_names.json"
+
+    @property
     def cache_dir(self) -> Path:
         return self.root / self.manifest.cache_dir
 

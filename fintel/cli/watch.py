@@ -18,7 +18,9 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import select
+import shutil
 import sys
 import termios
 import time
@@ -36,6 +38,7 @@ _HIDE_CURSOR = "\033[?25l"
 _SHOW_CURSOR = "\033[?25h"
 # Cursor up N lines (used by stream mode to rewrite in place without alt screen).
 _CUU = lambda n: f"\033[{n}A" if n > 0 else ""
+_ANSI_RE = re.compile(r"\033\[[0-9;]*m")
 
 # Colors.
 _C = {"g": "\033[32m", "r": "\033[31m", "y": "\033[33m", "c": "\033[36m", "d": "\033[2m", "b": "\033[1m", "x": "\033[0m"}
@@ -125,10 +128,10 @@ def _apply(run: _Run, ev: dict, now: float) -> None:
     # fall back to "" — fine for single-date runs.
     cell = ev.get("cell", "?")
     date = ev.get("decision_date", "")
-    if name == "run_start":
+    if name in ("run_start", "backfill_start"):
         run.status = "running"
         run.started_mono = now
-    elif name == "run_done":
+    elif name in ("run_done", "backfill_done"):
         run.done = True
         run.status = ev.get("status", "done") or "done"
     elif name == "probe_kind":
@@ -280,11 +283,46 @@ def _cost_line(run: _Run) -> str:
     )
 
 
-def _render_lines(runs: list[_Run], now: float, preflight: _Preflight | None = None) -> list[str]:
+def _visible_len(s: str) -> int:
+    return len(_ANSI_RE.sub("", s))
+
+
+def _truncate_ansi(s: str, width: int) -> str:
+    """Truncate a possibly-colored string to ``width`` visible columns."""
+    if width <= 0 or _visible_len(s) <= width:
+        return s
+    out: list[str] = []
+    visible = 0
+    i = 0
+    while i < len(s) and visible < width - 1:
+        if s.startswith("\033[", i):
+            m = _ANSI_RE.match(s, i)
+            if m:
+                out.append(m.group(0))
+                i = m.end()
+                continue
+        out.append(s[i])
+        visible += 1
+        i += 1
+    out.append(_C["x"])
+    return "".join(out)
+
+
+def _render_lines(
+    runs: list[_Run],
+    now: float,
+    preflight: _Preflight | None = None,
+    *,
+    collapse_done: bool = True,
+) -> list[str]:
     """The dashboard body as a list of plain lines (no cursor/positioning escapes).
 
     Callers add their own positioning (alt-screen home+clear, or stream cursor-up)
     so the same body serves both render modes.
+
+    ``collapse_done`` (default True) keeps only active cells in the grid and
+    summarises finished ones — otherwise a 55-cell backfill makes the frame
+    grow every tick and stream-mode cursor-up drifts.
     """
     lines: list[str] = []
     lines.append(_c("b", "fintel nerve") + _c("d", "  live dashboard  ") + _c("d", time.strftime("%H:%M:%S")))
@@ -315,24 +353,40 @@ def _render_lines(runs: list[_Run], now: float, preflight: _Preflight | None = N
         if not run.cells:
             lines.append(_c("d", "   (no cells yet)"))
         else:
-            lines.append(
-                _c("d", "   cell       date        stage                    round calls err idle    last tool / text")
-            )
-            for c in run.cells.values():
-                idle = 0.0 if c.stage == "done" else now - c.last_mono
-                sc = _stage_color(c.stage)
-                stage = c.stage
-                if c.stage == "done":
-                    stage = f"done:{c.outcome}"
-                tail = c.last_tool or c.last_reason
-                tail = _c("y", tail) if c.last_tool else _c("d", tail)
-                row = (
-                    f"   {_col('b', c.name, 9)} {_col('c', c.date, 10)} {_col(sc, stage, 24)} "
-                    f"r{c.round:<2} {_col('c', str(c.calls), 4, 'right')} "
-                    f"{_col('r' if c.errors else 'd', str(c.errors), 3, 'right')} "
-                    f"{idle:4.0f}s  {tail}"
+            active = [c for c in run.cells.values() if c.stage != "done"]
+            done = [c for c in run.cells.values() if c.stage == "done"]
+            show = active if collapse_done else list(run.cells.values())
+            if collapse_done and done:
+                ok_n = sum(1 for c in done if c.outcome == "ok")
+                fail_n = len(done) - ok_n
+                lines.append(
+                    _c("d", f"   done {len(done)}/{len(run.cells)}")
+                    + _c("g", f"  ok={ok_n}")
+                    + (_c("r", f"  fail={fail_n}") if fail_n else "")
+                    + _c("d", f"  active={len(active)}")
                 )
-                lines.append(row)
+            if show:
+                lines.append(
+                    _c("d", "   cell       date        stage                    round calls err idle    last tool / text")
+                )
+                for c in show:
+                    idle = 0.0 if c.stage == "done" else now - c.last_mono
+                    sc = _stage_color(c.stage)
+                    stage = c.stage
+                    if c.stage == "done":
+                        stage = f"done:{c.outcome}"
+                    # Cap the free-text tail so rows don't wrap (wrap breaks stream CUU).
+                    raw_tail = (c.last_tool or c.last_reason or "")[:40]
+                    tail = _c("y", raw_tail) if c.last_tool else _c("d", raw_tail)
+                    row = (
+                        f"   {_col('b', c.name, 9)} {_col('c', c.date, 10)} {_col(sc, stage, 24)} "
+                        f"r{c.round:<2} {_col('c', str(c.calls), 4, 'right')} "
+                        f"{_col('r' if c.errors else 'd', str(c.errors), 3, 'right')} "
+                        f"{idle:4.0f}s  {tail}"
+                    )
+                    lines.append(row)
+            elif not done:
+                lines.append(_c("d", "   (no cells yet)"))
         lines.append(_c("d", "─" * 78))
     lines.append(_c("d", "press q (or Ctrl-C) to quit"))
     return lines
@@ -368,7 +422,7 @@ def watch_run_logs(
         mode = _auto_mode()
     runs: list[_Run] = []
     for i, p in enumerate(paths):
-        tag = (tags[i] if tags and i < len(tags) else p.parent.parent.parent.name)
+        tag = (tags[i] if tags and i < len(tags) else _log_tag(p))
         runs.append(_Run(tag=tag, path=p))
     preflight = _Preflight()
     pf_offset = [0]
@@ -392,19 +446,32 @@ def watch_run_logs(
                 _drain(run)
             if job_log is not None:
                 _drain_preflight(preflight, job_log, pf_offset)
-            lines = _render_lines(runs, time.monotonic(), preflight=preflight)
-            body = "\n".join(l + _CLEAR_LINE for l in lines) + "\n"
+            # Stream mode collapses done cells so the frame height stays roughly
+            # stable (active pool only). Alt mode has room for the full grid.
+            lines = _render_lines(
+                runs, time.monotonic(), preflight=preflight,
+                collapse_done=use_stream or not use_alt,
+            )
             if use_alt:
+                body = "\n".join(l + _CLEAR_LINE for l in lines) + "\n"
                 sys.stdout.write(_HOME + _CLEAR_SCREEN + body + "\033[J")
             elif use_stream:
-                # Rewrite in place without taking over the screen: move the cursor
-                # up to the top of the previous frame, then overwrite each line.
-                # No alt screen, no cursor hiding — robust in Cursor's terminal.
+                # Rewrite in place: CUU by the *previous content line count*
+                # (not +1 — the trailing newline already parks the cursor one
+                # row below the frame). Truncate to terminal width so wrapped
+                # lines can't desync the cursor. Pad shorter frames so leftover
+                # rows from a taller previous frame are blanked.
+                cols = shutil.get_terminal_size((80, 24)).columns
+                lines = [_truncate_ansi(l, max(20, cols - 1)) for l in lines]
+                while len(lines) < prev_lines:
+                    lines.append("")
+                body = "\n".join(l + _CLEAR_LINE for l in lines)
                 if prev_lines:
                     sys.stdout.write(_CUU(prev_lines))
-                sys.stdout.write(body)
-                prev_lines = len(lines) + 1  # +1 for the trailing newline
+                sys.stdout.write(body + "\n")
+                prev_lines = len(lines)
             else:
+                body = "\n".join(l + _CLEAR_LINE for l in lines) + "\n"
                 # Non-interactive / captured: clear-and-home each frame.
                 sys.stdout.write(_CLEAR_SCREEN + _HOME + body)
             sys.stdout.flush()
@@ -430,21 +497,38 @@ def watch_run_logs(
 
 
 def resolve_paths(job_ids: list[str], output_root: Path) -> list[Path]:
+    """Resolve job ids / log paths into nerve JSONL files to watch.
+
+    Accepts:
+      · a job id under ``output_root`` — prefers ``backfill.log`` when present
+        (active backfill), otherwise ``r*/run.log``
+      · a literal path to any ``*.log`` nerve file (``run.log``, ``backfill.log``, …)
+    """
     paths: list[Path] = []
     for jid in job_ids:
         job = output_root / jid
         if not job.is_dir():
-            # maybe it's a literal run.log path
             p = Path(jid)
-            if p.is_file() and p.name == "run.log":
+            if p.is_file() and p.suffix == ".log":
                 paths.append(p)
+            continue
+        # Prefer an in-progress backfill over the finished run logs.
+        backfill = job / "backfill.log"
+        if backfill.is_file():
+            paths.append(backfill)
             continue
         for r in sorted(job.glob("r*/run.log")):
             paths.append(r)
-        if not any(p.parent.parent.parent == job for p in paths):
-            # keep only those under this job
-            paths = [p for p in paths if p.parent.parent.parent == job] or paths
     return paths
+
+
+def _log_tag(path: Path) -> str:
+    """Human label for a nerve log: job id, or ``job/backfill`` / ``job/r1``."""
+    if path.name == "backfill.log":
+        return f"{path.parent.name}/backfill"
+    if path.name == "run.log" and path.parent.name.startswith("r"):
+        return f"{path.parent.parent.name}/{path.parent.name}"
+    return path.parent.name
 
 
 def run_watch(args) -> int:
@@ -464,7 +548,7 @@ def run_watch(args) -> int:
             _time.sleep(1.0)
             paths = resolve_paths(job_ids, root)
     if not paths:
-        print(f"no run.log found for {job_ids} under {root}", file=sys.stderr)
+        print(f"no nerve log found for {job_ids} under {root}", file=sys.stderr)
         return 1
-    tags = [p.parent.parent.parent.name for p in paths]
+    tags = [_log_tag(p) for p in paths]
     return watch_run_logs(paths, tags=tags, mode=mode)

@@ -23,14 +23,15 @@ from fintel.agents.run import invoke
 from fintel.environment.cell import Cell
 from fintel.environment.factory import RuntimeConfig, build_environment
 from fintel.environment.health import audit_events
+from fintel.environment.progress import NullProgress, Progress
 from fintel.environment.trace import load
 from fintel.market.data.base import DataSource
 from fintel.market.settings import MarketConfig
 from fintel.models.agent import AgentSpec
 from fintel.models.common import Symbol
 from fintel.models.decision import AgentResponse
-from fintel.models.trial import CellResult, CellRecord
-from fintel.environment.progress import NullProgress, Progress
+from fintel.models.trace import Usage
+from fintel.models.trial import CellRecord, CellResult
 from fintel.simulate.artifacts import write_cell
 
 
@@ -46,7 +47,13 @@ class CellOutcome:
     response: AgentResponse
 
 
-def build_agent(spec: AgentSpec, *, mission_text: str = "", output_schema_text: str = ""):
+def build_agent(
+    spec: AgentSpec,
+    *,
+    mission_text: str = "",
+    output_schema_text: str = "",
+    company_names: dict[str, str] | None = None,
+):
     """Resolve an `AgentSpec` into a live agent.
 
     The model pin and the opaque `options` are the platform's usual hand-off;
@@ -63,6 +70,8 @@ def build_agent(spec: AgentSpec, *, mission_text: str = "", output_schema_text: 
     with_context = dict(params)
     with_context.setdefault("mission_text", mission_text)
     with_context.setdefault("output_schema_text", output_schema_text)
+    if company_names:
+        with_context.setdefault("company_names", company_names)
     try:
         return agent_factory.build(spec.name, **with_context)
     except TypeError:
@@ -94,37 +103,74 @@ def run_cell(
     cell_path: Path,
     mission_text: str = "",
     output_schema_text: str = "",
+    company_names: dict[str, str] | None = None,
     market_config: MarketConfig | None = None,
     progress: Progress | None = None,
+    retries: int = 1,
 ) -> CellOutcome:
     """Execute one cell end to end. Never raises; a failure is a CellResult.
 
     After the agent returns, health is graded from the on-disk access log (so
     MCP subprocess reads count) plus the agent outcome/detail. Broken health
     downgrades the cell status even when the agent stuffed a view.
+
+    If the agent returns a retryable outcome (rate_limited, timeout, transient,
+    parse_error, empty), the cell is retried up to `retries` times. Each retry
+    builds a fresh agent + environment so the trace and access log start clean.
+    Usage is accumulated across attempts so reported cost reflects actual spend;
+    the outcome and views come from the last attempt (the one that stuck, or
+    the final failure). Non-retryable outcomes (ok, refused, abstained, crashed,
+    context_overflow) are recorded as-is — re-rolling them would manufacture a
+    different answer or burn money reproducing a bug.
     """
     progress = progress or NullProgress()
     started = time.perf_counter()
     started_at = _now_iso()
     progress.emit("cell_start", cell=cell.name, decision_date=cell.decision_date.isoformat())
 
-    env = build_environment(
-        cell=cell,
-        sources=sources,
-        universe=universe,
-        kinds=tuple(sources),
-        runtime=runtime,
-        market_config=market_config,
-        nerve=progress,
-    )
+    response: AgentResponse | None = None
+    total_usage = Usage()
+    attempts = 0
+    summary: dict = {}
 
-    agent = build_agent(
-        agent_spec, mission_text=mission_text, output_schema_text=output_schema_text
-    )
-    response = invoke(agent, env)
+    for attempt in range(1, retries + 2):
+        attempts = attempt
+        env = build_environment(
+            cell=cell,
+            sources=sources,
+            universe=universe,
+            kinds=tuple(sources),
+            runtime=runtime,
+            market_config=market_config,
+            nerve=progress,
+        )
+        agent = build_agent(
+            agent_spec,
+            mission_text=mission_text,
+            output_schema_text=output_schema_text,
+            company_names=company_names,
+        )
+        response = invoke(agent, env)
+        total_usage = total_usage.merge(response.usage)
+
+        if response.outcome == "ok" or not response.retryable or attempt > retries:
+            summary = env.close()
+            break
+
+        progress.emit(
+            "cell_retry",
+            cell=cell.name,
+            decision_date=cell.decision_date.isoformat(),
+            attempt=attempt,
+            outcome=response.outcome,
+            detail=response.detail,
+        )
+        env.close()
+
+    assert response is not None
+    response = response.model_copy(update={"usage": total_usage})
 
     elapsed_ms = int((time.perf_counter() - started) * 1000)
-    summary = env.close()
 
     events = (
         load(env.session.trace)
@@ -163,7 +209,7 @@ def run_cell(
         symbols=list(cell.symbols),
         status=status,
         n_views=len(response.views),
-        attempts=1,
+        attempts=attempts,
         duration_ms=elapsed_ms,
         usage=response.usage,
         error=_cell_error(response, health),

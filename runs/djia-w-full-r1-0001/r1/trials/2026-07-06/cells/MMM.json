@@ -1,0 +1,223 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 67340,
+    "tokens_out": 9554,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.068297401152,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "MMM is extremely unattractive at current levels. The stock trades at 30.5x P/E \u2014 near the top of its 12-month range (17.7\u201332.0x) \u2014 on sharply deteriorating fundamentals: Q1 2026 diluted EPS of $1.23 is down -39.7% YoY from $2.04, net income collapsed -41.3% to $659M, and total equity eroded -29.1% from $4.67B to $3.31B in two quarters. The earnings yield of 3.3% sits 120bps below the 10-year Treasury yield of 4.49%. The re-rating from ~19x to 30.5x is a hope trade on recovery that the income statement has not delivered. While operating income actually improved +12% YoY to $1.40B and gross margins held near 40-41%, the below-the-line collapse (likely from legal charges, interest costs, or restructuring) is severe. PFAS litigation introduces binary downside risk with 'damage claims potentially representing material liabilities that could severely impact the value of equity in downside cases.' The balance sheet is highly leveraged with liabilities at 90.6% of assets and debt-to-equity materially above 2.7x. Cash generation is erratic \u2014 Q1 2026 OCF of $574M is down -67% QoQ. Analyst consensus is tepid (2.29 rating, only 5.4% upside to $169.64 target). The Q2 gurufocus headlines showing non-GAAP EPS of $2.40 beating by $0.15 and adj revenue of $6.5B beating by $100M are encouraging but their publication date is unverified and may be post-decision-date; even if valid, the company reportedly trimmed its FY26 EPS range, suggesting margin or cost headwinds persist. All three pillars align negatively: deteriorating earnings trajectory on a leveraged balance sheet, extreme valuation vs own history, and no credible near-term fundamental catalyst to justify the multiple expansion.",
+      "key_factors": [
+        "Q1 2026 diluted EPS of $1.23 down -39.7% YoY from $2.04; net income collapsed -41.3% to $659M",
+        "P/E diluted of 30.54x at top of 12-month range (17.7\u201332.0x); P/B of 25.818 at extreme top of 17.1\u201327.0 range",
+        "Earnings yield of 3.3% is 120bps below 10-year Treasury yield of 4.49%",
+        "Total equity eroded -29.1% from $4.67B (Q3 2025) to $3.31B (Q1 2026) in two quarters; liabilities = 90.6% of assets",
+        "Operating income improved +12% YoY to $1.40B (correcting quant report's erroneous 'deteriorated' characterization); gross margin held at 40.8% vs 41.7% \u2014 pressure is below the gross-profit line",
+        "Q1 2026 operating cash flow of $574M down -67.3% QoQ from Q3 2025's $1.76B; cash generation erratic and declining",
+        "PFAS litigation: 'damage claims potentially representing material liabilities that could severely impact the value of equity in downside cases' \u2014 binary downside risk",
+        "Combat Arms earplugs litigation: 290,000+ claimants, $1.2B pre-tax charge booked",
+        "Analyst consensus tepid: 2.29 rating (6 Buy / 6 Hold / 2 Sell), consensus target $169.64 = only +5.4% upside",
+        "Multiple re-rated from ~19x to 30.5x (+65%) while net margin compressed from 17.9% to 11.2% \u2014 market pricing recovery not yet delivered in fundamentals",
+        "Q2 gurufocus headlines (non-GAAP EPS $2.40 beat, adj revenue $6.5B beat) are encouraging but publication date unverified; company reportedly trimmed FY26 EPS range suggesting persistent cost headwinds",
+        "Macro: Fed Funds 3.63%, 10Y yield 4.49%, T10Y2Y spread flattened to +0.35% signaling reduced growth optimism; WTI oil collapsed -39% to $69.73"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=6.03B net_income=659.00M eps_diluted=1.23 operating_cash_flow=574.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=2.04 (YoY comp showing -39.7% decline)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_equity=3.31B (down from 4.67B at 2025-09-30, -29.1%)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=30.54 p_b=25.818 earnings_yield=0.033 net_margin=0.112"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-07",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=19 p_b=18.387 net_margin=0.179 (prior baseline)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "close=160.44 (quarterly_delta=+10.5% on deteriorating fundamentals)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.49 DCOILWTICO=69.73 T10Y2Y=0.35"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "gurufocus.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "3M expects growth to exceed 3% this quarter, supported by positive trends observed in approximately 60% of their portfolio, particularly in general industrial and safety sectors, which experienced mid-single-digit growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "gurufocus.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "3M Non-GAAP EPS of $2.40 beats by $0.15, adj. revenue of $6.5B beats by $100M / raises sales outlook but trims FY26 EPS range"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "lightyear.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "reaffirmed full-year 2026 adjusted EPS guidance of $8.50\u2013$8.70 and approximately 4% adjusted sales growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "seekingalpha.com (risk)",
+          "relevance": 1.0,
+          "excerpt": "Existing PFAS litigation introduces a high degree of uncertainty, with damage claims potentially representing material liabilities that could severely impact the value of equity in downside cases"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "marketbeat.com (competitive)",
+          "relevance": 1.0,
+          "excerpt": "Analyst consensus: 2.29 rating (6 Buy / 6 Hold / 2 Sell); consensus target $169.64 (+5.4%)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "capital.com (risk)",
+          "relevance": 1.0,
+          "excerpt": "3M has committed $1bn to fund a trust aimed at resolving compensation-related claims\u2026 290,000 former and current military members (earplugs litigation)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 245603,
+        "capped_chars": 245603,
+        "raw_tokens": 61401,
+        "capped_tokens": 61401
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30321,
+        "capped_chars": 30321,
+        "raw_tokens": 7580,
+        "capped_tokens": 7580
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 970,
+        "capped_chars": 970,
+        "raw_tokens": 242,
+        "capped_tokens": 242
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7736,
+        "capped_chars": 2450,
+        "raw_tokens": 1934,
+        "capped_tokens": 612
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 59794,
+        "capped_chars": 42307,
+        "raw_tokens": 14948,
+        "capped_tokens": 10576
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 142612,
+  "started_at": "2026-08-06T03:35:27+00:00"
+}

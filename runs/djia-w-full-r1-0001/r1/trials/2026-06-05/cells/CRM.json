@@ -1,0 +1,221 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 87736,
+    "tokens_out": 11546,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0841226564,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "CRM presents a compelling operating story tempered by a transformed balance sheet. The Q1 FY27 results are genuinely strong: revenue of $11.13B (+13.3% YoY), diluted EPS of $2.42 (+52.2% YoY), gross margins at 77.6%, and operating cash flow of $6.70B. The PEG ratio of ~0.39 at a 20.5x PE (near the floor of its 365-day range of 19.1-57.6x) represents significant undervaluation on a growth-adjusted basis relative to the company's own history. The franchise itself remains dominant \u2014 21-22% global CRM market share, #1 for 12 consecutive years, with deep switching costs and a credible AI-agent strategy (Agentforce ARR crossed $1B). The $50B buyback authorization with $27.5B returned in a single quarter mechanically supports EPS and signals management confidence. However, the balance sheet has fundamentally changed: debt surged from $8.44B to $39.28B (D/E from ~0.14x to 1.15x) to fund the buyback, and equity eroded 44% to $34.23B. This is a structural risk increase \u2014 the company must sustain strong cash flows to service ~$39B in debt, with no margin for error. Segment softness in Marketing/Commerce and Tableau (management's own language: 'ongoing weakness' and 'increased softness') and a slightly disappointing Q2 guide ($11.27-11.35B vs $11.4B consensus) add near-term caution. The score of +0.35 reflects strong fundamentals and cheap valuation partially offset by the leverage-induced balance-sheet risk and segment-specific headwinds. The near-term catalyst is the Q1 earnings beat and raised FY27 guidance ($45.9-46.2B), but the soft Q2 guide and RPO miss ($67.9B vs $68.9B consensus) temper the re-rating probability. Note: the annualized OCF figure of ~$26-27B should be treated with caution given Q2 2025 OCF was only $740M, indicating extreme quarterly volatility.",
+      "key_factors": [
+        "Q1 FY27 revenue $11.13B (+13.3% YoY), diluted EPS $2.42 (+52.2% YoY), net income $2.11B (+36.7% YoY) \u2014 strong earnings leverage from 13% revenue growth to 52% EPS growth",
+        "Gross margin 77.6%, operating margin 21.1% (up from 19.7% YoY), net margin 18.7% (up from ~12.7% persistent level) \u2014 material profitability improvement",
+        "Operating cash flow $6.70B in Q1 (3.2x net income), though Q2 2025 OCF was only $740M indicating high quarterly volatility \u2014 annualized OCF of ~$26-27B is a single-quarter extrapolation",
+        "PE of 20.49x near the floor of 365-day range (19.1-57.6x), down from 56.0x one year ago; PEG ~0.39 based on 52% EPS growth \u2014 fundamentally cheap on growth-adjusted basis vs own history",
+        "Total debt surged from $8.44B (Jul 2025) to $39.28B (Apr 2026), D/E from ~0.14x to 1.15x; equity eroded 44% from $61.33B to $34.23B \u2014 structural balance-sheet risk from buyback-funded leverage",
+        "Dominant franchise: 21-22% global CRM market share, #1 for 12 consecutive years, deep switching costs, Agentforce ARR crossed $1B in Q1 FY27",
+        "$50B buyback authorization with $27.5B returned in Q1 (103M shares, ~10% share count reduction) \u2014 largest in company history, mechanically supports EPS",
+        "Q2 revenue guidance $11.27-11.35B slightly below consensus $11.4B; RPO $67.9B missed $68.9B consensus; management cited 'ongoing weakness in marketing and commerce and increased softness in Tableau'",
+        "Price at $188.75 (Jun 4) down 31.8% from 52-week high $276.80, 3rd consecutive negative quarter \u2014 persistent downtrend despite fundamental improvement",
+        "Non-GAAP operating margin expanded 250bps to 34.8% \u2014 structural profitability shift supporting reinvestment and capital returns"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=11.13B, eps_diluted=2.42, net_income=2.11B, operating_cash_flow=6.70B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "YoY 2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "revenue_growth=+13.3%, eps_growth=+52.2%, net_income_growth=+36.7%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "total_debt=39.28B, total_equity=34.23B (vs 2025-07-31: debt=8.44B, equity=61.33B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "gross_profit=8.56B on revenue=11.13B \u2192 gross_margin=76.9%; operating_income=2.35B \u2192 operating_margin=21.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=20.491 (range 19.1..57.6 over 365d), earnings_yield=0.049, debt_to_equity=1.147"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "relevance": 1.0,
+          "excerpt": "p_b=4.802 (range 2.7..5.3), net_margin=0.187, roe=0.234"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "sparse history",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted compressed from 56.029 (2025-06-05) to 20.491 (2026-06-04)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "relevance": 1.0,
+          "excerpt": "close=188.75, 52w_high=276.80, 52w_low=163.52, quarterly_delta=-6.3% (3rd consecutive negative quarter)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "maxxwaring.substack.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Salesforce controls roughly 21% of the global CRM market... they generate more CRM revenue than their closest competitors (Microsoft, Oracle, SAP, and Adobe) combined, and they have held the number one market position for 12 consecutive years"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-28 / Benzinga (CRM earnings)",
+          "relevance": 1.0,
+          "excerpt": "Salesforce reported its first $11.1 billion quarter... $6.7 billion operating cash flow... Agentforce still represents less than 5% of total sales"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-28 / Bloomberg",
+          "relevance": 1.0,
+          "excerpt": "Revenue will be about $11.3 billion in the fiscal second quarter... Analysts, on average, projected $11.4 billion... remaining performance obligations were $67.9 billion, compared with analysts' average estimate of $68.9 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (update)",
+          "relevance": 1.0,
+          "excerpt": "Non-GAAP operating margin expanded 250 basis points to 34.8%... returned $27.5 billion to shareholders... $25 billion accelerated share repurchase... diluted share count by 10% year over year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tickerleague.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Revenue $42.8B TTM; P/FCF 11.2x; net income $8.02B; gross margin 77.6%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3822,
+        "capped_chars": 3822,
+        "raw_tokens": 956,
+        "capped_tokens": 956
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 252964,
+        "capped_chars": 252964,
+        "raw_tokens": 63241,
+        "capped_tokens": 63241
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30934,
+        "capped_chars": 30934,
+        "raw_tokens": 7734,
+        "capped_tokens": 7734
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2319,
+        "capped_chars": 2319,
+        "raw_tokens": 580,
+        "capped_tokens": 580
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 73046,
+        "capped_chars": 15034,
+        "raw_tokens": 18262,
+        "capped_tokens": 3758
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103823,
+        "capped_chars": 80504,
+        "raw_tokens": 25955,
+        "capped_tokens": 20126
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 161469,
+  "started_at": "2026-08-06T02:44:25+00:00"
+}

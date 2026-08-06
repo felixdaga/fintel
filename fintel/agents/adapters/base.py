@@ -53,16 +53,17 @@ BINDINGS_FILE = "bindings.json"
 # full 600s timeout when every tool call is already dead.
 FAIL_FAST_ERRORS = 3
 
-# Regexes over stdout+stderr, checked in order; the last match wins (the real
-# failure is usually at the end, after the banner). Modeled on Harbor's
-# ErrorPatterns, which is the one part of its adapter base worth copying.
+# Regexes over stderr only (not stdout — stdout carries the model's
+# transcript, which routinely contains words like "safety" in normal
+# financial analysis prose). Checked in order; the last match wins.
+# Modeled on Harbor's ErrorPatterns, tightened to avoid false positives.
 ERROR_PATTERNS: tuple[tuple[str, type[AgentError]], ...] = (
     (r"rate.?limit|too many requests", RateLimited),
     (r"quota exceeded|usage limit", RateLimited),
     (r"overloaded|temporarily unavailable", ProviderUnavailable),
     (r"500 internal|502|503|504", ProviderUnavailable),
     (r"context (length|window)|too many tokens|prompt is too long", ContextOverflow),
-    (r"content.?filter|content.?policy|safety|blocked by", SafetyRefusal),
+    (r"content.?filter|content.?policy", SafetyRefusal),
     (r"not logged in|unauthorized|api key", AgentError),
 )
 
@@ -83,13 +84,20 @@ class ErrorPattern:
 
 
 def classify_exit(command: str, returncode: int, stdout: str, stderr: str) -> AgentError:
-    output = f"{stdout or ''}\n{stderr or ''}"
+    """Classify a subprocess failure from stderr only.
+
+    stdout carries the model's transcript — scanning it for keywords
+    false-positives on normal financial analysis prose (e.g. "safety
+    litigation"). Only stderr is scanned; the detail still includes
+    stdout for debugging, but classification trusts stderr + exit code.
+    """
+    err = stderr or ""
     last: tuple[int, type[AgentError]] | None = None
     for compiled, exc in ((re.compile(p, re.IGNORECASE), e) for p, e in ERROR_PATTERNS):
-        for m in compiled.finditer(output):
+        for m in compiled.finditer(err):
             if last is None or m.end() > last[0]:
                 last = (m.end(), exc)
-    detail = f"command exited {returncode}: {command}\n{output[-800:]}"
+    detail = f"command exited {returncode}: {command}\n{(stdout or '')[-400:]}\n{err[-400:]}"
     if last is not None:
         return last[1](detail)
     return AgentError(detail)

@@ -4,15 +4,6 @@
 - In-process host: Optimized (wires ``installed.optimized_agent`` to fintel cells)
 """
 
-from fintel.agents.base import (
-    AgentError,
-    AgentTimeout,
-    ContextOverflow,
-    MalformedOutput,
-    ProviderUnavailable,
-    RateLimited,
-    SafetyRefusal,
-)
 from fintel.agents.adapters.base import (
     ERROR_PATTERNS,
     CliFlag,
@@ -24,6 +15,15 @@ from fintel.agents.adapters.base import (
 from fintel.agents.adapters.claude_code import ClaudeCodeAgent
 from fintel.agents.adapters.openclaw import OpenClawAgent
 from fintel.agents.adapters.optimized import OptimizedFintelAgent
+from fintel.agents.base import (
+    AgentError,
+    AgentTimeout,
+    ContextOverflow,
+    MalformedOutput,
+    ProviderUnavailable,
+    RateLimited,
+    SafetyRefusal,
+)
 
 __all__ = [
     "ERROR_PATTERNS",

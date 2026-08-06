@@ -21,7 +21,7 @@ from fintel.evaluate.holdings import build as build_holdings
 from fintel.evaluate.kpi import compute as compute_kpi
 from fintel.evaluate.prices import price_lookup_for
 from fintel.evaluate.read import load_job, load_run
-from fintel.evaluate.report import report, render_markdown, write_report
+from fintel.evaluate.report import render_markdown, report, write_report
 from fintel.evaluate.signals import build_signals
 from fintel.evaluate.variance import analyse as analyse_variance
 

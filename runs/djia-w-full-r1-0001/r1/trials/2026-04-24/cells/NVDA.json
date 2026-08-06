@@ -1,0 +1,239 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 141965,
+    "tokens_out": 12381,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.1254072864,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "NVIDIA's fundamental health is exceptional: Q3 FY2026 revenue of $57.01B accelerated +22.0% QoQ, gross margins reached 73.4%, operating margins 63.2%, ROE 86.5%, and the balance sheet carries near-zero leverage (debt/equity 0.071x from Q3 balance sheet). The franchise is a near-monopoly in AI accelerators (~80-92% market share) with a self-reinforcing CUDA software ecosystem of 5M+ developers. Q4 FY2026 results confirmed continued momentum ($68.1B revenue, +73% YoY, EPS beat by 5.32%), and Q1 FY2027 guidance of $78B revenue with 74.9% gross margins signals the ramp is intact. China H200 sales have resumed, and the Vera Rubin product cycle provides a multi-year growth runway. However, valuation is the binding constraint: trailing PE of 56.6x sits at the 92nd percentile of the observed range (highest of 12 sparse-history points), with an earnings yield of 1.8% a full 254 bps below the 10-year Treasury yield of 4.34%. The stock is priced for near-flawless execution. Macro headwinds are material: WTI crude at $99.27 (+64% over 90 days) threatens hyperscaler capex budgets, and tightening financial conditions (T10Y2Y spread narrowed to 0.51%) add risk. The forward P/E of ~22-24x is more reasonable and provides some valuation cushion, but the trailing multiple leaves limited margin of safety. Near-term catalysts exist (Q1 FY2027 earnings, Vera Rubin ramp, China revenue reopening) but are partially priced in given the stock's 11-day winning streak and proximity to all-time highs ($199.64 vs $212.19 peak). Net: outstanding business, stretched valuation, moderate near-term catalyst support \u2014 mildly to moderately attractive.",
+      "key_factors": [
+        "Q3 FY2026 revenue $57.01B with +22.0% QoQ acceleration; Q4 FY2026 revenue $68.1B (+73% YoY), fifth consecutive EPS beat (+5.32%)",
+        "Gross margin 73.4% (Q3), operating margin 63.2%, ROE 86.5%, debt/equity 0.071x \u2014 fortress balance sheet growing through retained earnings",
+        "~80-92% data center AI accelerator market share; CUDA ecosystem with 5M+ registered developers creates deep switching costs",
+        "Q1 FY2027 guidance: $78B revenue, 74.9% gross margins; Vera Rubin product cycle provides multi-year growth runway",
+        "China H200 manufacturing resumed after securing U.S. export licenses (GTC March 2026)",
+        "Trailing PE 56.6x at 92nd percentile of observed range (highest of 12 sparse-history points); earnings yield 1.8% vs 10Y Treasury 4.34% = -254 bps spread",
+        "Forward P/E ~22-24x described as cheapest in years relative to growth, providing some valuation cushion",
+        "WTI crude $99.27 (+64% over 90 days) poses demand risk to hyperscaler AI capex; T10Y2Y spread narrowed to 0.51%",
+        "Custom silicon from hyperscalers (Google TPU, Amazon Trainium, Meta MTIA, Microsoft Maia) is primary structural threat to market share",
+        "Stock at $199.64 within 6% of $212.19 all-time high after 11 consecutive up days \u2014 near-term momentum strong but limits entry discount"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-26",
+          "relevance": 1.0,
+          "excerpt": "revenue=57.01B, QoQ=+22.0%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-26",
+          "relevance": 1.0,
+          "excerpt": "gross_profit=41.85B, gross_margin_implied=73.4%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-26",
+          "relevance": 1.0,
+          "excerpt": "operating_income=36.01B, operating_margin_implied=63.2%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-26",
+          "relevance": 1.0,
+          "excerpt": "total_equity=118.90B, total_debt=8.47B (debt_to_equity=0.071)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-26",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=23.75B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=56.556x (range 43.2..63.5)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.018 (vs DGS10=4.34%)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=99.27 (\u0394=+64.2% over window)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "tikr.com (2026-04-22)",
+          "relevance": 1.0,
+          "excerpt": "On February 25, 2026, NVIDIA reported Q4 fiscal year 2026 results: revenue of $68.1 billion, up 73% year over year, with data center revenue of $62.3 billion rising 75%. Adjusted EPS of $1.62 beat the Street estimate of $1.54 by 5.32%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Motley Fool (2026-04-11)",
+          "relevance": 1.0,
+          "excerpt": "Q1 FY2027 guidance pointed to $78B revenue and 74.9% gross margins"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "siliconanalysts.com",
+          "relevance": 1.0,
+          "excerpt": "NVIDIA ~80% of the AI accelerator market by revenue with $193.7B in FY2026 data center sales"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "matrixbcg.com",
+          "relevance": 1.0,
+          "excerpt": "CUDA boasts over 5 million registered developers as of 2025, creating high switching costs and a software-defined moat"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "students.tippie.uiowa.edu",
+          "relevance": 1.0,
+          "excerpt": "NVIDIA's fabless model allows them to scale their revenue without taking a large fixed-cost burden... invested capital turnover is near 3.0x in FY2025 while ROIC was above 240%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Motley Fool (2026-04-16)",
+          "relevance": 1.0,
+          "excerpt": "Nvidia achieved an unprecedented 11 consecutive trading days of gains in its 26-year history as a public company... stock trading at 41x earnings versus its 3-year average of 72x"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de (2026-03-29)",
+          "relevance": 1.0,
+          "excerpt": "Senators Elizabeth Warren and Jim Banks have formally requested the Department of Commerce to suspend and review all active export licenses for advanced AI chips to nations including Malaysia, Vietnam, and Singapore"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "siliconanalysts.com",
+          "relevance": 1.0,
+          "excerpt": "~40% of NVIDIA's revenue comes from four hyperscalers that are all building competing chips"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3875,
+        "capped_chars": 3875,
+        "raw_tokens": 969,
+        "capped_tokens": 969
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 240792,
+        "capped_chars": 240792,
+        "raw_tokens": 60198,
+        "capped_tokens": 60198
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30859,
+        "capped_chars": 30859,
+        "raw_tokens": 7715,
+        "capped_tokens": 7715
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4453,
+        "capped_chars": 4453,
+        "raw_tokens": 1113,
+        "capped_tokens": 1113
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 450894,
+        "capped_chars": 106842,
+        "raw_tokens": 112724,
+        "capped_tokens": 26710
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 138365,
+        "capped_chars": 88566,
+        "raw_tokens": 34591,
+        "capped_tokens": 22142
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 191251,
+  "started_at": "2026-08-06T02:28:34+00:00"
+}

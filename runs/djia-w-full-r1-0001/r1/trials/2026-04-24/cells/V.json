@@ -1,0 +1,221 @@
+{
+  "cell": "V",
+  "symbols": [
+    "V"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 94046,
+    "tokens_out": 11558,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.09055458551199999,
+    "basis": "reported"
+  },
+  "views": {
+    "V": {
+      "symbol": "V",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Visa exhibits best-in-class fundamental health: Q1 FY2026 revenue of $10.90B (+14.6% YoY), net income of $5.85B (+14.3% YoY), operating cash flow of $6.78B (OCF/NI = 1.16x), and ROE of 53.6% (expanding from 52.2% a year ago). The franchise is dominant (~60% US purchase volume, ~40-60% global card share ex-China) with structural growth from cash-to-digital migration, VAS revenue growing 28% in constant dollars, and Visa Direct transaction growth of 23%. However, net margin has compressed 410bp over the trailing year (0.543 to 0.502), and the operating margin per the raw pack is 59.2% \u2014 below the 65%+ levels cited in qualitative sources, suggesting some cost pressure. The stock has pulled back ~18% from its 52-week high ($375.51) to $308.88, but without trailing P/E or EV/EBIT data in the quantitative pack, I cannot confirm the stock is cheap vs its own history \u2014 the qual report notes forward P/E of 22.5x vs payments industry 16.7x, which is still a premium. The macro backdrop is hostile (WTI at $99.27, 10Y at 4.34%, VIX at 19.31, rising breakeven inflation), which historically compresses multiples on high-quality growth names. The near-term catalyst is Q2 FY2026 earnings on April 28 (consensus: EPS $3.09, revenue $10.7B, ~12% YoY growth), with Visa having beaten estimates in each of the last four quarters by an average of 2.1% \u2014 this provides a modest positive pillar-3 bump. The DOJ antitrust overhang (structural remedies sought, case extending into 2027) is a material risk that caps the score. Net-net: excellent franchise with positive trajectory, but margin compression, premium valuation, hostile macro, and regulatory risk warrant a cautiously positive rather than strongly positive rating.",
+      "key_factors": [
+        "Q1 FY2026 revenue $10.90B (+14.6% YoY), net income $5.85B (+14.3% YoY), OCF $6.78B (+25.6% YoY) \u2014 strong fundamental trajectory",
+        "ROE at 53.6% (up from 52.2% YoY) and OCF/NI = 1.16x confirm high earnings quality and capital efficiency",
+        "Net margin compressed 410bp over trailing year (0.543 to 0.502) \u2014 rising costs partially offsetting top-line gains",
+        "VAS revenue grew 28% in constant dollars to $3.2B in Q1; Visa Direct +23% to 3.7B transactions \u2014 diversification reducing consumer-cycle dependence",
+        "Stock at $308.88, down ~18% from 52-week high of $375.51, but forward P/E of 22.5x still at premium to payments industry average of 16.7x",
+        "Missing trailing P/E, EV/EBIT, FCF yield in quantitative data \u2014 valuation vs own history cannot be definitively assessed",
+        "Q2 FY2026 earnings on April 28: consensus EPS $3.09, revenue $10.7B; Visa has beaten estimates in last 4 quarters by avg 2.1% \u2014 near-term positive catalyst",
+        "DOJ antitrust lawsuit seeking structural remedies (fee caps, bans on exclusivity) \u2014 material risk to pricing power, case extends into 2027",
+        "Macro headwinds: WTI crude $99.27 (+64.2% in 90d), 10Y yield 4.34%, VIX 19.31, 10Y breakeven 2.42% \u2014 hostile for high-multiple compounders",
+        "Global market share 40-60% ex-China (sources vary), ~70% US purchase volume \u2014 dominant network effects provide durable competitive moat"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "revenue=10.90B, net_income=5.85B, operating_income=6.74B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31 Q1 YoY",
+          "relevance": 1.0,
+          "excerpt": "revenue=+14.6%, net_income=+14.3%, operating_cash_flow=+25.6%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=6.78B (OCF/NI=1.16x \u2014 cash conversion >1.0)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.502 (vs 0.543 at 2025-04-24; 410bp compression)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "roe=0.536 (vs 0.522 at 2025-04-24; 140bp expansion)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "close=308.88, 52w_high=375.51 (\u221217.7% from peak), quarterly delta=\u22125.4%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=99.27 (+64.2% over 90d), DGS10=4.34, VIXCLS=19.31"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com (April 2026)",
+          "relevance": 1.0,
+          "excerpt": "The LTM EBIT margin sits at 67%, and the net income margin is around 56%\u2026 VAS revenue grew 28% in constant dollars to $3.2 billion in Q1\u2026 commercial and money movement solutions grew 20%, supported by Visa Direct transaction growth of 23% to 3.7 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingview.com (April 2026)",
+          "relevance": 1.0,
+          "excerpt": "Visa Inc. is set to report its second-quarter fiscal 2026 results on April 28, 2026\u2026 Zacks Consensus Estimate: EPS $3.09, revenue $10.7B\u2026 beat estimates in each of the last four quarters, average being 2.1%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de/risk (2026-03-24)",
+          "relevance": 1.0,
+          "excerpt": "The U.S. Department of Justice's antitrust lawsuit against Visa centers on claims that the company enforces exclusive deals with financial institutions\u2026 DOJ pushing for structural remedies, including possible bans on certain interchange fee structures"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "matrixbcg.com (2026-04-04)",
+          "relevance": 1.0,
+          "excerpt": "Visa processed over 215 billion transactions and > $15.5 trillion in volume by FY2025, serving 4.5 billion credentials and ~60% global share ex-China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "matrixbcg.com/competitive (2026-04-04)",
+          "relevance": 1.0,
+          "excerpt": "Visa holds approximately 40 percent of the global payment card market excluding China, and about 60 percent of the US card market\u2026 operating margin near 67 percent"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortunly.com (2026 data)",
+          "relevance": 1.0,
+          "excerpt": "At the end of 2025, Visa's US purchase volume reached $7.028 trillion, or 70.38% of the market share for all credit and debit products combined"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "V",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4309,
+        "capped_chars": 4309,
+        "raw_tokens": 1077,
+        "capped_tokens": 1077
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 197358,
+        "capped_chars": 197358,
+        "raw_tokens": 49340,
+        "capped_tokens": 49340
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30859,
+        "capped_chars": 30859,
+        "raw_tokens": 7715,
+        "capped_tokens": 7715
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2308,
+        "capped_chars": 2308,
+        "raw_tokens": 577,
+        "capped_tokens": 577
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 25861,
+        "capped_chars": 5545,
+        "raw_tokens": 6465,
+        "capped_tokens": 1386
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 143406,
+        "capped_chars": 105727,
+        "raw_tokens": 35851,
+        "capped_tokens": 26432
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 163235,
+  "started_at": "2026-08-06T02:28:34+00:00"
+}

@@ -15,6 +15,11 @@ from pathlib import Path
 
 import pytest
 
+from fintel.models.agent import AgentSpec, ModelSpec
+from fintel.models.decision import AgentResponse, View
+from fintel.models.job import JobConfig
+from fintel.models.trace import Usage
+from fintel.models.trial import CellResult, TrialResult
 from fintel.simulate import (
     map_parallel,
     reduce_decision,
@@ -23,12 +28,6 @@ from fintel.simulate import (
     reduce_trial,
     run_job,
 )
-from fintel.models.agent import AgentSpec, ModelSpec
-from fintel.models.decision import AgentResponse, View
-from fintel.models.job import JobConfig
-from fintel.models.trace import Usage
-from fintel.models.trial import CellResult, TrialResult
-
 
 # ── fixtures ────────────────────────────────────────────────────────────────
 
@@ -511,14 +510,189 @@ def test_memory_guard_forces_sequential_trials(tmp_path):
     assert (run_paths.root / "result.json").is_file()
 
 
+def test_shared_concurrency_blocked_when_memory_on(tmp_path):
+    """shared_concurrency raises when dates are coupled by memory."""
+    from fintel.market.settings import MarketConfig
+    from fintel.models.agent import AgentSpec, ModelSpec
+    from fintel.models.market import UniverseRef
+    from fintel.models.paths import RunPaths
+    from fintel.models.run import RunConfig, StrategyRef
+    from fintel.simulate.run import run_run
+
+    package = _write_package(tmp_path / "pkg", symbols=["AAPL", "MSFT"])
+    run_paths = RunPaths(root=tmp_path / "run")
+    run_config = RunConfig(
+        run_id="r1",
+        job_id="j1",
+        k_index=1,
+        k_repeats=1,
+        created_at="2024-01-01T00:00:00+00:00",
+        strategy=StrategyRef(name="test_pkg", path=str(package)),
+        agent=AgentSpec(name="constant", model=ModelSpec()),
+        scope="single_name",
+        universe=UniverseRef(symbols=["AAPL", "MSFT"]),
+        universe_symbols=["AAPL", "MSFT"],
+        schedule={"kind": "single_point", "on": "2024-01-02"},
+        schedule_dates=["2024-01-02"],
+        data=[{"kind": "prices", "source": "synthetic_prices"}],
+        scoring={"kpi": "icir", "horizons": [1]},
+    )
+
+    with pytest.raises(ValueError, match="shared_concurrency requires independent"):
+        run_run(
+            run_config=run_config,
+            market_config=MarketConfig(cache_root=tmp_path / "cache", offline=True),
+            paths=run_paths,
+            shared_concurrency=4,
+            memory_on=True,
+        )
+
+
+def test_shared_concurrency_blocked_when_feedback_on(tmp_path):
+    """shared_concurrency raises when dates are coupled by feedback."""
+    from fintel.market.settings import MarketConfig
+    from fintel.models.agent import AgentSpec, ModelSpec
+    from fintel.models.market import UniverseRef
+    from fintel.models.paths import RunPaths
+    from fintel.models.run import RunConfig, StrategyRef
+    from fintel.simulate.run import run_run
+
+    package = _write_package(tmp_path / "pkg", symbols=["AAPL"])
+    run_paths = RunPaths(root=tmp_path / "run")
+    run_config = RunConfig(
+        run_id="r1",
+        job_id="j1",
+        k_index=1,
+        k_repeats=1,
+        created_at="2024-01-01T00:00:00+00:00",
+        strategy=StrategyRef(name="test_pkg", path=str(package)),
+        agent=AgentSpec(name="constant", model=ModelSpec()),
+        scope="single_name",
+        universe=UniverseRef(symbols=["AAPL"]),
+        universe_symbols=["AAPL"],
+        schedule={"kind": "single_point", "on": "2024-01-02"},
+        schedule_dates=["2024-01-02"],
+        data=[{"kind": "prices", "source": "synthetic_prices"}],
+        scoring={"kpi": "icir", "horizons": [1]},
+    )
+
+    with pytest.raises(ValueError, match="shared_concurrency requires independent"):
+        run_run(
+            run_config=run_config,
+            market_config=MarketConfig(cache_root=tmp_path / "cache", offline=True),
+            paths=run_paths,
+            shared_concurrency=2,
+            feedback_on=True,
+        )
+
+
+def test_shared_concurrency_rolls_across_dates(tmp_path):
+    """Flat pool keeps N cells in flight across dates — not blocked on a
+    full-date barrier. With shared=3 and 2 tickers/date, a third slot must
+    pull the next date while the first date is still running."""
+    import threading
+    import time
+    from collections import Counter
+    from dataclasses import dataclass
+
+    from fintel.models.decision import AgentResponse, View
+    from fintel.models.market import ScheduleRef
+
+    package = _write_package(tmp_path / "pkg", symbols=["A", "B"])
+    (package / "strategy.toml").write_text(
+        textwrap.dedent(
+            """
+            name = "test_pkg"
+            description = "test"
+
+            [universe]
+            symbols = ["A", "B"]
+
+            [decision]
+            scope = "single_name"
+            schedule = { kind = "custom_dates", dates = ["2024-01-02", "2024-01-03", "2024-01-04"] }
+
+            [[data]]
+            kind = "prices"
+            source = "synthetic_prices"
+
+            [scoring]
+            kpi = "icir"
+            horizons = [1]
+            """
+        ).lstrip()
+    )
+
+    counter = {"in_flight": 0, "peak": 0, "saw_cross_date": False}
+    dates_in_flight: Counter[str] = Counter()
+    lock = threading.Lock()
+
+    @dataclass
+    class CountingAgent:
+        score: float = 0.5
+        name: str = "counting"
+        version: str = "1"
+        pit_enforcement: str = "access"
+
+        def decide(self, env) -> AgentResponse:
+            d = env.cell.decision_date.isoformat()
+            with lock:
+                counter["in_flight"] += 1
+                counter["peak"] = max(counter["peak"], counter["in_flight"])
+                dates_in_flight[d] += 1
+                if sum(1 for c in dates_in_flight.values() if c > 0) >= 2:
+                    counter["saw_cross_date"] = True
+            time.sleep(0.08)
+            with lock:
+                counter["in_flight"] -= 1
+                dates_in_flight[d] -= 1
+            views = {
+                s: View(symbol=s, score=self.score, rationale="counting")
+                for s in sorted(env.policy.decidable)
+            }
+            return AgentResponse(views=views)
+
+    import sys
+
+    sys.modules["__test_shared__"] = type(sys)("__test_shared__")
+    sys.modules["__test_shared__"].CountingAgent = CountingAgent  # type: ignore[attr-defined]
+
+    job = _job_config(package, agent_name="__test_shared__:CountingAgent")
+    job.__dict__["output_root"] = str(tmp_path / "runs")
+    # 3 > universe size (2) so the third worker must start the next date
+    # while date-1 cells are still in flight — impossible under nested
+    # trial_concurrency=1.
+    job.__dict__["shared_concurrency"] = 3
+    job.__dict__["schedule"] = ScheduleRef(
+        kind="custom_dates", dates=["2024-01-02", "2024-01-03", "2024-01-04"]
+    )
+
+    from fintel.market.settings import MarketConfig
+
+    result = run_job(job, market_config=MarketConfig(cache_root=tmp_path / "cache", offline=True))
+    assert result.status == "ok"
+    assert counter["peak"] <= 3, f"peak={counter['peak']} exceeded shared=3"
+    assert counter["peak"] == 3, f"expected the pool to fill (peak={counter['peak']})"
+    assert counter["saw_cross_date"], "expected cells from two dates in flight together"
+
+
+def test_job_config_peak_concurrent_with_shared():
+    from fintel.models.job import JobConfig
+
+    cfg = JobConfig(job_id="j", strategy="x", agent=AgentSpec(name="constant"))
+    cfg.__dict__["k_repeats"] = 2
+    cfg.__dict__["max_concurrent"] = 2
+    cfg.__dict__["shared_concurrency"] = 30
+    assert cfg.peak_concurrent == 60
+
+
 def test_cells_run_concurrently_with_auto(tmp_path):
     """With auto cell_concurrency, all tickers decide at once. Verified by a
     shared peak-in-flight counter the agent increments on entry / decrements
     on exit — if cells were sequential the peak would be 1."""
     import threading
-    from dataclasses import dataclass, field
+    from dataclasses import dataclass
 
-    from fintel.agents.base import Agent as AgentProto
     from fintel.models.decision import AgentResponse, View
 
     package = _write_package(tmp_path / "pkg", symbols=["A", "B", "C", "D", "E"])
@@ -565,3 +739,167 @@ def test_cells_run_concurrently_with_auto(tmp_path):
     assert result.status == "ok"
     # If cells ran sequentially, peak would be 1. With 5 concurrent, peak >= 2.
     assert counter["peak"] >= 2, f"cells did not run concurrently (peak={counter['peak']})"
+
+
+# -- backfill -----------------------------------------------------------------
+
+
+def test_backfill_reruns_error_cells_and_fixes_them(tmp_path):
+    """A run with some failed cells; backfill reruns just those cells and
+    the decision/run/job results are updated to reflect the fix."""
+    import sys
+    from dataclasses import dataclass
+    from typing import ClassVar
+
+    from fintel.environment.progress import NullProgress
+    from fintel.market.settings import MarketConfig
+    from fintel.models.decision import AgentResponse, View
+    from fintel.simulate.backfill import run_backfill
+
+    # Mutable container so the agent (rebuilt fresh per cell by build_agent)
+    # sees the current value without relying on ClassVar field detection.
+    _fail_msft = [True]
+
+    @dataclass
+    class FlakyAgent:
+        name: str = "flaky"
+        version: str = "1"
+        mission_text: str = ""
+        output_schema_text: str = ""
+        pit_enforcement: ClassVar[str] = "access"
+
+        def decide(self, env):
+            views = {}
+            for s in sorted(env.policy.decidable):
+                if _fail_msft[0] and s == "MSFT":
+                    return AgentResponse(
+                        views={}, outcome="parse_error", detail="flaky fail"
+                    )
+                views[s] = View(symbol=s, score=0.5, rationale="ok")
+            return AgentResponse(views=views)
+
+    sys.modules["__test_flaky__"] = type(sys)("__test_flaky__")
+    sys.modules["__test_flaky__"].FlakyAgent = FlakyAgent
+
+    package = _write_package(tmp_path / "pkg")
+    job = _job_config(package, agent_name="__test_flaky__:FlakyAgent")
+    job.__dict__["output_root"] = str(tmp_path / "runs")
+
+    market = MarketConfig(cache_root=tmp_path / "cache", offline=True)
+    result = run_job(job, market_config=market, progress=NullProgress())
+    # MSFT failed -> trial is partial (run is still ok because AAPL decided)
+    trial_root = tmp_path / "runs" / "test-job-001" / "r1" / "trials" / "2024-01-02"
+    msft_cell = json.loads((trial_root / "cells" / "MSFT.json").read_text())
+    assert msft_cell["outcome"] == "parse_error"
+
+    # Fix the agent: stop failing on MSFT
+    _fail_msft[0] = False
+
+    report = run_backfill(
+        job_id="test-job-001",
+        run_index=1,
+        cell_concurrency=1,
+        output_root=str(tmp_path / "runs"),
+        market_config=market,
+        progress=NullProgress(),
+    )
+    assert report.n_error_cells == 1
+    assert report.n_reran == 1
+    assert report.n_fixed == 1
+    assert report.n_still_failed == 0
+    assert "2024-01-02" in report.affected_dates
+
+    # Cell file is now ok
+    msft_cell2 = json.loads((trial_root / "cells" / "MSFT.json").read_text())
+    assert msft_cell2["outcome"] == "ok"
+    assert "MSFT" in msft_cell2["views"]
+
+    # Decision now has both symbols
+    decision = json.loads((trial_root / "decision.json").read_text())
+    assert set(decision) == {"AAPL", "MSFT"}
+
+    # Run result: trial is now ok (was partial)
+    run_result = json.loads(
+        (tmp_path / "runs" / "test-job-001" / "r1" / "result.json").read_text()
+    )
+    assert run_result["status"] == "ok"
+    trial_statuses = {t["decision_date"]: t["status"] for t in run_result["trials"]}
+    assert trial_statuses["2024-01-02"] == "ok"
+
+    # Job result is now ok
+    job_result = json.loads(
+        (tmp_path / "runs" / "test-job-001" / "result.json").read_text()
+    )
+    assert job_result["status"] == "ok"
+
+
+def test_backfill_noop_when_no_errors(tmp_path):
+    """A clean run has no error cells; backfill is a no-op."""
+    from fintel.environment.progress import NullProgress
+    from fintel.market.settings import MarketConfig
+    from fintel.simulate.backfill import run_backfill
+
+    package = _write_package(tmp_path / "pkg")
+    job = _job_config(package)
+    job.__dict__["output_root"] = str(tmp_path / "runs")
+
+    market = MarketConfig(cache_root=tmp_path / "cache", offline=True)
+    run_job(job, market_config=market, progress=NullProgress())
+
+    report = run_backfill(
+        job_id="test-job-001",
+        run_index=1,
+        output_root=str(tmp_path / "runs"),
+        market_config=market,
+        progress=NullProgress(),
+    )
+    assert report.n_error_cells == 0
+    assert report.n_reran == 0
+    assert report.n_fixed == 0
+    assert report.affected_dates == []
+
+
+def test_backfill_still_failed_when_cell_keeps_failing(tmp_path):
+    """If the rerun still fails, the cell stays failed and the report
+    counts it as still_failed."""
+    import sys
+    from dataclasses import dataclass
+    from typing import ClassVar
+
+    from fintel.environment.progress import NullProgress
+    from fintel.market.settings import MarketConfig
+    from fintel.models.decision import AgentResponse
+    from fintel.simulate.backfill import run_backfill
+
+    @dataclass
+    class AlwaysFailAgent:
+        name: str = "alwaysfail"
+        version: str = "1"
+        mission_text: str = ""
+        output_schema_text: str = ""
+        pit_enforcement: ClassVar[str] = "access"
+
+        def decide(self, env):
+            return AgentResponse(views={}, outcome="parse_error", detail="always fails")
+
+    sys.modules["__test_alwaysfail__"] = type(sys)("__test_alwaysfail__")
+    sys.modules["__test_alwaysfail__"].AlwaysFailAgent = AlwaysFailAgent
+
+    package = _write_package(tmp_path / "pkg")
+    job = _job_config(package, agent_name="__test_alwaysfail__:AlwaysFailAgent")
+    job.__dict__["output_root"] = str(tmp_path / "runs")
+
+    market = MarketConfig(cache_root=tmp_path / "cache", offline=True)
+    run_job(job, market_config=market, progress=NullProgress())
+
+    report = run_backfill(
+        job_id="test-job-001",
+        run_index=1,
+        output_root=str(tmp_path / "runs"),
+        market_config=market,
+        progress=NullProgress(),
+    )
+    assert report.n_error_cells == 2  # AAPL + MSFT both failed
+    assert report.n_reran == 2
+    assert report.n_fixed == 0
+    assert report.n_still_failed == 2

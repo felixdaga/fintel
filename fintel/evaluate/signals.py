@@ -12,8 +12,8 @@ view's score) and a custom `module:Callable` are the same shape to this code.
 
 from __future__ import annotations
 
+from collections.abc import Callable
 from datetime import date as Date
-from typing import Any, Callable
 
 from fintel.models.common import Symbol
 from fintel.models.decision import View

@@ -24,7 +24,6 @@ from fintel.strategy import (
     read_lock,
 )
 
-
 # ── fixtures ────────────────────────────────────────────────────────────────
 
 MISSION = "# Mission\nScore the names you are given."

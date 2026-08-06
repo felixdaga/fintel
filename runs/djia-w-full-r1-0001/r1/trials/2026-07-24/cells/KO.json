@@ -1,0 +1,225 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 82388,
+    "tokens_out": 10836,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.079100492672,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Coca-Cola is an exceptional franchise \u2014 62% gross margins, 40% ROE, 64-year dividend growth streak, ~$12B annual FCF, dominant global brand portfolio. However, the stock is unattractive at current levels on all three pillars. Pillar 1 (fundamentals): Business quality is elite but trajectory is unverified \u2014 only two quarters of data in the quant pack, no YoY or TTM growth confirmation. Q1 2026 figures from a single web source show strong results but cannot be cross-verified. The Fairlife ransomware event (July 16) introduces acute operational risk at a key growth subsidiary with US production suspended and materiality undetermined. Pillar 2 (valuation): Trailing PE of 28.7x is near the top of its one-year range (23.2\u201330.0) with zero improvement in underlying profitability (net margin flat at 25.9%, ROE flat at 40.4% at every observation). The multiple expansion is pure re-rating of the same earnings stream. Earnings yield of 3.5% sits 121bp below the 10-year Treasury at 4.71% \u2014 an unfavorable setup for a bond-proxy defensive in a rising-rate environment. A reversion to mid-history PE of 23\u201324x implies 16\u201320% downside. Pillar 3 (near-term catalyst): Q2 earnings on July 28 could be a negative re-rating event \u2014 consensus expects $0.92\u20130.93 EPS, but the Fairlife disruption, Mexico excise tax headwind, and elevated expectations after 18\u201322% YTD outperformance leave little room for disappointment. The stock has already priced in near-flawless execution. Risk/reward skews decisively to the downside.",
+      "key_factors": [
+        "Trailing PE of 28.7x near top of one-year range (23.2\u201330.0) with flat profitability (net margin 25.9%, ROE 40.4% at every observation) \u2014 pure multiple expansion, not fundamental improvement",
+        "Earnings yield of 3.5% is 121bp below 10-year Treasury yield of 4.71% \u2014 unfavorable for a defensive bond-proxy equity in rising-rate environment",
+        "Fairlife ransomware event (July 16): US production suspended at key growth dairy subsidiary; materiality not yet determined per SEC 8-K filing",
+        "Q2 earnings due July 28 with consensus $0.92\u20130.93 EPS; KO has beaten consensus trailing 12 quarters with avg 4.5% surprise, but elevated expectations after 18\u201322% YTD gain leave limited margin for error",
+        "Multiple reversion to mid-history PE of 23\u201324x implies 16\u201320% downside from current $81.17 price, even holding earnings constant",
+        "Only two quarters of fundamentals available in quant pack \u2014 no YoY or TTM growth verification; Q1 2026 figures rest on single web source",
+        "Leverage at D/E ~2.46x amplifies sensitivity to rising rates; 10-year yield up from 4.35% to 4.71% (+8.3%) since late April",
+        "Mexico excise tax planned for 2026 and $20B IRS transfer-pricing dispute represent structural regulatory headwinds"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "relevance": 1.0,
+          "excerpt": "revenue=12.54B net_income=3.80B eps_diluted=0.88 operating_income=4.28B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "relevance": 1.0,
+          "excerpt": "gross_profit=7.82B \u2192 gross_margin=62.4% operating_margin=34.1%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=3.81B (\u2248net_income, high quality)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-28 Q1",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=-5.20B (negative, unexplained without longer history)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=28.707x (near top of 23.2..30.0 range) earnings_yield=0.035"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.259 roe=0.404 (flat at every observation; no improvement driving re-rating)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-09-26",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=23.225 (trough \u2014 multiple expanded ~24% since with no margin change)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.71% (KO earnings yield 3.5% is 121bp below risk-free rate)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "relevance": 1.0,
+          "excerpt": "close=81.17 range_high=85.68 quarterly_delta=+8.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16 (compliancehub.wiki)",
+          "relevance": 1.0,
+          "excerpt": "On July 16, 2026, The Coca-Cola Company disclosed that its dairy subsidiary fairlife, LLC had identified unauthorized access by a third party to a portion of its systems, including production-related systems, in connection with a ransomware event. The immediate operational consequence was blunt and public: US production operations at fairlife were temporarily suspended."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-19 (The Motley Fool)",
+          "relevance": 1.0,
+          "excerpt": "Coca-Cola stock has surged nearly 20% year-to-date\u2026 it trades at an expensive 24x forward earnings for a low-growth company. With Q2 earnings due July 28 and management guiding for slower growth later in the year, the stock may have limited upside"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.deepresearchglobal.com",
+          "relevance": 1.0,
+          "excerpt": "Management raised 2026 guidance to organic revenue growth of 4-5% and comparable EPS growth of 8-9%, with free cash flow target of approximately $12.2 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.accio.com",
+          "relevance": 1.0,
+          "excerpt": "Coca-Cola holds approximately 40% of the global non-alcoholic beverage market\u2026 Coca-Cola holds a 48% share of the U.S. carbonated soft drink market as of 2023, with PepsiCo at approximately 26%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "relevance": 1.0,
+          "excerpt": "Bearish analysts highlight Latin America as a relative weak spot\u2026 planned 2026 excise tax in Mexico could weigh on consumption\u2026 Coca-Cola is in a US$20b tax dispute with the IRS over transfer pricing"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223450,
+        "capped_chars": 223450,
+        "raw_tokens": 55862,
+        "capped_tokens": 55862
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30496,
+        "capped_chars": 30496,
+        "raw_tokens": 7624,
+        "capped_tokens": 7624
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2909,
+        "capped_chars": 2909,
+        "raw_tokens": 727,
+        "capped_tokens": 727
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 51671,
+        "capped_chars": 11967,
+        "raw_tokens": 12918,
+        "capped_tokens": 2992
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102573,
+        "capped_chars": 77091,
+        "raw_tokens": 25644,
+        "capped_tokens": 19273
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 142014,
+  "started_at": "2026-08-06T03:02:24+00:00"
+}

@@ -24,12 +24,11 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from datetime import date as Date
 from datetime import timedelta
-from pathlib import Path
 from typing import Any
 
 from fintel.market.data.base import DataSource
-from fintel.market.data.massive import MassivePrices, MassiveRecords
 from fintel.market.data.filings import MassiveFilingText
+from fintel.market.data.massive import MassivePrices, MassiveRecords
 from fintel.models.common import Symbol
 
 logger = logging.getLogger(__name__)

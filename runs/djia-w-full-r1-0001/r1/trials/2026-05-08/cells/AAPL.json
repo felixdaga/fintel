@@ -1,0 +1,227 @@
+{
+  "cell": "AAPL",
+  "symbols": [
+    "AAPL"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 120009,
+    "tokens_out": 11828,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.1076503364,
+    "basis": "reported"
+  },
+  "views": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "score": 0.25,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Apple's fundamental health and trajectory are genuinely strong: Q2 FY2026 delivered $111.18B revenue (+16.6% YoY), EPS of $2.01 (+21.8% YoY), gross margin expansion to 49.3%, and operating cash flow of $28.70B (+19.8% YoY). The balance sheet has materially improved with D/E compressing from 1.42x to 0.78x. Services at $30.98B with 76%+ margins and a 2.5B+ device installed base provide structural durability. However, valuation is not cheap: PE of 34.5x sits mid-range vs its 30-43x 365-day history, and the 2.9% earnings yield sits below the 4.41% 10Y Treasury, implying a negative equity risk premium. The stock is 1.6% below its 52-week high, meaning much of the fundamental improvement is already priced in. Near-term catalysts are meaningful: Q3 guidance of 14-17% revenue growth nearly doubled Street expectations of 9.5%, and the $100B buyback authorization plus dividend raise are unambiguously shareholder-friendly. The CEO transition to Ternus (with Cook as executive chairman) introduces modest uncertainty but appears orderly. Tariff headwind ($3.3B absorbed, accelerating to $1.4B/quarter) and oil at $98.38/bbl are real but manageable given $82.6B H1 operating cash flow. Net: strong business, full but not extreme valuation, credible near-term catalysts tilt mildly positive.",
+      "key_factors": [
+        "Q2 FY2026 revenue $111.18B (+16.6% YoY), EPS $2.01 (+21.8% YoY) \u2014 accelerating growth at massive scale",
+        "Gross margin expanded to 49.3% (vs 47.1% YoY), operating margin 32.3% \u2014 margin expansion across all levels",
+        "Operating cash flow $28.70B in Q2 (+19.8% YoY); H1 OCF $82.6B (+53% YoY) \u2014 cash-backed earnings",
+        "Balance sheet deleveraged: D/E from 1.42x to 0.78x, total equity $106.49B vs debt $82.70B",
+        "PE 34.5x mid-range vs 30-43x 365-day range; earnings yield 2.9% below 10Y Treasury 4.41% \u2014 negative equity risk premium",
+        "Q3 FY2026 guidance 14-17% revenue growth vs Street ~9.5% \u2014 nearly double consensus, strong forward catalyst",
+        "$100B new buyback authorization + 4% dividend raise + retirement of net-cash-neutral target \u2014 shareholder-friendly capital allocation",
+        "Services revenue $30.98B (76%+ gross margin), 2.5B+ installed base, 92% iPhone retention \u2014 structural moat",
+        "Tariff costs $3.3B absorbed since Apr 2025, accelerating to $1.4B/quarter; oil at $98.38/bbl is supply-chain cost headwind",
+        "CEO transition: Cook to executive chairman Sep 2026, John Ternus (25yr veteran) as CEO \u2014 orderly but introduces execution uncertainty"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28",
+          "relevance": 1.0,
+          "excerpt": "revenue=111.18B, eps_diluted=2.01, gross_profit=54.78B, operating_income=35.88B, net_income=29.58B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2 YoY",
+          "relevance": 1.0,
+          "excerpt": "revenue_yoy=+16.6%, eps_diluted_yoy=+21.8%, gross_profit_yoy=+22.1%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=28.70B (YoY +19.8% vs 23.95B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 balance sheet",
+          "relevance": 1.0,
+          "excerpt": "total_equity=106.49B, total_debt=82.70B, debt_to_equity=0.777"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=34.532, earnings_yield=0.029, net_margin=0.272, roe=1.151, p_b=39.748"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 365d",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted_range=30.2..43.1, p_b_range=38.3..65.0"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.41%, DGS2=3.92%, DCOILWTICO=98.38"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "close=287.44, 52w_range_low=193.46, 52w_range_high=292.13"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 \u2014 CNBC: Apple (AAPL) Q2 2026 earnings report",
+          "relevance": 1.0,
+          "excerpt": "Apple said on the earnings call that revenue in the June quarter will increase between 14% and 17% from a year earlier. Analysts were expecting growth of 9.5%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 \u2014 CNBC: Apple (AAPL) Q2 2026 earnings report",
+          "relevance": 1.0,
+          "excerpt": "Gross margin: 49.3% vs. 48.4% expected... Services revenue: $30.98 billion vs. $30.39 billion expected"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.techi.com \u2014 Apple's $20 Billion Tariff Problem",
+          "relevance": 1.0,
+          "excerpt": "Apple has absorbed $3.3 billion in tariff costs since April 2025... quarterly expenses accelerating from $800 million to $1.4 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.fool.com \u2014 Apple AAPL Q2 2026 Earnings Call Transcript",
+          "relevance": 1.0,
+          "excerpt": "As we move ahead, we are no longer providing net cash neutral as a formal target... our Board has authorized an additional $100 billion for share repurchases"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "panabee.com \u2014 Apple Dividend Analysis Q1 2026",
+          "relevance": 1.0,
+          "excerpt": "Six-month operating cash flow reached $82.6 billion, reflecting robust operational execution compared to $53.9 billion in the same period of 2025."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.computerworld.com \u2014 Apple's Mac grabs 11% of US enterprise market share",
+          "relevance": 1.0,
+          "excerpt": "Apple took an 11% share of the US enterprise market last year... up 2.4 percentage points from 2024"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AAPL",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4671,
+        "capped_chars": 4671,
+        "raw_tokens": 1168,
+        "capped_tokens": 1168
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231018,
+        "capped_chars": 231018,
+        "raw_tokens": 57754,
+        "capped_tokens": 57754
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4294,
+        "capped_chars": 4294,
+        "raw_tokens": 1074,
+        "capped_tokens": 1074
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 234746,
+        "capped_chars": 50118,
+        "raw_tokens": 58686,
+        "capped_tokens": 12530
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 125900,
+        "capped_chars": 102154,
+        "raw_tokens": 31475,
+        "capped_tokens": 25538
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 144355,
+  "started_at": "2026-08-06T02:33:11+00:00"
+}

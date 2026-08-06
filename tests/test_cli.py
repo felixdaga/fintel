@@ -10,11 +10,11 @@ def test_simulation_parser_accepts_openclaw_shape():
     args = parser.parse_args(
         [
             "simulation",
-            "packages/systematic_stockrate_djia",
+            "packages/systematic_stockrate_djia_weekly",
             "--agent",
             "openclaw",
             "--agent-opt",
-            "profile=delorean",
+            "profile=default",
             "--agent-opt",
             "agent_id=main",
             "--universe",
@@ -29,7 +29,7 @@ def test_simulation_parser_accepts_openclaw_shape():
     )
     assert args.command == "simulation"
     assert args.agent == "openclaw"
-    assert args.agent_opt == ["profile=delorean", "agent_id=main"]
+    assert args.agent_opt == ["profile=default", "agent_id=main"]
     assert args.universe == "AAPL,MSFT"
     assert args.dates == "2025-01-02"
 

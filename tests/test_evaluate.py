@@ -19,6 +19,7 @@ from fintel.evaluate.signals import (
     resolve_transform,
 )
 from fintel.evaluate.transforms import identity, rank_range, zscore
+from fintel.models.common import Symbol
 
 PAR2 = Path(__file__).resolve().parent.parent / "runs" / "par2-0001"
 
@@ -544,12 +545,11 @@ def test_report_payload_shape_synthetic():
 @pytest.mark.skipif(not _has_par2(), reason="runs/par2-0001 not present")
 def test_report_on_real_job():
     """The full pipeline over par2-0001, written to disk."""
+    # copy par2-0001 to a temp dir so we don't pollute the real run with a report/
+    import shutil
     import tempfile
 
     from fintel.evaluate.report import report, write_report
-
-    # copy par2-0001 to a temp dir so we don't pollute the real run with a report/
-    import shutil
 
     with tempfile.TemporaryDirectory() as td:
         job = Path(td) / "par2-0001"
@@ -582,8 +582,6 @@ def test_evaluate_never_imports_simulate():
     reach into the simulation. This is the load-bearing guard that keeps a
     re-score from needing a re-run. (Also enforced in test_architecture.py.)"""
     import ast
-    import importlib
-    import pkgutil
 
     import fintel
 

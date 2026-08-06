@@ -19,7 +19,7 @@ class JobConfig(BaseModel):
     """What the caller asked for. Overrides are None when the package's own
     declaration should stand.
 
-    Concurrency is two axes, mirroring delorean's runtime:
+    Concurrency is two nested axes, plus an optional flat pool:
 
       · `max_concurrent`  — across K repeats (parallel runs). Auto = K, so all
         repeats run at once — the "3 runs parallel" case.
@@ -31,9 +31,14 @@ class JobConfig(BaseModel):
         because a date's session carries the prior date's portfolio + memory.
         The memory guard in `run_run` forces this to 1 when memory is on, so a
         misconfigured job can't race on shared state.
+      · `shared_concurrency` — flat pool across *all* (date, ticker) cells in a
+        run. Keeps N cells in flight and rolls to the next date as slots free.
+        When set, it replaces the nested cell × trial fan-out. Blocked when
+        memory or feedback couples dates (independent cells only).
 
-    Peak in-flight sessions = resolved `max_concurrent` × resolved
-    `cell_concurrency` (e.g. 3 × 10 = 30).
+    Peak in-flight sessions without shared = resolved `max_concurrent` ×
+    resolved `cell_concurrency` (e.g. 3 × 10 = 30). With shared =
+    `max_concurrent` × `shared_concurrency`.
     """
 
     model_config = ConfigDict(extra="forbid")
@@ -47,6 +52,7 @@ class JobConfig(BaseModel):
     max_concurrent: int | None = Field(default=AUTO, ge=1)
     cell_concurrency: int | None = Field(default=AUTO, ge=1)
     trial_concurrency: int = Field(default=1, ge=1)
+    shared_concurrency: int | None = Field(default=None, ge=1)
     output_root: str = "runs"
     seed: int | None = None
     dry_run: bool = False
@@ -79,6 +85,8 @@ class JobConfig(BaseModel):
         real peak depends on per-date universe size, which isn't known until
         runtime, so this uses K for the cell side when auto."""
         run_n = self.resolve_run_concurrency()
+        if self.shared_concurrency is not None:
+            return run_n * self.shared_concurrency
         cell_n = self.cell_concurrency if self.cell_concurrency is not None else self.k_repeats
         return run_n * max(1, cell_n)
 

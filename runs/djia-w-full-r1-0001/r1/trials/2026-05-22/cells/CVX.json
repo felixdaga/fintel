@@ -1,0 +1,221 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 87616,
+    "tokens_out": 10003,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.08139472071199999,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "CVX presents a deeply deteriorating fundamental picture masked by extreme multiple expansion. EPS collapsed 44.5% YoY to $1.11 in Q1 2026, operating cash flow cratered 51.6% YoY to $2.51B, and ROE nearly halved to 5.9% \u2014 all while WTI sat at $100/bbl. The PE has more than doubled from 15x to 33.7x (at its 365-day ceiling) on deteriorating earnings, creating a valuation that prices in an earnings recovery with no supporting evidence. The 3% earnings yield sits well below the 4.57% 10Y Treasury, an historically anomalous and unsustainable spread for an energy major. The expanded asset base (+28.5% to $330B) has not converted to proportional earnings or cash flow, suggesting structural cost inflation or integration drag. Even the qualitative franchise strength (disciplined capital allocation, 38-year dividend streak, Permian/LNG optionality) cannot justify the current valuation disconnect. The $2.17B ENEOS divestiture and $3-4B cost reduction target are positive but incremental. The Hess/Guyana arbitration risk and California regulatory scrutiny add downside optionality. A reversion of PE from 33.7x toward the 15x historical floor on current earnings implies ~55% downside. Near-term catalysts (Q2 timing effect unwind, cost reduction delivery) are insufficient to bridge the gap between price and fundamentals.",
+      "key_factors": [
+        "EPS diluted collapsed 44.5% YoY to $1.11 in Q1 2026 (from $2.00 in Q1 2025), with net income down 34.7% to $2.29B",
+        "Operating cash flow collapsed 51.6% YoY to $2.51B in Q1 2026 (from $5.19B in Q1 2025) and 73.2% QoQ from $9.38B in Q3 2025",
+        "ROE nearly halved from 10.5% to 5.9% YoY; net margin compressed from 7.8% to 5.9%",
+        "PE diluted at 33.67x \u2014 at the absolute ceiling of its 365-day range (15.1\u201334.8x), more than doubling from 15.08x one year ago while earnings deteriorated",
+        "Earnings yield of 3.0% sits below the 10Y Treasury yield of 4.57%, an historically anomalous negative risk premium for an energy major",
+        "Total assets expanded 28.5% YoY to $329.55B but have not converted to proportional earnings or cash flow \u2014 quarterly ROA ~0.7%, annualized ~2.8%",
+        "Even at $100/bbl WTI, Q1 2026 earnings and cash flow were deeply weak, raising structural cost/inflation concerns",
+        "Hess/Guyana arbitration with ExxonMobil remains an unresolved binary risk to long-term production growth narrative",
+        "Q1 2026 included ~$3B unfavorable timing effects and $360M legal reserve; management expects ~$1B derivative unwind in Q2 but underlying cash generation remains poor",
+        "ENEOS downstream sale ($2.17B) and $3-4B structural cost reduction target are positive but incremental vs. the valuation gap"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=1.11 (Q1 2026), YoY: -44.5% vs Q1 2025 eps=2.00"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=2.51B, QoQ: -73.2% vs 9.38B (Q3 2025)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_assets=329.55B vs 256.40B (Q1 2025), +28.5% asset base expansion"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "net_income=2.29B, YoY: -34.7% vs 3.51B (Q1 2025)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=33.67x (range 15.1..34.8x, at ceiling; was 15.08x on 2025-05-22)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.059, roe=0.059 (vs 0.078 and 0.105 in May 2025)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.03 vs DGS10=4.57%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=100.2 $/bbl (up 51% from 66.36 on 2026-02-23)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga 2026-05-01",
+          "relevance": 1.0,
+          "excerpt": "Q1 2026 reported earnings $1.11/share (beat $0.97 consensus); ~$3 billion unfavorable timing effects; $360 million legal reserve charge"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga 2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "Chevron agreed to sell downstream fuels and lubricants marketing operations in SE Asia and Australia to ENEOS Holdings for $2.17 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (Q1 2026 earnings transcript)",
+          "relevance": 1.0,
+          "excerpt": "Adjusted EPS $1.41 beat consensus; 7\u201310% production growth guidance reiterated; $3\u20134 billion structural cost reduction target by year-end 2026; $2.5 billion in quarterly buybacks"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bitget.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Hess merger faces legal challenge from ExxonMobil regarding 'right of first refusal' in Guyana; negative arbitration ruling could nullify the merger"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (risk)",
+          "relevance": 1.0,
+          "excerpt": "California officials scrutinizing Chevron's role in high gasoline prices; calls for legislative and regulatory responses focused on refinery pricing and transparency"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225261,
+        "capped_chars": 225261,
+        "raw_tokens": 56315,
+        "capped_tokens": 56315
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31263,
+        "capped_chars": 31263,
+        "raw_tokens": 7816,
+        "capped_tokens": 7816
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3433,
+        "capped_chars": 3433,
+        "raw_tokens": 858,
+        "capped_tokens": 858
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 67994,
+        "capped_chars": 12654,
+        "raw_tokens": 16998,
+        "capped_tokens": 3164
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 105063,
+        "capped_chars": 84469,
+        "raw_tokens": 26265,
+        "capped_tokens": 21117
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 148373,
+  "started_at": "2026-08-06T02:39:26+00:00"
+}

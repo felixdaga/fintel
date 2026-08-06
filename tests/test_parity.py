@@ -28,14 +28,12 @@ from fintel.models.market import DataBinding
 from fintel.pit import Cutoff
 
 LEGACY_CACHE = Path(
-    os.environ.get(
-        "FINTEL_LEGACY_CACHE", Path.home() / ".openclaw/workspace/projects/delorean/cache"
-    )
+    os.environ.get("FINTEL_LEGACY_CACHE", "")
 )
 
 pytestmark = pytest.mark.skipif(
     not (LEGACY_CACHE / "ratios").is_dir(),
-    reason=f"no legacy ratios cache at {LEGACY_CACHE}",
+    reason=f"no legacy ratios cache at {LEGACY_CACHE} (set FINTEL_LEGACY_CACHE to enable)",
 )
 
 # Compared numerically. `notes` is prose and `as_of`/`filing_date`/`period_end`

@@ -1,0 +1,227 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 71943,
+    "tokens_out": 11152,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.07143574655200001,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Cisco's fundamental trajectory is genuinely positive \u2014 revenue accelerating +9.7% YoY to $15.35B, EPS +31.1% YoY, operating margin expanding from 22.2% to 24.6%, and a clean balance sheet (D/E 0.515). The AI infrastructure opportunity ($1.9B hyperscaler orders, ~$4B AI revenue target) and raised guidance (FY2026 EPS $4.27-$4.29) are real. However, the stock has re-rated far beyond what fundamentals justify. PE has expanded from ~28x in March 2026 to 43x currently (95th percentile of 365-day range), while net margin only moved from 17.6% to 18.8% \u2014 a 54% multiple expansion against modest margin improvement. Price surged +52.3% in one quarter ($78.51 to $119.54) versus 9.7% revenue growth. Operating cash flow is deteriorating (-18.7% YoY to $1.82B) even as net income grows +31%, raising earnings quality concerns. The 2.3% earnings yield sits 216bp below the 10-year Treasury at 4.46% \u2014 no margin of safety. RPO growth at 5% lags total revenue growth of 10% by 500bp, indicating the software transition is not yet converting hardware demand into durable recurring revenue. Security segment revenue declined 4% YoY. Insider selling is persistent (47 sales, zero purchases over 6 months). A reversion from 43x toward the 12-month median of ~29x would imply ~32% downside. The market has priced in near-perfect execution on an incomplete transition.",
+      "key_factors": [
+        "PE diluted at 43.0x (95th percentile of 27.1-46.8x 365-day range), up from ~28x in March 2026 \u2014 54% multiple expansion with flat net margin (18.8%)",
+        "Price surged +52.3% in one quarter (from $78.51 on 2026-03-19 to $119.54 on 2026-06-18) vs only +9.7% YoY revenue growth",
+        "Operating cash flow declined -18.7% YoY ($2.24B to $1.82B) while net income grew +31% \u2014 material earnings quality concern",
+        "Earnings yield of 2.3% sits 216bp below 10-year Treasury yield of 4.46% \u2014 deeply unfavorable risk-free rate spread",
+        "RPO growth decelerated to 5% YoY vs 10% total revenue growth (600bp negative spread for product RPO: 8% vs 14%) \u2014 software transition lagging",
+        "Security segment revenue declined 4% YoY in Q2 FY2026 despite being a key software strategy pillar",
+        "Insider selling: 47 open market sales with zero purchases over 6 months; corporate insider ownership only 0.01%",
+        "Q3 FY2026 beat: revenue $15.84B vs $15.56B consensus, EPS $1.06 vs $1.03-$1.04 \u2014 already priced in given the stock move",
+        "AI traction ($1.9B hyperscaler orders, ~$4B AI revenue target, 40%+ enterprise switching growth) is real but priced at perfection",
+        "Multiple compression risk: reversion from 43x to 12-month median ~29x at current annualized EPS ~$3.20 implies ~32% downside"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24 Q2",
+          "relevance": 1.0,
+          "excerpt": "revenue=15.35B, net_income=3.17B, eps_diluted=0.80, operating_income=3.78B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-01-25 Q2",
+          "relevance": 1.0,
+          "excerpt": "revenue=13.99B, eps_diluted=0.61 (YoY comp: rev +9.7%, eps +31.1%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24 Q2",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=1.82B (YoY -18.7% vs 2025-01-25 Q2 OCF=2.24B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24",
+          "relevance": 1.0,
+          "excerpt": "total_debt=24.60B, total_equity=47.72B, debt_to_equity=0.515"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=43.0x, p_b=9.98x, earnings_yield=0.023, net_margin=0.188"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-23",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=27.5x, p_b=5.87x (historical baseline for comparison)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "close=119.54, quarterly_delta=+52.3%, 52w_range 65.75\u2013130.37"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.46%, DGS2=4.19%, FEDFUNDS=3.63%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de (structural)",
+          "relevance": 1.0,
+          "excerpt": "Total RPO growth decelerated to 5% YoY in Q2 FY2026, lagging far behind the 10% total revenue growth; Product RPO grew only 8%... 600 basis point negative spread compared to the 14% growth in product revenue"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de (structural)",
+          "relevance": 1.0,
+          "excerpt": "The Security segment, a key pillar of the software strategy, saw revenue decline by 4% YoY in Q2 FY2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de (update, May 2026)",
+          "relevance": 1.0,
+          "excerpt": "Revenue $15.84B beat consensus $15.56B; EPS $1.06 beat $1.03; $1.9 billion in hyperscaler AI orders, an approximately $4 billion AI revenue target, over 40% growth in enterprise switching"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de (structural)",
+          "relevance": 1.0,
+          "excerpt": "Over the preceding 6 months, insiders executed 47 open market sales, including the CEO, with zero open market purchases, signaling potential lack of internal conviction"
+        },
+        {
+          "source_type": "news",
+          "source_id": "DailyPolitical (2026-06-16)",
+          "relevance": 1.0,
+          "excerpt": "Q4 2026 EPS guidance 1.160-1.180; FY 2026 guidance 4.270-4.290; insiders have sold a total of 51,636 shares of company stock valued at $5,698,459 over the last quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com (risk)",
+          "relevance": 1.0,
+          "excerpt": "Intensifying Competition in AI Networking: Cisco faces significant competitive pressures... Rivals such as Arista Networks and Nvidia are actively gaining market share in data center AI networking"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 229835,
+        "capped_chars": 229835,
+        "raw_tokens": 57459,
+        "capped_tokens": 57459
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30574,
+        "capped_chars": 30574,
+        "raw_tokens": 7644,
+        "capped_tokens": 7644
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1564,
+        "capped_chars": 1564,
+        "raw_tokens": 391,
+        "capped_tokens": 391
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9025,
+        "capped_chars": 1077,
+        "raw_tokens": 2256,
+        "capped_tokens": 269
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 106491,
+        "capped_chars": 81620,
+        "raw_tokens": 26622,
+        "capped_tokens": 20406
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 139340,
+  "started_at": "2026-08-06T02:49:32+00:00"
+}

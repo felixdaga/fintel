@@ -1,0 +1,221 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 87235,
+    "tokens_out": 11391,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.08092181999999999,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "MMM scores at the bottom of the attractiveness range. Pillar 1 (fundamentals): GAAP EPS collapsed 39.7% YoY to $1.23, net income fell 41.3%, and net margin compressed to 11.2% (bottom of 10-20% range). While operating income grew 12% YoY and adjusted EPS of $2.14 beat consensus, the GAAP/adjusted gap signals heavy below-the-line charges. Cash conversion is poor (OCF $574M vs $1.40B operating income, 41% ratio). Balance sheet equity eroded 29% in six months to $3.31B, implying debt-to-equity ~3.8x. Pillar 2 (valuation): PE at 27.4x sits at the top of its 1-year range (17.7-28.3x) while earnings power has deteriorated \u2014 the market is paying 55% more for 37% less net margin than a year ago. Earnings yield of 3.7% is below the 10-year Treasury yield of 4.41%, offering negative excess return for equity risk. Pillar 3 (catalyst): The near-term catalysts are negative \u2014 PFAS litigation has a class-certification deadline July 24, 2026 and NJ settlement hearing June 2026, with $7.8B in environmental reserves that may prove insufficient. Oil at $98.38/bbl (+52.5% in 90 days) is a material margin headwind not yet fully reflected. The only positive near-term catalyst is Q1 adjusted EPS beat and backlog up 20% YoY, but this is insufficient to offset the valuation-fundamental mismatch and legal overhang.",
+      "key_factors": [
+        "GAAP EPS $1.23 in Q1 2026, down 39.7% YoY vs $2.04; adjusted EPS $2.14 beat consensus by $0.16 \u2014 GAAP/adjusted gap signals heavy non-operating charges",
+        "Net margin compressed to 11.2% (bottom of 1-year range 10-20%) vs 17.9% a year ago",
+        "PE diluted 27.4x at top of 1-year range (17.7-28.3x); market paying 55% more for materially less earnings power",
+        "Earnings yield 3.7% below 10-year Treasury yield 4.41% \u2014 negative excess yield for equity risk",
+        "Total equity eroded 29% in six months from $4.67B to $3.31B; debt-to-equity ~3 3.8x",
+        "Operating cash flow $574M covers only 41% of operating income $1.40B \u2014 poor cash-earnings conversion",
+        "WTI oil at $98.38/bbl (+52.5% in 90 days) is a material input cost headwind; CFO cited $125M annual oil hit",
+        "PFAS liability: $7.8B environmental reserve, class-certification deadline July 24 2026, NJ settlement hearing June 2026, Wisconsin contamination levels hundreds of times above threshold",
+        "Operating income grew 12% YoY ($1.25B to $1.40B) and gross margin stable at ~41% \u2014 core operations not in decline",
+        "Q1 2026 orders up >10%, backlog up 20% YoY and 35% sequentially; 2026 guidance reaffirmed: ~3% organic growth, EPS $8.50-$8.70, FCF conversion >100%"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=1.23 (YoY -39.7% vs Q1 2025 $2.04)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "net_income=659.00M (YoY -41.3% vs Q1 2025 $1.12B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=574.00M (41% of operating_income $1.40B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_equity=3.31B (down 29% from Q3 2025 $4.67B)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=27.363x (top of 1-year range 17.7..28.3)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.112 (bottom of 1-year range 0.1..0.2)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.037 (below 10y Treasury yield 4.41%)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=98.38 ($/bbl, +52.5% from 90d prior)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.fool.com (Q1 2026 Earnings Call)",
+          "relevance": 1.0,
+          "excerpt": "Free Cash Flow -- $540 million, rising by 10%; Orders rose slightly over 10%; backlog increased 20% year over year and 35% sequentially; 84 new products launched, up 35%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.fool.com (Q1 2026 Earnings Call)",
+          "relevance": 1.0,
+          "excerpt": "2026 Guidance Reaffirmed\u2014organic sales growth of about 3%, EPS in the $8.50 to $8.70 range, and free cash flow conversion above 100%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ts2.tech",
+          "relevance": 1.0,
+          "excerpt": "3M lists $7.8 billion under 'other environmental liabilities'\u2014the bulk linked to PFAS; PFAS levels at its Greystone site soaring hundreds of times over the state's proposed threshold"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ts2.tech",
+          "relevance": 1.0,
+          "excerpt": "Plaintiffs have until July 24, 2026, to file for class certification. Trial's penciled in for November 2027; hearing on 3M's proposed PFAS settlement in New Jersey looms in June 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "msn.com (post-Q1)",
+          "relevance": 1.0,
+          "excerpt": "3M Non-GAAP EPS of $2.14 beats by $0.16, revenue of $6B in-line"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247474,
+        "capped_chars": 247474,
+        "raw_tokens": 61868,
+        "capped_tokens": 61868
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 875,
+        "capped_chars": 875,
+        "raw_tokens": 219,
+        "capped_tokens": 219
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 18870,
+        "capped_chars": 3805,
+        "raw_tokens": 4718,
+        "capped_tokens": 951
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 118793,
+        "capped_chars": 96589,
+        "raw_tokens": 29698,
+        "capped_tokens": 24147
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 135350,
+  "started_at": "2026-08-06T03:27:57+00:00"
+}

@@ -1,0 +1,235 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 68630,
+    "tokens_out": 11229,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.069755950144,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.15,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Disney presents a mixed fundamental picture that warrants a mildly positive but cautious score. The franchise quality is genuinely high \u2014 Experiences delivered record $10B operating income in FY2025, streaming swung to profitability with $582M operating income in Q2 FY26 (up 88% YoY, SVOD margin crossing 10%), and the IP flywheel remains unmatched. However, the quantitative earnings trajectory is deteriorating: Q2 FY26 diluted EPS fell -29.8% YoY to $1.27, operating income has been flat at ~$4.6B for three consecutive quarters despite revenue growth, and operating margin has compressed from ~20.5% to ~18.3% over five quarters. The stock has de-rated to 14.3x trailing P/E (low end of 12.5x-23.6x range), which is historically cheap but compensates for genuine earnings deterioration rather than representing a clear mispricing. Balance sheet and cash generation remain solid ($6.91B quarterly OCF, equity up $8.6B over five quarters). The oil price decline from ~$115 to $69.73 is a meaningful unmodeled tailwind for parks costs. Near-term catalysts exist \u2014 Q2 FY26 earnings beat consensus (EPS $1.57 vs $1.49), new CEO Josh D'Amaro's parks-first background aligns with the earnings engine, Toy Story 5 opened strong, and July catalysts (Soarin' Across America, live-action Moana) could drive sentiment. However, escalating regulatory headwinds (FCC confrontation, $50M carriage settlement, EU patent injunction), intensifying competition from Netflix and Comcast's Epic Universe, and the difficult Q3 FY25 YoY comparison ($5.94B outlier net income) create meaningful downside risk. The score reflects a strong franchise at a reasonable valuation offset by real earnings headwinds and rising external pressures \u2014 the margin stabilization thesis is unproven, capping upside.",
+      "key_factors": [
+        "Q2 FY26 revenue $25.17B (+6.5% YoY) but diluted EPS $1.27 (-29.8% YoY) \u2014 earnings declining despite revenue growth",
+        "Operating income flat at ~$4.6B for three quarters; operating margin compressed from ~20.5% to ~18.3% over five quarters",
+        "Trailing P/E at 14.3x (low end of 12.5x-23.6x range) \u2014 historically cheap but compensating for earnings deterioration",
+        "Experiences segment: $9.49B revenue (+7% YoY), $2.62B operating income (+5%); record $10B OI in FY2025",
+        "Streaming profitability inflecting: $582M operating income in Q2 FY26 (+88% YoY), SVOD margin crossing 10%",
+        "Operating cash flow $6.91B in Q2 FY26 (+2.4% YoY); total equity $115.3B (+$8.6B over five quarters)",
+        "Oil price decline from ~$115 to $69.73 \u2014 unmodeled tailwind for parks segment costs",
+        "Q2 FY26 earnings beat consensus: EPS $1.57 vs $1.49, revenue $25.17B vs $24.87B; FY2026 guidance ~$6.64 EPS",
+        "New CEO Josh D'Amaro (parks-first background) transition underway; $5.5B buybacks in H1 FY2026",
+        "Regulatory escalation: FCC confrontation over ABC, $50M carriage settlement, EU patent injunction on HEVC",
+        "Q3 FY25 outlier ($5.94B net income) creates very difficult YoY comparison next quarter",
+        "Sports operating income expected to fall ~14% in June 2026 quarter on higher programming costs"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28",
+          "relevance": 1.0,
+          "excerpt": "revenue=25.17B, eps_diluted=1.27, operating_income=4.60B, net_income=2.46B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28",
+          "relevance": 1.0,
+          "excerpt": "YoY: revenue=+6.5%, eps_diluted=-29.8%, net_income=-27.5%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "all quarters",
+          "relevance": 1.0,
+          "excerpt": "operating_income trajectory: 5.06B\u21924.44B\u21924.58B\u21924.60B\u21924.60B (flat despite revenue growth)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=6.91B (strong; YoY +2.4%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28",
+          "relevance": 1.0,
+          "excerpt": "total_equity=115.31B vs 106.74B five quarters prior (+$8.6B)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=14.294x (low end of 12.5x\u201323.6x range; down from 23.6x in July 2025)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.127, roe=0.107, operating_margin=0.177"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=69.73 (down from ~$115 in April \u2014 parks cost tailwind)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "news.alphastreet.com (Q2 2026 data from Form 10-Q)",
+          "relevance": 1.0,
+          "excerpt": "Experiences revenue $9.49B (+7% YoY), operating income $2.62B (+5%); Entertainment revenue $11.72B (+10%), operating income $1.34B (+6%); Sports revenue $4.61B (+2%), operating income $652M (-5%)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com",
+          "relevance": 1.0,
+          "excerpt": "Record $10.0B Experiences operating income in fiscal 2025; streaming swung to $1.3B annual profit; operating cash flow $18.1B (up 30%); streaming operating income rose 88% to $582M in fiscal Q2 2026 with SVOD margin crossing 10% for first time"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "news.alphastreet.com (Form 10-Q)",
+          "relevance": 1.0,
+          "excerpt": "First half fiscal 2026: $7.65B cash from operations; $5.5B stock repurchases vs $1.79B prior-year period"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com (Jun 25, 2026)",
+          "relevance": 1.0,
+          "excerpt": "FCC Chairman accused Disney of 'campaign of misinformation'; $50M class-action settlement (Biddle v. Disney) over anticompetitive carriage agreements; European Unified Patent Court injunction on HEVC patents enforceable in 11 EU states"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com",
+          "relevance": 1.0,
+          "excerpt": "Netflix market cap ~$344B vs Disney ~$177B (June 2026); Disney expects Sports operating income to fall about 14% in June 2026 quarter; $60B 10-year parks expansion plan"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dailypolitical.com / americanbankingnews.com (May 6, 2026 earnings)",
+          "relevance": 1.0,
+          "excerpt": "Fiscal Q2 2026 EPS $1.57 beat consensus $1.49; revenue $25.17B beat consensus $24.87B; FY2026 guidance ~$6.64 EPS"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-28",
+          "relevance": 1.0,
+          "excerpt": "net_income=5.94B (outlier quarter \u2014 likely one-time gain)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4429,
+        "capped_chars": 4429,
+        "raw_tokens": 1107,
+        "capped_tokens": 1107
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 220546,
+        "capped_chars": 220546,
+        "raw_tokens": 55136,
+        "capped_tokens": 55136
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30321,
+        "capped_chars": 30321,
+        "raw_tokens": 7580,
+        "capped_tokens": 7580
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1886,
+        "capped_chars": 1886,
+        "raw_tokens": 472,
+        "capped_tokens": 472
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9837,
+        "capped_chars": 2507,
+        "raw_tokens": 2459,
+        "capped_tokens": 627
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 74504,
+        "capped_chars": 55944,
+        "raw_tokens": 18626,
+        "capped_tokens": 13988
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 138188,
+  "started_at": "2026-08-06T02:54:30+00:00"
+}

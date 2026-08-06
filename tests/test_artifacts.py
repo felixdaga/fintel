@@ -23,8 +23,7 @@ from fintel.cli.present import (
     print_decision_block,
     print_job_artifacts,
 )
-from fintel.models.common import Symbol
-from fintel.models.decision import AgentResponse, SourceRef, View
+from fintel.models.decision import SourceRef, View
 from fintel.models.job import JobResult
 from fintel.models.run import RunResult
 from fintel.models.trial import CellRecord, TrialResult

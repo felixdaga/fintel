@@ -13,7 +13,6 @@ from fintel.environment.tools import ToolSurface
 from fintel.environment.trace import AccessLog, load
 from fintel.market import catalog
 
-
 DAY = date(2025, 1, 2)
 
 

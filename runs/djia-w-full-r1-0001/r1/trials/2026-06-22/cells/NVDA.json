@@ -1,0 +1,247 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 161806,
+    "tokens_out": 11089,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.1375267764,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.45,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "NVDA presents a rare combination of hyper-growth fundamentals and historically compressed valuation. Q1 FY2027 revenue of $81.61B (+85% YoY), EPS of $2.39 (+214% YoY), gross margins expanding to 74.9%, and $50.34B in operating cash flow represent extraordinary fundamental health and trajectory. The balance sheet is a fortress (D/E = 0.043, $195.47B equity). PE at 32.2x sits at the floor of its 365-day range (30.6x\u201366.8x), meaning the market is paying a historically low multiple for historically high profitability \u2014 entirely driven by the earnings explosion rather than price weakness. The franchise is structurally dominant with ~86% AI GPU market share, networking revenue tripling YoY, and a full-stack platform moat. Capital allocation has matured credibly: $25B AA-rated bond issuance at 50bps over Treasuries, $80B buyback, 25x dividend increase. The Vera Rubin CPU cycle opens a ~$200B TAM with ~$20B CPU revenue visibility this year. Near-term catalysts include the June 24 annual shareholder meeting (where China compliance and competition will be discussed) and Q2 guidance of $91B (+/-2%). However, the score is capped below +0.5 due to: (1) absolute earnings yield of 3.1% below the 4.46% risk-free rate, embedding continued high-growth expectations; (2) 90% Data Center / 65% four-customer concentration with hyperscalers actively developing custom ASICs (Amazon Trainium, Google TPU); (3) China export-control regulatory overhang from Senator Warren's DOJ-linked compliance demands; and (4) macro headwinds with S&P 500 CAPE at 42.84 and CPI at 4.2%. The FCF figure of $48.6B cited in qualitative sources is externally sourced and not confirmed in the filing data pack (OCF of $50.34B is confirmed). The QoQ comparisons in the quant report span a two-quarter gap due to missing Q4 data.",
+      "key_factors": [
+        "Q1 FY2027 revenue $81.61B, +85.2% YoY; EPS diluted $2.39, +214.5% YoY \u2014 extraordinary growth trajectory",
+        "Gross margin expanded to 74.9% from 60.5% YoY; operating margin 65.6%; net margin 71.4% \u2014 software-like margins from hardware-adjacent business",
+        "Operating cash flow $50.34B in single quarter, +112% QoQ; OCF/NI conversion ~86% confirming earnings quality",
+        "Balance sheet fortress: D/E = 0.043, total equity $195.47B vs debt $8.47B; can service entire debt load with ~1 week of OCF",
+        "PE diluted 32.2x at floor of 365-day range (30.6x\u201366.8x); P/B 26.3x also at floor (25.0x\u201357.8x) \u2014 historically cheap vs own history",
+        "~86% AI GPU market share; networking revenue tripled YoY to $14.8B; #1 in data center Ethernet switching (192.7% YoY growth, IDC)",
+        "$25B bond issuance (AA-rated, 50bps over Treasuries, 3x oversubscribed); $80B buyback; 25x dividend increase; ~50% FCF return target",
+        "Vera Rubin CPU platform opens ~$200B TAM; CFO visibility to ~$20B CPU revenue this year; Q2 guidance $91B (+/-2%)",
+        "90% Data Center concentration; 65% from four hyperscaler customers actively developing custom ASICs (Amazon Trainium, Google TPU)",
+        "China export-control risk: Senator Warren DOJ-linked compliance demands; Chinese GPU makers claim ~41% domestic AI accelerator market",
+        "Absolute earnings yield 3.1% below 10-year Treasury at 4.46%; S&P 500 CAPE at 42.84; CPI at 4.2%; hawkish Fed under new Chair Warsh",
+        "June 24 annual shareholder meeting as near-term event; Q2 guidance of $91B provides fundamental catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26",
+          "relevance": 1.0,
+          "excerpt": "revenue=81.61B (YoY +85.2%, QoQ +43.2%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=2.39 (YoY +214.5%, QoQ +83.8%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26",
+          "relevance": 1.0,
+          "excerpt": "gross_profit=61.16B, gross_margin=74.9% (vs 60.5% YoY)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=50.34B (QoQ +112.0%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26",
+          "relevance": 1.0,
+          "excerpt": "total_equity=195.47B, total_debt=8.47B, debt_to_equity=0.043"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=32.196 (365d range: 30.6..66.8; at floor)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.63, roe=0.817 (vs 0.517\u20130.524 and 0.865 historical)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "close=210.69, quarterly_delta=+18.0%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "companieshistory.com",
+          "relevance": 1.0,
+          "excerpt": "Nvidia holds roughly 86% of the AI GPU market"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fourweekmba.com",
+          "relevance": 1.0,
+          "excerpt": "Data Center revenue reached $75.2 billion in a single quarter, up 92% year-over-year; networking $14.8 billion, up 199%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fourweekmba.com",
+          "relevance": 1.0,
+          "excerpt": "GAAP gross margins of 74.9% in Q1 FY2027\u2026 Free cash flow hit $48.6 billion in Q1 FY2027 alone, against capital expenditure of just $1.8 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-17 / Reuters",
+          "relevance": 1.0,
+          "excerpt": "Nvidia said on Monday it would raise $25 billion through a U.S. bond issuance\u2026 first corporate bond sale in five years"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-17 / CNBC",
+          "relevance": 1.0,
+          "excerpt": "Nvidia generated $49 billion in free cash flow in the latest quarter\u2026 reiterated plans to return roughly 50% of free cash flow to shareholders this year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "banking.senate.gov",
+          "relevance": 1.0,
+          "excerpt": "Senator Warren\u2026 sent a letter to NVIDIA\u2026 requesting answers about the company's compliance with U.S. export control laws"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-18 / Motley Fool",
+          "relevance": 1.0,
+          "excerpt": "Nvidia unveiled its Vera CPU platform designed for agentic AI workloads, opening a new $200 billion market opportunity\u2026 CFO Colette Kress indicated the company has visibility to nearly $20 billion in CPU revenue this year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "seekingalpha.com",
+          "relevance": 1.0,
+          "excerpt": "NVDA's revenue is highly concentrated, with 65% from four customers, many of whom are actively developing alternatives to Nvidia's GPUs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "newscase.com",
+          "relevance": 1.0,
+          "excerpt": "Google is using circular financing structures offering multibillion-dollar guarantees contingent on using TPUs rather than Nvidia GPUs"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4649,
+        "capped_chars": 4649,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241414,
+        "capped_chars": 241414,
+        "raw_tokens": 60354,
+        "capped_tokens": 60354
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30574,
+        "capped_chars": 30574,
+        "raw_tokens": 7644,
+        "capped_tokens": 7644
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4445,
+        "capped_chars": 4445,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 671358,
+        "capped_chars": 156819,
+        "raw_tokens": 167840,
+        "capped_tokens": 39205
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 100931,
+        "capped_chars": 82721,
+        "raw_tokens": 25233,
+        "capped_tokens": 20680
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 151590,
+  "started_at": "2026-08-06T02:51:00+00:00"
+}

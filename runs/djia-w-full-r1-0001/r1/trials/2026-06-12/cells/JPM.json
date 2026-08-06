@@ -1,0 +1,228 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 89461,
+    "tokens_out": 10592,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0850067664,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "JPM presents a strong fundamental case: Q1-26 EPS of $5.94 grew +17.2% YoY on +10.0% revenue growth, with stable 31.5% net margin and ROE improving to 16.2% \u2014 the highest in the observed window. The franchise is best-in-class with ~20% core ROTCE, dominant deposit base, and genuine revenue diversification across NII and fee income (AWM AUM $4.48T, payments +9% YoY, trading +17%). Valuation has compressed to 14.5x P/E from a 17.5x peak despite improving fundamentals \u2014 the market is paying less for better earnings power. The SpaceX IPO mandate (2026-06-04) is a credible near-term fee catalyst reinforcing franchise dominance. Offsets include expense guidance creep to $106B, DOJ debanking subpoena (2026-06-11), yield-curve flattening (10Y-2Y narrowed from 55bp to 40bp), and a $13B G-SIB surcharge risk. The score sits between mildly and strongly attractive: fundamentals and trajectory are solid, valuation is cheap vs own history, and a dated catalyst exists, but regulatory/legal overhang and curve flattening temper conviction below +0.5.",
+      "key_factors": [
+        "Q1-26 EPS $5.94, +17.2% YoY, +17.2% QoQ \u2014 accelerating earnings on +10.0% YoY revenue growth ($49.84B)",
+        "P/E diluted 14.478x near low end of 365-day range (13.7\u201317.8x), 21% below peak of 17.476x on 2025-12-26 \u2014 market paying less for improved earnings power",
+        "ROE 16.2% (up from 15.5%), net margin 31.5% stable, operating margin 39.9% \u2014 best-in-class profitability for a universal bank",
+        "Earnings yield 6.9% vs 10Y Treasury 4.45% \u2014 245bp equity-risk premium for a high-quality franchise",
+        "SpaceX IPO mandate (2026-06-04): JPM leading $75B raise at $1.75T valuation, Dimon personally roadshowing to 2,500+ clients \u2014 near-term fee catalyst and franchise reinforcement",
+        "AWM AUM $4.48T (+18%), $52B long-term net inflows; payments revenue +9% YoY; trading revenues +17% (equities +40%) \u2014 genuine revenue diversification",
+        "Fed froze stress capital buffers for 2026 (2026-06-03) \u2014 removes binary downside catalyst, supports continued dividends and buybacks ($40B+ remaining authorization)",
+        "Expense guidance raised to ~$106B from $105B (2026-05-27); $10\u201320B acquisition war-chest signals investment priority over near-term margin expansion",
+        "DOJ debanking subpoena (2026-06-11) \u2014 new regulatory-legal overhang, industry-wide not JPM-specific, but adds uncertainty",
+        "10Y-2Y spread narrowed from 55bp to 40bp \u2014 yield-curve flattening is a headwind to NIM expectations",
+        "Stock at $313.49, 7% below 52-week high of $337.25 despite fundamental improvement \u2014 price has not fully reflected earnings acceleration"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=49.84B, eps_diluted=5.94, net_income=16.49B, operating_income=20.48B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "YoY revenue=+10.0%, YoY eps_diluted=+17.2%, YoY net_income=+12.6%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=14.478x (range 13.7..17.8x), p_b=2.342x (range 2.2..2.8x)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.069, roe=0.162, net_margin=0.315"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-12-26",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=17.476x (peak observation in window)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.45%, DGS2=4.05%, T10Y2Y=0.40"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "close=313.49, 52wk_range=262.71..337.25, quarterly_delta=+10.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "relevance": 1.0,
+          "excerpt": "SpaceX priced its IPO at $135 per share, seeking to raise $75 billion and valuing the company at approximately $1.75 trillion... Jamie Dimon will pitch SpaceX's IPO to over 2,500 wealthy clients"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-11",
+          "relevance": 1.0,
+          "excerpt": "U.S. Justice Department has subpoenaed JPMorgan Chase, Bank of America, and Wells Fargo over allegations of politically motivated account closures"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com (2026-05-27)",
+          "relevance": 1.0,
+          "excerpt": "Dimon indicated that the bank's annual expenses could exceed prior estimates by approximately $1 billion, potentially reaching $106 billion... actively seeking acquisitions, with a potential allocation of $10 billion to $20 billion for deals over the next two years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com",
+          "relevance": 1.0,
+          "excerpt": "core return on tangible common equity of 20%... P/E ratio of 14.7... assets under management reaching $4.48 trillion, up 18%... Long-term net inflows of $52 billion... Payments revenue grew 9% year-over-year"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-03",
+          "relevance": 1.0,
+          "excerpt": "the Fed has frozen stress capital buffers for 2026, meaning results won't change regardless of performance... freeing up funds for shareholder rewards like dividends and buybacks"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "seekingalpha.com / pluang.com",
+          "relevance": 1.0,
+          "excerpt": "projected $13 billion surcharge on Global Systemically Important Banks (G-SIB), pose risks to the bank's return on equity and its Markets division"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-09",
+          "relevance": 1.0,
+          "excerpt": "JPMorgan Chase trades at a price-to-book ratio of 2.4, representing a 71% premium to Bank of America's 1.4 multiple... higher return on tangible common equity (23% vs lower), better efficiency ratio (54%)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 239075,
+        "capped_chars": 239075,
+        "raw_tokens": 59769,
+        "capped_tokens": 59769
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30935,
+        "capped_chars": 30935,
+        "raw_tokens": 7734,
+        "capped_tokens": 7734
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3473,
+        "capped_chars": 3473,
+        "raw_tokens": 868,
+        "capped_tokens": 868
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 141794,
+        "capped_chars": 14519,
+        "raw_tokens": 35448,
+        "capped_tokens": 3630
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 110198,
+        "capped_chars": 89691,
+        "raw_tokens": 27549,
+        "capped_tokens": 22422
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 135144,
+  "started_at": "2026-08-06T02:47:34+00:00"
+}

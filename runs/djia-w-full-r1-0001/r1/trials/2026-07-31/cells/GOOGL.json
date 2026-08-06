@@ -1,0 +1,231 @@
+{
+  "cell": "GOOGL",
+  "symbols": [
+    "GOOGL"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 118575,
+    "tokens_out": 11970,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.106984744192,
+    "basis": "reported"
+  },
+  "views": {
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "GOOGL's fundamental health is strong \u2014 revenue accelerating +24.2% YoY to $119.8B, operating margins expanding to 34%, Cloud revenue surging 82% to $24.8B with $514B backlog, and a fortress balance sheet with $242.5B cash. However, the valuation signal is deeply distorted and the stock is unattractive on a normalized basis. The headline PE of 19x is at the floor of its 365-day range (18.1-39.5x), but this is entirely an artifact of a $94B unrealized gain on SpaceX that inflated Q2 net income to $112.19B \u2014 2.75x operating income of $40.77B. On sustainable operating earnings (~$2.80-3.50 EPS run-rate), the normalized PE is ~95-120x, far above the stock's historical 25-39x range. The market has partially recognized this: the stock declined ~6-7% post-earnings despite the headline beat, and is 18% below its 251-bar high. Additionally, 2026 capex guidance was raised to $195-205B, creating negative free cash flow for the first time, and Gemini 3.5 Pro delays raise execution concerns. The antitrust structural remedy risk (potential Chrome/Android divestiture) adds further downside. The combination of illusory cheapness on distorted earnings, massive capex commitment pressuring FCF, AI model execution uncertainty, and regulatory overhang makes this strongly unattractive at current levels.",
+      "key_factors": [
+        "Headline PE of 19x is misleadingly low \u2014 inflated by $94B unrealized SpaceX gain that made net income 2.75x operating income ($112.19B vs $40.77B); normalized PE on operating earnings is ~95-120x vs historical 25-39x range",
+        "Revenue accelerating +24.2% YoY to $119.8B with operating margin expanding to 34% \u2014 core business fundamentals are strong",
+        "Google Cloud revenue surged 82% YoY to $24.8B with operating margin tripling to 35.6%; backlog reached $514B providing multi-year visibility",
+        "2026 capex guidance raised to $195-205B, creating negative free cash flow; ~$20B annual depreciation step-up starting 2027 will pressure margins",
+        "Gemini 3.5 Pro delayed months behind schedule due to coding deficiencies vs OpenAI/Anthropic, triggering stock decline and fraud investigations",
+        "DOJ pursuing structural remedies including potential forced divestiture of Chrome or Android \u2014 most material structural risk to the franchise",
+        "Balance sheet nearly doubled in one year (assets $475B to $922B, liabilities $130B to $282B) \u2014 nature of transformation unclear from data",
+        "Stock at $333.66, 18% below 251-bar high of $408.61, with softening late-July news sentiment (0.1, 0.0, -0.067 readings)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-30",
+          "relevance": 1.0,
+          "excerpt": "net_income=112.19B vs operating_income=40.77B (ratio=2.75x, non-operating gain ~$71.4B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=119.80B, eps_diluted=9.11, gross_profit=73.85B, operating_income=40.77B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "YoY 2026-06-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=+24.2%, eps_diluted=+294.4%, net_income=+297.9%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-30",
+          "relevance": 1.0,
+          "excerpt": "total_assets=921.98B, total_equity=640.48B, cash=242.47B (vs 2025-03-31: 475.37B/345.27B/95.33B)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=18.999 (range 18.1..39.5, at floor), net_margin=0.507 (vs historical ~0.31-0.32)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-26",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=38.193 (prior peak before earnings distortion)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "close=333.66, 251-bar high=408.61, quarterly delta=-4.7%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.tipranks.com (2026-07-24)",
+          "relevance": 1.0,
+          "excerpt": "Google Cloud remained the star, with revenue soaring 82% year over year to $24.8 billion and operating income more than tripling to $8.8 billion. Operating margin expanded sharply to 35.6% from 20.7% a year ago\u2026 Cloud backlog jumped over $50 billion sequentially to $514 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "finance.yahoo.com / Verdict (2026-07-24)",
+          "relevance": 1.0,
+          "excerpt": "Alphabet's revenue grew by 24% to $119.8bn\u2026 marking the 12th consecutive quarter of achieving double-digit revenue growth. Operating income for the reported quarter increased year-over-year by 30% to $40.8bn"
+        },
+        {
+          "source_type": "news",
+          "source_id": "The Motley Fool (2026-07-23)",
+          "relevance": 1.0,
+          "excerpt": "Alphabet raised its 2026 capital expenditure guidance to $195-205 billion, with about 60% going to servers that depreciate over six years. This will result in approximately $20 billion in annual depreciation expense starting in 2027"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Bloomberg (2026-07-23)",
+          "relevance": 1.0,
+          "excerpt": "Alphabet Inc. raised its capital spending forecast to as much as $205 billion this year, reigniting concerns about a lack of fiscal discipline in the race to dominate artificial intelligence. Shares fell more than 6% on Thursday"
+        },
+        {
+          "source_type": "news",
+          "source_id": "The Motley Fool (2026-07-19)",
+          "relevance": 1.0,
+          "excerpt": "Google's flagship AI model Gemini 3.5 Pro is months behind its promised June launch date as the company works to improve coding capabilities, raising concerns about competition from OpenAI and Anthropic"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.tradingkey.com (2026-07-23)",
+          "relevance": 1.0,
+          "excerpt": "Department of Justice filings proposing 'structural remedies' have increased the probability of a court-mandated divestiture of the Chrome browser or the Android operating system"
+        },
+        {
+          "source_type": "news",
+          "source_id": "The Motley Fool (2026-07-23)",
+          "relevance": 1.0,
+          "excerpt": "Without Alphabet's performance, S&P 500 earnings growth would drop from 37.9% to 25.9%\u2026 a $94 billion gain on its SpaceX stake"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.68%, DGS2=4.23%, VIXCLS=17.09"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GOOGL",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3906,
+        "capped_chars": 3906,
+        "raw_tokens": 976,
+        "capped_tokens": 976
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223979,
+        "capped_chars": 223979,
+        "raw_tokens": 55995,
+        "capped_tokens": 55995
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30602,
+        "capped_chars": 30602,
+        "raw_tokens": 7650,
+        "capped_tokens": 7650
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4438,
+        "capped_chars": 4438,
+        "raw_tokens": 1110,
+        "capped_tokens": 1110
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 488279,
+        "capped_chars": 87635,
+        "raw_tokens": 122070,
+        "capped_tokens": 21909
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 83705,
+        "capped_chars": 62317,
+        "raw_tokens": 20927,
+        "capped_tokens": 15579
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 172893,
+  "started_at": "2026-08-06T03:04:40+00:00"
+}

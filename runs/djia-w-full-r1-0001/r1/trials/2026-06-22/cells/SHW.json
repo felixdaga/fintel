@@ -1,0 +1,232 @@
+{
+  "cell": "SHW",
+  "symbols": [
+    "SHW"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 68906,
+    "tokens_out": 11181,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.068819450832,
+    "basis": "reported"
+  },
+  "views": {
+    "SHW": {
+      "symbol": "SHW",
+      "score": 0.25,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "SHW presents a moderately attractive profile anchored by a durable franchise and a meaningful valuation dislocation. The business is growing \u2014 Q1 2026 revenue +6.8% YoY, GAAP EPS +7.5% YoY, gross profit +8.7% YoY \u2014 with stable gross margins at 49.0% and an improved Q1 operating cash flow of $139.1M versus -$61.1M a year ago. The contractor store moat (~4,900 North American stores, 50-55% of PSG revenue from repeat professional painters) underpins pricing power and demand resilience even in a soft housing environment. The most compelling quantitative signal is PE compression to 30.6x, near the floor of its 28-37x 365-day range, while fundamentals have improved \u2014 the market is paying ~15-17% less per unit of earnings than twelve months ago. Declining WTI crude (from ~$114.58 in early April to $80.35, a ~30% decline) is a meaningful margin tailwind for a coatings company. However, several factors cap the score: (1) management itself expects 'little to no recovery in most end markets this year' and flagged tariff-driven inflation headwinds; (2) the negative equity risk premium (3.3% earnings yield vs 4.46% 10-year Treasury) structurally limits multiple expansion; (3) elevated leverage (D/E 2.1x) in a high-rate environment; (4) the UBS downgrade (Buy\u2192Neutral, PT $385\u2192$330) on 2026-06-02 citing unsupportive housing. The Q1 earnings beat ($2.35 adjusted EPS vs $2.27 consensus) and reaffirmed FY2026 guidance ($11.50-$11.90) provide a modest near-term positive, but the stock fell ~6.3% post-report, suggesting the market is skeptical. On balance, a high-quality franchise at a historical valuation discount warrants a mildly positive score, but the macro headwinds and negative ERP prevent a stronger conviction.",
+      "key_factors": [
+        "Q1 2026 revenue $5.67B (+6.8% YoY), GAAP EPS $2.15 (+7.5% YoY), gross profit $2.78B (+8.7% YoY) \u2014 solid growth trajectory",
+        "Gross margin stable at 49.0% (Q1 2026) vs 48.2% (Q1 2025); declining WTI crude from ~$114.58 (Apr 7) to $80.35 is a potential margin tailwind",
+        "PE compressed to 30.6x, near floor of 28-37x 365-day range; down from 36.2x peak in Aug 2025 \u2014 ~15-17% discount to own-history valuation",
+        "Durable franchise: ~4,900 company-operated stores, 50-55% of PSG revenue from professional contractors creating repeat demand and pricing power",
+        "Q1 2026 adjusted EPS $2.35 beat consensus $2.27; FY2026 guidance reaffirmed at $11.50-$11.90 adjusted EPS",
+        "Management expects 'little to no recovery in most end markets this year' and flagged tariff inflation on raw materials, energy, logistics",
+        "UBS downgraded Buy\u2192Neutral on 2026-06-02, cut PT to $330 from $385, citing unsupportive housing market",
+        "Negative equity risk premium: 3.3% earnings yield vs 4.46% 10-year Treasury \u2014 caps multiple expansion",
+        "Elevated leverage: D/E 2.1x, debt $9.32B (Q1 2026), stable-to-declining but limits balance-sheet flexibility",
+        "ROE 58.7% (quant) / 64.55% (qual, different basis) \u2014 exceptionally high, reflecting leveraged structure and strong earnings power",
+        "Stock fell ~6.3% post Q1 earnings despite beat, suggesting market skepticism on forward trajectory"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=5.67B, eps_diluted=2.15 (Q1 2026)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=5.31B, eps_diluted=2.00 (Q1 2025 YoY comparison)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "YoY Q1 2026",
+          "relevance": 1.0,
+          "excerpt": "revenue=+6.8%, eps_diluted=+7.5%, gross_profit=+8.7%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "gross_margin=49.0% (2.78B/5.67B), operating_margin=12.0% (679.8M/5.67B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=139.10M vs Q1 2025 -61.10M (YoY improvement)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=30.619 (range 28.0..37.1 over 365d \u2014 near floor)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "p_b=17.961 (range 16.4..21.7), debt_to_equity=2.104, roe=0.587"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.46% vs earnings_yield=3.3% (negative equity risk premium)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=80.35 (down from 113+ in April; potential margin tailwind)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "marketresearchreports.com (structural, ~2026-06)",
+          "relevance": 1.0,
+          "excerpt": "Sherwin-Williams' competitive moat is its professional contractor network: approximately 50-55% of PSG revenue comes from painting contractors who rely on Sherwin-Williams stores as daily job-site supply points."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "247wallst.com (structural/risk, ~2026-06)",
+          "relevance": 1.0,
+          "excerpt": "Management expects little to no recovery in most end markets this year and flagged geopolitical uncertainty and potential inflation from tariffs on raw materials, energy, logistics, and packaging."
+        },
+        {
+          "source_type": "news",
+          "source_id": "Yahoo Finance Canada / Insider Monkey, 2026-06-04",
+          "relevance": 1.0,
+          "excerpt": "UBS downgraded The Sherwin-Williams Company from Buy to Neutral. It also lowered its price target on the stock to $330 from $385."
+        },
+        {
+          "source_type": "updates",
+          "source_id": "americanbankingnews.com, ~2026-06",
+          "relevance": 1.0,
+          "excerpt": "The specialty chemicals company reported $2.35 earnings per share (EPS) for the quarter, beating the consensus estimate of $2.27 by $0.08. The company had revenue of $5.67 billion during the quarter, compared to analysts' expectations of $5.56 billion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "SHW",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 10,
+      "empty": 1
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4517,
+        "capped_chars": 4517,
+        "raw_tokens": 1129,
+        "capped_tokens": 1129
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 229137,
+        "capped_chars": 229137,
+        "raw_tokens": 57284,
+        "capped_tokens": 57284
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30574,
+        "capped_chars": 30574,
+        "raw_tokens": 7644,
+        "capped_tokens": 7644
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 316,
+        "capped_chars": 316,
+        "raw_tokens": 79,
+        "capped_tokens": 79
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 0,
+        "capped_chars": 0,
+        "raw_tokens": 0,
+        "capped_tokens": 0
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 95856,
+        "capped_chars": 72873,
+        "raw_tokens": 23964,
+        "capped_tokens": 18219
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 10,
+        "empty": 1
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [
+        {
+          "kind": "news",
+          "query": {
+            "symbol": "SHW",
+            "lookback_days": 14
+          }
+        }
+      ],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 145559,
+  "started_at": "2026-08-06T02:51:26+00:00"
+}

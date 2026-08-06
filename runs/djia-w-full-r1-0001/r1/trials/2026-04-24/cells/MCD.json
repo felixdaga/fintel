@@ -1,0 +1,221 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 72425,
+    "tokens_out": 9917,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.070691307584,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.1,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "McDonald's is a world-class franchise with structurally high margins (~47% operating, ~32% net) and strong cash generation (Q3 2025 OCF $3.43B, +25.3% YoY). The balance sheet is improving (equity from -$5.18B to -$2.16B YoY). However, several factors temper the score: (1) WTI crude at $99.27 (+64% over the window) is a material, unquantified headwind to franchisee economics and consumer traffic that has not yet flowed through reported financials (latest data is Q3 2025); (2) growth is grinding lower \u2014 revenue +3.0% YoY, EPS +1.6% YoY, U.S. same-store sales at 0.3% in 2024; (3) valuation cannot be confidently assessed due to broken PE series, but an indicative ~24.6x on low-single-digit growth offers no clear margin of safety; (4) shareholder returns exceed 107% of FCF per one source, raising sustainability concerns given negative equity. The Q4 2025 results (10% revenue growth, $3.12 adjusted EPS) from web context are encouraging but represent a single quarter. The franchise quality is undeniable, but the combination of slowing growth, emerging oil-shock risk, and no clear valuation discount keeps the score modestly positive rather than strongly so.",
+      "key_factors": [
+        "Structurally high margins: operating margin ~47%, net margin ~32% stable across all observed quarters through Q3 2025",
+        "Strong cash generation: Q3 2025 OCF $3.43B (+25.3% YoY), 3-quarter sum $7.86B annualized ~$10.5B",
+        "Balance sheet improving: equity improved from -$5.18B (Q3 2024) to -$2.16B (Q3 2025), $3.02B improvement",
+        "WTI crude at $99.27 (+64% over window) \u2014 major unquantified headwind to franchisee costs and consumer demand, not yet in reported financials",
+        "Low-single-digit growth: revenue +3.0% YoY, EPS +1.6% YoY in Q3 2025; U.S. same-store sales 0.3% in 2024, slowest in decade",
+        "Valuation unverifiable: PE series broken across all 12 observations; indicative ~24.6x on non-contiguous EPS sum (not authoritative per data limitations)",
+        "Capital return sustainability concern: shareholder returns 107% of FCF per statsalpha.com source; negative equity leaves no balance-sheet cushion",
+        "Q4 2025 from web context: revenue $7.0B (+10% YoY), adjusted EPS $3.12 beating estimates \u2014 encouraging but single-quarter",
+        "Franchise model: 95% franchised, 61% of revenue from franchise fees/rent, real estate moat provides durable competitive advantage",
+        "Stock at $302.53, mid-range of 52-week $283.47-$341.75, quarterly delta -1.1% \u2014 market has not rewarded or punished the earnings trajectory"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=7.08B, operating_income=3.36B, net_income=2.28B, eps_diluted=3.18"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "YoY Q3 2025",
+          "relevance": 1.0,
+          "excerpt": "revenue=+3.0%, eps_diluted=+1.6%, operating_cash_flow=+25.3%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=3.43B (QoQ +71.6%, YoY +25.3%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 vs 2024-09-30",
+          "relevance": 1.0,
+          "excerpt": "total_equity improved from -5.18B to -2.16B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "total_equity=-2.16B (negative, structurally leveraged)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.32, operating_margin=0.461 (stable across full history)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "DCOILWTICO=99.27 (\u0394 +64.2% over window; major cost headwind)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "relevance": 1.0,
+          "excerpt": "close=302.53, 52wk range 283.47\u2013341.75, quarterly delta=-1.1%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fourweekmba.com",
+          "relevance": 1.0,
+          "excerpt": "Same-store sales growth in the United States declined to 0.3%, the slowest growth in over a decade (2024)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "statsalpha.com",
+          "relevance": 1.0,
+          "excerpt": "Shareholder returns are 107% of FCF - paying out more than generated (unsustainable). Cash Dividends Paid -$5.12B, Free Cash Flow $6.67B, Repurchase Of Capital Stock -$2.06B."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "vizologi.com/fourweekmba.com",
+          "relevance": 1.0,
+          "excerpt": "McDonald's generated $25.49 billion in total revenues during 2024, with the majority derived from franchise fees, rental income, and service fees rather than direct food sales... franchise model dominates revenue generation, contributing over 61% of total revenues."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-13, The Motley Fool",
+          "relevance": 1.0,
+          "excerpt": "95% of locations operating as franchises... McDonald's plans to open 2,600 new locations in 2026 and reach 50,000 restaurants by 2027."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com",
+          "relevance": 1.0,
+          "excerpt": "Q4 2025 total revenues rising 10% year over year to $7.0B... Adjusted EPS came in at $3.12."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215401,
+        "capped_chars": 215401,
+        "raw_tokens": 53850,
+        "capped_tokens": 53850
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30859,
+        "capped_chars": 30859,
+        "raw_tokens": 7715,
+        "capped_tokens": 7715
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1470,
+        "capped_chars": 1470,
+        "raw_tokens": 368,
+        "capped_tokens": 368
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9534,
+        "capped_chars": 2783,
+        "raw_tokens": 2384,
+        "capped_tokens": 696
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 122604,
+        "capped_chars": 100898,
+        "raw_tokens": 30651,
+        "capped_tokens": 25223
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 183739,
+  "started_at": "2026-08-06T02:28:34+00:00"
+}

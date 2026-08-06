@@ -1,0 +1,229 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 84524,
+    "tokens_out": 11787,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.082145946552,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Salesforce presents a compelling but not unambiguous value case. The franchise is dominant (#1 CRM globally, 20% market share, 95% recurring revenue) and the AI pivot is gaining real traction (Agentforce $1.2B ARR, tripling YoY). Q1 FY2027 showed accelerating revenue (+13.3% YoY to $11.13B), strong earnings growth (EPS +52.2% YoY to $2.42), and exceptional cash generation ($6.70B quarterly OCF). The valuation is deeply compressed \u2014 PE of 16.5x is at the floor of its 12-month range (16.5\u201357.4x), and the 6.1% earnings yield exceeds the 10-year Treasury by 164bps. The $25B ASR reducing share count by ~10% is a meaningful capital return catalyst. However, the balance sheet has deteriorated dramatically (debt from $8.44B to $39.28B, likely Informatica-funded), organic growth is decelerating to ~7% ex-FX, and legacy segments (Tableau, Marketing/Commerce) are softening. The seat-erosion risk from AI is a genuine structural concern. The PE compression appears to overstate the risk given cash-flow coverage of debt service, but the unmodeled acquisition risk and organic deceleration prevent a higher conviction score. The near-term catalyst of Q1 earnings beat (non-GAAP EPS $3.88 vs $3.12 consensus) and raised FY2027 guidance provides modest support, though the stock's failure to rally on the beat signals persistent market skepticism.",
+      "key_factors": [
+        "Q1 FY2027 revenue $11.13B (+13.3% YoY), EPS diluted $2.42 (+52.2% YoY), net income $2.11B (+36.7% YoY)",
+        "Operating cash flow $6.70B in Q1 (~60% of revenue conversion), demonstrating strong cash generation",
+        "PE diluted of 16.478x at absolute floor of 12-month range (16.5\u201357.4x), representing ~70% compression",
+        "Earnings yield 6.1% exceeds 10-year Treasury yield of 4.46% by 164bps \u2014 unusual for a high-quality SaaS business",
+        "Total debt surged from $8.44B to $39.28B (likely Informatica acquisition), debt-to-equity now 1.147x",
+        "Organic subscription growth decelerating to ~7% ex-FX (down from 9% two quarters prior); Marketing/Commerce declined ~2% YoY",
+        "Agentforce ARR reached $1.2B, tripling YoY, with $400M QoQ growth; total AI/data ARR $3.4B",
+        "$25B accelerated share repurchase reduced diluted share count by ~10% YoY; $50B total buyback authorization",
+        "Non-GAAP EPS of $3.88 crushed consensus of $3.12; non-GAAP operating margin record 34.8%",
+        "Stock at $151.78 near 52-week low of $149.80, down ~45% from highs despite earnings improvement",
+        "Fin acquisition for $3.6B announced June 18, 2026, deepening AI automation push",
+        "cRPO of $33.6B up 14% YoY; FY2027 revenue guidance raised to $45.9B\u2013$46.2B (10-11% growth ex-FX)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=11.13B, net_income=2.11B, eps_diluted=2.42, operating_cash_flow=6.70B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-04-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=9.83B, eps_diluted=1.59 (YoY comparison base)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "total_debt=39.28B, total_equity=34.23B (vs. 2025-07-31: total_debt=8.44B, total_equity=61.33B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "growth",
+          "relevance": 1.0,
+          "excerpt": "YoY: revenue=+13.3%, eps_diluted=+52.2%, net_income=+36.7%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=16.478 (range low; prior 12mo range 16.5\u201357.4x)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.061, net_margin=0.187, debt_to_equity=1.147"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "close=151.78, 250-bar low=149.80, quarterly delta=-22.2%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-18",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.46%, FEDFUNDS=3.63%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "s205.q4cdn.com (Q1 FY27 call)",
+          "relevance": 1.0,
+          "excerpt": "Agentforce now has $1.2 billion in annual recurring revenue, more than tripling year over year and growing $400 million quarter over quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.crn.com (Q1 FY27 takeaways)",
+          "relevance": 1.0,
+          "excerpt": "organic subscription revenue growth ignoring foreign exchange of 7 percent year on year has been falling in recent quarters\u2026 Marketing and Commerce clouds decelerated to a 2 percent decline year on year\u2026 increased softness in Tableau bookings and renewals"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.tikr.com (Jun 17, 2026)",
+          "relevance": 1.0,
+          "excerpt": "non-GAAP EPS of $3.88 crushed the consensus estimate of around $3.12\u2026 revenue of $11.13 billion\u2026 GAAP operating margin expanded to 21.1%, and non-GAAP operating margin reached 34.8%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (Q1 call summary)",
+          "relevance": 1.0,
+          "excerpt": "Salesforce also returned $27.5 billion to shareholders, the bulk of it through a $25 billion accelerated share repurchase\u2026 That buyback shrank the share count by about 10% from a year earlier"
+        },
+        {
+          "source_type": "news",
+          "source_id": "Benzinga (Jun 18, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Salesforce buying Fin for $3.6 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cxfoundation.com (Jun 9, 2026)",
+          "relevance": 1.0,
+          "excerpt": "Salesforce's market share declined from 20.7% in 2024 to 20.0% 12 months later\u2026 now earns over four times its nearest rival\u2026 Oracle, with Big Red standing firm at a 4.1% market share"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3822,
+        "capped_chars": 3822,
+        "raw_tokens": 956,
+        "capped_tokens": 956
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 250988,
+        "capped_chars": 250988,
+        "raw_tokens": 62747,
+        "capped_tokens": 62747
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30574,
+        "capped_chars": 30574,
+        "raw_tokens": 7644,
+        "capped_tokens": 7644
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2362,
+        "capped_chars": 2362,
+        "raw_tokens": 590,
+        "capped_tokens": 590
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 33140,
+        "capped_chars": 6031,
+        "raw_tokens": 8285,
+        "capped_tokens": 1508
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 99217,
+        "capped_chars": 73880,
+        "raw_tokens": 24803,
+        "capped_tokens": 18469
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 163828,
+  "started_at": "2026-08-06T02:49:30+00:00"
+}

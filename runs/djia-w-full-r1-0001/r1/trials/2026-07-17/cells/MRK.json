@@ -1,0 +1,233 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 79497,
+    "tokens_out": 10228,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.07599579571199999,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "MRK presents a rare case of near-full alignment across all three pillars on the short side. Pillar 1 (fundamental health & trajectory): Earnings have collapsed \u2014 Q1 2026 EPS of -$1.72 vs. +$2.01 a year ago, operating income swung from +$5.90B to -$3.53B, and net margin halved from ~27% to 13.6%. The GAAP loss is driven by a large one-time acquisition charge (Cidara, ~$9B per the earnings call), but even stripping that out, the underlying trajectory is concerning: Gardasil declined 22%, the Keytruda patent cliff (late 2028/2029) looms with 46% of revenue at risk, and balance sheet equity eroded $5.98B in two quarters. The only genuine positive is $3.92B quarterly OCF, confirming the core business still generates cash. Pillar 2 (valuation): P/E of 35.3x is at the absolute ceiling of its 365-day range (11.1x\u201335.8x), P/B of 6.87x is near its 7.0x ceiling, and the stock has rallied ~66% from its 365-day low to $127.63 \u2014 all while profitability has deteriorificantly deteriorated. The market is pricing an aggressive earnings recovery that the supplied data cannot confirm. Pillar 3 (near-term catalyst): Q2 2026 earnings on Aug 4 are expected to show EPS of ~$1.36, down 36.2% YoY, with further acquisition-related charges likely. This is a near-term downside catalyst, not an upside one. The combination of collapsing earnings, extreme valuation multiples at range ceilings, a structural Keytruda patent cliff risk, and a negative near-term earnings event creates a strongly negative risk-reward profile.",
+      "key_factors": [
+        "Q1 2026 EPS of -$1.72 vs. Q1 2025 +$2.01 \u2014 a -185.6% YoY decline driven by large acquisition-related charges (Cidara)",
+        "Q1 2026 operating income of -$3.53B vs. Q1 2025 +$5.90B; net margin collapsed from ~27% to 13.6%",
+        "P/E diluted of 35.3x at 2026-07-16 is at the absolute ceiling of its 365-day range (11.1x\u201335.8x); P/B of 6.87x near its 7.0x ceiling",
+        "Stock at $127.63 has rallied ~66% from its 365-day low of $76.66 while earnings deteriorated \u2014 extreme decoupling of price from fundamentals",
+        "Keytruda accounts for 46% of revenue ($29.5B in 2024) with primary U.S. patents expiring late 2028/2029 \u2014 massive concentration risk",
+        "Total equity eroded $5.98B in two quarters (from $51.91B to $45.93B); debt-to-equity rose to 1.80x",
+        "Gardasil sales declined 22% YoY in Q1 2026, adding to revenue headwinds beyond the Keytruda cliff",
+        "Q2 2026 earnings expected Aug 4 with consensus EPS of ~$1.36, down 36.2% YoY \u2014 a near-term downside catalyst",
+        "Positive OCF of $3.92B in Q1 2026 (+56.7% YoY) confirms underlying business cash generation despite GAAP losses",
+        "Management raised 2026 guidance to revenue $65.8B-$67.0B and non-GAAP EPS $5.04-$5.16, but GAAP earnings remain heavily distorted by acquisition charges"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=-1.72 (vs. Q1 2025 eps_diluted=2.01; -185.6% YoY)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "operating_income=-3.53B (vs. Q1 2025 operating_income=5.90B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=3.92B (+56.7% YoY despite net loss)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "total_equity=45.93B (down from 51.91B at 2025-09-30; -$5.98B in 2 quarters)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=35.311 (365d range 11.1..35.8; at ceiling)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "relevance": 1.0,
+          "excerpt": "p_b=6.869 (365d range 4.0..7.0; near ceiling)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.136 (down from 0.273 at 2025-07-17)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "relevance": 1.0,
+          "excerpt": "close=127.63 (365d low of 76.66; ~66.5% rally from low)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "relevance": 1.0,
+          "excerpt": "Keytruda's primary U.S. patents are set to expire in late 2028, with some extensions potentially pushing exclusivity to 2029. This drug is a major revenue driver... accounting for nearly half of its pharmaceutical sales in 2024."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wikipedia.org",
+          "relevance": 1.0,
+          "excerpt": "In 2024, 46% of the company's revenue, or $29.5 billion, came from sales of Keytruda (pembrolizumab)."
+        },
+        {
+          "source_type": "news",
+          "source_id": "tipranks.com (Earnings Call Summary)",
+          "relevance": 1.0,
+          "excerpt": "a very large one-time $9B Cidara charge... meaningful declines in GARDASIL (-22%), a failed LITESPARK-012 readout"
+        },
+        {
+          "source_type": "news",
+          "source_id": "tipranks.com (Earnings Call Summary)",
+          "relevance": 1.0,
+          "excerpt": "Merck reported solid Q1 revenue growth (+5% YoY; $16.3B), robust KEYTRUDA momentum (+8%, $8.0B)... and raised/narrowed 2026 guidance."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart.com",
+          "relevance": 1.0,
+          "excerpt": "MRK is expected to release its Q2 2026 earnings on Tuesday, Aug. 4... analysts expect the company's EPS to be $1.36 on a diluted basis, down 36.2% from $2.13 in the year-ago quarter."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "relevance": 1.0,
+          "excerpt": "The company projects approximately $50 billion in revenue from new growth drivers by the early 2030s, contributing to a target of $70 billion by the mid-2030s."
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-16",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.57% (up from 4.26% on 2026-04-20; headwind for high-multiple equities)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4573,
+        "capped_chars": 4573,
+        "raw_tokens": 1143,
+        "capped_tokens": 1143
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224727,
+        "capped_chars": 224727,
+        "raw_tokens": 56182,
+        "capped_tokens": 56182
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30332,
+        "capped_chars": 30332,
+        "raw_tokens": 7583,
+        "capped_tokens": 7583
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1846,
+        "capped_chars": 1846,
+        "raw_tokens": 462,
+        "capped_tokens": 462
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 33258,
+        "capped_chars": 6643,
+        "raw_tokens": 8314,
+        "capped_tokens": 1661
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108438,
+        "capped_chars": 88972,
+        "raw_tokens": 27109,
+        "capped_tokens": 22244
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 216439,
+  "started_at": "2026-08-06T03:00:38+00:00"
+}

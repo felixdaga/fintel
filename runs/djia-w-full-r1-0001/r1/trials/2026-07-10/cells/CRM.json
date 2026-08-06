@@ -1,0 +1,234 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 75451,
+    "tokens_out": 10635,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.075637692224,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "CRM presents a genuinely strong earnings inflection \u2014 revenue +13.3% YoY, diluted EPS +52.2% YoY, net margin expanding from ~12.7% to ~18.7%, and operating cash flow of $6.70B in Q1 FY2027. The franchise remains dominant (20% global CRM share, #1 for 13 consecutive years, 90%+ Fortune 500 penetration). Valuation has compressed dramatically to 17.6x PE (from 55x a year ago), placing the stock at the floor of its 365-day range with a 5.7% earnings yield that now exceeds the 10-year Treasury at 4.54%. The price is ~41% below its 52-week high despite materially improved fundamentals, creating favorable risk/reward asymmetry. However, the balance sheet has been severely impaired \u2014 debt surged from $8.44B to $39.28B (likely acquisition-funded), debt-to-equity moved to 1.15x, and equity shrank 44%. This introduces meaningful integration and leverage risk that caps the score. The AI transition (Agentforce ARR $1.2B, +205%) is a credible growth vector but remains early and unproven at scale. The September 2, 2026 earnings report is a near-term catalyst that could re-rate the stock if the earnings trajectory and Agentforce adoption continue. Score reflects strong Pillar 1 (earnings trajectory + franchise quality), attractive Pillar 2 (historically cheap valuation), tempered by balance-sheet risk and a modest Pillar 3 bump for the upcoming earnings catalyst.",
+      "key_factors": [
+        "Q1 FY2027 revenue $11.13B (+13.3% YoY), diluted EPS $2.42 (+52.2% YoY), net income $2.11B (+36.7% YoY) \u2014 clear earnings inflection with operating leverage",
+        "Net margin expanded to ~18.7% (trailing) from ~12.7% prior-year plateau; operating margin 21.1% vs 19.7% YoY \u2014 structural profitability improvement",
+        "Operating cash flow $6.70B in Q1'27 (60% cash conversion rate on revenue); FCF unconfirmed by quant pack but OCF is robust",
+        "PE compressed to 17.6x (from 55.4x a year ago) \u2014 at the absolute floor of the 365-day range (16.3x\u201356.7x); earnings yield 5.7% exceeds 10-year Treasury yield of 4.54%",
+        "Price at $162.50, ~41% below 52-week high of $274.00, near 52-week low of $146.32 \u2014 significant drawdown despite improved fundamentals",
+        "Balance sheet severely impaired: total debt surged from $8.44B to $39.28B (4.6x increase), equity declined 44% from $61.33B to $34.23B, debt-to-equity 1.15x \u2014 likely acquisition-funded, introduces integration and leverage risk",
+        "Dominant franchise: 20.0% global CRM market share (#1 for 13 consecutive years), 150,000+ customers, 90%+ Fortune 500 penetration, four times nearest rival Oracle at 4.1%",
+        "Agentforce ARR $1.2B (+205%), 3.8B Agentic Work Units delivered, 50%+ of Q1 bookings from existing customers \u2014 credible AI transition but early-stage",
+        "cRPO $33.6B (+14% YoY) provides forward revenue visibility; non-GAAP operating margin 34.8% (+250bp YoY)",
+        "Next earnings September 2, 2026 \u2014 near-term catalyst for re-rating if trajectory continues",
+        "Software sector sell-off driven by AI disruption fears (Anthropic Claude Design launch, IBM warning) \u2014 broader headwind but CRM fundamentals have held"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1",
+          "relevance": 1.0,
+          "excerpt": "revenue=11.13B eps_diluted=2.42 net_income=2.11B operating_cash_flow=6.70B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-04-30 Q1",
+          "relevance": 1.0,
+          "excerpt": "revenue=9.83B eps_diluted=1.59 net_income=1.54B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1 YoY growth",
+          "relevance": 1.0,
+          "excerpt": "revenue=+13.3% eps_diluted=+52.2% net_income=+36.7%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 balance sheet",
+          "relevance": 1.0,
+          "excerpt": "total_debt=39.28B total_equity=34.23B total_liabilities=72.44B (vs 2025-07-31: debt=8.44B equity=61.33B liabilities=36.24B)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=17.641 p_b=4.134 earnings_yield=0.057 net_margin=0.187 roe=0.234 debt_to_equity=1.147"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=55.364 net_margin=0.127 roe=0.079"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "relevance": 1.0,
+          "excerpt": "close=162.50 high_52w=274.00 low_52w=146.32"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-09",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.54 VIXCLS=15.84 FEDFUNDS=3.63"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "enway.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Salesforce held a 20.0% share of the global CRM market in 2025 \u2014 retaining its position as the clear number-one provider for the 13th consecutive year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Revenue of $11.13 billion came in ahead of expectations, non-GAAP EPS of $3.88 crushed the consensus estimate of around $3.12, and free cash flow hit $6.6 billion in a single quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Current remaining performance obligation came in at $33.6 billion, up 14% year over year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "enway.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Agentforce ARR >$1B ($1.2B, +205%, per call) and More than 50% of Agentforce and Data 360 bookings in Q1 came from existing customers"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "analysis-atlas.com (structural)",
+          "relevance": 1.0,
+          "excerpt": "Salesforce leads on three of the four [criteria]... the largest install base, the only agent business already past a billion dollars, and... the deepest owned data layer of any application vendor"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-08 \u2014 The Motley Fool",
+          "relevance": 1.0,
+          "excerpt": "Disappointing earnings from peers like Salesforce, Adobe, and Oracle fueled concerns about seat-based SaaS vulnerability"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessinsider.com (risk)",
+          "relevance": 1.0,
+          "excerpt": "Salesforce laid off more employees... cuts affected employees working on Agentforce AI product, Mulesoft, and Marketing Cloud"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3822,
+        "capped_chars": 3822,
+        "raw_tokens": 956,
+        "capped_tokens": 956
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 250725,
+        "capped_chars": 250725,
+        "raw_tokens": 62681,
+        "capped_tokens": 62681
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30296,
+        "capped_chars": 30296,
+        "raw_tokens": 7574,
+        "capped_tokens": 7574
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2360,
+        "capped_chars": 2360,
+        "raw_tokens": 590,
+        "capped_tokens": 590
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 13609,
+        "capped_chars": 2757,
+        "raw_tokens": 3402,
+        "capped_tokens": 689
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 91403,
+        "capped_chars": 57224,
+        "raw_tokens": 22851,
+        "capped_tokens": 14306
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 147530,
+  "started_at": "2026-08-06T02:56:56+00:00"
+}

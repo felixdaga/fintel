@@ -1,0 +1,223 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 70057,
+    "tokens_out": 10443,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.070307502912,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "JNJ is a high-quality healthcare franchise, but the current setup is extremely unattractive on all three pillars. Pillar 1 (fundamentals): While revenue is stable at ~$24B/quarter and the franchise is durable (28 billion-dollar platforms, Q1 2026 operational sales +6.4%, guidance raised to $100.2B), the near-term trajectory is deteriorating \u2014 Q4 operating income fell 20% QoQ to $5.99B, net margin compressed from 27.3% to 21.8%, and Q4 operating cash flow collapsed 72.6% QoQ to $2.51B. The Stelara LOE is accelerating faster than expected, and multiple patent cliffs (Simponi, Opsumit) plus Medicare Part D redesign create a 2025\u20132027 revenue headwind window. Talc litigation (75,000+ lawsuits, bankruptcy strategy rejected 3x) remains an unresolved financial overhang. Pillar 2 (valuation): PE diluted is 30.57x \u2014 the absolute top of the 365-day range (17.2\u201330.6x), nearly doubling from 17.3x a year ago. P/B is 7.922x, also at its ceiling. The 3.3% earnings yield sits below the 10-year Treasury yield of 4.49%, implying a negative equity risk premium \u2014 extraordinary for a defensive healthcare name. This multiple expansion has occurred while margins and ROE (25.9% from 31.7%) are deteriorating, meaning the market is paying ~80% more per dollar of lower-quality earnings. Any reversion toward the midpoint of the historical PE range (~23x) implies ~25% downside on a static earnings base. Pillar 3 (near-term catalyst): The next earnings report is July 15, 2026 (consensus $2.83 EPS, $25.04B revenue), but this is more likely a downside catalyst given the intensifying Stelara erosion, margin compression, and the FTC antitrust amicus brief filed June 23, 2026. The stock is at a 52-week high ($263.04) with quarterly returns of +11.6%, +18.0%, and +7.8% \u2014 pure multiple expansion, not earnings-driven. The qual report's positive FCF claims ($12.5B Q1) are unverifiable from the raw pack, which shows Q1 OCF of only $4.17B. All three pillars point in the same direction: deteriorating fundamentals, extreme valuation, and a likely negative near-term catalyst.",
+      "key_factors": [
+        "PE diluted at 30.57x \u2014 top of 365-day range (17.2\u201330.6x), nearly doubled from 17.3x a year ago; P/B at 7.922x, also at ceiling of 4.8\u20137.9 range",
+        "Earnings yield of 3.3% below 10-year Treasury yield of 4.49%, implying negative equity risk premium for a defensive healthcare name",
+        "Q4 operating income fell 20% QoQ to $5.99B; net margin compressed from 27.3% to 21.8%; ROE declined from 31.7% to 25.9%",
+        "Q4 operating cash flow collapsed 72.6% QoQ to $2.51B from Q3's $9.17B; TTM OCF of $19.73B is acceptable but unremarkable",
+        "Multiple expansion has occurred while margins and returns deteriorate \u2014 market paying ~80% more per dollar of lower-quality earnings",
+        "Stelara LOE accelerating faster than expected; Simponi and Opsumit generic impact beginning 2026; Medicare Part D redesign affecting key drugs",
+        "Talc litigation: 75,000+ lawsuits active, bankruptcy settlement rejected 3x, now in traditional tort system \u2014 unquantified residual financial exposure",
+        "FTC filed amicus brief on June 23, 2026 alleging J&J illegally maintained Stelara monopoly through Momenta acquisition",
+        "Stock at 52-week high ($263.04) with quarterly returns of +11.6%, +18.0%, +7.8% \u2014 price has outpaced fundamental trajectory",
+        "Next earnings July 15, 2026 (consensus $2.83 EPS, $25.04B revenue) \u2014 more likely a downside catalyst given intensifying Stelara erosion and margin compression",
+        "Qual report's FCF claims ($12.5B Q1, $20B) are unverifiable from raw pack; Q1 OCF was only $4.17B \u2014 these external figures may use different definitions",
+        "Any reversion toward midpoint of historical PE range (~23x) implies ~25% downside on a static earnings base"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=30.57x (top of 365d range 17.2\u201330.6x)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "p_b=7.922 (top of 365d range 4.8\u20137.9)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.033 (3.3%), below 10Y Treasury 4.49%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29",
+          "relevance": 1.0,
+          "excerpt": "operating_income=5.99B (QoQ decline from Q3 7.49B, \u221220.0%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=2.51B (QoQ \u221272.6% from Q3 9.17B)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29",
+          "relevance": 1.0,
+          "excerpt": "net_margin implied ~21.8% (from ratios), down from 27.3% in early 2026"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "TTM 4Q sum",
+          "relevance": 1.0,
+          "excerpt": "revenue=93.69B operating_cash_flow=19.73B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "relevance": 1.0,
+          "excerpt": "close=263.04, at 52-week high of observed range (low=154.21)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "theglobeandmail.com",
+          "relevance": 1.0,
+          "excerpt": "J&J lost U.S. patent exclusivity of Stelara in 2025... In Q1 2026, J&J saw a faster erosion in sales of Stelara than expected, with the decline expected to intensify"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "TradingKey",
+          "relevance": 1.0,
+          "excerpt": "On June 23, 2026, the Federal Trade Commission (FTC) filed an amicus brief in a pending antitrust class action against Johnson & Johnson... alleges that J&J illegally maintained a monopoly on Stelara"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout.com",
+          "relevance": 1.0,
+          "excerpt": "Q1 2026 operational sales up 6.4% and full-year guidance raised to $100.2 billion... $24.1 billion in revenue and an EPS of $2.7, both exceeding analyst expectations"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (Jun 26)",
+          "relevance": 1.0,
+          "excerpt": "CMS proposed making the Medicare Drug Price Negotiation Program permanent starting in 2029 and tightening rules around fixed combination lifecycle approaches"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "blockonomi.com",
+          "relevance": 1.0,
+          "excerpt": "JNJ finalized a $1 billion acquisition of Firefly Bio... pursuing divestiture of its underperforming orthopedics division"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4593,
+        "capped_chars": 4593,
+        "raw_tokens": 1148,
+        "capped_tokens": 1148
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 222706,
+        "capped_chars": 222706,
+        "raw_tokens": 55676,
+        "capped_tokens": 55676
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30321,
+        "capped_chars": 30321,
+        "raw_tokens": 7580,
+        "capped_tokens": 7580
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2491,
+        "capped_chars": 2491,
+        "raw_tokens": 623,
+        "capped_tokens": 623
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 33089,
+        "capped_chars": 8032,
+        "raw_tokens": 8272,
+        "capped_tokens": 2008
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 72636,
+        "capped_chars": 50895,
+        "raw_tokens": 18159,
+        "capped_tokens": 12723
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 139018,
+  "started_at": "2026-08-06T02:54:48+00:00"
+}

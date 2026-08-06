@@ -1,0 +1,237 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 76865,
+    "tokens_out": 10761,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.076993948112,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.2,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Goldman Sachs is a high-quality franchise with genuine fundamental improvement \u2014 ROE up from 10.0% to 13.4% (quant) and reaching 19.8% in Q1 2026 (qual), net margin expanded 450bp to 28.4%, and the firm delivered FY2025 EPS of $51.32 (+27% YoY) with Q1 2026 EPS of $17.55 beating consensus by 7.4%. The #1 global M&A advisory position (32% market share, $1.48T in deals) and strategic pivot away from failed consumer banking ($7B+ losses) toward durable fee-based revenues (AWM management fees >$10B, AUM $3.6T) represent a credible structural improvement. However, the stock has already re-rated aggressively: PE at 17.5x is at the 85th percentile of its 12-18.4x range, P/B at 2.34x is near its 2.5x ceiling, and the stock sits at the 94th percentile of its 52-week range at $923.77. The equity risk premium over 10Y Treasuries is compressed to ~130bp. FICC intermediation revenue declined 10% YoY in Q1 2026, and GBM's 71% revenue share leaves the firm exposed to cyclical downturns. The market has largely priced in the margin and ROE recovery, leaving limited upside from current levels absent further fundamental acceleration. A mild positive score reflects the franchise quality and upward consensus revisions (+3.5% for FY2026 EPS over 30 days) while acknowledging the valuation has front-run much of the improvement.",
+      "key_factors": [
+        "ROE improved from 10.0% (May 2025) to 13.4% (Apr 2026) per quant ratios; Q1 2026 ROE reached 19.8% per qual report",
+        "Net margin expanded 450bp from 23.9% to 28.4% over the observation window",
+        "PE diluted at 17.46x is at 85th percentile of 12.0-18.4x range; P/B at 2.34x near 2.5x ceiling \u2014 stock fully re-rated",
+        "Stock at $923.77, 94th percentile of 52-week range ($545.50-$984.70), just 6.2% below all-time high",
+        "#1 global M&A advisor: $1.48T in deals, 32% market share, 7 of top 10 global deals in 2025",
+        "Q1 2026 EPS $17.55 beat consensus $16.47 by 7.4%; revenue $17.23B second-highest quarterly total in firm history",
+        "FY2025: revenue $58.3B (+9% YoY), net income $16.3B (+20.5% YoY), EPS $51.32 (+27% YoY), ROE 15.0%",
+        "Consensus FY2026 EPS $59.53 (+16% YoY), FY2027 $65.79 (+10.5%); 30-day revision trend upward +3.5%/+4.4%",
+        "FICC intermediation revenue -10% YoY in Q1 2026 \u2014 notable soft spot partially offset by record equities net revenues of $5.33B (+27% YoY)",
+        "Equity risk premium ~130bp (earnings yield 5.7% vs 10Y Treasury 4.40%) \u2014 compressed vs historical levels",
+        "Basel III March 2026 revisions reduced Category I bank capital requirements by 2.4%; CET1 at 14.4%",
+        "Innovator Capital acquisition (~$2B, April 2026) added 171 ETFs and $31B AUS, making GS top-10 global active ETF provider",
+        "GBM generated 71% of FY2025 revenue ($41.5B) \u2014 high cyclical concentration",
+        "Assets/equity ~14.5x leverage; Baa credit spreads elevated at 6.10%; oil at $108.64/bbl stagflationary signal"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=17.456 (window range 12.0..18.4), p_b=2.339 (range 1.4..2.5)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-01",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=15.05, p_b=1.512, roe=0.1 \u2014 starting point of re-rating"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "roe=0.134, net_margin=0.284, earnings_yield=0.057"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "close=923.77, 251-bar high=984.70, low=545.50 (94th pctile of range)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "revenue=15.18B, net_income=4.10B, eps_diluted=12.25, operating_income=5.39B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30\u21922025-09-30 QoQ",
+          "relevance": 1.0,
+          "excerpt": "revenue=+4.1%, eps_diluted=+12.3%, net_income=+10.1%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "total_equity=124.40B, total_assets=1807.98B (assets/equity\u224814.5x)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.40%, FEDFUNDS=3.64%, T10Y2Y=0.52%, DCOILWTICO=108.64"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "swotpal.com",
+          "relevance": 1.0,
+          "excerpt": "Goldman is the #1 global M&A advisor with $1.48 trillion in deals advised and 32% market share in 2025, earning $4.6B in advisory fees alone"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "marketreportanalytics.com",
+          "relevance": 1.0,
+          "excerpt": "FY2025: net revenues $58.3B (+9% YoY), net income $16.3B (+20.5% YoY), EPS $51.32 (+27% YoY), ROE 15.0% / ROTE 16.0%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "markets.financialcontent.com",
+          "relevance": 1.0,
+          "excerpt": "Q1 2026 net revenues $17.23 billion (second-highest quarterly total), EPS $17.55 beating consensus $16.47, ROE 19.8%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "swotpal.com",
+          "relevance": 1.0,
+          "excerpt": "Global Banking & Markets generated $41.5 billion \u2014 71% of Goldman's total revenue \u2014 inherently cyclical"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "am.gs.com",
+          "relevance": 1.0,
+          "excerpt": "Goldman Sachs Completes Acquisition of Innovator Capital Management \u2014 approximately $31 billion AUS across 171 ETFs; total ETF AUS of $90 billion, top ten global active ETF provider"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bingx.com",
+          "relevance": 1.0,
+          "excerpt": "Basel III March 2026 revisions decreased aggregate capital requirements for Category I banks by 2.4%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "marketreportanalytics.com",
+          "relevance": 1.0,
+          "excerpt": "Consumer banking losses exceeded $7 billion across Apple Card, Marcus, and GreenSky; strategic refocus on institutional strengths drove stock price up 37.5% in 12 months"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3701,
+        "capped_chars": 3701,
+        "raw_tokens": 925,
+        "capped_tokens": 925
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 219577,
+        "capped_chars": 219577,
+        "raw_tokens": 54894,
+        "capped_tokens": 54894
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30858,
+        "capped_chars": 30858,
+        "raw_tokens": 7714,
+        "capped_tokens": 7714
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2643,
+        "capped_chars": 2643,
+        "raw_tokens": 661,
+        "capped_tokens": 661
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 69530,
+        "capped_chars": 8334,
+        "raw_tokens": 17382,
+        "capped_tokens": 2084
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 135996,
+        "capped_chars": 111894,
+        "raw_tokens": 34000,
+        "capped_tokens": 27974
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 139653,
+  "started_at": "2026-08-06T02:31:28+00:00"
+}

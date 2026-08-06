@@ -1,0 +1,223 @@
+{
+  "cell": "WMT",
+  "symbols": [
+    "WMT"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 80204,
+    "tokens_out": 10797,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0799066232,
+    "basis": "reported"
+  },
+  "views": {
+    "WMT": {
+      "symbol": "WMT",
+      "score": 0.25,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "Walmart presents a structurally improving franchise with a compelling advertising flywheel narrative, but near-term headwinds and valuation concerns temper the case. Pillar 1 (Fundamentals): YoY earnings growth of +19.6% on +7.3% revenue growth with gross margin expansion (24.9% to 25.1%) and a strengthening balance sheet (equity up 11.4% YoY to $100.68B) demonstrate operating leverage. The advertising business ($6.4B, +46% YoY) and marketplace create a durable structural upgrade. However, OCF declined -12.4% YoY while net income grew +18.3%, signaling deteriorating cash conversion \u2014 a material quality concern the quant report flags explicitly. QoQ EPS also fell -13.0%. Pillar 2 (Valuation): PE at 38.4x sits at the 12-month floor (range 37.5\u201355.4x), a -30.6% compression from the Feb 2026 peak of 55.3x, despite ROE improving from 21.6% to 23.0% and net margin from 2.8% to 3.2%. This is genuinely attractive vs own history. However, the 2.6% earnings yield vs 4.68% 10Y treasury (-208bp spread) is wide for a defensive name, and the stock is not cheap on an absolute basis. Pillar 3 (Catalyst): Q2 FY27 earnings on August 20 (consensus EPS $0.74, +8.8% YoY) is a dated catalyst. Cleveland Research's July 1 warning of slowing U.S. comps and the Oppenheimer downgrade create a low bar that could set up a positive surprise if advertising and marketplace momentum hold. The AI regulatory scrutiny (July 30) and insider selling ($1.5B Walton trust sale in late May) are modest negatives. Net: the structural franchise upgrade is real and the valuation has corrected meaningfully, but cash-flow quality concerns, rate headwinds, and near-term execution risk (slowing comps, fuel costs) keep the score moderate rather than strong. The score of +0.25 reflects a mildly attractive setup with the PE at historical lows offset by legitimate fundamental caution.",
+      "key_factors": [
+        "YoY EPS growth +19.6% (Q1 FY27: $0.67 vs $0.56) on +7.3% revenue growth ($177.75B vs $165.61B) \u2014 strong operating leverage",
+        "Gross margin expansion to 25.1% from 24.9% YoY, net margin to 3.09% from 2.80% \u2014 durable margin improvement",
+        "Advertising revenue $6.4B in FY26, growing 46% YoY, with monetization gap of 0.9% vs Amazon's 8% representing massive structural runway",
+        "Membership and advertising together make up roughly a third of operating income per CFO Rainey (Q1 FY27 call)",
+        "PE at 38.4x is at 12-month low (range 37.5\u201355.4x), down -30.6% from 55.3x peak in Feb 2026, despite improving ROE (21.6% to 23.0%) and net margin (2.8% to 3.2%)",
+        "Operating cash flow declined -12.4% YoY ($4.74B vs $5.41B) while net income grew +18.3% \u2014 cash-earnings quality divergence",
+        "QoQ EPS fell -13.0% ($0.67 vs $0.77) and OCF collapsed -47.9% QoQ \u2014 sequential deceleration",
+        "Earnings yield 2.6% vs 10Y treasury 4.68% \u2014 negative spread of -208bp, wide for a defensive name",
+        "Cleveland Research (July 1, 2026) warned of slowing U.S. comparable store sales, triggering 4.98% single-day decline",
+        "Q2 FY27 earnings August 20 (consensus EPS $0.74, +8.8% YoY) is a dated catalyst with a lowered bar from recent negative sentiment",
+        "Walton family trust sold ~$1.5B in shares in late May 2026 \u2014 interpreted as near-term valuation signal",
+        "U.S. e-commerce turned profitable in every quarter of FY26 with double-digit incremental margins"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1",
+          "relevance": 1.0,
+          "excerpt": "revenue=177.75B, net_income=5.49B, eps_diluted=0.67"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-04-30 Q1",
+          "relevance": 1.0,
+          "excerpt": "revenue=165.61B, eps_diluted=0.56 (YoY comparison base)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "total_equity=100.68B, total_assets=289.61B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=4.74B (YoY OCF: -12.4%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-04-30",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=5.41B (YoY comparison)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=38.436, p_b=8.827, roe=0.23, net_margin=0.032"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-02-13",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=55.311 (12-month peak for valuation context)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.68%, T10Y2Y=0.45, DCOILWTICO=85.15"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com (2026)",
+          "relevance": 1.0,
+          "excerpt": "In fiscal 2026 those two lines produced roughly a third of Walmart's operating income on $6.4 billion of global ad revenue, growing 46% against 4.7% total revenue growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com (2026)",
+          "relevance": 1.0,
+          "excerpt": "Amazon monetizes roughly 8% of its sales as advertising. Walmart monetizes about 0.9%. Rainey has told analysts the company has a long way to go to reach best-in-class competitors"
+        },
+        {
+          "source_type": "news",
+          "source_id": "tradingkey.com 2026-07-01",
+          "relevance": 1.0,
+          "excerpt": "Cleveland Research reported a slowdown in Walmart's U.S. comparable store sales \u2014 stock fell 4.98%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "The Motley Fool 2026-07-27",
+          "relevance": 1.0,
+          "excerpt": "Walmart's stock has dropped 19% from its mid-May high to $109.45... P/E ratio of 39 (down from 48)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout.com (2026)",
+          "relevance": 1.0,
+          "excerpt": "75% of Walmart's market share gains came from households earning over $100,000"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "WMT",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4568,
+        "capped_chars": 4568,
+        "raw_tokens": 1142,
+        "capped_tokens": 1142
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 243241,
+        "capped_chars": 243241,
+        "raw_tokens": 60810,
+        "capped_tokens": 60810
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30602,
+        "capped_chars": 30602,
+        "raw_tokens": 7650,
+        "capped_tokens": 7650
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3209,
+        "capped_chars": 3209,
+        "raw_tokens": 802,
+        "capped_tokens": 802
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 32087,
+        "capped_chars": 8614,
+        "raw_tokens": 8022,
+        "capped_tokens": 2154
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 84154,
+        "capped_chars": 62577,
+        "raw_tokens": 21038,
+        "capped_tokens": 15643
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 111354,
+  "started_at": "2026-08-06T03:06:56+00:00"
+}

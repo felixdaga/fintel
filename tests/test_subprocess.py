@@ -14,7 +14,6 @@ import textwrap
 import pytest
 
 from fintel import agents
-from fintel.agents.fingerprint import fingerprint
 from fintel.agents.adapters import (
     AgentError,
     RateLimited,
@@ -22,6 +21,7 @@ from fintel.agents.adapters import (
     SubprocessAgent,
     classify_exit,
 )
+from fintel.agents.fingerprint import fingerprint
 from fintel.environment import Cell, RuntimeConfig, build_environment
 from fintel.market.factory import build_data_sources
 from fintel.market.settings import MarketConfig
@@ -194,19 +194,27 @@ def test_a_failure_is_recorded_not_raised(tmp_path):
 
 
 def test_classify_exit_finds_the_last_match():
-    exc = classify_exit("cmd", 1, "starting up...\nrate limit\n", "")
+    exc = classify_exit("cmd", 1, "", "starting up...\nrate limit\n")
     assert isinstance(exc, RateLimited)
 
 
 def test_classify_exit_prefers_the_later_match():
-    exc = classify_exit("cmd", 1, "rate limit\nthen: blocked by safety filter\n", "")
+    exc = classify_exit("cmd", 1, "", "rate limit\nthen: content filter\n")
     assert isinstance(exc, SafetyRefusal)
 
 
 def test_classify_exit_unknown_is_a_crash():
-    exc = classify_exit("cmd", 1, "something weird", "")
+    exc = classify_exit("cmd", 1, "", "something weird")
     assert isinstance(exc, AgentError)
     assert exc.outcome == "crashed"
+
+
+def test_classify_exit_ignores_stdout_prose():
+    """stdout carries the model transcript — 'safety litigation' in a 10-K
+    must not false-positive as a refusal. Only stderr is scanned."""
+    exc = classify_exit("cmd", 1, "the company faces safety litigation\n", "")
+    assert not isinstance(exc, SafetyRefusal)
+    assert isinstance(exc, AgentError)
 
 
 # ── fingerprint ──────────────────────────────────────────────────────────────

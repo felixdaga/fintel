@@ -1,0 +1,223 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 89198,
+    "tokens_out": 10406,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0834560414,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "JPM presents a strong fundamental case: Q1 2026 showed accelerating revenue (+10% YoY to $49.84B), faster EPS growth (+17.2% YoY to $5.94), and stable ~40%+ operating margins. The franchise is elite \u2014 #1 in deposits, IB fees, credit cards, and active asset management flows \u2014 with ROTCE of 23% well above peer norms. Valuation is compressed: PE at 14.1x sits near the bottom of its 12-month range (13.5x\u201317.8x) despite improving earnings, and the 7.1% earnings yield offers a 269bp premium over 10-year Treasuries. The stock has essentially flatlined over six months while EPS grew 17%, creating a meaningful disconnect. Offsetting factors temper conviction: leverage expanded from 12.4x to 13.5x assets/equity, the yield curve is flattening (T10Y2Y at 0.49%, down 34% in 3 months) which pressures NIM, WTI crude at $98.38/bbl poses credit risk, and missing Q4 2025 data prevents full trend validation. The over-capitalized position (CET1 14.3%) and expected H2 2026 buyback acceleration provide a modest near-term catalyst, but regulatory uncertainty around Basel III endgame (~$20B additional capital) and G-SIB surcharges limits the re-rating path. Net: strong franchise + improving earnings + cheap valuation vs history warrants a mildly-to-moderately attractive score, held back by macro headwinds and leverage risk.",
+      "key_factors": [
+        "Q1 2026 revenue $49.84B, +10.0% YoY; diluted EPS $5.94, +17.2% YoY; net income $16.49B, +12.6% YoY \u2014 accelerating growth with positive operating leverage",
+        "Operating margin stable at ~41% (Q1 2026) across four consecutive quarters of 40%+ margins",
+        "PE diluted at 14.1x (2026-05-07), near bottom of 12-month range 13.5x\u201317.8x; P/B at 2.289x near low end of 2.1x\u20132.8x range \u2014 meaningful multiple contraction despite improving fundamentals",
+        "Earnings yield 7.1% vs 10-year Treasury 4.41% (269bp equity risk premium) and Baa corporate bonds 6.06% (104bp premium)",
+        "Franchise: #1 retail deposits, #1 global IB fees for 17 consecutive years, #1 credit card issuer, $7.1T client assets, ROTCE 23%",
+        "Leverage expanded from 12.4x to 13.5x assets/equity (Q1 2025 to Q1 2026) \u2014 amplifies downside if credit deteriorates",
+        "Yield curve flattening: T10Y2Y spread at 0.49%, down from 0.74% three months prior \u2014 potential NIM headwind",
+        "WTI crude at $98.38/bbl (decision date), up 52.5% in 3 months \u2014 credit risk for consumer and commercial loan books",
+        "CET1 ratio 14.3%, over-capitalized post-Basel III re-proposal; expected massive buyback program in H2 2026 as near-term catalyst",
+        "Basel III endgame and G-SIB surcharge uncertainty: management expects 70bp G-SIB increase by 2028, ~$20B additional capital required",
+        "Stock price $306.27 essentially flat over 6 months (vs $309.25 on 2025-11-04) while EPS grew 17% \u2014 disconnect between fundamentals and price",
+        "Q1 2026 IB fees +28% YoY, markets revenue +20% YoY (FICC +21%, Equities +17%) \u2014 strong institutional momentum"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=49.84B, net_income=16.49B, eps_diluted=5.94, operating_income=20.48B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 vs 2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "YoY revenue=+10.0%, YoY eps_diluted=+17.2%, YoY net_income=+12.6%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_assets=4900.48B, total_equity=364.04B, leverage=13.5x"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=14.145, p_b=2.289, earnings_yield=0.071, roe=0.162, operating_margin=0.399"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "window 2025-05-08..2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted range=13.5..17.8, p_b range=2.1..2.8"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.41%, T10Y2Y=0.49%, DCOILWTICO=98.38"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "relevance": 1.0,
+          "excerpt": "DBAA=6.06%, VIXCLS=17.08"
+        },
+        {
+          "source_type": "news",
+          "source_id": "stocktitan.net / SEC filing (2026-05-01)",
+          "relevance": 1.0,
+          "excerpt": "Net income of $16.5 billion, up 13%... total net revenue $49.8 billion, up 10%... diluted EPS $5.94... ROTCE 23%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "stocktitan.net / SEC filing (2026-05-01)",
+          "relevance": 1.0,
+          "excerpt": "Investment Banking fees up 28% YoY... #1 ranking for Global Investment Banking fees... Markets revenue up 20%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "strategy.transforml.co",
+          "relevance": 1.0,
+          "excerpt": "Holds the #1 retail deposit market share, is the #1 credit card issuer in the U.S., and has ranked #1 in global investment banking fees for 17 consecutive years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "markets.financialcontent.com (2026 deep dive)",
+          "relevance": 1.0,
+          "excerpt": "Record managed revenue of $185.6 billion in 2025... ROTCE of 20%... $7.1 trillion in client assets"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com (Q1 2026 earnings call)",
+          "relevance": 1.0,
+          "excerpt": "Management expects a 70 basis point increase in the G-SIB surcharge by 2028... total increase of about $20 billion of G-SIB capital"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "markets.financialcontent.com (Q1 2026 deep dive)",
+          "relevance": 1.0,
+          "excerpt": "Basel III Mulligan in March 2026... reduced expected capital requirements, JPM is significantly over-capitalized"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241300,
+        "capped_chars": 241300,
+        "raw_tokens": 60325,
+        "capped_tokens": 60325
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3435,
+        "capped_chars": 3435,
+        "raw_tokens": 859,
+        "capped_tokens": 859
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 108021,
+        "capped_chars": 12834,
+        "raw_tokens": 27005,
+        "capped_tokens": 3208
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 117274,
+        "capped_chars": 90024,
+        "raw_tokens": 29319,
+        "capped_tokens": 22506
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 146651,
+  "started_at": "2026-08-06T02:34:14+00:00"
+}

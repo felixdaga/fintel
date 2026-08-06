@@ -1,0 +1,215 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 70321,
+    "tokens_out": 11115,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.059162234144,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "MMM scores extremely unattractive on all three pillars. Pillar 1 (fundamentals): GAAP EPS collapsed -39.7% YoY to $1.23 in Q1 2026 despite flat revenue, indicating severe non-operating charges (likely interest on ~$12.6B debt plus litigation costs). Total equity eroded -26.8% to $3.31B, yielding ~3.8x debt-to-equity \u2014 dangerously thin. Operating income improved to $1.40B but the $741M gap to net income signals structural cost drag. Pillar 2 (valuation): GAAP P/E of 29.1x sits at the absolute top of its 365-day range (17.7\u201329.5), having re-rated from an 18\u201321x band for 10 months prior \u2014 driven entirely by the earnings denominator collapsing, not by price appreciation. P/B at 24.6x is similarly stretched. The verification block flags that adjusted EPS of $2.14 (per the Q1 2026 news article) would imply ~17x adjusted P/E, materially different. However, the GAAP figure reflects real cash charges \u2014 interest expense on $12.6B debt and ongoing PFAS/earplug litigation obligations are not one-time; they are recurring structural costs of the post-Solventum capital structure. The market's muted +1.3% reaction to the 'beat' suggests the market is already pricing adjusted earnings, leaving no upside surprise. Pillar 3 (catalyst): No positive near-term catalyst exists. PFAS litigation (30+ state AG cases) and Combat Arms earplug settlements remain unresolved multi-year cash drains. Rising rates (10Y at 4.45%, +40bp in 90 days) and surging oil ($92.65/bbl, +30.3%) are direct headwinds to margins and debt service. The Q1 2026 earnings beat is already priced. Downside risk: a return to 18x on continued ~$1.25 quarterly GAAP EPS implies ~$90, roughly 40% below current levels.",
+      "key_factors": [
+        "GAAP EPS diluted fell -39.7% YoY to $1.23 in Q1 2026 (vs $2.04 in Q1 2025); net income -41.3% to $659M",
+        "Total equity eroded -26.8% to $3.31B (Q1 2026) from $4.52B (Q1 2025); debt-to-equity ~3.8x using Q3 2025 total debt of $12.60B",
+        "GAAP P/E diluted at 29.1x \u2014 top of 365-day range (17.7\u201329.5); re-rated from 18\u201321x band over prior 10 months due to earnings collapse, not price appreciation",
+        "P/B at 24.6x at top of 365-day range (17.1\u201325.0); net margin dropped to 11.2% from 17.9%",
+        "Operating income improved to $1.40B (Q1 2026) from $1.25B (Q1 2025) but $741M gap to net income signals heavy non-operating charges (interest, litigation)",
+        "PFAS litigation: 30+ state AG cases and personal injury suits pending; ProPublica investigation details decades of internal concealment \u2014 major unresolved cash outflow risk",
+        "10-year yield at 4.45% (+40bp in 90 days); WTI crude at $92.65/bbl (+30.3% in 90 days) \u2014 rising input costs and debt service burden",
+        "Q1 2026 adjusted EPS of $2.14 beat $1.98 consensus (per news 2026-05-22) but market reaction was muted (+1.31%), suggesting beat already priced",
+        "Revenue essentially flat YoY: Q1 2026 $6.03B vs Q1 2025 $5.95B (+1.3%) \u2014 no meaningful acceleration",
+        "Dividend reset post-Solventum spin-off; ~4% yield provides income anchor but does not offset fundamental deterioration"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "net_income=659.00M vs prior year Q1 net_income=1.12B (-41.3% YoY)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_equity=3.31B (down from 4.52B YoY, -26.8%)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "operating_income=1.40B (improved YoY; net_income gap widened to ~$741M)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "relevance": 1.0,
+          "excerpt": "total_debt=12.60B (nearest available; debt-to-equity ~3.8x)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=29.096 (top of 365d range 17.7..29.5; was 18\u201321x for 10 months prior)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "relevance": 1.0,
+          "excerpt": "p_b=24.596 (top of 365d range 17.1..25.0)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "relevance": 1.0,
+          "excerpt": "net_margin=0.112 (dropped from 0.179 in April 2026)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.45% (up from 4.05% 90 days prior; +40bp headwind on debt)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-22",
+          "relevance": 1.0,
+          "excerpt": "3M shares moved higher after the company reported quarterly earnings that topped consensus estimates\u2026 quarterly EPS of $2.14, above the $1.98 consensus estimate"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "relevance": 1.0,
+          "excerpt": "Ongoing and unresolved PFAS ('forever chemicals') litigation remains a significant overhang, with more than 30 state attorney general cases and personal injury suits still pending\u2014these could result in large, unpredictable cash outflows"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "propublica.org",
+          "relevance": 1.0,
+          "excerpt": "Toxic Gaslighting: How 3M Executives Convinced a Scientist the Forever Chemicals She Found in Human Blood Were Safe \u2014 details decades of internal PFAS concealment"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "Q1 2026 revenue $6.03B vs Q1 2025 $5.95B (+1.3% YoY)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247126,
+        "capped_chars": 247126,
+        "raw_tokens": 61782,
+        "capped_tokens": 61782
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30916,
+        "capped_chars": 30916,
+        "raw_tokens": 7729,
+        "capped_tokens": 7729
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 967,
+        "capped_chars": 967,
+        "raw_tokens": 242,
+        "capped_tokens": 242
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 5147,
+        "capped_chars": 1690,
+        "raw_tokens": 1287,
+        "capped_tokens": 422
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108176,
+        "capped_chars": 84563,
+        "raw_tokens": 27044,
+        "capped_tokens": 21141
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 152883,
+  "started_at": "2026-08-06T03:43:33+00:00"
+}

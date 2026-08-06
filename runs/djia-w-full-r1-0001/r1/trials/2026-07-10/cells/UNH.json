@@ -1,0 +1,227 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 73028,
+    "tokens_out": 9564,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.072776229832,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "UNH is a high-quality franchise with dominant market positions (30% Medicare Advantage share, largest commercial insurer) and strong cash generation ($8.91B Q1 2026 OCF, +63.3% YoY). However, the stock is priced for growth that the numbers do not deliver. YoY EPS growth is just +0.7% ($6.90 vs $6.85) despite +2.0% revenue growth, indicating margin compression. ROE has collapsed from 22.8% to 12.3% and net margin has halved from 5.6% to 2.8% \u2014 the market is paying peak multiples for trough profitability. PE diluted has expanded from 12.0x to 30.7x (at the 52-week ceiling) while earnings are essentially flat. The earnings yield of 3.3% is below the 3-month Treasury yield (3.83%) and 10-year Treasury yield (4.54%), creating a persistent valuation headwind. Price has surged +41.1% in one quarter against -1.3% QoQ revenue growth \u2014 a classic valuation overshoot. Multiple unresolved regulatory actions (DOJ billing investigation, FTC insulin pricing settlement, prior-authorization scrutiny) create additional downside risk. Berkshire Hathaway's exit of its entire 3.3M-share stake signals institutional caution. The July 16 earnings report is a near-term catalyst, but even a beat (Bernstein projects $5.22 vs $4.84 consensus) may not be enough to justify a 30.7x PE on flat earnings. Mean reversion of the multiple to even 15-18x would imply 40-50% price risk without any earnings deterioration.",
+      "key_factors": [
+        "PE diluted expanded from 12.0x (Jul 2025) to 30.7x (Jul 2026) \u2014 at the 52-week ceiling of 9.5-30.7x range \u2014 while YoY EPS growth is just +0.7% ($6.90 vs $6.85)",
+        "ROE collapsed from 22.8% (Jul 2025) to 12.3% (Jul 2026); net margin halved from 5.6% to 2.8% \u2014 market paying peak multiples for trough profitability",
+        "Earnings yield of 3.3% is below 3-month Treasury yield (3.83%) and 10-year Treasury yield (4.54%) \u2014 negative real spread vs risk-free rates",
+        "Price surged +41.1% in one quarter (from $305.98 to $431.68) against -1.3% QoQ revenue growth and +0.7% YoY EPS growth \u2014 extreme disconnect",
+        "Q1 2026 operating cash flow of $8.91B (+63.3% YoY) is the strongest in the 4-quarter sample, but this strength is not reflected in earnings growth",
+        "Multiple unresolved regulatory actions: DOJ investigations into Medicare billing practices (2026-07-08), FTC settlement with OptumRx on insulin pricing (2026-06-13), prior-authorization scrutiny",
+        "Berkshire Hathaway exited entire 3.3M-share stake earlier in 2026, signaling institutional caution (2026-07-09 FXLeaders)",
+        "Forward P/E has risen from 13x at 2025 low to 23x (2026-06-27); stock trading 24.3% above DCF estimate of $307.19 (Macroaxis)",
+        "Q2 2026 earnings on July 16 is a near-term catalyst \u2014 Bernstein projects adjusted EPS of $5.22 vs consensus $4.84, but even a beat may not justify 30.7x PE on flat earnings trajectory",
+        "Medicare Advantage membership reduced by ~1.3M lives as margin-protection strategy; CMS approved 2.48% rate increase for 2027 provides some revenue visibility"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=6.9, revenue=111.72B, operating_income=8.99B, operating_cash_flow=8.91B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "relevance": 1.0,
+          "excerpt": "eps_diluted=6.85, revenue=109.58B (YoY basis: +0.7% EPS, +2.0% revenue)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=30.656 (52wk range 9.5..30.7, at ceiling)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=11.987, roe=0.228, net_margin=0.056 (historical comparison)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "relevance": 1.0,
+          "excerpt": "roe=0.123, net_margin=0.028 (trough levels)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "relevance": 1.0,
+          "excerpt": "earnings_yield=0.033 (below 3-month Treasury yield of 3.83%)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "relevance": 1.0,
+          "excerpt": "close=431.68, quarterly delta=+41.1%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-09",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.54%, DGS3MO=3.83%, DBAA=6.1%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "FXLeaders / 2026-07-09",
+          "relevance": 1.0,
+          "excerpt": "reducing Medicare Advantage membership by approximately 1.3 million lives and Berkshire Hathaway exited its entire 3.3 million-share stake"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "macroaxis.com / 2026-07",
+          "relevance": 1.0,
+          "excerpt": "trading above its custom levered DCF estimate, with implied equity value per share of 307.19 versus a market price of 405.80... 24.3% lower"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-27 / Motley Fool",
+          "relevance": 1.0,
+          "excerpt": "forward P/E ratio has risen to 23 from 13 and unresolved Department of Justice investigation into Medicare Advantage billing practices"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-08 / Motley Fool",
+          "relevance": 1.0,
+          "excerpt": "slow recent growth (2% revenue growth), ongoing DOJ investigations into Medicare billing practices, claims denial lawsuits"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com / 2026-07-08",
+          "relevance": 1.0,
+          "excerpt": "Bernstein SocGen Group... price target of $492.00... adjusted earnings per share of $5.22, surpassing the consensus estimate of $4.84"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ama-assn.org / 2025 update",
+          "relevance": 1.0,
+          "excerpt": "UnitedHealth Group was the largest health insurer with a 30% share in 2024\u2014up from 25% in 2017"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4536,
+        "capped_chars": 4536,
+        "raw_tokens": 1134,
+        "capped_tokens": 1134
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225486,
+        "capped_chars": 225486,
+        "raw_tokens": 56372,
+        "capped_tokens": 56372
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30296,
+        "capped_chars": 30296,
+        "raw_tokens": 7574,
+        "capped_tokens": 7574
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1751,
+        "capped_chars": 1751,
+        "raw_tokens": 438,
+        "capped_tokens": 438
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 18747,
+        "capped_chars": 5165,
+        "raw_tokens": 4687,
+        "capped_tokens": 1291
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 89356,
+        "capped_chars": 70208,
+        "raw_tokens": 22338,
+        "capped_tokens": 17552
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 132897,
+  "started_at": "2026-08-06T02:58:52+00:00"
+}

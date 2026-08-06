@@ -1,0 +1,227 @@
+{
+  "cell": "CAT",
+  "symbols": [
+    "CAT"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 80505,
+    "tokens_out": 10682,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.07865402464,
+    "basis": "reported"
+  },
+  "views": {
+    "CAT": {
+      "symbol": "CAT",
+      "score": -1.0,
+      "conviction": 0.5,
+      "time_horizon": "quarter",
+      "rationale": "CAT's fundamental health is genuinely strong \u2014 22% YoY revenue growth, 30% EPS growth, $63B record backlog, and a structural AI/data center power generation tailwind. However, the stock is at an extreme valuation: 45.5x trailing P/E (at its 365-day ceiling, up from 16.8x a year ago), 2.2% earnings yield vs 4.47% 10Y Treasury, and ~23x P/B. Multiple expansion accounts for ~80% of the 175% price move over the past year. Gross margins are compressing (37.1% \u2192 35.1% YoY), tariff headwinds of $2.2-2.4B are real, and Q1 cash conversion was weak (OCF/NI = 0.73x). The stock is priced for flawless execution on backlog conversion with zero margin of safety. Any cyclical deceleration, tariff escalation, or data center construction pause would expose the extreme multiple to rapid de-rating. The prior 22.4% drawdown during the 2025 tariff shock confirms this sensitivity. All three pillars align negatively: deteriorating margin trajectory, extreme overvaluation vs own history, and downside catalyst risk from tariff costs and macro slowdown.",
+      "key_factors": [
+        "P/E of 45.5x is at 365-day ceiling (range 16.4-45.8), up 169% from 16.8x a year ago; median P/E over window is ~26.4x, implying ~72% premium to median",
+        "Earnings yield of 2.2% is less than half the 10Y Treasury yield of 4.47% \u2014 stock must deliver >4% real earnings growth indefinitely to match risk-free returns",
+        "Gross margin compressed 200bps YoY (37.1% Q1 2025 \u2192 35.1% Q1 2026) in an inflationary cost environment with WTI at $104.66",
+        "Tariff headwinds of $2.2-2.4B for full-year 2026; Q1 absorbed $710M; Resource Industries segment profit fell 39% and margin contracted to 10% from 17% YoY",
+        "Q1 2026 OCF/NI = 0.73x (weak cash conversion vs Q3 2025's 1.63x), indicating earnings quality concern in latest quarter",
+        "Balance sheet leverage elevated: D/E ~4.1x with liabilities growing +14.9% YoY vs equity +3.3%; limited cushion if cycle turns",
+        "Multiple expansion accounts for ~80% of the 175% trailing 12-month price return (from ~$336 to $920.22) \u2014 price far ahead of fundamental trajectory",
+        "Prior 22.4% drawdown during 2025 tariff shock confirms sensitivity of richly valued stock to negative catalysts",
+        "$63B record backlog and AI/data center power demand (Power Generation +41% in Q1) are genuine positives but already priced in at current multiples",
+        "Potential IEEPA tariff refund of $1.5-1.8B is a possible near-term tailwind but uncertain and not enough to justify the valuation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "revenue=17.41B, eps_diluted=5.47, YoY revenue=+22.2%, YoY eps=+30.2%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "gross_margin compression Q1 2025 37.1% \u2192 Q1 2026 35.1% (\u2013200bps YoY)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "operating_cash_flow=1.87B (OCF/NI=0.73x, weak Q1 conversion vs Q3's 1.63x)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "relevance": 1.0,
+          "excerpt": "total_liabilities=76.89B, total_equity=18.66B (D/E\u22484.1x, liabilities +14.9% YoY)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted=45.469 (365d range 16.4..45.8, at ceiling)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "p_b=22.971, earnings_yield=0.022 (vs 10y_yield=4.47%)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "pe_diluted expanded from 16.795 (2025-05-15) to 45.469 \u2014 169% multiple expansion"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "close=920.22, 52w low=336.24 (approx +175% return), near ATH 931.35"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-14",
+          "relevance": 1.0,
+          "excerpt": "DGS10=4.47%, DCOILWTICO=104.66 (cost headwind; energy-capex tailwind)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnbc.com",
+          "relevance": 1.0,
+          "excerpt": "Revenue from its core construction segment jumped 38%... manufacturing costs of $710 million, largely tied to higher tariffs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.kavout.com",
+          "relevance": 1.0,
+          "excerpt": "substantial tariff headwinds of $2.2 billion to $2.4 billion for 2026... Supreme Court ruling may provide $1.5 billion to $1.8 billion in tariff refunds"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "energynewsbeat.co",
+          "relevance": 1.0,
+          "excerpt": "Power Generation sales within the segment jumped 41% to $2.817 billion... record backlog of approximately $63 billion... raised its full-year 2026 sales and revenues guidance to low double-digit growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.trefis.com",
+          "relevance": 1.0,
+          "excerpt": "substantial profit headwinds from trade tariffs with an estimated financial impact of up to $1.75 billion... high vulnerability to cyclical downturns"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stockstory.org",
+          "relevance": 1.0,
+          "excerpt": "P/E ratio based on the next 12 months is 36.8x... 36.6% return on capital"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CAT",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4541,
+        "capped_chars": 4541,
+        "raw_tokens": 1135,
+        "capped_tokens": 1135
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241972,
+        "capped_chars": 241972,
+        "raw_tokens": 60493,
+        "capped_tokens": 60493
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30909,
+        "capped_chars": 30909,
+        "raw_tokens": 7727,
+        "capped_tokens": 7727
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1615,
+        "capped_chars": 1615,
+        "raw_tokens": 404,
+        "capped_tokens": 404
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 19141,
+        "capped_chars": 4288,
+        "raw_tokens": 4785,
+        "capped_tokens": 1072
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 114500,
+        "capped_chars": 94830,
+        "raw_tokens": 28625,
+        "capped_tokens": 23707
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 145374,
+  "started_at": "2026-08-06T03:27:57+00:00"
+}

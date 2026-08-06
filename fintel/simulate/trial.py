@@ -10,27 +10,86 @@ Cells run sequentially by default. A strategy with a thread-safe agent may set
 `cell_concurrency > 1`; a non-thread-safe one (the LLM host, which accumulates
 trace on `self`) must stay at 1, which is why it's the default and not derived
 from the job's `max_concurrent`.
+
+When the run uses `shared_concurrency`, cells are executed by the run layer's
+flat pool; this module still owns `finalize_trial` (reduce + write decision).
 """
 
 from __future__ import annotations
 
 import time
 from datetime import date as Date
-from pathlib import Path
 
 from fintel.environment.cell import Cell
 from fintel.environment.factory import RuntimeConfig, cells_for
+from fintel.environment.progress import NullProgress, Progress
 from fintel.market.data.base import DataSource
 from fintel.market.settings import MarketConfig
 from fintel.models.agent import AgentSpec
 from fintel.models.decision import AgentResponse
 from fintel.models.paths import TrialPaths
 from fintel.models.trial import CellResult, TrialConfig, TrialResult
-from fintel.simulate.cell import CellOutcome, run_cell
-from fintel.environment.progress import NullProgress, Progress
 from fintel.simulate.artifacts import write_decision, write_trial_result
+from fintel.simulate.cell import CellOutcome, run_cell
 from fintel.simulate.queue import map_parallel
 from fintel.simulate.record import reduce_decision, reduce_trial
+
+
+def finalize_trial(
+    *,
+    decision_date: Date,
+    cells: list[Cell],
+    outcomes: list[CellOutcome | None],
+    paths: TrialPaths,
+    started_at: str,
+    progress: Progress | None = None,
+    duration_ms: int | None = None,
+) -> TrialResult:
+    """Reduce cell outcomes into one decision + trial result (single writer).
+
+    Used by both the nested per-date fan-out and the flat `shared_concurrency`
+    pool: execution may interleave across dates, but decision.json is still
+    written once all cells for *this* date have returned.
+    """
+    progress = progress or NullProgress()
+    cell_results: list[CellResult] = []
+    responses: list[tuple[str, AgentResponse]] = []
+    for cell, outcome in zip(cells, outcomes):
+        if outcome is None:
+            cell_results.append(
+                CellResult(
+                    cell=cell.name,
+                    symbols=list(cell.symbols),
+                    status="failed",
+                    error="cell returned no outcome",
+                    health="broken",
+                    health_issues=["cell returned no outcome"],
+                )
+            )
+            continue
+        cell_results.append(outcome.result)
+        responses.append((cell.name, outcome.response))
+
+    decision = reduce_decision(responses)
+    write_decision(paths.decision, decision)
+
+    finished_at = _now_iso()
+    result = reduce_trial(
+        decision_date,
+        cell_results,
+        started_at=started_at,
+        finished_at=finished_at,
+        duration_ms=duration_ms if duration_ms is not None else 0,
+    )
+    write_trial_result(paths.result, result)
+    progress.emit(
+        "trial_done",
+        decision_date=decision_date.isoformat(),
+        status=result.status,
+        n_views=result.n_views,
+        health=result.health,
+    )
+    return result
 
 
 def run_trial(
@@ -43,6 +102,7 @@ def run_trial(
     cell_concurrency: int = 1,
     mission_text: str = "",
     output_schema_text: str = "",
+    company_names: dict[str, str] | None = None,
     market_config: MarketConfig | None = None,
     progress: Progress | None = None,
 ) -> TrialResult:
@@ -88,6 +148,7 @@ def run_trial(
                 cell_path=paths.cell(cell.name),
                 mission_text=mission_text,
                 output_schema_text=output_schema_text,
+                company_names=company_names or {},
                 market_config=market_config,
                 progress=progress,
             )
@@ -108,45 +169,16 @@ def run_trial(
             )
 
     outcomes = map_parallel(_run_one, cells, bound=cell_concurrency)
-    cell_results: list[CellResult] = []
-    responses: list[tuple[str, AgentResponse]] = []
-    for cell, outcome in zip(cells, outcomes):
-        if outcome is None:
-            cell_results.append(
-                CellResult(
-                    cell=cell.name,
-                    symbols=list(cell.symbols),
-                    status="failed",
-                    error="cell returned no outcome",
-                    health="broken",
-                    health_issues=["cell returned no outcome"],
-                )
-            )
-            continue
-        cell_results.append(outcome.result)
-        responses.append((cell.name, outcome.response))
-
-    # The fan-in: one writer, after all cells are done.
-    decision = reduce_decision(responses)
-    write_decision(paths.decision, decision)
-
     elapsed_ms = int((time.perf_counter() - started) * 1000)
-    result = reduce_trial(
-        trial_config.decision_date,
-        cell_results,
+    return finalize_trial(
+        decision_date=trial_config.decision_date,
+        cells=cells,
+        outcomes=outcomes,
+        paths=paths,
         started_at=started_at,
-        finished_at=_now_iso(),
+        progress=progress,
         duration_ms=elapsed_ms,
     )
-    write_trial_result(paths.result, result)
-    progress.emit(
-        "trial_done",
-        decision_date=trial_config.decision_date.isoformat(),
-        status=result.status,
-        n_views=result.n_views,
-        health=result.health,
-    )
-    return result
 
 
 def _now_iso() -> str:

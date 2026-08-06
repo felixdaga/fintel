@@ -1,26 +1,14 @@
 # systematic_stockrate_djia_weekly — DJIA single-ticker systematic stock rating,
 # weekly assessment cadence, fundamental attractiveness + trajectory view.
 #
-# Sibling of systematic_stockrate_djia (the quarterly package). Same single-ticker
-# pattern — one agent call per (decision_date, ticker) — scored with
-# single_name_ir. Intentional differences from the quarterly package:
+# Sibling of systematic_stockrate_djia_monthly. Same single-ticker
+# pattern, mission pillars, data surface, and output contract — intentional
+# differences are date / horizon only:
 #   * the decision grid is weekly (Fridays, holiday-snapped forward) over
 #     2026-04-24 .. 2026-07-31 — the cadence of assessment, not the view horizon
-#   * the mission asks for a fundamental attractiveness + trajectory rating
-#     (no fixed horizon, explicitly not a momentum call); the output schema's
-#     default time_horizon is "quarter"
-#   * scoring horizons are decision-date-grid steps (weeks): [1, 2, 4, 8].
-#     These do NOT represent the agent's view horizon — the window is too short
-#     to measure a multi-quarter fundamental trajectory. They are the measurable
-#     forward grid the KPI can score; the agent's fundamental view is the signal,
-#     scored on whatever forward grid exists.
-#   * the data surface is tuned for a fundamental/trajectory view at weekly
-#     cadence: lookbacks are the deliberate signal filter (the adapter renders ALL
-#     data in each window; a single context-budget ceiling truncates only at
-#     the limit). Macro (FRED) and news_sentiment are added; news is trimmed to
-#     recent context only. Filing text is left out for now (fundamentals +
-#     ratios already carry the quantitative essence; the qualitative business
-#     narrative can be wired back in later if the rating needs it).
+#   * scoring horizons are decision-date-grid steps (weeks): [1, 2, 4, 8]
+#   * mission pillar-3 language is weeks-to-quarter (monthly package uses
+#     quarter-to-year)
 #
 # Data surface partitioning (adapter owns):
 #   quantitative specialist ← prices + fundamentals + ratios + macro + news_sentiment

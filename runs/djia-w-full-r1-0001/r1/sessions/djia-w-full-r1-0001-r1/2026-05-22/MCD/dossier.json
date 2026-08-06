@@ -1,0 +1,158 @@
+{
+  "symbol": "MCD",
+  "decision_date": "2026-05-22",
+  "cell": "MCD",
+  "agent": "optimized",
+  "version": "1.0.0",
+  "model": "xiaomi/mimo-v2.5-pro",
+  "ticker": "MCD",
+  "pipeline": "quant\u2016qual \u2192 verify \u2192 final_pm",
+  "quantitative_report": "## Quantitative Report: MCD \u2014 Fundamental Attractiveness Assessment\n\n**Decision date: 2026-05-22 | Latest filing: 2026-05-07 (Q1 2026, period_end 2026-03-31)**\n\n---\n\n### 1. Revenue, Earnings, and Margin Trajectory\n\nMCD's top-line continues to expand on a year-over-year basis. Q1 2026 revenue of $6.52B grew +9.4% versus Q1 2025's $5.96B. EPS diluted rose to $2.78 from $2.60, a +6.9% YoY gain. Gross profit grew +9.5% YoY to $5.84B, indicating solid pricing power or traffic improvement in the franchise model.\n\nMargins remain structurally high and essentially stable. Q1 2026 operating margin (operating income / revenue) = $2.95B / $6.52B = 45.2%, versus Q1 2025's $2.65B / $5.96B = 44.5% \u2014 a modest expansion. Net margin = $1.98B / $6.52B = 30.4%, compared to Q1 2025's $1.87B / $5.96B = 31.4% \u2014 a slight contraction, likely reflecting higher below-the-line costs. Gross margin is extraordinarily high at $5.84B / $6.52B = 89.6%, consistent with the asset-light franchise model (cost of revenue only $676M).\n\n**Sequential context caveat:** The available four quarters are Q1 2026, Q3 2025, Q2 2025, Q1 2025 \u2014 with a fiscal Q4 gap. QoQ figures (e.g., revenue -7.9%, EPS -12.6%) compare Q1 against Q3, which is not a same-season comparison and is therefore not meaningful for trend assessment. The YoY Q1-versus-Q1 comparison is the valid lens.\n\n### 2. Cash Generation\n\nOperating cash flow in Q1 2026 was $2.41B. This compares to Q1 2025's $2.43B \u2014 essentially flat YoY (-0.7%). On a sequential basis, Q1 2026 is below Q3 2025's $3.43B, but this is a cross-season comparison and not interpretable. Free cash flow data is unavailable across all quarters. Cash generation remains robust in absolute dollar terms, though the YoY deceleration from revenue growth of +9.4% to flat OCF growth warrants monitoring for working capital or capex changes.\n\n### 3. Balance Sheet Resilience\n\nThis is the most conspicuous structural feature. Total equity stands at **-$1.29B** as of Q1 2026, meaning total liabilities ($61.32B) exceed total assets ($60.04B). The equity deficit has been persistent and deepening: Q1 2025 = -$3.45B, Q2 2025 = -$2.76B, Q3 2025 = -$2.16B, Q1 2026 = -$1.29B. The trend toward less-negative equity is modestly positive \u2014 the deficit has narrowed by $2.16B over four quarters \u2014 but the absolute level of negative book equity, combined with $61.3B in liabilities against a ~$60B asset base, leaves zero margin for asset-side impairment. For context, this capital structure is characteristic of MCD's aggressive return-of-capital model (buybacks + dividends exceeding cumulative retained earnings), but it amplifies sensitivity to any sustained revenue or cash-flow shortfall.\n\n**Important data quality note:** Total liabilities appear to jump from $3.45B (Q1 2025) to $62.77B (Q3 2025). The Q1 2025 figure may be misreported or represent only a partial liability classification. The Q3 2025 and Q1 2026 figures are internally consistent with reported equity.\n\n### 4. Valuation Versus Own History\n\nValuation ratio data is severely degraded. The supplied pe_diluted series returns **0.0x across all 12 observations** from 2025-05-22 through 2026-05-21. The reported earnings_yield = 42.80%, which would imply a P/E of ~2.3x \u2014 an implausible figure for MCD and likely a data artifact (possibly an annualization or numerator/denominator error). FCF yield and P/B are reported as n/a. No reliable valuation multiple is available for historical comparison.\n\nThe only usable profitability metric from the ratios panel is **net_margin = 0.316** (31.6%) as of 2026-05-21, which is stable within its 12-point range of 0.30\u20130.32 over the trailing year. Operating_margin = 0.463 (46.3%). These confirm the margin durability story but do not provide a valuation lens.\n\n**Without a functioning P/E, EV/EBIT, or P/B series, I cannot assess whether the market is paying more or less for MCD's earnings power than its own history. This is a material blind spot.**\n\n### 5. Price Context\n\nMCD closed at **$284.18** on 2026-05-21. The 365-day range is $271.98\u2013$341.75; the stock sits in the lower quartile, 17% below its high. The quarterly path shows a sharp **-13.7% decline** from $329.23 (2026-02-20) to the current level, after a +8.1% gain in the prior 63-day window. Price has moved meaningfully lower while fundamentals show YoY revenue/earnings growth \u2014 suggesting either a valuation multiple compression, a macro-driven repricing, or anticipation of headwinds.\n\n### 6. Macro and Sentiment Overlays\n\nThe macro environment has shifted against rate-sensitive and input-sensitive names:\n\n- **Rates are elevated and rising:** 10-year Treasury = 4.57% (up +13.4% from 4.03% in late February). 2-year = 4.08%. The yield curve is positive (T10Y2Y = 0.49%) but the absolute level of long rates compresses earnings yield attractiveness for stable-earnings equities.\n- **Oil has surged:** WTI = $100.20/bbl, up **+51%** from $66.36 in late February. This is a direct input cost headwind for a restaurant company (food, packaging, energy for operations) and a consumer spending pressure point.\n- **Credit spreads are widening:** Moody's Baa yield = 6.16%, up from 5.76% (+40bp), reflecting tighter financial conditions that increase MCD's debt service costs given its leveraged balance sheet.\n- **VIX = 16.76**, down from recent highs but the path from 21\u219231\u219217 signals episodic volatility.\n\nNews sentiment is moderately positive at mean = 0.394, but readings have turned mixed-to-negative in May (three negative scores in early May: -1.0 on 2026-05-04, -1.0 on 2026-05-06, -1.0 on 2026-05-12). This is a weak signal but directionally consistent with the price decline.\n\n### 7. Strongest Quantitative Upside and Downside\n\n**Upside:** MCD's core earnings power is intact and growing. YoY revenue +9.4%, EPS +6.9%, and operating margins expanding to 45.2% demonstrate the durability of the franchise model. Operating cash flow generation of $2.41B per quarter supports continued capital returns. The stock has de-rated ~14% in one quarter, and if the macro environment normalizes (oil retreats, rates stabilize), the earnings trajectory could support a meaningful re-rating \u2014 particularly if the current valuation (unmeasurable from supplied data but likely compressed) has overshot.\n\n**Downside:** Negative equity of -$1.29B with $61.3B in liabilities, set against a backdrop of 10-year yields at 4.57% and Baa spreads widening to 6.16%, means debt refinancing costs are rising. Oil at $100/bbl (+51% in three months) directly pressures input costs and could erode the 30%+ net margins if sustained. A single quarter of flat OCF growth against +9% revenue growth suggests cash conversion may be deteriorating. If these macro pressures persist into Q2/Q3, YoY growth could decelerate or reverse, and the leveraged balance sheet limits flexibility.\n\n---\n\n### Provisional Conclusion\n\nMCD's fundamental earnings engine remains solid: +9.4% YoY revenue growth, 45%+ operating margins, and $2.4B quarterly operating cash flow. However, the quantitative picture is clouded by three factors: (1) a severely negative book equity position that creates structural fragility in a rising-rate environment, (2) a macro regime \u2014 oil at $100 and 10-year yields at 4.57% \u2014 that pressures both input costs and valuation multiples for defensive compounders, and (3) a broken valuation data series that prevents me from confirming whether the 14% price decline has already priced these risks in or merely begun to. On balance, the business trajectory is **neutral-to-modestly-positive** on fundamentals, but the macro overlay and balance-sheet leverage introduce meaningful downside risk that I cannot confirm is compensated by current valuation. The provisional stance is **hold-with-caution** until valuation data becomes available or the macro picture clarifies.\n\n---\n\n## key evidence\n\nfundamentals | 2026-03-31 Q1 | revenue=6.52B (YoY +9.4% vs 5.96B), eps_diluted=2.78 (YoY +6.9% vs 2.60)\nfundamentals | 2026-03-31 Q1 | operating_income=2.95B, operating_margin=45.2%\nfundamentals | 2026-03-31 Q1 | operating_cash_flow=2.41B (YoY -0.7% vs 2.43B)\nfundamentals | 2026-03-31 Q1 | total_equity=-1.29B, total_liabilities=61.32B\nratios | 2026-05-21 | pe_diluted=0.0x (data error \u2014 unusable across full 12-pt history)\nratios | 2026-05-21 | net_margin=0.316, operating_margin=0.463\nprices | 2026-05-21 | close=284.18, quarterly delta=-13.7%, 52w high=341.75\nmacro | 2026-05-21 | DGS10=4.57%, DCOILWTICO=100.20, DBAA=6.16%",
+  "qualitative_report": "## Qualitative Assessment: McDonald's Corporation (MCD)\n\n**Decision Date: 2026-05-22 | Assessment: Positive with near-term consumer softness caveat**\n\n---\n\n### 1. Business / Franchise Read\n\nMcDonald's operates the gold-standard QSR franchise model. As of Q1 2026, ~95% of its 45,699 restaurants are franchised, generating high-margin royalty and rental income streams that produced a 45.3% operating margin in Q1 2026 and 46.1% for FY2025 \u2014 roughly 12\u201315 percentage points above Yum! Brands (~32\u201334%) and Restaurant Brands International (~33\u201335%). The company owns the land under ~55% of franchised restaurants and the buildings on 80%, effectively running one of the world's largest commercial real-estate portfolios (net PP&E of $42.85 billion per FY2025). This dual income structure \u2014 royalties tied to sales plus captive rent \u2014 creates a toll-road economics dynamic where McDonald's captures revenue growth while franchisees absorb most operating cost volatility.\n\nCompetitive positioning rests on five interlocking advantages: (1) a top-10 global brand valued at >$220 billion (Statista, 2025); (2) unmatched procurement scale as arguably the world's largest beef and potato buyer, supporting a 57.4% gross margin versus a sub-industry average of ~45\u201350%; (3) real estate ownership that lowers franchisee rent volatility; (4) a digital loyalty ecosystem with ~210 million 90-day active users across 70 markets, generating ~$40 billion in systemwide loyalty sales and driving 2.5x higher visit frequency among members; and (5) structural delivery/digital integration exceeding 40% of systemwide sales in top six markets, well above the 25\u201335% QSR peer average.\n\nCapital efficiency is demonstrably superior: FY2025 ROIC of 18.2% and ROCE of 23.3% versus sub-industry medians of 12\u201315%. The franchise model is capital-light \u2014 management guided $3.7\u2013$3.9 billion in 2026 capex with ~2,600 new openings, while targeting ~2.5% systemwide sales growth from net unit expansion alone, with mid-to-high-40% operating margins and low-to-mid 80% free cash flow conversion.\n\n### 2. Recent Developments (Dated)\n\n**Q1 2026 Earnings (reported ~May 7\u201314, 2026):** Revenue rose 9% to $6.52 billion; operating income grew 12% to $2.95 billion; diluted EPS reached $2.78 ($2.83 adjusted). Global comparable sales increased 3.8%, with U.S. comp sales at +3.9%, International Operated Markets at +3.9%, and Developmental Licensed Markets at +3.4%. Franchised restaurants contributed more than 90% of restaurant margin dollars. The stock nevertheless declined ~2.94% post-earnings, reflecting valuation recalibration against a macro-overhang narrative.\n\n**CEO commentary on consumer (2026-05-14, CNBC):** The CEO flagged that consumer spending could be \"getting a little bit worse,\" specifically citing deteriorating economic conditions among lower-income families. Company-owned U.S. locations (less than 5% of domestic footprint) showed weaker margins; management is considering selling them to franchisees. CFO guided for weaker Q2 sales due to lapping a prior-year \"Minecraft\" movie tie-in promotion, noting deceleration was anticipated even before consumer sentiment weakened.\n\n**Valuation compression (2026-05-15, Investing.com):** The stock has fallen ~20% from February highs, trading at a P/E of 23 \u2014 the lowest in nearly two years \u2014 with an RSI of 25 (oversold). Analysts see ~35% upside; JPMorgan, Evercore, and BTIG maintain bullish ratings with targets of $305\u2013$370.\n\n**Dividend declaration (2026-05-20):** Board declared a quarterly dividend of $1.86/share payable mid-June 2026, on track for a 49th consecutive year of increases (approaching Dividend King status). Total shareholder yield (dividend + buyback) estimated at ~3.4%.\n\n**Emissions target miss (2026-05-19, Trellis):** McDonald's disclosed it will not meet its 2030 science-based Scope 3 supplier emissions target (50.4% cut), citing geopolitics, fragile supply chains, and slow clean energy deployment. It reaffirmed its 2050 net-zero commitment and announced a $1 billion investment in supply chain resilience over the next decade.\n\n### 3. Material Risks and Offsets\n\n**Consumer spending softness (medium risk).** Rising gas prices ($4.20/gallon) are compressing lower-income household budgets; multiple sources cite restaurant traffic declines of ~1.5% at current fuel costs. The CEO's own commentary validates this. *Offset:* McDonald's value positioning (McValue menu launched January 2025) and drive-thru convenience historically enable trade-down capture during downturns. The franchise model insulates corporate margins \u2014 royalties are sales-based, not margin-based.\n\n**Competition and value wars (medium risk).** Wendy's, Burger King, and Chick-fil-A are intensifying value-menu promotions. Wendy's is pivoting aggressively to China after U.S. sales declined 7.8% in Q1 2026. Chick-fil-A's estimated per-store revenue (~$8M+) vastly exceeds McDonald's (~$3.8M). *Offset:* McDonald's scale, brand, and digital ecosystem create switching-cost advantages that smaller competitors cannot replicate. The 210M-user loyalty platform deepens engagement.\n\n**Labor cost and regulatory pressure (medium risk).** California-style minimum wage legislation could spread; franchisee margin compression is a documented concern. GLP-1 adoption may reduce QSR visit frequency by 2\u20135% over 5\u201310 years (low-medium probability). *Offset:* Asset-light structure shifts labor risk to franchisees; royalty income is less sensitive to store-level margin erosion.\n\n**Supply chain / ESG risk (low-medium risk).** The Scope 3 emissions miss is reputational but not directly financially material in the near term. The $1B supply chain resilience investment signals proactive capital deployment.\n\n**Franchisee alignment (low risk, monitoring).** Historically a tension point during periods of mandatory capex increases; the current expansion plan to 50,000 restaurants by 2027 requires strong franchisee buy-in. No evidence of acute friction in the current data.\n\n### 4. Qualitative Assessment\n\nThe narrative **supports fundamental attractiveness**. McDonald's franchise quality is best-in-class \u2014 a capital-light toll-road model with 46%+ operating margins, unmatched real estate ownership, and a rapidly scaling digital loyalty platform that is structurally deepening customer engagement and visit frequency. The \"Accelerating the Arches\" strategy targeting 50,000 stores by 2027 and $45B in loyalty sales provides a credible unit-growth and engagement-growth runway that few mega-cap companies can match.\n\nThe near-term headwind is real but cyclical: lower-income consumer softness and gas price pressure are pressuring restaurant traffic broadly, and the stock has re-rated accordingly (-20% from highs, P/E at two-year lows). This does not impair the franchise; it creates a valuation entry point for a durable business. The Q1 2026 earnings beat ($2.83 vs. $2.74 consensus) and sustained 3.8% global comp sales growth demonstrate that the franchise is performing even against this backdrop.\n\nThe primary concern for qualification is that if consumer weakness deepens materially, even McDonald's defensive positioning has limits \u2014 and the CEO's own language (\"getting a little bit worse\") suggests visibility is limited. However, the structural moat, capital-return profile (3.4% total yield, 49 years of dividend growth), and operating margin resilience provide a substantial cushion. The risk/reward at current valuation appears favorable for a franchise of this quality.\n\n---\n\n## key evidence\n\nweb_search | koalagains.com (FY2025 data) | \"near 95% franchised, McDonald's collects high-margin royalties (typically 4-5% of sales) plus rent, generating an FY2025 operating margin of 46.1% on $26.89 billion of revenue\"\nweb_search | koalagains.com (FY2025 data) | \"FY2025 ROIC of 18.2% and ROCE of 23.3% are well above sub-industry medians around 12-15%\"\nweb_search | koalagains.com (loyalty data) | \"MyMcDonald's Rewards loyalty program reached ~210 million 90-day active users by year-end 2025, up 19% YoY, generating ~$40 billion in systemwide loyalty sales (target: $45 billion by 2027 and 250 million users)\"\nweb_search | stocktitan.net (Q1 2026 filing) | \"Total revenues rose to $6.52 billion from $5.96 billion, while global comparable sales increased 3.8% on positive results across all segments\u2026 operating margin 45.3%\"\nweb_search | cnbc.com (Q1 2026) | \"McDonald's CEO says consumer spending could be 'getting a little bit worse'\u2026 company-owned restaurants seeing weaker margins, so McDonald's is considering selling them to franchisees\"\nnews | 2026-05-15 \u2014 Investing.com | \"McDonald's stock has fallen 20% from February highs\u2026 Trading at a P/E ratio of 23 (lowest in nearly two years) with an oversold RSI of 25, analysts see 35% upside potential\"\nweb_search | trellis.net (2026-05-19) | \"McDonald's doesn't expect to reach its science-based target to halve the industrial and energy emissions from its vast supply chain\u2026 plans $1 billion investment in supply chain resilience over next decade\"\nnews | 2026-05-12 \u2014 The Motley Fool | \"Rising gas prices are straining lower-income consumers' budgets\u2026 McDonald's, despite value positioning, shows cracks as CEO warns of deteriorating economic conditions\"",
+  "verification": {
+    "recommendation": "KEEP",
+    "severity": "minor",
+    "verified_points": [
+      "Q1 2026 revenue $6.52B vs Q1 2025 $5.96B = +9.4% YoY, confirmed in raw fundamentals pack.",
+      "Q1 2026 EPS diluted $2.78 vs Q1 2025 $2.60 = +6.9% YoY, confirmed in raw fundamentals pack.",
+      "Q1 2026 operating income $2.95B, operating margin = 2.95/6.52 = 45.2%, confirmed in raw pack.",
+      "Q1 2026 operating cash flow $2.41B vs Q1 2025 $2.43B = -0.7% YoY, confirmed in raw cash flow pack.",
+      "Q1 2026 total equity = -$1.29B, total liabilities = $61.32B, confirmed in raw balance sheet pack.",
+      "Net margin 0.316 (31.6%) as of 2026-05-21 confirmed in raw ratios pack; operating margin 0.463 (46.3%) also confirmed.",
+      "MCD close $284.18 on 2026-05-21 confirmed; quarterly delta -13.7% from $329.23 on 2026-02-20 confirmed.",
+      "DGS10 = 4.57% on 2026-05-21 confirmed; DCOILWTICO = $100.20 confirmed; DBAA = 6.16% confirmed.",
+      "pe_diluted = 0.0x across all 12 observations confirmed as data error in raw ratios pack.",
+      "TTM flagged as incomplete in raw pack (fiscal Q4 gap between Q1 2025 and Q2 2025); quant report correctly notes this caveat and does not compute a TTM sum.",
+      "Qual report's claim of 45.3% operating margin for Q1 2026 is consistent with quant's 45.2% (rounding from 2.95/6.52 = 45.24%).",
+      "Qual report's FY2025 operating margin of 46.1% and ROIC of 18.2% are sourced from koalagains.com web context and are not contradicted by any raw pack data (FY2025 data not in raw pack).",
+      "Qual report's claim of ~95% franchised is confirmed by stocktitan.net filing excerpt: 'Of the 45,699 McDonald's restaurants at March 31, 2026, approximately 95% were franchised.'",
+      "Dividend of $1.86/share declared 2026-05-20 confirmed in qual evidence (ad-hoc-news.de dated 05/20/2026).",
+      "News sentiment mean = 0.394 confirmed; three negative scores in early May (-1.0 on 05/04, 05/06, 05/12) confirmed in raw sentiment pack."
+    ],
+    "unsupported_claims": [
+      "Qual report states 'P/E of 23' citing Investing.com 2026-05-15. The raw ratios pack shows pe_diluted = 0.0x across all 12 observations (data error). The P/E of 23 is sourced from a web article, not from the raw quantitative pack. This is not an internal contradiction per se (qual uses web sources), but the quant report correctly flags the valuation data as broken, and the qual report's reliance on an externally sourced P/E without acknowledging the pack's data error creates a misleading impression of valuation precision.",
+      "Qual report states 'stock has fallen ~20% from February highs.' The raw price pack shows quarterly delta of -13.7% from $329.23 (2026-02-20) to $284.18. The 52-week high is $341.75; from that high, the decline is ($341.75-$284.18)/$341.75 = 16.8%. The ~20% figure is not supported by the raw price data \u2014 it appears to come from the Investing.com article and may reference an intraday or different-date high not in the pack.",
+      "Qual report states 'Q1 2026 earnings beat ($2.83 vs. $2.74 consensus).' The $2.83 adjusted EPS is from CNBC/web sources. The raw fundamentals pack shows eps_diluted = $2.78. The $2.83 figure is an adjusted (ex-items) number not present in the raw pack. The quant report uses $2.78 consistently. This is not a contradiction (different measures), but the qual report does not flag the distinction between GAAP ($2.78) and adjusted ($2.83).",
+      "Qual report states 'global comparable sales increased 3.8%' \u2014 this is sourced from stocktitan.net and CNBC web context, not from the raw quantitative pack (which does not contain comp sales data). This is acceptable as qual uses web sources, but the PM should note this figure is not independently verified against SEC filings in the raw pack.",
+      "Qual report states 'Wendy's U.S. sales declined 7.8% in Q1 2026' \u2014 sourced from a Motley Fool article about Wendy's, not from MCD's raw evidence. This is competitor context from web search, which is within qual's scope but not independently verified."
+    ],
+    "corrections": [
+      {
+        "id": "C1",
+        "issue": "The qual report's ~20% stock decline claim overstates the raw-pack-measured decline of ~14% (from quarterly path) to ~17% (from 52-week high). The PM should use the pack-verified -13.7% quarterly decline or -16.8% from 52-week high as the anchor, not the unverified ~20% figure from a web article.",
+        "required_action": "Note that the verified decline from the 52-week high ($341.75) to current ($284.18) is 16.8%, and from the Feb 20 quarterly anchor is 13.7%. The ~20% figure likely references a different date or intraday level."
+      },
+      {
+        "id": "C2",
+        "issue": "The qual report cites a P/E of 23 from Investing.com while the raw ratios pack shows pe_diluted = 0.0x (data error). The quant report correctly flags this as broken. The PM should not rely on either figure for valuation work \u2014 the P/E of 23 is an external estimate not verifiable from supplied data.",
+        "required_action": "Treat valuation as unmeasurable from supplied packs. If P/E of 23 is used from external sources, flag it as unverified against the raw data feed."
+      },
+      {
+        "id": "C3",
+        "issue": "The qual report uses adjusted EPS of $2.83 while the raw pack shows GAAP eps_diluted of $2.78. The $0.05 difference is the ex-items adjustment. Both are defensible but the PM should be aware the raw pack figure is GAAP.",
+        "required_action": "When modeling, use $2.78 GAAP EPS from the raw pack as the baseline; note $2.83 adjusted as a separate figure from web sources."
+      }
+    ]
+  },
+  "verification_flag": null,
+  "pm_emit_path": "submit_views",
+  "final_decision": "",
+  "submit_args": {
+    "views": [
+      {
+        "symbol": "MCD",
+        "score": 0.25,
+        "rationale": "MCD's fundamental health is strong: Q1 2026 revenue +9.4% YoY to $6.52B, EPS +6.9% to $2.78, operating margin 45.2%, and $2.41B quarterly operating cash flow. The franchise model (95% franchised) generates best-in-class 46%+ operating margins with 18.2% ROIC. Global comp sales +3.8% and a 210M-user loyalty platform driving $40B in systemwide sales demonstrate durable competitive positioning. However, the balance sheet carries negative equity of -$1.29B with $61.3B in liabilities, creating structural fragility in a rising-rate environment (10Y at 4.57%, Baa spreads at 6.16%). Oil at $100/bbl (+51% in 3 months) is a direct input cost headwind and consumer spending pressure point, with the CEO himself flagging deteriorating conditions among lower-income families. Valuation is unmeasurable from supplied data (P/E series broken), but external sources suggest P/E ~23 at two-year lows with the stock down ~14-17% from highs \u2014 potentially offering a modest entry point for a quality franchise. The near-term catalyst is limited: Q2 guidance is for weaker sales due to lapping a prior-year promotion, and macro headwinds (oil, rates) show no sign of abating. On balance, excellent franchise quality and solid earnings trajectory are partially offset by macro headwinds, leveraged balance sheet risk, and consumer softness \u2014 warranting a mildly positive score.",
+        "key_factors": [
+          "Q1 2026 revenue $6.52B, +9.4% YoY; EPS diluted $2.78, +6.9% YoY \u2014 core earnings engine intact",
+          "Operating margin 45.2% (Q1 2026) and 46.1% (FY2025), ~12-15pp above QSR peers \u2014 best-in-class franchise model",
+          "95% franchised with dual royalty + rent income streams; FY2025 ROIC 18.2%, ROCE 23.3% vs sub-industry medians 12-15%",
+          "Negative equity -$1.29B with $61.3B liabilities \u2014 structural fragility amplified by rising rates (10Y 4.57%, Baa 6.16%)",
+          "Oil at $100.20/bbl (+51% from Feb) pressures input costs and consumer spending; CEO warns consumer 'getting a little bit worse'",
+          "Stock down ~14% from Feb quarterly high ($329.23 to $284.18), trading near 52-week lows; external P/E ~23 at two-year lows",
+          "Loyalty platform: 210M 90-day active users, ~$40B systemwide loyalty sales, targeting $45B by 2027 \u2014 structural engagement moat",
+          "Q2 guidance for weaker sales (lapping Minecraft movie tie-in); macro headwinds (oil, rates) show no near-term resolution",
+          "Dividend $1.86/share declared, on track for 49th consecutive year of increases; total shareholder yield ~3.4%"
+        ],
+        "sources_cited": [
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-31 Q1",
+            "excerpt": "revenue=6.52B (YoY +9.4% vs 5.96B), eps_diluted=2.78 (YoY +6.9% vs 2.60)"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-31 Q1",
+            "excerpt": "operating_income=2.95B, operating_margin=45.2%"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-31 Q1",
+            "excerpt": "operating_cash_flow=2.41B (YoY -0.7% vs 2.43B)"
+          },
+          {
+            "source_type": "fundamentals",
+            "source_id": "2026-03-31 Q1",
+            "excerpt": "total_equity=-1.29B, total_liabilities=61.32B"
+          },
+          {
+            "source_type": "ratios",
+            "source_id": "2026-05-21",
+            "excerpt": "pe_diluted=0.0x (data error \u2014 unusable across full 12-pt history)"
+          },
+          {
+            "source_type": "ratios",
+            "source_id": "2026-05-21",
+            "excerpt": "net_margin=0.316, operating_margin=0.463"
+          },
+          {
+            "source_type": "prices",
+            "source_id": "2026-05-21",
+            "excerpt": "close=284.18, quarterly delta=-13.7%, 52w high=341.75"
+          },
+          {
+            "source_type": "macro",
+            "source_id": "2026-05-21",
+            "excerpt": "DGS10=4.57%, DCOILWTICO=100.20, DBAA=6.16%"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "koalagains.com (FY2025 data)",
+            "excerpt": "near 95% franchised, McDonald's collects high-margin royalties (typically 4-5% of sales) plus rent, generating an FY2025 operating margin of 46.1% on $26.89 billion of revenue"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "koalagains.com (FY2025 data)",
+            "excerpt": "FY2025 ROIC of 18.2% and ROCE of 23.3% are well above sub-industry medians around 12-15%"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "koalagains.com (loyalty data)",
+            "excerpt": "MyMcDonald's Rewards loyalty program reached ~210 million 90-day active users by year-end 2025, up 19% YoY, generating ~$40 billion in systemwide loyalty sales (target: $45 billion by 2027 and 250 million users)"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "stocktitan.net (Q1 2026 filing)",
+            "excerpt": "Total revenues rose to $6.52 billion from $5.96 billion, while global comparable sales increased 3.8% on positive results across all segments\u2026 operating margin 45.3%"
+          },
+          {
+            "source_type": "web_search",
+            "source_id": "cnbc.com (Q1 2026)",
+            "excerpt": "McDonald's CEO says consumer spending could be 'getting a little bit worse'\u2026 company-owned restaurants seeing weaker margins, so McDonald's is considering selling them to franchisees"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-05-15 \u2014 Investing.com",
+            "excerpt": "McDonald's stock has fallen 20% from February highs\u2026 Trading at a P/E ratio of 23 (lowest in nearly two years) with an oversold RSI of 25, analysts see 35% upside potential"
+          },
+          {
+            "source_type": "news",
+            "source_id": "2026-05-12 \u2014 The Motley Fool",
+            "excerpt": "Rising gas prices are straining lower-income consumers' budgets\u2026 McDonald's, despite value positioning, shows cracks as CEO warns of deteriorating economic conditions"
+          }
+        ]
+      }
+    ]
+  },
+  "error": null
+}
