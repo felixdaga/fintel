@@ -34,7 +34,9 @@ from fintel.simulate import (
 MISSION = "# Mission\nScore the names you are given."
 
 
-def _write_package(root: Path, *, scope: str = "single_name", symbols: list[str] | None = None) -> Path:
+def _write_package(
+    root: Path, *, scope: str = "single_name", symbols: list[str] | None = None
+) -> Path:
     root.mkdir(parents=True, exist_ok=True)
     (root / "mission.md").write_text(MISSION)
     (root / "output_schema.json").write_text("{}")
@@ -178,7 +180,14 @@ def test_reduce_run_usage_aggregated():
         TrialResult(
             decision_date=Date(2024, 1, 2),
             status="ok",
-            cells=[CellResult(cell="AAPL", symbols=["AAPL"], status="ok", usage=Usage(n_llm_calls=1, tokens_in=10))],
+            cells=[
+                CellResult(
+                    cell="AAPL",
+                    symbols=["AAPL"],
+                    status="ok",
+                    usage=Usage(n_llm_calls=1, tokens_in=10),
+                )
+            ],
         ),
     ]
     result = reduce_run("r1", "j1", 1, trials)
@@ -772,9 +781,7 @@ def test_backfill_reruns_error_cells_and_fixes_them(tmp_path):
             views = {}
             for s in sorted(env.policy.decidable):
                 if _fail_msft[0] and s == "MSFT":
-                    return AgentResponse(
-                        views={}, outcome="parse_error", detail="flaky fail"
-                    )
+                    return AgentResponse(views={}, outcome="parse_error", detail="flaky fail")
                 views[s] = View(symbol=s, score=0.5, rationale="ok")
             return AgentResponse(views=views)
 
@@ -786,7 +793,7 @@ def test_backfill_reruns_error_cells_and_fixes_them(tmp_path):
     job.__dict__["output_root"] = str(tmp_path / "runs")
 
     market = MarketConfig(cache_root=tmp_path / "cache", offline=True)
-    result = run_job(job, market_config=market, progress=NullProgress())
+    run_job(job, market_config=market, progress=NullProgress())
     # MSFT failed -> trial is partial (run is still ok because AAPL decided)
     trial_root = tmp_path / "runs" / "test-job-001" / "r1" / "trials" / "2024-01-02"
     msft_cell = json.loads((trial_root / "cells" / "MSFT.json").read_text())
@@ -819,17 +826,13 @@ def test_backfill_reruns_error_cells_and_fixes_them(tmp_path):
     assert set(decision) == {"AAPL", "MSFT"}
 
     # Run result: trial is now ok (was partial)
-    run_result = json.loads(
-        (tmp_path / "runs" / "test-job-001" / "r1" / "result.json").read_text()
-    )
+    run_result = json.loads((tmp_path / "runs" / "test-job-001" / "r1" / "result.json").read_text())
     assert run_result["status"] == "ok"
     trial_statuses = {t["decision_date"]: t["status"] for t in run_result["trials"]}
     assert trial_statuses["2024-01-02"] == "ok"
 
     # Job result is now ok
-    job_result = json.loads(
-        (tmp_path / "runs" / "test-job-001" / "result.json").read_text()
-    )
+    job_result = json.loads((tmp_path / "runs" / "test-job-001" / "result.json").read_text())
     assert job_result["status"] == "ok"
 
 

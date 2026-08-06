@@ -52,9 +52,7 @@ class RunData(BaseModel):
     decision_dates: list[Date] = Field(default_factory=list)
     universe: list[Symbol] = Field(default_factory=list)
     views_by_date: dict[Date, dict[Symbol, View]] = Field(default_factory=dict)
-    behaviour_by_date: dict[Date, dict[Symbol, CellBehaviour]] = Field(
-        default_factory=dict
-    )
+    behaviour_by_date: dict[Date, dict[Symbol, CellBehaviour]] = Field(default_factory=dict)
 
     def universe_at(self, decision_date: Date) -> list[Symbol]:
         """The symbols scored on a given date, in stable order."""

@@ -175,9 +175,7 @@ def test_preflight_reports_missing_env(tmp_path):
     # synthetic_prices needs no env, so use a source that does. We test the
     # env path by declaring a source whose requires_env is non-empty. The
     # massive_prices source requires MASSIVE_API_KEY.
-    manifest = GOOD_MANIFEST.replace(
-        'source = "synthetic_prices"', 'source = "massive_prices"'
-    )
+    manifest = GOOD_MANIFEST.replace('source = "synthetic_prices"', 'source = "massive_prices"')
     root = _write_package(tmp_path / "pkg", manifest=manifest)
     paths = load(root)
     result = preflight(paths, env={})
@@ -186,9 +184,7 @@ def test_preflight_reports_missing_env(tmp_path):
 
 
 def test_preflight_env_satisfied_when_set(tmp_path):
-    manifest = GOOD_MANIFEST.replace(
-        'source = "synthetic_prices"', 'source = "massive_prices"'
-    )
+    manifest = GOOD_MANIFEST.replace('source = "synthetic_prices"', 'source = "massive_prices"')
     root = _write_package(tmp_path / "pkg", manifest=manifest)
     paths = load(root)
     result = preflight(paths, env={"MASSIVE_API_KEY": "x"})

@@ -109,9 +109,7 @@ class StageTracker:
         """Cells making more tool calls than `threshold` — the 'this agent is
         browsing forever' signal. Finished cells are excluded."""
         return [
-            st.cell
-            for st in self._state.values()
-            if not st.done and st.n_tool_calls > threshold
+            st.cell for st in self._state.values() if not st.done and st.n_tool_calls > threshold
         ]
 
     def grid(self, *, now: float | None = None) -> str:

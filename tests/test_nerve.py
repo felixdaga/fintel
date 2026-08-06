@@ -49,10 +49,17 @@ def test_probe_event_rendering(tmp_path: Path):
     out = io.StringIO()
     nerve = Nerve(run_root=tmp_path, stream=out, verbose=True)
     nerve.emit("probe_start", kinds=["news", "prices"], symbol="AAPL", timeout_s=15)
-    nerve.emit("probe_kind", kind="news", source="massive_news",
-               status="ok", latency_ms=12.3, n=366)
-    nerve.emit("probe_kind", kind="prices", source="massive_prices",
-               status="failed", latency_ms=5.0, n=None)
+    nerve.emit(
+        "probe_kind", kind="news", source="massive_news", status="ok", latency_ms=12.3, n=366
+    )
+    nerve.emit(
+        "probe_kind",
+        kind="prices",
+        source="massive_prices",
+        status="failed",
+        latency_ms=5.0,
+        n=None,
+    )
     nerve.emit("probe_failed", n_failed=1, n_kinds=2, failed_kinds=["prices"])
     lines = out.getvalue().splitlines()
     assert any("probe" in l and "kinds=" in l for l in lines)
@@ -64,8 +71,13 @@ def test_probe_event_rendering(tmp_path: Path):
 def test_agent_stage_event_rendering(tmp_path: Path):
     out = io.StringIO()
     nerve = Nerve(run_root=tmp_path, stream=out, verbose=True)
-    nerve.emit("agent_stage", cell="AAPL", stage="thinking", round=3,
-                text="comparing P/E ratios across peers")
+    nerve.emit(
+        "agent_stage",
+        cell="AAPL",
+        stage="thinking",
+        round=3,
+        text="comparing P/E ratios across peers",
+    )
     line = out.getvalue().strip()
     assert "AAPL" in line and "thinking" in line and "r3" in line
     assert "comparing P/E" in line  # text snippet rendered

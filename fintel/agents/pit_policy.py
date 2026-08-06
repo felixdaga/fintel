@@ -88,9 +88,7 @@ def apply_openclaw_tools(data: dict[str, Any]) -> dict[str, Any]:
     return data
 
 
-def isolate_fintel_mcp(
-    servers: dict[str, Any], fintel_entry: dict[str, Any]
-) -> dict[str, Any]:
+def isolate_fintel_mcp(servers: dict[str, Any], fintel_entry: dict[str, Any]) -> dict[str, Any]:
     """Keep only the fintel server; return the stashed others for later restore."""
     stashed = {k: v for k, v in servers.items() if k != FINTEL_MCP_SERVER}
     servers.clear()

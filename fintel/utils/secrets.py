@@ -16,9 +16,7 @@ _REPO_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_ENV_DIR = _REPO_ROOT / ".env"
 KEYS_FILENAME = "keys.env"
 
-_KEY_LINE = re.compile(
-    r"^(?:export\s+)?([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)$"
-)
+_KEY_LINE = re.compile(r"^(?:export\s+)?([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)$")
 
 
 def env_dir(path: Path | str | None = None) -> Path:

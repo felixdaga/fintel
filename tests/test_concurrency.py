@@ -29,7 +29,10 @@ def bars(start: str, n: int, price: float) -> pd.DataFrame:
     return pd.DataFrame(
         {
             "date": days.date,
-            "open": price, "high": price, "low": price, "close": price,
+            "open": price,
+            "high": price,
+            "low": price,
+            "close": price,
             "volume": 1000.0,
         }
     )

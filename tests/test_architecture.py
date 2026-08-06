@@ -252,6 +252,5 @@ def test_environment_never_reaches_for_a_bare_decision_date():
         if "Cutoff(" in path.read_text() and path.name != "cell.py"
     ]
     assert not offenders, (
-        "only environment/cell.py may construct a Cutoff; found one in:\n"
-        + "\n".join(offenders)
+        "only environment/cell.py may construct a Cutoff; found one in:\n" + "\n".join(offenders)
     )

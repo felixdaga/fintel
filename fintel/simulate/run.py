@@ -126,9 +126,7 @@ def run_run(
         )
         trial_concurrency = 1
 
-    if shared_concurrency is not None and (
-        trial_concurrency > 1 or cell_concurrency is not None
-    ):
+    if shared_concurrency is not None and (trial_concurrency > 1 or cell_concurrency is not None):
         _log.info(
             "shared_concurrency=%d active — nested cell/trial concurrency ignored.",
             shared_concurrency,
@@ -260,9 +258,7 @@ def _run_nested(
                 universe=active,
                 scope=run_config.scope,
             )
-            cell_bound = (
-                max(1, len(active)) if cell_concurrency is None else cell_concurrency
-            )
+            cell_bound = max(1, len(active)) if cell_concurrency is None else cell_concurrency
             return run_trial(
                 trial_config=trial_config,
                 sources=sources,
@@ -393,19 +389,13 @@ def _run_shared(
                     health="broken",
                     health_issues=["cell executor raised"],
                 ),
-                response=AgentResponse(
-                    views={}, outcome="crashed", detail="cell executor raised"
-                ),
+                response=AgentResponse(views={}, outcome="crashed", detail="cell executor raised"),
             )
 
-    outcomes = (
-        map_parallel(_run_one, work, bound=shared_concurrency) if work else []
-    )
+    outcomes = map_parallel(_run_one, work, bound=shared_concurrency) if work else []
 
     # Group outcomes back onto their dates (work order preserved by map_parallel).
-    outcomes_by_date: dict[Date, list[CellOutcome | None]] = {
-        d: [] for d in cells_by_date
-    }
+    outcomes_by_date: dict[Date, list[CellOutcome | None]] = {d: [] for d in cells_by_date}
     for item, outcome in zip(work, outcomes):
         outcomes_by_date[item.decision_date].append(outcome)
 

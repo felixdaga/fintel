@@ -313,7 +313,9 @@ def test_behaviour_no_op_when_no_traces():
             decision_dates=[Date(2026, 1, 2)],
             universe=["AAPL"],
             behaviour_by_date={
-                Date(2026, 1, 2): {"AAPL": CellBehaviour(cell="AAPL", decision_date="2026-01-02", has_trace=False)}
+                Date(2026, 1, 2): {
+                    "AAPL": CellBehaviour(cell="AAPL", decision_date="2026-01-02", has_trace=False)
+                }
             },
         )
     ] * 2
@@ -333,7 +335,15 @@ def test_behaviour_dispersion_across_runs():
             decision_dates=[Date(2026, 1, 2)],
             universe=["AAPL"],
             behaviour_by_date={
-                Date(2026, 1, 2): {"AAPL": CellBehaviour(cell="AAPL", decision_date="2026-01-02", has_trace=True, n_tool_calls=4, n_reads=3)}
+                Date(2026, 1, 2): {
+                    "AAPL": CellBehaviour(
+                        cell="AAPL",
+                        decision_date="2026-01-02",
+                        has_trace=True,
+                        n_tool_calls=4,
+                        n_reads=3,
+                    )
+                }
             },
         ),
         RunData(
@@ -342,7 +352,15 @@ def test_behaviour_dispersion_across_runs():
             decision_dates=[Date(2026, 1, 2)],
             universe=["AAPL"],
             behaviour_by_date={
-                Date(2026, 1, 2): {"AAPL": CellBehaviour(cell="AAPL", decision_date="2026-01-02", has_trace=True, n_tool_calls=6, n_reads=3)}
+                Date(2026, 1, 2): {
+                    "AAPL": CellBehaviour(
+                        cell="AAPL",
+                        decision_date="2026-01-02",
+                        has_trace=True,
+                        n_tool_calls=6,
+                        n_reads=3,
+                    )
+                }
             },
         ),
     ]
@@ -631,8 +649,8 @@ def test_custom_signal_callable_resolves_and_runs():
 
     fn = resolve_signal("tests.eval_custom_callables:truncate_normalize_signal")
     views = {
-        "AAPL": View(symbol="AAPL", score=0.9),   # clamps to 0.5
-        "NVDA": View(symbol="NVDA", score=-0.9),   # clamps to -0.5
+        "AAPL": View(symbol="AAPL", score=0.9),  # clamps to 0.5
+        "NVDA": View(symbol="NVDA", score=-0.9),  # clamps to -0.5
     }
     out = fn(views)
     # clamped to [-0.5, 0.5]
@@ -709,6 +727,7 @@ def test_compute_with_custom_kpi_callable():
 
 # --- Conformance: a dissimilar package needs NO platform change ---------------
 
+
 def test_dissimilar_package_runs_end_to_end():
     """The §1 conformance test, applied to the evaluation layer: a second,
     dissimilar strategy (portfolio scope, rank_range transform, a custom
@@ -781,4 +800,3 @@ def test_dissimilar_package_runs_end_to_end():
         # variance layer ran on the portfolio-scope signals
         assert payload.variance["available"] is True
         assert payload.universe == sorted(universe)
-

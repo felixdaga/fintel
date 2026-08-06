@@ -33,9 +33,7 @@ def run_backfill_cli(args) -> int:
             verbose=True,
         )
 
-    market_config = MarketConfig.from_env(
-        cache_root=Path(args.output_root) / "cache"
-    )
+    market_config = MarketConfig.from_env(cache_root=Path(args.output_root) / "cache")
 
     try:
         report = run_backfill(

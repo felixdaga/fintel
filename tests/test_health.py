@@ -70,12 +70,21 @@ def test_tool_errors_from_transcript_flip_health_to_broken():
     """The -32001 errors the agent saw (but our server executed fine) must
     flip the cell to broken — that's the whole point of the catcher."""
     events = [
-        {"event": "read", "kind": "fundamentals", "status": "ok", "query": {"symbol": "AAPL"}, "n": 8},
+        {
+            "event": "read",
+            "kind": "fundamentals",
+            "status": "ok",
+            "query": {"symbol": "AAPL"},
+            "n": 8,
+        },
         {
             "event": "tool_errors",
             "n": 3,
             "errors": [
-                {"tool": "fintel__get_fundamentals", "error": "MCP error -32001: Request timed out"},
+                {
+                    "tool": "fintel__get_fundamentals",
+                    "error": "MCP error -32001: Request timed out",
+                },
                 {"tool": "fintel__get_prices", "error": "MCP error -32001: Request timed out"},
                 {"tool": "fintel__get_news", "error": "MCP error -32000: Connection closed"},
             ],
@@ -137,15 +146,7 @@ def test_worst_rollup():
 
 
 def test_audit_session_and_job(tmp_path: Path):
-    session = (
-        tmp_path
-        / "job"
-        / "r1"
-        / "sessions"
-        / "job-r1"
-        / "2025-01-02"
-        / "AAPL"
-    )
+    session = tmp_path / "job" / "r1" / "sessions" / "job-r1" / "2025-01-02" / "AAPL"
     session.mkdir(parents=True)
     cell = Cell(run_id="job-r1", decision_date=DAY, symbols=("AAPL",))
     log = AccessLog(cell=cell, path=session / "access.jsonl")

@@ -38,9 +38,7 @@ def _load_decision(trial_dir: Path, decision_date: Date) -> dict[Symbol, View]:
     return out
 
 
-def _load_behaviour(
-    trial_dir: Path, decision_date: Date
-) -> dict[Symbol, CellBehaviour]:
+def _load_behaviour(trial_dir: Path, decision_date: Date) -> dict[Symbol, CellBehaviour]:
     """One `CellRecord` per cell -> `CellBehaviour`. `has_trace` is set when the
     cell recorded any tool activity, so the behaviour layer can no-op on agents
     that never call tools."""

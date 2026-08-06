@@ -27,9 +27,7 @@ from fintel.market.settings import MarketConfig
 from fintel.models.market import DataBinding
 from fintel.pit import Cutoff
 
-LEGACY_CACHE = Path(
-    os.environ.get("FINTEL_LEGACY_CACHE", "")
-)
+LEGACY_CACHE = Path(os.environ.get("FINTEL_LEGACY_CACHE", ""))
 
 pytestmark = pytest.mark.skipif(
     not (LEGACY_CACHE / "ratios").is_dir(),
@@ -118,9 +116,7 @@ def test_legacy_series_would_leak_if_read_at_its_own_date(caplog):
     source = _sources()
     for symbol in _symbols():
         entries = _series(symbol)
-        same_day = next(
-            (e for e in reversed(entries) if e.get("price") and e.get("date")), None
-        )
+        same_day = next((e for e in reversed(entries) if e.get("price") and e.get("date")), None)
         if not same_day:
             continue
         cutoff = Cutoff(date.fromisoformat(same_day["date"]))

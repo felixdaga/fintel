@@ -60,9 +60,7 @@ def parse_brave_age(age: Any) -> Date | None:
     return None
 
 
-def clamp_brave_by_age(
-    payload: Any, since: Date, through: Date
-) -> Any:
+def clamp_brave_by_age(payload: Any, since: Date, through: Date) -> Any:
     """Keep only ``grounding.generic`` items whose Brave age is in ``[since, through]``.
 
     Undated items (empty / missing ``age``) are kept — we cannot prove a leak.

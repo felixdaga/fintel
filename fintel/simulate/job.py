@@ -81,9 +81,7 @@ def run_job(
         update={
             "data": effective["data"],
             "universe": effective["universe"],
-            "decision": manifest.decision.model_copy(
-                update={"schedule": effective["schedule"]}
-            ),
+            "decision": manifest.decision.model_copy(update={"schedule": effective["schedule"]}),
         }
     )
     from fintel.models.strategy import StrategyPaths
@@ -153,9 +151,7 @@ def run_job(
     schedule = build_schedule(effective["schedule"], calendar=calendar)
     schedule_dates = [d.isoformat() for d in schedule.dates()]
 
-    universe_snapshot = _universe_snapshot(
-        effective["universe"], market_config, schedule_dates
-    )
+    universe_snapshot = _universe_snapshot(effective["universe"], market_config, schedule_dates)
 
     job_progress.emit(
         "job_start",
@@ -233,9 +229,7 @@ def run_job(
             else:
                 prefetch_symbols = list(universe_obj.active_at(decision_dates[0]))
             prefetch_sources = build_data_sources(effective["data"], config=market_config)
-            pfrom, pthrough = prefetch_window(
-                decision_dates, prefetch_sources, effective["data"]
-            )
+            pfrom, pthrough = prefetch_window(decision_dates, prefetch_sources, effective["data"])
             job_progress.emit(
                 "preflight_start",
                 n_symbols=len(prefetch_symbols),
@@ -346,8 +340,7 @@ def run_job(
         result = result.model_copy(
             update={
                 "health": job_health["status"],
-                "health_issues": list(job_health.get("issues") or [])
-                + list(result.health_issues),
+                "health_issues": list(job_health.get("issues") or []) + list(result.health_issues),
                 "status": (
                     "failed"
                     if job_health["status"] == "broken" and result.status == "ok"
@@ -367,9 +360,7 @@ def run_job(
     return result
 
 
-def _effective_config(
-    job: JobConfig, manifest: StrategyManifest
-) -> dict[str, object]:
+def _effective_config(job: JobConfig, manifest: StrategyManifest) -> dict[str, object]:
     """Package defaults, overridden where the job says otherwise."""
     universe = job.universe or manifest.universe
     schedule = job.schedule or manifest.decision.schedule

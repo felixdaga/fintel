@@ -118,7 +118,10 @@ def test_job_summary_line_falls_back_to_health_then_corrupt(tmp_path: Path):
     line = job_summary_line(tmp_path)
     assert "status=corrupt" in line and "health=degraded" in line
     # A valid result.json → status from it.
-    write_job_result(tmp_path / "result.json", JobResult(job_id="j", strategy="s", agent="a", k_repeats=1, status="ok"))
+    write_job_result(
+        tmp_path / "result.json",
+        JobResult(job_id="j", strategy="s", agent="a", k_repeats=1, status="ok"),
+    )
     assert "status=ok" in job_summary_line(tmp_path)
 
 
@@ -135,7 +138,10 @@ def test_print_decision_block_and_job_artifacts(tmp_path: Path, capsys):
     out = capsys.readouterr().out
     assert "== decision" in out and "AAPL" in out
 
-    write_job_result(tmp_path / "result.json", JobResult(job_id="j", strategy="s", agent="a", k_repeats=1, status="ok"))
+    write_job_result(
+        tmp_path / "result.json",
+        JobResult(job_id="j", strategy="s", agent="a", k_repeats=1, status="ok"),
+    )
     write_health(tmp_path / "health.json", {"status": "ok"})
     print_job_artifacts(tmp_path)
     out = capsys.readouterr().out

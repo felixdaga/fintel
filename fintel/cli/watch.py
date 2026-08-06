@@ -41,7 +41,15 @@ _CUU = lambda n: f"\033[{n}A" if n > 0 else ""
 _ANSI_RE = re.compile(r"\033\[[0-9;]*m")
 
 # Colors.
-_C = {"g": "\033[32m", "r": "\033[31m", "y": "\033[33m", "c": "\033[36m", "d": "\033[2m", "b": "\033[1m", "x": "\033[0m"}
+_C = {
+    "g": "\033[32m",
+    "r": "\033[31m",
+    "y": "\033[33m",
+    "c": "\033[36m",
+    "d": "\033[2m",
+    "b": "\033[1m",
+    "x": "\033[0m",
+}
 
 
 def _c(code: str, s: str) -> str:
@@ -78,6 +86,7 @@ class _Cell:
 class _Preflight:
     """Job-level preflight/probe state, drained from job.log. Rendered as a
     single header line above the per-run tracks (probe is job-level, not per-run)."""
+
     probes: dict[str, str] = field(default_factory=dict)
     status: str = "starting"  # starting | ok | failed
 
@@ -276,9 +285,13 @@ def _cost_line(run: _Run) -> str:
     basis = run.cost_basis
     bc = {"reported": "g", "estimated": "y", "mixed": "y", "unknown": "d"}.get(basis, "d")
     return (
-        _c("d", "cost ") + _c(bc, cost)
+        _c("d", "cost ")
+        + _c(bc, cost)
         + _c("d", f"  ({basis})")
-        + _c("d", "  tok ") + _fmt_tok(run.tokens_in) + _c("d", "→") + _fmt_tok(run.tokens_out)
+        + _c("d", "  tok ")
+        + _fmt_tok(run.tokens_in)
+        + _c("d", "→")
+        + _fmt_tok(run.tokens_out)
         + _c("d", f"  {run.n_llm_calls} calls  {run.n_cells_done} cells")
     )
 
@@ -325,7 +338,9 @@ def _render_lines(
     grow every tick and stream-mode cursor-up drifts.
     """
     lines: list[str] = []
-    lines.append(_c("b", "fintel nerve") + _c("d", "  live dashboard  ") + _c("d", time.strftime("%H:%M:%S")))
+    lines.append(
+        _c("b", "fintel nerve") + _c("d", "  live dashboard  ") + _c("d", time.strftime("%H:%M:%S"))
+    )
     # Shared job-level preflight header (probe is run once, before any track).
     if preflight is not None and preflight.probes:
         bits = []
@@ -333,7 +348,12 @@ def _render_lines(
             rc = {"ok": "g", "empty": "y", "failed": "r"}.get(res, "d")
             bits.append(f"{kind}:{_c(rc, res or '?')}")
         stc = {"ok": "g", "failed": "r", "running": "c", "starting": "d"}.get(preflight.status, "d")
-        lines.append(f"{_c('b', 'preflight')}  {_c(stc, preflight.status)}  " + _c("d", "probe[") + " ".join(bits) + _c("d", "]"))
+        lines.append(
+            f"{_c('b', 'preflight')}  {_c(stc, preflight.status)}  "
+            + _c("d", "probe[")
+            + " ".join(bits)
+            + _c("d", "]")
+        )
     lines.append(_c("d", "─" * 78))
     for run in runs:
         elapsed = (now - run.started_mono) if run.started_mono and not run.done else 0.0
@@ -367,7 +387,10 @@ def _render_lines(
                 )
             if show:
                 lines.append(
-                    _c("d", "   cell       date        stage                    round calls err idle    last tool / text")
+                    _c(
+                        "d",
+                        "   cell       date        stage                    round calls err idle    last tool / text",
+                    )
                 )
                 for c in show:
                     idle = 0.0 if c.stage == "done" else now - c.last_mono
@@ -422,7 +445,7 @@ def watch_run_logs(
         mode = _auto_mode()
     runs: list[_Run] = []
     for i, p in enumerate(paths):
-        tag = (tags[i] if tags and i < len(tags) else _log_tag(p))
+        tag = tags[i] if tags and i < len(tags) else _log_tag(p)
         runs.append(_Run(tag=tag, path=p))
     preflight = _Preflight()
     pf_offset = [0]
@@ -449,7 +472,9 @@ def watch_run_logs(
             # Stream mode collapses done cells so the frame height stays roughly
             # stable (active pool only). Alt mode has room for the full grid.
             lines = _render_lines(
-                runs, time.monotonic(), preflight=preflight,
+                runs,
+                time.monotonic(),
+                preflight=preflight,
                 collapse_done=use_stream or not use_alt,
             )
             if use_alt:
@@ -539,9 +564,11 @@ def run_watch(args) -> int:
     paths = resolve_paths(job_ids, root)
     if not paths and wait_s > 0:
         import time as _time
+
         print(
             f"waiting for {job_ids} under {root} (up to {wait_s}s)...",
-            file=sys.stderr, flush=True,
+            file=sys.stderr,
+            flush=True,
         )
         deadline = _time.monotonic() + wait_s
         while not paths and _time.monotonic() < deadline:

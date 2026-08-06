@@ -76,14 +76,10 @@ def _check_pit_enforcement(name: str, cls: type) -> list[str]:
     allowed = ("access", "cli_deny")
     enforcement = getattr(cls, "pit_enforcement", None)
     if enforcement is None:
-        return [
-            f"agent {name!r} does not declare pit_enforcement "
-            f"(must be one of {allowed})"
-        ]
+        return [f"agent {name!r} does not declare pit_enforcement (must be one of {allowed})"]
     if enforcement not in allowed:
         return [
-            f"agent {name!r} has unknown pit_enforcement {enforcement!r} "
-            f"(must be one of {allowed})"
+            f"agent {name!r} has unknown pit_enforcement {enforcement!r} (must be one of {allowed})"
         ]
     if enforcement != "cli_deny":
         return []
@@ -97,8 +93,7 @@ def _check_pit_enforcement(name: str, cls: type) -> list[str]:
         # Custom cli_deny host — must still expose the hook.
         if not callable(getattr(cls, "enforce_pit_policy", None)):
             return [
-                f"agent {name!r} declares pit_enforcement='cli_deny' but "
-                "has no enforce_pit_policy"
+                f"agent {name!r} declares pit_enforcement='cli_deny' but has no enforce_pit_policy"
             ]
         return []
     if cls.enforce_pit_policy is SubprocessAgent.enforce_pit_policy:

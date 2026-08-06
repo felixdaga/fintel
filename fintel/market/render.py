@@ -19,6 +19,7 @@ The cap *defaults* live in ``catalog.py``; the cap *application shape* lives
 here, next to them, so adding a new capped kind is one predictor entry — the
 environment stays generic and never hardcodes a source's payload shape.
 """
+
 from __future__ import annotations
 
 import json

@@ -113,17 +113,13 @@ def ensemble_signal(
     return out
 
 
-def build_signals(
-    runs: list[RunData], *, signal: str, transform: str
-) -> Signals:
+def build_signals(runs: list[RunData], *, signal: str, transform: str) -> Signals:
     """The full signal build: resolve the strategy's signal + transform, build
     each run's series, then ensemble. Returns `Signals` for the downstream KPI /
     holdings layers."""
     signal_fn = resolve_signal(signal)
     transform = resolve_transform(transform)
-    per_run = [
-        _signal_for_run(r, signal_fn=signal_fn, transform=transform) for r in runs
-    ]
+    per_run = [_signal_for_run(r, signal_fn=signal_fn, transform=transform) for r in runs]
     ensemble = ensemble_signal(per_run)
     # Universe + dates from the first run that has any (they should all agree).
     universe: list[Symbol] = []

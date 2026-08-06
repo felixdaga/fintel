@@ -142,7 +142,14 @@ def _register_data_tool(server, spec, env) -> None:
 
     props = spec.schema.get("properties") or {}
     required = set(spec.schema.get("required") or [])
-    type_map = {"string": str, "integer": int, "number": float, "boolean": bool, "array": list, "object": dict}
+    type_map = {
+        "string": str,
+        "integer": int,
+        "number": float,
+        "boolean": bool,
+        "array": list,
+        "object": dict,
+    }
 
     parameters: list[inspect.Parameter] = []
     for name, prop in props.items():

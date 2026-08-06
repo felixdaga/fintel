@@ -170,7 +170,10 @@ def test_required_env_is_aggregated_for_preflight():
 def test_filing_text_normalisation_and_id_fallback():
     got = normalise_filing_text(
         {"filing_date": "2024-05-01", "items_text": " body "},
-        symbol="AAPL", form="8-k", text_key="items_text", default_section="8-K",
+        symbol="AAPL",
+        form="8-k",
+        text_key="items_text",
+        default_section="8-K",
     )
     assert got["form_type"] == "8-K"
     assert got["text"] == "body"
@@ -178,7 +181,10 @@ def test_filing_text_normalisation_and_id_fallback():
     # An accession number wins when present.
     with_accession = normalise_filing_text(
         {"filing_date": "2024-05-01", "accession_number": "0000320193-24", "text": "x"},
-        symbol="AAPL", form="10-K", text_key="text", default_section="business",
+        symbol="AAPL",
+        form="10-K",
+        text_key="text",
+        default_section="business",
     )
     assert with_accession["id"] == "0000320193-24"
 

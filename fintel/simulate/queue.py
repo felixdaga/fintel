@@ -21,9 +21,7 @@ T = TypeVar("T")
 R = TypeVar("R")
 
 
-def map_parallel(
-    fn: Callable[[T], R], items: list[T], *, bound: int = 1
-) -> list[R | None]:
+def map_parallel(fn: Callable[[T], R], items: list[T], *, bound: int = 1) -> list[R | None]:
     if bound <= 1 or len(items) <= 1:
         out: list[R | None] = []
         for item in items:

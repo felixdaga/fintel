@@ -46,8 +46,16 @@ def test_catcher_flags_mcp_timeout_errors(tmp_path: Path) -> None:
                 "message": {
                     "role": "assistant",
                     "content": [
-                        {"type": "toolCall", "name": "fintel__get_fundamentals", "arguments": {"symbol": "AAPL"}},
-                        {"type": "toolCall", "name": "fintel__get_prices", "arguments": {"symbol": "AAPL"}},
+                        {
+                            "type": "toolCall",
+                            "name": "fintel__get_fundamentals",
+                            "arguments": {"symbol": "AAPL"},
+                        },
+                        {
+                            "type": "toolCall",
+                            "name": "fintel__get_prices",
+                            "arguments": {"symbol": "AAPL"},
+                        },
                     ],
                 },
             },
@@ -56,7 +64,11 @@ def test_catcher_flags_mcp_timeout_errors(tmp_path: Path) -> None:
                 "message": {
                     "role": "toolResult",
                     "toolName": "fintel__get_fundamentals",
-                    "content": [{"text": '{"status": "error", "tool": "fintel__get_fundamentals", "error": "MCP error -32001: Request timed out"}'}],
+                    "content": [
+                        {
+                            "text": '{"status": "error", "tool": "fintel__get_fundamentals", "error": "MCP error -32001: Request timed out"}'
+                        }
+                    ],
                 },
             },
             {
@@ -64,16 +76,18 @@ def test_catcher_flags_mcp_timeout_errors(tmp_path: Path) -> None:
                 "message": {
                     "role": "toolResult",
                     "toolName": "fintel__get_prices",
-                    "content": [{"text": '{"status": "error", "error": "MCP error -32000: Connection closed"}'}],
+                    "content": [
+                        {
+                            "text": '{"status": "error", "error": "MCP error -32000: Connection closed"}'
+                        }
+                    ],
                 },
             },
         ],
     )
 
     log = _FakeLog()
-    catcher = _TranscriptCatcher(
-        transcript_path=transcript, access_log=log, fail_fast_errors=2
-    )
+    catcher = _TranscriptCatcher(transcript_path=transcript, access_log=log, fail_fast_errors=2)
     catcher.start()
     # Wait for the tail thread to process the pre-written file.
     _wait_for(lambda: len(catcher.tool_results) >= 2, timeout=2.0)
@@ -103,7 +117,13 @@ def test_catcher_distinguishes_ok_results(tmp_path: Path) -> None:
                 "timestamp": "t1",
                 "message": {
                     "role": "assistant",
-                    "content": [{"type": "toolCall", "name": "fintel__get_prices", "arguments": {"symbol": "AAPL"}}],
+                    "content": [
+                        {
+                            "type": "toolCall",
+                            "name": "fintel__get_prices",
+                            "arguments": {"symbol": "AAPL"},
+                        }
+                    ],
                 },
             },
             {
@@ -118,9 +138,7 @@ def test_catcher_distinguishes_ok_results(tmp_path: Path) -> None:
     )
 
     log = _FakeLog()
-    catcher = _TranscriptCatcher(
-        transcript_path=transcript, access_log=log, fail_fast_errors=3
-    )
+    catcher = _TranscriptCatcher(transcript_path=transcript, access_log=log, fail_fast_errors=3)
     catcher.start()
     _wait_for(lambda: len(catcher.tool_results) >= 1, timeout=2.0)
     catcher.stop()

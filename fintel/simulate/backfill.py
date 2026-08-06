@@ -108,27 +108,34 @@ def run_backfill(
     run_result = _load_run_result(run_paths)
 
     if market_config is None:
-        market_config = MarketConfig.from_env(
-            cache_root=Path(output_root) / "cache"
-        )
+        market_config = MarketConfig.from_env(cache_root=Path(output_root) / "cache")
 
     # 1. Identify error cells
     error_cells = _find_error_cells(run_result, run_paths)
     if not error_cells:
-        progress.emit("backfill_done", job_id=job_id, run_index=run_index,
-                      n_error_cells=0, n_reran=0)
+        progress.emit(
+            "backfill_done", job_id=job_id, run_index=run_index, n_error_cells=0, n_reran=0
+        )
         return BackfillReport(
-            job_id=job_id, run_index=run_index,
+            job_id=job_id,
+            run_index=run_index,
             n_total_cells=sum(len(t.cells) for t in run_result.trials),
-            n_error_cells=0, n_reran=0, n_fixed=0, n_still_failed=0,
+            n_error_cells=0,
+            n_reran=0,
+            n_fixed=0,
+            n_still_failed=0,
             affected_dates=[],
             elapsed_ms=int((time.perf_counter() - started) * 1000),
         )
 
     affected_dates = sorted({e.decision_date for e in error_cells})
-    progress.emit("backfill_start", job_id=job_id, run_index=run_index,
-                  n_error_cells=len(error_cells),
-                  n_affected_dates=len(affected_dates))
+    progress.emit(
+        "backfill_start",
+        job_id=job_id,
+        run_index=run_index,
+        n_error_cells=len(error_cells),
+        n_affected_dates=len(affected_dates),
+    )
 
     # 2. Rebuild execution context from frozen config
     universe = build_universe(run_config.universe, config=market_config)
@@ -136,7 +143,9 @@ def run_backfill(
     sources = dedup_sources(sources)
     mission_text, output_schema_text, company_names = _load_strategy_context(run_config)
     runtime = RuntimeConfig(
-        session_root=run_paths.root / "sessions", trace=True, reset_sessions=True,
+        session_root=run_paths.root / "sessions",
+        trace=True,
+        reset_sessions=True,
     )
     agent_spec = run_config.agent
 
@@ -146,22 +155,31 @@ def run_backfill(
     def _rerun_one(item: _RerunWork) -> CellOutcome | None:
         try:
             return run_cell(
-                cell=item.cell, sources=sources,
-                universe=item.active_universe, agent_spec=agent_spec,
-                runtime=runtime, cell_path=item.cell_path,
-                mission_text=mission_text, output_schema_text=output_schema_text,
-                company_names=company_names, market_config=market_config,
+                cell=item.cell,
+                sources=sources,
+                universe=item.active_universe,
+                agent_spec=agent_spec,
+                runtime=runtime,
+                cell_path=item.cell_path,
+                mission_text=mission_text,
+                output_schema_text=output_schema_text,
+                company_names=company_names,
+                market_config=market_config,
                 progress=progress,
             )
         except Exception:
             return CellOutcome(
                 result=CellResult(
-                    cell=item.cell.name, symbols=list(item.cell.symbols),
-                    status="failed", error="backfill cell executor raised",
-                    health="broken", health_issues=["backfill cell executor raised"],
+                    cell=item.cell.name,
+                    symbols=list(item.cell.symbols),
+                    status="failed",
+                    error="backfill cell executor raised",
+                    health="broken",
+                    health_issues=["backfill cell executor raised"],
                 ),
                 response=AgentResponse(
-                    views={}, outcome="crashed",
+                    views={},
+                    outcome="crashed",
                     detail="backfill cell executor raised",
                 ),
             )
@@ -178,51 +196,67 @@ def run_backfill(
             continue
         trial_paths = run_paths.trial(trial.decision_date)
         cells, cell_outcomes = _assemble_trial_outcomes(
-            trial=trial, trial_paths=trial_paths,
+            trial=trial,
+            trial_paths=trial_paths,
             reran_results=reran_results,
             run_id=run_config.run_id,
         )
         updated = finalize_trial(
-            decision_date=trial.decision_date, cells=cells,
-            outcomes=cell_outcomes, paths=trial_paths,
+            decision_date=trial.decision_date,
+            cells=cells,
+            outcomes=cell_outcomes,
+            paths=trial_paths,
             started_at=trial.started_at or _now_iso(),
-            progress=progress, duration_ms=trial.duration_ms,
+            progress=progress,
+            duration_ms=trial.duration_ms,
         )
         updated_trials[trial.decision_date] = updated
 
     # 5. Re-reduce run + job
     new_trials = [updated_trials.get(t.decision_date, t) for t in run_result.trials]
     new_run_result = reduce_run(
-        run_id=run_config.run_id, job_id=run_config.job_id,
-        k_index=run_config.k_index, trials=new_trials,
-        started_at=run_result.started_at, finished_at=_now_iso(),
+        run_id=run_config.run_id,
+        job_id=run_config.job_id,
+        k_index=run_config.k_index,
+        trials=new_trials,
+        started_at=run_result.started_at,
+        finished_at=_now_iso(),
         duration_ms=run_result.duration_ms,
     )
     write_run_result(run_paths.result, new_run_result)
     _update_job_result(
-        job_paths=job_paths, run_config=run_config,
-        new_run_result=new_run_result, agent_spec=agent_spec,
+        job_paths=job_paths,
+        run_config=run_config,
+        new_run_result=new_run_result,
+        agent_spec=agent_spec,
     )
 
     # 6. Report
     n_reran = len(work_items)
-    n_fixed = sum(
-        1 for o in outcomes if o is not None and o.result.status == "ok"
-    )
+    n_fixed = sum(1 for o in outcomes if o is not None and o.result.status == "ok")
     n_still_failed = n_reran - n_fixed
     elapsed_ms = int((time.perf_counter() - started) * 1000)
     report = BackfillReport(
-        job_id=job_id, run_index=run_index,
+        job_id=job_id,
+        run_index=run_index,
         n_total_cells=sum(len(t.cells) for t in run_result.trials),
-        n_error_cells=len(error_cells), n_reran=n_reran,
-        n_fixed=n_fixed, n_still_failed=n_still_failed,
+        n_error_cells=len(error_cells),
+        n_reran=n_reran,
+        n_fixed=n_fixed,
+        n_still_failed=n_still_failed,
         affected_dates=[d.isoformat() for d in affected_dates],
         elapsed_ms=elapsed_ms,
     )
-    progress.emit("backfill_done", job_id=job_id, run_index=run_index,
-                  n_error_cells=report.n_error_cells, n_reran=n_reran,
-                  n_fixed=n_fixed, n_still_failed=n_still_failed,
-                  elapsed_ms=elapsed_ms)
+    progress.emit(
+        "backfill_done",
+        job_id=job_id,
+        run_index=run_index,
+        n_error_cells=report.n_error_cells,
+        n_reran=n_reran,
+        n_fixed=n_fixed,
+        n_still_failed=n_still_failed,
+        elapsed_ms=elapsed_ms,
+    )
     return report
 
 
@@ -247,24 +281,18 @@ class _RerunWork:
 def _load_run_config(run_paths: RunPaths) -> RunConfig:
     path = run_paths.config
     if not path.is_file():
-        raise FileNotFoundError(
-            f"Run config not found: {path}. Is this a completed run?"
-        )
+        raise FileNotFoundError(f"Run config not found: {path}. Is this a completed run?")
     return RunConfig.model_validate(read_json(path))
 
 
 def _load_run_result(run_paths: RunPaths) -> RunResult:
     path = run_paths.result
     if not path.is_file():
-        raise FileNotFoundError(
-            f"Run result not found: {path}. Did the run complete?"
-        )
+        raise FileNotFoundError(f"Run result not found: {path}. Did the run complete?")
     return RunResult.model_validate(read_json(path))
 
 
-def _find_error_cells(
-    run_result: RunResult, run_paths: RunPaths
-) -> list[_ErrorCell]:
+def _find_error_cells(run_result: RunResult, run_paths: RunPaths) -> list[_ErrorCell]:
     """Cells with status not in ('ok', 'skipped') — the ones worth rerunning.
 
     This includes cells where the agent produced views but the environment
@@ -392,9 +420,7 @@ def _assemble_trial_outcomes(
     return cells, outcomes
 
 
-def _reconstruct_outcome(
-    cr: CellResult, trial_paths: RunPaths
-) -> CellOutcome | None:
+def _reconstruct_outcome(cr: CellResult, trial_paths: RunPaths) -> CellOutcome | None:
     """Rebuild a CellOutcome from a kept cell's on-disk CellRecord."""
     cell_path = trial_paths.cell(cr.cell)
     record = _load_cell_record(cell_path)
@@ -468,8 +494,7 @@ def _update_job_result(
         result = result.model_copy(
             update={
                 "health": job_health["status"],
-                "health_issues": list(job_health.get("issues") or [])
-                + list(result.health_issues),
+                "health_issues": list(job_health.get("issues") or []) + list(result.health_issues),
                 "status": (
                     "failed"
                     if job_health["status"] == "broken" and result.status == "ok"

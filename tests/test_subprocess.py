@@ -90,8 +90,8 @@ def test_the_session_dir_carries_the_cell_identity(tmp_path):
     """The CLI reads cell.json from $FINTEL_SESSION_DIR, not by guessing."""
     script = fake_cli(
         tmp_path,
-        'python3 -c "import json,os; d=os.environ[\'FINTEL_SESSION_DIR\']; '
-        'c=json.load(open(d+\'/cell.json\')); print(c[\'symbols\'])" >&2',
+        "python3 -c \"import json,os; d=os.environ['FINTEL_SESSION_DIR']; "
+        "c=json.load(open(d+'/cell.json')); print(c['symbols'])\" >&2",
     )
     agents.invoke(_Script(binary=script, timeout_s=10), make_env(tmp_path))
     # No result.json → empty, but the cell was readable.
@@ -221,42 +221,97 @@ def test_classify_exit_ignores_stdout_prose():
 
 
 def test_two_identical_runs_have_the_same_digest():
-    a = fingerprint(agent_name="llm", agent_version="1", model="m", channel="pack",
-                    prompt="score it", data_kinds=("prices",))
-    b = fingerprint(agent_name="llm", agent_version="1", model="m", channel="pack",
-                    prompt="score it", data_kinds=("prices",))
+    a = fingerprint(
+        agent_name="llm",
+        agent_version="1",
+        model="m",
+        channel="pack",
+        prompt="score it",
+        data_kinds=("prices",),
+    )
+    b = fingerprint(
+        agent_name="llm",
+        agent_version="1",
+        model="m",
+        channel="pack",
+        prompt="score it",
+        data_kinds=("prices",),
+    )
     assert a.digest == b.digest
 
 
 def test_a_different_prompt_changes_the_digest():
-    a = fingerprint(agent_name="llm", agent_version="1", model="m", channel="pack",
-                    prompt="score it", data_kinds=("prices",))
-    b = fingerprint(agent_name="llm", agent_version="1", model="m", channel="pack",
-                    prompt="score it differently", data_kinds=("prices",))
+    a = fingerprint(
+        agent_name="llm",
+        agent_version="1",
+        model="m",
+        channel="pack",
+        prompt="score it",
+        data_kinds=("prices",),
+    )
+    b = fingerprint(
+        agent_name="llm",
+        agent_version="1",
+        model="m",
+        channel="pack",
+        prompt="score it differently",
+        data_kinds=("prices",),
+    )
     assert a.digest != b.digest
 
 
 def test_a_different_model_changes_the_digest():
-    a = fingerprint(agent_name="llm", agent_version="1", model="a", channel="pack",
-                    prompt="x", data_kinds=("prices",))
-    b = fingerprint(agent_name="llm", agent_version="1", model="b", channel="pack",
-                    prompt="x", data_kinds=("prices",))
+    a = fingerprint(
+        agent_name="llm",
+        agent_version="1",
+        model="a",
+        channel="pack",
+        prompt="x",
+        data_kinds=("prices",),
+    )
+    b = fingerprint(
+        agent_name="llm",
+        agent_version="1",
+        model="b",
+        channel="pack",
+        prompt="x",
+        data_kinds=("prices",),
+    )
     assert a.digest != b.digest
 
 
 def test_a_different_channel_changes_the_digest():
     """The channel is part of the fingerprint, so a channel ablation is a
     different run — not the same run that happened to use a different path."""
-    a = fingerprint(agent_name="llm", agent_version="1", model="m", channel="pack",
-                    prompt="x", data_kinds=("prices",))
-    b = fingerprint(agent_name="llm", agent_version="1", model="m", channel="tools",
-                    prompt="x", data_kinds=("prices",))
+    a = fingerprint(
+        agent_name="llm",
+        agent_version="1",
+        model="m",
+        channel="pack",
+        prompt="x",
+        data_kinds=("prices",),
+    )
+    b = fingerprint(
+        agent_name="llm",
+        agent_version="1",
+        model="m",
+        channel="tools",
+        prompt="x",
+        data_kinds=("prices",),
+    )
     assert a.digest != b.digest
 
 
 def test_the_fingerprint_is_serializable():
-    fp = fingerprint(agent_name="llm", agent_version="1", model="m", channel="pack",
-                      prompt="x", data_kinds=("prices",), adapter_params={"max_rounds": 5})
+    fp = fingerprint(
+        agent_name="llm",
+        agent_version="1",
+        model="m",
+        channel="pack",
+        prompt="x",
+        data_kinds=("prices",),
+        adapter_params={"max_rounds": 5},
+    )
     d = fp.to_dict()
     assert d["digest"] == fp.digest
     assert d["adapter_params"]["max_rounds"] == 5

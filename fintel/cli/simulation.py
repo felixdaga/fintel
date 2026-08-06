@@ -71,17 +71,13 @@ def run_simulation(args: Namespace) -> int:
     if not job.job_id:
         from fintel.models.ids import new_job_id
 
-        job = job.model_copy(
-            update={"job_id": new_job_id(strategy=package.name, agent=args.agent)}
-        )
+        job = job.model_copy(update={"job_id": new_job_id(strategy=package.name, agent=args.agent)})
 
     from fintel.market.settings import MarketConfig
     from fintel.simulate import run_job
 
     cache_root = (
-        Path(args.cache_root).expanduser()
-        if args.cache_root
-        else Path(job.output_root) / "cache"
+        Path(args.cache_root).expanduser() if args.cache_root else Path(job.output_root) / "cache"
     )
     market = MarketConfig.from_env(cache_root=cache_root)
     if args.offline:

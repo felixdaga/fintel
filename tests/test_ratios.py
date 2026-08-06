@@ -136,8 +136,12 @@ def test_eps_is_derived_from_net_income_to_survive_splits():
     """Summing pre- and post-split EPS turned NVDA's trailing EPS negative."""
     filings = [
         q(
-            "2022-12-31", "2023-02-01", timeframe="annual",
-            net_income=1000.0, eps_diluted=10.0, shares_diluted=100.0,
+            "2022-12-31",
+            "2023-02-01",
+            timeframe="annual",
+            net_income=1000.0,
+            eps_diluted=10.0,
+            shares_diluted=100.0,
         ),
         q("2022-03-31", "2022-05-01", net_income=200.0, eps_diluted=2.0, shares_diluted=100.0),
         # 10:1 split: shares jump, EPS collapses, net income is unaffected.
@@ -409,10 +413,12 @@ def test_daily_ratio_series_matches_delorean_shape():
         },
     ]
     days = pd.bdate_range("2024-01-10", "2024-05-10")
-    prices = pd.DataFrame({
-        "date": [d.date() for d in days],
-        "close": [30.0 + i * 0.1 for i in range(len(days))],
-    })
+    prices = pd.DataFrame(
+        {
+            "date": [d.date() for d in days],
+            "close": [30.0 + i * 0.1 for i in range(len(days))],
+        }
+    )
     entries = build_daily_ratio_series(filings=filings, prices=prices)
     assert entries
     assert all("date" in e and "pe_diluted" in e for e in entries)

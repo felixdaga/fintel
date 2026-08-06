@@ -48,7 +48,9 @@ def test_prices_coverage_reads_the_sidecar(tmp_path: Path) -> None:
 def test_record_coverage_is_gap_aware(tmp_path: Path) -> None:
     # Two disjoint spans with a hole between them.
     _write_records(
-        tmp_path, "fundamentals", "MSFT",
+        tmp_path,
+        "fundamentals",
+        "MSFT",
         [(Date(2024, 1, 1), Date(2024, 3, 31)), (Date(2025, 1, 1), Date(2025, 3, 31))],
     )
     cov = coverage_for_kind(

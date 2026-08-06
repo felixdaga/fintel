@@ -66,10 +66,7 @@ def coverage_for_kind(
     root = Path(cache_root)
     if kind == "prices":
         store = PriceStore(root=root)
-        symbols = {
-            s: store.coverage(s)
-            for s in (store.symbols() if symbol is None else [symbol])
-        }
+        symbols = {s: store.coverage(s) for s in (store.symbols() if symbol is None else [symbol])}
         return KindCoverage(
             kind=kind, source=source_name, cache_dir=root / "prices", symbols=symbols
         )

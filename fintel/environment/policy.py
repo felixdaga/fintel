@@ -125,12 +125,6 @@ class PolicyBuilder:
             decidable=frozenset(self.decidable),
             peers=frozenset(self.peers) - frozenset(self.decidable),
             lookback_caps=frozenset(caps.items()),
-            render_caps=frozenset(
-                (kind, tuple(c.items())) for kind, c in rcaps.items()
-            ),
-            **{
-                k: v
-                for k, v in self.limits.items()
-                if k in {"max_lookback_days", "max_results"}
-            },
+            render_caps=frozenset((kind, tuple(c.items())) for kind, c in rcaps.items()),
+            **{k: v for k, v in self.limits.items() if k in {"max_lookback_days", "max_results"}},
         )

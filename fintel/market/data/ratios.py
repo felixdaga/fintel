@@ -264,9 +264,7 @@ def build_daily_ratio_series(
             continue
 
         if advanced or ttm_cache is None:
-            ttm_cache = build_trailing_filing_carryforward(
-                active_filings, window_days=window_days
-            )
+            ttm_cache = build_trailing_filing_carryforward(active_filings, window_days=window_days)
 
         ratio_dict = compute_ratios(filing=ttm_cache, price=close, as_of=day)
         entry: dict[str, Any] = {"date": day_str}
@@ -295,9 +293,7 @@ class ValuationRatios:
     def fetch(self, query: dict, cutoff: Cutoff) -> dict:
         symbol = require(query, "symbol", self.name)
         lookback = int(query.get("lookback_days", self.lookback_days))
-        filings_lookback = int(
-            query.get("filings_lookback_days", self.filings_lookback_days)
-        )
+        filings_lookback = int(query.get("filings_lookback_days", self.filings_lookback_days))
         # Cover the price window plus enough history for a clean TTM at the
         # start of that window (annual+delta needs ~2y of filings).
         fund_lookback = max(filings_lookback, lookback + self.window_days + 400)
@@ -305,9 +301,7 @@ class ValuationRatios:
         filings = self.upstream["fundamentals"].fetch(
             {"symbol": symbol, "lookback_days": fund_lookback}, cutoff
         )
-        bars = self.upstream["prices"].fetch(
-            {"symbol": symbol, "lookback_days": lookback}, cutoff
-        )
+        bars = self.upstream["prices"].fetch({"symbol": symbol, "lookback_days": lookback}, cutoff)
 
         entries = build_daily_ratio_series(
             filings=list(filings or []),
@@ -319,9 +313,7 @@ class ValuationRatios:
         entries = [e for e in entries if (e.get("date") or "") < ceil]
 
         if not entries:
-            empty = compute_ratios(
-                filing=None, price=None, as_of=cutoff.decision_date
-            )
+            empty = compute_ratios(filing=None, price=None, as_of=cutoff.decision_date)
             empty["date"] = None
             empty["entries"] = []
             return empty

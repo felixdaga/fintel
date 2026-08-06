@@ -55,8 +55,14 @@ from fintel.models.trace import ReasoningTrace, TraceStep, Usage
 
 logger = logging.getLogger(__name__)
 
-_INT_FIELDS = {"specialist_max_tokens", "synthesis_max_tokens", "evidence_budget_chars",
-               "web_structural_lookback_days", "web_update_lookback_days", "web_snippets_per_query"}
+_INT_FIELDS = {
+    "specialist_max_tokens",
+    "synthesis_max_tokens",
+    "evidence_budget_chars",
+    "web_structural_lookback_days",
+    "web_update_lookback_days",
+    "web_snippets_per_query",
+}
 _BOOL_FIELDS = {"enable_verification"}
 
 
@@ -130,8 +136,14 @@ class OptimizedFintelAgent:
         decision_date = env.cell.decision_date.isoformat()
 
         def _on_stage(stage: str, symbol: str) -> None:
-            _emit(nerve, "agent_stage", cell=cell_name, decision_date=decision_date,
-                  stage=stage, symbol=symbol)
+            _emit(
+                nerve,
+                "agent_stage",
+                cell=cell_name,
+                decision_date=decision_date,
+                stage=stage,
+                symbol=symbol,
+            )
 
         return OptimizedPipeline(
             model=self.model,
@@ -163,8 +175,14 @@ class OptimizedFintelAgent:
         pipeline = self._pipeline_for(env)
 
         for sym in symbols:
-            _emit(nerve, "agent_stage", cell=cell_name, decision_date=decision_date,
-                  stage="evidence", symbol=sym)
+            _emit(
+                nerve,
+                "agent_stage",
+                cell=cell_name,
+                decision_date=decision_date,
+                stage="evidence",
+                symbol=sym,
+            )
 
             builder = FintelEvidence(
                 access=env.access,
@@ -198,8 +216,10 @@ class OptimizedFintelAgent:
             }
 
             result = pipeline.decide_one(
-                symbol=sym, trade_date=decision_date,
-                quant_evidence=quant, qual_evidence=qual,
+                symbol=sym,
+                trade_date=decision_date,
+                quant_evidence=quant,
+                qual_evidence=qual,
                 submit_tool=submit_tool,
                 quant_kinds=quant_kinds,
                 qual_kinds=qual_kinds,
@@ -282,7 +302,9 @@ class OptimizedFintelAgent:
             ),
         )
 
-    def _resolve(self, result: AgentResult, decidable: frozenset[str]) -> tuple[View | None, str | None]:
+    def _resolve(
+        self, result: AgentResult, decidable: frozenset[str]
+    ) -> tuple[View | None, str | None]:
         """Map the pipeline's raw submit_args into a fintel View (or an error)."""
         if result.error:
             return None, result.error
@@ -386,8 +408,14 @@ class _stage:
         self.symbol = symbol
 
     def __enter__(self) -> None:
-        _emit(self.nerve, "agent_stage", cell=self.cell, decision_date=self.decision_date,
-              stage=self.name, symbol=self.symbol)
+        _emit(
+            self.nerve,
+            "agent_stage",
+            cell=self.cell,
+            decision_date=self.decision_date,
+            stage=self.name,
+            symbol=self.symbol,
+        )
 
     def __exit__(self, *exc: Any) -> None:
         return None

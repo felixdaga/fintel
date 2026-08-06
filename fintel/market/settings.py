@@ -77,12 +77,8 @@ class MarketConfig:
         return cls(
             cache_root=Path(data["cache_root"]).expanduser(),
             offline=bool(data.get("offline", False)),
-            massive_api_key=data.get("massive_api_key")
-            or os.environ.get(ENV_MASSIVE_KEY)
-            or None,
-            brave_api_key=data.get("brave_api_key")
-            or os.environ.get(ENV_BRAVE_KEY)
-            or None,
+            massive_api_key=data.get("massive_api_key") or os.environ.get(ENV_MASSIVE_KEY) or None,
+            brave_api_key=data.get("brave_api_key") or os.environ.get(ENV_BRAVE_KEY) or None,
         )
 
     def dir(self, *parts: str) -> Path:

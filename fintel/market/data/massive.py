@@ -314,9 +314,7 @@ class MassiveRecords:
     def fetch(self, query: dict, cutoff: Cutoff) -> list[dict]:
         symbol = require(query, "symbol", self.name)
         default_lb = (
-            self.lookback_days
-            if self.lookback_days is not None
-            else self.spec.lookback_days
+            self.lookback_days if self.lookback_days is not None else self.spec.lookback_days
         )
         lookback = int(query.get("lookback_days", default_lb))
         through = cutoff.decision_date - timedelta(days=1)

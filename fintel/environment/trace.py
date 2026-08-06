@@ -140,8 +140,8 @@ def summary_from_events(events: list[dict]) -> dict:
         if not kind:
             continue
         slot = by_kind.setdefault(
-            kind, {"n_reads": 0, "raw_chars": 0, "capped_chars": 0,
-                   "raw_tokens": 0, "capped_tokens": 0}
+            kind,
+            {"n_reads": 0, "raw_chars": 0, "capped_chars": 0, "raw_tokens": 0, "capped_tokens": 0},
         )
         slot["n_reads"] += 1
         slot["raw_chars"] += int(r.get("raw_chars", 0) or 0)

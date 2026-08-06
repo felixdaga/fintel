@@ -183,7 +183,9 @@ def _parse_sources(raw: Any) -> list[SourceRef]:
                 SourceRef(
                     source_type=st,
                     source_id=sid or st,
-                    excerpt=(str(src.get("excerpt")).strip() or None) if src.get("excerpt") is not None else None,
+                    excerpt=(str(src.get("excerpt")).strip() or None)
+                    if src.get("excerpt") is not None
+                    else None,
                 )
             )
         elif isinstance(src, str) and src.strip():

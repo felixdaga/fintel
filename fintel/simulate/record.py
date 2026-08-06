@@ -144,9 +144,7 @@ def reduce_job(
     failed = [r for r in runs if r.status == "failed"]
     health: HealthStatus = worst(*(r.health for r in runs)) if runs else "ok"
     health_issues = [
-        f"{r.run_id}: health={r.health}"
-        for r in runs
-        if r.health in ("degraded", "broken")
+        f"{r.run_id}: health={r.health}" for r in runs if r.health in ("degraded", "broken")
     ]
     if failed and not any(r.status == "ok" for r in runs):
         status: Status = "failed"

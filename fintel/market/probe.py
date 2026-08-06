@@ -134,8 +134,12 @@ def probe(
         source = sources.get(kind)
         if source is None:
             out.append(
-                KindProbe(kind=kind, source="", status="failed",
-                           detail=f"kind {kind!r} not bound to a source")
+                KindProbe(
+                    kind=kind,
+                    source="",
+                    status="failed",
+                    detail=f"kind {kind!r} not bound to a source",
+                )
             )
             continue
         # Use the kind's own declared lookback (e.g. fundamentals=730d) so a

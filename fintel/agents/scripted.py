@@ -107,7 +107,8 @@ class ScriptedAgent:
         if self.channel == "tools":
             if env.nerve is not None:
                 env.nerve.emit(
-                    "agent_tool_call", cell=env.cell.name,
+                    "agent_tool_call",
+                    cell=env.cell.name,
                     decision_date=env.cell.decision_date.isoformat(),
                     tool=tool_name(kind),
                     args=str({"symbol": subject})[:120],
@@ -115,7 +116,8 @@ class ScriptedAgent:
             payload = env.tools.call(tool_name(kind), {"symbol": subject})
             if env.nerve is not None:
                 env.nerve.emit(
-                    "agent_tool_result", cell=env.cell.name,
+                    "agent_tool_result",
+                    cell=env.cell.name,
                     decision_date=env.cell.decision_date.isoformat(),
                     tool=tool_name(kind),
                     ok=(payload.get("status") != "failed"),

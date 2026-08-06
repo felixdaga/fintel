@@ -119,24 +119,29 @@ def build_parser() -> argparse.ArgumentParser:
         help="Do not load keys from .env/keys.env",
     )
 
-    backfill = sub.add_parser(
-        "backfill", help="Rerun error cells from a finished job"
-    )
+    backfill = sub.add_parser("backfill", help="Rerun error cells from a finished job")
     backfill.add_argument("job_id", help="Job id under --output-root")
     backfill.add_argument(
-        "--run", type=int, default=1, dest="run_index",
+        "--run",
+        type=int,
+        default=1,
+        dest="run_index",
         help="Which repeat (rK) to backfill (default 1)",
     )
     backfill.add_argument(
-        "--cell-concurrency", type=int, default=1,
+        "--cell-concurrency",
+        type=int,
+        default=1,
         help="Flat pool size for rerunning error cells (default 1)",
     )
     backfill.add_argument(
-        "--output-root", default="runs",
+        "--output-root",
+        default="runs",
         help="Directory for job artifacts (default: runs)",
     )
     backfill.add_argument(
-        "--quiet", action="store_true",
+        "--quiet",
+        action="store_true",
         help="Suppress live progress (still writes logs)",
     )
 
@@ -213,9 +218,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Cache directory (default: <output-root>/cache)",
     )
-    cache_status.add_argument(
-        "--output-root", default="runs", help="Output root (default: runs)"
-    )
+    cache_status.add_argument("--output-root", default="runs", help="Output root (default: runs)")
 
     return parser
 

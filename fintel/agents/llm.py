@@ -180,8 +180,11 @@ def parse_completion(payload: dict, *, model: str) -> Completion:
                 f"tool call {fn.get('name')!r} had unparseable arguments: {exc}"
             ) from exc
         calls.append(
-            ToolCall(id=str(raw.get("id") or f"call_{len(calls)}"), name=str(fn.get("name") or ""),
-                     arguments=args)
+            ToolCall(
+                id=str(raw.get("id") or f"call_{len(calls)}"),
+                name=str(fn.get("name") or ""),
+                arguments=args,
+            )
         )
 
     if not calls:

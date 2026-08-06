@@ -96,7 +96,10 @@ class MassiveFilingText:
                 )
             logger.warning(
                 "%s: %s cache is short of [%s, %s]; serving what is cached",
-                self.name, symbol, since, through,
+                self.name,
+                symbol,
+                since,
+                through,
             )
             return records
 
@@ -130,7 +133,10 @@ class MassiveFilingText:
         out = []
         for item in self.client.paginate(path, params):
             rec = normalise_filing_text(
-                item, symbol=symbol, form=form, text_key=text_key,
+                item,
+                symbol=symbol,
+                form=form,
+                text_key=text_key,
                 default_section=default_section,
             )
             if rec is not None:

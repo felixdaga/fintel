@@ -112,7 +112,7 @@ class Nerve(Progress):
             self.emit(
                 "agent_stalled",
                 cell=cell,
-                reason="no staging event for %.0fs" % self.stall_threshold_s,
+                reason=f"no staging event for {self.stall_threshold_s:.0f}s",
                 since_ms=idle * 1000,
             )
 
@@ -135,10 +135,7 @@ def _format(event: str, fields: dict[str, Any]) -> str:
             f"agent={fields.get('agent')}  k={fields.get('k_repeats')}"
         )
     if event == "preflight_ok":
-        return (
-            f"   preflight ok  dates={fields.get('n_dates')}  "
-            f"universe≈{fields.get('n_symbols')}"
-        )
+        return f"   preflight ok  dates={fields.get('n_dates')}  universe≈{fields.get('n_symbols')}"
     if event == "probe_start":
         return (
             f"   probe  kinds={fields.get('kinds')}  symbol={fields.get('symbol')}  "
@@ -149,10 +146,7 @@ def _format(event: str, fields: dict[str, Any]) -> str:
         tag = "ok" if status in ("ok", "empty") else "FAIL"
         n = fields.get("n")
         n_str = f"  n={n}" if n is not None else ""
-        return (
-            f"     probe {fields.get('kind'):14} [{tag}]  "
-            f"{fields.get('latency_ms', 0)}ms{n_str}"
-        )
+        return f"     probe {fields.get('kind'):14} [{tag}]  {fields.get('latency_ms', 0)}ms{n_str}"
     if event == "probe_ok":
         return f"   probe ok  {fields.get('n_ok')}/{fields.get('n_kinds')} kinds reachable"
     if event == "probe_failed":
@@ -205,10 +199,10 @@ def _format(event: str, fields: dict[str, Any]) -> str:
         # them visually distinct from the exact char counts.
         cached = " cached" if fields.get("cached") else ""
         return (
-            f"     read {fields.get('kind'):14} [{fields.get('status','?'):6}] "
-            f"{fields.get('source',''):14}  "
-            f"raw={fields.get('raw_chars',0)}c/~{fields.get('raw_tokens',0)}t  "
-            f"capped={fields.get('capped_chars',0)}c/~{fields.get('capped_tokens',0)}t"
+            f"     read {fields.get('kind'):14} [{fields.get('status', '?'):6}] "
+            f"{fields.get('source', ''):14}  "
+            f"raw={fields.get('raw_chars', 0)}c/~{fields.get('raw_tokens', 0)}t  "
+            f"capped={fields.get('capped_chars', 0)}c/~{fields.get('capped_tokens', 0)}t"
             f"{cached}"
         )
     if event == "agent_stalled":

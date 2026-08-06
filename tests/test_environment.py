@@ -193,9 +193,7 @@ def test_reading_outside_the_universe_is_denied():
 
 
 def test_peers_widen_reads_but_never_decisions():
-    policy = build_policy(
-        cell=a_cell(), kinds=("prices",), universe=UNIVERSE, peers=True
-    )
+    policy = build_policy(cell=a_cell(), kinds=("prices",), universe=UNIVERSE, peers=True)
     assert "MSFT" in policy.readable
     assert "MSFT" not in policy.decidable
     policy.check_symbol("MSFT")

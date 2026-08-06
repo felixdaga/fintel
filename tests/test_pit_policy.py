@@ -138,9 +138,7 @@ def test_openclaw_enforce_applies_deny_and_isolates_mcp(tmp_path, monkeypatch):
             }
         )
     )
-    monkeypatch.setattr(
-        OpenClawAgent, "_config_path", staticmethod(lambda profile: config_path)
-    )
+    monkeypatch.setattr(OpenClawAgent, "_config_path", staticmethod(lambda profile: config_path))
 
     fixtures.register_all()
     env = build_environment(

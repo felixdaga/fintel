@@ -104,7 +104,6 @@ def analyse(per_run: list[dict[Date, dict[Symbol, float]]]) -> dict[str, Any]:
     dates = sorted({d for run_sig in per_run for d in run_sig})
     for d in dates:
         per_run_syms = [run_sig.get(d, {}) for run_sig in per_run]
-        syms = sorted({s for sig in per_run_syms for s in sig})
         # pairwise spearman over the common symbols
         corrs: list[float] = []
         for i in range(len(per_run_syms)):

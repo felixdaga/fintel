@@ -99,7 +99,9 @@ def _check_universe(manifest: StrategyManifest) -> list[str]:
     if ref.source and ":" in ref.source:
         return []
     if ref.source:
-        return [f"universe.source {ref.source!r} is not a builtin preset and not {ref.source!r} a module:Callable"]
+        return [
+            f"universe.source {ref.source!r} is not a builtin preset and not {ref.source!r} a module:Callable"
+        ]
     return ["universe needs one of: preset, symbols, source"]
 
 
@@ -109,9 +111,7 @@ def _check_schedule(manifest: StrategyManifest) -> list[str]:
     kind = manifest.decision.schedule.kind
     if kind in SCHEDULES or ":" in kind:
         return []
-    return [
-        f"unknown schedule kind {kind!r}; builtins: {sorted(SCHEDULES)}, or module:Class"
-    ]
+    return [f"unknown schedule kind {kind!r}; builtins: {sorted(SCHEDULES)}, or module:Class"]
 
 
 def _check_kpi(manifest: StrategyManifest) -> list[str]:

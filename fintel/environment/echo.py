@@ -48,9 +48,7 @@ def build_echo(
     a package-supplied source with no catalog entry is recorded as such (still
     readable, just not advertised as a typed tool).
     """
-    decision_date = (
-        run_config.schedule_dates[0] if run_config.schedule_dates else ""
-    )
+    decision_date = run_config.schedule_dates[0] if run_config.schedule_dates else ""
     tools = _tool_echo(run_config.data, sources, decision_date)
     instruction = _compose_instruction(
         mission_text=mission_text,
@@ -68,9 +66,7 @@ def build_echo(
             "name": run_config.agent.name,
             "model": run_config.agent.model.id or None,
             "options": dict(run_config.agent.options),
-            "pit_enforcement": fingerprint.get("adapter_params", {}).get(
-                "pit_enforcement"
-            ),
+            "pit_enforcement": fingerprint.get("adapter_params", {}).get("pit_enforcement"),
             "pit_deny": fingerprint.get("adapter_params", {}).get("pit_deny", []),
         },
         "strategy": {
@@ -88,9 +84,7 @@ def build_echo(
             "ref": run_config.schedule.model_dump(),
             "resolved_dates": list(run_config.schedule_dates),
         },
-        "data": [
-            {"kind": b.kind, "source": b.source} for b in run_config.data
-        ],
+        "data": [{"kind": b.kind, "source": b.source} for b in run_config.data],
         "tools": tools,
         "prompt": {
             "mission": mission_text,
@@ -103,9 +97,7 @@ def build_echo(
     }
 
 
-def _tool_echo(
-    bindings: list, sources: dict[str, Any], decision_date: str
-) -> list[dict]:
+def _tool_echo(bindings: list, sources: dict[str, Any], decision_date: str) -> list[dict]:
     """One entry per bound kind: name, description, full JSON schema (the params)."""
     out: list[dict] = []
     for binding in bindings:
@@ -205,15 +197,9 @@ def render_echo(echo: dict) -> str:
     )
     if a.get("pit_deny"):
         lines.append(f"   pit deny:  {', '.join(a['pit_deny'])}")
-    lines.append(
-        f"   strategy: {s['name']}  scope={s['scope']}  digest={_short(s.get('digest'))}"
-    )
-    lines.append(
-        f"   universe: {u['ref']}  symbols={u['resolved_symbols']}"
-    )
-    lines.append(
-        f"   schedule: {sch['ref']}  dates={sch['resolved_dates']}"
-    )
+    lines.append(f"   strategy: {s['name']}  scope={s['scope']}  digest={_short(s.get('digest'))}")
+    lines.append(f"   universe: {u['ref']}  symbols={u['resolved_symbols']}")
+    lines.append(f"   schedule: {sch['ref']}  dates={sch['resolved_dates']}")
     lines.append(f"   data:     {echo['data']}")
     lines.append("   tools:")
     for t in echo["tools"]:
@@ -221,11 +207,9 @@ def render_echo(echo: dict) -> str:
         req = t.get("required", [])
         req_mark = " (required)" if req else ""
         if t.get("schema") is None:
-            lines.append(f"     - {t['name']:16} [{t['source']}] {t.get('note','')}")
+            lines.append(f"     - {t['name']:16} [{t['source']}] {t.get('note', '')}")
         else:
-            lines.append(
-                f"     - {t['name']:16} params={params}{req_mark}"
-            )
+            lines.append(f"     - {t['name']:16} params={params}{req_mark}")
     p = echo["prompt"]
     lines.append(
         f"   prompt:   mission={len(p['mission'])}c  schema={len(p['output_schema'])}c  "

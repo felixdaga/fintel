@@ -34,7 +34,7 @@ _ERROR_MARKERS = (
     "request timed out",
     "connection closed",
     "not connected",
-    "status\": \"error",
+    'status": "error',
     '"iserror": true',
     "econnreset",
     "pipe broken",

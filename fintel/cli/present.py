@@ -108,8 +108,7 @@ def print_decision_block(trial_dir: Path) -> None:
     print(f"== decision {trial_dir.name}: {list(decision)}", flush=True)
     for sym, view in decision.items():
         print(
-            f"   {sym}: score={view.get('score')}  "
-            f"rationale={str(view.get('rationale', ''))[:80]}",
+            f"   {sym}: score={view.get('score')}  rationale={str(view.get('rationale', ''))[:80]}",
             flush=True,
         )
 

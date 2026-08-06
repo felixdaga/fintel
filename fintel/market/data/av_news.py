@@ -147,7 +147,9 @@ class AlphaVantageNews:
         notice = body.get("Information") or body.get("Note")
         if notice:
             low = notice.lower()
-            if any(m in low for m in ("rate limit", "requests per day", "call frequency", "premium")):
+            if any(
+                m in low for m in ("rate limit", "requests per day", "call frequency", "premium")
+            ):
                 raise DataError(f"alphavantage rate limit: {notice}")
             if "api key" in low or "apikey" in low:
                 raise DataError(f"alphavantage key invalid/missing: {notice}")

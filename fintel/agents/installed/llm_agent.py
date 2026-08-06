@@ -136,9 +136,11 @@ class LLMAgent:
         completion = self._call(messages, tools=(submit,), force_tool=emit.SUBMIT_TOOL)
         if env.nerve is not None:
             env.nerve.emit(
-                "agent_stage", cell=env.cell.name,
+                "agent_stage",
+                cell=env.cell.name,
                 decision_date=env.cell.decision_date.isoformat(),
-                stage="one_shot", text=""
+                stage="one_shot",
+                text="",
             )
         call = completion.call_named(emit.SUBMIT_TOOL)
         if call is None:
@@ -312,9 +314,7 @@ class LLMAgent:
         outcome: Outcome = "ok" if views else "empty"
         detail = "; ".join(notes) if not views else ""
         trace.final_explanation = next(iter(views.values())).rationale if views else (reason or "")
-        return AgentResponse(
-            views=views, outcome=outcome, detail=detail, usage=usage, trace=trace
-        )
+        return AgentResponse(views=views, outcome=outcome, detail=detail, usage=usage, trace=trace)
 
 
 def _dumps(value: Any) -> str:

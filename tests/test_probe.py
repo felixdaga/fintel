@@ -126,4 +126,3 @@ def test_probe_uses_kind_declared_lookback_not_the_flat_default():
     sources = {"fundamentals": _SpecSource()}
     probe(sources=sources, symbol="NVDA", cutoff=Date(2026, 4, 1))
     assert seen["lookback_days"] == 730
-

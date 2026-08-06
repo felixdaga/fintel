@@ -78,7 +78,10 @@ def test_echo_records_package_supplied_source_without_catalog_entry(tmp_path):
         sources={},
         mission_text="m",
         output_schema_text="{}",
-        fingerprint={"adapter_params": {"pit_enforcement": "access", "pit_deny": []}, "digest": "abc"},
+        fingerprint={
+            "adapter_params": {"pit_enforcement": "access", "pit_deny": []},
+            "digest": "abc",
+        },
     )
     assert echo["tools"][0]["kind"] == "prices"
     assert "Decision date:" in echo["prompt"]["composed_instruction"]
@@ -114,7 +117,10 @@ def test_render_echo_is_scannable_and_complete(tmp_path):
         sources={},
         mission_text="mission text",
         output_schema_text='{"$schema": "x"}',
-        fingerprint={"adapter_params": {"pit_enforcement": "access", "pit_deny": []}, "digest": "0123456789abcdef"},
+        fingerprint={
+            "adapter_params": {"pit_enforcement": "access", "pit_deny": []},
+            "digest": "0123456789abcdef",
+        },
     )
     block = render_echo(echo)
     assert "== run echo" in block
@@ -151,14 +157,14 @@ def _write_package(root: Path) -> Path:
         'name = "test"\n'
         'description = "test strategy"\n'
         "\n"
-        "[universe]\nsymbols = [\"AAPL\"]\n"
+        '[universe]\nsymbols = ["AAPL"]\n'
         "\n"
-        "[decision]\nscope = \"single_name\"\n"
-        "schedule = { kind = \"single_point\", on = \"2025-01-02\" }\n"
+        '[decision]\nscope = "single_name"\n'
+        'schedule = { kind = "single_point", on = "2025-01-02" }\n'
         "\n"
-        "[[data]]\nkind = \"prices\"\nsource = \"synthetic_prices\"\n"
+        '[[data]]\nkind = "prices"\nsource = "synthetic_prices"\n'
         "\n"
-        "[scoring]\nkpi = \"direction\"\n"
+        '[scoring]\nkpi = "direction"\n'
     )
     return root
 

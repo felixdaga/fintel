@@ -302,8 +302,13 @@ Produce the qualitative report now."""
 
 
 def _verifier_prompt(
-    *, ticker: str, trade_date: str, quantitative_evidence: str,
-    qualitative_evidence: str, quantitative_report: str, qualitative_report: str,
+    *,
+    ticker: str,
+    trade_date: str,
+    quantitative_evidence: str,
+    qualitative_evidence: str,
+    quantitative_report: str,
+    qualitative_report: str,
 ) -> str:
     return f"""Audit the specialist reports for {ticker} as of {trade_date}.
 
@@ -352,8 +357,12 @@ def _render_verification_compact(verification_obj: dict[str, Any] | None) -> str
 
 
 def _final_pm_prompt(
-    *, ticker: str, trade_date: str, quantitative_report: str,
-    qualitative_report: str, verification_obj: dict[str, Any] | None,
+    *,
+    ticker: str,
+    trade_date: str,
+    quantitative_report: str,
+    qualitative_report: str,
+    verification_obj: dict[str, Any] | None,
     include_verification: bool,
 ) -> str:
     """PM user prompt: reports (+ optional verification). Thesis is in system mission."""
@@ -429,7 +438,10 @@ _VERIFICATION_SCHEMA: dict[str, Any] = {
 
 
 def _as_tool_spec(name: str, description: str, schema: dict) -> dict:
-    return {"type": "function", "function": {"name": name, "description": description, "parameters": schema}}
+    return {
+        "type": "function",
+        "function": {"name": name, "description": description, "parameters": schema},
+    }
 
 
 # A generic default submit schema (a rating on [-1,+1] with rationale, key
@@ -572,19 +584,24 @@ class OptimizedAgent:
                 logger.debug("on_stage listener raised", exc_info=True)
 
     def _call(
-        self, *, stage: str, system: str, user: str,
-        tools: tuple[dict, ...] = (), force_tool: str | None = None,
+        self,
+        *,
+        stage: str,
+        system: str,
+        user: str,
+        tools: tuple[dict, ...] = (),
+        force_tool: str | None = None,
         max_tokens: int | None = None,
     ) -> CallRecord:
         if self.llm is None:
-            raise RuntimeError(
-                "OptimizedAgent.llm is not set; the host must inject an LLMClient"
-            )
+            raise RuntimeError("OptimizedAgent.llm is not set; the host must inject an LLMClient")
         started = datetime.now(UTC)
         t0 = time.monotonic()
         completion = self.llm.complete(
             [{"role": "system", "content": system}, {"role": "user", "content": user}],
-            tools=tools, force_tool=force_tool, max_tokens=max_tokens,
+            tools=tools,
+            force_tool=force_tool,
+            max_tokens=max_tokens,
         )
         duration_ms = int((time.monotonic() - t0) * 1000)
         usage = getattr(completion, "usage", None)
@@ -614,8 +631,12 @@ class OptimizedAgent:
         )
 
     def decide_one(
-        self, *, symbol: str, trade_date: str,
-        quant_evidence: str, qual_evidence: str,
+        self,
+        *,
+        symbol: str,
+        trade_date: str,
+        quant_evidence: str,
+        qual_evidence: str,
         submit_tool: dict | None = None,
         quant_kinds: tuple[str, ...] = (),
         qual_kinds: tuple[str, ...] = (),
@@ -635,22 +656,32 @@ class OptimizedAgent:
         # stages up front (thread-safe) so a live dashboard tracks both while
         # they run.
         q_user = _quantitative_specialist_prompt(
-            ticker=symbol, trade_date=trade_date, evidence=quant_evidence, kinds=quant_kinds,
+            ticker=symbol,
+            trade_date=trade_date,
+            evidence=quant_evidence,
+            kinds=quant_kinds,
         )
         l_user = _qualitative_specialist_prompt(
-            ticker=symbol, trade_date=trade_date, evidence=qual_evidence, kinds=qual_kinds,
+            ticker=symbol,
+            trade_date=trade_date,
+            evidence=qual_evidence,
+            kinds=qual_kinds,
         )
         self._emit_stage("quantitative_specialist", symbol)
         self._emit_stage("qualitative_specialist", symbol)
         with ThreadPoolExecutor(max_workers=2) as ex:
             q_fut = ex.submit(
-                self._call, stage="quantitative_specialist",
-                system=QUANTITATIVE_SPECIALIST_SYSTEM, user=q_user,
+                self._call,
+                stage="quantitative_specialist",
+                system=QUANTITATIVE_SPECIALIST_SYSTEM,
+                user=q_user,
                 max_tokens=self.specialist_max_tokens,
             )
             l_fut = ex.submit(
-                self._call, stage="qualitative_specialist",
-                system=QUALITATIVE_SPECIALIST_SYSTEM, user=l_user,
+                self._call,
+                stage="qualitative_specialist",
+                system=QUALITATIVE_SPECIALIST_SYSTEM,
+                user=l_user,
                 max_tokens=self.specialist_max_tokens,
             )
             q_call = q_fut.result()
@@ -665,9 +696,12 @@ class OptimizedAgent:
         if self.enable_verification:
             self._emit_stage("independent_verifier", symbol)
             v_user = _verifier_prompt(
-                ticker=symbol, trade_date=trade_date,
-                quantitative_evidence=quant_evidence, qualitative_evidence=qual_evidence,
-                quantitative_report=quant_report, qualitative_report=qual_report,
+                ticker=symbol,
+                trade_date=trade_date,
+                quantitative_evidence=quant_evidence,
+                qualitative_evidence=qual_evidence,
+                quantitative_report=quant_report,
+                qualitative_report=qual_report,
             )
             v_tool = _as_tool_spec(
                 SUBMIT_VERIFICATION,
@@ -675,8 +709,11 @@ class OptimizedAgent:
                 _VERIFICATION_SCHEMA,
             )
             v_call = self._call(
-                stage="independent_verifier", system=VERIFIER_SYSTEM, user=v_user,
-                tools=(v_tool,), force_tool=SUBMIT_VERIFICATION,
+                stage="independent_verifier",
+                system=VERIFIER_SYSTEM,
+                user=v_user,
+                tools=(v_tool,),
+                force_tool=SUBMIT_VERIFICATION,
                 max_tokens=self.synthesis_max_tokens,
             )
             calls.append(v_call)
@@ -696,14 +733,16 @@ class OptimizedAgent:
         self._emit_stage("final_pm", symbol)
         pm_system = _PM_LEAD + (self.mission_text.strip() or _DEFAULT_MISSION) + "\n\n" + _PM_RULES
         pm_user = _final_pm_prompt(
-            ticker=symbol, trade_date=trade_date,
-            quantitative_report=quant_report, qualitative_report=qual_report,
-            verification_obj=verification_obj, include_verification=self.enable_verification,
+            ticker=symbol,
+            trade_date=trade_date,
+            quantitative_report=quant_report,
+            qualitative_report=qual_report,
+            verification_obj=verification_obj,
+            include_verification=self.enable_verification,
         )
         if self.output_schema_text.strip():
             pm_user += (
-                "\n\n## Output schema (from the strategy pack)\n"
-                + self.output_schema_text.strip()
+                "\n\n## Output schema (from the strategy pack)\n" + self.output_schema_text.strip()
             )
         if submit_tool is None:
             submit_tool = _as_tool_spec(
@@ -711,8 +750,11 @@ class OptimizedAgent:
             )
         submit_name = submit_tool["function"]["name"]
         pm_call = self._call(
-            stage="final_pm", system=pm_system, user=pm_user,
-            tools=(submit_tool,), force_tool=submit_name,
+            stage="final_pm",
+            system=pm_system,
+            user=pm_user,
+            tools=(submit_tool,),
+            force_tool=submit_name,
             max_tokens=self.synthesis_max_tokens,
         )
         calls.append(pm_call)
@@ -721,10 +763,7 @@ class OptimizedAgent:
         error: str | None = None
         submit_args = pm_call.tool_args
         if submit_args is None:
-            error = (
-                f"PM did not call {submit_name} "
-                f"(finish_reason={pm_call.finish_reason!r})"
-            )
+            error = f"PM did not call {submit_name} (finish_reason={pm_call.finish_reason!r})"
 
         return AgentResult(
             symbol=symbol,
@@ -747,6 +786,3 @@ __all__ = [
     "OptimizedAgent",
     "StageListener",
 ]
-
-
-

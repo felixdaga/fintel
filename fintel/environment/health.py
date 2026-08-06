@@ -115,9 +115,7 @@ def audit_events(
             if read.get("detail"):
                 issues.append(f"failed {read.get('kind')}: {read['detail'][:160]}")
 
-    harness_denials = [
-        r for r in denied if _HARNESS_ERROR.search(str(r.get("detail") or ""))
-    ]
+    harness_denials = [r for r in denied if _HARNESS_ERROR.search(str(r.get("detail") or ""))]
     if harness_denials:
         status = "broken"
         issues.append(f"{len(harness_denials)} schema/tool denial(s)")
@@ -150,8 +148,7 @@ def audit_events(
     elif expect_tools and ok_n == 0 and reads:
         status = "broken"
         issues.append(
-            f"tool-calling cell produced {len(reads)} read(s) but zero ok "
-            f"(by_status={by_status})"
+            f"tool-calling cell produced {len(reads)} read(s) but zero ok (by_status={by_status})"
         )
 
     return CellHealth(

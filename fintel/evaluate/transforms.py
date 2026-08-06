@@ -48,7 +48,7 @@ def zscore(signal: dict[Symbol, float]) -> dict[Symbol, float]:
     vals = list(signal.values())
     mu = sum(vals) / len(vals)
     var = sum((v - mu) ** 2 for v in vals) / len(vals)
-    std = var ** 0.5
+    std = var**0.5
     if std == 0:
         return {s: 0.0 for s in signal}
     return {s: (v - mu) / std for s, v in signal.items()}

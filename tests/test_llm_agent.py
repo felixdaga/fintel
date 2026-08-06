@@ -385,8 +385,9 @@ def test_usage_accumulates_across_rounds(tmp_path):
         return Completion(
             text=completion.text,
             tool_calls=completion.tool_calls,
-            usage=Usage(n_llm_calls=1, tokens_in=100, tokens_out=20, cost_usd=0.01,
-                        basis="reported"),
+            usage=Usage(
+                n_llm_calls=1, tokens_in=100, tokens_out=20, cost_usd=0.01, basis="reported"
+            ),
             model="fake/model",
             finish_reason=completion.finish_reason,
         )

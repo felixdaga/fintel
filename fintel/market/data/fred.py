@@ -163,24 +163,25 @@ class FredMacro:
         start = (decision_date - timedelta(days=lookback)).isoformat()
         end = decision_date.isoformat()
 
-        meta = self._get(
-            "series", {"series_id": series_id}
-        )
+        meta = self._get("series", {"series_id": series_id})
         info = (meta.get("seriess") or [{}])[0]
         title = info.get("title", series_id)
         units = info.get("units_short") or info.get("units", "")
         frequency = info.get("frequency", "")
         seasonal = info.get("seasonal_adjustment_short", "")
 
-        obs = self._get(
-            "series/observations",
-            {
-                "series_id": series_id,
-                "observation_start": start,
-                "observation_end": end,
-                "sort_order": "asc",
-            },
-        ).get("observations") or []
+        obs = (
+            self._get(
+                "series/observations",
+                {
+                    "series_id": series_id,
+                    "observation_start": start,
+                    "observation_end": end,
+                    "sort_order": "asc",
+                },
+            ).get("observations")
+            or []
+        )
 
         # PIT: FRED's observation_end is inclusive; drop anything not strictly
         # before the decision date so same-day releases don't leak.
@@ -240,9 +241,7 @@ class FredMacro:
                 message = resp.text
             raise DataError(f"fred request failed: {message}")
         if resp.status_code == 401 or resp.status_code == 403:
-            raise DataError(
-                f"fred rejected the key ({resp.status_code}); check FRED_API_KEY"
-            )
+            raise DataError(f"fred rejected the key ({resp.status_code}); check FRED_API_KEY")
         if resp.status_code >= 400:
             raise DataError(f"fred HTTP {resp.status_code} for {path}: {resp.text[:200]}")
         try:

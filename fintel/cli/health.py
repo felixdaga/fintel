@@ -31,4 +31,3 @@ def run_health(args: Namespace) -> int:
     if status == "degraded":
         return 2
     return 0
-

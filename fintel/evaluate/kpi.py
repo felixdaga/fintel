@@ -39,8 +39,7 @@ def resolve_kpi(name: str) -> KpiFn:
     spec = KPI_BUILTINS.get(name, name)
     if ":" not in spec:
         raise ValueError(
-            f"unknown kpi {name!r}; expected one of {sorted(KPI_BUILTINS)} "
-            "or 'module:Callable'"
+            f"unknown kpi {name!r}; expected one of {sorted(KPI_BUILTINS)} or 'module:Callable'"
         )
     return resolve(spec)  # type: ignore[return-value]
 
@@ -128,7 +127,6 @@ def single_name_ir(
     """
     dates = sorted(signal_by_date)
     universe = sorted({s for sig in signal_by_date.values() for s in sig})
-    min_names = int(params.get("min_names", 2))
     per_horizon: dict[int, dict] = {}
     for h in horizons:
         fwd_by_date = _forward_returns(dates, universe, prices, h)
@@ -150,7 +148,7 @@ def single_name_ir(
         mu = sum(ic_vals) / len(ic_vals)
         if len(ic_vals) >= 2:
             var = sum((v - mu) ** 2 for v in ic_vals) / (len(ic_vals) - 1)
-            std = var ** 0.5
+            std = var**0.5
             raw_icir = mu / std if std > 0 else None
         else:
             raw_icir = None

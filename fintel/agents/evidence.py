@@ -26,17 +26,31 @@ QUANT_KINDS: tuple[str, ...] = ("prices", "fundamentals", "ratios", "macro", "ne
 QUAL_KINDS: tuple[str, ...] = ("news", "filing_text", "web_search")
 
 _INCOME_KEYS = [
-    "revenue", "cost_of_revenue", "gross_profit", "operating_income",
-    "operating_expense", "net_income", "eps_diluted", "ebitda",
+    "revenue",
+    "cost_of_revenue",
+    "gross_profit",
+    "operating_income",
+    "operating_expense",
+    "net_income",
+    "eps_diluted",
+    "ebitda",
 ]
 _BALANCE_KEYS = [
-    "total_assets", "total_liabilities", "total_equity", "total_debt",
-    "cash", "current_assets", "current_liabilities", "inventory",
+    "total_assets",
+    "total_liabilities",
+    "total_equity",
+    "total_debt",
+    "cash",
+    "current_assets",
+    "current_liabilities",
+    "inventory",
 ]
 # Must match catalog / massive.normalise_financial field names — not the raw
 # Polygon statement labels (those are mapped at normalise time).
 _CASHFLOW_KEYS = [
-    "operating_cash_flow", "capex", "free_cash_flow",
+    "operating_cash_flow",
+    "capex",
+    "free_cash_flow",
 ]
 
 # Company-name fallback moved to the strategy package (company_names.json).
@@ -178,10 +192,7 @@ def quarters_contiguous(panel_newest_first: list[dict]) -> tuple[bool, str]:
     """
     if len(panel_newest_first) < 2:
         return True, "n/a (fewer than 2 quarters)"
-    fps = [
-        str(r.get("fiscal_period") or "").strip().upper()
-        for r in panel_newest_first
-    ]
+    fps = [str(r.get("fiscal_period") or "").strip().upper() for r in panel_newest_first]
     if all(fp in _PREV_FISCAL_PERIOD for fp in fps):
         for i in range(len(fps) - 1):
             if fps[i + 1] != _PREV_FISCAL_PERIOD[fps[i]]:
@@ -274,9 +285,7 @@ class FintelEvidence:
         per_kind = rc.get(kind) or {}
         return int(per_kind.get(param, default))
 
-    def _assemble_budgeted(
-        self, sections: list[tuple[str, str]], budget: int
-    ) -> str:
+    def _assemble_budgeted(self, sections: list[tuple[str, str]], budget: int) -> str:
         """Render every section in priority order; truncate only at the budget.
 
         The lookback already filtered what's relevant, so each section is kept
@@ -302,8 +311,7 @@ class FintelEvidence:
             else:
                 kept = text[: max(0, remaining)].rstrip()
                 out.append(
-                    kept
-                    + f"\n…truncated at evidence budget ({len(text) - len(kept)} "
+                    kept + f"\n…truncated at evidence budget ({len(text) - len(kept)} "
                     f"of {len(text)} chars dropped in {label})"
                 )
                 notes.append(f"{label}: partial")
@@ -320,9 +328,7 @@ class FintelEvidence:
             ("macro", self._macro_section()),
             ("news_sentiment", self._news_sentiment_section()),
         ]
-        return self._assemble_budgeted(
-            sections, self.config.evidence_budget_chars
-        )
+        return self._assemble_budgeted(sections, self.config.evidence_budget_chars)
 
     def qualitative_block(self) -> str:
         sections = [
@@ -330,9 +336,7 @@ class FintelEvidence:
             ("web_search", self._web_context_section()),
             ("filing_text", self._filing_narrative()),
         ]
-        return self._assemble_budgeted(
-            sections, self.config.evidence_budget_chars
-        )
+        return self._assemble_budgeted(sections, self.config.evidence_budget_chars)
 
     # ── reads ───────────────────────────────────────────────────────────────
 
@@ -357,14 +361,24 @@ class FintelEvidence:
         hist = panel if panel else raw  # all records in the lookback window
         latest = hist[0]
         keys = [
-            "revenue", "net_income", "eps_diluted", "gross_profit",
-            "operating_income", "ebitda", "total_assets", "total_equity",
-            "total_debt", "cash", "operating_cash_flow", "capex",
-            "free_cash_flow", "operating_margin", "net_margin", "roe",
+            "revenue",
+            "net_income",
+            "eps_diluted",
+            "gross_profit",
+            "operating_income",
+            "ebitda",
+            "total_assets",
+            "total_equity",
+            "total_debt",
+            "cash",
+            "operating_cash_flow",
+            "capex",
+            "free_cash_flow",
+            "operating_margin",
+            "net_margin",
+            "roe",
         ]
-        kv = " ".join(
-            f"{k}={_fmt(latest.get(k))}" for k in keys if latest.get(k) is not None
-        )
+        kv = " ".join(f"{k}={_fmt(latest.get(k))}" for k in keys if latest.get(k) is not None)
         funds = (
             f"Latest fundamentals (filing={latest.get('filing_date')} "
             f"period_end={latest.get('period_end')} {latest.get('timeframe')} "
@@ -375,15 +389,11 @@ class FintelEvidence:
         for r in hist:
             rev, eps = _fmt(r.get("revenue")), _fmt(r.get("eps_diluted"))
             if rev != "n/a" or eps != "n/a":
-                traj.append(
-                    f"  {r.get('period_end')} {r.get('fiscal_period')} "
-                    f"rev={rev} eps={eps}"
-                )
+                traj.append(f"  {r.get('period_end')} {r.get('fiscal_period')} rev={rev} eps={eps}")
         if traj:
             funds += (
                 f"\nquarterly trajectory (newest first, n={len(hist)} "
-                f"— all in window):\n"
-                + "\n".join(traj)
+                f"— all in window):\n" + "\n".join(traj)
             )
         funds += (
             "\n\n"
@@ -415,8 +425,12 @@ class FintelEvidence:
             return "Growth (QoQ / YoY / TTM): n/a (no quarterly panel)."
         latest = panel[0]
         keys = (
-            "revenue", "eps_diluted", "net_income", "gross_profit",
-            "operating_cash_flow", "free_cash_flow",
+            "revenue",
+            "eps_diluted",
+            "net_income",
+            "gross_profit",
+            "operating_cash_flow",
+            "free_cash_flow",
         )
 
         def _f(r: dict, k: str) -> float | None:
@@ -449,8 +463,12 @@ class FintelEvidence:
                 yoy_bits.append(f"{k}={_pct(_f(latest, k), _f(yoy_match, k))}")
 
         ttm_keys = (
-            "revenue", "net_income", "gross_profit", "operating_income",
-            "operating_cash_flow", "free_cash_flow",
+            "revenue",
+            "net_income",
+            "gross_profit",
+            "operating_income",
+            "operating_cash_flow",
+            "free_cash_flow",
         )
         if len(panel) < 4:
             ttm_line = "TTM: n/a (need ≥4 quarters)"
@@ -473,9 +491,8 @@ class FintelEvidence:
                         ttm_bits.append(f"{k}=n/a")
                     else:
                         ttm_bits.append(f"{k}={_fmt(sum(vals))}")  # type: ignore[arg-type]
-                ttm_line = (
-                    f"TTM (sum of 4 contiguous quarters [{detail}]): "
-                    + (" ".join(ttm_bits) if ttm_bits else "n/a")
+                ttm_line = f"TTM (sum of 4 contiguous quarters [{detail}]): " + (
+                    " ".join(ttm_bits) if ttm_bits else "n/a"
                 )
 
         return "\n".join(
@@ -494,9 +511,7 @@ class FintelEvidence:
         """Daily ratio history via fintel's computed ``ratios`` kind (Delorean shape)."""
         as_of = self.decision_date.isoformat()
         lookback = self._lookback("ratios", 365)
-        reading = self.access.read(
-            "ratios", symbol=self.symbol, lookback_days=lookback
-        )
+        reading = self.access.read("ratios", symbol=self.symbol, lookback_days=lookback)
         if reading.status != "ok" or not isinstance(reading.data, dict):
             detail = reading.detail or reading.status
             return (
@@ -520,9 +535,17 @@ class FintelEvidence:
 
         latest = entries[-1]
         keys = [
-            "pe_diluted", "ev_to_ebit", "fcf_yield", "p_b", "p_s",
-            "earnings_yield", "net_margin", "roe", "debt_to_equity",
-            "gross_margin", "operating_margin",
+            "pe_diluted",
+            "ev_to_ebit",
+            "fcf_yield",
+            "p_b",
+            "p_s",
+            "earnings_yield",
+            "net_margin",
+            "roe",
+            "debt_to_equity",
+            "gross_margin",
+            "operating_margin",
         ]
         kv = " ".join(f"{k}={_fmt(latest.get(k))}" for k in keys if latest.get(k) is not None)
 
@@ -545,9 +568,7 @@ class FintelEvidence:
         hist_keys = ["pe_diluted", "ev_to_ebit", "fcf_yield", "p_b", "net_margin", "roe"]
         hist_lines = []
         for e in sampled:
-            parts = " ".join(
-                f"{k}={_fmt(e.get(k))}" for k in hist_keys if e.get(k) is not None
-            )
+            parts = " ".join(f"{k}={_fmt(e.get(k))}" for k in hist_keys if e.get(k) is not None)
             hist_lines.append(
                 f"  {e.get('date')}: {parts}" if parts else f"  {e.get('date')}: (n/a)"
             )
@@ -560,23 +581,17 @@ class FintelEvidence:
             f"range over window: pe_diluted {_rng('pe_diluted')} | "
             f"ev_to_ebit {_rng('ev_to_ebit')} | fcf_yield {_rng('fcf_yield')} | "
             f"p_b {_rng('p_b')} | net_margin {_rng('net_margin')} | roe {_rng('roe')}\n"
-            f"sparse history ({len(hist_lines)} pts, oldest→newest):\n"
-            + "\n".join(hist_lines)
+            f"sparse history ({len(hist_lines)} pts, oldest→newest):\n" + "\n".join(hist_lines)
         )
 
     def _price_section(self) -> str:
         lookback = self._lookback("prices", 365)
         as_of = self.decision_date.isoformat()
-        reading = self.access.read(
-            "prices", symbol=self.symbol, lookback_days=lookback
-        )
+        reading = self.access.read("prices", symbol=self.symbol, lookback_days=lookback)
         df = reading.data
         if reading.status != "ok" or df is None or not len(df):
             detail = reading.detail or reading.status
-            return (
-                f"Prices ({self.symbol}, PIT < {as_of}, "
-                f"lookback {lookback}d): none ({detail})."
-            )
+            return f"Prices ({self.symbol}, PIT < {as_of}, lookback {lookback}d): none ({detail})."
         if "date" in df.columns:
             dates = df["date"].astype(str).str[:10]
             df = df.loc[dates < as_of].copy()
@@ -626,9 +641,7 @@ class FintelEvidence:
                 else:
                     newer = float(df.iloc[idx + q_bars]["close"])
                     dlt = (newer / c - 1.0) * 100.0 if c else float("nan")
-                    path_lines.append(
-                        f"  {d}: close={c:.2f} → next≈{q_bars}d delta={dlt:+.1f}%"
-                    )
+                    path_lines.append(f"  {d}: close={c:.2f} → next≈{q_bars}d delta={dlt:+.1f}%")
 
         hi_lo_bars = min(len(df), y_bars if y_bars <= len(df) else len(df))
         window = df.tail(hi_lo_bars)
@@ -645,9 +658,7 @@ class FintelEvidence:
             f"  annual delta (~{y_bars} trading days, from {from_y}): {ret_y}",
         ]
         if path_lines:
-            lines.append(
-                f"  quarterly path (newest first, step≈{q_bars} trading days):"
-            )
+            lines.append(f"  quarterly path (newest first, step≈{q_bars} trading days):")
             lines.extend(path_lines)
         return "\n".join(lines)
 
@@ -721,9 +732,7 @@ class FintelEvidence:
             f"{len(series)} days; n_articles={n_art} n_scored={n_scored} mean={mean}):"
         ]
         # All daily points, oldest→newest: date:score(n=count)
-        pts = " ".join(
-            f"{p.get('date')}:{p.get('score')}(n={p.get('n')})" for p in series
-        )
+        pts = " ".join(f"{p.get('date')}:{p.get('score')}(n={p.get('n')})" for p in series)
         lines.append(f"  series: {pts}")
         return "\n".join(lines)
 
@@ -748,9 +757,7 @@ class FintelEvidence:
         ceil_iso = ceil.isoformat()
         since = self._lookback("news", 14)
         window_start = (ceil - timedelta(days=since)).isoformat()
-        reading = self.access.read(
-            "news", symbol=self.symbol, lookback_days=since
-        )
+        reading = self.access.read("news", symbol=self.symbol, lookback_days=since)
         arts = list(reading.data or []) if reading.status == "ok" else []
         pit: list[dict] = []
         for a in arts:
@@ -782,8 +789,7 @@ class FintelEvidence:
         return (
             f"Company news ({self.symbol}, last {since}d, "
             f"PIT {window_start} ≤ published_at < {ceil_iso}, "
-            f"newest first, n={len(pit)} — all in window):\n"
-            + "\n".join(lines)
+            f"newest first, n={len(pit)} — all in window):\n" + "\n".join(lines)
         )
 
     def _web_context_section(self) -> str:
@@ -844,14 +850,13 @@ class FintelEvidence:
                 if not kept:
                     detail = "" if reading.status == "ok" else f" [{reading.status}]"
                     blocks.append(
-                        f"Web context [{tier}/{label}] (search \"{query}\", "
+                        f'Web context [{tier}/{label}] (search "{query}", '
                         f"last {since}d, PIT {window_start} ≤ < {ceil_iso}): none.{detail}"
                     )
                     continue
                 from urllib.parse import urlparse
-                cap = self._render_cap(
-                    "web_search", "snippet_max_chars", 640
-                )
+
+                cap = self._render_cap("web_search", "snippet_max_chars", 640)
                 slines = []
                 for s in kept:
                     url = (s.get("url") or "").strip()
@@ -862,17 +867,14 @@ class FintelEvidence:
                     # catalog; strategy may override via [[data]].params). The
                     # full text is still fetched and cached; only the rendered
                     # evidence is bounded, so the agent's context isn't blown.
-                    body = "\n    ".join(
-                        str(sn).strip()[:cap] for sn in snips if sn
-                    )
+                    body = "\n    ".join(str(sn).strip()[:cap] for sn in snips if sn)
                     slines.append(
                         f"  {host} — {title}\n    {body}" if body else f"  {host} — {title}"
                     )
                 blocks.append(
-                    f"Web context [{tier}/{label}] (search \"{query}\", "
+                    f'Web context [{tier}/{label}] (search "{query}", '
                     f"last {since}d, PIT {window_start} ≤ < {ceil_iso}, "
-                    f"n={len(kept)} — all in window):\n"
-                    + "\n".join(slines)
+                    f"n={len(kept)} — all in window):\n" + "\n".join(slines)
                 )
         return "\n\n".join(blocks)
 
@@ -904,7 +906,7 @@ class FintelEvidence:
         for r in rows:
             fd = r.get("filing_date") or "?"
             sec = r.get("section") or "business"
-            text = (r.get("text") or "")  # full section; budget truncates if needed
+            text = r.get("text") or ""  # full section; budget truncates if needed
             age_note = ""
             try:
                 age_days = (self.decision_date - Date.fromisoformat(str(fd)[:10])).days
@@ -919,9 +921,6 @@ class FintelEvidence:
                 f"  filing_date={fd} section={sec} (text_len={len(text)}){age_note}\n{text}"
             )
         return f"{label}:\n" + "\n\n".join(blocks)
-
-
-
 
 
 # ── Adapter ──────────────────────────────────────────────────────────────────
@@ -968,5 +967,3 @@ def _coerce(key: str, value: Any) -> Any:
             raise TypeError("company_names must be a dict")
         return {str(k): str(v) for k, v in parsed.items()}
     return value
-
-

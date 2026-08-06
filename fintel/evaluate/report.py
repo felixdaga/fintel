@@ -39,9 +39,7 @@ def report(
     cache via `price_lookup_for`.
     """
     runs = load_job(job_dir)
-    signals = build_signals(
-        runs, signal=scoring.signal, transform=scoring.transform
-    )
+    signals = build_signals(runs, signal=scoring.signal, transform=scoring.transform)
     if prices is None:
         prices = price_lookup_for(job_dir, cache_root=cache_root)
 
@@ -112,7 +110,9 @@ def render_markdown(p: ReportPayload) -> str:
         f"strategy: `{p.strategy}`  agent repeats: {p.k_repeats}  "
         f"signal: `{p.signal}`  transform: `{p.transform}`  kpi: `{p.kpi}`"
     )
-    lines.append(f"dates: {len(p.decision_dates)}  universe: {len(p.universe)} ({', '.join(p.universe[:8])}{'…' if len(p.universe) > 8 else ''})")
+    lines.append(
+        f"dates: {len(p.decision_dates)}  universe: {len(p.universe)} ({', '.join(p.universe[:8])}{'…' if len(p.universe) > 8 else ''})"
+    )
     lines.append("")
 
     # KPI
@@ -120,7 +120,9 @@ def render_markdown(p: ReportPayload) -> str:
     ens = p.kpi_result.get("ensemble", {})
     per_horizon = ens.get("per_horizon", {})
     if per_horizon:
-        lines.append(f"ensemble ({ens.get('kpi', p.kpi)}, metric_key={ens.get('metric_key', p.metric_key)}):")
+        lines.append(
+            f"ensemble ({ens.get('kpi', p.kpi)}, metric_key={ens.get('metric_key', p.metric_key)}):"
+        )
         lines.append("")
         lines.append("| horizon | mean_ic | raw_icir | n_periods |")
         lines.append("|---|---|---|---|")
@@ -129,22 +131,22 @@ def render_markdown(p: ReportPayload) -> str:
             mi = row.get("mean_ic")
             ir = row.get("raw_icir")
             n = row.get("n_periods", 0)
-            lines.append(
-                f"| {h} | {_fmt(mi)} | {_fmt(ir)} | {n} |"
-            )
+            lines.append(f"| {h} | {_fmt(mi)} | {_fmt(ir)} | {n} |")
         # per-run dispersion
         per_run = p.kpi_result.get("per_run", [])
         if len(per_run) >= 2:
             irs = []
             for r in per_run:
-                rh = (r.get("per_horizon", {}) or {}).get(str(p.horizons[0])) if p.horizons else None
+                rh = (
+                    (r.get("per_horizon", {}) or {}).get(str(p.horizons[0])) if p.horizons else None
+                )
                 if rh and rh.get("raw_icir") is not None:
                     irs.append(rh["raw_icir"])
             if irs:
                 lines.append("")
                 lines.append(
                     f"per-run {p.horizons[0]}-horizon raw_icir: "
-                    f"mean={round(sum(irs)/len(irs), 4)}  min={min(irs)}  max={max(irs)}"
+                    f"mean={round(sum(irs) / len(irs), 4)}  min={min(irs)}  max={max(irs)}"
                 )
     else:
         lines.append("_no forward periods (need >= 2 decision dates)_")

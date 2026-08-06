@@ -31,4 +31,3 @@ class NullProgress:
 
     def emit(self, event: str, **fields: Any) -> None:
         return None
-

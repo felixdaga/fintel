@@ -89,7 +89,9 @@ class DedupSource:
         return getattr(self._inner, attr)
 
     def fetch(self, query: dict, cutoff: Cutoff) -> Any:
-        key = json.dumps(query, sort_keys=True, default=str) + "|" + cutoff.decision_date.isoformat()
+        key = (
+            json.dumps(query, sort_keys=True, default=str) + "|" + cutoff.decision_date.isoformat()
+        )
         with self._lock:
             fut = self._inflight.get(key)
             lead = fut is None
@@ -193,9 +195,7 @@ class Reading:
         if self.status == "ok":
             return {"status": "ok", "data": self.data}
         if self.status == "empty":
-            detail = self.detail or (
-                f"no {self.kind} available for this query before the cutoff"
-            )
+            detail = self.detail or (f"no {self.kind} available for this query before the cutoff")
             return {"status": "empty", "data": self.data, "detail": detail}
         return {"status": self.status, "data": None, "error": self.detail}
 
@@ -256,8 +256,11 @@ class DataAccess:
             logger.warning("%s read failed for %s: %s", kind, self.cell.describe(), exc)
             return self._finish(
                 Reading(
-                    kind=kind, query=clamped, status="failed",
-                    detail=str(exc), source=getattr(source, "name", ""),
+                    kind=kind,
+                    query=clamped,
+                    status="failed",
+                    detail=str(exc),
+                    source=getattr(source, "name", ""),
                 ),
                 started,
             )
@@ -265,7 +268,9 @@ class DataAccess:
             logger.exception("%s source raised for %s", kind, self.cell.describe())
             return self._finish(
                 Reading(
-                    kind=kind, query=clamped, status="failed",
+                    kind=kind,
+                    query=clamped,
+                    status="failed",
                     detail=f"{type(exc).__name__}: {exc}",
                     source=getattr(source, "name", ""),
                 ),

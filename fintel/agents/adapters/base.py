@@ -194,9 +194,7 @@ class SubprocessAgent:
             except subprocess.TimeoutExpired:
                 elapsed = (time.perf_counter() - started) * 1000
                 catcher.stop()
-                env.log.append(
-                    "agent_timeout", command=command[0], elapsed_ms=round(elapsed, 1)
-                )
+                env.log.append("agent_timeout", command=command[0], elapsed_ms=round(elapsed, 1))
                 raise AgentTimeout(f"{self.name} timed out after {self.timeout_s}s") from None
 
             catcher.stop()
@@ -413,7 +411,8 @@ class SubprocessAgent:
 
         if not result_path.is_file():
             return AgentResponse(
-                views={}, outcome="empty",
+                views={},
+                outcome="empty",
                 detail=f"{self.name} exited 0 but wrote no result.json",
                 trace=trace,
             )

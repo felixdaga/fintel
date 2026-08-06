@@ -97,6 +97,7 @@ from fintel.environment import Environment
 from fintel.models.decision import AgentResponse, View
 from fintel.models.trace import ReasoningTrace, Usage
 
+
 @dataclass
 class MyAgent:
     name: str = "myagent"

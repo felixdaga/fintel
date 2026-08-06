@@ -91,9 +91,17 @@ def render_ratios(reading: Reading, *, history_points: int = 12) -> str:
     entries = data.get("entries") if isinstance(data.get("entries"), list) else []
     latest = entries[-1] if entries else data
     keys = (
-        "pe_diluted", "ev_to_ebit", "fcf_yield", "p_b", "p_s",
-        "earnings_yield", "net_margin", "roe", "debt_to_equity",
-        "gross_margin", "operating_margin",
+        "pe_diluted",
+        "ev_to_ebit",
+        "fcf_yield",
+        "p_b",
+        "p_s",
+        "earnings_yield",
+        "net_margin",
+        "roe",
+        "debt_to_equity",
+        "gross_margin",
+        "operating_margin",
     )
     kv = "  ".join(f"{k}={number(latest.get(k))}" for k in keys if latest.get(k) is not None)
     lines = [
@@ -116,9 +124,7 @@ def render_ratios(reading: Reading, *, history_points: int = 12) -> str:
         hist_keys = ("pe_diluted", "ev_to_ebit", "fcf_yield", "p_b", "net_margin", "roe")
         lines.append(f"sparse history ({len(sampled)} pts, oldest→newest):")
         for e in sampled:
-            parts = " ".join(
-                f"{k}={number(e.get(k))}" for k in hist_keys if e.get(k) is not None
-            )
+            parts = " ".join(f"{k}={number(e.get(k))}" for k in hist_keys if e.get(k) is not None)
             lines.append(f"  {e.get('date')}: {parts}" if parts else f"  {e.get('date')}: (n/a)")
     notes = latest.get("notes") or data.get("notes")
     if notes:
@@ -224,8 +230,7 @@ def build(access: DataAccess, *, symbol: str | None = None, kinds: tuple[str, ..
         # nothing, and saying so beats an empty section.
         if kind == "web_search":
             sections.append(
-                "## Web search\nAvailable on request only — it needs a query. "
-                "Not pre-rendered."
+                "## Web search\nAvailable on request only — it needs a query. Not pre-rendered."
             )
             continue
         query: dict = {"symbol": subject} if subject else {}

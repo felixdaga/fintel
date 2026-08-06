@@ -14,7 +14,7 @@ def test_load_dotenv_parses_keys_and_comments(tmp_path: Path):
         "# comment\n"
         "OPENROUTER_API_KEY=sk-test\n"
         "export MASSIVE_API_KEY='mass-1'\n"
-        "BRAVE_API_KEY=\"brave-2\"\n"
+        'BRAVE_API_KEY="brave-2"\n'
         "\n"
         "IGNORED\n",
         encoding="utf-8",

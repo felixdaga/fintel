@@ -187,8 +187,7 @@ def check_bindings(bindings: list) -> list[str]:
         kind, name = binding.kind, binding.source
         if kind in seen:
             problems.append(
-                f"kind {kind!r} is bound twice, to {seen[kind]!r} and {name!r}; "
-                f"one source per kind"
+                f"kind {kind!r} is bound twice, to {seen[kind]!r} and {name!r}; one source per kind"
             )
         seen[kind] = name
 
@@ -388,7 +387,11 @@ AV_NEWS_FIELDS: tuple[Field, ...] = (
     Field("source", "text", "Publisher / source domain"),
     Field("overall_sentiment_score", "number", "Article sentiment score [-1, 1]", "ratio"),
     Field("overall_sentiment_label", "text", "Bearish/Neutral/Bullish"),
-    Field("ticker_sentiment", "list", "[{ticker, relevance_score, ticker_sentiment_score, ticker_sentiment_label}]"),
+    Field(
+        "ticker_sentiment",
+        "list",
+        "[{ticker, relevance_score, ticker_sentiment_score, ticker_sentiment_label}]",
+    ),
 )
 
 
@@ -451,13 +454,20 @@ def register_builtins() -> None:
             provider="massive",
             target="fintel.market.factory:massive_news",
             fields=NEWS_FIELDS,
-            params=(Param("lookback_days", "number", 90), Param("limit", "number"),
-                     # Render cap: how much of each news summary the evidence
-                     # pack shows the agent. Default owned here (markets module);
-                     # a strategy may override via `[[data]].params`.
-                     Param("summary_max_chars", "number", 640,
-                           "Max chars of each news summary rendered to the agent",
-                           per_call=False)),
+            params=(
+                Param("lookback_days", "number", 90),
+                Param("limit", "number"),
+                # Render cap: how much of each news summary the evidence
+                # pack shows the agent. Default owned here (markets module);
+                # a strategy may override via `[[data]].params`.
+                Param(
+                    "summary_max_chars",
+                    "number",
+                    640,
+                    "Max chars of each news summary rendered to the agent",
+                    per_call=False,
+                ),
+            ),
             requires_env=("MASSIVE_API_KEY",),
             description="Per-ticker articles, clamped on published_at.",
         ),
@@ -538,7 +548,9 @@ def register_builtins() -> None:
                 # defaults; a strategy may override it via `[[data]].params`
                 # like `lookback_days`.
                 Param(
-                    "snippet_max_chars", "number", 640,
+                    "snippet_max_chars",
+                    "number",
+                    640,
                     "Max chars of each web snippet rendered to the agent",
                     per_call=False,
                 ),
@@ -547,7 +559,9 @@ def register_builtins() -> None:
                 # When on, drop results whose age date falls outside the search
                 # window. Undated results are kept. Strategies may disable.
                 Param(
-                    "clamp_by_age", "bool", True,
+                    "clamp_by_age",
+                    "bool",
+                    True,
                     "Post-filter Brave results using sources[url].age vs the "
                     "search window (undated kept)",
                     per_call=False,
