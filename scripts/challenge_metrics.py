@@ -1,20 +1,18 @@
 """OLS, IC, NW t, and NAV computation — part 2 of challenge_scoring."""
+
 from __future__ import annotations
 
 from datetime import date
+from pathlib import Path
 from typing import Any
 
 import numpy as np
-from scipy import stats
-
 from challenge_scoring import (
-    ACTIVE_BUDGET,
     CACHE,
-    GICS_SECTOR_DJIA30,
-    HORIZONS,
     IC_METHOD,
     djia_members,
 )
+from scipy import stats
 
 
 def zscore_valid(col: list[float | None]) -> np.ndarray:
@@ -41,10 +39,7 @@ def cross_sectional_regression(
         return {"residuals": {}, "fitted": {}, "r_squared": None, "betas": {}, "n": n}
 
     factor_names = sorted(factor_scores.keys())
-    cols = [
-        zscore_valid([factor_scores[fn].get(s) for s in common])
-        for fn in factor_names
-    ]
+    cols = [zscore_valid([factor_scores[fn].get(s) for s in common]) for fn in factor_names]
     X = np.column_stack(cols) if cols else np.empty((n, 0))
 
     n_sector = 0
@@ -52,9 +47,7 @@ def cross_sectional_regression(
         sectors = sorted({sector_of[s] for s in common if s in sector_of})
         if len(sectors) >= 2:
             for sec in sectors[1:]:
-                dummy = np.array(
-                    [1.0 if sector_of.get(s) == sec else 0.0 for s in common]
-                )
+                dummy = np.array([1.0 if sector_of.get(s) == sec else 0.0 for s in common])
                 X = np.column_stack([X, dummy]) if X.size else dummy.reshape(-1, 1)
                 n_sector += 1
 
@@ -66,7 +59,7 @@ def cross_sectional_regression(
     thresh = 1e-9 * max(np.max(np.abs(y)), 1.0)
     resid[np.abs(resid) < thresh] = 0.0
 
-    ss_res = float(np.sum(resid ** 2))
+    ss_res = float(np.sum(resid**2))
     ss_tot = float(np.sum((y - y.mean()) ** 2)) or 1.0
     r_sq = 1.0 - ss_res / ss_tot if ss_tot > 0 else None
 
@@ -101,7 +94,7 @@ def newey_west_mean(ics: list[float], lag: int = 0) -> dict[str, Any]:
     mean = float(arr.mean())
     L = min(lag, n - 1)
     dev = arr - mean
-    gamma0 = float(np.sum(dev ** 2) / n)
+    gamma0 = float(np.sum(dev**2) / n)
     lr = gamma0
     for l in range(1, L + 1):
         w = 1.0 - l / (L + 1)
@@ -166,6 +159,7 @@ def _closest_close(parquet_path: Path, target: date, window: int = 7) -> float |
     if not parquet_path.exists():
         return None
     import pandas as pd
+
     df = pd.read_parquet(parquet_path)
     if "close" not in df.columns or "date" not in df.columns:
         return None
@@ -176,6 +170,7 @@ def _closest_close(parquet_path: Path, target: date, window: int = 7) -> float |
             d = d.date()
         elif isinstance(d, str):
             from datetime import datetime
+
             d = datetime.strptime(d[:10], "%Y-%m-%d").date()
         gap = abs((d - target).days)
         if gap <= window and gap < best_d:

@@ -2,16 +2,15 @@
 
 Ported from Delorean's attribution.py + portfolio.py for the_challenge.
 """
+
 from __future__ import annotations
 
 import json
 from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
-from typing import Any
 
 import numpy as np
-from scipy import stats
 
 CACHE = Path(__file__).resolve().parents[1] / "runs" / "cache"
 FACTOR_RUNS = Path(__file__).resolve().parents[1] / "runs" / "challenge_factors"
@@ -30,36 +29,122 @@ ACTIVE_BUDGET = 0.5
 IC_METHOD = "pearson"
 
 GICS_SECTOR_DJIA30 = {
-    "AAPL": "IT", "AMGN": "HC", "AMZN": "CD", "AXP": "FIN", "BA": "IND",
-    "CAT": "IND", "CRM": "IT", "CSCO": "IT", "CVX": "EN", "DIS": "CS",
-    "DOW": "MAT", "GOOGL": "CS", "GS": "FIN", "HD": "CD", "HON": "IND",
-    "IBM": "IT", "INTC": "IT", "JNJ": "HC", "JPM": "FIN", "KO": "CS",
-    "MCD": "CD", "MMM": "IND", "MRK": "HC", "MSFT": "IT", "NKE": "CD",
-    "NVDA": "IT", "PG": "CS", "SHW": "MAT", "TRV": "FIN", "UNH": "HC",
-    "V": "FIN", "VZ": "CS", "WMT": "CS",
+    "AAPL": "IT",
+    "AMGN": "HC",
+    "AMZN": "CD",
+    "AXP": "FIN",
+    "BA": "IND",
+    "CAT": "IND",
+    "CRM": "IT",
+    "CSCO": "IT",
+    "CVX": "EN",
+    "DIS": "CS",
+    "DOW": "MAT",
+    "GOOGL": "CS",
+    "GS": "FIN",
+    "HD": "CD",
+    "HON": "IND",
+    "IBM": "IT",
+    "INTC": "IT",
+    "JNJ": "HC",
+    "JPM": "FIN",
+    "KO": "CS",
+    "MCD": "CD",
+    "MMM": "IND",
+    "MRK": "HC",
+    "MSFT": "IT",
+    "NKE": "CD",
+    "NVDA": "IT",
+    "PG": "CS",
+    "SHW": "MAT",
+    "TRV": "FIN",
+    "UNH": "HC",
+    "V": "FIN",
+    "VZ": "CS",
+    "WMT": "CS",
 }
 
 DJIA_RECONSTITUTIONS = [
     # Feb 2024: WBA → AMZN
-    (date(2024, 2, 28), frozenset({
-        "AAPL", "AMGN", "AMZN", "AXP", "BA", "CAT", "CRM", "CSCO", "CVX",
-        "DIS", "DOW", "GS", "HD", "HON", "IBM", "INTC", "JNJ", "JPM", "KO",
-        "MCD", "MMM", "MRK", "MSFT", "NKE", "PG", "TRV", "UNH", "V", "VZ",
-        "WMT",
-    })),
+    (
+        date(2024, 2, 28),
+        frozenset(
+            {
+                "AAPL",
+                "AMGN",
+                "AMZN",
+                "AXP",
+                "BA",
+                "CAT",
+                "CRM",
+                "CSCO",
+                "CVX",
+                "DIS",
+                "DOW",
+                "GS",
+                "HD",
+                "HON",
+                "IBM",
+                "INTC",
+                "JNJ",
+                "JPM",
+                "KO",
+                "MCD",
+                "MMM",
+                "MRK",
+                "MSFT",
+                "NKE",
+                "PG",
+                "TRV",
+                "UNH",
+                "V",
+                "VZ",
+                "WMT",
+            }
+        ),
+    ),
     # Nov 2024: INTC → NVDA, DOW → SHW
-    (date(2024, 11, 8), frozenset({
-        "AAPL", "AMGN", "AMZN", "AXP", "BA", "CAT", "CRM", "CSCO", "CVX",
-        "DIS", "GS", "HD", "HON", "IBM", "JNJ", "JPM", "KO", "MCD", "MMM",
-        "MRK", "MSFT", "NKE", "NVDA", "PG", "SHW", "TRV", "UNH", "V", "VZ",
-        "WMT",
-    })),
+    (
+        date(2024, 11, 8),
+        frozenset(
+            {
+                "AAPL",
+                "AMGN",
+                "AMZN",
+                "AXP",
+                "BA",
+                "CAT",
+                "CRM",
+                "CSCO",
+                "CVX",
+                "DIS",
+                "GS",
+                "HD",
+                "HON",
+                "IBM",
+                "JNJ",
+                "JPM",
+                "KO",
+                "MCD",
+                "MMM",
+                "MRK",
+                "MSFT",
+                "NKE",
+                "NVDA",
+                "PG",
+                "SHW",
+                "TRV",
+                "UNH",
+                "V",
+                "VZ",
+                "WMT",
+            }
+        ),
+    ),
 ]
 
 # Pre-Feb 2024 baseline (WBA instead of AMZN)
-_DJIA_PRE_FEB_2024 = (
-    DJIA_RECONSTITUTIONS[0][1] - {"AMZN"} | {"WBA"}
-)
+_DJIA_PRE_FEB_2024 = DJIA_RECONSTITUTIONS[0][1] - {"AMZN"} | {"WBA"}
 
 
 def djia_members(as_of: date) -> list[str]:
@@ -76,6 +161,7 @@ def _pd(s: str) -> date:
 def price_lookup():
     from fintel.market.data.store import PriceStore
     from fintel.market.realized import PriceLookup
+
     return PriceLookup(PriceStore(CACHE))
 
 
@@ -134,9 +220,7 @@ def load_run_scores(run_dir: Path) -> dict[date, dict[str, float]]:
         d = _pd(td.name)
         raw = json.loads(dec.read_text())
         scores = {
-            s: float(v["score"])
-            for s, v in raw.items()
-            if isinstance(v, dict) and "score" in v
+            s: float(v["score"]) for s, v in raw.items() if isinstance(v, dict) and "score" in v
         }
         if scores:
             out[d] = scores
@@ -165,9 +249,7 @@ def load_factor_scores(factor_dir: Path) -> dict[date, dict[str, float]]:
         raw = json.loads(f.read_text())
         views = raw.get("agent_response", {}).get("views", {})
         scores = {
-            s: float(v["score"])
-            for s, v in views.items()
-            if isinstance(v, dict) and "score" in v
+            s: float(v["score"]) for s, v in views.items() if isinstance(v, dict) and "score" in v
         }
         if scores:
             out[d] = scores

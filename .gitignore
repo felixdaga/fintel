@@ -7,7 +7,8 @@ __pycache__/
 .mypy_cache/
 .ipynb_checkpoints/
 runs/*
-cache/
+# Root-level data cache only — do not ignore fintel/market/cache/ (source package)
+/cache/
 .env/
 !.env.example
 

@@ -216,7 +216,9 @@ class DjiaStrategyAdapterForLlmAgent:
                 )
             except Exception as exc:  # noqa: BLE001 — classified upstream by invoke
                 errors.append(f"{sym}: {exc}")
-                logger.warning("djia_strategy_adapter_for_llm_agent: %s LLM call failed — %s", sym, exc)
+                logger.warning(
+                    "djia_strategy_adapter_for_llm_agent: %s LLM call failed — %s", sym, exc
+                )
                 continue
 
             step = TraceStep(

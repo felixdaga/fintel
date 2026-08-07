@@ -7,6 +7,7 @@ residual-tilt cumulative NAV -- the leaderboard metrics.
 Usage:
   uv run python scripts/score_challenge.py runs/<job>/r1 [runs/<job>/r2 ...]
 """
+
 from __future__ import annotations
 
 import json
@@ -18,24 +19,24 @@ import numpy as np
 
 # scripts/ is not a package; add to path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from challenge_metrics import (
+    _ic,
+    compute_nav,
+    cross_sectional_regression,
+    ic_summary,
+    newey_west_mean,
+)
 from challenge_scoring import (
-    FACTORS,
     FACTOR_RUNS,
+    FACTORS,
     GICS_SECTOR_DJIA30,
     HORIZONS,
+    _zscore_transform,
     djia_members,
     ensemble,
     load_factor_scores,
     load_run_scores,
     price_lookup,
-    _zscore_transform,
-)
-from challenge_metrics import (
-    cross_sectional_regression,
-    compute_nav,
-    ic_summary,
-    newey_west_mean,
-    _ic,
 )
 
 
@@ -48,8 +49,7 @@ def main() -> None:
     print(f"scoring {len(run_dirs)} run(s)")
 
     # Delorean: transform each run (zscore), then ensemble-average
-    runs = [{d: _zscore_transform(s) for d, s in load_run_scores(d).items()}
-            for d in run_dirs]
+    runs = [{d: _zscore_transform(s) for d, s in load_run_scores(d).items()} for d in run_dirs]
     agent_scores = ensemble(runs) if len(runs) > 1 else runs[0]
     dates = sorted(agent_scores.keys())
     print(f"  {len(dates)} dates: {dates[0]} -> {dates[-1]}")
