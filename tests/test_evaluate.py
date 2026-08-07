@@ -31,6 +31,20 @@ def _has_par2() -> bool:
 # --- transforms (pure math, no fixtures) --------------------------------------
 
 
+def test_price_cache_root_ignores_relative_output_root(tmp_path, monkeypatch):
+    """Relative ``output_root`` must not resolve against the process cwd."""
+    from fintel.evaluate.prices import _default_cache_root
+
+    runs = tmp_path / "runs"
+    job = runs / "some-job"
+    job.mkdir(parents=True)
+    (job / "config.json").write_text(json.dumps({"output_root": "runs"}))
+    elsewhere = tmp_path / "elsewhere"
+    elsewhere.mkdir()
+    monkeypatch.chdir(elsewhere)
+    assert _default_cache_root(job) == runs / "cache"
+
+
 def test_identity_is_a_copy():
     sig = {"AAPL": 0.3, "NVDA": -0.1}
     assert identity(sig) == sig

@@ -26,14 +26,25 @@ def price_lookup_for(job_dir: Path, *, cache_root: str | Path | None = None) -> 
 
 
 def _default_cache_root(job_dir: Path) -> Path:
+    """Resolve ``<output_root>/cache`` for a finished job.
+
+    Job configs often store a *relative* ``output_root`` (e.g. ``\"runs\"``).
+    Resolving that against the process cwd breaks notebooks launched from
+    ``fintel/evaluate/`` (empty cache → zero ICs / nonsense NAV). Prefer an
+    absolute ``output_root`` when present; otherwise use ``job_dir.parent``
+    (the job always lives at ``<output_root>/<job_id>``).
+    """
+    job_dir = Path(job_dir).expanduser().resolve()
     config_path = job_dir / "config.json"
     if config_path.is_file():
         try:
             cfg = json.loads(config_path.read_text())
             out = cfg.get("output_root")
             if out:
-                return Path(out) / "cache"
+                out_path = Path(out).expanduser()
+                if out_path.is_absolute():
+                    return out_path / "cache"
         except json.JSONDecodeError:
             pass
-    # Fall back to <job_dir.parent>/cache if no config or no output_root.
+    # Relative / missing output_root: job_dir is <output_root>/<job_id>.
     return job_dir.parent / "cache"
