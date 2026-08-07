@@ -80,12 +80,15 @@ def price_lookup():
 
 
 def _zscore_transform(scores: dict[str, float]) -> dict[str, float]:
-    """Cross-sectional z-score (mean 0, std 1) — Delorean's default transform."""
+    """Cross-sectional z-score (mean 0, std 1) — Delorean's default transform.
+
+    Uses population variance (÷n) to match Delorean's transform.zscore.
+    """
     vals = list(scores.values())
     if len(vals) < 2:
         return dict(scores)
     mu = float(np.mean(vals))
-    sd = float(np.std(vals, ddof=1))
+    sd = float(np.std(vals, ddof=0))  # population std, matching Delorean
     if sd == 0:
         return {s: 0.0 for s in scores}
     return {s: (float(v) - mu) / sd for s, v in scores.items()}

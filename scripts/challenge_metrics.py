@@ -9,6 +9,7 @@ from scipy import stats
 
 from challenge_scoring import (
     ACTIVE_BUDGET,
+    CACHE,
     GICS_SECTOR_DJIA30,
     HORIZONS,
     IC_METHOD,
@@ -160,10 +161,39 @@ def naive_tilt(
     return full
 
 
+def _closest_close(parquet_path: Path, target: date, window: int = 7) -> float | None:
+    """Closest available close price within ±window calendar days."""
+    if not parquet_path.exists():
+        return None
+    import pandas as pd
+    df = pd.read_parquet(parquet_path)
+    if "close" not in df.columns or "date" not in df.columns:
+        return None
+    best, best_d = None, window + 1
+    for _, row in df.iterrows():
+        d = row["date"]
+        if hasattr(d, "date"):
+            d = d.date()
+        elif isinstance(d, str):
+            from datetime import datetime
+            d = datetime.strptime(d[:10], "%Y-%m-%d").date()
+        gap = abs((d - target).days)
+        if gap <= window and gap < best_d:
+            v = float(row["close"])
+            if v > 0:
+                best, best_d = v, gap
+    return best
+
+
 def benchmark_weights(pl, members: list[str], d: date) -> dict[str, float]:
+    """DJIA price-weighted benchmark using close prices (matches Delorean).
+
+    Uses closest close within ±7 calendar days, not open-at-or-before.
+    """
+    prices_dir = CACHE / "prices"
     prices = {}
     for s in members:
-        p = pl.price_at(s, d)
+        p = _closest_close(prices_dir / f"{s}.parquet", d)
         if p and p > 0:
             prices[s] = p
     total = sum(prices.values())

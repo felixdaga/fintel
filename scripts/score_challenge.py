@@ -47,10 +47,10 @@ def main() -> None:
     run_dirs = [Path(a) for a in sys.argv[1:]]
     print(f"scoring {len(run_dirs)} run(s)")
 
-    runs = [load_run_scores(d) for d in run_dirs]
+    # Delorean: transform each run (zscore), then ensemble-average
+    runs = [{d: _zscore_transform(s) for d, s in load_run_scores(d).items()}
+            for d in run_dirs]
     agent_scores = ensemble(runs) if len(runs) > 1 else runs[0]
-    # Apply zscore transform (matches Delorean's portfolio_rank profile)
-    agent_scores = {d: _zscore_transform(s) for d, s in agent_scores.items()}
     dates = sorted(agent_scores.keys())
     print(f"  {len(dates)} dates: {dates[0]} -> {dates[-1]}")
 
