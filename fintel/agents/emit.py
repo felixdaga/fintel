@@ -19,9 +19,9 @@ from fintel.models.decision import SourceRef, View
 
 SUBMIT_TOOL = "submit_views"
 
-# Tool-facing view fields. Platform ``View`` still carries conviction /
-# time_horizon with defaults on parse — they are not solicited from the model
-# (unused by single_name signal; wastes reasoning).
+# Tool-facing view fields. Matches the strategy-pack output contract surface
+# (symbol / score / rationale / key_factors / sources_cited). Platform ``View``
+# may carry optional conviction / time_horizon, but emit never invents them.
 VIEW_PROPERTIES: dict[str, Any] = {
     "symbol": {"type": "string", "description": "Ticker this view is about."},
     "score": {
@@ -147,15 +147,24 @@ def parse_views(
         score, score_adjusted = clamp(raw.get("score"), -1.0, 1.0, 0.0)
         if score_adjusted:
             notes.append(f"{symbol}: score {raw.get('score')!r} coerced to {score}")
-        conviction, conviction_adjusted = clamp(raw.get("conviction", 0.5), 0.0, 1.0, 0.5)
-        if conviction_adjusted:
-            notes.append(f"{symbol}: conviction {raw.get('conviction')!r} coerced to {conviction}")
+
+        conviction: float | None = None
+        if "conviction" in raw and raw.get("conviction") is not None:
+            conviction, conviction_adjusted = clamp(raw.get("conviction"), 0.0, 1.0, 0.5)
+            if conviction_adjusted:
+                notes.append(
+                    f"{symbol}: conviction {raw.get('conviction')!r} coerced to {conviction}"
+                )
+
+        time_horizon: str | None = None
+        if raw.get("time_horizon") not in (None, ""):
+            time_horizon = str(raw.get("time_horizon"))
 
         views[symbol] = View(
             symbol=symbol,
             score=score,
             conviction=conviction,
-            time_horizon=str(raw.get("time_horizon") or "quarter"),
+            time_horizon=time_horizon,
             rationale=str(raw.get("rationale") or ""),
             key_factors=[str(f) for f in raw.get("key_factors") or [] if str(f).strip()],
             sources_cited=_parse_sources(raw.get("sources_cited")),
@@ -179,10 +188,14 @@ def _parse_sources(raw: Any) -> list[SourceRef]:
             sid = str(src.get("source_id") or "").strip()
             if not st:
                 continue
+            relevance = None
+            if "relevance" in src and src.get("relevance") is not None:
+                relevance, _ = clamp(src.get("relevance"), 0.0, 1.0, 1.0)
             out.append(
                 SourceRef(
                     source_type=st,
                     source_id=sid or st,
+                    relevance=relevance,
                     excerpt=(str(src.get("excerpt")).strip() or None)
                     if src.get("excerpt") is not None
                     else None,

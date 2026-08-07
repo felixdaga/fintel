@@ -19,12 +19,31 @@ from fintel.models.trial import TrialConfig
 # ── ids ──────────────────────────────────────────────────────────────────────
 
 
-def test_job_id_is_slugged_and_unique():
-    a = ids.new_job_id(strategy="Systematic StockRate DJIA", agent="openclaw")
-    b = ids.new_job_id(strategy="Systematic StockRate DJIA", agent="openclaw")
-    assert a != b
-    assert a.startswith("systematic-stockrate-djia-openclaw-")
+def test_job_id_is_strategy_agent_date_runinfo():
+    from datetime import UTC, datetime
+
+    fixed = datetime(2026, 8, 7, 12, 0, tzinfo=UTC)
+    a = ids.new_job_id(
+        strategy="systematic_stockrate_djia_weekly",
+        agent="djia_strategy_adapter_for_llm_agent",
+        model="xiaomi/mimo-v2.5-pro",
+        k_repeats=1,
+        now=fixed,
+    )
+    b = ids.new_job_id(
+        strategy="systematic_stockrate_djia_weekly",
+        agent="djia_strategy_adapter_for_llm_agent",
+        model="xiaomi/mimo-v2.5-pro",
+        k_repeats=1,
+        now=fixed,
+    )
+    assert a != b  # trailing hex
+    assert a.startswith(
+        "systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_"
+    )
+    assert "_mimo_v2_5_pro_k1_" in a
     assert " " not in a
+    assert a.count("_") >= 5
 
 
 def test_run_id_is_one_based():

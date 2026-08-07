@@ -217,7 +217,7 @@ date (membership changes over time).
 ## Important notes
 
 - The `fintel` CLI is the only operator surface — no `scripts/` one-offs.
-- `runs/` and `cache/` are gitignored; the demo run `runs/djia-w-full-r1-0001/`
+- `runs/` and `cache/` are gitignored; the demo run `runs/systematic_stockrate_djia_weekly_optimized_20260806_mimo_v2_5_pro_k1_0001/`
   is negated in `.gitignore` so it ships.
 - Secrets load from `.env/keys.env` unless `--no-bootstrap` is set.
 - The MCP server lives in `environment/` (not `agents/`) because it rebuilds

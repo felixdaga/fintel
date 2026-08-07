@@ -54,6 +54,8 @@ def coverage_for_kind(
     * ``prices`` — parquet per symbol with a ``.coverage.json`` sidecar.
     * ``fundamentals`` / ``news`` / ``filing_text`` — JSON per symbol with an
       embedded ``_coverage`` field.
+    * ``macro`` — JSON per FRED series ID (same RecordCache shape; keys are
+      series IDs like ``FEDFUNDS``, not equity tickers).
     * ``ratios`` / ``news_sentiment`` — computed at fetch time, no own cache;
       report upstream coverage instead (caller's job).
     * ``web_search`` — keyed by query, not symbol; report the cached-file count
@@ -71,7 +73,7 @@ def coverage_for_kind(
             kind=kind, source=source_name, cache_dir=root / "prices", symbols=symbols
         )
 
-    if kind in {"fundamentals", "news", "filing_text"}:
+    if kind in {"fundamentals", "news", "filing_text", "macro"}:
         cache = RecordCache(root=root, kind=kind)
         if symbol is not None:
             spans, _ = cache.read(symbol)
@@ -81,6 +83,9 @@ def coverage_for_kind(
             symbols = {}
             if d.is_dir():
                 for p in sorted(d.glob("*.json")):
+                    # Skip sibling meta files (e.g. macro/{SERIES}.meta.json).
+                    if p.name.endswith(".meta.json"):
+                        continue
                     spans, _ = cache.read(p.stem)
                     if spans:
                         symbols[p.stem] = spans

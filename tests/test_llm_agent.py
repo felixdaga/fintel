@@ -209,7 +209,19 @@ def test_an_unstated_cost_is_unknown_not_zero():
 def test_a_clean_payload_becomes_views():
     views, notes = emit.parse_views({"views": [_view()]}, decidable=DECIDABLE)
     assert views["AAPL"].score == pytest.approx(0.4)
+    assert views["AAPL"].conviction is None
+    assert views["AAPL"].time_horizon is None
     assert notes == []
+
+
+def test_emit_does_not_invent_schema_absent_fields():
+    """decision.json should follow the submit payload / strategy schema, not
+    platform View defaults for unused keys."""
+    views, _ = emit.parse_views({"views": [_view()]}, decidable=DECIDABLE)
+    dumped = views["AAPL"].model_dump(mode="json", exclude_none=True)
+    assert "conviction" not in dumped
+    assert "time_horizon" not in dumped
+    assert set(dumped) >= {"symbol", "score", "rationale"}
 
 
 def test_an_overshooting_score_is_clamped_and_noted():

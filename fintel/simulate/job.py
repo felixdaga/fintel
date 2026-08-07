@@ -121,7 +121,12 @@ def run_job(
     )
     strategy_lock.write(paths.lock)
 
-    job_id = job_config.job_id or new_job_id(strategy=manifest.name, agent=job_config.agent.name)
+    job_id = job_config.job_id or new_job_id(
+        strategy=manifest.name,
+        agent=job_config.agent.name,
+        model=job_config.agent.model.id or None,
+        k_repeats=job_config.k_repeats,
+    )
     job_paths = JobPaths.under(job_config.output_root, job_id)
 
     # The central nervous system, owned by the environment module. Two nerves

@@ -15,19 +15,15 @@ the knob off still sees the full stored response.
 from __future__ import annotations
 
 import hashlib
-import json
-import logging
 from dataclasses import dataclass
 from datetime import date as Date
 from datetime import timedelta
 from pathlib import Path
 from typing import Any
 
+from fintel.market.cache import ensure_query_blob
 from fintel.market.data.base import DataError, require
-from fintel.market.data.store import atomic_write
 from fintel.pit import Cutoff
-
-logger = logging.getLogger(__name__)
 
 BRAVE_ENDPOINT = "https://api.search.brave.com/res/v1/llm/context"
 DEFAULT_LOOKBACK_DAYS = 30
@@ -127,23 +123,15 @@ class WebSearch:
         lookback = int(query.get("lookback_days", self.lookback_days))
         since, through = self.window(cutoff, lookback)
         path = self.path(text, since, through)
-
-        blob: dict | None = None
-        if path.exists():
-            try:
-                blob = json.loads(path.read_text())
-            except (json.JSONDecodeError, OSError) as exc:
-                logger.warning("corrupt web_search cache %s: %s", path, exc)
-
-        if blob is None:
-            if self.api_key is None:
-                raise DataError(
-                    f"{self.name}: no cached result for {text!r} in "
-                    f"[{since}, {through}] and no API key configured"
-                )
-            blob = self._search(text, since, through)
-            atomic_write(path, json.dumps(blob))
-
+        blob = ensure_query_blob(
+            path,
+            online=self.api_key is not None,
+            fetch=lambda: self._search(text, since, through),
+            source_name=self.name,
+            miss_detail=(
+                f"no cached result for {text!r} in [{since}, {through}] and no API key configured"
+            ),
+        )
         return self._maybe_clamp(blob, since, through)
 
     def _maybe_clamp(self, blob: dict, since: Date, through: Date) -> dict:

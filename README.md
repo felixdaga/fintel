@@ -91,10 +91,10 @@ fintel simulation packages/systematic_stockrate_djia_weekly \
   --job-id djia-w-full \
   --shared-concurrency 8
 
-fintel report djia-w-full-r1-0001
+fintel report systematic_stockrate_djia_weekly_optimized_20260806_mimo_v2_5_pro_k1_0001
 ```
 
-The shipped demo run lives at `runs/djia-w-full-r1-0001/` — inspect it directly
+The shipped demo run lives at `runs/systematic_stockrate_djia_weekly_optimized_20260806_mimo_v2_5_pro_k1_0001/` — inspect it directly
 or open `fintel/evaluate/run_analytics.ipynb` for deeper analysis.
 
 ## CLI

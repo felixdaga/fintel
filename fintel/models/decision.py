@@ -20,7 +20,8 @@ class SourceRef(BaseModel):
 
     source_type: str
     source_id: str
-    relevance: float = Field(default=1.0, ge=0.0, le=1.0)
+    # Optional: only persist when the strategy schema / submitter provides it.
+    relevance: float | None = Field(default=None, ge=0.0, le=1.0)
     excerpt: str | None = None
 
 
@@ -29,8 +30,11 @@ class View(BaseModel):
 
     symbol: Symbol
     score: float = Field(..., ge=-1.0, le=1.0)
-    conviction: float = Field(default=0.5, ge=0.0, le=1.0)
-    time_horizon: TimeHorizon = "quarter"
+    # Optional platform fields — omit unless the submitter (or package schema)
+    # actually provides them. Emit must not invent defaults for fields the
+    # strategy output contract does not ask for.
+    conviction: float | None = Field(default=None, ge=0.0, le=1.0)
+    time_horizon: TimeHorizon | None = None
     rationale: str = ""
     key_factors: list[str] = Field(default_factory=list)
     sources_cited: list[SourceRef] = Field(default_factory=list)

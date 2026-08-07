@@ -197,10 +197,14 @@ def synthetic_prices(**params: Any) -> SyntheticPrices:
 
 
 def fred_macro(*, config: MarketConfig, **params: Any) -> FredMacro:
-    """FRED macro series. Key from config (env-loaded); None when offline."""
+    """FRED macro series. Cache-first; key from config (env-loaded); None when offline."""
     key = None if config.offline else config.fred_api_key
     keep = {k: v for k, v in params.items() if k in {"lookback_days", "indicators"}}
-    return FredMacro(api_key=key or "", **keep)
+    return FredMacro(
+        cache=RecordCache(root=config.cache_root, kind="macro"),
+        api_key=key or None,
+        **keep,
+    )
 
 
 def alphavantage_news(*, config: MarketConfig, **params: Any) -> AlphaVantageNews:

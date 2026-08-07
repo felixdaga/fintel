@@ -1,0 +1,103 @@
+# the_challenge — DJIA single-ticker fundamental stock rating, the locked
+# benchmark for the fintel challenge. Frozen quarterly grid over 2022-07-01
+# .. 2026-04-01, scored via pooled single-name IR.
+#
+# This package is LOCKED. The strategy.lock file pins the manifest, mission,
+# and output schema digests. Editing any of those files and running an
+# official benchmark will fail preflight unless --allow-dirty-package is set.
+# Participants build an agent adapter — they cannot change the mission,
+# universe, data surface, or scoring.
+#
+# Data surface partitioning (adapter owns):
+#   quantitative specialist ← prices + fundamentals + ratios + macro + news_sentiment
+#   qualitative specialist  ← news + web_search
+
+schema_version = 1
+name = "the_challenge"
+description = "Locked DJIA-30 fundamental stock rating benchmark for the fintel challenge (2022-07-01 to 2026-04-01), scored via pooled single-name IR."
+
+[universe]
+preset = "dow30"
+
+[decision]
+scope = "single_name"
+# Quarterly first-trading-day grid over 2022-07-01 .. 2026-04-01. Expressed as
+# custom_dates so the frozen list is the source of truth (matches the legacy
+# window); `--start/--end` may narrow but not widen them.
+schedule = { kind = "custom_dates", start = "2022-07-01", end = "2026-04-01", dates = [
+    "2022-07-01", "2022-10-01", "2023-01-01", "2023-04-01",
+    "2023-07-01", "2023-10-01", "2024-01-01", "2024-04-01",
+    "2024-07-01", "2024-10-01", "2025-01-01", "2025-04-01",
+    "2025-07-01", "2025-10-01", "2026-01-01", "2026-04-01",
+] }
+
+# ── quantitative lane ───────────────────────────────────────────────────────
+[[data]]
+kind = "prices"
+source = "massive_prices"
+lookback_days = 365
+
+[[data]]
+kind = "fundamentals"
+source = "massive_fundamentals"
+lookback_days = 540
+
+[[data]]
+kind = "ratios"
+source = "valuation_ratios"
+window_days = 365
+lookback_days = 365
+
+[[data]]
+# FRED macro regime: rates, curve, vol, credit, FX, oil, breakeven, labour.
+# 90d lookback → the source's `change` field is the 3-month trend, the tactical
+# read. Adapter renders all observations compactly; ceiling truncates if needed.
+kind = "macro"
+source = "fred_macro"
+lookback_days = 90
+
+[[data]]
+# Computed from news: 90-point daily sentiment series (score + count per day).
+# The quantitative sentiment trend over 3 months — replaces reading hundreds of
+# raw headlines. Computed kind; upstream `news` must be bound (it is, below).
+kind = "news_sentiment"
+source = "news_sentiment"
+lookback_days = 90
+
+# ── qualitative lane ────────────────────────────────────────────────────────
+[[data]]
+# Recent news context — 14d. Supporting context for the fundamental picture,
+# not a momentum driver. Adapter renders every article in the window; the
+# context-budget ceiling handles high-coverage names.
+kind = "news"
+source = "massive_news"
+lookback_days = 14
+
+[[data]]
+# Web search, two-tier (adapter owns the plan): structural queries (business
+# model, competitive position, risk, strategy) over 30d, plus an updates
+# query over the last 7d. Binding lookback sets the structural tier.
+kind = "web_search"
+source = "web_search"
+lookback_days = 30
+max_results = 5
+# Platform default is true; spelled here so packages see the PIT knob.
+clamp_by_age = true
+
+[scoring]
+# The signal: how the decision's metrics become THE signal. For a single-name
+# strategy the view's score is the signal. The platform owns the mechanics
+# around it (transform, ensemble, holdings); the package owns what the
+# signal *is*. See docs/architecture.md §1 + the evaluation layer.
+signal = "single_name"
+# The KPI: what "good" means over signal + prices. single_name_ir reports raw
+# cross-sectional IC (Spearman, per decision-date grid) plus net-of-cost
+# returns from the holdings layer.
+kpi = "single_name_ir"
+metric_key = "icir"
+transform = "single_name"
+# Horizons are decision-date-grid steps (quarters on this quarterly grid):
+# [1, 2, 3, 4]. These are the measurable forward returns the KPI scores —
+# they do NOT represent the agent's view horizon (a fundamental trajectory).
+horizons = [1, 2, 3, 4]
+params = { holdings = true, active_budget = 0.5, cost_bps = 5.0 }

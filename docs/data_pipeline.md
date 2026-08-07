@@ -3,6 +3,21 @@
 How a strategy's data declaration becomes a warm cache, a tool surface, and a
 PIT-clamped read — and where the lookback comes from.
 
+## Feed-level cache (`fintel/market/cache/`)
+
+Caching policy lives in **one module**, not inside each vendor file:
+
+| Helper | Shape | Used by |
+|--------|-------|---------|
+| `ensure_records` / `CachedRecordsFeed` | gap-aware `RecordCache` | fundamentals, news, filing_text, macro |
+| `ensure_prices` / `CachedPricesFeed` | gap-aware `PriceStore` | prices |
+| `ensure_query_blob` | exact-key JSON file | web_search |
+
+Vendor sources implement **network fetch only** (`_fetch_span` / `_fetch_bars` /
+`_search`). They call the cache helper with a few lines — offline miss, short
+cache warn, and merge under lock are shared. Prefetch warms via each source's
+public `ensure` / `warm`, not private `_ensure` isinstance branches.
+
 ## One cache root
 
 `runs/cache/` is the single central cache (default `<output-root>/cache`;
@@ -15,6 +30,7 @@ runs/cache/
   fundamentals/{SYMBOL}.json      (coverage embedded as _coverage)
   news/{SYMBOL}.json
   filing_text/{SYMBOL}.json
+  macro/{SERIES_ID}.json          + {SERIES_ID}.meta.json (FRED; series-keyed)
   web_search/{to}_{from}_{hash}.json   (keyed by query, not symbol)
 ```
 

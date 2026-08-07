@@ -7,19 +7,16 @@ asks for `filing_text` and doesn't care.
 
 from __future__ import annotations
 
-import logging
 from dataclasses import dataclass
 from datetime import date as Date
 from datetime import timedelta
 
-from fintel.market.data import coverage as cov
-from fintel.market.data.base import DataError, require
+from fintel.market.cache import ensure_records
+from fintel.market.data.base import require
 from fintel.market.data.http import MassiveClient
 from fintel.market.data.store import RecordCache
 from fintel.models.common import Symbol
 from fintel.pit import Cutoff
-
-logger = logging.getLogger(__name__)
 
 # The only 10-K sections the provider exposes.
 TEN_K_SECTIONS: tuple[str, ...] = ("business", "risk_factors")
@@ -83,40 +80,31 @@ class MassiveFilingText:
             out = [{**r, "text": r["text"][:limit]} for r in out]
         return out
 
-    def _ensure(self, symbol: Symbol, since: Date, through: Date) -> list[dict]:
-        coverage, records = self.cache.read(symbol)
-        gaps = cov.missing(coverage, since, through)
-        if not gaps:
-            return records
-        if self.client is None:
-            if not coverage:
-                raise DataError(
-                    f"{self.name}: nothing cached for {symbol} filing_text covering "
-                    f"[{since}, {through}] and no network access configured"
-                )
-            logger.warning(
-                "%s: %s cache is short of [%s, %s]; serving what is cached",
-                self.name,
-                symbol,
-                since,
-                through,
-            )
-            return records
-
-        fresh: dict[str, dict] = {}
-        for lo, hi in gaps:
-            for form in self.forms:
-                sections = self.sections if form.upper() == "10-K" else (None,)
-                for section in sections:
-                    for rec in self._fetch_one(symbol, form, section, lo, hi):
-                        fresh[rec["id"]] = rec
-        return self.cache.merge(
-            symbol,
-            list(fresh.values()),
-            gaps,
-            key=lambda r: r["id"],
+    def ensure(self, key: str, since: Date, through: Date) -> list[dict]:
+        """Public warm path for prefetch — cache policy lives in market.cache."""
+        return ensure_records(
+            self.cache,
+            key,
+            since,
+            through,
+            fetch_span=lambda lo, hi: self._fetch_span(key, lo, hi),
+            identity=lambda r: r["id"],
             sort=lambda r: (r["filing_date"], r["id"]),
+            online=self.client is not None,
+            source_name=self.name,
+            kind_label="filing_text",
         )
+
+    def _ensure(self, symbol: Symbol, since: Date, through: Date) -> list[dict]:
+        return self.ensure(symbol, since, through)
+
+    def _fetch_span(self, symbol: Symbol, lo: Date, hi: Date) -> list[dict]:
+        out: list[dict] = []
+        for form in self.forms:
+            sections = self.sections if form.upper() == "10-K" else (None,)
+            for section in sections:
+                out.extend(self._fetch_one(symbol, form, section, lo, hi))
+        return out
 
     def _fetch_one(
         self, symbol: Symbol, form: str, section: str | None, lo: Date, hi: Date

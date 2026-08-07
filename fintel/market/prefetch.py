@@ -10,8 +10,9 @@ cache hit in milliseconds.
 
 This module does the same for fintel: one pass over the union of symbols
 the run will touch, parallel across symbols, calling each bound source's
-``_ensure`` so coverage gaps are filled once. Skip-if-warm is free —
-``_ensure`` returns immediately when coverage already spans the request.
+public ``ensure`` / ``warm`` so coverage gaps are filled once. Skip-if-warm
+is free — the feed-level cache layer returns immediately when coverage
+already spans the request.
 
 Runtime-only kinds (``web_search``) are never prefetched: their query text
 isn't known until the agent asks, and the cache is keyed by query, not symbol.
@@ -27,8 +28,6 @@ from datetime import timedelta
 from typing import Any
 
 from fintel.market.data.base import DataSource
-from fintel.market.data.filings import MassiveFilingText
-from fintel.market.data.massive import MassivePrices, MassiveRecords
 from fintel.models.common import Symbol
 
 logger = logging.getLogger(__name__)
@@ -36,6 +35,8 @@ logger = logging.getLogger(__name__)
 # Kinds whose data is determined by the run (symbol + date window) and so
 # can be prefetched. web_search is keyed by free-text query → runtime only.
 PREFETCHABLE = ("prices", "fundamentals", "news", "filing_text")
+# Series-keyed (not equity-symbol) kinds — warmed once per run, not × universe.
+SERIES_PREFETCHABLE = ("macro",)
 RUNTIME_ONLY = ("web_search",)
 
 
@@ -167,14 +168,15 @@ def prefetch(
 
     started = time.perf_counter()
     kinds = sorted(k for k in sources if k in PREFETCHABLE)
+    series_kinds = sorted(k for k in sources if k in SERIES_PREFETCHABLE)
     result = PrefetchResult(
         symbols=list(symbols),
-        kinds=kinds,
+        kinds=sorted({*kinds, *series_kinds}),
         from_date=from_date,
         through_date=through_date,
     )
 
-    if not symbols or not kinds:
+    if not kinds and not series_kinds:
         return result
 
     def _warm_one(symbol: Symbol) -> list[tuple[str, str | None]]:
@@ -193,14 +195,29 @@ def prefetch(
                 out.append((label, f"{type(exc).__name__}: {exc}"))
         return out
 
-    with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
-        futures = {pool.submit(_warm_one, s): s for s in symbols}
-        for fut in as_completed(futures):
-            for label, err in fut.result():
-                if err is None:
-                    result.warmed.append(label)
-                else:
-                    result.failed[label] = err
+    if symbols and kinds:
+        with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
+            futures = {pool.submit(_warm_one, s): s for s in symbols}
+            for fut in as_completed(futures):
+                for label, err in fut.result():
+                    if err is None:
+                        result.warmed.append(label)
+                    else:
+                        result.failed[label] = err
+
+    # Series-keyed kinds (macro): warm once for the window.
+    for kind in series_kinds:
+        label = f"*:{kind}"
+        try:
+            if decision_dates:
+                kind_from = _kind_from(sources, kind, decision_dates)
+            else:
+                kind_from = from_date
+            _warm_kind(sources[kind], kind, "*", kind_from, through_date)
+            result.warmed.append(label)
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("prefetch %s failed: %s", label, exc)
+            result.failed[label] = f"{type(exc).__name__}: {exc}"
 
     result.elapsed_ms = int((time.perf_counter() - started) * 1000)
     return result
@@ -209,25 +226,21 @@ def prefetch(
 def _warm_kind(
     src: DataSource, kind: str, symbol: Symbol, from_date: Date, through_date: Date
 ) -> None:
-    """Call the source's gap-fill once. Skip-if-warm is handled inside `_ensure`."""
-    if isinstance(src, MassivePrices):
-        src._ensure(symbol, through_date)  # noqa: SLF001 — gap-fill is the warm path
+    """Call the source's public warm path. Skip-if-warm is inside market.cache."""
+    if kind in SERIES_PREFETCHABLE:
+        warm = getattr(src, "warm", None)
+        if callable(warm):
+            warm(from_date, through_date)
+            return
+    ensure = getattr(src, "ensure", None)
+    if callable(ensure):
+        ensure(symbol, from_date, through_date)
         return
-    if isinstance(src, MassiveRecords):
-        # Records clamp on availability (filing_date / published_at). Warm the
-        # full window the agent might ask for; `_ensure` splits out gaps.
-        src._ensure(symbol, from_date, through_date)  # noqa: SLF001
-        return
-    if isinstance(src, MassiveFilingText):
-        src._ensure(symbol, from_date, through_date)  # noqa: SLF001
-        return
-    # Unknown source type: nothing to warm (e.g. computed ratios pull from
-    # upstream at fetch time, and web_search is runtime-only). Skip silently.
     logger.debug("prefetch: no warm path for %s (%s), skipping", kind, type(src).__name__)
 
 
 def is_prefetchable(kind: str) -> bool:
-    return kind in PREFETCHABLE
+    return kind in PREFETCHABLE or kind in SERIES_PREFETCHABLE
 
 
 def is_runtime_only(kind: str) -> bool:

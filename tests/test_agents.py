@@ -64,7 +64,7 @@ SUBPROCESS_ADAPTERS: frozenset[str] = frozenset({"openclaw", "claude-code"})
 # OpenRouter key and network to decide, so they can't join the invocation
 # contract either. They get the same lighter, non-invoking checks as the
 # subprocess adapters below.
-LLM_KEY_REQUIRED: frozenset[str] = frozenset({"optimized"})
+LLM_KEY_REQUIRED: frozenset[str] = frozenset({"optimized", "djia_strategy_adapter_for_llm_agent"})
 
 
 def envir(tmp_path, **kw):

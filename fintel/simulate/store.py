@@ -26,7 +26,9 @@ def write_json(path: Path, obj: Any) -> None:
 
 
 def write_model(path: Path, model: BaseModel) -> None:
-    write_json(path, model.model_dump(mode="json"))
+    # exclude_none keeps nested Views aligned with strategy output schemas
+    # (no invented conviction / time_horizon / relevance).
+    write_json(path, model.model_dump(mode="json", exclude_none=True))
 
 
 def read_json(path: Path) -> Any:

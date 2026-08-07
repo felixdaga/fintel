@@ -18,6 +18,7 @@ AGENTS: dict[str, str] = {
     "constant": "fintel.agents.scripted:ConstantAgent",
     "llm": "fintel.agents.installed.llm_agent:LLMAgent",
     "optimized": "fintel.agents.adapters.optimized:OptimizedFintelAgent",
+    "djia_strategy_adapter_for_llm_agent": "fintel.agents.adapters.djia_strategy_adapter_for_llm_agent:DjiaStrategyAdapterForLlmAgent",
     "openclaw": "fintel.agents.adapters.openclaw:OpenClawAgent",
     "claude-code": "fintel.agents.adapters.claude_code:ClaudeCodeAgent",
 }

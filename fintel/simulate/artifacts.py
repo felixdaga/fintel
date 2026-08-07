@@ -37,7 +37,11 @@ def write_cell(cell_path: Path, record: CellRecord) -> None:
 
 def write_decision(decision_path: Path, views: dict[Symbol, View]) -> None:
     """One writer, after all cells on the date are done (the trial owns this)."""
-    write_json(decision_path, {s: v.model_dump(mode="json") for s, v in views.items()})
+    # exclude_none: do not persist platform defaults the strategy schema omitted.
+    write_json(
+        decision_path,
+        {s: v.model_dump(mode="json", exclude_none=True) for s, v in views.items()},
+    )
 
 
 def write_trial_result(result_path: Path, result: TrialResult) -> None:

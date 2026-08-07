@@ -10,7 +10,6 @@ data here", and conflating them is how a run reports zero news for a live name.
 
 from __future__ import annotations
 
-import logging
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import date as Date
@@ -19,14 +18,12 @@ from typing import Any
 
 import pandas as pd
 
-from fintel.market.data import coverage as cov
-from fintel.market.data.base import DataError, require
+from fintel.market.cache import ensure_prices, ensure_records
+from fintel.market.data.base import require
 from fintel.market.data.http import MassiveClient
 from fintel.market.data.store import PriceStore, RecordCache
 from fintel.models.common import Symbol
 from fintel.pit import Cutoff
-
-logger = logging.getLogger(__name__)
 
 DEFAULT_HISTORY_YEARS = 5
 
@@ -81,36 +78,21 @@ class MassivePrices:
             out = out[keep]
         return out.reset_index(drop=True)
 
+    def ensure(self, key: str, since: Date, through: Date) -> pd.DataFrame | None:
+        """Public warm path for prefetch. ``since`` is ignored — prices fill
+        from ``history_start`` (see :func:`fintel.market.cache.ensure_prices`)."""
+        return ensure_prices(
+            self.store,
+            key,
+            self.history_start,
+            through,
+            fetch_bars=lambda lo, hi: self._fetch_bars(key, lo, hi),
+            online=self.client is not None,
+            source_name=self.name,
+        )
+
     def _ensure(self, symbol: Symbol, through: Date) -> pd.DataFrame | None:
-        need_from = self.history_start
-        if through < need_from:
-            return self.store.read(symbol)
-        gaps = cov.missing(self.store.coverage(symbol), need_from, through)
-        if not gaps:
-            return self.store.read(symbol)
-        if self.client is None:
-            cached = self.store.read(symbol)
-            if cached is None:
-                raise DataError(
-                    f"{self.name}: no cached prices for {symbol} covering "
-                    f"[{need_from}, {through}] and no network access configured"
-                )
-            logger.warning(
-                "%s: %s cache is short of [%s, %s] by %d span(s); serving what is cached",
-                self.name,
-                symbol,
-                need_from,
-                through,
-                len(gaps),
-            )
-            return cached
-        for lo, hi in gaps:
-            fresh = self._fetch_bars(symbol, lo, hi)
-            if fresh is not None and not fresh.empty:
-                self.store.merge(symbol, fresh, (lo, hi))
-            else:
-                self.store.record_empty_span(symbol, (lo, hi))
-        return self.store.read(symbol)
+        return self.ensure(symbol, self.history_start, through)
 
     def _fetch_bars(self, symbol: Symbol, start: Date, end: Date) -> pd.DataFrame | None:
         assert self.client is not None
@@ -327,38 +309,25 @@ class MassiveRecords:
         limit = query.get("limit")
         return out[-int(limit) :] if limit else out
 
-    def _ensure(self, symbol: Symbol, since: Date, through: Date) -> list[dict]:
-        coverage, records = self.cache.read(symbol)
-        gaps = cov.missing(coverage, since, through)
-        if not gaps:
-            return records
-        if self.client is None:
-            if not coverage:
-                raise DataError(
-                    f"{self.name}: nothing cached for {symbol} {self.spec.kind} covering "
-                    f"[{since}, {through}] and no network access configured"
-                )
-            logger.warning(
-                "%s: %s %s cache is short of [%s, %s]; serving what is cached",
-                self.name,
-                symbol,
-                self.spec.kind,
-                since,
-                through,
-            )
-            return records
-        fresh: dict[str, dict] = {}
-        for lo, hi in gaps:
-            for item in self._fetch_span(symbol, lo, hi):
-                rec = self.spec.normalise(item)
-                fresh[self.spec.identity(rec)] = rec
-        return self.cache.merge(
-            symbol,
-            list(fresh.values()),
-            gaps,
-            key=self.spec.identity,
+    def ensure(self, key: str, since: Date, through: Date) -> list[dict]:
+        """Public warm path for prefetch — cache policy lives in market.cache."""
+        return ensure_records(
+            self.cache,
+            key,
+            since,
+            through,
+            fetch_span=lambda lo, hi: [
+                self.spec.normalise(item) for item in self._fetch_span(key, lo, hi)
+            ],
+            identity=self.spec.identity,
             sort=lambda r: str(r.get(self.spec.cutoff_field, "")),
+            online=self.client is not None,
+            source_name=self.name,
+            kind_label=self.spec.kind,
         )
+
+    def _ensure(self, symbol: Symbol, since: Date, through: Date) -> list[dict]:
+        return self.ensure(symbol, since, through)
 
     def _fetch_span(self, symbol: Symbol, lo: Date, hi: Date) -> list[dict]:
         assert self.client is not None

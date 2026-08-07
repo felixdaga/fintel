@@ -71,7 +71,16 @@ def run_simulation(args: Namespace) -> int:
     if not job.job_id:
         from fintel.models.ids import new_job_id
 
-        job = job.model_copy(update={"job_id": new_job_id(strategy=package.name, agent=args.agent)})
+        job = job.model_copy(
+            update={
+                "job_id": new_job_id(
+                    strategy=package.name,
+                    agent=args.agent,
+                    model=args.model or agent.model.id or None,
+                    k_repeats=args.k_repeats,
+                )
+            }
+        )
 
     from fintel.market.settings import MarketConfig
     from fintel.simulate import run_job

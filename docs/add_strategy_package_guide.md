@@ -265,6 +265,12 @@ class MyPrices:
 `fetch` takes a `Cutoff`, never a bare date. PIT is your responsibility for
 custom sources — the platform will not silently fix a leaky clamp.
 
+**Caching.** Cache policy lives in `fintel.market.cache`, not in the vendor
+file. Implement network (or file) I/O as a span fetch, then call
+`ensure_records` / `ensure_prices` / `ensure_query_blob` with a few lines —
+gap fill, offline miss, and merge are shared. See
+[`data_pipeline.md`](data_pipeline.md).
+
 Put the package (or its parent) on `PYTHONPATH`, or install it as a local
 package, so `mypackage.my_sources:MyPrices` resolves.
 

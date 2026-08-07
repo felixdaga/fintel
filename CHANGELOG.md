@@ -21,7 +21,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   evaluate results, add agents, data pipeline.
 - `AGENTS.md`, `CONTRIBUTING.md`, `CHANGELOG.md`.
 - CI workflow (`.github/workflows/ci.yml`): ruff + pytest on push/PR.
-- Demo run shipped in `runs/djia-w-full-r1-0001/`.
+- Demo run shipped in `runs/systematic_stockrate_djia_weekly_optimized_20260806_mimo_v2_5_pro_k1_0001/`.
 
 ### Changed
 - Replaced the legacy monthly DJIA package with one aligned to the weekly

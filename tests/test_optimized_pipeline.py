@@ -160,9 +160,9 @@ def test_submit_args_round_trip_into_typed_views_with_provenance():
     assert notes == []
     v = views["AAPL"]
     assert v.score == 0.4
-    # Platform defaults — not solicited from the model in submit_views.
-    assert v.time_horizon == "quarter"
-    assert v.conviction == 0.5
+    # Not solicited by submit_views / strategy schema — must stay unset.
+    assert v.time_horizon is None
+    assert v.conviction is None
     assert len(v.sources_cited) == 2
     assert v.sources_cited[0].source_type == "prices"
     assert v.sources_cited[0].source_id == "2026-04-23"
