@@ -74,8 +74,12 @@ def compute_rebalance(
     signals = build_signals(load_job(jdir), signal=scoring.signal, transform=scoring.transform)
     universe = sorted(signals.universe)
     ensure_job_prices(jdir, universe)
+    # Use close prices for rebalance sizing — this is what the agent saw.
+    # The backtest NAV (build_strategy_data.py) still uses open-to-open
+    # for forward returns; only the rebalance report prices change here.
     prices = price_lookup_for(jdir)
-    as_of = mark_as_of(prices, signals)
+    prices_close = PriceLookup(store=prices.store, price_field="close")
+    as_of = mark_as_of(prices_close, signals)
 
     dates = sorted(signals.ensemble)
     latest = dates[-1]
@@ -90,7 +94,7 @@ def compute_rebalance(
     # Current weights: previous decision's book, drifted by price moves
     if prev is not None:
         prev_w = rule(signals.ensemble[prev], rule_params)
-        current_w = _drift_weights(prev_w, prices, prev, as_of or latest)
+        current_w = _drift_weights(prev_w, prices_close, prev, as_of or latest)
     else:
         current_w = {}
 
@@ -103,7 +107,7 @@ def compute_rebalance(
     for sym in all_symbols:
         tw = target_w.get(sym, 0.0)
         cw = current_w.get(sym, 0.0)
-        px = prices.price_at(sym, as_of or latest)
+        px = prices_close.price_at(sym, as_of or latest)
         if px is None or px <= 0:
             continue
         target_shares = (capital * tw) / px
