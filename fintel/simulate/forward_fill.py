@@ -32,9 +32,9 @@ from fintel.market.settings import MarketConfig
 from fintel.models.common import Symbol
 from fintel.models.decision import AgentResponse
 from fintel.models.job import JobResult
+from fintel.models.market import ScheduleRef
 from fintel.models.paths import JobPaths, RunPaths
 from fintel.models.run import RunConfig, RunResult
-from fintel.models.market import ScheduleRef
 from fintel.models.trial import CellResult, TrialResult
 from fintel.simulate.artifacts import write_health, write_job_result, write_run_result
 from fintel.simulate.cell import CellOutcome, expect_tools, run_cell
