@@ -375,9 +375,10 @@ def test_latest_bar_date_skips_empty_and_honors_min_coverage(tmp_path):
     lookup = PriceLookup(store=store)
     assert lookup.latest_bar_date(["AAA", "MISSING"]) == store.read("AAA")["date"].iloc[-1]
     # With 50% coverage, the fresher AAA date is allowed.
-    assert lookup.latest_bar_date(["AAA", "BBB"], min_coverage=0.5) == store.read("AAA")[
-        "date"
-    ].iloc[-1]
+    assert (
+        lookup.latest_bar_date(["AAA", "BBB"], min_coverage=0.5)
+        == store.read("AAA")["date"].iloc[-1]
+    )
 
 
 # ── the catalog: pick from, or add to ────────────────────────────────────────

@@ -109,8 +109,5 @@ def _resolve_job_location(path: Path, raw: dict[str, Any]) -> tuple[str, str]:
             str(raw.get("output_root", inferred_root)),
         )
     if "job_id" not in raw:
-        raise KeyError(
-            f"deploy config {path} is missing job_id and is not under "
-            f"<job_dir>/deploy/"
-        )
+        raise KeyError(f"deploy config {path} is missing job_id and is not under <job_dir>/deploy/")
     return str(raw["job_id"]), str(raw.get("output_root", "runs"))

@@ -87,8 +87,11 @@ def compute_rebalance(
 
     # Target weights from latest decision
     rule = get_rule(config.holdings.rule)
-    rule_params = {**config.holdings.params, "threshold": config.holdings.threshold,
-                   "active_budget": config.holdings.active_budget}
+    rule_params = {
+        **config.holdings.params,
+        "threshold": config.holdings.threshold,
+        "active_budget": config.holdings.active_budget,
+    }
     target_w = rule(signals.ensemble[latest], rule_params)
 
     # Current weights: previous decision's book, drifted by price moves

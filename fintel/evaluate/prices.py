@@ -73,7 +73,9 @@ def ensure_job_prices(
             try:
                 src.ensure(sym, since, through)
             except Exception as exc:  # noqa: BLE001 — analytics warm path must not crash
-                logger.warning("ensure_job_prices: %s failed for %s: %s", type(src).__name__, sym, exc)
+                logger.warning(
+                    "ensure_job_prices: %s failed for %s: %s", type(src).__name__, sym, exc
+                )
         prices = price_lookup_for(job_dir, cache_root=cache_root)
     return prices.latest_bar_date(syms)
 
@@ -94,7 +96,11 @@ def _prices_source(job_dir: Path, *, cache_root: str | Path | None = None):
     try:
         bootstrap_env()
         cfg = RunConfig.model_validate(json.loads(run_cfg_path.read_text()))
-        root = Path(cache_root).expanduser() if cache_root is not None else _default_cache_root(job_dir)
+        root = (
+            Path(cache_root).expanduser()
+            if cache_root is not None
+            else _default_cache_root(job_dir)
+        )
         market = MarketConfig.from_env(cache_root=root)
         sources = build_data_sources(cfg.data, config=market)
     except Exception as exc:  # noqa: BLE001

@@ -220,9 +220,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     cache_status.add_argument("--output-root", default="runs", help="Output root (default: runs)")
 
-    forward_fill = sub.add_parser(
-        "forward-fill", help="Add new decision dates to a finished run"
-    )
+    forward_fill = sub.add_parser("forward-fill", help="Add new decision dates to a finished run")
     forward_fill.add_argument("job_id", help="Job id under --output-root")
     forward_fill.add_argument(
         "--run",
