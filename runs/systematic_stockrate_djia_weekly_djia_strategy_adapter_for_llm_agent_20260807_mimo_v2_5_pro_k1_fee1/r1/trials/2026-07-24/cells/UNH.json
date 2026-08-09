@@ -1,0 +1,178 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32420,
+    "tokens_out": 1016,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035468,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": 0.15,
+      "rationale": "UNH presents a mixed but slightly positive picture. The company just reported a strong Q2 2026 beat (adjusted EPS $6.38 vs $4.90 consensus) and raised full-year guidance to $19.50-$20.00 adjusted EPS, with MCR improving to 86.7% from 89.4% YoY. Operating cash flow of $11.1B in Q2 was 1.9x net income, demonstrating strong cash generation. However, several structural concerns temper enthusiasm: (1) membership is declining across segments \u2014 UnitedHealthcare served 48.5M consumers, down 525K sequentially, with Medicare Advantage seniors contracting by 965K since year-end 2025; (2) commercial medical cost trends remain 'stubbornly above 11%' with margin recovery pushed past 2027; (3) the DOJ antitrust investigation targeting the vertically integrated model poses a material structural risk; (4) the stock is trading at PE ~30x, near the top of its 365-day range (9.5-31.0), having rallied ~20% in the past quarter. The Q2 beat and guidance raise provide a near-term positive catalyst, but the elevated valuation, shrinking membership base, and regulatory overhang limit upside. The score reflects solid near-term execution offset by rich valuation and meaningful structural headwinds.",
+      "key_factors": [
+        "Q2 2026 adjusted EPS of $6.38 beat consensus of $4.90; full-year guidance raised to $19.50-$20.00",
+        "MCR improved to 86.7% from 89.4% YoY, reflecting better pricing and medical management",
+        "Membership declining: UnitedHealthcare down 525K sequentially to 48.5M; Medicare Advantage seniors down 965K since year-end 2025",
+        "Commercial medical cost trends 'stubbornly above 11%' with margin recovery pushed past 2027",
+        "DOJ antitrust investigation targeting vertical integration between UnitedHealthcare and Optum",
+        "PE of ~30x near top of 365-day range (9.5-31.0); stock up ~20% in past quarter",
+        "Strong cash generation: Q2 operating cash flow of $11.1B, 1.9x net income"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16 businesswire Q2 2026 results",
+          "excerpt": "Second quarter 2026 adjusted net earnings were $6.38 per share. The medical care ratio was 86.7%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16 businesswire Q2 2026 results",
+          "excerpt": "Updated Full Year 2026 Earnings Outlook Range to $18.45 to $18.95 Per Share; Adjusted Earnings Range of $19.50 to $20.00 Per Share"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16 businesswire Q2 2026 results",
+          "excerpt": "UnitedHealthcare served 48.5 million consumers, down 525,000 sequentially. Seniors served through Medicare Advantage have contracted by 965,000 since year-end 2025"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16 businesswire Q2 2026 results",
+          "excerpt": "Cash flows from operations were $11.1 billion, or 1.9 times net income"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis UNH margin risk",
+          "excerpt": "Medical cost trends in this segment are now running modestly above 11%, according to the company. Management now says the sticky nature of the persistent and elevated trend is extending the timeframe for full margin recovery past 2027"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis UNH DOJ risk",
+          "excerpt": "The DOJ probe directly targets the vertically integrated relationship between UnitedHealthcare and the Optum physician network"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23 valuation",
+          "excerpt": "pe_diluted=30.08; range over window: pe_diluted 9.5..31.0"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=423.56; quarterly delta +19.8%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4536,
+        "capped_chars": 4536,
+        "raw_tokens": 1134,
+        "capped_tokens": 1134
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225505,
+        "capped_chars": 225505,
+        "raw_tokens": 56376,
+        "capped_tokens": 56376
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1659,
+        "capped_chars": 1659,
+        "raw_tokens": 415,
+        "capped_tokens": 415
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 16462,
+        "capped_chars": 3224,
+        "raw_tokens": 4116,
+        "capped_tokens": 806
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 84609,
+        "capped_chars": 67086,
+        "raw_tokens": 21152,
+        "capped_tokens": 16772
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 48484,
+  "started_at": "2026-08-07T03:09:12+00:00"
+}

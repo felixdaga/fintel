@@ -1,0 +1,179 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 39280,
+    "tokens_out": 1257,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.043051,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.15,
+      "rationale": "IBM's fundamental health is mixed. YoY growth in Q1 2026 was solid (revenue +9.5%, EPS +14.3%), and the company generates strong operating cash flow ($5.17B in Q1). However, the Q2 2026 preliminary results revealed a significant miss: revenue of $17.2B vs. $17.9B consensus, and EPS of $2.93 vs. $3.02 consensus, driven by customers shifting capex away from software toward AI hardware. The stock has crashed ~25% from its highs, with the P/E compressing from ~50x to ~19x \u2014 now at the low end of its 1-year range. This valuation compression creates a modestly attractive entry point relative to IBM's own history, though the near-term trajectory is clearly challenged. The balance sheet carries elevated debt ($69.8B per TipRanks), and consulting growth remains sluggish. The Q2 miss is a near-term negative catalyst that has already been priced in, but the fundamental question is whether the software spending shift is temporary (as management suggests) or structural. IBM's AI book of business ($12.5B cumulative) and Red Hat's 11% growth provide some fundamental support, but the company faces real competitive headwinds from hyperscalers and the risk that AI disrupts its consulting business. The score reflects a company with decent but not excellent fundamentals, now trading at a more reasonable valuation after a sharp correction, with the Q2 earnings report (July 22) serving as a potential near-term catalyst for stabilization or further deterioration.",
+      "key_factors": [
+        "Q2 2026 preliminary results missed consensus: revenue $17.2B vs $17.9B, EPS $2.93 vs $3.02 \u2014 customers shifted capex from software to AI hardware",
+        "Stock crashed ~25% from highs, P/E compressed from ~50x to ~19x (low end of 1-year range of 18.7-51.2)",
+        "Q1 2026 showed solid YoY growth: revenue +9.5%, EPS +14.3%, operating cash flow $5.17B",
+        "Software segment growth decelerated from 11% to 5% in Q2, raising questions about durability of the AI/hybrid cloud thesis",
+        "Elevated debt burden ($69.8B) constrains financial flexibility despite strong FCF generation",
+        "Consulting segment growing at only ~1% in Q1, facing structural headwinds from AI automation",
+        "Generative AI book of business at $12.5B cumulative provides some fundamental support",
+        "Q2 full earnings report on July 22 is a near-term catalyst that could re-rate the stock"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1",
+          "excerpt": "revenue=15.92B net_income=1.22B eps_diluted=1.28 operating_cash_flow=5.17B; YoY: revenue=+9.5% eps_diluted=+14.3%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-15",
+          "excerpt": "IBM released preliminary Q2 results showing revenue of $17.2B (up 1% YoY) and adjusted EPS of $2.93, both below expectations. The company revealed that AI spenders are shifting budgets away from software toward servers, storage, and memory"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=19.393 p_b=6.309; range over window: pe_diluted 18.7..51.2"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=219.05; range over ~251 bars: high=332.46 low=204.44; quarterly delta: -10.5%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-14",
+          "excerpt": "IBM shares plummeted as much as 25% after the company issued a warning about Q2 earnings, marking the company's worst day since 1987"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis",
+          "excerpt": "Software segment revenue grew 11% in Q1 2026, representing 45% of total revenue; Software ARR reached $24.6B in Q1 2026, up 10% YoY"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks",
+          "excerpt": "Total Debt (Recent Filing) $69.80B; Elevated Leverage: Sustained high leverage constrains financial flexibility"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wsb-dd",
+          "excerpt": "Generative AI book of business exceeded $12.5B in cumulative bookings as of Q4 2025"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224567,
+        "capped_chars": 224567,
+        "raw_tokens": 56142,
+        "capped_tokens": 56142
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2877,
+        "capped_chars": 2877,
+        "raw_tokens": 719,
+        "capped_tokens": 719
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 89768,
+        "capped_chars": 17909,
+        "raw_tokens": 22442,
+        "capped_tokens": 4477
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 126779,
+        "capped_chars": 91801,
+        "raw_tokens": 31694,
+        "capped_tokens": 22951
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 46335,
+  "started_at": "2026-08-07T03:07:55+00:00"
+}

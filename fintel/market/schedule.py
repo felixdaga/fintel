@@ -90,3 +90,37 @@ class Quarterly:
                 if _within(d, lo, hi):
                     out.append(d)
         return sorted(out)
+
+
+@dataclass(frozen=True)
+class WeeklyFridays:
+    """Every Friday, snapped forward to a trading day if the exchange is closed.
+
+    Used by deployed strategies that rebalance on a weekly cadence. The
+    schedule is open-ended (no ``end``), so forward-fill can extend it
+    indefinitely by passing ``--through``.
+    """
+
+    start: Date | None = None
+    end: Date | None = None
+    calendar: TradingCalendar = field(default_factory=TradingCalendar)
+    kind: ClassVar[str] = "weekly_fridays"
+
+    def dates(self, start: Date | None = None, end: Date | None = None) -> list[Date]:
+        lo, hi = _window((self.start, self.end), (start, end))
+        if lo is None:
+            raise ValueError("weekly_fridays schedule needs a start date")
+        if hi is None:
+            raise ValueError("weekly_fridays schedule needs an end date (use --through)")
+        out: list[Date] = []
+        from datetime import timedelta
+
+        d = lo - timedelta(days=(lo.weekday() - 4) % 7)  # walk back to this week's Friday
+        if d < lo:
+            d += timedelta(days=7)
+        while d <= hi:
+            snapped = self.calendar.snap_forward(d)
+            if _within(snapped, lo, hi):
+                out.append(snapped)
+            d += timedelta(days=7)
+        return sorted(set(out))

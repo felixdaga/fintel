@@ -1,0 +1,186 @@
+{
+  "cell": "AXP",
+  "symbols": [
+    "AXP"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30849,
+    "tokens_out": 1238,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034563,
+    "basis": "reported"
+  },
+  "views": {
+    "AXP": {
+      "symbol": "AXP",
+      "score": 0.35,
+      "rationale": "American Express shows solid fundamental health with consistent revenue and EPS growth (Q1 2026 revenue +9.3% YoY, EPS +17.6% YoY), strong profitability (ROE 33%, net margin 26.6%), and a durable closed-loop business model. The company reaffirmed 2026 guidance for 9-10% revenue growth and EPS of $17.30-$17.90. Valuation is attractive vs its own history: current P/E of 19.1x sits at the low end of its 18.4-25.3x 365-day range, and P/B of 6.3x is near the bottom of its 6.1-8.2x range, having compressed from 8.0x in Dec 2025. The stock is down ~16% from its 52-week high of $387.49, creating a meaningful discount. Credit quality remains healthy with a 2% net write-off rate and 1.4% delinquency rate. However, risks include rising 10-year Treasury yields (4.47%, up 8.5% over 90 days), elevated oil prices ($96.83), and competitive pressure from Capital One/Discover merger and JPMorgan's Sapphire Reserve. Operating cash flow declined 20% YoY in Q1, and the balance sheet shows rising leverage (debt-to-equity 1.73x). Near-term catalysts are limited \u2014 no major earnings event or regulatory catalyst imminent \u2014 though the Fanatics partnership and 16% dividend increase provide modest support. The score reflects a quality franchise at a reasonable valuation with manageable but real macro headwinds.",
+      "key_factors": [
+        "Consistent revenue/EPS growth trajectory: Q1 2026 revenue +9.3% YoY, EPS +17.6% YoY, with 4 consecutive quarters of growth",
+        "Valuation compressed to low end of 1-year range: P/E 19.1x (range 18.4-25.3x), P/B 6.3x (range 6.1-8.2x)",
+        "Strong profitability metrics: ROE 33%, net margin 26.6%, operating margin 33.8%",
+        "Reaffirmed 2026 guidance: 9-10% revenue growth, EPS $17.30-$17.90",
+        "Healthy credit quality: 2% net write-off rate, 1.4% delinquency rate in Q1 2026",
+        "Rising rate environment: 10Y Treasury at 4.47% (+8.5% over 90 days) \u2014 mixed for NII but raises credit risk",
+        "Competitive headwinds: Capital One/Discover merger, JPMorgan Sapphire Reserve at $795 fee",
+        "Operating cash flow declined 20% YoY in Q1 2026; debt-to-equity at 1.73x",
+        "Stock down ~16% from 52-week high of $387.49, creating valuation opportunity",
+        "16% dividend increase and Fanatics partnership as modest positive catalysts"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=10.52B net_income=2.97B eps_diluted=4.28; YoY revenue=+9.3% eps_diluted=+17.6%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=19.108 p_b=6.307 roe=0.33 net_margin=0.266 operating_margin=0.338 debt_to_equity=1.728"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 18.4..25.3 | p_b 6.1..8.2"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=312.53; range over ~251 bars: high=387.49 low=286.15"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-04",
+          "excerpt": "DGS10=4.47 \u0394=+8.5% over 90d; DCOILWTICO=96.83"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "AXP shares have declined 16% in 2026; 10% YoY growth in billed business in Q1 2026, fastest pace in three years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "soar-analysis.com",
+          "excerpt": "Net card fees reached a record $10 billion for full year 2025; 30-day delinquency rate was only 1.4%; return on equity was 34%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "soar-analysis.com_competitive",
+          "excerpt": "Capital One and Discover merger formed a vertically integrated player; JPMorgan Sapphire Reserve carried a $795 annual fee"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04_fanatics",
+          "excerpt": "Strategic partnership with Fanatics that includes a planned co-branded credit card; 16% dividend increase"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AXP",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4463,
+        "capped_chars": 4463,
+        "raw_tokens": 1116,
+        "capped_tokens": 1116
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 227149,
+        "capped_chars": 227149,
+        "raw_tokens": 56787,
+        "capped_tokens": 56787
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2025,
+        "capped_chars": 2025,
+        "raw_tokens": 506,
+        "capped_tokens": 506
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 29959,
+        "capped_chars": 6644,
+        "raw_tokens": 7490,
+        "capped_tokens": 1661
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 105496,
+        "capped_chars": 86136,
+        "raw_tokens": 26374,
+        "capped_tokens": 21533
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 68387,
+  "started_at": "2026-08-07T03:02:11+00:00"
+}

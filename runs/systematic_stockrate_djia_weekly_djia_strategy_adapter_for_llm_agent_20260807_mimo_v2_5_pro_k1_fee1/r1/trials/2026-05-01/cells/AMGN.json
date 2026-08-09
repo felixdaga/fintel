@@ -1,0 +1,179 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34236,
+    "tokens_out": 1209,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037863,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": 0.15,
+      "rationale": "Amgen shows solid fundamental health with strong revenue growth (10% YoY in 2025, 5.8% YoY in Q1 2026), broad-based product momentum (16 brands with double-digit growth, 17 products annualizing >$1B), and robust cash generation ($1.5B free cash flow in Q1 2026 vs $1.0B prior year). The balance sheet carries significant debt ($54.6B) with a debt-to-equity of 8.0x, which is elevated but manageable given strong operating cash flows ($4.68B in latest quarter). The company is executing well on its diversified portfolio strategy across oncology, inflammation, rare disease, and general medicine, with biosimilars contributing $3B in 2025 (up 37%). However, valuation is stretched: the P/E of 44.4x is near the top of its 33.6-49.7x range over the past year, and P/B of 24.9x is also elevated. The stock has re-rated significantly from ~36x P/E in mid-2025 to 44x+ currently, pricing in much of the growth. Key risks include the Tavneos FDA withdrawal concern, patent expirations on legacy products, and the competitive challenge of MariTide entering a GLP-1 dominated obesity market. The Q1 2026 earnings beat on EPS ($5.15 vs $4.73-$4.85 est) but slight revenue miss ($8.62B vs $8.75B est) and raised guidance provide a modest near-term positive, but the stock's after-market reaction was mixed. Net-net: good business trajectory but valuation leaves limited margin of safety.",
+      "key_factors": [
+        "Strong revenue growth trajectory: 10% YoY in 2025, 5.8% YoY in Q1 2026 with 16 brands showing double-digit growth",
+        "Robust cash generation: $1.5B FCF in Q1 2026, $4.68B operating cash flow in latest quarter",
+        "Elevated valuation: P/E of 44.4x near top of 33.6-49.7x range, P/B of 24.9x, pricing in significant growth",
+        "High leverage: $54.6B debt, 8.0x debt-to-equity, though manageable with strong cash flows",
+        "Pipeline catalyst: MariTide obesity program in Phase 3, but faces entrenched GLP-1 competition from Eli Lilly",
+        "Regulatory risk: FDA proposed withdrawal of Tavneos approval; patent expirations on legacy products",
+        "Q1 2026 earnings beat EPS estimates by 6-9% but revenue slightly missed consensus; guidance raised",
+        "Biosimilars momentum: $3B revenue in 2025, up 37% YoY, providing growth diversification"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=9.56B net_income=3.22B eps_diluted=5.93 operating_cash_flow=4.68B total_debt=54.59B total_equity=9.62B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "excerpt": "pe_diluted=44.366 p_b=24.933 debt_to_equity=8.024 net_margin=0.13 roe=0.562"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_2025-05-01_2026-04-30",
+          "excerpt": "pe_diluted 33.6..49.7 | p_b 18.9..28.0"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-28",
+          "excerpt": "FDA Announces Major Steps to Implement Real-Time Clinical Trials - Amgen Phase 1b small cell lung cancer trial underway"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan_2026_proxy",
+          "excerpt": "10% year-over-year revenue and sales growth, record sales for 18 products, 14 products each exceeding $1 billion in sales, biosimilar portfolio $3 billion and 37% sales growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "chartmill_q1_2026",
+          "excerpt": "non-GAAP earnings per share of $5.15 surpassing analyst consensus of $4.85; Revenue $8.62B vs $8.75B estimate, miss of 1.5%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr_amgen_stock_slips",
+          "excerpt": "FDA's drug review center proposed withdrawing Tavneos approval; 2025 revenue of $36.8 billion, up 10%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "amgen_q1_2026_press_release",
+          "excerpt": "total revenues increased 6% to $8.6 billion; GAAP EPS increased 4% from $3.20 to $3.34; Non-GAAP EPS increased 5% from $4.90 to $5.15; free cash flow $1.5B vs $1.0B prior year"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3022,
+        "capped_chars": 3022,
+        "raw_tokens": 756,
+        "capped_tokens": 756
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 253197,
+        "capped_chars": 253197,
+        "raw_tokens": 63299,
+        "capped_tokens": 63299
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30817,
+        "capped_chars": 30817,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1523,
+        "capped_chars": 1523,
+        "raw_tokens": 381,
+        "capped_tokens": 381
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 16297,
+        "capped_chars": 4179,
+        "raw_tokens": 4074,
+        "capped_tokens": 1045
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108335,
+        "capped_chars": 89196,
+        "raw_tokens": 27084,
+        "capped_tokens": 22298
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 40960,
+  "started_at": "2026-08-07T02:57:40+00:00"
+}

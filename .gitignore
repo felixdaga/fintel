@@ -15,8 +15,13 @@ runs/*
 .env/
 !.env.example
 
-# Demo run shipped with the repo
-!runs/systematic_stockrate_djia_weekly_optimized_20260806_mimo_v2_5_pro_k1_0001/
+# Demo run shipped with the repo (strategy-adapter agent — not the private optimized desk)
+!runs/systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1/
+
+# Private F1 / site ops (not part of the open-source tool)
+scripts/f1_rebalance.sh
+scripts/publish_site.sh
+scripts/build_strategy_data.py
 
 # Local secrets / editor noise
 *.pem
@@ -27,6 +32,5 @@ runs/*
 site/
 
 # Native in-process agents live under fintel/agents/installed/
-# (`llm_agent.py`, `optimized_agent.py`). The fintel host for the optimized
-# pipeline lives under adapters/optimized.py and is tracked.
-
+# (`llm_agent.py`, `optimized_agent.py`). Strategy-adapter demo uses
+# fintel/agents/adapters/djia_strategy_adapter_for_llm_agent.py.

@@ -1,0 +1,189 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31557,
+    "tokens_out": 1195,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035142,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": 0.15,
+      "rationale": "JNJ presents a mixed but mildly attractive picture. On the positive side, the company has a strong competitive position as the world's largest diversified healthcare company with two robust growth engines (Innovative Medicine and MedTech), a $100B revenue target for FY2026, and a long dividend track record. The Q1 2026 results showed solid operational growth of 6.4% with revenue of $24.1B and EPS of $2.14, and the company raised full-year guidance. The pipeline is progressing with FDA approval of ICOTYDE and strong performance from Darzalex and Tremfya. However, several factors temper enthusiasm: (1) Valuation has expanded significantly - the P/E has risen from ~17.5x a year ago to 30.1x currently, near the top of its 365-day range (17.2-31.1x), making it expensive vs its own history; (2) Net margins have compressed from 27.3% to 21.8% in recent quarters; (3) Operating cash flow was weak at $2.51B in the latest quarter vs $9.17B prior; (4) Significant headwinds persist including Stelara patent cliff, talc litigation (recent $32M verdict), FTC antitrust investigation, and potential Medicare pricing pressure. The stock has rallied ~67% from its 52-week low of $154.80 to $259.10, suggesting much of the positive narrative is already priced in. The upcoming Q2 earnings on July 15 could serve as a near-term catalyst, with consensus expecting $2.85 EPS and $25.05B revenue, but the 4.3% implied options move suggests the market is already positioned for this event.",
+      "key_factors": [
+        "Strong competitive position with two growth engines (Innovative Medicine $60.4B, MedTech $33.8B in FY2025)",
+        "FY2026 guidance raised to $100.2B midpoint with 6.4% operational sales growth",
+        "Valuation stretched: P/E of 30.1x near top of 365-day range (17.2-31.1x), up from ~17.5x a year ago",
+        "Margin compression: net margin fell from 27.3% to 21.8% in recent quarters",
+        "Significant overhangs: Stelara patent cliff, talc litigation, FTC antitrust investigation, Medicare pricing risk",
+        "Q2 earnings on July 15 as near-term catalyst with consensus $2.85 EPS / $25.05B revenue",
+        "Stock has rallied ~67% from 52-week low, suggesting positive narrative largely priced in",
+        "Weak recent operating cash flow of $2.51B in Q4 vs $9.17B in Q3"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-22",
+          "excerpt": "revenue=24.06B net_income=5.24B eps_diluted=2.14 gross_profit=15.96B operating_income=5.99B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=30.112 p_b=7.804 net_margin=0.218 roe=0.259"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10",
+          "excerpt": "pe_diluted=17.524 p_b=4.893 net_margin=0.244 roe=0.279"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "excerpt": "close=259.10 range over ~251 bars: high=269.43 low=154.80"
+        },
+        {
+          "source_type": "cash_flow",
+          "source_id": "2026-03-29",
+          "excerpt": "operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout",
+          "excerpt": "JNJ raised its full-year 2026 operational sales guidance to a midpoint of $100.2 billion, marking the first time the company expects to cross the $100 billion revenue milestone"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-04",
+          "excerpt": "Johnson & Johnson is deliberately avoiding the competitive GLP-1 weight-loss drug market, instead focusing on oncology and its medical device business"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey",
+          "excerpt": "Federal Trade Commission filed an amicus brief in an ongoing antitrust class action against Johnson & Johnson alleging anticompetitive practices to maintain its monopoly over Stelara"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com-talc",
+          "excerpt": "A Los Angeles jury found Johnson & Johnson and its subsidiaries liable in a talc trial linked to mesothelioma. The jury awarded US$32 million"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "benzinga",
+          "excerpt": "Analysts expect JNJ to report quarterly earnings of $2.85 per share, up from $2.77 per share in the year-ago period. The consensus estimate for revenue is $25.05 billion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4593,
+        "capped_chars": 4593,
+        "raw_tokens": 1148,
+        "capped_tokens": 1148
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223604,
+        "capped_chars": 223604,
+        "raw_tokens": 55901,
+        "capped_tokens": 55901
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2583,
+        "capped_chars": 2583,
+        "raw_tokens": 646,
+        "capped_tokens": 646
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 40158,
+        "capped_chars": 9810,
+        "raw_tokens": 10040,
+        "capped_tokens": 2452
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 73896,
+        "capped_chars": 53709,
+        "raw_tokens": 18475,
+        "capped_tokens": 13427
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 31317,
+  "started_at": "2026-08-07T03:07:08+00:00"
+}

@@ -1,0 +1,189 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 42501,
+    "tokens_out": 1101,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.045804,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.15,
+      "rationale": "IBM shows mixed fundamentals with solid YoY growth but concerning QoQ deterioration. Q1 2026 revenue of $15.92B grew 9.5% YoY with EPS up 14.3% YoY, but QoQ revenue declined 6.2% and EPS plunged 44.6% (from Q2 2025's $2.31 to $1.28). The balance sheet carries significant leverage with total liabilities of $123.17B against $33.06B equity (debt-to-equity ~3.7x). Operating cash flow of $5.17B in Q1 2026 was strong (+203.9% QoQ, +18.3% YoY). Valuation has compressed significantly: P/E of 24.3x is near the low end of its 19-51x range over the past year, down from ~50x in late 2025, reflecting market concerns about AI disruption to mainframe/consulting businesses. The stock at $274.85 sits well below its 52-week high of $332.46. News sentiment is generally positive (mean 0.599) with partnerships (Google Cloud, ServiceNow) and $10B quantum investment announced. However, structural risks remain: AI coding tools could accelerate mainframe migration away from COBOL, competition from hyperscalers is intense, and the Confluent acquisition adds integration risk. The QoQ earnings decline and high leverage temper enthusiasm despite the valuation reset. No clear near-term fundamental catalyst beyond the July 22 earnings report.",
+      "key_factors": [
+        "Q1 2026 YoY revenue growth of 9.5% and EPS growth of 14.3% showing underlying business momentum",
+        "QoQ EPS decline of 44.6% from Q2 2025 to Q1 2026 indicating earnings volatility",
+        "P/E compressed to 24.3x from ~50x in late 2025, near low end of 1-year range",
+        "High leverage with debt-to-equity ~3.7x ($123.17B liabilities vs $33.06B equity)",
+        "Strong operating cash flow of $5.17B in Q1 2026 (+18.3% YoY)",
+        "AI disruption risk to mainframe/consulting businesses from tools like Claude Code",
+        "$10B quantum computing investment and Google Cloud partnership as strategic initiatives",
+        "Dividend yield ~2.5% with 59.77% payout ratio providing income support"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=15.92B eps_diluted=1.28 net_income=1.22B operating_cash_flow=5.17B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30 Q2",
+          "excerpt": "revenue=16.98B eps_diluted=2.31 net_income=2.19B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=24.334 p_b=7.916 net_margin=0.156 roe=0.325"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 19.0..51.2 | p_b 6.2..10.8"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=156.23B total_liabilities=123.17B total_equity=33.06B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=274.85 range high=332.46 low=212.34"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "IBM and Google Cloud announced a strategic partnership to accelerate enterprise AI adoption"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-02",
+          "excerpt": "IBM stock rose 0.81% to $323.02 on Tuesday as the company announced a $10 billion investment in quantum computing over the next five years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com SWOT",
+          "excerpt": "shares declining 22% and underperforming the S&P 500 by 27 percentage points over a one-year period"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-03-15 to 2026-06-11",
+          "excerpt": "mean=0.599 n_articles=123"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224592,
+        "capped_chars": 224592,
+        "raw_tokens": 56148,
+        "capped_tokens": 56148
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2962,
+        "capped_chars": 2962,
+        "raw_tokens": 740,
+        "capped_tokens": 740
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 90612,
+        "capped_chars": 18453,
+        "raw_tokens": 22653,
+        "capped_tokens": 4613
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 135533,
+        "capped_chars": 113174,
+        "raw_tokens": 33884,
+        "capped_tokens": 28294
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 56168,
+  "started_at": "2026-08-07T03:03:33+00:00"
+}

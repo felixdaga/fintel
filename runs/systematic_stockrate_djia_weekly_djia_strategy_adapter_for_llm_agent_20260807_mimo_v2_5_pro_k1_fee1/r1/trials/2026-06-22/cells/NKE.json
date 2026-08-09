@@ -1,0 +1,184 @@
+{
+  "cell": "NKE",
+  "symbols": [
+    "NKE"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33634,
+    "tokens_out": 1237,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037345,
+    "basis": "reported"
+  },
+  "views": {
+    "NKE": {
+      "symbol": "NKE",
+      "score": -1.0,
+      "rationale": "Nike is in a severe fundamental deterioration with no credible near-term re-rating catalyst. Q3 FY2026 (Feb 2026) showed EPS of $0.35, down 35% YoY from $0.54, with operating income collapsing to $650M from $844M. Revenue was essentially flat at $11.28B while operating cash flow plunged 76% YoY to $430M. Gross margin compressed to 40.2% (down 130 bps) driven by a ~$1.5B annualized tariff headwind and inventory clearance. The turnaround under CEO Elliott Hill is showing early wholesale recovery signs (North America +3%, wholesale +5% in Q3), but this is overwhelmed by: (1) Greater China guided to decline ~20% in Q4, (2) persistent margin erosion from tariffs on Vietnam/Indonesia-sourced footwear (79% of production), (3) aggressive competitive share loss to On (+40%), Hoka (+24%), and New Balance (+19%), and (4) a P/E of ~30x on rapidly declining earnings that prices in recovery that is far from assured. The stock has fallen from $80 to $45 over the past year, yet the valuation remains expensive for a company with flat revenue, declining margins, and a multi-year turnaround ahead. RBC downgraded to $50 target citing delayed turnaround benefits not materializing until 2027. News sentiment is deeply negative (mean -0.45 over 90 days). The June 30 earnings report is a binary event with downside risk if China and margins disappoint further. All three pillars align negatively: deteriorating fundamentals, expensive valuation vs. declining earnings power, and a near-term catalyst (earnings) that carries more downside than upside risk given the trajectory.",
+      "key_factors": [
+        "EPS down 35% YoY to $0.35 in Q3 FY2026; operating income collapsed to $650M from $844M",
+        "Gross margin at 40.2%, down 130 bps YoY, with ~$1.5B annualized tariff headwind from Vietnam/Indonesia sourcing (79% of footwear)",
+        "Greater China guided to decline ~20% in Q4 FY2026; structural competitive pressure from domestic brands",
+        "Aggressive share loss: On +40%, Hoka +24%, New Balance +19% in 2025; Interbrand cut Nike brand value 25.9%",
+        "P/E of ~30x on rapidly declining earnings (EPS $0.35 quarterly) prices in recovery that is far from assured",
+        "Operating cash flow down 76% YoY to $430M; balance sheet shows total liabilities of $22.97B vs equity of $14.09B",
+        "RBC downgraded to Hold, cut target to $50; turnaround benefits expected only in 2027 not 2026",
+        "News sentiment deeply negative at -0.45 mean over 90 days; June 30 earnings is a binary downside-risk event"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-02-28 Q3",
+          "excerpt": "revenue=11.28B net_income=520.00M eps_diluted=0.35 operating_income=650.00M operating_cash_flow=430.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-02-28 Q3 YoY",
+          "excerpt": "revenue=11.27B eps=0.54 operating_income=844.00M operating_cash_flow=1.79B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=29.764 p_b=4.753 net_margin=0.048 roe=0.16 gross_margin=0.408 operating_margin=0.062"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-11",
+          "excerpt": "RBC Capital Markets downgraded Nike, cutting its price target from $70 to $50, citing slower-than-expected revenue growth and delayed turnaround benefits"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-14",
+          "excerpt": "tariffs alone representing a $1.5 billion problem. Vietnam and Indonesia account for 79% of Nike's footwear production"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "90d_mean",
+          "excerpt": "mean=-0.447 n_articles=57"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SWOT 2026",
+          "excerpt": "On +40%, Hoka +24% to $2.2 billion, New Balance +19% in 2025; Interbrand cut Nike brand value 25.9% to $33.7 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SWOT 2026",
+          "excerpt": "Greater China guided down roughly 20% in Q4 FY2026; estimated $1.5 billion annualized tariff cost, roughly 320 bps drag on FY2026 gross margin"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=45.20; range high=80.17 low=41.35; quarterly delta -15.4%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NKE",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4500,
+        "capped_chars": 4500,
+        "raw_tokens": 1125,
+        "capped_tokens": 1125
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223435,
+        "capped_chars": 223435,
+        "raw_tokens": 55859,
+        "capped_tokens": 55859
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1819,
+        "capped_chars": 1819,
+        "raw_tokens": 455,
+        "capped_tokens": 455
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7355,
+        "capped_chars": 2629,
+        "raw_tokens": 1839,
+        "capped_tokens": 657
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98920,
+        "capped_chars": 78780,
+        "raw_tokens": 24729,
+        "capped_tokens": 19695
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 52836,
+  "started_at": "2026-08-07T03:04:39+00:00"
+}

@@ -1,0 +1,173 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33110,
+    "tokens_out": 977,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036041,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.25,
+      "rationale": "IBM shows solid fundamental health with Q1 2026 revenue up 9.5% YoY to $15.92B, strong operating cash flow of $5.17B, and improving margins (gross margin 58.4%, operating margin 15.3%). The company beat EPS estimates ($1.91 vs $1.81 expected) and raised its dividend to $1.69/quarter (3.1% yield). Software segment grew 11.3% with ARR at $24.6B, and Infrastructure surged 15.3% on mainframe demand. However, QoQ metrics show sequential deceleration (revenue -6.2%, EPS -44.6% vs Q2 2025), and the stock has declined 15.9% over the past quarter, suggesting the market has already priced in some concerns. Valuation is attractive vs history: P/E of 19.3x is near the low end of its 19-51x range over the past year, and P/B of 6.3x is at the bottom of its 6.2-10.8x range. The $11.6B Confluent acquisition adds execution risk and increased debt to $57.7B, but also expands the data streaming portfolio. Near-term catalysts include the FedRAMP authorization for 11 AI products and ongoing z17 mainframe cycle, though federal contract cancellations ($100M) and consulting revenue pressure present headwinds.",
+      "key_factors": [
+        "Q1 2026 revenue beat: $15.92B (+9.5% YoY), EPS $1.91 vs $1.81 consensus",
+        "Software segment growth of 11.3% with ARR at $24.6B; Infrastructure up 15.3% on mainframe demand",
+        "P/E of 19.3x near 1-year low (range 19-51x); P/B of 6.3x at bottom of range (6.2-10.8x)",
+        "Operating cash flow strong at $5.17B; dividend raised to $1.69/quarter (3.1% yield)",
+        "Confluent acquisition ($11.6B) adds execution risk; long-term debt at $57.7B",
+        "Federal contract cancellations ($100M) and consulting signings decline (-15.6%) are headwinds",
+        "FedRAMP authorization for 11 AI products provides near-term catalyst for regulated market expansion"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1",
+          "excerpt": "revenue=15.92B net_income=1.22B eps_diluted=1.28 operating_cash_flow=5.17B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=19.333 p_b=6.29 net_margin=0.156 roe=0.325"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "excerpt": "close=218.37 quarterly delta -15.9%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14 ad-hoc-news",
+          "excerpt": "IBM reported Q1 EPS of $1.91, topping estimates of $1.81, with revenue up 9.5% to $15.92 billion. Shares fell 1.90% to $215.05"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bellwetherbrief.com",
+          "excerpt": "15 federal contract cancellations representing $100 million in future payments; Consulting signings declined 15.6%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan.net",
+          "excerpt": "Software revenue grew to $7,052 million, Consulting to $5,272 million and Infrastructure to $3,326 million; operating cash flow improved to $5,169 million; long-term debt to $57.7B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bellwetherbrief.com catalysts",
+          "excerpt": "11 AI and automation products, including multiple watsonx offerings, received Federal Risk and Authorization Management Program (FedRAMP) authorization"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224591,
+        "capped_chars": 224591,
+        "raw_tokens": 56148,
+        "capped_tokens": 56148
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2679,
+        "capped_chars": 2679,
+        "raw_tokens": 670,
+        "capped_tokens": 670
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 40085,
+        "capped_chars": 8598,
+        "raw_tokens": 10021,
+        "capped_tokens": 2150
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 97470,
+        "capped_chars": 69251,
+        "raw_tokens": 24367,
+        "capped_tokens": 17313
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 35449,
+  "started_at": "2026-08-07T02:59:42+00:00"
+}

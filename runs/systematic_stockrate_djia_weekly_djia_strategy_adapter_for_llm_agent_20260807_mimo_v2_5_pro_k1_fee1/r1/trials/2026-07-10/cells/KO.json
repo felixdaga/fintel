@@ -1,0 +1,191 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32885,
+    "tokens_out": 1288,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036749,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.15,
+      "rationale": "Coca-Cola is a high-quality defensive franchise with excellent brand equity, a 64-year dividend increase streak, and an asset-light concentrate model that supports strong margins (62% gross, 28% operating, 26% net) and high ROE (~40%). The business is fundamentally healthy with solid Q2 2025 results (revenue $12.54B, EPS $0.88, +14% QoQ EPS growth) and positive news sentiment (mean 0.675 over 90 days). However, the stock is trading at the top of its 1-year P/E range (29.2x vs. 23.2-29.8x window), near all-time highs at $82.63, and offers only a ~3.4% earnings yield \u2014 not compelling for a mid-single-digit grower. The $20B IRS tax dispute is a material overhang, and rising 10-year Treasury yields (4.54%) compress the relative attractiveness of a 2.6% dividend yield. Q2 earnings on July 28 could be a modest catalyst, but consensus expects only 5.8% EPS growth, limiting re-rating potential. The stock is fairly to slightly richly valued for its growth profile, capping upside.",
+      "key_factors": [
+        "Strong fundamental health: 62% gross margin, 28% operating margin, 26% net margin, ~40% ROE, asset-light concentrate model",
+        "64 consecutive years of dividend increases; 2.6% yield with $0.53/quarter dividend",
+        "Q2 2025 showed solid sequential growth: revenue +12.6% QoQ, EPS +14.3% QoQ",
+        "Valuation stretched: P/E of 29.2x is at the top of the 1-year range (23.2-29.8x), near all-time highs",
+        "Earnings yield of 3.4% is thin relative to 10-year Treasury at 4.54%",
+        "$20B IRS transfer pricing dispute is a material tail risk (oral arguments in June 2026)",
+        "Q2 2026 earnings on July 28: consensus expects $0.92 EPS (+5.8% YoY), modest growth limits re-rating",
+        "Positive news sentiment (mean 0.675) and strong brand recognition (94% global awareness) support defensive positioning",
+        "Mexico excise tax risk in 2026 and broader regulatory headwinds in Latin America",
+        "Stock has rallied +26% from Oct 2025 low of $65.35, potentially pricing in much of the good news"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "excerpt": "revenue=12.54B net_income=3.80B eps_diluted=0.88 gross_profit=7.82B operating_income=4.28B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=29.223 p_b=11.813 earnings_yield=0.034 net_margin=0.259 roe=0.404 gross_margin=0.614 operating_margin=0.28"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 23.2..29.8 | p_b 9.4..12.0"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "excerpt": "close=82.63 range high=85.68 low=65.35"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-09",
+          "excerpt": "DGS10=4.54"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-22",
+          "excerpt": "Coca-Cola and the IRS will begin oral arguments...dispute that centres on transfer pricing...could result in Coca-Cola facing a tax bill of about $20bn"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-09",
+          "excerpt": "analysts expect this beverage company to report a profit of $0.92 per share, up 5.8% from $0.87 per share in the year-ago quarter"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "90d_mean",
+          "excerpt": "mean=0.675 n_articles=104"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "excerpt": "Bearish analysts highlight Latin America as a relative weak spot...planned 2026 excise tax in Mexico could weigh on consumption"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "companieshistory.com",
+          "excerpt": "Coca-Cola controls close to 50% of the global non-alcoholic beverage market...market capitalization of about $360 billion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223432,
+        "capped_chars": 223432,
+        "raw_tokens": 55858,
+        "capped_tokens": 55858
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 782,
+        "capped_chars": 782,
+        "raw_tokens": 196,
+        "capped_tokens": 196
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3000,
+        "capped_chars": 3000,
+        "raw_tokens": 750,
+        "capped_tokens": 750
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 27050,
+        "capped_chars": 7057,
+        "raw_tokens": 6762,
+        "capped_tokens": 1764
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 94115,
+        "capped_chars": 72349,
+        "raw_tokens": 23528,
+        "capped_tokens": 18087
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 31497,
+  "started_at": "2026-08-07T03:07:10+00:00"
+}

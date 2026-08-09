@@ -1,0 +1,182 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32008,
+    "tokens_out": 1170,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035518,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": 0.25,
+      "rationale": "Merck presents a solid but not exceptional fundamental picture. Q3 2025 showed strong revenue of $17.28B with EPS of $2.32, up 87% YoY, driven by Keytruda's continued dominance ($8.1B in Q3, 10% growth). Gross margins are healthy at 77.2% and ROE at 36.7%. However, the company faces a significant structural overhang: Keytruda's U.S. patent expiration in late 2028, which could create a ~$20B annual revenue shortfall. Gardasil sales declined 24% in Q3 due to China inventory issues. The pipeline is substantial (~80 Phase 3 trials, $50B commercial opportunity by mid-2030s) with promising new products like WINREVAIR ($360M Q3, 141% growth) and CAPVAXIVE ($244M), but these are still early in scaling. Valuation at 15x P/E is mid-range within its 10.7-17.8x 52-week range, neither cheap nor expensive. The upcoming Q1 2026 earnings on April 30 (analysts expect EPS of ~$1.31, revenue ~$15.9B) provides a near-term catalyst, though the LITESPARK-012 trial failure on April 21 is a modest negative. News sentiment is moderately positive (mean 0.50). The stock has recovered from its October 2025 lows of ~$73 to $114.62, suggesting much of the recovery is priced in. Overall, a quality franchise with solid execution but facing a well-known patent cliff that limits upside.",
+      "key_factors": [
+        "Keytruda dominance ($8.1B Q3, 10% growth) but 2028 patent cliff creates ~$20B revenue risk",
+        "Strong Q3 2025 financials: $17.28B revenue, 77.2% gross margin, 36.7% ROE, EPS +87% YoY",
+        "Pipeline diversification: ~80 Phase 3 trials, WINREVAIR growing 141%, subcutaneous Keytruda approved",
+        "Valuation at 15x P/E is mid-range (10.7-17.8x 52-wk range); not a clear bargain",
+        "Gardasil declining 24% in Q3 due to China issues; LITESPARK-012 trial failure April 21",
+        "Q1 2026 earnings April 30 as near-term catalyst (consensus: ~$1.31 EPS, ~$15.9B rev)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=17.28B net_income=5.79B eps_diluted=2.32 gross_profit=13.42B operating_income=6.75B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=15.035 p_b=5.516 net_margin=0.296 roe=0.367 gross_margin=0.772"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 10.7..17.8 | p_b 3.8..6.0"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-21",
+          "excerpt": "Phase 3 LITESPARK-012 trial failed to meet primary endpoints; Merck shares fell 4.08%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-22",
+          "excerpt": "INBRX-106 being tested in combination with Merck's Keytruda"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dcf-analysis.com",
+          "excerpt": "Keytruda sales for the first nine months of 2025 hit $23.3 billion, up 8% year-over-year; WINREVAIR sales of $360 million in Q3; Gardasil vaccine declined 24% to $1.7 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "markets.chroniclejournal.com",
+          "excerpt": "2028 Patent Cliff: When Keytruda loses exclusivity in the U.S. in late 2028, Merck could lose up to 30% of its total revenue; pipeline and newly launched drugs projected to represent a $50 billion commercial opportunity by the mid-2030s"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.marketbeat.com",
+          "excerpt": "Merck will report Q1 2026 results before the market opens on April 30th; analysts expect earnings of ($1.3109) per share and revenue of $15.9067 billion"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-01-24 to 2026-04-22",
+          "excerpt": "mean=0.502, n_articles=68"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4567,
+        "capped_chars": 4567,
+        "raw_tokens": 1142,
+        "capped_tokens": 1142
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224796,
+        "capped_chars": 224796,
+        "raw_tokens": 56199,
+        "capped_tokens": 56199
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2079,
+        "capped_chars": 2079,
+        "raw_tokens": 520,
+        "capped_tokens": 520
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 38826,
+        "capped_chars": 10196,
+        "raw_tokens": 9706,
+        "capped_tokens": 2549
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98050,
+        "capped_chars": 79046,
+        "raw_tokens": 24512,
+        "capped_tokens": 19762
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 48526,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

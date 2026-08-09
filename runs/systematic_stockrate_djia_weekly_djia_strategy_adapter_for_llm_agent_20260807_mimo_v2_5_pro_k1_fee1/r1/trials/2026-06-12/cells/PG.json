@@ -1,0 +1,179 @@
+{
+  "cell": "PG",
+  "symbols": [
+    "PG"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32263,
+    "tokens_out": 960,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035143,
+    "basis": "reported"
+  },
+  "views": {
+    "PG": {
+      "symbol": "PG",
+      "score": 0.15,
+      "rationale": "PG is a high-quality defensive franchise with durable brands, strong margins (gross ~50%, operating ~22-24%), and consistent cash generation. However, the near-term trajectory is mixed: Q3 FY26 showed solid YoY growth (+7.4% revenue, +5.8% EPS) but sequential deceleration (QoQ revenue -4.4%, EPS -8.4%) and the company faces a significant $1B after-tax oil cost headwind in FY2027 plus $400M tariff impacts. Valuation at 23.3x P/E sits near the middle of its 1-year range (21.7-26.3x), not compellingly cheap. The stock has underperformed the S&P 500 meaningfully (-12.8% over 52 weeks vs SPX +28.5%), and while the 70-year dividend streak and restructuring program provide support, the cost headwinds and cautious EPS guidance toward the lower end of $6.83-$7.09 range limit near near-term upside. No clear near-term fundamental catalyst to re-rate the stock higher.",
+      "key_factors": [
+        "Durable competitive position with 20+ billion-dollar brands and dominant market share in consumer staples",
+        "Sequential deceleration in Q3 FY26: QoQ revenue -4.4%, EPS -8.4% despite solid YoY growth",
+        "$1B after-tax oil cost headwind for FY2027 and $400M tariff impact creating margin pressure",
+        "P/E of 23.3x near middle of 1-year range (21.7-26.3x) - not a compelling valuation discount",
+        "Significant underperformance vs S&P 500: -12.8% over 52 weeks vs SPX +28.5%",
+        "70-year consecutive dividend increase streak and $15B FY26 capital return plan provide downside support",
+        "Restructuring with up to 7,000 job cuts by FY2027 aimed at offsetting cost pressures",
+        "FY26 guidance: organic sales growth 0-4%, core EPS toward lower end of $6.83-$7.09 range"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3",
+          "excerpt": "revenue=21.23B eps_diluted=1.63; YoY revenue=+7.4% eps=+5.8%; QoQ revenue=-4.4% eps=-8.4%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=23.32 p_b=6.916; range over window: pe_diluted 21.7..26.3"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=148.34; range over ~251 bars: high=167.25 low=137.62"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-05 Benzinga",
+          "excerpt": "quality, cash-generative businesses like Berkshire Hathaway, Procter & Gamble, and PepsiCo may become safe havens"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com FY2027 oil headwind",
+          "excerpt": "CFO Andre Schulten said the surge in Brent crude from around $60 per barrel before the Iran conflict to around $100 today would produce a roughly $1 billion after-tax profit hit in fiscal 2027"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com restructuring",
+          "excerpt": "tariff headwinds of about US$400 million, and more cautious external earnings expectations"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "quantumrun.com statistics 2026",
+          "excerpt": "FY2026 guidance sets net sales growth at 1% to 5% and all-in EPS growth at 3% to 9%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart.com underperformance",
+          "excerpt": "PG has declined 12.8% over the past 52 weeks, lagging SPX's 28.5% uptick over the same time period"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "PG",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3763,
+        "capped_chars": 3763,
+        "raw_tokens": 941,
+        "capped_tokens": 941
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 238738,
+        "capped_chars": 238738,
+        "raw_tokens": 59684,
+        "capped_tokens": 59684
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2445,
+        "capped_chars": 2445,
+        "raw_tokens": 611,
+        "capped_tokens": 611
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 25864,
+        "capped_chars": 6088,
+        "raw_tokens": 6466,
+        "capped_tokens": 1522
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 91222,
+        "capped_chars": 71805,
+        "raw_tokens": 22806,
+        "capped_tokens": 17951
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 25699,
+  "started_at": "2026-08-07T03:03:49+00:00"
+}

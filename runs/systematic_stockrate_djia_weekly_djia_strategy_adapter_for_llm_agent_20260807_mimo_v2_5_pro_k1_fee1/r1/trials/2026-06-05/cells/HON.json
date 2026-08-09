@@ -1,0 +1,174 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31586,
+    "tokens_out": 1101,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034889,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": -1.0,
+      "rationale": "HON is facing a severe deterioration in fundamental health and trajectory. Q1 2026 showed a dramatic -41.9% YoY decline in EPS (from $2.22 to $1.29) and a -45.8% YoY drop in net income, despite modest +2.4% revenue growth. Operating cash flow swung deeply negative at -$650M vs +$597M a year ago, signaling serious working capital or earnings quality issues. The balance sheet is deteriorating: total equity shrank from $18.02B (Mar 2025) to $14.67B (Mar 2026) while total debt expanded from $27.08B to $32.11B, pushing debt-to-equity to 2.19x. Net margin compressed from 15.1% to 10.9% and ROE fell from 31.7% to 28%. Valuation is extremely stretched: the P/E has expanded from ~22-25x historically to 33.9x at the current price of $217.64, even as earnings power has collapsed. The P/B of 9.47x is near the top of its 6.8-10.4 range. The aerospace spin-off on June 29 creates significant uncertainty about the remaining Honeywell Technologies entity's earnings power, with management explicitly warning of 'uneven earnings progression' through 2026-2028. The stock is down 8.7% over the last quarter but remains expensive relative to its deteriorating fundamentals. No credible near-term positive catalyst exists; the next earnings event (July 23) carries downside risk given consensus EPS of $2.42 is already below prior year's $2.75. All three pillars \u2014 deteriorating fundamentals, stretched valuation, and uncertain/negative near-term catalysts \u2014 align negatively.",
+      "key_factors": [
+        "Q1 2026 EPS collapsed 41.9% YoY to $1.29 from $2.22 despite +2.4% revenue growth",
+        "Operating cash flow swung to -$650M from +$597M YoY, a -208.9% deterioration",
+        "Net margin compressed from 15.1% to 10.9%; ROE fell from 31.7% to 28%",
+        "Total equity declined from $18.02B to $14.67B while debt grew from $27.08B to $32.11B",
+        "P/E expanded to 33.9x from historical 22-25x range despite earnings collapse",
+        "Aerospace spin-off June 29 creates uncertainty; management warns of 'uneven earnings progression'",
+        "Next earnings (Jul 23) consensus EPS $2.42 is below prior year $2.75, suggesting continued pressure",
+        "Stock down 8.7% quarterly but valuation remains stretched vs deteriorating fundamentals"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=9.14B net_income=795.00M eps_diluted=1.29 operating_cash_flow=-650.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "rev=8.93B eps=2.22 operatingsource_flow=597.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=33.888 p_b=9.473 net_margin=0.109 roe=0.28 debt_to_equity=2.189"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-05",
+          "excerpt": "pe_diluted=24.525 p_b=7.775 net_margin=0.151 roe=0.317"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=217.64 quarterly delta -8.7%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "Honeywell Expects Uneven Earnings Progression In Next Few Years; forecasts 7-9% organic sales growth in 2026 with adjusted EBIT of $4.65-$4.75 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-04",
+          "excerpt": "Earnings Date Jul 23, 2026; EPS Estimate $2.42 (Down from $2.75 YoY); Revenue Estimate $9.55 Billion (Down from $10.35 Billion YoY)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3050,
+        "capped_chars": 3050,
+        "raw_tokens": 762,
+        "capped_tokens": 762
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 251697,
+        "capped_chars": 251697,
+        "raw_tokens": 62924,
+        "capped_tokens": 62924
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1289,
+        "capped_chars": 1289,
+        "raw_tokens": 322,
+        "capped_tokens": 322
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 21226,
+        "capped_chars": 5597,
+        "raw_tokens": 5306,
+        "capped_tokens": 1399
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 99313,
+        "capped_chars": 76466,
+        "raw_tokens": 24827,
+        "capped_tokens": 19117
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 47553,
+  "started_at": "2026-08-07T03:02:27+00:00"
+}

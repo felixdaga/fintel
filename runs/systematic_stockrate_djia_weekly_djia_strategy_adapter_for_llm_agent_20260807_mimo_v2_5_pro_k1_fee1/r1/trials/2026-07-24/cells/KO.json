@@ -1,0 +1,193 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35592,
+    "tokens_out": 1120,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038952,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.15,
+      "rationale": "Coca-Cola is a high-quality defensive franchise with excellent brand moat, 64-year dividend increase streak, and strong profitability (25.9% net margin, 40.4% ROE, 61.4% gross margin). Q2 2025 showed solid sequential growth (+12.6% QoQ revenue, +14.3% QoQ EPS). However, the stock is trading near the top of its 1-year P/E range (28.7x vs 23.2-30.0x window), making it expensive vs its own recent history. The upcoming Q2 2026 earnings on July 28 is a near-term catalyst, but consensus expectations of 92-93c EPS and $13.1B revenue are already well-telegraphed, limiting surprise potential. The Fairlife ransomware incident (July 16) and Mexico excise tax risk add uncertainty. Rising 10-year Treasury yields (4.71%) reduce the relative appeal of dividend stocks. The stock has already rallied +8.8% over the past quarter, suggesting much of the positive is priced in. Net: solid business but stretched valuation caps upside.",
+      "key_factors": [
+        "Premium valuation: P/E of 28.7x is near the top of its 1-year range (23.2-30.0x), expensive vs own history",
+        "Strong fundamentals: 25.9% net margin, 40.4% ROE, 61.4% gross margin, 64-year dividend streak",
+        "Q2 2026 earnings on July 28 as near-term catalyst with consensus EPS of $0.92-0.93",
+        "Fairlife ransomware incident (July 16) creating operational uncertainty for a growth brand",
+        "Rising Treasury yields (10Y at 4.71%) reducing relative appeal of dividend stocks",
+        "Stock up +8.8% over past quarter, suggesting positive already partially priced in",
+        "Asset-light concentrate model with ~40% global non-alcoholic beverage market share"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=28.707 p_b=11.605 p_s=7.442 earnings_yield=0.035 net_margin=0.259 roe=0.404 gross_margin=0.614 operating_margin=0.28"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 23.2..30.0 | p_b 9.4..12.1"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "excerpt": "revenue=12.54B eps_diluted=0.88 net_income=3.80B gross_profit=7.82B operating_income=4.28B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-28 Q1",
+          "excerpt": "revenue=11.13B eps_diluted=0.77 net_income=3.33B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=81.17 quarterly delta +8.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-19",
+          "excerpt": "Here's Why Coca-Cola's Magnificent Rise Could Come to an End on July 28 - stock trades at an expensive 24x forward earnings for a low-growth company"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16",
+          "excerpt": "Should You Buy Coca-Cola Stock Before July 28? - trading at a premium valuation (forward P/E of ~25) and reaching all-time highs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "compliancehub.wiki",
+          "excerpt": "On July 16, 2026, The Coca-Cola Company disclosed that its dairy subsidiary fairlife, LLC had identified unauthorized access by a third party to a portion of its systems, including production-related systems, in connection with a ransomware event. US production operations at fairlife were temporarily suspended."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "excerpt": "Bearish analysts highlight Latin America as a relative weak spot, with expectations that the planned 2026 excise tax in Mexico could weigh on consumption and limit pricing power."
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "excerpt": "DGS10=4.7100000000 \u0394=0.36 (8.3%)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "Zacks Consensus Estimate for revenues is pegged at $13.1 billion, implying 4.2% growth. Consensus estimate for earnings is pegged at 92 cents per share, indicating 5.6% growth."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223450,
+        "capped_chars": 223450,
+        "raw_tokens": 55862,
+        "capped_tokens": 55862
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2909,
+        "capped_chars": 2909,
+        "raw_tokens": 727,
+        "capped_tokens": 727
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 51671,
+        "capped_chars": 11967,
+        "raw_tokens": 12918,
+        "capped_tokens": 2992
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102573,
+        "capped_chars": 77091,
+        "raw_tokens": 25644,
+        "capped_tokens": 19273
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 41352,
+  "started_at": "2026-08-07T03:08:56+00:00"
+}

@@ -1,0 +1,189 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34558,
+    "tokens_out": 1435,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038863,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.25,
+      "rationale": "IBM shows solid fundamental health with improving profitability (net margin 15.6%, ROE 32.5% as of Q1 2026 vs. 8.7% and 20.3% a year ago) YoY revenue growth of+9.5% YoY EPS growth of +14.3% YoY. Strong operatingating cash flow ($5.17B in Q1 2026) and a improving balance sheet (equity up to $33B from $27B a year ago). The hybrid cloud and AI strategy is gaining traction, with software segment growing 9% and infrastructure up 20% in Q1 2026. However, the QoQ trajectory shows sequential revenue decline (-6.2%) and significant EPS compression (-44.6%), reflecting IBM's typical Q4-to-Q1 seasonality rather than fundamental deterioration. Valuation is attractive vs. own history: P/E of 23.4x is near the low end of the 19-51x range over the past year, and P/B of 7.6x is near the 6.2-10.8x range floor, having compressed sharply from 10.7x in late 2025 as earnings expanded. The stock trades 18% below its 52-week high of $324.90. A credible near-term catalyst exists: the $1B CHIPS Act quantum foundry award announced May 21, 2026, which drove a ~17% weekly surge and positions IBM as the leader in commercial quantum computing. Additionally, the next earnings date (July 22, 2026) could provide a re-rating opportunity if the company sustains its growth trajectory. Risks include elevated debt ($66B total debt, D/E 1.75), competitive pressure from hyperscalers, and the stock's recent sharp rally potentially pricing in some catalyst upside. The score reflects a fundamentally sound, improving business at a reasonable valuation with a tangible near-term catalyst, but tempered by balance sheet leverage and the magnitude of the recent move.",
+      "key_factors": [
+        "YoY revenue growth +9.5% and EPS growth +14.3% in Q1 2026, with software +9% and infrastructure +20%",
+        "Net margin improved to 15.6% from 8.7% a year ago; ROE expanded to 32.5% from 20.3%",
+        "P/E of 23.4x near low end of 19-51x 12-month range; P/B of 7.6x near 6.2-10.8x range floor",
+        "$1B CHIPS Act quantum foundry award (Anderon) announced May 21, 2026 \u2014 credible near-term catalyst",
+        "Strong operating cash flow of $5.17B in Q1 2026, up 18.3% YoY",
+        "Elevated debt ($66B, D/E 1.75) and current ratio below 1.0 represent balance sheet risks",
+        "Stock surged ~17% in the week of May 19-22 on quantum news, potentially pricing in some catalyst upside",
+        "Next earnings July 22, 2026 could provide additional re-rating if growth sustains"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1 filing",
+          "excerpt": "revenue=15.92B net_income=1.22B eps_diluted=1.28 gross_profit=8.95B operating_income=1.39B total_assets=156.23B total_equity=33.06B operating_cash_flow=5.17B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 YoY growth",
+          "excerpt": "YoY: revenue=+9.5% eps_diluted=+14.3% net_income=+15.3% gross_profit=+11.4% operating_cash_flow=+18.3%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=23.393 p_b=7.61 p_s=3.651 earnings_yield=0.043 net_margin=0.156 roe=0.325 gross_margin=0.584 operating_margin=0.153"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-29 to 2026-05-28 range",
+          "excerpt": "pe_diluted 19.0..51.2 | p_b 6.2..10.8 | net_margin 0.1..0.2 | roe 0.2..0.3"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-29",
+          "excerpt": "pe_diluted=44.686 p_b=9.074 net_margin=0.087 roe=0.203"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-28",
+          "excerpt": "close=264.22 range over ~251 bars: high=324.90 low=212.34"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-22 Benzinga",
+          "excerpt": "IBM stock surged nearly 17% this week following two major announcements: the Department of Commerce awarded IBM $1 billion in federal funding to develop Anderon, a new quantum chip foundry"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-21 Benzinga",
+          "excerpt": "IBM partnered with the U.S. Department of Commerce to establish Anderon, America's first quantum wafer foundry in Albany, New York. The venture is backed by $1 billion in CHIPS Act incentives and $1 billion in IBM cash investment"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de 2026-05-01",
+          "excerpt": "debt-to-equity ratio of around 1.75 alongside current and quick ratios below 1.0"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wallstreetzen.com",
+          "excerpt": "Next earnings date: Jul 22, 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224598,
+        "capped_chars": 224598,
+        "raw_tokens": 56150,
+        "capped_tokens": 56150
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2724,
+        "capped_chars": 2724,
+        "raw_tokens": 681,
+        "capped_tokens": 681
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 66163,
+        "capped_chars": 13892,
+        "raw_tokens": 16541,
+        "capped_tokens": 3473
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98384,
+        "capped_chars": 77544,
+        "raw_tokens": 24597,
+        "capped_tokens": 19386
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 58162,
+  "started_at": "2026-08-07T03:01:29+00:00"
+}

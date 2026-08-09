@@ -1,0 +1,179 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 44454,
+    "tokens_out": 1373,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.047485,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "rationale": "JPMorgan Chase demonstrates strong fundamental health with record Q1 2026 results: net income of $16.5B ($5.94 EPS, +17% YoY), revenue of $50.5B (+10% YoY), and ROTCE of 23%. The bank's diversified business model across CCB, CIB, CB, and AWM provides resilience, with CIB revenue up 19% and Payments achieving its fifth consecutive record quarter. Balance sheet strength is evident with CET1 at 14.3% and $1.5T in cash/marketable securities. However, trajectory shows some mixed signals: quarterly EPS from Q3 2025 to Q1 2026 shows volatility (5.07\u21925.24\u21925.07\u21925.94), and operating cash flow has been negative in two of the last three quarters. Valuation is moderately elevated vs. own history: current P/E of 16.6x sits near the top of its 13.0-17.8x 1-year range, and P/B of 2.58x is near the the the range .2 range2x2 range.. near  near2.2.2. near-term. near.2.2. near-term, near the near near near near near near near near near near near near near near near near near near near near near near near near near near near near near near near near near near near near catalyst: the:'s strong Q1   2   2,2's's's's's Dim: Dim , ,,'s's's the,, the macro",
+      "key_factors": [
+        "Fundamental health & trajectory**",
+        "Record Q1 2026 results: Net income $16.5B (+17% YoY), revenue $50.5B (+10% YoY), ROTCE 23% (+4pp YoY). Strong diversified across CCB, CIB, CB, AWM segments.",
+        "CIB outperformance:** Revenue $23.4B (+19% YoY), Markets revenue record $1.6B (+28% YoY).IB revenue\u957f:** Payments revenue $5.1B (+12% YoY), fifth consecutive record quarter",
+        "Balance sheet strength:** CET1 14.3%, $1.5T cash/marketable securities, $572B total loss-absorbing capacity",
+        "Valuation moderately elevated:** P/E 16.6x near top of 13.0-17.8x 1-year range; P/B 2.58x near top of 2.0-2.8x range",
+        "Near-term catalyst:** Q1 2026 earnings beat ($5.94 vs $5.51 est.) with strong momentum; potential buyback acceleration given excess capital",
+        "Macro backdrop:** Fed funds at 3.64%, 10Y yield 4.34%, VIX elevated at 19.3; oil prices at $99/bbl creating inflationary pressure",
+        "Risks:** Basel III endgame could require ~$20B additional capital; credit normalization beginning; geopolitical uncertainty from Iran conflict"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-14 Q1 2026 earnings",
+          "excerpt": "Net income of $16.5 billion, or $5.94 per share, compared with net income of $14.6 billion, or $5.07 per share, in the first quarter of 2025"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=46.43B net_income=14.39B eps_diluted=5.07"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=16.612 p_b=2.583"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-04-24 to 2026-04-23 range",
+          "excerpt": "pe_diluted 13.0..17.8 | p_b 2.0..2.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-14",
+          "excerpt": "J.P. Morgan Payments reported $5.1B in Q1 2026 revenue, up 12% year over year, marking its fifth consecutive record quarter"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-14",
+          "excerpt": "CET1 Capital Ratios Std. 14.3% | Adv. 14.1%; Cash and marketable securities $1.5T"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-14 earnings call",
+          "excerpt": "Management expects a 70 basis point increase in the G-SIB surcharge by 2028, which, when combined with the RWA increase from the Basel III endgame NPR, results in a total increase of about $20 billion of G-SIB capital"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "excerpt": "FEDFUNDS=3.64 DGS10=4.34 VIXCLS=19.31 DCOILWTICO=99.27"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 2978,
+        "capped_chars": 2978,
+        "raw_tokens": 744,
+        "capped_tokens": 744
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241378,
+        "capped_chars": 241378,
+        "raw_tokens": 60344,
+        "capped_tokens": 60344
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3345,
+        "capped_chars": 3345,
+        "raw_tokens": 836,
+        "capped_tokens": 836
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 226202,
+        "capped_chars": 20688,
+        "raw_tokens": 56550,
+        "capped_tokens": 5172
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 117881,
+        "capped_chars": 95775,
+        "raw_tokens": 29471,
+        "capped_tokens": 23945
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50550,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

@@ -1,0 +1,27 @@
+{"ts": "2026-08-07T02:56:08+00:00", "event": "job_start", "job_id": "systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1", "strategy": "systematic_stockrate_djia_weekly", "agent": "djia_strategy_adapter_for_llm_agent", "k_repeats": 1}
+{"ts": "2026-08-07T02:56:08+00:00", "event": "preflight_ok", "n_dates": 15, "n_symbols": 30}
+{"ts": "2026-08-07T02:56:08+00:00", "event": "probe_start", "kinds": ["fundamentals", "macro", "news", "news_sentiment", "prices", "ratios", "web_search"], "symbol": "AAPL", "timeout_s": 15}
+{"ts": "2026-08-07T02:56:08+00:00", "event": "probe_kind", "kind": "fundamentals", "source": "massive_fundamentals", "status": "ok", "latency_ms": 0.7, "n": 6}
+{"ts": "2026-08-07T02:56:08+00:00", "event": "probe_kind", "kind": "macro", "source": "fred_macro", "status": "ok", "latency_ms": 2.9, "n": null}
+{"ts": "2026-08-07T02:56:08+00:00", "event": "probe_kind", "kind": "news", "source": "massive_news", "status": "ok", "latency_ms": 11.9, "n": 85}
+{"ts": "2026-08-07T02:56:08+00:00", "event": "probe_kind", "kind": "news_sentiment", "source": "news_sentiment", "status": "ok", "latency_ms": 11.5, "n": null}
+{"ts": "2026-08-07T02:56:08+00:00", "event": "probe_kind", "kind": "prices", "source": "massive_prices", "status": "ok", "latency_ms": 54.3, "n": 251}
+{"ts": "2026-08-07T02:56:08+00:00", "event": "probe_kind", "kind": "ratios", "source": "valuation_ratios", "status": "ok", "latency_ms": 5.3, "n": null}
+{"ts": "2026-08-07T02:56:08+00:00", "event": "probe_kind", "kind": "web_search", "source": "web_search", "status": "ok", "latency_ms": 0.3, "n": null}
+{"ts": "2026-08-07T02:56:08+00:00", "event": "probe_ok", "n_ok": 7, "n_kinds": 7}
+{"ts": "2026-08-07T02:56:08+00:00", "event": "preflight_start", "n_symbols": 31, "kinds": ["fundamentals", "macro", "news", "news_sentiment", "prices", "ratios", "web_search"], "from_date": "2021-01-01", "through_date": "2026-07-30"}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "job_start", "job_id": "systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1", "strategy": "systematic_stockrate_djia_weekly", "agent": "djia_strategy_adapter_for_llm_agent", "k_repeats": 1}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "preflight_ok", "n_dates": 15, "n_symbols": 30}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "probe_start", "kinds": ["fundamentals", "macro", "news", "news_sentiment", "prices", "ratios", "web_search"], "symbol": "AAPL", "timeout_s": 15}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "probe_kind", "kind": "fundamentals", "source": "massive_fundamentals", "status": "ok", "latency_ms": 0.2, "n": 6}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "probe_kind", "kind": "macro", "source": "fred_macro", "status": "ok", "latency_ms": 1.2, "n": null}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "probe_kind", "kind": "news", "source": "massive_news", "status": "ok", "latency_ms": 11.5, "n": 85}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "probe_kind", "kind": "news_sentiment", "source": "news_sentiment", "status": "ok", "latency_ms": 11.5, "n": null}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "probe_kind", "kind": "prices", "source": "massive_prices", "status": "ok", "latency_ms": 24.9, "n": 251}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "probe_kind", "kind": "ratios", "source": "valuation_ratios", "status": "ok", "latency_ms": 5.2, "n": null}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "probe_kind", "kind": "web_search", "source": "web_search", "status": "ok", "latency_ms": 0.1, "n": null}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "probe_ok", "n_ok": 7, "n_kinds": 7}
+{"ts": "2026-08-07T02:56:46+00:00", "event": "preflight_start", "n_symbols": 31, "kinds": ["fundamentals", "macro", "news", "news_sentiment", "prices", "ratios", "web_search"], "from_date": "2021-01-01", "through_date": "2026-07-30"}
+{"ts": "2026-08-07T02:57:08+00:00", "event": "preflight_done", "n_warmed": 94, "n_failed": 0, "elapsed_ms": 22382}
+{"ts": "2026-08-07T03:13:34+00:00", "event": "job_health", "status": "ok", "n_cells": 450, "issues": []}
+{"ts": "2026-08-07T03:13:34+00:00", "event": "job_done", "job_id": "systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1", "status": "ok", "health": "ok", "elapsed_ms": 1008587}

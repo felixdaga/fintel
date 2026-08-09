@@ -1,0 +1,183 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30493,
+    "tokens_out": 1194,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034075,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": -1.0,
+      "rationale": "MRK's Q1 2026 results reveal a severe earnings collapse: net income swung to -$4.24B (EPS -$1.72) from +$5.79B in Q3 2025, driven by a massive operating loss of -$3.53B despite revenue of $16.29B. This is not a one-off \u2014 the operating margin collapsed from ~39% in Q3 2025 to -21.7% in Q1 2026, suggesting a large impairment, restructuring charge, or acquisition-related cost. Meanwhile, the stock has surged 57% over the past year to $125.45, pushing the P/E to 34.7x \u2014 the highest in the 12-month window (range 11.1\u201334.7) \u2014 on what appears to be a deeply impaired earnings base. The P/B of 6.75x is also at the top of its 4.0\u20136.8 range. Forward guidance of $5.04\u2013$5.16 EPS for 2026 implies a forward P/E of ~24\u201325x, which is still elevated for a company facing Keytruda patent cliff in 2028\u20132029, Gardasil demand weakness in China/Japan, and recent oncology pipeline setbacks (EVOKE-03 discontinuation, LITESPARK-012 miss). The CMS proposed drug price negotiations starting 2029 add further structural headwinds. While the company has a diversified pipeline and strong cash generation ($3.92B operating cash flow in Q1), the combination of deteriorating near trajectory, extreme valuation vs. history, and multiple near-term risk catalysts (pipeline disappointments, regulatory pressure) makes this a strongly unattractive setup.",
+      "key_factors": [
+        "Q1 2026 net income collapsed to -$4.24B (EPS -$1.72) from profitable quarters prior, with operating income of -$3.53B",
+        "P/E of 34.7x is at the absolute top of its 12-month range (11.1\u201334.7), representing extreme valuation vs. own history",
+        "P/B of 6.75x at top of 4.0\u20136.8 range; stock up ~57% over past year despite earnings deterioration",
+        "Keytruda patent cliff (2028\u20132029) remains the dominant structural risk, with Keytruda ~46% of 2024 revenue",
+        "Gardasil demand weakness in China/Japan and recent oncology pipeline setbacks (EVOKE-03, LITESPARK-012)",
+        "CMS proposed Medicare drug price negotiations starting 2029 add regulatory headwinds",
+        "Forward P/E of ~24\u201325x on 2026 EPS guidance of $5.04\u2013$5.16 still elevated for a company with these structural risks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=16.29B net_income=-4.24B eps_diluted=-1.72 operating_income=-3.53B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=17.28B eps=2.32 net_income=5.79B operating_income=6.75B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=34.708 p_b=6.752 net_margin=0.136 roe=0.195"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-26",
+          "excerpt": "pe_diluted=11.433 p_b=4.122 net_margin=0.273 roe=0.361"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=125.45 range high=125.96 low=76.66"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-15",
+          "excerpt": "CMS proposed drug price negotiations impact Merck's future revenue; Pipeline setbacks in oncology trials raise growth concerns; EVOKE-03 trial discontinuation; LITESPARK-012 missed primary endpoints"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-20",
+          "excerpt": "Keytruda Patent Cliff: primary U.S. patents set to expire in late 2028, with some extensions potentially pushing exclusivity to 2029. This drug accounts for nearly half of its pharmaceutical sales"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-20",
+          "excerpt": "Gardasil vaccine sales declining in key international markets such as China and Japan due to weak demand trends"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-24",
+          "excerpt": "Merck now expects 2026 revenue to come in between $65.8 billion and $67 billion. The company also projects EPS of $5.04 to $5.16 for the year"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4573,
+        "capped_chars": 4573,
+        "raw_tokens": 1143,
+        "capped_tokens": 1143
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224746,
+        "capped_chars": 224746,
+        "raw_tokens": 56186,
+        "capped_tokens": 56186
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1939,
+        "capped_chars": 1939,
+        "raw_tokens": 485,
+        "capped_tokens": 485
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 20082,
+        "capped_chars": 5268,
+        "raw_tokens": 5020,
+        "capped_tokens": 1317
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 79901,
+        "capped_chars": 61943,
+        "raw_tokens": 19975,
+        "capped_tokens": 15486
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 30755,
+  "started_at": "2026-08-07T03:05:32+00:00"
+}

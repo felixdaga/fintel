@@ -1,0 +1,178 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30946,
+    "tokens_out": 1146,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034384,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": 0.15,
+      "rationale": "UNH is a dominant managed care franchise with scale advantages and strong Q1 2026 results (revenue $111.7B, adjusted EPS $7.23 beating consensus by 9.4%, raised FY26 guidance to >$18.25 adj EPS). Operating cash flow of $8.91B in Q1 2026 is robust. However, several factors temper the score: (1) Valuation has expanded dramatically \u2014 P/E moved from ~12-15x in mid-2025 to ~29x currently, near the top of its 365-day range (9.5-29.3), meaning the market has already priced in much of the recovery; (2) Net margin has compressed from 5.6% to 2.8% and ROE from 22.8% to 12.3% over the past year, indicating fundamental deterioration even as revenue grew; (3) The quarterly EPS trajectory is volatile (Q1'25: $6.85, Q2'25: $3.74, Q3'25: $2.59, Q1'26: $6.9) with a fiscal gap making TTM calculation unreliable; (4) Significant regulatory and legal headwinds persist \u2014 DOJ investigations, Medicare Advantage overbilling scrutiny, PBM regulation, and the ProPublica report on mental health coverage denials; (5) Berkshire Hathaway fully exited its position, a notable institutional signal. The stock recent +46% quarterly price surge from $277 to $406 appears to have captured the Q1 beat and guidance raise. The Q2 earnings on July 16 could be a catalyst, but at 29x P/E the near 52-week highs, the risk/reward is balanced rather than compelling. The 5% dividend increase and analyst upgrades (Morgan Stanley $453, BofA $450) provide support but don't overcome the stretched valuation.",
+      "key_factors": [
+        "P/E expanded from ~12-15x to ~29x over past year, near top of 365-day range (9.5-29.3) \u2014 valuation has re-rated significantly",
+        "Net margin compressed from 5.6% to 2.8% and ROE from 22.8% to 12.3% year-over-year, indicating fundamental pressure despite revenue growth",
+        "Q1 2026 earnings beat ($7.23 adj EPS vs $6.61 est) and raised FY26 guidance to >$18.25, but stock has already rallied 46% from March lows",
+        "Regulatory/legal headwinds: DOJ investigations, Medicare Advantage overbilling scrutiny, PBM regulation, mental health coverage denials per ProPublica",
+        "Berkshire Hathaway fully exited UNH position, signaling institutional caution on risk/reward",
+        "Q2 2026 earnings scheduled July 16 \u2014 potential near-term catalyst but priced in at current valuation",
+        "Strong competitive position as largest US health insurer with integrated UnitedHealthcare/Optum model and AI leadership narrative from Morgan Stanley"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=111.72B net_income=6.48B eps_diluted=6.9 operating_cash_flow=8.91B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=28.801 p_b=3.552 net_margin=0.028 roe=0.123"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-12",
+          "excerpt": "pe_diluted=12.747 p_b=2.9 net_margin=0.056 roe=0.228"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=405.55 quarterly delta +46.4% from 2026-03-12 close=277.05"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "UNH surged 5.14% following upgrades from Bank of America ($450 PT) and Morgan Stanley ($453 PT); raised FY2026 adjusted EPS guidance to over $18.25"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-03",
+          "excerpt": "Berkshire Hathaway exited UnitedHealth Group position per latest 13F filing"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-19",
+          "excerpt": "Berkshire Hathaway has fully exited its stake in UnitedHealth Group after holding the position for less than a year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-05",
+          "excerpt": "Morgan Stanley raised UnitedHealth's price target to $453 from $395 and named it a top pick, citing AI leadership in managed care"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4536,
+        "capped_chars": 4536,
+        "raw_tokens": 1134,
+        "capped_tokens": 1134
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225426,
+        "capped_chars": 225426,
+        "raw_tokens": 56356,
+        "capped_tokens": 56356
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1521,
+        "capped_chars": 1521,
+        "raw_tokens": 380,
+        "capped_tokens": 380
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 22781,
+        "capped_chars": 3347,
+        "raw_tokens": 5695,
+        "capped_tokens": 837
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 79061,
+        "capped_chars": 60804,
+        "raw_tokens": 19765,
+        "capped_tokens": 15202
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37738,
+  "started_at": "2026-08-07T03:03:55+00:00"
+}

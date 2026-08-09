@@ -1,0 +1,180 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33236,
+    "tokens_out": 1079,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036473,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.25,
+      "rationale": "IBM shows solid fundamental health with Q1 2026 revenue of $15.92B (+9.5% YoY) and EPS of $1.28 (+14.3% YoY), driven by double-digit growth in Software (+11%) and Infrastructure (+15%). Operating cash flow improved to $5.17B. The company beat consensus estimates ($1.91 EPS vs $1.81 expected) and reaffirmed 2026 guidance for 5%+ constant-currency revenue growth and ~$1B higher FCF. However, QoQ metrics show significant sequential decline (revenue -6.2%, EPS -44.6%) reflecting normal Q1 seasonality after Q4's strong software renewal cycle. Valuation has compressed dramatically: P/E of 20.5x is at the bottom of its 365-day range (20-51x), and P/B of 6.66x is also near the low end (6.5-10.8x), suggesting the market has priced in considerable pessimism. The stock is down ~20% over the past quarter. Key risks include consulting revenue pressure (signings down 15.6%), federal contract cancellations ($100M), and competitive threats from hyperscalers. The $11.6B Confluent acquisition adds data streaming capabilities but increases leverage. Near-term catalysts include the upcoming Think 2026 conference (May 18-19) and continued AI monetization through watsonx platform. The FedRAMP authorization for 11 AI products via AWS partnership could expand federal market access. Dividend yield of ~2.9% with 30 consecutive years of increases provides income support.",
+      "key_factors": [
+        "Q1 2026 earnings beat: $1.91 EPS vs $1.81 consensus, revenue $15.92B vs $15.60B expected",
+        "Software segment growth of 11% YoY with ARR of $24.6B, Infrastructure up 15%",
+        "P/E compressed to 20.5x from 50x+ in Jan 2026, near  365-day low",
+        "Stock down ~20% in past quarter, creating potential value entry",
+        "Guidance reaffirmed: 5%+ CC revenue growth, ~$1B higher FCF for 2026",
+        "Consulting headwinds: signings down 15.6%, 15 federal contract cancellations worth $100M",
+        "Confluent acquisition ($11.6B) adds data streaming but increases debt to $57.7B",
+        "FedRAMP authorization for 11 AI products via AWS partnership expands federal market access",
+        "Think 2026 conference (May 18-19) as near-term catalyst for AI/quantum announcements"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1",
+          "excerpt": "revenue=15.92B net_income=1.22B eps_diluted=1.28 operating_cash_flow=5.17B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 Benzinga",
+          "excerpt": "IBM reported strong Q1 earnings ($1.91 EPS vs. $1.81 estimate) with 2026 guidance for 5%+ revenue growth"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=20.479 p_b=6.662 range over window: pe_diluted 20.0..51.2 | p_b 6.5..10.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "excerpt": "close=231.31 quarterly delta (~63 trading days): -20.2%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bellwetherbrief.com",
+          "excerpt": "Consulting revenue decline to $5.1B, 15.6% drop in signings, 15 federal contract cancellations representing $100M"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan.net Q1 2026",
+          "excerpt": "Software revenue grew to $7,052 million, Consulting to $5,272 million and Infrastructure to $3,326 million, with segment profit totaling $3,300 million"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dailypolitical.com",
+          "excerpt": "IBM showcased AI productivity improvements (~45% developer productivity gains) and signaled near-term quantum milestones at Think 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bellwetherbrief.com catalysts",
+          "excerpt": "11 AI and automation products received FedRAMP authorization through AWS collaboration"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224592,
+        "capped_chars": 224592,
+        "raw_tokens": 56148,
+        "capped_tokens": 56148
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2778,
+        "capped_chars": 2778,
+        "raw_tokens": 694,
+        "capped_tokens": 694
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 34145,
+        "capped_chars": 7119,
+        "raw_tokens": 8536,
+        "capped_tokens": 1780
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 130177,
+        "capped_chars": 80337,
+        "raw_tokens": 32545,
+        "capped_tokens": 20084
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 49450,
+  "started_at": "2026-08-07T02:58:45+00:00"
+}

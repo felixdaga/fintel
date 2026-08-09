@@ -1,0 +1,177 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30406,
+    "tokens_out": 879,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033043,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": -1.0,
+      "rationale": "Cisco's fundamental trajectory is deteriorating: revenue growth is decelerating, margins are compressing, and the company is facing intense competition in its core networking and cybersecurity businesses. The stock is trading at an extremely elevated valuation (P/E of 42.8, P/B of 9.9) that prices in significant future growth that is unlikely to materialize given the headwinds. Near-term catalysts are absent, and the risk of multiple compression is high.",
+      "key_factors": [
+        "Revenue growth deceleration: QoQ revenue growth slowed to 3.1% in Q2 2026, down from 5.2% in Q1 2026, indicating weakening demand.",
+        "Margin compression: Operating margin declined to 22.7% in Q2 2026 from 23.7% in Q1 2026, reflecting rising costs and unfavorable product mix.",
+        "Intense competition: Market share erosion from rivals like Arista Networks and Nvidia in AI networking, and security segment revenue declined 4% YoY in Q2 2026.",
+        "Extreme valuation: P/E of 42.8 and P/B of 9.9 are at the top of the 365-day range (P/E 27.1-46.8, P/B 5.8-10.9), pricing in aggressive growth that is not being delivered.",
+        "Weak cash generation: Operating cash flow declined 43.3% QoQ and 18.7% YoY in Q2 2026, signaling potential issues with working capital or earnings quality.",
+        "No near-term catalyst: The next earnings report is in August 2026, and guidance for Q4 2026 (EPS $1.16-$1.18) is already priced in, leaving little room for positive surprise."
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24 Q2",
+          "excerpt": "revenue=15.35B, eps_diluted=0.8, operating_income=3.78B, operating_cash_flow=1.82B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-25 Q1",
+          "excerpt": "revenue=14.88B, eps_diluted=0.72, operating_income=3.36B, operating_cash_flow=3.21B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=42.793, p_b=9.932, net_margin=0.188, roe=0.232"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-26",
+          "excerpt": "pe_diluted=28.18, p_b=6.007"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-24",
+          "excerpt": "Cisco Systems sets Q4 2026 earnings guidance, shares hold near recent highs; Q4 2026 guidance at 1.160-1.180 EPS, FY 2026 guidance at 4.270-4.290 EPS"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "excerpt": "Key key CSCO key risks include [1] market share erosion from intense competition in its core networking and cybersecurity businesses, and [2] challenges executing its strategic transition from hardware to a software-subscription model"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "excerpt": "The Security segment, a key pillar of the software strategy, saw revenue decline by 4% YoY in Q2 FY2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stockstory.org",
+          "excerpt": "Free cash flow margin dropped by 6.9 percentage points over the last five years, implying the company became more capital intensive as competition picked up"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230753,
+        "capped_chars": 230753,
+        "raw_tokens": 57688,
+        "capped_tokens": 57688
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1656,
+        "capped_chars": 1656,
+        "raw_tokens": 414,
+        "capped_tokens": 414
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 12904,
+        "capped_chars": 2162,
+        "raw_tokens": 3226,
+        "capped_tokens": 540
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 93329,
+        "capped_chars": 69639,
+        "raw_tokens": 23331,
+        "capped_tokens": 17410
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50261,
+  "started_at": "2026-08-07T03:05:12+00:00"
+}

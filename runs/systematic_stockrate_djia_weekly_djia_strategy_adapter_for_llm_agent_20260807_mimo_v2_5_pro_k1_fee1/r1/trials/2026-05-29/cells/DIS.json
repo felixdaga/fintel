@@ -1,0 +1,179 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32898,
+    "tokens_out": 977,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035829,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.15,
+      "rationale": "Disney presents a mixed but mildly attractive picture. On the positive side, the company has a strong competitive position with unmatched IP (Marvel, Star Wars, Pixar), a diversified business model spanning parks, streaming, and media networks, and a robust Experiences segment generating ~72% of operating income. The Q2 FY26 earnings beat (EPS $1.57 vs. $1.49 consensus) and management's focus on capital allocation and streaming profitability are encouraging. Valuation is attractive relative to its own history\u2014P/E of 14.9x is near the low end of its 12.5-23.8x range over the past year, and P/B of 1.59x is at the bottom of its 1.5-2.1x range. However, significant headwinds temper enthusiasm: YoY EPS declined 29.8% in Q2, the FCC's unprecedented early license review of ABC stations creates regulatory uncertainty, and rising interest rates (10Y at 4.45%) and oil prices ($92.65/bbl) pose macro risks to consumer spending on parks. The stock's -1.7% quarterly decline and -36% five-year performance reflect these concerns. While the valuation discount and strong Experiences business provide a floor, the regulatory overhang and earnings trajectory uncertainty limit upside. No clear near-term catalyst exists to drive a re-rating.",
+      "key_factors": [
+        "Attractive valuation: P/E 14.9x near 1-year low of 12.5x, P/B 1.59x at bottom of 1.5-2.1x range",
+        "Strong Experiences segment generating ~72% of operating income ($3.3B in Q2)",
+        "Q2 FY26 EPS beat ($1.57 vs $1.49 consensus) showing cost discipline",
+        "YoY EPS decline of 29.8% in Q2 and revenue growth of only 6.5%",
+        "FCC early license review of ABC stations creates regulatory uncertainty",
+        "Rising macro headwinds: 10Y Treasury at 4.45%, WTI oil at $92.65",
+        "Management focus on capital allocation and $60B parks investment over next decade",
+        "Insider selling ($44.96M over 24 months) vs. limited buying ($3.12M)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=25.17B eps_diluted=1.27 YoY revenue=+6.5% eps_diluted=-29.8%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=14.901 p_b=1.594 range: pe_diluted 12.5..23.8 p_b 1.5..2.1"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-27",
+          "excerpt": "Paramount CEO David Ellison met with DOJ antitrust staff to discuss the proposed $110 billion acquisition of Warner Bros. Discovery"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-25 ad-hoc-news.de",
+          "excerpt": "Disney posted earnings per share of 1.57 USD, beating consensus expectations of 1.49 USD"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-30 ainvest.com",
+          "excerpt": "Experiences segment generated $3.3 billion in operating income last quarter alone, accounting for a massive 71.9% of Disney's total profits"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-06 statt.com",
+          "excerpt": "FCC issued an unprecedented order requiring The Walt Disney Company to file early license renewals for its eight ABC-owned television stations"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-14 s206.q4cdn.com",
+          "excerpt": "We had talked about earlier in the year $19 billion of cash flow from operations. We also said we should spend about $9 billion in CapEx"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "excerpt": "DGS10=4.45% DCOILWTICO=92.65 VIXCLS=15.74"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4429,
+        "capped_chars": 4429,
+        "raw_tokens": 1107,
+        "capped_tokens": 1107
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221510,
+        "capped_chars": 221510,
+        "raw_tokens": 55378,
+        "capped_tokens": 55378
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1753,
+        "capped_chars": 1753,
+        "raw_tokens": 438,
+        "capped_tokens": 438
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 2158,
+        "capped_chars": 549,
+        "raw_tokens": 540,
+        "capped_tokens": 137
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102533,
+        "capped_chars": 75373,
+        "raw_tokens": 25633,
+        "capped_tokens": 18844
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 39561,
+  "started_at": "2026-08-07T03:01:24+00:00"
+}

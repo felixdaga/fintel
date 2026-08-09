@@ -1,0 +1,189 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34061,
+    "tokens_out": 1384,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038213,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing's fundamental health is severely impaired: the company is barely profitable (Q1 2026 net income -$7M, EPS -$0.11), carries $47B in debt against only $6B equity (debt-to-equity 7.8x), and generated negative operating cash flow of -$179M in Q1. Gross margins are razor-thin at 4.8% and operating margins at 4.6%, reflecting deep structural cost issues. The balance sheet shows total liabilities of $158.8B against $164.8B in assets, leaving minimal equity cushion. Valuation is extreme: P/E of 75.7x and P/B of 28.6x for a company that is essentially break-even, with the stock at $217.42 near the middle of its 52-week range ($176.77-$254.35). The 777X program is now 7+ years late with certification pushed to 2027, the Spirit AeroSystems integration is consuming $1B in cash this year, and defense margins remain thin at 3.1%. While the $695B backlog and FAA clearance to increase 737 production to 47/month are positives, the path to meaningful profitability and cash generation is distant\u2014normalized FCF not expected until 2027-2028. Near-term catalysts are negative: 777X delays, production slowdowns in May 2026, and ongoing regulatory scrutiny. The stock is priced for a flawless turnaround that the evidence does not support.",
+      "key_factors": [
+        "Q1 2026 net income essentially zero (-$7M), EPS -$0.11, with gross margin only 4.8% and operating margin 4.6%",
+        "Debt-to-equity of 7.8x ($47B debt vs $6B equity) with total liabilities exceeding total assets minus equity by $152.8B",
+        "P/E of 75.7x and P/B of 28.6x for a company barely at breakeven\u2014extreme valuation for turnaround story",
+        "777X certification delayed to 2027, now 7+ years late, with $4.9B charge already taken and cash margin breakeven beyond 2030",
+        "Spirit AeroSystems integration consuming $1B negative cash flow in 2026, diluting BCA margins",
+        "Operating cash flow negative $179M in Q1 2026; normalized FCF of ~$6B not expected until 2027",
+        "Production slowdowns in May 2026 and persistent FAA regulatory scrutiny create execution risk",
+        "Defense margins thin at 3.1% with reach-forward losses on fixed-price contracts (KC-46A, T-7A)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-22 Q1",
+          "excerpt": "revenue=22.22B net_income=-7.00M eps_diluted=-0.11 gross_profit=2.55B operating_income=448.00M total_assets=164.79B total_equity=5.99B total_debt=46.96B operating_cash_flow=-179.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=75.741 p_b=28.616 p_s=1.859 earnings_yield=0.013 net_margin=0.025 roe=0.378 debt_to_equity=7.844 gross_margin=0.048 operating_margin=0.046"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=217.42 range high=254.35 low=176.77 quarterly delta=-2.1%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-29 Investing.com",
+          "excerpt": "Boeing's stock outlook improves following FAA clearance to increase 737 MAX production from 42 to 47 jets per month and a significant 200-aircraft order from Chinese airlines"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-26 Benzinga",
+          "excerpt": "NASA has awarded SpaceX additional commercial crew contracts for up to six missions to the International Space Station, extending through 2030. The new deal, valued at approximately $1.7 billion, comes as Boeing continues to struggle with technical issues and certification delays for its Starliner spacecraft"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simpleflying.com 777X",
+          "excerpt": "The head of the Federal Aviation Administration has revealed that the regulator is not likely to certify the highly anticipated Boeing 777X widebody this year. The long-delayed program is approaching seven years overdue from its original launch date"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com SWOT",
+          "excerpt": "Analysts project free cash flow of approximately $2.1 billion for 2026, $6.0 billion for 2027, and $11.2 billion for 2028. These estimates represent substantial reductions from earlier forecasts"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com Jun 2",
+          "excerpt": "Boeing shares declined due to operational challenges and program delays. 777X certification likely delayed into 2027, impacting future projections. Market overshadowed by production slowdowns despite strong order backlog"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com BA",
+          "excerpt": "Op Inc LTM is -5.4 Bil, Op Mgn LTM negative. P/EBIT 34x. Boeing suspended its share buyback program in March 2020"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "strategy.transforml.co",
+          "excerpt": "Boeing is under significant strain with $54.1 billion in debt, which limits its flexibility compared to the highly profitable GE Aerospace (21.4% operating margin) and the strong cash-generating RTX ($7.9B free cash flow)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 216800,
+        "capped_chars": 216800,
+        "raw_tokens": 54200,
+        "capped_tokens": 54200
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2682,
+        "capped_chars": 2682,
+        "raw_tokens": 670,
+        "capped_tokens": 670
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 26005,
+        "capped_chars": 6242,
+        "raw_tokens": 6501,
+        "capped_tokens": 1560
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 92338,
+        "capped_chars": 77147,
+        "raw_tokens": 23084,
+        "capped_tokens": 19285
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 46325,
+  "started_at": "2026-08-07T03:02:11+00:00"
+}

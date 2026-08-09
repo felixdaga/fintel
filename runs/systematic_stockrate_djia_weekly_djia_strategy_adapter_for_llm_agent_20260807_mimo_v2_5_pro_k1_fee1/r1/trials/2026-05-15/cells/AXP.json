@@ -1,0 +1,184 @@
+{
+  "cell": "AXP",
+  "symbols": [
+    "AXP"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32620,
+    "tokens_out": 1288,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036484,
+    "basis": "reported"
+  },
+  "views": {
+    "AXP": {
+      "symbol": "AXP",
+      "score": 0.35,
+      "rationale": "American Express demonstrates solid fundamental health with strong revenue and EPS growth trajectory (Q1 2026 revenue +9.3% YoY, EPS +17.6% YoY), high profitability (ROE ~33-34%, net margin ~26-27%), and a premium closed-loop business model with durable competitive advantages. The company's affluent customer base provides resilience, with cardmember spending up 10% YoY in Q1  luxury retail spending up 18%. However, the stock is trading near the low end of its 365-day P/E range (19.1x vs. 18.9-25.3x range), suggesting some valuation support after a -8.8% quarterly price decline. The recent Q1 earnings beat (EPS $4.28 vs. $4.06 consensus) and analyst upgrades (Freedom Broker to Buy, BofA PT raised to $387) provide a near-term catalyst, though the stock's reaction was muted. Risks include rising 10-year Treasury yields (4.47%), elevated oil prices ($104.66/bbl) potentially pressuring consumer spending, and macro uncertainty. The balance sheet shows rising debt ($58.75B) but manageable leverage (D/E 1.73x). Operating cash flow declined QoQ (-39%) but this appears seasonal. Overall, a quality franchise at a reasonable valuation with modest near-term upside potential.",
+      "key_factors": [
+        "Strong Q1 2026 earnings beat: EPS $4.28 vs. $4.06 consensus, revenue $18.9B (+11% YoY)",
+        "Premium customer base resilience: affluent cardmember spending up 10% YoY, luxury retail +18%",
+        "Valuation at low end of 365-day range: P/E 19.1x vs. 18.9-25.3x range, P/B 6.3x vs. 6.2-8.2x range",
+        "High profitability: ROE ~33-34%, net margin ~26-27%, operating margin ~34%",
+        "Analyst upgrades post-earnings: Freedom Broker to Buy ($370 PT), BofA raised PT to $387",
+        "Macro headwinds: 10-year yield at 4.47%, oil at $104.66/bbl, potential consumer spending pressure",
+        "Balance sheet: debt-to-equity 1.73x, total debt $58.75B, equity $33.99B",
+        "Stock price down -8.8% over past quarter, providing some valuation cushion"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=10.52B eps_diluted=4.28 net_income=2.97B operating_income=3.78B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+9.3% eps_diluted=+17.6% net_income=+15.0%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=19.123 p_b=6.312 roe=0.33 net_margin=0.266 operating_margin=0.338"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 18.9..25.3 | p_b 6.2..8.2"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "excerpt": "close=312.77 quarterly delta=-8.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": ",",
+          "excerpt": "P  0.6-05-05-05-052026-05-05-05-05-05-05-052026-05-05-05-06-05-104.66"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14",
+          "excerpt": "Freedom Broker upgraded American Express Co. to Buy from Hold and raised its price target to $370 from $325"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-08",
+          "excerpt": "American Express delivered strong Q1 results with revenue of $18.9B (up 10%) and EPS of $4.28 (up 18%), beating analyst expectations"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-09",
+          "excerpt": "Capital One's Q1 earnings miss and surging loan-loss provisions signal growing financial strain among average consumers. While tech companies and affluent-focused firms like American Express remain strong"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AXP",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4463,
+        "capped_chars": 4463,
+        "raw_tokens": 1116,
+        "capped_tokens": 1116
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 227135,
+        "capped_chars": 227135,
+        "raw_tokens": 56784,
+        "capped_tokens": 56784
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2218,
+        "capped_chars": 2218,
+        "raw_tokens": 554,
+        "capped_tokens": 554
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 29703,
+        "capped_chars": 5005,
+        "raw_tokens": 7426,
+        "capped_tokens": 1251
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 112351,
+        "capped_chars": 87880,
+        "raw_tokens": 28089,
+        "capped_tokens": 21970
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 67925,
+  "started_at": "2026-08-07T02:59:22+00:00"
+}

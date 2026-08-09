@@ -1,0 +1,189 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 64821,
+    "tokens_out": 1338,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.068835,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.45,
+      "rationale": "Nvidia exhibits exceptional fundamental health and trajectory: Q1 FY2027 revenue of $81.61B (+85% YoY), EPS of $2.39 (+215% YoY), gross margin of 74.8%, net margin of 63%, and operating cash flow of $50.34B in a single quarter. The balance sheet is fortress-like with only $8.47B debt against $195.47B equity (D/E of 0.043). The company dominates AI accelerator chips with ~90% market share, supported by a deep CUDA software ecosystem with 4M+ developers creating high switching costs. The new segment split reveals ACIE (AI Cloud, Industrial, Enterprise) growing 31% sequentially vs Hyperscale at 12%, showing diversification of growth drivers. However, several factors temper the score: (1) Valuation compression is real but not extreme \u2014 P/E of 31x is near the low of of the 30x range and well below the 50-67x range seen over the prior year, but this partly reflects massive earnings growth rather than a true bargain; (2) Competitive headwinds are building with hyperscalers developing custom chips (Amazon Trainium, Google TPU) and DeepSeek developing its own inference chip; (3) Export controls tightening on China represent a $5.5-16B revenue headwind; (4) The stock is only +5% YTD despite extraordinary earnings growth, suggesting the market is already priced in deceleration. The next earnings catalyst on Aug 26, 2026 with consensus EPS of $2.01 could re-rate the stock if the ACIE growth story continues. News sentiment is moderately positive (mean 0.44) but has softened recently. The Vera Rubin architecture launch later in 2026 provides a product cycle catalyst. Overall, this is a high-quality franchise at a more reasonable valuation than historically, but not a screaming bargain given competitive and regulatory headwinds.",
+      "key_factors": [
+        "Exceptional Q1 FY2027 results: $81.6B revenue (+85% YoY), $2.39 EPS (+215% YoY), 74.8% gross margin, $50.3B quarterly operating cash flow",
+        "Fortress balance sheet: $8.47B debt vs $195.47B equity, D/E of 0.043, AA credit rating from S&P",
+        "~90% AI accelerator market share with CUDA ecosystem moat (4M+ developers, high switching costs)",
+        "New segment split reveals ACIE growing 31% QoQ vs Hyperscale 12%, diversifying growth beyond top 4 hyperscalers",
+        "P/E of 31x at low end of 30-67x 1-year range, but not a deep value given competitive headwinds from custom hyperscaler chips and export controls",
+        "Next earnings Aug 26, 2026 (consensus EPS $2.01) and Vera Rubin architecture launch provide near-term catalysts",
+        "China export controls represent $5.5-16B cumulative revenue headwind per JPMorgan/Bernstein estimates",
+        "Stock +5% YTD despite 85% revenue growth, suggesting market pricing in deceleration and competitive risks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 Q1",
+          "excerpt": "revenue=81.61B net_income=58.32B eps_diluted=2.39 gross_profit=61.16B operating_income=53.54B operating_cash_flow=50.34B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 balance sheet",
+          "excerpt": "total_assets=259.47B total_equity=195.47B total_debt=8.47B debt_to_equity=0.043"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=30.987 p_b=25.303 net_margin=0.63 roe=0.817 gross_margin=0.741 operating_margin=0.64"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 29.4..66.8 | p_b 24.0..57.8"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "techcache.substack.com",
+          "excerpt": "Hyperscale grew 12% sequentially, while ACIE grew 31%. The larger of the two segments used to be the entire growth story in the AI era."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "intellectia.ai competitive position",
+          "excerpt": "Nvidia commands approximately 90-92% of the AI accelerator chip market... The deeper moat lies in Nvidia's CUDA software ecosystem, which has been under development for over 15 years and now supports more than 4 million developers worldwide"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "indmoney.com risks",
+          "excerpt": "Analysts at JPMorgan and Bernstein have estimated the cumulative impact of export restrictions and domestic Chinese competition could represent a revenue headwind of $5.5 billion to $16 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-09 Motley Fool",
+          "excerpt": "Nvidia stock has gained only 5% in 2026 amid a broader rotation out of large-cap tech stocks"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-07 Motley Fool DeepSeek",
+          "excerpt": "Chinese AI developer DeepSeek is developing its own AI chip for inference tasks. The move threatens AMD and Nvidia's business"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "alphaquery earnings",
+          "excerpt": "Next expected announcement date for quarterly earnings is 2026-08-26, with an average estimated earnings per share of $2.01"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4649,
+        "capped_chars": 4649,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242324,
+        "capped_chars": 242324,
+        "raw_tokens": 60581,
+        "capped_tokens": 60581
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4453,
+        "capped_chars": 4453,
+        "raw_tokens": 1113,
+        "capped_tokens": 1113
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 515770,
+        "capped_chars": 124288,
+        "raw_tokens": 128942,
+        "capped_tokens": 31072
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103404,
+        "capped_chars": 77054,
+        "raw_tokens": 25852,
+        "capped_tokens": 19264
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 52425,
+  "started_at": "2026-08-07T03:07:19+00:00"
+}

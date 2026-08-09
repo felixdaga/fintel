@@ -1,0 +1,188 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36502,
+    "tokens_out": 1197,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.040093,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "rationale": "JPMorgan Chase demonstrates strong fundamental health with accelerating earnings trajectory: Q1 2026 revenue of $49.84B (+10% YoY) and EPS of $5.94 (+17.2% YoY) represent the strongest quarterly results in the available history. The bank maintains robust profitability with 31.5% net margin and 16.2% ROE, while operating margin of 39.9% reflects strong operational efficiency. Balance sheet is fortress-like with $364B equity supporting $4.9T in assets. The bank just passed all Fed stress tests and announced a 10% dividend hike plus $50B buyback authorization, providing clear capital return visibility. Valuation is reasonable at 15.5x P/E (mid-range of 13.7-17.8x over the past year) and 2.5x P/B, not expensive given the earnings momentum. Near-term catalyst exists with Q2 2026 earnings on July 14 where consensus expects $5.44 EPS (+9.7% YoY), and the bank has beaten estimates for four consecutive quarters. European expansion into France, Italy, and Spain announced June 16 provides a medium-term growth vector. Key risks include CEO Dimon's May 27 warning of expenses potentially reaching $106B (up from $105B guidance), DOJ subpoenas over debanking practices, and the hawkish Fed shift potentially pressuring NII growth. However, the bank's 7% NII growth target becomes more achievable with higher rates, and the diversified business model across consumer banking, CIB, and AWM provides resilience.",
+      "key_factors": [
+        "Q1 2026 EPS of $5.94 (+17.2% YoY) - strongest quarter in available history",
+        "Passed all 2026 Fed stress tests; 10% dividend hike and $50B buyback announced",
+        "P/E of 15.5x mid-range vs 13.7-17.8x 12-month window; not expensive given trajectory",
+        "Q2 2026 earnings July 14 with consensus $5.44 EPS (+9.7% YoY) - 4-quarter beat streak",
+        "European retail expansion into France, Italy, Spain announced June 16",
+        "Expense guidance raised to potentially $106B; DOJ debanking subpoenas add regulatory risk",
+        "Hawkish Fed shift supports NII but raises credit cycle concerns"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q1 filing",
+          "excerpt": "revenue=49.84B net_income=16.49B eps_diluted=5.94 operating_income=20.48B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "Q1 2026 growth",
+          "excerpt": "YoY: revenue=+10.0% eps_diluted=+17.2% net_income=+12.6%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=15.477 p_b=2.504 net_margin=0.315 roe=0.162 operating_margin=0.399"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-06-26..2026-06-25",
+          "excerpt": "pe_diluted 13.7..17.8 | p_b 2.2..2.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-25 Motley Fool stress tests",
+          "excerpt": "All 32 banks tested in the Federal Reserve's annual stress tests passed with flying colors...JPMorgan Chase...maintained healthy capital levels. Banks are expected to announce dividend increases and share buyback programs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-25 GlobeAndMail dividend buyback",
+          "excerpt": "JPMorgan Chase Pairs a 10% Dividend Hike With a New $50 Billion Buyback After Clearing the Fed's Stress Test"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-19 Barchart Q2 earnings",
+          "excerpt": "analysts forecast the company to report a profit of $5.44 per share, up 9.7% from $4.96 per share in the year-ago quarter. The company has surpassed Wall Street's earnings estimates in the last four quarters"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-16 Motley Fool European expansion",
+          "excerpt": "JPMorgan Chase's stock climbed nearly 4% on Tuesday following reports that the bank plans to expand its digital banking services into at least three new European markets\u2014France, Italy, and Spain\u2014within the next five years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-27 TradingKey expense warning",
+          "excerpt": "Dimon indicated that the bank's annual expenses could exceed prior estimates by approximately $1 billion, potentially reaching $106 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-24 SimplyWallSt DOJ subpoenas",
+          "excerpt": "JPMorgan Chase (NYSE:JPM) has been subpoenaed by the U.S. Department of Justice over alleged politically motivated account closures"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 238243,
+        "capped_chars": 238243,
+        "raw_tokens": 59561,
+        "capped_tokens": 59561
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3567,
+        "capped_chars": 3567,
+        "raw_tokens": 892,
+        "capped_tokens": 892
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 198751,
+        "capped_chars": 19874,
+        "raw_tokens": 49688,
+        "capped_tokens": 4968
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 83350,
+        "capped_chars": 63554,
+        "raw_tokens": 20838,
+        "capped_tokens": 15889
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 53633,
+  "started_at": "2026-08-07T03:05:27+00:00"
+}

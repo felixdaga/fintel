@@ -1,0 +1,194 @@
+{
+  "cell": "SHW",
+  "symbols": [
+    "SHW"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 25875,
+    "tokens_out": 1231,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.029568,
+    "basis": "reported"
+  },
+  "views": {
+    "SHW": {
+      "symbol": "SHW",
+      "score": 0.15,
+      "rationale": "Sherwin-Williams is a high-quality franchise \u2014 the world's largest coatings company by revenue ($23.6B in 2025), with a durable competitive moat built on 5,000+ company-owned stores, strong professional contractor relationships, and premium brand positioning. ROE of ~59% and gross margins near 49% reflect strong pricing power and operational efficiency. However, the near-term trajectory is mixed: Q1 2026 showed solid YoY growth (revenue +6.8%, EPS +7.5%) but a sharp QoQ decline (revenue -10.9%, EPS -35.8%), reflecting normal Q1 seasonality in a housing-sensitive business. Operating cash flow was notably weak at $139M in Q1 vs $1.31B in Q3 2025, though this is partly seasonal. The balance sheet carries meaningful leverage (debt-to-equity 2.1x, total debt $9.3B vs $4.4B equity), which is a modest concern in a cyclical end-market. Valuation at 32.3x P/E sits in the middle of its 28-37x 12-month range \u2014 not expensive, not cheap. The stock is roughly flat over the past quarter (+2.8%) and well below its 52-week high of ~$380. Analyst views are mixed: Citi has a Buy with $355 PT (upside from $338), while UBS downgraded to Neutral with $330 PT. The upcoming Q2 earnings on July 28 is a near-term catalyst that could re-rate the stock if housing/construction demand stabilizes, but visibility is limited. Net-net: a quality franchise at a fair price with a modest positive tilt from the earnings event.",
+      "key_factors": [
+        "World's largest coatings company with 5,000+ store network and strong professional contractor moat",
+        "Q1 2026 YoY growth solid (+6.8% rev, +7.5% EPS) but QoQ decline sharp (-10.9% rev, -35.8% EPS) \u2014 seasonal but also reflects housing headwinds",
+        "ROE ~59% and gross margin ~49% demonstrate strong pricing power and operational efficiency",
+        "Debt-to-equity 2.1x is elevated for a cyclical business; total debt $9.3B vs $4.4B equity",
+        "P/E of 32.3x is mid-range (28-37x over past year) \u2014 neither a bargain nor stretched",
+        "Q2 earnings on July 28 is a dated near-term catalyst; Citi Buy ($355 PT) vs UBS Neutral ($330 PT) shows divided Street view",
+        "Operating cash flow weak in Q1 ($139M) vs prior quarters, though partly seasonal",
+        "Housing cycle sensitivity remains a key risk; 10Y Treasury yield at 4.57% and elevated mortgage rates constrain construction activity"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=5.67B net_income=534.70M eps_diluted=2.15 gross_profit=2.78B operating_income=679.80M total_assets=26.38B total_equity=4.43B total_debt=9.32B operating_cash_flow=139.10M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=6.36B eps=3.35 operating_cash_flow=1.31B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=32.275 p_b=18.933 roe=0.587 debt_to_equity=2.104 gross_margin=0.49 operating_margin=0.141"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_2025-07-17_to_2026-07-16",
+          "excerpt": "pe_diluted 28.0..37.1 | p_b 16.4..21.4"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=338.14 range high=379.65 low=289.86 quarterly delta +2.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-03",
+          "excerpt": "Citi reinstated coverage with Buy rating and $355 price target"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-02",
+          "excerpt": "UBS downgraded to Neutral from Buy, reduced price target to $330 from $385"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-10",
+          "excerpt": "Earnings Date Jul 28, 2026; PE Ratio (TTM) 31.44; EPS (TTM) 10.41; 1y Target Est 379.60"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-16",
+          "excerpt": "DGS10=4.57% FEDFUNDS=3.63% VIXCLS=16.73"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "SHW",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 10,
+      "empty": 1
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4517,
+        "capped_chars": 4517,
+        "raw_tokens": 1129,
+        "capped_tokens": 1129
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230042,
+        "capped_chars": 230042,
+        "raw_tokens": 57510,
+        "capped_tokens": 57510
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 226,
+        "capped_chars": 226,
+        "raw_tokens": 56,
+        "capped_tokens": 56
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 0,
+        "capped_chars": 0,
+        "raw_tokens": 0,
+        "capped_tokens": 0
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 81297,
+        "capped_chars": 47911,
+        "raw_tokens": 20324,
+        "capped_tokens": 11977
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 10,
+        "empty": 1
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [
+        {
+          "kind": "news",
+          "query": {
+            "symbol": "SHW",
+            "lookback_days": 14
+          }
+        }
+      ],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42848,
+  "started_at": "2026-08-07T03:08:14+00:00"
+}

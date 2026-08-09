@@ -1,0 +1,190 @@
+{
+  "cell": "AAPL",
+  "symbols": [
+    "AAPL"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 47708,
+    "tokens_out": 1301,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.051611,
+    "basis": "reported"
+  },
+  "views": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "score": 0.15,
+      "rationale": "Apple's fundamental health is strong: record Q2 FY2026 revenue of $111.2B (+17% YoY), record Services at $31B, gross margin at a multi-year high of 49%, and robust operating cash flow of $28.7B. The company has a durable competitive moat with ~90% iPhone retention, growing Services mix, and massive cash generation supporting a new $100B buyback authorization. However, several factors temper the score. First, the stock trades at a P/E of 35.8x, which is mid-range within its 30.5-43.1x 365-day window but still elevated for a company with single-digit TTM growth visibility (incomplete TTM data prevents precise calculation). Second, YoY growth of +16.6% revenue and +21.8% EPS is solid but the QoQ trajectory shows typical seasonal decline (-22.7% revenue, -29.2% EPS from holiday quarter). Third, near-term headwinds are material: memory cost inflation (CEO Tim Cook called it a '100-year flood'), potential iPhone price increases of ~$200, regulatory risks from Italy antitrust probe on iCloud and ongoing DOJ/EU Digital Markets Act pressure, and India supply chain risks from Tata Electronics environmental issues. The Apple-Intel chip partnership announced by Trump is unconfirmed and adds uncertainty. The Siri AI announcement at WWDC received a lukewarm market reaction (stock fell ~3.6%), suggesting the AI monetization path remains uncertain. On the positive side, Wall Street analysts have $350-$440 price targets, and the stock has recovered from its WWDC selloff. The near-term catalyst of the Apple-Intel deal (if confirmed) and potential AI monetization could provide modest re-rating, but the unconfirmed nature and mixed WWDC reception limit this. Net: solid franchise with good trajectory, but valuation is fair-to-slightly-rich, and multiple headwinds (cost inflation, regulation, AI execution uncertainty) cap upside. Mildly attractive.",
+      "key_factors": [
+        "Record Q2 FY2026: $111.B revenue (+17% YoY), $31B Services (all-time high), 49% gross margin (multi-year high)",
+        "Strong balance sheet with $45.6B cash, new $100B buyback authorization, dividend raised 4%",
+        "P/E of 35.8x is mid-range of 30.5-43.1x 365-day window; not cheap but not extreme",
+        "Memory cost inflation ('100-year flood' per CEO Cook) may force ~$200 iPhone price increases, pressuring demand",
+        "Regulatory headwinds: Italy antitrust probe on iCloud, DOJ lawsuit, EU Digital Markets Act threatening App Store commission model",
+        "Siri AI announcement at WWDC received lukewarm reaction (-3.6% stock decline); AI monetization path uncertain",
+        "Apple-Intel chip partnership announced by Trump but unconfirmed by either company; adds uncertainty",
+        "India supply chain risk from Tata Electronics environmental compliance issues",
+        "Global market share gains across iPhone (19%\u219221%), iPad (34%\u219237%), Watch (20%\u219223%) in Q1 2025 vs Q1 2026"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=111.18B net_income=29.58B eps_diluted=2.01 gross_profit=54.78B operating_income=35.88B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2 growth",
+          "excerpt": "YoY: revenue=+16.6% eps_diluted=+21.8% net_income=+19.4% gross_profit=+22.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=35.802 p_b=41.21 p_s=9.721 net_margin=0.272 roe=1.151"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 30.5..43.1 | p_b 38.3..65.0"
+        },
+        {
+          "source_type": "cash_flow",
+          "source_id": "2026-03-28",
+          "excerpt": "operating_cash_flow=28.70B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-17 Benzinga",
+          "excerpt": "Apple CEO Tim Cook announced the company will raise prices across its product lineup due to skyrocketing memory and storage component costs. Cook described the situation as a '100-year flood'"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-18 Investing.com",
+          "excerpt": "President Trump announced that Apple has agreed to work with Intel to design and build chips domestically... neither company has issued formal confirmation"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-09 Motley Fool",
+          "excerpt": "Apple stock fell 3.61% following WWDC 2026 announcements of Siri AI and Apple Intelligence updates that investors viewed as underwhelming"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-15 coincentral",
+          "excerpt": "Apple shares fall as investors question Siri AI impact and new supply chain risks in India... Reports of environmental compliance issues linked to a Tata Electronics facility"
+        },
+        {
+          "source_type": "web_searchource_id",
+          "source_id": "macdailynews.com",
+          "excerpt": "iPhone: 19% to 21%, iPad: 34% to37%, Apple Watch: 20% to23%, Mac: 12% to14%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AAPL",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4671,
+        "capped_chars": 4671,
+        "raw_tokens": 1168,
+        "capped_tokens": 1168
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230099,
+        "capped_chars": 230099,
+        "raw_tokens": 57525,
+        "capped_tokens": 57525
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4352,
+        "capped_chars": 4352,
+        "raw_tokens": 1088,
+        "capped_tokens": 1088
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 306396,
+        "capped_chars": 62497,
+        "raw_tokens": 76599,
+        "capped_tokens": 15624
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 105240,
+        "capped_chars": 76217,
+        "raw_tokens": 26310,
+        "capped_tokens": 19055
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 39947,
+  "started_at": "2026-08-07T03:04:03+00:00"
+}

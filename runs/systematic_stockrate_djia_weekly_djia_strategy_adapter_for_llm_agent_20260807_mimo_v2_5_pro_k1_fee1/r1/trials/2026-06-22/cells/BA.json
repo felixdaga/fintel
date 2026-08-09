@@ -1,0 +1,171 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29918,
+    "tokens_out": 1026,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032996,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing's fundamental health is deeply impaired. The company is barely profitable on a net income basis (Q1 2026 net income of -$7M, EPS of -$0.11), with extremely thin gross margins of 11.5% and operating margins of just 2.0%. The balance sheet is severely strained with total equity of only $5.99B against $46.96B in debt, yielding a debt-to-equity ratio of 7.8x. Operating cash flow was negative -$179M in Q1 2026. The company has a history of massive losses (Q2 2025 EPS of -$0.92) and negative free cash flow margins averaging -3.1% over five years. Valuation is extremely stretched at a P/E of 77.6x and P/B of 29.3x for a company with these fundamentals, trading at a significant premium to the aerospace & defense industry average P/E of ~40x. The 777X program faces continued certification delays into 2027 with a $4.9B charge already taken, and cash margin breakeven extending beyond 2030. Boeing faces persistent quality control issues, ongoing FAA scrutiny, production caps, and supply chain vulnerabilities. While there are some positives (14% YoY revenue growth, improving deliveries, record backlog), these are insufficient to offset the severe balance sheet stress, negative cash generation, and rich valuation. The near-term catalyst picture is mixed - peace deal oil price drop helped sentiment but the fundamental trajectory remains challenged.",
+      "key_factors": [
+        "Severely strained balance sheet: $5.99B equity vs $46.96B debt (7.8x D/E ratio)",
+        "Barely profitable: Q1 2026 net income -$7M, EPS -$0.11, gross margin only 11.5%",
+        "Negative operating cash flow of -$179M in Q1 2026",
+        "Extremely stretched valuation: P/E 77.6x, P/B 29.3x vs industry avg P/E ~40x",
+        "777X program delays extending into 2027 with $4.9B charge and breakeven beyond 2030",
+        "Persistent quality control issues and ongoing FAA regulatory scrutiny",
+        "Production caps and supply chain vulnerabilities limiting delivery ramp",
+        "Five-year average free cash flow margin of -3.1%",
+        "Airbus gaining narrowbody market share with higher production rates",
+        "Near-term catalysts (737 MAX 7/10 certification) insufficient to offset structural headwinds"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=22.22B net_income=-7.00M eps_diluted=-0.11 gross_profit=2.55B operating_income=448.00M total_assets=164.79B total_equity=5.99B total_debt=46.96B operating_cash_flow=-179.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=77.588 p_b=29.314 p_s=1.904 earnings_yield=0.013 net_margin=0.025 roe=0.378 debt_to_equity=7.844 gross_margin=0.048 operating_margin=0.046"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SWOT analysis",
+          "excerpt": "777X program delays resulting in $4.9 billion charge and extended breakeven timeline; History of quality issues requiring ongoing regulatory oversight; Near-term cash flow constraints limiting financial flexibility; Market share loss in narrowbody segment to Airbus"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "StockStory analysis",
+          "excerpt": "Boeing's demanding reinvestments have drained its resources over the last five years, putting it in a pinch and limiting its ability to return capital to investors. Its free cash flow margin averaged negative 3.1%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "TradingKey analysis",
+          "excerpt": "US certification for this key widebody aircraft is now likely to extend into 2027, a further postponement from previous targets"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Yahoo Finance narrative",
+          "excerpt": "At about 92.5x earnings versus a fair ratio of 64.3x, the stock trades at a premium to both the estimated fair ratio and the US Aerospace & Defense industry average of 39.9x"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 216572,
+        "capped_chars": 216572,
+        "raw_tokens": 54143,
+        "capped_tokens": 54143
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2680,
+        "capped_chars": 2680,
+        "raw_tokens": 670,
+        "capped_tokens": 670
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 23305,
+        "capped_chars": 5099,
+        "raw_tokens": 5826,
+        "capped_tokens": 1275
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 71763,
+        "capped_chars": 53749,
+        "raw_tokens": 17941,
+        "capped_tokens": 13437
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 48591,
+  "started_at": "2026-08-07T03:04:10+00:00"
+}

@@ -1,0 +1,203 @@
+{
+  "cell": "NKE",
+  "symbols": [
+    "NKE"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30492,
+    "tokens_out": 1408,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034716,
+    "basis": "reported"
+  },
+  "views": {
+    "NKE": {
+      "symbol": "NKE",
+      "score": -1.0,
+      "rationale": "Nike is in the midst of a severe fundamental deterioration with no clear near-term catalyst to reverse the trajectory. Q3 FY2026 (Feb 2026) showed EPS of $0.35, down 35% YoY from $0.54, with revenue essentially flat at $11.28B. Operating income collapsed to $650M from $844M YoY. Operating cash flow plunged 76% YoY to $430M. The company's net margin has compressed from 9.4% in mid-2025 to 4.8% currently, while ROE has fallen from 32% to 16%. The stock has lost roughly 47% from its 52-week high of $80.17, now trading at $42.78. Despite the price decline, the P/E of 28.2x remains elevated for a company with collapsing earnings and no clear earnings recovery timeline \u2014 management itself guides flat earnings for the next two quarters and low-to-mid-single-digit revenue declines. Greater China, a key profit engine, is in structural decline (17% currency-neutral drop in Q4, six consecutive quarters of decline). The $986M one-time tariff recovery in Q4 inflated reported results but is non-recurring. News sentiment is deeply negative (mean -0.212 over 90 days), and there are credible reports Nike may be removed from the Dow Jones Industrial Average due to its low share price. The wholesale rebuild and running category growth are genuine green shoots, but they are insufficient to offset the profit collapse, DTC overreach reversal costs, $1.5B annual tariff headwind, and competitive share losses to On, Hoka, and New Balance. The balance sheet shows total liabilities of $22.97B against $14.09B equity. This is a deteriorating business trading at a premium multiple with no dated fundamental catalyst for re-rating.",
+      "key_factors": [
+        "EPS down 35% YoY in Q3 FY2026 ($0.35 vs $0.54), operating income down 23% YoY",
+        "Operating cash flow collapsed 76% YoY to $430M in latest quarter",
+        "Net margin compressed from 9.4% to 4.8% over 12 months; ROE halved from 32% to 16%",
+        "P/E of 28.2x remains elevated despite severe earnings deterioration \u2014 at low end of 22.7-38.9 range but still rich for declining earnings",
+        "Greater China in structural decline: 17% currency-neutral drop, six consecutive quarters of decline, guided down ~20% in Q4",
+        "$986M one-time tariff recovery inflated Q4 results; underlying gross margin still down 10bps excluding this",
+        "$1.5B annual tariff cost (~320bps margin drag) with management assuming 10-15% incremental tariff rates",
+        "Management guides flat earnings for next two quarters and low-to-mid-single-digit revenue declines",
+        "Potential removal from Dow Jones Industrial Average due to low share price",
+        "Negative news sentiment (mean -0.212 over 90 days, 41 articles)",
+        "Stock down ~47% from 52-week high of $80.17 to $42.78",
+        "Competitive share losses to On (+40%), Hoka (+24%), New Balance (+19%)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-02-28 Q3",
+          "excerpt": "revenue=11.28B eps=0.35 operating_income=650.00M net_income=520.00M operating_cash_flow=430.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-02-28 Q3 YoY",
+          "excerpt": "revenue=11.27B eps=0.54 operating_income=844.00M net_income=794.00M operating_cash_flow=1.79B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=28.17 p_b=4.498 net_margin=0.048 roe=0.16"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10",
+          "excerpt": "pe_diluted=24.508 p_b=7.888 net_margin=0.094 roe=0.322"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "excerpt": "close=42.78 range high=80.17 low=40.00"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "90d_mean",
+          "excerpt": "mean=-0.212 n_articles=41"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-02",
+          "excerpt": "Prediction: Nike Will Be Booted From the Dow Jones Industrial Average Within 12 Months"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-02",
+          "excerpt": "Nike stock fell 11% in June due to negative investor sentiment ahead of earnings"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SWOT 2026",
+          "excerpt": "Net income down 44% in FY2025, down a further 35% in Q3 FY2026; $1.5 billion annual tariff cost (~320 bps margin drag)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Q4 earnings",
+          "excerpt": "Net income for the quarter ended May 31 was $1.07 billion, or 72 cents a diluted share \u2014 includes 52-cent benefit related to recovery of IEEPA tariffs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Yahoo Finance Q4",
+          "excerpt": "Excluding that, gross margin was down 10 basis points to 40.2%; Nike once again offered cautious guidance citing volatile macro environment; flat earnings over next two quarters"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "PESTEL 2026",
+          "excerpt": "U.S. trade policies alone cost Nike approximately $1.5 billion annually; Greater China 17% drop, six consecutive quarters of decline"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NKE",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3749,
+        "capped_chars": 3749,
+        "raw_tokens": 937,
+        "capped_tokens": 937
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224267,
+        "capped_chars": 224267,
+        "raw_tokens": 56067,
+        "capped_tokens": 56067
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 746,
+        "capped_chars": 746,
+        "raw_tokens": 186,
+        "capped_tokens": 186
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1624,
+        "capped_chars": 1624,
+        "raw_tokens": 406,
+        "capped_tokens": 406
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 14146,
+        "capped_chars": 3437,
+        "raw_tokens": 3536,
+        "capped_tokens": 859
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 93763,
+        "capped_chars": 68755,
+        "raw_tokens": 23440,
+        "capped_tokens": 17189
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42265,
+  "started_at": "2026-08-07T03:07:15+00:00"
+}

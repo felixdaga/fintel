@@ -1,0 +1,184 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34779,
+    "tokens_out": 1429,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039066,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "rationale": "Chevron's fundamental health and trajectory are deteriorating sharply. Q1 2026 reported EPS of $1.11, down 44.5% YoY from $2.00, with net income falling 34.7% and operating cash flow collapsing 51.6% to $2.51B. The company's net margin has compressed from 7.8% in mid-2025 to 5.9% currently, and ROE has fallen from 10.5% to 5.9%. The quarterly trajectory shows a clear downtrend: EPS moved from $2.00 (Q1 2025) to $1.82 (Q3 2025) to $1.45 (Q2 2025) to $1.11 (Q1 2026), with QoQ EPS declining 39%. Operating cash flow has collapsed from $9.38B in Q3 2025 to $2.51B in Q1 2026, a 73.2% QoQ decline. Meanwhile, the stock trades at a P/E of . 55, the near the top of its 365-day range (16.0-34.8), having expanded from 16x a year ago despite earnings deteriorating. P/B has risen from 1.5x to 1.95x. The valuation has disconnecteded from fundamentalsals: the the stock is expensive relative to its own history. Oil prices have fallen ~20% from March peaks, and the company's own CEO warns of a fragile physical oil market with shrinking inventories. The Strait of Hormuz geopoliticalitical risk creates binary downside: if ceasefire holds, crude falls further and CVX declines; if conflict escalates, volatility increases. Berkshire Hathaway has reduced its stake by 35%, signaling institutional concern. The Q2 earnings report (expected ~late July) could serve as a near-term de-rating catalyst if the earnings deterioration continues. All three pillars\u2014deteriorating fundamentals, stretched valuation, and binary geopolitical risk with a potential downside catalyst\u2014align negatively.",
+      "key_factors": [
+        "Q1 2026 EPS down 44.5% YoY to $1.11; net income down 34.7%",
+        "Operating cash flow collapsed 73.2% QoQ to $2.51B in Q1 2026",
+        "P/E of 32.8x is near the top of its 365-day range (16.0-34.8), up from 16x a year ago despite earnings deterioration",
+        "Net margin compressed from 7.8% to 5.9%; ROE fell from 10.5% to 5.9% over the past year",
+        "Oil prices down ~20% from March peak of ~$119 to ~$91 WTI, with further downside risk if Iran ceasefire holds",
+        "Berkshire Hathaway reduced CV CV33  by33",
+        "StrStr Strait0%",
+        "sources_cited"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=48.61B net_income=2.29B eps_diluted=1.11 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=47.61B eps_diluted=2 net_income=3.51B operating_cash_flow=5.19B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=32.755 p_b=1.949 net_margin=0.059 roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-12",
+          "excerpt": "pe_diluted=16.162 p_b=1.692 net_margin=0.078 roe=0.105"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=185.82 range high=214.71 low=142.40"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11",
+          "excerpt": "DCOILWTICO=91.58 (WTI crude oil)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-05",
+          "excerpt": "CVX is a highly leveraged bet on crude oil prices and geopolitical risk in the Strait of Hormuz. The stock has declined from $214.71 to $188 as oil prices fell 20% on ceasefire hopes. Berkshire Hathaway's 35% stake reduction"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "Chevron CEO Mike Wirth warns of a fragile physical oil market with shrinking inventories and diminishing shock absorbers"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-07",
+          "excerpt": "Chevron reported Q1 2026 earnings that fell 35% year-over-year due to hedging timing headwinds, but underlying fundamentals were strong. The company increased U.S. production 24% following the Hess acquisition and returned $6 billion to shareholders"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225257,
+        "capped_chars": 225257,
+        "raw_tokens": 56314,
+        "capped_tokens": 56314
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3523,
+        "capped_chars": 3523,
+        "raw_tokens": 881,
+        "capped_tokens": 881
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 42157,
+        "capped_chars": 10027,
+        "raw_tokens": 10539,
+        "capped_tokens": 2507
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 115508,
+        "capped_chars": 94718,
+        "raw_tokens": 28877,
+        "capped_tokens": 23681
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 67808,
+  "started_at": "2026-08-07T03:03:23+00:00"
+}

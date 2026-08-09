@@ -1,0 +1,174 @@
+{
+  "cell": "PG",
+  "symbols": [
+    "PG"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29363,
+    "tokens_out": 933,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032162,
+    "basis": "reported"
+  },
+  "views": {
+    "PG": {
+      "symbol": "PG",
+      "score": 0.15,
+      "rationale": "PG is a high-quality defensive franchise with strong brand portfolio, 70-year dividend growth streak, and solid balance sheet (equity $54.7B, total assets $128B). However, the near-term trajectory is softening: Q3 FY26 showed QoQ revenue -4.4% and EPS -8.4%, with management guiding toward the lower end of $6.83-$7.09 core EPS range. The company faces $400M tariff headwind in FY26 and a $1B after-tax oil cost headwind for FY27, with gross margin compressing 100bps. Valuation at P/E 23.8x is mid-range vs its 12-month window (21.7-26.3x), not compellingly cheap. The upcoming Q4 earnings on July 29 is a near-term catalyst, but consensus expects EPS of $1.43 (down 3.4% YoY), suggesting limited positive surprise potential. The stock is down ~10% from highs, offering modest value, but headwinds are real and the PEG of 6.27 vs industry 3.23 suggests the market is paying up for stability. Mildly attractive on balance: excellent franchise health offsets by softening trajectory and only fair valuation.",
+      "key_factors": [
+        "Strong brand portfolio with leading market shares across consumer staples categories",
+        "70 consecutive years of dividend increases; 64% payout ratio and 2.9% yield provide income support",
+        "Q3 FY26 showed QoQ revenue decline of -4.4% and EPS decline of -8.4%; management guiding to lower end of FY26 EPS range",
+        "$400M tariff headwind in FY26 and $1B after-tax oil cost headwind for FY27 compressing margins",
+        "P/E of 23.8x is mid-range vs 12-month window (21.7-26.3x); PEG of 6.27 vs industry 3.23 indicates premium valuation",
+        "Q4 FY26 earnings on July 29 is a dated catalyst but consensus expects EPS decline of 3.4% YoY",
+        "Restructuring program targeting 7,000 job cuts introduces near-term execution risk and charges",
+        "Balance sheet remains strong with $54.7B equity and $128B total assets"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3",
+          "excerpt": "revenue=21.23B eps_diluted=1.63; QoQ revenue=-4.4% eps_diluted=-8.4%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=23.803 p_b=7.059; range pe_diluted 21.7..26.3"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-27",
+          "excerpt": "P&G faces a $400 million tariff headwind and flat volume in key categories; management guided fiscal 2026 results toward the lower end of a $6.83 to $7.09 core EPS range"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-01",
+          "excerpt": "P&G to Webcast Discussion of Fourth Quarter 25/26 Earnings Results on July 29, 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-25",
+          "excerpt": "$1 billion after-tax oil cost headwind in fiscal 2027; $400 million tariff impact in fiscal 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-25",
+          "excerpt": "PEG ratio of 6.27 vs Consumer Products - Staples industry average PEG ratio of 3.23"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-25",
+          "excerpt": "70th consecutive annual dividend increase; quarterly payout at $1.06; 64% payout ratio; 2.9% yield"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "PG",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3763,
+        "capped_chars": 3763,
+        "raw_tokens": 941,
+        "capped_tokens": 941
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 239148,
+        "capped_chars": 239148,
+        "raw_tokens": 59787,
+        "capped_tokens": 59787
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2074,
+        "capped_chars": 2074,
+        "raw_tokens": 518,
+        "capped_tokens": 518
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 4782,
+        "capped_chars": 1050,
+        "raw_tokens": 1196,
+        "capped_tokens": 262
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 64956,
+        "capped_chars": 47219,
+        "raw_tokens": 16240,
+        "capped_tokens": 11806
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42151,
+  "started_at": "2026-08-07T03:06:29+00:00"
+}

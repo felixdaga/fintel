@@ -1,0 +1,179 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 39730,
+    "tokens_out": 1127,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.043111,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.15,
+      "rationale": "IBM shows solid fundamental health with Q1 2026 revenue up 9.5% YoY to $15.92B, operating margin expansion of 140bps, and adjusted EPS of $1.91 beating consensus of $1.81. The company generates strong operating cash flow ($5.17B in Q1) and maintains a healthy balance sheet with $33B equity. However, the stock has experienced significant volatility\u2014dropping from a 52-week high of $332.46 to $249.10 (a 25% decline)\u2014driven by AI disruption concerns, Accenture's lowered guidance spooking the consulting sector, and hawkish Fed policy. The current P/E of 22x is near the low end of its 1-year range (19-51x), suggesting the market has partially priced in these headwinds. Key risks include: (1) AI1% of enterprise executives don't understand AI dependencies per IBM's own study, potentially delaying watsonx monetization; (2) $10B quantum investment is a long-dated bet with no near-term returns; (3) consulting growth has slowed to just 1%. Positives include: $12B+ in watsonx AI bookings, Red Hat OpenShift reaching $2B ARR, and IBM Z mainframe growing 48% in Q1. The Q2 2026 earnings on July 22 is a near-term catalyst, but recent headlines suggest a revenue miss is possible, which caps the upside. Net-net: a solid but not exceptional business trading at a reasonable valuation with mixed near-term visibility.",
+      "key_factors": [
+        "Q1 2026 revenue +9.5% YoY with 140bps operating margin expansion; adjusted EPS $1.91 beat consensus $1.81",
+        "Stock down 25% from 52-week high of $332.46 to $249.10; P/E of 22x near low end of 19-51x range",
+        "$12B+ watsonx AI bookings inception-to-date; Red Hat OpenShift at $2B ARR; IBM Z +48% in Q1",
+        "Accenture guidance cut and IBM's own AI dependency study (91% of execs don't understand AI deps) create near-term consulting/watsonx monetization headwinds",
+        "Q2 2026 earnings July 22 is a dated catalyst but recent headlines suggest revenue miss risk",
+        "$10B quantum investment is a long-dated bet (commercialization not until 2029) with near-term margin pressure",
+        "Strong cash generation: $5.17B operating cash flow in Q1, highest Q1 FCF in a decade per CFO",
+        "Dividend yield ~2.7% with $1.69 quarterly dividend; next ex-dividend already passed"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1",
+          "excerpt": "revenue=15.92B net_income=1.22B eps_diluted=1.28 operating_cash_flow=5.17B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=249.10; range high=332.46 low=212.34"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=22.054 p_b=7.175; range pe_diluted 19.0..51.2"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr IBM Q1 2026",
+          "excerpt": "Operating pre-tax margins expanded by 140 basis points, with EBIT reaching $2,504 million. Adjusted EPS came in at $1.91, beating the Street estimate of $1.81"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "brandhopper IBM competitors 2026",
+          "excerpt": "watsonx, launched in 2023, has accumulated over $12 billion in bookings inception-to-date through early 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-18 tradingkey IBM down 5.49%",
+          "excerpt": "IBM's internal report on AI integration bottlenecks creates risks for future revenue conversion; 91% of enterprise executives do not fully understand their AI dependencies"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "gurufocus IBM",
+          "excerpt": "Next earnings date 2026-07-22; IBM Reports Q2 Revenue of $17.2B, Shares Plunge 24%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dailypolitical IBM",
+          "excerpt": "IBM reported $1.91 earnings per share for the quarter, beating the consensus estimate of $1.81 by $0.10; net margin of 15.61% and ROE of 37.23%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223687,
+        "capped_chars": 223687,
+        "raw_tokens": 55922,
+        "capped_tokens": 55922
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2734,
+        "capped_chars": 2734,
+        "raw_tokens": 684,
+        "capped_tokens": 684
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 49533,
+        "capped_chars": 9289,
+        "raw_tokens": 12383,
+        "capped_tokens": 2322
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 128326,
+        "capped_chars": 109473,
+        "raw_tokens": 32082,
+        "capped_tokens": 27368
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 39159,
+  "started_at": "2026-08-07T03:04:25+00:00"
+}

@@ -359,6 +359,27 @@ def test_missing_prices_are_absent_not_zero(tmp_path):
     assert lookup.forward_returns(["NOPE"], date(2024, 1, 2), date(2024, 2, 1)) == {}
 
 
+def test_latest_bar_date_is_intersection_of_maxima(tmp_path):
+    store = PriceStore(root=tmp_path)
+    store.write("AAA", _bars(date(2024, 1, 2), 5), [(date(2024, 1, 2), date(2024, 1, 8))])
+    store.write("BBB", _bars(date(2024, 1, 2), 10), [(date(2024, 1, 2), date(2024, 1, 15))])
+    lookup = PriceLookup(store=store)
+    # AAA ends earlier → intersection pinned to AAA's last bar.
+    assert lookup.latest_bar_date(["AAA", "BBB"]) == store.read("AAA")["date"].iloc[-1]
+
+
+def test_latest_bar_date_skips_empty_and_honors_min_coverage(tmp_path):
+    store = PriceStore(root=tmp_path)
+    store.write("AAA", _bars(date(2024, 1, 2), 10), [(date(2024, 1, 2), date(2024, 1, 15))])
+    store.write("BBB", _bars(date(2024, 1, 2), 5), [(date(2024, 1, 2), date(2024, 1, 8))])
+    lookup = PriceLookup(store=store)
+    assert lookup.latest_bar_date(["AAA", "MISSING"]) == store.read("AAA")["date"].iloc[-1]
+    # With 50% coverage, the fresher AAA date is allowed.
+    assert lookup.latest_bar_date(["AAA", "BBB"], min_coverage=0.5) == store.read("AAA")[
+        "date"
+    ].iloc[-1]
+
+
 # ── the catalog: pick from, or add to ────────────────────────────────────────
 
 

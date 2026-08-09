@@ -1,0 +1,189 @@
+{
+  "cell": "AMZN",
+  "symbols": [
+    "AMZN"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 63023,
+    "tokens_out": 1298,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.066917,
+    "basis": "reported"
+  },
+  "views": {
+    "AMZN": {
+      "symbol": "AMZN",
+      "score": 0.35,
+      "rationale": "Amazon demonstrates strong fundamental health and positive trajectory across its key segments. Q1 2026 results showed 17% revenue growth to $181.5B, with AWS accelerating to 28% YoY growth (fastest in 15 quarters), advertising up 22%, and operating income growing 30%. The quarterly trajectory shows consistent improvement: revenue from $155.67B (Q1) to $167.70B (Q2) to $180.17B (Q3), with EPS rising from $1.59 to $1.68 to $1.95. Balance sheet is solid with $369.6B equity, $55.1B debt, and debt-to-equity of just 0.149. However, valuation is elevated: P/E of 38.5x sits near the top of its 365-day range (28.2-39.0), and P/B of 7.96 is also near highs (5.8-8.3). The stock has rallied 21.8% in the last quarter alone, pricing in much of the positive momentum. The $200B capex commitment for 2026 compresses free cash flow dramatically (FCF fell to $1.2B TTM per CNBC), creating real near-term financial constraints. Regulatory risks from the California antitrust lawsuit and FTC action add uncertainty. The Q1 earnings beat and AWS reacceleration provide a near-term positive catalyst, but the stock's sharp recent rally and rich valuation temper the upside. Net margin has improved to 11.1% from 10.1% a year ago, and ROE remains healthy at 20.7%, supporting the positive fundamental view.",
+      "key_factors": [
+        "AWS revenue growth accelerated to 28% YoY in Q1 2026, fastest in 15 quarters, with $37.6B quarterly revenue and $150B annualized run rate",
+        "Consistent quarterly revenue and EPS trajectory: revenue grew from $155.67B to $180.17B over three quarters, EPS from $1.59 to $1.95",
+        "Strong balance sheet: $369.6B equity, $55.1B debt, debt-to-equity of 0.149",
+        "P/E of 38.5x near top of 365-day range (28.2-39.0), stock rallied 21.8% in last quarter, limiting near-term upside",
+        "$200B capex commitment for 2026 compresses free cash flow to $1.2B TTM, a 95% YoY decline",
+        "Advertising revenue growing 22% YoY to $17.2B, high-margin segment expanding rapidly",
+        "Regulatory headwinds: California antitrust lawsuit (trial 2027) and FTC action alleging monopoly practices",
+        "Q1 2026 earnings beat: EPS $2.78 vs $1.64 expected, revenue $181.5B vs $177.3B expected, providing near-term positive catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=180.17B net_income=21.19B eps_diluted=1.95 operating_income=17.42B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30 Q2",
+          "excerpt": "revenue=167.70B eps_diluted=1.68"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=155.67B eps_diluted=1.59"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=38.451 p_b=7.956 net_margin=0.111 roe=0.207 debt_to_equity=0.149"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 365d",
+          "excerpt": "pe_diluted 28.2..39.0 | p_b 5.8..8.3"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "excerpt": "close=271.17 quarterly delta +21.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-29 CNBC",
+          "excerpt": "Amazon reported first-quarter results that beat Wall Street's expectations. Revenue in its cloud computing segment expanded 28% year over year. Earnings per share: $2.78 vs. $1.64. Revenue: $181.52 billion vs. $177.30 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-29 CNBC",
+          "excerpt": "free cash flow for the past twelve months fell to $1.2 billion, a 95% decrease year over year, primarily because of its AI investments"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-20 NYT",
+          "excerpt": "California accused Amazon of price fixing by pressuring major brands like Levi's and Hanes to ask competing retailers to raise prices"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-01 Benzinga",
+          "excerpt": "Goldman Sachs warns that major cloud infrastructure companies are spending 90% of their operating cash flow on AI capex, with Amazon's capex surging 107% YoY to $43.2B in Q1 with $200B planned for 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMZN",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3859,
+        "capped_chars": 3859,
+        "raw_tokens": 965,
+        "capped_tokens": 965
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231826,
+        "capped_chars": 231826,
+        "raw_tokens": 57956,
+        "capped_tokens": 57956
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4420,
+        "capped_chars": 4420,
+        "raw_tokens": 1105,
+        "capped_tokens": 1105
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 463621,
+        "capped_chars": 102588,
+        "raw_tokens": 115905,
+        "capped_tokens": 25647
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 122934,
+        "capped_chars": 88408,
+        "raw_tokens": 30734,
+        "capped_tokens": 22101
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42404,
+  "started_at": "2026-08-07T02:58:23+00:00"
+}

@@ -1,0 +1,204 @@
+{
+  "cell": "AAPL",
+  "symbols": [
+    "AAPL"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 47287,
+    "tokens_out": 1404,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.051499,
+    "basis": "reported"
+  },
+  "views": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "score": 0.15,
+      "rationale": "Apple's fundamental health is strong: Q2 FY2026 delivered a March-quarter record of $111.2B revenue (+16.6% YoY), EPS of $2.01 (+21.8% YoY), and a multi-year-high gross margin of 49% driven by record Services revenue of $31B. The balance sheet shows improving equity ($106.5B vs $66.8B a year ago) and declining debt ($82.7B vs $92.2B). Operating cash flow of $28.7B in Q2 and $53.9B in Q1 demonstrate robust cash generation. Market share gains across iPhone (21%, up from 19.5%), iPad (37%), and Apple Watch (23%) confirm competitive strength. However, the trajectory is tempered by: (1) significant QoQ declines reflecting normal seasonality but also the magnitude of the Q1 holiday quarter, (2) rising memory costs that CEO Tim Cook called a '100-year flood' threatening future margins, (3) regulatory headwinds from EU Digital Markets Act, DOJ antitrust litigation, and Italy's iCloud probe, and (4) the stock trading at 33x diluted PE \u2014 near the lower end of its 30.5-43.1 range but still a premium multiple. The P/B of 38x has compressed from 65x peak, suggesting some valuation normalization. News sentiment is mixed-to-positive (mean 0.27 over 90 days) but turned negative on June 25 (-0.176) after Apple raised MacBook/iPad prices and the stock fell 6%. The Apple-Intel chip partnership announced June 18 is a modest positive for supply chain diversification but lacks confirmed terms. No clear near-term fundamental catalyst exists to drive a re-rating; the next earnings event is likely late July/August. Overall, Apple is a high-quality franchise with solid execution but faces cost headwinds, regulatory risk, and a valuation that is fair rather than compelling.",
+      "key_factors": [
+        "Record Q2 FY2026 revenue of $111.2B (+16.6% YoY) and gross margin of 49% \u2014 best March quarter ever",
+        "Services revenue at all-time high of $31B with ~76% gross margin, driving margin expansion",
+        "Market share gains: iPhone 21% (from 19.5%), iPad 37%, Apple Watch 23% per IDC/Counterpoint",
+        "Memory cost headwinds: CEO Tim Cook warned of '100-year flood' in chip costs, forcing price increases",
+        "Regulatory overhang: EU DMA, DOJ antitrust, Italy iCloud probe threaten App Store commission model",
+        "PE of 33x is mid-range vs 30.5-43.1 window; P/B compressed from 65x to 38x \u2014 not cheap but not extreme",
+        "Apple-Intel US chip partnership announced but unconfirmed \u2014 modest supply chain diversification benefit",
+        "No clear near-term re-rating catalyst before Q3 FY2026 earnings (likely late July/August)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=111.18B net_income=29.58B eps_diluted=2.01 gross_profit=54.78B operating_income=35.88B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2 growth",
+          "excerpt": "YoY: revenue=+16.6% eps_diluted=+21.8% net_income=+19.4% gross_profit=+22.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=33.056 p_b=38.049 p_s=8.975 net_margin=0.272 roe=1.151"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 30.5..43.1 | p_b 38.0..65.0"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-17 Benzinga",
+          "excerpt": "Apple CEO Tim Cook announced the company will raise prices across its product lineup due to skyrocketing memory and storage component costs. Cook described the situation as a '100-year flood'"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-25 Motley Fool",
+          "excerpt": "Apple tumbled 6% after raising MacBook and iPad prices. The PCE index hit a three-year high of 4.1%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "IDC Q1 2026",
+          "excerpt": "Apple secured second place, driven by the strong performance of the iPhone 17 series... 4.4% year-over-year increase in global sales for Q1"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Counterpoint Q1 2026",
+          "excerpt": "iPhone: Increased from 19% to 21%... iPad: Rose from 34% to 37%... Apple Watch: Climbed from 20% to 23%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr Q2 analysis",
+          "excerpt": "Apple's gross margin reached 49% in Q2 FY2026, the highest level recorded across the eight-quarter income statement window. Services reached an all-time quarterly record at $31 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-18 Investing.com",
+          "excerpt": "President Trump announced that Apple has agreed to work with Intel to design and build chips domestically... neither company has issued formal confirmation"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-06-25",
+          "excerpt": "-0.176(n=17)"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "90d mean",
+          "excerpt": "mean=0.27"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=275.15 high=317.40 low=199.26 quarterly delta=+8.9%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AAPL",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4671,
+        "capped_chars": 4671,
+        "raw_tokens": 1168,
+        "capped_tokens": 1168
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231023,
+        "capped_chars": 231023,
+        "raw_tokens": 57756,
+        "capped_tokens": 57756
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4358,
+        "capped_chars": 4358,
+        "raw_tokens": 1090,
+        "capped_tokens": 1090
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 282058,
+        "capped_chars": 57513,
+        "raw_tokens": 70514,
+        "capped_tokens": 14378
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108392,
+        "capped_chars": 82536,
+        "raw_tokens": 27098,
+        "capped_tokens": 20633
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 59598,
+  "started_at": "2026-08-07T03:04:58+00:00"
+}

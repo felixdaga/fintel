@@ -1,0 +1,179 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28814,
+    "tokens_out": 1083,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032063,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": 0.15,
+      "rationale": "Amgen presents a mixed but slightly positive picture. On the positive side, the company shows solid YoY growth in Q1 2026 (revenue +5.8%, EPS +4.4%, operating cash flow +57.4%), maintains strong gross margins (~68%) and net margins (~21%), and generates substantial operating cash flow ($2.19B in Q1). The stock has de-rated significantly from a peak P/E of ~49x in Feb 2026 to ~25x currently, placing it near the low end of its 1-year range (22.6-49.7), suggesting valuation is more reasonable. However, significant headwinds temper enthusiasm: (1) QoQ metrics show sharp deterioration (revenue -9.8%, EPS -43.7%), though this partly reflects seasonal/fiscal calendar gaps; (2) the balance sheet carries $57.3B in debt against only $9.2B equity (D/E of 6.2x), creating financial inflexibility; (3) multiple near-term risks including the Tavneos FDA withdrawal threat ($450M+ annual revenue at risk), accelerating biosimilar erosion of the Prolia/Xgeva franchise ($6B+ revenue), and the $10.7B IRS tax dispute; (4) the incomplete TTM data makes it difficult to assess full-year trajectory. The pipeline optionality around MariTide (obesity/GLP-1) provides medium-term upside potential but is not yet a near-term catalyst. The upcoming Q2 earnings on Aug 4 could serve as a catalyst, with consensus expecting EPS of $5.57 (-7.5% YoY) and revenue of $9.46B (+3% YoY). Overall, a mature biotech with solid cash generation and reasonable valuation offset by meaningful balance sheet leverage and multiple regulatory/patent risks.",
+      "key_factors": [
+        "YoY revenue growth of 5.8% and EPS growth of 4.4% in Q1 2026",
+        "P/E de-rated from ~49x peak to ~25x, near low end of 1-year range (22.6-49.7)",
+        "Highly leveraged balance sheet: $57.3B debt vs $9.2B equity, D/E of 6.2x",
+        "Tavneos FDA withdrawal threat and EMA revocation recommendation for $450M+ drug",
+        "Accelerating biosimilar erosion of Prolia/Xgeva franchise ($6B+ revenue)",
+        "MariTide GLP-1 pipeline provides medium-term optionality but no near-term catalyst",
+        "Q2 2026 earnings on Aug 4 expected to show EPS decline of ~7.5% YoY",
+        "Strong gross margins (~68%) and operating cash generation ($2.19B in Q1)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=8.62B, eps_diluted=3.34, YoY revenue=+5.8%, YoY eps=+4.4%, operating_cash_flow=2.19B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=25.36, p_b=21.524, debt_to_equity=6.238, gross_margin=0.683, net_margin=0.21"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-02-26",
+          "excerpt": "pe_diluted=48.604 (peak P/E in window)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-04",
+          "excerpt": "pe_diluted=22.586 (low P/E in window)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-03",
+          "excerpt": "FDA proposed withdrawal of Tavneos due to data manipulation; EMA recommended revocation; $450M+ annual revenue at risk"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis AMGN",
+          "excerpt": "Primary risk is faster decline in Prolia/Xgeva sales; primary U.S. patents expired Feb 2025; management guided for accelerated sales erosion in 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey AMGN Jul 2",
+          "excerpt": "$10.7B IRS tax dispute overhang; ~$57B in debt; Class II recall of Corlanor"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-09",
+          "excerpt": "Next earnings date 08/04/26; consensus EPS $5.57 (-7.48% YoY), revenue $9.46B (+3.01% YoY)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 248844,
+        "capped_chars": 248844,
+        "raw_tokens": 62211,
+        "capped_tokens": 62211
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1154,
+        "capped_chars": 1154,
+        "raw_tokens": 288,
+        "capped_tokens": 288
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9313,
+        "capped_chars": 1487,
+        "raw_tokens": 2328,
+        "capped_tokens": 372
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 73568,
+        "capped_chars": 54300,
+        "raw_tokens": 18391,
+        "capped_tokens": 13576
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 47731,
+  "started_at": "2026-08-07T03:06:44+00:00"
+}

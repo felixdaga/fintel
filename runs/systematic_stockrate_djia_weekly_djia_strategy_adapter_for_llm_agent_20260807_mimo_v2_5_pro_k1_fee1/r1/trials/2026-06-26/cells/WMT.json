@@ -1,0 +1,187 @@
+{
+  "cell": "WMT",
+  "symbols": [
+    "WMT"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34571,
+    "tokens_out": 1192,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038147,
+    "basis": "reported"
+  },
+  "views": {
+    "WMT": {
+      "symbol": "WMT",
+      "score": 0.15,
+      "rationale": "Walmart is a structurally sound, dominant retailer with a credible mix-shift story toward higher-margin advertising, membership, and marketplace revenue streams. However, the near-term fundamental trajectory is mixed: Q1 FY27 showed solid YoY revenue growth (+7.3%) and EPS growth (+19.6%), but QoQ trends were negative (EPS -13%, operating cash flow -47.9%), and the quarterly data is non-contiguous (fiscal gap: Q1\u2192Q3\u2192Q2\u2192Q1), preventing a clean TTM read. The stock has pulled back ~12% from its recent high, and the P/E of 40x is near the low end of its 39-55x 12-month range, suggesting some valuation relief versus the frothy levels of early 2026. However, 40x remains a demanding multiple for a ~3% net margin and ~4% operating margin business, even with the platform revenue tailwinds. Analyst consensus remains bullish (94% Buy, $139 target), and the Vibe.co acquisition signals continued investment in the high-margin ad business. The Q2 FY27 earnings event (Aug 20) could serve as a near-term catalyst if advertising and membership growth sustain their pace. On balance, Walmart's fundamental health is strong, trajectory is positive but decelerating from peak growth rates, and valuation is fair-to-slightly-rich \u2014 yielding a mildly positive score.",
+      "key_factors": [
+        "Dominant retail scale ($713B+ revenue, 21% U.S. grocery share) with structural competitive moat",
+        "High-margin platform businesses (advertising +37-50%, membership +15-17%) growing multiples faster than core retail, now ~1/3 of operating income",
+        "Q1 FY27 YoY growth solid (rev +7.3%, EPS +19.6%) but QoQ deceleration (EPS -13%, OCF -47.9%) and non-contiguous fiscal quarters limit TTM visibility",
+        "P/E of 40x near 12-month low (39-55 range) but still demanding for ~3% net margin; valuation fair-to-slightly-rich vs own history",
+        "Vibe.co acquisition (June 2026) reinforces advertising growth strategy; Q2 earnings (Aug 20) is a dated near-term catalyst",
+        "Macro backdrop mixed: VIX at 18.9 (down from 30.6 in March), oil prices falling ($72.67), but 10Y yield elevated at 4.4% and tariff/import risk for ~3 merchandise"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-29 Q1",
+          "excerpt": "revenue=177.75B net_income=5.49B eps_diluted=0.67 gross_profit=44.69B operating_income=7.49B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-04-30 Q1 YoY",
+          "excerpt": "revenue=165.61B eps=0.56 \u2014 YoY: revenue=+7.3% eps_diluted=+19.6%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=40.056 p_b=9.199 net_margin=0.032 roe=0.23"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-06-26..2026-06-25",
+          "excerpt": "pe_diluted 39.0..55.4 | p_b 8.4..12.0"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-24 RetailDive",
+          "excerpt": "Walmart gets bullish on advertising business with Vibe.co acquisition; Q1 global advertising business grew 50% YoY, Walmart Connect U.S. increasing 31%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-17 Motley Fool",
+          "excerpt": "Costco edges out Walmart as better buy-and-hold; Costco trades at 49x earnings with only 9-10% expected annual growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "deepresearchglobal.com",
+          "excerpt": "FY2026: $713.2B revenue, GAAP operating income $29.8B, net income $21.9B; global advertising grew 37% including VIZIO, membership fee revenue rose 15.1%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingpedia.com",
+          "excerpt": "34 analysts with consensus Buy rating, 94% Buy-side bias, $139 price target; stock trades at 44x current-year earnings forecast"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st DCF",
+          "excerpt": "P/E of 41.02x sits below Fair Ratio of 44.44x, pointing to undervalued on this metric"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-25",
+          "excerpt": "DGS10=4.4 VIXCLS=18.89 DCOILWTICO=72.67 FEDFUNDS=3.63"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "WMT",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4568,
+        "capped_chars": 4568,
+        "raw_tokens": 1142,
+        "capped_tokens": 1142
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 243180,
+        "capped_chars": 243180,
+        "raw_tokens": 60795,
+        "capped_tokens": 60795
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3394,
+        "capped_chars": 3394,
+        "raw_tokens": 848,
+        "capped_tokens": 848
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 47893,
+        "capped_chars": 10841,
+        "raw_tokens": 11973,
+        "capped_tokens": 2710
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98817,
+        "capped_chars": 78875,
+        "raw_tokens": 24704,
+        "capped_tokens": 19718
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 35738,
+  "started_at": "2026-08-07T03:05:53+00:00"
+}

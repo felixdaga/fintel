@@ -1,0 +1,196 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31787,
+    "tokens_out": 1254,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035549,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "rationale": "MMM is a deteriorating business with severe fundamental headwinds. Q1 2026 showed revenue of $6.03B with EPS of $1.23, a dramatic -39.7% YoY decline in EPS and -41.3% YoY decline in net income. The company's balance sheet is extremely weak with total equity of only $3.31B against total liabilities of $32.12B, implying a debt-to-equity ratio of approximately 9.7x. Operating cash flow collapsed to $574M in Q1 2026 versus $1.76B in Q3 2025, a -826.6% YoY deterioration. The company faces massive legal overhangs from PFAS lawsuits and earplug litigation, with management having committed $1B to a trust for earplug claims and facing ongoing NY Attorney General PFAS lawsuits. Tariff exposure of up to $850M annually before mitigation adds further pressure. Valuation is extremely stretched at a P/E of 30.8x versus a 365-day range of 17.7-32.0x, meaning the stock is trading at the absolute top of its historical valuation range despite deteriorating fundamentals. The P/B of 26.0x is also at the top of its 17.1-27.0 range. Net margin has compressed from 17.9% to 11.2% over the past year. While Q2 2026 earnings are expected on July 21 with consensus EPS of $2.27, this near-term catalyst is more likely to be a negative event given the fundamental deterioration and the stock already trading at peak valuations. The combination of collapsing earnings, extreme leverage, massive legal liabilities, tariff headwinds, and peak valuation creates a highly unattractive risk/reward profile.",
+      "key_factors": [
+        "Q1 2026 EPS of $1.23 represents -39.7% YoY decline from $2.04 in Q1 2025",
+        "Balance sheet extremely leveraged with $3.31B equity vs $32.12B liabilities (debt-to-equity ~9.7x)",
+        "Operating cash flow collapsed to $574M in Q1 2026 vs $1.76B in Q3 2025 (-826.6% YoY)",
+        "P/E of 30.8x at absolute top of 365-day range (17.7-32.0x) despite deteriorating earnings",
+        "P/B of 26.0x at top of 365-day range (17.1-27.0x)",
+        "Net margin compressed from 17.9% to 11.2% over past year",
+        "PFAS lawsuits and earplug litigation create massive legal overhang with $1B+ committed to trust",
+        "Tariff exposure of up to $850M annually before mitigation",
+        "Consumer segment weakness with -1.3% organicYoY organic revenue decline in Q1 2026",
+        "Q2 2026 earnings on July 21 likely to disappoint given fundamental trajectory"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.03B net_income=659.00M eps_diluted=1.23"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=5.95B eps=2.04 net_income=1.12B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=35.44B total_liabilities=32.12B total_equity=3.31B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 cash flow",
+          "excerpt": "operating_cash_flow=574.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 cash flow",
+          "excerpt": "operating_cash_flow=1.76B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=30.794 p_b=26.032 net_margin=0.112"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-17",
+          "excerpt": "pe_diluted=19.901 p_b=19.259 net_margin=0.179"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st 2026-07-08",
+          "excerpt": "management has flagged up to US$850m of potential annual tariff impact before mitigation"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st 2026-07-12",
+          "excerpt": "The New York Attorney General's PFAS lawsuit helps explain why the market keeps 3M below this intrinsic estimate"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com 2026-07-03",
+          "excerpt": "Consumer segment's adjusted organic revenues declined 1.3% year over year in the first quarter of 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "marketbeat.com 2026-07-14",
+          "excerpt": "3M is set to report Q2 2026 earnings before the market opens on Tuesday, July 21, with analysts expecting EPS of $2.27"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 246289,
+        "capped_chars": 246289,
+        "raw_tokens": 61572,
+        "capped_tokens": 61572
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1015,
+        "capped_chars": 1015,
+        "raw_tokens": 254,
+        "capped_tokens": 254
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 10623,
+        "capped_chars": 2880,
+        "raw_tokens": 2656,
+        "capped_tokens": 720
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98223,
+        "capped_chars": 65897,
+        "raw_tokens": 24556,
+        "capped_tokens": 16474
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 33122,
+  "started_at": "2026-08-07T03:08:03+00:00"
+}

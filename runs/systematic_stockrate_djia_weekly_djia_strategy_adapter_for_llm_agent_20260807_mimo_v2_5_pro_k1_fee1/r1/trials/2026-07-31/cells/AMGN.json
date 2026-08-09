@@ -1,0 +1,170 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 38244,
+    "tokens_out": 889,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.040911,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": 0.15,
+      "rationale": "Amgen presents a mixed but mildly attractive picture. On the positive side, YoY fundamentals show solid growth: Q1 2026 revenue +5.8% and EPS +4.4% vs prior year, with strong operating cash flow growth of +57.4%. The company has reaffirmed and raised 2026 guidance (revenue $37.1-38.5B, GAAP EPS $15.62-$17.10), and the Q2 2026 earnings report on August 4 is imminent with consensus expecting $5.62 EPS on $9.42B revenue. The stock has already re-rated significantly from its 52-week low of ~$270 to $388, and the current P/E of 27x sits near the middle of its 12-month range (22.6-49.7), having compressed from ~40-47x earlier in 2026 as earnings improved. However, several concerns temper enthusiasm: the balance sheet carries heavy debt ($57.3B vs $9.2B equity, 6.2x debt-to-equity), QoQ trends show sharp sequential declines (revenue -9.8%, EPS -43.7%), and the Tavneos regulatory overhang with FDA withdrawal proceedings creates uncertainty. The MariTide obesity pipeline faces stiff competition from Eli Lilly and Novo Nordisk with phase 2 data that doesn't clearly differentiate. News sentiment is mixed (mean 0.48). The near-term Q2 earnings catalyst on August 4 could provide a re-rating opportunity if results beat expectations, but the stock has already moved substantially higher, limiting upside. Net: a quality compounder with solid cash generation and raised guidance, but expensive balance sheet, pipeline execution risk, and recent price appreciation cap the score.",
+      "key_factors": [],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=8.62B, eps_diluted=3.34, YoY revenue +5.8%, eps +4.4%, operating_cash_flow +57.4%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=27.35 p_b=22.946, range pe_diluted 22.6..49.7"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_debt=57.32B total_equity=9.19B debt_to_equity=6.238"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis guidance",
+          "excerpt": "2026 Revenue 37.10-38.50 Bil, 2026 GAAP EPS 15.6-17.1, Raised guidance"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-29 Motley Fool MariTide",
+          "excerpt": "MariTide's phase 2 efficacy data don't suggest it will outperform competitors. Eli Lilly and Novo Nordisk are advancing newer therapies"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-10 biospace Tavneos",
+          "excerpt": "FDA formally proposed withdrawing approval... Amgen has called on the FDA to grant a hearing on the proposed withdrawal"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-30 alphastreet Q2 preview",
+          "excerpt": "consensus EPS $5.62 on revenue $9.42B, EPS decline of 6.6% from year-ago figure of $6.02"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "excerpt": "close=387.64, range high=398.00 low=269.77, quarterly delta +14.7%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247467,
+        "capped_chars": 247467,
+        "raw_tokens": 61867,
+        "capped_tokens": 61867
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1242,
+        "capped_chars": 1242,
+        "raw_tokens": 310,
+        "capped_tokens": 310
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 22962,
+        "capped_chars": 4874,
+        "raw_tokens": 5740,
+        "capped_tokens": 1218
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 113835,
+        "capped_chars": 93284,
+        "raw_tokens": 28459,
+        "capped_tokens": 23321
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 23148,
+  "started_at": "2026-08-07T03:09:22+00:00"
+}

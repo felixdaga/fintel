@@ -1,0 +1,181 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32257,
+    "tokens_out": 1106,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035575,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.35,
+      "rationale": "Goldman Sachs shows strong fundamental health and positive trajectory. Q1 2026 results were excellent: revenue of $17.23B (+14.4% YoY), EPS of $17.55 (+24.3% YoY), and net income of $5.63B (+18.8% YoY), with operating margin of 37.5% and net margin of 29.9%. The firm is benefiting from a robust M&A and IPO pipeline, with Goldman's own President noting 2026 M&A activity is on pace to rival 2021 record levels. The SpaceX IPO, where Goldman is lead underwriter, represents a significant near-term revenue opportunity. However, valuation has expanded significantly: P/E has risen from 13.2x in June 2025 to 18.6x currently, and P/B from 1.6x to 2.7x, now at the top of its 1-year range. The stock has rallied +30.8% in the last quarter alone, which partially prices in the strong fundamentals. Operating cash flow is volatile and was negative $31.87B in Q1, typical for a bank but worth monitoring. The Fed stress test results in late June 2026 represent a near-term catalyst for capital return decisions, with buffers frozen for 2026. Macro backdrop is mixed: VIX has fallen to 15.4 (supportive), but 10-year yields at 4.47% and rising could pressure valuations. The firm's strategic refocus on core investment banking and asset/wealth management, exiting consumer banking, is positive for long-term returns. Score reflects solid fundamentals and trajectory offset by stretched valuation vs. own history, with modest positive catalyst from stress tests and IPO pipeline.",
+      "key_factors": [
+        "Q1 2026 earnings beat: EPS $17.55 vs consensus $15.92, revenue $17.23B vs $16.66B expected",
+        "Strong YoY growth: revenue +14.4%, EPS +24.3%, net income +18.8%",
+        "M&A pipeline on pace to rival 2021 record levels per Goldman President Waldron",
+        "SpaceX IPO as lead underwriter provides significant near-term fee opportunity",
+        "Valuation stretched: P/E at 18.6x (top of 1-year range 13.2-18.6), P/B at 2.74x (top of range 1.6-2.7)",
+        "Stock +30.8% in last quarter, partially pricing in strong fundamentals",
+        "Fed stress test results in late June 2026 as near-term catalyst for capital returns",
+        "Strategic refocus on core franchises (Global Banking & Markets, Asset & Wealth Management) positive for returns",
+        "Operating cash flow volatile: -$31.87B in Q1 2026",
+        "Macro: VIX at 15.4 supportive, but 10Y yield at 4.47% and rising could pressure multiples"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.23B net_income=5.63B eps_diluted=17.55 operating_income=6.49B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=18.625 p_b=2.741 net_margin=0.299 roe=0.147 operating_margin=0.375"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-05",
+          "excerpt": "pe_diluted=13.211 p_b=1.582"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=1092.61 quarterly delta +30.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-29",
+          "excerpt": "Goldman Sachs President John Waldron stated that 2026 M&A activity is on track to approach or exceed 2021 record levels"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-03",
+          "excerpt": "The Federal Reserve will release bank stress test results in late June 2026. The Fed has frozen stress capital buffers for 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "SpaceX's upcoming IPO, valued at approximately $1.8 trillion with an expected $75 billion raise, is shaping up as the largest IPO in market history. Goldman Sachs is leading the IPO as underwriter"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-04",
+          "excerpt": "VIXCLS=15.4 DGS10=4.47"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4443,
+        "capped_chars": 4443,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 219574,
+        "capped_chars": 219574,
+        "raw_tokens": 54894,
+        "capped_tokens": 54894
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 890,
+        "capped_chars": 890,
+        "raw_tokens": 222,
+        "capped_tokens": 222
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2693,
+        "capped_chars": 2693,
+        "raw_tokens": 673,
+        "capped_tokens": 673
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 81389,
+        "capped_chars": 10818,
+        "raw_tokens": 20347,
+        "capped_tokens": 2704
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108017,
+        "capped_chars": 87962,
+        "raw_tokens": 27004,
+        "capped_tokens": 21990
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37989,
+  "started_at": "2026-08-07T03:02:24+00:00"
+}

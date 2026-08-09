@@ -1,0 +1,196 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 38690,
+    "tokens_out": 1499,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.043187,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "rationale": "Chevron's Q1 2026 results reveal a sharp deterioration in profitability: EPS fell 44.5% YoY to $1.11 (from $2.00), net income declined 34.7%, and operating cash flow dropped 51.6% to $2.51B. The company is trading at a P/E of 33.67x\u2014more than double its 1-year  of of near thex low of5x)\u2014at the top of its 365-day range (15.1\u201334.8). This extreme valuation expansion has occurred despite worsening fundamentals: net margin compressedpressed to 5.9% (from 7.8% a year ago), ROE fell to 5.9% (from 10.5%), and the balance sheet shows rising liabilities (+$33.8B since Q1 2025) with equity only growing modestly. The Q1 results were distorted by ~$3B in unfavorable timing effects (legal reserves, FX), but even adjusted EPS of $1.41 was well below the prior year's $2.15. Oil prices at ~$100/bbl should be supportive, yet Chevron's earnings power is clearly impaired relative to what the market is pricing. The stock has rallied 24% from its Aug 2025 low of $153 to $191, fully pricing in the geopolitical oil premium while the underlying business is generating. There is no near-term fundamental catalyst to justify re-rating higher; the next earnings event is July 31, and management explicitly stated they are not changing capital allocation despite elevated prices. Risks include potential Iran deal (oil price collapse), California regulatory scrutiny on refining margins, and the unresolved Hess arbitration. The combination of deteriorating fundamentals, extreme valuation vs. history, and absence of positive catalysts makes this strongly unattractive.",
+      "key_factors": [
+        "Q1 2026 EPS of $1.11 down 44.5% YoY; net income down 34.7% YoY; operating cash flow down 51.6% to $2.51B",
+        "P/E of 33.67x is at the extreme top of its 365-day range (15.1\u201334.8), more than double the low of 15.1x from May 2025",
+        "Net margin compressed to 5.9% from 7.8% a year ago; ROE fell to 5.9% from 10.5%",
+        "~$3B unfavorable timing effects in Q1 from sharp commodity price increases (inventory valuation + derivative marks)",
+        "$360M legal reserve charge and $223M FX headwind in Q1",
+        "Total liabilities increased $33.8B since Q1 2025 while equity grew only modestly",
+        "Iran deal risk: oil prices could drop sharply if U.S.-Iran negotiations succeed, removing the geopolitical premium",
+        "California regulatory scrutiny on refining margins and pricing practices poses downstream risk",
+        "No near-term catalyst: management reaffirmed unchanged capital allocation; next earnings July 31",
+        "Stock rallied ~24% from Aug 2025 lows despite fundamental deterioration, suggesting momentum-driven pricing"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-07 Q1 filing",
+          "excerpt": "revenue=48.61B net_income=2.29B eps_diluted=1.11 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "rev=47.61B eps=2.00 net_income=3.51B operating_cash_flow=5.19B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=33.67 p_b=2.003 net_margin=0.059 roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-22",
+          "excerpt": "pe_diluted=15.083 p_b=1.579 net_margin=0.078 roe=0.105"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "excerpt": "close=191.01; range over ~251 bars: high=214.71 low=133.77"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "excerpt": "DCOILWTICO=100.2 (WTI crude); up 51% from 66.36 on 2026-02-23"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-20 Benzinga",
+          "excerpt": "oil prices fell over 5% on hopes of U.S.-Iran de-escalation"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14 Benzinga",
+          "excerpt": "Chevron has agreed to sell its downstream fuels and lubricants marketing operations across Southeast Asia and Australia to ENEOS Holdings for $2.17 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com California scrutiny",
+          "excerpt": "California officials and advocacy groups are scrutinizing Chevron's role in the state's high gasoline prices"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Q1 2026 earnings transcript",
+          "excerpt": "we are not changing any of our capital allocation framework. We are not changing any of our ranges"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "TipRanks Q1 2026",
+          "excerpt": "Reported earnings for the first quarter came in at $2.2 billion, or $1.11 per share, while adjusted earnings reached $2.8 billion, or $1.41 per share"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225261,
+        "capped_chars": 225261,
+        "raw_tokens": 56315,
+        "capped_tokens": 56315
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3433,
+        "capped_chars": 3433,
+        "raw_tokens": 858,
+        "capped_tokens": 858
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 67994,
+        "capped_chars": 12654,
+        "raw_tokens": 16998,
+        "capped_tokens": 3164
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 105063,
+        "capped_chars": 84469,
+        "raw_tokens": 26265,
+        "capped_tokens": 21117
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 63734,
+  "started_at": "2026-08-07T03:00:27+00:00"
+}

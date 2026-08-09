@@ -1,0 +1,188 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33172,
+    "tokens_out": 1103,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036481,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.15,
+      "rationale": "IBM presents a mixed but slightly positive fundamental picture. On the positive side, the company has executed a successful pivot toward higher-margin software (11% YoY growth in Q1 2026), benefits from a z17 mainframe super-cycle (hardware +51% YoY), and has a $12.5B generative AI bookings pipeline. YoY fundamentals are solid: revenue +9.5%, EPS +14.3%, net income +15.3%, and operating cash flow +18.3% in Q1 2026. ROE is strong at 32.5% and gross margins are healthy at 58.4%. However, QoQ trends are concerning with revenue -6.2% and EPS -44.6% (though Q2 2025 was likely a seasonal peak). The stock has already re-rated significantly from its April lows (+19.1% in Q2), and the current P/E of 25.6x sits near the middle of its 19-51x range over the past year, suggesting fair rather than cheap valuation. Key risks include consulting segment sluggishness (1% growth), elevated debt ($57.7B per web sources), and management's conservative FY2026 guidance of 'above 5%' growth which disappointed the market. The upcoming Q2 2026 earnings (late July) could serve as a near-term catalyst if software acceleration continues, but the stock's recent run-up and fair valuation limit upside. Net-net: solid franchise with improving trajectory, but largely priced in at current levels.",
+      "key_factors": [
+        "Software segment acceleration (11% YoY growth) driving margin improvement and recurring revenue",
+        "z17 mainframe super-cycle boosting Infrastructure revenue (+15% YoY, Z hardware +51%)",
+        "$12.5B cumulative generative AI bookings providing growth visibility",
+        "QoQ earnings decline (-44.6%) and conservative FY2026 guidance ('above 5%') capping enthusiasm",
+        "P/E of 25.6x near middle of 19-51x range \u2014 not cheap vs own history after 19% Q2 rally",
+        "Consulting segment drag (1% growth) and elevated debt from acquisitions ($57.7B)",
+        "Q2 2026 earnings (late July) as potential near-term catalyst for re-rating"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=15.92B net_income=1.22B eps_diluted=1.28 operating_cash_flow=5.17B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+9.5% eps_diluted=+14.3% net_income=+15.3% operating_cash_flow=+18.3%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 QoQ",
+          "excerpt": "QoQ: revenue=-6.2% eps_diluted=-44.6%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=25.633 p_b=8.339 roe=0.325 gross_margin=0.584 net_margin=0.156"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 19.0..51.2 | p_b 6.2..10.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=289.52 quarterly delta +19.1%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wsb-dd.com",
+          "excerpt": "Software revenue rose 11% YoY to $7.05B; Infrastructure revenue jumped 15%; Z mainframe hardware +51% YoY; GenAI book exceeded $12.5B; FY2025 FCF $14.7B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com risks",
+          "excerpt": "Elevated Debt Burden from Acquisitions: long-term debt escalating to $57.7 billion; Slow-Growing Consulting Segment: pacing at weak low-single-digit expansion rate"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart.com Q2 preview",
+          "excerpt": "analysts expect IBM to report a profit of $2.96 per share on a diluted basis, up 5.7% from $2.80 per share in the year-ago quarter; Q2 2026 earnings after market close on Wednesday, Jul. 22"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com Jul 1",
+          "excerpt": "Major investment banks have recently upgraded the stock to overweight, citing increased confidence in a second-half software acceleration"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223678,
+        "capped_chars": 223678,
+        "raw_tokens": 55920,
+        "capped_tokens": 55920
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2687,
+        "capped_chars": 2687,
+        "raw_tokens": 672,
+        "capped_tokens": 672
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 46274,
+        "capped_chars": 9533,
+        "raw_tokens": 11568,
+        "capped_tokens": 2383
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 93581,
+        "capped_chars": 76064,
+        "raw_tokens": 23394,
+        "capped_tokens": 19015
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 29750,
+  "started_at": "2026-08-07T03:06:14+00:00"
+}

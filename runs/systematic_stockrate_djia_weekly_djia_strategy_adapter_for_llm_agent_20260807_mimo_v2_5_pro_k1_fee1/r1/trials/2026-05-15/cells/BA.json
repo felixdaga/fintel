@@ -1,0 +1,169 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37696,
+    "tokens_out": 853,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.040255,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing is a deeply challenged company with poor fundamental health and trajectory. Q1 2026 showed revenue of $22.2B (+14% YoY) but the company remains unprofitable with a GAAP net loss of -$7M and EPS of -$0.11. Operating cash flow was negative at -$179M, and free cash flow was -$1.5B. The balance sheet is severely strained with total equity of only $5.99B against $46.96B in debt, yielding a debt-to-equity ratio of 7.84x. Commercial Airplanes, the largest segment, still operates at a -6.1% operating margin. While Defense and Global Services show improvement, the overall margin structure is weak with gross margin at 4.8% and operating margin at 4.6%. The company is in a multi-year turnaround with execution risk on 737 production ramp and 777X certification. Valuation is extremely stretched at a P/E of ~80x and P/B of 30x despite persistent losses. The stock has declined -4.2% over the past quarter and is trading near the middle of its 52-week range. Near-term catalysts like potential China orders are speculative and already partially priced in. The combination of poor fundamentals, stretched valuation, and execution risk makes this unattractive.",
+      "key_factors": [
+        "Persistent unprofitability with GAAP net loss of -$7M and EPS of -$0.11 in Q1 2026",
+        "Negative operating cash flow of -$179M and free cash flow of -$1.5B in Q1 2026",
+        "Severely strained balance sheet with $46.96B debt vs $5.99B equity (7.84x debt-to-equity)",
+        "Commercial Airplanes segment operating at -6.1% margin despite 143 deliveries",
+        "Extremely stretched valuation at P/E ~80x and P/B 30x for a loss-making turnaround",
+        "Execution risk on 737 production ramp to 47/month and 777X certification delays",
+        "Competitive position weakened with Airbus holding ~60% narrowbody market share",
+        "Near-term China order catalyst is speculative and already partially priced in"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-22 Q1 2026",
+          "excerpt": "revenue=22.22B net_income=-7.00M eps_diluted=-0.11 operating_cash_flow=-179.00M total_equity=5.99B total_debt=46.96B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-22 Q1 2026",
+          "excerpt": "Commercial Airplanes first quarter revenue of $9.2B and operating margin of (6.1) percent"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=79.849 p_b=30.168 debt_to_equity=7.844 gross_margin=0.048 operating_margin=0.046"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14",
+          "excerpt": "Boeing shares fell 4.32% to $232.61 despite growing optimismism around potential China aircraft orders"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05",
+          "excerpt": "A3220neo family has captured roughly 60 percent of the global narrowbody market, while the 737 MAX accounts for about 40 percent"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14",
+          "excerpt": "Boeing declined 4.5% despite positive trade news"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215930,
+        "capped_chars": 215930,
+        "raw_tokens": 53982,
+        "capped_tokens": 53982
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2685,
+        "capped_chars": 2685,
+        "raw_tokens": 671,
+        "capped_tokens": 671
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 39567,
+        "capped_chars": 7999,
+        "raw_tokens": 9892,
+        "capped_tokens": 2000
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 113689,
+        "capped_chars": 87705,
+        "raw_tokens": 28423,
+        "capped_tokens": 21926
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 49618,
+  "started_at": "2026-08-07T02:59:23+00:00"
+}

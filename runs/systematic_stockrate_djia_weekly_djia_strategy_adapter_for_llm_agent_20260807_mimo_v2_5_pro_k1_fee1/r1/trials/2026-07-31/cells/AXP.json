@@ -1,0 +1,178 @@
+{
+  "cell": "AXP",
+  "symbols": [
+    "AXP"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32699,
+    "tokens_out": 782,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035045,
+    "basis": "reported"
+  },
+  "views": {
+    "AXP": {
+      "symbol": "AXP",
+      "score": 0.25,
+      "rationale": "American Express demonstrates solid fundamental health with consistent revenue and EPS growth trajectory (Q2 2026 revenue +8.6% YoY, EPS +11% YoY), strong ROE of 33.4%, and healthy operating margins of 34.3%. The company beat Q2 earnings estimates ($4.53 vs $4.40 consensus) and raised full-year revenue guidance to 10% growth. However, the stock is trading near the middle of its 1-year P/E range (20.0x vs 18.4-25.3x range), suggesting fair rather than compelling valuation. The recent 6.5% post-earnings selloff on expense growth concerns creates a modest entry point, and the 16% dividend increase signals management confidence. Near-term catalysts include the raised guidance and continued premium card momentum, though AML regulatory headwinds and rising operating expenses (up 12% in Q2) temper enthusiasm. The score reflects a quality franchise with positive trajectory at a fair-to-slightly-chetractive valuation.",
+      "key_factors": [
+        "Consistently strong revenue and EPS growth trajectory with Q2 2026 beat on earnings estimates",
+        "Premium card franchise with 33.4% ROE and 34.3% operating margins",
+        "Valuation at 20x P/E near middle of 1-year range (18.4-25.3x)",
+        "16% dividend increase signals management confidence in cash flow durability",
+        "AML regulatory scrutiny poses potential compliance risk and fines",
+        "Operating expenses rising 12% in Q2, pressuring near-term margins",
+        "Raised full-year revenue guidance to 10% growth"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-30 Q2",
+          "excerpt": "revenue=11.21B eps_diluted=4.53 operating_income=4.07B net_income=3.11B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "growth_panel",
+          "excerpt": "YoY: revenue=+8.6% eps_diluted=+11.0% net_income=+7.8%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=20.024 p_b=6.685 roe=0.334 operating_margin=0.343"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 18.4..25.3"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-24",
+          "excerpt": "American Express stock dropped 6.5% despite beating Q2 earnings estimates ($4.53 EPS vs. $4.40 expected) and raising full-year revenue guidance to 10%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-0-27",
+          "excerpt": "Amex Bracing For Enforcement Action Amid AML Scrutiny - American Express Co. may face regulatory fines over its anti-money-laundering compliance programs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scanx.trade",
+          "excerpt": "The company returned $8.7 billion to shareholders over the past year and raised its quarterly dividend by 16% to $0.95 per share"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-24 qz",
+          "excerpt": "Consolidated expenses rose 12% to $14.5 billion, driven by higher variable customer engagement costs"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AXP",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 5206,
+        "capped_chars": 5206,
+        "raw_tokens": 1302,
+        "capped_tokens": 1302
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 227103,
+        "capped_chars": 227103,
+        "raw_tokens": 56776,
+        "capped_tokens": 56776
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2069,
+        "capped_chars": 2069,
+        "raw_tokens": 517,
+        "capped_tokens": 517
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 31582,
+        "capped_chars": 5646,
+        "raw_tokens": 7896,
+        "capped_tokens": 1412
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98293,
+        "capped_chars": 79404,
+        "raw_tokens": 24573,
+        "capped_tokens": 19851
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 35600,
+  "started_at": "2026-08-07T03:09:22+00:00"
+}

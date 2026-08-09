@@ -1,0 +1,184 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29570,
+    "tokens_out": 1131,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032963,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": 0.15,
+      "rationale": "Home Depot is a best-in-class home improvement retailer with dominant market share (~17% US), strong Pro customer focus (~50% of sales), and a robust omnichannel/supply chain infrastructure reinforced by the SRS Distribution acquisition. However, the fundamental trajectory is mixed: Q1 FY2026 showed +4.8% YoY revenue growth but -4.3% YoY EPS decline, with operating income falling from $5.35B to $4.98B QoQ and net margin compressing to 8.4% from 9.0% a year ago. Same-store sales grew only 0.6%, reflecting persistent housing market headwinds from elevated mortgage rates (10Y at 4.45%) and stalled housing turnover. The balance sheet carries $94B in liabilities vs $13.9B equity, though this reflects the SRS acquisition financing. Valuation at 23.2x PE is near the lower end of its 1-year range (20.3-28.8), suggesting the market has partially priced in the cyclical softness, but it is not a screaming bargain given the earnings trajectory is flat-to-declining. RBC flagged risk of missing 2026 guidance on cost/demand headwinds. The stock has declined ~28% from its peak, and the 2.9% dividend yield provides some support. No clear near-term fundamental catalyst exists to drive a re-rating; the next earnings event is the key watchpoint. Overall: solid franchise, soft near-term trajectory, fair-to-slightly-cheap valuation, no catalyst \u2014 mildly attractive.",
+      "key_factors": [
+        "Dominant market position with ~17% US home improvement share and strong Pro customer ecosystem (~50% of sales)",
+        "Q1 FY2026 revenue +4.8% YoY to $41.77B but EPS -4.3% YoY to $3.30, with operating income declining QoQ",
+        "Same-store sales growth of only 0.6%, reflecting housing market headwinds from elevated rates",
+        "PE of 23.2x near lower end of 1-year range (20.3-28.8), suggesting partial de-rating already occurred",
+        "RBC flagged risk of missing 2026 guidance on cost and demand outlook headwinds",
+        "Stock down ~28% from peak; 2.9% dividend yield provides income support",
+        "SRS Distribution acquisition building Pro supply chain moat but pressuring near-term margins and balance sheet",
+        "No clear near-term fundamental catalyst for re-rating ahead of next earnings"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03 Q1",
+          "excerpt": "revenue=41.77B eps_diluted=3.3 net_income=3.29B operating_income=4.98B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-05-04 Q1 YoY",
+          "excerpt": "revenue=39.86B eps_diluted=3.45"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=23.173 net_margin=0.084 roe=1.01"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 20.3..28.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-20",
+          "excerpt": "Home Depot Faces Risk of Missing 2026 Guidance on Cost, Demand Outlook Headwinds, RBC Says"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-06",
+          "excerpt": "same-store sales, which grew only 0.6% in Q1 fiscal 2026"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=326.01, range high=426.75 low=289.10"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11",
+          "excerpt": "DGS10=4.45%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-08",
+          "excerpt": "Home Depot generated earnings per share of 3.43 USD versus consensus estimates of around 3.41 USD"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3778,
+        "capped_chars": 3778,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224642,
+        "capped_chars": 224642,
+        "raw_tokens": 56160,
+        "capped_tokens": 56160
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1934,
+        "capped_chars": 1934,
+        "raw_tokens": 484,
+        "capped_tokens": 484
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 22427,
+        "capped_chars": 5166,
+        "raw_tokens": 5607,
+        "capped_tokens": 1292
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 62592,
+        "capped_chars": 47110,
+        "raw_tokens": 15647,
+        "capped_tokens": 11778
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 34137,
+  "started_at": "2026-08-07T03:03:31+00:00"
+}

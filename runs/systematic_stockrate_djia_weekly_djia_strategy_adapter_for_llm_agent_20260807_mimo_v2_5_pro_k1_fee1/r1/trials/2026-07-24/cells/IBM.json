@@ -1,0 +1,205 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 38624,
+    "tokens_out": 1429,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.042911,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": -1.0,
+      "rationale": "IBM is in severe fundamental distress following its July 14, 2026 profit warning and Q2 earnings miss. The stock crashed 25% in a single day\u2014its worst day in 115-year history\u2014erasing $68B in market cap. Q2 revenue grew only 1% YoY (vs. 5%+ guidance), with Infrastructure revenue declining 7% and Transaction Processing revenue down 9%. The core problem is structural: customers are shifting IT budgets away from IBM's software and mainframe offerings toward AI servers, memory chips, and storage hardware. Software growth decelerated sharply from 11% in Q1 to 5% in Q2, undermining the entire bull thesis of software-led transformation. Management cut full-year revenue guidance from 5%+ to 4%-5%, acknowledging they 'did not adapt and move quickly enough.' Multiple securities law investigations have been launched. The stock at $206.65 trades at P/E 18.4x\u2014near the bottom of its 18-51x range\u2014but this is not cheap given deteriorating fundamentals: YoY EPS declined 1.7%, net income fell 1.3%, and the competitive position is weakening as hyperscalers and hardware vendors capture AI infrastructure spend. Balance sheet leverage remains elevated at ~$62B debt. The near-term catalyst is negative: ongoing investigations, potential further guidance cuts, and the risk that the Q2 deal slippage represents a permanent share loss rather than deferred demand. News sentiment turned sharply negative in mid-July (scores of -0.714 on July 14-15). This is a deteriorating business with a broken growth narrative, expensive relative to its new reality, and facing credible downside catalysts.",
+      "key_factors": [
+        "Q2 2026 revenue growth of only 1% vs. 5%+ prior guidance; Infrastructure revenue declined 7%, Transaction Processing down 9%",
+        "Software growth decelerated from 11% (Q1) to 5% (Q2), undermining the software-led transformation thesis",
+        "Customers shifting IT budgets from IBM software/mainframes to AI servers, memory chips, and storage\u2014structural competitive headwind",
+        "Stock crashed 25% on July 14, 2026, worst single day in IBM's 115-year history, erasing $68B market cap",
+        "Full-year revenue guidance cut from 5%+ to 4%-5%; CEO admitted company 'did not adapt and move quickly enough'",
+        "Multiple securities law investigations launched (Bragar Eagel, Hagens Berman) regarding potential prior knowledge of deal slippage",
+        "Elevated debt load of ~$62B constrains financial flexibility amid deteriorating operating performance",
+        "P/E of 18.4x near bottom of 18-51x range but not cheap given negative earnings trajectory (YoY EPS -1.7%)",
+        "News sentiment turned sharply negative mid-July (scores -0.714 on July 14-15) with no near-term positive catalyst visible"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-07-23 Q2 filing",
+          "excerpt": "revenue=17.16B net_income=2.17B eps_diluted=2.27; YoY revenue=+1.1% eps_diluted=-1.7% net_income=-1.3%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-14",
+          "excerpt": "IBM stock plummeted 25% after CEO Arvind Krishna warned that customers are redirecting IT budgets from software to hardware, marking the company's worst day since 1987"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-20",
+          "excerpt": "IBM stock plummeted over 25% after the company pre-announced Q2 results that missed analyst expectations, with revenue of $17.2B versus $17.86B expected"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23",
+          "excerpt": "Law firm Bragar Eagel & Squire is investigating IBM for potential securities law violations following the company's July 14, 2026 announcement of Q2 2026 results that fell short of analyst expectations"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-17",
+          "excerpt": "Hagens Berman is investigating potential securities law violations regarding whether IBM management knew about deal closures risks earlier"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-15",
+          "excerpt": "IBM stock plunged 25.37% after the company warned of a significant profit shortfall. The tech giant expects Q2 revenue growth of just 1% to $17.2 billion and EPS down 2% to $2.27"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-07-14",
+          "excerpt": "mean=-0.714 (n=7)"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-07-15",
+          "excerpt": "mean=-0.714 (n=7)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=18.368 p_b=5.703; range over window: pe_diluted 18.2..51.2"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=206.65; quarterly delta (from 2026-04-22): -18.0%; range over ~251 bars: high=332.46 low=199.19"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan Q2 2026",
+          "excerpt": "Software revenue grew 5.1% with segment profit up 8.9%, while Infrastructure revenue declined 7.4% and profit 13.4%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "yahoo finance Q2 earnings call",
+          "excerpt": "Full-Year Revenue Growth Expectation: 4% to 5% (down from 5%+); Transaction Processing Revenue Decline: 9%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey IBM risks",
+          "excerpt": "Elevated Debt Burden from Acquisitions: IBM's balance sheet has become increasingly leveraged with long-term debt escalating to $57.7 billion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4552,
+        "capped_chars": 4552,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224572,
+        "capped_chars": 224572,
+        "raw_tokens": 56143,
+        "capped_tokens": 56143
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2922,
+        "capped_chars": 2922,
+        "raw_tokens": 730,
+        "capped_tokens": 730
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 98704,
+        "capped_chars": 20864,
+        "raw_tokens": 24676,
+        "capped_tokens": 5216
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102771,
+        "capped_chars": 68116,
+        "raw_tokens": 25694,
+        "capped_tokens": 17029
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 47635,
+  "started_at": "2026-08-07T03:08:51+00:00"
+}

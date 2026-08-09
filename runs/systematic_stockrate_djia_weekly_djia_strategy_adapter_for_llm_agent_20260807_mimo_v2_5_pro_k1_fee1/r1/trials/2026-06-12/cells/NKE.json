@@ -1,0 +1,186 @@
+{
+  "cell": "NKE",
+  "symbols": [
+    "NKE"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34184,
+    "tokens_out": 1304,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038096,
+    "basis": "reported"
+  },
+  "views": {
+    "NKE": {
+      "symbol": "NKE",
+      "score": -1.0,
+      "rationale": "Nike is in a deep fundamental trough with no near-term catalyst to reverse the trajectory. Q3 FY2026 (Feb 2026) showed EPS of $0.35, down 35% YoY from $0.54, with operating income collapsing to $650M from $844M. Revenue was essentially flat YoY at $11.28B but down 9.2% QoQ, signaling the 'Win Now' turnaround is not yet delivering top-line growth. Operating cash flow plunged 76% YoY to $430M. The company faces a triple headwind: (1) tariff costs of ~$1B in FY2026, (2) Greater China revenue down 30% since 2021 with no stabilization in sight, and (3) Converse declining 19% in FY2025. Gross margin compressed 130bps in Q3 due to tariffs and promotional activity. Valuation remains expensive at 30x trailing PE despite deteriorating earnings \u2014 the PE range over the past year was 19.5-38.9, and at 30x the stock is in the upper half while fundamentals are at their worst. P/B of 4.8x is near the low end of the 4.4-8.4 range, but this reflects falling ROE (now 16% vs 32% a year ago) rather than genuine cheapness. News sentiment is deeply negative (mean -0.40 over 90 days), with RBC downgrading and slashing PT to $50, JPMorgan downgrading to Underweight with $40 PT, and multiple analyst warnings that turnaround benefits won't materialize until 2027. The stock has declined for four consecutive quarters (-15% QoQ each), and consensus FY2026 EPS of $1.49 would be a 31% decline. The next earnings event (June 30) is expected to show EPS of $0.11, down 21% YoY \u2014 another leg down. There is no credible near-term fundamental catalyst; the tariff refund of ~$986M is a one-time item that doesn't fix the structural issues. This is a deteriorating business with expensive valuation and negative momentum across all three pillars.",
+      "key_factors": [
+        "Q3 FY2026 EPS $0.35, down 35% YoY; operating income $650M vs $844M prior year",
+        "Operating cash flow collapsed 76% YoY to $430M in Q3",
+        "Tariff headwind of ~$1B in FY2026 with gross margin compression of 130bps",
+        "Greater China revenue down 30% since 2021 with no stabilization",
+        "PE of 30x in upper half of 1-year range (19.5-38.9) despite worst fundamentals",
+        "RBC downgraded to $50 PT; JPMorgan downgraded to Underweight $40 PT",
+        "Consensus FY2026 EPS of $1.49, down 31% YoY; next quarter expected EPS $0.11",
+        "Converse declining 19% in FY2025, adding to portfolio weakness",
+        "News sentiment deeply negative at -0.40 mean over 90 days",
+        "Stock down ~43% from 52-week high of $80.17 with no reversal signal"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-02-28 Q3",
+          "excerpt": "revenue=11.28B eps=0.35 operating_income=650.00M net_income=520.00M operating_cash_flow=430.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-02-28 Q3 YoY",
+          "excerpt": "revenue=11.27B eps=0.54 operating_income=844.00M net_income=794.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=30.264 p_b=4.833 net_margin=0.048 roe=0.16 gross_margin=0.408 operating_margin=0.062"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 19.5..38.9 | p_b 4.4..8.4 | net_margin 0.0..0.1 | roe 0.2..0.3"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-11",
+          "excerpt": "RBC Capital Markets downgraded Nike, cutting its price target from $70 to $50, citing slower-than-expected revenue growth and delayed turnaround benefits"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "90d_mean",
+          "excerpt": "mean=-0.396 n_articles=60"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=45.96 range high=80.17 low=41.35 quarterly delta -15.1%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-11 stockanalysis",
+          "excerpt": "JPMorgan downgrades Nike to Underweight with a price target of $40, down from $47"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-11 finance.yahoo",
+          "excerpt": "company is expected to report EPS of $0.11, down 21.43% from the prior-year quarter; consensus FY2026 EPS $1.49, revenue $46.36B"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NKE",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4500,
+        "capped_chars": 4500,
+        "raw_tokens": 1125,
+        "capped_tokens": 1125
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224339,
+        "capped_chars": 224339,
+        "raw_tokens": 56085,
+        "capped_tokens": 56085
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1865,
+        "capped_chars": 1865,
+        "raw_tokens": 466,
+        "capped_tokens": 466
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 11391,
+        "capped_chars": 3354,
+        "raw_tokens": 2848,
+        "capped_tokens": 838
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 95325,
+        "capped_chars": 74409,
+        "raw_tokens": 23831,
+        "capped_tokens": 18603
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 33093,
+  "started_at": "2026-08-07T03:03:47+00:00"
+}

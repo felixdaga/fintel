@@ -1,0 +1,185 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36445,
+    "tokens_out": 1179,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039982,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.45,
+      "rationale": "Goldman Sachs shows strong fundamental health and positive trajectory. Q1 2026 revenue grew 14.4% YoY to $17.23B with EPS of $17.55 (+24.3% YoY), and the Q2 2026 earnings call (July 14) revealed record quarterly revenue of $20.3B and EPS of $20.98, with ROE of 23.5%. The firm is executing well across segments: Global Banking & Markets revenue hit $15.5B (+53% YoY), equities produced record $7.4B, and Asset & Wealth Management grew 20% YoY with record $4T in assets under supervision. Net margin improved to 29.9% and ROE to 14.7% (trailing). The firm announced a 25% dividend increase and $4B buyback. However, valuation has expanded significantly: P/E of 18.7x is near the top of its 14.5-19.6x 1-year range, and P/B of 2.75x is at the high end of 1.8-2.9x. The stock has rallied 21.8% in the past quarter to $1,095, which partially prices in the strong results. Operating cash flow is volatile and was negative $31.9B in Q1, typical for a bank but worth noting. The Oppenheimer downgrade on July 9 citing 'priced for perfection' valuations is a cautionary signal. Balance sheet leverage remains high (debt-to-equity ~4.9x per web context). The near-term catalyst of the Q2 beat is now largely priced in after the 7.4% post-earnings pop. Macro backdrop is mixed: Fed funds at 3.63% with hawkish signals, 10Y yield at 4.57%, and VIX at 16.7 suggests moderate risk appetite. Score reflects excellent trajectory and franchise quality offset by stretched valuation after a strong run.",
+      "key_factors": [
+        "Record Q2 2026 results: $20.3B revenue, $20.98 EPS, 23.5% ROE \u2014 strong fundamental trajectory",
+        "Valuation stretched: P/E 18.7x near top of 1-year range (14.5-19.6x), P/B 2.75x at high end (1.8-2.9x)",
+        "Stock up 21.8% in past quarter, partially pricing in strong results",
+        "25% dividend increase and $4B buyback signal capital return confidence",
+        "Leading M&A advisor with $1.2T announced deal volumes in H1 2026, AI/infrastructure tailwinds",
+        "Record $4T assets under supervision with 34 consecutive quarters of long-term net inflows",
+        "Oppenheimer downgrade to underperform on July 9 citing 'priced for perfection'",
+        "High leverage (debt-to-equity ~4.9x) and 100% external funding per web context",
+        "Hawkish Fed signals and elevated 10Y yields create mixed macro backdrop for financials"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q1 filing",
+          "excerpt": "revenue=17.23B net_income=5.63B eps_diluted=17.55 operating_income=6.49B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-14 Q2 earnings call",
+          "excerpt": "Record revenues of $20.3 billion, record earnings per share of $20.98, and an ROE of 23.5% and an ROTE of 25.5%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=18.674 p_b=2.748 net_margin=0.299 roe=0.147"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 14.5..19.6 | p_b 1.8..2.9"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=1095.46 quarterly delta +21.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-09",
+          "excerpt": "Oppenheimer downgraded major investment banks Goldman Sachs and Morgan Stanley from perform to underperform, citing valuations that are priced for perfection"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-14 Q2 earnings call",
+          "excerpt": "Total assets under supervision ended the quarter at a record $4 trillion supported by $91 billion of long-term net inflows"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st regulatory risk",
+          "excerpt": "no customer deposits and 100% external funding leave it more exposed if capital and liquidity rules tighten"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-16",
+          "excerpt": "FEDFUNDS=3.63 DGS10=4.57 VIXCLS=16.73"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4443,
+        "capped_chars": 4443,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 219607,
+        "capped_chars": 219607,
+        "raw_tokens": 54902,
+        "capped_tokens": 54902
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 890,
+        "capped_chars": 890,
+        "raw_tokens": 222,
+        "capped_tokens": 222
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2920,
+        "capped_chars": 2920,
+        "raw_tokens": 730,
+        "capped_tokens": 730
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 87769,
+        "capped_chars": 9500,
+        "raw_tokens": 21942,
+        "capped_tokens": 2375
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 110397,
+        "capped_chars": 82987,
+        "raw_tokens": 27600,
+        "capped_tokens": 20747
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 30368,
+  "started_at": "2026-08-07T03:07:49+00:00"
+}

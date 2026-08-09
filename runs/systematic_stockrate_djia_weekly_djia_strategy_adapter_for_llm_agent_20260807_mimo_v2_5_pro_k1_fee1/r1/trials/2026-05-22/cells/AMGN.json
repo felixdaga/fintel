@@ -1,0 +1,184 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33026,
+    "tokens_out": 1255,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036791,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": -1.0,
+      "rationale": "Amgen faces a deteriorating fundamental picture with multiple severe headwinds converging simultaneously. Q1 2026 showed alarming sequential declines: revenue fell 9.8% QoQ and EPS plunged 43.7% QoQ, while operating cash flow dropped 53.3% QoQ. The balance sheet is severely strained with total debt of $57.3B against only $9.19B in equity (debt-to-equity of 6.24x), and the company faces a potentially material IRS tax dispute for 2016-2018. Critical product franchises are eroding rapidly: Prolia/Xgeva sales plummeted 32% YoY in Q1 2026 due to biosimilar competition following patent expiration, and Enbrel sales fell 37% YoY. The FDA has proposed withdrawing Tavneos approval citing data integrity issues and 76 cases of drug-induced liver injury, threatening $2.4B in intangible assets. Valuation remains elevated despite the selloff, with P/E of 23.5x still at the low end of its 22.6-- P/B of  P/S of 4.9x remain rich for a company facing acceleratingating revenue headwinds. The stock has declineded 10% over the past quarter with no near-term catalystyst to reverse the negative trajectory. Rising interest rates (10Y Treasury at 4.57%) and a steepening yield curve further pressure the valuation for this capital-intensive, debt-laden business model.",
+      "key_factors": [
+        "- Prolia/Xgeva franchise revenue declined 32% YoY in Q1 2026 due to biosimilar competition following patent expiration, with management guidinging 'accelerated sales erosion' in 2026",
+        "Enbrel sales fell 37% YoY in Q1 2026, facing competition from Humira, Skyrizi, and Tremfya plus Medicare Part D redesign impact",
+        "FDA proposed withdrawing Tavneos approval citing data integrity issues and 76 liver injury cases, threatening $2.4B in intangible assets",
+        "Total debt of $57.3B vs equity of $9.19B yields debt-to-equity of 6.24x; IRS tax dispute for 2016-2018 could be material",
+        "Q1 2026 sequential declines: revenue -9.8% QoQ, EPS -43.7% QoQ, operating cash flow -53.3% QoQ",
+        "P/E of 23.5x and P/B of 19.97x remain elevated despite headwinds; stock down 10% over past quarter with no clear near-term catalyst",
+        "Late entry into GLP-1 obesity market with MariTide puts Amgen at significant disadvantage to Eli Lilly and Novo Nordisk",
+        "Rising 10Y Treasury yields (4.57%) and steepening yield curve increase discount rate pressure on capital-intensive biopharma"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=8.62B, eps_diluted=3.34, operating_cash_flow=2.19B; QoQ revenue=-9.8%, eps_diluted=-43.7%, operating_cash_flow=-53.3%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_debt=57.32B, total_equity=9.19B, debt_to_equity=6.238"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=23.533, p_b=19.974, p_s=4.932; range pe_diluted 22.6..49.7"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-18 Benzinga",
+          "excerpt": "Kissei Pharmaceutical urged caution on Tavneos; FDA warnings about serious liver injuries and April proposal to withdraw approval citing data integrity issues, manipulated clinical trial results"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-08 ad-hoc-news",
+          "excerpt": "FDA proposed withdrawing TAVNEOS after identifying 76 cases of drug-induced liver injury; could lead to impairment of about $2.4 billion in related intangible assets"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "marketwise.com",
+          "excerpt": "Prolia and Xgeva sales plummeted by 32% year over year during Q1 2026; Enbrel full-year revenue plunged 33% in 2025, Q1 2026 fell 37%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "excerpt": "Weak multi-year price returns 2Y Excs Rtn is -31%, 3Y Excs Rtn is -26%; key risks include significant revenue erosion from imminent patent expirations"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "excerpt": "close=337.42; quarterly delta -10.0%; range high=391.29 low=267.83"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "excerpt": "DGS10=4.57%, DGS2=4.08%, T10Y2Y=0.49%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 251801,
+        "capped_chars": 251801,
+        "raw_tokens": 62950,
+        "capped_tokens": 62950
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1662,
+        "capped_chars": 1662,
+        "raw_tokens": 416,
+        "capped_tokens": 416
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 21115,
+        "capped_chars": 4855,
+        "raw_tokens": 5279,
+        "capped_tokens": 1214
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 105695,
+        "capped_chars": 86296,
+        "raw_tokens": 26423,
+        "capped_tokens": 21574
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 51036,
+  "started_at": "2026-08-07T03:00:17+00:00"
+}

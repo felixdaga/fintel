@@ -1,0 +1,186 @@
+{
+  "cell": "PG",
+  "symbols": [
+    "PG"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30407,
+    "tokens_out": 983,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033356,
+    "basis": "reported"
+  },
+  "views": {
+    "PG": {
+      "symbol": "PG",
+      "score": 0.15,
+      "rationale": "PG is a high-quality defensive franchise with strong brand portfolio, 70-year dividend growth streak, and solid ROE (~30%), but the near-term trajectory is mixed. Q3 FY26 showed YoY revenue +7.4% and EPS +5.8%, yet QoQ trends are negative (revenue -4.4%, EPS -8.4%) with sequential margin compression. The company faces ~$1B after-tax oil cost headwind for FY27, $400M tariff impact in FY26, and a restructuring program targeting 7,000 job cuts. Valuation at 23x P/E sits near the lower end of its 1-year range (21.7-26.3), suggesting fair-to-slightly-cheap pricing vs own history, but not a compelling bargain given the headwinds. The upcoming Q4 FY26 earnings (late July) could be a modest catalyst, though guidance already points to the lower end of the $6.83-$7.09 core EPS range. Balance sheet is healthy with equity growing to $54.7B. The Thorne acquisition ($3.8B) signals strategic expansion into supplements but adds execution risk. Overall, a solid defensive holding with modest upside, but not enough mispricing or catalyst strength to warrant a higher score.",
+      "key_factors": [
+        "Strong brand portfolio with leading market shares across 10 product categories",
+        "70-year consecutive dividend increase streak with 64% payout ratio providing margin of safety",
+        "P/E of 23x near lower end of 1-year range (21.7-26.3), slightly cheap vs own history",
+        "QoQ negative trajectory: revenue -4.4%, EPS -8.4% in Q3 FY26",
+        "~$1B after-tax oil cost headwind for FY27 plus $400M tariff impact in FY26",
+        "Restructuring program targeting 7,000 non-manufacturing job cuts with associated charges",
+        "Upcoming Q4 FY26 earnings (late July) as near-term catalyst but guidance already at lower end",
+        "Thorne acquisition ($3.8B) adds supplements exposure but increases execution risk",
+        "ROE ~30%, net margin ~18.6%, operating margin ~23.8% - strong profitability metrics",
+        "10-year Treasury yield at 4.54% makes dividend yield of ~2.9% less compelling relatively"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3",
+          "excerpt": "revenue=21.23B eps_diluted=1.63 net_income=3.95B operating_cash_flow=4.04B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "growth_panel",
+          "excerpt": "QoQ: revenue=-4.4% eps_diluted=-8.4% YoY: revenue=+7.4% eps_diluted=+5.8%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=23.086 p_b=6.847 roe=0.297 net_margin=0.186"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 21.7..26.3 | p_b 6.4..7.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-06",
+          "excerpt": "$1 billion after-tax oil cost headwind in fiscal 2027, on top of a $400 million tariff impact in fiscal 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-07",
+          "excerpt": "Fair Value of $121.06 (OVERVALUED) vs recent $152.75 close"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-09",
+          "excerpt": "P&G Agrees to Buy Supplements Maker for $3.8 Billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-04",
+          "excerpt": "70th consecutive annual dividend increase, quarterly payout at $1.06, 64% payout ratio"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-09",
+          "excerpt": "DGS10=4.54% FEDFUNDS=3.63%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "PG",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3763,
+        "capped_chars": 3763,
+        "raw_tokens": 941,
+        "capped_tokens": 941
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 240410,
+        "capped_chars": 240410,
+        "raw_tokens": 60102,
+        "capped_tokens": 60102
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2028,
+        "capped_chars": 2028,
+        "raw_tokens": 507,
+        "capped_tokens": 507
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 2375,
+        "capped_chars": 610,
+        "raw_tokens": 594,
+        "capped_tokens": 152
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 73140,
+        "capped_chars": 50289,
+        "raw_tokens": 18285,
+        "capped_tokens": 12572
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 40559,
+  "started_at": "2026-08-07T03:07:22+00:00"
+}

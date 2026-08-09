@@ -1,0 +1,184 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32695,
+    "tokens_out": 1060,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035875,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.35,
+      "rationale": "Goldman Sachs delivered a strong Q1 2026 with second-highest net revenues ($17.23B) and EPS ($17.55) in history, up 14.4% and 24.3% YoY respectively. ROE of 19.8% and ROTE of 21.3% significantly exceed long-term targets. The firm's #1 global M&A advisory position (32% market share) and record equities revenues ($5.3B) demonstrate durable competitive advantages. However, the stock trades at a P/E of 15.8x, near the upper end of its 12.3-18.4x 12-month range, and P/B of 2.32x is at the top of its 1.5-2.5x range, suggesting the strong Q1 results are largely priced in. Operating cash flow was negative $31.87B in Q1, reflecting the volatile nature of GS's balance sheet-intensive business. The macro backdrop is mixed: rising 10-year yields (4.41%) and elevated oil prices ($98/bbl) create headwinds, while the Basel III capital requirement reduction of 2.4% for Category I banks is a tailwind for capital returns. Near-term catalysts are limited post-Q1 earnings, with the next major event being Q2 results in late July. The score reflects solid fundamentals and trajectory offset by full valuation.",
+      "key_factors": [
+        "Q1 2026 record-equalling results: $17.23B revenue, $17.55 EPS, 19.8% ROE",
+        "#1 global M&A advisor with 32% market share and $1.48T in 2025 deals",
+        "Record equities trading revenue of $5.3B in Q1 2026",
+        "P/E of 15.8x and P/B of 2.32x near top of 12-month ranges, limiting upside",
+        "Negative operating cash flow of -$31.87B in Q1 reflects balance sheet volatility",
+        "Basel III March 2026 revision reducing capital requirements by 2.4% supports buybacks",
+        "Elevated oil prices ($98/bbl) and rising rates (10Y at 4.41%) create macro uncertainty",
+        "AWM scaling with $3.7T AUS and $429B in alternatives under supervision"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.23B net_income=5.63B eps_diluted=17.55 operating_income=6.49B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+14.4% eps_diluted=+24.3% net_income=+18.8%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=15.783 p_b=2.323 roe=0.147 operating_margin=0.375"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-05-08..2026-05-07",
+          "excerpt": "pe_diluted 12.3..18.4 | p_b 1.5..2.5"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 cash flow",
+          "excerpt": "operating_cash_flow=-31.87B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "swotpal.com GS SWOT 2026",
+          "excerpt": "#1 global M&A advisor: $1.48T deals, 32% market share; Record equities trading revenue $16.5B (+23% YoY)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bingx.com GS price prediction 2026",
+          "excerpt": "Basel III revisions decreased aggregate capital requirements for Category I banks by 2.4%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com GS Q1 2026 earnings call",
+          "excerpt": "Global Banking & Markets Revenue: $12.7 billion, record quarterly revenue; Equities Net Revenue: $5.3 billion, record quarterly revenue; Assets Under Supervision (AUS): $3.7 trillion, record high"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "excerpt": "DGS10=4.41% DCOILWTICO=98.38 VIXCLS=17.08"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4443,
+        "capped_chars": 4443,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 219557,
+        "capped_chars": 219557,
+        "raw_tokens": 54889,
+        "capped_tokens": 54889
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2646,
+        "capped_chars": 2646,
+        "raw_tokens": 662,
+        "capped_tokens": 662
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 47273,
+        "capped_chars": 6661,
+        "raw_tokens": 11818,
+        "capped_tokens": 1665
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 122980,
+        "capped_chars": 99321,
+        "raw_tokens": 30746,
+        "capped_tokens": 24830
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37597,
+  "started_at": "2026-08-07T02:58:41+00:00"
+}

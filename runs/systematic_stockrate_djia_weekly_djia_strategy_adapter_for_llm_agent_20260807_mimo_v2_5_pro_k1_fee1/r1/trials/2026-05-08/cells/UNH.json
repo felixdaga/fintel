@@ -1,0 +1,194 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30794,
+    "tokens_out": 1323,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034763,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": 0.15,
+      "rationale": "UNH is a dominant healthcare franchise with a strong competitive position, but the fundamental picture is mixed. Q1 2026 showed revenue up 2% YoY to $111.7B and EPS of $6.90 (roughly flat YoY), with the medical care ratio improving to 83.9% from 84.8% \u2014 a positive signal on cost management. Operating cash flow was strong at $8.9B (1.4x net income). However, membership declined by 1.1 million, Optum earnings fell 15%, and the company faces ongoing headwinds from Medicare Advantage margin pressure, elevated medical costs, and regulatory/legal risks including a DOJ probe into Optum Rx. The balance sheet is solid (equity $103.9B, debt-to-capital improving to 42.9%), and management is executing on cost discipline, AI investments, and accelerated buybacks ($2B by end of Q2 2026). Valuation is the key tension: the P/E of 26.3x is at the very top of its 365-day range (9.5\u201326.3), having nearly doubled from ~14x in early April after the Q1 beat and guidance raise. While the forward P/E of ~20x cited by some analysts may look reasonable, the trailing P/E has expanded dramatically, suggesting the market has already priced in much of the recovery narrative. The stock surged 37.7% in the last quarter alone. News sentiment is broadly positive (mean 0.52), and the guidance raise to $18.25+ adjusted EPS is constructive, but the stock's rapid re-rating leaves limited upside at current levels. The near-term catalyst (Q1 beat + guidance raise) has already played out. Net: solid franchise in recovery mode, but valuation has caught up to the improving fundamentals, warranting only a mildly positive score.",
+      "key_factors": [
+        "Q1 2026 EPS of $6.90 roughly flat YoY; revenue up 2% to $111.7B",
+        "Medical care ratio improved to 83.9% from 84.8% YoY, signaling cost trend normalization",
+        "Membership declined 1.1M (MA, Medicaid, commercial risk); Optum earnings down 15%",
+        "P/E of 26.3x is at the top of 365-day range (9.5\u201326.3); stock up 37.7% in last quarter",
+        "Management raised 2026 guidance to $18.25+ adjusted EPS; accelerated $2B buyback",
+        "Ongoing risks: DOJ probe into Optum Rx, Medicare Advantage margin pressure, regulatory scrutiny",
+        "Strong operating cash flow of $8.9B (1.4x net income); debt-to-capital improving to 42.9%",
+        "AI and efficiency investments targeting $1.5B savings with 2:1 return over next few years"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-05 Q1 2026",
+          "excerpt": "revenue=111.72B net_income=6.48B eps_diluted=6.9 operating_cash_flow=8.91B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-05 Q1 2026",
+          "excerpt": "QoQ: revenue=-1.3% eps_diluted=+166.4%; YoY: revenue=+2.0% eps_diluted=+0.7%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=26.257 p_b=3.238 net_margin=0.028 roe=0.123"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-08 to 2026-05-07 range",
+          "excerpt": "pe_diluted 9.5..26.3 | p_b 2.2..3.5"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "excerpt": "close=369.74; quarterly delta +37.7%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-05 Motley Fool",
+          "excerpt": "stock surged 36.9% in April following better-than-expected Q1 earnings and improved guidance. MLR improved to 83.9% from 84.8%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-05 gurufocus Q1 2026",
+          "excerpt": "Adjusted EPS $7.23 exceeding expectations; Medical Care Ratio 83.9% vs 84.8% in Q1 2025; Operating Cash Flows $8.9B 1.4x net income"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-06 healthworksai",
+          "excerpt": "Management accelerated share buybacks to at least $2B by end of Q2 2026; stock price represents a deep intrinsic value discount; debt-to-capital improved to 42.9%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "seekingalpha margin expansion",
+          "excerpt": "UNH is a structurally sound insurer facing temporary margin compression; trading at forward P/E 18% below 10-year average"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "seekingalpha CMS kool-aid",
+          "excerpt": "Optum segment faces operational and regulatory headwinds including margin erosion in value-based care and expanding DOJ probe into Optum Rx"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-07 stocktitan",
+          "excerpt": "UnitedHealthcare served 1.1 million fewer people; Optum revenues flat at $63.7B and earnings from operations declined 15%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4536,
+        "capped_chars": 4536,
+        "raw_tokens": 1134,
+        "capped_tokens": 1134
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225338,
+        "capped_chars": 225338,
+        "raw_tokens": 56334,
+        "capped_tokens": 56334
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1564,
+        "capped_chars": 1564,
+        "raw_tokens": 391,
+        "capped_tokens": 391
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9778,
+        "capped_chars": 2998,
+        "raw_tokens": 2444,
+        "capped_tokens": 750
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 90824,
+        "capped_chars": 72407,
+        "raw_tokens": 22707,
+        "capped_tokens": 18102
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 55324,
+  "started_at": "2026-08-07T02:59:06+00:00"
+}

@@ -1,0 +1,184 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29287,
+    "tokens_out": 1055,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032452,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.25,
+      "rationale": "Disney presents a mixed but mildly attractive picture. On fundamentals, the company has solid revenue scale (~$25B/quarter), strong parks/experiences segment driving ~57% of operating income, and streaming losses narrowing toward breakeven. However, YoY EPS declined 29.8% in the latest quarter (Q2 2026), and the TTM data is incomplete making full-year trajectory assessment difficult. The balance sheet is healthy with $115B equity and improving operating cash flow ($6.91B in Q2). On valuation, DIS trades at a P/E of 13.3x, near the bottom of its 12.5-23.4x 52-week range, and P/B of 1.43x is also at the low end of its 1.4-2.0x range \u2014 suggesting the stock is cheap relative to its own recent history. The forward P/E of ~12.8x represents a 41% discount to the S&P 500. For near-term catalysts, Q3 earnings on August 5 could be a re-rating event: analysts expect 16-18% YoY EPS growth, and Disney has beaten expectations in each of the last four quarters. Management guided for 12% adjusted EPS growth in FY2026 and double-digit growth in FY2027. However, significant headwinds temper enthusiasm: FCC regulatory scrutiny on ABC broadcast licenses, a European patent injunction from InterDigital affecting streaming in 11 EU countries, rising interest rates (10Y at 4.71%), and the stock's persistent underperformance (down 47% over 5 years). The score of +0.25 reflects cheap valuation and a credible near-term earnings catalyst, offset by regulatory/legal risks and the incomplete TTM data that makes full fundamental assessment uncertain.",
+      "key_factors": [
+        "P/E of 13.3x near 52-week low of 12.5x, cheap vs own history",
+        "Q3 earnings Aug 5 with consensus +16-18% YoY EPS growth as near-term catalyst",
+        "YoY EPS declined 29.8% in latest quarter despite revenue growth of 6.5%",
+        "FCC regulatory scrutiny on ABC broadcast licenses creates reputational/legal risk",
+        "European patent injunction from InterDigital across 11 EU countries for streaming",
+        "Strong parks/experiences segment driving majority of operating income",
+        "Streaming losses narrowing toward breakeven with improving margins",
+        "Rising Treasury yields (10Y at 4.71%) and corporate bond yields (Baa at 6.29%) as macro headwinds"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=13.336 p_b=1.427 range: pe_diluted 12.5..23.4 | p_b 1.4..2.0"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=25.17B net_income=2.46B eps_diluted=1.27 operating_income=4.60B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "growth YoY 2026-03-28",
+          "excerpt": "YoY: revenue=+6.5% eps_diluted=-29.8% net_income=-27.5%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23",
+          "excerpt": "InterDigital awarded another injunction against Disney by Pan-European Court \u2014 injunction spans 11 EU countries"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart earnings preview",
+          "excerpt": "analysts expect DIS to report adjusted earnings of $1.88 per share, a growth of 16.8% from $1.61 per share in the year\u2011ago quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "proactiveinvestors 2026-07-20",
+          "excerpt": "UBS expects Disney to report fiscal third-quarter revenue of $25.4 billion and segment operating income of $5.16 billion...forecasts earnings per share of $1.91"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey FCC risk",
+          "excerpt": "FCC Chairman Brendan Carr publicly accused Disney of conducting a campaign of misinformation...directly threatens the renewal of its core broadcast licenses"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fool.com valuation",
+          "excerpt": "forward price-to-earnings ratio of 12.8 represents a notable 41% discount to the S&P 500 index"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thedutchinvestors",
+          "excerpt": "Disney Parks...57% of the group's operating income"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4429,
+        "capped_chars": 4429,
+        "raw_tokens": 1107,
+        "capped_tokens": 1107
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221369,
+        "capped_chars": 221369,
+        "raw_tokens": 55342,
+        "capped_tokens": 55342
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1794,
+        "capped_chars": 1794,
+        "raw_tokens": 448,
+        "capped_tokens": 448
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 8206,
+        "capped_chars": 2265,
+        "raw_tokens": 2052,
+        "capped_tokens": 566
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 91836,
+        "capped_chars": 74941,
+        "raw_tokens": 22959,
+        "capped_tokens": 18736
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 41121,
+  "started_at": "2026-08-07T03:08:39+00:00"
+}

@@ -1,0 +1,190 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30024,
+    "tokens_out": 1249,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033771,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": 0.35,
+      "rationale": "3M's Q2 2026 results show a genuine turnaround gaining traction: adjusted EPS of $2.40 beat consensus by 5.7%, organic sales grew 5.4% YoY, and adjusted operating margin expanded to 24.9%. Management raised full-year guidance to $8.80-$8.95 EPS (up from $8.50-$8.70) and increased FCF guidance to $4.7-$4.9B. Safety & Industrial segment revenue rose 8.2% and Transportation & Electronics grew 6.2%, though Consumer remains weak (-1.8%). The balance sheet carries elevated debt (~$12.6B as of Q3 2025) and total equity of only $3.3B, reflecting prior legal settlements. Valuation is stretched: P/E of 32.3x is near the top of its 1-year range (17.7-32.5), and P/B of 27.3x is at the ceiling of its range (17.1-27.5), having expanded sharply from ~18-19x a year ago. The stock has rallied +16.3% over the past quarter to $169.59. While the fundamental trajectory is clearly improving, the current valuation already prices in much of the turnaround, leaving limited upside unless execution continues to exceed expectations. Legal/PFAS risks and tariff exposure ($850M potential annual impact before mitigation) remain overhangs. The Q2 beat and guidance raise provide a near-term positive catalyst, but the elevated multiple caps the attractiveness.",
+      "key_factors": [
+        "Q2 2026 adjusted EPS of $2.40 beat consensus of $2.25-$2.27 by 5.7%, with organic sales growth of 5.4% YoY",
+        "Full-year 2026 EPS guidance raised to $8.80-$8.95 from $8.50-$8.70, above consensus of $8.74",
+        "Adjusted operating margin expanded to 24.9% (up 40bps YoY); adjusted FCF conversion of 107%",
+        "P/E of 32.3x is at the top of its 1-year range (17.7-32.5), having expanded from ~19x a year ago",
+        "P/B of 27.3x is at the ceiling of its 1-year range (17.1-27.5)",
+        "Balance sheet remains leveraged with ~$12.6B total debt and only $3.3B total equity as of Q1 2026",
+        "Consumer segment weakness persists with organic sales declining 2.1% YoY in Q2",
+        "PFAS litigation overhang and tariff exposure of up to $850M annually before mitigation",
+        "Stock has rallied +16.3% over the past quarter, pricing in much of the turnaround progress"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.03B net_income=659.00M eps_diluted=1.23 gross_profit=2.46B operating_income=1.40B total_equity=3.31B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=32.282 p_b=27.29 p_s=3.611 earnings_yield=0.031 net_margin=0.112 roe=0.845"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-24",
+          "excerpt": "pe_diluted=18.682 p_b=18.079 net_margin=0.179 roe=0.968"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=169.59 quarterly delta +16.3%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-21",
+          "excerpt": "3M stock jumped more than 8% on Tuesday after the industrial conglomerate beat Wall Street's earnings expectations and raised its full-year guidance"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-21",
+          "excerpt": "3M delivered adjusted earnings of $2.40 per share, which surpassed the Zacks Consensus Estimate of $2.27 by 5.7%. The bottom line increased 11% year over year"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-21",
+          "excerpt": "3M now expects adjusted earnings of $8.80 to $8.95 per share in 2026, up from its previous forecast and ahead of analysts' expectations of $8.74"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-08",
+          "excerpt": "Management has flagged up to US$850m of potential annual tariff impact before mitigation"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-12",
+          "excerpt": "The New York Attorney General's PFAS lawsuit helps explain why the market keeps 3M below this intrinsic estimate, as potential remediation costs can weigh on how investors treat those projected cash flows"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-21",
+          "excerpt": "Revenues from the Consumer segment decreased 1.8% year over year to $1.25 billion. Organic sales decreased 2.1%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 245789,
+        "capped_chars": 245789,
+        "raw_tokens": 61447,
+        "capped_tokens": 61447
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 968,
+        "capped_chars": 968,
+        "raw_tokens": 242,
+        "capped_tokens": 242
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 10221,
+        "capped_chars": 2304,
+        "raw_tokens": 2555,
+        "capped_tokens": 576
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 91065,
+        "capped_chars": 65486,
+        "raw_tokens": 22767,
+        "capped_tokens": 16371
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 36753,
+  "started_at": "2026-08-07T03:08:57+00:00"
+}

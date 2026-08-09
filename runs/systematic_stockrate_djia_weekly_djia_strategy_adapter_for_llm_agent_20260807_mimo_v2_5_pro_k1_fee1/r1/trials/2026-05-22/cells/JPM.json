@@ -1,0 +1,189 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 40141,
+    "tokens_out": 1375,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.044266,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "rationale": "JPMorgan Chase demonstrates strong fundamental health and positive trajectory. Q1 2026 results were excellent: revenue of $49.84B (+10% YoY), EPS of $5.94 (+17.2% YoY), and net income of $16.49B (+12.6% YoY), all beating consensus estimates. The bank's diversified business model is firing on multiple cylinders\u2014record markets revenue of $11.6B (+20%), investment banking fees up 28%, and net interest income of $25.5B (+9%). The Commercial & Investment Bank segment grew revenue 19% to $23.38B, while Asset & Wealth Management grew 11% to $6.37B with $4.8T in AUM. ROE of 16.2% and operating margin of 39.9% reflect strong profitability. The balance sheet is robust with $364B in equity, and the bank maintains a fortress position as the #1 U.S. deposit holder and #1 global investment bank by fees for 17 consecutive years. On valuation, the stock trades at a P/E of 14.0x and P/B of 2.26x\u2014both near the low end of their 12-month ranges (P/E 13.7-17.8x, P/B 2.2-2.8x), suggesting the market is not fully pricing in the strong earnings trajectory. The stock has pulled back ~2.5% over the past quarter to $303, creating a modestly attractive entry relative to recent history. However, several factors temper the upside: (1) the NII guidance was revised down to $103B from $104.5B, suggesting margin pressure ahead; (2) rising 10-year Treasury yields (4.57%) and a steepening curve could create mixed effects; (3) regulatory headwinds persist with a projected $13B G-SIB surcharge; (4) operating cash flow is deeply negative at -$211.76B, reflecting the bank's balance sheet-intensive nature but still a concern. The next earnings catalyst is July 14, 2026, which provides a near-term re-rating opportunity if the strong momentum continues. News sentiment is moderately positive (mean 0.181 over 90 days). Overall, JPM is a high-quality franchise with strong execution, trading at a reasonable but not deeply discounted valuation, warranting a mildly-to-moderately attractive score.",
+      "key_factors": [
+        "Q1 2026 earnings beat: EPS $5.94 vs consensus $5.51, revenue $49.84B (+10% YoY)",
+        "Record markets revenue of $11.6B (+20% YoY) and investment banking fees up 28%",
+        "P/E of 14.0x and P/B of 2.26x near low end of 12-month range (P/E 13.7-17.8x, P/B 2.2-2.8x)",
+        "#1 U.S. deposit market share and #1 global investment bank by fees for 17 consecutive years",
+        "NII guidance revised down to $103B from $104.5B, indicating margin pressure",
+        "Regulatory headwinds including projected $13B G-SIB surcharge and $350M recent fine",
+        "Next earnings July 14, 2026 provides near-term catalyst",
+        "Stock down ~2.5% over past quarter, trading at $303 vs 52-week high of $337.25"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=49.84B net_income=16.49B eps_diluted=5.94 operating_income=20.48B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=13.994 p_b=2.264 p_s=4.408 earnings_yield=0.071 net_margin=0.315 roe=0.162 operating_margin=0.399"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 13.7..17.8 | p_b 2.2..2.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "excerpt": "close=303.00 quarterly delta=-2.5% range high=337.25 low=256.00"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "roboforex.com Q1 2026",
+          "excerpt": "Revenue reached 50.54 billion USD, up 10% year-on-year, while net interest income increased to 25.5 billion USD, rising 9%. The results exceeded market expectations, with analysts forecasting earnings per share of 5.45 USD and revenue of 49.2 billion USD"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "strategy.transforml.co",
+          "excerpt": "Holds the #1 retail deposit market share, is the #1 credit card issuer in the U.S., and has ranked #1 in global investment banking fees for 17 consecutive years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ainvest 2026-05-14",
+          "excerpt": "Management revised 2026 NII to $103B (down from $104.5B) amid margin pressures"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "seekingalpha JPM 2026",
+          "excerpt": "regulatory headwinds\u2014especially a projected $13B G-SIB surcharge\u2014threaten ROE and Markets division returns"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "90d mean",
+          "excerpt": "mean=0.181 n_articles=180"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "financhill",
+          "excerpt": "Next earnings date for JPM Jul 14 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 240375,
+        "capped_chars": 240375,
+        "raw_tokens": 60094,
+        "capped_tokens": 60094
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3616,
+        "capped_chars": 3616,
+        "raw_tokens": 904,
+        "capped_tokens": 904
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 153578,
+        "capped_chars": 15294,
+        "raw_tokens": 38394,
+        "capped_tokens": 3824
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 112710,
+        "capped_chars": 83122,
+        "raw_tokens": 28178,
+        "capped_tokens": 20781
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 387553,
+  "started_at": "2026-08-07T03:00:40+00:00"
+}

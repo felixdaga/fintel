@@ -1,0 +1,182 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31191,
+    "tokens_out": 983,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03414,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.25,
+      "rationale": "Goldman Sachs shows strong fundamental health and positive trajectory. Q1 2026 revenue of $17.23B (+14.4% YoY) and EPS of $17.55 (+24.3% YoY) demonstrate robust earnings growth, with operating margins of 37.5% and net margins of 29.9%. The firm's strategic refocus on core investment banking and asset/wealth management is paying off, with record M&A advisory volumes and growing fee-based revenues. ROE has improved to 14.7% from 12% a year ago. However, valuation has expanded significantly: P/E of 18.16 is near the top of its 14.5-18.9 range, and P/B of 2.67 is at the high end of 1.8-2.8. The stock has rallied 26.5% in the past quarter, suggesting much of the positive trajectory is already priced in. Near-term catalyst exists with Q2 2026 earnings on July 14, where consensus expects 25% EPS growth, but the elevated valuation limits upside. Operating cash flow volatility (-$31.87B in Q1) reflects balance sheet movements typical for banks but warrants monitoring. The SpaceX IPO underwriting and strong deal pipeline provide tailwinds, but rising bond yields and geopolitical risks from the Iran conflict create headwinds for capital markets activity.",
+      "key_factors": [
+        "Q1 2026 revenue +14.4% YoY and EPS +24.3% YoY showing strong earnings trajectory",
+        "P/E of 18.16 near top of 14.5-18.9 range; P/B of 2.67 at high end of 1.8-2.8 range",
+        "Strategic refocus on core investment banking and asset/wealth management driving improved ROE (14.7% vs 12% prior year)",
+        "Q2 2026 earnings on July 14 with consensus +25% EPS growth provides near-term catalyst",
+        "SpaceX IPO underwriting and strong M&A advisory backlog support investment banking revenues",
+        "Rising bond yields (10Y at 4.4%) and Iran-related geopolitical risks create headwinds for capital markets activity"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.23B net_income=5.63B eps_diluted=17.55 operating_income=6.49B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=15.06B eps_diluted=14.12"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=18.156 p_b=2.672 net_margin=0.299 roe=0.147 operating_margin=0.375"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-26",
+          "excerpt": "pe_diluted=14.983 p_b=1.794 net_margin=0.274 roe=0.12"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=1065.09 quarterly delta +26.5%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-16",
+          "excerpt": "SpaceX's $75 billion IPO generated a record $560 million in underwriting fees for investment banks"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-19",
+          "excerpt": "Federal Reserve Chairman Kevin Warsh's first meeting resulted in steady interest rates with hints of future rate hikes"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart 2026-06",
+          "excerpt": "analysts forecast the company to report a profit of $13.64 per share, a 25% rise from $10.91 per share in the year-ago quarter"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-25",
+          "excerpt": "DGS10=4.4 T10Y2Y=0.31 VIXCLS=18.89"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4443,
+        "capped_chars": 4443,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 219599,
+        "capped_chars": 219599,
+        "raw_tokens": 54900,
+        "capped_tokens": 54900
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 890,
+        "capped_chars": 890,
+        "raw_tokens": 222,
+        "capped_tokens": 222
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2877,
+        "capped_chars": 2877,
+        "raw_tokens": 719,
+        "capped_tokens": 719
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 88283,
+        "capped_chars": 9668,
+        "raw_tokens": 22071,
+        "capped_tokens": 2417
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 94275,
+        "capped_chars": 76559,
+        "raw_tokens": 23568,
+        "capped_tokens": 19140
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37374,
+  "started_at": "2026-08-07T03:05:14+00:00"
+}

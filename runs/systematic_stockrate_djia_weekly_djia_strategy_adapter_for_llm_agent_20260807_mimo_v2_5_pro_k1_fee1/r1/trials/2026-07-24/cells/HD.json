@@ -1,0 +1,194 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32593,
+    "tokens_out": 1240,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036313,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": 0.15,
+      "rationale": "Home Depot is a fundamentally sound, market-leading home improvement retailer with strong scale advantages, a growing Pro customer base, and robust cash generation. However, the near-term trajectory is mixed: Q1 FY2026 showed +4.8% YoY revenue growth but -4.3% YoY EPS decline, reflecting margin pressure from cost inflation and a softer big-ticket discretionary environment. Operating margin compressed from ~12.9% (Q3 FY2025) to ~11.9% (Q1 FY2026). The balance sheet carries significant leverage (total liabilities $94B vs equity $13.9B), though cash generation remains strong ($6.03B operating cash flow in Q1, +39.5% YoY). Valuation at 23.1x P/E is near the lower end of its 365-day range (20.3-28.8), suggesting the market has already priced in much of the cyclical headwind. The stock has declined ~25% from its 52-week high of $426.75 to $324.71. Near-term catalyst is limited: Q2 earnings on Aug 18, 2026, with consensus expecting only marginal EPS growth ($4.71 vs $4.68 YoY). Rising interest rates (10Y at 4.71%) and elevated oil prices ($93/bbl) continue to pressure housing demand. The Pro-focused strategy (SRS acquisition, $700B TAM) is a long-term positive but increases cyclicality. News sentiment is moderately positive (mean 0.48). Overall: solid franchise at a fair-to-slightly-cheap valuation, but deteriorating margins and macro headwinds limit upside; no compelling near-term re-rating catalyst.",
+      "key_factors": [
+        "Q1 FY2026 EPS declined 4.3% YoY despite 4.8% revenue growth, indicating margin compression",
+        "Operating margin fell to ~11.9% in Q1 from ~12.9% in Q3, reflecting cost inflation and mix headwinds",
+        "P/E of 23.1x is near the low end of its 365-day range (20.3-28.8), suggesting fair-to-slight discount vs own history",
+        "Stock down ~25% from 52-week high of $426.75, but macro headwinds (10Y yield 4.71%, oil $93) persist",
+        "Strong cash generation ($6.03B OCF in Q1, +39.5% YoY) supports dividends and buybacks",
+        "Pro customer strategy and SRS acquisition expand TAM to $1.2T but increase housing cyclicality exposure",
+        "Q2 earnings Aug 18 with consensus expecting only marginal EPS growth ($4.71 vs $4.68) \u2014 limited near-term catalyst",
+        "Balance sheet leverage elevated ($94B liabilities vs $13.9B equity) though manageable given cash flow"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03 Q1",
+          "excerpt": "revenue=41.77B eps_diluted=3.3 net_income=3.29B operating_income=4.98B operating_cash_flow=6.03B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-11-02 Q3",
+          "excerpt": "revenue=41.35B eps_diluted=3.62 operating_income=5.35B operating_cash_flow=4.01B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=23.081 p_b=23.311 net_margin=0.084 roe=1.01"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-07-24..2026-07-23",
+          "excerpt": "pe_diluted 20.3..28.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=324.71; range high=426.75 low=289.10"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "excerpt": "DGS10=4.71%; DCOILWTICO=93.08"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-11",
+          "excerpt": "Home Depot's P/S ratio dipped below 2.0 in May before recovering"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com HD vs LOW",
+          "excerpt": "Home Depot is trading at a forward 12-month P/E ratio of 21.1X, below its five-year median of 22.27X"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart.com earnings preview",
+          "excerpt": "HD is set to report its Q2 earnings on Tuesday, August 18, 2026; analysts expect diluted EPS of $4.71, up marginally from $4.68"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com real risk",
+          "excerpt": "larger discretionary projects remain under pressure; the focus on the pro market increases cyclicality and risk exposure"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-04-26..2026-07-23",
+          "excerpt": "mean=0.479 n_articles=52"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3778,
+        "capped_chars": 3778,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224645,
+        "capped_chars": 224645,
+        "raw_tokens": 56161,
+        "capped_tokens": 56161
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1886,
+        "capped_chars": 1886,
+        "raw_tokens": 472,
+        "capped_tokens": 472
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9747,
+        "capped_chars": 1962,
+        "raw_tokens": 2437,
+        "capped_tokens": 490
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 117440,
+        "capped_chars": 87750,
+        "raw_tokens": 29361,
+        "capped_tokens": 21937
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 44522,
+  "started_at": "2026-08-07T03:08:45+00:00"
+}

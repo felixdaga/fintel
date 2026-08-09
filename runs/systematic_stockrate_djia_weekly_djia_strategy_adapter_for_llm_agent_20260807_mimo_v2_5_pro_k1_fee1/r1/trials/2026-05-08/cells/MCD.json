@@ -1,0 +1,179 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37431,
+    "tokens_out": 1125,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.040806,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's Q1 2026 results showed solid YoY growth (revenue +9%, EPS +7%) with 3.8% global comparable sales growth across all segments, and the franchise model continues to generate exceptional ~45% operating margins. However, several factors temper the view: (1) QoQ trajectory is negative with revenue -7.9% and EPS -12.6% from Q3 2025 levels, reflecting seasonal softness and consumer headwinds; (2) the balance sheet carries negative equity (-$1.29B) reflecting heavy leverage and capital returns; (3) operating cash flow declined QoQ to $2.41B from $3.43B; (4) the stock has already corrected -12.3% over the past quarter to $283.70, sitting near its 52-week low of $282.15, which provides some valuation cushion but the P/E data is unavailable to confirm cheapness vs history; (5) macro headwinds are real \u2014 oil at ~$98/barrel (+52% over the period) pressures consumer spending and drive-thru traffic, with management noting consumer spending 'getting a little bit worse'; (6) the Q1 earnings beat (adjusted EPS $2.83 vs $2.75 consensus) is a modest positive catalyst but guidance for weaker Q2 sales due to tough comps limits the re-rating potential. The business quality is undeniable \u2014 95% franchised, ~210M loyalty users, 49-year dividend growth streak \u2014 but near-term trajectory is mixed and the stock is not clearly cheap enough to warrant a stronger score.",
+      "key_factors": [
+        "Q1 2026 beat: adjusted EPS $2.83 vs $2.75 consensus; revenue $6.52B vs $6.46B expected",
+        "YoY growth solid (+9% revenue, +7% EPS) but QoQ decline (-7.9% revenue, -12.6% EPS) from Q3 2025",
+        "Exceptional franchise model: ~45% operating margin, 95% franchised, ~210M loyalty members",
+        "Negative equity balance sheet (-$1.29B) reflects high leverage from capital returns",
+        "Stock near 52-week low ($283.70 vs range $282.15-$341.75), -12.3% over past quarter",
+        "Oil prices elevated at ~$98/barrel pressuring consumer traffic; CEO notes spending 'getting a little bit worse'",
+        "Q2 guidance cautious: expecting weaker sales due to tough year-ago comps (Minecraft meal tie-in)",
+        "Macro: 10Y yield at 4.41%, VIX at 17.08, breakeven inflation at 2.45% \u2014 moderate but not alarming"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-07 Q1",
+          "excerpt": "revenue=6.52B net_income=1.98B eps_diluted=2.78 operating_income=2.95B total_equity=-1.29B operating_cash_flow=2.41B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=7.08B eps=3.18 operating_cash_flow=3.43B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "excerpt": "close=283.70 range high=341.75 low=282.15 quarterly delta=-12.3%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-07 prnewswire",
+          "excerpt": "Global comparable sales increased 3.8% for the quarter; Systemwide sales increased 11% (6% in constant currencies) to over $34 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-07 yahoo",
+          "excerpt": "Adjusted earnings per share of $2.83 beat Wall Street's forecasts for $2.75. Revenue grew 9% year over year to $6.52 billion, slightly above the $6.46 billion the Street expected"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-07 cnbc",
+          "excerpt": "McDonald's CEO says consumer spending could be 'getting a little bit worse'"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "excerpt": "DCOILWTICO=98.38 \u0394=+52.5% over period; DGS10=4.41; VIXCLS=17.08"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "koalagains business model",
+          "excerpt": "FY2025 operating margin of 46.1% on $26.89 billion of revenue; ~210 million 90-day active loyalty users; ~95% franchised"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215393,
+        "capped_chars": 215393,
+        "raw_tokens": 53848,
+        "capped_tokens": 53848
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1608,
+        "capped_chars": 1608,
+        "raw_tokens": 402,
+        "capped_tokens": 402
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 21872,
+        "capped_chars": 4388,
+        "raw_tokens": 5468,
+        "capped_tokens": 1097
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 123958,
+        "capped_chars": 103959,
+        "raw_tokens": 30989,
+        "capped_tokens": 25989
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 48716,
+  "started_at": "2026-08-07T02:58:53+00:00"
+}

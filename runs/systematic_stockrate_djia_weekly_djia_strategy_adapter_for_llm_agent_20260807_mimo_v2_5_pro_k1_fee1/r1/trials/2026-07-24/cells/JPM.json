@@ -1,0 +1,174 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34553,
+    "tokens_out": 1097,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037844,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.45,
+      "rationale": "JPMorgan Chase demonstrates strong fundamental health and positive trajectory. Q1 2026 showed revenue of $49.84B (+10% YoY) and EPS of $5.94 (+17.2% YoY), with sequential improvement across all key metrics. The Q2 2026 earnings call (July 22) revealed record results: net income of $16.9B, managed revenue of $58B (+27% YoY), investment banking fees +30%, and equity markets revenue +86%. The bank raised full-year NII guidance to ~$105.5B and announced a dividend increase to $1.65/share. ROE of 16.2% and net margin of 31.5% reflect excellent profitability. The balance sheet is massive ($4.9T assets) with $364B equity, and the bank maintains top global rankings in investment banking fees (8.4% market share), deposits, and payments. Valuation is moderate: P/E of 16.16x sits mid-range of its 13.7-17.8x 1-year range, while P/B of 2.615x is near the upper end of its 2.2-2.8x range. The stock has risen +11.8% over the past quarter to $349.90, suggesting the market has partially priced in the strong results. However, CEO Dimon's caution about sustainability of peak conditions (SpaceX IPO, exceptional trading) and warnings about economic headwinds temper enthusiasm. The near-term catalyst from the blowout Q2 earnings report is largely priced in given the stock's recent run. Macro backdrop shows rising Treasury yields (10Y at 4.71%) which support NII but also signal potential credit stress, while the yield curve has flattened ( T10Y2Y at 0.34%.",
+      "key_factors": [
+        "Record Q2 2026 results: $16.9B net income, $58B revenue (+27% YoY), all business lines at record levels",
+        "Strong trajectory: Q1 2026 revenue +10% YoY, EPS +17.2% YoY with sequential improvement",
+        "Raised full-year NII guidance to ~$105.5B; dividend increase to $1.65/share announced",
+        "Top competitive position: #1 global investment banking fees (8.4% share), $4.9T balance sheet, $2.68T deposits",
+        "Valuation mid-range: P/E 16.16x (range 13.7-17.8x), P/B 2.615x (range 2.2-2.8x) - not cheap vs own history",
+        "CEO Dimon caution on sustainability of peak conditions and economic headwinds",
+        "Rising 10Y yields (4.71%) support NII but flattening curve (T10Y2Y 0.34%) signals caution",
+        "Stock +11.8% over past quarter suggests Q2 beat partially priced in"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=49.84B net_income=16.49B eps_diluted=5.94"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-22 Motley Fool",
+          "excerpt": "JPMorgan Chase achieved a record $21.2 billion quarterly profit, up 41% year-over-year, driven by surging trading revenue (up 86%) and strong investment banking fees"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-22 Q2 Earnings Call",
+          "excerpt": "Net Income $16.9 billion excluding significant items; Managed Revenue $58.0 billion, an increase of 27% year over year; Investment Banking Fees $3.3 billion, representing 30% year-over-year growth"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=16.16 p_b=2.615 net_margin=0.315 roe=0.162"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=349.90 quarterly delta +11.8%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "excerpt": "DGS10=4.71 T10Y2Y=0.34"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "morningstar JPM",
+          "excerpt": "top global ranking in investment banking fees with an 8.4% market share, serves millions of consumers through its network of over 5,000 US branches, and manages over $7.1 trillion in client assets"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 236486,
+        "capped_chars": 236486,
+        "raw_tokens": 59122,
+        "capped_tokens": 59122
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3560,
+        "capped_chars": 3560,
+        "raw_tokens": 890,
+        "capped_tokens": 890
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 152776,
+        "capped_chars": 14348,
+        "raw_tokens": 38194,
+        "capped_tokens": 3587
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 83023,
+        "capped_chars": 61826,
+        "raw_tokens": 20756,
+        "capped_tokens": 15457
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 40109,
+  "started_at": "2026-08-07T03:08:55+00:00"
+}

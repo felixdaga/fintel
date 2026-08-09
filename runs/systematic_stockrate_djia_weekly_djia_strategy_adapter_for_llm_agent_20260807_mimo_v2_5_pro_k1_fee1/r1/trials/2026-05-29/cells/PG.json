@@ -1,0 +1,177 @@
+{
+  "cell": "PG",
+  "symbols": [
+    "PG"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33970,
+    "tokens_out": 900,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03667,
+    "basis": "reported"
+  },
+  "views": {
+    "PG": {
+      "symbol": "PG",
+      "score": 0.15,
+      "rationale": "P&G is a high-quality defensive franchise with strong brand portfolio, 70-year dividend streak, and consistent cash generation (Q3 operating cash flow $4.04B). However, the near-term trajectory is softening: Q3 showed QoQ revenue -4.4% and EPS -8.4%, with a $1B after-tax cost headwind from commodities/logistics and $400M tariff impact. The stock has pulled back ~11% from its February peak, bringing the P/E to 22.9x \u2014 near the low end of its 1-year range (21.7-26.7x) and below its 1-year average of ~23.5x, suggesting modestly improved valuation. Gross margin remains healthy at 51.3% and ROE at 29.7%, but Q3 operating margin compressed to 21.6% (from 24.1% in Q1). The restructuring plan (7,000 job cuts, $1.5B COGS savings by FY2027) is a credible medium-term positive but not a near-term catalyst. No clear dated catalyst exists for a re-rating in the coming weeks. The score reflects a solid but not exciting franchise at a fair-to-slightly-cheap valuation with softening near-term momentum.",
+      "key_factors": [
+        "Q3 FY26 showed QoQ revenue decline of -4.4% and EPS decline of -8.4%, indicating softening near-term trajectory",
+        "$1B after-tax cost headwind from commodities/logistics plus $400M tariff impact pressuring margins",
+        "P/E of 22.9x is near the low end of 1-year range (21.7-26.7x), suggesting modestly improved valuation vs own history",
+        "Strong fundamental health: 51.3% gross margin, 29.7% ROE, consistent operating cash flow ($4.04B in Q3)",
+        "70-year dividend streak and restructuring plan ($1.5B COGS savings, 7,000 job cuts by FY2027) support long-term franchise value",
+        "No clear dated near-term catalyst for re-rating; stock down ~11% from February peak but no fundamental inflection point visible"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3",
+          "excerpt": "revenue=21.23B eps_diluted=1.63 operating_cash_flow=4.04B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3 growth",
+          "excerpt": "QoQ: revenue=-4.4% eps_diluted=-8.4% net_income=-8.8%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=22.938 p_b=6.803 gross_margin=0.513 roe=0.297 operating_margin=0.238"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 21.7..26.7"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-28",
+          "excerpt": "close=145.91 quarterly delta -10.9% from 2026-02-26 close=163.75"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-11 ad-hoc-news",
+          "excerpt": "$1 billion after-tax headwind from elevated commodity, logistics, and labor costs"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-15 yahoo finance",
+          "excerpt": "tariff headwinds of about US$400 million, and more cautious external earnings expectations"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-17 motley fool",
+          "excerpt": "70 consecutive years of dividend increases, current dividend yield of 3%, 14% pullback from February peak"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "PG",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3763,
+        "capped_chars": 3763,
+        "raw_tokens": 941,
+        "capped_tokens": 941
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 237812,
+        "capped_chars": 237812,
+        "raw_tokens": 59453,
+        "capped_tokens": 59453
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2121,
+        "capped_chars": 2121,
+        "raw_tokens": 530,
+        "capped_tokens": 530
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 25519,
+        "capped_chars": 7303,
+        "raw_tokens": 6380,
+        "capped_tokens": 1826
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 111816,
+        "capped_chars": 84170,
+        "raw_tokens": 27954,
+        "capped_tokens": 21042
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42223,
+  "started_at": "2026-08-07T03:01:48+00:00"
+}

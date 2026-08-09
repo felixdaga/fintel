@@ -1,0 +1,199 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36679,
+    "tokens_out": 1435,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.040984,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": 0.15,
+      "rationale": "Home Depot is a dominant franchise with ~17% U.S. home improvement market share, strong Pro customer relationships, and a long dividend track record (157 consecutive quarters). However, the near-term trajectory is soft: Q1 FY2026 showed revenue +4.8% YoY but EPS declined 4.3% to $3.30, gross margin compressed 75bps to 33.0% (GMS acquisition mix), operating margin fell to 11.9% from 12.9%, and comparable sales grew only 0.6% with customer transactions down 1.3%. The company reaffirmed modest FY2026 guidance of flat-to-4% EPS growth, implying a cautious outlook amid weak housing turnover and consumer hesitancy on large renovation projects. Valuation at 22.8x P/E is near the low end of its 1-year range (20.3-28.8), and the stock is down ~14% over the past quarter to $321, with a dividend yield now above 3%. This is mildly attractive for a quality franchise at a reasonable price, but the deteriorating margin trajectory, elevated leverage from SRS/GMS acquisitions, ROIC decline from 31.3% to 25.4%, and macro headwinds (rising Treasury yields, oil prices up 30% over 90 days, weak housing market) limit upside. No clear near-term fundamental catalyst exists to drive a re-rating. The score reflects a solid but not exciting franchise trading at fair-to-slightly-cheap valuation with muted near-term growth prospects.",
+      "key_factors": [
+        "Dominant market position (~17% U.S. share) with strong Pro customer base (~50% of sales)",
+        "Q1 FY2026 EPS declined 4.3% YoY; gross margin compressed 75bps due to GMS acquisition mix",
+        "Modest FY2026 guidance: flat-to-4% EPS growth, reflecting weak housing turnover and cautious consumer",
+        "P/E of 22.8x near low end of 1-year range (20.3-28.8); dividend yield >3%",
+        "ROIC declined from 31.3% to 25.4% due to paused buybacks and higher debt from SRS acquisition",
+        "Macro headwinds: 10Y Treasury yield at 4.45%, oil up 30% in 90 days, weak housing market",
+        "Comparable sales growth of only 0.6% with customer transactions down 1.3%",
+        "No clear near-term fundamental catalyst for re-rating"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03 Q1",
+          "excerpt": "revenue=41.77B eps_diluted=3.3 net_income=3.29B gross_profit=13.78B operating_income=4.98B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-05-04 Q1",
+          "excerpt": "revenue=39.86B eps_diluted=3.45 net_income=3.43B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=22.832 p_b=23.059 earnings_yield=0.044 net_margin=0.084 roe=1.01 gross_margin=0.331 operating_margin=0.124"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-29",
+          "excerpt": "pe_diluted=25.007 p_b=46.019 net_margin=0.09 roe=1.84"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-28",
+          "excerpt": "close=321.21 quarterly delta=-14.4%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-19 Benzinga",
+          "excerpt": "Home Depot reported Q1 FY2026 sales of $41.77 billion, beating estimates, but net earnings declined 4.2% year-over-year. The company cited weak housing market and consumer uncertainty delaying larger home-improvement projects. Comparable sales grew only 0.6%, while customer transactions fell 0.9%."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-20 MarketScreener",
+          "excerpt": "Home Depot is facing headwinds of stalled housing turnover and a weak cost and demand outlook, which creates a risk in attaining its reaffirmed 2026 guidance, RBC Capital Markets said"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-26 StockTitan",
+          "excerpt": "ROIC 25.4% Trailing 12 months ended May 3, 2026 (vs 31.3% prior year). Gross margin was 33.0% for the first quarter of fiscal 2026 compared to 33.8% for the first quarter of fiscal 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-26 Investing.com earnings call",
+          "excerpt": "Adjusted diluted earnings per share were $3.43 in the first quarter compared to $3.56 in the first quarter of last2 year adjusted"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "excerpt": "10-Year Treasury Constant Maturity Minus 2-Year"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "excerpt": "10-Year Breakeven Inflation Rate"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-26 Theumbrex",
+          "excerpt": "Home Depot holds approximately 17% of the U.S. home improvement market"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3778,
+        "capped_chars": 3778,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224633,
+        "capped_chars": 224633,
+        "raw_tokens": 56158,
+        "capped_tokens": 56158
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1798,
+        "capped_chars": 1798,
+        "raw_tokens": 450,
+        "capped_tokens": 450
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 45956,
+        "capped_chars": 9184,
+        "raw_tokens": 11489,
+        "capped_tokens": 2296
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 100087,
+        "capped_chars": 80511,
+        "raw_tokens": 25022,
+        "capped_tokens": 20128
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 52307,
+  "started_at": "2026-08-07T03:01:26+00:00"
+}

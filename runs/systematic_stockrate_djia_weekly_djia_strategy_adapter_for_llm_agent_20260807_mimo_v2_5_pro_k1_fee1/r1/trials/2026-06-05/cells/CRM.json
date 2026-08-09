@@ -1,0 +1,184 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37479,
+    "tokens_out": 1028,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.040563,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.45,
+      "rationale": "Salesforce presents a compelling fundamental picture with accelerating revenue growth (+13.3% YoY to $11.13B in Q1 FY27), strong EPS expansion (+52.2% YoY to $2.42), and robust cash generation ($6.70B operating cash flow). The company dominates the CRM market with ~22% share and is successfully pivoting to AI-driven agentic offerings, with Agentforce ARR surpassing $1B. Valuation is attractive vs. own history: P/E of 20.5x is near the bottom of its 365-day range (19.1-57.6x), representing a significant compression from the 56x level a year ago. The massive $25B accelerated share repurchase program (reducing diluted shares 10% YoY) and raised dividend demonstrate management confidence and shareholder alignment. However, the Q2 revenue guidance of $11.27-11.35B came in slightly below consensus ($11.4B), and RPO of $67.9B missed estimates of $68.9B, signaling some near-term softness. Balance sheet leverage has increased meaningfully (debt-to-equity 1.15x vs. 0.14x a year ago) due to the buyback financing. The stock has declined ~26% from its 52-week high of $276.80, creating a more favorable entry point, though the longer-term downtrend remains intact. Near-term catalyst exists with the Q1 earnings beat and raised FY27 guidance, but the lukewarm Q2 outlook tempers the re-rating potential.",
+      "key_factors": [
+        "Accelerating revenue growth (+13.3% YoY) with Q1 FY27 revenue of $11.13B beating estimates",
+        "Strong EPS growth (+52.2% YoY) driven by margin expansion (non-GAAP operating margin 34.8%, +250bps)",
+        "P/E of 20.5x near bottom of 365-day range (19.1-57.6x), significantly compressed from 56x a year ago",
+        "Agentforce ARR surpassing $1B milestone, demonstrating AI monetization traction",
+        "$25B accelerated share repurchase reducing diluted share count 10% YoY, signaling management confidence",
+        "Q2 revenue guidance slightly below consensus and RPO miss of $1B create near-term uncertainty",
+        "Balance sheet leverage increased to 1.15x debt-to-equity from 0.14x due to buyback financing",
+        "Stock down ~26% from 52-week high, creating more favorable valuation entry point"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1",
+          "excerpt": "revenue=11.13B net_income=2.11B eps_diluted=2.42 operating_cash_flow=6.70B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1 growth",
+          "excerpt": "YoY: revenue=+13.3% eps_diluted=+52.2% net_income=+36.7%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=20.491 p_b=4.802 debt_to_equity=1.147 gross_margin=0.776 operating_margin=0.204"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-05",
+          "excerpt": "pe_diluted=56.029 debt_to_equity=0.14"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=188.75 range2-week high=276.80"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-28",
+          "excerpt": "Q2 revenue guidance of $11.27-$11.35 billion, slightly below analyst expectations"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-28",
+          "excerpt": "remaining performance obligations were $67.9 billion, compared with analysts' average estimate of $68.9 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-29",
+          "excerpt": "Salesforce announced a massive $27 billion share buyback program"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-28",
+          "excerpt": "Agentforce ARR surpassing the $1 billion milestone"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3822,
+        "capped_chars": 3822,
+        "raw_tokens": 956,
+        "capped_tokens": 956
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 252964,
+        "capped_chars": 252964,
+        "raw_tokens": 63241,
+        "capped_tokens": 63241
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2319,
+        "capped_chars": 2319,
+        "raw_tokens": 580,
+        "capped_tokens": 580
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 73046,
+        "capped_chars": 15034,
+        "raw_tokens": 18262,
+        "capped_tokens": 3758
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103823,
+        "capped_chars": 80504,
+        "raw_tokens": 25955,
+        "capped_tokens": 20126
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42791,
+  "started_at": "2026-08-07T03:02:12+00:00"
+}

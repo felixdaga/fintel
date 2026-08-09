@@ -1,0 +1,183 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33994,
+    "tokens_out": 1049,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037141,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": -1.0,
+      "rationale": "HON is facing a perfect storm of deteriorating fundamentals, stretched valuation, and near-term headwinds. Q1 2026 results showed a significant revenue miss ($9.14B vs $9.30B expected) and a dramatic EPS decline of 41.9% YoY to $1.29, with operating cash flow turning deeply negative at -$650M. The company is trading at a 33.4x P/E, the highest in its 12-month range (21.6-33.4), while net margins have compressed to 10.9% from 15.1% a year ago. The aerospace spin-off scheduled for June 29, 2026 introduces execution risk, and the Middle East conflict is expected to cause a ~1% revenue impact in Q2. The stock is down 5.7% over the past quarter but remains expensive relative to its deteriorating fundamentals.",
+      "key_factors": [
+        "Q1 2026 EPS of $1.29 represents a 41.9% YoY decline from $2.22, with revenue missing expectations by $160M",
+        "Operating cash flow turned deeply negative at -$650M in Q1 2026 vs +$597M in Q1 2025, driven by $7.5B in debt repurchases and $375M Flexjet settlement",
+        "P/E of 33.4x is at the top of its 12-month range (21.6-33.4), representing peak valuation amid deteriorating earnings",
+        "Net margin compressed to 10.9% from 15.1% a year ago, with ROE declining to 28% from 31.7%",
+        "Aerospace spin-off scheduled for June 29, 2026 introduces significant execution and separation risk",
+        "Middle East conflict expected to cause ~1% revenue impact in Q2 ($100-150M), with Q2 EPS guidance of $2.35-2.45 below consensus of $2.56",
+        "Debt-to-equity of 2.19x is elevated, with total debt of $32.1B against equity of $14.67B"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=9.14B net_income=795.00M eps_diluted=1.29 operating_cash_flow=-650.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=8.93B eps=2.22 operating_cash_flow=597.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "excerpt": "pe_diluted=33.373 p_b=9.329 net_margin=0.109 roe=0.28 debt_to_equity=2.189"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-01",
+          "excerpt": "pe_diluted=22.801 net_margin=0.151 roe=0.317"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-23",
+          "excerpt": "Honeywell's stock fell nearly 3% after posting Q1 2026 results that missed revenue expectations ($9.1B vs. $9.3B expected)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-23",
+          "excerpt": "The company maintained full-year guidance despite Middle East conflict uncertainty and announced the sale of its Warehouse and Workflow Solutions business"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-24",
+          "excerpt": "Q2 2026 guidance: EPS of $2.350-2.450 vs consensus of $2.560; revenue guidance of $9.4B-$9.6B vs consensus of $9.7B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-24",
+          "excerpt": "The Middle East conflict caused delays in catalyst reloads and automation projects, with an expected ~1% impact in Q2 (approximately $100-150 million)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-25",
+          "excerpt": "Management repurchased $7.5 billion in notes during the first quarter to optimize capital structure for the spin-off entity; negative operating free cash flow of $873 million for the quarter"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3050,
+        "capped_chars": 3050,
+        "raw_tokens": 762,
+        "capped_tokens": 762
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 254073,
+        "capped_chars": 254073,
+        "raw_tokens": 63518,
+        "capped_tokens": 63518
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30817,
+        "capped_chars": 30817,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1197,
+        "capped_chars": 1197,
+        "raw_tokens": 299,
+        "capped_tokens": 299
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 11779,
+        "capped_chars": 3301,
+        "raw_tokens": 2945,
+        "capped_tokens": 825
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 125032,
+        "capped_chars": 71408,
+        "raw_tokens": 31258,
+        "capped_tokens": 17852
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 51587,
+  "started_at": "2026-08-07T02:57:52+00:00"
+}

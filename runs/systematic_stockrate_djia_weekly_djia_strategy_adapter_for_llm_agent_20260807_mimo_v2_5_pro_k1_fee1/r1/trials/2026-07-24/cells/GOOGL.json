@@ -1,0 +1,189 @@
+{
+  "cell": "GOOGL",
+  "symbols": [
+    "GOOGL"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 55772,
+    "tokens_out": 1401,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.059975,
+    "basis": "reported"
+  },
+  "views": {
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "score": 0.45,
+      "rationale": "Alphabet delivered a blowout Q2 2026 quarter with revenue of $119.8B (+24% YoY) and GAAP EPS of $9.11, massively beating consensus of $2.88, though the EPS beat was heavily inflated by ~$99B in investment gains (Anthropic, SpaceX IPO). Stripping out investment gains, operating income of $40.77B and operating margin of ~34% remain strong, with Google Cloud surging 82% YoY to $24.8B and a $514B backlog. The balance sheet is a fortress with $242B cash and total equity of $640B. However, the stock sold off 6-7% post-earnings because management raised 2026 capex guidance to $195-205B (from $180-190B), turning free cash flow negative at -$5.8B in Q2 for the first time as a public company. This massive AI spending creates near-term cash flow uncertainty. Valuation is attractive: at $317.69, the trailing P/E of 18.1x is at the absolute bottom of its 365-day range (18.1-39.5x) and P/B of 6.1x is also at the floor of its range (6.1-12.7x), representing a significant discount to recent history. The stock is down ~6.4% over the past quarter. Key risks include antitrust structural remedies (DOJ Chrome/Android divestiture risk), Gemini 3.5 Pro delays, and margin compression from AI compute costs. Berkshire Hathaway's $31B position and Warren Buffett's personal endorsement provide institutional validation. The near-term catalyst is the post-earnings selloff creating a potential buying opportunity at historically cheap multiples, though the capex overhang and negative FCF may keep sentiment depressed near-term.",
+      "key_factors": [
+        "Q2 2026 blowout: $119.8B revenue (+24% YoY), $9.11 GAAP EPS (massive beat vs $2.88 consensus, though inflated by $99B investment gains)",
+        "Google Cloud accelerating to 82% YoY growth ($24.8B revenue) with $514B backlog",
+        "Valuation at 365-day lows: P/E 18.1x (range 18.1-39.5x), P/B 6.1x (range 6.1-12.7x)",
+        "Negative free cash flow of -$5.8B in Q2 due to $44.9B capex; 2026 capex guidance raised to $195-205B",
+        "Fortress balance sheet: $242B cash, $640B equity, minimal debt",
+        "Antitrust risk: DOJ structural remedies (Chrome/Android divestiture), ad-tech trial",
+        "Gemini 3.5 Pro delays and AI competition from OpenAI/Anthropic",
+        "Berkshire Hathaway $31B position; Buffett personally initiated the investment"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-07-23 Q2",
+          "excerpt": "revenue=119.80B net_income=112.19B eps_diluted=9.11 operating_income=40.77B total_assets=921.98B total_equity=640.48B cash=242.47B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=18.09 p_b=6.105 p_s=9.175 earnings_yield=0.055 net_margin=0.507 roe=0.338"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-07-24..2026-07-23",
+          "excerpt": "pe_diluted 18.1..39.5 | p_b 6.1..12.7 | net_margin 0.3..0.5 | roe 0.3..0.3"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=317.69 quarterly delta=-6.4%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23 Motley Fool",
+          "excerpt": "Alphabet stock fell 6.6% despite crushing Q2 earnings expectations with $9.11 EPS (vs. $2.88 expected) and $119.8B revenue. The decline was driven by investor concerns over massive AI capital investments of $195-205B this year, which have turned the company's free cash flow negative at -$5.8B in Q2"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-22 CNBC",
+          "excerpt": "Alphabet's capex grew 100% year-over-year to $44.9 billion in Q2. Google lifted its full-year spending guide, expecting capital expenditures to range between $195 billion and $205 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-22 CNBC",
+          "excerpt": "Google's cloud revenue jumped 82% to $24.8 billion. Cloud backlog totalled $514 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-21 Motley Fool",
+          "excerpt": "Berkshire Hathaway has significantly increased its stake in Alphabet to nearly $31 billion, making it the conglomerate's fifth-largest holding"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-23 tradingkey",
+          "excerpt": "Ongoing antitrust litigation in the United States and Europe regarding Alphabet's dominance in the advertising technology stack and its default search agreements has reached a critical phase"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-19 Motley Fool",
+          "excerpt": "Google's flagship AI model Gemini 3.5 Pro is months behind its promised June launch date as the company works to improve coding capabilities, raising concerns about competition from OpenAI and Anthropic"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GOOGL",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4697,
+        "capped_chars": 4697,
+        "raw_tokens": 1174,
+        "capped_tokens": 1174
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224040,
+        "capped_chars": 224040,
+        "raw_tokens": 56010,
+        "capped_tokens": 56010
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4442,
+        "capped_chars": 4442,
+        "raw_tokens": 1110,
+        "capped_tokens": 1110
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 467603,
+        "capped_chars": 85713,
+        "raw_tokens": 116901,
+        "capped_tokens": 21428
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 99953,
+        "capped_chars": 79424,
+        "raw_tokens": 24988,
+        "capped_tokens": 19855
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 107402,
+  "started_at": "2026-08-07T03:08:40+00:00"
+}

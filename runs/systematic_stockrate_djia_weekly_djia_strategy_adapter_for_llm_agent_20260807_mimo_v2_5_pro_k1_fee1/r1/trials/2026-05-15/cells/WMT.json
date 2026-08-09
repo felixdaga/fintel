@@ -1,0 +1,183 @@
+{
+  "cell": "WMT",
+  "symbols": [
+    "WMT"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 42525,
+    "tokens_out": 1348,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.046569,
+    "basis": "reported"
+  },
+  "views": {
+    "WMT": {
+      "symbol": "WMT",
+      "score": -1.0,
+      "rationale": "Walmart is a fundamentally sound, high-quality retailer with durable competitive advantages, but the stock is trading at an extreme valuation premium that is not supported by its earnings trajectory or margin profile. At a P/E of 54.7x (vs. 32.8x one year ago), the stock has re-rated by 67% while diluted EPS grew only 35% YoY in the latest quarter. The P/B of 11.8x is at the top of its 365-day range (8.2-11.9). Net margin is a thin 2.8%, operating margin 4.3%, and the company's ROE of 21.6% \u2014 while respectable \u2014 does not justify a P/B of nearly 12x. The balance sheet shows total liabilities of $186.5B against $102.2B equity, a leverage ratio that is manageable but not exceptional. Quarterly EPS trajectory is volatile: Q3 FY26 EPS of $0.77 was down 12.5% QoQ from Q2's $0.88, and the TTM picture is incomplete due to fiscal calendar gaps. Revenue growth of 5.8% YoY in Q3 is solid but not exceptional for a company priced for perfection. The macro backdrop is challenging: 10-year Treasury yields have risen to 4.47%, breakeven inflation is at 2.47%, and WTI crude has surged 67% to $104.66/bbl \u2014 all headwinds for a cost-conscious retailer. Tariff exposure is a material risk given Walmart's heavy Asian sourcing. Multiple analysts (Henry Fund, TIKR) flag the valuation as narrative-driven rather than fundamentals-driven, with DCF models producing intrinsic values around $83 vs. the current $132.46 price. The Q1 FY27 earnings on May 21 is a near-term catalyst, but Morgan Stanley expects guidance to stay unchanged due to freight/diesel headwinds, limiting upside surprise potential. At 54.7x earnings for a 2.8% net margin retailer, the risk/reward is heavily skewed to the downside.",
+      "key_factors": [
+        "P/E of 54.7x is at the top of its 365-day range (32.6-55.3), up 67% from 32.8x one year ago \u2014 extreme multiple expansion for a low-margin retailer",
+        "Net margin of 2.8% and operating margin of 4.3% are structurally thin, insufficient to justify technology-like multiples",
+        "Q3 FY26 EPS of $0.77 declined 12.5% QoQ, showing earnings volatility inconsistent with premium valuation",
+        "Rising macro headwinds: 10Y Treasury at 4.47%, WTI crude up 67% to $104.66/bbl, breakeven inflation at 2.47% \u2014 all pressure cost structure and consumer spending",
+        "Tariff risk: Walmart sources heavily from Asia; tariff escalation would directly pressure the thin margins that justify the current multiple",
+        "Analyst DCF models (Henry Fund) produce intrinsic value of ~$83 vs. current $132.46, suggesting the stock is priced on narrative rather than fundamentals",
+        "Q1 FY27 earnings (May 21) unlikely to be a positive catalyst: Morgan Stanley expects unchanged guidance due to freight/diesel headwinds and pharmacy margin drag"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=54.72 p_b=11.805 p_s=1.557 earnings_yield=0.018 net_margin=0.028 roe=0.216 gross_margin=0.249 operating_margin=0.043"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-15",
+          "excerpt": "pe_diluted=32.785 p_b=8.26 net_margin=0.036 roe=0.252"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-31 Q3",
+          "excerpt": "revenue=179.50B net_income=6.09B eps_diluted=0.77 gross_profit=44.79B operating_income=6.70B total_assets=288.65B total_equity=102.21B operating_cash_flow=9.10B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-07-31 Q2",
+          "excerpt": "eps_diluted=0.88"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-14",
+          "excerpt": "DGS10=4.47% T10YIE=2.47% DCOILWTICO=104.66"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "henryfund.tippie.uiowa.edu",
+          "excerpt": "Our DCF and Economic Profit models produce a consistent intrinsic value of $83.24 as of today"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.tikr.com",
+          "excerpt": "At 43x forward earnings, Walmart isn't being valued on what it earns today. It's being valued on a future where advertising and membership keep expanding their share of profits. Any slowdown in that shift, or gross margin pressure from tariffs on general merchandise, gets penalized hard at this multiple"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.thestreet.com",
+          "excerpt": "Walmart trades at roughly 43 times next-12-months price-to-earnings (P/E), about 21 times above its 10-year historical average"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.businesswire.com",
+          "excerpt": "W will release its first quarter earnings results at 6 a.m. CDT and hold a live conference call with the investment community at 7 a.m. CDT on Thursday, May 21, 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "WMT",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4559,
+        "capped_chars": 4559,
+        "raw_tokens": 1140,
+        "capped_tokens": 1140
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242152,
+        "capped_chars": 242152,
+        "raw_tokens": 60538,
+        "capped_tokens": 60538
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3577,
+        "capped_chars": 3577,
+        "raw_tokens": 894,
+        "capped_tokens": 894
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 40840,
+        "capped_chars": 10772,
+        "raw_tokens": 10210,
+        "capped_tokens": 2693
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 122391,
+        "capped_chars": 100865,
+        "raw_tokens": 30598,
+        "capped_tokens": 25215
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 40757,
+  "started_at": "2026-08-07T03:00:17+00:00"
+}

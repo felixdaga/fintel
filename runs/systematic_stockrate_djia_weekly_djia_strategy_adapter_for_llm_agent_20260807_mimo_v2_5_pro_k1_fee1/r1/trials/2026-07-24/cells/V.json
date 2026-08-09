@@ -1,0 +1,189 @@
+{
+  "cell": "V",
+  "symbols": [
+    "V"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33538,
+    "tokens_out": 1026,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036616,
+    "basis": "reported"
+  },
+  "views": {
+    "V": {
+      "symbol": "V",
+      "score": 0.35,
+      "rationale": "Visa exhibits strong fundamental health with exceptional profitability (net margin ~52%, operating margin ~61%, ROE ~62%) and consistent double-digit revenue growth (+17.1% YoY in Q2 FY26). The business benefits from a capital-light model, structural competitive advantages as a global payments duopoly, and expanding value-added services. However, the stock trades at a premium valuation (P/E ~31x trailing, ~24x forward) that is roughly in line with its 3-year average, and faces meaningful regulatory headwinds (DOJ antitrust lawsuit, CCCA legislation, interchange fee litigation provisions totaling ~$3.2B over four quarters). The upcoming Q3 earnings report on July 28 represents a near-term catalyst with consensus expectations of 8.4% EPS growth and 11.6% revenue growth, and Visa has a strong track record of beating estimates. The combination of excellent fundamentals offset by rich valuation and regulatory overhangs supports a moderately positive score.",
+      "key_factors": [
+        "Exceptional profitability: 52% net margin, 61% operating margin, 62% ROE \u2014 among the highest in financial services",
+        "Strong revenue trajectory: +17.1% YoY growth in Q2 FY26, driven by payment volume growth and cross-border activity",
+        "Capital-light model with ~$1.2B capex against $40B+ revenue, enabling exceptional free cash flow conversion",
+        "Valuation roughly fair vs own history: P/E ~31x trailing vs 3-year average of ~29.8x, forward P/E ~24x below 5-year median of 25.8x",
+        "Regulatory headwinds: DOJ antitrust lawsuit, CCCA legislation risk, and four consecutive quarters of interchange litigation provisions ($992M, $615M, $899M, $707M)",
+        "Near-term catalyst: Q3 FY26 earnings on July 28 with consensus EPS of $3.23 (+8.4% YoY) and revenue of $11.35B (+11.6% YoY); strong beat history",
+        "Competitive threats from stablecoins, real-time payment rails, and digital wallets emerging but Visa positioning as 'network of networks'",
+        "Aggressive capital return: $20B new buyback authorization, ~$3.8B repurchased in Q1 FY26 alone"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q2",
+          "excerpt": "revenue=11.23B net_income=6.02B operating_income=7.23B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q2 growth",
+          "excerpt": "YoY: revenue=+17.1% net_income=+31.5%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "net_margin=0.517 roe=0.624 operating_margin=0.611"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=351.60 range high=365.14 low=293.89"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis",
+          "excerpt": "P/E of 29.7 versus a 3-year average of 29.8 and a 3-year high of 33.9"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "yahoo_valuation",
+          "excerpt": "Trailing P/E 31.17 | Forward P/E 24.45"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingview_q3",
+          "excerpt": "Zacks Consensus Estimate for earnings is $3.23 per share on revenues of $11..35 billion. The estimate has witnessed one upward movement and no downward revisions over the past 60 days."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "yahoo_disruption",
+          "excerpt": "Four consecutive quarters of interchange MDL provisions of $992 million, $615 million, $899 million, and $707 million"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "deepresearch",
+          "excerpt": "Visa printed $11.2B revenue and $3.31 non-GAAP EPS in Q2 FY26 ( $20 billion new buyback authorization"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tickeron",
+          "excerpt": "The Credit Card Competition Act (CCCA), reintroduced in January 2026, remains the most significant legislative risk. The DOJ antitrust lawsuit alleging debit market monopolization continues through discovery."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "V",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4308,
+        "capped_chars": 4308,
+        "raw_tokens": 1077,
+        "capped_tokens": 1077
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 197421,
+        "capped_chars": 197421,
+        "raw_tokens": 49355,
+        "capped_tokens": 49355
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2868,
+        "capped_chars": 2868,
+        "raw_tokens": 717,
+        "capped_tokens": 717
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 32610,
+        "capped_chars": 6002,
+        "raw_tokens": 8152,
+        "capped_tokens": 1500
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88444,
+        "capped_chars": 66691,
+        "raw_tokens": 22110,
+        "capped_tokens": 16673
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 46783,
+  "started_at": "2026-08-07T03:09:15+00:00"
+}

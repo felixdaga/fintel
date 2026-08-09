@@ -1,0 +1,190 @@
+{
+  "cell": "AXP",
+  "symbols": [
+    "AXP"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33829,
+    "tokens_out": 1054,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036991,
+    "basis": "reported"
+  },
+  "views": {
+    "AXP": {
+      "symbol": "AXP",
+      "score": 0.35,
+      "rationale": "American Express shows solid fundamental health with consistent revenue and EPS growth (Q1 2026 revenue +9. YoY, EPS +17.6% YoY), strong ROE of 33%, and net margins of 26.6%. The closed-loop business model provides durable competitive advantages with 160M merchant locations and 153.9M cards in force. Valuation is moderate: P/E of 22.1x sits near the middle of its 1-year range (18.4-25.3x), not expensive but not a bargain. The Platinum fee hike to $895 with stable retention supports recurring fee revenue growth. Q2 earnings on July 24 provide a near-term catalyst, with consensus EPS of $4.40 (+7.8% YoY). JPMorgan's upgrade to Overweight adds incremental positive sentiment. However, macro headwinds (rising 10Y yields at 4.57%, cooling labor market, geopolitical risks) and regulatory overhang (AML enforcement action, surcharging risks) temper enthusiasm. Balance sheet leverage (D/E 1.73x) is elevated but manageable for a financial. The score reflects a quality franchise with positive trajectory at fair-to-slightly-cheap valuation, with a modest catalyst boost from upcoming earnings.",
+      "key_factors": [
+        "Consistent revenue/EPS growth trajectory: Q1 2026 revenue +9.3% YoY, EPS +17.6% YoY",
+        "Strong profitability: 33% ROE, 26.6% net margin, 33.8% operating margin",
+        "Valuation at mid-range: P/E 22.1x vs 1-year range 18.4-25.3x, not expensive but not a clear bargain",
+        "Platinum fee hike to $895 with stable retention supports recurring card-fee revenue growth",
+        "Q2 earnings on July 24 as near-term catalyst with consensus $4.40 EPS",
+        "JPMorgan upgrade to Overweight (July 13) as positive sentiment catalyst",
+        "Macro headwinds: 10Y yield at 4.57%, cooling labor market, geopolitical tensions",
+        "Regulatory risks: AML enforcement action expected, surcharging/steering concerns",
+        "Elevated leverage: debt-to-equity 1.73x, though typical for financial sector"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=10.52B net_income=2.97B eps_diluted=4.28 operating_income=3.78B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+9.3% eps_diluted=+17.6% net_income=+15.0%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=22.107 p_b=7.296 roe=0.33 net_margin=0.266 operating_margin=0.338 debt_to_equity=1.728"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 18.4..25.3 | p_b 6.1..8.2"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-15 Motley Fool",
+          "excerpt": "American Express increased its Platinum card annual fee from $695 to $895, a 29% hike...retention rates remained stable near 100%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-10 Motley Fool",
+          "excerpt": "Upcoming Q2 earnings on July 24 could serve as a catalyst for recovery"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-13 JPMorgan",
+          "excerpt": "JPMorgan has upgraded American Express to Overweight as part of its second-quarter consumer finance preview"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "coinlaw.io",
+          "excerpt": "Q1 2026 network volumes reached $486.3 billion, an 11% increase...153.9 million cards in force"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "s26.q4cdn.com",
+          "excerpt": "we expect to be subject to enforcement action, which could include civil money penalties...AML programs have become the subject of heightened scrutiny"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-16",
+          "excerpt": "DGS10=4.57% ICSA=209000 VIXCLS=16.73"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AXP",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4463,
+        "capped_chars": 4463,
+        "raw_tokens": 1116,
+        "capped_tokens": 1116
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 227113,
+        "capped_chars": 227113,
+        "raw_tokens": 56778,
+        "capped_tokens": 56778
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1978,
+        "capped_chars": 1978,
+        "raw_tokens": 494,
+        "capped_tokens": 494
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 28246,
+        "capped_chars": 4698,
+        "raw_tokens": 7062,
+        "capped_tokens": 1174
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 104249,
+        "capped_chars": 83309,
+        "raw_tokens": 26062,
+        "capped_tokens": 20826
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 26755,
+  "started_at": "2026-08-07T03:07:39+00:00"
+}

@@ -1,0 +1,184 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 39192,
+    "tokens_out": 1032,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.042288,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.25,
+      "rationale": "JPMorgan Chase demonstrates strong fundamental health with accelerating earnings trajectory: Q1 2026 EPS of $5.94 beat estimates by $0.44, representing revenue grew 10% YoY to $49.84B. The bank maintains industry-leading profitability with 16.2% ROE and 31.5% net margins, supported by a diversified franchise across consumer banking, investment banking, commercial banking, and asset/wealth management. Balance sheet equity grew to $364B with total assets of $4.9T. Valuation is attractive vs. own history: P/E of 14.5x sits near the low end of the 13.7-17.8x range over the past year, and P/B of 2.34x is below the 2.2-2.8x range midpoint. The upcoming Fed stress test results in late June 2026 represent a potential near-term catalyst, as frozen stress capital bufferss could free capital for increased shareholder returns. However, risks temper the score: CEO Dimon's warning of expenses potentially reaching $106B, a projected $13B G-SIB surcharge, the DOJ subpoena over 'debanking' allegations, and rising 10-year Treasury yields (4.45%) creating mixed NII dynamics. The stock's +10.8% quarterly gain partially reflects the strong Q1 results already being priced in.",
+      "key_factors": [
+        "Q1 2026 EPS beat of $0.44 ($5.94 vs $5.50 est) with 10% YoY revenue growth",
+        "P/E of 14.5x near low end of 1-year range (13.7-17.8x), suggesting reasonable valuation",
+        "Industry-leading ROE of 16.2% and net margin of 31.5%",
+        "Upcoming Fed stress test results (late June) as potential catalyst for capital return",
+        "CEO Dimon's expense warning ($106B vs $105B prior) and $10-20B acquisition budget creating uncertainty",
+        "DOJ subpoena over politically-motivated account closures adding regulatory/legal risk",
+        "Projected $13B G-SIB surcharge threatening ROE",
+        "10-year Treasury yield at 4.45% with flattening yield curve (10Y-2Y spread at 0.40%)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q1",
+          "excerpt": "revenue=49.84B net_income=16.49B eps_diluted=5.94 operating_income=20.48B total_assets=4900.48B total_equity=364.04B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=14.478 p_b=2.342 p_s=4.561 earnings_yield=0.069 net_margin=0.315 roe=0.162 operating_margin=0.399"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 13.7..17.8 | p_b 2.2..2.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-11 Benzinga",
+          "excerpt": "JPMorgan, BofA, Wells Fargo Subpoenaed By DOJ In Trump's Explosive 'Debanking' Crackdown"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-03 Motley Fool",
+          "excerpt": "The Federal Reserve will release bank stress test results in late June 2026. Unlike last year when buffers decreased significantly, the Fed has frozen stress capital buffers for 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-27 TradingKey",
+          "excerpt": "Dimon indicated that the bank's annual expenses could exceed prior estimates by approximately $1 billion, potentially reaching $106 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SeekingAlpha JPM 2026",
+          "excerpt": "regulatory headwinds\u2014especially a projected $13B G-SIB surcharge\u2014threaten ROE and Markets division returns"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11 DGS10",
+          "excerpt": "4.45"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11 T10Y2Y",
+          "excerpt": "0.4"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 239075,
+        "capped_chars": 239075,
+        "raw_tokens": 59769,
+        "capped_tokens": 59769
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3473,
+        "capped_chars": 3473,
+        "raw_tokens": 868,
+        "capped_tokens": 868
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 141794,
+        "capped_chars": 14519,
+        "raw_tokens": 35448,
+        "capped_tokens": 3630
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 110198,
+        "capped_chars": 89691,
+        "raw_tokens": 27549,
+        "capped_tokens": 22422
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 35146,
+  "started_at": "2026-08-07T03:03:35+00:00"
+}

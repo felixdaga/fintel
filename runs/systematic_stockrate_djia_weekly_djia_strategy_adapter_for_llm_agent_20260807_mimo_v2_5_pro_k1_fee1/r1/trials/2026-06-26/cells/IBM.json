@@ -1,0 +1,191 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37906,
+    "tokens_out": 1171,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041419,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.15,
+      "rationale": "IBM presents a mixed but mildly attractive picture. On the positive side, Q1 2026 showed solid YoY growth (revenue +9.5%, EPS +14.3%), with Software growing 11% and Infrastructure +15% driven by the z17 mainframe super-cycle. The company has a $12.5B cumulative generative AI bookings pipeline, record FY2025 FCF of $14.7B, and a 31-year dividend growth streak. ROE has improved to 32.5% and net margin to 15.6%. However, several concerns temper enthusiasm: (1) QoQ metrics show significant sequential deceleration (revenue -6.2%, EPS -44.6%), suggesting the Q2 2025 quarter was an outlier; (2) the stock has already corrected ~22% from its June 2 all-time high of $332.46 to $258.27, partly reflecting disappointment that full-year guidance was merely 'above 5%' growth; (3) consulting growth is weak at ~1% growth, and Accenture's recent guidance cut signalsates sector headwinds; (4) the PE ratio compressed from ~50x to ~23x, which is now near the low end of its 1-year range (19-51), suggesting some valuation reset has occurred but not yet at distressed levels. The quantum computing tailwinds from executive orders and CHIPS Act funding are longer-term positives but not near-term earnings drivers. Q2 2026 earnings in late July could be a catalyst if Software growth reaccelerates. Net: solid franchise with improving fundamentals, valuation now more reasonable after correction, but consulting weakness and mainframe cycle peak risk cap the upside.",
+      "key_factors": [
+        "Q1 2026 YoY growth solid: revenue +9.5%, EPS +14.3%, Software +11%, Infrastructure +15%",
+        "QoQ deceleration: revenue -6.2%, EPS -44.6% from Q2 2025 peak quarter",
+        "PE compressed from ~50x to ~23x, now near low end of 1-year range (19-51)",
+        "$12.5B cumulative generative AI bookings but conversion to ARR uncertain",
+        "Consulting growth sluggish at ~1%, Accenture guidance cut signals sector headwinds",
+        "z17 mainframe super-cycle driving Infrastructure but post-cycle deceleration risk",
+        "Record FY2025 FCF of $14.7B, FY2026 guided to ~$15.7B",
+        "Stock down ~22% from ATH of $332.46, partially resetting valuation",
+        "Q2 2026 earnings (late July) as near-term catalyst for re-rating",
+        "Quantum computing government funding ($2B CHIPS Act) is long-term positive, not near-term earnings driver"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1",
+          "excerpt": "revenue=15.92B net_income=1.22B eps_diluted=1.28 gross_profit=8.95B operating_income=1.39B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30 Q2",
+          "excerpt": "revenue=16.98B eps=2.31"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=22.866 p_b=7.439 net_margin=0.156 roe=0.325"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 19.0..51.2 | p_b 6.2..10.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=258.27 range high=332.46 low=212.34"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-25",
+          "excerpt": "Washington's Quantum Push Puts IBM and IonQ on the Throne - $2 billion in CHIPS Act funding"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-23",
+          "excerpt": "IBM gained 4.8% on analyst upgrades and an OpenAI partnership"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wsb-dd.com",
+          "excerpt": "FY 2025 Free Cash Flow $14.7B Highest in over a decade; GenAI book exceeded $12.5B; Q1 2026 Software revenue rose 11% YoY to $7.05B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com Jun 18",
+          "excerpt": "Accenture's lowered sales guidance triggered a sector-wide selloff in IT consulting stocks; IBM's own report revealed 91% of enterprise executives do not fully understand their AI dependencies"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thestreet.com",
+          "excerpt": "JPMorgan upgraded IBM; Q2 2026 earnings on Jul 22, 2026; consensus EPS for current year 12.38"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224586,
+        "capped_chars": 224586,
+        "raw_tokens": 56146,
+        "capped_tokens": 56146
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2736,
+        "capped_chars": 2736,
+        "raw_tokens": 684,
+        "capped_tokens": 684
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 53528,
+        "capped_chars": 10068,
+        "raw_tokens": 13382,
+        "capped_tokens": 2517
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 135450,
+        "capped_chars": 117813,
+        "raw_tokens": 33862,
+        "capped_tokens": 29454
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 34929,
+  "started_at": "2026-08-07T03:05:23+00:00"
+}

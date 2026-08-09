@@ -1,0 +1,184 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30782,
+    "tokens_out": 1103,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034091,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": 0.15,
+      "rationale": "UNH presents a mixed but mildly attractive picture. On the positive side, the company is a dominant healthcare franchise with 30% Medicare Advantage market share, strong cash generation ($8.9B operating cash flow in Q1 2026), and a dual-engine model combining insurance and health services. Revenue grew modestly YoY (+2.0% in Q1 2026) and the medical care ratio has been improving. However, several significant headwinds temper enthusiasm: (1) The stock has already rallied ~80% from its 2025 low of $234.60 to $431.68, and the P/E has expanded from ~10-12x in mid-2025 to 30.7x currently\u2014near the top of its 365-day range (9.5-30.7). This is expensive vs. its own recent history. (2) Net margin has compressed from 5.6% in July 2025 to 2.8% currently, and ROE has fallen from 22.8% to 12.3%, indicating fundamental deterioration. (3) Ongoing DOJ investigations into Medicare billing, FTC settlement on insulin pricing, and claims denial lawsuits create regulatory overhang. (4) The company had to reduce Medicare Advantage membership by ~1.3 million lives to protect margins, signaling structural challenges. The upcoming Q2 earnings on July 16 (with options implying 6.1% move) could serve as a near-term catalyst, with Bernstein expecting EPS of $5.22 vs. consensus $4.84, but this is already partially priced in given the stock's strong run. The score reflects a quality franchise at a stretched valuation with meaningful regulatory and operational risks.",
+      "key_factors": [
+        "Dominant market position: 30% Medicare Advantage market share, largest commercial health insurer nationally",
+        "Valuation stretched: P/E of 30.7x is near the top of its 365-day range (9.5-30.7), up from ~10-12x in mid-2025",
+        "Margin compression: Net margin fell from 5.6% to 2.8%, ROE from 22.8% to 12.3% over the past year",
+        "Regulatory overhang: DOJ investigation into Medicare billing, FTC insulin pricing settlement, claims denial lawsuits",
+        "Strong cash generation: $8.9B operating cash flow in Q1 2026, up 63.3% YoY",
+        "Near-term catalyst: Q2 earnings on July 16 with Bernstein expecting $5.22 EPS vs $4.84 consensus",
+        "Stock has rallied ~80% from 2025 lows, limiting upside and increasing sensitivity to disappointments",
+        "Membership reduction of ~1.3M Medicare Advantage lives to protect margins signals structural challenges"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=111.72B net_income=6.48B eps_diluted=6.9 operating_cash_flow=8.91B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=30.656 p_b=3.781 net_margin=0.028 roe=0.123"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10",
+          "excerpt": "pe_diluted=11.987 p_b=2.727 net_margin=0.056 roe=0.228"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "excerpt": "close=431.68 range over ~251 bars: high=434.30 low=234.60"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-08",
+          "excerpt": "ongoing DOJ investigations into Medicare billing practices, claims denial lawsuits"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-27",
+          "excerpt": "stock's forward P/E ratio has risen to 23 from 13, and an unresolved Department of Justice investigation"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-09",
+          "excerpt": "UnitedHealth shares may move 6.1% when the company releases its earnings report on July 16"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-10",
+          "excerpt": "reducing Medicare Advantage membership by approximately 1.3 million lives as part of an effort to improve efficiency and protect margins"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-10",
+          "excerpt": "UnitedHealth Group was the largest health insurer with a 30% share in 2024\u2014up from 25% in 2017"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4536,
+        "capped_chars": 4536,
+        "raw_tokens": 1134,
+        "capped_tokens": 1134
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225486,
+        "capped_chars": 225486,
+        "raw_tokens": 56372,
+        "capped_tokens": 56372
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1751,
+        "capped_chars": 1751,
+        "raw_tokens": 438,
+        "capped_tokens": 438
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 18747,
+        "capped_chars": 5165,
+        "raw_tokens": 4687,
+        "capped_tokens": 1291
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 89356,
+        "capped_chars": 70208,
+        "raw_tokens": 22338,
+        "capped_tokens": 17552
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 28919,
+  "started_at": "2026-08-07T03:07:26+00:00"
+}

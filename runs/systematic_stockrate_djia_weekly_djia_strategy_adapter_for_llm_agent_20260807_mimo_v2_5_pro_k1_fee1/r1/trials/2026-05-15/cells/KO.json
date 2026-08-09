@@ -1,0 +1,184 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37950,
+    "tokens_out": 1059,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041127,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.15,
+      "rationale": "Coca-Cola is a high-quality defensive franchise with strong brand equity, an asset-light concentrate model, and dominant global market share (~43-46% global sparkling CSD). Q1 2026 results showed impressive 10% organic revenue growth, 8% volume growth, and operating margin expansion to 33.8%, with EPS of $0.86 beating consensus of $0.81. The business generates robust cash flow (projected $10.5B+ FCF in 2025) and maintains a 64-year dividend increase streak. However, the stock is currently trading at the top of its 1-year P/E range (28.5x vs 23.2-28.9 range), leaving limited valuation upside. The P/B of 11.5x is also near the top of its 9.4-11.7 range. While fundamentals are solid and trajectory is positive, the premium valuation caps the attractiveness. Rising 10-year Treasury yields (4.47%) and elevated oil prices ($104.66/bbl) create macro headwinds for a defensive name trading at peak multiples. No clear near-term re-rating catalyst beyond the already-reported Q1 beat. The score reflects a good business at a full price.",
+      "key_factors": [
+        "Strong Q1 2026 results: 10% organic revenue growth, 8% volume growth, EPS beat of $0.86 vs $0.81 consensus",
+        "Operating margin expanded to 33.8% with comparable operating profit up ~12%",
+        "Dominant global market position: ~43-46% global sparkling CSD share, 200+ country presence",
+        "Asset-light concentrate model drives high margins (27% net margin, 40% ROE) and strong FCF ($10.5B+ projected)",
+        "Valuation stretched: P/E of 28.5x at top of 1-year range (23.2-28.9), P/B of 11.5x near ceiling of 9.4-11.7 range",
+        "Rising rates (10Y at 4.47%) and elevated oil ($104.66/bbl) create macro headwinds for premium-defensive names",
+        "No clear near-term re-rating catalyst; Q1 beat already reported and digested",
+        "64 consecutive years of dividend increases with 2.6% yield provides income support"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "excerpt": "revenue=12.54B net_income=3.80B eps_diluted=0.88 gross_profit=7.82B operating_income=4.28B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=28.452 p_b=11.502 p_s=7.376 earnings_yield=0.035 net_margin=0.259 roe=0.404"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 23.2..28.9 | p_b 9.4..11.7"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-13 ad-hoc-news",
+          "excerpt": "Coca-Cola Co. reported Q1 2026 earnings per share of $0.86, surpassing forecasts of $0.81, while revenue hit $12.5 billion amid 10% organic growth"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-09 ad-hoc-news",
+          "excerpt": "Organic revenue rose about 10% year-on-year, driven by a 2% increase in price/mix and an 8% rise in volume; operating margin expanding by about 70 basis points to 33.8%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-14 DGS10",
+          "excerpt": "4.47"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-14 DCOILWTICO",
+          "excerpt": "104.66"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bcgmatrixtemplate.com competitive landscape",
+          "excerpt": "Coca-Cola Company holds roughly 46 percent retail value share in the global sparkling soft drink category as of early 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "matrixbcg.com growth strategy",
+          "excerpt": "Free cash flow is projected to exceed $10.5 billion in 2025; Organic revenue growth guidance: 8\u201310%; Comparable EPS growth estimate: 7\u20139%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223403,
+        "capped_chars": 223403,
+        "raw_tokens": 55851,
+        "capped_tokens": 55851
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3001,
+        "capped_chars": 3001,
+        "raw_tokens": 750,
+        "capped_tokens": 750
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 26917,
+        "capped_chars": 5833,
+        "raw_tokens": 6729,
+        "capped_tokens": 1458
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 120103,
+        "capped_chars": 96008,
+        "raw_tokens": 30027,
+        "capped_tokens": 24001
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 49198,
+  "started_at": "2026-08-07T02:59:48+00:00"
+}

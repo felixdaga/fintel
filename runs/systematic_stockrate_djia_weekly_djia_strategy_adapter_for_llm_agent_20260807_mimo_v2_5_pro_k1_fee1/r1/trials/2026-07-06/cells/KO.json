@@ -1,0 +1,179 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33229,
+    "tokens_out": 1032,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035237,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.15,
+      "rationale": "Coca-Cola exhibits solid fundamental health: Q2 2025 showed revenue of $12.54B with EPS of $0.88, up 14.3% QoQ, gross margins at 62%, operating margins at 28%, and ROE of 40.4%. The asset-light franchise model generates strong cash flows ($3.81B operating cash flow in Q2). However, the stock is now trading at the top of its 12-month valuation range with a P/E of 29.8x (vs. 23.2x low in the window) and P/B of 12.0x (vs. 9.4x low), making it expensive relative to its own recent history. The upcoming Q2 2026 earnings on July 28 provides a near-term catalyst, with consensus expecting $0.92 EPS (+5.8% YoY), and the company has beaten estimates in each of the last four quarters. Risks include a $20B IRS tax dispute, potential Mexico excise tax headwinds, and rising 10-year Treasury yields (4.49%) which compress the relative appeal of dividend stocks. News sentiment is positive (mean 0.694) with multiple articles highlighting KO as a defensive outperformer in 2026 (+16-20% YTD). The stock has already rallied significantly (+10.6% in the last quarter), which limits upside. Overall, a quality franchise but stretched valuation caps the attractiveness.",
+      "key_factors": [
+        "Strong Q2 2025 fundamentals: 62% gross margin, 28% operating margin, 40.4% ROE, $3.81B operating cash flow",
+        "P/E at 29.8x is at the top of its 12-month range (23.2-29.8x), making it expensive vs own history",
+        "Q2 2026 earnings on July 28 is a near-term catalyst; consensus $0.92 EPS, company has beaten 4 straight quarters",
+        "$20B IRS tax dispute and potential Mexico excise tax represent material downside risks",
+        "Stock has rallied +10.6% in the last quarter, partially pricing in positive fundamentals",
+        "Positive news sentiment (mean 0.694) with defensive positioning narrative driving 2026 outperformance",
+        "Rising 10-year Treasury yields (4.49%) reduce relative appeal of 2.6% dividend yield",
+        "Asset-light franchise model with 64 consecutive years of dividend increases supports fundamental quality"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "excerpt": "revenue=12.54B net_income=3.80B eps_diluted=0.88 gross_profit=7.82B operating_income=4.28B operating_cash_flow=3.81B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=29.757 p_b=12.029 net_margin=0.259 roe=0.404 gross_margin=0.614 operating_margin=0.28"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 23.2..29.8 | p_b 9.4..12.0"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=84.14 quarterly delta +10.6%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-02 barchart",
+          "excerpt": "analysts expect this beverage company to report a profit of $0.92 per share, up 5.8% from $0.87 per share in the year-ago quarter. The company has topped Wall Street's bottom-line estimates in each of the last four quarters"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-22 aljazeera",
+          "excerpt": "Coca-Cola and the IRS will begin oral arguments...dispute that centres on transfer pricing...could result in Coca-Cola facing a tax bill of about $20bn"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-02",
+          "excerpt": "DGS10=4.49%"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-04-07 to 2026-07-05",
+          "excerpt": "mean=0.694 n_articles=101"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 222548,
+        "capped_chars": 222548,
+        "raw_tokens": 55637,
+        "capped_tokens": 55637
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 782,
+        "capped_chars": 782,
+        "raw_tokens": 196,
+        "capped_tokens": 196
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2954,
+        "capped_chars": 2954,
+        "raw_tokens": 738,
+        "capped_tokens": 738
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 28648,
+        "capped_chars": 6459,
+        "raw_tokens": 7162,
+        "capped_tokens": 1615
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 97121,
+        "capped_chars": 68459,
+        "raw_tokens": 24280,
+        "capped_tokens": 17115
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 32175,
+  "started_at": "2026-08-07T03:06:22+00:00"
+}

@@ -1,0 +1,180 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32625,
+    "tokens_out": 967,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035526,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's presents a mixed but mildly attractive picture. The franchise-heavy business model (~95% franchised) provides structural advantages with high operating margins (46.3% net margin in Q1 2026) and strong cash generation ($2.41B operating cash flow in Q1). YoY fundamentals are solid: revenue +9.4%, EPS +6.9%, and gross profit +9.5% in Q1 2026 vs Q1 2025. However, QoQ trends are weak with revenue -7.9% and EPS -12.6% from Q3 2025, reflecting seasonal patterns and some execution challenges. The balance sheet carries significant negative equity (-$1.29B), though this is characteristic of McDonald's capital return strategy rather than financial distress. The stock has declined ~12% over the past quarter to $284.77, and with a 2.6% dividend yield and 51 consecutive years of dividend growth, it offers reasonable value for a defensive consumer name. The 'Accelerating the Arches' strategy targeting 50,000 restaurants by 2027 and 250M loyalty users provides a credible growth pathway. However, headwinds include intense value competition from grocery stores, international market volatility, and the company's own admission it will miss 2030 emissions targets. The Q1 2026 EPS beat ($2.83 vs $2.74 consensus) and institutional buying (Capital World Investors adding shares) provide modest near-term support, but no strong re-rating catalyst is evident.",
+      "key_factors": [
+        "Strong franchise model with ~95% franchised restaurants generating high-margin recurring revenue",
+        "Solid YoY growth: revenue +9.4%, EPS +6.9% in Q1 2026",
+        "Stock down ~12% over past quarter, trading at reasonable valuation with 2.6% dividend yield",
+        "Negative equity balance sheet (-$1.29B) reflects aggressive capital returns, not distress",
+        "QoQ weakness: revenue7 -7.9%, EPS -12.6% from Q3 2025",
+        "Competitive pressures from value wars and grocery store competition",
+        "'Accelerating the Arches' strategy targeting 50,000 restaurants by 2027",
+        "Q1 2026 EPS beat consensus ($2.83 vs $2.74) with institutional buying interest",
+        "Will miss 2030 supply chain emissions target, adding ESG risk"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.52B net_income=1.98B eps_diluted=2.78 operating_income=2.95B operating_cash_flow=2.41B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+9.4% eps_diluted=+6.9% net_income=+6.2% gross_profit=+9.5%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 QoQ",
+          "excerpt": "QoQ: revenue=-7.9% eps_diluted=-12.6% net_income=-12.9%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=284.77 quarterly delta=-12.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "net_margin=0.316 operating_margin=0.463"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-08",
+          "excerpt": "McDonald's reported first-quarter 2026 earnings per share of 2.83 USD, beating analyst consensus of 2.74 USD"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "McDonald's business model",
+          "excerpt": "approximately 95% of those restaurants were franchised"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "McDonald's emissions target",
+          "excerpt": "McDonald's doesn't expect to reach its science-based target to halve the industrial and energy emissions from its vast supply chain and global franchise network by 2030"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215480,
+        "capped_chars": 215480,
+        "raw_tokens": 53870,
+        "capped_tokens": 53870
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1475,
+        "capped_chars": 1475,
+        "raw_tokens": 369,
+        "capped_tokens": 369
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 13046,
+        "capped_chars": 2767,
+        "raw_tokens": 3262,
+        "capped_tokens": 692
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 104247,
+        "capped_chars": 86646,
+        "raw_tokens": 26062,
+        "capped_tokens": 21661
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 57708,
+  "started_at": "2026-08-07T03:03:37+00:00"
+}

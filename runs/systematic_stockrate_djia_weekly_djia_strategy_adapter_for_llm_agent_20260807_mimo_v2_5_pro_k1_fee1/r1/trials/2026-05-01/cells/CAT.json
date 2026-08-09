@@ -1,0 +1,167 @@
+{
+  "cell": "CAT",
+  "symbols": [
+    "CAT"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32300,
+    "tokens_out": 977,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035231,
+    "basis": "reported"
+  },
+  "views": {
+    "CAT": {
+      "symbol": "CAT",
+      "score": 0.35,
+      "rationale": "Caterpillar's fundamental health is strong: Q1 2026 revenue surged 22% YoY to $17.4B, adjusted EPS of $5.54 beat consensus by 19%, and the company raised both annual and long-term revenue growth targets (low double-digit for 2026; 6-9% CAGR to 2030, up from 5-7%). The record $63B backlog and AI-driven power generation demand provide multi-year revenue visibility. Operating margins held at 18% adjusted despite $710M tariff headwinds, and the company deployed $5.7B to shareholders in Q1 alone. However, valuation is extremely stretched: P/E of 42.7x is at the top of its 365-day range (14-43x), P/B of 23.5x is also at the ceiling, and the stock has tripled in a year. Tariff costs are projected at $2.2-2.4B for full-year 2026, and Resource Industries margins collapsed to 10% from 17%. The near-term catalyst (Q1 earnings beat + raised guidance) has already been priced in with a 10% single-day surge. The fundamental trajectory is genuinely excellent, but the valuation leaves no margin of safety and embeds near-perfect execution.",
+      "key_factors": [
+        "Record $63B backlog driven by AI data center power demand; power gen revenue expected to triple by 2030",
+        "Q1 2026 revenue +22% YoY, adjusted EPS $5.54 beating consensus $4.62 by 19%",
+        "P/E of 42.7x at the absolute top of 365-day range (14-43x); P/B 23.5x also at ceiling",
+        "Tariff headwinds of $2.2-2.4B projected for 2026; Resource Industries margin collapsed to 10% from 17%",
+        "Raised long-term revenue growth target to 6-9% CAGR through 2030; expanding large engine capacity to 3x 2024 levels",
+        "Stock has tripled in ~12 months; near-term catalyst (earnings beat + guidance raise) already priced in with 10% single-day move"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=17.64B net_income=2.30B eps_diluted=4.88 operating_cash_flow=3.74B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 Reuters",
+          "excerpt": "Caterpillar raised its annual and long-term revenue forecasts...order backlog of $62.7 billion at the end of the March quarter was at an all-time high...revenue grew 22% to $17.42 billion...profit of $5.54 per share, with analysts expecting $4.62"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "excerpt": "pe_diluted=42.736 p_b=23.501 earnings_yield=0.023 net_margin=0.157 roe=0.55"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 Investing.com",
+          "excerpt": "tariff costs of approximately $700 million for the second quarter and full-year tariff costs in the range of $2.2 billion to $2.4 billion...Resource Industries segment profit plummeting 39% to $378 million...margin contracted sharply to 10.0% from 17.0%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-30",
+          "excerpt": "close=890.11 quarterly delta +33.8% range high=896.98 low=311.02"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-30 Reuters",
+          "excerpt": "Power generation equipment sales are expected to triple by 2030 from 2024 levels...long-term average revenue growth forecast between 2024 and 2030 to 6-9%, compared with 5-7% previously"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CAT",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3786,
+        "capped_chars": 3786,
+        "raw_tokens": 946,
+        "capped_tokens": 946
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241720,
+        "capped_chars": 241720,
+        "raw_tokens": 60430,
+        "capped_tokens": 60430
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30817,
+        "capped_chars": 30817,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1566,
+        "capped_chars": 1566,
+        "raw_tokens": 392,
+        "capped_tokens": 392
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 18355,
+        "capped_chars": 4052,
+        "raw_tokens": 4589,
+        "capped_tokens": 1013
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 109802,
+        "capped_chars": 90045,
+        "raw_tokens": 27450,
+        "capped_tokens": 22512
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 25964,
+  "started_at": "2026-08-07T02:57:46+00:00"
+}

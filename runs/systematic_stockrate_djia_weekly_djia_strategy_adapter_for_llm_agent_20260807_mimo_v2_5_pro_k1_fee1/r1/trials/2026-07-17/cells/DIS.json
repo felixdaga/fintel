@@ -1,0 +1,189 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 26149,
+    "tokens_out": 1223,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.029818,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.15,
+      "rationale": "Disney presents a mixed but mildly attractive picture. On the positive side, the company has achieved streaming profitability (streaming operating income up 88% in Q2 FY2026 to $582M, margin crossing 10% for the first time), parks remain a strong profit engine with record $10B Experiences operating income in FY2025, and the IP flywheel across parks-streaming-merchandise is a genuine competitive moat. Valuation is at the low end of its 1-year range (P/E 14.3x vs. 12.5-23.6x window, P/B 1.53x vs. 1.5-2.1x range), suggesting the market is pricing in significant headwinds. However, several factors temper enthusiasm: (1) YoY EPS declined 29.8% in Q2 FY2026 despite revenue growth of 6.5%, indicating margin pressure; (2) significant regulatory overhang from FCC license reviews of ABC and a $50M antitrust streaming settlement; (3) the $60B 10-year parks capex plan creates long-term execution risk and lumpy cash flows; (4) linear TV structural decline continues. The upcoming Q3 FY2026 earnings on August 5 provides a near-term catalyst, with analysts expecting $1.76 EPS and some (Guggenheim, Rosenblatt) maintaining Buy ratings with targets of $120-126. The stock has declined ~19% from its 52-week high of $123.40, and the P/E compression from 23.5x a year ago to 14.3x now suggests much bad news is priced in, but the fundamental trajectory is mixed enough to warrant only a mildly positive score.",
+      "key_factors": [
+        "Streaming profitability inflection: operating income up 88% to $582M in Q2 FY2026, margin crossed 10%",
+        "Parks/Experiences remain the profit engine with record $10B operating income in FY2025",
+        "Valuation compressed to low end of range: P/E 14.3x (vs. 23.5x a year ago), P/B 1.53x",
+        "YoY EPS decline of 29.8% in Q2 despite 6.5% revenue growth signals margin pressure",
+        "Regulatory overhang: FCC ABC license review, $50M antitrust streaming settlement, European patent injunction",
+        "$60B 10-year parks capex plan creates execution risk and lumpy cash flows",
+        "Q3 FY2026 earnings on Aug 5 as near-term catalyst; consensus EPS ~$1.76",
+        "Stock down ~19% from 52-week high, much negative sentiment likely priced in"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=25.17B eps_diluted=1.27 operating_income=4.60B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=14.324 p_b=1.532 net_margin=0.127 roe=0.107"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-17",
+          "excerpt": "pe_diluted=23.457 p_b=2.038"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com Disney SWOT Analysis 2026",
+          "excerpt": "Streaming operating income rose 88% to $582M in fiscal Q2 2026; SVOD margin crossed 10% for the first time. Record $10.0B Experiences operating income in fiscal 2025."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st 2026-07-03",
+          "excerpt": "Disney has agreed to a US$50 million settlement of an antitrust class action tied to streaming price practices. The company is facing an FCC review of ABC broadcast licenses."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com 2026-06-25",
+          "excerpt": "FCC Chairman Brendan Carr publicly accused Disney of conducting a 'campaign of misinformation' via its on-air defense ads, intensifying a regulatory standoff that directly threatens the renewal of its core broadcast licenses."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wdwmagic.com 2026-07-14",
+          "excerpt": "Disney's Q3 FY2026 earnings call is set for August 5, with the webcast starting at 8:30am ET."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com Wells Fargo",
+          "excerpt": "Disney reported adjusted earnings per share of $1.57 for its fiscal second quarter, surpassing consensus estimates of approximately $1.50. Guggenheim raised its price target for Disney to $120 while maintaining a Buy rating."
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=99.71 range high=123.40 low=92.19"
+        },
+        {
+          "source_type": "growth",
+          "source_id": "2026-03-28 Q2 YoY",
+          "excerpt": "revenue=+6.5% eps_diluted=-29.8% net_income=-27.5%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4429,
+        "capped_chars": 4429,
+        "raw_tokens": 1107,
+        "capped_tokens": 1107
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221391,
+        "capped_chars": 221391,
+        "raw_tokens": 55348,
+        "capped_tokens": 55348
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1747,
+        "capped_chars": 1747,
+        "raw_tokens": 437,
+        "capped_tokens": 437
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 6002,
+        "capped_chars": 1683,
+        "raw_tokens": 1500,
+        "capped_tokens": 421
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 63783,
+        "capped_chars": 46874,
+        "raw_tokens": 15946,
+        "capped_tokens": 11719
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 26013,
+  "started_at": "2026-08-07T03:07:44+00:00"
+}

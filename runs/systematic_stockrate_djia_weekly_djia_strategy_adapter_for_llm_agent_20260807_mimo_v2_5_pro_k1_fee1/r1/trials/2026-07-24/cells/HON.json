@@ -1,0 +1,183 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32030,
+    "tokens_out": 1035,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035135,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": 0.35,
+      "rationale": "HON reported a strong Q2 2026 with revenue of $9.72B (+4.3% YoY) and adjusted EPS of $4.52 beating consensus of $1.80, driven by 4% organic growth and 100bps segment margin expansion. The aerospace spin-off completed June 29, 2026, creating a more focused Honeywell Technologies entity. Current P/E of 9.55 is dramatically below the 12-month range of 9.5-37.0, suggesting the market is pricing in post-spin-off uncertainty and lower forward guidance (Q3 EPS guidance of $2.05-2.20 vs consensus $2.85). The $38B backlog and 16% organic order growth provide demand visibility, while Building Automation's 9% organic growth and 27.1% margin demonstrate segment strength. However, Process Automation weakness (-1% organic), elevated debt ($31.5B), and the one-time Quantinuum gain inflating reported EPS ($17.83) temper enthusiasm. The stock appears undervalued relative to its own history given the P/E compression from ~24x to ~10x, though this partly reflects the structural change from the spin-off.",
+      "key_factors": [
+        "Q2 2026 adjusted EPS of $4.52 beat consensus of $1.80; revenue $9.72B beat consensus of $5.02B",
+        "P/E of 9.55 vs 12-month range of 9.5-37.0, suggesting significant compression post-spin-off",
+        "Aerospace spin-off completed June 29, 2026, creating focused Honeywell Technologies entity",
+        "Orders up 16% organically with ~$20B backlog (ex-Aerospace); Building Automation +9% organic growth",
+        "Q3 2026 EPS guidance of $2.05-2.20 well below consensus of $2.85, reflecting spin-off impact",
+        "Process Automation organic sales declined 1%; elevated debt at $31.5B vs equity of $18.86B",
+        "One-time Quantinuum deconsolidation gain inflated reported EPS to $17.83 vs adjusted $4.52"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-07-23 Q2",
+          "excerpt": "revenue=9.72B net_income=5.69B eps_diluted=17.83"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=9.549 p_b=4.161 net_margin=0.216 roe=0.436"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-24 to 2026-07-23 range",
+          "excerpt": "pe_diluted 9.5..37.0 | p_b 4.2..10.4"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23 investor.honeywell.com",
+          "excerpt": "Orders up 16% leading to ~$20 billion backlog; Sales of $5.2 billion, up 3% reported and up 4% organic; Segment Margin 19.0%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23 investor.honeywell.com",
+          "excerpt": "EPS of $17.83, which reflects the impact of a one-time gain on deconsolidation of Quantinuum, and adjusted EPS of $4.52"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23 tickerreport.com",
+          "excerpt": "The company provided earnings per share guidance of 2.050-2.200 for the period, compared to the consensus estimate of 2.850"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23 investor.honeywell.com",
+          "excerpt": "BUILDING AUTOMATION Sales $2,002 Organic Growth 9% Segment Margin 27.1%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23 investor.honeywell.com",
+          "excerpt": "PROCESS AUTOMATION AND TECHNOLOGY Sales $1,679 Organic Growth (1%) Segment Margin 22.1%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-30 balance sheet",
+          "excerpt": "total_debt=31.51B total_equity=18.86B"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3815,
+        "capped_chars": 3815,
+        "raw_tokens": 954,
+        "capped_tokens": 954
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 248460,
+        "capped_chars": 248460,
+        "raw_tokens": 62115,
+        "capped_tokens": 62115
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1524,
+        "capped_chars": 1524,
+        "raw_tokens": 381,
+        "capped_tokens": 381
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 13655,
+        "capped_chars": 3504,
+        "raw_tokens": 3414,
+        "capped_tokens": 876
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88919,
+        "capped_chars": 68019,
+        "raw_tokens": 22229,
+        "capped_tokens": 17005
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 32649,
+  "started_at": "2026-08-07T03:08:50+00:00"
+}

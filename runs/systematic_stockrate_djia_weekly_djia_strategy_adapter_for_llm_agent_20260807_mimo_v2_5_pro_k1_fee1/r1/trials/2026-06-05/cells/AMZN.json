@@ -1,0 +1,139 @@
+{
+  "cell": "AMZN",
+  "symbols": [
+    "AMZN"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 56819,
+    "tokens_out": 1388,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.060983,
+    "basis": "reported"
+  },
+  "views": {
+    "AMZN": {
+      "symbol": "AMZN",
+      "score": 0.35,
+      "rationale": "Amazon presents a solid fundamental case with strong trajectory. Q3 2025 showed accelerating revenue ($180.2B, +7.4% QoQ) and EPS growth ($1.95, +16.1% QoQ), with three consecutive quarters of improvement. The business has excellent competitive positioning: AWS dominates cloud with ~29% market share and is reaccelerating (28% YoY growth in Q1 2026 per news), advertising is a $70B+ high-margin business growing 24% YoY, and the third-party marketplace generates $172B in fees with minimal inventory risk. Balance sheet is healthy with debt-to-equity of 0.149 and $369.6B equity. Operating cash flow is strong at $35.5B quarterly. However, the massive $200B 2026 capex commitment has collapsed trailing free cash flow to $1.2B, creating real near-term cash flow pressure. Valuation at P/E 36x is mid-range of its 28-39x 12-month window, neither cheap nor expensive versus own history. The stock has rallied 15.9% in the past quarter, partially reflecting the strong Q1 2026 earnings beat ($2.78 EPS vs $1.63 consensus). Key risks include the October 2026 FTC antitrust trial, EU regulatory pressure on AWS, and the question of whether $200B in AI capex will generate adequate returns. Multiple billionaire investors (Ackman, Tepper, Robbins) are buying while Berkshire exited. The Snowflake $6B AWS deal and Anthropic partnership provide near-term validation of AWS's AI positioning. News sentiment is moderately positive (mean 0.35). The score reflects strong fundamentals and trajectory offset by mid-range valuation and significant capex/cash flow uncertainty.",
+      "key_factors": [
+        "Strong Q3 2025 trajectory: revenue $180.2B (+7.4% QoQ), EPS $1.95 (+16.1% QoQ), three consecutive quarters of improvement",
+        "AWS reacceleration to 28% YoY growth in Q1 2026 (fastest in 15 quarters) with $364B backlog and $150B annual revenue run rate",
+        "Massive $200B 2026 capex commitment collapsed trailing FCF to $1.2B, creating significant near-term cash flow pressure",
+        "P/E of 36x is mid-range of 28-39x 12-month window \u2014 neither a bargain nor stretched vs own history",
+        "October 2026 FTC antitrust trial and EU regulatory pressure on AWS represent material overhangs",
+        "Advertising business at $70B+ run rate growing 24% YoY is a high-margin growth engine",
+        "Custom silicon (Graviton/Trainium) crossed $ $20B annual run rate with triple-digit growth",
+        "Multiple institutional buyers (Ackman, Tepper, Robbins) while Berkshire exited \u2014 Druckenmiller reduced 94%",
+        "sources_cited"
+      ],
+      "sources_cited": []
+    }
+  },
+  "environment": {
+    "cell": "AMZN",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3859,
+        "capped_chars": 3859,
+        "raw_tokens": 965,
+        "capped_tokens": 965
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231838,
+        "capped_chars": 231838,
+        "raw_tokens": 57960,
+        "capped_tokens": 57960
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4408,
+        "capped_chars": 4408,
+        "raw_tokens": 1102,
+        "capped_tokens": 1102
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 330108,
+        "capped_chars": 75418,
+        "raw_tokens": 82527,
+        "capped_tokens": 18854
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 121316,
+        "capped_chars": 98250,
+        "raw_tokens": 30330,
+        "capped_tokens": 24563
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 52937,
+  "started_at": "2026-08-07T03:02:07+00:00"
+}

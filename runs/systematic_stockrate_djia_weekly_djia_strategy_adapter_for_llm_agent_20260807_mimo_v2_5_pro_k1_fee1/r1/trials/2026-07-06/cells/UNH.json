@@ -1,0 +1,184 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31955,
+    "tokens_out": 1139,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035372,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": 0.15,
+      "rationale": "UNH presents a mixed but mildly attractive picture. The company is a dominant healthcare franchise with strong competitive positioning (largest commercial insurer, 30% Medicare Advantage market share) and solid scale advantages. Q1 2026 showed revenue of $111.7B (+2% YoY) with EPS of $6.90, and operating cash flow surged to $8.9B from $5.5B YoY, indicating improving cash generation. The medical care ratio improved to 83.9% and management raised 2026 earnings guidance, signaling operational stabilization after the 2025 cost pressures. However, the stock has already rallied ~55% from its April low of $274 to $425, and the P/E has expanded from ~13x to 30x\u2014now at the top of its 365-day range. Net margin has compressed to 2.8% from 5.6% a year ago, and ROE has fallen to 12.3% from 22.8%. The DOJ investigation into Medicare Advantage billing and the FTC settlement on insulin pricing create regulatory overhang. With the stock near 52-week highs and P/E at the top of its range, much of the recovery appears priced in. The upcoming Q2 earnings on July 16 could serve as a near-term catalyst, with analysts expecting EPS of $4.84 (+18.6% YoY), but the risk/reward is balanced at current levels.",
+      "key_factors": [
+        "Dominant competitive position: largest US health insurer with 14.9% market share and 30% Medicare Advantage share",
+        "Q1 2026 operational beat: revenue +2% YoY, operating cash flow surged to $8.9B, medical care ratio improved to 83.9%",
+        "Valuation stretched: P/E of 30.2x at top of 365-day range (9.5-30.4), up from ~13x in early 2026",
+        "Margin compression: net margin fell to 2.8% from 5.6% YoY, ROE declined to 12.3% from 22.8%",
+        "Regulatory overhang: DOJ investigation into Medicare Advantage billing, FTC settlement on insulin pricing at OptumRx",
+        "Near-term catalyst: Q2 earnings on July 16 with consensus EPS of $4.84 (+18.6% YoY)",
+        "Stock has rallied 55% from April low, much of recovery appears priced in",
+        "Strong balance sheet: $31.2B cash, operating cash flow supports dividend and buyback program"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=111.72B net_income=6.48B eps_diluted=6.9 operating_cash_flow=8.91B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=30.207 p_b=3.726 net_margin=0.028 roe=0.123"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-07",
+          "excerpt": "pe_diluted=12.155 net_margin=0.056 roe=0.228"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=425.36 quarterly delta +55.3%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "AMA Competition in health care research 2025",
+          "excerpt": "UnitedHealth Group was the largest health insurer with a 30% share in 2024\u2014up from 25% in 2017"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-27 Motley Fool",
+          "excerpt": "UnitedHealth stock has rebounded 80% from its 2025 low of $234.60 to near $427, outpacing the S&P 500. The company's medical care ratio improved and management raised 2026 earnings guidance"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-02 Yahoo Finance",
+          "excerpt": "UnitedHealth is set to report its second-quarter earnings before the market opens on July 16. Analysts predict revenue for the quarter to be around $111 billion and EPS to rise by 18.6% YOY to $4.84"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "FXLeaders UNH Stock Rally Fades",
+          "excerpt": "UnitedHealth Group's stock recovery has stalled as investors reassess risks related to healthcare costs and regulatory pressures. Despite a recent earnings beat and analyst upgrades, shares are struggling to maintain gains above the critical $400 level"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Yahoo Finance FTC Settlement",
+          "excerpt": "UnitedHealth Group subsidiaries OptumRx and Emisar Pharma Services have reached a proposed settlement with the Federal Trade Commission over alleged anticompetitive insulin rebating practices"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4536,
+        "capped_chars": 4536,
+        "raw_tokens": 1134,
+        "capped_tokens": 1134
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224573,
+        "capped_chars": 224573,
+        "raw_tokens": 56143,
+        "capped_tokens": 56143
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1704,
+        "capped_chars": 1704,
+        "raw_tokens": 426,
+        "capped_tokens": 426
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 15937,
+        "capped_chars": 4307,
+        "raw_tokens": 3984,
+        "capped_tokens": 1077
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 89426,
+        "capped_chars": 67172,
+        "raw_tokens": 22357,
+        "capped_tokens": 16793
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 29485,
+  "started_at": "2026-08-07T03:06:38+00:00"
+}

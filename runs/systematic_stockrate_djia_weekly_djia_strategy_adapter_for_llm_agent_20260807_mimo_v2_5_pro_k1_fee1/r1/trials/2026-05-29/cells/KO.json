@@ -1,0 +1,198 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37714,
+    "tokens_out": 1336,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041722,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.15,
+      "rationale": "Coca-Cola is a high-quality defensive franchise with strong brand equity, global distribution scale, and consistent cash generation. Q1 2026 results showed solid momentum: revenue of $12.47B (+12% YoY), organic revenue +10%, comparable EPS of $0.86 (+18% YoY), beating consensus. The company guided for 4-5% organic revenue growth and 7-8% comparable EPS growth for 2026. However, the stock is trading near the top of its 1-year P/E range (28.4x vs. 23.2-29.0x window), and P/B of 11.5x is at the high end of its 9.4-11.7x range. This means the market is already paying a premium for the defensive quality and earnings stability. The balance sheet shows $12.25B cash but total liabilities of $74.15B against $30.18B equity, and the IRS tax dispute remains an unresolved multi-billion-dollar overhang. Rising 10-year Treasury yields (4.45%) and elevated oil prices ($92.65/bbl) create modest headwinds for a consumer staples name trading at a premium multiple. News sentiment is broadly positive (mean 0.688) with consistent dividend-king and Buffett-related coverage, but no near-term fundamental catalyst that would drive a re-rating. The score reflects a solid but fully-to-richly-valued defensive franchise with limited upside at current multiples.",
+      "key_factors": [
+        "Strong Q1 2026 results: revenue +12% YoY, organic revenue +10%, comparable EPS +18% to $0.86, beating consensus",
+        "P/E of 28.4x near top of 1-year range (23.2-29.0x), P/B of 11.5x at high end of 9.4-11.7x range \u2014 premium valuation already reflects quality",
+        "2026 guidance of 4-5% organic revenue growth and 7-8% comparable EPS growth supports steady but not accelerating trajectory",
+        "IRS tax dispute excluded from 2026 tax-rate guidance represents a material unresolved overhang",
+        "Rising 10-year Treasury yields (4.45%) and elevated oil prices ($92.65/bbl) create modest macro headwinds for premium-valued staples",
+        "64 consecutive years of dividend increases and Berkshire Hathaway's 9.2% stake provide structural support but no re-rating catalyst",
+        "News sentiment positive (mean 0.688) but driven by dividend-king/Buffett narrative rather than fundamental catalysts"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "excerpt": "revenue=12.54B net_income=3.80B eps_diluted=0.88 gross_profit=7.82B operating_income=4.28B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-28 Q1",
+          "excerpt": "revenue=11.13B eps_diluted=0.77"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=28.438 p_b=11.496 p_s=7.373 earnings_yield=0.035 net_margin=0.259 roe=0.404"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-05-29..2026-05-28",
+          "excerpt": "pe_diluted 23.2..29.0 | p_b 9.4..11.7"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-19",
+          "excerpt": "Coca-Cola reported strong Q1 2026 results with growth in zero-sugar and non-soda beverages"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-16",
+          "excerpt": "Coca-Cola and Procter & Gamble demonstrate resilience as Dividend Kings with over 50 consecutive years of dividend increases. Both consumer staples giants offer attractive dividend yields (2.7% and 2.9% respectively) compared to the S&P 500's 1.1%, and trade at fair valuations below their five-year average P/E ratios"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com PESTLE 2026",
+          "excerpt": "IRS tax litigation:ngoing US transfer-pricing dispute; potential multi-billion-dollar liability if Coca-Cola does not prevail"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com Q1 earnings",
+          "excerpt": "Coca-Cola has reported first-quarter 2026 results, with the bottom and top lines surpassing the Zacks Consensus Estimate. The company's revenues and earnings per share (EPS) improved year over year. Revenues of $12.47 billion grew 12% year over-year. Organic revenues on an adjusted basis rose 10%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "excerpt": "Coca-Cola's narrative projects $53.0 billion revenue and $15.6 billion earnings by 2029. This requires ..5% yearly revenue growth and a $1.9 billion earnings increase from $13.7 billion today"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "excerpt": "DGS10=4.45 (10-Year Treasury yield)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "excerpt": "DCOILWTICO=92.65 (WTI Crude Oil)"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-02-28..2026-05-28",
+          "excerpt": "mean=0.688, n_articles=119"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223404,
+        "capped_chars": 223404,
+        "raw_tokens": 55851,
+        "capped_tokens": 55851
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 782,
+        "capped_chars": 782,
+        "raw_tokens": 196,
+        "capped_tokens": 196
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2999,
+        "capped_chars": 2999,
+        "raw_tokens": 750,
+        "capped_tokens": 750
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 38627,
+        "capped_chars": 8293,
+        "raw_tokens": 9657,
+        "capped_tokens": 2073
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 131655,
+        "capped_chars": 107019,
+        "raw_tokens": 32914,
+        "capped_tokens": 26754
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 57929,
+  "started_at": "2026-08-07T03:01:33+00:00"
+}

@@ -1,0 +1,189 @@
+{
+  "cell": "MSFT",
+  "symbols": [
+    "MSFT"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 54096,
+    "tokens_out": 1197,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.057687,
+    "basis": "reported"
+  },
+  "views": {
+    "MSFT": {
+      "symbol": "MSFT",
+      "score": 0.45,
+      "rationale": "Microsoft presents a compelling fundamental picture with strong trajectory, supported by accelerating Azure growth (43% YoY in Q4 FY2026, with 45% guidance for Q1 FY2027), robust revenue growth (+18.3% YoY in Q3), and exceptional profitability (46.3% operating margin, 40.3% net margin). The company's AI business has reached a $37B annual run rate, growing 123% YoY, while commercial RPO expanded to $678B (+84% YoY). Balance sheet strength is excellent with $78.3B cash against only $40.3B debt, and operating cash flow generation remains strong at $46.7B in the latest quarter. Valuation has compressed significantly from 42x P/E in July 2025 to 25.1x currently, placing it near the low end of its 12-month range (21.8-42.8), representing a meaningful discount to its own history despite improving fundamentals. The Q4 earnings beat (EPS $4.74 vs $4.24 expected, revenue $90B vs $87.6B expected) and 15.5% single-day stock surge on July 30 provide a near-term re-rating catalyst, though the stock has already moved substantially. Key risks include elevated capex ($175B planned for 2026), ongoing securities class action lawsuits related to Copilot disclosures, and regulatory scrutiny in the UK and EU. The combination of improving fundamentals, attractive valuation versus history, and a fresh earnings catalyst supports a moderately positive view.",
+      "key_factors": [
+        "Azure revenue growth accelerated to 43% YoY with 45% guidance for Q1 FY2027, passing $100B annual milestone",
+        "P/E compressed from 42x (Jul 2025) to 25.1x, near low end of 12-month range22 below historical ",
+        "AI business at $37B annual run rate growing 123% YoY, demonstrating monetization of massive capex",
+        "Commercial RPO expanded to $678B (+84% YoY, providing strong revenue visibility",
+        "Q4 FY2026 beat: EPS $4.74 vs $4.24 expected, revenue $90B vs $87.6B expected",
+        "Balance sheet fortress: $78.3B cash vs $40.3B debt, AAA credit rating",
+        "Operating cash flow generation strong at $46.7B in Q3, $37.2B in Q4, supporting dividend growth and buybacks",
+        "Securities class action lawsuits and UK regulatory designation as Critical Third Party create legal/regulatory overhang"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3",
+          "excerpt": "revenue=82.89B net_income=31.78B eps_diluted=4.27 operating_income=38.40B operating_cash_flow=46.68B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-30 Q4 (from news)",
+          "excerpt": "revenue of $90.01 billion and adjusted EPS of $4.74, both exceeding expectations. Azure revenue grew 43% year-over-year"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=25.131 ev_to_ebit=21.422 p_b=7.6 net_margin=0.403 roe=0.302"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-31",
+          "excerpt": "pe_diluted=42.167 ev_to_ebit=33.561 p_b=12.366"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-30 Motley Fool",
+          "excerpt": "Microsoft led the rally, jumping 16.4% after reporting $90 billion in quarterly revenue and 43% Azure cloud growth"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-30 Motley Fool",
+          "excerpt": "Microsoft reported better-than-expected Q4 2026 earnings with revenue and operating income up 18% YoY to $90 billion and $40.6 billion respectively"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "indmoney.com",
+          "excerpt": "Our AI business surpassed an annual revenue run rate of $37 billion, up 123% year-over-year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc.com",
+          "excerpt": "Capital expenditures and finance leases for the quarter, at $41 billion, jumped 69%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com",
+          "excerpt": "EPS / Forecast: 4.74 / 4.24; Revenue / Forecast: 90.01B / 87.61B; stock surged 8.13% after-hours to $422.30"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-21 GlobeNewswire",
+          "excerpt": "class action lawsuit on behalf of Microsoft investors who purchased securities between May 1, 2025 and January 28, 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MSFT",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 5508,
+        "capped_chars": 5508,
+        "raw_tokens": 1377,
+        "capped_tokens": 1377
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247209,
+        "capped_chars": 247209,
+        "raw_tokens": 61802,
+        "capped_tokens": 61802
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4397,
+        "capped_chars": 4397,
+        "raw_tokens": 1099,
+        "capped_tokens": 1099
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 318304,
+        "capped_chars": 70232,
+        "raw_tokens": 79576,
+        "capped_tokens": 17558
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 116328,
+        "capped_chars": 83756,
+        "raw_tokens": 29083,
+        "capped_tokens": 20939
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 35838,
+  "started_at": "2026-08-07T03:09:56+00:00"
+}

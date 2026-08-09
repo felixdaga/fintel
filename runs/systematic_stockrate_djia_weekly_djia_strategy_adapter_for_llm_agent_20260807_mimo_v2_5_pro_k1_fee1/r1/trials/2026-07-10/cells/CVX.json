@@ -1,0 +1,189 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30197,
+    "tokens_out": 1272,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034013,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "rationale": "Chevron's fundamental health and trajectory are deteriorating sharply. Q1 2026 showed a severe earnings decline: EPS fell 44.5% YoY to $1.11 (from $2.00 in Q1 2025), net income dropped 34.7% YoY, and operating cash flow collapsed 51.6% to just $2.51B. The quarterly trajectory is erratic and incomplete (Q1\u2192Q3\u2192Q2\u2192Q1 pattern with a fiscal gap), making TTM analysis unreliable, but the most recent quarter's results are clearly weak. Gross margin held at 43.2% but operating margin compressed to 9.5% and net margin fell to 5.9%, down from 7.8% a year ago. ROE has declined from 10.5% to 5.9% over the same period. The balance sheet shows rising liabilities ($140.18B vs $106.32B a year ago) while equity grew modestly, suggesting leverage is increasing\u2014likely related to the Hess acquisition integration. Valuation is stretched: the P/E of 30.68 is near the top of its 365-day range (16.7\u201334.8), having expanded from ~17x a year ago despite deteriorating earnings. The stock is being priced for a recovery that the fundamentals do not yet support. WTI crude has fallen ~27% from its April highs to $73.15, which will further pressure upstream realizations in coming quarters. The Q2 earnings call on July 31 is a potential catalyst, but given the earnings trajectory and oil price headwinds, it is more likely to disappoint than re-rate positively. The Microsoft/Kilby power deal is a long-term positive but won't contribute meaningfully until 2028. Near-term risks include Venezuela exposure, Hess integration execution, and political pressure on oil prices. All three pillars\u2014deteriorating fundamentals, expensive valuation, and unfavorable near-term catalysts\u2014align negatively.",
+      "key_factors": [
+        "Q1 2026 EPS down 44.5% YoY to $1.11; net income down 34.7%",
+        "Operating cash flow collapsed 51.6% YoY to $2.51B in Q1 2026",
+        "P/E at 30.68x is near top of 365-day range (16.7\u201334.8), up from ~17x a year ago despite earnings decline",
+        "WTI crude down ~27% from April highs to $73.15, pressuring upstream realizations",
+        "ROE declined from 10.5% to 5.9% and net margin from 7.8% to 5.9% over past year",
+        "Balance sheet leverage rising: increased rising liabilities up rising to140.18B, likely related to Hess acquisition integration",
+        "Q2 earnings call on July 31 is a potential negative catalyst given political pressure on oil prices and potential earnings miss",
+        "Microsoft/Kilby deal is long-dated ( won't contribute until 2028"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "excerpt": "Q1 2026 EPS=1.11"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "excerpt": "Q1 2026: revenue=48.61B, eps_diluted=1.11, net_income=2.29B, operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31",
+          "excerpt": "Q1 2025: revenue=47.61B, eps_diluted=2, net_income=3.51B, operating_cash_flow=5.19B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=30.68, p_b=1.825, net_margin=0.059, roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10",
+          "excerpt": "pe_diluted=17.188, p_b=1.799, net_margin=0.078, roe=0.105"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-09",
+          "excerpt": "DCOILWTICO=73.15, down from ~100.72 on 2026-04-13 (-27.4%)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-08",
+          "excerpt": "Chevron rallied 5-6% over two days as geopolitical tensions spiked oil prices... stock trades 18% below its March 2026 high of $214.71"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-07",
+          "excerpt": "Big Oil companies are set for record Q2 profits due to crude price spikes from Strait of Hormuz disruption... President Trump is demanding gasoline prices drop to $2.25-$2.50 per gallon"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-03",
+          "excerpt": "Chevron Q1 earnings fell sharply, showing a notable drop in profit versus prior quarter. Revenue and margins were pressured."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-03",
+          "excerpt": "Chevron stock consolidates as price remains well below its long-term average"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225251,
+        "capped_chars": 225251,
+        "raw_tokens": 56313,
+        "capped_tokens": 56313
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3337,
+        "capped_chars": 3337,
+        "raw_tokens": 834,
+        "capped_tokens": 834
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 47119,
+        "capped_chars": 11808,
+        "raw_tokens": 11780,
+        "capped_tokens": 2952
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 78638,
+        "capped_chars": 56944,
+        "raw_tokens": 19660,
+        "capped_tokens": 14236
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 29733,
+  "started_at": "2026-08-07T03:06:53+00:00"
+}

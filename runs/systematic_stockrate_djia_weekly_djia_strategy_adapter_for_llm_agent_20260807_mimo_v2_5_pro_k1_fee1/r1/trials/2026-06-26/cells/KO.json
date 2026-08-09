@@ -1,0 +1,193 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34922,
+    "tokens_out": 1126,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0383,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.15,
+      "rationale": "Coca-Cola is a high-quality, cash-generative franchise with durable competitive advantages (brand, distribution, pricing power) and a long dividend track record. Q2 2025 showed solid sequential improvement (revenue +12.6% QoQ, EPS +14.3% QoQ) and the latest Q2 2026 earnings beat estimates (EPS $0.97 vs $0.93 est, revenue $13.37B, 5% volume growth, 6% organic revenue growth, guidance raised). However, the stock is trading near the top of its 1-year P/E range (28.4x vs 23.2-29.6x window) and P/B is elevated at 11.5x (vs 9.4-12.0 range). The 3.5% earnings yield is thin relative to 10-year Treasuries at 4.4%, compressing the equity risk premium. Structural headwinds are real: CSD dependence (~69% of volume), spreading sugar taxes, GLP-1 drug adoption, IRS tax dispute ($6B+ potential liability), Mexico excise tax risk, and plastics litigation. The Q2 2026 earnings beat and World Cup-driven guidance raise provide a modest near-term positive, but the stock appears to be pricing in much of the good news at current multiples. Net: solid business, fair-to-slightly-rich valuation, limited upside at this entry point.",
+      "key_factors": [
+        "Strong brand moat and global distribution (200+ countries, ~2.2B daily servings) with 64 consecutive years of dividend increases",
+        "Q2 2026 earnings beat: EPS $0.97 vs $0.93 est, 5% volume growth, 6% organic revenue, guidance raised",
+        "P/E at 28.4x near top of 1-year range (23.2-29.6); earnings yield 3.5% below 10Y Treasury at 4.4%",
+        "Structural headwinds: CSD dependence ~69% of volume, sugar taxes expanding globally, GLP-1 adoption, IRS $6B+ tax dispute",
+        "Mexico excise tax risk and plastics litigation (LA County, Baltimore) add regulatory overhang",
+        "CFO flagged some consumers 'not as resilient as you think'; growth driven largely by price/mix rather than volume",
+        "Near-term catalyst: World Cup marketing campaign drove record engagement and Q2 volume, but likely priced in at current valuation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "excerpt": "revenue=12.54B eps_diluted=0.88 net_income=3.80B operating_cash_flow=3.81B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-28 Q1",
+          "excerpt": "revenue=11.13B eps_diluted=0.77"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=28.441 p_b=11.497 earnings_yield=0.035 net_margin=0.259 roe=0.404"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 23.2..29.6 | p_b 9.4..12.0"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=80.42 range high=84.04 low=65.35"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-25",
+          "excerpt": "DGS10=4.4% FEDFUNDS=3.63%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-24 Motley Fool",
+          "excerpt": "Greg Abel has significantly increased Berkshire's stake in Alphabet, elevating it to No. 3 position ahead of long-held Coca-Cola"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "excerpt": "planned 2026 excise tax in Mexico could weigh on consumption; IRS tax dispute with potential multi-billion-dollar liability"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com PESTLE",
+          "excerpt": "IRS matter: underlying effective tax rate guidance of 20.9% excludes the impact of ongoing tax litigation with the IRS"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingview Q2 2026",
+          "excerpt": "EPS 0.97 USD vs est 0.93, revenue 13.37B, 5% volume and 6% organic revenue growth, guidance raised for 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingview pricing",
+          "excerpt": "KO trades at forward P/E of 23.57X vs industry average 19.08X; organic revenues increased 10% in Q1 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223433,
+        "capped_chars": 223433,
+        "raw_tokens": 55858,
+        "capped_tokens": 55858
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2862,
+        "capped_chars": 2862,
+        "raw_tokens": 716,
+        "capped_tokens": 716
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 26591,
+        "capped_chars": 5444,
+        "raw_tokens": 6648,
+        "capped_tokens": 1361
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 110482,
+        "capped_chars": 90403,
+        "raw_tokens": 27621,
+        "capped_tokens": 22600
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 55244,
+  "started_at": "2026-08-07T03:05:28+00:00"
+}

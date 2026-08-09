@@ -14,8 +14,10 @@ Nothing under `environment/` or `agents/` may import this. There's a test.
 
 from __future__ import annotations
 
+from collections.abc import Iterable
 from dataclasses import dataclass, field
 from datetime import date as Date
+from math import ceil
 
 from fintel.market.calendar import TradingCalendar
 from fintel.market.data.store import PriceStore
@@ -75,3 +77,41 @@ class PriceLookup:
             if p is not None:
                 out[sym] = p
         return out
+
+    def latest_bar_date(
+        self,
+        symbols: Iterable[Symbol] | None = None,
+        *,
+        min_coverage: float = 1.0,
+    ) -> Date | None:
+        """Latest mark date from the price cache for ``symbols``.
+
+        Per-symbol we take the max bar date; the result is the latest date ``d``
+        such that at least ``min_coverage`` of the (non-empty) symbols have a bar
+        on or after ``d``. Default ``min_coverage=1.0`` is the intersection of
+        maxima — every name must be current.
+
+        Empty symbols are skipped (they do not force ``None``). A single stale
+        cache file can still pin the date when ``min_coverage`` is 1.0; callers
+        that mark a held book should pass that book's names (not the full
+        historical universe) and/or warm the cache first.
+        """
+        if not 0.0 < min_coverage <= 1.0:
+            raise ValueError(f"min_coverage must be in (0, 1], got {min_coverage}")
+        syms = list(symbols) if symbols is not None else self.store.symbols()
+        if not syms:
+            return None
+        maxima: list[Date] = []
+        for sym in syms:
+            df = self.store.read(sym)
+            if df is None or df.empty:
+                continue
+            maxima.append(df["date"].iloc[-1])
+        if not maxima:
+            return None
+        n = len(maxima)
+        need = max(1, ceil(n * min_coverage))
+        for d in sorted(set(maxima), reverse=True):
+            if sum(1 for m in maxima if m >= d) >= need:
+                return d
+        return min(maxima)

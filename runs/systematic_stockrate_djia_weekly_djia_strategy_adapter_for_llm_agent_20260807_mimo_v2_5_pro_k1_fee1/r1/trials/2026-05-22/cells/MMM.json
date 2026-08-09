@@ -1,0 +1,191 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32366,
+    "tokens_out": 1226,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036044,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "rationale": "MMM is a deteriorating business with a stretched balance sheet, collapsing earnings, and a valuation that has expanded to the top of its historical range despite worsening fundamentals. The Q1 2026 report showed EPS of $1.23 ( a YoY decline of -39.7%, with net income down -41.3% YoY. operating cash flow down -826.6% YoY. The balance sheet is severely strained: total equity of only $3.31B against $32.12B in liabilities, implying a debt-to-equity ratio of roughly 8.7x. The P/E has expanded from ~18x a year ago to ~29x now, while net margins have compressed from 17.9% to 11.2% and a clear deteriorationation in profitability. The company faces ongoing PFAS litigation with $7.8B in environmental liabilities, renewed scrutiny in Wisconsin, and a narrowed EPS guidance range of $8.20-$8.50 (down from prior expectations). The Solventum spin-off removed the higher-margin healthcare business, leaving a more cyclical industrial portfolio. While Q1 non-GAAP EPS of $2.14 beat estimates, the GAAP figure of $1.23 tells a different story of real earnings power. The stock at $151.60 is trading at a P/E of ~29x on depressed earnings, near the top of its 365-day range (17.7-29.0), and P/B of 24.4x is at the absolute ceiling of its range (17.1-24.5). Rising interest rates (10Y at 4.57%) and elevated oil prices ($100/bbl) create additional headwinds for an industrial conglomerate. No credible near-term catalyst exists to re-rate the stock positively; the next catalysts are negative (PFAS settlement hearing in June 2026, class certification deadline in July 2026).",
+      "key_factors": [
+        "YoY EPS decline of -39.7% and net income decline of -41.3% in Q1 2026",
+        "Operating cash flow collapsed -826.6% YoY to $574M from prior periods",
+        "Balance sheet severely strained: $3.31B equity vs $32.12B liabilities, debt-to-equity ~8.7x",
+        "P/E expanded to ~29x (top of 17.7-29.0 range) despite deteriorating earnings",
+        "P/B at 24.4x, at ceiling of 17.1-24.5 range",
+        "$7.8B in PFAS environmental liabilities with ongoing litigation and new Wisconsin scrutiny",
+        "Narrowed FY2026 EPS guidance to $8.20-$8.50, down from prior expectations",
+        "Solventum spin-off removed higher-margin healthcare segment, leaving more cyclical industrial portfolio",
+        "Rising rates (10Y at 4.57%) and elevated oil ($100/bbl) as macro headwinds",
+        "Near-term catalysts are negative: PFAS settlement hearing June 2026, class certification July 2026"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.03B net_income=659.00M eps_diluted=1.23 operating_cash_flow=574.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=5.95B eps=2.04 net_income=1.12B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=28.858 p_b=24.395 net_margin=0.112 roe=0.845"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-22",
+          "excerpt": "pe_diluted=18.742 p_b=18.137 net_margin=0.179 roe=0.968"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=35.44B total_liabilities=32.12B total_equity=3.31B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-03",
+          "excerpt": "3M lists $7.8 billion under other environmental liabilities\u2014the bulk linked to PFAS issues"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news 2026-05-09",
+          "excerpt": "narrowed full-year 2026 adjusted EPS guidance to a range around 8.20\u20138.50 USD, down from prior expectations"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "excerpt": "close=151.60"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21 range",
+          "excerpt": "range over ~251 bars: high=177.41 low=139.34"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "excerpt": "DGS10=4.57 \u0394=0.54 (13.3995%)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247225,
+        "capped_chars": 247225,
+        "raw_tokens": 61806,
+        "capped_tokens": 61806
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 967,
+        "capped_chars": 967,
+        "raw_tokens": 242,
+        "capped_tokens": 242
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 6460,
+        "capped_chars": 1822,
+        "raw_tokens": 1615,
+        "capped_tokens": 456
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 97445,
+        "capped_chars": 76312,
+        "raw_tokens": 24361,
+        "capped_tokens": 19078
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37368,
+  "started_at": "2026-08-07T03:00:46+00:00"
+}

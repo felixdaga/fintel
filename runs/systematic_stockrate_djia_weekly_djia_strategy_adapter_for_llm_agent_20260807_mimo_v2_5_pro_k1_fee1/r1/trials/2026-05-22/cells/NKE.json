@@ -1,0 +1,186 @@
+{
+  "cell": "NKE",
+  "symbols": [
+    "NKE"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36348,
+    "tokens_out": 1101,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039651,
+    "basis": "reported"
+  },
+  "views": {
+    "NKE": {
+      "symbol": "NKE",
+      "score": -1.0,
+      "rationale": "NKE is a deeply challenged business with deteriorating fundamentals, expensive valuation relative to its own history, and multiple near-term headwinds. The company's Q3 FY2026 results showed EPS of $0.35, down 35% YoY from $0.54, with net income falling 34.5% to $520M. Operating margins have collapsed to 6.2% (from 12%+ historically), and net margins are at 4.8% - dangerously thin for a consumer discretionary company. Revenue is essentially flat YoY (+0.1%) but the quality of that revenue is deteriorating with heavy promotional activity and inventory cleanup. The company guided for Q4 revenue to decline 2-4%, signaling no near-term stabilization. China remains a significant drag with revenues down 16% in Q2 and management acknowledging the turnaround 'is not finished.' Converse is in freefall with revenues down 35% in Q3. The stock trades at 29.2x PE despite these headwinds, which is expensive relative to its own history (range 19.5-38.9x over the past year) and especially rich given the earnings trajectory. News sentiment is deeply negative (mean -0.371 over 90 days) with multiple analyst downgrades, EEOC investigation overhang, and macro headwinds from rising oil prices ($100/barrel) and elevated Treasury yields (4.57% 10-year). The stock is down 32% over the past quarter and 34% YTD, yet still trades at a premium multiple for a business in structural decline. No credible near-term catalyst exists to reverse this trajectory - management has pushed recovery timeline to Q2 FY2027, and competitive pressures from domestic Chinese brands and On Running/Hoka are intensifying.",
+      "key_factors": [
+        "Q3 FY2026 EPS down 35% YoY to $0.35, net income down 34.5% to $520M",
+        "Operating margin collapsed to 6.2% (from 12%+ historically), net margin at 4.8%",
+        "Revenue flat YoY at $11.28B with Q4 guided to decline 2-4%",
+        "China revenues down 16% in Q2 with structural competitive challenges from domestic brands",
+        "Converse revenues down 35% in Q3, brand in freefall",
+        "PE of 29.2x is expensive vs own history (19.5-38.9x range) given deteriorating earnings",
+        "Multiple analyst downgrades (Wells Fargo, BofA, UBS) citing longer recovery path",
+        "EEOC investigation into DEI practices adds legal/reputational overhang",
+        "Rising oil prices ($100/barrel) and elevated Treasury yields (4.57%) pressure consumer discretionary",
+        "Stock down 32% over past quarter and 34% YTD with no near-term catalyst for reversal"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-02-28 Q3",
+          "excerpt": "revenue=11.28B net_income=520.00M eps_diluted=0.35 operating_income=650.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-02-28 Q3",
+          "excerpt": "revenue=11.27B eps=0.54 net_income=794.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=29.23 net_margin=0.048 operating_margin=0.062"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-22",
+          "excerpt": "pe_diluted=20.14 net_margin=0.094"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-15",
+          "excerpt": "Nike stock has plummeted to a 12-year low, down 34% year-to-date, as the company faces declining Greater China revenue, tariff pressures, and margin compression"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-19",
+          "excerpt": "Inflation is resurging with CPI at 3.8% and PPI at 1.4% month-over-month, driven by energy costs"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-02-23 to 2026-05-20",
+          "excerpt": "mean=-0.371"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "excerpt": "close=44.39 quarterly delta=-32.1%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "excerpt": "DGS10=4.57 DCOILWTICO=100.2"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NKE",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4500,
+        "capped_chars": 4500,
+        "raw_tokens": 1125,
+        "capped_tokens": 1125
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224338,
+        "capped_chars": 224338,
+        "raw_tokens": 56084,
+        "capped_tokens": 56084
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 782,
+        "capped_chars": 782,
+        "raw_tokens": 196,
+        "capped_tokens": 196
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1867,
+        "capped_chars": 1867,
+        "raw_tokens": 467,
+        "capped_tokens": 467
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9067,
+        "capped_chars": 2753,
+        "raw_tokens": 2267,
+        "capped_tokens": 688
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 111615,
+        "capped_chars": 88212,
+        "raw_tokens": 27903,
+        "capped_tokens": 22053
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 31312,
+  "started_at": "2026-08-07T03:00:54+00:00"
+}

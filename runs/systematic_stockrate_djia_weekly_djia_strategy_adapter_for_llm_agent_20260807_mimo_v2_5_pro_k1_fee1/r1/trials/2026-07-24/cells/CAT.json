@@ -1,0 +1,209 @@
+{
+  "cell": "CAT",
+  "symbols": [
+    "CAT"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 40705,
+    "tokens_out": 1369,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.044812,
+    "basis": "reported"
+  },
+  "views": {
+    "CAT": {
+      "symbol": "CAT",
+      "score": -1.0,
+      "rationale": "Caterpillar's fundamental health is strong with excellent profitability (ROE 50.5%, net margin 13.3%) and robust YoY growth (revenue +22.2%, EPS +30.2% in Q1 2026). However, the stock is extremely overvalued versus its own history: P/E has expanded from ~20x in July 2025 to 44.2x currently, P/B from 11.3x to 22.3x, and the stock has risen 129% in 12 months. The company faces significant headwinds including $2.2-2.4B in tariff costs for FY2026, margin contraction in Resource Industries (39% profit plunge, 700bp margin compression), and hawkish Fed policy threatening customer capex. Michael Burry has publicly shorted the stock citing unsustainable valuation. The Q2 2026 earnings report on August 4 is a near-term catalyst, but with consensus EPS of $6.25 already pricing in strong growth, the risk/reward is heavily skewed to the downside. The stock trades at 44x P/E versus a 36x peer median, and at 22x P/B versus 1.77x for Komatsu, representing extreme premium pricing for a cyclical industrial.",
+      "key_factors": [
+        "P/E expanded from ~20x (Jul 2025) to 44.2x currently - extreme valuation expansion for a cyclical industrial",
+        "Tariff headwinds of $2.2-2.4B projected for FY2026, constraining operating margins near lower bound of targets",
+        "Resource Industries segment margin contraction: 39% YoY profit plunge, 700bp margin compression to 10%",
+        "Michael Burry short position at $1,060.98 entry price citing unsustainable price-to-sales ratio at 30-year high",
+        "Stock up 129% in 12 months with P/E multiple expansion from 18.4x to 43.3x driving most of the gain",
+        "Hawkish Fed policy (rates at 3.63%, 10Y at 4.71%) threatening customer capital expenditures on heavy equipment",
+        "Q2 2026 earnings on Aug 4 is a dated catalyst but consensus already prices in strong growth (EPS +32% YoY)",
+        "Operating cash flow declined 50% QoQ in Q1 2026 to $1.87B, suggesting potential cash flow normalization"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=44.2 p_b=22.33 p_s=5.889 earnings_yield=0.023 net_margin=0.133 roe=0.505"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-24",
+          "excerpt": "pe_diluted=20.622 p_b=11.341 net_margin=0.157 roe=0.55"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.41B net_income=2.55B eps_diluted=5.47 operating_cash_flow=1.87B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+22.2% eps_diluted=+30.2% net_income=+27.2% operating_cash_flow=+45.1%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 QoQ",
+          "excerpt": "QoQ: revenue=-1.3% eps_diluted=+12.1% operating_cash_flow=-50.0%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-13",
+          "excerpt": "Michael Burry has placed significant bearish bets against AI stocks and semiconductor companies. He recently shorted Applied Materials, Tesla, Caterpillar, Micron Technology"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com Jul 1",
+          "excerpt": "Michael Burry initiated a short position citing unsustainable valuation and high price-to-sales ratios. Resource Industries segment profitability declined amid rising manufacturing expenses and potential tariff headwinds"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com Jun 30",
+          "excerpt": "39% year-over-year profit plunge in the mining-focused Resource Industries segment that compressed its segment margin by 700 basis points to 10.0%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout.com",
+          "excerpt": "management has warned that these incremental tariff costs are expected to rise further, reaching around $2.6 billion in 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan.net Jul 21",
+          "excerpt": "Caterpillar Inc. to Announce Second-Quarter 2026 Financial Results on August 4"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "The company is forecasted to report an EPS of $6.25, showcasing a 32.42% upward movement from the corresponding quarter of the prior year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "excerpt": "P/E Multiple 18.4 to 43.3 135.7% change contribution from 6/30/2025 to 7/18/2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "morningstar.com",
+          "excerpt": "Price/Earnings (Normalized) CAT 36.07 vs 6301 16.70; Price/Book Value CAT 20.82 vs 6301 1.77"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "excerpt": "FEDFUNDS=3.63 DGS10=4.71 DGS2=4.37"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CAT",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4541,
+        "capped_chars": 4541,
+        "raw_tokens": 1135,
+        "capped_tokens": 1135
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241979,
+        "capped_chars": 241979,
+        "raw_tokens": 60495,
+        "capped_tokens": 60495
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1663,
+        "capped_chars": 1663,
+        "raw_tokens": 416,
+        "capped_tokens": 416
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 19531,
+        "capped_chars": 4233,
+        "raw_tokens": 4883,
+        "capped_tokens": 1058
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 129535,
+        "capped_chars": 106500,
+        "raw_tokens": 32383,
+        "capped_tokens": 26624
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 47319,
+  "started_at": "2026-08-07T03:08:35+00:00"
+}

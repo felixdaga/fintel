@@ -1,0 +1,179 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35353,
+    "tokens_out": 1044,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038485,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.35,
+      "rationale": "Salesforce presents a compelling fundamental picture with accelerating revenue growth (Q1 FY27 +13.3% YoY to $11.13B, fastest in recent quarters), strong margin expansion (gross margin 77.6%, operating margin 20.4%, net margin 18.7%), and robust cash generation ($6.70B operating cash flow in Q1). The company maintains dominant CRM market position (#1 with 20% global share per IDC) and is seeing meaningful AI traction with Agentforce ARR reaching $1.2B in Q1 (up 205% YoY). Valuation is attractive at 19.6x trailing P/E, well below the 54x level from a year ago, and near the low end of its 16.3-55.8x range. The $1.6B VA contract win provides a credible near-term catalyst validating AI demand. However, balance sheet leverage has increased significantly (debt-to-equity 1.15x vs 0.14x a year ago, likely from Informatica acquisition), and there are legitimate concerns about security breach claims and Tableau headwinds noted by Evercore. The stock is down ~33% YTD, creating a value opportunity, but the debt increase and competitive pressures from Microsoft Dynamics temper conviction.",
+      "key_factors": [
+        "Accelerating revenue growth: Q1 FY27 +13.3% YoY, fastest recent quarter",
+        "Strong profitability: 77.6% gross margin, 18.7% net margin, $6.7B quarterly operating cash flow",
+        "Dramatic valuation compression: P/E from 54x to 19.6x over 12 months",
+        "Agentforce AI traction: $1.2B ARR, +205% YoY, 29,000 deals",
+        "$1.6B VA contract validates AI demand and provides near-term catalyst",
+        "Balance sheet concern: debt-to-equity jumped to 1.15x from 0.14x (Informatica acquisition)",
+        "Security breach claims and Tableau headwinds create execution risk",
+        "Dominant market position: #1 CRM globally with 20% share for 13 consecutive years"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1",
+          "excerpt": "revenue=11.13B net_income=2.11B eps_diluted=2.42 gross_profit=8.56B operating_income=2.35B operating_cash_flow=6.70B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1 growth",
+          "excerpt": "YoY: revenue=+13.3% eps_diluted=+52.2% net_income=+36.7%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=19.618 p_b=4.598 net_margin=0.187 roe=0.234 debt_to_equity=1.147 gross_margin=0.776 operating_margin=0.204"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-31",
+          "excerpt": "pe_diluted=54.181 debt_to_equity implied from total_debt=8.44B total_equity=61.33B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-27",
+          "excerpt": "The Department of Veterans Affairs awarded Salesforce a $1.6 billion ceiling contract for its AI agent products (Agentforce) over three years. Agentforce ARR reached $1.2 billion in Q1 FY2027, up 205% year-over-year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "quantumrun 2026",
+          "excerpt": "IDC ranks Salesforce the #1 CRM vendor for the thirteenth straight year with 20.0% global share. Agentforce ARR hit $800 million in Q4 FY26, up 169%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-14",
+          "excerpt": "Evercore ISI lowered its price target on Salesforce.com stock to $250 from $260 while maintaining an Outperform rating. The firm cited mixed trends with progress in Agentforce offset by headwinds in Tableau and Commerce Cloud."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "sahmcapital 2026-07-22",
+          "excerpt": "Security advisory issued for Salesforce users following high profile breach claims involving groups such as ShinyHunters."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3822,
+        "capped_chars": 3822,
+        "raw_tokens": 956,
+        "capped_tokens": 956
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 249257,
+        "capped_chars": 249257,
+        "raw_tokens": 62314,
+        "capped_tokens": 62314
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2220,
+        "capped_chars": 2220,
+        "raw_tokens": 555,
+        "capped_tokens": 555
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 20677,
+        "capped_chars": 5824,
+        "raw_tokens": 5169,
+        "capped_tokens": 1456
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102921,
+        "capped_chars": 70896,
+        "raw_tokens": 25731,
+        "capped_tokens": 17725
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 39149,
+  "started_at": "2026-08-07T03:09:29+00:00"
+}

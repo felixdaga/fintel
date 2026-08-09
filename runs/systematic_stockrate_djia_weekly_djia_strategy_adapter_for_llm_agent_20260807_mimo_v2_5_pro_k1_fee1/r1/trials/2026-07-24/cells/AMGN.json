@@ -1,0 +1,179 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35052,
+    "tokens_out": 1144,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038484,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": 0.15,
+      "rationale": "Amgen is a mature large-cap biotech with solid fundamentals: Q1 2026 showed YoY revenue growth of +5.8% and EPS growth of +4.4%, with strong gross margins (~68%) and robust operating cash flow ($2.19B quarterly). The company generates substantial cash to fund dividends (2.6% yield) and R&D. However, several headwinds temper enthusiasm: (1) QoQ metrics were weak with revenue -9.8% and EPS -43.7%, reflecting quarter-to-quarter volatility; (2) the balance sheet carries heavy leverage with debt-to-equity of 6.2x and total debt of $57.3B vs. only $9.2B equity; (3) significant patent cliff risks loom for Prolia/Xgeva (US patents expired 2025-2026) and Enbrel (final patents 2028-2029), with management explicitly guiding for 'accelerated sales erosion' in 2026; (4) the Tavneos regulatory overhang with FDA proposing FDA withdrawal proceedings adds uncertainty. On valuation, the current P/E of 25.9x sits near the low end of its 365-day range (22.6-49.7), having compressed significantly from ~49x in early 2026 as earnings improved. the stock pulled back. This is relatively cheap vs. its own recent history, though not a screaming bargain. the the P/b of 22x remains elevated. The near-term catalyst is the Q2 2026 earnings report ( August 5, where analysts expect EPS of $5.57 (down 7.5% YoY). The Colorado Enbrel price cap ruling in early July was a modest positive. Overall, Amgen offers a balanced risk-reward: stable cash generation and reasonable valuation offset by patent cliff headwinds and high leverage, warranting a mildly positive score.",
+      "key_factors": [
+        "Q1 2026 YoY revenue +5.8%, EPS +4.4% showing stable growth trajectory",
+        "Gross margin ~68%, operating margin ~28% reflecting strong profitability",
+        "Heavy leverage: debt-to-equity 6.2x, total debt $57.3B vs $9.2B equity",
+        "Prolia/Xgeva US patent expiry 2025-2026 with management guiding accelerated erosion in 2026",
+        "P/E of 25.9x near low end of 365-day range (22.6-49.7), cheaper vs own history",
+        "Tavneos FDA withdrawal proceedings adds regulatory overhang",
+        "Q2 2026 earnings report Aug 5 as near-term catalyst; analyst expect EPS $5.57",
+        "Dividend yield ~2.6% supported by strong operating cash flow generation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=8.62B, eps_diluted=3.34, YoY revenue +5.8%, EPS +4.4%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_debt=57.32B, total_equity=9.19B, debt_to_equity=6.238"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=25.91, p_b=21.991, gross_margin=0.683, operating_margin=0.284"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-07-24..2026-07-23",
+          "excerpt": "pe_diluted range 22.6..49.7"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis AMGN risks",
+          "excerpt": "Prolia/Xgeva expected to face U.S. patent expiry in 2025-2026; Enbrel final U.S. patent expiration in 2028 and 2029; management guided for accelerated sales erosion in 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart 2026-07-20",
+          "excerpt": "Q2 earnings on August 5, 2026; analysts expect diluted EPS of $5.57, down 7.5% from $6.02 year-ago quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "biospace 2026-07-10",
+          "excerpt": "FDA formally proposed withdrawing Tavneos approval; Amgen has until July 29 to submit additional materials"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "yahoo finance 2026-07-07",
+          "excerpt": "Colorado Enbrel price cap blocked by federal judge; reaffirmed 2026 revenue guidance $37.1B-$38.5B, GAAP EPS $15.62-$17.10"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247923,
+        "capped_chars": 247923,
+        "raw_tokens": 61981,
+        "capped_tokens": 61981
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1243,
+        "capped_chars": 1243,
+        "raw_tokens": 311,
+        "capped_tokens": 311
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 24510,
+        "capped_chars": 5008,
+        "raw_tokens": 6128,
+        "capped_tokens": 1252
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 99827,
+        "capped_chars": 81698,
+        "raw_tokens": 24957,
+        "capped_tokens": 20425
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50064,
+  "started_at": "2026-08-07T03:08:25+00:00"
+}

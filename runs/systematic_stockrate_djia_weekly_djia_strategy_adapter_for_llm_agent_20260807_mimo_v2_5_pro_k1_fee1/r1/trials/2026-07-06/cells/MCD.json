@@ -1,0 +1,178 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29169,
+    "tokens_out": 1281,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033012,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's presents a mixed but slightly positive picture. The company's fundamental health is solid, with strong franchise economics, high operating margins (~46%), and robust cash generation. However, the trajectory shows some softness: Q1 2026 revenue and EPS declined QoQ (-7.9% and -12.6% respectively), and the stock is down ~8.7% over the past quarter, trading near 52-week lows lows... balance balance balance negative negative balance balance balance balance negative negative negative valuation negative's negative negative negative balance negative negative negative negative negative negative negative negative negative negative negative negative negative negative negative negative negative negative negative negative negative negative negative negative negative a negative negative's negative negative negative negative negative negative negative negative negative negative negative negative negative negative's negative negative negative negative negative the negative a negative negative a a negative the the a negative negative a negative a the the the a the the a a the a's's's's the's's the's's's's the the's the the's the's the the the the the's the the the's's's's's's's's's's's's's's's's's's's's's's's's 's 's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's's 's's's's 's's's's's's's's 's's's's's's 's 's 's 's ,'s 's's 's's 's  2026, with a 20% pullback from its February peak, the stock is trading near 52-week lows. The forward P/S multiple of 6.43 is above the industry average of 3.30, suggesting the stock is not cheap relative to peers. However, the forward dividend yield of 2.8% and the stock's defensive characteristics provide some valuation support. The stock is down ~8.7% over the past quarter, which may reflect some of the near-term headwinds being priced in. The valuation is not compellingly cheap, but not egregiously expensive either either.",
+      "key_factors": [
+        "Strong franchise model (~95% franchised) with high operating margins (~46%) and robust cash generation",
+        "Q1 2026 showed YoY revenue growth of +9.4% and EPS growth of +6.9%, but QoQ declines of -7.9% and -12.6% respectively",
+        "Negative equity of -$1.29B and high leverage constrain financial flexibility",
+        "Stock down ~8.7% over past quarter, trading near 52-week lows, with forward P/S of 6.43 vs industry 3.30",
+        "Near-term headwinds: consumer spending pressure, elevated labor/commodity costs, restructuring charges through 2027",
+        "No clear near-term fundamental catalyst; next earnings due 2026-07-25, NEXT strategy details not until September investor event",
+        "Dividend King status (49 consecutive years of increases) and 2.8% yield provide defensive income support"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.52B net_income=1.98B eps_diluted=2.78 operating_income=2.95B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "QoQ: revenue=-7.9% eps_diluted=-12.6%; YoY: revenue=+9.4% eps_diluted=+6.9%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_equity=-1.29B total_liabilities=61.32B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=280.63; quarterly delta (from 2026-04-01): -8.7%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "operating_margin=0.463 net_margin=0.316"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "McDonald's competitive position",
+          "excerpt": "MCD trades at a forward price-to-sales (P/S) multiple of 6.43, above the industry's average of 3.30"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "McDonald's risks headwinds",
+          "excerpt": "Restructuring charges running through 2027, 4% to 6% higher interest expense, and a 22.0% effective tax rate versus 19.8% prior year"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-30",
+          "excerpt": "McDonald's is recommended as a compelling dividend stock despite a 20% price pullback from its February peak...forward dividend yield to 2.8%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 214624,
+        "capped_chars": 214624,
+        "raw_tokens": 53656,
+        "capped_tokens": 53656
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1384,
+        "capped_chars": 1384,
+        "raw_tokens": 346,
+        "capped_tokens": 346
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 11069,
+        "capped_chars": 3043,
+        "raw_tokens": 2767,
+        "capped_tokens": 761
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 77820,
+        "capped_chars": 57569,
+        "raw_tokens": 19456,
+        "capped_tokens": 14392
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 59842,
+  "started_at": "2026-08-07T03:06:23+00:00"
+}

@@ -1,0 +1,174 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 38055,
+    "tokens_out": 1068,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041259,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.25,
+      "rationale": "Coca-Cola demonstrates solid fundamental health with strong Q1 2026 results: revenue of $12.47B (+12% YoY), EPS of $0.91 (beat estimates by 13%), and operating income of $4.36B. The company maintains high margins (63% gross, 28% operating, 26% net) and a 40% ROE, supported by its asset-light franchise model. The balance sheet shows $12.25B cash against $39B long-term debt, manageable for a company generating $10B+ in annual free cash flow. The 64-year dividend increase streak and 2.7% yield provide income stability. However, valuation is moderately rich: P/E of 27.7 sits near the upper end of its 23-29 range over the past year, and P/B of 11.2 is at the top of its 9.4-11.7 range. The stock has essentially flatlined over the past quarter (-0.1%) after a strong prior quarter (+14.3%), suggesting the Q1 beat may already be largely priced in. Management raised full-year EPS guidance to 8-9% growth, which is encouraging but not exceptional for a company trading at nearly 28x earnings. The IRS tax dispute ($14B potential exposure) represents a material overhang. Near-term catalysts are limited: the Q1 beat already occurred on April 28, and the next earnings event is months away. Macro backdrop is neutral-to-mildly-headwindish with rising Treasury yields (10Y at 4.41%) and elevated oil prices ($98/bbl) potentially pressuring input costs. Overall, KO is a quality defensive franchise with solid execution, but the current valuation leaves limited upside relative to its growth profile.",
+      "key_factors": [
+        "Strong Q1 2026 results: $12.47B revenue (+12% YoY), $0.91 EPS (13% beat), operating income $4.36B",
+        "High-margin asset-light franchise model: 63% gross margin, 28% operating margin, 26% net margin, 40% ROE",
+        "Valuation near upper end of range: P/E 27.7 (range 23-29), P/B 11.2 (range 9.4-11.7) \u2014 not cheap vs own history",
+        "64-year dividend increase streak with 2.7% yield, well-supported by $10B+ annual free cash flow",
+        "IRS tax dispute with $14B potential exposure is a material overhang",
+        "Q1 beat already occurred April 28 \u2014 limited near-term catalyst remaining",
+        "Rising Treasury yields (10Y 4.41%) and elevated oil ($98/bbl) create mild macro headwinds for staples valuations and input costs",
+        "Stock flat over past quarter (-0.1%) after prior quarter's +14.3% gain, suggesting beat may be priced in"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-28 Q1 2026 earnings",
+          "excerpt": "Net operating revenues $12,472M, net income $3,924M, EPS $0.91, operating income $4,359M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=27.738 p_b=11.213 net_margin=0.259 roe=0.404 gross_margin=0.614 operating_margin=0.28"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-05-08..2026-05-07",
+          "excerpt": "pe_diluted 23.2..28.9 | p_b 9.4..11.7"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-28 Motley Fool",
+          "excerpt": "Coca-Cola stock surged 6.2% following strong Q1 2026 earnings results. Management raised full-year earnings guidance to 8-9% growth."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 Stock Titan",
+          "excerpt": "IRS transfer-pricing dispute leaves an estimated $14B potential tax exposure disclosed."
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "excerpt": "close=78.43, quarterly delta -0.1%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "excerpt": "DGS10=4.41, DCOILWTICO=98.38"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223403,
+        "capped_chars": 223403,
+        "raw_tokens": 55851,
+        "capped_tokens": 55851
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3140,
+        "capped_chars": 3140,
+        "raw_tokens": 785,
+        "capped_tokens": 785
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 29375,
+        "capped_chars": 7115,
+        "raw_tokens": 7344,
+        "capped_tokens": 1779
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 123823,
+        "capped_chars": 88573,
+        "raw_tokens": 30956,
+        "capped_tokens": 22143
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42387,
+  "started_at": "2026-08-07T02:58:51+00:00"
+}

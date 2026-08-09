@@ -1,0 +1,189 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35316,
+    "tokens_out": 1175,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038841,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": 0.15,
+      "rationale": "Cisco shows solid fundamental health with accelerating revenue and EPS growth (Q2 FY26 revenue +9.7% YoY, EPS +31.1% YoY), strong gross margins (~65%), and a healthy balance sheet (debt-to-equity 0.52). The recurring revenue shift and AI networking opportunity provide a credible growth narrative. However, valuation has expanded dramatically \u2014 P/E has risen from ~28x a year ago to ~41x currently, near the top of its 365-day range (27-47x), while P/B has nearly doubled from ~5.9x to ~9.5x. This valuation expansion significantly exceeds the fundamental improvement, making the stock expensive vs its own history. The upcoming Q4 FY26 earnings report (analysts expect EPS of $0.99, +22% YoY) and raised AI order guidance ($9B) provide a near-term catalyst, but the stock's +27% quarterly price move already prices in much of this optimism. Net: good business trajectory but stretched valuation limits upside.",
+      "key_factors": [
+        "Accelerating revenue and EPS growth: Q2 FY26 revenue +9.7% YoY, EPS +31.1% YoY, with Q3 FY26 showing 12% revenue growth and record AI-driven demand",
+        "P/E expanded from ~28x (Jul 2025) to ~41x (Jul 2026), near top of 365-day range \u2014 valuation has re-rated far beyond earnings improvement",
+        "Strong balance sheet: debt-to-equity 0.52, gross margin ~65%, ROE ~23%",
+        "AI networking opportunity: company raised AI infrastructure order outlook to $9B for FY26, expects $6B+ AI revenues for FY27",
+        "Upcoming Q4 FY26 earnings as near-term catalyst: consensus EPS $0.99 (+22% YoY), guided revenue $16.7-16.9B",
+        "Stock up +27% in last quarter and +65% over 52 weeks \u2014 significant re-rating already occurred",
+        "Operating cash flow declined QoQ (-43.3%) and YoY (-18.7%) in latest quarter, a potential concern",
+        "Competition from Arista Networks in AI data center switching and white-box alternatives in campus networking"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24 Q2",
+          "excerpt": "revenue=15.35B net_income=3.17B eps_diluted=0.8 gross_profit=9.97B operating_income=3.78B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-01-25 Q2 YoY",
+          "excerpt": "YoY: revenue=+9.7% eps_diluted=+31.1% net_income=+30.8% gross_profit=+9.5%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=40.847 p_b=9.48 p_s=7.661 earnings_yield=0.024 net_margin=0.188 roe=0.232 debt_to_equity=0.515 gross_margin=0.648"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-31",
+          "excerpt": "pe_diluted=27.824 p_b=5.931 net_margin=0.176 roe=0.213"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "excerpt": "close=113.56 quarterly delta (~63 trading days, from 2026-04-29): +26.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-24 barchart earnings preview",
+          "excerpt": "analysts predict CSCO to report EPS of $0.99, a 22.2% increase from $0.81 in the year-ago quarter"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-24 barchart Q3 results",
+          "excerpt": "Cisco's shares surged 13.4% following its Q3 2026 results on May 13 after the company reported better-than-expected revenue of $15.8 billion (up 12%) and adjusted EPS of $1.06"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-24 barchart AI orders",
+          "excerpt": "Cisco raising its full-year AI infrastructure order outlook to $9 billion from $5 billion, increasing its fiscal 2026 revenue guidance to $62.8 billion - $63.0 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey risks",
+          "excerpt": "Active Cybersecurity Vulnerability Exploitations...Gross Margin Compression from Hardware Mix...Non-GAAP product gross margins compressed by 260 basis points"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "seekingalpha sell",
+          "excerpt": "Cisco Systems is rated sell due to a premium (2.3x PEG) AI-driven valuation unsupported by earnings growth of 15%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230778,
+        "capped_chars": 230778,
+        "raw_tokens": 57694,
+        "capped_tokens": 57694
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1748,
+        "capped_chars": 1748,
+        "raw_tokens": 437,
+        "capped_tokens": 437
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7520,
+        "capped_chars": 2051,
+        "raw_tokens": 1880,
+        "capped_tokens": 513
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 119702,
+        "capped_chars": 85343,
+        "raw_tokens": 29926,
+        "capped_tokens": 21337
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 30199,
+  "started_at": "2026-08-07T03:09:31+00:00"
+}

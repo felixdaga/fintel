@@ -1,0 +1,183 @@
+{
+  "cell": "V",
+  "symbols": [
+    "V"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 40929,
+    "tokens_out": 1005,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.043944,
+    "basis": "reported"
+  },
+  "views": {
+    "V": {
+      "symbol": "V",
+      "score": 0.35,
+      "rationale": "Visa exhibits excellent fundamental health with dominant global payments network positioning, ~60% operating margins, 50%+ net margins, and 53.6% ROE. Revenue growth is strong at +14.6% YoY in Q1 FY2026 ($10.9B), with operating cash flow up 25.6% YoY. The business is asset-light with minimal capital intensity, generating massive free cash flow. However, the stock has declined ~18% from its 52-week high ($375.51 to $308.88), and valuation appears more reasonable at current levels vs. its own recent history, though P/E data is unavailable to confirm exact discount. The trajectory is clearly positive with value-added services growing 28% in constant dollars and commercial/money movement solutions up 20%, diversifying revenue beyond core card volumes. Key risks include DOJ antitrust probe, potential interchange fee regulation (Credit Card Competition Act), and stablecoin/RTP disruption threats, but these are longer-term and partially priced in. Q2 FY2026 earnings on April 28 provide a near-term catalyst with consensus expecting $3.09 EPS (+12% YoY) on $10.7B revenue (+11.5% YoY), and Visa has beaten estimates in each of the last four quarters. The pullback from highs combined with strong fundamentals and an imminent earnings event supports a mildly-to-moderately attractive rating.",
+      "key_factors": [
+        "Dominant global payments network with ~60% operating margins and 50%+ net margins, 53.6% ROE",
+        "Strong revenue growth: +14.6% YoY in Q1 FY2026, operating cash flow +25.6% YoY",
+        "Value-added services growing 28% in constant dollars, reducing dependence on core card volumes",
+        "Stock down ~18% from 52-week high, creating more reasonable entry point vs. recent history",
+        "Q2 FY2026 earnings on April 28 as near-term catalyst; beat estimates in last 4 quarters",
+        "DOJ antitrust probe and regulatory headwinds (interchange fee caps) as key risks",
+        "Stablecoin/RTP disruption threats acknowledged but viewed as longer-term, partially addressed by Visa's own stablecoin initiatives"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31 Q1",
+          "excerpt": "revenue=10.90B net_income=5.85B operating_income=6.74B operating_cash_flow=6.78B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31 Q1 growth",
+          "excerpt": "YoY: revenue=+14.6% net_income=+14.3% operating_cash_flow=+25.6%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "net_margin=0.502 roe=0.536 operating_margin=0.592"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "excerpt": "close=308.88 range high=375.51 low=293.89"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com",
+          "excerpt": "Visa's stock has dropped 16% from its 52-week high even as the business posted 15% revenue growth in its most recent quarter. With Q2 earnings due April 28"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingview.com",
+          "excerpt": "Visa Inc. V is set to report its second-quarter fiscal 2026 results on April 28, 2026. The Zacks Consensus Estimate for earnings is currently pegged at $3.09 per share on revenues of $10.7 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com VAS",
+          "excerpt": "Value-added services revenue grew 28% in constant dollars to $3.2 billion in Q1, and commercial and money movement solutions grew 20%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-11",
+          "excerpt": "Billionaire investor Stanley Druckenmiller predicts stablecoins will dominate global payments within 10-15 years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news DOJ",
+          "excerpt": "The U.S. Department of Justice's antitrust lawsuit against Visa centers on claims that the company enforces exclusive deals with financial institutions"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "V",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4309,
+        "capped_chars": 4309,
+        "raw_tokens": 1077,
+        "capped_tokens": 1077
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 197358,
+        "capped_chars": 197358,
+        "raw_tokens": 49340,
+        "capped_tokens": 49340
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2308,
+        "capped_chars": 2308,
+        "raw_tokens": 577,
+        "capped_tokens": 577
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 25861,
+        "capped_chars": 5545,
+        "raw_tokens": 6465,
+        "capped_tokens": 1386
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 143406,
+        "capped_chars": 105727,
+        "raw_tokens": 35851,
+        "capped_tokens": 26432
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 35201,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

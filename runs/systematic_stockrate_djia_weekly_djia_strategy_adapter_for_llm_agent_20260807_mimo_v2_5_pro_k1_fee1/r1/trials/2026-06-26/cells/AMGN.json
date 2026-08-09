@@ -1,0 +1,174 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30555,
+    "tokens_out": 969,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033462,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": 0.15,
+      "rationale": "Amgen presents a mixed but mildly attractive picture. On the positive side, Q1 2026 showed solid YoY revenue growth of +5.8% and EPS growth of +4.4%, with the company raising full-year revenue guidance to $37.1-38.5B. The P/E of 24.6x sits near the low end of its 365-day range (22.6-49.7), having compressed sharply from ~45x in April 2026, suggesting the market has already priced in significant concerns. Gross margins remain healthy at 68.3% and net margins improved to 21%. However, several headwinds temper enthusiasm: the QoQ trajectory is weak (revenue -9.8%, EPS -43.7%), the balance sheet carries $57.3B in debt with only $9.2B equity (D/E of 6.2x), and the denosumab franchise faces accelerating biosimilar erosion with 8+ competitors. The Tavneos FDA withdrawal challenge adds regulatory uncertainty. The MariTide obesity pipeline is a potential long-term catalyst but faces intense competition from Lilly and Novo Nordisk. The next earnings date (Aug 3, 2026) provides a near-term catalyst, but the fundamental picture of patent cliffs and pricing pressure limits upside. The stock's 13% decline over 3 months and valuation compression create some value, but the structural headwinds prevent a stronger conviction.",
+      "key_factors": [
+        "Q1 2026 YoY revenue +5.8% and EPS +4.4% with raised full-year guidance to $37.1-38.5B",
+        "P/E of 24.6x near low end of 365-day range (22.6-49.7), down from ~45x in April",
+        "Denosumab franchise ($6.6B) faces 8+ biosimilar entrants with accelerating erosion guided for 2026",
+        "Highly leveraged balance sheet: $57.3B debt vs $9.2B equity (D/E 6.2x)",
+        "QoQ weakness: revenue -9.8%, EPS -43.7% from Q3 2025",
+        "Tavneos FDA withdrawal challenge adds regulatory risk",
+        "MariTide obesity pipeline optionality but faces dominant Lilly/Novo competition",
+        "Next earnings Aug 3, 2026 provides near-term catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=8.62B eps_diluted=3.34; YoY revenue=+5.8% eps_diluted=+4.4%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=24.607 p_b=20.885 net_margin=0.21 roe=0.849 debt_to_equity=6.238"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "sparse_history",
+          "excerpt": "pe_diluted range 22.6..49.7 over window; peaked at 46.922 on 2026-02-12"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-12",
+          "excerpt": "Amgen Seeks FDA Hearing To Challenge Proposed Tavneos Withdrawal"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Amgen competitive landscape 2026",
+          "excerpt": "At least eight denosumab biosimilars received approval or launched between 2024 and early 2026. Amgen explicitly guided for accelerating sales erosion in the second half of 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Amgen 2026 revenue guidance",
+          "excerpt": "Amgen lifted its 2026 revenue forecast to a range of 37.1 to 38.5 billion US dollars, citing Q1 performance above internal expectations"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "AMGN earnings dates",
+          "excerpt": "Next earnings: Aug 3, 2026; EPS reported: 5.15 USD; Revenue reported: 8.618B; EPS surprise: 6.14%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 249654,
+        "capped_chars": 249654,
+        "raw_tokens": 62414,
+        "capped_tokens": 62414
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1339,
+        "capped_chars": 1339,
+        "raw_tokens": 335,
+        "capped_tokens": 335
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7942,
+        "capped_chars": 2190,
+        "raw_tokens": 1986,
+        "capped_tokens": 548
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 80084,
+        "capped_chars": 61031,
+        "raw_tokens": 20020,
+        "capped_tokens": 15258
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 32991,
+  "started_at": "2026-08-07T03:04:59+00:00"
+}

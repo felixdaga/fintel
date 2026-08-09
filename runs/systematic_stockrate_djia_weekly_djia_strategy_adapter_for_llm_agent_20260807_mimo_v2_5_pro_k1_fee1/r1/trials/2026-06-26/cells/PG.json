@@ -1,0 +1,173 @@
+{
+  "cell": "PG",
+  "symbols": [
+    "PG"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29609,
+    "tokens_out": 1008,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032633,
+    "basis": "reported"
+  },
+  "views": {
+    "PG": {
+      "symbol": "PG",
+      "score": 0.15,
+      "rationale": "P&G is a structurally sound, high-quality consumer staples franchise with strong brand equity, consistent cash generation, and a 70-year dividend growth streak. However, the near-term trajectory is softening: Q3 FY26 showed sequential QoQ declines in revenue (-4.4%), EPS (-8.4%), and operating cash flow (-18.6%), while the company faces $400M tariff headwinds, $1B oil cost headwind for FY27, and a restructuring program targeting 7,000 job cuts. YoY growth remains positive (revenue +7.4%, EPS +5.8%) but the deceleration is notable. Valuation at 23.3x P/E sits near the middle of its 1-year range (21.7-26.3x), not compellingly cheap. The stock has underperformed the S&P 500 significantly (down ~12.8% over 52 weeks vs SPX +22.9%). The upcoming Q4 earnings (July 30) and the $3.8B Thorne acquisition provide potential catalysts, but margin compression and cost headwinds limit upside. Net: a quality defensive name that is fairly valued with modest headwinds, warranting a mildly positive but cautious score.",
+      "key_factors": [
+        "Structural brand moat and repeat-purchase business model across 5 segments with ~$84B revenue base",
+        "Q3 FY26 sequential deceleration: QoQ revenue -4.4%, EPS -8.4%, operating cash flow -18.6%",
+        "Significant tariff headwind ($40M after-tax in FY26) and $1B oil cost headwind for FY27 compress margins",
+        "Valuation at 23.3x P/E is mid-range vs 1-year history (21.7-26.3x), not a clear bargain",
+        "Significant underperformance vs S&P 500 (down ~12.8% over 52 weeks vs SPX +22.9%)",
+        "Restructuring program (up to 7,000 job cuts) and leadershiphake-up create near-term uncertainty",
+        "$3.8B Thorne acquisition and Q4 FY26 earnings (July 30) as potential catalysts"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3",
+          "excerpt": "revenue=21.23B, eps_diluted=1.63, operating_cash_flow=4.04B; QoQ: revenue=-4.4%, eps_diluted=-8.4%, operating_cash_flow=-18.6%; YoY: revenue=+7.4%, eps_diluted=+5.8%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=23.346, p_b=6.923, net_margin=0.186, roe=0.297; 1-year PE range: 21.7..26.3"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=148.50; 52-week range high=167.25 low=137.62; quarterly delta +3.2%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-24",
+          "excerpt": "P&G guiding for all-in sales growth of 1 to 5 percent and diluted EPS growth of 1 to 6 percent for the current fiscal year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com P&G drawdown",
+          "excerpt": "$400 million in after-tax tariff costs in fiscal 2026, alongside commodity headwinds; core gross margin compressed 100 basis points; restructuring program targeting up to 7,000 non-manufacturing job cuts"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com CIO AI",
+          "excerpt": "$1 billion after-tax oil cost headwind in fiscal 2027; $400 million tariff impact in fiscal 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-25 yahoo finance",
+          "excerpt": "PG is set to acquire wellness company Thorne for $3.8 billion; upcoming EPS projected at $1.44, signifying a 2.70% drop compared to the same quarter of the previous year"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "PG",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3763,
+        "capped_chars": 3763,
+        "raw_tokens": 941,
+        "capped_tokens": 941
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 239574,
+        "capped_chars": 239574,
+        "raw_tokens": 59894,
+        "capped_tokens": 59894
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2214,
+        "capped_chars": 2214,
+        "raw_tokens": 554,
+        "capped_tokens": 554
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 6460,
+        "capped_chars": 1625,
+        "raw_tokens": 1615,
+        "capped_tokens": 406
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 84510,
+        "capped_chars": 65735,
+        "raw_tokens": 21127,
+        "capped_tokens": 16434
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 25492,
+  "started_at": "2026-08-07T03:05:34+00:00"
+}

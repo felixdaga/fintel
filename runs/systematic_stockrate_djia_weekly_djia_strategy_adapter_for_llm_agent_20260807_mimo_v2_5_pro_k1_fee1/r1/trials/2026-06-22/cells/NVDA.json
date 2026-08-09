@@ -1,0 +1,199 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 74706,
+    "tokens_out": 1162,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.078192,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.45,
+      "rationale": "NVIDIA exhibits exceptional fundamental health and trajectory: Q1 FY27 revenue of $81.6B (+85% YoY), EPS of $2.39 (+215% YoY), gross margins of 75%, operating cash flow of $50.3B, and a fortress balance sheet with only $8.5B debt against $195B equity. The company holds ~86% AI GPU market share and is expanding into CPUs (Vera platform) and networking (now #1 in data center Ethernet switching). Valuation is attractive vs. own history: P/E of 32.2x sits at the bottom of its 30.6-66.8x 12-month range, having compressed from 56x+ in April/May as earnings surged. Forward P/E of ~23x on $91B Q2 guidance is compelling for 85%+ growth. However, several factors temper the score: (1) extreme revenue concentration with ~90% from data center and ~50% from five hyperscaler customers who are developing competing custom chips (Google TPUs, Amazon Trainium, Microsoft Maia); (2) regulatory overhang from Senator Warren's export control investigation and China chip smuggling allegations; (3) macro headwinds including 4.2% inflation rising 10Y yields at 4.46%; (4) the SpaceX IPO rotation creating near-term capital flow pressure away from AI names. The June 24 shareholder meeting provides a modest near-term catalyst for positive commentary on Vera CPU launch and capital return program, but is unlikely to be a major re-rating event. The $80B buyback authorization and 25x dividend increase signal management confidence and provide valuation support.",
+      "key_factors": [
+        "Q1 FY27 revenue $81.6B (+85% YoY), EPS $2.39 (+215% YoY), gross margin 75%",
+        "P/E of 32.2x at bottom of 12-month range (30.6-66.8x), forward P/E ~23x on $91B Q2 guide",
+        "~86% AI GPU market share with expanding TAM via Vera CPU platform and networking dominance",
+        "$80B buyback authorization and 25x dividend increase signal capital return commitment",
+        "Revenue concentration risk: ~90% data center, ~50% from 5 hyperscalers building custom chips",
+        "Regulatory overhang: Warren export control probe, China chip smuggling allegations",
+        "Macro headwinds: 4.2% CPI, 10Y yield 4.46%, SpaceX IPO rotation pressure",
+        "June 24 shareholder meeting as modest near-term catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 Q1",
+          "excerpt": "revenue=81.61B net_income=58.32B eps_diluted=2.39 gross_profit=61.16B operating_income=53.54B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=32.196 p_b=26.29 net_margin=0.63 roe=0.817 debt_to_equity=0.043 gross_margin=0.741"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 30.6..66.8 | p_b 25.0..57.8"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 balance sheet",
+          "excerpt": "total_equity=195.47B total_debt=8.47B"
+        },
+        {
+          "source_type": "cash flow",
+          "source_id": "2026-04-26",
+          "excerpt": "operating_cash_flow=50.34B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "companieshistory.com",
+          "excerpt": "Nvidia holds roughly 86% of the AI GPU market. Its closest direct competitors, AMD and Intel, have single-digit shares"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fourweekmba.com",
+          "excerpt": "nearly 90% of that revenue now flows from a single business, Data Center, which generated $193.7 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-18",
+          "excerpt": "Nvidia unveiled its Vera CPU platform designed for agentic AI workloads, opening a new $200 billion market opportunity"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-17",
+          "excerpt": "Nvidia raised $25 billion in bonds, its largest debt offering since 2021"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "banking.senate.gov",
+          "excerpt": "Warren Probes NVIDIA's Compliance With Export Control Laws and Regulations"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-18",
+          "excerpt": "DGS10=4.46 T10YIE=2.25"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-06-18",
+          "excerpt": "mean=0.452 over 90 days, 1665 articles"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4649,
+        "capped_chars": 4649,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241414,
+        "capped_chars": 241414,
+        "raw_tokens": 60354,
+        "capped_tokens": 60354
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4445,
+        "capped_chars": 4445,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 671358,
+        "capped_chars": 156819,
+        "raw_tokens": 167840,
+        "capped_tokens": 39205
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 100931,
+        "capped_chars": 82721,
+        "raw_tokens": 25233,
+        "capped_tokens": 20680
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 58864,
+  "started_at": "2026-08-07T03:04:40+00:00"
+}

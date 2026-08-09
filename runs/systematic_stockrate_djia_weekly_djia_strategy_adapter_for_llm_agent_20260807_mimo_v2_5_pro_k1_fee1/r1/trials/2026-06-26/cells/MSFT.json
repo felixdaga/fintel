@@ -1,0 +1,178 @@
+{
+  "cell": "MSFT",
+  "symbols": [
+    "MSFT"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 56304,
+    "tokens_out": 1318,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.05917,
+    "basis": "reported"
+  },
+  "views": {
+    "MSFT": {
+      "symbol": "MSFT",
+      "score": 0.35,
+      "rationale": "Microsoft presents a compelling fundamental picture with strong YoY revenue growth (+18.3%) and EPS growth (+23.4%) in Q3 FY2026, driven by Azure's 40% growth and an AI business at a $37B annual run rate (+123% YoY). The balance sheet is fortress-like with $78B cash vs $40B debt, and operating cash flow of $46.7B in the latest quarter demonstrates robust cash generation. However, the stock faces meaningful headwinds: (1) massive AI capex (~$190B planned for CY2026) is compressing margins and stalling free cash flow growth, with analysts warning of 4.5pp gross margin decline in FY2027; (2) multiple securities class action lawsuits alleging misleading Copilot statements create legal overhang; (3) the collapsed Oracle cloud deal and FTC antitrust probe add regulatory uncertainty. Valuation is attractive vs own history \u2014 P/E of 25.1x is near the bottom of its 25-43x 12-month range and well below the 39x level from a year ago, while P/B of 7.3x is at the floor of its 7.3-12.6x range. The Q4 FY2026 earnings report on July 29 represents a near-term catalyst that could re-rate the stock if Azure growth sustains and margin guidance stabilizes. News sentiment is moderately positive (mean 0.34 over 90 days) but has weakened in recent sessions. The combination of excellent fundamental health, attractive valuation vs history, and a dated earnings catalyst supports a mildly-to-moderately positive score, tempered by capex intensity, legal risks, and the QoQ EPS decline (-17.2%) that warrants caution.",
+      "key_factors": [
+        "Strong YoY growth: revenue +18.3%, EPS +23.4%, Azure +40%, AI business $37B run rate (+123% YoY)",
+        "Fortress balance sheet: $78B cash vs $40B debt, net cash positive, operating cash flow $46.7B quarterly",
+        "Valuation at low end of 12-month range: P/E 25.1x (range 25-43x), P/B 7.3x (range 7.3-12.6x), well below year-ago levels",
+        "AI capex intensity: ~$190B CY2026 planned spend compressing margins, stalling FCF growth, with analysts forecasting 4.5pp gross margin decline in FY2027",
+        "Legal/regulatory overhang: multiple securities class actions over Copilot statements, FTC antitrust probe, collapsed Oracle cloud deal",
+        "Near-term catalyst: Q4 FY2026 earnings on July 29 could re-rate stock if Azure growth sustains and margin guidance stabilizes",
+        "QoQ EPS decline of -17.2% ( net income decline of -17.4% despite revenue growth, reflecting margin pressure"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-29 Q3",
+          "excerpt": "revenue=82.89B net_income=31.78B eps_diluted=4.27 operating_income=38.40B operating_cash_flow=46.68B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=694.23B total_equity=414.37B total_debt=40.26B cash=78.27B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=25.109 ev_to_ebit=18.946 p_b=7.255 p_s=8.966 net_margin=0.357 roe=0.289"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-06-26..2026-06-25",
+          "excerpt": "pe_diluted 25.1..42.8 | ev_to_ebit 18.9..34.1 | p_b 7.3..12.6"
+        },
+        {
+          "source_type": "rat",
+          "source_id": "2225-06-25",
+          "excerpt": "pe_diluted=39.318 ev_to_ebit=31. p_b=11..53 net_margin=0.36 roe=0.293"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-06-25",
+          "excerpt": "AI business at a37B annual run rate, $37B annual run rate (+12233 Yo YoYo06"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-25",
+          "excerpt": "Microsoft stock fell more %20% amid AI spending concerns and margin pressure"
+        },
+        {
+          "source_type": "news",
+          "source_id": "news",
+          "excerpt": "Microsoft stock has new03520%,202606-06-26.666662626-0626-0.35,"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MSFT",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3930,
+        "capped_chars": 3930,
+        "raw_tokens": 982,
+        "capped_tokens": 982
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 245289,
+        "capped_chars": 245289,
+        "raw_tokens": 61322,
+        "capped_tokens": 61322
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 782,
+        "capped_chars": 782,
+        "raw_tokens": 196,
+        "capped_tokens": 196
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4412,
+        "capped_chars": 4412,
+        "raw_tokens": 1103,
+        "capped_tokens": 1103
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 409494,
+        "capped_chars": 88979,
+        "raw_tokens": 102374,
+        "capped_tokens": 22245
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 97330,
+        "capped_chars": 76308,
+        "raw_tokens": 24333,
+        "capped_tokens": 19076
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 41615,
+  "started_at": "2026-08-07T03:05:32+00:00"
+}

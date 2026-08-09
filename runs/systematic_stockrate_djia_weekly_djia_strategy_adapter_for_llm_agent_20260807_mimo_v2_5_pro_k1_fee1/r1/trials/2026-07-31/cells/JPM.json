@@ -1,0 +1,131 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 40009,
+    "tokens_out": 624,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041881,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "rationale": "JPMorgan Chase demonstrates strong fundamental health and positive trajectory. Q1 2026 showed revenue of $49.84B (+10% YoY) and EPS of $5.94 (+17.2% YoY), with Q2 2026 earnings reported at a record $7.70 EPS (up 47% YoY) per the July earnings press release. The bank maintains industry-leading competitive positions: #1 in global investment banking fees with 8.4-9.3% wallet share, top domestic deposit market share, and $5 trillion in assets. Net margin of 31.5% and ROE of 16.2% are strong for a universal bank. Balance sheet equity grew to $364B with a CET1 ratio of 14.3%. On valuation, the stock trades at P/E of 16.2x and P/B of 2.62x, sitting in the middle of its 12-month range (P/E 13.7-17.8x, P/B 2.2-2.8x) \u2014 not cheap vs own history but not stretched either. The stock has rallied +13.5% over the past quarter to $350.85, which partially reflects the strong Q2 beat. Near-term catalysts are limited: the next earnings event is October 13, 2026, and while consensus estimates are being revised upward (+7.4% over 30 days), much of the positive Q2 surprise is already priced in. Ris head risks risks include Dim Dim Epsteinal EpsteinJamie risks: CEO CEO risks Epstein Epstein Epstein EpsteinKey factors: CEO Dim CEO, CEO risks headwarnings Dim CEO Dim CEO Epstein.",
+      "key_factors": [
+        "key_factors"
+      ],
+      "sources_cited": []
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 236025,
+        "capped_chars": 236025,
+        "raw_tokens": 59006,
+        "capped_tokens": 59006
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3561,
+        "capped_chars": 3561,
+        "raw_tokens": 890,
+        "capped_tokens": 890
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 129374,
+        "capped_chars": 14639,
+        "raw_tokens": 32344,
+        "capped_tokens": 3660
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 104251,
+        "capped_chars": 75391,
+        "raw_tokens": 26063,
+        "capped_tokens": 18848
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 45435,
+  "started_at": "2026-08-07T03:09:45+00:00"
+}

@@ -1,0 +1,189 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30497,
+    "tokens_out": 916,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033245,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": -1.0,
+      "rationale": "Cisco's fundamental trajectory is deteriorating despite surface-level revenue growth. The company faces severe valuation dislocation: P/E has nearly doubled from ~27x in mid-2025 to 43x currently, while P/B has surged from 5.9x to 10x, yet the underlying business quality is not improving commensurately. Operating cash flow collapsed 43% QoQ and 19% YoY in the latest quarter, signaling that reported earnings quality is poor. The software/subscription transition is stalling\u2014RPO growth decelerated to 5% YoY vs 10% total revenue growth, and Security segment revenue declined 4% YoY, undermining the bull case for recurring revenue transformation. The stock has surged 52% in one quarter on AI hype, but the Trefis analysis flags that AI hardware growth is not converting to durable software subscriptions, creating a classic cyclical peak risk. Insider selling is heavy (47 open market sales, zero purchases over 6 months), and the company is cutting jobs while claiming AI momentum. At 43x P/E for a company with 19% net margins, 23% ROE, and decelerating forward metrics, the stock is priced for perfection with multiple downside risks: margin compression from memory costs, competition from Arista/Nvidia in AI networking, and a faltering software transition. The next catalyst (Q4 earnings Aug Aug 2026) is too distant to provide support, and the current valuation embeds enormous execution risk.",
+      "key_factors": [
+        "P/E expanded from 27x to 43x in 12 months despite no fundamental acceleration\u2014valuation dislocation",
+        "Operating cash flow declined 43% QoQ and 19% YoY, indicating poor earnings quality",
+        "RPO growth at 5% YoY lags 10% revenue growth\u2014software transition stalling",
+        "Security segment revenue declined 4% YoY, undermining recurring revenue thesis",
+        "Stock surged 52% in one quarter on AI hype, creating mean-reversion risk",
+        "Insider selling cluster: 47 sales, zero purchases over 6 months signals lack of internal conviction",
+        "Margin pressure from rising memory costs and hardware-heavy mix",
+        "Competition from Arista Networks and Nvidia gaining share in AI data center networking"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=42.998 p_b=9.979"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-23",
+          "excerpt": "pe_diluted=27.538 p_b=5.87"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24",
+          "excerpt": "operating_cash_flow=1.82B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-25",
+          "excerpt": "operating_cash_flow=3.21B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis_cscorisk",
+          "excerpt": "Total RPO growth decelerated to 5% YoY in Q2 FY2026, lagging far behind the 10% total revenue growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis_cscorisk",
+          "excerpt": "The Security segment, a key pillar of the software strategy, saw revenue decline by 4% YoY in Q2 FY2026"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=119.54"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-03-19",
+          "excerpt": "close=78.51 \u2192 next\u224863d delta=+52.3%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis_cscorisk",
+          "excerpt": "insiders executed 47 open market sales, including the CEO, with zero open market purchases"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis_cscorisk",
+          "excerpt": "Margin guidance cuts and decelerating forward-looking metrics (ARR/RPO) prove the AI-driven growth is low-quality"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 229835,
+        "capped_chars": 229835,
+        "raw_tokens": 57459,
+        "capped_tokens": 57459
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1564,
+        "capped_chars": 1564,
+        "raw_tokens": 391,
+        "capped_tokens": 391
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9025,
+        "capped_chars": 1077,
+        "raw_tokens": 2256,
+        "capped_tokens": 269
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 106491,
+        "capped_chars": 81620,
+        "raw_tokens": 26622,
+        "capped_tokens": 20406
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 57550,
+  "started_at": "2026-08-07T03:04:15+00:00"
+}

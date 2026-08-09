@@ -1,0 +1,192 @@
+{
+  "cell": "VZ",
+  "symbols": [
+    "VZ"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31741,
+    "tokens_out": 1468,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036145,
+    "basis": "reported"
+  },
+  "views": {
+    "VZ": {
+      "symbol": "VZ",
+      "score": 0.35,
+      "rationale": "Verizon shows solid fundamental health with improving trajectory. Q1 2026 results demonstrate accelerating profitability: EPS grew +4.3% YoY to $1.20, net income +3.3% to $5.15B, and operating income expanded to $8.24B. The company achieved its first positive Q1 postpaid phone net adds since 2013 (55K), with record adjusted EBITDA of $13.4B. Management raised full-year EPS guidance to $4.95-$4.99, signaling confidence. Operating cash flow remains strong at $7.98B, supporting the 5.9% dividend yield with a ~55% payout ratio. The Frontier acquisition expands fiber passings to 25M+ homes, creating a convergence growth vector. However, the balance sheet carries significant leverage ($313B liabilities, $120B+ debt), and revenue growth is modest at ~3% YoY. Valuation is attractive: P/E of 11.2x sits at the low end of its 11-21x 12-month range, and P/B of 1.9x is near the bottom of its 1.7-2.2x window, suggesting the market is paying less for the same earnings power than it was 6-12 months ago when P/E was 16-18x. The sharp P/E compression from ~21x in early March to 11x in May reflects both earnings improvement and price adjustment, creating a value entry point. Near-term catalysts include the raised EPS guidance, ongoing transformation cost savings ($5B target), and AI-driven operational efficiencies (85% autonomous network resolution). Risks include competitive pressure from T-Mobile's broadband push, high debt levels, and rising interest rates (10Y at 4.41%). The combination of improving fundamentals, attractive valuation vs. own history, and a credible earnings upgrade catalyst supports a mildly-to-moderately positive view.",
+      "key_factors": [
+        "Q1 2026 EPS beat at $1.20 (+4.3% YoY) with raised full-year guidance to $4.95-$4.99",
+        "First positive Q1 postpaid phone net adds since 2013 (55K), record EBITDA of $13.4B",
+        "P/E of 11.2x at low end of 11-21x 12 range, significantly below 16-11x historical average",
+        "5.9% dividend yield with ~55% payout ratio, strong cash generation",
+        " $21.5B+ FCF expansion via Frontier acquisition to FWA growth",
+        "Transformation cost savings of AI efficiencies driving margin improvement"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q1",
+          "excerpt": "revenue=34.444B eps_diluted=1.20 operating_income=8.24BBnet_income=5.15B eps_dutedated11.26-2_type fundamentalsamentalssource_type_typesource_id"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q1",
+          "excerpt": "operating_cash_flow=7.98B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=11.156 p_b=1.895 earnings_yield=0.09"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-08",
+          "excerpt": "pe_diluted=17.955 p_b=1.887"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-03-04",
+          "excerpt": "pe_diluted=21.08 p_b=2.215"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-27 Benzinga",
+          "excerpt": "Verizon reported Q1 2026 results with adjusted EPS of $1.28 beating estimates, raised full-year EPS guidance to $4.95-$4.99, added 511,000 net subscribers, and achieved record quarterly adjusted EBITDA of $13.4 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-05 Motley Fool",
+          "excerpt": "Verizon is experiencing strong momentum with record EBITDA, positive subscriber growth, and free cash flow that easily covers its dividend at roughly 55% payout ratio, making its 5.9% yield more durable"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-05 matrixbcg.com",
+          "excerpt": "Verizon holds approximately 38 percent of the U.S. wireless market as of early 2026, anchored by a retail postpaid phone base exceeding 94 million subscribers"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-05 matrixbcg.com growth",
+          "excerpt": "Frontier deal raises fiber passing to 25 million homes, accelerating Verizon growth strategy and competitive edge"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-07 morningstar",
+          "excerpt": "We maintain our $53 per share fair value estimate and narrow economic moat rating"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "excerpt": "DGS10=4.41% DGS2=3.92% FEDFUNDS=3.63%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "VZ",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 2952,
+        "capped_chars": 2952,
+        "raw_tokens": 738,
+        "capped_tokens": 738
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 244354,
+        "capped_chars": 244354,
+        "raw_tokens": 61088,
+        "capped_tokens": 61088
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2165,
+        "capped_chars": 2165,
+        "raw_tokens": 541,
+        "capped_tokens": 541
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 27022,
+        "capped_chars": 6993,
+        "raw_tokens": 6756,
+        "capped_tokens": 1748
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 132329,
+        "capped_chars": 76272,
+        "raw_tokens": 33082,
+        "capped_tokens": 19068
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 59879,
+  "started_at": "2026-08-07T02:59:14+00:00"
+}

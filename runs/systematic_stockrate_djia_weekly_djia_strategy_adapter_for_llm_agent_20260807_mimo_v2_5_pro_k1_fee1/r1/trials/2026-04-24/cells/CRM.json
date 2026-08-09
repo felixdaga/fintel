@@ -1,0 +1,169 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30574,
+    "tokens_out": 1083,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033823,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.35,
+      "rationale": "Salesforce presents a moderately attractive fundamental picture with improving revenue trajectory and significant valuation compression, partially offset by macro headwinds and AI disruption concerns. The company shows solid QoQ revenue growth of +4.1% and strong EPS acceleration of +23.3% from Q1 to Q2 FY2026, with revenue reaching $10.24B and EPS of $1.96. Gross margins remain robust at ~78%, and the balance sheet is healthy with low debt-to-equity of 0.14. The most compelling aspect is valuation: P/E has compressed from ~55-58x in mid-2025 to 36.3x currently, near the low end of its 34.6-61.1 range, while P/B has fallen from 4.4-4.6x to 2.86x. This represents meaningful multiple compression versus its own history. However, several risks temper enthusiasm: operating cash flow was volatile ($740M in Q2 vs $6.48B in Q1), the stock has declined 24% over the past quarter, and macro conditions show rising oil prices ($99/bbl), elevated VIX (~19), and geopolitical uncertainty. AI disruption fears remain a structural overhang on the SaaS sector, though Salesforce's Agentforce platform ($800M ARR) and management's defense of the business model provide some offset. The upcoming Q1 FY2027 earnings (expected May) could serve as a near-term catalyst, with consensus expecting 12.5% revenue growth to $9.83B\u2014the fastest in 13 quarters. News sentiment is mixed (mean -0.03) but improving in recent days. The $25B ASR program and dividend initiation signal shareholder-friendly capital allocation. Score reflects solid fundamentals at a more reasonable valuation, with a modest catalyst from upcoming earnings, tempered by macro uncertainty and sector headwinds.",
+      "key_factors": [
+        "Revenue trajectory improving: QoQ growth +4.1% to $10.24B, with consensus expecting 12.5% YoY growth in upcoming Q1 FY2027",
+        "Significant valuation compression: P/E compressed from ~55-58x to 36.3x (near 34.6 low), P/B from 4.4-4.6x to 2.86x",
+        "Strong gross margins (~78%) and healthy balance sheet (debt-to-equity 0.14)",
+        "Agentforce AI platform gaining traction at $800M ARR with 29,000+ deals",
+        "Macro headwinds: rising oil ($99/bbl), elevated VIX (~19), geopolitical uncertainty weighing on enterprise IT spending",
+        "AI disruption fears remain structural overhang on SaaS sector despite management defense",
+        "Upcoming Q1 FY2027 earnings (May) as potential catalyst with fastest expected growth in 13 quarters",
+        "$25B ASR program and dividend initiation signal shareholder-friendly capital allocation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fund",
+          "source_id": ",",
+          "excerpt": "Q2 FY2026 revenue=10.24B eps=1.96"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-07-31 Q2",
+          "excerpt": "QoQ: revenue=+4.1% eps=+23.3%ng"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=36.347 p_b=2.857 (near low of 34.6-61.1 range)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-22",
+          "excerpt": "Wall Street expects Salesforce's first-quarter revenue to have increased 12.5% to $9.83 billion, its fastest growth in 13 quarters"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-20",
+          "excerpt": "Agentforce closed more than 29,000 deals since its September 2024 launch and is now an $800 million annual recurring revenue business"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-03-31",
+          "excerpt": "Salesforce's $25B ASR deal, the largest in history"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3818,
+        "capped_chars": 3818,
+        "raw_tokens": 954,
+        "capped_tokens": 954
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 251416,
+        "capped_chars": 251416,
+        "raw_tokens": 62854,
+        "capped_tokens": 62854
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2705,
+        "capped_chars": 2705,
+        "raw_tokens": 676,
+        "capped_tokens": 676
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 26175,
+        "capped_chars": 5635,
+        "raw_tokens": 6544,
+        "capped_tokens": 1409
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98359,
+        "capped_chars": 59058,
+        "raw_tokens": 24590,
+        "capped_tokens": 14764
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 405427,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

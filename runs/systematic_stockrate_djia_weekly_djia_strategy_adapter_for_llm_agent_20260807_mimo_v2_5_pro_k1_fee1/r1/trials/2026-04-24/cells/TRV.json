@@ -1,0 +1,183 @@
+{
+  "cell": "TRV",
+  "symbols": [
+    "TRV"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36647,
+    "tokens_out": 1069,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039854,
+    "basis": "reported"
+  },
+  "views": {
+    "TRV": {
+      "symbol": "TRV",
+      "score": 0.45,
+      "rationale": "Travelers delivered an excellent Q1 2026 with net income of $1.71B ($7.78 EPS) vs. $395M ($1.70) a year ago, driven by normalized catastrophe losses ($761M vs. $2.266B) and 9% higher net investment income. Core ROE of 19.7% (trailing 4Q: 22.7%) and underlying combined ratio of 85.3% demonstrate strong underwriting discipline. The company returned $2.2B to shareholders including $2B in buybacks and raised its dividend 14% to $1.25/share (22nd consecutive year of increases). Valuation is attractive: P/E of 8.8x sits at the low end of its 365-day range (8.6-14.9x), well below the ~14x level from a year ago, while P/B of 2.1x is mid-range. The stock has appreciated 10.4% over the past quarter but remains cheap relative to its own history given the earnings power improvement. Key risks include Personal Insurance NWP declining 9% (5% ex-Canada divestiture) and QoQ revenue/EPS softness from the incomplete TTM data prevents full annualization. The near-term catalyst is the Q1 earnings beat and dividend increase just reported (April 16), which should support re-rating given the disconnect between record profitability and historically low P/E. Macro backdrop is neutral-to-mildly-supportive with stable Fed funds at 3.64% and rising 10Y yields supporting investment income.",
+      "key_factors": [
+        "Q1 2026 core income of $1.7B ($7.71/share) with core ROE of 19.7% and trailing 4Q core ROE of 22.7%",
+        "P/E of 8.8x at low end of 365-day range (8.6-14.9x), significantly below year-ago ~14x level",
+        "Underlying combined ratio of 85.3% and 6th consecutive quarter of underlying underwriting income above $1.5B",
+        "$2.2B returned to shareholders in Q1 including $2B buybacks; 14% dividend increase to $1.25/share",
+        "Personal Insurance NWP declined 9% (5% ex-Canada divestiture), a segment headwind to monitor",
+        "Higher investment income trajectory: guided $810M Q2, $840M Q3, $870M Q4 after-tax NII",
+        "Canadian operations divestiture closed Q1 2026, simplifying to U.S.-centric model"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-16 Q1 filing",
+          "excerpt": "net_income=1.71B eps_diluted=7.78 revenue=11.92B operating_income=2.12B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=8.827 p_b=2.098 roe=0.238 net_margin=0.155"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-04-24",
+          "excerpt": "pe_diluted=14.047 p_b=2.128"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-16 Benzinga",
+          "excerpt": "Core income surged 283% driven by higher investment income and lower catastrophe losses. Personal Insurance segment net written premiums fell 9%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-16 BusinessWire",
+          "excerpt": "Core return on equity for the quarter was 19.7%, bringing core return on equity over the last four quarters to 22.7%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-16 BusinessWire",
+          "excerpt": "Board of Directors Declares 14% Increase in Regular Quarterly Cash Dividend to $1.25 per Share"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-16 BusinessWire",
+          "excerpt": "Total capital of $2.223 billion returned to shareholders, including $1.985 billion of share repurchases"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-17 Investing.com",
+          "excerpt": "Insurance stocks are emerging as inflation hedges as companies reprice premiums faster than policy renewals can absorb rising costs"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "excerpt": "FEDFUNDS=3.64 DGS10=4.34"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "TRV",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4405,
+        "capped_chars": 4405,
+        "raw_tokens": 1101,
+        "capped_tokens": 1101
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221377,
+        "capped_chars": 221377,
+        "raw_tokens": 55344,
+        "capped_tokens": 55344
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 457,
+        "capped_chars": 457,
+        "raw_tokens": 114,
+        "capped_tokens": 114
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7189,
+        "capped_chars": 2050,
+        "raw_tokens": 1797,
+        "capped_tokens": 512
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 138558,
+        "capped_chars": 117425,
+        "raw_tokens": 34640,
+        "capped_tokens": 29357
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 36123,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

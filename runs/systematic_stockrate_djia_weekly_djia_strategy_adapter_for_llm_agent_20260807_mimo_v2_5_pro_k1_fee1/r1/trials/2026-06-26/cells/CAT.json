@@ -1,0 +1,177 @@
+{
+  "cell": "CAT",
+  "symbols": [
+    "CAT"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30623,
+    "tokens_out": 764,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032915,
+    "basis": "reported"
+  },
+  "views": {
+    "CAT": {
+      "symbol": "CAT",
+      "score": -1.0,
+      "rationale": "Caterpillar's stock has surged 184% over the past year to now now trades at an extreme valuation of 52x trailing P/E, far above its historical range of 18-29x. While Q1 2026 showed strong YoY revenue growth of 22.2% and EPS growth of 30.2%, the company faces significant headwinds: $2.2-2.4B in projected tariff costs for FY2026, sequential margin compression in key segments (Power & Energy operating margin contracted 170bps to 20.6%, Resource Industries profit down 39% YoY), and operating cash flow that declined 50% QoQ. The stock's rally has been driven largely by AI data center power demand speculation, creating vulnerability to any cooling in hyperscaler capex. With the stock trading at 26x book value and 52x earnings, the risk/reward is severely skewed to the downside. The next earnings catalyst is August 4, 2026, but given the stretched valuation and margin pressures, any disappointment could trigger significant multiple compression.",
+      "key_factors": [
+        "Extreme valuation: 52x trailing P/E vs historical range of 18-29x, 26x book value",
+        "Tariff headwinds: $2.2-2.4B projected tariff costs for FY2026 compressing margins",
+        "Segment margin contraction: Power & Energy margin down 170bps QoQ, Resource Industries profit down 39% YoY",
+        "Operating cash flow declined 50% QoQ in Q1 2026",
+        "Stock up 184% in 12 months driven by AI data center speculation, creating vulnerability to capex cooling",
+        "Next earnings August 4, 2026 - any disappointment could trigger multiple compression from extreme levels"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=52.228 p_b=26.386"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-26",
+          "excerpt": "pe_diluted=18.335 p_b=10.083"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.41B eps_diluted=5.47 operating_cash_flow=1.87B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "operating_cash_flow=3.74B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-24",
+          "excerpt": "Caterpillar's stock has surged 184% over the past year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "excerpt": "Management's projected full-year fiscal 2026 tariff headwinds of $2.2 billion to $2.4 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "excerpt": "Power & Energy segment's operating margin contracted sequentially by 170 basis points to 20.6%, while the Resource Industries segment suffered a sharp 39% year-over-year profit drop"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wallstreetzen.com",
+          "excerpt": "Next earnings date: Aug 4, 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CAT",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4541,
+        "capped_chars": 4541,
+        "raw_tokens": 1135,
+        "capped_tokens": 1135
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241990,
+        "capped_chars": 241990,
+        "raw_tokens": 60498,
+        "capped_tokens": 60498
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 866,
+        "capped_chars": 866,
+        "raw_tokens": 216,
+        "capped_tokens": 216
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1614,
+        "capped_chars": 1614,
+        "raw_tokens": 404,
+        "capped_tokens": 404
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 23079,
+        "capped_chars": 5028,
+        "raw_tokens": 5770,
+        "capped_tokens": 1257
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 96893,
+        "capped_chars": 79016,
+        "raw_tokens": 24222,
+        "capped_tokens": 19754
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 52861,
+  "started_at": "2026-08-07T03:05:07+00:00"
+}

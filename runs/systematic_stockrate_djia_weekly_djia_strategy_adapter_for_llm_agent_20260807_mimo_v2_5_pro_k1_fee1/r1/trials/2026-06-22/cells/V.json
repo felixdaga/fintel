@@ -1,0 +1,191 @@
+{
+  "cell": "V",
+  "symbols": [
+    "V"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33943,
+    "tokens_out": 1104,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037255,
+    "basis": "reported"
+  },
+  "views": {
+    "V": {
+      "symbol": "V",
+      "score": 0.35,
+      "rationale": "Visa exhibits excellent fundamental health with a dominant global payments franchise, 51.7% net margin, 62.4% ROE, and consistent revenue growth of 17.1% YoY in the latest quarter (Q2 2026). The business model is capital-light with no credit risk exposure, generating strong cash flows. However, operating cash flow declined 35.9% YoY in the latest quarter, which warrants monitoring. Valuation is moderate: the stock trades at ~28x P/E (per web sources), which is below its 5-year median of ~26x forward P/E per Yahoo Finance analysis, suggesting the market is pricing in some regulatory/disruption risk. The stock is down ~14% over the past year, trading at $327 vs a 52-week high of $359.66. Near-term catalysts include the $20B buyback authorization announced April 2026, expansion into stablecoin settlement ($7B annualized run rate), and AI/agentic commerce partnerships (OpenAI integration). News sentiment is broadly positive (mean 0.558). Key risks are regulatory (CCCA, DOJ antitrust), macro headwinds from Middle East tensions affecting cross-border travel, and rising oil prices. The combination of strong fundamentals, reasonable valuation vs history, and multiple near-term catalysts supports a mildly-to-moderately attractive score.",
+      "key_factors": [
+        "Exceptional profitability: 51.7% net margin, 62.4% ROE, 61.1% operating margin",
+        "Strong revenue growth: +17.1% YoY in Q2 2026, +3.0% QoQ",
+        "Dominant competitive position: 61% US credit card spending share, 4.81B cards globally",
+        "Valuation below 5-year median forward P/E (~28x vs ~26x historical median per Yahoo Finance)",
+        "$20B buyback authorization (April 2026) providing near-term support",
+        "Stablecoin and AI commerce expansion: $7B annualized stablecoin settlement, OpenAI partnership",
+        "Regulatory overhang: CCCA, DOJ antitrust, European interchange fee rulings",
+        "Operating cash flow decline of 35.9% YoY in latest quarter",
+        "Macro risks: Middle East tensions, rising oil prices dampening cross-border travel",
+        "Stock down ~14% over past year, trading below 52-week high of $359.66"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q2",
+          "excerpt": "revenue=11.23B net_income=6.02B operating_income=7.23B; YoY revenue +17.1%, net_income +31.5%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "net_margin=0.517 roe=0.624 operating_margin=0.611"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=327.24; range high=359.66 low=293.89"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investsnips.com",
+          "excerpt": "P/E Ratio (TTM) 28.10, Forward P/E 24.35, 52-Week High $375.51, 52-Week Low $293.89"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "Visa trades at 22.27X forward earnings, well above the industry average of 15.75X. However, the valuation sits below the company's five-year median of 25.93X"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "capitaloneshopping.com",
+          "excerpt": "U.S. shoppers put 61% of their credit card spending on Visa; 4.81 billion cards active worldwide"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com",
+          "excerpt": "Revenue growth was the strongest since 2022, while the board authorized the largest buyback in company history; $7 billion annualized stablecoin settlement run rate"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-19",
+          "excerpt": "Visa and Mastercard are reportedly in talks with Stripe and potentially Coinbase to launch a joint stablecoin platform"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-03-31 to 2026-06-20",
+          "excerpt": "mean=0.558 across 102 articles over 90 days"
+        },
+        {
+          "source_type": "cash_flow",
+          "source_id": "2026-03-31",
+          "excerpt": "operating_cash_flow=3.01B vs 2025-03-31: 4.70B (YoY decline of 35.9%)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "V",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4308,
+        "capped_chars": 4308,
+        "raw_tokens": 1077,
+        "capped_tokens": 1077
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 196618,
+        "capped_chars": 196618,
+        "raw_tokens": 49154,
+        "capped_tokens": 49154
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2725,
+        "capped_chars": 2725,
+        "raw_tokens": 681,
+        "capped_tokens": 681
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 28939,
+        "capped_chars": 5764,
+        "raw_tokens": 7235,
+        "capped_tokens": 1441
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 94053,
+        "capped_chars": 68608,
+        "raw_tokens": 23513,
+        "capped_tokens": 17152
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 40829,
+  "started_at": "2026-08-07T03:04:53+00:00"
+}

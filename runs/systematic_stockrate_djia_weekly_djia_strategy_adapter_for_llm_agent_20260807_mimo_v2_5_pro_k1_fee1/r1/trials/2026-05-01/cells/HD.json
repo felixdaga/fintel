@@ -1,0 +1,174 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28873,
+    "tokens_out": 1007,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.031894,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": 0.15,
+      "rationale": "Home Depot is a fundamentally sound, dominant home improvement retailer with a strong brand, scale advantages, and a growing Pro segment that provides resilience. However, the near-term trajectory is soft: Q3 FY2025 showed only +2.8% YoY revenue growth and -1.4% YoY EPS decline, with operating cash flow declining -5.3% YoY. The balance sheet shows rising leverage (total liabilities $94.2B vs equity $12.1B), though equity has improved from $5.8B a year ago. Valuation at 22.4x PE is near the low end of its 12-month range (21.7-28.8), suggesting some value vs own history, but not a deep discount. The macro backdrop is challenging: housing is 'frozen' per the CFO, mortgage rates remain elevated, and the company guided FY2026 comps flat to +2%. Oil prices have surged to ~$109/bbl, adding cost pressure. The upcoming Q1 FY2026 earnings on May 19 could serve as a near-term catalyst, but consensus expects a -3.9% EPS decline, limiting upside surprise potential. The Pro segment and acquisitions acquisitions (SRS, GMS, Mingledorff's) provide a structural growth lever, but this is a multi-year story, not a near-term re-rating catalyst. Net: solid franchise, fair-to-slightly-cheap valuation, but muted near-term trajectory and no clear catalyst to drive re-rating.",
+      "key_factors": [
+        "Dominant market position as world's largest home improvement retailer with strong brand value (~$52.8B)",
+        "Pro segment approaching 50% of revenue, providing resilience against DIY softness",
+        "Q3 FY2025 revenue +2.8% YoY but EPS -1.4% YoY, operating cash flow -5.3% YoY \u2014 soft trajectory",
+        "PE of 22.4x near low end of 12-month range (21.7-28.8), slightly cheap vs own history",
+        "CFO describes housing as 'frozen' with existing-home turnover near 3% vs normal 4-5%; FY2026 comps guided flat to +2%",
+        "Acquisitions (SRS, GMS, Mingledorff's) expanding Pro addressable market but are multi-year growth levers, not near-term catalysts",
+        "Upcoming Q1 FY2026 earnings (May 19) with consensus expecting -3.9% EPS decline \u2014 limited near-term catalyst",
+        "Macro headwinds: elevated oil prices ($109/bbl), rising 10Y yields (4.4%), and tariff uncertainty weighing on consumer spending"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-11-02 Q3",
+          "excerpt": "revenue=41.35B eps_diluted=3.62; YoY revenue=+2.8% eps_diluted=-1.4% operating_cash_flow=-5.3%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "excerpt": "pe_diluted=22.42; range over window: pe_diluted 21.7..28.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-24 finance.yahoo.com",
+          "excerpt": "CFO Richard McPhail said demand softened through 2025 and U.S. housing activity is effectively 'frozen', with existing-home turnover near ~3% (vs. a normal 4-5%)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-24 finance.yahoo.com",
+          "excerpt": "initial guidance for the year assumed comparable sales between flat and up 2%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04 barchart.com",
+          "excerpt": "analysts expect this home improvement retailer to report a profit of $3.42 per share, down 3.9% from $3.56 per share in the year-ago quarter"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-30",
+          "excerpt": "DCOILWTICO=108.64; DGS10=4.4; FEDFUNDS=3.64"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04 emarketer.com",
+          "excerpt": "Home Depot said it plans to acquire Mingledorff's, a wholesale distributor of HVAC equipment, expanding its footprint in the $100 billion HVAC sector"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224632,
+        "capped_chars": 224632,
+        "raw_tokens": 56158,
+        "capped_tokens": 56158
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30817,
+        "capped_chars": 30817,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1432,
+        "capped_chars": 1432,
+        "raw_tokens": 358,
+        "capped_tokens": 358
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 10108,
+        "capped_chars": 3033,
+        "raw_tokens": 2527,
+        "capped_tokens": 758
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 80029,
+        "capped_chars": 61678,
+        "raw_tokens": 20008,
+        "capped_tokens": 15419
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 47770,
+  "started_at": "2026-08-07T02:57:51+00:00"
+}

@@ -1,0 +1,179 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 66106,
+    "tokens_out": 1209,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.069733,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.45,
+      "rationale": "NVIDIA exhibits exceptional fundamental health and trajectory: Q1 FY2027 revenue of $81.6B (+85% YoY, +43% QoQ) with net income of $58.3B and EPS of $2.39 (+215% YoY), gross margins of 74.9%, operating margins of 65.6%, and net margins of 71.5%. The balance sheet is fortress-like with $195.5B equity, only $8.5B debt (D/E of 0.043), and $50.3B quarterly operating cash flow. The company dominates AI data center infrastructure with ~95% GPU market share and a sticky CUDA ecosystem. However, several factors temper the score below +0.5: (1) Valuation is no longer clearly cheap \u2014 at 29.8x trailing P/E it sits near the bottom of its 12-month range (29.4-66.8), but this reflects the massive Q1 earnings beat rather than a genuine discount; forward P/E of ~22x is reasonable but not a screaming bargain given the growth already embedded. (2) The stock has underperformed peers in H1 2026 (up only ~7% vs AMD +171%, Intel +278%), suggesting the market has already partially priced in concerns about AI capex sustainability, competition from custom chips (Google TPUs, Amazon Trainium), and tightening China export controls. (3) Customer concentration risk remains with 65% of revenue from four hyperscalers who are actively developing alternatives. (4) The $119B in supply commitments represent massive forward bets that could create inventory risk if demand softens. On the positive side, the Vera Rubin platform launch later in 2026, entry into the $200B data center CPU market, and Q2 guidance of $91B revenue provide credible near-term catalysts. The stock at ~$195 with forward P/E of ~22x appears fairly valued to slightly attractive for a company growing 80%+ with dominant market position.",
+      "key_factors": [
+        "Exceptional Q1 FY2027 results: $81.6B revenue (+85% YoY), $58.3B net income, 74.9% gross margin, $50.3B operating cash flow",
+        "Fortress balance sheet: $195.5B equity, $8.5B debt, D/E of 0.043, AA credit rating",
+        "Dominant AI GPU market position (~95% share) with sticky CUDA ecosystem creating high switching costs",
+        "Forward P/E of ~22x at $195 is near 7-year low valuation, below historical 34x average",
+        "Vera Rubin platform launch and CPU market entry ($200B TAM) provide near-term catalysts",
+        "Q2 FY2027 guidance of $91B revenue and consensus FY2028 EPS of $8.96 suggest continued acceleration",
+        "Risks: customer concentration (65% from 4 hyperscalers), China export controls tightening, custom chip competition from Google/Amazon",
+        "$119B supply commitments represent massive forward demand bet; stock underperformed peers in H1 2026"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-20 Q1",
+          "excerpt": "revenue=81.61B net_income=58.32B eps_diluted=2.39 gross_profit=61.16B operating_income=53.54B operating_cash_flow=50.34B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=29.773 p_b=24.311 net_margin=0.63 roe=0.817 debt_to_equity=0.043 gross_margin=0.741 operating_margin=0.64"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 29.4..66.8 | p_b 24.0..57.8 | net_margin 0.5..0.6 | roe 0.8..0.9"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 balance_sheet",
+          "excerpt": "total_assets=259.47B total_equity=195.47B total_debt=8.47B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-05 Motley Fool",
+          "excerpt": "AMD and Intel significantly outperformed Nvidia in the first half of 2026, with gains of 171% and 278% respectively compared to Nvidia's 7.2%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-05 Motley Fool",
+          "excerpt": "Nvidia trades at 21.7x forward earnings versus its historical 34x average despite accelerating 96% revenue growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "indmoney",
+          "excerpt": "65% from four customers, many of whom are actively developing alternatives to Nvidia's GPUs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "indmoney_capital",
+          "excerpt": "Supply-related commitments (TSMC and suppliers) \u00b7 $119 billion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4649,
+        "capped_chars": 4649,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241407,
+        "capped_chars": 241407,
+        "raw_tokens": 60352,
+        "capped_tokens": 60352
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4453,
+        "capped_chars": 4453,
+        "raw_tokens": 1113,
+        "capped_tokens": 1113
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 523309,
+        "capped_chars": 127950,
+        "raw_tokens": 130827,
+        "capped_tokens": 31988
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102369,
+        "capped_chars": 75874,
+        "raw_tokens": 25592,
+        "capped_tokens": 18970
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 106421,
+  "started_at": "2026-08-07T03:06:29+00:00"
+}

@@ -1,0 +1,176 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33906,
+    "tokens_out": 1058,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03708,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing's fundamental health is severely impaired: the company is barely profitable on a net basis (Q1 2026 net income of -$7M, EPS -$0.11), with razor-thin gross margins of 4.8% and operating margins of 4.6%. The balance sheet is deeply strained with total equity of only $5.99B against $46.96B in debt (debt-to-equity of 7.84x), and operating cash flow was negative -$179M in Q1 2026. The trajectory shows some improvement year-over-year (revenue +14% YoY) but sequential deterioration (QoQ revenue -2.3%, EPS -88%). Valuation is extremely stretched at a P/E of 72.9x and P/B of 27.5x for a company with these fundamentals. Multiple near-term headwinds exist: 777X certification delays potentially into the late 2020s, ongoing 737 MAX production caps at 47/month, supply chain bottlenecks, DOJ criminal exposure for breaching the 2021 DPA, and China delivery disruptions. The FAA's restoration of self-certification authority (July 20) is a modest positive but doesn't address the structural issues. Earnings on July 28 could be a catalyst but the risk is skewed to the downside given persistent operational challenges.",
+      "key_factors": [
+        "Razor-thin margins: 4.8% gross margin, 4.6% operating margin, near-zero net income",
+        "Extreme leverage: debt-to-equity of 7.84x, $46.96B debt vs $5.99B equity",
+        "Negative operating cash flow of -$179M in Q1 2026",
+        "Stretched valuation: P/E of 72.9x, P/B of 27.5x for a struggling manufacturer",
+        "777X certification delays potentially pushing into late 2020s",
+        "737 MAX production cap of 47/month constraining delivery ramp",
+        "DOJ criminal exposure for breaching 2021 Deferred Prosecution Agreement",
+        "China delivery disruptions due to regulatory review",
+        "Sequential deterioration: QoQ revenue -2.3%, EPS -88%",
+        "Earnings report on July 28 as near-term catalyst with downside risk"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=22.22B net_income=-7.00M eps_diluted=-0.11 gross_profit=2.55B operating_income=448.00M total_assets=164.79B total_equity=5.99B total_debt=46.96B operating_cash_flow=-179.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=72.888 p_b=27.539 p_s=1.789 earnings_yield=0.014 net_margin=0.025 roe=0.378 debt_to_equity=7.844 gross_margin=0.048 operating_margin=0.046"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-13",
+          "excerpt": "Regulatory scrutiny may delay 777X certification into the late 2020s. Supply chain bottlenecks continue to hinder 737 MAX production and cash flow. Analysts revised price targets downward following persistent operational and delivery concerns"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-13",
+          "excerpt": "Department of Justice is moving toward criminal charges after determining the company breached its 2021 Deferred Prosecution Agreement, creating significant legal liability and potential for multi-billion dollar fines"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16",
+          "excerpt": "Boeing delivered 64 commercial airplanes in June, bringing its second-quarter total to 171 jets and first-half total to 314\u2014its best first half since 2018"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-20",
+          "excerpt": "FAA Hands Boeing Back Full Authority To Certify Its Own 737 MAX & 787s For Delivery. Boeing will still face the government-imposed production cap of 47 MAX per month"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=209.23 quarterly delta (~63 trading days, from 2026-04-22): -9.5%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 218857,
+        "capped_chars": 218857,
+        "raw_tokens": 54714,
+        "capped_tokens": 54714
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2351,
+        "capped_chars": 2351,
+        "raw_tokens": 588,
+        "capped_tokens": 588
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 21007,
+        "capped_chars": 4322,
+        "raw_tokens": 5252,
+        "capped_tokens": 1080
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103388,
+        "capped_chars": 82381,
+        "raw_tokens": 25847,
+        "capped_tokens": 20596
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 41211,
+  "started_at": "2026-08-07T03:08:30+00:00"
+}

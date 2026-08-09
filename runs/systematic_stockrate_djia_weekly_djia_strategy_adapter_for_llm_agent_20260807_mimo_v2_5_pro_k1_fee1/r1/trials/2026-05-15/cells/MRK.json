@@ -1,0 +1,174 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31983,
+    "tokens_out": 1109,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03531,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": -1.0,
+      "rationale": "Merck's Q1 2026 results reveal a severe deterioration in fundamental health. The company reported a net loss of $4.24B (EPS -$1.72) versus net income of $5.08B (EPS $2.01) in Q1 2025, driven by a $9.0B one-time Cidara acquisition charge. While revenue grew 4.9% YoY to $16.29B, operating income swung to -$3.53B from +$5.90B, and operating margin collapsed to -21.7% from 37.8%. The GAAP gross margin fell to 74.2% from 78.0%. Operating cash flow declined 49.9% QoQ to $3.92B. The balance sheet shows total equity declining from $51.91B (Sep 2025) to $45.93B, while total liabilities increased to $82.75B. Valuation is extremely stretched: the P/E ratio has surged to 31.4x from a 12-month range of 10.8-15.8x, and P/B has risen to 6.1x from a range of 3.9-5.8x, all while earnings power has deteriorated. The Keytruda patent cliff (2028) remains the dominant structural risk, with the drug accounting for ~49% of FY2025 sales. Gardasil sales declined 24% in Q3 2025 due to China inventory issues. The company faces $2.5B in projected 2026 headwinds from generic competition and Medicare pricing pressures. Insider selling has been substantial, with the CMO and EVP reducing positions by 12.4% and 63.8% respectively. The stock has declined 4%%%%9%%%3.41 from $119.24, yet remains expensive on every metric. No credible near-term re-rating catalyst exists visible to could offset these deteriorating fundamentalsamentals and stretched valuation.",
+      "key_factors": [
+        "Q1 2026 net loss of $4.24B driven by $9.0B Cidara acquisition charge",
+        "Operating income swung margin collapse to -21.7% and -21.7%",
+        "P/E ratio surgedged to -month high of 31.4x vs 10.8-15.8x range",
+        "Keytruda patent cliff (2028) with ~49% of FY2025 sales at risk",
+        "Gardasil sales declining 24% in Q3 2025 due to China inventory issues",
+        "$2.5B projected 2026 headwinds from generic competition and Medicare pricing pressures",
+        "Significant insider selling: CMO -12.4%, EVP -63.8% position reductions",
+        "Balance sheet deterioration: equity declined $5.98B, liabilities increased $5.11B QoQ"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=16.29B net_income=-4.24B eps_diluted=-1.72 operating_income=-3.53B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=15.53B net_income=5.08B eps_diluted=2.01 operating_income=5.90B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=31.377 p_b=6.104 net_margin=0.136 roe=0.195"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-15",
+          "excerpt": "pe_diluted=10.849 p_b=3.912 net_margin=0.273 roe=0.361"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-06",
+          "excerpt": "www.sci-tech-today.com: one-time $9.0 billion Cidara acquisition charge; GAAP gross margin was 74.2%, down from 78.0%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis",
+          "excerpt": "Key risks include impending 2028 patent expiration of Keytruda, which accounts for a substantial portion of total revenue; $2.5B projected 2026 headwinds from generic competition and Medicare pricing pressures"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dailypolitical",
+          "excerpt": "CMO directly owned 70,615 shares after 12.40% decrease; EVP directly owned 68,916 shares after 63.82% decrease"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4573,
+        "capped_chars": 4573,
+        "raw_tokens": 1143,
+        "capped_tokens": 1143
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224779,
+        "capped_chars": 224779,
+        "raw_tokens": 56195,
+        "capped_tokens": 56195
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1846,
+        "capped_chars": 1846,
+        "raw_tokens": 462,
+        "capped_tokens": 462
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 14616,
+        "capped_chars": 3511,
+        "raw_tokens": 3654,
+        "capped_tokens": 878
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 91604,
+        "capped_chars": 72877,
+        "raw_tokens": 22900,
+        "capped_tokens": 18219
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50065,
+  "started_at": "2026-08-07T02:59:54+00:00"
+}

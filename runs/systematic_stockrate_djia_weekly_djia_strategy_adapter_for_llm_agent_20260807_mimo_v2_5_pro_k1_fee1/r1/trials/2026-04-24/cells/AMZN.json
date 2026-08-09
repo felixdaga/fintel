@@ -1,0 +1,199 @@
+{
+  "cell": "AMZN",
+  "symbols": [
+    "AMZN"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 55758,
+    "tokens_out": 1239,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.058387,
+    "basis": "reported"
+  },
+  "views": {
+    "AMZN": {
+      "symbol": "AMZN",
+      "score": 0.35,
+      "rationale": "Amazon demonstrates strong fundamental health with accelerating revenue growth (Q3 2025: +13.4% YoY, +7.4% QoQ) and robust earnings expansion (EPS +36.4% YoY). The company maintains a dominant competitive position with 40.5% U.S. e-commerce market share and 32% global cloud infrastructure share through AWS. Operating margins have improved to 11% with net margins at 11.1%, while the balance sheet remains strong with $369.6B equity against only $55.1B debt. However, the massive $200B capex commitment for 2026 creates near-term free cash flow compression risk, and the stock trades at a P/E of 36.2x\u2014near the upper end of its 365-day range (28.2-40.9x). The upcoming Q1 2026 earnings report on April 29 represents a potential catalyst, with analysts expecting $1.69 EPS and AWS growth acceleration to 28%. News sentiment is moderately positive (mean 0.298 over 90 days), and the Globalstar acquisition strengthens the satellite internet competitive position against SpaceX. The valuation is fair-to-slightly-rich versus recent history, limiting upside from current levels despite strong fundamentals.",
+      "key_factors": [
+        "Accelerating revenue and earnings growth trajectory with Q3 2025 showing +13.4% YoY revenue and +36.4% YoY EPS growth",
+        "Dominant market positions: 40.5% U.S. e-commerce share, 32% global cloud infrastructure share via AWS",
+        "Strong balance sheet with $369.6B equity and low debt-to-equity of 0.149",
+        "$200B capex commitment for 2026 creating free cash flow compression risk but positioning for AI infrastructure leadership",
+        "P/E of 36.2x near upper end of 365-day range (28.2-40.9x), suggesting fair-to-slightly-rich valuation",
+        "Upcoming Q1 2026 earnings on April 29 as near-term catalyst with consensus EPS of $1.69 and AWS growth expected at 28%",
+        "Globalstar acquisition ($11.6B) strengthens satellite internet competitive position",
+        "Positive news sentiment (mean 0.298 over 90 days) with recent bullish coverage on AI infrastructure and advertising growth"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=180.17B net_income=21.19B eps_diluted=1.95 operating_income=17.42B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3 growth",
+          "excerpt": "YoY: revenue=+13.4% eps_diluted=+36.4% net_income=+38.2%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=36.17 p_b=7.484 net_margin=0.111 roe=0.207 debt_to_equity=0.149"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-04-24..2026-04-23 range",
+          "excerpt": "pe_diluted 28.2..40.9 | p_b 5.8..8.3"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 balance sheet",
+          "excerpt": "total_equity=369.63B total_debt=55.10B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "statista 2025",
+          "excerpt": "Amazon claimed the top spot among online retailers in the United States in 2025, capturing 40.5 percent of the market"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "gurufocus 2026-03-26",
+          "excerpt": "Amazon's AWS maintained its position as the global leader in cloud infrastructure services, holding approximately 32% of the total public cloud IaaS and PaaS market"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kalkine 2026",
+          "excerpt": "Amazon committed approximately $200 billion in capital expenditure for full-year 2026, a 53% increase from the $131.8 billion deployed in 2025"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-14",
+          "excerpt": "Amazon announced an $11.6 billion acquisition of satellite service provider Globalstar to advance its Leo satellite internet project"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-22",
+          "excerpt": "Amazon stock has rallied nearly 30% in recent weeks to around $250, driven by improved confidence in its AI investments"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-01-24..2026-04-23",
+          "excerpt": "mean=0.298 n_articles=928"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-23 yahoo finance",
+          "excerpt": "Amazon.com is set to announce its first-quarter results next week, with analysts projecting single-digit growth in its bottom-line figure. EPS of $1.69, up 6.3% from $1.59 per share in the same quarter last year"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMZN",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4630,
+        "capped_chars": 4630,
+        "raw_tokens": 1158,
+        "capped_tokens": 1158
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231834,
+        "capped_chars": 231834,
+        "raw_tokens": 57958,
+        "capped_tokens": 57958
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4370,
+        "capped_chars": 4370,
+        "raw_tokens": 1092,
+        "capped_tokens": 1092
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 329721,
+        "capped_chars": 75746,
+        "raw_tokens": 82430,
+        "capped_tokens": 18936
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 114971,
+        "capped_chars": 93790,
+        "raw_tokens": 28743,
+        "capped_tokens": 23447
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42933,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

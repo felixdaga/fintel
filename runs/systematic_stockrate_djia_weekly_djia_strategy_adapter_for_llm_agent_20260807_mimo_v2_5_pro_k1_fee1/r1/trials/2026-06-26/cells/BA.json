@@ -1,0 +1,169 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28953,
+    "tokens_out": 896,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.031641,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing's fundamental health is trajectory are deeply challenged. The company remains unprofitable with negative EPS of -$0.11 in Q1 2026, negative operating cash flow of -$179M, and a dangerously leveraged balance sheet with total debt of $46.96B against only $5.99B in equity (debt-to-equity of 7.84x). While Q1 revenue grew 14% YoY to $22.22B, this masks severe margin pressure: gross margin is only 4.8%, operating margin 4.6%, and net margin essentially zero. The company is burning cash while carrying an enormous debt load. Valuation is extremely stretched at a P/E of 76x and P/B of 28.7x for a company that is barely profitable and faces persistent operational headwinds. The 777X certification has been delayed again into 2027, quality control issues persist, and normalized free cash flow isn't expected until 2027. The stock is trading near the middle of its 52-week range ($176.77-$254.35) at $218.12, but this doesn't represent a bargain given the fundamental deterioration. Near-term catalysts are negative: the 777X delay, ongoing FAA scrutiny, and the Q2 earnings report on July 29, 2026 could disappoint given continued production headwinds. The only structural positive is the massive backlog (~$700B) and duopoly position, but these are long-duration assets being discounted at extremely high multiples despite near-term cash burn and execution risk.",
+      "key_factors": [
+        "Negative EPS of -$0.11 in Q1 2026 with negative operating cash flow of -$179M",
+        "Extremely high leverage: debt-to-equity of 7.84x ($46.96B debt vs $5.99B equity)",
+        "Stretched valuation: P/E of 76x, P/B of 28.7x for a barely profitable company",
+        "777X certification delayed into 2027, adding to execution risk",
+        "Persistent quality control issues and FAA regulatory scrutiny",
+        "Gross margin only 4.8%, operating margin 4.6% - severe margin compression",
+        "Normalized free cash flow not expected until 2027",
+        "Next earnings (Jul 29, 2026) could disappoint given production headwinds"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=22.22B net_income=-7.00M eps_diluted=-0.11 operating_cash_flow=-179.00M total_debt=46.96B total_equity=.99B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=75.985 p_b=28.709 debt_to_equity=7.844 gross_margin=0.048 operating_margin=0.046 net_margin=0.025"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-02",
+          "excerpt": "777X certification likely delayed into 2027, impacting future projections"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simpleflying.com",
+          "excerpt": "FAA Administrator Bryan Bedford commented that the 777X will be certified following the remaining two 737 MAX variants, which are expected to pass trials by the end of the year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "excerpt": "The achievement of normalized free cash flow (around $6 billion) is not anticipated until 2027"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=218.12 range high=254.35 low=176.77"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 217674,
+        "capped_chars": 217674,
+        "raw_tokens": 54418,
+        "capped_tokens": 54418
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2542,
+        "capped_chars": 2542,
+        "raw_tokens": 636,
+        "capped_tokens": 636
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9171,
+        "capped_chars": 2215,
+        "raw_tokens": 2293,
+        "capped_tokens": 554
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 69151,
+        "capped_chars": 51608,
+        "raw_tokens": 17288,
+        "capped_tokens": 12902
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 27849,
+  "started_at": "2026-08-07T03:05:05+00:00"
+}

@@ -1,0 +1,184 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32686,
+    "tokens_out": 1188,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03625,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": 0.15,
+      "rationale": "UNH presents a mixed fundamental picture. The company is a healthcare giant with scale advantages and defensive revenue characteristics, but recent financials show concerning trends. Q1 2026 EPS of $6.90 was strong, but the quarterly trajectory is volatile (Q3 2025 EPS of $2.59, Q2 2025 of $3.74), and YoY revenue growth of only +2.0% is modest for a company of this scale. Net margin has compressed significantly from 5.6% in mid-2025 to 2.8% currently, and ROE has fallen from 22.8% to 12.3%. The balance sheet remains solid with $103.9B equity and $312.6B in assets. Operating cash flow improved to $8.91B in Q1 2026, up 63.3% YoY. Valuation is stretched: P/E of ~30x is near the top of its 365-day range (9.5-31.0), and P/B of 3.69x is also near highs. The stock has rallied significantly (+13.7% quarterly, +50% from 52-week lows). Q2 2026 earnings beat consensus ($6.38 vs $4.94) and management raised FY2026 guidance to $19.50-$20.00 EPS, providing a near-term positive catalyst. However, structural headwinds persist: commercial segment medical cost trends running above 11% with margin recovery pushed past 2027, Medicare Advantage regulatory risks, and DOJ investigations. The stock appears fairly to slightly richly valued given the margin compression and regulatory overhang, offset partially by the earnings beat and guidance raise.",
+      "key_factors": [
+        "Q1 2026 EPS of $6.90 strong but quarterly EPS trajectory volatile (Q3: $2.59, Q2: $3.74, Q1: $6.85 prior year)",
+        "Net margin compressed from 5.6% (mid-2025) to 2.8% currently; ROE declined from 22.8% to 12.3%",
+        "P/E of ~30x near top of 365-day range (9.5-31.0); P/B of 3.69x near highs",
+        "Q2 2026 earnings beat: $6.38 EPS vs $4.94 consensus; FY2026 guidance raised to $19.50-$20.00",
+        "Commercial segment medical cost trends running above 11% with margin recovery pushed past 2027",
+        "Operating cash flow improved 63.3% YoY to $8.91B in Q1 2026",
+        "Stock rallied ~50% from 52-week lows of $234.60, now at $421.47",
+        "Medicare Advantage regulatory headwinds and DOJ investigations remain structural risks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=111.72B eps_diluted=6.9 net_income=6.48B operating_cash_flow=8.91B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "eps_diluted=2.59"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30 Q2",
+          "excerpt": "eps_diluted=3.74"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=29.931 p_b=3.692 net_margin=0.028 roe=0.123"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-31",
+          "excerpt": "pe_diluted=9.988 p_b=2.273 net_margin=0.056 roe=0.228"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "excerpt": "close=421.47 range high=461.62 low=234.60"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-28",
+          "excerpt": "Berkshire Hathaway sold its UnitedHealth Group position in Q1 2026 at a loss after buying around $380/share in Q2 2025. The stock has since rebounded to $428"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis-2026-07",
+          "excerpt": "Medical cost trends in this segment are now running modestly above 11%...the sticky nature of the persistent and elevated trend is extending the timeframe for full margin recovery past 2027"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "marketbeat-2026-07",
+          "excerpt": "Q2 2026 EPS of $6.38 beat consensus of $4.94; FY2026 guidance raised to $19.50-$20.00"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4536,
+        "capped_chars": 4536,
+        "raw_tokens": 1134,
+        "capped_tokens": 1134
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225515,
+        "capped_chars": 225515,
+        "raw_tokens": 56379,
+        "capped_tokens": 56379
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1751,
+        "capped_chars": 1751,
+        "raw_tokens": 438,
+        "capped_tokens": 438
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 13202,
+        "capped_chars": 2832,
+        "raw_tokens": 3300,
+        "capped_tokens": 708
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 93859,
+        "capped_chars": 75094,
+        "raw_tokens": 23465,
+        "capped_tokens": 18774
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 31088,
+  "started_at": "2026-08-07T03:10:05+00:00"
+}

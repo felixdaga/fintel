@@ -1,0 +1,189 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31850,
+    "tokens_out": 1214,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035492,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": 0.15,
+      "rationale": "Amgen presents a mixed but slightly positive fundamental picture. On the positive side, Q1 2026 showed solid YoY growth (revenue +5.8%, EPS +4.4%, operating cash flow +57.4%), with strong gross margins (68%) and net margins (21%). The company raised full-year 2026 guidance to $37.1B\u2013$38.5B revenue and non-GAAP EPS $21.70\u2013$23.10, and its six key growth drivers delivered 24% aggregate growth. The valuation has compressed significantly \u2014 P/E of 23.5x is near the low end of its 22.6\u201349.7x range over the past year, down from ~49x in February 2026, making it cheaper vs its own recent history. However, significant headwinds temper enthusiasm: the denosumab franchise ($6.6B) faces accelerating biosimilar erosion with 8+ entrants, Enbrel and Otezla face Medicare price setting, the Tavneos FDA withdrawal challenge introduces regulatory risk, and the balance sheet carries $57.3B in debt (debt-to-equity 6.2x) from the Horizon acquisition. The QoQ trajectory was weak (revenue -9.8%, EPS -43.7%), though this reflects normal quarterly variability. The next earnings report on July 30, 2026, with consensus EPS of $5.55, could serve as a near-term catalyst if the company continues to demonstrate growth drivers offsetting LOE headwinds. Net-net, a solid but not exceptional large-cap biotech with real transition risks, now trading at a more reasonable valuation.",
+      "key_factors": [
+        "Q1 2026 YoY growth: revenue +5.8%, EPS +4.4%, operating cash flow +57.4%",
+        "P/E compressed to 23.5x from ~49x in Feb 2026 \u2014 near low end of 1-year range",
+        "Six key growth drivers delivered 24% aggregate growth, ~70% of sales",
+        "Raised 2026 guidance: revenue $37.1B\u2013$38.5B, non-GAAP EPS $21.70\u2013$23.10",
+        "Denosumab franchise ($6.6B) faces accelerating biosimilar erosion with 8+ entrants",
+        "Heavy debt load: $57.3B total debt, debt-to-equity 6.2x from Horizon acquisition",
+        "Tavneos FDA withdrawal challenge adds regulatory uncertainty",
+        "Next earnings July 30, 2026 \u2014 consensus EPS $5.55, potential near-term catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=8.62B net_income=1.82B eps_diluted=3.34 gross_profit=5.87B operating_income=2.67B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+5.8% eps_diluted=+4.4% net_income=+5.1% gross_profit=+13.4% operating_cash_flow=+57.4%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=23.545 p_b=19.984 net_margin=0.21 roe=0.849 debt_to_equity=6.238 gross_margin=0.683"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 22.6..49.7 | p_b 19.2..28.0"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-02-06",
+          "excerpt": "pe_diluted=49.244 p_b=27.674"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-12",
+          "excerpt": "Amgen has formally requested an FDA hearing to challenge the proposed withdrawal of Tavneos (avacopan)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "eureka.patsnap.com",
+          "excerpt": "At least eight denosumab biosimilars received approval or launched between 2024 and early 2026. Amgen explicitly guided for accelerating sales erosion in the second half of 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks",
+          "excerpt": "Non-GAAP operating margin was 45%; generated $1.5 billion in free cash flow in Q1; increased 2026 guidance to $37.1B\u2013$38.5B revenue and non-GAAP EPS $21.70\u2013$23.10"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "Analysts and investors alike will be keeping a close eye on the performance of Amgen in its upcoming earnings disclosure. The company's earnings per share (EPS) are projected to be $5.55"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "excerpt": "AMGN key risks include [1] significant revenue erosion from imminent patent expirations and biosimilar competition for blockbuster drugs including Enbrel and Prolia"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 249045,
+        "capped_chars": 249045,
+        "raw_tokens": 62261,
+        "capped_tokens": 62261
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1293,
+        "capped_chars": 1293,
+        "raw_tokens": 323,
+        "capped_tokens": 323
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 3170,
+        "capped_chars": 1000,
+        "raw_tokens": 792,
+        "capped_tokens": 250
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 90732,
+        "capped_chars": 70945,
+        "raw_tokens": 22683,
+        "capped_tokens": 17736
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 54375,
+  "started_at": "2026-08-07T03:04:05+00:00"
+}

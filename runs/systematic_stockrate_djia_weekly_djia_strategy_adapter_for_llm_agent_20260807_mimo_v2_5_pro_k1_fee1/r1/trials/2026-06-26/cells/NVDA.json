@@ -1,0 +1,142 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 68567,
+    "tokens_out": 984,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.071519,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.45,
+      "rationale": "Nvidia exhibits exceptional fundamental health and trajectory: Q1 FY2027 revenue of $81.6B (+85% YoY, +43% QoQ) with EPS of $2.39 (+215% YoY), 75% gross margins, $50.3B operating cash flow in a single quarter, and a fortress balance sheet ($195B equity vs $8.5B debt, D/E of 0.043). Data center revenue of $75.2B (+92% YoY) represents ~92% of total revenue, with networking revenue surging 199% YoY. Q2 guidance of ~$91B signals no deceleration. The company's competitive position is dominant with ~85-92% market share in AI data center GPUs, CUDA ecosystem lock-in, and expanding into CPUs (Vera platform) and networking (now #1 in data center Ethernet switching per IDC). Valuation is attractive vs own history: P/E of 29.9x sits at the absolute bottom of its 365-day range (29.9-66.8), having compressed from ~53x in April 2026 as earnings surged. P/B of 24.4x is also at the floor of its 24.4-57.8 range. This represents a significant re-rating from the 50-57x P/E range that prevailed for most of the past year, driven by explosive earnings growth rather than price decline. The stock at $195.74 is up only 9.5% over the past quarter despite the massive earnings beat, suggesting the market has not fully repriced the earnings acceleration. Near-term catalysts include the June 24 shareholder meeting (with potential commentary on Vera Rubin ramp and $1T revenue visibility), Micron's blowout Q3 results (confirming robust AI memory demand that validates Nvidia's ecosystem), and the upcoming Q2 FY2027 earnings in late August with consensus expecting $91.7B revenue. Risks include China export control compliance scrutiny (Senator Warren probe), hyperscaler custom chip development (Amazon Trainium, Google TPU), and customer concentration (65% from four customers). However, these are well-known and the valuation already reflects significant skepticism at <30x P/E for a company growing 85%+ YoY.",
+      "key_factors": [
+        "Q1 FY2027 revenue $81.6B (+85% YoY) with EPS $2.39 (+215% YoY) \u2014 extraordinary growth acceleration",
+        "P/E of 29.9x at absolute bottom of 365-day range (29.9-66.8), vs ~53x average over prior year \u2014 significant valuation compression",
+        "Data center revenue $75.2B (+92% YoY) with networking +199% YoY; #1 in data center Ethernet switching per IDC",
+        "Fortress balance sheet: $195B equity, $8.5B debt, D/E 0.043, $50.3B quarterly operating cash flow",
+        "Q2 FY2027 guidance of ~$91B signals continued acceleration; $1T revenue visibility through 2027 per CEO",
+        "Competitive moat via CUDA ecosystem, full-stack offering (GPUs + networking + software), and expanding TAM into CPUs (Vera platform)",
+        " China China China",
+        " export export",
+        " 2026-06-25",
+        "P/E of 29.9x at bottom of 365-day range (29.9-66.8) vs ~53x average over prior year",
+        "2026-06-25",
+        "P/B of 24.4x at bottom of 365-day range (24.4-57.8)"
+      ],
+      "sources_cited": []
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4649,
+        "capped_chars": 4649,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242324,
+        "capped_chars": 242324,
+        "raw_tokens": 60581,
+        "capped_tokens": 60581
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4446,
+        "capped_chars": 4446,
+        "raw_tokens": 1112,
+        "capped_tokens": 1112
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 566983,
+        "capped_chars": 132456,
+        "raw_tokens": 141746,
+        "capped_tokens": 33114
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 96374,
+        "capped_chars": 81134,
+        "raw_tokens": 24094,
+        "capped_tokens": 20283
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 41975,
+  "started_at": "2026-08-07T03:05:34+00:00"
+}

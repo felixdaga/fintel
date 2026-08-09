@@ -1,0 +1,175 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28671,
+    "tokens_out": 959,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.031548,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "rationale": "MMM is a deteriorating business with a stretched balance sheet and expensive valuation. Q1 2026 showed revenue of $6.03B (up only 1.3% YoY) but EPS collapsed 39.7% YoY to $1.23, with net income down 41.3%. Operating cash flow plunged 826.6% YoY to $574M. The balance sheet is severely strained with total equity of only $3.31B against total liabilities of $32.12B, implying a debt-to-equity ratio of ~9.7x. ROE of 0.845% is extremely low and deteriorating from 0.968% a year ago. Net margin compressed from 17.9% to 11.2%. Despite this fundamental deterioration, the stock trades at a P/E of 30.54x\u2014near the top of its 365-day range (17.7-32.0x)\u2014and P/B of 25.8x, both at or near all-time highs in the window. The stock has rallied 10.5% in the past quarter on no fundamental improvement. Management reaffirmed FY26 adjusted EPS guidance of $8.50-$8.70, but GAAP earnings are being crushed by litigation charges and restructuring costs. PFAS litigation remains a material overhang with potential for severe downside. The combination of deteriorating fundamentals, an extremely weak balance sheet, and peak valuation creates a highly unattractive risk/reward profile.",
+      "key_factors": [
+        "Q1 2026 EPS down 39.7% YoY to $1.23; net income down 41.3% YoY",
+        "Operating cash flow down 826.6% YoY to $574M in Q1 2026",
+        "Total equity only $3.31B vs $32.12B liabilities; debt-to-equity ~9.7x",
+        "P/E of 30.54x near top of 365-day range (17.7-32.0x); P/B of 25.8x at peak",
+        "Net margin compressed from 17.9% to 11.2% over the period",
+        "ROE deteriorated from 0.968% to 0.845%",
+        "PFAS litigation remains material overhang with severe downside risk",
+        "Stock rallied 10.5% in past quarter despite no fundamental improvement",
+        "Revenue growth of only 1.3% YoY in Q1 2026"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.03B net_income=659.00M eps_diluted=1.23 operating_cash_flow=574.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=5.95B eps=2.04 net_income=1.12B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=30.54 p_b=25.818 net_margin=0.112 roe=0.845"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-07",
+          "excerpt": "pe_diluted=19 p_b=18.387 net_margin=0.179 roe=0.968"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=35.44B total_liabilities=32.12B total_equity=3.31B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=160.44 quarterly delta +10.5%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st PFAS",
+          "excerpt": "PFAS litigation, environmental regulation and higher compliance costs are seen as long term headwinds for free cash flow, margins and what investors may be willing to pay for the stock"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 245603,
+        "capped_chars": 245603,
+        "raw_tokens": 61401,
+        "capped_tokens": 61401
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 970,
+        "capped_chars": 970,
+        "raw_tokens": 242,
+        "capped_tokens": 242
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7736,
+        "capped_chars": 2450,
+        "raw_tokens": 1934,
+        "capped_tokens": 612
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 59794,
+        "capped_chars": 42307,
+        "raw_tokens": 14948,
+        "capped_tokens": 10576
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 28425,
+  "started_at": "2026-08-07T03:06:24+00:00"
+}

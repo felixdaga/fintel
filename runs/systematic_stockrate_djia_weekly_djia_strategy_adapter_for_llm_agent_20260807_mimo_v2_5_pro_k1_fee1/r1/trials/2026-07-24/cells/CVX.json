@@ -1,0 +1,178 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35965,
+    "tokens_out": 1290,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039835,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "rationale": "Chevron's fundamental trajectory has deteriorated sharply. Q1 2026 EPS of $1.11 represents a -44.5% YoY decline and -39% QoQ decline, with operating cash flow collapsing -51.6% YoY to just $2.51B (vs $9.38B in Q3 2025). Net margin has compressed from 7.8% a year ago to 5.9%, and ROE has fallen from 10.5% to 5.9%. The balance sheet has expanded significantly (total assets up to $329.5B from $256.4B a year ago, likely due to the Hess acquisition), but this has not translated into improved earnings power. Meanwhile, the stock is trading at a P/E of 34.3x \u2014 nearly double the 17.4x level from July 2025 and at the top of its 365-day range (16.8-34.8). This is an extreme valuation for a cyclical energy company experiencing earnings contraction. The P/B of 2.04 is also near the top of its range (1.5-2.1). Oil prices have been volatile and recently surged on geopolitical tensions (Houthi attacks, Iran blockade), but WTI at $93/bbl on July 23 is still below the $110+ levels seen in late April/early May, and the recent rally appears driven by supply disruption fears rather than sustainable demand growth. Analysts expect a strong Q2 2026 (EPS ~$5.79), but this is largely a function of easier YoY comps and timing items reversing \u2014 the underlying trajectory of the business is concerning. The combination of sharply deteriorating fundamentals, extreme valuation relative to history, and commodity price uncertainty creates a highly unfavorable risk/reward. Near-term catalysts (Q2 earnings on July 31) could actually disappoint given the Q1 weakness and the gap between analyst expectations and recent operational performance.",
+      "key_factors": [
+        "Q1 2026 EPS of $1.11 down -44.5% YoY and -39% QoQ, indicating severe earnings deterioration",
+        "Operating cash flow collapsed to $2.51B in Q1 2026 vs $9.38B in Q3 2025, a -73.2% QoQ decline",
+        "P/E of 34.3x is near the top of the 365-day range (16.8-34.8) and nearly double the 17.4x from July 2025",
+        "Net margin compressed from 7.8% to 5.9% and ROE fell from 10.5% to 5.9% over the past year",
+        "Balance sheet expanded significantly (total assets $329.5B vs $256.4B) without commensurate earnings improvement",
+        "Oil price volatility and geopolitical supply disruptions create uncertainty rather than sustainable earnings support",
+        "Q2 2026 earnings expected July 31 with analyst EPS estimate of $5.79, but Q1 weakness raises execution concerns"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-07 Q1 2026",
+          "excerpt": "revenue=48.61B net_income=2.29B eps_diluted=1.11 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3 2025",
+          "excerpt": "revenue=49.73B eps_diluted=1.82 operating_cash_flow=9.38B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=34.271 p_b=2.039 net_margin=0.059 roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-24",
+          "excerpt": "pe_diluted=17.373 p_b=1.819 net_margin=0.078 roe=0.105"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 365d",
+          "excerpt": "pe_diluted 16.8..34.8 | p_b 1.5..2.1"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "excerpt": "DCOILWTICO=93.08 (WTI crude oil price)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23",
+          "excerpt": "Brent crude surged 7% to over $100 a barrel following reports of Houthi attacks on Saudi Arabian oil tankers"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-23",
+          "excerpt": "analysts expect the company's EPS to be $5.79 on a diluted basis, up 227.1% from $1.77 in the year-ago quarter"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225261,
+        "capped_chars": 225261,
+        "raw_tokens": 56315,
+        "capped_tokens": 56315
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3291,
+        "capped_chars": 3291,
+        "raw_tokens": 823,
+        "capped_tokens": 823
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 46255,
+        "capped_chars": 11376,
+        "raw_tokens": 11564,
+        "capped_tokens": 2844
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 117656,
+        "capped_chars": 95731,
+        "raw_tokens": 29414,
+        "capped_tokens": 23933
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 45353,
+  "started_at": "2026-08-07T03:08:38+00:00"
+}

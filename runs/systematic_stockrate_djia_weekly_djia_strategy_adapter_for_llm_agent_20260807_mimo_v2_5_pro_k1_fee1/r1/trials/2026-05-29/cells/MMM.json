@@ -1,0 +1,181 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30365,
+    "tokens_out": 1034,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033467,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "rationale": "MMM is a deteriorating business with sharply negative earnings trajectory, expensive valuation, and significant legal/structural headwinds. Q1 2026 showed revenue +1.3% YoY but EPS collapsed -39.7% YoY and -20.6% QoQ, with net income down -41.3% YoY. Operating cash flow plunged -826.6% YoY to just $574M. The balance sheet is severely strained with total equity of only $3.31B against $32.12B in liabilities (debt-to-equity ~3.8x). P/E has expanded from ~18.7x a year ago to 29.1x today despite earnings deterioration, and P/B sits at 24.6x near the top of its 365-day range (17.1-25.0). Net margin has compressed from 17.9% to 11.2%. The Solventum spin-off removed the higher-margin healthcare business, leaving a more cyclical industrial portfolio. Ongoing PFAS litigation with 30+ state AG cases and personal injury suits creates unpredictable cash outflow risk. Rising 10-year Treasury yields (4.45%) and elevated oil prices ($92.65/bbl) add macro headwinds for industrials. No credible near-term fundamental catalyst exists to reverse the negative trajectory. The stock is paying peak multiples for declining earnings power.",
+      "key_factors": [
+        "Q1 2026 EPS down -39.7% YoY and -20.6% QoQ; net income down -41.3% YoY",
+        "Operating cash flow collapsed -826.6% YoY to $574M in Q1 2026",
+        "P/E expanded to 29.1x (top of 365-day range 17.7-29.5) despite earnings deterioration",
+        "P/B at 24.6x near 365-day high of 25.0x",
+        "Net margin compressed from 17.9% to 11.2% over the past year",
+        "Total equity only $3.31B vs $32.12B liabilities; extremely thin equity cushion",
+        "Solventum spin-off removed higher healthcare segment, leaving more cyclical industrial portfolio",
+        "Ongoing PFAS litigation with 30+ state AG cases creates unpredictable cash outflow risk",
+        "Rising 10-year Treasury yields (4.45%) and elevated oil ($92.65/bbl) add macro headwinds",
+        "No credible near-term fundamental catalyst to reverse negative trajectory"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.03B net_income=659.00M eps_diluted=1.23 operating_cash_flow=574.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=5.95B eps=2.04 net_income=1.12B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=29.096 p_b=24.596 net_margin=0.112 roe=0.845"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-29",
+          "excerpt": "pe_diluted=18.723 p_b=18.119 net_margin=0.179 roe=0.968"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=35.44B total_liabilities=32.12B total_equity=3.31B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st risk analysis",
+          "excerpt": "Ongoing and unresolved PFAS litigation remains a significant overhang, with more than 30 state attorney general cases and personal injury suits still pending"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news 2026-05-22",
+          "excerpt": "3M shares rose after the company's latest quarterly results showed earnings above Wall Street expectations; stock closed at $151.74 on 05/21/2026"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "excerpt": "DGS10=4.45% DCOILWTICO=92.65"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247126,
+        "capped_chars": 247126,
+        "raw_tokens": 61782,
+        "capped_tokens": 61782
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 967,
+        "capped_chars": 967,
+        "raw_tokens": 242,
+        "capped_tokens": 242
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 5147,
+        "capped_chars": 1690,
+        "raw_tokens": 1287,
+        "capped_tokens": 422
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108176,
+        "capped_chars": 84563,
+        "raw_tokens": 27044,
+        "capped_tokens": 21141
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 33396,
+  "started_at": "2026-08-07T03:01:37+00:00"
+}

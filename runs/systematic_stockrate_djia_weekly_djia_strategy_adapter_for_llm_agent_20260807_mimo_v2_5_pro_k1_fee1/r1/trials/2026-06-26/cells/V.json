@@ -1,0 +1,184 @@
+{
+  "cell": "V",
+  "symbols": [
+    "V"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33171,
+    "tokens_out": 1124,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036543,
+    "basis": "reported"
+  },
+  "views": {
+    "V": {
+      "symbol": "V",
+      "score": 0.35,
+      "rationale": "Visa exhibits excellent fundamental health with a dominant global payments network, 51.7% net margin, 62.4% ROE, and a capital-light model generating strong free cash flow. Revenue trajectory is robust: Q2 FY26 revenue of $11.23B grew 17.1% YoY, the strongest since 2022, with net income up 31.5% YoY. The business benefits from secular tailwinds in cash-to-digital migration, cross-border travel recovery, and expanding value-added services (24% growth in FY2025 to $10.9B). Balance sheet is solid with $35.7B equity and manageable leverage. However, operating cash flow declined 35.9% YoY in the latest quarter (from $4.70B to $3.01B), which warrants monitoring though it may reflect timing. Valuation is moderate: the stock trades at ~28x P/E (per web sources) with a forward P/E of ~24x, which is below Visa's historical average, suggesting some discount to its own history. The stock is down ~14% from its 52-week high of $359.66, currently at $330.52, having recovered 8.4% in the last quarter. Near-term catalysts include the $20B buyback authorization announced April 2026, stablecoin settlement pilot reaching $7B annualized run rate (growing 50% QoQ), and integration of Visa payments into ChatGPT/OpenAI for agentic commerce. Regulatory overhang (CCCA, DOJ antitrust) and macro risks (oil prices, cross-border travel sensitivity) cap the upside, but the CCCA has failed to advance three times and the disruption narrative is weakening per recent analysis. News sentiment is moderately positive (mean 0.554 over 90 days). The combination of strong fundamentals, below-average valuation, and credible near-term catalysts supports a mildly-to-moderately attractive score.",
+      "key_factors": [
+        "17.1% YoY revenue growth in Q2 FY26 \u2014 strongest since 2022",
+        "51.7% net margin and 62.4% ROE reflect exceptional profitability of capital-light model",
+        "Stock at $330.52 vs 52-week high of $359.66 \u2014 trading below historical P/E average",
+        "$20B buyback authorization (April 2026) signals management confidence in undervaluation",
+        "Stablecoin settlement pilot at $7B annualized run rate, up 50% QoQ \u2014 new growth vector",
+        "CCCA has failed to advance as amendment three times; regulatory overhang may be overstated",
+        "Operating cash flow declined 35.9% YoY in latest quarter \u2014 a concern to monitor",
+        "Cross-border travel and macro sensitivity remain risk factors amid elevated oil prices and geopolitical tensions"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q2",
+          "excerpt": "revenue=11.23B net_income=6.02B operating_income=7.23B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q2 growth",
+          "excerpt": "YoY: revenue=+17.1% net_income=+31.5% operating_cash_flow=-35.9%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "net_margin=0.517 roe=0.624 operating_margin=0.611"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=330.52 range high=359.66 low=293.89 quarterly delta=+8.4%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investsnips.com",
+          "excerpt": "P/E Ratio 28.10, Forward P/E 24.35, Net Margin 51.68%, ROE 61.78%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-22 cryptobriefing",
+          "excerpt": "Visa reports $11.2B Q2 revenue with 17% growth, announces $20B buyback, stablecoin settlement pilot hit $7B annualized run rate"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-19 investing.com",
+          "excerpt": "The CCCA has now failed to advance as an amendment on three separate occasions. The latest attempt was dropped in March 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-24 ibtimes.com.au",
+          "excerpt": "Visa and OpenAI are integrating secure Visa payments directly into ChatGPT"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-03-31 to 2026-06-25",
+          "excerpt": "mean=0.554 n_articles=107"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "V",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4308,
+        "capped_chars": 4308,
+        "raw_tokens": 1077,
+        "capped_tokens": 1077
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 197404,
+        "capped_chars": 197404,
+        "raw_tokens": 49351,
+        "capped_tokens": 49351
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2909,
+        "capped_chars": 2909,
+        "raw_tokens": 727,
+        "capped_tokens": 727
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 36693,
+        "capped_chars": 6743,
+        "raw_tokens": 9173,
+        "capped_tokens": 1686
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 92682,
+        "capped_chars": 66089,
+        "raw_tokens": 23171,
+        "capped_tokens": 16521
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 39316,
+  "started_at": "2026-08-07T03:05:48+00:00"
+}

@@ -1,0 +1,184 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 40839,
+    "tokens_out": 1314,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.044781,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": 0.15,
+      "rationale": "JNJ presents a mixed but slightly positive fundamental picture. On the positive side, the company delivered solid Q2 2026 results with revenue of $25.31B (+6.6% YoY) and beat consensus estimates on both revenue and EPS ($2.90 adjusted vs $2.85 est). The Innovative Medicine segment grew 7.8% YoY with strong oncology performance (Darzalex +19%, Tremfya +73%). Management raised full-year guidance to $100.8-101.4B revenue and $11.60-11.75 adjusted EPS. The company has a strong balance sheet with $20.76B cash, maintains 64 consecutive years of dividend increases, and is targeting $100B in annual revenue for the first time. However, several headwinds temper enthusiasm: (1) GAAP net income was essentially flat YoY at $5.53B despite revenue growth, suggesting margin pressure; (2) the P/E of ~29.7x is near the top of its 365-day range (17.6-31.1x), having expanded from ~17.6x a year ago \u2014 the stock is no longer cheap; (3) Stelara biosimilar competition is a significant headwind (sales down 56%); (4) the talc litigation remains an overhang despite a proposed $5.5B settlement; (5) rising 10-year Treasury yields (4.68%) and elevated corporate bond yields (6.32%) create a less favorable backdrop for defensive yield plays. The stock has already rallied +12.5% in the last quarter and +28% YTD, suggesting much of the good news is priced in. The near-term catalyst of the Q2 earnings beat and guidance raise has already been delivered (July 15), limiting further re-rating potential. Net: solid franchise with good trajectory, but valuation has expanded significantly and limits upside from here.",
+      "key_factors": [
+        "Q2 2026 revenue beat at $25.31B (+6.6% YoY) with adjusted EPS of $2.90 beating $2.85 consensus",
+        "P/E of ~29.7x near top of 365-day range (17.6-31.1x), up from ~17.6x a year ago \u2014 expensive vs own history",
+        "Innovative Medicine segment grew 7.8% YoY; oncology portfolio up 17% YoY led by Darzalex and Tremfya",
+        "Stelara biosimilar headwind (sales down 56%) partially offset by new product launches",
+        "Talc litigation overhang persists despite proposed $5.5B settlement; stock fell 3.49% on July 30 on renewed uncertainty",
+        "Full-year guidance raised to $100.8-101.4B revenue and $11.60-11.75 adjusted EPS",
+        "Stock up +28% YTD and +12.5% in last quarter \u2014 much good news already priced in",
+        "Rising Treasury yields (10Y at 4.68%) and corporate bond yields (6.32%) reduce relative appeal of defensive dividend names"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-28 Q2",
+          "excerpt": "revenue=25.31B net_income=5.53B eps_diluted=2.27 gross_profit=17.26B operating_income=6.75B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=29.673 p_b=7.346 p_s=6.374 earnings_yield=0.034 net_margin=0.215 roe=0.248"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-31",
+          "excerpt": "pe_diluted=17.586 p_b=5.078 net_margin=0.25 roe=0.289"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "excerpt": "close=255.82 quarterly delta (~63 trading days, from 2026-04-29): +12.5%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-30 Motley Fool",
+          "excerpt": "Johnson & Johnson is experiencing strong performance with stock up 28% YTD, driven by FDA clearance for its Ottava surgical robot, 64 consecutive years of dividend increases, and $100 billion revenue target"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-28 GlobeNewswire",
+          "excerpt": "Johnson & Johnson has agreed to an uncapped $5.5 billion settlement resolving claims from approximately 70,000 women and families"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nai500.com Q2 2026",
+          "excerpt": "J&J posted quarterly revenue of approximately $25.3 billion, up nearly 7% year-over-year and slightly above the analyst consensus of $25 billion. Adjusted net income came in at $7.08 billion, up about 6% year-over-year, or $2.90 per share, ahead of the $2.86 consensus estimate"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com 2026-07-30",
+          "excerpt": "Renewed talc litigation uncertainty exerts downward pressure on Johnson and Johnson's share price. Analysts lowered price targets amid regulatory concerns and pharmaceutical patent expiration risks"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "excerpt": "DGS10=4.68% DBAA=6.32%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 5347,
+        "capped_chars": 5347,
+        "raw_tokens": 1337,
+        "capped_tokens": 1337
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223499,
+        "capped_chars": 223499,
+        "raw_tokens": 55875,
+        "capped_tokens": 55875
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2728,
+        "capped_chars": 2728,
+        "raw_tokens": 682,
+        "capped_tokens": 682
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 60428,
+        "capped_chars": 16477,
+        "raw_tokens": 15107,
+        "capped_tokens": 4119
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 114793,
+        "capped_chars": 87250,
+        "raw_tokens": 28698,
+        "capped_tokens": 21814
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 63657,
+  "started_at": "2026-08-07T03:09:42+00:00"
+}

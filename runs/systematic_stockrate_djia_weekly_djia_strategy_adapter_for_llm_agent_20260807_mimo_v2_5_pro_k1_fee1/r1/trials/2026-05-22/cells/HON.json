@@ -1,0 +1,186 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33984,
+    "tokens_out": 1169,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037491,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": -1.0,
+      "rationale": "HON's Q1 2026 results reveal a sharply deteriorating earnings trajectory: EPS fell 41.9% YoY to $1.29 (from $2.22), net income dropped 45.8%, and operating cash flow swung to -$650M. Revenue growth of 2.4% YoY is modest, but the margin compression is severe\u2014gross margin declined, and the company is carrying $32.1B in debt against only $14.7B equity (D/E 2.19). The negative operating cash flow is attributed to one-time restructuring costs (Flexjet settlement, debt extinguishment), but this masks underlying weakness. Valuation is stretched: P/E of 34.8x is at the top of its 1-year range (21.6-34.8), P/B of 9.7x is also at the high end, and the stock trades at a premium to peers (median P/E ~33.7x). The aerospace spin-off scheduled for June 29, 2026, is a major catalyst, but it introduces execution risk and uncertainty about the post-separation capital structures. Near-term headwinds include Middle East conflict impacts (~$100-150M revenue hit in Q2), supply chain disruptions in aerospace, and a higher tax rate in Q2. The combination of deteriorating fundamentals, stretched valuation, and near-term risks warrants a negative view.",
+      "key_factors": [
+        "Q1 2026 EPS of $1.29, down 41.9% YoY from $2.22",
+        "Net income declined 45.8% YoY to $795M",
+        "Operating cash flow negative at -$650M (vs. +$597M prior year Q1)",
+        "Revenue growth modest at 2.4% YoY to $9.14B, but missed consensus of $9.28B",
+        "P/E of 34.8x at top of 1-year range (21.6-34.8), P/B of 9.7x at high end",
+        "Debt-to-equity of 2.19 with $32.1B total debt",
+        "Aerospace spin-off scheduled June 29, 2026 introduces execution risk",
+        "Middle East conflict expected to impact Q2 revenue by $100-150M",
+        "Q2 2026 guidance includes tax headwind of ~$0.16/share",
+        "Stock underperforming sector: 12M return 15.0% vs. sector median 45.1%"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=9.14B net_income=795.00M eps_diluted=1.29"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "rev=8.93B eps=2.22"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 cash flow",
+          "excerpt": "operating_cash_flow=-650.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=34.847 p_b=9.741 debt_to_equity=2.189"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-22",
+          "excerpt": "pe_diluted=24.196 p_b=7.67"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-23",
+          "excerpt": "revenue of $9.14 billion fell short of the $9.28 billion forecast"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-23",
+          "excerpt": "planned spin-off of Honeywell Aerospace now scheduled for June 29, 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-23",
+          "excerpt": "Middle East conflict caused an estimated 0.5% impact to Honeywell's revenue in Q1, with an expected ~1% impact in Q2 (approximately $100-150 million)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-25",
+          "excerpt": "12M Rtn: HON 15.0% vs. Median 45.1%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3050,
+        "capped_chars": 3050,
+        "raw_tokens": 762,
+        "capped_tokens": 762
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 252577,
+        "capped_chars": 252577,
+        "raw_tokens": 63144,
+        "capped_tokens": 63144
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1151,
+        "capped_chars": 1151,
+        "raw_tokens": 288,
+        "capped_tokens": 288
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 18787,
+        "capped_chars": 4456,
+        "raw_tokens": 4697,
+        "capped_tokens": 1114
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 121707,
+        "capped_chars": 74757,
+        "raw_tokens": 30427,
+        "capped_tokens": 18690
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 537502,
+  "started_at": "2026-08-07T03:00:34+00:00"
+}

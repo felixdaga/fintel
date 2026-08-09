@@ -1,0 +1,195 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29741,
+    "tokens_out": 1290,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033611,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.25,
+      "rationale": "Disney presents a mildly attractive fundamental picture with improving trajectory. The company's Q2 FY2026 results showed solid revenue growth of 6.5% YoY to $25.17B, with operating income of $4.60B and strong operating cash flow of $6.91B. The streaming business has reached a genuine inflection point\u2014Entertainment SVOD operating income surged 88% to $582M in Q2, with margins crossing 10% for the first time, while the Experiences segment continues to be a profit engine with record Q2 revenue of $9.49B. The balance sheet is healthy with $115.3B equity and improving ROE of 10.7%. However, the YoY EPS decline of 29.8% (from $1.81 to $1.27) reflects higher taxes and masks underlying operational improvement. Valuation is attractive vs. own history: the current P/E of 14.9x sits near the low end of the 12.5-23.8x range over the past year, and P/B of 1.60x is at the bottom of its 1.5-2.1x range. The stock trades roughly 23% below analyst consensus targets. Management is executing on capital allocation with $5.5B in buybacks in H1 FY2026 and raised the target to at least $8B. Near-term catalysts include the Q3 FY2026 earnings report (imminent based on news flow showing Q3 results with EPS beat, revenue miss, and reaffirmed double-digit adjusted EPS growth guidance for FY2026-2027), plus the ongoing streaming profitability inflection and $60B parks expansion plan. Risks include linear TV structural decline, rising sports rights costs, and competition from Netflix (valued at ~2x Disney's market cap). The FCC review of ABC broadcast licenses adds regulatory uncertainty. Overall, Disney is a diversified franchise owner with multiple earnings supports, trading at a discount to its own history with improving fundamentals, warranting a modestly positive score.",
+      "key_factors": [
+        "Streaming profitability inflection: SVOD operating income surged 88% to $582M in Q2 FY2026, margins crossed 10%",
+        "Experiences segment remains the profit engine with record Q2 revenue of $9.49B and strong parks demand",
+        "Valuation attractive vs. own history: P/E 14.9x near low end of 12.5-23.8x range, P/B 1.60x at bottom of 1.5-2.1x range",
+        "Aggressive capital return: $5.5B buybacks in H1 FY2026, target raised to at least $8B",
+        "Q3 FY2026 earnings beat with reaffirmed double-digit adjusted EPS growth guidance for FY2026-2027",
+        "YoY EPS decline of 29.8% masks operational improvement due to higher tax rate",
+        "Linear TV structural decline and rising sports rights costs remain headwinds",
+        "FCC review of ABC broadcast licenses adds regulatory uncertainty",
+        "Netflix valued at ~2x Disney's market cap despite Disney having larger revenue"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=25.17B net_income=2.46B eps_diluted=1.27 operating_income=4.60B operating_cash_flow=6.91B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-29 Q2",
+          "excerpt": "revenue=23.62B eps_diluted=1.81 (YoY comparison for EPS decline)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=14.924 p_b=1.596 p_s=1.893 earnings_yield=0.067 net_margin=0.127 roe=0.107 operating_margin=0.177"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 12.5..23.8 | p_b 1.5..2.1"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com",
+          "excerpt": "Streaming operating income rose 88% to $582M in fiscal Q2 2026; SVOD margin crossed 10% for the first time"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com",
+          "excerpt": "Record $10.0B Experiences operating income in fiscal 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "alphastreet.com",
+          "excerpt": "Over the first six months of fiscal 2026, Disney generated $7.65 billion of cash from operations and repurchased $5.5 billion of common stock"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "excerpt": "At US$99.34 vs an analyst target of about US$129.49, the stock trades roughly 23% below consensus"
+        },
+        {
+          "source_type": "news",
+          "source_id": "finviz.com Q3 2026",
+          "excerpt": "Walt Disney Q3 2026 EPS beats, revenue misses as it reaffirms double-digit adjusted EPS growth guidance for fiscal 2026 and 2027"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "companieshistory.com",
+          "excerpt": "Netflix carried about $362 billion and Comcast roughly $89 billion... Disney's market value sat near $180 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st FCC",
+          "excerpt": "Federal Communications Commission calls for early license renewals for Disney's ABC broadcast stations"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4429,
+        "capped_chars": 4429,
+        "raw_tokens": 1107,
+        "capped_tokens": 1107
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 220578,
+        "capped_chars": 220578,
+        "raw_tokens": 55144,
+        "capped_tokens": 55144
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1932,
+        "capped_chars": 1932,
+        "raw_tokens": 483,
+        "capped_tokens": 483
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 34161,
+        "capped_chars": 7287,
+        "raw_tokens": 8540,
+        "capped_tokens": 1822
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 79617,
+        "capped_chars": 60111,
+        "raw_tokens": 19905,
+        "capped_tokens": 15028
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 32952,
+  "started_at": "2026-08-07T03:04:20+00:00"
+}

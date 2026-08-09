@@ -1,0 +1,199 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34357,
+    "tokens_out": 1348,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038401,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's is a fundamentally sound, franchise-heavy business with strong brand, global scale, and high operating margins (~46%). However, the near-term trajectory is mixed: Q1 2026 showed solid YoY growth (revenue +9.4%, EPS +6.9%) but QoQ declines (revenue -7.9%, EPS -12.6%) reflecting seasonal patterns and a tough comparison base. The balance sheet carries negative equity (-$1.29B) due to to the franchise model's capital structure, which is typical for MCD. not a red flag. Cash generation remains robust ($2.41B operating cash flow in Q1). Valuation is difficult to assess precisely due to PE ratio data issues (pe_diluted=0 in the data), but the stock has declined ~12% over the past quarter to $262.80, trading well below its 52-week high of $341.75. News sentiment is moderately positive (mean 0.302). The upcoming Q2 earnings on Aug 4 could serve as a near-term catalyst, with consensus expecting EPS of ~$3.33 (+4.4% YoY), though management has guided for 'meaningful deceleration' in comparable sales. Headwinds include lower-income consumer pressure, elevated costs, and margin compression risks. The stock appears to offer mild value after its pullback, but the lack of a clear positive earnings surprise catalyst and ongoing consumer softness limit upside conviction. Score reflects a solid but not exceptional franchise with fair-to-slightly-cheap valuation and a balanced near-term outlook.",
+      "key_factors": [
+        "Franchise-heavy model (~95% franchised) provides stable, high-margin recurring revenue streams",
+        "Strong Q1 2026 YoY growth: revenue +9.4%, EPS +6.9%, operating margin ~46%",
+        "Stock down ~12% over past quarter, trading well below 52-week high of $341.75",
+        "Negative equity on balance sheet (-$1.29B) typical for franchise model, not a concern",
+        "Q2 2026 earnings due Aug 4 with consensus EPS ~$3.33, but management guided for decelerating comparable sales",
+        "Lower-income consumer headwinds and elevated labor/commodity costs pressuring margins",
+        "Dividend King status approaching (49 consecutive years of increases) supports defensive appeal",
+        "Digital penetration rising (~40% of systemwide sales) supporting long-term efficiency"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.52B net_income=1.98B eps_diluted=2.78 operating_income=2.95B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+9.4% eps_diluted=+6.9% net_income=+6.2%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 QoQ",
+          "excerpt": "QoQ: revenue=-7.9% eps_diluted=-12.6% net_income=-12.9%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_equity=-1.29B total_assets=60.04B total_liabilities=61.32B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 cash flow",
+          "excerpt": "operating_cash_flow=2.41B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=262.80 range high=341.75 low=260.96 quarterly delta=-12.4%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "operating_margin=0.463 net_margin=0.316"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-19",
+          "excerpt": "McDonald's stock has fallen 20% from its February peak due to inflation pressuring customers toward lower-margin value items"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart earnings preview",
+          "excerpt": "analysts expect MCD to report a profit of $3.33 per share on a diluted basis, up 4.4% from $3.19 per share in the year-ago quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tickeron earnings preview",
+          "excerpt": "Management has signaled a meaningful deceleration in comparable sales from Q1's 3.9% pace"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout defensive rally",
+          "excerpt": "CEO Chris Kempczinski acknowledged a challenging environment, stating that consumer sentiment and spending are 'certainly not improving, and it may be getting a little bit worse'"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-04-28 to 2026-07-19",
+          "excerpt": "mean= articles n_scored=33 mean=0.302"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215523,
+        "capped_chars": 215523,
+        "raw_tokens": 53881,
+        "capped_tokens": 53881
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1338,
+        "capped_chars": 1338,
+        "raw_tokens": 334,
+        "capped_tokens": 334
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 4624,
+        "capped_chars": 1388,
+        "raw_tokens": 1156,
+        "capped_tokens": 347
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 113005,
+        "capped_chars": 83568,
+        "raw_tokens": 28252,
+        "capped_tokens": 20891
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37893,
+  "started_at": "2026-08-07T03:08:57+00:00"
+}

@@ -1,0 +1,184 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29390,
+    "tokens_out": 1301,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033293,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": 0.15,
+      "rationale": "Honeywell's Q2 2026 results show a mixed picture. Revenue grew modestly (+4.3% YoY to $9.72B) and adjusted EPS of $1.95 beat consensus of $1.80, but the headline GAAP EPS of $17.83 is heavily distorted by a ~$5.4B one-time gain (likely from the Aerospace spin-off/Quantinuum IPO), making underlying earnings quality hard to assess. The company completed its Aerospace spin-off on June 29, 2026, transforming into a pure-play automation company, which is a significant strategic event. Valuation at 9.4x P/E appears cheap on the surface, but this is misleading given the one-time gain inflating the 'E'. On a forward basis, Q3/Q4 guidance came in below consensus (Q3 EPS 2.05-2.20 vs 2.85 consensus), suggesting the market may need to reset expectations downward. The balance sheet carries $31.5B in debt against $18.9B equity (1.67x D/E), and operating cash flow of $1.28B in Q2 was down YoY. Segment margins expanded 100bps and orders grew 16%, which are positive signals for the restructured business. However, stranded costs of $60-65M remain to be eliminated in early 2027, and the company is divesting Productivity/Warehouse solutions, reducing 2026 revenue by ~$400M. The stock has recovered +15% over the past quarter but is still down ~46% over 1 year per Simply Wall St data. News sentiment is mixed (mean 0.47). The restructuring creates a cleaner, more focused company with better long-term positioning in automation, but near-term earnings visibility is poor and the one-time gain makes current valuation metrics unreliable. Mildly positive on the strategic transformation but cautious on near-term execution.",
+      "key_factors": [
+        "Q2 2026 GAAP EPS of $17.83 inflated by ~$5.4B one-time gain from Aerospace spin-off/Quantinuum IPO; adjusted EPS $1.95 beat $1.80 consensus",
+        "Forward guidance below consensus: Q3 EPS 2.05-2.20 vs 2.85 consensus, Q4 EPS 2.28-2.43; revenue guidance also below expectations",
+        "Aerospace spin-off completed June 29, 2026 transforming HON into pure-play automation company; 1-for-2 reverse stock split same day",
+        "Valuation at 9.4x P/E is misleading due to one-time gain; forward P/E on ~$10.41 FY26 consensus EPS implies ~23x",
+        "Segment margins expanded 100bps, organic orders up 16% with 9% backlog increase; delivery performance improved from mid-40% to high-80% range",
+        "Debt-to-equity of 1.67x with $31.5B total debt; operating cash flow of $1.28B in Q2 down YoY from $1.32B",
+        "Stranded costs of $60-65M to be eliminated in early 2027; divesting Productivity/Warehouse solutions reducing 2026 revenue by ~$400M",
+        "Stock down ~46% over 1 year per Simply Wall St; quarterly price recovery of +15% from April lows"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-30 Q2",
+          "excerpt": "revenue=9.72B net_income=5.69B eps_diluted=17.83 operating_income=2.24B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30 Q2",
+          "excerpt": "revenue=9.32B net_income=1.57B eps_diluted=2.45"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=9.38 p_b=4.087 net_margin=0.216 roe=0.436 debt_to_equity=1.671"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-27",
+          "excerpt": "Honeywell (HON) Q2 2026 Earnings Call Transcript - management reported the successful transformation into a pure-play automation company following the spin-off of its Aerospace business on June 29, 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "sahmcapital",
+          "excerpt": "a large part of the strength is tied to a single US$5.4b gain rather than a clearly repeating pattern"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tickerreport",
+          "excerpt": "Q3 2026 guidance at 2.050-2.200 EPS vs consensus estimate of 2.850; Q4 2026 guidance at 2.280-2.430 EPS"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "excerpt": "1Y -46.0% Price-To-Earnings ratio (9.3x) is below the US market (19x) Earnings grew by 79.1% over the past year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com Q2 call",
+          "excerpt": "Organic orders surged 16% with double-digit growth across all short-cycle segments, leading to a 9% increase in ending backlog. Expanded segment margins by 100 basis points"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "excerpt": "close=241.91 quarterly delta +15.0%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3815,
+        "capped_chars": 3815,
+        "raw_tokens": 954,
+        "capped_tokens": 954
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247962,
+        "capped_chars": 247962,
+        "raw_tokens": 61990,
+        "capped_tokens": 61990
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1478,
+        "capped_chars": 1478,
+        "raw_tokens": 370,
+        "capped_tokens": 370
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 5527,
+        "capped_chars": 1195,
+        "raw_tokens": 1382,
+        "capped_tokens": 299
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 77283,
+        "capped_chars": 56854,
+        "raw_tokens": 19321,
+        "capped_tokens": 14214
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 48352,
+  "started_at": "2026-08-07T03:09:37+00:00"
+}

@@ -1,0 +1,199 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33045,
+    "tokens_out": 1158,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036519,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": 0.35,
+      "rationale": "Cisco shows strong fundamental health and accelerating trajectory: Q3 FY2026 revenue of $15.84B (+12% YoY) with GAAP EPS of $0.85 (+37% YoY), networking revenue up 25%, and AI infrastructure orders raised to $9B for FY26. The campus networking refresh cycle and AI data center buildout provide durable multi-year tailwinds. However, the stock has surged ~49% in the past quarter, pushing the P/E to 42.5x\u2014near the top of its 25.8-42.8x 52-week range and well above the ~28x average over the prior year. This rich valuation vs. own history partially offsets the strong fundamentals. Security segment remains flat/weak, and operating cash flow declined 18.7% YoY in Q2. The Q3 earnings beat and raised guidance (Q4 revenue $16.7-16.9B vs. consensus $15.82B) represent a credible near-term catalyst that has already been partially priced in with the 15%+ post-earnings pop. Net: solid business momentum but stretched valuation limits upside from here.",
+      "key_factors": [
+        "Accelerating AI infrastructure orders raised from $5B to $9B for FY26, with $5.3B taken YTD",
+        "Q3 FY2026 record revenue of $15.84B (+12% YoY) with networking segment up 25%",
+        "P/E of 42.5x at top of 52-week range (25.8-42.8x), significantly above ~28x average of prior year",
+        "Campus networking refresh cycle driving broad-based demand with product orders up 35% YoY",
+        "Security segment flat/weak and operating cash flow declined 18.7% YoY in Q2",
+        "Q4 guidance of $16.7-16.9B revenue well above consensus, providing near-term catalyst",
+        "Restructuring with ~400 job cuts reallocation toward AI, silicon optics investments",
+        "sources_cited[",
+        "prices",
+        " fundamentalsamentals",
+        "2026-05-21",
+        "P/E diluteduted 0.85",
+        "2026-05-21",
+        "2026-05-21",
+        "2026-05-21",
+        "2026-05-21",
+        "2026-05-21",
+        "2026-05-21,"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24 Q2",
+          "excerpt": "revenue=15.35B eps_diluted=0.8 net_income=3.17B gross_margin=0.648 operating_margin=0.227"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-25 Q1",
+          "excerpt": "revenue=14.88B eps_diluted=0.72"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-01-25 Q2",
+          "excerpt": "revenue=13.99B eps_diluted=0.61"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=42.516 p_b=9.868 net_margin=0.188 roe=0.232"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-22",
+          "excerpt": "pe_diluted=25.895 p_b=5.52"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "excerpt": "close=118.20 quarterly delta=+49.2%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14 Benzinga",
+          "excerpt": "Cisco Systems reported stronger-than-expected Q3 results with revenue of $15.84 billion beating estimates and raised full-year fiscal 2026 guidance. AI-related orders now expected to reach $9 billion, up from $5 billion guidance. Product orders surged 35% year-over-year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.cisco.com Q3 earnings",
+          "excerpt": "Record revenue of $15.8 billion, up 12% year over year; GAAP EPS of $0.85, up 37% year over year. Total product orders up 35% year over year. Raising expected FY26 orders to $9 billion, up from $5 billion."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "Security segment revenue declined 4% year-over-year in Q2 FY2026, and services revenue slipped 1%. Operating cash flow fell 18.7% year-over-year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com SWOT",
+          "excerpt": "Cisco's current valuation incorporates expectations for continued strong performance, yet analysts have flagged concerns about peak margins and high valuation levels."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230707,
+        "capped_chars": 230707,
+        "raw_tokens": 57677,
+        "capped_tokens": 57677
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1655,
+        "capped_chars": 1655,
+        "raw_tokens": 414,
+        "capped_tokens": 414
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 65825,
+        "capped_chars": 14318,
+        "raw_tokens": 16456,
+        "capped_tokens": 3580
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 63974,
+        "capped_chars": 46658,
+        "raw_tokens": 15993,
+        "capped_tokens": 11665
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 51180,
+  "started_at": "2026-08-07T03:00:27+00:00"
+}

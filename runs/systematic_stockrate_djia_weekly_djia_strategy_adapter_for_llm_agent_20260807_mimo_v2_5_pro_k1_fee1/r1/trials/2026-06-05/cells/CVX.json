@@ -1,0 +1,184 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34004,
+    "tokens_out": 1194,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037586,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "rationale": "Chevron's fundamental health and trajectory are deteriorating sharply. Q1 2026 showed EPS of $1.11, down 44.5% YoY from $2.00, with operating cash flow collapsing 51.6% to $2.51B. The company's net margin has compressed from 7.8% a year ago to 5.9%, and ROE has fallen from 10.5% to 5.9%. The quarterly trajectory shows a clear downtrend: EPS moved from $2.00 (Q1 2025) to $1.82 (Q3 2025) to $1.45 (Q2 2025) to $1.11 (Q1 2026), with the most recent quarter being the weakest. Meanwhile, the stock is trading at a P/E of 33.2x, near the top of its 365-day range (15.3-34.8), and P/B of 1.975x is also elevated. This is a case of deteriorating fundamentals being priced at peak multiples. The valuation has nearly doubled from 15.3x P/E a year ago to 33.2x today, while earnings have nearly halved. There is no near-term fundamental catalyst to justify this re-rating; in fact, the CEO himself is warning of potential catastrophic fuel squeezes and recession risks from Middle East conflicts. Legal reserve charges, California regulatory scrutiny on refining margins, and the uncertain Hess acquisition arbitration with ExxonMobil add further downside risk. The balance sheet shows rising liabilities ($140.18B vs $130.90B in Q3 2025) while equity has declined. Oil prices at ~$97/barrel provide some support, but the company's hedging losses ($2.9B in Q1) and weak downstream margins undermine the benefit. This is a deteriorating business at an expensive valuation with multiple near-term risk catalysts.",
+      "key_factors": [
+        "Q1 2026 EPS of $1.11, down 44.5% YoY from $2.00, with operating cash flow down 51.6% to $2.51B",
+        "P/E of 33.2x is near the top of its 365-day range (15.3-34.8), having nearly doubled from 15.3x a year ago while earnings collapsed",
+        "Net margin compressed from 7.8% to 5.9% and ROE fell from 10.5% to 5.9% over the past year",
+        "CEO Mike Wirth warns of fragile physical oil market, shrinking inventories, and potential for global recession from energy squeeze",
+        "$2.9B hedging loss in Q1 2026 masked underlying operational weakness",
+        "California regulatory scrutiny on refining margins and pricing practices poses downstream margin risk",
+        "Hess acquisition faces arbitration uncertainty with ExxonMobil over Guyana assets",
+        "Rising balance sheet liabilities ($140.18B) while equity declined from $195.60B to $189.37B"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-07 Q1 filing",
+          "excerpt": "revenue=48.61B net_income=2.29B eps_diluted=1.11 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "eps_diluted=2 revenue=47.61B net_income=3.51B operating_cash_flow=5.19B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=33.201 p_b=1.975 net_margin=0.059 roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-05",
+          "excerpt": "pe_diluted=15.262 p_b=1.598 net_margin=0.078 roe=0.105"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04 Benzinga",
+          "excerpt": "Chevron CEO Mike Wirth warns of a fragile physical oil market with shrinking inventories and diminishing shock absorbers, predicting upward pressure on crude prices through June and July that could trigger a global recession"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04 Motley Fool",
+          "excerpt": "Chevron's earnings were unfavorably impacted by its hedging efforts to the tune of $2.9 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com California scrutiny",
+          "excerpt": "California officials and advocacy groups are scrutinizing Chevron's role in the state's high gasoline prices"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bitget.com risks",
+          "excerpt": "The Hess merger faces a legal challenge from ExxonMobil regarding right of first refusal in Guyana. A negative arbitration ruling could nullify the merger"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=329.55B total_liabilities=140.18B total_equity=189.37B"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225252,
+        "capped_chars": 225252,
+        "raw_tokens": 56313,
+        "capped_tokens": 56313
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3481,
+        "capped_chars": 3481,
+        "raw_tokens": 870,
+        "capped_tokens": 870
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 35344,
+        "capped_chars": 9498,
+        "raw_tokens": 8836,
+        "capped_tokens": 2374
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 111461,
+        "capped_chars": 91293,
+        "raw_tokens": 27866,
+        "capped_tokens": 22823
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 56810,
+  "started_at": "2026-08-07T03:02:19+00:00"
+}

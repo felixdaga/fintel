@@ -1,0 +1,179 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30859,
+    "tokens_out": 1000,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033859,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": -1.0,
+      "rationale": "Cisco's stock has experienced a massive +62.5% quarterly surge, pushing the P/E to 46.8x \u2014 nearly double the 26.2x low from a year ago and at the absolute top of its 365-day range. This extreme valuation expansion has occurred despite fundamental headwinds: gross margins are compressing (66.0% non-GAAP vs 68.6% YoY, driven by memory costs and tariffs), operating cash flow declined 43.3% QoQ and 18.7% YoY, and the security/observability segment (including Splunk) remains flat. The RPO growth of 5% YoY lags the 10% revenue growth, suggesting the AI hardware boom is not converting into durable recurring revenue. While Q3 results beat estimates and guidance was raised, the stock has already priced in far more than the fundamental improvement \u2014 the P/E has nearly doubled while EPS grew ~31% YoY. The GF Score flags valuation at 1/10, and multiple sources describe the stock as significantly overvalued. With the next earnings not until August 12, there is no near-term catalyst to sustain this stretched multiple, and the risk of mean reversion in valuation is substantial.",
+      "key_factors": [
+        "P/E of 46.8x is at the absolute top of the 365-day range (26.2-46.8), representing near-doubling of valuation in one year",
+        "Stock surged +62.5% in the last quarter alone, far outpacing the ~31% YoY EPS growth",
+        "Gross margin compression to 66.0% non-GAAP (from 68.6% YoY) due to memory costs and tariffs \u2014 described as persistent not transitory",
+        "Operating cash flow declined 43.3% QoQ and 18.7% YoY, signaling cash generation weakness",
+        "RPO growth of only 5% YoY lags 10% revenue growth, indicating AI hardware boom not converting to durable recurring revenue",
+        "Security revenue flat YoY at ~$2B, exposing the weakest part of the portfolio",
+        "No near-term fundamental catalyst until August 12 earnings; stock has already priced in the Q3 beat and guidance raise",
+        "Multiple independent sources flag significant overvaluation (GF Score valuation rank 1/10, Trefis UNDERWEIGHT)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=46.761 p_b=10.853; range over window: pe_diluted 26.2..46.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=130.00; quarterly delta (~63 trading days, from 2026-03-05): +62.5%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24",
+          "excerpt": "YoY: revenue=+9.7% eps_diluted=+31.1% operating_cash_flow=-18.7%; QoQ: operating_cash_flow=-43.3%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-22",
+          "excerpt": "Adjusted gross margin slipped to 66.0 percent from 68.6 percent a year earlier, with management citing memory cost pressure and the estimated impact of current tariff policy"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis",
+          "excerpt": "Total RPO growth decelerated to 5% YoY in Q2 FY2026, lagging far behind the 10% total revenue growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "gurufocus",
+          "excerpt": "GF Score\u2122 of 77/100 reflects solid financial health but highlights valuation as a significant concern; valuation rank of 1/10 raises red flags"
+        },
+        {
+          "source_type": "news",
+          "source_id": "026-05-14",
+          "excerpt": "Cisco reported  revenue hit $15.8 billion, a 12% increase from $14.15 billion last year; shares soared nearly 20% in extended trading post-earnings"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis",
+          "excerpt": "UNDERWEIGHT (Score 3-4) PRIMARY RISK: The biggest friction is the significant lag between the booming AI-driven hardware sales and the much slower growth in contracted future software/subscription revenue"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230746,
+        "capped_chars": 230746,
+        "raw_tokens": 57686,
+        "capped_tokens": 57686
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1610,
+        "capped_chars": 1610,
+        "raw_tokens": 402,
+        "capped_tokens": 402
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 23392,
+        "capped_chars": 4426,
+        "raw_tokens": 5848,
+        "capped_tokens": 1106
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 91718,
+        "capped_chars": 70510,
+        "raw_tokens": 22930,
+        "capped_tokens": 17627
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 35508,
+  "started_at": "2026-08-07T03:02:18+00:00"
+}

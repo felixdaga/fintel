@@ -1,0 +1,177 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35562,
+    "tokens_out": 1034,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038664,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.15,
+      "rationale": "Coca-Cola is a high-quality, defensive franchise with excellent brand moat, asset-light concentrate model, and a 64-year dividend increase streak. Q1 2026 showed strong momentum (organic revenue +10%, comparable EPS +18% YoY), and management raised FY2026 guidance to 8-9% comparable EPS growth. ROE of ~40% and gross margins above 61% reflect durable competitive advantages. However, the stock is trading at the top of its 1-year P/E range (30x vs. 23-30x window), and P/B of 12.1x is also at the high end (9.4-12.1x). The stock has rallied +12.8% in the last quarter alone, reaching all-time highs near $85. This means the market is already paying a premium for the defensive quality and growth trajectory. The Fairlife ransomware incident (disclosed July 16) introduces a near-term operational risk, though materiality is not yet determined. The $20B IRS tax dispute remains an overhang. With the stock at peak multiples and no clear undervaluation vs. its own history, the risk/reward is balanced rather than compelling. A mild positive score reflects the excellent fundamental health offset by rich valuation.",
+      "key_factors": [
+        "Strong Q1 2026 results: organic revenue +10%, comparable EPS +18% YoY, with raised FY2026 guidance of 8-9% EPS growth",
+        "Excellent fundamental profile: ~40% ROE, 61%+ gross margins, 28% operating margins, asset-light concentrate model",
+        "64-year dividend increase streak with 2.5% yield; strong FCF generation (~$12B guided)",
+        "Stock at top of 1-year valuation range: P/E 30x (vs. 23-30x window), P/B 12.1x (vs. 9.4-12.1x) \u2014 fully priced",
+        "Fairlife ransomware event (July 16, 2026) introduces near-term operational uncertainty; $20B IRS tax dispute remains an overhang",
+        "Q2 2026 earnings on July 28 could serve as a near-term catalyst if results beat consensus ($0.92 EPS, $13.1B revenue)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "excerpt": "revenue=12.54B net_income=3.80B eps_diluted=0.88 gross_profit=7.82B operating_income=4.28B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=30.033 p_b=12.141 net_margin=0.259 roe=0.404 gross_margin=0.614 operating_margin=0.28"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 23.2..30.0 | p_b 9.4..12.1"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=84.92 quarterly delta +12.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16",
+          "excerpt": "Coca-Cola is recommended as a buy ahead of its July 28 earnings report. The beverage giant has beaten earnings expectations for four consecutive quarters"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "compliancehub.wiki",
+          "excerpt": "On July 16, 2026, The Coca-Cola Company disclosed that its dairy subsidiary fairlife, LLC had identified unauthorized access by a third party to a portion of its systems, including production-related systems, in connection with a ransomware event. US production operations at fairlife were temporarily suspended."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "aljazeera",
+          "excerpt": "Coca-Cola and the IRS will begin oral arguments in a dispute that could result in Coca-Cola facing a tax bill of about $20bn"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "hudson-labs",
+          "excerpt": "Consensus Q2 2026 Revenue $13,134M; Consensus Q2 2026 EPS (GAAP) $0.92; Q1 2026 Actuals: Revenue $12,472M (+12% YoY); Organic revenue +10%; Comparable EPS $0.86 (+18% YoY)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223438,
+        "capped_chars": 223438,
+        "raw_tokens": 55860,
+        "capped_tokens": 55860
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 782,
+        "capped_chars": 782,
+        "raw_tokens": 196,
+        "capped_tokens": 196
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2955,
+        "capped_chars": 2955,
+        "raw_tokens": 739,
+        "capped_tokens": 739
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 37846,
+        "capped_chars": 10212,
+        "raw_tokens": 9462,
+        "capped_tokens": 2553
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 100545,
+        "capped_chars": 76042,
+        "raw_tokens": 25137,
+        "capped_tokens": 19010
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 27687,
+  "started_at": "2026-08-07T03:08:00+00:00"
+}

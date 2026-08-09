@@ -1,0 +1,191 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30608,
+    "tokens_out": 1130,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033998,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": -1.0,
+      "rationale": "Merck's Q1 2026 results reveal a severe fundamental deterioration: a GAAP net loss of $4.24B (EPS -$1.72) driven by a $9B one-time Cidara charge and a $5.8B Terns acquisition-related R&D hit, which together wiped out profitability. While the company claims these are one-time, the operating income swing from +$5.9B (Q1 2025) to -$3.53B (Q1 2026) is dramatic. Revenue grew only 4.9% YoY to $16.29B, and Keytruda concentration remains extreme at ~49% of revenue, creating massive patent cliff risk (2028 expiry). The stock has surged 47% from its October 2025 low of $77.53 to $129.79, yet the P/E has ballooned to 35.9x (vs. 11-14x range in mid-2025) on depressed earnings, and P/B has expanded to 7.0x (vs. 4.0-4.7x range). This is a classic case of price momentum disconnected from deteriorating fundamentals. The market is paying nearly 3x the historical P/E for a company that just posted a massive loss, with Gardasil declining 22% and a failed LITESPARK-012 readout. The LIPFENDRA FDA approval (oral PCSK9 inhibitor) is a modest positive but cannot offset the structural headwinds. Near-term, the October 29 earnings date could catalyze a re-rating downward as the market digests the true cost of the Cidara and Terns deals and the ongoing Keytruda concentration risk.",
+      "key_factors": [
+        "Q1 2026 GAAP net loss of $4.24B (EPS -$1.72) from $9B Cidara charge and $5.8B Terns R&D hit",
+        "Operating income collapsed from +$5.9B (Q1 2025) to -$3.53B (Q1 2026)",
+        "P/E has ballooned to 35.9x vs. 11-14x historical range on depressed earnings",
+        "P/B expanded to 7.0x vs. 4.0-4.7x range in mid-2025",
+        "Keytruda concentration at ~49% of revenue with 2028 patent expiry looming",
+        "Gardasil revenue declined 22% YoY",
+        "Failed LITESPARK-012 clinical readout",
+        "Stock up 47% from Oct 2025 low despite fundamental deterioration",
+        "LIPFENDRA FDA approval is positive but insufficient to offset structural headwinds",
+        "October 29 earnings date as potential re-rating catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-04 Q1",
+          "excerpt": "revenue=16.29B net_income=-4.24B eps_diluted=-1.72 operating_income=-3.53B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=15.53B net_income=5.08B eps_diluted=2.01 operating_income=5.90B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=35.908 p_b=6.985"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-31",
+          "excerpt": "pe_diluted=11.33 p_b=4.085"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-11-05",
+          "excerpt": "pe_diluted=11.069 p_b=4.061"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "excerpt": "close=129.79"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2025-10-27",
+          "excerpt": "close=88.00"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-25 tipranks",
+          "excerpt": "very large one-time $9B Cidara charge that drove a GAAP loss and distorted tax rate, an expected one-time R&D impact from the proposed Terns deal (~$5.8B), meaningful declines in GARDASIL (-22%), a failed LITESPARK-012 readout"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-27 yahoo",
+          "excerpt": "FDA approval of LIPFENDRA, the first oral PCSK9 inhibitor"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-27 tradingkey",
+          "excerpt": "Oncology-Keytruda 31.64B 48.67% of total revenue"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4573,
+        "capped_chars": 4573,
+        "raw_tokens": 1143,
+        "capped_tokens": 1143
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224710,
+        "capped_chars": 224710,
+        "raw_tokens": 56178,
+        "capped_tokens": 56178
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1750,
+        "capped_chars": 1750,
+        "raw_tokens": 438,
+        "capped_tokens": 438
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 23905,
+        "capped_chars": 5133,
+        "raw_tokens": 5976,
+        "capped_tokens": 1283
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98868,
+        "capped_chars": 75735,
+        "raw_tokens": 24716,
+        "capped_tokens": 18934
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 33503,
+  "started_at": "2026-08-07T03:09:54+00:00"
+}

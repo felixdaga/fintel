@@ -1,0 +1,178 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30253,
+    "tokens_out": 995,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033238,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.25,
+      "rationale": "Disney presents a mildly attractive fundamental picture with improving trajectory. The company's Q2 FY2026 results showed 6.5% YoY revenue growth to $25.17B, though EPS declined 29.8% YoY to $1.27 (partly due to higher taxes and lumpy comparisons). The balance sheet is solid with $115.3B equity and improving cash generation ($6.91B operating cash flow in Q2). Streaming has turned profitable with operating income up 88% to $582M in Q2 FY2026, and the Experiences segment remains the profit engine at $2.6B operating income. Valuation is attractive vs. own history: P/E of 14.1x sits near the low end of its 12.5-23.8x range over the past year, and P/B of 1.51x is at the bottom of its 1.5-2.1x range. The stock trades at $98.05, down from a 52-week high of $124.69. Near-term catalysts include Q3 earnings on August 5 with Bank of America projecting improving park attendance and EPS of $1.87, plus the company reaffirming double-digit adjusted EPS growth guidance for FY2026-2027. Risks include FCC regulatory scrutiny on ABC licenses, linear TV decline, and rising sports rights costs, but these are partially priced in at current valuations.",
+      "key_factors": [
+        "Streaming profitability inflection: operating income up 88% YoY to $582M in Q2 FY2026, margin crossing 10% for first time",
+        "Valuation near multi-year lows: P/E 14.1x (vs. 12-month range 12.5-23.8x), P/B 1.51x (vs. range 1.5-2.1x)",
+        "Experiences segment remains profit engine: $2.6B operating income in Q2, record $10B in FY2025",
+        "Q3 earnings catalyst on August 5 with improving park attendance expected per Bank of America",
+        "FCC regulatory risk on ABC broadcast licenses and $50M antitrust settlement on carriage fees",
+        "Linear TV structural decline partially offset by ESPN standalone service and streaming growth",
+        "Management focus on disciplined capital allocation and consistent earnings compounding per CFO comments"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=25.17B net_income=2.46B eps_diluted=1.27 operating_income=4.60B operating_cash_flow=6.91B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=14.085 p_b=1.507 p_s=1.786 earnings_yield=0.071"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 12.5..23.8 | p_b 1.5..2.1"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=98.05 range high=124.69 low=92.19"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com",
+          "excerpt": "Streaming operating income rose 88% to $582M in fiscal Q2 2026; SVOD margin crossed 10% for the first time. Record $10.0B Experiences operating income in fiscal 2025."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-22",
+          "excerpt": "Bank of America reiterated its 'Buy' rating on Disney shares and a price target of $125, citing expected growth in streaming profitability, a recovery in parks attendance"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "excerpt": "FCC is actively investigating Disney-owned ABC on two fronts, including political equal-time violations and accelerated license renewal review. Disney agreed to a proposed $50 million class-action settlement over anticompetitive carriage agreements."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "insidermonkey.com",
+          "excerpt": "Hugh Johnston, CFO, expressed confidence in the company's long-term growth trajectory and emphasized management's focus on disciplined capital allocation and generating attractive returns on invested capital"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4429,
+        "capped_chars": 4429,
+        "raw_tokens": 1107,
+        "capped_tokens": 1107
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221450,
+        "capped_chars": 221450,
+        "raw_tokens": 55362,
+        "capped_tokens": 55362
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1932,
+        "capped_chars": 1932,
+        "raw_tokens": 483,
+        "capped_tokens": 483
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 34646,
+        "capped_chars": 7160,
+        "raw_tokens": 8662,
+        "capped_tokens": 1790
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 83483,
+        "capped_chars": 64461,
+        "raw_tokens": 20871,
+        "capped_tokens": 16115
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 51604,
+  "started_at": "2026-08-07T03:05:14+00:00"
+}

@@ -1,0 +1,179 @@
+{
+  "cell": "WMT",
+  "symbols": [
+    "WMT"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32377,
+    "tokens_out": 1285,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036232,
+    "basis": "reported"
+  },
+  "views": {
+    "WMT": {
+      "symbol": "WMT",
+      "score": 0.15,
+      "rationale": "Walmart is a fundamentally healthy, dominant retailer with strong competitive positioning (world's largest retailer, ~8.6% U.S. retail market share, 26% grocery share, wide moat per Morningstar). YoY growth in the latest quarter (Q1 FY2027) was solid: revenue +7.3%, EPS +19.6%, net income +18.3%. E-commerce is growing 24% YoY and advertising business grew 46%, providing higher-margin growth vectors. However, several factors temper enthusiasm. QoQ trends show deceleration: revenue -1.0%, EPS -13.0%, operating cash flow -47.9%. The TTM data is incomplete due to fiscal calendar gaps, limiting full-year assessment. Valuation has compressed from a peak P/E of ~53x in late April 2026 to ~38.7x currently, but this still represents a significant premium to the retail industry average (~18.5x) and peers (~24.6x). A DCF model from Simply Wall St suggests fair value around $98.74, well below the current $111.84 price. Near-term headwinds are real: Cleveland Research flagged slowing U.S. comparable store sales (July 1 news), the stock fell 4.5% on that report, and management is using tariff refunds to offset aggressive inventory clearance pricing. Fuel costs absorbed ~$175M of operating income per the earnings call. The stock is down ~10.3% over the last quarter. On the positive side, the P/E has pulled back to the low end of its 365-day range (37.6-55.4), and consensus EPS estimates for FY2027 point to +9.4% growth with Q2 EPS expected at $0.74 (+8.3% YoY). The next earnings date (Aug 20, 2026) could serve as a catalyst if results beat expectations. Net: solid franchise with durable competitive advantages, but valuation remains elevated for a low-margin retailer, and near-term same-store sales deceleration creates risk. Mildly attractive at current levels after the pullback, but not compelling enough for a stronger score.",
+      "key_factors": [
+        "Dominant competitive position: world's largest retailer, 26% U.S. grocery share, wide moat, 90% of Americans within 10 miles of a store",
+        "YoY growth solid in Q1 FY2027: revenue +7.3%, EPS +19.6%, but QoQ deceleration (EPS -13%, OCF -47.9%)",
+        "E-commerce and advertising as higher-margin growth vectors: e-commerce +24% YoY, advertising +46% YoY",
+        "Valuation compressed from ~53x P/E peak to ~38.7x but still at significant premium to retail peers (~24.6x) and industry (~18.5x)",
+        "DCF intrinsic value estimate of ~$98.74 suggests overvaluation vs current $111.84 price",
+        "Near-term headwinds: Cleveland Research flagged slowing U.S. comp sales, aggressive inventory clearance, fuel cost pressure (~$175M hit)",
+        "Next earnings Aug 20, 2026 could serve as catalyst; consensus Q2 EPS $0.74 (+8.3% YoY)",
+        "Net margin structurally thin at ~3.1%, limiting earnings sensitivity to revenue growth"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1",
+          "excerpt": "revenue=177.75B eps_diluted=0.67 net_income=5.49B; YoY: revenue=+7.3% eps_diluted=+19.6% net_income=+18.3%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=38.692 p_b=8.885 net_margin=0.032 roe=0.23; range over window: pe_diluted 37.6..55.4"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=111.84; quarterly delta (~63 trading days, from 2026-04-01): -10.3%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-01",
+          "excerpt": "Walmart shares fell 4.5% after Cleveland Research issued a negative note citing slower same-store sales and concerns about the company lowering prices to clear excess inventory"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st 2026-07-02",
+          "excerpt": "DCF intrinsic value estimate of about $98.74 per share; current P/E ~38.1x vs industry average 18.5x and peer group average 24.6x"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "morningstar",
+          "excerpt": "Walmart's Wide Moat Endures as Digital and Omnichannel Scale Reinforce Its Competitive Position; roughly two-thirds share of the superstore and warehouse club market"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks",
+          "excerpt": "Structurally Thin Net Margins ~3.1%; Weakened Free Cash Flow Conversion; fuel costs absorbing ~$175M / ~250 bps of operating income"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "consensus earnings estimate of $2.89 points to a change of +9.4% from the prior year; next earnings 08/20/2026 with EPS estimate of $0.74"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "WMT",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4568,
+        "capped_chars": 4568,
+        "raw_tokens": 1142,
+        "capped_tokens": 1142
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242302,
+        "capped_chars": 242302,
+        "raw_tokens": 60576,
+        "capped_tokens": 60576
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3301,
+        "capped_chars": 3301,
+        "raw_tokens": 825,
+        "capped_tokens": 825
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 51745,
+        "capped_chars": 12167,
+        "raw_tokens": 12936,
+        "capped_tokens": 3042
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 86700,
+        "capped_chars": 61219,
+        "raw_tokens": 21675,
+        "capped_tokens": 15305
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 45751,
+  "started_at": "2026-08-07T03:06:40+00:00"
+}

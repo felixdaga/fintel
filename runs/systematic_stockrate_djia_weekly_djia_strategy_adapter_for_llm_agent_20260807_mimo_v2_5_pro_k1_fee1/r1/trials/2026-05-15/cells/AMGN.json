@@ -1,0 +1,179 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33802,
+    "tokens_out": 1334,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037804,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": 0.15,
+      "rationale": "Amgen presents a mixed but slightly positive picture. The company beat Q1 2026 estimates (revenue +5.8% YoY, adjusted EPS $5.15 vs $4.77 consensus) and raised full-year guidance to $37.1B-$38.5B revenue and $21.70-$23.10 non-GAAP EPS. However, the fundamental trajectory is complicated by a severe patent cliff: Prolia sales crashed 34% YoY in Q1 2026 due to patent expirations and biosimilar competition, and the FDA proposed withdrawing Tavneos on April 28, 2026 citing data integrity concerns. The balance sheet is heavily leveraged with $57.3B debt vs $9.2B equity (D/E 6.24x). On valuation, the stock trades at 23.45x diluted P/E, near the low end of its 365-day range (22.6-49.7), suggesting the market has priced in significant headwinds. The P/B of 19.9x is also near the bottom of its range (19.2-28.0). Growth products like Repatha, EVENITY, and rare disease assets are partially offsetting legacy declines, and the MariTide obesity pipeline represents a large future opportunity. The Q1 beat and guidance raise provide a modest near-term positive catalyst, but the Tavneos regulatory risk, IRS tax dispute, and ongoing patent erosion temper enthusiasm. Net: slightly positive given cheap valuation vs history offset by real fundamental headwinds.",
+      "key_factors": [
+        "Q1 2026 beat: revenue $8.62B (+5.8% YoY) and adjusted EPS $5.15 vs $4.77 consensus; guidance raised to $37.1B-$38.5B revenue",
+        "Severe patent cliff: Prolia sales -34% YoY in Q1 2026; Enbrel and other legacy products facing biosimilar erosion",
+        "FDA proposed Tavneos withdrawal on April 28, 2026 citing data integrity concerns - significant regulatory overhang",
+        "Heavy leverage: $57.3B total debt vs $9.2B equity (D/E 6.24x); IRS tax dispute of $10.7B disclosed",
+        "Valuation near 365-day low: P/E 23.45x (range 22.6-49.7), P/B 19.9x (range 19.2-28.0) - market has priced in headwinds",
+        "Growth offsets: 16 brands with double-digit growth; Repatha, EVENITY, rare disease portfolio growing strongly",
+        "MariTide obesity pipeline in Phase 3 represents large future opportunity but faces competitive GLP-1 market",
+        "Stock down 8.2% over past quarter despite earnings beat, reflecting investor caution on patent cliff and regulatory risks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q1 filing",
+          "excerpt": "revenue=8.62B net_income=1.82B eps_diluted=3.34 gross_profit=5.87B operating_income=2.67B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=23.45 p_b=19.903 debt_to_equity=6.238"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-01 Benzinga",
+          "excerpt": "Some mega-cap earnings disappointed, including Amgen and Roblox, which posted significant declines"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com Tavneos analysis",
+          "excerpt": "The U.S. Food and Drug Administration (FDA) proposed withdrawing approval of Amgen's autoimmune disease drug, Tavneos. The FDA cited concerns regarding the drug's effectiveness and alleged false statements in the original application"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "koalagains.com business analysis",
+          "excerpt": "Prolia stood as the company's largest single product, generating an enormous $4.41B or about 12% of Amgen's total revenue stream. However, this once-impenetrable moat is now crumbling as the drug faces the end of its patent exclusivity, evidenced by a severe 33.85% revenue crash to $727M in the first quarter of 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com Q1 2026 earnings call",
+          "excerpt": "Amgen raised its 2026 guidance ranges for both revenue and non-GAAP earnings per share. We expect 2026 total revenues in the range of $37.1 billion-$38.5 billion and non-GAAP earnings per share to be between $21.70 and $23.10"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "excerpt": "close=336.23 quarterly delta -8.2%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com AMGN analysis",
+          "excerpt": "Weak multi-year price returns 2Y Excs Rtn is -31%, 3Y Excs Rtn is -26%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 252265,
+        "capped_chars": 252265,
+        "raw_tokens": 63066,
+        "capped_tokens": 63066
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1569,
+        "capped_chars": 1569,
+        "raw_tokens": 392,
+        "capped_tokens": 392
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 23246,
+        "capped_chars": 4972,
+        "raw_tokens": 5812,
+        "capped_tokens": 1243
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 115643,
+        "capped_chars": 97111,
+        "raw_tokens": 28911,
+        "capped_tokens": 24278
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 58483,
+  "started_at": "2026-08-07T02:59:18+00:00"
+}

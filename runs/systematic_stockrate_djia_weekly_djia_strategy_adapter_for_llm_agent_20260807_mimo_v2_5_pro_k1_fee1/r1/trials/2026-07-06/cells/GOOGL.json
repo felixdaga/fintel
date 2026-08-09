@@ -1,0 +1,191 @@
+{
+  "cell": "GOOGL",
+  "symbols": [
+    "GOOGL"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 50385,
+    "tokens_out": 1182,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.053931,
+    "basis": "reported"
+  },
+  "views": {
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "score": 0.35,
+      "rationale": "Alphabet presents a strong fundamental case with accelerating revenue growth (Q3 2025 revenue $102.35B, +6.1% QoQ), robust margins (32.2% net margin, 59.2% gross margin), and exceptional cash generation ($48.41B operating cash flow in Q3). Google Cloud's 63% YoY growth and $462B backlog signal durable growth trajectory. The balance sheet is fortress-like with $98.5B cash against $149.6B total liabilities. However, valuation has expanded significantly \u2014 P/E of 35.3x is near the top of its 19.3-39.5x 12-month range, up from ~20x a year ago, making it less compelling on a relative-to-history basis. The stock has rallied 21% in the past quarter alone. Key risks include massive capex ($180-190B guided for 2026) compressing FCF margins from 21% to ~9%, the $80B equity raise creating dilution overhang, and ongoing regulatory headwinds (\u20ac4.1B EU fine upheld). Near-term catalysts include Q2 earnings (analysts expect $2.86 EPS, +23.8% YoY) and the Anthropic IPO potential (Alphabet's ~14% stake worth ~$135B). Berkshire Hathaway's $10B investment provides institutional validation. The score reflects excellent fundamentals offset by rich valuation, with a modest positive bump from the upcoming earnings catalyst and Anthropic optionality.",
+      "key_factors": [
+        "Accelerating revenue growth: Q3 2025 $102.35B with strong QoQ trajectory",
+        "Google Cloud 63% YoY growth with $462B backlog \u2014 outpacing AWS and Azure",
+        "Fortress balance sheet: $98.5B cash, 2.72x current ratio, 131.6x interest coverage",
+        "P/E expanded to 35.3x from ~20x a year ago \u2014 near top of 12-month range",
+        "Massive capex ($180-190B) compressing FCF margins from 21% to ~9%",
+        "$80B equity raise creates dilution overhang and limits buyback capacity",
+        "Q2 earnings catalyst: analysts expect $2.86 EPS (+23.8% YoY)",
+        "Anthropic IPO potential: Alphabet's ~14% stake worth ~$135B",
+        "Berkshire Hathaway $10B investment signals institutional confidence",
+        "Regulatory headwinds: \u20ac4.1B EU fine upheld, ongoing antitrust scrutiny"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=102.35B net_income=34.98B eps_diluted=2.87 operating_cash_flow=48.41B cash=98.50B total_equity=386.87B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=35.348 p_b=11.353 net_margin=0.322 roe=0.321 gross_margin=0.592 operating_margin=0.322"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-07",
+          "excerpt": "pe_diluted=19.577 p_b=6.293"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=359.91 quarterly delta +21.0%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-05",
+          "excerpt": "Anthropic confidentially filed for an IPO at $965 billion valuation. Alphabet has ~14% stake worth ~$135 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-24",
+          "excerpt": "Greg Abel increased Berkshire Hathaway stake in Alphabet through $10 billion private placement, elevating to No. 3 position"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-04",
+          "excerpt": "Google Cloud grew by 82% to $25 billion, with margins for the cloud segment also increasing by 15 points to 36%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-04",
+          "excerpt": "Alphabet lost its final legal appeal against a \u20ac4.1 billion fine imposed by the European Union"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-22",
+          "excerpt": "free cash flow margin dropped from 21% to 9.2%. CFO Ashkenazi signalled that the company expects 2027 capex will likely increase significantly"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-02",
+          "excerpt": "analysts predict its EPS to rise by double digits. Wall Street analysts are bullish, forecasting Alphabet to generate a profit of $2.86 per share in the second quarter, which would represent a 23.8% year-over-year growth"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GOOGL",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3924,
+        "capped_chars": 3924,
+        "raw_tokens": 981,
+        "capped_tokens": 981
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223203,
+        "capped_chars": 223203,
+        "raw_tokens": 55801,
+        "capped_tokens": 55801
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4435,
+        "capped_chars": 4435,
+        "raw_tokens": 1109,
+        "capped_tokens": 1109
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 460161,
+        "capped_chars": 85465,
+        "raw_tokens": 115040,
+        "capped_tokens": 21366
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 78561,
+        "capped_chars": 52221,
+        "raw_tokens": 19640,
+        "capped_tokens": 13056
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 44450,
+  "started_at": "2026-08-07T03:06:06+00:00"
+}

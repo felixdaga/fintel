@@ -1,0 +1,195 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36293,
+    "tokens_out": 1195,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039878,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.25,
+      "rationale": "Disney presents a mildly attractive fundamental picture with solid but mixed trajectory. The company beat Q2 2026 earnings expectations ($1.57 EPS vs $1.49 consensus) with 7% YoY revenue growth to $25.2B, and management guided for ~12% EPS growth in FY2026 and double-digit growth in FY2027. The Experiences segment remains a powerful cash engine (~68% of operating income), and DTC streaming has achieved profitability. However, YoY EPS declined 29.8% in Q2 2026 vs Q2 2025 ($1.27 vs $1.81), reflecting elevated content costs and the lumpy nature of Disney's earnings. Balance sheet is healthy with $115B equity and improving cash generation ($6.9B OCF in Q2). Valuation at 14.9x P/E sits near the low end of its 12.5-23.8x 365-day range, suggesting the market is pricing in regulatory and transition risks at a discount to recent history. The new CEO's 'super-app' strategy and $60B parks capex program provide strategic optionality. Key risks include FCC regulatory scrutiny of ABC licenses (DEI investigation, May 28 deadline), rising interest rates (10Y at 4.57%), and the structural decline of linear TV. The Q2 earnings beat and analyst price target increases (Citi to $145) provide a modest near-term positive catalyst, though regulatory overhang tempers conviction.",
+      "key_factors": [
+        "Q2 2026 earnings beat: $1.57 EPS vs $1.49 consensus, 7% YoY revenue growth",
+        "YoY EPS decline of 29.8% in Q2 reflects lumpy earnings and elevated costs",
+        "P/E of 14.9x near low end of 12.5-23.8x range \u2014 discounted vs own history",
+        "Experiences segment generates ~68% of operating income, providing earnings stability",
+        "DTC streaming achieved profitability; management guides double-digit EPS growth FY2026-27",
+        "FCC regulatory scrutiny of ABC licenses (DEI investigation, May 28 deadline) creates overhang",
+        "New CEO Josh D'Amaro's 'super-app' strategy and $60B parks capex provide long-term optionality",
+        "Rising 10Y Treasury yields (4.57%) and elevated oil ($100/bbl) pose macro headwinds for parks demand",
+        "Analyst upgrades post-earnings: Citi raised PT to $145 from $135"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=25.17B eps_diluted=1.27 operating_income=4.60B net_income=2.46B operating_cash_flow=6.91B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-29 Q2",
+          "excerpt": "revenue=23.62B eps_diluted=1.81"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=14.88 p_b=1.592 net_margin=0.127 roe=0.107"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 12.5..23.8 | p_b 1.5..2.1"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-10 Benzinga",
+          "excerpt": "Disney beat earnings expectations with $1.57 EPS"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-12 Motley Fool",
+          "excerpt": "New Disney CEO Josh D'Amaro is unveiling a 'super-app' strategy...P/E ratio of 16 and potential upside from successful app execution"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-18 ad-hoc-news",
+          "excerpt": "Disney posted an earnings-per-share figure of 1.57 USD for the quarter, beating consensus estimates of 1.49 USD...Citi raised its price target on Disney shares from 135 USD to 145 USD on May 8, 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-02 ts2.tech",
+          "excerpt": "The FCC has ordered Disney's ABC to file early license renewals for eight major TV stations by May 28, citing possible violations of anti-discrimination rules"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-23 matrixbcg.com",
+          "excerpt": "Experiences segment generated about 34.1 billion USD in 2024...segment operating income of 9.3 billion USD in 2024"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-23 matrixbcg.com",
+          "excerpt": "$60 billion parks investment reinforces experiential revenue stability"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "excerpt": "DGS10=4.57 DCOILWTICO=100.2 VIXCLS=16.76"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4429,
+        "capped_chars": 4429,
+        "raw_tokens": 1107,
+        "capped_tokens": 1107
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221521,
+        "capped_chars": 221521,
+        "raw_tokens": 55380,
+        "capped_tokens": 55380
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1845,
+        "capped_chars": 1845,
+        "raw_tokens": 461,
+        "capped_tokens": 461
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 3558,
+        "capped_chars": 1086,
+        "raw_tokens": 890,
+        "capped_tokens": 272
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 148261,
+        "capped_chars": 90762,
+        "raw_tokens": 37066,
+        "capped_tokens": 22691
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 49665,
+  "started_at": "2026-08-07T03:00:28+00:00"
+}

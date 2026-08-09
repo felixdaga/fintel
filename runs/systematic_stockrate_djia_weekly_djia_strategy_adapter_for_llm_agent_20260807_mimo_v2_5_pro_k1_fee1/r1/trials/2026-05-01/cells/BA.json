@@ -1,0 +1,179 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35767,
+    "tokens_out": 1046,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038905,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing is a deeply troubled company with extremely poor fundamental health and trajectory. The company has been consistently unprofitable, with negative earnings per share in the most recent quarter (-$0.11) and a history of massive losses. The balance sheet is severely strained with total equity of only $5.99B against total debt of $46.96B, resulting in a debt-to-equity ratio of 7.844. Operating cash flow is negative (-$179M in Q1 2026), and the company is burning through cash. The valuation is extremely stretched with a P/E ratio of 79.786 and a P/B ratio of 30.145, which is absurd for a company with such poor profitability and high leverage. The company faces significant headwinds including production issues, regulatory scrutiny, reputational damage, and geopolitical risks from the Middle East conflict. While there is a record backlog of $695B, the path to converting this into positive free cash flow is uncertain and fraught with execution risk. The stock is trading near its 52-week midpoint, but the fundamental picture is deteriorating with negative operating margins and persistent losses. There is no credible near-term catalyst that would re-rate the stock positively given the structural challenges.",
+      "key_factors": [
+        "Negative earnings per share (-$0.11 in Q1 2026)",
+        "Extremely high debt-to-equity ratio (7.844)",
+        "Negative operating cash flow (-$179M in Q1 2026)",
+        "Stretched valuation with P/E of 79.786 and P/B of 30.145",
+        "Persistent losses and negative operating margins",
+        "Significant execution risk in converting backlog to positive FCF",
+        "Geopolitical risks from Middle East conflict affecting 14% of backlog",
+        "Regulatory and safety concerns following 737 MAX issues"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=22.22B net_income=-7.00M eps_diluted=-0.11 operating_cash_flow=-179.00M total_equity=5.99B total_debt=46.96B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "excerpt": "pe_diluted=79.786 p_b=30.145 debt_to_equity=7.844 net_margin=0.025 roe=0.378"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30",
+          "excerpt": "Boeing reported strong Q1 2026 earnings with 14% revenue growth and a record $695 billion backlog, showing signs of turnaround under CEO Kelly Ortberg. However, the company faces significant risks including manufacturing setbacks, reputational damage recovery, and substantial debt. While trending positively, Boeing's current valuation appears stretched with forward and trailing P/E ratios suggesting overvaluation, warranting caution despite improvement."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-22",
+          "excerpt": "Boeing's commercial aircraft unit handed over 143 airplanes in the first quarter, up 10% from a year earlier. The unit, Boeing's largest, posted revenue $9.2 billion, up 13%, though it still posted a loss from operations"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-22",
+          "excerpt": "Boeing held its FCF guide and grew all three segments. Whether BCA margins turn positive fast enough is the only question that matters."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-22",
+          "excerpt": "The path to $10B in free cash flow assumes sustained production rate increases across a multi-year window, and any setback in FAA certification timelines on the 737-7, 737-10, or 777X compresses the timeline and extends the discount period."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-22",
+          "excerpt": "The Middle East conflict affects 14% of unit backlog, and while no deferrals have been requested as of Q1, any escalation that interrupts the 737 delivery cadence could push FCF below the $1B to $3B guide."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-22",
+          "excerpt": "The Spirit AeroSystems integration is explicitly dilutive to BCA margins in 2026, with a roughly $1B annual cash drag expected to persist into 2027, delaying the inflection to positive BCA operating margins."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215310,
+        "capped_chars": 215310,
+        "raw_tokens": 53828,
+        "capped_tokens": 53828
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30817,
+        "capped_chars": 30817,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2595,
+        "capped_chars": 2595,
+        "raw_tokens": 649,
+        "capped_tokens": 649
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 48923,
+        "capped_chars": 10601,
+        "raw_tokens": 12231,
+        "capped_tokens": 2650
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98570,
+        "capped_chars": 71447,
+        "raw_tokens": 24642,
+        "capped_tokens": 17862
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 28105,
+  "started_at": "2026-08-07T02:57:44+00:00"
+}

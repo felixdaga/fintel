@@ -1,0 +1,197 @@
+{
+  "cell": "AXP",
+  "symbols": [
+    "AXP"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29797,
+    "tokens_out": 1216,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033445,
+    "basis": "reported"
+  },
+  "views": {
+    "AXP": {
+      "symbol": "AXP",
+      "score": 0.35,
+      "rationale": "American Express demonstrates solid fundamental health with consistent revenue and EPS growth trajectory (Q1 2026 revenue +9.3% YoY, EPS +17.6% YoY), strong profitability metrics (ROE 33%, net margin 26.6%), and a durable closed-loop business model with premium customer positioning. The company's competitive position is reinforced by record card fees of $10B, 1.4% delinquency rate, and accelerating billed business growth of 10% in Q1 2026. Valuation is attractive versus its own history: current P/E of 19.5x sits near the bottom of its 12-month range (18.4-25.3x), and P/B of 6.4x is also at the low end (6.1-8.2x), suggesting the market is paying less for the same earnings power than it was 6-12 months ago. The stock has declined ~17% from its December 2025 highs despite improving fundamentals. Near-term catalysts include the upcoming Q2 2026 earnings report (likely July) which continued continued acceleration in billed business growth. Risks include rising 10-year Treasury yields (4.45%), elevated oil prices ($91.58/bbl) potentially pressuring affluent consumer spending, and competitive pressure from Capital One/Discover merger and JPMorgan's Sapphire Reserve. However, the premium customer base, strong credit quality, and Berkshire Hathaway's continued large position provide downside support.",
+      "key_factors": [
+        "Consistent quarterly revenue and EPS growth trajectory with Q1 2026 YoY revenue +9.3% and EPS +17.6%",
+        "P/E of 19.5x near bottom of 12-month range (18.4-25.3x), P/B of 6.4x at low end of range (6.1-8.2x)",
+        "Strong profitability: ROE 33%, net margin 26.6%, operating margin 33.8%",
+        "Record card fees of $10B in 2025 with 16% FX-adjusted growth in Q1 2026",
+        "Excellent credit quality with 1.4% delinquency rate and 2% net write-off rate",
+        "Accelerating billed business growth of 10% YoY in Q1 2026, fastest pace in 3 years",
+        "Closed-loop business model with 160M+ merchant points and 150M+ cardholders",
+        "Berkshire Hathaway maintains large position under new CEO Greg Abel",
+        "Upcoming Q2 2026 earnings as near-term catalyst",
+        "Rising 10-year Treasury yields (4.45%) and elevated oil prices ($91.58/bbl) as macro headwinds",
+        "Competitive pressure from Capital One/Discover merger and JPMorgan Sapphire Reserve ($795 fee)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1",
+          "excerpt": "revenue=10.52B net_income=2.97B eps_diluted=4.28 operating_income=3.78B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+9.3% eps_diluted=+17.6% net_income=+15.0%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=19.473 p_b=6.427 roe=0.33 net_margin=0.266 operating_margin=0.338"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 18.4..25.3 | p_b 6.1..8.2"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2025-12-09",
+          "excerpt": "close=363.91"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=318.49"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11",
+          "excerpt": "DGS10=4.45 DCOILWTICO=91.58"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "soar-analysis.com",
+          "excerpt": "Net card fees reached a record $10 billion for the full year 2025, reflecting an 18% year-over-year increase. As of March 31, 2026, its 30-day delinquency rate was only 1.4%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "soar-analysis.com competitive",
+          "excerpt": "Capital One and Discover create the main rival threat. JPMorgan Chase is the other direct pressure point. In mid-2025, the refreshed Sapphire Reserve card carried a 795 annual fee fee"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "American Express reported 10% year-over-year growth in billed business in Q1 2026, the fastest pace in three years"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-05",
+          "excerpt": "Greg Abel removed 16 positions in his first quarter while maintaining Buffett's 'indefinite' holdings including American Express"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AXP",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4463,
+        "capped_chars": 4463,
+        "raw_tokens": 1116,
+        "capped_tokens": 1116
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 227141,
+        "capped_chars": 227141,
+        "raw_tokens": 56785,
+        "capped_tokens": 56785
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1979,
+        "capped_chars": 1979,
+        "raw_tokens": 495,
+        "capped_tokens": 495
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 33222,
+        "capped_chars": 6739,
+        "raw_tokens": 8306,
+        "capped_tokens": 1685
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102924,
+        "capped_chars": 85140,
+        "raw_tokens": 25730,
+        "capped_tokens": 21284
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 39119,
+  "started_at": "2026-08-07T03:03:16+00:00"
+}

@@ -1,0 +1,175 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 42356,
+    "tokens_out": 1106,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.045674,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.35,
+      "rationale": "Salesforce presents a solid fundamental case with improving profitability and strong competitive positioning, partially offset by AI disruption concerns and a mixed near-term catalyst picture. The company shows strong sequential revenue growth (+4.1% QoQ to $10.24B in Q2 FY2026) and accelerating EPS (+23.3% QoQ to $1.96), with gross margins of 78% and operating margins expanding to 22.8%. The balance sheet is healthy with $61.3B equity, low debt-to-equity of 0.14, and manageable leverage. Valuation has compressed significantly: P/E of 39x sits near the bottom of its 34.6-61.1x range over the past year, and P/B of 3.07x is at the low end of 2.7-4.8x, representing a meaningful discount to recent history. The company holds ~20.7% global CRM market share (#1 for 12 consecutive years) and serves 150,000+ customers including 90% of Fortune 500. However, headwinds include AI disruption fears pressuring the per-seat licensing model, FY2027 revenue guidance perceived as lukewarm, and operating cash flow volatility ($740M in Q2 vs $6.48B in Q1). The $50B buyback authorization and $25B accelerated share repurchase signal management confidence, but stock-based compensation dilution partially offsets this. Near-term catalyst: Q1 FY2027 earnings on May 27, 2026, with consensus expecting EPS of $3.12 (+20.9% YoY) and revenue of $11.06B (+12.5% YoY), which could re-rate the stock if execution meets or beats expectations. News sentiment is mixed (mean -0.01) with recent positive coverage of AI integration partnerships and analyst buy recommendations, balanced against AI disruption concerns. The score reflects a quality-to business fundamentals fundamentals fundamentals",
+      "key_factors": [],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-07-31 Q2",
+          "excerpt": "revenue=10.24B, eps_diluted=1.96, gross_margin=78%, operating_margin=22.8%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-04-30 Q1",
+          "excerpt": "revenue=9.83B, eps_diluted=1.59"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=39.082, p_b=3.073, range pe_diluted 34.6..61.1, p_b 2.7..4.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "excerpt": "close=186.34, 52w range high=296.05 low=163.52"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "sqmagazine.co.uk",
+          "excerpt": "20.7% CRM market share, #1 for 12 consecutive years, 150,000+ customers, 90% Fortune 500"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "northwiseproject.com",
+          "excerpt": "$50B repurchase program, $25B ASR launched March 2026, FY2030 target $60B+ revenue"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-01 Investing.com",
+          "excerpt": "Software stocks at multi-year low valuations, analysts view as attractive buying opportunities"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-27 Motley Fool",
+          "excerpt": "Michael Burry opened new stake in Salesforce, views as better value than Palantir"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.salesforce.com 2026-05-06",
+          "excerpt": "Q1 FY2027 results May 27, 2026, consensus EPS $3.12 (+20.9% YoY), revenue $11.06B (+12.5% YoY)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3818,
+        "capped_chars": 3818,
+        "raw_tokens": 954,
+        "capped_tokens": 954
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 252331,
+        "capped_chars": 252331,
+        "raw_tokens": 63083,
+        "capped_tokens": 63083
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2563,
+        "capped_chars": 2563,
+        "raw_tokens": 641,
+        "capped_tokens": 641
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 40872,
+        "capped_chars": 9270,
+        "raw_tokens": 10218,
+        "capped_tokens": 2318
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 149464,
+        "capped_chars": 111931,
+        "raw_tokens": 37367,
+        "capped_tokens": 27983
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 57359,
+  "started_at": "2026-08-07T02:58:29+00:00"
+}

@@ -1,0 +1,181 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30139,
+    "tokens_out": 1015,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033184,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": -1.0,
+      "rationale": "Cisco's stock has surged +51.9% in one quarter to $118.64, pushing the P/E to 42.7x \u2014 the highest in the 365-day window (range 25.8\u201343.3) and nearly double the ~26x level from a year ago. This extreme re-rating has occurred despite deteriorating fundamentals: operating cash flow collapsed -43.3% QoQ and -18.7% YoY in the latest quarter, adjusted gross margin compressed to 66.0% from 68.6% due to memory costs and tariff headwinds (described as persistent, not transitory), and security revenue was flat YoY at ~$2B, exposing the weakest part of the portfolio. RPO growth decelerated to 5% YoY, lagging the 10% total revenue growth, indicating the company is not converting the AI hardware cycle into durable recurring revenue. The P/B of 9.9x is also at the top of its range (5.5\u201310.1). While revenue and EPS growth are solid (YoY revenue +9.7%, EPS +31.1%), the valuation now prices in far more than the fundamentals justify. Key risks include intensifying competition from Arista and Nvidia in AI networking, margin pressure from tariffs and memory costs, and the faltering software transition. The stock appears to be trading on AI hype rather than fundamental improvement, creating significant downside risk to the stretched multiple.",
+      "key_factors": [
+        "P/E of 42.7x is at the top of its 365-day range (25.8\u201343.3), nearly double the ~26x level from May 2025",
+        "Stock surged +51.9% in one quarter to $118.64, driven by AI narrative rather than fundamental acceleration",
+        "Operating cash flow collapsed -43.3% QoQ and -18.7% YoY in Q2 FY2026",
+        "Adjusted gross margin compressed to 66.0% from 68.6% YoY due to memory costs and tariffs \u2014 described as persistent headwind",
+        "Security revenue flat YoY at ~$2B, exposing the weakest part of the portfolio",
+        "RPO growth decelerated to 5% YoY, lagging 10% total revenue growth \u2014 software transition stalling",
+        "P/B of 9.9x at top of 365-day range (5.5\u201310.1)",
+        "Intensifying competition from Arista Networks and Nvidia in AI networking",
+        "4,000 job cuts signal cost pressure even as revenue grows",
+        "GF Score valuation rank of 1/10 raises red flags on overvaluation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-28",
+          "excerpt": "close=118.64, quarterly delta +51.9%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=42.674, p_b=9.904, range pe_diluted 25.8..43.3, p_b 5.5..10.1"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24",
+          "excerpt": "operating_cash_flow=1.82B vs 2025-10-25: 3.21B (QoQ -43.3%), YoY -18.7%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14",
+          "excerpt": "Adjusted gross margin slipped to 66.0 percent from 68.6 percent a year earlier, with management citing memory cost pressure and the estimated impact of current tariff policy"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14",
+          "excerpt": "Security revenue at roughly $2 billion was flat year over year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis",
+          "excerpt": "Total RPO growth decelerated to 5% YoY in Q2 FY2026, lagging far behind the 10% total revenue growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis",
+          "excerpt": "Key risks include market share erosion from intense competition in its core networking and cybersecurity businesses"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "gurufocus",
+          "excerpt": "GF Score\u2122 of 77/100 reflects solid financial health but highlights valuation as a significant concern; valuation rank of 1/10 raises red flags"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230734,
+        "capped_chars": 230734,
+        "raw_tokens": 57684,
+        "capped_tokens": 57684
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 854,
+        "capped_chars": 854,
+        "raw_tokens": 214,
+        "capped_tokens": 214
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1610,
+        "capped_chars": 1610,
+        "raw_tokens": 402,
+        "capped_tokens": 402
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 39944,
+        "capped_chars": 8692,
+        "raw_tokens": 9986,
+        "capped_tokens": 2173
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 83913,
+        "capped_chars": 65891,
+        "raw_tokens": 20979,
+        "capped_tokens": 16473
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37140,
+  "started_at": "2026-08-07T03:01:21+00:00"
+}

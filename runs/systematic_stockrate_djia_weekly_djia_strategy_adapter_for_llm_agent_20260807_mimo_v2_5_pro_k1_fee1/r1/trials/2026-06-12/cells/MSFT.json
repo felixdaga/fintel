@@ -1,0 +1,179 @@
+{
+  "cell": "MSFT",
+  "symbols": [
+    "MSFT"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 62342,
+    "tokens_out": 1426,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.06662,
+    "basis": "reported"
+  },
+  "views": {
+    "MSFT": {
+      "symbol": "MSFT",
+      "score": 0.35,
+      "rationale": "Microsoft presents a strong fundamental case with excellent health and trajectory, tempered by a valuation that is no longer clearly cheap despite a few near-term headwinds. The company's Q3 FY2026 results were impressive: revenue of $82.89B (+18.3% YoY), operating income of $38.4B, and EPS of $4.27 (+23.4% YoY). Azure grew 40%, and the AI business reached a $37B annual run rate growing 123% YoY. The balance sheet is fortress-like with $78.27B cash against only $40.26B debt, and operating cash flow of $46.68B in the quarter demonstrates robust cash generation. Commercial RPO nearly doubled to $627B, providing multi-year revenue visibility. However, the stock at $390.34 trades at a P/E of 27.8x, which sits near the lower end of its 25.4-42.8x 365-day range but is not a screaming bargain given the massive capex cycle (~$190B projected for CY2026) that is compressing free cash flow and raising questions about capital efficiency. The QoQ EPS decline of -17.2% (Q3 vs Q2) reflects some volatility, though YoY growth remains strong. Near-term catalysts are limited: the next earnings report is July 27, and while the AI monetization story is compelling, concerns about FTC antitrust investigation, EU regulatory pressure, and the capital intensity of the AI buildout create uncertainty. The stock is down ~16% YTD, which has created a more reasonable entry point, but not yet a deeply compelling one given the macro backdrop of rising Treasury yields (10Y at 4.45%) and elevated VIX.",
+      "key_factors": [
+        "Q3 FY2026 revenue $82.89B (+18.3% YoY), EPS $4.27 (+23.4% YoY) \u2014 strong fundamental trajectory",
+        "Azure growing 40% YoY with AI business at $37B annual run rate (+123% YoY) \u2014 clear growth engine",
+        "Commercial RPO of $627B nearly doubled \u2014 exceptional forward revenue visibility",
+        "Balance sheet strength: $78.27B cash vs $40.26B debt, operating cash flow $46.68B in quarter",
+        "P/E of 27.8x near lower end of 25.4-42.8x range but not deeply cheap given capcap",
+        "Massive capex cycle (~190B projected CY2026) pressuring near-term FCF flow raises questions onFT",
+        "FTC antitrustitrustitrust EU regulatory regulatoryulatory scrutiny creating overhanging risk",
+        "QoQQ"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026622 excerpt",
+          "excerpt": ","
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "excerpt": "Q3 FY2026: revenue=8229B, eps=4.27, YoY revenue +18.3%, YoY EPS +23.4%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "excerpt": "Operating cash flow $46.68B in Q3 FY2026; total debt $40.26B vs cash $78.27B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "P/E diluted=27.778, EV/EBIT=21.006, P/B=8.027, net margin=35.7%, ROE=28.9%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-12..2026-06-11",
+          "excerpt": "P/E range 25.4..42.8 over 365-day window; current 27.8x near lower end"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "Close=$390.34, 52-week high=$555.45, low=$356.28; quarterly delta -2.9%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-06",
+          "excerpt": "Microsoft stock trading at valuations not seen in a decade; AI business $37B run rate growing 123% YoY; Azure growing 40%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-13..2026-06-12",
+          "excerpt": "Commercial RPO nearly doubled to $627B; FTC antitrust investigation expanded to cloud, AI, and bundling practices; projected capex ~$190B for CY2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MSFT",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3930,
+        "capped_chars": 3930,
+        "raw_tokens": 982,
+        "capped_tokens": 982
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 244460,
+        "capped_chars": 244460,
+        "raw_tokens": 61115,
+        "capped_tokens": 61115
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4409,
+        "capped_chars": 4409,
+        "raw_tokens": 1102,
+        "capped_tokens": 1102
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 410364,
+        "capped_chars": 95808,
+        "raw_tokens": 102591,
+        "capped_tokens": 23952
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 131423,
+        "capped_chars": 104837,
+        "raw_tokens": 32855,
+        "capped_tokens": 26209
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50629,
+  "started_at": "2026-08-07T03:03:46+00:00"
+}

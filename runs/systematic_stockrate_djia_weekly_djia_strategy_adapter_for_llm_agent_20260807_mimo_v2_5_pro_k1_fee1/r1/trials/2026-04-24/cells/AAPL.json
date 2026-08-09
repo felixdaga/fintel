@@ -1,0 +1,191 @@
+{
+  "cell": "AAPL",
+  "symbols": [
+    "AAPL"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 47856,
+    "tokens_out": 1194,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.051438,
+    "basis": "reported"
+  },
+  "views": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "score": 0.25,
+      "rationale": "Apple demonstrates solid fundamental health with strong Q1 FY2026 results (revenue $143.76B, +15.7% YoY; EPS $2.84, +18.3% YoY; operating cash flow $53.92B, +80.1% YoY) and a durable competitive moat built on ecosystem lock-in, 2.5B+ active devices, and a high-margin Services segment growing 14% YoY. The balance sheet is resilient with $88.19B equity and manageable debt ($88.5B, D/E ~1.0). However, the stock trades at a P/E of 34.4x, near the middle of its 30-43x 12-month range, which is not cheap versus its own history given the growth rate. The CEO transition (Tim Cook to John Ternus in September 2026) introduces execution uncertainty, and regulatory headwinds (DOJ antitrust trial, EU DMA) remain material risks. The upcoming Q2 earnings on April 30 could serve as a near-term catalyst \u2014 consensus expects $1.93 EPS and $109.35B revenue, with Bank of America and Goldman Sachs forecasting upside. The capital-light AI strategy (only $12.7B capex vs peers' $100B+) preserves financial flexibility but raises questions about long-term AI competitiveness. Net: a quality franchise with solid trajectory, but valuation is fair rather than compelling, and the leadership transition plus regulatory overhang temper conviction.",
+      "key_factors": [
+        "Q1 FY2026 record revenue $143.76B (+15.7% YoY) and EPS $2.84 (+18.3% YoY)",
+        "Services segment growing 14% YoY to $30B with 76.5% gross margin \u2014 high-margin recurring revenue engine",
+        "P/E of 34.4x is mid-range (30-43x over past year) \u2014 not cheap vs own history for a ~18% EPS grower",
+        "CEO transition from Tim Cook to John Ternus (Sept 2026) introduces strategic execution uncertainty",
+        "DOJ antitrust trial slated late 2026 and EU DMA compliance risk App Store economics",
+        "Q2 earnings April 30 as near-term catalyst \u2014 multiple analysts expect upside to consensus $1.93 EPS",
+        "Capital-light AI approach ($12.7B capex) preserves cash flow but raises long-term AI competitiveness questions",
+        "China iPhone shipments surged 20% YoY in Q1 2026, showing geographic diversification progress",
+        "Operating cash flow $53.92B in Q1 alone demonstrates exceptional cash generation capacity",
+        "Tariff exposure (~$1.4B/quarter) manageable but cumulative drag on margins over time"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-30 Q1 FY2026",
+          "excerpt": "revenue=143.76B net_income=42.10B eps_diluted=2.84 operating_cash_flow=53.92B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=34.384 p_b=45.919 net_margin=0.27 roe=1.335"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-04-24..2026-04-23",
+          "excerpt": "pe_diluted 30.2..43.1"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-23 Investing.com",
+          "excerpt": "Tim Cook is stepping down as Apple's CEO in September 2026, with John Ternus taking over"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-23 Benzinga",
+          "excerpt": "Apple announced John Ternus as its next CEO, replacing Tim Cook after 14 years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-17 Motley Fool",
+          "excerpt": "Apple is gaining significant market share in China despite overall smartphone market decline, with iPhone shipments surging 20% year-over-year in Q1 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-16 Motley Fool",
+          "excerpt": "Apple's capital-light approach to AI, spending only $12.7 billion in capex versus competitors' $100+ billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-23 barchart.com",
+          "excerpt": "Analysts expect Apple to deliver second-quarter earnings of $1.91 per share, up 15.8% YoY"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-23 thestreet.com",
+          "excerpt": "Bank of America raised Apple's price target to $325, expecting $113 billion in revenue and $2 a share in earnings for fiscal second quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-23 markets.financialcontent.com",
+          "excerpt": "Regulatory Headwinds: The DOJ's antitrust lawsuit remains the largest overhang. A trial focused on the smartphone monopoly is slated for late 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AAPL",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4671,
+        "capped_chars": 4671,
+        "raw_tokens": 1168,
+        "capped_tokens": 1168
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231010,
+        "capped_chars": 231010,
+        "raw_tokens": 57752,
+        "capped_tokens": 57752
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4298,
+        "capped_chars": 4298,
+        "raw_tokens": 1074,
+        "capped_tokens": 1074
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 219266,
+        "capped_chars": 47022,
+        "raw_tokens": 54816,
+        "capped_tokens": 11756
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102966,
+        "capped_chars": 79987,
+        "raw_tokens": 25742,
+        "capped_tokens": 19997
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 63108,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

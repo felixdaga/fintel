@@ -1,0 +1,188 @@
+{
+  "cell": "CAT",
+  "symbols": [
+    "CAT"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36702,
+    "tokens_out": 1063,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039891,
+    "basis": "reported"
+  },
+  "views": {
+    "CAT": {
+      "symbol": "CAT",
+      "score": 0.35,
+      "rationale": "Caterpillar's Q1 2026 results were outstanding: revenue up 22% YoY to $17.4B, adjusted EPS of $5.54 beating consensus by ~19%, and a record $63B backlog (+79% YoY). The Power & Energy segment is a secular growth engine driven by AI data center power demand, with plans to nearly triple large reciprocating engine capacity by 2029. Construction Industries revenue surged 38% YoY. However, the stock has already re-rated aggressively \u2014 P/E has expanded from ~15.6x a year ago to ~44.3x currently, near the top of its 365-day range (15.6\u201345.8x). P/B has more than doubled from 8.6x to 22.4x. This extreme valuation expansion prices in much of the good news. Tariff headwinds of $2.2\u20132.4B for 2026 are compressing margins (operating margin 17.7% vs. prior year), and Resource Industries profit fell 39% due to tariff costs. The balance sheet is solid (equity $18.7B, $4.1B cash) and capital returns are aggressive ($5.7B deployed in Q1 alone). The near-term catalyst \u2014 the Q1 earnings beat and raised guidance \u2014 has already played out (stock rallied 10% on April 30). The fundamental trajectory is genuinely strong, but the valuation leaves limited margin of safety; the score reflects good fundamentals capped by extreme multiple expansion.",
+      "key_factors": [
+        "Q1 2026 revenue +22% YoY to $17.4B, adjusted EPS $5.54 beating consensus by 19%",
+        "Record $63B backlog (+79% YoY) provides multi-year revenue visibility",
+        "Power & Energy segment benefiting from secular AI data center demand; capacity tripling by 2029",
+        "P/E expanded from ~15.6x to ~44.3x in 12 months \u2014 near top of range, pricing in much of the growth",
+        "Tariff headwinds of $2.2\u20132.4B in 2026 compressing margins; Resource Industries profit -39% YoY",
+        "Aggressive shareholder returns: $5.7B deployed in Q1 ($5B buybacks + $0.7B dividends)",
+        "Q1 earnings beat catalyst already realized \u2014 stock surged 10% on April 30"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.41B net_income=2.55B eps_diluted=5.47 operating_income=3.08B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=14.25B eps=4.2"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=44.257 p_b=22.359"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-08",
+          "excerpt": "pe_diluted=15.568 p_b=8.561"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 Benzinga",
+          "excerpt": "Q1 2026 results showed a record $63 billion backlog and 41% surge in power generation revenue"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 Motley Fool",
+          "excerpt": "Caterpillar also rallied 10% on robust results"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-30 investing.com",
+          "excerpt": "tariff costs of approximately $700 million for the second quarter and full-year tariff costs in the range of $2.2 billion to $2.4 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-30 uk.investing.com",
+          "excerpt": "Resource Industries segment... profit plummeting 39% to $378 million. The segment profit margin contracted sharply to 10.0% from 17.0%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-30 fool.com",
+          "excerpt": "nearly 3x 2024 large reciprocating engine output, with additional capital investments scheduled through 2029"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-30 prnewswire.com",
+          "excerpt": "Deployed $5.7 billion of cash for share repurchases and dividends in the first quarter"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CAT",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4541,
+        "capped_chars": 4541,
+        "raw_tokens": 1135,
+        "capped_tokens": 1135
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241964,
+        "capped_chars": 241964,
+        "raw_tokens": 60491,
+        "capped_tokens": 60491
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1659,
+        "capped_chars": 1659,
+        "raw_tokens": 415,
+        "capped_tokens": 415
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 22526,
+        "capped_chars": 5015,
+        "raw_tokens": 5632,
+        "capped_tokens": 1254
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 125163,
+        "capped_chars": 101983,
+        "raw_tokens": 31291,
+        "capped_tokens": 25495
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50615,
+  "started_at": "2026-08-07T02:58:28+00:00"
+}

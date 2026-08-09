@@ -1,0 +1,184 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31835,
+    "tokens_out": 1290,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035705,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": -1.0,
+      "rationale": "MRK's Q1 2026 results reveal a severe earnings collapse: EPS of -$1.72 versus +$2.01 a year prior, driven by a $9B one-time Cidara charge and a $5.8B Terns acquisition R&D hit, producing a GAAP net loss of -$4.24B. While revenue grew 4.9% YoY to $16.29B, operating income swung to -$3.53B from +$5.90B. The stock has rallied 66% over the past year to $130.48, pushing the P/E to 36.1x\u2014near the top of its 365-day range (11.1\u201336.1) and far above the ~12\u201315x range that prevailed for most of the prior year. P/B has expanded from 4.0x to 7.0x. This extreme valuation expansion has occurred precisely as fundamentals deteriorated: net margin collapsed from ~29.6% to 13.6%, ROE from 36.7% to 19.5%. The forward P/E of 48.3x and PEG of 12.06 signal the market is pricing in aggressive future growth that must be delivered against the looming 2028 Keytruda patent cliff. GARDASIL declined 22% in Q1, and the LITESPARK-012 readout failed. The next earnings event (Aug 4) is a near-term catalyst, but given the stretched valuation and fundamental headwinds, the risk is asymmetrically to the downside. The stock is expensive versus its own history, fundamentals are deteriorating on a GAAP basis, and there is no credible near-term re-rating catalyst to the upside\u2014only a binary earnings event that could disappoint.",
+      "key_factors": [
+        "Q1 2026 GAAP EPS of -$1.72 vs +$2.01 YoY; net loss of -$4.24B driven by $9B Cidara charge and $5.8B Terns IPR&D hit",
+        "P/E of 36.1x is at the top of its 365-day range (11.1\u201336.1), up from ~12\u201315x for most of the prior year; P/B expanded from 4.0x to 7.0x",
+        "Net margin collapsed from 29.6% to 13.6% and ROE from 36.7% to 19.5% on a trailing basis",
+        "GARDASIL revenue declined 22% in Q1; LITESPARK-012 clinical trial failed",
+        "2028 Keytruda patent cliff remains the dominant structural risk; concentration in a single product is extreme",
+        "Forward P/E of 48.3x and PEG of 12.06 signal the market is pricing in aggressive future growth that must be delivered",
+        "Stock rallied 66% over the past year to $130.48, leaving little margin of safety at current levels",
+        "Next earnings date Aug 4 is a near-term catalyst but risk is asymmetrically to the downside given stretched valuation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=16.29B net_income=-4.24B eps_diluted=-1.72 operating_income=-3.53B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=15.53B eps_diluted=2.01 net_income=5.08B operating_income=5.90B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=36.099 p_b=7.022 net_margin=0.136 roe=0.195"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-24",
+          "excerpt": "pe_diluted=12.199 p_b=4.398 net_margin=0.273 roe=0.361"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 11.1..36.1 | p_b 4.0..7.0 | net_margin 0.1..0.3 | roe 0.2..0.4"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=130.48; range over ~251 bars: high=131.74 low=76.66"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks MRK AI analysis",
+          "excerpt": "a very large one-time $9B Cidara charge that drove a GAAP loss and distorted tax rate, an expected one-time R&D impact from the proposed Terns deal (~$5.8B), meaningful declines in GARDASIL (-22%), a failed LITESPARK-012 readout"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "yahoo finance MRK",
+          "excerpt": "Trailing P/E 36.68, Forward P/E 48.31, PEG ratio (5-yr expected) 12.06, Price/book (mrq) 7.01"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "pandaforecast MRK",
+          "excerpt": "looming revenue risks from the 2028 Keytruda patent expiration; Q1 results indicated solid performance with sales growth of 5% but the modest forward guidance and the recognition of acquisition-related charges temper investor optimism"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4573,
+        "capped_chars": 4573,
+        "raw_tokens": 1143,
+        "capped_tokens": 1143
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224715,
+        "capped_chars": 224715,
+        "raw_tokens": 56179,
+        "capped_tokens": 56179
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1750,
+        "capped_chars": 1750,
+        "raw_tokens": 438,
+        "capped_tokens": 438
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 27416,
+        "capped_chars": 5324,
+        "raw_tokens": 6854,
+        "capped_tokens": 1331
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 112479,
+        "capped_chars": 93317,
+        "raw_tokens": 28119,
+        "capped_tokens": 23329
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 242409,
+  "started_at": "2026-08-07T03:08:59+00:00"
+}

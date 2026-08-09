@@ -1,0 +1,179 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31289,
+    "tokens_out": 976,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033129,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": 0.15,
+      "rationale": "Cisco shows solid fundamental trajectory with accelerating revenue and EPS growth (Q2 FY26 revenue +9.7% YoY, EPS +31.1% YoY), strong margins (gross margin 64.8%, operating margin 22.7%), and a healthy balance sheet (debt-to-equity 0.515). The AI networking narrative is credible with management guiding $9B in AI infrastructure orders for FY26 and raising full-year revenue guidance to $62.8-63B. However, valuation has expanded dramatically \u2014 PE has risen from ~27x a year ago to 42.6x currently, near the top of its 365-day range (27.1-46.8), and P/B has nearly doubled from 6.0x to 9.9x. This rich valuation largely prices in the AI growth narrative. Key risks include margin compression from hardware-heavy AI mix (non-GAAP product gross margins down 260bps), cybersecurity vulnerabilities in SD-WAN products drawing government scrutiny, and RPO growth decelerating to 5% YoY vs 10% revenue growth, suggesting the software transition is lagging the hardware cycle. The stock's +41.4% quarterly surge leaves limited margin of safety. Near-term catalyst is limited \u2014 next earnings likely in August, and the current valuation already reflects strong guidance. Score reflects good but not exceptional fundamentals offset by stretched valuation.",
+      "key_factors": [
+        "Accelerating revenue and EPS growth trajectory (+9.7% YoY revenue, +31.1% YoY EPS in Q2 FY26)",
+        "AI infrastructure orders guided to $9B for FY26 with raised full-year revenue guidance to $62.8-63B",
+        "Valuation stretched at 42.6x PE vs 27-28x a year ago, near top of 365-day range",
+        "Margin compression risk from hardware-heavy AI mix (product gross margins down 260bps)",
+        "RPO growth decelerating to 5% YoY vs 10% revenue growth \u2014 software transition lagging",
+        "Cybersecurity vulnerabilities in SD-WAN products with government emergency directives",
+        "Strong balance sheet with 0.515 debt-to-equity and consistent capital returns ($12.4B returned in FY25)",
+        "Stock up 41.4% in last quarter \u2014 limited near-term re-rating catalyst visible"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24 Q2",
+          "excerpt": "revenue=15.35B eps_diluted=0.8 YoY revenue=+9.7% eps_diluted=+31.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=42.556 p_b=9.877 gross_margin=0.648 operating_margin=0.227 debt_to_equity=0.515"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10",
+          "excerpt": "pe_diluted=28.102 p_b=5.991"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "excerpt": "close=118.31 quarterly delta +41.4%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com CSCO risks",
+          "excerpt": "Non-GAAP product gross margins compressed by 260 basis points due to higher memory chip costs and a less favorable product mix"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com CSCO",
+          "excerpt": "Total RPO growth decelerated to 5% YoY in Q2 FY2026, lagging far behind the 10% total revenue growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com CSCO AI momentum",
+          "excerpt": "Management expects AI infrastructure orders from hyperscalers to reach $9 billion in fiscal 2026, while growing enterprise, sovereign cloud and neocloud deployments should provide an additional long-term growth avenue. For fiscal 2026, Cisco raised its outlook to revenues of $62.8 billion to $63 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cybersecuritydive.com Cisco SD-WAN",
+          "excerpt": "CISA issued emergency directive warning that a threat actor was targeting vulnerabilities in Cisco Catalyst SD-WAN systems"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230775,
+        "capped_chars": 230775,
+        "raw_tokens": 57694,
+        "capped_tokens": 57694
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1748,
+        "capped_chars": 1748,
+        "raw_tokens": 437,
+        "capped_tokens": 437
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 28804,
+        "capped_chars": 6177,
+        "raw_tokens": 7201,
+        "capped_tokens": 1544
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 75907,
+        "capped_chars": 55013,
+        "raw_tokens": 18978,
+        "capped_tokens": 13752
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 271899,
+  "started_at": "2026-08-07T03:06:51+00:00"
+}

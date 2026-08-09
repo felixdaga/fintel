@@ -1,0 +1,179 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32405,
+    "tokens_out": 1147,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035846,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": 0.15,
+      "rationale": "UNH is a dominant healthcare franchise with strong scale and diversified revenue streams across insurance and Optum services, but the fundamental picture is mixed. Q1 2026 showed a strong EPS beat ($7.23 adjusted vs ~$6.61 expected) on revenue of $111.7B, and the company raised full-year EPS guidance to >$18.25. However, the quarterly trajectory is noisy \u2014 Q3 2025 EPS was only $2.59 and Q2 2025 was $3.74, reflecting prior medical cost pressures. YoY revenue growth of just +2.0% in Q1 2026 is modest for a company at this scale. Net margin has compressed from 5.6% in mid-2025 to 2.8% currently, and ROE has fallen from 22.8% to 12.3%, signaling meaningful profitability deterioration even if Q1 showed a recovery. The balance sheet remains solid with $103.9B equity and $8.9B quarterly operating cash flow. On valuation, the stock has re-rated sharply \u2014 P/E has expanded from ~10-12x in mid-2025 to 29.5x currently, near the top of its 365-day range (9.5-29.5x). P/B at 3.64x is also at the top of its range (2.2-3.6x). This re-rating appears to price in a significant earnings recovery that is still being validated. The stock is up +53.6% over the last quarter, which is substantial momentum. Near-term, Q2 2026 earnings on July 16 could serve as a catalyst \u2014 consensus expects EPS of ~$4.84, up 18.6% YoY, and the company has beaten estimates in 3 of the last 4 quarters. However, regulatory headwinds (Medicare Advantage scrutiny, FTC insulin pricing settlement, prior authorization concerns) and the stretched valuation temper enthusiasm. The score reflects a quality franchise with improving trajectory but at a valuation that already embeds much of the recovery.",
+      "key_factors": [
+        "Q1 2026 EPS beat ($7.23 adjusted) with raised full-year guidance to >$18.25",
+        "Net margin compressed from 5.6% to 2.8% and ROE from 22.8% to 12.3% over the past year",
+        "P/E re-rated from ~10-12x to 29.5x (top of 365-day range), pricing in recovery",
+        "Stock up +53.6% in last quarter \u2014 significant momentum already captured",
+        "Q2 2026 earnings on July 16 as near-term catalyst with consensus EPS of ~$4.84 (+18.6% YoY)",
+        "Regulatory overhang: Medicare Advantage scrutiny, FTC insulin pricing settlement, prior authorization concerns",
+        "Strong balance sheet ($103.9B equity) and cash generation ($8.9B quarterly OCF)",
+        "Modest YoY revenue growth of +2.0% despite scale advantages"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=111.72B net_income=6.48B eps_diluted=6.9 operating_income=8.99B operating_cash_flow=8.91B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=29.509 p_b=3.64 net_margin=0.028 roe=0.123"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-26",
+          "excerpt": "pe_diluted=12.112 p_b=2.756 net_margin=0.056 roe=0.228"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=415.53 quarterly delta +53.6%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-25",
+          "excerpt": "UnitedHealth Group stock has been rising in recent months, but investors should remain cautious"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart Q2 preview",
+          "excerpt": "UNH is expected to release its Q2 2026 earnings on Thursday, July 16, before the market opens. Analysts expect the company's EPS to be $4.84 on a diluted basis, up 18.6% from $4.08 in the year-ago quarter."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "distilinfo Medicare reimbursement",
+          "excerpt": "UnitedHealth Group is facing renewed investor concerns after Medicare reimbursement updates signaled lower-than-expected payment growth for Medicare Advantage plans."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fiscal.ai bulls bears",
+          "excerpt": "Regulatory scrutiny appears targeted at UnitedHealth, with ongoing antitrust investigations, questions around its risk assessments in Medicare Advantage, and scrutiny of its coverage denial rates in focus."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4536,
+        "capped_chars": 4536,
+        "raw_tokens": 1134,
+        "capped_tokens": 1134
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225459,
+        "capped_chars": 225459,
+        "raw_tokens": 56365,
+        "capped_tokens": 56365
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1613,
+        "capped_chars": 1613,
+        "raw_tokens": 403,
+        "capped_tokens": 403
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 10891,
+        "capped_chars": 3118,
+        "raw_tokens": 2723,
+        "capped_tokens": 780
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 94847,
+        "capped_chars": 68096,
+        "raw_tokens": 23711,
+        "capped_tokens": 17024
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 38453,
+  "started_at": "2026-08-07T03:05:46+00:00"
+}

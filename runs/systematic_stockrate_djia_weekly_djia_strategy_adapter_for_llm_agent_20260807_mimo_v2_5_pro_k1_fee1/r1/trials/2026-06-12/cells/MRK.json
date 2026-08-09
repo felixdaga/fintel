@@ -1,0 +1,168 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30509,
+    "tokens_out": 831,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033002,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": -1.0,
+      "rationale": "MRK's Q1 2026 results reveal a dramatic deterioration in profitability: net income swung to -$4.24B (EPS -$1.72) from +$5.08B (EPS +$2.01) a year prior, despite modest 4.9% revenue growth. Operating income collapsed to -$3.53B, indicating a massive non-recurring charge or write-down that wiped out the entire operating profit. The stock is trading at 33.4x diluted P/E (vs. 11-15x range over the prior year), reflecting the earnings collapse rather than genuine growth. P/B has expanded to 6.5x (vs. 4.0-5.6x historical range) while ROE has halved to 19.5% from 36.1%. The balance sheet shows total liabilities rising to $82.75B with equity declining to $45.93B. While the company raised full-year guidance to $65.8-67B revenue and Keytruda grew 8% to $8B, the Q1 earnings shock is severe and unexplained in the available data. Gardasil declined 22% in China/Japan. The failed Trodelvy-Keytruda lung cancer trial (June 9) removes a potential combination catalyst. With the stock near its 52-week high of $125.14 at $120.76, elevated valuation multiples on depressed earnings, and no clear near-term re-rating catalyst, the risk-reward is unfavorable.",
+      "key_factors": [
+        "Q1 2026 net income collapsed to -$4.24B from +$5.08B YoY despite revenue growth",
+        "Operating income swung to -$3.53B indicating severe margin compression or large write-down",
+        "P/E expanded to 33.4x (vs. 11-15x historical range) due to earnings collapse, not growth",
+        "P/B at 6.5x vs 4.0-5.6x historical range with ROE halved to 19.5%",
+        "Gardasil declined 22% in key markets (China, Japan)",
+        "Failed Trodelvy-Keytruda combination trial removes pipeline catalyst",
+        "Stock near 52-week high with no clear near-term re-rating catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=16.29B net_income=-4.24B eps_diluted=-1.72 operating_income=-3.53B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=15.53B net_income=5.08B eps_diluted=2.01 operating_income=5.90B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=33.41 p_b=6.499 roe=0.195"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-12",
+          "excerpt": "pe_diluted=11.867 p_b=4.279 roe=0.361"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-09",
+          "excerpt": "Gilead And Merck End Trodelvy-Keytruda Lung Cancer Trial - combination failed to reach statistical significance"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=120.76 range high=125.14 low=76.66"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4573,
+        "capped_chars": 4573,
+        "raw_tokens": 1143,
+        "capped_tokens": 1143
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224776,
+        "capped_chars": 224776,
+        "raw_tokens": 56194,
+        "capped_tokens": 56194
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1892,
+        "capped_chars": 1892,
+        "raw_tokens": 473,
+        "capped_tokens": 473
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 13525,
+        "capped_chars": 3725,
+        "raw_tokens": 3381,
+        "capped_tokens": 931
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 81117,
+        "capped_chars": 63530,
+        "raw_tokens": 20279,
+        "capped_tokens": 15882
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 24305,
+  "started_at": "2026-08-07T03:03:43+00:00"
+}

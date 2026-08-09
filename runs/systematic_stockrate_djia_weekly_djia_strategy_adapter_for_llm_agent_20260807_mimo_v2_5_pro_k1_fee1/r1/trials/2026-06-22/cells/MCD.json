@@ -1,0 +1,194 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28949,
+    "tokens_out": 1106,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032267,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's presents a mixed but mildly attractive picture. The franchise-heavy model (~95% franchised) generates strong operating margins (~46%) and robust cash flow, with Q1 2026 showing 9% YoY revenue growth and 6.9% EPS growth. However, the balance sheet carries negative equity (-$1.29B), and QoQ trends show sequential deceleration (revenue -7.9%, EPS -12.6%). The stock has declined ~10% over the past quarter to $278.61, trading near 52-week lows, which may reflect some valuation reset. Gross margin compression to 56% (8-quarter low) and competitive pressures from grocery stores in a 'hyper-value environment' are headwinds. The company's defensive characteristics (low beta 0.23, 2.77% dividend yield, 50 consecutive years of dividend increases) provide downside support. No clear near-term fundamental catalyst is evident beyond ongoing value strategy execution and unit expansion plans targeting 50,000 restaurants by 2027.",
+      "key_factors": [
+        "Strong franchise model with ~95% franchised restaurants generating high operating margins (~46%)",
+        "Q1 2026 showed solid YoY growth: revenue +9.4%, EPS +6.9%, but QoQ deceleration",
+        "Negative shareholder equity (-$1.29B) reflects aggressive capital return strategy",
+        "Stock trading near 52-week lows (~$278) after ~10% quarterly decline",
+        "Gross margin compression to 56% (8-quarter low) despite revenue recovery",
+        "Defensive characteristics: low beta (0.23), 2.77% dividend yield, 50-year dividend growth streak",
+        "Competitive pressures from grocery stores and value-focused QSR environment",
+        "No clear near-term fundamental catalyst; growth depends on value strategy execution and unit expansion"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.52B net_income=1.98B eps_diluted=2.78 operating_income=2.95B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+9.4% eps_diluted=+6.9% net_income=+6.2%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 QoQ",
+          "excerpt": "QoQ: revenue=-7.9% eps_diluted=-12.6% net_income=-12.9%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_equity=-1.29B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=278.61 quarterly delta=-10.0%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "range",
+          "excerpt": "high=341.75 low=271.85"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "operating_margin=0.463 net_margin=0.316"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingview",
+          "excerpt": "Dividend yield (indicated) 2.77%, Price to earnings Ratio (TTM) 21.86, Beta (1Y) 0.23"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr",
+          "excerpt": "Gross margins compressed to 56% in Q1 2026, the lowest reading in the eight-quarter data set"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com swot",
+          "excerpt": "Mc stock is trading near its 52-week low of $271.98, McDonald's has raised its dividend for 50 consecutive years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com risk",
+          "excerpt": "The burger-focused quick-service restaurant segment appears particularly vulnerable in the current hyper-value environment"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 214634,
+        "capped_chars": 214634,
+        "raw_tokens": 53658,
+        "capped_tokens": 53658
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1338,
+        "capped_chars": 1338,
+        "raw_tokens": 334,
+        "capped_tokens": 334
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 10103,
+        "capped_chars": 2029,
+        "raw_tokens": 2526,
+        "capped_tokens": 507
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 91642,
+        "capped_chars": 75474,
+        "raw_tokens": 22910,
+        "capped_tokens": 18869
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37659,
+  "started_at": "2026-08-07T03:04:32+00:00"
+}

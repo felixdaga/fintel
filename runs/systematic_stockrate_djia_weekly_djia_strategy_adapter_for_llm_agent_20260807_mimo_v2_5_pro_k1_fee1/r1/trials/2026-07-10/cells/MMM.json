@@ -1,0 +1,174 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28362,
+    "tokens_out": 1014,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.031404,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "rationale": "MMM's fundamental health and trajectory are deteriorating sharply. Q1 2026 showed revenue of $6.03B (only +1.3% YoY) but EPS collapsed 39.7% YoY to $1.23, with net income down 41.3%. Operating cash flow plunged 826.6% YoY to just $574M. The balance sheet is severely strained: total equity has shrunk from $4.52B (Q1 2025) to $3.31B, while total liabilities of $32.12B dwarf equity, implying a debt-to-equity ratio of ~9.7x. Gross margins compressed from 41.7% to 40.8% QoQ, and operating margins fell. The company faces massive ongoing legal headwinds from PFAS litigation and earplug lawsuits, with management flagging up to $850M in potential annual tariff impact before mitigation. Valuation is extremely stretched: P/E of 29.57x is near the top of its 365-day range (17.7-32.0), P/B of 25.0x is at the ceiling of its range (17.1-27.0), and net margin has compressed from 17.9% to 11.2% while the stock has re-rated upward. The stock is trading at a significant premium to its own history despite worsening fundamentals. The Q2 2026 earnings call on July 21 is a potential downside catalyst if results disappoint given the deteriorating trajectory. All three pillars align negatively: worsening fundamentals, expensive valuation vs. own history, and a near-term earnings event that could catalyze further de-rating.",
+      "key_factors": [
+        "Q1 2026 EPS down 39.7% YoY to $1.23; net income down 41.3% YoY",
+        "Operating cash flow collapsed 826.6% YoY to $574M in Q1 2026",
+        "Balance sheet severely strained: equity $3.31B vs liabilities $32.12B (debt-to-equity ~9.7x)",
+        "P/E of 29.57x near top of 365-day range (17.7-32.0) despite deteriorating earnings",
+        "P/B of 25.0x at ceiling of range (17.1-27.0) with equity shrinking",
+        "Net margin compressed from 17.9% to 11.2% while stock re-rated higher",
+        "PFAS litigation, earplug lawsuits, and up to $850M tariff exposure create ongoing legal/cost headwinds",
+        "Q2 2026 earnings call July 21 is a near-term catalyst that could disappoint given trajectory"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.03B net_income=659.00M eps_diluted=1.23 operating_cash_flow=574.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=5.95B eps=2.04 net_income=1.12B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=29.57 p_b=24.997 net_margin=0.112 roe=0.845"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10",
+          "excerpt": "pe_diluted=19.686 p_b=19.05 net_margin=0.179 roe=0.968"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=35.44B total_liabilities=32.12B total_equity=3.31B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st tariff exposure",
+          "excerpt": "management has flagged up to US$850m of potential annual tariff impact before mitigation"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-03 stocktitan.net",
+          "excerpt": "3M Q2 2026 earnings call set for July 21, 2026 at 8 a.m. CT"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 246418,
+        "capped_chars": 246418,
+        "raw_tokens": 61604,
+        "capped_tokens": 61604
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 970,
+        "capped_chars": 970,
+        "raw_tokens": 242,
+        "capped_tokens": 242
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7736,
+        "capped_chars": 2450,
+        "raw_tokens": 1934,
+        "capped_tokens": 612
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 59288,
+        "capped_chars": 42498,
+        "raw_tokens": 14822,
+        "capped_tokens": 10625
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 44845,
+  "started_at": "2026-08-07T03:07:11+00:00"
+}

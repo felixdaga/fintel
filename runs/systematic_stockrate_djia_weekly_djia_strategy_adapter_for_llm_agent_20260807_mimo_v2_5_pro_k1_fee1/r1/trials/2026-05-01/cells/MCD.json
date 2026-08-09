@@ -1,0 +1,177 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34337,
+    "tokens_out": 1053,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037496,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's is a high-quality franchise with exceptional operating margins (~46%), strong cash generation, and a durable competitive moat built on brand, real estate, and scale. However, the evidence presents a mixed picture. On the positive side: Q3 2025 showed solid. (revenue +3.0% YoY, EPS +1.6% YoY), operating cash flow grew 25.3% YoY, and the franchise model with ~95% franchised restaurants generates predictable high-margin income. The McValue platform and digital loyalty ecosystem (~210M active users) are driving traffic. On the negative side: the balance sheet carries negative equity (-$2.16B) due to aggressive buybacks, the stock has declined ~7% over the past quarter (from $315.51 to $293.59), is near its 52-week low of $283.47), and the valuation data is incomplete (PE shows 0, likely a data issue). The stock is trading near the lower end of its 52-week range, suggesting some price dislocation. A near-term catalyst exists: Q1 2026 earnings on May 7, with consensus expecting $2.75 EPS and $6.49B revenue. One analyst models $2.88 EPS (a 5% beat), which could provide a modest re-rating. However, macro headwinds are notable: oil prices have surged 76% over the period (WTI at $108.64), which pressures franchisee costs and consumer spending, and 10-year Treasury yields have risen to 4.4%, creating a less favorable environment for yield-oriented stocks. The combination of solid but not exceptional growth, a stretched balance sheet, and mixed macro conditions supports a mildly positive but cautious view.",
+      "key_factors": [
+        "Exceptional operating margins (~46%) and cash generation from 95% franchised model",
+        "Negative equity balance sheet from aggressive capital returns; stock near 52-week lows",
+        "Q1 2026 earnings on May 7 as near-term catalyst with potential for beat",
+        "Surging oil prices (+76%) and rising yields as macro headwinds for QSR sector",
+        "Digital loyalty ecosystem with ~210M users driving traffic and repeat visits",
+        "Modest but positive revenue and EPS growth trajectory (Q3 2025: rev +3% YoY, EPS +1.6% YoY)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=7.08B net_income=2.28B eps_diluted=3.18 operating_cash_flow=3.43B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 balance sheet",
+          "excerpt": "total_equity=-2.16B total_assets=60.61B total_liabilities=62.77B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-30",
+          "excerpt": "close=293.59; range high=341.75 low=283.47; quarterly delta=-6.9%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "koalagains.com business analysis",
+          "excerpt": "FY2025 operating margin of 46.1% on $26.89 billion of revenue; ~210 million 90-day active users; FY2025 free cash flow of $7.19 billion (FCF margin 26.7%)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 MarketBeat",
+          "excerpt": "McDonald's will report Q1 2026 results before the market opens on Thursday, May 7th. Analysts expect McDonald's to post earnings of $2.75 per share and revenue of $6.4841 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "seekingalpha.com Q1 catalyst",
+          "excerpt": "I model $2.88 EPS for Q1 versus consensus at $2.75, expecting a 5% earnings beat; MCD trades at 22.7x forward earnings; execution on LSD% comp sales could justify a re-rating to 25\u201326x and upside to $344"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-30 DCOILWTICO",
+          "excerpt": "WTI crude oil at $108.64, up 76.4% over the period"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-30 DGS10",
+          "excerpt": "10-year Treasury yield at 4.4%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215396,
+        "capped_chars": 215396,
+        "raw_tokens": 53849,
+        "capped_tokens": 53849
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30817,
+        "capped_chars": 30817,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1562,
+        "capped_chars": 1562,
+        "raw_tokens": 390,
+        "capped_tokens": 390
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7578,
+        "capped_chars": 2274,
+        "raw_tokens": 1894,
+        "capped_tokens": 568
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 139118,
+        "capped_chars": 109985,
+        "raw_tokens": 34781,
+        "capped_tokens": 27495
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50535,
+  "started_at": "2026-08-07T02:57:59+00:00"
+}

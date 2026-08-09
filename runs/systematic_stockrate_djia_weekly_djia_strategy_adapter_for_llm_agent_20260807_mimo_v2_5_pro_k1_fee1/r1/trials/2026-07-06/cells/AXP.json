@@ -1,0 +1,179 @@
+{
+  "cell": "AXP",
+  "symbols": [
+    "AXP"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29381,
+    "tokens_out": 1148,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032825,
+    "basis": "reported"
+  },
+  "views": {
+    "AXP": {
+      "symbol": "AXP",
+      "score": 0.25,
+      "rationale": "American Express shows solid fundamental health with consistent revenue and EPS growth (Q1 2026 revenue $10.52B, EPS $4.28, YoY revenue +9.3%, EPS +17.6%), strong ROE of 33%, and a net margin of 26.6%. The closed-loop business model provides competitive advantages with premium customer base and high spending per cardmember. However, operating cash flow declined 20.2% YoY in Q1 2026, and the balance sheet shows elevated debt-to-equity of 1.73. Valuation is moderate with P/E of 21.5x, which is near the middle of its 1-year range (18.4-25.3x) and not particularly cheap versus history. The upcoming Q2 2026 earnings on July 24 provides a near-term catalyst with consensus EPS of $4.39 (+7.6% YoY), and the company has beaten estimates in 3 of 4 recent quarters. The 16% dividend increase and strong stress test results (2.5% SCB maintained) support capital return confidence. However, the stock has already rallied 16.8% in the past quarter, partially reflecting positive expectations. The score reflects a fundamentally sound franchise with decent but not exceptional valuation, modestly supported by the upcoming earnings event.",
+      "key_factors": [
+        "Consistent revenue and EPS growth trajectory (Q1 2026: +9.3% revenue YoY, +17.6% EPS YoY)",
+        "Strong profitability metrics: 33% ROE, 26.6% net margin, 33.8% operating margin",
+        "Closed-loop business model with premium customer base and competitive moat",
+        "Moderate valuation: P/E 21.5x near middle of 1-year range (18.4-25.3x)",
+        "Upcoming Q2 2026 earnings (July 24) as near-term catalyst with consensus EPS $4.39",
+        "16% dividend increase and 2.5% stress capital buffer maintained through 2027",
+        "Elevated debt-to-equity of 1.73 and Q1 operating cash flow decline of 20.2% YoY",
+        "Stock already up 16.8% in past quarter, partially pricing in positive expectations"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=10.52B net_income=2.97B eps_diluted=4.28 operating_income=3.78B total_assets=308.89B total_equity=33.99B total_debt=58.75B operating_cash_flow=3.80B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+9.3% eps_diluted=+17.6% net_income=+15.0% operating_cash_flow=-20.2%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=21.519 p_b=7.102 p_s=5.722 earnings_yield=0.046 net_margin=0.266 roe=0.33 debt_to_equity=1.728 operating_margin=0.338"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-07 to 2026-07-02 range",
+          "excerpt": "pe_diluted 18.4..25.3 | p_b 6.1..8.2 | net_margin 0.3..0.3 | roe 0.3..0.3"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=351.96 quarterly delta (~63 trading days, from 2026-04-01): +16.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-25 DFAST",
+          "excerpt": "American Express will continue to be subject to its current Stress Capital Buffer requirement of 2.5 percent, the minimum SCB requirement under the applicable regulations, through September 30, 2027"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-25 dividend",
+          "excerpt": "The company increased its quarterly dividend on common shares by 16 percent to $0.95 per share"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-02 barchart",
+          "excerpt": "AXP is expected to release its Q2 2026 earnings on Friday, July 24, before the market opens. Analysts expect the company's EPS to be $4.39 on a diluted basis, up 7.6% from $4.08 in the year-ago quarter. The company has exceeded Wall Street's EPS estimates in three of its last four quarters."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AXP",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4463,
+        "capped_chars": 4463,
+        "raw_tokens": 1116,
+        "capped_tokens": 1116
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 226221,
+        "capped_chars": 226221,
+        "raw_tokens": 56555,
+        "capped_tokens": 56555
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1978,
+        "capped_chars": 1978,
+        "raw_tokens": 494,
+        "capped_tokens": 494
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 13805,
+        "capped_chars": 3038,
+        "raw_tokens": 3451,
+        "capped_tokens": 760
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 83508,
+        "capped_chars": 65232,
+        "raw_tokens": 20877,
+        "capped_tokens": 16308
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 30952,
+  "started_at": "2026-08-07T03:05:58+00:00"
+}

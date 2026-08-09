@@ -1,0 +1,186 @@
+{
+  "cell": "NKE",
+  "symbols": [
+    "NKE"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31065,
+    "tokens_out": 1378,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035199,
+    "basis": "reported"
+  },
+  "views": {
+    "NKE": {
+      "symbol": "NKE",
+      "score": -1.0,
+      "rationale": "NKE is a deteriorating business with a weak trajectory, expensive valuation, and no credible near-term catalyst. The company is in the middle of a difficult turnaround with revenue essentially flat YoY, declining EPS, and significant margin compression. The stock is trading at a premium P/E of 29.3x despite a net margin of only 4.8% and ROE of 16%, which are well below historical levels. The recent earnings beat was largely driven by a one-time $986 million tariff refund, masking underlying operational weakness. Greater China remains a significant headwind with eight consecutive quarters of decline, and the company faces ongoing tariff pressures and competitive threats from On, Hoka, and New Balance. The stock has declined 44% from its 52-week high and is trading near its 52-week low, but the valuation remains expensive relative to the deteriorating fundamentals. There is no near-term catalyst to re-rate the stock, and the turnaround execution remains uncertain.",
+      "key_factors": [
+        "Deteriorating fundamentals: revenue flat YoY, EPS declining, net margin compressed to 4.8% (vs. 9.4% a year ago), ROE down to 16% (vs. 32.2% a year ago)",
+        "Expensive valuation: P/E of 29.3x despite weak earnings trajectory and low margins, trading at a premium to its own history",
+        "No credible near-term catalyst: recent earnings beat was driven by one-time tariff refund, not operational improvement; management guidance for early FY2027 sales declines",
+        "Significant headwinds: Greater China revenue declining 12% YoY, tariff pressures ($1.5B annual hit), competitive threats from On, Hoka, New Balance",
+        "Stock down 44% from 52-week high but valuation remains stretched relative to fundamentals"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-02-28 Q3",
+          "excerpt": "revenue=11.28B net_income=520.00M eps_diluted=0.35 gross_profit=4.53B operating_income=650.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-02-28 Q3",
+          "excerpt": "revenue=11.27B eps_diluted=0.54"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=29.349 p_b=4.687 p_s=1.419 earnings_yield=0.034 net_margin=0.048 roe=0.16 gross_margin=0.408 operating_margin=0.062"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-17",
+          "excerpt": "pe_diluted=23.969 p_b=7.714 net_margin=0.094 roe=0.322"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=44.57 range over ~251 bars: high=80.17 low=40.00"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-13",
+          "excerpt": "Nike rebounded 8% off its $40 decade-low after Q4 earnings, but the beat was largely driven by a one-time $986 million tariff refund. While wholesale growth and margin discipline show promise under CEO Elliott Hill's turnaround strategy, the stock faces headwinds from eight consecutive quarters of Greater China declines and a forward P/E of 25.4 on flat guidance."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-13",
+          "excerpt": "Nike reported mixed earnings with tariff-driven gains masking underlying sales declines, particularly in China, raising questions about its turnaround prospects."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-15",
+          "excerpt": "NIKE, Inc. reported fiscal 2026 revenue of $46.4B and diluted EPS of $2.1, with net income of $3.11B, largely flat versus fiscal 2025 as currency-neutral weakness in Greater China and Converse offset gains in wholesale."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-30",
+          "excerpt": "Nike (NKE) Q1 2027 earnings: EPS $0.72 vs $0.13 est. (BEAT by 465.6%). Revenue $10.97B vs $10.85B est. The outsized profit figure was driven primarily by a $986 million one-time benefit tied to the expected recovery of IEEPA tariffs, following a U.S. Supreme Court ruling that those import levies were unauthorized, a windfall that added $0.52 to diluted EPS and lifted gross margin approximately 900 basis points to 49.2%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-13",
+          "excerpt": "Nike is in the middle of the hardest turnaround in its history. Revenue has stabilized (nine-month fiscal 2026 sales rose 1% to $35.4 billion), but profit is still being squeezed by an estimated $1.5 billion annual tariff bill, a shrinking Greater China business, and faster rivals like On, Hoka, and New Balance"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NKE",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3749,
+        "capped_chars": 3749,
+        "raw_tokens": 937,
+        "capped_tokens": 937
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224232,
+        "capped_chars": 224232,
+        "raw_tokens": 56058,
+        "capped_tokens": 56058
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1580,
+        "capped_chars": 1580,
+        "raw_tokens": 395,
+        "capped_tokens": 395
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 13036,
+        "capped_chars": 3509,
+        "raw_tokens": 3259,
+        "capped_tokens": 877
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 78323,
+        "capped_chars": 53366,
+        "raw_tokens": 19581,
+        "capped_tokens": 13342
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 47643,
+  "started_at": "2026-08-07T03:08:10+00:00"
+}

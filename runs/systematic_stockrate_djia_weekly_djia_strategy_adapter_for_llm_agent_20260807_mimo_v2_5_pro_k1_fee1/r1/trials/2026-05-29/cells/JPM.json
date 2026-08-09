@@ -1,0 +1,183 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36571,
+    "tokens_out": 1115,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039916,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "rationale": "JPMorgan Chase demonstrates strong fundamental health with accelerating earnings trajectory: Q1 2026 EPS of $5.94 beat estimates by $0.44, representing 17.2% YoY growth and 10% revenue growth. The bank maintains industry-leading profitability with 17.5% ROE and 31.5% net margins, supported by its dominant #1 position in US deposits, global investment banking fees (17 consecutive years), and $7.1T in AUM. The diversified business model across consumer banking, CIB, commercial banking, and AWM provides earnings resilience. However, valuation is mixed: at 13.7x P/E, JPM trades at the low end of its 1-year range (13.7-17.8x), suggesting some discount to recent history, but P/B of 2.2x remains elevated versus the 5-year average of ~1.8x mentioned in news. The recent 3% pullback following CEO Dimon's May 27 comments about higher expenses (~$106B, up $1B from prior guidance) and potential $10-20B acquisition spending creates a modest near-term headwind, though this also represents a potential re-rating catalyst if acquisitions prove accretive. Macro backdrop is supportive with stable rates (Fed Funds at 3.63%) and low VIX (15.7), though rising 10Y yields (4.45%) and oil prices ($92.65) introduce some uncertainty. The stock's -3.1% quarterly decline versus strong fundamentals creates a mild entry opportunity.",
+      "key_factors": [
+        "Q1 2026 earnings beat: EPS $5.94 vs $5.50 est, revenue $50.5B vs $48.3B est, +10% YoY",
+        "Strong profitability: 17.5% ROE, 31.5% net margin, 39.9% operating margin",
+        "Dominant competitive position: #1 US deposits, #1 global IB fees 17 years, $7.1T AUM",
+        "Valuation at low end of range: P/E 13.7x (range 13.7-17.8x) but P/B 2.2x vs ~1.8x 5yr avg",
+        "CEO Dimon flagged higher expenses ($106B) and potential $10-20B acquisition spend, creating near-term uncertainty",
+        "Diversified revenue model across consumer, CIB, commercial, and AWM provides earnings resilience",
+        "Stock down 3.1% over past quarter despite strong fundamental trajectory"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=49.84B net_income=16.49B eps_diluted=5.94 operating_income=20.48B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+10.0% eps_diluted=+17.2% net_income=+12.6%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=13.704 p_b=2.217 net_margin=0.315 roe=0.162 operating_margin=0.399"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 13.7..17.8 | p_b 2.2..2.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-27 Motley Fool",
+          "excerpt": "JPMorgan Chase stock fell over 2% on Wednesday following CEO Jamie Dimon's remarks...higher-than-expected annual expenses of nearly $106 billion (up $1 billion from previous guidance) and signaled plans to potentially deploy $10-20 billion on acquisitions"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "strategy.transforml.co",
+          "excerpt": "Holds the #1 retail deposit market share, is the #1 credit card issuer in the U.S., and has ranked #1 in global investment banking fees for 17 consecutive years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com SWOT",
+          "excerpt": "Assets under management reaching $4.48 trillion, up 18%. Long-term net inflows of $52 billion"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-28",
+          "excerpt": "close=296.73 quarterly delta (~63 trading days, from 2026-02-26): -3.1%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "excerpt": "FEDFUNDS=3.63 DGS10=4.45 VIXCLS=15.74 DCOILWTICO=92.65"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 240005,
+        "capped_chars": 240005,
+        "raw_tokens": 60001,
+        "capped_tokens": 60001
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3524,
+        "capped_chars": 3524,
+        "raw_tokens": 881,
+        "capped_tokens": 881
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 98757,
+        "capped_chars": 9456,
+        "raw_tokens": 24689,
+        "capped_tokens": 2364
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 107331,
+        "capped_chars": 87987,
+        "raw_tokens": 26833,
+        "capped_tokens": 21998
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 81463,
+  "started_at": "2026-08-07T03:01:31+00:00"
+}

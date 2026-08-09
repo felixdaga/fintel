@@ -1,0 +1,174 @@
+{
+  "cell": "CAT",
+  "symbols": [
+    "CAT"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31549,
+    "tokens_out": 790,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033919,
+    "basis": "reported"
+  },
+  "views": {
+    "CAT": {
+      "symbol": "CAT",
+      "score": -1.0,
+      "rationale": "Caterpillar's fundamental health is strong with excellent revenue growth (+22.2% YoY in Q1 2026), robust margins (18% operating margin in Q1), and a record backlog of $62.7 billion. However, the valuation has become extremely stretched, with the P/E ratio reaching 48.7x (up from 17.6x a year ago) and P/B at 24.6x, representing a massive premium to its own history. The stock has surged 43.2% in the last quarter alone, creating significant overvaluation risk. While the AI data center power generation narrative is compelling, the stock is priced for perfection with no margin of safety. The near-term catalysts are already priced in, and the extreme valuation leaves the stock highly vulnerable to multiple compression if growth decelerates or macro conditions deteriorate. The combination of stretched valuation, aggressive insider selling, and tariff headwinds creates a negative risk-reward profile.",
+      "key_factors": [
+        "Extreme valuation: P/E of 48.7x vs historical range of 17.6-48.7x, P/B of 24.6x vs range of 9.7-24.6x",
+        "Record backlog of $62.7 billion provides demand visibility but is already priced in",
+        "Strong Q1 2026 results: revenue +22.2% YoY, EPS +30.2% YoY, operating margin recovery to 18%",
+        "Tariff headwinds: $2.2-2.4 billion expected for 2026, compressing margins",
+        "Aggressive insider selling: 95,773 shares worth $87.6 million sold in last 90 days with zero purchases",
+        "Stock up 43.2% in last quarter, creating overbought conditions",
+        "AI data center power generation narrative driving premium valuation",
+        "High beta of 1.6 creates asymmetric downside risk in market corrections"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.41B eps_diluted=5.47 YoY revenue=+22.2% eps_diluted=+30.2%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=48.711 p_b=24.609 net_margin=0.133 roe=0.505"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=985.82 quarterly delta=+43.2%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-20",
+          "excerpt": "Caterpillar tripling its 2030 power generation sales forecast"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "excerpt": "management forecasting full-year tariff expenses ranging between $2.2 billion and $2.4 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "excerpt": "insiders selling 95,773 shares worth approximately $87.6 million over the last 90 days against zero open-market purchases"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "Caterpillar generated approximately $17.4 billion in first-quarter 2026 revenues, representing a 22% year-over-year increase. The company ended the quarter with a record backlog of $62.7 billion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CAT",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4541,
+        "capped_chars": 4541,
+        "raw_tokens": 1135,
+        "capped_tokens": 1135
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241093,
+        "capped_chars": 241093,
+        "raw_tokens": 60273,
+        "capped_tokens": 60273
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1522,
+        "capped_chars": 1522,
+        "raw_tokens": 380,
+        "capped_tokens": 380
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 19019,
+        "capped_chars": 3812,
+        "raw_tokens": 4755,
+        "capped_tokens": 953
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 104405,
+        "capped_chars": 85455,
+        "raw_tokens": 26101,
+        "capped_tokens": 21364
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42815,
+  "started_at": "2026-08-07T03:04:11+00:00"
+}

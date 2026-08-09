@@ -1,0 +1,184 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34448,
+    "tokens_out": 1252,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038204,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.45,
+      "rationale": "Salesforce presents a compelling fundamental picture with strong Q1 FY2027 results: revenue of $11.13B (+13% YoY), GAAP EPS of $2.42 (+52% YoY), and operating cash flow of $6.7B. The company maintains its #1 CRM position with 20% global market share (IDC, 13th consecutive year), and Agentforce has crossed $1.2B in ARR with 205% growth. However, the balance sheet shows a significant increase in debt to $39.28B (from $8.44B) due to the $25B accelerated share repurchase program funded by debt issuance, which increases financial risk. Valuation is attractive at 18x P/E versus a 5 range range             the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the .1B (+14% YoY), with cRPO of $33.6B (+14% providing strong forward visibility. GAAP operating margin expanded to 21.1% and non-GAAP to 34.8%, demonstrating operating leverage. The company's competitive moat is reinforced by its dominant market position, deep enterprise relationships, and expanding AI/data platform (Agentforce + Informatica + Data 360 ARR ~$3.4B).",
+      "key_factors": [
+        "Q1 FY2027 revenue $11.13B (+13% YoY), EPS $2.42 (+52% YoY), operating cash flow $6.7B",
+        "P/E of 18x compressed from 56x a year ago, near the low end of its 16-57x 365-day range",
+        "#1 CRM globally with 20% market share for 13th consecutive year (IDC April 2026)",
+        "Agentforce ARR crossed $1.2B (+205% YoY); combined Agentforce+Data 360 ARR ~$3.4B",
+        "cRPO of $33.6B (+14% YoY) provides strong revenue visibility",
+        "Debt surged to $39.28B from $8.44B to fund $25B accelerated share repurchase, increasing balance sheet risk",
+        "Stock down ~40% from late-2024 peak of $369 despite strong fundamentals, reflecting AI disruption narrative",
+        "Next earnings Aug 26, 2026; Q2 guidance of $11.27-11.35B revenue came in below expectations"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1",
+          "excerpt": "revenue=11.13B net_income=2.11B eps_diluted=2.42 operating_cash_flow=6.70B"
+        },
+        {
+          "source_type": "source_type ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=18.033 p_b=4.226 p_s=3.378 earnings_yield=0.055 net_margin=0.187 roe=0.234 debt_to_equity=1.147"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30",
+          "excerpt": "total_debt=39.28B (up from $8.44B in 2025-04-30)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=166.11; range high=276.80 low=146.32; quarterly delta -10.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-25",
+          "excerpt": "Salesforce maintains a larger revenue base with 13% year-over-year growth in Q1 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "enway.com Salesforce Statistics 2026",
+          "excerpt": "Salesforce held a 20.0% share of the global CRM market in 2025 \u2014 retaining its position as the clear number-one provider for the 13th consecutive year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com Salesforcebeatforce downexcerpt",
+          "excerpt": ","
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "seekingalpha.com Salesforce Isn't Defending The Seat",
+          "excerpt": "Q1 FY27 results highlight robust 13% revenue growth, 34.8% non-GAAP operating margin, and $6.6B in free cash flow, with data/agentic layers growing 3x faster than legacy apps"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com Salesforce Stock Is Down 45%",
+          "excerpt": "Q2 revenue guidance of $11.27 to $11.35 billion came in below analyst expectations; NTM P/E of 10.8x sits well below ServiceNow's 22.6x and Microsoft's roughly 20.1x forward earnings"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3822,
+        "capped_chars": 3822,
+        "raw_tokens": 956,
+        "capped_tokens": 956
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 250108,
+        "capped_chars": 250108,
+        "raw_tokens": 62527,
+        "capped_tokens": 62527
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2314,
+        "capped_chars": 2314,
+        "raw_tokens": 578,
+        "capped_tokens": 578
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 6789,
+        "capped_chars": 1909,
+        "raw_tokens": 1697,
+        "capped_tokens": 477
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98468,
+        "capped_chars": 67643,
+        "raw_tokens": 24618,
+        "capped_tokens": 16911
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 38024,
+  "started_at": "2026-08-07T03:06:02+00:00"
+}

@@ -1,0 +1,191 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29314,
+    "tokens_out": 1343,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033343,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": -1.0,
+      "rationale": "Merck's Q1 2026 results reveal a dramatic deterioration in profitability: net income swung to -$4.24B (EPS -$1.72) from +$5.08B (EPS +$2.01) a year ago, driven by a $9B Cidara acquisition charge. While revenue grew 5% YoY to $16.29B and Keytruda sales rose 12% to $8.03B, the operating margin collapsed to -21.7% from 37.8%. The company's adjusted EPS guidance of $5.04-$5.16 for 2026 implies a significant decline from 2025's $8.93-$8.98, reflecting massive acquisition-related expenses and ongoing headwinds. Valuation is extremely stretched: P/E of 31x is at the top of its 365-day range (10.7-31.4), while ROE has compressed from 36% to 19.5% and net margin from 29.6% to 13.6%. The Keytruda patent cliff in 2028 remains the dominant structural risk, with the company acknowledging $2.5B in projected 2026 headwinds from generic competition and Medicare pricing pressures. Gardasil sales declined 19% in Q1 due to weak China/Japan demand. While the company raised guidance slightly, the stock is priced for perfection at 31x earnings with deteriorating profitability metrics and a looming patent cliff that could erode nearly half of pharmaceutical revenue. No credible near-term catalyst exists to re-rate the stock higher; the Q1 earnings beat was already priced in, and the Terns acquisition adds another $5.8B charge ahead.",
+      "key_factors": [
+        "Q1 2026 net income swung to -$4.24B from +$5.08B YoY due to $9B Cidara acquisition charge",
+        "Operating margin collapsed to -21.7% from 37.8% in Q1 2025",
+        "P/E of 31x is at the top of 365-day range (10.7-31.4), extremely expensive vs own history",
+        "ROE compressed from 36% to 19.5%, net margin from 29.6% to 13.6%",
+        "2026 adjusted EPS guidance of $5.04-$5.16 implies significant decline from 2025's $8.93-$8.98",
+        "Keytruda patent expiration in 2028 threatens ~49% of pharmaceutical revenue",
+        "Gardasil sales declined 19% in Q1 2026 due to lower demand in China and Japan",
+        "$2.5B projected 2026 headwinds from generic competition and Medicare pricing pressures",
+        "Terns acquisition expected to add ~$5.8B charge in Q2 2026",
+        "No credible near-term fundamental catalyst to re-rate stock higher"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "net_income=-4.24B, eps_diluted=-1.72, operating_income=-3.53B, revenue=16.29B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "net_income=5.08B, eps_diluted=2.01, operating_income=5.90B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=31.069, p_b=6.044, roe=0.195, net_margin=0.136, operating_margin=0.177"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-08",
+          "excerpt": "pe_diluted=11.262, p_b=4.061, roe=0.361, net_margin=0.273"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 Benzinga",
+          "excerpt": "Merck reported Q1 2026 results with an adjusted loss of $1.28 per share due to a $3.62 per share charge from the Cidara Therapeutics acquisition. The company raised its 2026 guidance, with adjusted earnings now projected at $5.04-$5.16 per share."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com MRK",
+          "excerpt": "Key risks MRK key risks include [1] the impending 2028 patent expiration of its blockbuster drug, Keytruda, which accounts for a substantial portion of total revenue, and [2] the significant uncertainty that its development pipeline can offset the resulting massive revenue erosion."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com MRK risks",
+          "excerpt": "projected headwinds for 2026 totaling approximately $2.5 billion, stemming from generic competition for drugs like Genevia, Bridian, and Deficit, as well as Medicare pricing pressures under the IRA for Januvia."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "sci-tech-today Q1 2026",
+          "excerpt": "GAAP R&D Expenses: $12.59 billion vs $3.62 billion prior year, +247.8%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "gurufocus Q1 2026",
+          "excerpt": "GARDASIL Sales: $1.1 billion, a 22% decrease due to lower demand in China and Japan."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com Terns",
+          "excerpt": "the outlook did not reflect an anticipated one-time charge of approximately $5.8 billion (or $2.35 per share) from the planned acquisition of Terns Pharmaceuticals expected to close in May"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4573,
+        "capped_chars": 4573,
+        "raw_tokens": 1143,
+        "capped_tokens": 1143
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224777,
+        "capped_chars": 224777,
+        "raw_tokens": 56194,
+        "capped_tokens": 56194
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1941,
+        "capped_chars": 1941,
+        "raw_tokens": 485,
+        "capped_tokens": 485
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 21328,
+        "capped_chars": 6026,
+        "raw_tokens": 5332,
+        "capped_tokens": 1506
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 86792,
+        "capped_chars": 67280,
+        "raw_tokens": 21698,
+        "capped_tokens": 16820
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 54372,
+  "started_at": "2026-08-07T02:58:56+00:00"
+}

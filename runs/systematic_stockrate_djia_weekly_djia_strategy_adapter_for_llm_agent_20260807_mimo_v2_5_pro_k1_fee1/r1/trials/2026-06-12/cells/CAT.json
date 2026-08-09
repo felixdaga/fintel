@@ -1,0 +1,181 @@
+{
+  "cell": "CAT",
+  "symbols": [
+    "CAT"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33317,
+    "tokens_out": 1126,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036695,
+    "basis": "reported"
+  },
+  "views": {
+    "CAT": {
+      "symbol": "CAT",
+      "score": 0.15,
+      "rationale": "Caterpillar's fundamental health is strong: Q1 2026 showed +22.2% YoY revenue growth and +30.2% YoY EPS growth, with a $51B+ order backlog providing multi-year visibility. ROE is high at ~50%, margins are solid (gross 35%, operating 17.7%), and the company just raised its dividend 8% (32nd consecutive year of increases). The services business and AI data center power demand provide structural tailwinds. However, valuation is extremely stretched: P/E has expanded from ~17x a year ago to ~44x currently, P/B from 9.5x to 22.4x, and the stock is up ~112% over the past year. Tariff headwinds of $2.2-2.6B in 2026 are compressing margins (operating margin fell 270bps in Q4 2025), and net income actually declined 17.8% in FY2025 despite revenue growth. The QoQ revenue trajectory was slightly negative (-1.3%) and operating cash flow dropped 50% QoQ. At 44x earnings for a cyclical industrial, the market is pricing in near-perfect execution on AI/data center growth while tariff and macro risks (China weakness, rising rates, geopolitical tensions) remain material. The dividend increase and strong backlog provide modest near-term support, but the valuation leaves little margin of safety.",
+      "key_factors": [
+        "Strong Q1 2026 results: +22.2% YoY revenue, +30.2% YoY EPS growth, beat consensus by $0.89",
+        "Record $51B+ order backlog providing multi-year revenue visibility",
+        "P/E expanded from ~17x (Jun 2025) to ~44x (Jun 2026) \u2014 extreme valuation for a cyclical industrial",
+        "Tariff headwinds of $2.2-2.6B in 2026 compressing operating margins by 270bps+",
+        "FY2025 net income declined 17.8% YoY despite revenue growth \u2014 margin pressure is real",
+        "8% dividend increase (32nd consecutive year) signals management confidence in cash flow",
+        "AI data center power demand and services revenue growth ($28B target) as structural tailwinds",
+        "QoQ operating cash flow declined 50% in Q1 2026 vs Q3 2025",
+        "China macro weakness and rising interest rates pose demand risks for construction equipment",
+        "Insider selling in May 2026 and recent analyst downgrades (UBS, Morgan Stanley) on valuation concerns"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.41B net_income=2.55B eps_diluted=5.47; YoY revenue=+22.2% eps_diluted=+30.2%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=44.353 p_b=22.407 net_margin=0.133 roe=0.505"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-12",
+          "excerpt": "pe_diluted=17.331 p_b=9.53 net_margin=0.157 roe=0.55"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-10",
+          "excerpt": "Caterpillar Inc. announced an 8% increase in its quarterly dividend to $1.63 per share, 32 consecutive years of higher annual dividends"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout.com",
+          "excerpt": "tariffs had an absolute value of $1.8 billion in 2025; expects incremental tariff costs to climb to around $2.6 billion in 2026; operating profit fell 15% to $11.2 billion, net income saw a -17.8% year-over-year decline in FY2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tickeron.com",
+          "excerpt": "$51 billion order backlog positions it strongly for 2026 sales growth; consensus 12-month price target of approximately $778 from 24 analysts"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "excerpt": "Multiple recent analyst downgrades, including from UBS and Morgan Stanley, reflect concerns regarding Caterpillar's stock overvaluation; insider transactions involving the sale of company stock by executives between May 11 and May 13, 2026"
+        },
+        {
+          "source_type": "cash_flow",
+          "source_id": "2026-03-31",
+          "excerpt": "operating_cash_flow=1.87B vs 2025-09-30: operating_cash_flow=3.74B (QoQ -50%)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CAT",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4541,
+        "capped_chars": 4541,
+        "raw_tokens": 1135,
+        "capped_tokens": 1135
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241975,
+        "capped_chars": 241975,
+        "raw_tokens": 60494,
+        "capped_tokens": 60494
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1570,
+        "capped_chars": 1570,
+        "raw_tokens": 392,
+        "capped_tokens": 392
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 18426,
+        "capped_chars": 4511,
+        "raw_tokens": 4606,
+        "capped_tokens": 1128
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 112920,
+        "capped_chars": 93478,
+        "raw_tokens": 28230,
+        "capped_tokens": 23369
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42028,
+  "started_at": "2026-08-07T03:03:17+00:00"
+}

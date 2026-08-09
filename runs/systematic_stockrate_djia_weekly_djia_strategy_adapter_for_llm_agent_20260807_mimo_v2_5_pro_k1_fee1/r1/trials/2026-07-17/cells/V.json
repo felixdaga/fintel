@@ -1,0 +1,173 @@
+{
+  "cell": "V",
+  "symbols": [
+    "V"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31555,
+    "tokens_out": 974,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034477,
+    "basis": "reported"
+  },
+  "views": {
+    "V": {
+      "symbol": "V",
+      "score": 0.35,
+      "rationale": "Visa exhibits strong fundamental health with exceptional profitability (net margin ~52%, ROE ~62%, operating margin ~61%) and consistent revenue growth (+17.1% YoY in Q2 FY26). The business model is asset-light with durable competitive advantages as a global payments duopoly. However, several headwinds temper the score: (1) operating cash flow declined sharply QoQ (-55.6%) and YoY (-35.9%) in the latest quarter, raising questions about cash conversion sustainability; (2) recurring litigation provisions ($707M in Q1 FY26, four consecutive quarters of nine-figure charges) are compressing GAAP net income growth relative to revenue growth; (3) competitive threats from stablecoins, real-time rails, and domestic digital wallets are materializing, with stablecoin card volume up ~200% YoY; (4) the stock has rallied +15.6% over the past quarter to $365, now trading near its 52-week high of $365.14, which limits near-term upside. Valuation appears fair-to-slightly-rich: trailing P/E of ~31x and forward P/E of ~24.5x are reasonable for a high-quality compounder but not cheap given the growth deceleration and litigation overhang. The upcoming Q3 FY26 earnings on July 28 provides a near-term potential catalyst, with analysts expecting EPS of $3.22 (+8.1% YoY, though the beat-and-raise pattern has been consistent. The stock's -2% YTD underperformance versus the S&P 500's +9% suggests some value may exist if earnings surprise positively, but the multiple risks (regulatory, competitive, litigation) warrant caution against aggressive positioning.",
+      "key_factors": [
+        "Exceptional profitability with high margins (net margin ~52%, operating margin ~61%, ROE ~62%)",
+        "Strong revenue growth trajectory (+17.1% YoY, +3.0% QoQ",
+        "Asset-light business model with no credit risk exposure, supporting durable cash generation",
+        "Recurring litigation provisions ($707M in Q1 FY26) compressing GAAP earnings growth despite strong revenue",
+        "Competitive threats from stablecoins (volume up 200% YoY), real-time rails, and domestic digital wallets",
+        "Stock near 52-week high at $365.14 after +15.6% quarterly rally, limiting near-term valuation upside",
+        "Upcoming Q3 FY26 earnings on July 28 as potential near-term catalyst with consensus EPS of $3.22"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q2",
+          "excerpt": "revenue=11.23B net_income=6.02B operating_income=7.23B operating_cash_flow=3.01B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q2 growth",
+          "excerpt": "YoY: revenue=+17.1% net_income=+31.5% operating_cash_flow=-35.9%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "net_margin=0.517 roe=0.624 operating_margin=0.611"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=365.14 quarterly delta +15.6% range high=365.14 low=293.89"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com - Visa's $700B Empire",
+          "excerpt": "Four consecutive quarters of nine-figure litigation charges...$707 million litigation provision...stablecoin card programs growing, with volume up nearly 200% year over year in Q2"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart.com - earnings preview",
+          "excerpt": "analysts expect diluted EPS of $3.22, up 8.1% from $2.98 in the year-ago quarter. V has exceeded Wall Street's EPS estimates in each of the last four quarters"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com - valuation measures",
+          "excerpt": "Trailing P/E 31.17 Forward P/E 24.45 PEG Ratio 1.66"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "V",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4308,
+        "capped_chars": 4308,
+        "raw_tokens": 1077,
+        "capped_tokens": 1077
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 197418,
+        "capped_chars": 197418,
+        "raw_tokens": 49354,
+        "capped_tokens": 49354
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2914,
+        "capped_chars": 2914,
+        "raw_tokens": 728,
+        "capped_tokens": 728
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 35009,
+        "capped_chars": 7257,
+        "raw_tokens": 8752,
+        "capped_tokens": 1814
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 80360,
+        "capped_chars": 54898,
+        "raw_tokens": 20090,
+        "capped_tokens": 13725
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 33638,
+  "started_at": "2026-08-07T03:08:18+00:00"
+}

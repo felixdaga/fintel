@@ -1,0 +1,188 @@
+{
+  "cell": "PG",
+  "symbols": [
+    "PG"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 40344,
+    "tokens_out": 1201,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.043947,
+    "basis": "reported"
+  },
+  "views": {
+    "PG": {
+      "symbol": "PG",
+      "score": 0.05,
+      "rationale": "PG is a high-quality defensive franchise with strong brand portfolio, consistent cash generation, and a 70+ year dividend growth streak. However, the near-term trajectory is soft: Q3 FY2026 showed sequential deceleration (revenue -4.4% QoQ, EPS -8.4% QoQ), and the just-reported Q4 FY2026 (July 29) revealed flat organic sales with volume declines in most segments. FY2027 guidance embeds a $0.56/share earnings headwind from commodity costs, tariffs, FX, and higher interest expense, with Q1 EPS expected to decline 5%+. Valuation at 22.6x P/E is near the low end of its 12-month range (21.7-26.3), but not compellingly cheap given the earnings headwinds. The balance sheet is solid (equity $54.7B, ROE ~30%), and the company returned $15B+ to shareholders in FY2026. News sentiment is broadly positive (mean 0.60) but the Q4 revenue miss and cautious guidance temper enthusiasm. No clear near-term re-rating catalyst exists; the stock is fairly valued for a stable compounder facing cost headwinds.",
+      "key_factors": [
+        "Q4 FY2026 revenue missed estimates ($21.2B vs $21.38B expected); organic sales flat with volume declines in 3 of 5 segments",
+        "FY2027 guidance: 0-3% core EPS growth with $0.56/share headwind from $1B after-tax commodity/tariff costs, FX, interest expense; Q1 EPS expected to decline 5%+",
+        "P/E of 22.6x is near low end of 12-month range (21.7-26.3) but not cheap given decelerating earnings trajectory",
+        "Strong fundamentals: ROE ~30%, net margin 18.6%, $15B+ returned to shareholders in FY2026, 70+ year dividend growth streak",
+        "Tariff exposure significant: $1B pretax hit, 23% of supplier shipments from China, 7,000 job cuts announced",
+        "Sequential quarterly deceleration: Q3 FY2026 revenue -4.4% QoQ, EPS -8.4% QoQ from Q2 levels",
+        "10-year Treasury yield at 4.68% (up ~23bp over 90 days) creates relative valuation headwind for defensive yield plays"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3",
+          "excerpt": "revenue=21.23B eps_diluted=1.63 net_income=3.95B operating_cash_flow=4.04B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31 Q2",
+          "excerpt": "revenue=22.21B eps_diluted=1.78"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=22.632 p_b=6.712 roe=0.297 net_margin=0.186"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-29 Q4 earnings",
+          "excerpt": "Net sales rose 2% to $21.2 billion. organic revenue was unchanged for the quarter, volume having no net impact. Core EPS $1.43 vs $1.41 expected. Revenue $21.2B vs $21.38B expected"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-29 FY2027 guidance",
+          "excerpt": "organic sales growth of 1% to 3% and core earnings per share in a range of $6.89 to $7.11. $0.56 per share drag on core earnings from higher raw materials, energy and transportation costs"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-26 Motley Fool",
+          "excerpt": "company expects fiscal 2026 EPS toward the lower end of guidance. stock down 7% over the past year versus S&P 500 up 16%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-17 Motley Fool",
+          "excerpt": "raised its quarterly dividend by 3% in April, marking its 70th consecutive year of dividend increases. current yield of 2.9%, payout ratio of 63%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "legis1.com tariff exposure",
+          "excerpt": "$1 billion pretax hit from Trump-era tariffs. China accounted for 23% of P&G's supplier shipments. cut 7,000 jobs approximately 15% of nonmanufacturing workforce"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "excerpt": "DGS10=4.68% (up from 4.45 on 2026-05-04); FEDFUNDS=3.63%"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-05-02 to 2026-07-28",
+          "excerpt": "mean=0.602 n_articles=52"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "PG",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3010,
+        "capped_chars": 3010,
+        "raw_tokens": 752,
+        "capped_tokens": 752
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241802,
+        "capped_chars": 241802,
+        "raw_tokens": 60450,
+        "capped_tokens": 60450
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1980,
+        "capped_chars": 1980,
+        "raw_tokens": 495,
+        "capped_tokens": 495
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 20458,
+        "capped_chars": 4159,
+        "raw_tokens": 5114,
+        "capped_tokens": 1040
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 136156,
+        "capped_chars": 104968,
+        "raw_tokens": 34039,
+        "capped_tokens": 26244
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 192839,
+  "started_at": "2026-08-07T03:10:00+00:00"
+}

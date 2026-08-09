@@ -1,0 +1,199 @@
+{
+  "cell": "NKE",
+  "symbols": [
+    "NKE"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30870,
+    "tokens_out": 1168,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034374,
+    "basis": "reported"
+  },
+  "views": {
+    "NKE": {
+      "symbol": "NKE",
+      "score": -1.0,
+      "rationale": "Nike is in a severe fundamental deterioration with no credible near-term catalyst for re-rating. Q3 FY2026 (Feb 2026) showed EPS of $0.35, down 35% YoY from $0.54, with revenue essentially flat at $11.28B. Operating income collapsed to $650M from $844M YoY, and operating cash flow plunged 76% to $430M. The company faces eight consecutive quarters of Greater China declines (down 12% last quarter), loss of market share in running shoes to On and Hoka, and a $1.5B annual tariff headwind. Net margin has compressed from 9.4% to 4.8% over the past year, while ROE has fallen from 32.2% to 16%. The stock trades at 27x diluted P/E on depressed earnings, which is expensive given the trajectory\u2014earnings have declined 14.7% annually over five years. The Q4 FY2026 earnings beat was largely driven by a one-time $986M tariff refund, masking underlying weakness. News sentiment is negative (mean -0.146), and the stock has fallen 75% from its peak with no clear catalyst for recovery. Management's cautious guidance and reduced disclosures (pulling back on gender breakdowns) signal ongoing operational challenges rather than a turnaround.",
+      "key_factors": [
+        "Q3 FY2026 EPS down 35% YoY to $0.35; operating income down 23% to $650M",
+        "Greater China revenue down 12% YoY with eight consecutive quarters of decline",
+        "Net margin compressed from 9.4% to 4.8% over past year; ROE halved from 32.2% to 16%",
+        "Operating cash flow down 76% YoY to $430M in Q3",
+        "Stock at 27x P/E on depressed earnings with no near-term catalyst",
+        "Tariff headwind of ~$1.5B annually; Q4 beat driven by one-time $986M tariff refund",
+        "Market share loss in running shoes to On and Hoka; Converse brand in freefall",
+        "Negative news sentiment (mean -0.146) and 75% decline from all-time high"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-02-28 Q3",
+          "excerpt": "revenue=11.28B eps=0.35 operating_income=650.00M net_income=520.00M operating_cash_flow=430.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-02-28 Q3",
+          "excerpt": "revenue=11.27B eps=0.54 operating_income=844.00M net_income=794.00M operating_cash_flow=1.79B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=26.991 net_margin=0.048 roe=0.16"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-24",
+          "excerpt": "pe_diluted=24.771 net_margin=0.094 roe=0.322"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-13",
+          "excerpt": "Nike rebounded 8% off its $40 decade-low after Q4 earnings, but the beat was largely driven by a one-time $986 million tariff refund"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23",
+          "excerpt": "Nike stock is trading 75% below its previous peak due to weak sales growth and margin pressure"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortune.com 2026-07-22",
+          "excerpt": "Revenue in the region was down 12% last quarter from the same period a year earlier as consumers drifted toward local brands"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortune.com 2026-07-22",
+          "excerpt": "Nike's problems are more deep-seated than previously acknowledged and, consequently, the turnaround is taking much longer than anticipated"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st 2026-07-17",
+          "excerpt": "trailing net profit margin sitting at 6.7% and recent results set against modest revenue growth and an earnings outlook that points to improvement"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "myassignmenthelp.com 2026",
+          "excerpt": "Current estimates suggest that U.S. trade policies alone cost Nike approximately $1.5 billion annually, squeezing margins"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-04-25 to 2026-07-23",
+          "excerpt": "mean=-0.146 n_articles=39"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=40.99 range high=80.17 low=40.00 quarterly delta=-10.3%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NKE",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3749,
+        "capped_chars": 3749,
+        "raw_tokens": 937,
+        "capped_tokens": 937
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224194,
+        "capped_chars": 224194,
+        "raw_tokens": 56048,
+        "capped_tokens": 56048
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1579,
+        "capped_chars": 1579,
+        "raw_tokens": 395,
+        "capped_tokens": 395
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 16051,
+        "capped_chars": 4080,
+        "raw_tokens": 4013,
+        "capped_tokens": 1020
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 73240,
+        "capped_chars": 53792,
+        "raw_tokens": 18310,
+        "capped_tokens": 13449
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37325,
+  "started_at": "2026-08-07T03:09:05+00:00"
+}

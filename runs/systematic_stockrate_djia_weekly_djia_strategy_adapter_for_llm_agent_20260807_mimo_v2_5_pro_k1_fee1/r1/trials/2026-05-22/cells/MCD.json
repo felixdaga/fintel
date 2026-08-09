@@ -1,0 +1,184 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36750,
+    "tokens_out": 1105,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.040065,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's demonstrates solid fundamental health with a dominant franchise model (~95% franchised), industry-leading operating margins (~45-46%), and strong brand moat. Q1 2026 showed 9% YoY revenue growth and 7% EPS growth, with 3.8% global comparable sales growth. However, the stock faces headwinds: QoQ metrics show sequential deceleration (revenue -7.9%, EPS -12.6%), rising oil prices ($100/bbl) pressuring lower-income consumer spending, and the CEO warned conditions could be 'getting a little bit worse.' The stock has declined ~14% over the past quarter from $329 to $284, and at a P/E of ~23 (lowest in nearly two years per Investing.com), valuation appears more reasonable versus its own history. The negative equity position (-$1.29B) reflects the company's leveraged capital structure but is structural to the franchise/real estate model. Near-term catalysts are limited: Q2 faces tough comparisons from the prior-year Minecraft promotion, and management guided for weaker sales. The dividend of $1.86/share (yield ~2.6%) and 49 consecutive years of increases provide support. Overall, a quality defensive franchise at a more attractive valuation than recent history, but macro headwinds and decelerating trends limit upside conviction.",
+      "key_factors": [
+        "Dominant franchise model (~95% franchised) with 45-46% operating margins, well above QSR peers",
+        "Q1 2026 beat: EPS $2.83 vs $2.74 consensus, revenue $6.52B (+9% YoY), 3.8% global comp sales growth",
+        "Stock down ~14% in past quarter; P/E ~23 is lowest in nearly two years, creating relative value vs own history",
+        "Rising oil prices ($100/bbl) and CEO warning on deteriorating consumer spending create near-term demand headwinds",
+        "Q2 guidance cautious: tough YoY comparisons from Minecraft promotion and weakening consumer sentiment",
+        "Negative equity (-$1.29B) is structural to leveraged franchise/real estate model, not a distress signal",
+        "Dividend yield ~2.6% with 49 consecutive years of increases; $1.86/share quarterly dividend declared",
+        "Loyalty program at ~210M active users driving 2.5x visit frequency; digital sales >40% in top markets"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.52B net_income=1.98B eps_diluted=2.78 operating_income=2.95B operating_margin=45.3%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "excerpt": "close=284.18; quarterly delta from 2026-02-20 close=329.23 is -13.7%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-15",
+          "excerpt": "Trading at a P/E ratio of 23 (lowest in nearly two years) with an oversold RSI of 25, analysts see 35% upside potential"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-12",
+          "excerpt": "Rising gas prices are straining lower-income consumers' budgets...McDonald's, despite value positioning, shows cracks as CEO warns of deteriorating economic conditions"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-09",
+          "excerpt": "Capital One's Q1 earnings miss and surging loan-loss provisions signal growing financial strain among average consumers...missed earnings at Papa John's and McDonald's"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-14",
+          "excerpt": "McDonald's reported Q1 2026 EPS of $2.83, beating forecasts by 2.91%, with revenue at $6.52 billion. Stock fell 2.94% post-earnings"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-04",
+          "excerpt": "Rising oil prices ($4.20/gallon) and geopolitical tensions in Iran are dampening consumer spending, forcing fast-food chains to intensify value promotions"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-20",
+          "excerpt": "The recent board decision to declare a quarterly dividend of 1.86 USD per share, payable in mid-June 2026"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "excerpt": "DCOILWTICO=100.2 \u0394=33.84 (50.99%) over 90d; DGS10=4.57 \u0394=0.54 (13.4%) over 90d"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215417,
+        "capped_chars": 215417,
+        "raw_tokens": 53854,
+        "capped_tokens": 53854
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1611,
+        "capped_chars": 1611,
+        "raw_tokens": 403,
+        "capped_tokens": 403
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 16427,
+        "capped_chars": 4184,
+        "raw_tokens": 4107,
+        "capped_tokens": 1046
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 123818,
+        "capped_chars": 101869,
+        "raw_tokens": 30954,
+        "capped_tokens": 25467
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 45261,
+  "started_at": "2026-08-07T03:00:44+00:00"
+}

@@ -1,0 +1,184 @@
+{
+  "cell": "V",
+  "symbols": [
+    "V"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34404,
+    "tokens_out": 1158,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037878,
+    "basis": "reported"
+  },
+  "views": {
+    "V": {
+      "symbol": "V",
+      "score": 0.45,
+      "rationale": "Visa exhibits excellent fundamental health and trajectory: Q2 FY2026 revenue of $11.23B grew 17% YoY (strongest since 2022), net income of $6.02B with 51.7% net margin and 62.4% ROE, operating margin of 61.1%. Revenue has grown sequentially for 5 quarters ($9.51B \u2192 $11.23B). The business is asset-light with near-zero marginal transaction costs, creating a durable competitive moat through network effects (4.5B+ cards, 175M+ merchants). Value-added services grew 27% YoY to 30% of revenue, diversifying beyond core transaction processing. Balance sheet is strong with $35.7B equity and manageable leverage. Operating cash flow of $3.01B in Q2 (seasonally lower than Q1's $6.78B) remains robust. The company authorized a $20B buyback and raised full-year guidance, signaling management confidence. On valuation, the stock at $322.52 is down ~14% from its 52-week high of $375.51, trading at ~25x earnings per news reports \u2014 below its five-year average. The recent pullback reflects regulatory overhang (Credit Card Competition Act) rather than fundamental deterioration. Near-term catalyst: the Q2 earnings beat (EPS $3.31 vs $3.10 consensus, revenue $11.23B vs $10.75B consensus) reported April 28, combined with the $20B buyback authorization, provides a credible re-rating path as the market digests the acceleration from 15% to 17% revenue growth. Risks include regulatory headwinds on interchange fees and rising rates (10Y at 4.47%), but these are well-flagged and the legislative amendment has repeatedly failed to attach to legislation.",
+      "key_factors": [
+        "Q2 FY2026 revenue growth accelerated to 17% YoY \u2014 strongest since 2022",
+        "Net margin 51.7%, ROE 62.4%, operating margin 61.1% \u2014 industry-leading profitability",
+        "Value-added services grew 27% YoY to 30% of revenue, diversifying revenue base",
+        "$20B new share buyback authorization \u2014 management signaling undervaluation",
+        "Stock down ~14% from 52-week high, trading below five-year average P/E multiples",
+        "Regulatory risk (CCCA) is real but legislative progress has stalled repeatedly",
+        "Cross-border volume grew 12% YoY, stablecoin settlement at $7B annualized run rate",
+        "BioCatch acquisition for $2.4B strengthens AI fraud detection capabilities"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q2",
+          "excerpt": "revenue=11.23B net_income=6.02B operating_income=7.23B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q2 growth",
+          "excerpt": "YoY: revenue=+17.1% net_income=+31.5%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "net_margin=0.517 roe=0.624 operating_margin=0.611"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "excerpt": "close=322.52 range high=375.51 low=293.89"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-08",
+          "excerpt": "Visa reported Q2 fiscal 2026 earnings that exceeded expectations with 17% year-over-year revenue growth to $11.23 billion and 20% adjusted EPS growth to $3.31. The company raised full-year guidance and launched a $20 billion share buyback program."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-09",
+          "excerpt": "Visa reported strong Q2 2026 earnings with 20% EPS growth and 17% revenue growth. The key metric is transaction volume, which rose 9% year-over-year. Cross-border volume grew 12%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-29",
+          "excerpt": "Despite this fundamental strength, the market pressured shares, ostensibly due to potential regulatory and legislative headwinds. The White House recently backed a legislative amendment that could introduce incremental competition into the Mastercard/Visa duopoly"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-11",
+          "excerpt": "Visa is recommended as the better choice due to its larger scale, faster revenue growth, stronger network effects, better debt position, and lower valuation compared to Mastercard"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-14",
+          "excerpt": "EPS of $3.31 topping consensus estimates of $3.10 and revenue reaching $11.23 billion against expectations of $10.75 billion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "V",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4308,
+        "capped_chars": 4308,
+        "raw_tokens": 1077,
+        "capped_tokens": 1077
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 197370,
+        "capped_chars": 197370,
+        "raw_tokens": 49342,
+        "capped_tokens": 49342
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2448,
+        "capped_chars": 2448,
+        "raw_tokens": 612,
+        "capped_tokens": 612
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 37065,
+        "capped_chars": 7599,
+        "raw_tokens": 9266,
+        "capped_tokens": 1900
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103592,
+        "capped_chars": 73954,
+        "raw_tokens": 25897,
+        "capped_tokens": 18487
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 46265,
+  "started_at": "2026-08-07T03:00:13+00:00"
+}

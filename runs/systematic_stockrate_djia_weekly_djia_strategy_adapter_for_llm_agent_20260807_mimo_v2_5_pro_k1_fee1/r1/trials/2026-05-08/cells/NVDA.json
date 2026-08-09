@@ -1,0 +1,179 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 71289,
+    "tokens_out": 1370,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.075399,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.35,
+      "rationale": "NVIDIA exhibits exceptional fundamental health: Q3 FY2026 revenue of $57.01B with 22% QoQ growth, 52.4% net margins, 69.8% gross margins, 86.5% ROE, and minimal debt ($8.47B vs $118.9B equity). Operating cash flow of $23.75B in the latest quarter demonstrates massive cash generation. The company dominates AI accelerators with ~80-92% market share and benefits from a $1 trillion committed order pipeline through 2027. However, several factors temper the score: (1) Valuation is elevated \u2014 P/E of 59.9x sits near the top of its 43-63.5x 12-month range, and P/B of 51.8x is also near highs, suggesting the market is paying a premium vs recent history; (2) China market is effectively foreclosed per the 10-K, with 0% official data center GPU share, benefiting competitors; (3) Custom silicon from hyperscalers (Google TPU, AWS Trainium, Broadcom ASICs) represents a growing structural threat, with NVIDIA's share declining from 87% peak in 2024 to 75-80%; (4) Rising 10-year yields (4.41%) and elevated oil ($98/bbl) create macro headwinds for high-multiple stocks. The near-term catalyst is the May 20 Q1 FY2027 earnings report, with management guiding $78B revenue (77% YoY growth) and analysts expecting a beat. Goldman Sachs recently raised estimates by 12%. This credible near-term event provides a modest positive modifier. Net: excellent business quality and trajectory, but valuation near the top of its range and competitive/geopolitical headwinds cap the score at mildly attractive.",
+      "key_factors": [
+        "Exceptional margins: 52.4% net margin, 69.8% gross margin, 86.5% ROE with minimal leverage (0.085 debt/equity)",
+        "Strong revenue trajectory: QoQ revenue growth of 22% to $57.01B, with Q1 FY2027 guidance of $78B (77% YoY acceleration)",
+        "Dominant market position: ~80-92% AI accelerator market share, $1 trillion committed orders through 2027",
+        "Valuation stretched: P/E of 59.9x near top of 43-63.5x 12-month range; P/B of 51.8x near highs vs 39.6-57.9x range",
+        "China market effectively foreclosed per 10-K, benefiting competitors and reducing addressable market",
+        "Custom silicon threat: hyperscaler ASICs (Google TPU, AWS Trainium, Broadcom) growing faster than AMD, with NVIDIA share declining from 87% peak",
+        "May 20 earnings catalyst: Q1 FY2027 report with $78B guidance and analyst expectations for a beat-and-raise quarter",
+        "Macro headwinds: 10-year yield at 4.41%, oil at $98/bbl creating pressure on high-multiple growth stocks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-26 Q3",
+          "excerpt": "revenue=57.01B net_income=31.91B eps_diluted=1.3 gross_profit=41.85B operating_income=36.01B total_assets=161.15B total_equity=118.90B total_debt=8.47B operating_cash_flow=23.75B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=59.916 p_b=51.817 p_s=31.404 net_margin=0.524 roe=0.865 debt_to_equity=0.085 gross_margin=0.698 operating_margin=0.581"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 43.2..63.5 | p_b 39.6..57.9 | net_margin 0.5..0.6 | roe 0.9..0.9"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "siliconanalysts.com",
+          "excerpt": "NVIDIA holds ~80% of the AI accelerator market by revenue with $193.7B in FY2026 data center sales. NVIDIA's share peaked in 2024 at 87% and is slowly giving ground to custom silicon (Broadcom, Google, AWS)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "studocu_10k",
+          "excerpt": "As of the end of fiscal year 2026, we were effectively foreclosed from competing in China's data center computing/compute market, and our effective foreclosure from the China market helped our competitors build larger developer and customer ecosystems to challenge us worldwide."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-07 Benzinga Goldman Sachs",
+          "excerpt": "Goldman Sachs raised Nvidia's revenue and earnings estimates by roughly 12%, suggesting the company's $1 trillion AI revenue target across 2025-2027 may be conservative. The analyst expects a beat-and-raise quarter with Q1 revenue of $80.05B (vs. $78.30B consensus)."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-06 Motley Fool",
+          "excerpt": "Nvidia will report Q1 earnings on May 20 with analysts expecting strong results ($78.8B revenue, $1.77 EPS)."
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "excerpt": "DGS10=4.41% DCOILWTICO=98.38 VIXCLS=17.08"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3875,
+        "capped_chars": 3875,
+        "raw_tokens": 969,
+        "capped_tokens": 969
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241706,
+        "capped_chars": 241706,
+        "raw_tokens": 60426,
+        "capped_tokens": 60426
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4448,
+        "capped_chars": 4448,
+        "raw_tokens": 1112,
+        "capped_tokens": 1112
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 571295,
+        "capped_chars": 136816,
+        "raw_tokens": 142824,
+        "capped_tokens": 34204
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 127406,
+        "capped_chars": 84314,
+        "raw_tokens": 31851,
+        "capped_tokens": 21078
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 58832,
+  "started_at": "2026-08-07T02:59:02+00:00"
+}

@@ -1,0 +1,183 @@
+{
+  "cell": "TRV",
+  "symbols": [
+    "TRV"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32223,
+    "tokens_out": 999,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03522,
+    "basis": "reported"
+  },
+  "views": {
+    "TRV": {
+      "symbol": "TRV",
+      "score": 0.35,
+      "rationale": "TRV presents a solid fundamental picture with strong Q1 2026 results showing excellent underwriting performance across all segments. The company reported net income of $1.71B ($7.78 EPS) vs $395M ($1.70 EPS) in Q1 2025, a 333% YoY increase driven by lower catastrophe losses and higher net investment income. Core ROE reached 19.7% for the quarter with a combined ratio of 88.6%. The balance sheet remains strong with $31.99B equity and $142.31B total assets. Valuation is attractive at 8.6x P/E, near the low end of its 82-month range (8.6-14.9), and P/B of 2.04 is also near the low end of its 1.9-2.3 range. The company returned $2.2B to shareholders in Q1 including $2B in buybacks, raised its dividend 14% to $122/share. The near-term catalyst exists: the Q12026 earnings beat consensus by $0.91 and with strong guidance. However, the stock has flat over the2026 and The main risk is catastrophe loss volatilityity in personal lines, rising interest rates supporting investment income, and potential social inflation pressures on liability lines.",
+      "key_factors": [
+        "Q1 2026 excellent results: $7.78 EPS, 333% YoY growth, 88.6% combined ratio, 19.7% core ROE",
+        "Attractive valuation: 8.6x P/E at low end of 12-month range (8.6-14.9), P/B 2.04 near low of 1.9-2.3",
+        "Strong capital return: $2.2B returned in Q1, 14% dividend increase, $5B buyback authorization",
+        "Solid balance sheet: $31.99B equity, $142.31B total assets, strong statutory surplus",
+        "Near-term catalyst: Q1 beat consensus by $0.91 EPS, analyst consensus $28.04 for full year",
+        "Risks: catastrophe loss volatility, rising interest rates impacting bond portfolio, social inflation",
+        "Second-largest U.S. commercial P&C writer with 6.25% market share, disciplined underwriting culture"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-16 Q1",
+          "excerpt": "revenue=11.92B net_income=1.71B eps_diluted=7.78 operating_income=2.12B total_assets=142.31B total_equity=31.99B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=8.586 p_b=2.041 p_s=1.334 earnings_yield=0.116 net_margin=0.155 roe=0.238"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 8.6..14.9 | p_b 1.9..2.3"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-16 earnings",
+          "excerpt": "net income of $1.711 billion, or $7.78 per diluted share, for the quarter ended March 31, 2026, compared to $395 million, or $1.70 per diluted share, in the prior year quarter"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-16 capital return",
+          "excerpt": "returned more than $2.2 billion of excess capital to our shareholders during the quarter, including $2.0 billion of share repurchases. Board declared a 14% increase in our quarterly cash dividend to $1.25 per share"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-16 combined ratio",
+          "excerpt": "Core return on equity for the quarter was 19.7%, bringing core return on equity over the last four quarters to 22.7%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-05 market share",
+          "excerpt": "Travelers Companies Inc held a 6.25% market share in its sector for Q1 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "TRV",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 10,
+      "empty": 1
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4405,
+        "capped_chars": 4405,
+        "raw_tokens": 1101,
+        "capped_tokens": 1101
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221338,
+        "capped_chars": 221338,
+        "raw_tokens": 55334,
+        "capped_tokens": 55334
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 411,
+        "capped_chars": 411,
+        "raw_tokens": 103,
+        "capped_tokens": 103
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 0,
+        "capped_chars": 0,
+        "raw_tokens": 0,
+        "capped_tokens": 0
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 151031,
+        "capped_chars": 104109,
+        "raw_tokens": 37758,
+        "capped_tokens": 26027
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 10,
+        "empty": 1
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [
+        {
+          "kind": "news",
+          "query": {
+            "symbol": "TRV",
+            "lookback_days": 14
+          }
+        }
+      ],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42679,
+  "started_at": "2026-08-07T02:59:06+00:00"
+}

@@ -1,0 +1,191 @@
+{
+  "cell": "WMT",
+  "symbols": [
+    "WMT"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29907,
+    "tokens_out": 1374,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032941,
+    "basis": "reported"
+  },
+  "views": {
+    "WMT": {
+      "symbol": "WMT",
+      "score": 0.15,
+      "rationale": "Walmart is the world's largest retailer with dominant scale, strong e-commerce momentum (24% YoY growth, $150B+ in FY2026), and a growing high-margin advertising business (46% growth). However, the investment case is tempered by several factors. Fundamentally, Q1 FY2027 showed solid YoY growth (revenue +7.3%, EPS +19.6%) but QoQ metrics were soft (EPS -13%, operating cash flow -47.9%), and the TTM picture is incomplete due to fiscal calendar gaps. Net margins remain structurally thin at ~3.1-3.2%, and operating cash flow has been volatile. The balance sheet is healthy with $100.7B equity. On valuation, the stock has pulled back meaningfully from its May 2026 highs (~$135 to $112, a ~17% decline), and the P/E has compressed from ~54x to ~39x \u2014 now near the low end of its 365-day range (37.6-55.4). However, 39x P/E for a ~3% net margin retailer with mid-single-digit revenue growth is still a significant premium to the broader market and retail peers (~18-25x). The tailored fair P/E analysis from Simply Wall St suggests ~38.4x is roughly fair, implying limited upside from current levels. Near-term catalysts are mixed: Q2 earnings on Aug 20 could re-rate the stock, and JPMorgan has it as a top idea with a $137 target (~25% upside). However, Cleveland Research flagged slowing U.S. comparable sales, and the July 1 sell-off (-4.5%) on that report shows the stock is sensitive to any negative data points at this valuation. Chinese food safety regulatory scrutiny on Sam's Club adds a modest risk. The stock is mildly attractive \u2014 a quality franchise at a more reasonable valuation than recent history, but not cheap enough to be compelling given thin margins and macro headwinds (rising 10Y yields at 4.54%, elevated oil prices until recent decline, consumer spending caution).",
+      "key_factors": [
+        "Dominant global retail scale with $713B+ revenue, 10,900+ stores, and 280M weekly shoppers",
+        "Strong e-commerce momentum: 24% YoY growth to $150B+ in FY2026, 15 consecutive quarters of 10%+ growth",
+        "High-margin advertising business (Walmart Connect) growing 46% to ~$6.4B, diversifying profit streams",
+        "P/E compressed from ~54x (May 2026) to ~39x, near low end of 365-day range (37.6-55.4)",
+        "Structurally thin net margins (~3.1%) limit earnings leverage and buffer against cost inflation",
+        "Q1 FY2027 QoQ softness: EPS -13%, operating cash flow -47.9% from Q3 FY2026",
+        "Cleveland Research flagged slowing U.S. comparable sales, triggering 4.5% sell-off on July 1",
+        "Chinese food safety regulatory scrutiny on Sam's Club amid aggressive China expansion",
+        "Q2 earnings on Aug 20 (consensus $0.74 EPS, ~$187B revenue) as near-term catalyst",
+        "Still trading at ~39x P/E vs retail peer average ~24.6x, premium requires continued execution"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1",
+          "excerpt": "revenue=177.75B net_income=5.49B eps_diluted=0.67 gross_profit=44.69B operating_income=7.49B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=38.82 p_b=8.915 p_s=1.238 earnings_yield=0.026 net_margin=0.032 roe=0.23"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 37.6..55.4 | p_b 8.4..12.0"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "excerpt": "close=112.21 quarterly delta (~63 trading days, from 2026-04-08): -11.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-01",
+          "excerpt": "Walmart shares fell 4.5% after Cleveland Research issued a negative note citing slower same-store sales"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st 2026-07-02",
+          "excerpt": "Walmart currently trades at about 38.1x earnings, well above the Consumer Retailing industry average of 18.5x and also above the peer group average of 24.6x"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingview 2026-07-03",
+          "excerpt": "JPMorgan kept Walmart (WMT) as a top idea ahead of Aug 20 earnings, noting ~20% drop since mid-May and projecting $0.74 EPS on ~$187B revenue; $137 price target (~25% above)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks 2026-06-15",
+          "excerpt": "China's market regulator has ordered strict measures by Walmart supermarket chain Sam's Club to eliminate food safety risks"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "grabon.com 2026-07-03",
+          "excerpt": "Walmart's global advertising business grew 46% to nearly $6.4 billion in FY2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "morningstar",
+          "excerpt": "Walmart's leading 31% online grocery share and 20% digital penetration underscore the effective conversion of its store scale into digital traction"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "WMT",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4568,
+        "capped_chars": 4568,
+        "raw_tokens": 1142,
+        "capped_tokens": 1142
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 243200,
+        "capped_chars": 243200,
+        "raw_tokens": 60800,
+        "capped_tokens": 60800
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3301,
+        "capped_chars": 3301,
+        "raw_tokens": 825,
+        "capped_tokens": 825
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 52975,
+        "capped_chars": 12558,
+        "raw_tokens": 13244,
+        "capped_tokens": 3140
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 76975,
+        "capped_chars": 53259,
+        "raw_tokens": 19244,
+        "capped_tokens": 13315
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 262257,
+  "started_at": "2026-08-07T03:07:30+00:00"
+}

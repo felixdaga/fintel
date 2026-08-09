@@ -1,0 +1,184 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34866,
+    "tokens_out": 1266,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038664,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's is a structurally sound, heavily franchised business (~95% franchised) with strong brand, global scale, and a 49-year dividend growth streak. Q1 2026 showed solid YoY growth (revenue +9.4%, EPS +6.9%), and operating margins remain robust at ~45%. However, the near-term trajectory is softening: QoQ revenue declined 7.9% and EPS fell 12.6% in Q1, management has warned of 'meaningful deceleration' in Q2 comparable sales, and lower-income consumer traffic is declining. The stock has fallen ~21% from its 52-week high of $341.75 to $268.44, trading at a forward P/E of ~21x vs. the industry's ~23x, suggesting moderate undervaluation vs. peers. The balance sheet carries negative equity (-$1.29B) reflecting heavy leverage typical of the franchise/REIT-like model, but operating cash flow remains strong ($2.41B in Q1). The upcoming Q2 earnings on Aug 4, 2026 is a near-term catalyst, though expectations are tempered (EPS ~$3.34, comp sales deceleration). News sentiment is mixed-to-slightly-positive (mean 0.24). Macro backdrop is neutral-to-cautious: 10Y yields rising to 4.68%, oil prices2, VIX elevated at 17. The combination of a durable franchise, moderate valuation discount, and upcoming earnings event supports a mildly positive but not compelling score.",
+      "key_factors": [
+        "Structural franchise model (~95% franchised) generating high-margin recurring rent/royalty income with ~45% operating margin",
+        "YoY growth solid in Q1 2026: revenue +9.4%, EPS +6.9%, but QoQ trajectory negative (rev -7.9%, EPS -12.6%)",
+        "Management warned of 'meaningful deceleration' in Q2 comparable sales; lower-income consumer traffic declining",
+        "Stock down ~21% from 52-week high, trading at forward P/E ~21x vs industry ~23x \u2014 moderate discount",
+        "Negative equity (-$1.29B) reflects leveraged capital structure but strong operating cash flow ($2.41B Q1)",
+        "49-year dividend growth streak approaching Dividend King status; current yield ~2.77%",
+        "Q2 earnings on Aug 4, 2026 is a dated near-term catalyst with tempered expectations (EPS ~$3.34)",
+        "Macro headwinds: rising 10Y yields (4.68%), elevated oil ($85), consumer spending pressure"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.52B net_income=1.98B eps_diluted=2.78 operating_income=2.95B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=60.04B total_liabilities=61.32B total_equity=-1.29B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 cash flow",
+          "excerpt": "operating_cash_flow=2.41B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "excerpt": "close=268.44, range high=341.75 low=260.96"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-30 Motley Fool",
+          "excerpt": "McDonald's stock has declined over 12% year-to-date...expecting a meaningful deceleration in Q2 2026. Forward P/E of ~21."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com MCD",
+          "excerpt": "MCD is trading at a forward 12-month price-to-earnings ratio of 20.28, below the Zacks industry multiple of 23.01. This represents a discount of nearly 12% to the industry."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tickeron.com earnings preview",
+          "excerpt": "Analysts expect McDonald's to report Q2 2026 earnings per share of approximately $3.34...Management has signaled a meaningful deceleration in comparable sales from Q1's 3.9% pace."
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-05-04 to 2026-07-30",
+          "excerpt": "mean=0.237, n_articles=32"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "excerpt": "DGS10=4.68%, DCOILWTICO=85.15, VIXCLS=17.09"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215503,
+        "capped_chars": 215503,
+        "raw_tokens": 53876,
+        "capped_tokens": 53876
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1293,
+        "capped_chars": 1293,
+        "raw_tokens": 323,
+        "capped_tokens": 323
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 5671,
+        "capped_chars": 1886,
+        "raw_tokens": 1418,
+        "capped_tokens": 472
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 110943,
+        "capped_chars": 84514,
+        "raw_tokens": 27737,
+        "capped_tokens": 21128
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 43539,
+  "started_at": "2026-08-07T03:09:52+00:00"
+}

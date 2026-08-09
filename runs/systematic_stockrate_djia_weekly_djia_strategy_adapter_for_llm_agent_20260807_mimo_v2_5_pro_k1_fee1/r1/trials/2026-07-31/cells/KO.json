@@ -1,0 +1,173 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 39565,
+    "tokens_out": 968,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.042469,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.25,
+      "rationale": "Coca-Cola delivered a strong Q2 2026 with revenue of $13.38B (+7% YoY), adjusted EPS of $0.97 beating consensus of $0.93, and raised full-year guidance to 9-10% EPS growth and ~5% organic revenue growth. The company's asset-light concentrate model continues to generate high margins (35.6% comparable operating margin) and strong cash flows, with a 64-year dividend increase streak reinforcing its defensive franchise. However, the stock is trading near all-time highs at a P/E of ~27.7x, which is at the upper end of its 1-year range (23.2-31.2x) and represents a premium for a company with mid-single-digit organic growth. The IRS tax dispute with ~$14B potential exposure is a material overhang, and the fairlife ransomware incident adds operational risk. While the Q2 beat and guidance raise provide a near-term positive catalyst, the elevated valuation limits upside from here, making the risk-reward balanced rather than compelling.",
+      "key_factors": [
+        "Strong Q2 2026 results: revenue $13.38B (+7% YoY), adjusted EPS $0.97 vs consensus $0.93, raised full-year guidance to 9-10% EPS growth",
+        "Asset-light concentrate model with 35.6% comparable operating margin and 64-year dividend increase streak",
+        "Stock trading near all-time highs at P/E ~27.7x, at upper end of 1-year range (23.2-31.2x), premium for mid-single-digit growth",
+        "IRS tax dispute with ~$14B potential aggregate exposure for 2010-2025 is a material overhang",
+        "Fairlife ransomware incident (July 16, 2026) temporarily suspended US production, adding operational risk",
+        "World Cup marketing drove 5% unit case volume growth, strongest Coca-Cola trademark quarter in 17 years ex-COVID",
+        "Global value share gains in NARTD beverages across most segments"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-07-03 Q2",
+          "excerpt": "revenue=13.38B net_income=4.44B eps_diluted=1.03 gross_profit=8.41B operating_income=4.67B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-28 CNBC",
+          "excerpt": "Adjusted earnings per share: 97 cents, vs. expected 93 cents; Revenue: $13.38 billion, vs. $13.16 billion expected. Coke is now projecting comparable earnings per share growth of 9% to 10%, up from its prior forecast of 8% to 9%."
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=27.713 p_b=9.961 net_margin=0.282 roe=0.359"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 23.2..31.2 | p_b 9.4..12.6"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-30 StockTitan",
+          "excerpt": "Net income reached $4,425M on Q2 2026 revenue of $13,380M. Coca-Cola also details an estimated $14B potential tax exposure from its long-running IRS dispute."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16 ComplianceHub",
+          "excerpt": "On July 16, 2026, The Coca-Cola Company disclosed that its dairy subsidiary fairlife, LLC had identified unauthorized access by a third party to a portion of its systems, including production-related systems, in connection with a ransomware event. US production operations at fairlife were temporarily suspended."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-28 Coca-Cola Company",
+          "excerpt": "Global Unit Case Volume Grew 5%. Comparable Operating Margin (Non-GAAP) was 35.6% versus 34.7% in the Prior Year. The company gained value share in total nonalcoholic ready-to-drink beverages."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3797,
+        "capped_chars": 3797,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223405,
+        "capped_chars": 223405,
+        "raw_tokens": 55851,
+        "capped_tokens": 55851
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 758,
+        "capped_chars": 758,
+        "raw_tokens": 190,
+        "capped_tokens": 190
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2957,
+        "capped_chars": 2957,
+        "raw_tokens": 739,
+        "capped_tokens": 739
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 56414,
+        "capped_chars": 13048,
+        "raw_tokens": 14104,
+        "capped_tokens": 3262
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 119515,
+        "capped_chars": 93104,
+        "raw_tokens": 29878,
+        "capped_tokens": 23277
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 27660,
+  "started_at": "2026-08-07T03:09:50+00:00"
+}

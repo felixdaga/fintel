@@ -1,0 +1,189 @@
+{
+  "cell": "PG",
+  "symbols": [
+    "PG"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32735,
+    "tokens_out": 1299,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036632,
+    "basis": "reported"
+  },
+  "views": {
+    "PG": {
+      "symbol": "PG",
+      "score": 0.15,
+      "rationale": "PG is a high-quality defensive franchise with durable brands, strong cash generation, and a 70-year dividend streak, but the near-term picture is mixed. Q3 FY26 showed solid YoY growth (revenue +7.4%, EPS +5.8%) and beat consensus, yet sequential trends are softening \u2014 QoQ revenue -4.4%, EPS -8.4%, operating cash flow -18.6% \u2014 and the company faces $1B in after-tax cost headwinds from commodities/logistics plus ~$400M tariff impact, with management guiding FY26 results toward the lower end of the $6.83-$7.09 EPS range. Valuation has compressed meaningfully: P/E of 22.1x sits at the low end of its 12-month range (21.7-26.3x) and P/B of 6.56x is near the bottom of its 6.4-7.8x range, suggesting the market has already priced in much of the cost headwind. The stock is down ~8.6% over the past quarter and ~14.7% from its 52-week high. A restructuring plan targeting 7,000 job cuts and $1.5B in COGS savings by FY2027 provides a medium-term margin recovery path. However, sluggish organic growth (~2-3%), rising interest rates (10Y at 4.47%), and elevated oil prices ($97/bbl) create a challenging backdrop for a premium-valued staples name. The near-term catalyst is limited \u2014 the next earnings event is ~3 months away, and no dated fundamental catalyst is visible. Net: solid franchise at a more reasonable price, but trajectory is decelerating and cost headwinds are real, warranting only a mildly positive score.",
+      "key_factors": [
+        "Q3 FY26 beat on EPS ($1.59 vs $1.56 est) with revenue +7.4% YoY, but QoQ deceleration in revenue (-4.4%) and EPS (-8.4%)",
+        "$1B after-tax cost headwind from commodities/logistics plus ~$400M tariff impact; FY26 EPS guided toward lower end of $6.83-$7.09",
+        "P/E of 22.1x at low end of 12-month range (21.7-26.3x); P/B of 6.56x near bottom of 6.4-7.8x range \u2014 valuation has compressed",
+        "Stock down ~14.7% from 52-week high of $170.99, -8.6% over past quarter",
+        "Restructuring plan: 7,000 job cuts and $1.5B COGS savings by FY2027 could support margin recovery",
+        "Organic sales growth of ~2-3% is sluggish for the sector; rising rates and oil prices add macro headwinds",
+        "70-year dividend streak with ~3% yield and strong FCF generation ($14.6B adjusted FCF in FY25) underpin defensive appeal",
+        "No near-term dated fundamental catalyst visible; next earnings ~3 months away"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-24 Q3",
+          "excerpt": "revenue=21.23B net_income=3.95B eps_diluted=1.63 gross_profit=10.51B operating_income=4.58B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-24 Q3 growth",
+          "excerpt": "QoQ: revenue=-4.4% eps_diluted=-8.4% net_income=-8.8% | YoY: revenue=+7.4% eps_diluted=+5.8%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=22.132 p_b=6.564 p_s=4.109 earnings_yield=0.045 net_margin=0.186 roe=0.297"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 21.7..26.3 | p_b 6.4..7.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=140.78 | range over ~251 bars: high=167.25 low=137.62 | quarterly delta: -8.6%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-11 ad-hoc-news",
+          "excerpt": "$1 billion after-tax headwind from elevated commodity, logistics, and labor costs"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-23 finance.yahoo",
+          "excerpt": "tariff headwinds of about US$400 million, and more cautious external earnings expectations"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-23 finance.yahoo",
+          "excerpt": "Portfolio/Supply Chain Productivity Plan targets $1.5B in cost-of-goods-saved and 7,000 role reductions by end of FY2027"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-29 alphastreet",
+          "excerpt": "Operating cash flow was $17.8 billion, and adjusted free cash flow was $14.6 billion. The company also repurchased $6.5 billion of shares in fiscal 2025"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-04",
+          "excerpt": "DGS10=4.47% DCOILWTICO=96.83 VIXCLS=15.4"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "PG",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3763,
+        "capped_chars": 3763,
+        "raw_tokens": 941,
+        "capped_tokens": 941
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 238278,
+        "capped_chars": 238278,
+        "raw_tokens": 59570,
+        "capped_tokens": 59570
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2307,
+        "capped_chars": 2307,
+        "raw_tokens": 577,
+        "capped_tokens": 577
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 28305,
+        "capped_chars": 7185,
+        "raw_tokens": 7076,
+        "capped_tokens": 1796
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 105489,
+        "capped_chars": 84025,
+        "raw_tokens": 26372,
+        "capped_tokens": 21005
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 39692,
+  "started_at": "2026-08-07T03:02:53+00:00"
+}

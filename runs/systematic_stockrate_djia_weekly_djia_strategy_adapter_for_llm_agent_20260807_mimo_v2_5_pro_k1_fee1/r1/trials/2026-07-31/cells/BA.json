@@ -1,0 +1,179 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 38398,
+    "tokens_out": 1065,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041593,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing's fundamental health and trajectory are deeply impaired. The company continues to report net losses (Q2 2026: -$428M, EPS -$0.67), with Commercial Airplanes still operating at a -2.7% margin and Defense swinging to a loss on VC-25B charges. The balance sheet is severely strained: total equity of only $6.12B against $45.60B in debt (debt-to-equity 7.46x), leaving minimal financial flexibility. While revenue grew 8% YoY and free cash flow turned positive at $631M, these improvements are insufficient to offset the structural profitability deficit. Valuation is extremely stretched at a P/E of 71.4x and P/B of 28.6x for a company that is still loss-making on a GAAP basis, with net margins of just 2.6% and ROE of 0.4%. The stock has declined ~1.4% over the past quarter and sits well below its 52-week high of $254.35. Near-term catalysts are absent or negative: a $700M DOJ payment is scheduled for Q3 2026, 777X certification faces potential delays into the late 2020s, and supply chain bottlenecks continue to constrain 737 MAX production. The FAA's restoration of self-certification authority is a modest positive but does not address the core profitability and balance sheet challenges. All three pillars\u2014fundamentals, valuation, and catalysts\u2014are aligned negatively.",
+      "key_factors": [
+        "Persistent GAAP net losses with Q2 2026 EPS of -$0.67 and Commercial Airplanes operating margin of -2.7%",
+        "Severely strained balance sheet: $6.12B equity vs $45.60B debt, debt-to-equity of 7.46x",
+        "Extreme valuation at P/E 71.4x and P/B 28.6x for a loss-making company with 2.6% net margin",
+        "$700M DOJ payment scheduled for Q3 2026 creating near-term cash flow headwind",
+        "777X certification delays potentially extending into late 2020s per regulatory scrutiny reports",
+        "Supply chain bottlenecks constraining 737 MAX production ramp despite FAA-imposed caps",
+        "Defense segment swung to operating loss (-0.2% margin) due to $280M VC-25B charge",
+        "Record backlog of $715B provides long-term visibility but conversion to profitable delivery remains uncertain"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-06-30 Q2",
+          "excerpt": "revenue=24.56B net_income=-428.00M eps_diluted=-0.67 operating_income=156.00M total_equity=6.12B total_debt=45.60B operating_cash_flow=1.36B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=71.4 p_b=28.56 p_s=1.858 net_margin=0.026 roe=0.4 debt_to_equity=7.456"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "excerpt": "close=220.90 range high=254.35 low=176.77 quarterly delta=-1.4%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-29",
+          "excerpt": "U.S. stock markets fell sharply on Wednesday amid renewed Middle East geopolitical tensions"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com Jul 13",
+          "excerpt": "Regulatory scrutiny may delay 777X certification into the late 2020s. Supply chain bottlenecks continue to hinder 737 MAX production and cash flow."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investors.boeing.com Q2 2026",
+          "excerpt": "A $700 million DOJ payment is scheduled for the third quarter of 2026, which will impact near-term cash flow levels"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simpleflying.com Jul 2026",
+          "excerpt": "Boeing will continue to work under FAA oversight... Boeing will still face the government-imposed production cap of 47 MAX per month"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com Q2 2026 slides",
+          "excerpt": "Commercial Airplanes generated revenue of $11.8 billion, up 8% from $10.9 billion. Operating margin improved to negative 2.7% from negative 5.1%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3829,
+        "capped_chars": 3829,
+        "raw_tokens": 957,
+        "capped_tokens": 957
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 219096,
+        "capped_chars": 219096,
+        "raw_tokens": 54774,
+        "capped_tokens": 54774
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2303,
+        "capped_chars": 2303,
+        "raw_tokens": 576,
+        "capped_tokens": 576
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 22744,
+        "capped_chars": 4491,
+        "raw_tokens": 5686,
+        "capped_tokens": 1123
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 114505,
+        "capped_chars": 91902,
+        "raw_tokens": 28626,
+        "capped_tokens": 22974
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 33068,
+  "started_at": "2026-08-07T03:09:23+00:00"
+}

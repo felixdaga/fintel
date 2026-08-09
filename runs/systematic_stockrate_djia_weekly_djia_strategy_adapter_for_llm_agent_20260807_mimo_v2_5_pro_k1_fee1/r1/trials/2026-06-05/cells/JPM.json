@@ -1,0 +1,171 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37136,
+    "tokens_out": 1001,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.040139,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "rationale": "JPMorgan Chase demonstrates strong fundamental health and positive trajectory. Q1 2026 results showed revenue of $49.84B (+10% YoY) and EPS of $5.94 (+17.2% YoY), with a net margin of 31.5% and ROE of 16.2%. The bank maintains a fortress balance sheet with $364B in equity against $4.9T in assets. Valuation is attractive versus its own history: the current P/E of 14.36 is near the low end of its 13.7-17.8 range over the past year, and P/B of 2.32 is at the bottom of its 2.2-2.8 range. The bank's competitive position is dominant (#1 in US deposits, #1 in global investment banking fees for 17 consecutive years, $7.1T in AUM). A credible near-term catalyst exists: the SpaceX IPO roadshow led by Jamie Dimon could drive significant investment banking fees, and Fed stress test results in late June could unlock additional capital returns. However, headwinds include rising expenses (guidance raised to ~$106B), regulatory costs, and a steepening yield curve that could pressure NII. The score reflects solid fundamentals, reasonable valuation, and a modest catalyst boost.",
+      "key_factors": [
+        "Strong Q1 2026 earnings: revenue $49.84B (+10% YoY), EPS $5.94 (+17.2% YoY)",
+        "Attractive valuation: P/E 14.36 near low end of 13.7-17.8 range; P/B 2.32 at bottom of 2.2-2.8 range",
+        "Dominant competitive position: #1 US deposits, #1 global IB fees for 17 years, $7.1T AUM",
+        "Near-term catalyst: SpaceX IPO roadshow and Fed stress test results in late June",
+        "Headwinds: rising expenses (~$106B guidance), regulatory costs, yield curve steepening"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=49.84B net_income=16.49B eps_diluted=5.94"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=14.358 p_b=2.323 net_margin=0.315 roe=0.162"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 13.7..17.8 | p_b 2.2..2.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "SpaceX's upcoming IPO, valued at approximately $1.8 trillion with an expected $75 billion raise, is shaping up as the largest IPO in market history. JPMorgan is conducting a nationwide client roadshow with CEO Jamie Dimon"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-03",
+          "excerpt": "The Federal Reserve will release bank stress test results in late June 2026. Unlike last year when buffers decreased significantly, the Fed has frozen stress capital buffers for 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-27",
+          "excerpt": "JPMorgan Chase stock fell over 2% on Wednesday following CEO Jamie Dimon's remarks... The bank also announced higher-than-expected annual expenses of nearly $106 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "strategy_analysis",
+          "excerpt": "Holds the #1 retail deposit market share, is the #1 credit card issuer in the U.S., and has ranked #1 in global investment banking fees for 17 consecutive years"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 239538,
+        "capped_chars": 239538,
+        "raw_tokens": 59884,
+        "capped_tokens": 59884
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3522,
+        "capped_chars": 3522,
+        "raw_tokens": 880,
+        "capped_tokens": 880
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 105692,
+        "capped_chars": 11843,
+        "raw_tokens": 26423,
+        "capped_tokens": 2961
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108816,
+        "capped_chars": 87764,
+        "raw_tokens": 27204,
+        "capped_tokens": 21940
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 44959,
+  "started_at": "2026-08-07T03:02:31+00:00"
+}

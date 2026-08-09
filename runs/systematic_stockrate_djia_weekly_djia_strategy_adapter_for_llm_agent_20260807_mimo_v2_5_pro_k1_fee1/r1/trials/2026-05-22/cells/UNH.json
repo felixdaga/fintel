@@ -1,0 +1,191 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32087,
+    "tokens_out": 1334,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036089,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": 0.15,
+      "rationale": "UNH presents a mixed but slightly positive fundamental picture. Q1 2026 results showed a solid earnings beat ($7.23 adjusted EPS vs $6.57 expected) with revenue up 2% YoY to $111.7B and an improved medical loss ratio of 83.9% (down from 84.8%). Operating cash flow was strong at $8.9B (1.4x net income). However, the trajectory is complicated: the company is deliberately shedding ~1.3M Medicare Advantage members to protect margins, Optum revenue was flat-to-down, and net income was essentially flat YoY ($6.48B vs $6.47B). The balance sheet is sound with $103.9B equity and debt-to-capital improving to 42.9% toward a 40% target. On valuation, the stock has surged +31.9% in the last quarter to $382.48, pushing the P/E to 27.2x \u2014 the highest in the 12-month window (range 9.5-28.5) and well above the ~12-16x range that prevailed for most of the past year. P/B at 3.35x is also near the top of its 2.2-3.5 range. This means the market has already priced in much of the turnaround narrative. The raised FY2026 guidance to >$18.25 EPS provides some support, but at 27x that implies ~21x forward \u2014 no longer cheap. Berkshire Hathaway's full exit of its 5M share position is a negative sentiment signal, though not a fundamental catalyst. The 2027 Medicare Advantage payment rate increase of 2.48% (vs 0.09% proposed) is a genuine tailwind, but it's a 2027 story. Near-term catalysts are limited \u2014 the Q1 beat is already priced in, and the next earnings event is months away. Regulatory risks (DOJ investigations, PBM reform) and medical cost inflation from GLP-1 drugs remain meaningful headwinds. Net: decent franchise with improving execution, but valuation has run well ahead of the fundamental improvement, leaving a mildly positive but not compelling risk-reward.",
+      "key_factors": [
+        "Q1 2026 earnings beat: $7.23 adjusted EPS vs $6.57 expected, revenue $111.7B (+2% YoY)",
+        "Medical loss ratio improved to 83.9% from 84.8%, reflecting better cost management",
+        "P/E expanded to 27.2x from ~12-16x range over past year \u2014 near top of 9.5-28.5 window, pricing in turnaround",
+        "Deliberate shedding of ~1.3M Medicare Advantage members to protect margins \u2014 volume-for-profitability tradeoff",
+        "Berkshire Hathaway fully exited 5M share position, signaling institutional caution on risk-reward",
+        "FY2026 guidance raised to >$18.25 adjusted EPS (from >$17.75), but already reflected in price",
+        "2027 Medicare Advantage payment rate increase of 2.48% is a genuine tailwind but a 2027 story",
+        "DOJ investigations, PBM reform risk, and GLP-1 drug cost inflation remain regulatory headwinds",
+        "Operating cash flow strong at $8.9B (1.4x net income); debt-to-capital improving to 42.9% toward 40% target",
+        "$2B accelerated buyback program signals management confidence in intrinsic value discount"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=111.72B net_income=6.48B eps_diluted=6.9 operating_cash_flow=8.91B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-18 Benzinga",
+          "excerpt": "UnitedHealth reported strong Q1 2026 results with adjusted earnings of $7.23 (beating $6.58 estimate) and revenues of $111.721 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-18 Benzinga",
+          "excerpt": "Berkshire Hathaway disclosed it liquidated its entire 5 million share position in the healthcare company, held for less than a year"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=27.162 p_b=3.35"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-22",
+          "excerpt": "pe_diluted=11.874 p_b=2.702"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "excerpt": "close=382.48 quarterly delta +31.9%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-13 Motley Fool",
+          "excerpt": "The company cut Medicare Advantage membership by 1.3 million to address margin pressures from payment-cost disconnects"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-21 ad-hoc-news",
+          "excerpt": "UnitedHealth raised its profit outlook for 2026 to adjusted earnings per share of greater than $18.25"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-21 bitget",
+          "excerpt": "government finalized a 2027 Medicare Advantage payment rate increase of 2.48%, which was substantially higher than the initially proposed 0.09%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-21 healthworksai",
+          "excerpt": "Management accelerated share buybacks to at least $2B by end of Q2 2026 (originally guided for H2). The explicit rationale: stock price represents a deep intrinsic value discount"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4536,
+        "capped_chars": 4536,
+        "raw_tokens": 1134,
+        "capped_tokens": 1134
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225369,
+        "capped_chars": 225369,
+        "raw_tokens": 56342,
+        "capped_tokens": 56342
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1519,
+        "capped_chars": 1519,
+        "raw_tokens": 380,
+        "capped_tokens": 380
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 39229,
+        "capped_chars": 7090,
+        "raw_tokens": 9807,
+        "capped_tokens": 1772
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 78762,
+        "capped_chars": 59968,
+        "raw_tokens": 19691,
+        "capped_tokens": 14993
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 53299,
+  "started_at": "2026-08-07T03:00:59+00:00"
+}

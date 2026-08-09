@@ -1,0 +1,199 @@
+{
+  "cell": "AMZN",
+  "symbols": [
+    "AMZN"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 56068,
+    "tokens_out": 1248,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.059812,
+    "basis": "reported"
+  },
+  "views": {
+    "AMZN": {
+      "symbol": "AMZN",
+      "score": 0.35,
+      "rationale": "Amazon presents a solid fundamental case with strong trajectory. Q3 2025 showed accelerating revenue ($180.2B, +7.4% QoQ) and EPS growth ($1.95, +16.1% QoQ), with Q1 2026 results even stronger at $181.5B revenue (+17% YoY) and record 13.1% operating margin. AWS is reaccelerating at 28% growth, advertising is growing 24%, and the North America segment is showing durable operating leverage. The balance sheet is healthy with $369.6B equity and modest 0.15 debt-to-equity. However, the stock trades at a P/E of 34.2x, which is mid-range within its 28-39x 12-month window\u2014neither cheap nor expensive versus its own history. The massive $200B 2026 capex plan has crushed free cash flow (down 95% YoY in Q1 2026 to $1.2B), creating real near-term uncertainty about capital returns. Regulatory headwinds are material: FTC antitrust trial set for October 2026, EU DMA/DSA compliance costs, and rising global scrutiny. The Blue Origin rocket explosion delays Project Kuiper, a modest negative. News sentiment is moderately positive (mean 0.36 over 90 days). No clear near-term re-rating catalyst ahead of the July 30 earnings report, though Wall Street consensus targets $320+ with expectations of 8.3% EPS growth and 16.8% revenue growth. The score reflects a high-quality franchise with strong growth trajectory, offset by fair-to-slightly-rich valuation, massive capex uncertainty, and regulatory overhang.",
+      "key_factors": [
+        "Strong revenue trajectory: Q1 2026 revenue $181.5B (+17% YoY), AWS growing 28%, advertising +24%",
+        "Record operating margin of 13.1% in Q1 2026 with all three segments contributing",
+        "P/E of 34.2x is mid-range of 28-39x 12-month window\u2014fairly valued vs own history",
+        "Free cash flow collapsed 95% YoY to $1.2B in Q1 2026 due to $200B capex plan",
+        "FTC antitrust trial set for October 2026; EU DMA/DSA regulatory overhang rising",
+        "Blue Origin rocket explosion delays Project Kuiper satellite broadband deployment",
+        "Berkshire Hathaway exited Amazon position in Q1 2026 citing valuation concerns",
+        "July 30 earnings report is the next major catalyst with consensus expecting 16.8% revenue growth"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=180.17B net_income=21.19B eps_diluted=1.95 operating_income=17.42B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30 Q2",
+          "excerpt": "revenue=167.70B eps_diluted=1.68"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=155.67B eps_diluted=1.59"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=34.246 p_b=7.086 net_margin=0.111 roe=0.207 debt_to_equity=0.149"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 28.2..39.0 | p_b 5.8..8.3"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-10",
+          "excerpt": "Amazon's planned $200B capex spending in 2026 strains free cash flow. With a P/E ratio in the mid-30s, the premium valuation leaves little room for error"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-05",
+          "excerpt": "A Blue Origin rocket explosion at Cape Canaveral delayed Amazon's Project Kuiper satellite broadband initiative"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-01",
+          "excerpt": "Berkshire Hathaway's new CEO Greg Abel completely exited Berkshire's Amazon position (2.3M shares) to lock in profits, citing the stock's expensive valuation"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "deepresearchglobal.com",
+          "excerpt": "Q1 2026 revenue of $181.5 billion exceeded the $177.3 billion consensus, and diluted EPS of $2.78 trounced the $1.64 expectation. Operating income of $23.9 billion produced a 13.1% margin, a quarterly record"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "globaldatacenterhub.com",
+          "excerpt": "Trailing free cash flow fell to $1.2 billion from $25.9 billion, a 95 percent drop"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "riskintelligenceservice.com",
+          "excerpt": "Amazon faces an October 2026 trial in the Federal Trade Commission monopolization case"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "90d_mean",
+          "excerpt": "mean=0.357 over 973 articles"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMZN",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3859,
+        "capped_chars": 3859,
+        "raw_tokens": 965,
+        "capped_tokens": 965
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231834,
+        "capped_chars": 231834,
+        "raw_tokens": 57958,
+        "capped_tokens": 57958
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4408,
+        "capped_chars": 4408,
+        "raw_tokens": 1102,
+        "capped_tokens": 1102
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 334601,
+        "capped_chars": 77987,
+        "raw_tokens": 83650,
+        "capped_tokens": 19497
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 113159,
+        "capped_chars": 90826,
+        "raw_tokens": 28290,
+        "capped_tokens": 22707
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 48661,
+  "started_at": "2026-08-07T03:03:15+00:00"
+}

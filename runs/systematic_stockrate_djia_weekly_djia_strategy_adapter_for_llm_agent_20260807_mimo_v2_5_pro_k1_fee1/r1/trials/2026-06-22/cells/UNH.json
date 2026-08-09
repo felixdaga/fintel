@@ -1,0 +1,178 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31270,
+    "tokens_out": 1134,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034672,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": 0.15,
+      "rationale": "UNH is a dominant healthcare franchise with strong scale and diversified revenue streams, but the fundamental picture is mixed. Q1 2026 showed a strong EPS beat ($6.90 vs prior year $6.85) and revenue growth of 2% YoY, with operating cash flow of $8.91B up 63% YoY. However, the quarterly trajectory is volatile\u2014Q3 2025 EPS was only $2.59 and Q2 2025 was $3.74, suggesting significant earnings lumpiness. The TTM data is incomplete due to fiscal gaps, making it hard to assess true trailing profitability. Net margin has compressed to 2.8% from 5.6% a year ago, and ROE has fallen from 22.8% to 12.3%, indicating deteriorating profitability metrics. On valuation, the stock has re-rated sharply\u2014PE has expanded from ~12x in mid-2025 to 28.5x currently, near the top of its 365-day range (9.5-29.3). P/B has similarly expanded from 2.2-2.7x to 3.5x. This is a significant re-rating that prices in considerable recovery expectations. The stock is up 43% in the last quarter alone, suggesting much of the positive is already reflected. Near-term, Q2 2026 earnings on July 16 could be a catalyst, but consensus expects EPS to decline sequentially down to27% QoQ to the.54 vs $6.28, with MLR expected to rise in H2. Regulatory headwinds persist\u2014ongo Medicare Advantage scrutiny, a Massachusetts lawsuit alleging Medicaid payment inflation, and FTC settlement discussions around OptumRx insulin pricing. Berkshire Hathaway's exit from the position is a sentiment negative. The healthcare services market has structural tailwinds (aging demographics, digital health adoption), and UNH's integrated model is competitively strong, but the stock's valuation now appears to fully reflect these positives with limited regulatory risk premium.",
+      "key_factors": [
+        "Q1 2026 EPS of $6.90 beat prior year, revenue +2% YoY to $111.7B, operating cash flow +63% YoY to $8.91B",
+        "Net margin compressed to 2.8% from 5.6% a year ago; ROE fell from 22.8% to 12.3%",
+        "PE expanded from ~12x in mid-2025 to 28.5x, near top of 365-day range (9.5-29.3); stock up 43% in last quarter",
+        "Q2 2026 earnings July 16 with consensus EPS of $4.54 (down 27.7% QoQ) and expected MLR rise in H2",
+        "Ongoing regulatory risks: Medicare Advantage scrutiny, Massachusetts lawsuit on Medicaid payments, FTC insulin pricing settlement",
+        "Berkshire Hathaway exit from UNH position signals institutional caution",
+        "Healthcare services market projected to grow to $20.1T by 2035 (8.87% CAGR) providing structural tailwind"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=111.72B net_income=6.48B eps_diluted=6.9 operating_cash_flow=8.91B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=28.475 p_b=3.512 net_margin=0.028 roe=0.123"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-23",
+          "excerpt": "pe_diluted=12.034 p_b=2.738 net_margin=0.056 roe=0.228"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=400.96 quarterly delta +43.0%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-11",
+          "excerpt": "UnitedHealth Group has rebounded to a 52-week high with a 23% gain year-to-date, driven by better-than-expected Medicare Advantage reimbursement rates"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "hudson-labs Q2 preview",
+          "excerpt": "Q2 2026E EPS (GAAP) 4.54 vs Q1 2026 Actual 6.28, QoQ Change -27.7%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "en.cryptonomist.ch 2026-06-04",
+          "excerpt": "a lawsuit in Massachusetts alleges UnitedHealth inflated Medicaid payments by misrepresenting illness severity scores"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "sahmcapital Berkshire exit",
+          "excerpt": "Berkshire's exit, watch how management communicates around capital allocation"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4536,
+        "capped_chars": 4536,
+        "raw_tokens": 1134,
+        "capped_tokens": 1134
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224551,
+        "capped_chars": 224551,
+        "raw_tokens": 56138,
+        "capped_tokens": 56138
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1521,
+        "capped_chars": 1521,
+        "raw_tokens": 380,
+        "capped_tokens": 380
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9844,
+        "capped_chars": 2727,
+        "raw_tokens": 2461,
+        "capped_tokens": 682
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 82880,
+        "capped_chars": 59509,
+        "raw_tokens": 20720,
+        "capped_tokens": 14878
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 40345,
+  "started_at": "2026-08-07T03:04:53+00:00"
+}

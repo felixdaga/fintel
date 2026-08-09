@@ -1,0 +1,184 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 74871,
+    "tokens_out": 1335,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.078876,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.45,
+      "rationale": "NVIDIA exhibits exceptional fundamental health and trajectory: Q1 FY2027 revenue of $81.6B (+85% YoY, +43% QoQ) with EPS of $2.39 (+215% YoY), 74% gross margins, 64% operating margins, and $50.3B quarterly operating cash flow. The balance sheet is fortress-like with only $8.5B debt against $195B equity (debt-to-equity 0.043). Revenue trajectory shows four consecutive quarters of accelerating growth, with Q2 guidance of $91B implying ~95% YoY growth. The company dominates AI infrastructure with ~86% GPU market share, and is expanding into a $200B CPU TAM with its Vera platform. Valuation has compressed meaningfully: P/E of 32.7x is at the low end of its 32.5-66.8x 365-day range, and P/B of 26.7x is near the bottom of its 26.5-57.8x range, despite earnings power having more than doubled. The stock trades at ~17x next year's earnings per analyst commentary, which is reasonable for 85%+ revenue growth. However, several factors temper the score: (1) the stock has declined post-earnings for four consecutive quarters despite beats, suggesting the market requires accelerating beats to re-rate; (2) China revenue is effectively zero with no data center compute revenue expected in Q2; (3) competition is intensifying from custom ASICs (Broadcom, Marvell) and hyperscaler in-house chips; (4) the semiconductor trade is at 73% crowding per BofA survey, the highest on record; (5) rising Treasury yields (10Y at 4.45%) and potential rate hikes create macro headwinds for high-multiple stocks. The $80B buyback authorization and 25x dividend increase signal management confidence and provide a valuation floor. Near-term catalysts are limited post-earnings, though the Vera CPU ramp and continued hyperscaler capex acceleration ($725B projected for 2026) support the growth narrative.",
+      "key_factors": [
+        "Q1 FY2027 revenue $81.6B (+85% YoY) with Q2 guidance of $91B, implying continued acceleration",
+        "P/E of 32.7x at low end of 365-day range (32.5-66.8x), vs 85%+ revenue growth",
+        "~86% AI GPU market share with CUDA ecosystem moat of 5M+ developers",
+        "$80B buyback authorization and 25x dividend increase signal capital return commitment",
+        "China data center revenue effectively zero; no recovery expected in Q2 guidance",
+        "Semiconductor trade at 73% crowding (BofA survey) \u2014 highest on record, creating rotation risk",
+        "Rising 10Y Treasury yields (4.45%) and potential rate hikes pressure high-multiple valuations",
+        "Competition from custom ASICs (Broadcom, Marvell) and hyperscaler in-house chips (TPU, Trainium, Maia)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 Q1",
+          "excerpt": "revenue=81.61B net_income=58.32B eps_diluted=2.39 gross_profit=61.16B operating_income=53.54B operating_cash_flow=50.34B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=32.74 p_b=26.734 p_s=20.615 net_margin=0.63 roe=0.817 debt_to_equity=0.043 gross_margin=0.741 operating_margin=0.64"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 32.5..66.8 | p_b 26.5..57.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-22 Motley Fool",
+          "excerpt": "Nvidia reported exceptional fiscal Q1 earnings with 85% year-over-year revenue growth to $81.6 billion, accelerating for three consecutive quarters. The company raised its quarterly dividend 25-fold from $0.01 to $0.25 per share and approved an additional $80 billion in share repurchases."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-21 CNBC",
+          "excerpt": "Nvidia's stock has failed to react positively post-earnings despite beating estimates, as the company's earnings surprises have become smaller than market averages. Nvidia has beaten estimates by only 3.9% versus the market average of 8.2%."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-19 Benzinga",
+          "excerpt": "73% of professional investors now view 'long global semiconductors' as the most crowded trade on Wall Street, up from 24% in April\u2014the steepest one-month jump on record."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-21 CNBC",
+          "excerpt": "Nvidia gave strong forward guidance, predicting $91 billion of revenue in its current fiscal second quarter. Nvidia said it is not assuming any data center compute revenue from China in the outlook."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "companieshistory.com",
+          "excerpt": "Nvidia holds roughly 86% of the AI GPU market. Its closest direct competitors, AMD and Intel, have single-digit shares in the AI training accelerator segment."
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "excerpt": "DGS10=4.45% VIXCLS=15.74 FEDFUNDS=3.63%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4649,
+        "capped_chars": 4649,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242338,
+        "capped_chars": 242338,
+        "raw_tokens": 60584,
+        "capped_tokens": 60584
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4448,
+        "capped_chars": 4448,
+        "raw_tokens": 1112,
+        "capped_tokens": 1112
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 645333,
+        "capped_chars": 156496,
+        "raw_tokens": 161333,
+        "capped_tokens": 39124
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102138,
+        "capped_chars": 79597,
+        "raw_tokens": 25535,
+        "capped_tokens": 19900
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 43016,
+  "started_at": "2026-08-07T03:01:45+00:00"
+}

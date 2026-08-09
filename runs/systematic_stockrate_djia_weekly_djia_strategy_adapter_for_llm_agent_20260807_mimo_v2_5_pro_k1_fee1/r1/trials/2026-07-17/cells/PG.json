@@ -1,0 +1,186 @@
+{
+  "cell": "PG",
+  "symbols": [
+    "PG"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31534,
+    "tokens_out": 1191,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035107,
+    "basis": "reported"
+  },
+  "views": {
+    "PG": {
+      "symbol": "PG",
+      "score": 0.15,
+      "rationale": "PG is a high-quality defensive franchise with strong brand portfolio, consistent cash generation, and a 70-year dividend increase streak. However, near-term fundamentals show sequential deceleration: Q3 FY2026 revenue declined QoQ (-4.4%) and EPS fell (-8.4%), with operating cash flow also declining QoQ (-18.6%). YoY growth remains positive but modest (revenue +7.4%, EPS +5.8%). The company faces a ~$400M after-tax tariff headwind and ~$1B oil-driven cost spike concentrated in the upcoming Q4 report (July 29), with management guiding to the low end of the $6.83-$7.09 core EPS range. Valuation at 23.8x P/E sits mid-range of its 1-year window (21.7-26.3x), neither cheap nor expensive. The upcoming Q4 earnings report on July 29 is a near-term catalyst \u2014 if the trough quarter is confirmed and FY2027 guidance shows reacceleration to ~8% EPS growth, the stock could re-rate. However, private-label pressure in key categories (diapers, tissue), tariff exposure, and the need to rebuild volume momentum after years of price-led growth temper enthusiasm. The score reflects a solid but not exceptional fundamental position with modest upside if the earnings trough is confirmed.",
+      "key_factors": [
+        "Sequential QoQ deceleration in revenue (-4.4%), EPS (-8.4%), and operating cash flow (-18.6%) in Q3 FY2026",
+        "YoY growth remains positive: revenue +7.4%, EPS +5.8%, operating cash flow +9.2%",
+        "~$400M after-tax tariff headwind and ~$1B oil-driven cost spike concentrated in Q4 FY2026",
+        "Management guided to low end of $6.83-$7.09 core EPS range for FY2026",
+        "P/E of 23.8x sits mid-range of 1-year window (21.7-26.3x) \u2014 not a clear bargain",
+        "70th consecutive dividend increase; 2.9% yield; $15B planned shareholder returns in FY2026",
+        "Q4 earnings on July 29 is a dated catalyst \u2014 consensus expects adjusted EPS of $1.42, down 4.1% YoY",
+        "Private-label pressure in diapers, tissue, and household paper categories",
+        "Consensus FY2027 EPS growth of ~2.3% with potential reacceleration to 8% by June 2027 if headwinds ease",
+        "Strong balance sheet: total equity $54.7B, ROE ~30%, gross margin ~51%"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3",
+          "excerpt": "revenue=21.23B, eps_diluted=1.63, operating_cash_flow=4.04B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31 Q2",
+          "excerpt": "revenue=22.21B, eps_diluted=1.78"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=23.817, p_b=7.063, roe=0.297, gross_margin=0.513"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-14",
+          "excerpt": "Procter & Gamble has announced its 70th consecutive dividend increase, with a current dividend yield of 2.9% and annual dividend of $4.26 per share"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-12",
+          "excerpt": "Procter & Gamble Earnings Are Coming July 29. The Trough Quarter May Already Be Priced In. Normalized EPS is set to fall 4% year-over-year this fiscal fourth quarter before reaccelerating to 8% growth by June 2027"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-06",
+          "excerpt": "Procter & Gamble is absorbing roughly $400 million in after-tax tariff costs in fiscal 2026, alongside commodity headwinds and higher reinvestment spending. Core gross margin compressed 100 basis points last quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-12",
+          "excerpt": "CFO Andre Schulten: We now expect a headwind of approximately $150 million after tax for the fiscal from a combination of commodity-linked cost inflation, feedstock exposures and logistics disruptions. Nearly all of that cost lands in the fiscal fourth quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-10",
+          "excerpt": "Analysts expect PG to report an adjusted EPS of $1.42, down 4.1% from $1.48 in the year-ago quarter. However, it has surpassed Wall Street's earnings estimates in each of the last four quarters"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-06",
+          "excerpt": "Procter & Gamble's tariff-exposed supply chain, high debt and slower forecast growth could be masking a more fragile income story than it appears"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "PG",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3010,
+        "capped_chars": 3010,
+        "raw_tokens": 752,
+        "capped_tokens": 752
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 240876,
+        "capped_chars": 240876,
+        "raw_tokens": 60219,
+        "capped_tokens": 60219
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2118,
+        "capped_chars": 2118,
+        "raw_tokens": 530,
+        "capped_tokens": 530
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9612,
+        "capped_chars": 2775,
+        "raw_tokens": 2403,
+        "capped_tokens": 694
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 92572,
+        "capped_chars": 74100,
+        "raw_tokens": 23143,
+        "capped_tokens": 18526
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37099,
+  "started_at": "2026-08-07T03:08:13+00:00"
+}

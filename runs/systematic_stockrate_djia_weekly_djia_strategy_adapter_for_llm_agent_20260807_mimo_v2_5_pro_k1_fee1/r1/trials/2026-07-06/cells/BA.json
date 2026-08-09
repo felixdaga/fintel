@@ -1,0 +1,179 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28214,
+    "tokens_out": 909,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.030941,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing's fundamental health is deeply impaired. The company carries $47B in debt against only $6B in equity (debt/equity 7.8x), has negative operating cash flow of -$179M in Q1 2026, and is barely profitable with EPS of -$0.11 and a net margin of zero. The P/E of 79x and P/B of 30x are extreme for a company with such weak profitability and balance sheet fragility. The 777X program has been delayed to 2027 with over $15B in charges, the 737 MAX remains under FAA production caps at 42/month (below the 47/month target), and ongoing legal risks from the MAX crashes could result in billions in additional damages. The Q2 2026 earnings report on July 28 is a near-term catalyst, but it's expected to show another loss (-$0.27 EPS consensus). While revenue grew 14% YoY in Q1 and the backlog is massive ($695B), the company cannot convert this into positive cash flow or meaningful earnings. The stock has rallied 9.2% in the past quarter despite these deteriorating fundamentals, making it expensive relative to its own history. The combination of extreme leverage, negative cash generation, regulatory overhang, legal risk, and stretched valuation makes this one of the most unattractive fundamental setups in the market.",
+      "key_factors": [
+        "$47B debt vs $6B equity (7.8x debt/equity) - extreme leverage",
+        "Negative operating cash flow (-$179M Q1 2026) despite $22B revenue",
+        "P/E of 79x and P/B of 30x for a barely profitable turnaround story",
+        "737 MAX production capped at 42/month by FAA, below 47/month target",
+        "777X delayed to 2027 with $15B+ in cumulative charges",
+        "Ongoing 737 MAX crash litigation risk (LOT Polish Airlines trial underway)",
+        "Q2 2026 earnings July 28 expected to show continued losses (-$0.27 EPS consensus)",
+        "Stock up 9.2% in past quarter despite deteriorating fundamentals - momentum disconnected from reality"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=22.22B net_income=-7.00M eps_diluted=-0.11 operating_cash_flow=-179.00M total_equity=5.99B total_debt=46.96B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=78.901 p_b=29.81 debt_to_equity=7.844 net_margin=0.025"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=226.49 quarterly delta +9.2%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-01",
+          "excerpt": "Boeing provides diversified operations and stability but carries high debt and production challenges"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout_china_deal",
+          "excerpt": "total debt of $47.2 billion, 777X program delayed to 2027 incurring over $15 billion in charges, LOT Polish Airlines landmark jury trial"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout_riyadh",
+          "excerpt": "FAA has declined to certify the 737 MAX 10 over safety concerns, production caps imposed by regulators"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "msn_stock_surges",
+          "excerpt": "Wall Street analysts estimate a quarterly loss of 27 cents per share alongside a projected revenue target of $23.92 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "blockonomi_china_southern",
+          "excerpt": "Current analyst projections call for full-year EPS of -$0.15"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 217134,
+        "capped_chars": 217134,
+        "raw_tokens": 54284,
+        "capped_tokens": 54284
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2309,
+        "capped_chars": 2309,
+        "raw_tokens": 577,
+        "capped_tokens": 577
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9841,
+        "capped_chars": 2384,
+        "raw_tokens": 2460,
+        "capped_tokens": 596
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 65656,
+        "capped_chars": 50828,
+        "raw_tokens": 16415,
+        "capped_tokens": 12708
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 43644,
+  "started_at": "2026-08-07T03:06:00+00:00"
+}

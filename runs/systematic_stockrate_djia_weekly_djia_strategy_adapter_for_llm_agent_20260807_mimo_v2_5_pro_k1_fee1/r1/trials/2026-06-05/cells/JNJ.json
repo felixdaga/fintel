@@ -1,0 +1,170 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35719,
+    "tokens_out": 790,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038089,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": 0.15,
+      "rationale": "JNJ is a fundamentally sound, diversified healthcare franchise with strong competitive positioning (#1/#2 in most categories, AAA balance sheet) and a positive revenue trajectory (+9.9% YoY in Q1 2026, guided ~$100.5B for FY2026). However, the stock is trading at a stretched valuation relative to its own history: P/E of 26.5x sits at the top of its 16.6\u201327.2x 12-month range, and P/B of 6.9x is near the 4.6\u20137.6x ceiling. The Q1 2026 EPS of $2.14 (GAAP) was below the prior-year $2.77 adjusted, and the most recent quarter showed a sharp operating cash flow decline to $2.51B from $9.17B in Q3, suggesting some working-capital or timing noise. Gross margin compressed QoQ (66.3% vs 69.5%), and the Q1 2025 quarter's $4.54 EPS appears to have included a large one-time gain (operating income of $13.63B vs ~.99B in Q4), making the TTM earnings picture somewhat noisy. The positive pipeline news (nipocalimab Phase 2 SLE success, ERLEADA Phase 3 prostate cancer results) and the upcoming July 15 earnings report provide modest near-term catalysts, but these are incremental rather than transformative. Net margin has compressed from ROE has declined from recent highs. The stock's 50.9% 52-week gain and current premium valuation leave limited margin of safety for a mildly attractive but not compelling entry point.",
+      "key_factors": [],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=26.517 p_b=6.872 net_margin=0.218 roe=0.259"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-05",
+          "excerpt": "pe_diluted=17.077 p_b=4.768 net_margin=0.244 roe=0.279"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29",
+          "excerpt": "revenue=24.06B eps_diluted=2.14 operating_income=5.99B operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-30",
+          "excerpt": "eps_diluted=4.54 operating_income=13.63B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=228.17 quarterly delta -4.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-03",
+          "excerpt": "nipocalimab Phase 2 JASMINE study met primary endpoint in SLE"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-31",
+          "excerpt": "ERLEADA Phase 3 PROTEUS study significantly reduces metastasis/death risk"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "roro",
+          "excerpt": "company forecasts 2026 revenue of approximately 100.5 billion USD, adjusted EPS expected to be around 11.53 USD"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4593,
+        "capped_chars": 4593,
+        "raw_tokens": 1148,
+        "capped_tokens": 1148
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223576,
+        "capped_chars": 223576,
+        "raw_tokens": 55894,
+        "capped_tokens": 55894
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2670,
+        "capped_chars": 2670,
+        "raw_tokens": 668,
+        "capped_tokens": 668
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 28801,
+        "capped_chars": 6678,
+        "raw_tokens": 7200,
+        "capped_tokens": 1670
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 107721,
+        "capped_chars": 88187,
+        "raw_tokens": 26931,
+        "capped_tokens": 22046
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 49892,
+  "started_at": "2026-08-07T03:02:31+00:00"
+}

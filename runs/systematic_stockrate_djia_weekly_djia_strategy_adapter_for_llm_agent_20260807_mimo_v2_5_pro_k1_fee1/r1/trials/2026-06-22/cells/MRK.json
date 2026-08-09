@@ -1,0 +1,184 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29499,
+    "tokens_out": 976,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032427,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": -1.0,
+      "rationale": "Merck's Q1 2026 results reveal a severe earnings collapse: EPS of -$1.72 versus +$2.01 a year ago, with operating income swinging to -$3.53B from +$5.90B. This is not a one-off charge issue\u2014the operating loss is massive relative to $16.3B revenue. Meanwhile, the stock trades at a P/E of 31.5x (vs. 11-15x range over the prior year), meaning the market is paying a premium multiple for a company that just reported a large loss. The P/B of 6.1x is also at the top of its 4.0-6.6 range. Valuation has nearly tripled on a P/E basis while fundamentals have deteriorated sharply. Keytruda concentration risk (46% of 2024 revenue) looms with eventual patent expiry, Gardasil is declining 22% in Q1, and pipeline setbacks (EVOKE-03 discontinuation, LITESPARK-012 miss) add uncertainty. The CMS drug price negotiation proposal starting 2029 adds regulatory headwinds. No credible near-term positive catalyst is evident\u2014next earnings are August 4, and the trajectory is negative. The combination of sharply deteriorating earnings, extreme valuation expansion, and multiple headwinds makes this strongly unattractive.",
+      "key_factors": [
+        "Q1 2026 EPS of -$1.72 vs +$2.01 YoY; operating income -$3.53B vs +$5.90B",
+        "P/E of 31.5x is near the top of the 11-34x range over the past year, having nearly tripled",
+        "P/B of 6.1x at the top of the 4.0-6.6 range",
+        "Gardasil sales declined 22% in Q1 driven by lower China/Japan demand",
+        "Pipeline setbacks: EVOKE-03 trial discontinued, LITESPARK-012 missed primary endpoints",
+        "CMS proposed permanent Medicare drug price negotiations starting 2029",
+        "Keytruda patent cliff risk as 46% of 2024 revenue concentration",
+        "FY2026 guidance of $5.04-5.16 EPS implies recovery but current quarter shows deep loss"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=16.29B net_income=-4.24B eps_diluted=-1.72 operating_income=-3.53B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=15.53B eps_diluted=2.01 operating_income=5.90B net_income=5.08B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=31.504 p_b=6.128 net_margin=0.136 roe=0.195"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-23",
+          "excerpt": "pe_diluted=11.626 p_b=4.192 net_margin=0.273 roe=0.361"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-09",
+          "excerpt": "Gilead And Merck End Trodelvy-Keytruda Lung Cancer Trial"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-18",
+          "excerpt": "FDA Expands Merck Pneumococcal Shot Label To Include At-Risk Children And Teens"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "excerpt": "CMS proposed drug price negotiations impact Merck's future revenue. Pipeline setbacks in oncology trials raise growth concerns."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dailypolitical.com",
+          "excerpt": "The company reported ($1.28) earnings per share for the quarter. FY 2026 guidance at 5.040-5.160 EPS."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wikipedia",
+          "excerpt": "446% of the company's revenue, or $29.5 billion, came from sales of Keytruda"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4573,
+        "capped_chars": 4573,
+        "raw_tokens": 1143,
+        "capped_tokens": 1143
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223862,
+        "capped_chars": 223862,
+        "raw_tokens": 55966,
+        "capped_tokens": 55966
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1894,
+        "capped_chars": 1894,
+        "raw_tokens": 474,
+        "capped_tokens": 474
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 20455,
+        "capped_chars": 5413,
+        "raw_tokens": 5114,
+        "capped_tokens": 1353
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 71586,
+        "capped_chars": 55560,
+        "raw_tokens": 17897,
+        "capped_tokens": 13890
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 36872,
+  "started_at": "2026-08-07T03:04:35+00:00"
+}

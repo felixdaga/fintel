@@ -1,0 +1,181 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34222,
+    "tokens_out": 1003,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037231,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.25,
+      "rationale": "IBM presents a moderately attractive fundamental picture. The company is executing a successful strategic pivot toward higher-margin software (11% YoY growth in Q1 2026, now 45% of revenue) with strong AI momentum ($12.5B cumulative GenAI bookings). The z17 mainframe super-cycle is driving a 51% hardware revenue surge, and operating margins expanded 140bps YoY to 14%. However, the stock has already re-rated significantly from its 2025 lows (PE compressed from ~50x to ~26x as earnings caught up), and the current PE of 26x sits mid-range of its 19-51x 52-week window. The Q2 2026 earnings report in late July represents a near-term catalyst that could confirm or disappoint on the software acceleration narrative. Key risks include the inevitable post-cycle mainframe deceleration, sluggish consulting growth (1% in Q1), elevated debt ($57.7B), and enterprise AI adoption friction flagged in IBM's own research. The balance between solid execution and a stock that has already moved 22% off its April lows warrants a modest positive score.",
+      "key_factors": [
+        "Software segment growing 11% YoY to $7.05B in Q1 2026, now 45% of revenue with 82% gross margins",
+        "z17 mainframe super-cycle driving 51% Z hardware revenue growth and 15% Infrastructure segment growth",
+        "$12.5B cumulative GenAI bookings as of Q4 2025, with 30% of consulting backlog now AI-related",
+        "Operating margin expansion of 140bps YoY to 14% in Q1, confirming software mix-shift benefits",
+        "PE of 26x sits mid-range of 19-52x 52-week window; stock already re-rated from ~50x in mid-2025",
+        "Q2 2026 earnings in late July as near-term catalyst for software acceleration confirmation",
+        "Consulting segment growth of only 1% in Q1 represents a structural drag",
+        "Elevated debt of $57.7B from acquisitions including $11.6B Confluent deal",
+        "Enterprise AI adoption friction: 91% of executives don't fully understand AI dependencies per IBM's own study",
+        "Mainframe cycle risk: post-z17 deceleration could be sharp given 3-5 year cycle nature"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1",
+          "excerpt": "revenue=15.92B net_income=1.22B eps_diluted=1.28 gross_profit=8.95B operating_income=1.39B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wsb-dd.com IBM DD",
+          "excerpt": "Software revenue grew 11% YoY to $7.05B; Z mainframe hardware +51% YoY; GenAI book exceeded $12.5B cumulative bookings"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=26.144 p_b=8.505 net_margin=0.156 roe=0.325"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-07-10..2026-07-09",
+          "excerpt": "pe_diluted 19.0..51.2 | p_b 6.2..10.8"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com IBM Q1 2026",
+          "excerpt": "Operating pre-tax margins expanded by 140 basis points; Adjusted EPS came in at $1.91, beating the Street estimate of $1.81"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com IBM risks",
+          "excerpt": "Long-term debt escalating to $57.7 billion; 91% of enterprise executives do not fully understand their AI dependencies"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "excerpt": "close=295.30 quarterly delta +22.2% from 2026-04-08"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com IBM Jun 18 selloff",
+          "excerpt": "Accenture's lowered sales guidance triggered sector-wide selloff; IBM's own report on AI integration bottlenecks"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224571,
+        "capped_chars": 224571,
+        "raw_tokens": 56143,
+        "capped_tokens": 56143
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2825,
+        "capped_chars": 2825,
+        "raw_tokens": 706,
+        "capped_tokens": 706
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 36999,
+        "capped_chars": 6813,
+        "raw_tokens": 9250,
+        "capped_tokens": 1703
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 109586,
+        "capped_chars": 87087,
+        "raw_tokens": 27396,
+        "capped_tokens": 21772
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 34491,
+  "started_at": "2026-08-07T03:07:05+00:00"
+}

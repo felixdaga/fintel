@@ -1,0 +1,183 @@
+{
+  "cell": "AAPL",
+  "symbols": [
+    "AAPL"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 51464,
+    "tokens_out": 1241,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.055187,
+    "basis": "reported"
+  },
+  "views": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "score": 0.25,
+      "rationale": "Apple's fundamental health is strong: Q2 FY2026 delivered record March-quarter revenue of $111.2B (+17% YoY) and EPS of $2.01 (+22% YoY), with Services hitting an all-time high of $31B (+16% YoY) at 76.7% gross margin. The installed base of 2.35B+ active devices creates a durable recurring-revenue flywheel. Balance sheet is fortress-like with $147B liquidity, $62B net cash, and a new $100B buyback authorization. However, the trajectory has a seasonal QoQ decline (revenue -22.7%, EPS -29.2% from the holiday quarter), and the TTM picture is incomplete due to fiscal calendar gaps, so I cannot confirm a clean trailing trend. Valuation is mid-range vs own history: P/E of 36.6 sits in the middle of the 30.2-43.1 range over the past year, not cheap but not stretched. The stock has rallied +15.3% over the past quarter to $305, which has already captured much of the strong Q2 print. Near-term catalysts are modest: the Q3 guidance of 14-17% revenue growth is solid, and the leadership transition to John Ternus appears orderly, but no single dated catalyst stands out as a clear re-rating event. Risks include rising memory costs pressuring gross margins (47.5-48.5% guided for Q3 vs 49.3% in Q2), ongoing EU DMA regulatory headwinds on the App Store, and elevated 10Y Treasury yields at 4.57% which compress growth multiples. Overall, this is a high-quality franchise with good but not exceptional near-term upside at current levels.",
+      "key_factors": [
+        "Record Q2 FY2026: revenue $111.2B (+17% YoY), EPS $2.01 (+22% YoY), Services $31B all-time high at 76.7% gross margin",
+        "Fortress balance sheet: $147B liquidity, $62B net cash, new $100B buyback authorization, dividend raised 4%",
+        "P/E of 36.6 is mid-range vs 1-year window of 30.2-43.1; not a clear bargain after +15.3% quarterly rally",
+        "Q3 guidance of 14-17% revenue growth is strong but gross margin guided lower at 47.5-48.5% due to memory cost headwinds",
+        "Regulatory overhang: EU DMA fines, India antitrust probe, and US Supreme Court App Store case create ongoing Services margin risk",
+        "Leadership transition from Tim Cook to John Ternus appears orderly but execution risk remains",
+        "Rising 10Y Treasury yields (4.57%) and elevated VIX normalization create macro headwinds for high-multiple stocks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q2 FY2026",
+          "excerpt": "revenue=111.18B net_income=29.58B eps_diluted=2.01 gross_profit=54.78B operating_income=35.88B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q2 FY2026 growth",
+          "excerpt": "YoY: revenue=+16.6% eps_diluted=+21.8% net_income=+19.4% gross_profit=+22.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=36.641 p_b=42.175 p_s=9.949 earnings_yield=0.027 net_margin=0.272 roe=1.151"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-05-22..2026-05-21",
+          "excerpt": "pe_diluted 30.2..43.1 | p_b 38.3..65.0"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "excerpt": "close=304.99 quarterly delta +15.3%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-01 apple.com Q2 results",
+          "excerpt": "Services revenue reaches new all-time high; revenue of $111.2 billion, up 17 percent year over year; EPS $2.01, up 22 percent"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-01 alpha-sense Q2 analysis",
+          "excerpt": "June quarter total company revenue is expected to grow 14% to 17% year-over-year; Gross margin is expected to be between 47.5% and 48.5%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "excerpt": "DGS10=4.57 VIXCLS=16.76 FEDFUNDS=3.63"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-02 PESTLE analysis",
+          "excerpt": "EU Digital Markets Act: Apple fined 500 million euros; DMA forced Apple to permit third-party app stores and alternative payment systems in the EU"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AAPL",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4671,
+        "capped_chars": 4671,
+        "raw_tokens": 1168,
+        "capped_tokens": 1168
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231015,
+        "capped_chars": 231015,
+        "raw_tokens": 57754,
+        "capped_tokens": 57754
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4337,
+        "capped_chars": 4337,
+        "raw_tokens": 1084,
+        "capped_tokens": 1084
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 204832,
+        "capped_chars": 44064,
+        "raw_tokens": 51208,
+        "capped_tokens": 11016
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 125288,
+        "capped_chars": 98891,
+        "raw_tokens": 31322,
+        "capped_tokens": 24724
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37228,
+  "started_at": "2026-08-07T03:00:17+00:00"
+}

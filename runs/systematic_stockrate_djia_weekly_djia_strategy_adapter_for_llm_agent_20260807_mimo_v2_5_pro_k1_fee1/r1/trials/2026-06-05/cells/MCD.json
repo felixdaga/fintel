@@ -1,0 +1,169 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31764,
+    "tokens_out": 978,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034698,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's presents a mixed but mildly attractive picture. The company's fundamental health is solid, with a heavily franchised, capital-light model generating strong operating margins (45.3% in Q1 2026) and robust cash flow. Q1 2026 results showed healthy year-over-year growth (revenue +9.4%, EPS +6.9%), and the business benefits from a durable competitive position as global brand strength. However, the trajectory shows some softness: QoQ metrics declined (revenue -7.9%, EPS -12.6%), and management flagged weaker consumer spending and tougher comparisons ahead. The balance sheet carries significant negative equity (-$1.29B), though this is structural to the franchise-heavy model. Valuation is difficult to assess precisely due to data issues (P/E showing as 0), but the stock has declined ~17% over the past quarter to $272.72, potentially offering better value than recent history. The macro environment shows rising Treasury yields (10Y at 4.47%) which could pressure valuations for dividend stocks, though VIX has declined significantly (15.4). No clear near-term fundamental catalyst is evident beyond the ongoing dividend and buyback program. The score reflects a quality business with modest growth, reasonable valuation after recent pullback, but no compelling catalyst to drive significant re-rating.",
+      "key_factors": [
+        "Strong franchise model with 95% franchised restaurants generating high operating margins (45.3%)",
+        "Solid Q1 2026 YoY growth: revenue +9.4%, EPS +6.9%, global comparable sales +3.8%",
+        "QoQ sequential decline in Q1 2026: revenue -7.9%, EPS -12.6%, operating cash flow -29.6%",
+        "Management guidance for weaker Q2 sales due to tough comparisons and consumer spending concerns",
+        "Stock down ~17% over past quarter, potentially improving valuation vs recent history",
+        "Negative equity balance sheet (-$1.29B) is structural to franchise model",
+        "Rising interest rate environment (10Y Treasury at 4.47%) may pressure dividend stock valuations",
+        "No clear near-term fundamental catalyst identified for re-rating"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-07 Q1 2026",
+          "excerpt": "revenue=6.52B net_income=1.98B eps_diluted=2.78 operating_income=2.95B total_equity=-1.29B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+9.4% eps_diluted=+6.9% net_income=+6.2%; QoQ: revenue=-7.9% eps_diluted=-12.6%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=272.72 quarterly delta=-16.7% from 2026-03-05 close=327.45"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-07 Q1 earnings",
+          "excerpt": "operating margin 45.3%, global comparable sales increased 3.8%, franchised restaurants generated more than 90% of restaurant margin dollars"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-07 CNBC",
+          "excerpt": "McDonald's CEO says consumer spending could be 'getting a little bit worse', expecting weaker sales as it laps tough comparisons to the year-ago period"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-04",
+          "excerpt": "DGS10=4.47% VIXCLS=15.4 FEDFUNDS=3.63%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215499,
+        "capped_chars": 215499,
+        "raw_tokens": 53875,
+        "capped_tokens": 53875
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1473,
+        "capped_chars": 1473,
+        "raw_tokens": 368,
+        "capped_tokens": 368
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 4210,
+        "capped_chars": 613,
+        "raw_tokens": 1052,
+        "capped_tokens": 153
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 101357,
+        "capped_chars": 83228,
+        "raw_tokens": 25340,
+        "capped_tokens": 20806
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 45823,
+  "started_at": "2026-08-07T03:02:39+00:00"
+}

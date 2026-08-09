@@ -1,0 +1,189 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37870,
+    "tokens_out": 1091,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.040055,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": 0.15,
+      "rationale": "Chevron is a high-quality integrated energy major with a wide moat, strong balance sheet, but the current setup is mixed. Fundamentals are solid \u2014 record production of 4.05M boepd in Q4 2025, strong operating cash flow of $10.8B, and a 25+ year dividend growth streak with ~3.8% yield. The integrated model provides natural hedging across commodity cycles. However, Q3 2025 showed YoY EPS decline of -26.6% and net income down -19.6%, reflecting the cyclical nature of the business. The Q1 2026 pre-announcement flagged $2.7-3.7B negative timing effects and a $350-400M legal charge, creating near-term earnings noise. Valuation is the key concern: P/E has expanded from ~15x in April 2025 to ~28x currently, near the top of its 365-day range (14.6-31.9x), while net margins have compressed from 8.5% to 6.6% and ROE from 10.7% to 6.6%. The stock is trading at a significant premium to its own recent history despite weaker profitability metrics. The Iran/Strait of Hormuz geopolitical situation has driven oil to ~$99/barrel, providing a tailwind, but much of this appears priced in given the valuation expansion. The upcoming May 1 earnings call is a potential catalyst, but Q1 results will be messy. California regulatory risks and potential refining exit add uncertainty. The stock's 12.6% quarterly gain and elevated P/E suggest the market has already priced in much of the upside from elevated oil prices. Mildly positive due to quality franchise and geopolitical tailwind, but capped by rich valuation vs history.",
+      "key_factors": [
+        "P/E expanded from ~15x to ~28x over past year, near top of 365-day range, while margins compressed",
+        "Q3 2025 YoY EPS down -26.6%, net income down -19.6%",
+        "Q1 2026 pre-announcement: $2.7-3.7B negative timing effects, $350-400M legal charge",
+        "Record production 4.05M boepd and strong Q4 2025 cash generation ($10.8B OCF)",
+        "WTI crude at ~$99/barrel due to Iran/Strait of Hormuz disruption, providing tailwind",
+        "Integrated model provides natural hedge; 25+ year dividend growth streak at ~3.8% yield",
+        "California regulatory risk and potential refining exit",
+        "May 1 earnings call as near-term catalyst for clarity on Q1 noise and H2 outlook"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=28.303, range over window: pe_diluted 14.6..31.9"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-04-24",
+          "excerpt": "pe_diluted=15.018, net_margin=0.085, roe=0.107"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "net_margin=0.066, roe=0.066"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "YoY: revenue=-1.9% eps_diluted=-26.6% net_income=-19.6%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-13",
+          "excerpt": "Chevron lost about 6% of global production in Q1. The company is scheduled to report Q1 2026 earnings on May 1"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-17",
+          "excerpt": "Iran opened the Strait of Hormuz to commercial vessels during the Lebanon ceasefire, easing geopolitical tensions... Chevron stock to fall 7%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "excerpt": "DCOILWTICO latest=99.27"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-17",
+          "excerpt": "Chevron is Adding Even More Fuel to its High-Octane Growth Engine... 22% War-Fueled Surge"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan Q1 2026",
+          "excerpt": "negative timing effects of about $2.7\u2013$3.7 billion... Downstream legal charge of about $350\u2013$400 million"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thehill California",
+          "excerpt": "Chevron threatening to leave California refineries due to overregulation"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225253,
+        "capped_chars": 225253,
+        "raw_tokens": 56313,
+        "capped_tokens": 56313
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3243,
+        "capped_chars": 3243,
+        "raw_tokens": 811,
+        "capped_tokens": 811
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 61536,
+        "capped_chars": 14750,
+        "raw_tokens": 15384,
+        "capped_tokens": 3688
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103969,
+        "capped_chars": 85027,
+        "raw_tokens": 25991,
+        "capped_tokens": 21257
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 38133,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

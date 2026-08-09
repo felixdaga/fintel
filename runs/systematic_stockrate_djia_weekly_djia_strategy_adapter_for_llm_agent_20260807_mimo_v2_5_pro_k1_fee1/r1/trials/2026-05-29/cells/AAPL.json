@@ -1,0 +1,201 @@
+{
+  "cell": "AAPL",
+  "symbols": [
+    "AAPL"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 48233,
+    "tokens_out": 1423,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.052502,
+    "basis": "reported"
+  },
+  "views": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "score": 0.15,
+      "rationale": "Apple's Q2 FY2026 results show solid fundamental health: revenue of $111.18B (+16.6% YoY), EPS of $2.01 (+21.8% YoY), and record Services revenue of ~$31B (+16% YoY) with 76.7% gross margins. The company generated $28.7B in operating cash flow for the quarter, maintains a strong balance sheet with $106.5B in equity and a net cash position of ~$62B, and recently authorized a $100B buyback with a dividend increase. However, several factors temper enthusiasm. The stock trades at a P/E of 37.5x, near the upper end of its 30-43x 12-month range, and P/B of 43.2x is elevated. The QoQ trajectory is negative (revenue -22.7%, EPS -29.2%) reflecting normal seasonality after the holiday quarter, but the TTM picture is incomplete due to fiscal calendar gaps. Regulatory headwinds are material: the Supreme Court rejected Apple's App Store appeal in April 2026, the EU DMA fine of \u20ac500M stands, and India's antitrust probe continues \u2014 all threatening the high-margin Services business. The leadership transition from Tim Cook to John Ternus introduces execution risk. Rising 10-year Treasury yields (4.45%) and elevated oil prices ($92.65/bbl) create macro headwinds for a stock trading at a premium multiple. The Q3 guidance of 14-17% YoY growth is encouraging, and the stock has rallied +14.5% over the past quarter, but much of the good news appears priced in at current valuations. The near-term catalyst of the Q2 earnings beat (April 30) has already been absorbed. Net: solid franchise with durable competitive advantages, but valuation is fair-to-slightly-rich vs its own history, and regulatory/leadership risks prevent a higher score.",
+      "key_factors": [
+        "Q2 FY2026 record revenue $111.18B (+16.6% YoY) and EPS $2.01 (+21.8% YoY) beat expectations",
+        "Record Services revenue ~$31B at 76.7% gross margin, growing 16% YoY \u2014 the key margin engine",
+        "P/E of 37.5x near upper end of 30-43x 12-month range; stock has rallied 14.5% in past quarter",
+        "$100B buyback authorization and dividend increase signal strong capital return commitment",
+        "Three-front regulatory battle: Supreme Court App Store ruling, EU DMA, India antitrust probe threaten Services margins",
+        "Leadership transition from Tim Cook to John Ternus introduces execution risk",
+        "Q3 guidance of 14-17% YoY revenue growth is above prior expectations of 9%",
+        "Rising Treasury yields (10Y at 4.45%) and elevated oil ($92.65) create macro headwinds for premium multiple",
+        "Strong balance sheet: $106.5B equity, ~$62B net cash position, $28.7B quarterly operating cash flow",
+        "2.35B active device installed base provides durable competitive moat and Services monetization runway"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=111.18B net_income=29.58B eps_diluted=2.01 gross_profit=54.78B operating_income=35.88B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2 growth",
+          "excerpt": "YoY: revenue=+16.6% eps_diluted=+21.8% net_income=+19.4% gross_profit=+22.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=37.544 p_b=43.215 p_s=10.194 earnings_yield=0.027 net_margin=0.272 roe=1.151"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-05-29..2026-05-28",
+          "excerpt": "pe_diluted 30.3..43.1 | p_b 38.3..65.0"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-28",
+          "excerpt": "DGS10=4.45 DCOILWTICO=92.65"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-28",
+          "excerpt": "close=312.51 quarterly delta +14.5%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-19",
+          "excerpt": "Apple: Forget the iPhone\u2014Services Will Drive the Next Phase of Growth. Evercore ISI analysts argue Services could add $13 per share to Apple's stock price if valued appropriately"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-19",
+          "excerpt": "Apple is undergoing a leadership transition as Tim Cook steps aside for John Ternus"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "swotpal.com 2026",
+          "excerpt": "Supreme Court rejected Apple's App Store appeal (April 6), requiring external payment links. Combined with EU DMA and DOJ suit, Apple faces a three-front regulatory battle"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortune.com 2026",
+          "excerpt": "Parekh's forward-looking guidance for Q3 projects year-over-year growth of 14% to 17%, above the 9% previously expected"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "panabee.com 2026",
+          "excerpt": "Six-month operating cash flow reached $82.6 billion, reflecting robust operational execution compared to $53.9 billion in the same period of 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "companieshistory.com 2026",
+          "excerpt": "Apple held a 20% global smartphone market share in Q1 2026 per Omdia, ranking second behind Samsung at 22%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AAPL",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4671,
+        "capped_chars": 4671,
+        "raw_tokens": 1168,
+        "capped_tokens": 1168
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231024,
+        "capped_chars": 231024,
+        "raw_tokens": 57756,
+        "capped_tokens": 57756
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4342,
+        "capped_chars": 4342,
+        "raw_tokens": 1086,
+        "capped_tokens": 1086
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 165927,
+        "capped_chars": 37165,
+        "raw_tokens": 41482,
+        "capped_tokens": 9291
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 124068,
+        "capped_chars": 95365,
+        "raw_tokens": 31016,
+        "capped_tokens": 23842
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50129,
+  "started_at": "2026-08-07T03:01:05+00:00"
+}

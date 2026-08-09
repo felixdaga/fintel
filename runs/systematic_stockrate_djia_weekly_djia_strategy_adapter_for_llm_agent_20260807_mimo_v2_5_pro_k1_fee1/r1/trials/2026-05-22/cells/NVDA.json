@@ -1,0 +1,194 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 81047,
+    "tokens_out": 1575,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.085772,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.45,
+      "rationale": "NVIDIA delivered a blowout Q1 FY2027 with revenue of $81.6B (+85% YoY, +43% QoQ), EPS of $2.39 (+215% YoY), and net income of $58.3B, all well above consensus. Gross margins held at ~75%, operating cash flow surged to $50.3B, and the balance sheet remains fortress-like with only $8.5B debt against $195B equity. The company guided Q2 revenue to $91B (vs. ~$87B consensus), announced an $80B additional buyback authorization, and raised its dividend 25x. Data center revenue of $75.2B (+92% YoY) continues to dominate at ~92% of total sales. Valuation has compressed meaningfully: the P/E of 33.5x is at the low end of its 33.5-66.8x 12-month range, and P/B of 27.4x is near the bottom of its 27.4-57.9x range, representing a significant discount to the stock's own history despite accelerating earnings. However, several risks temper the score: (1) competition from hyperscaler custom chips (Amazon Trainium, Google TPU) is real and growing, with Amazon's CEO noting AWS is deploying more Trainium than Nvidia chips; (2) China market is effectively lost with no data center compute revenue assumed in guidance; (3) the semiconductor trade is at 73% crowding per BofA's survey, the highest on record; (4) rising Treasury yields (10Y at 4.57%) and inflation (CPI 3.8%, PPI 6%) create macro headwinds for mega-cap tech valuations; (5) post-earnings stock reaction was muted (-0.5%), continuing a pattern of declining post-earnings pops. The near-term catalyst of the earnings beat and strong guidance has already been delivered, limiting further re-rating potential in the immediate term. Net: excellent fundamentals and trajectory with meaningful valuation improvement vs. history, but competitive and macro headwinds cap the upside.",
+      "key_factors": [
+        "Q1 FY2027 revenue $81.6B (+85% YoY) and EPS $2.39 (+215% YoY) beat consensus significantly",
+        "P/E of 33.5x at low end of 12-month range (33.5-66.8x), P/B of 27.4x near bottom of range (27.4-57.9x) \u2014 meaningful valuation compression vs. own history",
+        "Q2 guidance of $91B revenue well above consensus ~$87B, with $80B additional buyback and 25x dividend increase",
+        "Data center revenue $75.2B (+92% YoY) at 92% of total; gross margins stable at 75%; operating cash flow $50.3B",
+        "Competition from hyperscaler custom chips (Amazon Trainium, Google TPU) and AMD Instinct eroding long-term market share",
+        "China data center market effectively foreclosed \u2014 no revenue assumed in guidance; export controls remain complex",
+        "Semiconductor trade at 73% crowding (BofA survey, record high); rising Treasury yields (10Y 4.57%) and inflation (CPI 3.8%) create macro headwinds",
+        "Post-earnings stock reaction muted (-0.5%), continuing pattern of declining post-earnings pops \u2014 limited near-term re-rating catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 Q1",
+          "excerpt": "revenue=81.61B net_income=58.32B eps_diluted=2.39 gross_profit=61.16B operating_income=53.54B operating_cash_flow=50.34B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=33.544 p_b=27.39 net_margin=0.63 roe=0.817 debt_to_equity=0.043 gross_margin=0.741 operating_margin=0.64"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-05-22..2026-05-21",
+          "excerpt": "pe_diluted 33.5..66.8 | p_b 27.4..57.9"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-21 Investopedia",
+          "excerpt": "Nvidia posted adjusted earnings of $1.87 per share for the first quarter, higher than the $1.76 analysts were looking for. Revenue jumped 85% year-over-year to a record $81.6 billion. Current-quarter revenue was seen rocketing to $91 billion."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-21 CNBC",
+          "excerpt": "Nvidia's stock sank following the analyst call, on track for a fourth-straight post-earnings slide. $80 billion buyback and upping dividend. Guidance beats estimates."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-09 Motley Fool",
+          "excerpt": "Amazon CEO Andy Jassy revealed that AWS is deploying more Trainium chips than Nvidia chips and has a $225 billion backlog for Trainium compute."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-19 Benzinga",
+          "excerpt": "Bank of America's May Global Fund Manager Survey reveals that 73% of professional investors now view 'long global semiconductors' as the most crowded trade on Wall Street, up from 24% in April\u2014the steepest one-month jump on record."
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "excerpt": "DGS10=4.57% VIXCLS=16.76"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-13 Benzinga",
+          "excerpt": "Culper Research released a short report alleging that Nvidia has a significant undisclosed 'China problem,' claiming over 20% of its FY 2026 compute revenues come from Chinese demand through illegal diversions via Southeast Asian intermediaries."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-21 matrixbcg.com",
+          "excerpt": "NVIDIA controls an estimated 88 percent to 92 percent of the high-end data center GPU market. Gross margins remain near 75 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-22 studocu.com 10-K",
+          "excerpt": "As of the end of fiscal year 2026, we were effectively foreclosed from competing in China's data center computing/compute market, and our effective foreclosure from the China market helped our competitors build larger developer and customer ecosystems to challenge us worldwide."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4649,
+        "capped_chars": 4649,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242343,
+        "capped_chars": 242343,
+        "raw_tokens": 60586,
+        "capped_tokens": 60586
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4445,
+        "capped_chars": 4445,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 647378,
+        "capped_chars": 159075,
+        "raw_tokens": 161844,
+        "capped_tokens": 39769
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 136499,
+        "capped_chars": 103853,
+        "raw_tokens": 34124,
+        "capped_tokens": 25963
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50294,
+  "started_at": "2026-08-07T03:00:55+00:00"
+}

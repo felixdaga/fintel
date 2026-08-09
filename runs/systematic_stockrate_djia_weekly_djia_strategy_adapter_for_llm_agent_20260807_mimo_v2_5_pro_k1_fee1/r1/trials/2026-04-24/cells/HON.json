@@ -1,0 +1,180 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 39845,
+    "tokens_out": 1059,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041934,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": -1.0,
+      "rationale": "HON's Q1 2026 results reveal a company in fundamental deterioration masked by an earnings beat. EPS collapsed 41.9% YoY to $1.29 (GAAP) despite revenue growing 2.4%, driven by massive charges from debt restructuring, asset impairments, and spin-off costs. Operating cash flow swung deeply negative at -$650M vs. +$597M a year ago, reflecting the heavy cost of the portfolio transformation. The balance sheet is deteriorating: total equity shrank from $18.0B to $14.7B over three quarters while debt rose from $27.1B to $32.1B, pushing debt-to-equity to 2.19x. Valuation is extremely stretched \u2014 P/E of 33.4x is at the absolute top of its 12-month range (21.5\u201333.4), P/B of 9.3x is also at the ceiling, and net margin has compressed from 15.1% to 10.9%. The stock is being priced for perfection while fundamentals are weakening. The aerospace spin-off (June 29, 2026) is the supposed catalyst, but this creates execution risk and uncertainty rather than a clear re-rating path \u2014 the market just sold off 5%+ on a revenue miss despite an EPS beat, signaling investor skepticism. Process Automation & Technology saw -6% organic growth due to Middle East conflict exposure. The company maintained full-year guidance but Q2 faces a $0.16/share tax headwind. With the stock at 52-week-high P/E multiples amid deteriorating margins, negative cash flow, rising leverage, and significant restructuring uncertainty, the risk-reward is heavily skewed to the downside.",
+      "key_factors": [
+        "GAAP EPS collapsed 41.9% YoY to $1.29 due to debt restructuring charges, impairments, and spin-off costs",
+        "Operating cash flow deeply negative at -$650M vs. +$597M prior year, reflecting heavy transformation costs",
+        "Balance sheet deteriorating: equity down $3.3B in 3 quarters, debt up $5B, D/E at 2.19x",
+        "P/E of 33.4x at absolute top of 12-month range (21.5\u201333.4), P/B of 9.3x also at ceiling",
+        "Net margin compressed from 15.1% to 10.9% over the period",
+        "Revenue missed expectations ($9.14B vs $9.30B expected), stock fell 5%+ post-earnings",
+        "Process Automation & Technology organic sales declined 6% due to Middle East conflict",
+        "Aerospace spin-off (June 29, 2026) creates execution risk and uncertainty, not a clear positive catalyst",
+        "Q2 faces $0.16/share tax headwind from higher effective tax rate"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "eps_diluted=1.29, net_income=795M, operating_cash_flow=-650M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "eps_diluted=2.22, net_income=1.47B, operating_cash_flow=597M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=33.374, p_b=9.329, net_margin=0.109, debt_to_equity=2.189"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-04-24",
+          "excerpt": "pe_diluted=21.719, p_b=6.885, net_margin=0.151"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-23 Motley Fool",
+          "excerpt": "Honeywell's stock fell nearly 3% after posting Q1 2026 results that missed revenue expectations ($9.1B vs. $9.3B expected)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-23 Benzinga",
+          "excerpt": "Shares fell 5.44% in premarket trading"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-23 investing.com",
+          "excerpt": "Process Automation & Technology faced the most significant headwinds, with sales declining 6% organically"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-23 panabee",
+          "excerpt": "negative operating free cash flow (OFCF) of $873 million for the quarter"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3050,
+        "capped_chars": 3050,
+        "raw_tokens": 762,
+        "capped_tokens": 762
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 254269,
+        "capped_chars": 254269,
+        "raw_tokens": 63567,
+        "capped_tokens": 63567
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1243,
+        "capped_chars": 1243,
+        "raw_tokens": 311,
+        "capped_tokens": 311
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 11401,
+        "capped_chars": 3164,
+        "raw_tokens": 2850,
+        "capped_tokens": 791
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 131526,
+        "capped_chars": 108440,
+        "raw_tokens": 32882,
+        "capped_tokens": 27110
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 38019,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

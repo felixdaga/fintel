@@ -1,0 +1,200 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32587,
+    "tokens_out": 1440,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036907,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": 0.15,
+      "rationale": "Home Depot is a fundamentally sound business with dominant market position (~17% U.S. home improvement share), strong cash generation ($6.03B operating cash flow in Q1 FY2026, up 39.5% YoY), and a growing Pro ecosystem via SRS/GMS/Mingledorff's acquisitions expanding TAM to $1.2T. However, the near-term trajectory is mixed: Q1 FY2026 showed revenue growth of +4.8% YoY to $41.77B but EPS declined 4.3% YoY to $3.30, with gross margin compressing 75bps to 33.0% due to acquisition mix effects. Operating margin fell to ~11.9% and ROIC declined from 31.3% to 25.4% as integration costs weigh. The company reaffirmed modest FY2026 guidance of ~1% comparable sales growth and flat-to-+4% EPS growth, reflecting a cautious housing environment with 30-year mortgage rates at 6.47% and a lock-in effect suppressing home turnover. Valuation is moderate: P/E of 24.5x sits within its 1-year range (20.3-28.8) and near the lower end, while P/B has compressed significantly from 45-51x to 24.8x as equity grew. The stock trades at 21.1x forward P/E vs. 5-year median of 22.27x, suggesting slight undervaluation. Near-term catalysts are limited: the 21st Century ROAD to Housing Act passage is a modest positive, and the Q2 earnings report (Aug 18) could provide clarity on margin trajectory, but Wolfe Research downgraded to Peer Perform on June 23 citing Pro-strategy execution risks. The balance sheet carries $44.8B in long-term debt with buy...   ",
+      "key_factors": [],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03 Q1",
+          "excerpt": "revenue=41.77B eps_diluted=3.3 net_income=3.29B operating_cash_flow=6.03B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-05-04 Q1",
+          "excerpt": "revenue=39.86B eps_diluted=3.45"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03 balance sheet",
+          "excerpt": "total_equity=13.87B total_liabilities=94.03B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=24.523 p_b=24.767 net_margin=0.084 roe=1.01"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-06-26..2026-06-25",
+          "excerpt": "pe_diluted 20.3..28.8 | p_b 22.2..52.9"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-22",
+          "excerpt": "Home Depot and Lowe's shares dropped 2.5-3% after the Federal Reserve held interest rates steady; higher mortgage rates (30-year fixed at 6.47%) reduce housing turnover"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-25",
+          "excerpt": "Lowe's is recommended as the better buy due to its lower valuation metrics, higher projected growth rates (8% sales growth vs. 4% for Home Depot)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-25",
+          "excerpt": "Wolfe Research downgraded the stock to Peer Perform, citing housing lock-in uncertainties and the execution risks of the professional-contractor transition"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-25",
+          "excerpt": "GAAP operating margins to 11.9% and eroded trailing twelve-month Return on Invested Capital (ROIC) to 25.4% from 31.3%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-25",
+          "excerpt": "Home Depot's forward 12-month P/E ratio of 21.1X, below its five-year median of 22.27X"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-25",
+          "excerpt": "21st Century ROAD to Housing Act passed by both chambers of Congress"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-25",
+          "excerpt": "Home Depot holds approximately 17% of the U.S. home improvement market"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-25",
+          "excerpt": "$700B+ addressable Pro market; SRS, GMS, Mingledorff's add scale; cross-sell synergies targeted at $400M run-rate in 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-25",
+          "excerpt": "management anticipates resuming share repurchases once the company achieves an excess cash position, projected for the first half of 2027"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3778,
+        "capped_chars": 3778,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224643,
+        "capped_chars": 224643,
+        "raw_tokens": 56161,
+        "capped_tokens": 56161
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1796,
+        "capped_chars": 1796,
+        "raw_tokens": 449,
+        "capped_tokens": 449
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 11367,
+        "capped_chars": 3363,
+        "raw_tokens": 2842,
+        "capped_tokens": 841
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88143,
+        "capped_chars": 69823,
+        "raw_tokens": 22036,
+        "capped_tokens": 17456
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 65907,
+  "started_at": "2026-08-07T03:05:20+00:00"
+}

@@ -1,0 +1,174 @@
+{
+  "cell": "CAT",
+  "symbols": [
+    "CAT"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 38616,
+    "tokens_out": 846,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041154,
+    "basis": "reported"
+  },
+  "views": {
+    "CAT": {
+      "symbol": "CAT",
+      "score": 0.15,
+      "rationale": "Caterpillar shows strong fundamental health with excellent YoY growth (revenue +22.2%, EPS +30.2% in Q1 2026), high ROE (~50%), and solid margins (operating margin ~17-18%). The company benefits from secular tailwinds in AI data center construction and infrastructure spending, with a record $63B backlog. However, valuation is extremely stretched at ~40x P/E, near the top of its 1-year range (19.6-52.6), and P/B of 20.2x is also elevated. The stock has already priced in significant growth expectations. A near-term catalyst exists with Q2 earnings on Aug 4 (consensus EPS $6.25, +32.4% YoY), but Baird's recent downgrade citing data center regulatory headwinds introduces risk. The combination of excellent fundamentals offset by very rich valuation and emerging regulatory concerns around data center construction results in a mildly positive but cautious view.",
+      "key_factors": [
+        "Strong YoY growth: revenue +22.2%, EPS +30.2% in Q1 2026",
+        "Record $63B backlog driven by AI data center and infrastructure demand",
+        "High profitability: ROE ~50%, operating margin ~17-18%",
+        "Valuation stretched: P/E ~40x near top of 1-year range (19.6-52.6), P/B 20.2x",
+        "Baird downgrade on July 29 citing data center regulatory headwinds and moratoriums",
+        "Q2 earnings on Aug 4 as near-term catalyst (consensus EPS $6.25, +32.4% YoY)",
+        "Energy & Transportation segment grew 30% last year on data center power demand",
+        "Stock up ~100% over past year, suggesting much growth already priced in"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.41B net_income=2.55B eps_diluted=5.47; YoY revenue=+22.2% eps_diluted=+30.2%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=39.981 p_b=20.198; range over window: pe_diluted 19.6..52.6"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-29",
+          "excerpt": "Baird downgraded Caterpillar to Neutral and slashed its price target to $900 from $1,200, citing regulatory headwinds facing data center construction"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-30",
+          "excerpt": "Caterpillar stock has declined 16.4% over the past month and is trading 22.3% below its 52-week high; Q2 earnings report on August 4"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-29",
+          "excerpt": "record $63 billion backlog, and 32 consecutive years of dividend increases, though its forward P/E of 36 commands a premium valuation"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-29",
+          "excerpt": "Caterpillar (CAT) will release its next earnings report on Aug 4, 2026. EPS Estimate 6.22"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "excerpt": "close=809.14; range over ~251 bars: high=1073.46 low=405.46"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CAT",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4541,
+        "capped_chars": 4541,
+        "raw_tokens": 1135,
+        "capped_tokens": 1135
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241987,
+        "capped_chars": 241987,
+        "raw_tokens": 60497,
+        "capped_tokens": 60497
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1801,
+        "capped_chars": 1801,
+        "raw_tokens": 450,
+        "capped_tokens": 450
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 31783,
+        "capped_chars": 7556,
+        "raw_tokens": 7946,
+        "capped_tokens": 1889
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 107996,
+        "capped_chars": 87044,
+        "raw_tokens": 27000,
+        "capped_tokens": 21762
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22910,
+  "started_at": "2026-08-07T03:09:28+00:00"
+}

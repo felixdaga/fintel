@@ -1,0 +1,182 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31083,
+    "tokens_out": 1234,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034785,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": -1.0,
+      "rationale": "MRK's Q1 2026 results reveal a severe earnings deterioration: net income swung to -$4.24B (EPS -$1.72) from +$5.08B (EPS +$2.01) YoY, driven by a ~$5.8B one-time charge related to the Terns Pharmaceuticals acquisition. While revenue grew 4.9% YoY to $16.29B, operating income collapsed to -$3.53B. The stock has rallied ~43% over the past year (from ~$84 to ~$120), pushing the P/E to 33.3x\u2014near the top of its 365-day range (11.1\u201333.9x) and a massive premium to its historical average of ~12\u201315x. This valuation expansion has occurred despite: (1) the looming Keytruda patent cliff in 2028\u20132029, which accounts for ~49% of revenue; (2) Gardasil sales declining 22% YoY in Q1; (3) generic headwinds from Januvia/Janumet expected mid-2026; and (4) a $2.5B headwind from generic competition and Medicare pricing pressures in 2026. The balance sheet shows rising liabilities ($82.75B vs $77.64B in equity) declining equity declining declining topably to $. While the pipeline (Winrevair, Capvaxive) and new product launches provide long-term optionality, the market near-term catalyst is limited. The stock is now trading at a3x its historical P/E, with no clear fundamental fundamental catalyst to re-rate it higher. News sentiment is moderately positive (mean 0.603) but the quantitative elevated valuation makes the risk/reward skewed unfavorable.",
+      "key_factors": [
+        "Q1 2026 net income swung negative to -$4.24B (EPS -$1.772 driven by ~$5.8B Terns acquisition charge), a severe earnings deterioration",
+        "P/E of 33.3x is near the top of its 365-day range (11.1\u201333.9x), a massive premium to the 12\u201315x range seen over the prior year",
+        "Keytruda patent cliff in 2028\u20132029 threatens ~49% of revenue; Gardasil sales declined 22% YoY in Q1 2026",
+        "Generic headwinds from Januvia/Janumet expected mid-2026, plus $2.5B in projected 2026 headwinds from generics and Medicare pricing",
+        "Stock has rallied ~43% over the past year, pricing in significant optimism that may not be justified given fundamental risks",
+        "No clear near-term fundamental catalyst to re-rate the stock higher; pipeline execution risk remains high"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "net_income=-4.24B eps_diluted=-1.72 operating_income=-3.53B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "net_income=5.08B eps_diluted=2.01"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=33.272 p_b=6.472"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-05",
+          "excerpt": "pe_diluted=11.258 p_b=4.059"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=120.26; range over ~251 bars: high=125.14 low=76.66"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31",
+          "excerpt": "total_liabilities=82.75B total_equity=45.93B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "excerpt": "Keytruda patent expiration in late 2028; Gardasil 9 U.S. patents expire in 2028; generics for Januvia expected by mid-2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com SWOT",
+          "excerpt": "Merck's pharmaceutical business trades at a price-to-earnings multiple of approximately 8.7 times projected 2026 earnings"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-25",
+          "excerpt": "Merck is preparing for Keytruda patent expiration with a robust pipeline of 50+ trials"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4573,
+        "capped_chars": 4573,
+        "raw_tokens": 1143,
+        "capped_tokens": 1143
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224788,
+        "capped_chars": 224788,
+        "raw_tokens": 56197,
+        "capped_tokens": 56197
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1846,
+        "capped_chars": 1846,
+        "raw_tokens": 462,
+        "capped_tokens": 462
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 20762,
+        "capped_chars": 3999,
+        "raw_tokens": 5190,
+        "capped_tokens": 1000
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 91834,
+        "capped_chars": 74689,
+        "raw_tokens": 22958,
+        "capped_tokens": 18672
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 55043,
+  "started_at": "2026-08-07T03:02:42+00:00"
+}

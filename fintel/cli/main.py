@@ -220,6 +220,54 @@ def build_parser() -> argparse.ArgumentParser:
     )
     cache_status.add_argument("--output-root", default="runs", help="Output root (default: runs)")
 
+    forward_fill = sub.add_parser(
+        "forward-fill", help="Add new decision dates to a finished run"
+    )
+    forward_fill.add_argument("job_id", help="Job id under --output-root")
+    forward_fill.add_argument(
+        "--run",
+        type=int,
+        default=1,
+        dest="run_index",
+        help="Which repeat (rK) to forward-fill (default 1)",
+    )
+    forward_fill.add_argument(
+        "--through",
+        default=None,
+        help="Run all scheduled dates up to this date (ISO, default: today)",
+    )
+    forward_fill.add_argument(
+        "--dates",
+        default=None,
+        help="Explicit comma-separated ISO dates to add (overrides schedule)",
+    )
+    forward_fill.add_argument(
+        "--schedule-kind",
+        default=None,
+        help="Override the run's schedule kind (e.g. weekly_fridays)",
+    )
+    forward_fill.add_argument(
+        "--schedule-start",
+        default=None,
+        help="Start date for the override schedule (ISO)",
+    )
+    forward_fill.add_argument(
+        "--cell-concurrency",
+        type=int,
+        default=1,
+        help="Flat pool size for running cells (default 1)",
+    )
+    forward_fill.add_argument(
+        "--output-root",
+        default="runs",
+        help="Directory for job artifacts (default: runs)",
+    )
+    forward_fill.add_argument(
+        "--quiet",
+        action="store_true",
+        help="Suppress live progress (still writes logs)",
+    )
+
     return parser
 
 
@@ -235,6 +283,10 @@ def main(argv: list[str] | None = None) -> int:
         from fintel.cli.backfill import run_backfill_cli
 
         return run_backfill_cli(args)
+    if args.command == "forward-fill":
+        from fintel.cli.forward_fill import run_forward_fill_cli
+
+        return run_forward_fill_cli(args)
     if args.command == "health":
         from fintel.cli.health import run_health
 

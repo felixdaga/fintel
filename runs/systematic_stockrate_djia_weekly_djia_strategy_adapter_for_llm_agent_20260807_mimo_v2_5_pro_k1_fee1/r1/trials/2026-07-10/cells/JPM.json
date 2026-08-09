@@ -1,0 +1,184 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34951,
+    "tokens_out": 1162,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038437,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "rationale": "JPMorgan Chase demonstrates strong fundamental health and positive trajectory. Q1 2026 showed record net income of $16.49B with EPS of $5.94, representing 10% YoY revenue growth and 17.2% EPS growth. The bank maintains industry-leading ROE of 16.2% and net margins of 31.5%, with a diversified business model across Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The bank passed the 2026 stress test with a strong 14.3% tier 1 capital ratio and announced a $50B buyback plus 10% dividend increase, signaling management confidence. Valuation is reasonable at 15.5x P/E, sitting in the middle of its 13.7-17.8x range over the past year, and P/B of 2.5x is also mid-range. The near-term catalyst is the Q2 2026 earnings report on July 14, with consensus expecting EPS of $5.49-5.52 on revenue of $48.71B. However, the stock has closed lower after each of its last four earnings reports, and the stock is trading near all-time highs at $335.47, which limits the upside from current levels. Macro headwinds include rising 10-year Treasury yields (4.54%) and a flattening yield curve (T10Y2Y at 0.38%), which could pressure net interest margins. The score reflects solid fundamentals and a reasonable valuation, tempered by the stock's proximity to record highs and the pattern of post-earnings weakness.",
+      "key_factors": [
+        "Record Q1 2026 earnings: $16.49B net income, $5.94 EPS, 10% YoY revenue growth",
+        "Industry-leading profitability: 16.2% ROE, 31.5% net margin, 39.9% operating margin",
+        "Strong capital position: 14.3% tier 1 capital ratio, $50B buyback authorization, 10% dividend increase",
+        "Diversified business model: CCB 42%, CIB 43%, AWM 13% of revenue",
+        "Valuation mid-range: 15.5x P/E (13.7-17.8x range), 2.5x P/B (2.2-2.8x range)",
+        "Near-term catalyst: Q2 2026 earnings on July 14, consensus EPS $5.49-5.52",
+        "Macro headwinds: rising 10Y yields (4.54%), flattening curve (T10Y2Y 0.38%)",
+        "Post-earnings pattern: stock closed lower after last 4 earnings reports"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=49.84B net_income=16.49B eps_diluted=5.94 operating_income=20.48B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+10.0% eps_diluted=+17.2% net_income=+12.6%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=15.493 p_b=2.507 net_margin=0.315 roe=0.162 operating_margin=0.399"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10..2026-07-09 range",
+          "excerpt": "pe_diluted 13.7..17.8 | p_b 2.2..2.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-04",
+          "excerpt": "JPMorgan Chase passed the Federal Reserve's bank stress test with a strong tier 1 capital ratio of 14.3% and announced a 10% dividend increase plus a $50 billion share buyback program"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-07",
+          "excerpt": "JPMorgan Chase (JPM) will report second-quarter earnings before the open on Tuesday, July 14. According to Zacks Research, analysts expect earnings of $5.49 per share on revenue of $48.71 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-07",
+          "excerpt": "The bank has closed lower after each of its last four earnings reports, including a 4.2% drop in January"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-09",
+          "excerpt": "DGS10=4.54 T10Y2Y=0.38"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "excerpt": "close=335.47 high=343.45 low=279.10"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 237404,
+        "capped_chars": 237404,
+        "raw_tokens": 59351,
+        "capped_tokens": 59351
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3568,
+        "capped_chars": 3568,
+        "raw_tokens": 892,
+        "capped_tokens": 892
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 158483,
+        "capped_chars": 15510,
+        "raw_tokens": 39621,
+        "capped_tokens": 3878
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 82151,
+        "capped_chars": 60767,
+        "raw_tokens": 20538,
+        "capped_tokens": 15192
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 41181,
+  "started_at": "2026-08-07T03:07:08+00:00"
+}

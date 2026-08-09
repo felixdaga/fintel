@@ -1,0 +1,191 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 39007,
+    "tokens_out": 1174,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.042529,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's is a high-quality franchise with best-in-class operating margins (~45-46%), a 95% franchised model generating stable royalty/rent income, and a strong brand moat. Q1 2026 showed solid YoY growth (revenue +9%, EPS +7% to $2.78, global comps +3.8%) and the company beat consensus estimates. However, several headwinds temper enthusiasm: (1) QoQ trajectory is negative \u2014 revenue -7.9%, EPS -12.6% from Q3 2025 levels, reflecting sequential deceleration; (2) the stock has declined ~17% over the past quarter to $275, near its 52-week low of $272, suggesting the market has already priced in weakness; (3) management explicitly warned Q2 comps will decelerate 'meaningfully' due to tough Minecraft movie tie-in comparisons; (4) U.S. company-operated margins are 'not acceptable' per CFO, with refranchising review underway; (5) rising oil prices ($105/bbl) and consumer softness, especially among low-income consumers, pose ongoing risk; (6) negative equity (-$1.29B) reflects aggressive capital returns via buybacks/dividends funded by debt. The valuation data is unfortunately broken (PE=0 across all history), making Pillar 2 assessment imprecise, but the stock near 52-week lows with a ~2.2% dividend yield and ~3.4% total shareholder yield suggests moderate value. No clear near-term fundamental catalyst exists \u2014 the next event is September's Investor Day. Net: solid franchise at a reasonable but not compelling entry point, with near-term earnings trajectory softening.",
+      "key_factors": [
+        "Best-in-class 45-46% operating margins from 95% franchised model",
+        "Q1 2026 beat: EPS $2.83 adj vs $2.75 consensus, revenue $6.52B vs $6.48B est",
+        "Negative QoQ trajectory: revenue -7.9%, EPS -12.6% from Q3 2025",
+        "Stock near 52-week low ($275 vs low $272), -17% over past quarter",
+        "Management warned Q2 comps will decelerate 'meaningfully'",
+        "U.S. company-operated margins flagged as 'not acceptable' \u2014 refranchising review underway",
+        "Rising oil prices ($105/bbl) pressuring low-income consumer spending",
+        "Negative shareholders' equity (-$1.29B) from aggressive buybacks/dividends",
+        "No near-term fundamental catalyst until September Investor Day",
+        "Global comparable sales +3.8% with market share gains in top 10 markets"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-07 Q1 filing",
+          "excerpt": "revenue=6.52B net_income=1.98B eps_diluted=2.78 operating_income=2.95B operating_cash_flow=2.41B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "QoQ growth panel",
+          "excerpt": "QoQ: revenue=-7.9% eps_diluted=-12.6% net_income=-12.9% operating_cash_flow=-29.6%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "YoY growth panel",
+          "excerpt": "YoY: revenue=+9.4% eps_diluted=+6.9% net_income=+6.2%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "excerpt": "close=274.97 range high=341.75 low=271.98 quarterly delta=-17.2%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-12 Motley Fool",
+          "excerpt": "Rising gas prices are straining lower-income consumers' budgets... McDonald's, despite value positioning, shows cracks as CEO warns of deteriorating economic conditions"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.biggo.com Q1 2026 earnings call",
+          "excerpt": "CFO Ian Borden warned that second-quarter comparable sales will decelerate 'meaningfully' from Q1 levels... 'Our U.S. McOpCo performance is not acceptable'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "koalagains.com business analysis",
+          "excerpt": "FY2025 operating margin of 46.1% on $26.89 billion of revenue... ~95% franchised... ROIC of 18.2%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_equity=-1.29B total_liabilities=61.32B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "prnewswire.com Q1 2026 results",
+          "excerpt": "Global comparable sales increased 3.8%... Systemwide sales increased 11% (6% in constant currencies) to over $34 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "koalagains.com capital allocation",
+          "excerpt": "dividend yield of 2.32% with a buyback yield of 1.1% for a total yield of over 3.4%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215413,
+        "capped_chars": 215413,
+        "raw_tokens": 53853,
+        "capped_tokens": 53853
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1657,
+        "capped_chars": 1657,
+        "raw_tokens": 414,
+        "capped_tokens": 414
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 26718,
+        "capped_chars": 4929,
+        "raw_tokens": 6680,
+        "capped_tokens": 1232
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 130170,
+        "capped_chars": 108112,
+        "raw_tokens": 32542,
+        "capped_tokens": 27028
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 38440,
+  "started_at": "2026-08-07T02:59:49+00:00"
+}

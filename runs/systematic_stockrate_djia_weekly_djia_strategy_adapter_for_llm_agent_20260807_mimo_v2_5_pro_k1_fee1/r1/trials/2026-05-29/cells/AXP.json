@@ -1,0 +1,174 @@
+{
+  "cell": "AXP",
+  "symbols": [
+    "AXP"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32806,
+    "tokens_out": 793,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035185,
+    "basis": "reported"
+  },
+  "views": {
+    "AXP": {
+      "symbol": "AXP",
+      "score": 0.25,
+      "rationale": "American Express shows solid fundamental health with consistent revenue and EPS growth (Q1 2026 revenue +9.3% YoY, EPS +17.6% YoY), strong ROE of 33%, and a premium closed-loop business model that supports durable competitive advantages. The company's focus on affluent consumers and high-spending cardholders provides resilience, with net charge-off rates of 2.3% well below peers. Valuation has compressed meaningfully from its 2025 highs, with P/E now at 19.3x versus a 25.3x peak in the window, placing it near the low end of its 365-day range. However, the stock remains fairly valued rather than clearly cheap, and there are macro headwinds including rising 10-year Treasury yields (4.45%), elevated oil prices ($92.65/bbl), and potential credit normalization risks. The 16% dividend increase and GBT stake sale provide modest positive catalysts, but no major near-term re-rating event is evident. The score reflects a quality franchise at a more reasonable but not deeply discounted valuation.",
+      "key_factors": [
+        "Consistent revenue and EPS growth trajectory (Q1 2026: revenue +9.3% YoY, EPS +17.6% YoY)",
+        "Strong ROE of 33% and net margins of 26.6%",
+        "P/E compressed to 19.3x from 25.3x peak, near low end of 365-day range",
+        "Premium closed-loop business model with high cardholder spend ($150 avg transaction vs $91-94 competitors)",
+        "Net charge-off rate of 2.3% below peers like Capital One at 3.7%",
+        "16% dividend increase and GBT stake sale providing capital flexibility",
+        "Rising Treasury yields and elevated oil prices as macro headwinds",
+        "Regulatory risk on interchange fees and credit card interest rate caps"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=10.52B eps_diluted=4.28 YoY revenue=+9.3% eps_diluted=+17.6%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=19.267 p_b=6.359 roe=0.33 net_margin=0.266"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-12-11",
+          "excerpt": "pe_diluted=25.304 (peak in window)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-23",
+          "excerpt": "average Amex transaction was $150, compared to roughly $94 for Mastercard and $91 for Visa; net charge-off rate was 2.3%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "excerpt": "DGS10=4.45% DCOILWTICO=92.65"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-28",
+          "excerpt": "16% dividend increase and groundbreaking of new global headquarters at 2 World Trade Center"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st GBT",
+          "excerpt": "exiting its roughly 30% equity stake in Global Business Travel...about US$1.5b in proceeds and US$975m pre tax gain"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AXP",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4463,
+        "capped_chars": 4463,
+        "raw_tokens": 1116,
+        "capped_tokens": 1116
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 227131,
+        "capped_chars": 227131,
+        "raw_tokens": 56783,
+        "capped_tokens": 56783
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2119,
+        "capped_chars": 2119,
+        "raw_tokens": 530,
+        "capped_tokens": 530
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 23768,
+        "capped_chars": 4172,
+        "raw_tokens": 5942,
+        "capped_tokens": 1043
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 123214,
+        "capped_chars": 100943,
+        "raw_tokens": 30803,
+        "capped_tokens": 25237
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 33383,
+  "started_at": "2026-08-07T03:01:10+00:00"
+}

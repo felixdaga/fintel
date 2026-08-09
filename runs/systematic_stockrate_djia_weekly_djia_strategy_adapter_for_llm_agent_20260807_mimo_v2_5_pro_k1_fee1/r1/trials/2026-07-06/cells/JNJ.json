@@ -1,0 +1,189 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29738,
+    "tokens_out": 1249,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033485,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": 0.15,
+      "rationale": "JNJ presents a mixed but slightly positive fundamental picture. The company has strong competitive positioning as the world's largest diversified healthcare firm with two robust segments (Innovative Medicines and MedTech), a solid balance sheet ($22B cash, interest coverage 25x), and a long dividend track record. TTM revenue of $93.7B and net income of $26.9B demonstrate scale, with management raising FY2026 guidance to ~$100B in revenue. However, the trajectory is clouded by the Stelara patent cliff (faster-than-expected erosion in Q1 2026), upcoming LOEs for Simponi and Opsumit, talc litigation overhang (75,000+ lawsuits with bankruptcy strategy failing three times), and China VBP headwinds in MedTech. The Q1 2026 income statement shows a significant QoQ drop in operating income ($5.99B vs $7.49B prior quarter) and gross margin compression (66.3% vs 69.6%), suggesting margin pressure from launch investments and product mix shifts. Valuation is the key concern: at a P/E of 30.6x (as of 2026-07-02), JNJ trades at the very top of its 365-day range (17.2x-30.6x), having nearly doubled from 17.3x a year ago. This is expensive for a company facing patent cliffs and margin headwinds, even accounting for the growth pipeline. The upcoming Q2 earnings on July 15 could serve as a near-term catalyst, with consensus expecting $2.83 EPS (+2.2% YoY) and $25.04B revenue (+5.5% YoY), but the stock has already re-rated significantly. Net: solid franchise, but trajectory is mixed and valuation has moved to the expensive end of its range, limiting upside.",
+      "key_factors": [
+        "Strong competitive position as world's largest diversified healthcare company with Innovative Medicines ($60.4B) and MedTech ($ ($33.BB segments",
+        "St cliff andStara patent StSt patentSt patent patentSt faster-than expected expected erosion, and Simponi OpsumLO LO2026LOE",
+        " Talc litigation (75,000+ lawsuits) with failed bankruptcy strategy",
+        "China VBP headwinds in MedTech segment",
+        "Valuation stretched: P/E 30.6x) at the top of 365-day range vs 17.3x a year ago",
+        "Upcoming Q2 2026 earnings on July 15 as near-term catalyst; consensus $2.3 EPS",
+        "CEO projects double-digit growth with 28 billion-dollar platforms and $55B US manufacturing investment over 4 years",
+        "Q1 2026 operating income declined QoQ ($5.99B vs $7.49B) with gross margin compression from launch investments"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29 Q4",
+          "excerpt": "re=24.06B net_income=5.24B eps_diluted=2.14 operating_income=5.99B cash=22.05B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "TTM 2026-03-29",
+          "excerpt": "revenue=93.69B net_income=26.92B operating_cash_flow=19.73B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=30.57 p_b=7.922 net_margin=0.218 roe=0.259"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-07-07..2026-07-02",
+          "excerpt": "pe_diluted 17.2..30.6 | p_b 4.8..7.9"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout.com JNJ pipeline",
+          "excerpt": "Q1 2026 operational sales up 6.4% and full-year guidance raised to $100.2 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "theglobeandmail.com JNJ risks",
+          "excerpt": "Stelara was a key top-line driver accounting for around 18% of JNJ's Innovative Medicine unit's sales in 2024, before it lost patent exclusivity in 2025. In Q1 2026, JNJ saw faster erosion in sales of Stelara than expected"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "theglobeandmail.com JNJ talc",
+          "excerpt": "JNJ faces more than 75,000 lawsuits for its talc-based products. In April 2025, a bankruptcy court rejected JNJ's proposed bankruptcy plan for the third time"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks.com JNJ",
+          "excerpt": "Next Earnings Jul 15, 2026 EPS EPS Estimate 2.85"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "morningstar.com JNJ",
+          "excerpt": "Interest Coverage 25.00 vs MRK 8.46 vs ABBV 3.89"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "blockonomi.com JNJ Acuvue",
+          "excerpt": "JNJ is allocating more than $1 billion toward expanding its Acuvue contact lens manufacturing capabilities, forming part of a broader $55B domestic manufacturing initiative"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4593,
+        "capped_chars": 4593,
+        "raw_tokens": 1148,
+        "capped_tokens": 1148
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 222706,
+        "capped_chars": 222706,
+        "raw_tokens": 55676,
+        "capped_tokens": 55676
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2491,
+        "capped_chars": 2491,
+        "raw_tokens": 623,
+        "capped_tokens": 623
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 33089,
+        "capped_chars": 8032,
+        "raw_tokens": 8272,
+        "capped_tokens": 2008
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 72636,
+        "capped_chars": 50895,
+        "raw_tokens": 18159,
+        "capped_tokens": 12723
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 34047,
+  "started_at": "2026-08-07T03:06:16+00:00"
+}

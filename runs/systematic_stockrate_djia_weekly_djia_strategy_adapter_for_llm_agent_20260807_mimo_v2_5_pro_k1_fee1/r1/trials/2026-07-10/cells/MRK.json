@@ -1,0 +1,178 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29035,
+    "tokens_out": 947,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.030788,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": -1.0,
+      "rationale": "Merck's Q1 2026 results reveal a severe earnings collapse: net income swung to -$4.24B (EPS -$1.72) from +$5.79B in Q3 2025, driven by a massive operating loss of -$3.53B. This is not a one-quarter blip but reflects structural headwinds including Gardasil demand collapse in China, Keytruda patent cliff approaching (2028-2029), and pipeline setbacks (EVOKE-03 discontinuation, LITESPARK-012 miss). Despite this earnings deterioration, the stock trades at 34.6x diluted P/E\u2014near the top of its 365-day range (11.1-35.8x)\u2014and P/B of 6.73x is also at the high end (4.0-7.0x range). The market is paying peak multiples for a company whose fundamental trajectory has sharply deteriorated. Management's FY2026 EPS guidance of $5.04-5.16 implies a significant recovery from Q1's loss, but this assumes no further charges or setbacks. The combination of collapsing near-term earnings, rich valuation versus own history, and no credible near-term catalyst for re-rating (next earnings Aug 4 is a risk event, not a positive catalyst) makes this extremely unattractive.",
+      "key_factors": [
+        "Q1 2026 net income collapsed to -$4.24B (EPS -$1.72) vs +$5.79B in Q3 2025, operating income -$3.53B",
+        "P/E of 34.6x is near the top of 365-day range (11.1-35.8x) despite earnings deterioration",
+        "P/B of 6.73x at the high end of 365-day range (4.0-7.0x)",
+        "Keytruda patent cliff (2028-2029) with 46% of 2024 revenue concentrated in this single drug",
+        "Gardasil demand collapse in China and Japan, pipeline setbacks (EVOKE-03, LITESPARK-012)",
+        "CMS proposed drug price negotiations starting 2029 add regulatory headwind",
+        "Next earnings Aug 4 is a risk event, not a positive catalyst given Q1 miss trajectory"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-04 Q1",
+          "excerpt": "revenue=16.29B net_income=-4.24B eps_diluted=-1.72 operating_income=-3.53B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=17.28B net_income=5.79B eps_diluted=2.32 operating_income=6.75B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=34.602 p_b=6.731 net_margin=0.136 roe=0.195"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 365d",
+          "excerpt": "pe_diluted 11.1..35.8 | p_b 4.0..7.0"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-30",
+          "excerpt": "Merck and Pfizer face near-term patent expirations that could impact revenue significantly"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com 2026-06-15",
+          "excerpt": "CMS proposed drug price negotiations impact Merck's future revenue. Pipeline setbacks in oncology trials raise growth concerns."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "excerpt": "Flags risks around weaker GARDASIL demand in China, possible tariffs, competition, loss of exclusivity for KEYTRUDA and pricing pressure"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dailypolitical.com",
+          "excerpt": "FY 2026 guidance at 5.040-5.160 EPS. Analysts anticipate 5.19 EPS for current year."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4573,
+        "capped_chars": 4573,
+        "raw_tokens": 1143,
+        "capped_tokens": 1143
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224744,
+        "capped_chars": 224744,
+        "raw_tokens": 56186,
+        "capped_tokens": 56186
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1983,
+        "capped_chars": 1983,
+        "raw_tokens": 496,
+        "capped_tokens": 496
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 21935,
+        "capped_chars": 4228,
+        "raw_tokens": 5484,
+        "capped_tokens": 1057
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 80181,
+        "capped_chars": 63372,
+        "raw_tokens": 20045,
+        "capped_tokens": 15843
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 381700,
+  "started_at": "2026-08-07T03:07:13+00:00"
+}

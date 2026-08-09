@@ -1,0 +1,193 @@
+{
+  "cell": "VZ",
+  "symbols": [
+    "VZ"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33258,
+    "tokens_out": 1209,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036885,
+    "basis": "reported"
+  },
+  "views": {
+    "VZ": {
+      "symbol": "VZ",
+      "score": 0.25,
+      "rationale": "Verizon presents a mildly attractive fundamental picture with improving trajectory. Q1 2026 showed solid execution: revenue grew 2.9% YoY to $34.44B, EPS rose 4.3% to $1.20, and the company delivered its first positive Q1 postpaid phone net adds in 13 years (55K). Adjusted EBITDA margin hit a record 38.9%, and free cash flow grew 4% YoY to ~$3.8B. Management raised EPS guidance to 5-6% growth and expects postpaid net adds in the upper half of 750K-1M range. The Frontier acquisition expands fiber passings to ~30M, creating a long-term broadband growth lever. However, wireless service revenue declined ~1% YoY in Q1 due to temporary headwinds (outage credits, promotional amortization), and the company carries ~$120B in debt with leverage at ~2.6x, above its 2.0-2.25x target. Valuation is attractive: at $48.27, the P/E of 11.4x is near the low end of its 11-21x 12-month range and well below the ~17-18x where it traded for most of 2025, suggesting the market has not fully priced in the improving fundamentals. The 6%+ dividend yield and 20 consecutive years of increases provide income support. Rising 10-year Treasury yields (4.57%) create a mild headwind for yield-oriented equities, and competitive pressure from T-Mobile remains a structural risk. No clear near-term dated catalyst beyond the Q2 earnings expected ~July 21, 2026.",
+      "key_factors": [
+        "Q1 2026 earnings beat: EPS $1.20 (+4.3% YoY), revenue $34.44B (+2.9% YoY), first positive Q1 postpaid phone net adds in 13 years",
+        "Record adjusted EBITDA margin of 38.9% (+140bps YoY) and raised EPS guidance to 5-6% growth",
+        "P/E of 11.4x at low end of 11-21x 12-month range vs ~17-18x for most of 2025 \u2014 attractive vs own history",
+        "Frontier acquisition expands fiber to ~30M passings; broadband net adds of 341K in Q1 show momentum",
+        "High leverage (~2.6x net debt/EBITDA) above 2.0-2.25x target; $1.1B severance charges in Q1 from restructuring",
+        "6%+ dividend yield with 20 consecutive years of increases; $5.4B returned to shareholders in Q1",
+        "Rising 10-year Treasury yields (4.57%) create relative headwind for yield-oriented equities"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=34.44B net_income=5.15B eps_diluted=1.2 operating_income=8.24B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=33.48B eps=1.15"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=11.435 p_b=1.942 earnings_yield=0.087 net_margin=0.128 roe=0.17"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-22 to 2026-05-21 range",
+          "excerpt": "pe_diluted 11.0..21.2 | p_b 1.7..2.2"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "excerpt": "close=48.27"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-20 TipRanks",
+          "excerpt": "Adjusted EBITDA climbed 6.7% year over year to $13.4 billion, pushing adjusted EBITDA margin up 140 basis points to 38.9%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-20 TipRanks",
+          "excerpt": "Verizon delivered 55,000 postpaid phone net adds in the quarter, its first positive Q1 in this metric in 13 years"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-20 TipRanks",
+          "excerpt": "Verizon raised its 2026 adjusted EPS growth outlook to 5%\u20136% from 4%\u20135%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-20 TipRanks",
+          "excerpt": "net unsecured debt to adjusted EBITDA to around 2.6 times"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-18 Motley Fool",
+          "excerpt": "Verizon (6.1% yield, 20 consecutive years of dividend increases)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "excerpt": "DGS10=4.57"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "VZ",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 2952,
+        "capped_chars": 2952,
+        "raw_tokens": 738,
+        "capped_tokens": 738
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 243399,
+        "capped_chars": 243399,
+        "raw_tokens": 60850,
+        "capped_tokens": 60850
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 782,
+        "capped_chars": 782,
+        "raw_tokens": 196,
+        "capped_tokens": 196
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2169,
+        "capped_chars": 2169,
+        "raw_tokens": 542,
+        "capped_tokens": 542
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 23140,
+        "capped_chars": 5221,
+        "raw_tokens": 5785,
+        "capped_tokens": 1305
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 140617,
+        "capped_chars": 84233,
+        "raw_tokens": 35154,
+        "capped_tokens": 21059
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 46071,
+  "started_at": "2026-08-07T03:01:02+00:00"
+}

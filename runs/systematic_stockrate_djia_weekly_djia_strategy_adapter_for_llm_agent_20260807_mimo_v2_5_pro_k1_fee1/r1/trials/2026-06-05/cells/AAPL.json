@@ -1,0 +1,195 @@
+{
+  "cell": "AAPL",
+  "symbols": [
+    "AAPL"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 45295,
+    "tokens_out": 1399,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.049492,
+    "basis": "reported"
+  },
+  "views": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "score": 0.25,
+      "rationale": "Apple presents a solid but not compelling fundamental picture. The company delivered strong YoY growth in Q2 FY2026 (revenue +16.6%, EPS +21.8%), with gross margins expanding to 49.3% and operating margins of 32.4%. Services revenue hit $30.98B, supported by a 2.5B device installed base, providing a high-margin recurring revenue stream. The balance sheet is healthy with total equity of $106.5B and debt-to-equity of 0.78, while operating cash flow of $28.7B in the quarter and a $100B buyback authorization signal strong capital return. However, the QoQ trajectory is weak (revenue -22.7%, EPS -29.2%) reflecting normal seasonality after the holiday quarter, and the TTM picture is incomplete due to fiscal calendar gaps. Valuation is elevated: P/E of 37.4x sits in the upper half of its 30-43x 12-month range, P/B of 43x is rich, and the 2.7% earnings yield is modest. The stock has already rallied 19.6% in the past quarter and 50%+ over the past year, pricing in much of the positive narrative. The near-term catalyst is WWDC (June 8-12), where a rebuilt AI-powered Siri and Apple Intelligence updates could re-rate the stock if execution matches expectations\u2014Morgan Stanley sees potential to $440. However, this is partially priced in given the recent run, and UBS remains skeptical on Apple's broader AI strategy. Regulatory headwinds (EU DMA \u20ac500M fine, Supreme Court App Store ruling, DOJ antitrust) and China competitive pressure from Huawei represent real risks. The leadership transition to John Ternus adds execution uncertainty. Overall, Apple is a high-quality franchise with durable competitive advantages, but at current valuation with the stock near all-time highs, the risk-reward is only mildly attractive.",
+      "key_factors": [
+        "Strong YoY growth: Q2 revenue +16.6%, EPS +21.8%, gross margin expanded to 49.3%",
+        "Services segment at $30.98B quarterly with ~75% gross margins, supported by 2.5B device installed base",
+        "$100B buyback authorization and 4% dividend increase signal management confidence in cash generation",
+        "P/E of 37.4x in upper half of 12-month range (30-43x); stock up 19.6% in past quarter, 50%+ YoY",
+        "WWDC June 8-12 as near-term catalyst: rebuilt Siri with Google Gemini, Apple Intelligence expansion",
+        "Three-front regulatory battle: EU DMA, Supreme Court App Store ruling, DOJ antitrust",
+        "China competitive pressure from Huawei resurgence; AI features not yet rolled out in mainland China",
+        "Leadership transition: Tim Cook stepping down, John Ternus as new CEO adds execution risk",
+        "10-year Treasury yield at 4.47% and rising, creating headwind for premium-multiple stocks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=111.18B net_income=29.58B eps_diluted=2.01 gross_profit=54.78B operating_income=35.88B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2 growth",
+          "excerpt": "YoY: revenue=+16.6% eps_diluted=+21.8% net_income=+19.4% gross_profit=+22.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=37.39 p_b=43.038 p_s=10.152 earnings_yield=0.027 net_margin=0.272 gross_margin=0.479 operating_margin=0.326"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 30.3..43.1 | p_b 38.3..65.0"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=311.23 quarterly delta +19.6%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04 Benzinga",
+          "excerpt": "Morgan Stanley believes Apple's WWDC 2026 could trigger a major AI narrative shift, with potential for a rally to $440"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-03 Motley Fool",
+          "excerpt": "Apple stock rose 15% in May driven by market confidence in AI and strong iPhone sales (up 22% year-over-year)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "swotpal.com",
+          "excerpt": "Supreme Court rejected Apple's App Store appeal (April 6), requiring external payment links. Combined with EU DMA and DOJ suit, Apple faces a three-front regulatory battle"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "swotpal.com",
+          "excerpt": "Tim Cook Stepping Down \u2014 John Ternus Named Next CEO"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de",
+          "excerpt": "Services revenue grew 14% year-over-year to $96. billion billion fiscal2222222"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "earezki.com",
+          "excerpt": "Services revenue reached $30.98B, supported by a 2.5 billion device installed base, providing a high-margin recurring revenue stream"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AAPL",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4671,
+        "capped_chars": 4671,
+        "raw_tokens": 1168,
+        "capped_tokens": 1168
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231014,
+        "capped_chars": 231014,
+        "raw_tokens": 57754,
+        "capped_tokens": 57754
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4341,
+        "capped_chars": 4341,
+        "raw_tokens": 1085,
+        "capped_tokens": 1085
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 168665,
+        "capped_chars": 39072,
+        "raw_tokens": 42166,
+        "capped_tokens": 9768
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 122804,
+        "capped_chars": 79950,
+        "raw_tokens": 30702,
+        "capped_tokens": 19987
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 59900,
+  "started_at": "2026-08-07T03:02:00+00:00"
+}

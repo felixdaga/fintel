@@ -1,0 +1,129 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32208,
+    "tokens_out": 559,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033885,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "rationale": "MMM scores -1.0 due to deteriorating fundamentals, expensive valuation, and significant near-term risks. The company's Q1 2026 results show severe earnings pressure with EPS declining 39.7% YoY to $1.23, while revenue grew only 1.3% YoY. Operating cash flow collapsed 826.6% YoY to $574M, and the balance sheet shows total equity of $3.31B against total liabilities of $32.12B, indicating extreme leverage. Valuation is stretched with P/E of 27.6x at the top of its 365-day range (17.7-28.3x) and P/B of 23.4x, despite deteriorating profitability. The company faces significant headwinds from PFAS litigation ($7.8B in environmental liabilities), tariff impacts ($145M in Q1), and narrowed FY2026 EPS guidance to $8.20-$8.50. Recent price decline of 16.9% over the past quarter reflects these fundamental challenges, but valuation remains expensive relative to deteriorating earnings power. No credible near-term catalyst exists to reverse the negative trajectory.",
+      "key_factors": [],
+      "sources_cited": []
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247355,
+        "capped_chars": 247355,
+        "raw_tokens": 61839,
+        "capped_tokens": 61839
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 921,
+        "capped_chars": 921,
+        "raw_tokens": 230,
+        "capped_tokens": 230
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 16964,
+        "capped_chars": 3156,
+        "raw_tokens": 4241,
+        "capped_tokens": 789
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 87485,
+        "capped_chars": 68198,
+        "raw_tokens": 21871,
+        "capped_tokens": 17050
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 36453,
+  "started_at": "2026-08-07T02:59:50+00:00"
+}

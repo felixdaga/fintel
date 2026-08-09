@@ -1,0 +1,189 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36428,
+    "tokens_out": 1160,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039908,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": 0.15,
+      "rationale": "JNJ is a fundamentally sound, defensive healthcare franchise with a AAA balance sheet, 64-year dividend increase streak, and a diversified Innovative Medicine + MedTech model. Q1 2026 revenue of $24.06B (+9.9% YoY) beat estimates, and the company raised FY2026 guidance to $100.3-101.3B revenue and $11.45-11.65 EPS. However, the stock is now trading at a P/E of ~26.8x, near the top of its 365-day range (16.6-27.2), having re-rated sharply from ~17x a year ago. Net margin has compressed from 27.3% to 21.8% in recent quarters, and operating cash flow was weak at $2.51B in Q1 2026 vs $9.17B in Q3 2025. The Stelara biosimilar headwind is real and ongoing, talc litigation remains an unquantified overhang, and rising 10-year Treasury yields (4.45%) create a less favorable backdrop for defensive yield plays. The stock has pulled back ~5% over the last quarter, but at current valuation it is not cheap relative to its own history. Positive pipeline developments (nipocalimab China approval, JNJ-1900 lung cancer data, Shockwave C2 Aero launch) provide modest near-term catalysts but are insufficient to materially re-rate the stock from already-elevated multiples. Score reflects solid but not exceptional fundamentals, stretched valuation vs history, and limited near-term rerating catalyst.",
+      "key_factors": [
+        "Q1 2026 revenue beat ($24.06B, +9.9% YoY) with raised FY2026 guidance to $100.3-101.3B",
+        "P/E of 26.8x near top of 365-day range (16.6-27.2), up from ~17x a year ago \u2014 expensive vs own history",
+        "Net margin compressed to 21.8% from 27.3% in prior quarters; Q1 operating cash flow weak at $2.51B",
+        "Stelara biosimilar erosion ongoing; talc litigation remains unquantified overhang",
+        "AAA balance sheet, 64-year dividend streak, $22B cash \u2014 strong fundamental health",
+        "Pipeline catalysts: nipocalimab China approval, JNJ-1900 Phase 2 lung cancer data (85.7% ORR), Shockwave C2 Aero launch",
+        "Rising 10-year Treasury yields (4.45%) create headwind for defensive yield plays",
+        "Dividend increased to $1.34/quarter ($5.36 annualized, ~2.3% yield)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29 Q4",
+          "excerpt": "revenue=24.06B net_income=5.24B eps_diluted=2.14 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=26.823 p_b=6.951 net_margin=0.218 roe=0.259"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-29",
+          "excerpt": "pe_diluted=17.068 p_b=4.766 net_margin=0.244"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 16.6..27.2 | p_b 4.6..7.6"
+        },
+        {
+          "source_type": "cash_flow",
+          "source_id": "2025-09-28",
+          "excerpt": "operating_cash_flow=9.17B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-17",
+          "excerpt": "Nanobiotix Phase 2 CONVERGE study JNJ-1900: 85.7% overall response rate and 57.1% complete response rate"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-25",
+          "excerpt": "Johnson & Johnson highlighted as superior Dividend King with 5.7% annualized dividend growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart 2026-05",
+          "excerpt": "FY 2026 guidance at 11.450-11.650 EPS, revenue 100.3-101.3B; quarterly dividend $1.34, yield 2.3%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dailypolitical 2026-05",
+          "excerpt": "nipocalimab approved in China; Shockwave C2 Aero Coronary IVL Catheter unveiled"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "excerpt": "DGS10=4.45% VIXCLS=15.74 FEDFUNDS=3.63%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4593,
+        "capped_chars": 4593,
+        "raw_tokens": 1148,
+        "capped_tokens": 1148
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223558,
+        "capped_chars": 223558,
+        "raw_tokens": 55890,
+        "capped_tokens": 55890
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2624,
+        "capped_chars": 2624,
+        "raw_tokens": 656,
+        "capped_tokens": 656
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 31499,
+        "capped_chars": 7466,
+        "raw_tokens": 7875,
+        "capped_tokens": 1866
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 117744,
+        "capped_chars": 97525,
+        "raw_tokens": 29437,
+        "capped_tokens": 24381
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 53612,
+  "started_at": "2026-08-07T03:01:31+00:00"
+}

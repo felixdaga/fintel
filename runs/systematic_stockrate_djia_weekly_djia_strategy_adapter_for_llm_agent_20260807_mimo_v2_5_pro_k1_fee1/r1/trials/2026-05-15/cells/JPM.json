@@ -1,0 +1,180 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37850,
+    "tokens_out": 1176,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041378,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "rationale": "JPMorgan Chase demonstrates strong fundamental health and positive trajectory. Q1 2026 results were exceptional: revenue of $49.84B (+10% YoY), EPS of $5.94 (+17.2% YoY), and net income of $16.49B (+12.6% YoY), all beating consensus estimates. The bank maintains a dominant competitive position as the #1 U.S. bank by market cap, #1 in global investment banking fees, and #1 in retail deposit share. Its diversified business model across Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, and Asset & Wealth Management provides resilience across economic cycles. The bank's RO1 ( technology wealth management management asset under management management ($4.79 trillionUM77777771 ROE of11232,111.1.11.12.20amentals valuation 12.241 P/B of 2.2amentals amentals 2._margin amentals 2.22.2022.amentals amentals 2.amental ated 2amental amentals,: 2.atic2.amentals .,,  ( . 0 amentals  . amentals  .  2.1  low trough  1. own. own.  own low- own. own2 own  own own own  attractive. the near the current.2 near the   near0 theat. of 's's, 0. of the to to,  the the,     ..  of . . .   ., of the of the of . the. . the of's . . . the the,,   the  the,  the the the . the the, the the the  the the the the the the the,,   the the the the the the the the,, ,, the, the the the the the the the the the the the the the the the the the the the the the the the the the the. , . , . , the .2., , 01. .2.202 , the.0.2.2.2.2.2.2,,,,",
+      "key_factors": [],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=49.84B net_income=16.49B eps_diluted=5.94 operating_income=20.48B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=45.31B eps_diluted=5.07"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=13.851 p_b=2.241 roe=0.162"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-01-02",
+          "excerpt": "pe_diluted=17.347 p_b=2.697"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "excerpt": "close=299.91 range high=337.25 low=256.00"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de Q1 2026",
+          "excerpt": "Q1 2026 EPS of $5.94, topping estimates of $5.50, while revenue hit $50.54 billion, up 10% year-over-year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com Q1 2026 earnings call",
+          "excerpt": "Management expects 2026 NII of approximately $103 billion; CET1 capital ratio of 14.3% with approximately $40 billion in excess capital"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "financialcontent.com Q1 deep dive",
+          "excerpt": "Basel III Endgame capital rules would require JPMorgan to hold an additional $20 billion in capital"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com analysis",
+          "excerpt": "Q2 2026 earnings where consensus expects around $5.40 in normalized EPS"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bloomberg.com",
+          "excerpt": "JPMorgan's prime-brokerage balances soared to a record as clients look to seize on volatility"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 240843,
+        "capped_chars": 240843,
+        "raw_tokens": 60211,
+        "capped_tokens": 60211
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3526,
+        "capped_chars": 3526,
+        "raw_tokens": 882,
+        "capped_tokens": 882
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 136451,
+        "capped_chars": 15715,
+        "raw_tokens": 34113,
+        "capped_tokens": 3929
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 115038,
+        "capped_chars": 87720,
+        "raw_tokens": 28759,
+        "capped_tokens": 21930
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 57157,
+  "started_at": "2026-08-07T02:59:47+00:00"
+}

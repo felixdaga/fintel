@@ -1,0 +1,199 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 59271,
+    "tokens_out": 1500,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.063771,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.45,
+      "rationale": "Nvidia exhibits exceptional fundamental health and trajectory: Q1 FY2027 revenue of $81.6B (+85% YoY, +43% QoQ), EPS of $2.39 (+215% YoY), gross margin of 74.9%, operating margin of 65.6%, net margin of 71.4%, and operating cash flow of $50.3B in a single quarter. The balance sheet is fortress-like with $195.5B equity against only $8.47B debt (debt-to-equity 0.043). Data center revenue of $75.2B grew 92% YoY, and Q2 guidance of $91B signals continued acceleration. The company holds ~87% of merchant AI data center revenue and 90% of discrete GPU shipments. However, the TTM data is incomplete (fiscal quarter gap), so I cannot confirm trailing twelve-month trends with full confidence. Valuation is attractive vs. own history: the current P/E of 29.8 sits at the very bottom of its 365-day range (29.0-66.8), and P/B of 24.3 is similarly at the low end (23.7-57.8). Multiple news sources cite forward P/E of 23x, described as the lowest since 2019. This is a significant compression from the 50-57x range that prevailed through most of the past year, despite earnings power that has roughly doubled. The near-term catalyst is the Q2 FY2027 earnings report on August 26, with consensus EPS of ~$2.08 and revenue guidance of $91B. Hyperscaler capex guidance has been raised (Alphabet to $195-205B, TSMC to $60-64B), and Vera Rubin production has been confirmed by Jensen Huang. Risks include China export restrictions (China revenue excluded from guidance), potential circular financing concerns with OpenAI, and rising interest rates (10Y at 4.68%). Michael Burry is short, and the stock has underperformed YTD (+11% vs S&P +8%). News sentiment is moderately positive (mean 0.424). The score of +0.45 reflects excellent fundamentals and cheap valuation vs. history, tempered by the incomplete TTM picture, macro headwinds (rising rates, inflation), and China regulatory risk that prevents a full +0.5.",
+      "key_factors": [
+        "Q1 FY2027 revenue $81.6B (+85% YoY), EPS $2.39 (+215% YoY), gross margin 74.9%, operating cash flow $50.3B",
+        "P/E of 29.8 at bottom of 365-day range (29.0-66.8), forward P/E ~23x \u2014 lowest since 2019 per multiple sources",
+        "87% merchant AI data center revenue share, 90% discrete GPU share (Jon Peddie Research, Axis Intelligence)",
+        "Q2 guidance $91B revenue; hyperscaler capex guidance raised (Alphabet $195-205B, TSMC $60-64B); Vera Rubin in production",
+        "Balance sheet: $195.5B equity, $8.47B debt, debt-to-equity 0.043",
+        "China export risk: revenue excluded from guidance, Moonshot AI loophole concern, Bloomberg survey shows China shifting to domestic chips",
+        "Rising rates (10Y 4.68%) and inflation (Core PCE 3.4%) as macro headwinds for AI capex",
+        "Q2 earnings on Aug 26 as near-term catalyst; consensus EPS ~$2.08, beat in last 4 quarters"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-26 Q1",
+          "excerpt": "revenue=81.61B net_income=58.32B eps_diluted=2.39 gross_profit=61.16B operating_income=53.54B operating_cash_flow=50.34B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=29.805 p_b=24.337 net_margin=0.63 roe=0.817 debt_to_equity=0.043 gross_margin=0.741 operating_margin=0.64"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 29.0..66.8 | p_b 23.7..57.8"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "axis-intelligence.com",
+          "excerpt": "Nvidia holds 90% of discrete GPU shipments (JPR Q1 2026) and 87.4% of merchant AI data center revenue"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-28",
+          "excerpt": "Nvidia is trading at an attractive valuation with a trailing P/E ratio of 31.7 (lowest since 2023) and forward P/E of 23x"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-26",
+          "excerpt": "Jensen Huang confirmed Vera Rubin chips are already in production with giant amounts of production incoming"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-27",
+          "excerpt": "Alphabet raised its 2026 capex guidance to $195-205 billion (from $180-190 billion)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-28",
+          "excerpt": "Nvidia shares dropped 4.97% following reports that the chipmaker is in discussions to guarantee $250 billion in financing for a data center project"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "Moonshot purchased servers equipped with Nvidia's GB300 processors and deployed them in Thailand"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart.com",
+          "excerpt": "Q2 2027 revenue guidance of $91 billion does not include data center sales to China"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "excerpt": "DGS10=4.68% FEDFUNDS=3.63%"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-05-02..2026-07-30",
+          "excerpt": "mean=0.424 n_articles=1655"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4649,
+        "capped_chars": 4649,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242304,
+        "capped_chars": 242304,
+        "raw_tokens": 60576,
+        "capped_tokens": 60576
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4446,
+        "capped_chars": 4446,
+        "raw_tokens": 1112,
+        "capped_tokens": 1112
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 412856,
+        "capped_chars": 96605,
+        "raw_tokens": 103214,
+        "capped_tokens": 24151
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103678,
+        "capped_chars": 81753,
+        "raw_tokens": 25919,
+        "capped_tokens": 20438
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 40512,
+  "started_at": "2026-08-07T03:09:59+00:00"
+}

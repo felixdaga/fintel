@@ -1,0 +1,176 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33163,
+    "tokens_out": 11780,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.068503,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": 0.15,
+      "rationale": "Amgen presents a mixed but slightly positive fundamental picture. On the positive side, Q1 2026 showed solid YoY revenue growth of +5.8% and EPS growth of +4.4%, with the company beating analyst estimates (EPS of $5.15 vs $4.77 consensus) and raising full-year guidance to $37.1B-$38.5B revenue and non-GAAP EPS of $21.70-$23.10. The company generates strong cash flow ($1.5B FCF in Q1, $2.19B operating cash flow) and maintains a healthy 21% net margin and 68% gross margin. Growth drivers like Repatha, Evenity, Tezspire, and the Horizon rare disease portfolio are delivering double-digit growth, partially offsetting legacy declines. However, significant headwinds temper enthusiasm: the Prolia/Xgeva franchise fell 32% YoY in Q1 due to biosimilar erosion, the balance sheet carries heavy debt ($57.3B, debt-to-equity of 6.2x from the Horizon acquisition), and the FDA's proposal to withdraw Tavneos adds regulatory uncertainty. The QoQ trajectory is weak (revenue -9.8%, EPS -43.7%) though this reflects seasonal patterns and the non-contiguous fiscal quarters make TTM analysis unreliable. On valuation, the current P/E of 24.1x sits near the bottom of its 1-year range (22.6-49.7x), having compressed sharply from ~45x in March 2026 after Q1 earnings, suggesting the market has partially priced in the patent cliff concerns. The P/B of 20.5x is also near the low end of its range (19.2-28.0x). This is modestly attractive relative not the the is the the the the the near-term of the the the",
+      "key_factors": [
+        "Q1 2026 revenue $8.62B, +5.8% YoY; EPS $3.34, +4.4% YoY; beat consensus estimates",
+        "Prolia/Xgeva franchise fell 32% YoY in Q1 due to biosimilar erosion; management guided for accelerating erosion in 2026",
+        "Debt-to-equity of 6.2x ($57.3B debt) from Horizon acquisition constrains balance sheet flexibility",
+        "Current P/E of 24.1x near bottom of 1-year range (22.6-49.7x), down from ~45x in March 2026",
+        "Growth drivers (Repatha, Evenity, Tezspire, rare disease) delivering double-digit growth",
+        "FDA proposed withdrawal of Tavneos adds regulatory uncertainty",
+        "Raised 2026 guidance: revenue $37.1B-$38.5B, non-GAAP EPS $21.70-$23.10",
+        "MariTide Phase 3 obesity trial represents large optionality but highly competitive market",
+        "Next earnings July 30, 2026 - no imminent near-term catalyst identified",
+        "Non-GAAP operating margin 45%; $1.5B FCF in Q1 demonstrates cash generation capability"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q1",
+          "excerpt": "revenue=8.62B, eps_diluted=3.34, YoY revenue +5.8%, YoY eps +4.4%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=24.103, p_b=20.458, debt_to_equity=6.238, net_margin=0.21, roe=0.849"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-06-05..2026-06-04",
+          "excerpt": "pe_diluted 22.6..49.7 | p_b 19.2..28.0"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-22..2026-06-04",
+          "excerpt": "FDA proposed withdrawal of Tavneos; Prolia/Xgeva fell 32% YoY; raised 2026 guidance to $37.1B-$38.5B revenue"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "koalagains.com",
+          "excerpt": "Prolia revenue crash 33.85% to $727M in Q1 2026; at least eight denosumab biosimilars received approval or launched between 2024 and early 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks.com",
+          "excerpt": "Non-GAAP operating margin 45%; generated $1.5B free cash flow in Q1; raised 2026 guidance to $37.1B-$38.5B revenue and non-GAAP EPS $21.70-$23.10"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=345.60, quarterly delta -6.0%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 250963,
+        "capped_chars": 250963,
+        "raw_tokens": 62741,
+        "capped_tokens": 62741
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1476,
+        "capped_chars": 1476,
+        "raw_tokens": 369,
+        "capped_tokens": 369
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 6090,
+        "capped_chars": 1861,
+        "raw_tokens": 1522,
+        "capped_tokens": 465
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88552,
+        "capped_chars": 69541,
+        "raw_tokens": 22137,
+        "capped_tokens": 17385
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 394414,
+  "started_at": "2026-08-07T03:02:03+00:00"
+}

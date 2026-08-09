@@ -1,0 +1,194 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28691,
+    "tokens_out": 1420,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032951,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": 0.15,
+      "rationale": "Amgen presents a mixed fundamental picture. On the positive side, the company shows solid YoY growth in Q1 2026 (revenue +5.8%, EPS +4.4%, operating cash flow +57.4%), strong gross margins (~68%), and a net margin of 21%. The company raised 2026 revenue guidance after Q1, and recent legal victory on Enbrel pricing provides a.5% state price cap provides near-term relief. However, significant headwinds persist: (1) the balance sheet is heavily leveraged with $57.3B in debt vs $9.2B equity (D/E of 6.2x), (2) QoQ metrics show sharp deterioration (revenue -9.8%, EPS -43.7%, OCF -53.3%), (3) Tavneos faces NEJM retraction and EMA revocation recommendation threatening $450M+ annual revenue, (4) Prolia/Xgeva patent cliffs with management guiding for 'accelerated sales erosion' in 2026, (5) Class II recall of Corlanor, and (6) unresolved $10.7B IRS tax dispute. Valuation at P/E 26.1x is near the low end of its 12-month range (22.6-49.7), having compressed significantly from ~43-48x in early 2026, suggesting the market has partially priced in these risks. The stock is up ~5.9% over the last quarter, indicating some recovery. The near-term catalyst of the Enbrel legal win is modestly positive but offset by Tavneos regulatory risks. Overall, Amgen is a mature, cash-generative biopharma with a diversified portfolio but faces a critical patent cliff transition period with high leverage, warranting a mildly positive but cautious score.",
+      "key_factors": [
+        "Solid YoY revenue and EPS growth in Q1 2026 (+5.8% and +4.4% respectively) with raised full-year guidance",
+        "Highly leveraged balance sheet: $57.3B debt vs $9.2B equity (D/E 6.2x) limits financial flexibility",
+        "Tavneos regulatory crisis: NEJM retraction and EMA revocation recommendation threatening $450M+ annual revenue",
+        "Prolia/Xgeva patent cliff with management guiding accelerated biosimilar erosion in 2026",
+        "P/E compressed to 26.1x from 43-48x range in early 2026, partially pricing in headwinds",
+        "Enbrel legal victory (preliminary injunction against 70% price cap) provides near-term relief",
+        "MariTide obesity pipeline optionality but faces dominant LLY/NVO competition",
+        "Class II recall of Corlanor and unresolved $10.7B IRS tax dispute add risk"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=8.62B net_income=1.82B eps_diluted=3.34 gross_profit=5.87B operating_income=2.67B total_assets=92.50B total_equity=9.19B total_debt=57.32B operating_cash_flow=2.19B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+5.8% eps_diluted=+4.4% net_income=+5.1% gross_profit=+13.4% operating_cash_flow=+57.4%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 QoQ",
+          "excerpt": "QoQ: revenue=-9.8% eps_diluted=-43.7% net_income=-43.4% gross_profit=-9.3% operating_cash_flow=-53.3%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=26.095 p_b=22.148 p_s=5.469 earnings_yield=0.038 net_margin=0.21 roe=0.849 debt_to_equity=6.238 gross_margin=0.683 operating_margin=0.284"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 22.6..49.7 | p_b 19.2..28.0 | net_margin 0.1..0.2 | roe 0.6..0.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-02 tradingkey",
+          "excerpt": "federal judge in Colorado granted a preliminary injunction blocking a proposed seventy percent price cap on Amgen's blockbuster autoimmune drug, Enbrel"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-02 tradingkey Tavneos",
+          "excerpt": "New England Journal of Medicine retracted the pivotal ADVOCATE clinical trial publication...EMA recommendation to revoke Tavneos' European marketing authorization, placing the drug's future regulatory status and its $450 million+ in annual revenue at immediate risk"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-02 tradingkey recall",
+          "excerpt": "FDA classified Amgen's voluntary recall of nearly 935,000 bottles of its heart failure drug Corlanor as a Class II recall"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-23 ad-hoc-news guidance",
+          "excerpt": "Amgen lifts 2026 revenue outlook...updated its full-year 2026 revenue guidance after reporting a stronger-than-expected first quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-23 yahoo MariTide",
+          "excerpt": "MariTide is by far Amgen's most important obesity asset...global obesity drug market is projected to grow dramatically, reaching nearly $95 billion by 2030"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-04 yahoo earnings",
+          "excerpt": "Amgen is expected to post earnings of $5.57 per share for representing a year-over-year change of -7.4%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 248207,
+        "capped_chars": 248207,
+        "raw_tokens": 62052,
+        "capped_tokens": 62052
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1153,
+        "capped_chars": 1153,
+        "raw_tokens": 288,
+        "capped_tokens": 288
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7656,
+        "capped_chars": 1699,
+        "raw_tokens": 1914,
+        "capped_tokens": 425
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 76471,
+        "capped_chars": 57017,
+        "raw_tokens": 19118,
+        "capped_tokens": 14255
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42220,
+  "started_at": "2026-08-07T03:05:56+00:00"
+}

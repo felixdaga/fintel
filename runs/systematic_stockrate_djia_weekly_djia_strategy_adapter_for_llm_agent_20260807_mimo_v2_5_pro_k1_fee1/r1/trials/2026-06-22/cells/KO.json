@@ -1,0 +1,188 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32957,
+    "tokens_out": 1204,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036569,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.15,
+      "rationale": "Coca-Cola is a high-quality, cash-generative franchise with strong brand equity, a 63-year dividend increase streak, and a capital-light concentrate model supporting ~28% operating margins and 40% ROE. Q2 2025 showed solid sequential growth (revenue +12.6% QoQ, EPS +14.3% QoQ), and FY2025 results were strong ($47.9B revenue, $3.04 EPS +23% YoY). However, the stock trades at a P/E of ~28x, near the top of its 23-30x range over the past year, and P/B of 11.4x is also elevated. The valuation already prices in the quality premium. Structural headwinds are real: ~69% of unit case volume is carbonated soft drinks facing sugar taxes, GLP-1 drug adoption, and health-conscious consumer shifts. The IRS tax dispute ($6B potential liability) and plastic pollution litigation are unresolved overhangs. The 2026 World Cup catalyst (BofA $90 PT) is a modest near-term positive but not transformative. News sentiment is positive (mean 0.70) but largely reflects dividend/income framing rather than fundamental acceleration. The stock is fairly valued for a quality compounder with modest growth (4-5% organic revenue, 7-8% EPS guidance), leaving limited upside from current levels.",
+      "key_factors": [
+        "Strong fundamental health: ~28% operating margin, 40% ROE, $11.4B FY2025 free cash flow, 63 consecutive dividend increases",
+        "Sequential growth trajectory positive: Q2 2025 revenue +12.6% QoQ, EPS +14.3% QoQ; FY2025 EPS +23% YoY to $3.04",
+        "Valuation stretched vs own history: P/E 28.1x near top of 23-30x 12-month range; P/B 11.4x near top of 9.4-12.0x range",
+        "Structural headwinds: ~69% CSD volume exposure to sugar taxes, GLP-1 drugs, health trends; IRS $6B tax dispute; plastic litigation",
+        "2026 World Cup sponsorship is a modest near-term volume catalyst (BofA estimates ~278M incremental cases)",
+        "2026 guidance of 4-5% organic revenue growth and 7-8% EPS growth is solid but not exceptional for the multiple",
+        "Positive news sentiment (mean 0.70) but largely income/dividend framing rather than growth acceleration narrative"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "excerpt": "revenue=12.54B net_income=3.80B eps_diluted=0.88 operating_income=4.28B operating_cash_flow=3.81B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-28 Q1",
+          "excerpt": "revenue=11.13B eps_diluted=0.77"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=28.077 p_b=11.35 net_margin=0.259 roe=0.404 operating_margin=0.28"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-06-23..2026-06-18",
+          "excerpt": "pe_diluted 23.2..29.6 | p_b 9.4..12.0"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businesscola SWOT 2026",
+          "excerpt": "Carbonated soft drinks remain roughly 69% of Coca-Cola's worldwide unit case volume; $960M BODYARMOR impairment in Q4 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Coca-Cola PESTLE 2026",
+          "excerpt": "IRS tax dispute could cost billions; plastic-pollution lawsuits from LA County and Baltimore; MAHA anti-sugar movement and GLP-1 drugs as headwinds"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-09 Benzinga",
+          "excerpt": "BofA analyst Peter Galbo identified Coca-Cola as the beverage stock best positioned to capitalize on the 2026 FIFA World Cup; Buy rating with $90 price target"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Coca-Cola FY2025 results",
+          "excerpt": "FY2025 net revenue $47.9B (+2% YoY), organic revenue growth 5%, EPS $3.04 (+23%), free cash flow ex-fairlife $11.4B; 2026 guidance 4-5% organic revenue, 7-8% comparable EPS growth"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-03-24..2026-06-19",
+          "excerpt": "n_articles=104 n_scored=104 mean=0.699"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Fox Business",
+          "excerpt": "Coca-Cola to pay $6 billion in back taxes and interest to the IRS after tax court ruling"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 222551,
+        "capped_chars": 222551,
+        "raw_tokens": 55638,
+        "capped_tokens": 55638
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 758,
+        "capped_chars": 758,
+        "raw_tokens": 190,
+        "capped_tokens": 190
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2910,
+        "capped_chars": 2910,
+        "raw_tokens": 728,
+        "capped_tokens": 728
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 28431,
+        "capped_chars": 6827,
+        "raw_tokens": 7108,
+        "capped_tokens": 1707
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 111620,
+        "capped_chars": 90592,
+        "raw_tokens": 27905,
+        "capped_tokens": 22649
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 51848,
+  "started_at": "2026-08-07T03:04:31+00:00"
+}

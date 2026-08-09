@@ -1,0 +1,184 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32704,
+    "tokens_out": 992,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034592,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": 0.25,
+      "rationale": "Cisco shows solid fundamental health with accelerating revenue and EPS growth (Q2 FY2026 revenue +9.7% YoY, EPS +31.1% YoY), strong gross margins (~65%), and a healthy balance sheet (debt-to-equity 0.52). The company is executing a successful software/subscription transformation post-Splunk, with ARR approaching $30B and software exceeding 50% of revenue. However, operating cash flow declined 18.7% YoY in Q2, and the stock has rallied significantly (+19.2% in the past quarter) pushing the P/E to 31.9x \u2014 the top of its 12-month range (24.5\u201333.5x). At this valuation, the stock is no longer cheap relative to its own history, which caps upside. The upcoming Q3 earnings report (analysts expect $0.86 EPS, +10.3% YoY) provides a near-term catalyst, and the company has beaten estimates consistently. AI infrastructure orders ($2.1B) and campus networking refresh provide tail tail8 buy networking refresh tailwinds provide growth tailwinds, but the stock is fairly valued at the top of its recent range, limiting the modest upside from strong fundamentals.",
+      "key_factors": [
+        "Accelerating revenue and EPS growth (Q2 FY2026 revenue +9.7% YoY, EPS +31.1% YoY)",
+        "Software/subscription transformation driving higher margins (gross margin ~65%, software >50% of revenue)",
+        "Strong balance sheet with low leverage (debt-to-equity 0.52) and robust cash generation",
+        "P/E at 31.x, near top of 12-month range (24.5\u201333.5x), limiting upside vs own history",
+        "Stock up 19.2% in past quarter, reflecting strong momentum but also pricing in much of the good news",
+        "Upcoming Q3 FY2026 earnings as near-term catalyst (analysts expect $0.86 EPS, +10.3% YoY)",
+        "AI infrastructure orders of $2.1B and campus networking refresh cycle providing growth runway",
+        "Operating cash flow declined 18.7% YoY in Q2, a concern for cash flow quality"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24 Q2",
+          "excerpt": "revenue=15.35B eps_diluted=0.8 net_income=3.17B gross_profit=9.97B operating_cash_flow=1.82B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-01-25 Q2",
+          "excerpt": "revenue=13.99B eps_diluted=0.61"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=31.866 p_b=7.396 gross_margin=0.648 debt_to_equity=0.515"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 24.5..33.5"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "excerpt": "close=88.59 quarterly delta +19.2%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-21",
+          "excerpt": "Cisco advances 2.84% over the week to $88.63, setting a new high above all key weekly moving averages"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-21 barchart",
+          "excerpt": "analysts expect CSCO to report a profit of $0.86 per share on a diluted basis, up 10.3% from $0.78 per share in the year-ago quarter. The company has consistently surpassed Wall Street's EPS estimates in its last four quarterly reports"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "247wallst",
+          "excerpt": "Operating cash flow declined 19% year over year to $1.822 billion in Q2; Security segment revenue fell 4% year over year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stockintent",
+          "excerpt": "$15.3 billion in Q2 FY2026 revenue (up 10% YoY) with networking orders growing 20%+"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4609,
+        "capped_chars": 4609,
+        "raw_tokens": 1152,
+        "capped_tokens": 1152
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230734,
+        "capped_chars": 230734,
+        "raw_tokens": 57684,
+        "capped_tokens": 57684
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 782,
+        "capped_chars": 782,
+        "raw_tokens": 196,
+        "capped_tokens": 196
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1660,
+        "capped_chars": 1660,
+        "raw_tokens": 415,
+        "capped_tokens": 415
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 13779,
+        "capped_chars": 3429,
+        "raw_tokens": 3445,
+        "capped_tokens": 857
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 135884,
+        "capped_chars": 74965,
+        "raw_tokens": 33971,
+        "capped_tokens": 18742
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 34118,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

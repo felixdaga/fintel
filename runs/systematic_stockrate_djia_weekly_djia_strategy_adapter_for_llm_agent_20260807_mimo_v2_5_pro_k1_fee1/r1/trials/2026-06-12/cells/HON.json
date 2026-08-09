@@ -1,0 +1,189 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32070,
+    "tokens_out": 1092,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035346,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": -1.0,
+      "rationale": "HON is facing a severe earnings deterioration with Q1 2026 EPS of $1.29, down 41.9% YoY and 47.3% QoQ, while operating cash flow turned deeply negative at -$650M. The stock trades at 34x diluted PE, near the top of its 365-day range (21.6-37.0), despite margins compressing (net margin 10.9% vs 15.1% a year ago) and ROE declining to 28% from 31.7%. The aerospace spin-off on June 29 creates significant execution risk and uncertainty about the remaining Honeywell Technologies entity's standalone earnings power. While management reaffirmed guidance, the Q1 results show material weakness that contradicts the optimistic narrative. The Quantinuum IPO adds complexity with its $192.6M net loss on $30.9M revenue. With 10-year Treasury yields at 4.45% and inflation accelerating to 4.2%, the elevated multiple is particularly vulnerable. The stock is expensive relative to deteriorating fundamentals with no clear near-term catalyst to justify the premium.",
+      "key_factors": [
+        "Q1 2026 EPS of $1.29, down 41.9% YoY and 47.3% QoQ - severe earnings deterioration",
+        "Operating cash flow turned negative at -$650M in Q1 2026 vs +$1.32B prior quarter",
+        "PE ratio of 34.1x near top of 365-day range (21.6-37.0) despite margin compression",
+        "Net margin compressed to 10.9% from 15.1% a year ago; ROE declined to 28% from 31.7%",
+        "Aerospace spin-off on June 29 creates execution risk and uncertainty about standalone Honeywell Technologies",
+        "Quantinuum IPO adds complexity with $192.6M net loss on $30.9M revenue",
+        "10-year Treasury yield at 4.45% and inflation at 4.2% create headwinds for elevated multiples",
+        "Debt-to-equity of 2.19x with total debt of $32.1B against equity of $14.67B"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=9.14B net_income=795.00M eps_diluted=1.29 operating_cash_flow=-650.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=8.93B eps=2.22"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30 Q2",
+          "excerpt": "revenue=9.32B eps=2.45 operating_cash_flow=1.32B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=34.119 p_b=9.537 net_margin=0.109 roe=0.28 debt_to_equity=2.189"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-12",
+          "excerpt": "pe_diluted=24.457 p_b=7.753 net_margin=0.151 roe=0.317"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=219.12 range high=248.18 low=186.76"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11",
+          "excerpt": "DGS10=4.45"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-10",
+          "excerpt": "Quantinuum faces challenges including a sky-high valuation of 463x sales, widening losses ($192.6M in 2025), and concentrated revenue from a single lease"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-08",
+          "excerpt": "Honeywell International reaffirmed its 2026 financial guidance with adjusted EPS of $10.35-$10.65 and sales of $38.8-$39.8 billion ahead of its June 29 aerospace spin-off"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-05",
+          "excerpt": "Honeywell's aerospace output is being constrained by supply chain pressure among small-parts manufacturers, and the company is also managing the effect of the Trump administration's tariff policy, which could add as much as $500mn a year to costs"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3050,
+        "capped_chars": 3050,
+        "raw_tokens": 762,
+        "capped_tokens": 762
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 251201,
+        "capped_chars": 251201,
+        "raw_tokens": 62800,
+        "capped_tokens": 62800
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1246,
+        "capped_chars": 1246,
+        "raw_tokens": 312,
+        "capped_tokens": 312
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 29518,
+        "capped_chars": 7217,
+        "raw_tokens": 7380,
+        "capped_tokens": 1804
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 87088,
+        "capped_chars": 68731,
+        "raw_tokens": 21772,
+        "capped_tokens": 17183
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 47610,
+  "started_at": "2026-08-07T03:03:32+00:00"
+}

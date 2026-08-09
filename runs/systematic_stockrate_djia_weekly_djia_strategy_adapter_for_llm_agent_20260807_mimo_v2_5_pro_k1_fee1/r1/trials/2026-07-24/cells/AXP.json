@@ -1,0 +1,188 @@
+{
+  "cell": "AXP",
+  "symbols": [
+    "AXP"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35284,
+    "tokens_out": 1168,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038788,
+    "basis": "reported"
+  },
+  "views": {
+    "AXP": {
+      "symbol": "AXP",
+      "score": 0.25,
+      "rationale": "American Express shows solid fundamental health with consistent revenue and EPS growth (Q1 2026 revenue +9.3% YoY, EPS +17.6% YoY), strong ROE of 33%, and a premium closed-loop business model that supports durable competitive positioning. The company's focus on affluent cardmembers provides resilience, and recent Platinum fee hike to $895 with stable retention demonstrates pricing power. However, valuation is not cheap: P/E of 20.8x sits mid-range of its 18.4-25.3x 1-year window, and P/B of 6.9x is elevated. The stock has pulled back ~12% from its 52-week high of $387.49, providing modest but not compelling value. Near-term catalyst exists with Q2 2026 earnings reporting on July 24 (the decision date itself), with consensus expecting $4.40 EPS on $19.7B revenue, implying ~8% EPS growth and ~10% revenue growth YoY. However, EPS estimates have drifted down 1.3% over 90 days, and the stock's reaction will depend on execution vs. expectations. Macro backdrop is mixed: rising Treasury yields (10Y at 4.71%) and corporate bond yields (Baa at 6.29%) increase funding costs, though the Fed funds rate is stable at 3.63%. Credit card rate cap regulation risk remains an overhang per analyst commentary. Overall, a quality franchise with good trajectory but fairly priced, with the imminent earnings report providing a binary near-term catalyst that could move the stock either direction.",
+      "key_factors": [
+        "Consistent revenue/EPS growth: Q1 2026 revenue +9.3% YoY, EPS +17.6% YoY across 4 consecutive quarters of growth",
+        "Strong profitability: ROE 33%, operating margin 33.8%, net margin 26.6%",
+        "Premium positioning: closed-loop model, affluent cardmember base, Platinum fee hike to $895 with stable retention",
+        "Valuation mid-range: P/E 20.8x (1yr range 18.4-25.3x), P/B 6.9x \u2014 not cheap but not extreme",
+        "Q2 2026 earnings on July 24: consensus $4.40 EPS, $19.7B revenue; estimates drifted down 1.3% over 90 days",
+        "Macro headwinds: rising 10Y Treasury yields (4.71%), and Baa corporate yields (6.29%) increase funding costs",
+        " regulatory regulatoryRegulatoryRegarnings risk: regulatory risk.."
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=10.52B, eps_diluted=4.28, YoY revenue +9.3%, YoY EPS +17.6%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=9.63B, eps_diluted=3.64"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=20.839 p_b=6.878 roe=0.33 net_margin=0.266 operating_margin=0.338"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-01-06",
+          "excerpt": "pe_diluted=25.216 p_b=8.2 (near 1-year highs)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-03-12",
+          "excerpt": "pe_diluted=19.847 p_b=6.454 (near 1-year lows)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-23",
+          "excerpt": "close=340.84, 52-week high=387.49, low=288.34"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-15excerptexcerptexcerptexcerpt1026-07-15",
+          "excerpt": "American Express increased its Platinum card annual fee from $695 to $895, a 29% hike; retentionion rates remained stable near 100%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-20",
+          "excerpt": "Wall Street is expecting American Express Company (NYSE:AXP) to deliver earnings per share of $4.40 EPS on revenue of10.3% revenue growth"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-20",
+          "excerpt": "Q2 2026 earnings preview: consensus EPS $4.40, revenue $19.70B; EPS estimates drifted down 1.3% over 90 days"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "excerpt": "DGS10=4.71%, DBAA=6.29%, FEDFUNDS=3.63%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AXP",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4463,
+        "capped_chars": 4463,
+        "raw_tokens": 1116,
+        "capped_tokens": 1116
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 227125,
+        "capped_chars": 227125,
+        "raw_tokens": 56781,
+        "capped_tokens": 56781
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1932,
+        "capped_chars": 1932,
+        "raw_tokens": 483,
+        "capped_tokens": 483
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 29874,
+        "capped_chars": 5790,
+        "raw_tokens": 7468,
+        "capped_tokens": 1448
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 115089,
+        "capped_chars": 93595,
+        "raw_tokens": 28772,
+        "capped_tokens": 23399
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 34660,
+  "started_at": "2026-08-07T03:08:30+00:00"
+}

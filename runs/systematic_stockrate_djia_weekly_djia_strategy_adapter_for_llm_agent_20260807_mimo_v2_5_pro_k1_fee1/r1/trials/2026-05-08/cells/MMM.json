@@ -1,0 +1,178 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37869,
+    "tokens_out": 1225,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041544,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "rationale": "MMM is a deteriorating business with a deeply stretched valuation and a credible near-term downside catalyst. Q1 2026 fundamentals show severe earnings erosion: EPS fell1.23 (down 39.7% YoY from $2.04), net income down 41.3% YoY, and operating cash flow collapsed 826.6% YoY to $574M. The balance sheet is deteriorating with total equity shrinking from $4.52B to $3.31B over four quarters while total liabilities remain elevated at $32.12B. The P/E has exploded to 27.4x (top of its 17.7-28.3 range) and P/B to 23.1x (top of its 17.1-23.9 range) \u2014 both at or near all-time highs in the data window \u2014 precisely as earnings power is collapsing. This is the opposite of what a sound valuation should look like. The company faces a massive, unquantifiable PFAS legal overhang ($7.8B in environmental liabilities, with Wisconsin contamination tests showing levels hundreds of times above thresholds, class certification deadline in July 2026, and a New Jersey settlement hearing in June 2026). Oil prices have surged 52% over the lookback period to $98/barrel, creating a $125M annual headwind on chemical inputs. The Q1 earnings call revealed EPS guidance of $8.50-$8.70 for 2026, implying the current P/E of 27.4x on ~$8.60 EPS is pricing the stock at ~$235 \u2014 yet it trades at $143.75, suggesting the market is already discounting significant risk. However, the P/E ratio itself is elevated because denominator earnings are depressed. The Motley Fool explicitly compared 3M's dividend trajectory to Clorox's unsustainable path. News sentiment is mixed-to-negative with recent articles flagging PFAS risks and cost pressures. All three pillars align negatively: deteriorating fundamentals, expensive valuation at the top of its range, and a dated catalyst (PFAS legal milestones in June-July 2026) that is more likely to be a downside event than an upside one.",
+      "key_factors": [
+        "Q1 2026 EPS down 39.7% YoY to $1.23; net income down 41.3% YoY; operating cash flow collapsed to $574M",
+        "P/E at 27.4x (top of 17.7-28.3 range) and P/B at 23.1x (top of 17.1-23.9 range) \u2014 both at cycle highs despite collapsing earnings",
+        "Total equity eroded from $4.52B to $3.31B over four quarters while liabilities remain at $32.12B",
+        "PFAS legal overhang: $7.8B environmental liabilities, Wisconsin contamination hundreds of times above thresholds, class certification deadline July 2026, NJ settlement hearing June 2026",
+        "Oil prices surged 52% to $98/barrel creating $125M annual input cost headwind",
+        "Motley Fool compared 3M's dividend sustainability to Clorox's unsustainable trajectory",
+        "Q1 2026 revenue only +1.3% YoY with Consumer segment declining; macro headwinds in auto and consumer electronics persist"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.03B net_income=659.00M eps_diluted=1.23 operating_cash_flow=574.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=5.95B eps=2.04 net_income=1.12B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=27.363 p_b=23.132 range: pe_diluted 17.7..28.3 | p_b 17.1..23.9"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_equity=3.31B total_liabilities=32.12B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-03",
+          "excerpt": "PFAS contamination at its Greystone Facility near Wausau, Wisconsin, with levels hundreds of times above the state's proposed threshold. 3M lists $7.8 billion under other environmental liabilities"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "excerpt": "DCOILWTICO=98.38 \u0394=33.85 (52.46%)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-07",
+          "excerpt": "Clorox resembles 3M before its dividend cut; dividend expense becoming unaffordable due to declining earnings and free cash flow"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Q1 2026 earnings call",
+          "excerpt": "2026 Guidance Reaffirmed: organic sales growth of about 3%, EPS in the $8.50 to $8.70 range, and free cash flow conversion above 100%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247474,
+        "capped_chars": 247474,
+        "raw_tokens": 61868,
+        "capped_tokens": 61868
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 875,
+        "capped_chars": 875,
+        "raw_tokens": 219,
+        "capped_tokens": 219
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 18870,
+        "capped_chars": 3805,
+        "raw_tokens": 4718,
+        "capped_tokens": 951
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 118793,
+        "capped_chars": 96589,
+        "raw_tokens": 29698,
+        "capped_tokens": 24147
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 52190,
+  "started_at": "2026-08-07T02:58:54+00:00"
+}

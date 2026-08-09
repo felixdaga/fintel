@@ -1,0 +1,145 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33859,
+    "tokens_out": 1000,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036859,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing is a deeply troubled company with severe fundamental weaknesses across all three pillars. **Pillar 1 (Fundamentals - Very Weak):** The company is barely profitable with Q1 2026 net income of -$7M and EPS of -$0.11, while operating cash flow is negative at -$179M. The balance sheet is severely strained with total equity of only $5.99B against $46.96B in debt (debt-to-equity of 7.84x). Commercial Airplanes, the core business, still operates at a -6.1% operating margin. The company has been loss-making for years, with net margins historically negative (-16.6% in May 2025, -14.2% through most of the period). Free cash flow was -$1.5B in Q1 2026. The Spirit AeroSystems integration is adding ~$1B cash drag in 2026. **Pillar 2 (Valuation - Extremely Expensive):** At a P/E of 76.5x and P/B of 28.9x, Boeing trades at extreme multiples for a company that is barely profitable and has negative free cash flow. The P/S of 1.88x is elevated for a capital-intensive industrial with thin margins. These valuations assume a successful turnaround that is far from assured. **Pillar 3 (Near-term Catalysts - Negative):** The China deal announced May 16-17 for 200 aircraft (with potential expansion to 750) disappointed the market - the stock dropped 4.5% on May 14 despite positive trade news, and the market had expected a much bigger order. Rising interest rates (10Y at 4.57%, up 13.4% over 90 days) increase Boeing's debt servicing costs. Oil at $100/barrel could pressure airline customers. The 777X certification timeline remains uncertain. Boeing faces ongoing regulatory scrutiny from the FAA, with the inspector general recently flagging safety concerns. The Q2 2026 earnings (reported after decision date) showed continued losses of -$0.76 EPS, worse than expected.",
+      "key_factors": [
+        "Q1 2026 net income -$7M, EPS -$0.11, operating cash flow -$179M - barely profitable with negative cash generation",
+        "Debt-to-equity 7.84x ($46.96B debt vs $5.99B equity) - severely strained balance sheet",
+        "P/E of 76.5x and P/B of 28.9x - extreme valuation for a turnaround story with no earnings",
+        "Commercial Airplanes operating margin -6.1% - core business still loss-making",
+        "Spirit China integration integration Spirit AeroSystems integration Spirit Aero11111010Y1010 cash flowB",
+        "1100 rising rising",
+        "Rising interest rates (10Y at 57%) increase debt servicing costs",
+        "China deal of 00 aircraft disappointed market expectations, stock fell 4.5% on May 14",
+        "FAA regulatory scrutiny ongoing with inspector general flagging safety concerns on 737 MAX"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-0--11 Q Q",
+          "excerpt": "-7--222------------2-2-2-2222-222222--1--2222-22-2--22222-22-2-222222222222-2222-2--22222222222222222--222-2-22222222222,"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 216239,
+        "capped_chars": 216239,
+        "raw_tokens": 54060,
+        "capped_tokens": 54060
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2734,
+        "capped_chars": 2734,
+        "raw_tokens": 684,
+        "capped_tokens": 684
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 52328,
+        "capped_chars": 11142,
+        "raw_tokens": 13082,
+        "capped_tokens": 2786
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 95962,
+        "capped_chars": 74620,
+        "raw_tokens": 23991,
+        "capped_tokens": 18656
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 45049,
+  "started_at": "2026-08-07T03:00:24+00:00"
+}

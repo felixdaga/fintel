@@ -1,0 +1,188 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31946,
+    "tokens_out": 1250,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035696,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": 0.15,
+      "rationale": "JNJ presents a mixed but slightly positive picture. Fundamentally, the company is solid: TTM revenue of $93.7B, strong gross margins (~66%), ROE of 25.9%, and a fortress balance sheet with $22B cash and AAA credit rating. Q1 2026 showed 9.9% YoY revenue growth to $24.1B, beating consensus, with management raising full-year guidance above $100B. However, the trajectory is clouded by the Stelara patent cliff (sales down 59% YoY), a sharp decline in operating cash flow (Q4 OCF of $2.51B vs $9.17B prior quarter), and a Q1 2025 EPS of $4.54 that was inflated by a one-time gain, making the TTM earnings picture less clean. The most significant headwind is valuation: the P/E has expanded from ~17x a year ago to 26.8x currently, the top of its 365-day range, while net margins have compressed from 24.4% to 21.8% and ROE from 27.9% to 25.9%. Morningstar's fair value estimate of $190 suggests the stock at $230.65 is ~21% overvalued. The near-term catalyst is the Q1 earnings beat and raised guidance, plus the Icotyde launch (Guggenheim raised peak revenue estimate to ~$14.9B), but these are largely priced in given the massive multiple expansion. The stock has rallied 50%+ in 12 months, and the market is now paying a premium for a company facing a known patent cliff and declining margins. The score reflects a quality franchise that is no longer cheap, with limited upside from current levels absent further multiple expansion.",
+      "key_factors": [
+        "Strong Q1 2026 beat: revenue $24.1B (+9.9% YoY) above $23.6B consensus; raised FY2026 guidance above $100B",
+        "Stelara patent cliff: sales down 59% YoY, creating near-term earnings headwind",
+        "Valuation stretched: P/E expanded from ~17x to 26.8x (top of 365d range) while margins compressed (net margin 21.8% vs 24.4% a year ago)",
+        "Operating cash flow deteriorated sharply: Q4 OCF $2.51B vs $9.17B prior quarter; FCF down 55.6% YoY per Q1 report",
+        "Icotyde launch as potential long-term catalyst (Guggenheim peak revenue est ~$14.9B), but early stage",
+        "Fortress balance sheet: $22B cash, AAA credit rating, 64-year dividend increase streak",
+        "Morningstar fair value estimate $190 vs current price $230.65 (~21% overvalued)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29 Q4",
+          "excerpt": "revenue=24.06B net_income=5.24B eps_diluted=2.14 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-28 Q3",
+          "excerpt": "operating_cash_flow=9.17B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-30 Q1",
+          "excerpt": "eps_diluted=4.54 net_income=11.00B operating_income=13.63B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=26.805 p_b=6.947 net_margin=0.218 roe=0.259"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-04-24",
+          "excerpt": "pe_diluted=17.218 p_b=4.808 net_margin=0.244 roe=0.279"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "excerpt": "close=230.65 range high=251.71 low=146.12"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-18",
+          "excerpt": "Stelara sales plummet 59% year-over-year due to generic competition. Despite near-term uncertainty, the company remains attractive as a long-term investment with a 64-year dividend increase streak"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-14",
+          "excerpt": "sales of $24.06 billion up 9.9% YoY. Cancer drug revenue surged 22.8%... free cash flow fell 55.6% YoY to $1.50 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "morningstar",
+          "excerpt": "This overvalued stock currently trades 19% above our fair value estimate. J&J may be a core stock to own, but not at today's price."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-15",
+          "excerpt": "Guggenheim set its fiscal year 2026 estimates for sales at $100.57 billion and earnings per share at $11.61... increased its unadjusted peak revenue estimate for Icotyde to approximately $14.9 billion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4593,
+        "capped_chars": 4593,
+        "raw_tokens": 1148,
+        "capped_tokens": 1148
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223578,
+        "capped_chars": 223578,
+        "raw_tokens": 55894,
+        "capped_tokens": 55894
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2674,
+        "capped_chars": 2674,
+        "raw_tokens": 668,
+        "capped_tokens": 668
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 59478,
+        "capped_chars": 16212,
+        "raw_tokens": 14870,
+        "capped_tokens": 4053
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88267,
+        "capped_chars": 48889,
+        "raw_tokens": 22066,
+        "capped_tokens": 12222
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 71271,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

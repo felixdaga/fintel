@@ -1,0 +1,189 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33552,
+    "tokens_out": 1299,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037449,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": 0.15,
+      "rationale": "Home Depot is a fundamentally sound business with a dominant competitive position (~17% U.S. home improvement market share, 2,340+ stores, growing Pro ecosystem via SRS/GMS/Mingledorff's acquisitions). However, the near-term trajectory is mixed: Q1 FY2026 showed +4.8% YoY revenue growth and a return to positive comps (+0.6%), but adjusted EPS declined 3.7% YoY, gross margin contracted 80bps to 33%, and management guided for only flat-to-4% EPS growth for FY2026. The balance sheet carries significant leverage ($44.8B long-term debt) from the SRS acquisition, with share repurchases paused until H1 2027. Valuation at 23.8x P/E sits near the middle of its 12-month range (20.3-28.8x), neither cheap nor expensive. The stock is ~21% below its 52-week high of $426.75, reflecting housing headwinds (elevated mortgage rates, low existing-home sales, subdued big-ticket discretionary projects). Macro backdrop is mixed: Fed funds at 3.63% with modest easing, but 10Y yield at 4.46% and oil at $80/bbl remain headwinds for housing activity. No clear near-term fundamental catalyst exists to re-rate the stock; the next earnings event is Aug 18, 2026. The score reflects a quality franchise at a fair valuation with a cautious near-term earnings trajectory.",
+      "key_factors": [
+        "Dominant market position with ~17% U.S. home improvement share and growing Pro ecosystem (SRS, GMS, Mingledorff's acquisitions targeting $700B+ addressable market)",
+        "Q1 FY2026 revenue +4.8% YoY to $41.77B with positive comps (+0.6%), but adjusted EPS declined 3.7% YoY and gross margin contracted 80bps to 33%",
+        "FY2026 guidance: sales growth 2.5-4.5%, comp sales flat-to-2%, EPS growth flat-to-4% \u2014 modest and cautious outlook",
+        "Balance sheet leverage elevated at $44.8B long-term debt post-SRS acquisition; share repurchases paused until H1 2027",
+        "P/E of 23.8x sits mid-range vs 12-month window (20.3-28.8x); stock ~21% below 52-week high of $426.75",
+        "Housing headwinds persist: elevated mortgage rates, low existing-home sales, subdued big-ticket discretionary remodeling demand",
+        "Macro: Fed funds 3.63%, 10Y yield 4.46%, oil ~$80/bbl \u2014 mixed but not supportive of housing inflection",
+        "No clear near-term fundamental catalyst; next earnings Aug 18, 2026"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03 Q1",
+          "excerpt": "revenue=41.77B net_income=3.29B eps_diluted=3.3 gross_profit=13.78B operating_income=4.98B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-05-04 Q1",
+          "excerpt": "revenue=39.86B eps=3.45 (YoY comparison: revenue +4.8%, EPS -4.3%)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=23.761 p_b=23.998 net_margin=0.084 roe=1.01"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-06-23..2026-06-18",
+          "excerpt": "pe_diluted 20.3..28.8 | p_b 22.2..52.9"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=334.28; range over ~250 bars: high=426.75 low=289.10"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-16 Investing.com",
+          "excerpt": "Home Depot shows signs of recovery with potential interest rate cuts unlocking the housing market; stock trading 25% below its 2024 high"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com FY26 outlook",
+          "excerpt": "Management expects fiscal 2026 comparable sales to be flat to grow just 2%; expects sales to increase 2.5-4.5% year over year, with both reported and adjusted EPS between flat and 4% growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "hudson-labs initiation",
+          "excerpt": "Adjusted diluted EPS declined -3.6% to $14.69; Gross margin was 33.3% (-10 bps YoY), operating margin at 12.7% (-80 bps YoY); share repurchases paused, anticipated resuming H1 2027"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com earnings report",
+          "excerpt": "long-term debt (excluding current installments) of $44.8 billion; stockholders' equity of $13.9 billion; generated $6.03 billion of net cash from operating activities"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-18",
+          "excerpt": "FEDFUNDS=3.63 DGS10=4.46 DCOILWTICO=80.35 VIXCLS=16.78"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3778,
+        "capped_chars": 3778,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223756,
+        "capped_chars": 223756,
+        "raw_tokens": 55939,
+        "capped_tokens": 55939
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1796,
+        "capped_chars": 1796,
+        "raw_tokens": 449,
+        "capped_tokens": 449
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 15566,
+        "capped_chars": 3622,
+        "raw_tokens": 3892,
+        "capped_tokens": 906
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 97465,
+        "capped_chars": 76754,
+        "raw_tokens": 24367,
+        "capped_tokens": 19189
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 31806,
+  "started_at": "2026-08-07T03:04:21+00:00"
+}

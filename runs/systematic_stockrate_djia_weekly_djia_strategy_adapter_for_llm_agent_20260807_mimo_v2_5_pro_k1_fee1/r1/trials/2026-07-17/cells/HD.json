@@ -1,0 +1,170 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30752,
+    "tokens_out": 1057,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033923,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": 0.15,
+      "rationale": "Home Depot is a fundamentally sound, market-leading home improvement retailer with strong scale, a growing Pro ecosystem, and solid cash generation. However, the near-term trajectory is mixed: Q1 FY2026 showed +4.8% YoY revenue growth but -4.3% YoY EPS decline, with operating margin compressing to 11.9% (from 12.7% prior year) due to acquisition integration costs (SRS, GMS, Mingledorff's). The company faces headwinds from a soft housing market, elevated mortgage rates creating a 'lock-in effect' suppressing housing turnover, and pressure on big-ticket discretionary projects. Valuation at P/E 24.7x is near the middle of its 1-year range (20.3-28.8x) and slightly above the 5-year median forward P/E of 22.27x, suggesting fair-to-slightly-rich pricing. The upcoming Q2 earnings on August 18, 2026 could serve as a near-term catalyst, with consensus expecting $4.73 EPS (+0.64% YoY) and $47.5B revenue (+4.92% YoY). The stock has recovered from its April lows but remains well below its 52-week high of $426.75. BalanceRO-neutral's trajectory are is solid but not exceptional, valuation is fair, and the near-term catalyst is modest \u2014 this warrants a mild positive score rather than a strong conviction call.",
+      "key_factors": [
+        "Market.6% comparable sales growth in Q1 FY2026 with Pro segment outperforming DIY",
+        "EPS declined 4.3% YoY in Q1 due to acquisition integration costs and margin compression",
+        "Operating margin guidance of 12.4%-12.6% (adjusted 12.8%-13.0%) for FY2026",
+        "P/E of 24.7x is near middle of 1-year range (20.3-28.8x) and slightly above 5-year median of 22.27x",
+        "Housing market headwinds: elevated mortgage rates, lock-in effect suppressing turnover",
+        "Pro ecosystem expansion via SRS, GMS, Mingledorff's acquisitions targeting $700B+ addressable market",
+        "Q2 earnings on Aug 18, 2026 as near-term catalyst with consensus $4.73 EPS",
+        "Stock price at $348.02 well below 52-week high of $426.75, suggesting some pessimism already priced",
+        "Strong competitive position: ~2,360 stores, double Lowe's revenue, leading Pro ecosystem"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03 Q1",
+          "excerpt": "revenue=41.77B eps_diluted=3.3; YoY revenue=+4.8% eps_diluted=-4.3%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=24.738; range over window: pe_diluted 20.3..28.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-10",
+          "excerpt": "Home Depot is projected to report earnings of $4.71 per share on August 18, 2026, representing year-over-year growth of 0.64%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com HD vs LOW",
+          "excerpt": "Home Depot is trading at a forward 12-month P/E ratio of 21.1X, below its five-year median of 22.27X"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com HD Jun 25",
+          "excerpt": "GAAP operating margins to 11.9% and eroded trailing twelve-month ROIC to 25.4% from 31.3%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=348.02; range over ~251 bars: high=426.75 low=289.10"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3778,
+        "capped_chars": 3778,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224643,
+        "capped_chars": 224643,
+        "raw_tokens": 56161,
+        "capped_tokens": 56161
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1886,
+        "capped_chars": 1886,
+        "raw_tokens": 472,
+        "capped_tokens": 472
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 10484,
+        "capped_chars": 2157,
+        "raw_tokens": 2621,
+        "capped_tokens": 539
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 89294,
+        "capped_chars": 61204,
+        "raw_tokens": 22324,
+        "capped_tokens": 15301
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 27466,
+  "started_at": "2026-08-07T03:07:50+00:00"
+}

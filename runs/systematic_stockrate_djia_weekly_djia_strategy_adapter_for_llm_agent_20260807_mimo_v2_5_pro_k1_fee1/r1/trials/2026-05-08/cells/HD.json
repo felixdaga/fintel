@@ -1,0 +1,183 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30387,
+    "tokens_out": 1260,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034167,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": 0.15,
+      "rationale": "Home Depot is a best-in-class retailer with durable competitive advantages, strong brand, and a strategic pivot toward the Pro ecosystem via SRS/GMS acquisitions that expand TAM to $1T+. However, fundamentals show a mixed-to-soft trajectory: Q3 FY25 revenue grew modestly (+2.8% YoY) while EPS declined (-1.4% YoY), operating cash flow is trending down, and the housing market remains 'frozen' per CFO commentary. The balance sheet carries elevated leverage from the $18.25B SRS acquisition, with total liabilities of $94.2B vs. equity of just $12.1B. Core retail comps have been essentially flat for 8+ quarters, and management's FY26 guidance of flat-to-+2% comps signals continued stagnation. On valuation, the stock has pulled back ~25% from its 52-week high, and the P/E of 22x sits at the low end of its 21.3-28.8x 365-day range, suggesting valuation is no longer stretched. However, a DCF analysis suggests fair value around $236 vs. current $323, implying the stock is still overvalued on a cash-flow basis. The upcoming Q1 earnings on May 19 is a near-term catalyst \u2014 consensus expects revenue +4% YoY but EPS -3.9% \u2014 and could provide clarity on whether the Pro strategy is gaining traction. BofA's recent buy rating with $374 target adds a modest positive signal. Net: solid franchise, reasonable valuation vs. own history, but soft near-term trajectory and macro headwinds limit upside; the earnings event provides a modest catalyst bump.",
+      "key_factors": [
+        "Durable competitive position as world's largest home improvement retailer with 33% ROIC and $1T+ TAM via Pro ecosystem expansion",
+        "Soft near-term trajectory: Q3 FY25 EPS -1.4% YoY, operating cash flow declining, housing market 'frozen' per CFO",
+        "Elevated leverage from SRS/GMS acquisitions ($23.75B+ total) with buyback pause since March 2024",
+        "P/E of 22x at low end of 365-day range (21.3-28.8x), stock down ~25% from 52-week high \u2014 valuation more reasonable but DCF suggests still overvalued",
+        "FY26 guidance of flat-to-+2% comps signals continued stagnation in core retail",
+        "Q1 FY26 earnings on May 19 as near-term catalyst; consensus expects revenue +4% but EPS -3.9% YoY",
+        "BofA reinstated coverage with buy rating and $374 target based on multi-year earnings acceleration thesis"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-11-02 Q3",
+          "excerpt": "revenue=41.35B eps_diluted=3.62; YoY revenue=+2.8% eps_diluted=-1.4%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-11-02 balance sheet",
+          "excerpt": "total_assets=106.27B total_liabilities=94.16B total_equity=12.12B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=22 p_b=26.496; range over window: pe_diluted 21.3..28.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "excerpt": "close=322.64; 52-week high=426.75; quarterly delta=-15.6%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-06",
+          "excerpt": "Home Depot CFO Richard McPhail said demand softened through 2025 and U.S. housing activity is effectively 'frozen'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "acquirersmultiple.com DCF",
+          "excerpt": "DCF Value: ~$236; Current Price: ~$329; Margin of Safety: ~-28%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-06 tipranks",
+          "excerpt": "Analysts see Home Depot's revenue rising by about 4% year-over-year to $41.64 billion but expect adjusted EPS to fall by about 3.9% to $3.41"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-06 thestreet BofA",
+          "excerpt": "Bank of America reinstated coverage of Home Depot with a buy rating and a $374 price objective"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st HD",
+          "excerpt": "ROIC of 33.2%; Pro sales now accounting for nearly 50% of total revenue; quarterly dividend $2.25 per share"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224629,
+        "capped_chars": 224629,
+        "raw_tokens": 56157,
+        "capped_tokens": 56157
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1524,
+        "capped_chars": 1524,
+        "raw_tokens": 381,
+        "capped_tokens": 381
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 17461,
+        "capped_chars": 3612,
+        "raw_tokens": 4365,
+        "capped_tokens": 903
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 100222,
+        "capped_chars": 71188,
+        "raw_tokens": 25056,
+        "capped_tokens": 17797
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 45306,
+  "started_at": "2026-08-07T02:58:42+00:00"
+}

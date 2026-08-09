@@ -1,0 +1,189 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33994,
+    "tokens_out": 1100,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037294,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.35,
+      "rationale": "IBM shows solid fundamental health with Q1 2026 revenue of $15.9B (+9.5% YoY) and strong segment performance: Software up 11%, Infrastructure up 15%, with operating cash flow of $5.17B. The company beat EPS estimates ($1.91 vs $1.81 consensus) and raised its dividend. Valuation has compressed significantly\u2014P/E dropped from ~50x in late 2025 to 22.4x currently, near the low end of its 19-51x range, while net margin improved to 15.6% and ROE to 32.5%. The $1B CHIPS Act quantum foundry award announced May 21 provides a near-term catalyst, with the stock surging 8.9% on the analyst price maintaining $286 price target. However, risks include federal contract cancellations, consultinging revenue pressure, elevated debt levels ($1.75x equity) temper the upside from the near term.",
+      "key_factors": [
+        "Q1 2026 revenue growth of margin expansion across Software and Infrastructure segments",
+        "P/E compressionpression from ~50x to 22.4x to 32.5%",
+        "ROE improvement to 32.5%",
+        "Valuation at 19-51x range with P/E at 22.4x",
+        "$1B CHIPS Act Act quantum foundry award ($1B) provides near-term catalyst and strategic positioning",
+        "Strong operating cash flow generation ($5.17B in Q1 2026)",
+        "Dividend increase to $1.69/quarter (3%+ yield) signals management confidence",
+        "Confluent acquisition ($11.6B) expands software portfolio but adds integration risk and debt"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1",
+          "excerpt": "revenue=15.92B net_income=1.22B eps_diluted=1.28 operating_cash_flow=5.17B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 YoY",
+          "excerpt": "YoY: revenue=+9.5% eps_diluted=+14.3% net_income=+15.3%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=22.397 p_b=7.286 net_margin=0.156 roe=0.325"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 19.0..51.2 | p_b 6.2..10.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-21 Benzinga",
+          "excerpt": "IBM partnered with the U.S. Department of Commerce to establish Anderon, America's first quantum wafer foundry...backed by $1 billion in CHIPS Act incentives and $1 billion in IBM cash investment. The stock rose 8.92% on the announcement"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-21 Benzinga CHIPS",
+          "excerpt": "IBM will receive $1 billion, GlobalFoundries $375 million"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan Q1 2026",
+          "excerpt": "Software revenue grew to $7,052 million, Consulting to $5,272 million and Infrastructure to $3,326 million, with segment profit totaling $3,300 million"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bellbellbellbellbellbell-026-00000020",
+          "excerpt": "federal contract cancellations and110002"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "range",
+          "excerpt": "high=324.90 low=212.34"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "excerpt": "quarterly delta ~63 trading days, from 2026-02-20: -1.6%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224589,
+        "capped_chars": 224589,
+        "raw_tokens": 56147,
+        "capped_tokens": 56147
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2678,
+        "capped_chars": 2678,
+        "raw_tokens": 670,
+        "capped_tokens": 670
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 41243,
+        "capped_chars": 9119,
+        "raw_tokens": 10311,
+        "capped_tokens": 2280
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 106175,
+        "capped_chars": 68245,
+        "raw_tokens": 26543,
+        "capped_tokens": 17061
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 43152,
+  "started_at": "2026-08-07T03:00:37+00:00"
+}

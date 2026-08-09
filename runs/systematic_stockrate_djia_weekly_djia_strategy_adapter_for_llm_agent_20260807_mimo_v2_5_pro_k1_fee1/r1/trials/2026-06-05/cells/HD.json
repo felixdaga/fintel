@@ -1,0 +1,179 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32924,
+    "tokens_out": 1222,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03659,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": 0.15,
+      "rationale": "Home Depot is a dominant franchise with ~17% U.S. home improvement market share, strong Pro-focused strategy, and robust cash generation (OCF $6.03B in Q1, up 39.5% YoY). However, the fundamental trajectory is mixed: Q1 revenue grew 4.8% YoY to $41.77B but EPS declined 4.3% YoY to $3.30, and operating income fell from $5.13B to $4.98B, reflecting margin pressure from acquisition integration costs and a soft big-ticket discretionary environment. The balance sheet carries elevated leverage post-SRS acquisition ($94B liabilities vs $13.9B equity). Valuation at 22x P/E is near the low end of its 1-year range (20.3-28.8), suggesting the market has already priced in much of the headwind. P/B has compressed dramatically from ~46x to ~22x. The stock is down 14.3% over the last quarter, and the 3% dividend yield with 16 consecutive years of increases provides support. However, RBC flagged risk of missing 2026 guidance on cost/demand headwinds, housing turnover remains stalled, and the macro backdrop (10Y yield at 4.47%, oil near $97) is not supportive for housing-sensitive names. No clear near-term fundamental catalyst exists to re-rate the stock. The score reflects a quality franchise at a reasonable but not compelling valuation, with a cautious near-term outlook.",
+      "key_factors": [
+        "Dominant market position (~17% U.S. home improvement share) with Pro-focused strategy and SRS Distribution acquisition expanding into specialty trade distribution",
+        "Q1 FY2026 revenue +4.8% YoY to $41.77B but EPS -4.3% YoY to $3.30, reflecting margin pressure from integration costs and soft big-ticket demand",
+        "Operating cash flow strong at $6.03B (+39.5% YoY), supporting dividend ($9.32 annualized, ~3% yield) and capital allocation",
+        "P/E of 22x near low end of 1-year range (20.3-28.8); P/B compressed from ~46x to ~22x, suggesting market has priced in headwinds",
+        "Elevated leverage post-SRS acquisition ($94B liabilities vs $13.9B equity); share repurchases paused until H1 2027",
+        "Macro headwinds: 10Y Treasury at 4.47%, stalled housing turnover, mortgage rates above 6.75%, oil near $97",
+        "RBC flagged risk of missing 2026 guidance; multiple analysts cut price targets on macro headwinds",
+        "No clear near-term fundamental catalyst for re-rating; stock trading range-bound post Q1 earnings"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03 Q1",
+          "excerpt": "revenue=41.77B eps_diluted=3.3 net_income=3.29B operating_income=4.98B operating_cash_flow=6.03B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-05-04 Q1 YoY",
+          "excerpt": "YoY: revenue=+4.8% eps_diluted=-4.3% net_income=-4.2% operating_cash_flow=+39.5%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=22.032 p_b=22.251 earnings_yield=0.045 net_margin=0.084 roe=1.01"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 20.3..28.8 | p_b 22.3..52.9"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=309.95 quarterly delta=-14.3%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-20",
+          "excerpt": "RBC Capital lowered its price target to $340, citing stalled housing turnover and a worsened demand outlook"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis",
+          "excerpt": "Home Depot paused share repurchases to prioritize debt reduction; management anticipates resuming share repurchases once the company achieves an excess cash position, projected for the first half of 2027"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thebrandhopper",
+          "excerpt": "Home Depot holds approximately 17% of the U.S. home improvement market, based on its $164.7B FY2025 revenue"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3778,
+        "capped_chars": 3778,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224639,
+        "capped_chars": 224639,
+        "raw_tokens": 56160,
+        "capped_tokens": 56160
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1845,
+        "capped_chars": 1845,
+        "raw_tokens": 461,
+        "capped_tokens": 461
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 23912,
+        "capped_chars": 5814,
+        "raw_tokens": 5978,
+        "capped_tokens": 1454
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 82262,
+        "capped_chars": 65002,
+        "raw_tokens": 20565,
+        "capped_tokens": 16250
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 51363,
+  "started_at": "2026-08-07T03:02:26+00:00"
+}

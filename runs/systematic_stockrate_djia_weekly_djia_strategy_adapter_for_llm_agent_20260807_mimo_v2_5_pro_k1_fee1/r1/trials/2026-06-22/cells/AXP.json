@@ -1,0 +1,185 @@
+{
+  "cell": "AXP",
+  "symbols": [
+    "AXP"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31247,
+    "tokens_out": 1041,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03437,
+    "basis": "reported"
+  },
+  "views": {
+    "AXP": {
+      "symbol": "AXP",
+      "score": 0.35,
+      "rationale": "American Express shows solid fundamental health with consistent revenue and EPS growth (Q1 2026 revenue +9.3% YoY, EPS +17.6% YoY), strong ROE of 33-34%, and healthy net margins of 26.6%. The closed-loop model and premium positioning provide durable competitive advantages, with 153.9M cards in force and 160M merchant locations. Credit quality remains excellent with delinquency rates at 1.4% and charge-offs at 2%. However, operating cash flow declined 20.2% YoY in Q1, and the balance sheet carries elevated debt-to-equity of 1.73. Valuation is mid-range vs own history (P/E 20.7x vs 18.4-25.3x range), not expensive but not a bargain. The TheFork acquisition for $700M is a modest strategic catalyst, and Q2 earnings on July 24 with consensus EPS of $4.37 (+7.1% YoY) provides a near-term event. Competitive pressures from Capital One-Discover merger and Chase Sapphire Reserve refresh are real but manageable given AXP's premium positioning. Overall: good franchise with positive trajectory, fair-to-fair valuation, and a modest near-term catalyst.",
+      "key_factors": [
+        "Consistent revenue/EPS growth: Q1 2026 revenue +9.3% YoY, EPS +17.6% YoY",
+        "Strong profitability: ROE 33-34%, net margin 26.6%, operating margin 33.8%",
+        "Excellent credit quality: 1.4% delinquency rate, 2% charge-off rate",
+        "Premium closed-loop model with 153.9M cards and 160M merchant locations",
+        "P/E 20.7x mid-range vs 18.4-25.3x 12-month window - not expensive but not cheap",
+        "Operating cash flow declined 20.2% YoY in Q1 2026",
+        "Debt-to-equity elevated at 1.73x",
+        "TheFork acquisition ($700M) and Q2 earnings July 24 as near-term catalysts",
+        "Competitive pressure from Capital One-Discover merger and Chase Sapphire Reserve refresh"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=10.52B net_income=2.97B eps_diluted=4.28 operating_income=3.78B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+9.3% eps_diluted=+17.6% net_income=+15.0% operating_cash_flow=-20.2%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=20.666 p_b=6.821 net_margin=0.266 roe=0.33 debt_to_equity=1.728 operating_margin=0.338"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 18.4..25.3 | p_b 6.1..8.2"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "soar-analysis.com",
+          "excerpt": "30-day delinquency rate was only 1.4%, and return on equity was 34%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "smartkarma.com",
+          "excerpt": "charge-offs at 2% in May 2026. delinquency rate for ..1%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-15",
+          "excerpt": "TripAdvisor announced the sale of TheFork, its European restaurant reservation platform, to American Express for $700 million"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-19",
+          "excerpt": "The company reported release to report EPS of $4.37 earnings per share for up 9.19.16.9source_type\uff1aweb_searchsearchsource_id\":\"coinlaw.io American Express Statistics 2026:excerpt\":\"Q1 2026 network volumes reached $486.3 billion, an 11% increase from $439.6B in Q1 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "soar-analysis.com competitive",
+          "excerpt": "Capital One and Discover create the sharpest American Express competitive pressures after their May 2025 merger"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AXP",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4463,
+        "capped_chars": 4463,
+        "raw_tokens": 1116,
+        "capped_tokens": 1116
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 226217,
+        "capped_chars": 226217,
+        "raw_tokens": 56554,
+        "capped_tokens": 56554
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1932,
+        "capped_chars": 1932,
+        "raw_tokens": 483,
+        "capped_tokens": 483
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 14485,
+        "capped_chars": 3374,
+        "raw_tokens": 3621,
+        "capped_tokens": 844
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 105550,
+        "capped_chars": 87213,
+        "raw_tokens": 26388,
+        "capped_tokens": 21803
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 32509,
+  "started_at": "2026-08-07T03:04:08+00:00"
+}

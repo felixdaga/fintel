@@ -1,0 +1,189 @@
+{
+  "cell": "JPM",
+  "symbols": [
+    "JPM"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 38577,
+    "tokens_out": 1045,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041712,
+    "basis": "reported"
+  },
+  "views": {
+    "JPM": {
+      "symbol": "JPM",
+      "score": 0.35,
+      "rationale": "JPMorgan Chase demonstrates strong fundamental health and positive trajectory.Q1 2026 results show revenue up 10% YoY to $49.8B, EPS up 17% to $5.94, with 19% ROE and 23% ROTCE. The bank maintains market leadership (#1 in global IB fees, #1 retail deposit share, $7.1T in AUM) a fortress balance sheet with 14.3% CET1. However, several factors temper the score: (1) operating cash flow is deeply negative at -$211.8B in Q1, reflecting the bank's balance sheet dynamics; (2) the stock trades at 14.1x P/E, near the low end of its 13.5-17.8 range, but P/B of 2.29 is mid-range (2.1-2.8), suggesting valuation is not a clear bargain; (3) macro headwinds from rising oil prices ($98/bbl), up 52% in 90d), higher 10Y yields (4.41%), and potential Basel III capital requirements that could add $20B in required capital; (4) Jamie Dimon's explicit warnings about 'complex risks,' regulatory uncertainty, and potential stagflation scenarios create meaningful caution. The Q1 beat ($5.94 vs $5.50 consensus) and strong IB rebound (+28% YoY) positive catalysts, but the stock's already pulled back ~1.3% over the quarter, and the macro/regulatory overhang limits upside.",
+      "key_factors": [
+        "Q1 2026 EPS of5.94 (+17% YoY) and revenue $49.8B (+10% YoY) beat consensus",
+        "19% ROE and 23% ROTCE demonstrate superior profitability vs peers",
+        "P/E of 14.1x near low end of 13.5-17.8 range but P/B 2.29x is mid-range",
+        "Markets revenue +20% and IB fees +28% show strong trading/advisory momentum",
+        "Basel III endgame could require ~$20B additional capital per management",
+        "Oil at $98/bbl and 10Y yield at 4.41% create macro headwinds",
+        "Operating cash flow deeply negative at -$211.8B reflecting balance sheet dynamics",
+        "Management cautious on NII outlook, not raising guidance above $103B"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=49.84B net_income=16.49B eps_diluted=5.94 operating_income=20.48B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1 YoY",
+          "excerpt": "revenue=45.31B eps=5.07"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=14.145 p_b=2.289 roe=0.162 operating_margin=0.399"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 13.5..17.8 | p_b 2.1..2.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "excerpt": "close=306.27 quarterly delta -1.3%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "excerpt": "DGS10=4.41 DCOILWTICO=98.38"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-01 stocktitan",
+          "excerpt": "net income of16.5 billion, up 13% from a year earlier, and diluted EPS of5.94, up 17%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-01 jpmorganchase",
+          "excerpt": "ROE 19% and ROTCE 23%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-01 financialcontent",
+          "excerpt": "Basel III Endgame capital rules would require JPMorgan to hold an additional $20 billion in capital"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-01 financialcontent",
+          "excerpt": "management's refusal to raise its full-year Net Interest Income (NII) guidance above $103 billion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JPM",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3723,
+        "capped_chars": 3723,
+        "raw_tokens": 931,
+        "capped_tokens": 931
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241300,
+        "capped_chars": 241300,
+        "raw_tokens": 60325,
+        "capped_tokens": 60325
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3435,
+        "capped_chars": 3435,
+        "raw_tokens": 859,
+        "capped_tokens": 859
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 108021,
+        "capped_chars": 12834,
+        "raw_tokens": 27005,
+        "capped_tokens": 3208
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 117274,
+        "capped_chars": 90024,
+        "raw_tokens": 29319,
+        "capped_tokens": 22506
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 52786,
+  "started_at": "2026-08-07T02:58:49+00:00"
+}

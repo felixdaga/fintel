@@ -1,0 +1,179 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 40099,
+    "tokens_out": 1346,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.044137,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": 0.15,
+      "rationale": "Chevron's Q1 2026 results reveal a company with strong operational execution but significant near-term earnings headwinds. Production surged 15% YoY to 3,858 MBOED driven by Hess integration, and adjusted EPS of $1.41 beat consensus of $0.97 by 45%. However, reported EPS of $1.11 was down 44.5% YoY, dragged by ~$2.9B in unfavorable timing effects (LIFO and derivative marks) and a $360M legal reserve charge. Operating cash flow collapsed to $2.51B from $5.19B YoY due to $4.9B working capital headwind from sharp commodity price increases. The balance sheet remains solid with $189B equity and a 0.6 beta, but ROCE deteriorated to 4.5% (reported) from 8.3% a year ago. Valuation is stretched: P/E of 32.2 at at the top of its 15-32x 12-month range, up from ~15x a year ago, well above the oil industry average of ~18x. Chevron's own historical norms. P/B of 1.91 and P/S of 1.91 are also elevated. with net margin compressed to 5.9% from 7.8% a year ago. ROE at 5.9% from 10.5%. The geopolitical backdrop ( elevated oil prices ($98/bblrel) WTI) a a but is a tail of Hormuz closure) is a tailwind for upstream earnings but creates operational risks (California refining, supply chain disruptions). Management maintained 7-10% production growth guidance and $18-19B capex, with $3-4B structural cost reductions on track. The timing effects are expected to reverse in subsequent quarters, providing a potential earnings tailwind. However, the stock has already rallied ~20% from its Nov 2025 lows, and the current P/E premium prices in much of the upside from elevated oil prices. Near-term catalysts include Q2 earnings (timing effect reversal) and potential Iraq oilfield entry, but these are partially priced in. The score reflects a quality franchise with strong competitive position (Permian, Guyana, integrated model) but at a valuation that leaves limited margin of safety, with near-term earnings volatility creating uncertainty.",
+      "key_factors": [
+        "Q1 2026 adjusted EPS of $1.41 beat consensus by 45%, but reported EPS of $1.11 down 44.5% YoY due to ~$2.9B timing effects and $360M legal charge",
+        "Production surged 15% YoY to 3,858 MBOED on Hess integration; 7-10% full-year growth guidance maintained",
+        "P/E of 32.2x at top of 12-month range (15-32x), well above oil industry average (~18x) and own historical norms",
+        "Operating cash flow collapsed to $2.51B from $5.19B YoY due to $4.9B working capital headwind from sharp commodity price increases",
+        "ROCE deteriorated to 4.5% (reported) from 8.3% YoY; net margin compressed to 5.9% from 7.8%",
+        "WTI crude at ~$98/bbl with Strait of Hormuz disruption supporting elevated prices but creating operational risks",
+        "Timing effects expected to reverse in subsequent quarters, providing potential earnings tailwind; Q2 guidance includes $10-150 MBOED production impact from turnarounds",
+        "Management maintaining capital discipline: $2.5-3.0B/quarter buybacks, 39th consecutive annual dividend increase, $3-4B structural cost reduction target on track"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-07 Q1 filing",
+          "excerpt": "revenue=48.61B net_income=2.29B eps_diluted=1.11 operating_cash_flow=2.51B total_equity=189.37B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=32.17 p_b=1.914 p_s=1.907 earnings_yield=0.031 net_margin=0.059 roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-08",
+          "excerpt": "pe_diluted=15.278 p_b=1.599 net_margin=0.078 roe=0.105"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "excerpt": "close=182.50 range high=214.71 low=133.77"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-07",
+          "excerpt": "DCOILWTICO=98.38 (WTI crude oil price)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-02",
+          "excerpt": "Chevron's Q1 2026 earnings declined to $2.8 billion despite 15% production growth and higher oil prices, due to supply disruptionsions in the Middle East and Kazakhstan, plus $2.9 billion in unfavorableable timing effects on derivatives"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-04",
+          "excerpt": "Chevron is taking over operations at two major Iraqi oilfields\u2014West Qurna 2 (13 billion barrels) and Nasiriyiyah (4.36 billion barrels)\u2014replacing Russian competitors"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-08",
+          "excerpt": "Chevron's strategy is to safely deliver higher returns and superior shareholder value across commodity cycles by combining a high-margin upstream oil and gas portfolio with strict capital discipline"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225262,
+        "capped_chars": 225262,
+        "raw_tokens": 56316,
+        "capped_tokens": 56316
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3289,
+        "capped_chars": 3289,
+        "raw_tokens": 822,
+        "capped_tokens": 822
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 87522,
+        "capped_chars": 17994,
+        "raw_tokens": 21880,
+        "capped_tokens": 4498
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 107458,
+        "capped_chars": 87105,
+        "raw_tokens": 26865,
+        "capped_tokens": 21776
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 53380,
+  "started_at": "2026-08-07T02:58:38+00:00"
+}

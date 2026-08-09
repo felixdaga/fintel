@@ -1,0 +1,183 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28841,
+    "tokens_out": 1289,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032708,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.25,
+      "rationale": "Disney presents a mildly attractive fundamental case anchored by a diversified franchise with improving streaming profitability and a resilient Experiences segment, but tempered by near-term headwinds and a mixed earnings trajectory. On Pillar 1 (fundamentals/trajectory): Revenue grew 6.5% YoY in Q2 FY2026 to $25.17B, with Experiences delivering record quarterly revenue of $10.0B and streaming operating income up 88% to $582M. However, EPS declined 29.8% YoY to $1.27 (partly tax-related), and the quarterly trajectory shows QoQ revenue and EPS declines. Operating cash flow was strong at $6.91B in Q2, and the company repurchased $5.5B in stock in H1 FY2026. The balance sheet is solid with $115.3B equity and improving leverage. The streaming profitability inflection ($1.3B annual operating income in FY2025, margin crossing 10%) is a genuine structural positive. On Pillar 2 (valuation): At a P/E of 13.8x, DIS trades near the low end of its 12-month range (12.5-23.6x), and P/B of 1.48x is at the bottom of its 1.5-2.1x range. This represents meaningful discount to its own history, though the lower multiple partly reflects the EPS decline. On Pillar 3 (near-term catalyst): The fiscal Q3 2026 earnings report on August 5, 2026, with Rosenblatt expecting improving trends slightly above consensus, and the release of Toy Story 5 (strong box office) and live-action Moana in July, provide modest near-term catalysts. However, FCC regulatory scrutiny on ABC licenses, a $50M antitrust settlement, and European patent injunction create offsetting near-term risks. The score of +0.25 reflects a solid franchise at a discounted valuation with a credible but not overwhelming catalyst path, offset by regulatory headwinds and a somewhat uncertain earnings trajectory.",
+      "key_factors": [
+        "Experiences segment record revenue of $10.0B in Q2 FY2026, operating income up 5% to $2.62B - parks remain the profit anchor",
+        "Streaming operating income up 88% to $582M in Q2, margin crossed 10% for first time - structural profitability inflection",
+        "P/E of 13.8x near low end of 12-month range (12.5-23.6x), P/B of 1.48x at bottom of range (1.5-2.1x) - discounted vs own history",
+        "EPS declined 29.8% YoY to $1.27 in Q2, QoQ revenue and EPS both negative - mixed near-term trajectory",
+        "FCC regulatory scrutiny on ABC licenses and $50M antitrust settlement create near-term headwinds",
+        "Fiscal Q3 earnings Aug 5 and Toy Story 5/Moana releases provide modest near-term catalysts",
+        "$5.5B in H1 FY2026 buybacks signal management confidence in cash generation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=25.17B net_income=2.46B eps_diluted=1.27 operating_income=4.60B operating_cash_flow=6.91B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2 growth",
+          "excerpt": "YoY: revenue=+6.5% eps_diluted=-29.8% net_income=-27.5% QoQ: revenue=-3.1% eps_diluted=-5.2%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=13.815 p_b=1.478 p_s=1.752 earnings_yield=0.072"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 12.5..23.6 | p_b 1.5..2.1"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "alphastreet Q2 analysis",
+          "excerpt": "Experiences revenue of $9.49 billion and operating income of $2.62 billion; Entertainment revenue of $11.72 billion and operating income of $1.34 billion; streaming operating income rose 88% to $582M; $5.5 billion of common stock repurchased in H1 FY2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst SWOT",
+          "excerpt": "Record $10.0B Experiences operating income in fiscal 2025; streaming swung to a $1.3 billion annual profit; streaming operating income rose 88% to $582M in fiscal Q2 2026; SVOD margin crossed 10% for the first time"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-30 Motley Fool",
+          "excerpt": "Disney stock has declined 13% in the first half of 2026 despite company progress"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey Jun 25",
+          "excerpt": "FCC is actively investigating Disney-owned ABC; Disney agreed to a proposed $50 million class-action settlement; European patent injunction against streaming services"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com Rosenblatt",
+          "excerpt": "Rosenblatt reiterates Buy rating; expects fiscal Q3 earnings to show improving trends slightly above consensus; Guggenheim raised target to $120 from $115"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4429,
+        "capped_chars": 4429,
+        "raw_tokens": 1107,
+        "capped_tokens": 1107
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221414,
+        "capped_chars": 221414,
+        "raw_tokens": 55354,
+        "capped_tokens": 55354
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1840,
+        "capped_chars": 1840,
+        "raw_tokens": 460,
+        "capped_tokens": 460
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 5028,
+        "capped_chars": 1363,
+        "raw_tokens": 1257,
+        "capped_tokens": 341
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 77226,
+        "capped_chars": 58001,
+        "raw_tokens": 19307,
+        "capped_tokens": 14500
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 30227,
+  "started_at": "2026-08-07T03:06:54+00:00"
+}

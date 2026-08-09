@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "run_id": "systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1-r1",
+  "job_id": "systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1",
+  "k_index": 1,
+  "k_repeats": 1,
+  "created_at": "2026-08-07T02:57:08+00:00",
+  "strategy": {
+    "name": "systematic_stockrate_djia_weekly",
+    "path": "/Users/lucky/.openclaw/workspace/projects/fintel/packages/systematic_stockrate_djia_weekly",
+    "digest": "30eb1a620c3149fb"
+  },
+  "agent": {
+    "name": "djia_strategy_adapter_for_llm_agent",
+    "model": {
+      "id": "xiaomi/mimo-v2.5-pro",
+      "allow_fallbacks": false,
+      "extra_params": {}
+    },
+    "allow_sub_agents": false,
+    "options": {}
+  },
+  "scope": "single_name",
+  "universe": {
+    "preset": "dow30"
+  },
+  "universe_symbols": [
+    "AAPL",
+    "AMGN",
+    "AMZN",
+    "AXP",
+    "BA",
+    "CAT",
+    "CRM",
+    "CSCO",
+    "CVX",
+    "DIS",
+    "GS",
+    "HD",
+    "HON",
+    "IBM",
+    "JNJ",
+    "JPM",
+    "KO",
+    "MCD",
+    "MMM",
+    "MRK",
+    "MSFT",
+    "NKE",
+    "NVDA",
+    "PG",
+    "SHW",
+    "TRV",
+    "UNH",
+    "V",
+    "VZ",
+    "WMT"
+  ],
+  "schedule": {
+    "kind": "custom_dates",
+    "start": "2026-04-24",
+    "end": "2026-07-31",
+    "dates": [
+      "2026-04-24",
+      "2026-05-01",
+      "2026-05-08",
+      "2026-05-15",
+      "2026-05-22",
+      "2026-05-29",
+      "2026-06-05",
+      "2026-06-12",
+      "2026-06-22",
+      "2026-06-26",
+      "2026-07-06",
+      "2026-07-10",
+      "2026-07-17",
+      "2026-07-24",
+      "2026-07-31"
+    ]
+  },
+  "schedule_dates": [
+    "2026-04-24",
+    "2026-05-01",
+    "2026-05-08",
+    "2026-05-15",
+    "2026-05-22",
+    "2026-05-29",
+    "2026-06-05",
+    "2026-06-12",
+    "2026-06-22",
+    "2026-06-26",
+    "2026-07-06",
+    "2026-07-10",
+    "2026-07-17",
+    "2026-07-24",
+    "2026-07-31"
+  ],
+  "data": [
+    {
+      "kind": "prices",
+      "source": "massive_prices",
+      "lookback_days": 365
+    },
+    {
+      "kind": "fundamentals",
+      "source": "massive_fundamentals",
+      "lookback_days": 540
+    },
+    {
+      "kind": "ratios",
+      "source": "valuation_ratios",
+      "window_days": 365,
+      "lookback_days": 365
+    },
+    {
+      "kind": "macro",
+      "source": "fred_macro",
+      "lookback_days": 90
+    },
+    {
+      "kind": "news_sentiment",
+      "source": "news_sentiment",
+      "lookback_days": 90
+    },
+    {
+      "kind": "news",
+      "source": "massive_news",
+      "lookback_days": 14
+    },
+    {
+      "kind": "web_search",
+      "source": "web_search",
+      "lookback_days": 30,
+      "max_results": 5,
+      "clamp_by_age": true
+    }
+  ],
+  "scoring": {
+    "kpi": "single_name_ir",
+    "signal": "single_name",
+    "params": {
+      "holdings": true,
+      "active_budget": 0.5,
+      "cost_bps": 5.0
+    },
+    "transform": "single_name",
+    "horizons": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "metric_key": "icir"
+  },
+  "fingerprint": {
+    "agent_name": "djia_strategy_adapter_for_llm_agent",
+    "agent_version": "1",
+    "model": "xiaomi/mimo-v2.5-pro",
+    "channel": "",
+    "prompt_hash": "b62c3563ebbdc396",
+    "data_kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "adapter_params": {
+      "pit_enforcement": "access",
+      "pit_deny": []
+    },
+    "digest": "3bed49297dc4c66f"
+  }
+}

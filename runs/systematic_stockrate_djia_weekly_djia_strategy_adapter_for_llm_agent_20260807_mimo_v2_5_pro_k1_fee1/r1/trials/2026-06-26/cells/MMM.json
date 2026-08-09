@@ -1,0 +1,170 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31461,
+    "tokens_out": 927,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034242,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "rationale": "MMM's fundamental health and trajectory are deteriorating sharply. Q1 2026 showed revenue of $6.03B with EPS of $1.23, representing a -39.7% YoY decline in EPS and -41.3% YoY decline in net income. The balance sheet is severely strained with total equity of only $3.31B against total liabilities of $32.12B, implying a debt-to-equity ratio of approximately 9.7x. Operating cash flow collapsed to $574M in Q1 2026 versus $1.76B in Q3 2025, a -67.3% QoQ decline. The company faces massive ongoing PFAS litigation liabilities, including a new Australian government lawsuit seeking A$1.4 billion (filed June 2026), adding to existing earplug and PFAS settlement obligations. Valuation is extremely stretched at a P/E of 32.0x, at the very of of the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the, the's's.'s the. the. key_factors:- Deteriorating EPS of -39.7% YoY decline in net income, - Operating cash flow collapsed to -67.3% YoY decline in net income, - Balance sheet severely strained with total liabilities of $2.12B, total equity of only $3.1B,- New Australian PFAS lawsuit ( A$4 billion ( - P/E litigation remains a central overhang for- Valuation extremely stretched at P/E of3x,- Near-term catalyst absent.",
+      "key_factors": [],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.03B eps=1.23 net_income=659M operating_cash_flow=574M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=6.52B eps=1.55 net_income=841M operating_cash_flow=1.76B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=35.44B total_liabilities=32.12B total_equity=3.31B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=31.974 p_b=27.029 net_margin=0.112 roe=0.845"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-26",
+          "excerpt": "pe_diluted=18.865 p_b=18.256 net_margin=0.179 roe=0.968"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-02",
+          "excerpt": "Australian government filed a claim seeking more than AUD 2 billion, or roughly USD 1.4 billion, from 3M over alleged PFAS contamination at 28 defense sites"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-22 proactiveinvestors",
+          "excerpt": "3M expects second-quarter organic sales growth to be solidly above 3%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-01 yahoo finance",
+          "excerpt": "The new A$1.40 billion Australian PFAS lawsuit adds to the existing litigation overhang and could influence both near term cash outflows and sentiment"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 246632,
+        "capped_chars": 246632,
+        "raw_tokens": 61658,
+        "capped_tokens": 61658
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 876,
+        "capped_chars": 876,
+        "raw_tokens": 219,
+        "capped_tokens": 219
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 2046,
+        "capped_chars": 507,
+        "raw_tokens": 512,
+        "capped_tokens": 127
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 85544,
+        "capped_chars": 66657,
+        "raw_tokens": 21386,
+        "capped_tokens": 16663
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 52905,
+  "started_at": "2026-08-07T03:05:31+00:00"
+}

@@ -1,0 +1,189 @@
+{
+  "cell": "VZ",
+  "symbols": [
+    "VZ"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31642,
+    "tokens_out": 1419,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035899,
+    "basis": "reported"
+  },
+  "views": {
+    "VZ": {
+      "symbol": "VZ",
+      "score": 0.25,
+      "rationale": "Verizon presents a mildly attractive case anchored by stable, improving fundamentals and a significant valuation discount to its own recent history, partially offset by macro headwinds and competitive risks. On Pillar 1 (fundamentals/trajectory): Q1 2026 showed solid execution \u2014 revenue grew 2.9% YoY to $34.44B, EPS rose 4.3% to $1.20, operating income expanded to $8.24B, and operating cash flow was $7.98B. The company achieved its first positive Q1 postpaid phone net additions since 2013, raised guidance to the top half of 750K\u20131M range, and reported improvingving margins (operating margin 21.2%, net margin 12.8%). ROE improved to 17% from 10.5% a prior year. The Frontier acquisition is fiber broadband growth. FWA subscriber base approaching 4.8M by early 2026. On Pillar 2 (valuation): The current P/E diluteduted of11.37 P/B1119337, well_b111.2x P/B range, 2222222.2126-2026, 21.22. now trades at 11374 \u2014 near the low end of a range and well below the 10.2026 peak of 20.26. This is a meaningful discount for a mature, cash-generative business. On Pillar 3 (near-term catalyst): Q1 2026 earnings beat expectations with guidance raised; the recent AI/ 5G infrastructure narrative (Verizon highlighted as critical enabler for AI reaching the real world via 5G Edge and IoT), the FIFA World Cup 2026 sponsorship with massive customer engagement initiatives, and the FCC's approval of a ~$1B spectrum purchase from U.S. Cellular provide modest positive catalysts. However, these are incremental rather than transformative. Key risks tempering the score: rising 10-year Treasury yields (4.45%, up ~40bps over 90 days) create a relative-value headwind for dividend stocks; total liabilities rose to $313B from $279B a year ago reflecting the Frontier acquisition debt load (~$120B total debt); competitive pressure from T-Mobile and cable MVNOs remains intense; and the stock's 7-session advance into the decision date may have already captured some near-term positive catalysts. The 6.1% dividend yield and 20 consecutive years of increases provide income support but the elevated rate environment limits rerating potential.",
+      "key_factors": [
+        "Q1 2026 earnings beat: EPS $1.20 (+4.3% YoY), revenue $34.44B (+2.9% YoY), first positive Q1 postpaid phone net additions since 2013",
+        "Significant valuation discount: P/E of 11.4x vs 12-month range of 11-21x, near the trough; P/B 1.93x vs range of 1.7-2.2x",
+        "Improved profitability: operating margin 21.2%, net margin 12.8%, ROE 17% \u2014 all improved from prior year levels",
+        "Frontier acquisition expanding fiber footprint to ~25M homes, FWA subscriber growth toward 4.8M+ targets",
+        "Rising interest rates (10Y at 4.45%) and elevated debt (~$120B) create headwinds for dividend stock rerating",
+        "Competitive pressure from T-Mobile (~34% share) and cable MVNOs limits pricing power and subscriber growth",
+        "Guidance raised to top half of 750K-1M postpaid phone net additions range for 2026",
+        "AI/5G infrastructure narrative and FIFA World Cup 2026 sponsorship provide incremental positive catalysts"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q1 filing",
+          "excerpt": "revenue=34.44B net_income=5.15B eps_diluted=1.2 operating_income=8.24B operating_cash_flow=7.98B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=33.48B eps_diluted=1.15 \u2014 YoY growth context"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=11.374 p_b=1.932 net_margin=0.128 roe=0.17 operating_margin=0.212"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 11.0..21.2 | p_b 1.7..2.2"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28 DGS10",
+          "excerpt": "DGS10=4.45 \u0394=+0.40 (+9.9%) over 90 days"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-27 AI Can't Reach the Real World",
+          "excerpt": "Verizon highlighted as critical enabler for AI via 5G Edge architecture and IoT services"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-21 FIFA World Cup ticket drop",
+          "excerpt": "Verizon largest free ticket giveaway with over 2,500 free tickets across 64 matches"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news Q1 2026 growth",
+          "excerpt": "first positive 1Q postpaid phone net additions since 2013 and guidance raised to top half of 750,000\u20131 million range"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "matrixbcg competitive landscape",
+          "excerpt": "Verizon holds approximately 38 percent of the U.S. wireless market; ~$120 billion in debt"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news share dip May 15",
+          "excerpt": "net margin of 12.46% with return on equity of 19.25% in latest quarter; FCC approved ~$1B spectrum purchase from U.S. Cellular"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "VZ",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 2952,
+        "capped_chars": 2952,
+        "raw_tokens": 738,
+        "capped_tokens": 738
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 243024,
+        "capped_chars": 243024,
+        "raw_tokens": 60756,
+        "capped_tokens": 60756
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 758,
+        "capped_chars": 758,
+        "raw_tokens": 190,
+        "capped_tokens": 190
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2169,
+        "capped_chars": 2169,
+        "raw_tokens": 542,
+        "capped_tokens": 542
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 19034,
+        "capped_chars": 4999,
+        "raw_tokens": 4758,
+        "capped_tokens": 1250
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 118977,
+        "capped_chars": 76454,
+        "raw_tokens": 29744,
+        "capped_tokens": 19113
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 53116,
+  "started_at": "2026-08-07T03:01:58+00:00"
+}

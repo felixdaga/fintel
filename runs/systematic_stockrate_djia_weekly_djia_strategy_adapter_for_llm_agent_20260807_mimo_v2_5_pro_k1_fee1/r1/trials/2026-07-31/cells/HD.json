@@ -1,0 +1,195 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34322,
+    "tokens_out": 1233,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038021,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": 0.15,
+      "rationale": "Home Depot is a dominant franchise with strong competitive positioning (2,335+ stores, ~$160B revenue, double Lowe's scale, deep Pro relationships, SRS acquisition expanding TAM). However, the fundamental trajectory is mixed: Q1 FY2026 showed +4.8% YoY revenue growth but -4.3% YoY EPS decline, with operating income falling from $5.35B to $4.98B QoQ and net margin compressing to 8.4% from 9%+ historically. The balance sheet carries significant leverage (total liabilities $94B vs equity $13.9B), and the company faces real headwinds from elevated interest rates (10Y at 4.68%), tariff exposure on imports, and a DIY customer base pulling back on big-ticket discretionary projects. Valuation at 23.7x PE is near the low end of its 365-day range (20.3-28.8), suggesting the market has partially priced in the softer trajectory, but it's not a screaming bargain given the earnings head.. The July 30 organizational realignment announcement (Office of Pro Acceleration, $1.2T TAM) represent a credible strategic catalyst to capture more of the $700B Pro market, though execution risk remains. Q2 earnings on August 18 could provide a near-term re-rating event if results surprise positively. Net: solid franchise at a fair-to-slightly-cheap valuation with modest upside from strategic initiatives, but tempered by cyclical headwinds, margin pressure, and a debt-heavy balance sheet.",
+      "key_factors": [
+        "Q1 FY2026 EPS declined 4.3% YoY to $3.30 despite 4.8% revenue growth, indicating margin compression",
+        "Operating income fell QoQ from $5.35B to $4.98B; net margin at 8.4% vs historical 9%+",
+        "PE of 23.7x is near low end of 365-day range (20.3-28.8), suggesting partial de-rating already occurred",
+        "Balance sheet leverage: $94B liabilities vs $13.9B equity, though operating cash flow of $6B in Q1 is strong",
+        "10Y Treasury yield at 4.68% and elevated rates pressure housing turnover and big-ticket renovation demand",
+        "July 30 organizational realignment with Office of Pro Acceleration targeting $700B Pro TAM is a strategic catalyst",
+        "Q2 earnings report on August 18 with consensus EPS of $4.71 provides a near-term re-rating opportunity",
+        "Tariff exposure on imports creates cost headwinds per recent Simply Wall St analysis",
+        "Pro segment outperformed DIY in latest quarter, validating strategic pivot but increasing cyclicality risk"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03 Q1",
+          "excerpt": "revenue=41.77B net_income=3.29B eps_diluted=3.3 operating_income=4.98B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-11-02 Q3",
+          "excerpt": "revenue=41.35B eps=3.62 operating_income=5.35B net_income=3.60B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=23.695 p_b=23.931 net_margin=0.084 roe=1.01"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 20.3..28.8 | p_b 22.2..52.9"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03 balance sheet",
+          "excerpt": "total_assets=107.90B total_liabilities=94.03B total_equity=13.87B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-03 cash flow",
+          "excerpt": "operating_cash_flow=6.03B"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "excerpt": "DGS10=4.68% FEDFUNDS=3.63%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-30",
+          "excerpt": "The Home Depot Announces Organizational Realignment to Provide a More Seamless Customer Experience, Drive Growth and Capture Market Share - $1.2 trillion TAM, Office of Pro Acceleration targeting $700B Pro market"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart_2026-07",
+          "excerpt": "HD is set to report its Q2 earnings on Tuesday, August 18, 2026, before the market opens. Analysts expect diluted EPS of $4.71, up marginally from $4.68 in the year-ago quarter."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywallst_2026-07-29",
+          "excerpt": "Home Depot's rich P/E, debt heavy balance sheet, and fresh tariff pressure could be masking where the real strain shows up next."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis_2026-07",
+          "excerpt": "larger discretionary projects remain under pressure... The Pro segment outperformed DIY in the latest quarter, this strategic shift comes with its own risks - increases cyclicality and risk exposure"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3778,
+        "capped_chars": 3778,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224648,
+        "capped_chars": 224648,
+        "raw_tokens": 56162,
+        "capped_tokens": 56162
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1748,
+        "capped_chars": 1748,
+        "raw_tokens": 437,
+        "capped_tokens": 437
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 8124,
+        "capped_chars": 1461,
+        "raw_tokens": 2031,
+        "capped_tokens": 365
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 114207,
+        "capped_chars": 84861,
+        "raw_tokens": 28552,
+        "capped_tokens": 21215
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 45904,
+  "started_at": "2026-08-07T03:09:35+00:00"
+}

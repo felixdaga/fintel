@@ -1,0 +1,187 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34356,
+    "tokens_out": 1049,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037503,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.15,
+      "rationale": "Coca-Cola is a high-quality, defensive franchise with strong brand equity, a 64-year dividend increase streak, and an asset-light concentrate model supporting ~28% net margins and ~40% ROE. Q2 2025 showed solid sequential growth (revenue +12.6% QoQ, EPS +14.3% QoQ), and FY2025 results were strong ($47.9B revenue, EPS $3.04, +23% YoY). However, the stock is trading near the top of its 1-year P/E range (29.2x vs. 23.2-29.6x window), making it expensive vs. its own history. The India IPO plan for Hindustan Coca-Cola Holdings (2027, $10B+ valuation) and the 2026 FIFA World Cup sponsorship are credible near-term catalysts that could unlock value and drive brand engagement. Risks include IRS tax litigation (potential $14B liability), GLP-1 drug headwinds to CSD demand, sugar taxes, and rising 10Y Treasury yields (4.45%) which compress multiples on defensive yield plays. The stock has already rallied ~22% from its 52-week low of $65.35, limiting upside. Net: solid franchise but stretched valuation caps the score modestly positive.",
+      "key_factors": [
+        "Strong fundamental franchise: ~28% net margin, ~40% ROE, 64-year dividend streak, asset-light concentrate model",
+        "Q2 2025 sequential growth: revenue +12.6% QoQ, EPS +14.3% QoQ; FY2025 EPS +23% YoY to $3.04",
+        "Valuation stretched: P/E 29.2x at top of 1-year range (23.2-29.6x), P/B 11.8x near high of 9.4-12.0x",
+        "Near-term catalysts: India IPO plan ($10B+ valuation, 2027), 2026 FIFA World Cup sponsorship (BofA $90 PT)",
+        "Key risks: IRS tax litigation (~$14B potential liability), GLP-1 drugs/sugar taxes pressuring CSD volumes, rising rates",
+        "Stock up ~22% from 52-week low, limiting near-term upside despite quality"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "excerpt": "revenue=12.54B net_income=3.0B eps_diluted=0.88 gross_profit=7.82B operating_income=4.28B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-28 Q1",
+          "excerpt": "revenue=11.13B eps_diluted=0.77"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=29.188 p_b=11.799 net_margin=0.259 roe=0.404"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 23.2..29.6 | p_b 9.4..12.0"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=82.53 range high=84.04 low=65.35"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-05",
+          "excerpt": "Coca-Cola plans to take its Indian bottling unit public in 2027 with a valuation exceeding $10 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-09",
+          "excerpt": "Bank of America analyst identified Coca-Cola as the beverage stock best positioned to capitalize on the 2026 FIFA World Cup. BofA maintained a Buy rating with a $90 price target"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "PESTLE 2026",
+          "excerpt": "IRS tax dispute; potential multi-billion-dollar liability if Coca-Cola does not prevail"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SWOT 2026",
+          "excerpt": "Full-year 2025 net revenues of $47.9 billion, organic revenue growth of 5%, full-year EPS up 23% to $3.04"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11",
+          "excerpt": "DGS10=4.45% VIXCLS=19.44"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223412,
+        "capped_chars": 223412,
+        "raw_tokens": 55853,
+        "capped_tokens": 55853
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3048,
+        "capped_chars": 3048,
+        "raw_tokens": 762,
+        "capped_tokens": 762
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 58858,
+        "capped_chars": 12040,
+        "raw_tokens": 14714,
+        "capped_tokens": 3010
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 130029,
+        "capped_chars": 106073,
+        "raw_tokens": 32508,
+        "capped_tokens": 26518
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 56046,
+  "started_at": "2026-08-07T03:03:36+00:00"
+}

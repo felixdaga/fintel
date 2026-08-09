@@ -1,0 +1,175 @@
+{
+  "cell": "PG",
+  "symbols": [
+    "PG"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35549,
+    "tokens_out": 1016,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038597,
+    "basis": "reported"
+  },
+  "views": {
+    "PG": {
+      "symbol": "PG",
+      "score": 0.15,
+      "rationale": "PG is a high-quality defensive franchise with excellent brand equity, strong margins (51% gross, ~24% operating), and consistent cash generation supporting 70+ years of dividend increases. However, the near-term trajectory is mixed: Q3 FY2026 showed solid YoY growth (+7.4% revenue, +5.8% EPS) but sequential deceleration (QoQ revenue -4.4%, EPS -8.4%), and management guided toward the lower end of its FY2026 range due to tariff and commodity headwinds. The stock has pulled back ~11.5% over the past quarter to $142.71, and at a P/E of 22.4x it sits near the low end of its 12-month range (21.7-26.7x), suggesting modest valuation support. However, the macro backdrop is challenging: oil prices have surged 67% over the lookback period,  tariff head the the the the1 the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the the, tariff",
+      "key_factors": [],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3",
+          "excerpt": "revenue=21.23B, eps_diluted=1.63, gross_margin=0.513, operating_margin=0.238, roe=0.297"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q1",
+          "excerpt": "eps_diluted=1.95 (peak in 5-quarter window)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=22.435, range 21.7..26.7 over 365d window"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "excerpt": "close=142.71, quarterly delta=-11.5%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-24 kalkine",
+          "excerpt": "Full-year FY2026 core EPS guidance maintained at $6.83 to $7.09, though management expects outcomes toward the lower end due to tariff and commodity pressures"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-24 glossy",
+          "excerpt": "P&G CFO estimated rising oil could cost $1.3B before tax, or $1B after tax in FY2027"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-24 investing.com",
+          "excerpt": "At the midpoint of management's core EPS guidance of $6.96, the stock trades at approximately 20.6x forward earnings \u2014 one of the lowest forward P/E multiples PG has received in the past five years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-24 insidermonkey",
+          "excerpt": "CEO Shailesh Jejurikar recently confirmed that segments receiving major innovations, like the new Tide original liquid upgrade, have swung from declining sales to double-digit growth in early 202sourcesource_type macro-2"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-24 investing.com",
+          "excerpt": "The 3% dividend raise itself is modest by P&G's historical standards...the continuation of the streak through the current headwinds is itself a statement about the business's underlying cash generation durability"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "PG",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3763,
+        "capped_chars": 3763,
+        "raw_tokens": 941,
+        "capped_tokens": 941
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 236987,
+        "capped_chars": 236987,
+        "raw_tokens": 59247,
+        "capped_tokens": 59247
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2074,
+        "capped_chars": 2074,
+        "raw_tokens": 518,
+        "capped_tokens": 518
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 25124,
+        "capped_chars": 6339,
+        "raw_tokens": 6281,
+        "capped_tokens": 1585
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 110858,
+        "capped_chars": 82699,
+        "raw_tokens": 27716,
+        "capped_tokens": 20674
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 61378,
+  "started_at": "2026-08-07T03:00:01+00:00"
+}

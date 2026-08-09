@@ -1,0 +1,174 @@
+{
+  "cell": "AXP",
+  "symbols": [
+    "AXP"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30690,
+    "tokens_out": 916,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033438,
+    "basis": "reported"
+  },
+  "views": {
+    "AXP": {
+      "symbol": "AXP",
+      "score": 0.25,
+      "rationale": "American Express shows solid fundamental health with consistent revenue and EPS growth (Q1 2026 revenue $10.52B, EPS $4.28, up 9.3% and 17.6% YoY respectively), strong ROE of 33%, and healthy net margins of 26.6%. The closed-loop business model provides competitive advantages with 160M merchant locations and 153.9M cards in force. However, the stock trades at a P/E of 20.9x, which is near the middle of its 18.4-25.3x range over the past year, suggesting fair rather than cheap valuation. The upcoming Q2 2026 earnings on July 24, 2026, with consensus expectations of $4.39 EPS and $19.62B revenue, provides a near-term catalyst. Risks include rising competition from Capital One-Discover merger, potential regulatory pressure on interchange fees, and sensitivity to consumer spending trends. The acquisition of TheFork for $700M shows strategic expansion but adds execution risk.",
+      "key_factors": [
+        "Consistent quarterly revenue and EPS growth trajectory",
+        "Strong ROE (33%) and net margins (26.6%)",
+        "Fair valuation at P/E 20.9x (mid-range of 18.4-25.3x)",
+        "Upcoming Q2 2026 earnings catalyst on July 24, 2026",
+        "Competitive pressures from Capital One-Discover merger and Chase Sapphire Reserve",
+        "Regulatory risks from Credit Card Competition Act",
+        "Sensitivity to consumer spending and travel trends",
+        "TheFork acquisition adds strategic optionality but execution risk"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=10.52B net_income=2.97B eps_diluted=4.28 operating_income=3.78B total_assets=308.89B total_equity=33.99B total_debt=58.75B operating_cash_flow=3.80B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=20.938 p_b=6.911 p_s=5.568 earnings_yield=0.048 net_margin=0.266 roe=0.33 debt_to_equity=1.728 operating_margin=0.338"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 18.4..25.3 | p_b 6.1..8.2 | net_margin 0.3..0.3 | roe 0.3..0.3"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-15",
+          "excerpt": "TripAdvisor announced the sale of TheFork, its European restaurant reservation platform, to American Express for $700 million in an all-cash deal."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-20",
+          "excerpt": "American Express trades at a cheaper valuation (20x P/E vs. Visa's 28x), Visa's P/E is below its historical average, making it more attractive for growth-focused investors."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "soar-analysis.com",
+          "excerpt": "Capital One and Discover create the sharpest American Express competitive pressures after their May 2025 merger. The new network plus Capital One's scale makes this the biggest structural threat to American Express Company."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "The company plans to announce its earnings on July 24, 2026. The company is expected to report EPS of $4.39, up 7.6% from the prior-year quarter. At the same time, our most recent consensus estimate is projecting a revenue of $19.62 billion, reflecting a 9.86% rise from the equivalent quarter last year"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AXP",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4463,
+        "capped_chars": 4463,
+        "raw_tokens": 1116,
+        "capped_tokens": 1116
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 227125,
+        "capped_chars": 227125,
+        "raw_tokens": 56781,
+        "capped_tokens": 56781
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1932,
+        "capped_chars": 1932,
+        "raw_tokens": 483,
+        "capped_tokens": 483
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 12255,
+        "capped_chars": 2846,
+        "raw_tokens": 3064,
+        "capped_tokens": 712
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 99600,
+        "capped_chars": 82533,
+        "raw_tokens": 24900,
+        "capped_tokens": 20634
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 44173,
+  "started_at": "2026-08-07T03:05:04+00:00"
+}

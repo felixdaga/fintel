@@ -1,0 +1,189 @@
+{
+  "cell": "UNH",
+  "symbols": [
+    "UNH"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30912,
+    "tokens_out": 1446,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03525,
+    "basis": "reported"
+  },
+  "views": {
+    "UNH": {
+      "symbol": "UNH",
+      "score": 0.35,
+      "rationale": "UNH presents a mixed but improving fundamental picture. Q1 2026 results showed modest 2% YoY revenue growth to $111.7B with EPS of $6.90 (adjusted $7.23 beating consensus of $6.57), and the medical loss ratio improved to 83.9% from 84.8% YoY, signaling better cost management. Operating cash flow was strong at $8.9B (1.4x net income). However, the trajectory is uneven: Q3 2025 EPS was only $2.59 and Q2 2025 was $3.74, indicating significant quarterly volatility. Membership declined by ~1.1M (965K in Medicare Advantage), reflecting deliberate portfolio pruning. The company raised FY2026 EPS guidance to >$18.25 from >$17.75, showing management confidence. On valuation, the stock has surged ~40% in the past quarter to $399, pushing the P/E to 28.3x \u2014 near the top of its 365-day range (9.5\u201328.5x) and well above the ~11\u201316x range that prevailed for most of the past year. P/B at 3.5x is also at the top of its range (2.2\u20133.5x). This makes the stock expensive vs its own recent history despite the fundamental improvement. Net margin has compressed to 2.8% from 5.6% a year ago, and ROE has fallen to 12.3% from 22.8%. The near-term catalyst is the Q1 earnings beat and guidance raise, which already drove a 36.9% stock surge in April \u2014 this is largely priced in. Additional catalysts include the $2B accelerated buyback program and the 2027 Medicare Advantage payment rate increase of 2.48%, but these are partially reflected in the elevated valuation. Risks include DOJ antitrust scrutiny of the Optum-UnitedHealthcare relationship, PBM reform under the Consolidated Appropriations Act of 2026, and ongoing medical cost inflation from GLP-1 drugs. The balance sheet is solid with equity of $103.9B and debt-to-capital improving to 42.9% (targeting 40% by H2 2026). Overall, fundamentals are improving from a trough but the stock's rapid re-rating has moved valuation to stretched levels, capping upside. Score reflects solid franchise with improving trajectory offset by expensive valuation.",
+      "key_factors": [
+        "Q1 2026 adjusted EPS of $7.23 beat consensus of $6.57; FY guidance raised to >$18.25 from >$17.75",
+        "Medical loss ratio improved to 83.9% from 84.8% YoY, signaling better cost management",
+        "P/E of 28.3x is at the top of 365-day range (9.5\u201328.5x); P/B of 3.5x at top of range (2.2\u20133.5x) \u2014 expensive vs own history",
+        "Net margin compressed to 2.8% from 5.6% YoY; ROE fell to 12.3% from 22.8%",
+        "Membership declined ~1.1M including 965K Medicare Advantage members \u2014 deliberate pruning but revenue headwind",
+        "$2B accelerated buyback program and 2027 MA payment rate increase of 2.48% as tailwinds",
+        "DOJ antitrust investigation, PBM reform, and medical cost inflation from GLP-1 drugs as key risks",
+        "Operating cash flow of $8.9B (1.4x net income) and debt-to-capital improving to 42.9% show balance sheet strength"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=111.72B net_income=6.48B eps_diluted=6.9 operating_cash_flow=8.91B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-05",
+          "excerpt": "UnitedHealth Group stock surged 36.9% in April following better-than-expected Q1 earnings and improved guidance. The company's medical loss ratio improved to 83.9% from 84.8% year-over-year"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=28.342 p_b=3.496 net_margin=0.028 roe=0.123"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-15",
+          "excerpt": "pe_diluted=10.98 p_b=2.498 net_margin=0.056 roe=0.228"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-13",
+          "excerpt": "UnitedHealth Group shows signs of turnaround with Q1 2026 results beating expectations, including 2% revenue growth and improved operating margins. The company cut Medicare Advantage membership by 1.3 million"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-08",
+          "excerpt": "UnitedHealthcare's operating margins increased from 6.2% to 6.6%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-05",
+          "excerpt": "Management accelerated share buybacks to at least $2B by end of Q2 2026. The explicit rationale: stock price represents a 'deep intrinsic value discount'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-01",
+          "excerpt": "A significant catalyst emerged in April 2026 when the government finalized a 2027 Medicare Advantage payment rate increase of 2.48%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-01",
+          "excerpt": "The Department of Justice (DOJ) continues its investigations into the relationship between Optum and UnitedHealthcare, focusing on potential antitrust violations"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-01",
+          "excerpt": "The recently passed Consolidated Appropriations Act of 2026 includes 'delinking' provisions that prevent PBMs like OptumRx from making money based on a percentage of a drug's list price"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "UNH",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4536,
+        "capped_chars": 4536,
+        "raw_tokens": 1134,
+        "capped_tokens": 1134
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225350,
+        "capped_chars": 225350,
+        "raw_tokens": 56338,
+        "capped_tokens": 56338
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1517,
+        "capped_chars": 1517,
+        "raw_tokens": 379,
+        "capped_tokens": 379
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 12495,
+        "capped_chars": 3428,
+        "raw_tokens": 3124,
+        "capped_tokens": 857
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 79185,
+        "capped_chars": 61248,
+        "raw_tokens": 19797,
+        "capped_tokens": 15312
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 54673,
+  "started_at": "2026-08-07T03:00:08+00:00"
+}

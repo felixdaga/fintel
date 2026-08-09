@@ -1,0 +1,178 @@
+{
+  "cell": "NVDA",
+  "symbols": [
+    "NVDA"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 78422,
+    "tokens_out": 1087,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.081683,
+    "basis": "reported"
+  },
+  "views": {
+    "NVDA": {
+      "symbol": "NVDA",
+      "score": 0.45,
+      "rationale": "Nvidia exhibits exceptional fundamental health and trajectory: Q1 FY2027 revenue of $81.6B (+85% YoY, +20% QoQ) with net income of $58.3B, 74% gross margins, and $50.3B operating cash flow in a single quarter. The company holds ~86% AI GPU market share, benefits from deep CUDA ecosystem lock-in, and is expanding its TAM with the Vera CPU ($200B addressable market) and RTX Spark for PCs. Balance sheet is fortress-like with only $8.5B debt against $195.5B equity. However, the stock is not cheap: at 33.4x trailing P/E it sits near the bottom of its 1-year range (32.3-66.8), but this reflects a massive earnings surge rather than a true discount \u2014 forward P/E of ~25x is reasonable but not a bargain for a company with 90% revenue concentration in one segment and 50% from five customers. The Q1 earnings beat and $80B buyback authorization plus 2,400% dividend increase provide a modest near-term catalyst, though the stock fell post-earnings suggesting expectations were already fully priced. Risks include hyperscaler custom silicon development (Google TPU, Amazon Trainium, Microsoft Maia), China export restrictions eliminating that market, and the structural question of whether 90% data center concentration represents durable dominance or peak cyclicality.",
+      "key_factors": [
+        "Exceptional Q1 FY2027: $81.6B revenue (+85% YoY), $58.3B net income, 74% gross margin, $50.3B operating cash flow",
+        "~86% AI GPU market share with CUDA ecosystem lock-in (5M+ developers)",
+        "Vera CPU launch opens $200B TAM; RTX Spark enters PC market; Q2 guidance of $91B (+95% YoY)",
+        "P/E of 33.4x at low end of 1-year range (32.3-66.8) but reflects earnings surge not true discount",
+        "$80B buyback + 2,400% dividend increase signal management confidence; $20B returned in Q1 alone",
+        "Key risks: hyperscaler custom silicon (TPU, Trainium, Maia), China export ban, 90% data center revenue concentration",
+        "Balance sheet strength: $195.5B equity, $8.5B debt, debt-to-equity 0.043"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-20 Q1 FY2027",
+          "excerpt": "revenue=81.61B net_income=58.32B eps_diluted=2.39 gross_profit=61.16B operating_income=53.54B operating_cash_flow=50.34B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=33.414 p_b=27.284 net_margin=0.63 roe=0.817 debt_to_equity=0.043 gross_margin=0.741"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-06-05..2026-06-04",
+          "excerpt": "pe_diluted 32.3..66.8 | p_b 26.3..57.8"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "companieshistory.com Nvidia Competitors 2026",
+          "excerpt": "Nvidia holds roughly 86% of the AI GPU market. Its closest direct competitors, AMD and Intel, have single-digit shares"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fourweekmba.com Nvidia Revenue Breakdown 2026",
+          "excerpt": "nearly 90% of that revenue now flows from a single business, Data Center...50% from five customers"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04 Motley Fool Jensen Huang Promise",
+          "excerpt": "Jensen Huang committed to returning at least 50% of the company's free cash flow to shareholders through dividends and buybacks"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com NVIDIA Earnings New Segments",
+          "excerpt": "The Vera CPU is not an accessory; it's an assault on a new $200 billion TAM, with $20 billion in standalone revenue visible this year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "uk.finance.yahoo.com NVIDIA Should Not Be Touched",
+          "excerpt": "As Microsoft, with Maia, Amazon, with Trainium/Inferentia, and Google, with TPU v6, deploy their own custom AI accelerators, investors fear this will eventually strip NVIDIA of pricing power"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NVDA",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4649,
+        "capped_chars": 4649,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242339,
+        "capped_chars": 242339,
+        "raw_tokens": 60585,
+        "capped_tokens": 60585
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4452,
+        "capped_chars": 4452,
+        "raw_tokens": 1113,
+        "capped_tokens": 1113
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 697501,
+        "capped_chars": 173317,
+        "raw_tokens": 174375,
+        "capped_tokens": 43329
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 95022,
+        "capped_chars": 72346,
+        "raw_tokens": 23756,
+        "capped_tokens": 18086
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 57751,
+  "started_at": "2026-08-07T03:02:51+00:00"
+}

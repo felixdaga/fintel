@@ -1,0 +1,195 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 2,
+    "tokens_in": 64664,
+    "tokens_out": 1616,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.06951199999999999,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.15,
+      "rationale": "Disney presents a mixed but mildly attractive picture. On the positive side, the company has a durable franchise with unmatched IP (Marvel, Star Wars, Pixar), a dominant Experiences segment generating ~$10B in annual operating income, and streaming profitability is improving (DTC operating income of $1.3B in FY2025, up from $143M prior year). Q2 2026 showed 6.5% YoY revenue growth and an EPS beat ($1.57 vs $1.49 est). Management guides 12% adjusted EPS growth for FY2026 and double-digit growth into FY2027, with a $8B+ buyback target. Valuation at 14.3x P/E is near the low end of its 12.5-23.8x 365-day range, suggesting the market is pricing in significant headwinds. However, several concerns temper enthusiasm: (1) YoY EPS declined 29.8% in Q2 2026, partly due to one-time items but signaling earnings volatility; (2) the FCC regulatory overhang on ABC broadcast licenses is a genuine, unresolved risk that could constrain media operations and create compliance costs; (3) linear TV structural decline continues; (4) the stock has declined ~20% from its 52-week high of $124.69, and while this creates some value, it also reflects legitimate concerns. The near-term catalysts (Toy Story 5 release, NBA/Stanley Cup Finals, Avatar streaming debut) are positive but modest. The Canadian streaming levy avoidance is a small positive. Overall valuation is solid (equity $115B vs total assets $205B) and cash generation is strong ($6.9B operating cash flow in Q2). Overall, a quality franchise at a reasonable valuation with improving fundamentals, but offset by regulatory risk and earnings lumpiness warrants a mildly positive score.",
+      "key_factors": [
+        "Durable franchise IP (cross theatrical, streaming, parks, and consumer products",
+        "Experiences segment dominance with ~$10B in operating income and strong pricing power",
+        "Streaming profitability improving withDTC operating income of $1.3B in FY2025, up from $143M to 196M subscribers",
+        "Valuation near low end of 365-day P/E range (14.3x vs 12.5-23.8x range)",
+        "Management guidance of 12% adjusted EPS growth for FY2026 and double-digit into FY2027",
+        "FCC regulatory overhang on ABC broadcast licenses creates unresolved risk",
+        "YoY EPS decline of 29.8% in Q2 2026 signals earnings volatility",
+        "Stock ~20% below 52-week high, reflecting legitimate market concerns",
+        "Near-term catalysts: Toy Story 5, NBA/Stanley Cup Finals, Avatar streaming debut"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=25.17B net_income=2.46B eps_diluted=1.27 operating_income=4.60B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2 growth",
+          "excerpt": "YoY: revenue=+6.5% eps_diluted=-29.8% net_income=-27.5%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=14.271 p_b=1.527 net_margin=0.127 roe=0.107"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 365d",
+          "excerpt": "pe_diluted 12.5..23.8 | p_b 1.5..2.1"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=99.34 range high=124.69 low=92.19"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "Canadian PM halted regulations under Online Streaming Act that would have required U.S. streaming services to invest billions"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-30",
+          "excerpt": "Three key catalysts in June: NBA Finals and Stanley Cup Finals on ABC, Toy Story 5 theatrical release, Disney+ streaming debut of Avatar: Fire and Ash"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investopedia",
+          "excerpt": "DTC segment reported operating income of $1.3 billion, tremendous growth from $143 million prior year. Experiences segment reported operating income of $9.99 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "statt.com FCC",
+          "excerpt": "FCC issued unprecedented order requiring Disney to file early license renewals for eight ABC-owned television stations, grounded in investigation into DEI practices"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "intellectia.ai",
+          "excerpt": "Management anticipates adjusted EPS to rise 12% for full fiscal year, with double-digit growth expected in fiscal 2027"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dailypolitical.com",
+          "excerpt": "Disney reported $1.57 EPS beating consensus of $1.49. Revenue $25.17B vs estimates $24.87B. FY2026 guidance 6.640 EPS"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4429,
+        "capped_chars": 4429,
+        "raw_tokens": 1107,
+        "capped_tokens": 1107
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221494,
+        "capped_chars": 221494,
+        "raw_tokens": 55374,
+        "capped_tokens": 55374
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1796,
+        "capped_chars": 1796,
+        "raw_tokens": 449,
+        "capped_tokens": 449
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 8262,
+        "capped_chars": 2522,
+        "raw_tokens": 2066,
+        "capped_tokens": 630
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 95578,
+        "capped_chars": 77954,
+        "raw_tokens": 23893,
+        "capped_tokens": 19488
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 63222,
+  "started_at": "2026-08-07T03:02:24+00:00"
+}

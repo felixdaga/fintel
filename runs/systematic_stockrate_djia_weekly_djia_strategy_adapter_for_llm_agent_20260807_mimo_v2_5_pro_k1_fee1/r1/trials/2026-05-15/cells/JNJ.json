@@ -1,0 +1,177 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34019,
+    "tokens_out": 1090,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037289,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": 0.15,
+      "rationale": "JNJ is a fundamentally sound, defensive healthcare franchise with a wide moat, AAA balance sheet, and a 64-year dividend increase streak. The Innovative Medicine and MedTech segments are delivering solid growth (Q1 2026 revenue +9.9% YoY, raised FY2026 guidance to $100.3-$101.3B revenue and $11.45-$11.65 EPS). However, the stock is trading at a significant premium to its own recent history: the P/E of 26.8x on the14-month high of 16.-26.8 range, massive expansion from the16.6x May25-16. P6.16.6-17x range., P25-05-14. P/B of 6.95x is 4.6x a year ago. This rich valuation compresses the margin of safety despite the solid fundamental trajectory. The Stelara biosimilar headwind (~50% revenue decline for that franchise) and unquantified talc litigation risk are real offsets. Q1 2026 showed a notable EPS miss on a GAAP basis (diluted EPS of $2.14 vs. prior year's $2.77, though adjusted EPS beat estimates). Operating cash flow was weak at $2.51B in Q1 2026 vs. $9.17B in Q3 2025. The stock has also pulled back ~5.6% over the last quarter, suggesting the market may be digesting the valuation stretch. No clear near-term fundamental catalyst exists to re-rate the stock higher from already-elevated multiples. Mildly attractive on franchise quality, but valuation caps the upside.",
+      "key_factors": [
+        "Wide-moat defensive healthcare franchise with AAA balance sheet and 64-year dividend streak",
+        "Q1 2026 revenue +9.9% YoY to $24.06B; raised FY2026 guidance to $100.3-$101.3B revenue, $11.45-$11.65 EPS",
+        "P/E of 26.8x is at the top of its 1-year range (16.6-26.8), a ~60% expansion from a year ago \u2014 valuation is stretched",
+        "Stelara biosimilar erosion is a material, ongoing revenue headwind for the Innovative Medicine segment",
+        "Q1 2026 operating cash flow of $2.51B was notably weak vs. prior quarters; GAAP diluted EPS of $2.14 declined from $2.77 YoY",
+        "No clear near-term fundamental catalyst to justify re-rating from already-elevated multiples"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29 Q4",
+          "excerpt": "revenue=24.06B net_income=5.24B eps_diluted=2.14 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=26.823 p_b=6.951 net_margin=0.218 roe=0.259"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-15",
+          "excerpt": "pe_diluted=16.627 p_b=4.643"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "excerpt": "close=230.80 quarterly delta (63d): -5.6%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de 2026-05-11",
+          "excerpt": "Johnson & Johnson beat Q1 2026 earnings estimates with EPS of $2.70 and revenue of $24.06B, up 9.9% YoY. Company raised FY guidance and dividend to $1.34 per share."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "roboforex.com",
+          "excerpt": "The company forecasts 2026 revenue of approximately 100.5 billion USD, representing a 5.7\u20136.7% increase from 2025, with adjusted EPS expected to be around 11.53 USD"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "excerpt": "The ~50% decline in the ~$10B Stelara franchise, combined with unquantified talc liability and IRA margin pressure, creates an insurmountable drag on growth and sentiment."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "morningstar.com",
+          "excerpt": "Our $190 fair value estimate reflects our increased confidence in the launch of new products... We expect mid-single-digit top- and bottom-line growth over the next five years"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4593,
+        "capped_chars": 4593,
+        "raw_tokens": 1148,
+        "capped_tokens": 1148
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223565,
+        "capped_chars": 223565,
+        "raw_tokens": 55891,
+        "capped_tokens": 55891
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2628,
+        "capped_chars": 2628,
+        "raw_tokens": 657,
+        "capped_tokens": 657
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 26445,
+        "capped_chars": 6616,
+        "raw_tokens": 6611,
+        "capped_tokens": 1654
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 121102,
+        "capped_chars": 100475,
+        "raw_tokens": 30276,
+        "capped_tokens": 25120
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 35134,
+  "started_at": "2026-08-07T02:59:42+00:00"
+}

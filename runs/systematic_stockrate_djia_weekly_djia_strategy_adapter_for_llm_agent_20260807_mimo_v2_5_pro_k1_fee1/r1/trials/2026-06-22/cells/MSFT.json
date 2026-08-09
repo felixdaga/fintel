@@ -1,0 +1,184 @@
+{
+  "cell": "MSFT",
+  "symbols": [
+    "MSFT"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 62453,
+    "tokens_out": 1240,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.066173,
+    "basis": "reported"
+  },
+  "views": {
+    "MSFT": {
+      "symbol": "MSFT",
+      "score": 0.35,
+      "rationale": "Microsoft presents a solid fundamental case with strong revenue growth (+18.3% YoY in Q3 FY2026), excellent margins (gross margin 68.8%, operating margin 46.3%, net margin 35.7%), and robust cash generation (operating cash flow $46.7B in the quarter). The AI business is scaling rapidly at a $37B annual run rate (+123% YoY), Azure continues growing at 40%, and the balance sheet is fortress-quality with $78.3B cash against only $40.3B debt. However, several factors temper the score: (1) the stock has declined ~31% from its 52-week high of $555 to $379, partly reflecting legitimate concerns about massive capex ($190B planned for calendar 2026) compressing free cash flow and returns on capital; (2) multiple class-action lawsuits alleging misleading Copilot statements create legal overhang; (3) the collapsed Oracle cloud deal and intensifying regulatory scrutiny on AI/cloud practices add uncertainty; (4) QoQ EPS declined 17.2% from Q2 to Q3, suggesting some earnings volatility. On valuation, the current P/E of 27x is near the low end of its 25.4-42.8x range over the past year, and P/B of 7.8x is at the bottom of its 7.3-12.6x range, making it cheap relative to its own history. The next earnings report (July 28, 2026) could serve as a near-term catalyst if Azure growth reaccelerates or capex guidance moderates. Net-net: excellent franchise at a reasonable valuation, but capex intensity, legal risks, and execution uncertainty on AI monetization prevent a higher score.",
+      "key_factors": [
+        "Strong revenue growth (+18.3% YoY) with AI business at $37B run rate growing 123% YoY",
+        "Excellent margins: 68.8% gross, 46.3% operating, 35.7% net; ROE 28.9%",
+        "Fortress balance sheet: $78.3B cash vs $40.3B debt, debt-to-equity 0.119",
+        "P/E of 27x near low end of 1-year range (25.4-42.8x); P/B 7.8x at bottom of range (7.3-12.6x)",
+        "Massive capex ($190B planned CY2026) pressuring FCF and raising questions about capital efficiency",
+        "Multiple class-action lawsuits over Copilot misrepresentation creating legal overhang",
+        "Collapsed $3B Oracle cloud deal and intensifying regulatory scrutiny on AI/cloud practices",
+        "Q4 FY2026 earnings on July 28 as near-term catalyst; consensus EPS $4.24"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-29 Q3",
+          "excerpt": "revenue=82.89B net_income=31.78B eps_diluted=4.27 gross_profit=56.06B operating_income=38.40B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=694.23B total_equity=414.37B total_debt=40.26B cash=78.27B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=27 ev_to_ebit=20.405 p_b=7.802 p_s=9.641 net_margin=0.357 roe=0.289 debt_to_equity=0.119 gross_margin=0.688 operating_margin=0.463"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 25.4..42.8 | ev_to_ebit 19.2..34.1 | p_b 7.3..12.6"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=379.40 range over ~250 bars: high=555.45 low=356.28"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-19 class action lawsuits",
+          "excerpt": "Portnoy Law Firm has filed a class action lawsuit on behalf of Microsoft investors who purchased securities between May 1, 2025 and January 28, 2026. The lawsuit alleges that Microsoft misrepresented Copilot's capabilities and functionality"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-17 Oracle deal",
+          "excerpt": "Microsoft ended a planned $3 billion cloud infrastructure collaboration with Oracle after failing to obtain FedRAMP security certification"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "deepresearchglobal Q3 FY2026",
+          "excerpt": "AI business now operating at a $37 billion annual run rate, with more than 90% of that revenue tied to commercial cloud customers"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks earnings",
+          "excerpt": "Microsoft guided Q4 revenue of $86.7\u2013$87.8B...Q4 CapEx > $40B...calendar\u20112026 CapEx \u2248 $190B"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MSFT",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3930,
+        "capped_chars": 3930,
+        "raw_tokens": 982,
+        "capped_tokens": 982
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 243988,
+        "capped_chars": 243988,
+        "raw_tokens": 60997,
+        "capped_tokens": 60997
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4415,
+        "capped_chars": 4415,
+        "raw_tokens": 1104,
+        "capped_tokens": 1104
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 414284,
+        "capped_chars": 90103,
+        "raw_tokens": 103571,
+        "capped_tokens": 22526
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 124674,
+        "capped_chars": 101390,
+        "raw_tokens": 31169,
+        "capped_tokens": 25347
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50686,
+  "started_at": "2026-08-07T03:04:37+00:00"
+}

@@ -1,0 +1,190 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33230,
+    "tokens_out": 1327,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037211,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": -1.0,
+      "rationale": "HON is facing a severe fundamental deterioration that the market is not pricing correctly. Q1 2026 showed a dramatic earnings collapse: EPS fell 41.9% YoY to $1.29 (from $2.22), net income dropped 45.8% YoY, and operating cash flow swung deeply negative at -$650M (from +$597M a year ago). The balance sheet is deteriorating with total equity declining from $18.02B to $14.67B over the past year while total debt expanded from $27.08B to $32.11B, pushing debt-to-equity to 2.19x. Despite this earnings collapse, the stock trades at a P/E of 35.7x\u2014near the top of its 365-day range (21.6\u201337.0x) and far above the ~22\u201324x range where it traded for most of 2025. The P/B of 10.0x is also at the top of its range (6.8\u201310.4x). Net margin has compressed from 15.1% to 10.9% and ROE from 31.7% to 28%. The aerospace spinoff on June 29 creates a near-term catalyst for further downside: the remaining 'Honeywell Technologies' entity will be stripped of the highest-growth, highest-margin segment, leaving behind lower-growth industrial automation and building technologies businesses that will need to justify their own valuation. The 1-for-2 reverse split is a cosmetic maneuver that does not address the fundamental deterioration. Macro headwinds are building: 10-year Treasury yields at 4.46%, 2-year yields rising to 4.19%, and CPI inflation accelerating to 4.2% suggest the Fed may need to tighten further, pressuring industrial capex. Oil prices have declined sharply (WTI from ~$104 to ~$80), which could signal weakening industrial demand. The combination of collapsing earnings, deteriorating cash flow, expanding leverage, peak valuation multiples, and a structural separation that removes the best business makes HON extremely unattractive.",
+      "key_factors": [
+        "Q1 2026 EPS collapsed 41.9% YoY to $1.29; net income down 45.8% YoY",
+        "Operating cash flow swung to -$650M from +$597M YoY, a -208.9% deterioration",
+        "Total equity declined from $18.02B to $14.67B while debt expanded from $27.08B to $32.11B; D/E at 2.19x",
+        "P/E of 35.7x is near the top of its 365-day range (21.6\u201337.0x) despite collapsing earnings",
+        "Net margin compressed from 15.1% to 10.9%; ROE fell from 31.7% to 28%",
+        "Aerospace spinoff on June 29 removes highest-growth segment from remaining entity",
+        "1-for-2 reverse split is cosmetic, not addressing fundamental deterioration",
+        "Macro headwinds: 10Y yield 4.46%, CPI accelerating to 4.2%, potential further Fed tightening",
+        "Analyst consensus EPS for next quarter revised lower; expected -12% YoY decline"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=9.14B net_income=795.00M eps_diluted=1.29 operating_cash_flow=-650.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "rev=8.93B eps=2.22 operating_cash_flow=597.00M total_equity=18.02B total_debt=27.08B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=35.659 p_b=9.968 net_margin=0.109 roe=0.28 debt_to_equity=2.189"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-23",
+          "excerpt": "pe_diluted=24.316 p_b=7.708 net_margin=0.151 roe=0.317"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-18",
+          "excerpt": "Honeywell International is splitting into Honeywell Aerospace and Honeywell Technologies on June 29, 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-15",
+          "excerpt": "Honeywell International's stock rose 4.4% after its board formally approved the spinoff of Honeywell Aerospace"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "alphapilot.tech",
+          "excerpt": "Shareholders of record as of June 15, 2026, will receive one share of HONA for every two shares of HON held. Simultaneously, Honeywell will execute a 1-for-2 reverse stock split"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-18",
+          "excerpt": "DGS10=4.46 DGS2=4.19 T10YIE=2.25"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-10",
+          "excerpt": "headline inflation accelerating to 4.2%, the fastest pace in three years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "This company is expected to post quarterly earnings of $2.42 per share in its upcoming report, which represents a year-over-year change of -12%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3050,
+        "capped_chars": 3050,
+        "raw_tokens": 762,
+        "capped_tokens": 762
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 249709,
+        "capped_chars": 249709,
+        "raw_tokens": 62427,
+        "capped_tokens": 62427
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1430,
+        "capped_chars": 1430,
+        "raw_tokens": 358,
+        "capped_tokens": 358
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 24610,
+        "capped_chars": 5551,
+        "raw_tokens": 6152,
+        "capped_tokens": 1388
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103569,
+        "capped_chars": 76430,
+        "raw_tokens": 25891,
+        "capped_tokens": 19108
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 43267,
+  "started_at": "2026-08-07T03:04:23+00:00"
+}

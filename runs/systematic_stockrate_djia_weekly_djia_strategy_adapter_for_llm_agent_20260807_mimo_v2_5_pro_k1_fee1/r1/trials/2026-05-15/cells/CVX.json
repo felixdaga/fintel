@@ -1,0 +1,199 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37368,
+    "tokens_out": 1428,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041652,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": 0.15,
+      "rationale": "Chevron's fundamental health is solid but deteriorating: Q1 2026 showed $48.61B revenue (+2.1% YoY) but EPS collapsed 44.5% YoY to $1.11, driven by $3B in unfavorable timing effects on derivatives and a downstream loss of $817M. Operating cash flow fell sharply to $2.51B from $5.19B a year ago. However, upstream earnings grew 4% YoY to $3.9B, production guidance of 7-10% growth is intact, and management reaffirmed $3-4B structural cost reduction target by year-end 2026. The balance sheet remains strong with $189B equity and a low net-debt-to-capital ratio. The integrated model provides natural hedges, and the company maintains its 39-year dividend streak at $1.78/quarter with $2.5B in Q1 buybacks. Valuation is stretched: P/E of 32.9x is at the top of its 365-day range (15.1-32.9x), more than double the 15.86x level from May 2025, while net margin has compressed from 7.8% to 5.9% and ROE from 10.5% to 5.9%. The stock has rallied ~20% since November 2025, largely pricing in the oil price surge from the Iran/Strait of Hormuz conflict (WTI at $104.66). Near-term catalysts include potential $1B timing effect unwind in Q2 and elevated oil prices supporting cash flow, but these are partially offset by climate litigation reserves ($350-400M), California regulatory scrutiny on refining margins, and the risk that oil prices normalize. The combination of deteriorating earnings quality, stretched valuation vs history, and geopolitical tailwinds that may prove temporary yields a mildly positive but cautious view.",
+      "key_factors": [
+        "Q1 2026 EPS down 44.5% YoY to $1.11 due to $3B derivative timing effects; downstream swung to $817M loss",
+        "P/E at 32.9x is at the top of 365-day range (15.1-32.9x), more than double year-ago 15.86x",
+        "Operating cash flow collapsed to $2.51B from $5.19B YoY; net margin compressed from 7.8% to 5.9%",
+        "Upstream earnings grew 4% YoY; 7-10% production growth guidance intact; $3-4B cost reduction on track",
+        "WTI crude at $104.66 driven by Strait of Hormuz conflict; geopolitical premium may be temporary",
+        "$1B timing effect expected to unwind in Q2; Goldman raised 2026 EPS estimate to $15.00",
+        "Climate litigation reserves of $350-400M; California regulatory scrutiny on refining margins",
+        "39-year dividend streak at $1.78/quarter; $2.5B Q1 buybacks; strong balance sheet with $189B equity"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-07 Q1",
+          "excerpt": "revenue=48.61B net_income=2.29B eps_diluted=1.11 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=47.61B eps_diluted=2 operating_cash_flow=5.19B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=32.9 p_b=1.957 net_margin=0.059 roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-15",
+          "excerpt": "pe_diluted=15.86 p_b=1.66 net_margin=0.078 roe=0.105"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-14",
+          "excerpt": "DCOILWTICO=104.66 \u0394=42.13 (67.4%) over 62 days"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-02 Motley Fool",
+          "excerpt": "Chevron's Q1 2026 earnings declined to $2.8 billion despite 15% production growth and higher oil prices, due to supply disruptions in the Middle East and Kazakhstan, plus $2.9 billion in unfavorable timing effects on derivatives"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14 Benzinga",
+          "excerpt": "Chevron has agreed to sell its downstream fuels and lubricants marketing operations across Southeast Asia and Australia to ENEOS Holdings for $2.17 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-01 Reuters",
+          "excerpt": "Net income for the January-March period totaled $2.2 billion, down from $3.5 billion a year earlier. Downstream operations swung to a loss of $817 million from a profit of $325 million last year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-01 Benzinga",
+          "excerpt": "Chevron's Net Debt To Cash Flow Ratio Worsens, CEO Flags Middle East Risks"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-08 Trefis",
+          "excerpt": "Recorded legal charge of $350-$400 million for Q1 2026 to bolster litigation reserves; Margin Compression and Declining Profitability"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-08 Goldman Sachs",
+          "excerpt": "Goldman now expects Chevron to earn $15.00 per share in 2026, up from prior estimate of $14.17"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-01 Q1 Earnings Call",
+          "excerpt": "We expect unwinding of approximately $1 billion of paper derivative positions in the second quarter; we are not changing any of our capital allocation framework"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225265,
+        "capped_chars": 225265,
+        "raw_tokens": 56316,
+        "capped_tokens": 56316
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3337,
+        "capped_chars": 3337,
+        "raw_tokens": 834,
+        "capped_tokens": 834
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 94738,
+        "capped_chars": 17075,
+        "raw_tokens": 23684,
+        "capped_tokens": 4269
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102372,
+        "capped_chars": 82838,
+        "raw_tokens": 25593,
+        "capped_tokens": 20710
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 54410,
+  "started_at": "2026-08-07T02:59:29+00:00"
+}

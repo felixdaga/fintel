@@ -1,0 +1,188 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32231,
+    "tokens_out": 1005,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035246,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "rationale": "Chevron's fundamental health and trajectory are deteriorating sharply. Q1 2026 showed EPS of $1.11, down 44.5% YoY from $2.00, with operating cash flow collapsing 51.6% to $2.51B. The company is trading at a P/E of 30.6x, near the top of its 365-day range (16.0-34.8), representing a massive premium to its historical average of ~19-20x. This valuation expansion has occurred despite worsening earnings power, not improving it. Oil prices have fallen from $114/barrel in early April to $80 by mid-June following the U.S.-Iran peace deal reopening the Strait of Hormuz, removing the geopolitical premium that had supported the stock. The company faces multiple headwinds: depleted global inventories that need rebuilding but at lower price levels, the Hess acquisition stalled by ExxonMobil arbitration, and a dividend that is not well covered by current earnings (103% payout ratio). While the balance sheet remains strong ($189B equity), the combination of deteriorating earnings trajectory, rich valuation versus history, and a clear near-term downside catalyst (oil price normalization) makes this an extremely unattractive setup.",
+      "key_factors": [
+        "Q1 2026 EPS of $1.11 down 44.5% YoY from $2.00, with operating cash flow down 51.6% to $2.51B",
+        "P/E of 30.6x near top of 365-day range (16.0-34.8), roughly 50% above historical average of ~19-20x",
+        "WTI crude oil collapsed from $114/barrel (April 7) to $80.35 (June 18) following U.S.-Iran peace deal reopening Strait of Hormuz",
+        "Hess acquisition stalled by ExxonMobil/CNOOC arbitration claim on Guyana assets, removing primary growth catalyst",
+        "Dividend not well covered by earnings (103% payout ratio) despite 39-year consecutive increase streak",
+        "Gross margin improved YoY (+7.1%) but operating income fell sharply, suggesting cost pressures or mix deterioration",
+        "Stock down 13.8% in latest quarter but still richly valued versus fundamental deterioration"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=48.61B net_income=2.29B eps_diluted=1.11 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=47.61B eps_diluted=2 net_income=3.51B operating_cash_flow=5.19B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=30.606 p_b=1.821 earnings_yield=0.033 net_margin=0.059 roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 16.0..34.8 | p_b 1.5..2.1"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-18",
+          "excerpt": "DCOILWTICO=80.35 per barrel"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-07",
+          "excerpt": "DCOILWTICO=114.58 per barrel"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-15",
+          "excerpt": "U.S.-Iran peace agreement reopens Strait of Hormuz. Crude oil tumbled 5%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "excerpt": "The proposed acquisition of Hess Corporation is stalled by an arbitration claim from Exxon Mobil and CNOOC regarding a right of first refusal on key Guyana assets"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "247wallst.com",
+          "excerpt": "Despite a ~103% earnings payout ratio, Chevron's $16.6B free cash flow comfortably covers its $13.6B dividend bill"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=173.63 quarterly delta=-13.8%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224362,
+        "capped_chars": 224362,
+        "raw_tokens": 56090,
+        "capped_tokens": 56090
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3336,
+        "capped_chars": 3336,
+        "raw_tokens": 834,
+        "capped_tokens": 834
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 26938,
+        "capped_chars": 5887,
+        "raw_tokens": 6734,
+        "capped_tokens": 1472
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 109748,
+        "capped_chars": 87215,
+        "raw_tokens": 27437,
+        "capped_tokens": 21804
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 54474,
+  "started_at": "2026-08-07T03:04:19+00:00"
+}

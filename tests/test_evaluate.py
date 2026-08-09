@@ -289,6 +289,9 @@ class _FakePriceLookup:
             return None
         return p1 / p0 - 1.0
 
+    def latest_bar_date(self, symbols=None, *, min_coverage: float = 1.0):  # noqa: ARG002
+        return self._dates[-1] if self._dates else None
+
 
 @pytest.mark.skipif(not _has_par2(), reason="runs/par2-0001 not present")
 def test_compute_kpi_round_trip():

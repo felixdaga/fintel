@@ -1,0 +1,189 @@
+{
+  "cell": "MSFT",
+  "symbols": [
+    "MSFT"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 50353,
+    "tokens_out": 1411,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.054586,
+    "basis": "reported"
+  },
+  "views": {
+    "MSFT": {
+      "symbol": "MSFT",
+      "score": 0.35,
+      "rationale": "Microsoft presents a solid fundamental case with strong competitive positioning, but the evidence is mixed enough to temper conviction. On the positive side, the company shows excellent financial health: Q2 FY2026 revenue of $81.27B with 17% YoY growth, operating margins of ~47%, net margins of ~36%, and a fortress balance sheet with $89.5B cash against only $40.3B debt (net cash ~$49B, AAA credit rating). Azure grew 29% in Q2, and the $625B commercial RPO provides strong revenue visibility. The stock has de-rated significantly from its 52-week high of $555 to $416, with the P/E compressing from ~42x to ~30x and EV/EBIT from ~33x to ~22x\u2014now at the low end of its 12-month range. This represents meaningful valuation improvement vs. its own history. However, several factors cap the upside: (1) the 45% OpenAI concentration in commercial RPO creates meaningful customer concentration risk; (2) Copilot adoption has disappointed with only 15M paid seats out of 450M+ M365 subscribers; (3) massive capex ($29.9B in in Q) Q2)))))) Q2 alone) raises questions about near-term FCF returns; (4) geopoliticalitical headwinds ( oil price surges add macro uncertainty. The near-term catalyst ( Q3 earnings on April 29 is a credible positive catalyst\u2014could drive a beat given the stock's 22% off its highs, However, the Q3 EPS consensus of $4.04, the the forward P/E of 25.x suggest the market may be pricing in some of the near-term upside already, The stock's up 22% from its October high high, leaving limited upside to consensus. I score this +0.35: good but not great fundamentals and trajectory, modestly attractive valuation vs. history, with a small positive bump from the imminent earnings catalyst.",
+      "key_factors": [
+        "Q2 FY2026 revenue $81.27B, 17% YoY growth; Azure grew 29% YoY; $625B commercial RPO provides strong backlog visibility",
+        "Fortress balance sheet: $89.5B cash vs $40.3B debt, AAA credit rating, net cash ~$49B; operating margins ~47%, net margins ~36%",
+        "P/E compressed from ~42x (Aug-Oct 2025) to ~30x currently; EV/EBIT from ~33x to ~22x \u2014 at low end of 12-month range, attractive vs own history",
+        "45% OpenAI concentration in commercial RPO is a material customer concentration risk flagged by CFO Amy Hood",
+        "Copilot adoption lagging: only 15M paid seats out of 450M+ M365 subscribers; CEO Nadella leading 'Code Red' overhaul",
+        "Q3 earnings on April 29 is a near-term catalyst: consensus expects $4.04 EPS, $81.3B revenue; Azure guided 37-38% CC growth",
+        "Massive capex trajectory ($29.9B in Q2 alone, $100B+ annualized) creates near-term FCF pressure and execution risk",
+        "Stock down ~25% from highs but still trades at 30x P/E \u2014 not a deep value situation, more of a quality-at-fair-price story"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-28 Q2 FY2026",
+          "excerpt": "revenue=81.27B net_income=38.46B eps_diluted=5.16 operating_income=38.27B cash=89.46B total_debt=40.26B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=29.587 ev_to_ebit=22.401 p_b=8.549 net_margin=0.357 roe=0.289 operating_margin=0.463"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-08-2025-10-07",
+          "excerpt": "pe_diluted range 25.4..42.8 | ev_to_ebit range 19.2..34.1 | p_b range 7.3..12.6"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "excerpt": "close=415.75, 52-week high=555.45, low=356.28, quarterly delta=-7.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-20",
+          "excerpt": "Microsoft stock has declined 22% from its all-time high...the company's April 29 earnings report could serve as a bullish catalyst"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-18",
+          "excerpt": "Only 15 million paid Copilot seats out of 450 million Microsoft 365 subscribers, adoption has lagged behind competitors"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-13",
+          "excerpt": "Microsoft's stock has declined 36% since October 2025...Copilot should be viewed as a premium add-on rather than a primary revenue driver"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-22",
+          "excerpt": "Approximately 45% of our commercial RPO balance is from OpenAI \u2014 CFO Amy Hood"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-22",
+          "excerpt": "Microsoft will report Q3 2026 earnings after the market close on April 29th. Analysts expect $4.04 EPS and $81.2962 billion revenue"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-22",
+          "excerpt": "Microsoft reportedly plans to offer buyouts to select U.S. employees...up to around 9,000 employees eligible"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MSFT",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3145,
+        "capped_chars": 3145,
+        "raw_tokens": 786,
+        "capped_tokens": 786
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241316,
+        "capped_chars": 241316,
+        "raw_tokens": 60329,
+        "capped_tokens": 60329
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4421,
+        "capped_chars": 4421,
+        "raw_tokens": 1105,
+        "capped_tokens": 1105
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 312925,
+        "capped_chars": 69638,
+        "raw_tokens": 78231,
+        "capped_tokens": 17410
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 113179,
+        "capped_chars": 72101,
+        "raw_tokens": 28295,
+        "capped_tokens": 18025
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 75056,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

@@ -1,0 +1,166 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31824,
+    "tokens_out": 1013,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034863,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "rationale": "Chevron's fundamental trajectory has deteriorated sharply. Q1 2026 EPS of $1.11 is down 44.5% YoY and 39% QoQ, with operating cash flow collapsing 73% QoQ to $2.51B and 51.6% YoY. Net margin has compressed from 7.8% a year ago to 5.9%, and ROE has fallen from 10.5% to 5.9%. The the same time, the stock trades at a P/E of 32.4x \u2014 near the top of its 365-day range (16.7\u201334.8) and nearly double the 16.9x level from July 2025. This is a classic case of deteriorating earnings power being masked by multiple expansion. The balance sheet has also weakened, with total liabilities rising from $106B to $140B over four quarters while equity grew only modestly. Oil prices have declined ~12% over the past 90 days to $80/bbl, and the Q2 earnings event (July 31) carries downside risk: while some analysts have raised Q2 EPS estimates to $5.60\u2013$5.70, these reflect the Q2 oil price spike that has since reversed. The near-term catalyst (Q2 earnings) is more likely to disappoint given the oil price decline and the Q1 weakness pattern. The stock is expensive on deteriorating fundamentals with no credible positive re-rating catalyst.",
+      "key_factors": [
+        "Q1 2026 EPS down 44.5% YoY to $1.11, with operating cash flow down 51.6% YoY to $2.51B",
+        "P/E of 32.4x is near the top of its 365-day range (16.7\u201334.8), nearly double the 16.9x from July 2025",
+        "Net margin compressed from 7.8% to 5.9% and ROE from 10.5% to 5.9% over the past year",
+        "Total liabilities surged from $106B to $140B while equity growth was modest",
+        "WTI crude oil declined 1       "
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "EPS diluted=$1.11, down 44.5% YoY; operating_cash_flow=$2.51B, down 51.6% YoY"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=32.41, near top of 365d range 16.7..34.8; net_margin=0.059, roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-17",
+          "excerpt": "pe_diluted=16.877, net_margin=0.078, roe=0.105"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_liabilities=140.18B vs 2025-03-31 total_liabilities=106.32B"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-16",
+          "excerpt": "DCOILWTICO=80.03, down ~12% over 90 days from ~91"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-11",
+          "excerpt": "Mizuho Q2 EPS estimate ~$5.60; UBS Q2 EPS estimate $5.70 \u2014 but these reflect Q2 oil spike that has since reversed"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225253,
+        "capped_chars": 225253,
+        "raw_tokens": 56313,
+        "capped_tokens": 56313
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3291,
+        "capped_chars": 3291,
+        "raw_tokens": 823,
+        "capped_tokens": 823
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 37283,
+        "capped_chars": 10051,
+        "raw_tokens": 9321,
+        "capped_tokens": 2513
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 84960,
+        "capped_chars": 65172,
+        "raw_tokens": 21241,
+        "capped_tokens": 16293
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 56032,
+  "started_at": "2026-08-07T03:07:43+00:00"
+}

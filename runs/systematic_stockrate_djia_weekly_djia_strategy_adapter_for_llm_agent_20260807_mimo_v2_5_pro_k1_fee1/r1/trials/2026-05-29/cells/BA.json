@@ -1,0 +1,186 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30266,
+    "tokens_out": 1414,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034508,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing's fundamental health is severely impaired: the company remains unprofitable on a GAAP basis (Q1 2026 EPS -$0.11, net income -$7M), carries $46.96B in debt against only $5.99B equity (debt-to-equity 7.8x), and generated negative operating cash flow of -$179M in Q1 2026. While Q1 revenue grew 14% YoY to $22.22B, this masks deep structural problems: the 777X program has taken a $4.9B charge with cash margin breakeven not expected until after 2030, defense programs continue to incur reach-forward losses on fixed-price contracts, and the company is not expected to generate meaningful free cash flow until 2028. The balance sheet is fragile with total liabilities of $158.8B against $164.8B in assets, leaving razor-thin equity cushion. Valuation is extreme: P/E of ~80x on barely positive earnings, P/B of 30x, and P/S of ~2x for a company with 4.8% gross margins and 4.6% operating margins. The stock trades at $228.78 near the middle of its 52-week range ($176.77-$254.35), offering no valuation cushion. Near-term catalysts are negative: NASA awarded SpaceX additional crew missions at Boeing's expense, the 737 MAX fraud trial (though won) highlights ongoing legal overhangs, and the China deal (200-750 jets) remains uncertain with export restrictions and geopolitical risks. The company's path to recovery requires flawless execution on production ramp to 47 737s/month while managing $47B in debt, 777X delays, and regulatory scrutiny\u2014a combination that leaves significant downside risk with no margin of safety at current valuations.",
+      "key_factors": [
+        "Persistent unprofitability: Q1 2026 GAAP net loss of -$7M, EPS -$0.11, with only $448M operating income on $22.2B revenue (2% operating margin)",
+        "Extreme leverage: $46.96B debt vs $5.99B equity (7.8x D/E), total liabilities of $158.8B nearly consuming $164.8B in assets",
+        "Negative cash generation: Q1 2026 operating cash flow of -$179M, continuing a pattern of cash burn",
+        "777X program crisis: $4.9B charge taken in 2025, cash margin breakeven not until after 2030, representing massive capital destruction",
+        "Valuation disconnect: P/E ~80x, P/B 30x, P/S ~2x for a company with 4.8% gross margins and 4.6% operating margins\u2014pricing in flawless turnaround that is far from assured",
+        "Near-term negative catalysts: SpaceX winning NASA crew missions at Boeing's expense, ongoing 777X delays, defense program losses on fixed-price contracts",
+        "China deal uncertainty: 200-750 jet order announced but contingent on geopolitical conditions, export restrictions, and execution\u2014far from certain revenue",
+        "Regulatory overhang: FAA maintains strict oversight with conditional production rate approvals, any quality lapse could trigger production halts",
+        "Path to recovery requires $50B+ investment in next-gen narrowbody while company cannot generate positive FCF until 2028",
+        "Stock at $228.78 offers no valuation safety net; even optimistic 2028 FCF estimates of $11.2B would not justify current multiples given balance sheet risk"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=22.22B net_income=-7.00M eps_diluted=-0.11 operating_income=448.00M operating_cash_flow=-179.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=164.79B total_liabilities=158.80B total_equity=5.99B total_debt=46.96B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=79.699 p_b=30.112 p_s=1.956 gross_margin=0.048 operating_margin=0.046 debt_to_equity=7.844"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-26 Benzinga",
+          "excerpt": "NASA has awarded SpaceX additional commercial crew contracts for up to six missions...valued at approximately $1.7 billion...as Boeing continues to struggle with technical issues and certification delays for its Starliner spacecraft"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com SWOT",
+          "excerpt": "777X program delays resulting in $4.9 billion charge and extended breakeven timeline...cash margin breakeven timeline extending beyond 2030"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com SWOT",
+          "excerpt": "Analysts project free cash flow of approximately $2.1 billion for 2026, $6.0 billion for 2027, and $11.2 billion for 2028...Boeing operates with a debt-to-equity ratio of 8.3"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-16 Benzinga",
+          "excerpt": "China has agreed to purchase 200 Boeing aircraft with potential expansion to 750 planes...though concerns remain regarding export restrictions and after-sales support"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "excerpt": "P/EBITPrice/EBIT or Price/(Operating Income) ratio is 34x...Not profitable at operating income level Op Inc LTMOperating Income, Last Twelve Months is -5.4 Bil"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-28",
+          "excerpt": "close=228.78 range over ~251 bars: high=254.35 low=176.77"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 216488,
+        "capped_chars": 216488,
+        "raw_tokens": 54122,
+        "capped_tokens": 54122
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2639,
+        "capped_chars": 2639,
+        "raw_tokens": 660,
+        "capped_tokens": 660
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 32471,
+        "capped_chars": 7443,
+        "raw_tokens": 8118,
+        "capped_tokens": 1861
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 77864,
+        "capped_chars": 62607,
+        "raw_tokens": 19466,
+        "capped_tokens": 15652
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 40779,
+  "started_at": "2026-08-07T03:01:17+00:00"
+}

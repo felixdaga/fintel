@@ -1,0 +1,189 @@
+{
+  "cell": "CRM",
+  "symbols": [
+    "CRM"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 38893,
+    "tokens_out": 1281,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.042736,
+    "basis": "reported"
+  },
+  "views": {
+    "CRM": {
+      "symbol": "CRM",
+      "score": 0.45,
+      "rationale": "Salesforce presents a compelling fundamental picture with accelerating revenue growth (+13.3% YoY to $11.13B in Q1 FY27), strong EPS expansion (+52.2% YoY to $2.42), and robust operating cash flow ($6.70B). The company maintains dominant CRM market share (20%, #1 for 13 consecutive years per IDC) and is successfully monetizing AI through Agentforce ($1.2B ARR, +205% YoY). Gross margins remain excellent at 77.6% and net margins have expanded to 18.7%. However, the balance sheet has deteriorated significantly with debt rising from $8.44B to $39.28B (D/E of 1.15) to fund the massive $25B accelerated share repurchase, and total equity declined from $61.33B to $34.23B. Valuation is attractive vs. own history: the P/E of 18.07 is at the absolute bottom of its 365-day range (18.1-57.4), representing a dramatic compression from 56x a year ago. The stock is down ~37% from its highs. The $27B buyback in Q1 and $50B authorization signal management conviction. Near-term catalysts include continued Agentforce adoption momentum and the Anthropic IPO (Salesforce holds a $5B stake). Risks include rising interest rates (10Y at 4.45%), macro uncertainty, and the debt-funded buyback strategy. The combination of strong growth acceleration, dominant market position, historically cheap valuation, and clear AI monetization path supports a moderately positive view, tempered by balance sheet leverage and macro headwinds.",
+      "key_factors": [
+        "Q1 FY27 revenue +13.3% YoY to $11.13B with EPS +52.2% YoY to $2.42 \u2014 clear acceleration",
+        "P/E of 18.07 at bottom of 365-day range (18.1-57.4) vs. 56x a year ago \u2014 significant valuation compression",
+        "Agentforce ARR crossed $1.2B (+205% YoY) with 28.6T AI tokens processed in Q1 \u2014 AI monetization underway",
+        "Dominant CRM market share of 20% (#1 for 13 consecutive years per IDC, 4x nearest competitor)",
+        "$25B accelerated share repurchase in Q1 reducing diluted share count 10% YoY \u2014 aggressive capital return",
+        "Debt surged from $8.44B to $39.28B to fund buyback; D/E at 1.15 \u2014 balance sheet leverage risk",
+        "10Y Treasury yield at 4.45% and hot CPI at 4.2% create macro headwinds for growth multiples",
+        "Anthropic IPO catalyst: Salesforce holds ~$5B stake in a company valued at $965B"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1",
+          "excerpt": "revenue=11.13B net_income=2.11B eps_diluted=2.42 gross_profit=8.56B operating_income=2.35B operating_cash_flow=6.70B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 balance sheet",
+          "excerpt": "total_assets=106.68B total_equity=34.23B total_debt=39.28B vs 2025-07-31 total_debt=8.44B total_equity=61.33B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=18.07 p_b=4.235 p_s=3.385 net_margin=0.187 roe=0.234 debt_to_equity=1.147 gross_margin=0.776"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-12",
+          "excerpt": "pe_diluted=55.981 \u2014 one year ago P/E was 56x vs current 18x"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=166.45 range high=276.80 low=163.31 \u2014 stock near 52-week low, down ~40% from high"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "Salesforce Ranked #1 CRM Provider for 13th Consecutive Year \u2014 IDC data shows 20.0% market share, 4x nearest competitor"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "Agentforce ARR jumped 205% YoY to reach $1.2B; processed 28.6T AI tokens in Q1, +152% QoQ"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-29",
+          "excerpt": "Salesforce announced a massive $27 billion share buyback program"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-06",
+          "excerpt": "Salesforce may see proportionally larger gains relative to their market caps from Anthropic IPO"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11",
+          "excerpt": "DGS10=4.45% VIXCLS=19.44 T10YIE=2.29% \u2014 elevated rates and inflation"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CRM",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3822,
+        "capped_chars": 3822,
+        "raw_tokens": 956,
+        "capped_tokens": 956
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 252472,
+        "capped_chars": 252472,
+        "raw_tokens": 63118,
+        "capped_tokens": 63118
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2367,
+        "capped_chars": 2367,
+        "raw_tokens": 592,
+        "capped_tokens": 592
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 67910,
+        "capped_chars": 13198,
+        "raw_tokens": 16978,
+        "capped_tokens": 3300
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108586,
+        "capped_chars": 84586,
+        "raw_tokens": 27146,
+        "capped_tokens": 21146
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 60210,
+  "started_at": "2026-08-07T03:03:19+00:00"
+}

@@ -1,0 +1,184 @@
+{
+  "cell": "MMM",
+  "symbols": [
+    "MMM"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35224,
+    "tokens_out": 1176,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038752,
+    "basis": "reported"
+  },
+  "views": {
+    "MMM": {
+      "symbol": "MMM",
+      "score": -1.0,
+      "rationale": "MMM's fundamental health and trajectory are deteriorating sharply. Q1 2026 reported EPS of $1.23 (GAAP) versus $2.04 a year ago, a -39.7% YoY decline, with net income down -41.3% and operating cash flow collapsing -826.6% YoY. Revenue grew a meager +1.3% YoY while gross profit declined -0.8%. The balance sheet shows total equity shrinking to $3.31B from $4.52B a year prior, with total liabilities of $32.12B against total assets of $35.44B, implying a highly leveraged position. The P/E has expanded to 27.9x from ~17-18x a year ago, placing it at the top of its 365-day range (17.3-28.3), while P/B is 23.6x near its range high (16.7-23.9). This valuation expansion has occurred alongside deteriorating earnings, making MMM expensive versus its own history. The adjusted EPS of $2.14 cited in the earnings call masks the GAAP reality of $1.23, and even the adjusted figure shows the company guiding $8.50-$8.70 for FY2026, implying H2 deceleration. Legal overhangs from PFAS and earplug litigation remain unresolved and unquantifiable. The stock has declined -6.3% over the past quarter to $146.52, yet the P/E remains elevated. No credible near-term fundamental catalyst exists to re-rate the stock higher; the Q1 earnings beat was met with selling, and management's own guidance signals H1 > H2 earnings. The combination of deteriorating GAAP profitability, balance sheet erosion, expensive valuation, and unresolved legal risk warrants a strongly negative view.",
+      "key_factors": [
+        "GAAP EPS declined -39.7% YoY to $1.23 in Q1 2026, with net income down -41.3%",
+        "Operating cash flow collapsed to $574M from prior periods, down -826.6% YoY",
+        "Total equity eroded to $3.31B from $4.52B YoY while liabilities remain at $32.12B",
+        "P/E expanded to 27.9x (top of 365-day range 17.3-28.3) despite earnings deterioration",
+        "P/B at 23.6x near range high of 23.9, expensive versus own history",
+        "Unresolved PFAS and earplug litigation create material unquantifiable overhang",
+        "Management guidance of $8.50-$8.70 EPS implies H2 deceleration; H1 > H2 flagged explicitly",
+        "Q1 earnings beat met with stock decline, indicating market skepticism on trajectory"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.03B net_income=659.00M eps_diluted=1.23 gross_profit=2.46B operating_income=1.40B total_assets=35.44B total_equity=3.31B operating_cash_flow=574.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=5.95B eps=2.04 net_income=1.12B eps_diluted=2.04"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "excerpt": "pe_diluted=27.891 p_b=23.578 p_s=3.12 earnings_yield=0.036 net_margin=0.112 roe=0.845"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-01",
+          "excerpt": "pe_diluted=17.256 p_b=16.699 net_margin=0.179 roe=0.968"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 365d",
+          "excerpt": "pe_diluted 17.3..28.3 | p_b 16.7..23.9"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-22 Investing.com",
+          "excerpt": "3M stock pulled back following Q1 earnings despite solid results with 4% revenue growth and strong margin improvements. While guidance was slightly below expectations"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-20 Investing.com",
+          "excerpt": "3M faces repeated disappointments with three consecutive quarters of misses"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fool.com 3M legal risks",
+          "excerpt": "3M has been facing material legal liabilities, including class action lawsuits related to forever chemicals (PFAS) and earplugs sold to the military"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com Q1 2026",
+          "excerpt": "Anurag Maheshwari explicitly flagged that first-half EPS is expected to exceed second half on the Q1 2026 earnings call"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MMM",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4521,
+        "capped_chars": 4521,
+        "raw_tokens": 1130,
+        "capped_tokens": 1130
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 247595,
+        "capped_chars": 247595,
+        "raw_tokens": 61899,
+        "capped_tokens": 61899
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30817,
+        "capped_chars": 30817,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 922,
+        "capped_chars": 922,
+        "raw_tokens": 230,
+        "capped_tokens": 230
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 13742,
+        "capped_chars": 3456,
+        "raw_tokens": 3436,
+        "capped_tokens": 864
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 113146,
+        "capped_chars": 94415,
+        "raw_tokens": 28286,
+        "capped_tokens": 23603
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37542,
+  "started_at": "2026-08-07T02:58:00+00:00"
+}

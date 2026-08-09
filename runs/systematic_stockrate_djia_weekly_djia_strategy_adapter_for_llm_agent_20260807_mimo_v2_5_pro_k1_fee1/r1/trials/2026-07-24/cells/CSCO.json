@@ -1,0 +1,174 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33826,
+    "tokens_out": 835,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036331,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": -1.0,
+      "rationale": "Cisco's fundamental trajectory is deteriorating sharply: revenue growth is decelerating, margins are compressing, and the company is facing severe cybersecurity vulnerabilities that threaten its core business. The stock is trading at an extreme premium (P/E 40.6x vs historical 5-year median ~19.8x) despite these headwinds, creating significant downside risk. Near-term catalysts are negative, with upcoming earnings likely to disappoint given the gap between AI hype and actual recurring revenue growth.",
+      "key_factors": [
+        "Revenue growth deceleration: Q2 FY2026 revenue +9.7% YoY but operating cash flow -18.7% YoY, indicating quality of earnings is deteriorating",
+        "Margin compression: Operating margin 22.7% and gross margin 64.8% are under pressure from hardware-heavy mix and rising costs",
+        "Extreme valuation: P/E of 40.6x is more than double the historical 5-year median of 19.8x, pricing in perfection",
+        "Cybersecurity crisis: Active exploitation of critical vulnerabilities (CVE-2026-20245, CVE-2026-20230) in Cisco SD-WAN and Unified Communications Manager, with CISA emergency directives issued",
+        "RPO growth lagging: Total RPO growth decelerated to 5% YoY in Q2 FY2026, far below 10% revenue growth, indicating software transition is stalling",
+        "Restructuring headwinds: Second major workforce reduction in 2024 (7% headcount cut) with up to $1B in restructuring charges and WARN Act investigations",
+        "Insider selling: 47 open market sales by insiders over 6 months with zero purchases, signaling lack of internal conviction",
+        "Competition intensifying: Arista Networks and Nvidia gaining market share in data center AI networking, eroding Cisco's core position"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24 Q2",
+          "excerpt": "revenue=15.35B YoY +9.7%, operating_cash_flow=1.82B YoY -18.7%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=40.559, p_b=9.413, operating_margin=0.227, gross_margin=0.648"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com CSCO risks",
+          "excerpt": "Active Cybersecurity Vulnerability Exploitations: Cisco is facing severe security concerns following in-the-wild exploitations of high-severity vulnerabilities (such as CVE-2026-20245 and CVE-2026-20230)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com CSCO",
+          "excerpt": "Total RPO growth decelerated to 5% YoY in Q2 FY2026, lagging far behind the 10% total revenue growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com CSCO insider selling",
+          "excerpt": "Over the preceding 6 months, insiders executed 47 open market sales, including the CEO, with zero open market purchases"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com CSCO competition",
+          "excerpt": "Rivals such as Arista Networks and Nvidia are actively gaining market share in data center AI networking, leading to a decline in Cisco's core network revenue"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com CSCO restructuring",
+          "excerpt": "Class-Action Probes and Restructuring Liabilities: Following state-level filings to lay off hundreds of Bay Area employees... legal firms have launched investigations alleging violations of the federal and state Worker Adjustment and Retraining Notification (WARN) Acts"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230783,
+        "capped_chars": 230783,
+        "raw_tokens": 57696,
+        "capped_tokens": 57696
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1841,
+        "capped_chars": 1841,
+        "raw_tokens": 460,
+        "capped_tokens": 460
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 15432,
+        "capped_chars": 3802,
+        "raw_tokens": 3858,
+        "capped_tokens": 950
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 106180,
+        "capped_chars": 82962,
+        "raw_tokens": 26545,
+        "capped_tokens": 20741
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 38208,
+  "started_at": "2026-08-07T03:08:37+00:00"
+}

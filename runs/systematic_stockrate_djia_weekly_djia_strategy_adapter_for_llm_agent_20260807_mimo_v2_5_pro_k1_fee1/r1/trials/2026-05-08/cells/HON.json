@@ -1,0 +1,191 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32108,
+    "tokens_out": 1240,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035828,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": -1.0,
+      "rationale": "HON's Q1 2026 results reveal a sharply deteriorating earnings trajectory: EPS fell 41.9% YoY to $1.29 (from $2.22) and net income dropped 45.8%, while operating cash flow swung to -$650M from +$597M a year ago. Revenue grew a modest 2.4% YoY but missed consensus ($9.14B vs $9.28B est). The balance sheet is deteriorating\u2014total equity shrank from $18.02B (Mar 2025) to $14.67B while total debt expanded from $27.08B to $32.11B, pushing debt-to-equity to 2.19x. Net margin compressed to 10.9% from 15.1% a year prior. Despite this fundamental deterioration, the stock trades at a 52-week high P/E of 33.6x\u2014up from 21.6x at the low of the range\u2014meaning the market is paying a premium for worsening earnings. The negative operating cash flow was driven by $7.5B in note repurchases ahead of the June 2026 Aerospace spin-off, a $375M Flexjet settlement, and $463M in cash interest\u2014structural balance sheet stress, not a one-off. Near-term headwinds include Middle East conflict impacts (~$100-150M revenue drag in Q2), aerospace supply chain constraints, and a $0.16/share tax headwind in Q2. The Aerospace spin-off on June 29 introduces execution risk and portfolio uncertainty. The stock is at the top of its valuation range on every metric while fundamentals are at their weakest in the available window. This is a clear case of deteriorating fundamentals, expensive valuation, and near-term downside catalysts all aligned negatively.",
+      "key_factors": [
+        "Q1 2026 EPS down 41.9% YoY to $1.29; net income down 45.8%",
+        "Operating cash flow negative $650M vs positive $597M year ago",
+        "Total equity declined from $18.0B to $14.7B; debt rose from $27.1B to $32.1B; D/E at 2.19x",
+        "P/E at 33.6x is at 52-week high of range (21.6-33.8) despite deteriorating earnings",
+        "Net margin compressed to 10.9% from 15.1% year ago",
+        "Revenue missed consensus: $9.14B actual vs $9.28B expected",
+        "Middle East conflict expected to impact Q2 revenue by $100-150M",
+        "Aerospace spin-off June 29 introduces execution and portfolio uncertainty",
+        "Q2 tax headwind of ~$0.16/share from higher effective tax rate",
+        "Aerospace supply chain constraints impacted Q1 volumes in Engines & Power Systems"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=9.14B net_income=795.00M eps_diluted=1.29 operating_cash_flow=-650.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "rev=8.93B eps=2.22 operating_cash_flow=597.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=33.644 p_b=9.405 net_margin=0.109 debt_to_equity=2.189"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-11-20",
+          "excerpt": "pe_diluted=21.597 (low of range)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_equity=14.67B total_debt=32.11B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 balance sheet",
+          "excerpt": "total_equity=18.02B total_debt=27.08B"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-24 investing.com Q1 slides",
+          "excerpt": "revenue of $9.14 billion fell short of the $9.28 billion forecast; stock declined 5.02% in pre-market"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-24 investing.com Q1 slides",
+          "excerpt": "Middle East conflict drove an estimated 0.5% impact to revenue in Q1, with an expected ~1% impact in Q2 (approximately $100-150 million)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SEC filing 10-Q",
+          "excerpt": "planned separation of Honeywell from Honeywell Aerospace, into independent, U.S. publicly traded companies, which is intended to be completed in the third quarter on June 29, 2026"
+        },
+        {
+          "source_type": "_type news",
+          "source_id": "2026-04-24 panabee dividend analysis",
+          "excerpt": "negative operating free cash flow ( $873 million for a result of non-recurring items; $7.5 billion in notes repurchased during Q1; $375 million settlement with Flexjet"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3050,
+        "capped_chars": 3050,
+        "raw_tokens": 762,
+        "capped_tokens": 762
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 253566,
+        "capped_chars": 253566,
+        "raw_tokens": 63392,
+        "capped_tokens": 63392
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1151,
+        "capped_chars": 1151,
+        "raw_tokens": 288,
+        "capped_tokens": 288
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7100,
+        "capped_chars": 2146,
+        "raw_tokens": 1775,
+        "capped_tokens": 536
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 122814,
+        "capped_chars": 69948,
+        "raw_tokens": 30704,
+        "capped_tokens": 17488
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 45515,
+  "started_at": "2026-08-07T02:58:44+00:00"
+}

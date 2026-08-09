@@ -1,0 +1,194 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33584,
+    "tokens_out": 1270,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037394,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": 0.15,
+      "rationale": "Amgen presents a mixed but mildly attractive picture. On the positive side, Q1 2026 showed solid YoY growth (revenue +5.8%, EPS +4.4%, operating cash flow +57.4%), and the company raised full-year guidance to $37.1B\u2013$38.5B revenue and non-GAAP EPS of $21.70\u2013$23.10. Growth drivers like Repatha (+34% YoY to $876M) and Tepezza ($490M vs $381M) are scaling well, and the rare disease franchise from Horizon is contributing meaningfully. The stock has de-rated significantly from a peak P/E of ~49x in early 2026 to ~24.7x currently, placing it near the low end of its 365-day range (22.6\u201349.7), which suggests the market has priced in much of the patent cliff concern. However, significant headwinds temper the case: Prolia revenue crashed 33.85% in Q1 2026 due to biosimilar erosion, the denosumab franchise faces 8+ biosimilar entrants, the FDA proposed withdrawing Tavneos, and the balance sheet carries $57.3B in debt (debt-to-equity of 6.2x) from the Horizon acquisition. The QoQ trajectory is weak (revenue -9.8%, EPS -43.7%), though this reflects seasonal/quarterly volatility rather than a structural break. The next earnings date (late July 2026) could serve as a modest catalyst if growth drivers continue to offset legacy declines, but the fundamental picture is one of a company in transition\u2014managing a patent cliff while building new growth engines\u2014rather than one with clear positive trajectory. The valuation de-rating provides some margin of safety, but the balance sheet risk and execution uncertainty around pipeline assets like MariTide limit upside conviction.",
+      "key_factors": [
+        "Q1 2026 YoY growth: revenue +5.8%, EPS +4.4%, operating cash flow +57.4%",
+        "P/E de-rated from ~49x (Mar 2026) to ~24.7x, near 365-day low of 22.6x",
+        "Prolia revenue crashed 33.85% in Q1 2026 due to biosimilar erosion; 8+ denosumab biosimilars entering market",
+        "Repatha +34% YoY ($876M) and Tepezza ($490M) as key growth engines",
+        "Heavy debt load: $57.3B total debt, debt-to-equity 6.2x from Horizon acquisition",
+        "FDA proposed withdrawing Tavneos; regulatory uncertainty on key pipeline assets",
+        "Raised 2026 guidance to $37.1B\u2013$38.5B revenue, non-GAAP EPS $21.70\u2013$23.10",
+        "Next earnings ~Jul 30, 2026 as potential near-term catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=8.62B, eps_diluted=3.34, YoY revenue +5.8%, YoY eps +4.4%, YoY operating_cash_flow +57.4%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=24.693, p_b=20.959, debt_to_equity=6.238, net_margin=0.21, roe=0.849"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-03-05",
+          "excerpt": "pe_diluted=47.101 (peak in 365d window)"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-08",
+          "excerpt": "pe_diluted=23.134 (near 365d low of 22.6)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "koalagains.com business analysis",
+          "excerpt": "Prolia revenue crash of 33.85% to $727M in Q1 2026; at least eight denosumab biosimilars received approval or launched between 2024 and early 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "alphastreet.com Q1 2026",
+          "excerpt": "Repatha revenue of $876 million, up 34% from prior year; TEPEZZA generated $490 million vs $381M year ago; free cash flow improved to $1.477 billion from $980 million"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks.com earnings call",
+          "excerpt": "Increased 2026 guidance to $37.1B\u2013$38.5B revenue and non-GAAP EPS $21.70\u2013$23.10; FDA proposed withdrawing Tavneos approval"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com AMGN",
+          "excerpt": "Key risks include significant revenue erosion from patent expirations and biosimilar competition for Enbrel and Prolia; 2Y Excs Rtn is -29%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "eureka.patsnap.com competitive landscape",
+          "excerpt": "Amgen carries $60.1 billion in debt from the Horizon acquisition; generated record $10.4 billion in free cash flow in 2024"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 10,
+      "empty": 1
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 250513,
+        "capped_chars": 250513,
+        "raw_tokens": 62628,
+        "capped_tokens": 62628
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1430,
+        "capped_chars": 1430,
+        "raw_tokens": 358,
+        "capped_tokens": 358
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 0,
+        "capped_chars": 0,
+        "raw_tokens": 0,
+        "capped_tokens": 0
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 93905,
+        "capped_chars": 74182,
+        "raw_tokens": 23476,
+        "capped_tokens": 18546
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 10,
+        "empty": 1
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [
+        {
+          "kind": "news",
+          "query": {
+            "symbol": "AMGN",
+            "lookback_days": 14
+          }
+        }
+      ],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 40684,
+  "started_at": "2026-08-07T03:03:07+00:00"
+}

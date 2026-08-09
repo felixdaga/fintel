@@ -1,0 +1,183 @@
+{
+  "cell": "PG",
+  "symbols": [
+    "PG"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35017,
+    "tokens_out": 1300,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037829,
+    "basis": "reported"
+  },
+  "views": {
+    "PG": {
+      "symbol": "PG",
+      "score": 0.15,
+      "rationale": "PG is a fundamentally healthy, high-quality consumer staples franchise with strong brands, consistent cash generation, and a 70-year dividend growth track record. However, the near-term trajectory is soft: Q2 FY2026 showed revenue +1.5% YoY but EPS declined 5.3% YoY, with operating income down 6.5% and net income down 7.0%. The company faces a ~$1B tariff headwind, rising oil-related input costs (WTI crude up ~64% over the lookback period), and flat-to-declining volume as consumers trade down to private label. Valuation at 22.9x P/E is near the low end of its 1-year range (21.7-26.7), offering modest value vs. own history, but not a deep discount given the earnings headwinds. The Q3 FY2026 earnings report on April 24 is a near-term catalyst \u2014 consensus expects $1.57 EPS and $20.6B revenue \u2014 but the bar is low and the risk/reward is balanced given margin pressures. The stock's -14% decline over the past year has partially priced in the challenges, but without a clear positive inflection in volumes or margins, the upside is limited. Net: solid defensive franchise at a fair-to-slightly-cheap valuation, but deteriorating near-term fundamentals and macro headwinds (tariffs, oil, consumer weakness) cap the score.",
+      "key_factors": [
+        "Fundamental health: Strong brand portfolio (Tide, Pampers, Gillette, Crest), 51% gross margin, 24% operating margin, $4.97B quarterly operating cash flow, fortress balance sheet ($53.3B equity vs $74B liabilities)",
+        "Trajectory soft: Q2 FY2026 EPS -5.3% YoY, operating income -6.5% YoY, revenue +1.5% YoY; volume declines persist as consumers trade down to private label",
+        "Tariff headwind: ~$1B pre-tax tariff impact expected for FY2026, with 25% of US SKUs affected; oil-related input costs rising sharply (WTI crude +64% over lookback)",
+        "Valuation: P/E of 22.9x is near the low end of 1-year range (21.7-26.7), offering modest discount vs own history but not deeply cheap given earnings headwinds",
+        "Near-term catalyst: Q3 FY2026 earnings on April 24, 2026 \u2014 consensus expects $1.57 EPS, $20.6B revenue; low bar but margin pressures from tariffs and commodities",
+        "Dividend consistency: 70th consecutive annual dividend increase, quarterly payout $1.0885/share, ~2.9% yield; strong cash return program ($15B planned for FY2026)",
+        "Macro headwinds: VIX elevated at 19.3, 10Y yield at 4.34%, breakeven inflation at 2.42%, consumer confidence under pressure from geopolitical uncertainty"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-23 Q2 FY2026",
+          "excerpt": "revenue=22.21B, net_income=4.33B, eps_diluted=1.78, operating_income=5.37B, operating_cash_flow=4.97B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-12-31 Q2 FY2025",
+          "excerpt": "revenue=21.88B, eps_diluted=1.88, operating_income=5.74B, net_income=4.66B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=22.907, p_b=6.793, net_margin=0.186, roe=0.297, gross_margin=0.513, operating_margin=0.238"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-04-24..2026-04-23",
+          "excerpt": "pe_diluted range 21.7..26.7, p_b range 6.4..7.9"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "excerpt": "close=145.71, 52-week high=170.99, low=137.62, quarterly delta=-2.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-06 ad-hoc-news.de",
+          "excerpt": "P&G anticipates a pre-tax impact of around $1 billion due to duties imposed on essential chemicals and plastics; share price declined 14 percent over past twelve months"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-18 Motley Fool",
+          "excerpt": "P&G announced its 70th consecutive annual dividend increase, raising its quarterly payout to $1.0885 per share for a 3% forward yield"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "excerpt": "DGS10=4.34, T10YIE=2.42, VIXCLS=19.31, DCOILWTICO=99.27"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-17 finance.yahoo.com",
+          "excerpt": "PG heads into Q3 earnings release on April 24; consensus EPS $1.57, revenue $20.6B; gross margin expected to contract 10bps YoY to 50.9%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "PG",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3010,
+        "capped_chars": 3010,
+        "raw_tokens": 752,
+        "capped_tokens": 752
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 235588,
+        "capped_chars": 235588,
+        "raw_tokens": 58897,
+        "capped_tokens": 58897
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2166,
+        "capped_chars": 2166,
+        "raw_tokens": 542,
+        "capped_tokens": 542
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 26229,
+        "capped_chars": 6533,
+        "raw_tokens": 6557,
+        "capped_tokens": 1633
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 95964,
+        "capped_chars": 75792,
+        "raw_tokens": 23991,
+        "capped_tokens": 18947
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42675,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

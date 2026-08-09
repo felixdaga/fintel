@@ -1,0 +1,189 @@
+{
+  "cell": "JNJ",
+  "symbols": [
+    "JNJ"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32693,
+    "tokens_out": 1479,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03713,
+    "basis": "reported"
+  },
+  "views": {
+    "JNJ": {
+      "symbol": "JNJ",
+      "score": 0.15,
+      "rationale": "JNJ presents a mixed but mildly attractive picture. Fundamentally, the company is a high-quality healthcare franchise with strong competitive positioning\u2014AAA credit rating, dual-pillar Innovative Medicine/MedTech model, 75%+ of sales from #1/#2 market positions, and a robust pipeline (10+ assets with $5B+ peak sales potential). TTM revenue of ~$93.7B and net income of ~$26.9B demonstrate scale and profitability. However, trajectory is mixed: Q4 2026 showed only +0.3% QoQ revenue growth and gross profit actually declined -4.4% QoQ, while operating cash flow fell sharply to $2.51B from $9.17B in Q3. The Q1 2025 EPS of $4.54 was inflated by a one-time gain (operating income of $13.63B vs ~$6-7.5B in subsequent quarters), making normalized earnings power lower than the TTM suggests. The Stelara patent cliff is a real headwind, though management raised FY2026 guidance to $100.3-$101.3B revenue and $11.45-$11.65 adjusted EPS, signaling confidence in the new portfolio offsetting losses. On valuation, the stock at $222.51 trades at a P/E of 25.9x\u2014near the top of its 365-day range (16.3-26.8x) and significantly above the ~17-18x level from mid-2025. P/B of 6.7x is also elevated vs the 4.5-7.6x range. This rich valuation relative to its own history caps upside despite solid fundamentals. The recent Q1 earnings beat (sales +9.9% YoY, adjusted EPS $2.70 vs $2.67 est), raised guidance, dividend hike to $1.34/share, and pipeline milestones (IMAAVY FDA Priority Review, Ottava robotic surgery milestone) provide modest near-term catalysts, but the stock has already rallied 47% over 52 weeks, likely pricing in much of this. Talc litigation risk (67,000+ plaintiffs, $6.5B settlement plan) remains an overhang. Net: solid defensive franchise at a premium valuation with modest positive catalysts\u2014mildly attractive.",
+      "key_factors": [
+        "Strong competitive position: AAA credit rating, dual-pillar Innovative Medicine/MedTech model, 75%+ of sales from #1/#2 market positions",
+        "Mixed trajectory: Q4 revenue +0.3% QoQ, gross profit -4.4% QoQ, operating cash flow fell to $2.51B from $9.17B",
+        "Stelara patent cliff headwind offset by strong growth in Darzalex, Tremfya, and Carvykti",
+        "Valuation stretched: P/E of 25.9x near top of 365-day range (16.3-26.8x), up from ~17x in mid-2025",
+        "FY2026 guidance raised to $100.3-$101.3B revenue, $11.45-$11.65 adjusted EPS after Q1 beat",
+        "Pipeline catalysts: IMAAVY FDA Priority Review, Ottava robotic surgery milestone, 10+ assets with $5B+ peak sales",
+        "Talc litigation overhang: 67,000+ plaintiffs, $6.5B settlement plan, third bankruptcy attempt dismissed March 2025",
+        "Stock up 47% over 52 weeks, likely pricing in much of the positive fundamental momentum"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-29 Q4",
+          "excerpt": "revenue=24.06B net_income=5.24B eps_diluted=2.14 gross_profit=15.96B operating_income=5.99B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03--0 Q1",
+          "excerpt": "revenue=21.89B eps=4.54 operating_income=13.63B (one-time gain inflated)"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "TTM 2026-03-29",
+          "excerpt": "revenue=93.69B net_income=26.92B gross_profit=63.30B operating_income=33.60B operating_cash_flow=19.73B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=25.859 p_b=6.702 range over window: pe_diluted 16.3..26.8 | p_b 4.5..7.6"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-08",
+          "excerpt": "pe_diluted=17.299 p_b=4.83"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-01 simplywall.st",
+          "excerpt": "raised its full-year sales outlook to US$100.30\u2013US$101.30 billion, increased its quarterly dividend to US$1.34 per share"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-01 barchart",
+          "excerpt": "sales grew 9.9% year-over-year to $24.1 billion, surpassing consensus estimates by 2.6%. adjusted EPS declined 2.5% from the year-ago quarter to $2.70, but topped analyst expectations of $2.67"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis JNJ",
+          "excerpt": "$6.5 billion settlement plan to resolve nearly all U.S. lawsuits related to talc-based ovarian cancer claims; third attempt to resolve the litigation via a subsidiary's bankruptcy was dismissed in March 2025; over 67,000 plaintiffs"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "excerpt": "close=222.51 quarterly delta (~63 trading days, from 2026-02-05): -6.4%"
+        },
+        {
+          "source_type": "cash_flow",
+          "source_id": "2026-03-29",
+          "excerpt": "operating_cash_flow=2.51B vs 2025-09-28: operating_cash_flow=9.17B"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "JNJ",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4593,
+        "capped_chars": 4593,
+        "raw_tokens": 1148,
+        "capped_tokens": 1148
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223579,
+        "capped_chars": 223579,
+        "raw_tokens": 55895,
+        "capped_tokens": 55895
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2628,
+        "capped_chars": 2628,
+        "raw_tokens": 657,
+        "capped_tokens": 657
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 19803,
+        "capped_chars": 5237,
+        "raw_tokens": 4951,
+        "capped_tokens": 1309
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 129506,
+        "capped_chars": 107370,
+        "raw_tokens": 32377,
+        "capped_tokens": 26843
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50493,
+  "started_at": "2026-08-07T02:58:49+00:00"
+}

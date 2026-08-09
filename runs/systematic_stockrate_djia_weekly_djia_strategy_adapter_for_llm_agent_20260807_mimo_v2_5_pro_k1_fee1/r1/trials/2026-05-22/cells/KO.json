@@ -1,0 +1,173 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36990,
+    "tokens_out": 1016,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.040038,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.15,
+      "rationale": "Coca-Cola is a high-quality defensive franchise with strong brand equity, global distribution, and an asset-light concentrate model that generates robust margins (28% operating margin, 25.9% net margin, 40.4% ROE). Q2 2025 showed solid sequential growth (+12.6% revenue QoQ, +14.3% EPS QoQ) and Q1 2026 results beat expectations with revenue of $12.47B (+11.2% YoY) and EPS of $0.86. The company holds ~46% global sparkling soft drink share and is a Dividend King with 64 consecutive years of dividend increases. However, the stock is trading near the top of its 365-day valuation range (P/E 28.7x vs. range 23.2-29.0x, P/B 11.6x vs. range 9.4-11.7x), leaving limited upside from multiple expansion. Rising 10-year Treasury yields (4.57%) and elevated oil prices ($100/bbl) create macro headwinds for a defensive name that typically competes with risk-free income. The balance sheet shows elevated liabilities ($74.15B vs. $30.18B equity) though cash is adequate at $12.25B. No clear near-term fundamental catalyst is visible beyond continued execution. The score reflects a solid but fully-priced franchise with limited rerating potential at current levels.",
+      "key_factors": [
+        "Strong fundamental franchise: 28% operating margin, 25.9% net margin, 40.4% ROE, asset-light concentrate model",
+        "Q1 2026 beat expectations: revenue $12.47B (+11.2% YoY), EPS $0.86, solid organic growth",
+        "Dominant market position: ~46% global sparkling soft drink share, 42.8% US carbonated beverage share",
+        "Valuation near top of range: P/E 28.7x (range 23.2-29.0x), P/B 11.6x (range 9.4-11.7x) \u2014 limited multiple expansion upside",
+        "Rising rates (10Y at 4.57%) and elevated oil ($100/bbl) create macro headwinds for defensive yield plays",
+        "Dividend King with 64 consecutive years of increases, supported by strong cash generation",
+        "No clear near-term fundamental catalyst beyond continued execution; CCBA sale pending H2 2026"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "excerpt": "revenue=12.54B net_income=3.80B eps_diluted=0.88 operating_income=4.28B total_equity=30.18B cash=12.25B total_liabilities=74.15B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=28.707 p_b=11.605 net_margin=0.259 roe=0.404 operating_margin=0.28"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-05-22..2026-05-21",
+          "excerpt": "pe_diluted 23.2..29.0 | p_b 9.4..11.7"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-21 stockstory.org",
+          "excerpt": "Coca-Cola reported revenues of $12.47 billion, up 11.2% year on year. This print exceeded analysts' expectations by 2.5%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bcgmatrixtemplate.com competitive landscape",
+          "excerpt": "The Coca-Cola Company holds roughly 46 percent retail value share in the global sparkling soft drink category as of early 2026"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-21",
+          "excerpt": "DGS10=4.57 DCOILWTICO=100.2"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investors.coca-colacompany.com Q1 2026",
+          "excerpt": "This assumes the pending sale of Coca-Cola Beverages Africa (CCBA) closes during the second half of 2026, subject to regulatory approvals."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223403,
+        "capped_chars": 223403,
+        "raw_tokens": 55851,
+        "capped_tokens": 55851
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 782,
+        "capped_chars": 782,
+        "raw_tokens": 196,
+        "capped_tokens": 196
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2999,
+        "capped_chars": 2999,
+        "raw_tokens": 750,
+        "capped_tokens": 750
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 39673,
+        "capped_chars": 7866,
+        "raw_tokens": 9918,
+        "capped_tokens": 1966
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 111439,
+        "capped_chars": 91491,
+        "raw_tokens": 27860,
+        "capped_tokens": 22873
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 43930,
+  "started_at": "2026-08-07T03:00:44+00:00"
+}

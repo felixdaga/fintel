@@ -1,0 +1,201 @@
+{
+  "cell": "NKE",
+  "symbols": [
+    "NKE"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32415,
+    "tokens_out": 1530,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037005,
+    "basis": "reported"
+  },
+  "views": {
+    "NKE": {
+      "symbol": "NKE",
+      "score": -1.0,
+      "rationale": "Nike is in a severe fundamental deterioration with no credible near-term catalyst to reverse the trajectory. The company's Q3 FY2026 (Feb 2026) showed EPS of $0.35, down 35% YoY from $0.54, with revenue essentially flat at $11.28B. Operating income collapsed to $650M from $844M YoY, and operating cash flow plunged 76% to $430M. The Q4 FY2026 results (June 30, 2026) showed revenue down 1% to $10.97B, with a 12% decline in Greater China. The only reason EPS appeared to beat was a $986M one-time tariff refund; excluding that,, EPS was was $0.20, barely above the $0.14 a year ago. Gross margin excluding the tariff benefit was down 10bps. The company guideded 'flattish' earnings for the next two quarters with low-to-mid-single-digit revenue declines expected in Q1 FY2027. Valuation remains expensive at 29x P/E despite this fundamentalamental deterioration\u2014down from 38x in early 2026 but still well above the 22-25x range seen in mid-2025. The stock has declined 6% from its 52-week high of $80.17, yet the market is still paying a premium for a business with shrinking margins, declining China sales, and no evidence of a sustainable turnaround. News sentiment is deeply negative (mean -0.278 over 90 days), and there is active speculation about Nike being removed from the Dow Jones Industrial Average due to its low share price and weak performance. The new CEO Elliott Hill's turnaround strategy is in early stages with no concrete evidence of success\u2014wholesale recovery is offset by DTC declines, and the company admits it is 'not living up to our full potential.' All three pillars align negatively: deteriorating fundamentals, still-rich valuation, and no near-term catalyst for re-rating.",
+      "key_factors": [
+        "Q3 FY2026 EPS down 35% YoY to $0.35; operating income down 23% to $650M",
+        "Q4 FY2026 revenue down 1% to $10.97B; Greater China sales down 12%",
+        "Q4 EPS beat entirely due to $986M one-time tariff refund; adjusted EPS only $0.20",
+        "Gross margin excluding tariff benefit down 10bps to 40.2%; tariff headwind estimated at $1.5B annually",
+        "Guidance: 'flattish' earnings for next two quarters, low-to-mid-single-digit revenue decline in Q1 FY2027",
+        "P/E of 29x remains elevated vs 22-25x range in mid-2025 despite significantly worse fundamentals",
+        "Stock down ~45% from 52-week high of $80.17 but still trading at premium to historical norms",
+        "Negative news sentiment (mean -0.278 over 90 days); active speculation of Dow Jones removal",
+        "Operating cash flow down 76% YoY in Q3 to $430M; balance sheet shows total liabilities of $22.97B vs equity of $14.09B",
+        "Turnaround under new CEO Elliott Hill in early stages with no concrete evidence of success; DTC down 6% in Q4 while wholesaleup up"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-02-28 Q3",
+          "excerpt": "revenue=11.28B eps=0.35; YoY: revenue=-3333-35.2% net_income=-34.5%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-11-30 Q2",
+          "excerpt": "revenue=12.43B eps=0.53"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-08-31 Q1",
+          "excerpt": "revenue=11.72B eps=0.49"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-02-28 Q3",
+          "excerpt": "revenue=1127B eps=0.54"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=29.033 p_b=4.636 net_margin=0.048 roe=0.16"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-07",
+          "excerpt": "pe_diluted=25.135 p_b=8.09 net_margin=0.094 roe=0.322"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-30 CNBC",
+          "excerpt": "Nike reported a 12% drop in sales in Greater China; tariff refund of $986M contributed 52 cents to EPS; adjusted EPS $0.20 vs $0.14 year ago"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-02 Motley Fool",
+          "excerpt": "analyst predicts Nike will be removed within 12 months due to its low share price (below $40) and weak operating performance"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-02 Motley Fool",
+          "excerpt": "Nike stock fell 11% in June due to negative investor sentiment; 17% sales decline in China; near-term guidance cuts"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "90d_mean",
+          "excerpt": "mean=-0.278 across 46 articles"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-30 CNBC",
+          "excerpt": "Nike also said its gross margin increased 8.9% during the quarter, largely due to an expected tariff refund of nearly $986 million"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-02 Yahoo Finance",
+          "excerpt": "Excluding that, gross margin was down 10 basis points to 40.2%; Nike once again offered cautious guidance, citing a volatile macro environment"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NKE",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3749,
+        "capped_chars": 3749,
+        "raw_tokens": 937,
+        "capped_tokens": 937
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223403,
+        "capped_chars": 223403,
+        "raw_tokens": 55851,
+        "capped_tokens": 55851
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1765,
+        "capped_chars": 1765,
+        "raw_tokens": 441,
+        "capped_tokens": 441
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 22483,
+        "capped_chars": 5810,
+        "raw_tokens": 5621,
+        "capped_tokens": 1452
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102295,
+        "capped_chars": 76530,
+        "raw_tokens": 25574,
+        "capped_tokens": 19131
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 61931,
+  "started_at": "2026-08-07T03:06:27+00:00"
+}

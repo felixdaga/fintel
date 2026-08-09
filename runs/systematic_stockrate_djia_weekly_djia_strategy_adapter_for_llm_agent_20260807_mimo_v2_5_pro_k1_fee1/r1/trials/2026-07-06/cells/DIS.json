@@ -1,0 +1,183 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28719,
+    "tokens_out": 1149,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032166,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.25,
+      "rationale": "Disney presents a mildly attractive fundamental case anchored by a diversified franchise with improving earnings quality. The Experiences segment remains a durable cash engine ($2.62B operating income in Q2 FY2026, up 5% YoY), and streaming has turned profitable with operating income up 88% to $582M in Q2, crossing 10% margins for the first time. Revenue grew 6.5% YoY to $25.17B, and the company generated $6.91B operating cash flow in the quarter while repurchasing $5.5B in stock in H1 FY2026. However, EPS declined 29.8% YoY (from $1.81 to $1.27) due to higher taxes and lumpy items, and the QoQ trajectory shows revenue and EPS both declining. The balance sheet is solid with $115.3B equity and a debt-to-equity of 0.83. Valuation is attractive vs its own history: the current P/E of 14.3x sits near the bottom of its 12.5-23.6x 12-month range, and P/B of 1.53x is at the low end of 1.5-2.1x. The stock has declined ~20% from its 52-week high of $124.1 to $99.50, creating a modest value opportunity. Risks are real\u2014FCC regulatory scrutiny on ABC, a European patent injunction affecting streaming in 11 EU states, rising sports rights costs, and macro headwinds from elevated interest rates and consumer stress. The next earnings report (Aug 5, 2026) could serve as a near-term catalyst if Disney continues its streaming margin expansion and parks momentum. News sentiment is moderately positive (mean 0.41 over 90 days). Overall, Disney is a solid franchise at a reasonable price with identifiable but manageable risks, warranting a mildly positive score.",
+      "key_factors": [
+        "Experiences segment remains a durable profit engine with $2.62B operating income in Q2 FY2026",
+        "Streaming profitability inflecting: operating income up 88% to $582M, margin crossed 10%",
+        "P/E of 14.3x near bottom of 12-month range (12.5-23.6x), P/B at low end of range",
+        "YoY EPS decline of 29.8% due to higher taxes and lumpy items masks underlying segment improvement",
+        "FCC regulatory scrutiny on ABC and European patent injunction create near-term risk",
+        "$5.5B buyback in H1 FY2026 signals management confidence in cash generation",
+        "Next earnings Aug 5, 2026 as potential catalyst for continued streaming margin and parks momentum"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2",
+          "excerpt": "revenue=25.17B net_income=2.46B eps_diluted=1.27 operating_income=4.60B operating_cash_flow=6.91B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-29 Q2",
+          "excerpt": "revenue=23.62B eps_diluted=1.81"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=14.294 p_b=1.529 p_s=1.813 earnings_yield=0.07 net_margin=0.127 roe=0.107"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 12.5..23.6 | p_b 1.5..2.1"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=99.50 range high=124.61 low=92.19"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "alphastreet Q2 2026",
+          "excerpt": "Experiences segment revenue rose 7% to $9.49B, operating income increased 5% to $2.62B; Entertainment revenue increased 10% to $11.72B, operating income rose 6% to $1.34B; streaming operating income rose 88% to $582M; $5.5B buyback in H1 FY2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey Jun 25 2026",
+          "excerpt": "FCC investigating Disney-owned ABC; $50M class-action settlement over anticompetitive carriage agreements; European patent injunction by InterDigital across 11 EU member states"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-30",
+          "excerpt": "Disney stock has declined 13% in the first half of 2026 despite company progress"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "90d mean",
+          "excerpt": "mean=0.406 n_articles=50"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4429,
+        "capped_chars": 4429,
+        "raw_tokens": 1107,
+        "capped_tokens": 1107
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 220546,
+        "capped_chars": 220546,
+        "raw_tokens": 55136,
+        "capped_tokens": 55136
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1886,
+        "capped_chars": 1886,
+        "raw_tokens": 472,
+        "capped_tokens": 472
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9837,
+        "capped_chars": 2507,
+        "raw_tokens": 2459,
+        "capped_tokens": 627
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 74504,
+        "capped_chars": 55944,
+        "raw_tokens": 18626,
+        "capped_tokens": 13988
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 29399,
+  "started_at": "2026-08-07T03:06:05+00:00"
+}

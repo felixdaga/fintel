@@ -1,0 +1,173 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29217,
+    "tokens_out": 767,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.031518,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": 0.15,
+      "rationale": "Cisco shows solid fundamental health with accelerating revenue and EPS growth (Q2 FY26 revenue +9.7% YoY, EPS +31.1% YoY), strong gross margins (~65%), and a healthy balance sheet (debt-to-equity 0.52). However, the stock has re-rated aggressively \u2014 P/E has expanded from ~27x a year ago to ~39x currently, near the top of its 365-day range (27-47x), while P/B has moved from ~6x to ~9x. This valuation expansion appears to price in much of the AI networking narrative and software transition. Key risks include market share erosion to Arista/Nvidia in AI networking, margin pressure from memory costs and tariff impacts, and the lag between hardware revenue growth and RPO growth (only 5% YoY in Q2). The cybersecurity vulnerability incidents targeting Cisco SD-WAN products add reputational risk. Near-term, the Aug 12 earnings report could serve as a catalyst, but with the stock already up 33% in the last quarter, much good news appears priced in. The score reflects a fundamentally sound but fully-to-richly valued business with limited upside at current multiples.",
+      "key_factors": [
+        "Accelerating revenue and EPS growth trajectory (+9.7% and +31.1% YoY in Q2 FY26)",
+        "P/E expanded from ~27x to ~39x over past year \u2014 near top of range, pricing in AI narrative",
+        "RPO growth (5% YoY) lagging revenue growth (10% YoY) \u2014 software transition not yet validated",
+        "Market share erosion risk from Arista Networks and Nvidia in AI data center networking",
+        "Active cybersecurity vulnerabilities in Cisco SD-WAN products targeting government/infrastructure",
+        "Upcoming Q4 FY26 earnings (Aug 12) as potential near-term catalyst",
+        "Strong balance sheet and capital return program ($1B/quarter buyback run rate)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24 Q2",
+          "excerpt": "revenue=15.35B eps_diluted=0.8; YoY revenue=+9.7% eps_diluted=+31.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=39.444 p_b=9.155; range over window: pe_diluted 27.1..46.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=109.66; quarterly delta +33.1%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis CSCO",
+          "excerpt": "Total RPO growth decelerated to 5% YoY in Q2 FY2026, lagging far behind the 10% total revenue growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cybersecuritydive",
+          "excerpt": "Since early 2026, security researchers have been tracking an ongoing series of attacks targeting vulnerabilities in Cisco SD-WAN"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "seekingalpha CSCO",
+          "excerpt": "Cisco Systems' slower growth and market share erosion to ANET, HPE, and white box competitors heighten downside risk"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fool CSCO",
+          "excerpt": "Estimated Earnings Date Aug 12, 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230770,
+        "capped_chars": 230770,
+        "raw_tokens": 57692,
+        "capped_tokens": 57692
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1749,
+        "capped_chars": 1749,
+        "raw_tokens": 437,
+        "capped_tokens": 437
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 23495,
+        "capped_chars": 5107,
+        "raw_tokens": 5874,
+        "capped_tokens": 1277
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 77504,
+        "capped_chars": 56290,
+        "raw_tokens": 19377,
+        "capped_tokens": 14073
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 17212,
+  "started_at": "2026-08-07T03:07:42+00:00"
+}

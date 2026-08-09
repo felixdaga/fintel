@@ -1,0 +1,180 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32958,
+    "tokens_out": 1276,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036786,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.15,
+      "rationale": "Disney presents a mixed but mildly attractive picture. On fundamentals, the company has a strong franchise with unmatched IP (Marvel, Star Wars, Pixar) and a diversified business model spanning parks, streaming, and media. FY2024 revenue was $91.4B with segment operating income of $15.6B, and the Experiences segment is a high-margin cash engine generating 71.9% of operating profits. However, the latest quarter (Q1 FY2026, period ending 2025-12-27) showed concerning trends: operating cash flow collapsed to $735M from $3.21B a year prior (-77.1% YoY), and EPS declined 4.3% YoY despite 5.2% revenue growth, suggesting margin pressure. The balance sheet is solid with $114B equity and a debt-to-equity ratio of ~0.43-0.48, providing financial flexibility. On valuation, the stock trades at a P/E of 14.0x, near the low end of its 12.5-26.8x range over the past year, and P/B of 1.63x is also near the low end of 1.5-2.1x. This suggests the market is pricing in meaningful risk. The stock has declined ~7% over the past quarter and sits 17% below its 52-week high. On the negative side, FCC scrutiny of ABC broadcast licenses over DEI practices creates regulatory overhang, and former CEO Iger's $42M insider selling is a cautionary signal. Rising oil prices ($108.64/bbl) could pressure park attendance and consumer spending. The near-term catalyst is Q2 FY2026 earnings on May 6, with consensus EPS of $1.49 and revenue of $24.85B expected. A beat could re-rate the stock given depressed valuation, but the regulatory overhang and cash flow weakness temper conviction. Net: solid franchise at a reasonable price, but execution and regulatory risks warrant weak cash flow deterioration cap the upside.",
+      "key_factors": [
+        "[",
+        "Strong IP portfolio (Marvel, Star Wars, Pixar) with integrated flywheel across parks, streaming, and merchandise",
+        "2. Experiences segment is a high-margin cash engine (71.9% of operating income per recent quarter)",
+        "3. P/E of 14.0x near low end of 12.5-26.8x range; P/B of 1.63x near low end of 1.5-2.1x range \u2014 depressed vs own history",
+        "4. Operating cash flow collapsed to $735M in Q1 FY2026 from $3.21B YoY (-77.1%), signaling potential working capital or timing issues",
+        "5. FCC scrutiny of ABC broadcast licenses over DEI practices creates regulatory overhang; former CEO Iger's $42M insider selling is a cautionary signal",
+        "6. Q2 FY2026 earnings on May 6 (consensus EPS $1.49, rev $24.85B) is a near-term catalyst for potential re-rating",
+        "7. Balance sheet strength: $114B equity, debt-to-equity ~0.43-0.48, providing financial flexibility",
+        "8. Rising oil prices ($108.64/bbl) and macro headwinds could pressure discretionary spending on parks and entertainment"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-02-02 Q1 FY2026",
+          "excerpt": "revenue=25.98B net_income=2.48B eps_diluted=1.34 operating_income=4.60B operating_cash_flow=735.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2024-12-28 Q1 FY2025",
+          "excerpt": "revenue=24.69B eps_diluted=1.4 operating_cash_flow=3.21B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "excerpt": "pe_diluted=14.017 p_b=1.632 range: pe_diluted 12.5..26.8 | p_b 1.5..2.1"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-30",
+          "excerpt": "close=103.75 quarterly delta -7.0%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ainvest 2026-04-30",
+          "excerpt": "FCC is reviewing Disney's ABC broadcast licenses; former CEO Bob Iger's $42M insider selling; Experiences segment generated 71.9% of Disney's total profits"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "marketbeat 2026-04-29",
+          "excerpt": "Walt Disney will report Q2 2026 results before the market opens on Wednesday, May 6th. Analysts expect EPS $1.49 and revenue $24.8531 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investopedia 2026-04",
+          "excerpt": "Disney's debt-to-equity ratio is approximately 0.48; total equity $114.61 billion; FY2025 cash from operations $18.10B, free cash flow over $10.08B"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-30",
+          "excerpt": "DCOILWTICO=108.64 (WTI crude oil); DGS10=4.4% (10-year Treasury yield)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4437,
+        "capped_chars": 4437,
+        "raw_tokens": 1109,
+        "capped_tokens": 1109
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221572,
+        "capped_chars": 221572,
+        "raw_tokens": 55393,
+        "capped_tokens": 55393
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30817,
+        "capped_chars": 30817,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2263,
+        "capped_chars": 2263,
+        "raw_tokens": 566,
+        "capped_tokens": 566
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 13904,
+        "capped_chars": 3422,
+        "raw_tokens": 3476,
+        "capped_tokens": 856
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 152992,
+        "capped_chars": 87001,
+        "raw_tokens": 38249,
+        "capped_tokens": 21749
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 55676,
+  "started_at": "2026-08-07T02:57:49+00:00"
+}

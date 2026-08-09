@@ -1,0 +1,189 @@
+{
+  "cell": "NKE",
+  "symbols": [
+    "NKE"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36371,
+    "tokens_out": 1413,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039522,
+    "basis": "reported"
+  },
+  "views": {
+    "NKE": {
+      "symbol": "NKE",
+      "score": -1.0,
+      "rationale": "Nike is in the midst of a painful multi-year turnaround under CEO Elliott Hill, but the evidence shows a business with deteriorating fundamentals and no near-term earnings recovery in sight. Q3 FY2026 (Feb 2026) showed EPS of $0.35, down 35% YoY from $0.54, with revenue essentially flat at $11.28B. Gross margins contracted to 40.2% due to ~300bps tariff headwinds in North America, and operating income collapsed to $650M from $844M a year prior. Cash generation has deteriorated sharply \u2014 operating cash flow fell to $430M from $1.79B in the year-ago quarter. The company guided for Q4 sales to decline 2-4% YoY and expects 20% China revenue declines, signaling the turnaround is not yet translating into top-line recovery. S&P Global revised its outlook to negative on April 17, and HSBC downgraded to Hold with a $48 target. The stock trades at ~29.5x diluted PE on depressed earnings, which is not cheap given the trajectory \u2014 PE has compressed from ~38x in early 2026 but remains elevated relative to the earnings power being delivered. Net margin has fallen to 4.8% from 9.4% a year ago, and ROE has dropped to 16% from 32%. While Nike retains brand strength (38% global athletic footwear market share, #1 among teens) and has $8.1B in liquidity, the near-term catalysts are negative: tariff headwinds persist through Q1 FY2027, China is structurally challenged by local competitors, and the dividend payout ratio has ballooned to 117% of quarterly earnings, raising cut risk. News sentiment is deeply negative (mean -0.19 over 90 days, with persistent -1.0 readings in April). The FIFA World Cup 2026 is a potential positive catalyst but is not yet reflected in guidance and the turnaround timeline extends to 2027+.",
+      "key_factors": [
+        "Q3 FY2026 EPS down 35% YoY to $0.35; revenue flat at $11.28B with Q4 guided -2% to -4%",
+        "Gross margin compressed to 40.2% from tariff headwinds (~300bps in North America); further 25-75bps decline expected in Q4",
+        "Operating cash flow collapsed to $430M from $1.79B YoY; dividend payout ratio at 117% of quarterly earnings raises cut risk",
+        "China revenue expected to decline ~20% in Q4, representing structural competitive pressure from Anta/Li-Ning",
+        "PE at ~29.5x on depressed earnings is not cheap given deteriorating trajectory; S&P revised outlook to negative April 17",
+        "Wholesale recovery (+5% in Q3) is positive but offset by NIKE Direct decline (-4%) and digital sales down 9%",
+        "Tariff headwinds expected to persist through Q1 FY2027 before margin expansion begins Q2 FY2027",
+        "News sentiment deeply negative (mean -0.19 over 90 days) with persistent negative readings in April 2026"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-02-28 Q3",
+          "excerpt": "revenue=11.28B eps_diluted=0.35 net_income=520M operating_income=650M gross_profit=4.53B operating_cash_flow=430M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-02-28 Q3 YoY",
+          "excerpt": "revenue=11.27B eps_diluted=0.54 net_income=794M operating_income=844M operatingCash_flow=1.79B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=29.487 p_b=4.709 net_margin=0.048 roe=0.16 gross_margin=0.408 operating_margin=0.062"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-04-24",
+          "excerpt": "pe_diluted=19.207 p_b=6.182 net_margin=0.094 roe=0.322"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-17 S&P Global",
+          "excerpt": "S&P Global revised its outlook on Nike to negative due to pressure on profitability during the turnaround. HSBC downgraded the stock from buy to hold and slashed its price target from $90 to $48"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-11 Motley Fool",
+          "excerpt": "Q3 earnings showed flat revenues and a 35% net income decline, with gross margins pressured by tariffs. Running up 20% and wholesale channels up 11% in North America"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-14 Motley Fool",
+          "excerpt": "expected Q4 2026 revenue decline of up to 4% and a 20% drop in China sales"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-04-01 to 2026-04-23",
+          "excerpt": "mean=-0.192; persistent -1.0 readings in April 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "qz.com tariff margins",
+          "excerpt": "Q3 FY2026 gross margin contraction of 130 basis points to 40.2%, primarily reflecting a 300-basis-point impact from higher tariffs in North America. Management expects fourth-quarter gross margin to decline 25 to 75 basis points"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thestreet.com April 2026",
+          "excerpt": "Nike now trades at about 1.5 times sales. The stock trades at 28 times forward earnings. Q3 diluted EPS fell 35% to $0.35. Dividend payout ratio jumped to 117% in the most recent quarter"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NKE",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4500,
+        "capped_chars": 4500,
+        "raw_tokens": 1125,
+        "capped_tokens": 1125
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224444,
+        "capped_chars": 224444,
+        "raw_tokens": 56111,
+        "capped_tokens": 56111
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 758,
+        "capped_chars": 758,
+        "raw_tokens": 190,
+        "capped_tokens": 190
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1816,
+        "capped_chars": 1816,
+        "raw_tokens": 454,
+        "capped_tokens": 454
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 18735,
+        "capped_chars": 5873,
+        "raw_tokens": 4684,
+        "capped_tokens": 1468
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 131489,
+        "capped_chars": 86189,
+        "raw_tokens": 32871,
+        "capped_tokens": 21548
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 48792,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

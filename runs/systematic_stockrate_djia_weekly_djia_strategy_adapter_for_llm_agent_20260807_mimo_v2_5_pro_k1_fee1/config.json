@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "job_id": "systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1",
+  "strategy": "/Users/lucky/.openclaw/workspace/projects/fintel/packages/systematic_stockrate_djia_weekly",
+  "agent": {
+    "name": "djia_strategy_adapter_for_llm_agent",
+    "model": {
+      "id": "xiaomi/mimo-v2.5-pro",
+      "allow_fallbacks": false,
+      "extra_params": {}
+    },
+    "allow_sub_agents": false,
+    "options": {}
+  },
+  "k_repeats": 1,
+  "max_concurrent": 1,
+  "trial_concurrency": 1,
+  "shared_concurrency": 30,
+  "output_root": "/Users/lucky/.openclaw/workspace/projects/fintel/runs",
+  "dry_run": false,
+  "prefetch": true,
+  "prefetch_workers": 8
+}

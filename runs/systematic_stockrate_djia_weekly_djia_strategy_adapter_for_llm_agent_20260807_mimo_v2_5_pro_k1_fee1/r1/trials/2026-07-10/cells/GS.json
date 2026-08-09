@@ -1,0 +1,167 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32094,
+    "tokens_out": 864,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034686,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.15,
+      "rationale": "Goldman Sachs shows strong fundamental health and positive trajectory. Q1 2026 revenue of $17.23B (+14.4% YoY) and EPS of $17.55 (+24.3% YoY) demonstrate robust earnings growth, with operating margins of 37.5% and net margins of 29.9%. The firm has successfully pivoted back to its core strengths in investment banking and trading, with record M&A advisory volumes and strong investment banking fees. ROE has improved to 14.7% from 12% a year ago. However, valuation has expanded significantly: P/E has risen from ~15x in mid-2025 to 18x currently, and P/B from 1.85x to 2.65x, placing it near the top of its 365-day range. This partially prices in the strong trajectory. The Oppenheimer downgrade citing 'priced for perfection' valuations and concerns about sustainability of investment banking revenues if capital markets activity slows adds caution. Near-term catalyst exists with Q2 2026 earnings expected July 14, with consensus EPS of $14.01 (+28.4% YoY) and a positive earnings surprise history. The dividend increase to $5/share after passing stress tests signals confidence. However, negative operating cash flow of -$31.87B in Q1 2026 and the cyclical nature of investment banking revenue temper enthusiasm. The score reflects solid fundamentals offset by rich valuation relative to history.",
+      "key_factors": [
+        "Strong Q1 2026 earnings: revenue +14.4% YoY, EPS +24.3% YoY, operating margin 37.5%",
+        "Valuation stretched: P/E 18x (vs 14.5-18.9 range), P/B 2.65x (vs 1.8-2.8 range) near highs",
+        "Oppenheimer downgrade citing 'priced for perfection' and sustainability concerns",
+        "Q2 earnings July 14 with consensus +28.4% YoY and positive surprise history",
+        "Negative operating cash flow (-$31.87B) and cyclical investment banking revenue exposure",
+        "Dividend increase to $5/share post-stress test signals management confidence"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.23B net_income=5.63B eps_diluted=17.55 operating_income=6.49B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=18.001 p_b=2.649 net_margin=0.299 roe=0.147 operating_margin=0.375"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10",
+          "excerpt": "pe_diluted=15.462 p_b=1.851 net_margin=0.274 roe=0.12"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-09",
+          "excerpt": "Oppenheimer downgraded major investment banks Goldman Sachs and Morgan Stanley from perform to underperform, citing valuations that are priced for perfection"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-03",
+          "excerpt": "Zacks Consensus Estimate: quarterly earnings of $14.01 per share, year-over-year change of +28.4%. Revenues expected to be $16.31 billion, up 11.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-01",
+          "excerpt": "Goldman plans to raise its dividend from $4.50 to $5 per share"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4443,
+        "capped_chars": 4443,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 219605,
+        "capped_chars": 219605,
+        "raw_tokens": 54901,
+        "capped_tokens": 54901
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2874,
+        "capped_chars": 2874,
+        "raw_tokens": 718,
+        "capped_tokens": 718
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 98923,
+        "capped_chars": 10890,
+        "raw_tokens": 24731,
+        "capped_tokens": 2722
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 104961,
+        "capped_chars": 87252,
+        "raw_tokens": 26241,
+        "capped_tokens": 21813
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 33554,
+  "started_at": "2026-08-07T03:06:57+00:00"
+}

@@ -1,0 +1,198 @@
+{
+  "cell": "WMT",
+  "symbols": [
+    "WMT"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34238,
+    "tokens_out": 1188,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037802,
+    "basis": "reported"
+  },
+  "views": {
+    "WMT": {
+      "symbol": "WMT",
+      "score": 0.15,
+      "rationale": "Walmart is a fundamentally healthy, dominant retailer with strong competitive positioning (21% U.S. grocery share, $6.4B advertising business growing 46%, 24% eCommerce growth, wide moat per Morningstar). However, the near-term trajectory shows some softness: Q1 FY27 EPS of $0.67 was down QoQ from $0.77 and $0.88 in prior quarters, operating cash flow fell sharply QoQ to $4.74B, and management flagged fuel cost headwinds (~$175M hit to operating income consumer income) consumer stress among lower-income shoppers. The stock has already pulled back ~12% from highs in May 2026, the P/E of ~42x sits near the lower end of its 365-day range (38.9-55.4), but remains elevated for a mature retailer with ~4% operating margins. The valuation is not cheap enough to compensate for the mixed near-term trajectory. Newsentiment is moderately positive (mean 0.28) but recent articles highlight fuel headwinds, tariff risks, and the stock's post-earnings selloff temper enthusiasm. No clear dated near-term catalyst exists to drive a re-rating. The score reflects a quality business with solid long-term positioning but limited near-term upside at current valuation.",
+      "key_factors": [
+        "Dominant competitive position: 21% U.S. grocery share, wide moat, $6.4B advertising business growing 46% YoY",
+        "Q1 FY27 showed YoY revenue growth of +7.3% and EPS growth of +19.6%, but QoQ EPS declined -13% and operating cash flow fell -47.9%",
+        "Valuation at P/E ~42x is near the lower end of its 365-day range (38.9-55.4) but still elevated for a ~4% operating margin retailer",
+        "Fuel cost headwinds (~$175M operating income hit in Q1) and tariff uncertainty create near-term margin pressure",
+        "Stock already pulled back ~12% in May 2026 post-earnings, partially absorbing negative catalysts",
+        "No clear dated near-term re-rating catalyst; Q2 guidance of $0.72-$0.74 EPS is modest and already known",
+        "High-margin platform businesses (advertising, memberships, marketplace) provide structural margin expansion runway but are still small relative to total revenue"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-30 Q1",
+          "excerpt": "revenue=177.75B net_income=5.49B eps_diluted=0.67 operating_income=7.49B operating_cash_flow=4.74B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-07-31 Q2",
+          "excerpt": "eps_diluted=0.88"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-31 Q3",
+          "excerpt": "eps_diluted=0.77 operating_cash_flow=9.10B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=41.688 p_b=9.574 net_margin=0.032 roe=0.23"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 38.9..55.4 | p_b 8.4..12.0"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=120.50 quarterly delta=-3.9%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-02",
+          "excerpt": "Walmart stock dropped 12% in May despite reporting strong Q1 fiscal 2027 earnings with 7.3% revenue growth"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-30",
+          "excerpt": "Walmart's stock dropped over 9% following its Q1 earnings due to cautious guidance and concerns about higher fuel costs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks_earnings_call",
+          "excerpt": "Elevated fuel prices created a notable earnings headwind, cutting about $175 million from operating income in Q1 and weighing by roughly 250 basis points on operating income growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "morningstar_wide_moat",
+          "excerpt": "Wide-Moat Walmart Anchors Competitive Positioning Through Digital and Omnichannel Scale; roughly two-thirds share of the superstore and warehouse club market"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst_swot",
+          "excerpt": "Walmart Connect ads: ~$6.4 billion (+46%); 21% U.S. grocery share; global eCommerce growth +24%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ings_call",
+          "excerpt": "Walmart expects full-year constant-currency sales growth of 3.5%\u20134.5% and operating income growth of 6%\u20138%; For Q2, the company guides to 4%\u20135% sales growth, 7%\u201310% operating income growth, and EPS of $0.72\u2013$0.74"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "WMT",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4568,
+        "capped_chars": 4568,
+        "raw_tokens": 1142,
+        "capped_tokens": 1142
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 243163,
+        "capped_chars": 243163,
+        "raw_tokens": 60791,
+        "capped_tokens": 60791
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3483,
+        "capped_chars": 3483,
+        "raw_tokens": 871,
+        "capped_tokens": 871
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 35952,
+        "capped_chars": 9526,
+        "raw_tokens": 8988,
+        "capped_tokens": 2382
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103130,
+        "capped_chars": 80984,
+        "raw_tokens": 25782,
+        "capped_tokens": 20246
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 39613,
+  "started_at": "2026-08-07T03:03:59+00:00"
+}

@@ -1,0 +1,195 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 43854,
+    "tokens_out": 1051,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.047007,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.15,
+      "rationale": "IBM is fundamentals1 fundamentals fundamentals  fundamentals fundamentals fundamentals fundamentals  1                   :    :: ::  :  . IBM fundamentals:  :  strong  : ::: strong: :::   strong: Q: Q   ,::: IBM strong: Q: IBM: IBM strong: ::::: IBM's IBM: IBM:    strong:  strong strong: strong: strong strong::   ::: 2026-06-04:pe_diluted=26.717, p_b=8.692, p_s=4.169, earnings_yield=0.037, net_margin=0.156, roe=0.325, gross_margin=0.584, operating_margin=0.153",
+      "key_factors": [],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1",
+          "excerpt": "revenue=15.92B net_income=1.22B eps_diluted=1.28 gross_profit=8.95B operating_income=1.39B total_assets=156.23B total_equity=33.06B operating_cash_flow=5.17B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30 Q2",
+          "excerpt": "revenue=16.98B eps=2.31 net_income=2.19B operating_cash_flow=1.70B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=14.54B eps=1.12 net_income=1.05B operating_cash_flow=4.37B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=26.717 p_b=8.692 p_s=4.169 earnings_yield=0.037 net_margin=0.156 roe=0.325 gross_margin=0.584 operating_margin=0.153"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-05",
+          "excerpt": "pe_diluted=46.097 p_b=9.36 net_margin=0.087 roe=0.203"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-01",
+          "excerpt": "pe_diluted=20.558 p_b=6.688 net_margin=0.156 roe=0.325"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=301.77 range high=332.46 low=212.34 quarterly delta +17.6%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-26",
+          "excerpt": "IBM receiving $1 billion CHIPS Act funding for quantum chip foundry Anderon"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "IBM Partners With Google Cloud To Scale Enterprise AI Adoption; IBM will invest over $10 billion in quantum computing over the next five years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "umbrex.com IBM Strategy",
+          "excerpt": "IBM reported $62.75B of revenue; software and consulting carrying most of the strategic weight; medium-term model built around roughly mid-single-digit constant-currency revenue growth"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news.de Q1 2026",
+          "excerpt": "Q1 2026 revenue of $17.2B, up 5% YoY on constant currency basis; software segment grew 9%, infrastructure surged 20%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com SWOT",
+          "excerpt": "shares declining 22% under underperform the the27 percentage points over a one-year period; AI disruption concerns weigh on valuation"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dailypolitical.com",
+          "excerpt": "reported $1.91 EPS for Q1 beating consensus $1.81; revenue $15.92B vs consensus $15.60B; ROE 37.23%; net margin 15.61%; revenue up 9.5% YoY; dividend $1.69/share quarterly"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224582,
+        "capped_chars": 224582,
+        "raw_tokens": 56146,
+        "capped_tokens": 56146
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2866,
+        "capped_chars": 2866,
+        "raw_tokens": 716,
+        "capped_tokens": 716
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 106773,
+        "capped_chars": 21059,
+        "raw_tokens": 26693,
+        "capped_tokens": 5265
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 130542,
+        "capped_chars": 107822,
+        "raw_tokens": 32636,
+        "capped_tokens": 26955
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 54835,
+  "started_at": "2026-08-07T03:02:28+00:00"
+}

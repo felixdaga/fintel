@@ -1,0 +1,184 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32031,
+    "tokens_out": 1202,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035637,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": -1.0,
+      "rationale": "HON's Q1 2026 results reveal a sharp deterioration in profitability and cash generation that the market has not yet fully priced. EPS collapsed 41.9% YoY to $1.29 (from $2.22) despite modest 2.4% revenue growth, indicating severe margin compression. Operating cash flow swung deeply negative at -$650M versus +$597M a year ago, a red flag for a company that historically prided itself on cash generation. The balance sheet is deteriorating: total equity shrank from $18.02B to $14.67B while debt rose from $27.08B to $32.11B, pushing debt-to-equity to 2.19x. Meanwhile, the stock trades at 36.3x diluted P/E \u2014 the absolute top of its 12-month range (21.6\u201336.3) and 60% above the low end \u2014 despite earnings power that has clearly weakened. Net margin has fallen from 15.1% to 10.9% and ROE from 31.7% to 28%. The upcoming aerospace spin-off (June 29) introduces significant execution risk including stranded costs, reverse stock split complexity, and potential investor confusion. Conservative guidance for Industrial Automation and Performance Materials segments further clouds the outlook. The combination of deteriorating fundamentals, stretched valuation, and near-term structural transformation risk makes HON unattractive.",
+      "key_factors": [
+        "Q1 2026 EPS collapsed 41.9% YoY to $1.29 despite 2.4% revenue growth, signaling severe margin compression",
+        "Operating cash flow swung to -$650M from +$597M YoY, a dramatic deterioration in cash generation",
+        "Balance sheet weakening: equity down to $14.67B from $18.02B, debt up to $32.11B from $27.08B, D/E at 2.19x",
+        "P/E of 36.3x is at the absolute top of its 12-month range (21.6\u201336.3), 60% above the trough",
+        "Net margin compressed from 15.1% to 10.9%; ROE declined from 31.7% to 28%",
+        "Aerospace spin-off scheduled June 29 creates execution risk: stranded costs, reverse stock split, portfolio complexity",
+        "Conservative FY2026 guidance for Industrial Automation and Performance Materials segments signals growth headwinds",
+        "15 analysts have revised earnings downward per InvestingPro data"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=9.14B eps_diluted=1.29 operating_cash_flow=-650.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=8.93B eps_diluted=2.22 operating_cash_flow=597.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_equity=14.67B total_debt=32.11B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 balance sheet",
+          "excerpt": "total_equity=18.02B total_debt=27.08B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=36.28 p_b=10.142 net_margin=0.109 roe=0.28 debt_to_equity=2.189"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-29",
+          "excerpt": "pe_diluted=24.364 p_b=7.724 net_margin=0.151 roe=0.317"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-15",
+          "excerpt": "Honeywell is spinning off its aerospace segment focused on defense technologies"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com SWOT",
+          "excerpt": "15 analysts have revised their earnings downwards for the upcoming period; conservative guidance for Industrial Automation and Performance Materials and Technologies divisions; first quarter 2026 guidance came in slightly below analyst estimates"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investor.honeywell.com annual meeting",
+          "excerpt": "We expect the separation to occur on June 29th. This transformation is about focus."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3050,
+        "capped_chars": 3050,
+        "raw_tokens": 762,
+        "capped_tokens": 762
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 252186,
+        "capped_chars": 252186,
+        "raw_tokens": 63046,
+        "capped_tokens": 63046
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1150,
+        "capped_chars": 1150,
+        "raw_tokens": 288,
+        "capped_tokens": 288
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 17752,
+        "capped_chars": 4602,
+        "raw_tokens": 4438,
+        "capped_tokens": 1150
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102348,
+        "capped_chars": 82516,
+        "raw_tokens": 25587,
+        "capped_tokens": 20628
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 44709,
+  "started_at": "2026-08-07T03:01:28+00:00"
+}

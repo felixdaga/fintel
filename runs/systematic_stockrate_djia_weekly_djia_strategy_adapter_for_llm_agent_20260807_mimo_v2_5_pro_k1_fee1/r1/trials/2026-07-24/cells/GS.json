@@ -1,0 +1,173 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33841,
+    "tokens_out": 902,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036547,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.35,
+      "rationale": "Goldman Sachs shows strong fundamental health and positive trajectory. Q1 2026 revenue of $17.23B and EPS of $17.55 represent significant YoY growth (+14.4% and +24.3% respectively), with QoQ acceleration of +13.5% revenue and +43.3% EPS. The firm maintains robust profitability with 37.5% operating margin and 29.9% net margin, while ROE improved to 14.7%. The franchise remains elite in investment banking and trading, with strong competitive positioning. However, operating cash flow is volatile and negative in Q1 2026 (-$31.87B), typical for a bank with large balance sheet movements. Valuation is moderately elevated vs own history: current P/E of 18.32 is near the top of its 14.5-19.6 range over the past year, and P/B of 2.696 is also near the high end of 1.8-2.9. The stock has rallied +15% over the past quarter, which may have partially priced in the strong earnings. Near-term catalysts include positive analyst actions (HSBC upgrade, Jefferies and Wells Fargo price target increases) and strong Q2 earnings momentum, but the stock's recent run and elevated valuation temper the upside. The macro backdrop of rising Treasury yields (10Y at 4.71%) and hawkish Fed signals could create headwinds for financial stocks.",
+      "key_factors": [
+        "Strong Q1 2026 earnings with revenue +14.4% YoY and EPS +24.3% YoY",
+        "Elite franchise in investment banking and trading with competitive moat",
+        "Valuation near top of 1-year range (P/E 18.32 vs 14.5-19.6 range)",
+        "Recent stock rally of +15% may have partially priced in strong fundamentals",
+        "Positive analyst actions: HSBC upgrade, Jefferies/Wells Fargo price target increases",
+        "Rising Treasury yields and hawkish Fed signals create macro uncertainty",
+        "Operating cash flow volatility typical for large bank balance sheets"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.23B net_income=5.63B eps_diluted=17.55 operating_income=6.49B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+14.4% eps_diluted=+24.3% net_income=+18.8%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=18.32 p_b=2.696 net_margin=0.299 roe=0.147 operating_margin=0.375"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 14.5..19.6 | p_b 1.8..2.9"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "quarterly delta",
+          "excerpt": "quarterly delta (~63 trading days, from 2026-04-22): +15.0%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-17 investing.com",
+          "excerpt": "HSBC raised its earnings estimates for Goldman Sachs by 16% to 25% for 2026 through 2028"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23 DGS10",
+          "excerpt": "DGS10 latest=2026-07-23=4.7100000000 \u0394=0.3600000000000003 (8.275862068965525%)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4443,
+        "capped_chars": 4443,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 219622,
+        "capped_chars": 219622,
+        "raw_tokens": 54906,
+        "capped_tokens": 54906
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2918,
+        "capped_chars": 2918,
+        "raw_tokens": 730,
+        "capped_tokens": 730
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 86294,
+        "capped_chars": 9966,
+        "raw_tokens": 21574,
+        "capped_tokens": 2492
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98542,
+        "capped_chars": 73817,
+        "raw_tokens": 24635,
+        "capped_tokens": 18454
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 40265,
+  "started_at": "2026-08-07T03:08:42+00:00"
+}

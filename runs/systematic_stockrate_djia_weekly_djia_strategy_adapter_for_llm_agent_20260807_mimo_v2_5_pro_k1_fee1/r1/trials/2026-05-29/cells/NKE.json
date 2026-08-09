@@ -1,0 +1,191 @@
+{
+  "cell": "NKE",
+  "symbols": [
+    "NKE"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33727,
+    "tokens_out": 1233,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037426,
+    "basis": "reported"
+  },
+  "views": {
+    "NKE": {
+      "symbol": "NKE",
+      "score": -1.0,
+      "rationale": "Nike is in a severe fundamental deterioration with no credible near-term re-rating catalyst. Q3 FY2026 (Feb 2026) showed EPS of $0.35, down 35% YoY from $0.54, with operating income collapsing to $650M from $844M YoY. Operating cash flow plunged 76% YoY to $430M. Gross margin compressed 130bps due to tariff headwinds, and operating margin has fallen to just 5.8% (from 7.5% a year ago). Net margin is now 4.8%, down from 7.0% a year ago. The company is losing market share \u2014 global athletic footwear share fell to 22.9% in 2025, down ~3pp YoY, with third consecutive year of decline per Euromonitor. Competition from On Running, Hoka, and Adidas is intensifying. Short interest has surged to 4.67% from 0.41% at CEO Hill's appointment. The stock trades at 31x diluted PE despite a deteriorating earnings trajectory \u2014 this is expensive for a company with no demonstrated top-line growth since FY22 and declining margins. Management has pushed back the growth recovery timeline to Q2 FY2027. Legal overhang from IEEPA tariff refund class action ($1B at stake) adds further risk. News sentiment is deeply negative (mean -0.39 over 90 days). The stock is down 26% in the last quarter alone, trading near 12-year lows, yet the PE multiple remains elevated relative to the earnings power. Q4 FY2026 earnings on June 30 is a potential catalyst but likely to confirm continued weakness rather than inflection. All three pillars \u2014 deteriorating fundamentals, expensive valuation vs. deteriorating earnings, and no positive near-term catalyst \u2014 align negatively.",
+      "key_factors": [
+        "Q3 FY2026 EPS down 35% YoY to $0.35; operating income down 23% YoY to $650M",
+        "Operating cash flow collapsed 76% YoY to $430M in Q3",
+        "Global athletic footwear market share fell to 22.9% in 2025, third consecutive year of decline",
+        "Operating margin compressed to ~5.8% with 37% of assortment sold at discounts",
+        "PE of 31x is expensive for a company with declining revenues, margins, and no demonstrated growth recovery",
+        "Short interest surged to 4.67% from 0.41% at CEO appointment, signaling market skepticism",
+        "IEEPA tariff refund class action lawsuit ($1B at stake) adds legal overhang",
+        "News sentiment deeply negative at -0.39 mean over 90 days",
+        "Management pushed growth recovery timeline to Q2 FY2027; no near-term positive catalyst",
+        "Competition intensifying from On Running, Hoka, Adidas gaining share"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-02-28 Q3",
+          "excerpt": "revenue=11.28B eps_diluted=0.35 operating_income=650.00M net_income=520.00M operating_cash_flow=430.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-02-28 Q3 YoY",
+          "excerpt": "YoY: revenue=+0.1% eps_diluted=-35.2% net_income=-34.5% operating_cash_flow=-76.0%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=31.193 p_b=4.981 net_margin=0.048 roe=0.16 operating_margin=0.062"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "logos-pres.md",
+          "excerpt": "Nike's share of the global athletic footwear market fell to 22.9% in 2025, losing about 3 percentage points year-over-year. This is the third consecutive year of decline"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "logos-pres.md",
+          "excerpt": "shorts had reached 4.67% by early May, compared to 0.41% at the time of Hill's appointment"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "logos-pres.md",
+          "excerpt": "operating margins have fallen below 6%, and the share of discounted goods remains high \u2013 about 37% of the assortment is sold at discounts"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-15",
+          "excerpt": "Nike stock has plummeted to a 12-year low, down 34% year-to-date, as the company faces declining Greater China revenue, tariff pressures, and margin compression. Management has pushed back the timeline for growth recovery to Q2 fiscal 2027."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-09",
+          "excerpt": "Nike was hit with a proposed consumer class action in Portland, Oregon federal court on May 9, 2026, alleging the sportswear giant raised footwear and apparel prices to offset roughly $1 billion in IEEPA tariff duties"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "90d_mean",
+          "excerpt": "mean=-0.386 over 62 articles"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-28",
+          "excerpt": "close=47.37 quarterly delta=-25.9%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NKE",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4500,
+        "capped_chars": 4500,
+        "raw_tokens": 1125,
+        "capped_tokens": 1125
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224347,
+        "capped_chars": 224347,
+        "raw_tokens": 56087,
+        "capped_tokens": 56087
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1911,
+        "capped_chars": 1911,
+        "raw_tokens": 478,
+        "capped_tokens": 478
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 15319,
+        "capped_chars": 4374,
+        "raw_tokens": 3830,
+        "capped_tokens": 1094
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 97398,
+        "capped_chars": 76761,
+        "raw_tokens": 24350,
+        "capped_tokens": 19189
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 38745,
+  "started_at": "2026-08-07T03:01:45+00:00"
+}

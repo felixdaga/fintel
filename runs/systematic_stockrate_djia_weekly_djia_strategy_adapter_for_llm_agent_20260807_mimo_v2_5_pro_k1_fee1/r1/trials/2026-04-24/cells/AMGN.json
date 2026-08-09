@@ -1,0 +1,186 @@
+{
+  "cell": "AMGN",
+  "symbols": [
+    "AMGN"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29588,
+    "tokens_out": 894,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03227,
+    "basis": "reported"
+  },
+  "views": {
+    "AMGN": {
+      "symbol": "AMGN",
+      "score": 0.15,
+      "rationale": "Amgen shows solid fundamental health with 10% YoY revenue growth, 14 blockbuster products, and strong cash generation ($4.68B operating cash flow in Q3 2025). However, the company faces significant headwinds: $54.6B debt with 8x debt-to-equity, bios ,  XGEVA patent cliffs ($6B+ revenue at risk), and MariTide obesity drug is 2-3 years behind competitors. Valuation is stretched at 44.7x P/E vs 33.6-49.7x range, near the top. Q1 2026 earnings on April 30 could provide a near-term catalyst, but consensus expects a 3.1% EPS decline. The combination of solid execution, stretched valuation, and material near-term risks warrants a mildly positive but cautious score.",
+      "key_factors": [
+        "10% YoY revenue growth with volume1% volume growth",
+        "14 products exceeding $1B in sales",
+        "$54.6B total debt with 8.024x debt-to-equity ratio",
+        "P/E of 44.67x near top of 33.6-49.7x 1-year range",
+        "Prolia/XGEVA patent cliff with $6B+ revenue at risk from biosimilars",
+        "MariTide obesity drug 2-3 years behind Lilly/Novo competitors",
+        "Q1 2026 earnings on April 30 with consensus expecting 3.1% EPS decline",
+        "$6B debt reduction in 2025 while investing $7B in R&D",
+        "Biosimilar portfolio grew 37% to $3B in 2025",
+        "Operating cash flow of $4.68B in Q3 2025, up 31.2% YoY"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=9.56B net_income=3.22B eps_diluted=5.93 operating_cash_flow=4.68B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3 balance sheet",
+          "excerpt": "total_debt=54.59B total_equity=9.62B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=44.67 p_b=25.103 debt_to_equity=8.024"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-04-24..2026-04-23",
+          "excerpt": "pe_diluted 33.6..49.7"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Amgen proxy 2026",
+          "excerpt": "10% year-over-year revenue and sales growth, 18 products achieving record sales, 14 products exceeding $1 billion in sales"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Amgen SWOT 2026",
+          "excerpt": "Prolia/XGEVA (denosumab) faces biosimilar competition beginning 2025-2026, potentially eroding a combined $6B+ annual revenue stream"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Amgen SWOT 2026",
+          "excerpt": "MariTide is 2-3 years behind Novo Nordisk's Wegovy and Eli Lilly's Mounjaro/Zepbound"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-17 barchart",
+          "excerpt": "analysts expect AMGN to report an adjusted EPS of $4.75, down 3.1% from $4.90 in the prior year's quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Amgen proxy 2026",
+          "excerpt": "reduced our debt outstanding by $6 billion and returned $5 billion of capital to our stockholders in dividends"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMGN",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3777,
+        "capped_chars": 3777,
+        "raw_tokens": 944,
+        "capped_tokens": 944
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 252731,
+        "capped_chars": 252731,
+        "raw_tokens": 63183,
+        "capped_tokens": 63183
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1569,
+        "capped_chars": 1569,
+        "raw_tokens": 392,
+        "capped_tokens": 392
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 16782,
+        "capped_chars": 4094,
+        "raw_tokens": 4196,
+        "capped_tokens": 1024
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98365,
+        "capped_chars": 79753,
+        "raw_tokens": 24592,
+        "capped_tokens": 19939
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 62509,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

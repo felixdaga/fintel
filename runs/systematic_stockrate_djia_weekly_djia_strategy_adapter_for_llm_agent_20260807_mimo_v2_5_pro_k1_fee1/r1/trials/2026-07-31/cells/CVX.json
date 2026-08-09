@@ -1,0 +1,174 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35839,
+    "tokens_out": 1140,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039259,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "rationale": "Chevron's fundamental health and trajectory are deteriorating sharply. Q1 2026 showed EPS of $1.11, down 44.5% YoY and 39% QoQ, with operating cash flow collapsing 51.6% YoY to just $2.51B. Net margin has compressed from 7.8% in mid-2025 to 5.9% currently, and ROE has fallen from 10.5% to 5.9%. The balance sheet has expanded significantly (total assets up to $329.5B from $256.4B a year ago, likely from the Hess acquisition), but equity growth has not kept pace proportionally, and liabilities have surged to $140.2B. Valuation is extremely stretched: P/E of 33.9x is at the top of its 365-day range (16.8-34.8), nearly double the level from a year ago (16.9x), while earnings power has actually declined. P/B of 2.0x is also at the top of its range. The stock is pricing in a recovery that the fundamentals do not yet support. Near-term, Q2 earnings are expected July 31 with analyst estimates of $5.56 EPS (vs $1.77 YoY) and $61.97B revenue, which would represent a massive beat if achieved\u2014but this is driven by elevated oil prices from Middle East tensions (WTI was $109.76 in early May, though it has since fallen to $85.15). The geopolitical oil premium is fragile and WTI has already dropped 22% from its May highs. If oil prices normalize, the earnings trajectory deteriorates further. The combination of collapsing earnings, peak valuation multiples, and commodity price risk creates a highly unfavorable risk/reward. The OPEC+ production pause and geopolitical tensions provide temporary support but are not durable fundamental catalysts\u2014they are headline risks that can reverse quickly.",
+      "key_factors": [
+        "Q1 2026 EPS of $1.11, down 44.5% YoY and 39% QoQ\u2014severe earnings deterioration",
+        "Operating cash flow collapsed to $2.51B in Q1 2026 vs $9.38B in Q3 2025, a 73% QoQ decline",
+        "P/E of 33.9x is at the top of its 365-day range (16.8-34.8), nearly double the 16.9x level from July 2025",
+        "Net margin compressed from 7.8% to 5.9% and ROE from 10.5% to 5.9% over the past year",
+        "WTI crude has fallen 22% from $109.76 in early May to $85.15 on July 30, undermining the oil price tailwind",
+        "Balance sheet leverage increased with total liabilities rising to $140.2B from $106.3B a year ago (Hess acquisition)",
+        "Q2 2026 earnings report on July 31 is a binary event with consensus EPS of $5.56\u2014any miss would be severely punished at current valuation",
+        "Geopolitical oil premium from Middle East tensions is fragile and not a durable fundamental catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=48.61B net_income=2.29B eps_diluted=1.11 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=47.61B eps_diluted=2"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=33.899 p_b=2.017 net_margin=0.059 roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-31",
+          "excerpt": "pe_diluted=16.906 p_b=1.77 net_margin=0.078 roe=0.105"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "excerpt": "DCOILWTICO=85.15 (down from 109.76 on 2026-05-04)"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-30",
+          "excerpt": "Analysts expect Chevron to report second-quarter earnings per share of $5.56, up from $1.77 in last year's second quarter"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-20",
+          "excerpt": "Chevron faces headwinds including negative free cash flow in Q1 2026, legal issues, geopolitical risks in Venezuela, and ongoing restructuring from its Hess acquisition"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225267,
+        "capped_chars": 225267,
+        "raw_tokens": 56317,
+        "capped_tokens": 56317
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3291,
+        "capped_chars": 3291,
+        "raw_tokens": 823,
+        "capped_tokens": 823
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 52734,
+        "capped_chars": 12794,
+        "raw_tokens": 13184,
+        "capped_tokens": 3198
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 106525,
+        "capped_chars": 83964,
+        "raw_tokens": 26631,
+        "capped_tokens": 20991
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50272,
+  "started_at": "2026-08-07T03:09:32+00:00"
+}

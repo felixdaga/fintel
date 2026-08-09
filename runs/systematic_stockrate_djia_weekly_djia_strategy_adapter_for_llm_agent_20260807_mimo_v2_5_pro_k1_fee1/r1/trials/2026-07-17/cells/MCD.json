@@ -1,0 +1,189 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31181,
+    "tokens_out": 1202,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034787,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's presents a mixed but slightly positive picture. The franchise-heavy model (~95% franchised) generates stable, high-margin cash flows with strong operating margins (46.3% in Q1 2026) and net margins (~31.6%). YoY growth remains solid with revenue +9.4% and EPS +6.9% in Q1 2026, though QoQ trends show sequential deceleration (-7.9% revenue, -12.6% EPS) reflecting normal seasonality and some consumer softness. The balance sheet carries negative equity (-$1.29B) due to aggressive capital returns (dividends + buybacks), which is structural to the model rather than alarming. The stock has pulled back ~20% from its 52-week high of $341.75 to $273.46, trading at a forward P/E of ~20.3x vs. the restaurant industry's ~23x, representing a ~12% discount. However, near-term headwinds are real: lower-income consumer traffic is declining, Q2 comparable sales are expected to decelerate meaningfully (April slightly negative in U.S. and International Operated Markets), restructuring charges run through 2027, and the effective tax rate is rising to 22%. The NEXT strategy details aren't due until September, limiting near-term catalysts. Oil prices have declined significantly (-12% over the period), which could benefit franchisee costs. The stock's defensive qualities and 49-year dividend growth streak provide downside support, but the lack of a clear near-term fundamental catalyst and ongoing consumer pressure cap the upside. Mildly attractive at current levels given the valuation discount and durable franchise model, but not compelling enough for a stronger rating.",
+      "key_factors": [
+        "Franchise-heavy model (~95% franchised) generating stable high-margin cash flows with 46.3% operating margins",
+        "YoY growth solid (revenue +9.4%, EPS +6.9% in Q1 2026) but QoQ deceleration signals some softness",
+        "Stock trading at ~20.3x forward P/E vs. 23x industry average, ~12% discount after 20% pullback from highs",
+        "Lower-income consumer traffic declining; Q2 comparable sales expected to decelerate with April slightly negative",
+        "Restructuring charges through 2027 and rising effective tax rate (22% vs 19.8%) as headwinds",
+        "No clear near-term catalyst until September NEXT strategy investor event",
+        "Declining oil prices (-12%) could benefit franchisee unit economics",
+        "49-year dividend growth streak and defensive positioning provide downside support"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-07 Q1",
+          "excerpt": "revenue=6.52B net_income=1.98B eps_diluted=2.78 operating_income=2.95B operating_margin=0.463"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 growth",
+          "excerpt": "YoY: revenue=+9.4% eps_diluted=+6.9%; QoQ: revenue=-7.9% eps_diluted=-12.6%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=273.46; range high=341.75 low=264.09; quarterly delta=-10.7%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=0 net_margin=0.316 operating_margin=0.463"
+        },
+        {
+          "source_type": "news",
+          "source_id": "finance.yahoo.com McDonald's Stock Lags Industry",
+          "excerpt": "trading at a forward 12-month P/E of 20.28, below the Zacks industry multiple of 23.01; stock closed at $274.60, nearly 20% below 52-week high of $341.75"
+        },
+        {
+          "source_type": "news",
+          "source_id": "finance.yahoo.com McDonald's Stock Lags Industry",
+          "excerpt": "McDonald's expects second-quarter comparable-sales growth to decelerate meaningfully; April comparable sales were slightly negative in both U.S. and International Operated Markets"
+        },
+        {
+          "source_type": "news",
+          "source_id": "247wallst.com McDonald's at 52-Week Low",
+          "excerpt": "restructuring charges running through 2027, 4% to 6% higher interest expense, and a 22.0% effective tax rate versus 19.8% prior year"
+        },
+        {
+          "source_type": "news",
+          "source_id": "247wallst.com McDonald's at 52-Week Low",
+          "excerpt": "NEXT strategy financial details not due until the September investor event, no obvious near-term catalyst to force a re-rating"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "DCOILWTICO 2026-07-16",
+          "excerpt": "WTI crude at $80.03, down from ~$91 in April, -12.1% decline"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fourweekmba.com McDonald's Business Model",
+          "excerpt": "McDonald's is a heavy-franchised business model; over 60% of total revenues came from franchised restaurants; long-term goal 95% franchised"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215501,
+        "capped_chars": 215501,
+        "raw_tokens": 53875,
+        "capped_tokens": 53875
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1292,
+        "capped_chars": 1292,
+        "raw_tokens": 323,
+        "capped_tokens": 323
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 3816,
+        "capped_chars": 1016,
+        "raw_tokens": 954,
+        "capped_tokens": 254
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 91157,
+        "capped_chars": 70168,
+        "raw_tokens": 22789,
+        "capped_tokens": 17543
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 37151,
+  "started_at": "2026-08-07T03:08:03+00:00"
+}

@@ -1,0 +1,194 @@
+{
+  "cell": "IBM",
+  "symbols": [
+    "IBM"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 33714,
+    "tokens_out": 1194,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037296,
+    "basis": "reported"
+  },
+  "views": {
+    "IBM": {
+      "symbol": "IBM",
+      "score": 0.15,
+      "rationale": "IBM shows solid fundamental health with Q1 2026 revenue growth of 6% YoY, strong software (+8%) and infrastructure (+12%) performance, and record IBM Z quarter (+48%). Free cash flow grew 13% to $2.2B, the highest Q1 in a decade. Operating margins expanded 140bps and diluted operating EPS grew 19%. However, the stock has declined ~25% over the past quarter, and the P/E has compressed from ~40-50x to 20.5x, suggesting significant de-rating. The QoQ trajectory shows revenue and EPS declining sharply (rev -6.2%, EPS -44.6%), though this reflects Q2 2025's seasonally strong quarter rather than a fundamental deterioration. YoY metrics remain healthy. The balance sheet carries elevated debt ($57.7B long-term debt per filing) following the $11.6B Confluent acquisition, with total liabilities of $123B against $33B equity. Valuation at 20.5x P/E is near the low end of its 12-month range (20.1-51.2), making it cheap vs. its own history. However, consulting growth is sluggish (+1% CC), federal contract cancellations ($100M) create headwinds, and the Iran war is causing deal delays. The Q1 earnings beat ($1.91 vs $1.81 est.) was met with a 7-9% stock decline, indicating the market was disappointed by guidance maintenance rather than raises. No clear near-term catalyst exists to re-rate the stock, though the FedRAMP authorization of 11 AI products and the Confluent integration could provide medium-term tailwinds.",
+      "key_factors": [
+        "Q1 2026 revenue +6% YoY with software +8% and infrastructure +12%; record IBM Z quarter (+48%)",
+        "Free cash flow $2.2B, up 13% YoY, highest Q1 in a decade; operating margin expansion of 140bps",
+        "P/E compressed to 20.5x from 40-50x range over past year, near 12-month low of 20.1x",
+        "Stock down ~25% in past quarter despite earnings beat, reflecting guidance disappointment and AI disruption concerns",
+        "Consulting growth sluggish at +1% CC with 15 federal contract cancellations ($100M) and Iran war deal delays",
+        "Balance sheet leverage elevated post-Confluent acquisition ($11.6B); long-term debt $57.7B",
+        "Generative AI book of business >$12.5B and ARR $24.6B (+10% YoY) provide medium-term revenue visibility",
+        "FedRAMP authorization of 11 AI products could unlock federal/regulated market opportunities"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1",
+          "excerpt": "revenue=15.92B net_income=1.22B eps_diluted=1.28 operating_cash_flow=5.17B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-23 Q1 growth",
+          "excerpt": "YoY: revenue=+9.5% eps_diluted=+14.3% net_income=+15.3% operating_cash_flow=+18.3%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "excerpt": "pe_diluted=20.45 p_b=6.653 net_margin=0.156 roe=0.325"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-05-01..2026-04-30",
+          "excerpt": "pe_diluted 20.1..51.2 | p_b 6.5..10.8"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-30",
+          "excerpt": "close=230.98 quarterly delta=-25.3%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-22 MotMot",
+          "excerpt": "6-04-23 Benzinga_earnings_beat_detail"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-23 Motley_Fool",
+          "excerpt": "IBM fell 9% after reiterating 2026 guidance without raising it"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bellwetherbrief.com_risks",
+          "excerpt": "Consulting is currently facing significant pressure...a 2% decline in Consulting revenue to $5.1 billion, compounded by a 15.6% drop in signings"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bellwetherbrief.com_risks",
+          "excerpt": "15 federal contract cancellations representing $100 million in future payments"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "yahoo_finance_ibm",
+          "excerpt": "generative AI book of business now stands at more than $12.5 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "gurufocus_q1_2026",
+          "excerpt": "ARR: $24.6 billion, up 10% year-over-year; Free Cash Flow: $2.2 billion, up 13% year-over-year"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "IBM",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3795,
+        "capped_chars": 3795,
+        "raw_tokens": 949,
+        "capped_tokens": 949
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224588,
+        "capped_chars": 224588,
+        "raw_tokens": 56147,
+        "capped_tokens": 56147
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30817,
+        "capped_chars": 30817,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2782,
+        "capped_chars": 2782,
+        "raw_tokens": 696,
+        "capped_tokens": 696
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 58359,
+        "capped_chars": 11863,
+        "raw_tokens": 14590,
+        "capped_tokens": 2966
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 127671,
+        "capped_chars": 83771,
+        "raw_tokens": 31917,
+        "capped_tokens": 20942
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 57005,
+  "started_at": "2026-08-07T02:57:56+00:00"
+}

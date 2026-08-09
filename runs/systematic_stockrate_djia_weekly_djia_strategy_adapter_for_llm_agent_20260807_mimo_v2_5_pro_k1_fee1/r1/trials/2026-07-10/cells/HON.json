@@ -1,0 +1,187 @@
+{
+  "cell": "HON",
+  "symbols": [
+    "HON"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28583,
+    "tokens_out": 1223,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032252,
+    "basis": "reported"
+  },
+  "views": {
+    "HON": {
+      "symbol": "HON",
+      "score": -1.0,
+      "rationale": "HON is in a deeply deteriorating fundamental state following its June 29, 2026 spinoff into four entities. The Q1 2026 results show severe earnings collapse: EPS of $1.29 vs $2.22 YoY (-41.9%), net income down 45.8%, and critically, operating cash flow turned deeply negative at -$650M vs +$597M a year ago. Revenue was essentially flat at +2.4% YoY but missed estimates ($9.14B vs $9.3B expected). The balance sheet is deteriorating with total equity shrinking from $18.02B to $14.67B while debt expanded from $27.08B to $32.11B, pushing debt-to-equity to 2.19x. Valuation is extremely stretched: P/E of 34.8x is at the top of its 12-month range (21.6-37.0), having expanded from ~22x in Oct 2025 despite collapsing earnings. P/B of 9.7x is also near the top of its 6.8-10.4 range. The stock has already declined 9.2% on July 9 alone per news reports, yet remains expensive relative to deteriorating fundamentals. The spinoff creates significant execution risk, separation costs of $1.5-2B, and management distraction. Q2 2026 consensus expects EPS of $1.82, a 66.9% YoY decline, with revenue expected to drop 22.2% to $8.06B \u2014 reflecting the aerospace divestiture impact. The post-spin entity (Honeywell Technologies) guides to $3.95-$4.15 adjusted EPS for H2 2026, implying the full-year run-rate is far below historical levels. Near-term catalyst (Q2 earnings July 23) is likely negative given the expected profit collapse. All three pillars \u2014 deteriorating fundamentals, stretched valuation, and negative near-term catalyst \u2014 are aligned bearishly.",
+      "key_factors": [
+        "Q1 2026 EPS collapsed 41.9% YoY to $1.29; operating cash flow turned negative at -$650M",
+        "P/E at 34.8x is at the top of 12-month range (21.6-37.0) despite rapidly deteriorating earnings",
+        "Balance sheet deteriorating: equity down to $14.67B from $18.02B, debt up to $32.11B, D/E at 2.19x",
+        "June 29 spinoff into four entities creates execution risk, $1.5-2B separation costs, and management distraction",
+        "Q2 2026 consensus: EPS $1.82 (-66.9% YoY), revenue $8.06B (-22.2%) \u2014 negative near-term catalyst at July 23 earnings",
+        "Stock already declining (9.2% drop on July 9) but valuation remains stretched vs deteriorating fundamentals"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=9.14B net_income=795.00M eps_diluted=1.29 operating_cash_flow=-650.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "rev=8.93B eps=2.22 operating_cash_flow=597.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=34.788 p_b=9.725 debt_to_equity=2.189"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 21.6..37.0 | p_b 6.8..10.4"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-09",
+          "excerpt": "Honeywell continued its post-spinoff decline, losing another 9.2%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-03",
+          "excerpt": "Honeywell completed its spinoff of its aerospace division on June 29, 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-03",
+          "excerpt": "analysts expect HON to report a profit of $4.83 per share on a diluted basis, down 12.2% from $5.50 per share in the year-ago quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-03",
+          "excerpt": "It is anticipated that the company will report an EPS of $1.82, marking a 66.91% fall compared to the same quarter of the previous year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-03",
+          "excerpt": "revenue to be $8.06 billion, indicating a 22.18% decrease compared to the same quarter of the previous year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-03",
+          "excerpt": "tariff exposure, softer end market sentiment and portfolio reshaping costs, including an estimated US$1.5b to US$2b of separation expenses"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HON",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3050,
+        "capped_chars": 3050,
+        "raw_tokens": 762,
+        "capped_tokens": 762
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 249434,
+        "capped_chars": 249434,
+        "raw_tokens": 62358,
+        "capped_tokens": 62358
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 878,
+        "capped_chars": 878,
+        "raw_tokens": 220,
+        "capped_tokens": 220
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1662,
+        "capped_chars": 1662,
+        "raw_tokens": 416,
+        "capped_tokens": 416
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 28475,
+        "capped_chars": 6163,
+        "raw_tokens": 7119,
+        "capped_tokens": 1541
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 67745,
+        "capped_chars": 49633,
+        "raw_tokens": 16937,
+        "capped_tokens": 12408
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 41631,
+  "started_at": "2026-08-07T03:06:58+00:00"
+}

@@ -1,0 +1,204 @@
+{
+  "cell": "MSFT",
+  "symbols": [
+    "MSFT"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 53705,
+    "tokens_out": 1383,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.057854,
+    "basis": "reported"
+  },
+  "views": {
+    "MSFT": {
+      "symbol": "MSFT",
+      "score": 0.35,
+      "rationale": "Microsoft demonstrates strong fundamental health with 18.3% YoY revenue growth, 23.4% YoY EPS growth, and robust operating cash flow of $46.7B in Q3 FY2026. Azure's 40% growth and $37B annualized AI revenue run rate underscore durable competitive positioning. The balance sheet is fortress-like with $78.3B cash vs $40.3B debt. However, the stock has already re-rated significantly from its April 2026 lows (~$356) to $409, and the P/E of 29.1x sits near the middle of its 25.4-42.8x 52-week range rather than at a clear discount. The massive $190B 2026 capex plan creates near-term free cash flow pressure (FCF margin fell to 19.1% from 29% YoY) and margin compression risk, with gross margin declining to 67.6% from 68.7%. The OpenAI partnership restructuring removes exclusivity but preserves IP access through 2032, which is a net positive for long-term economics. Near-term catalysts are limited \u2014 the next earnings event is July 29, 2026, and the stock has already responded to the Q3 beat. The voluntary buyout program signals cost discipline but also workforce restructuring. Overall, this is a high-quality franchise at a fair-to-slightly-cheap valuation relative to its own history, warranting a modestly positive score.",
+      "key_factors": [
+        "Strong Q3 FY2026: revenue +18.3% YoY, EPS $4.27 beating $4.06 consensus, Azure +40% YoY",
+        "AI revenue run rate of $37B (+123% YoY) demonstrates monetization of massive capex investments",
+        "P/E of 29.1x sits near middle of 52-week range (25.4-42.8x), not a clear bargain vs own history",
+        "$190B 2026 capex plan pressures FCF (margin down from 29% to 19.1%) and compresses gross margins",
+        "Fortress balance sheet: $78.3B cash vs $40.3B debt, net cash of $38B",
+        "OpenAI restructuring preserves IP access through 2032 while reducing exclusivity dependency",
+        "Stock has already rallied ~15% from April lows, limiting near-term rerating potential",
+        "Next catalyst (Q4 earnings) not until July 29, 2026 \u2014 no imminent fundamental catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3",
+          "excerpt": "revenue=82.89B net_income=31.78B eps_diluted=4.27 operating_cash_flow=46.68B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=29.137 ev_to_ebit=22.054 p_b=8.419 net_margin=0.357 roe=0.289"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 25.4..42.8 | ev_e_e 19.2..34.1 | p_b 7.3..12.6"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "excerpt": "close=409.43 range high=555.45 low=356.28"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fifthperson.com Q3 2026",
+          "excerpt": "Revenue from AI business surged 123% year-on-year, with an annual run rate of US$37 billion. Operating margin improved from 45.7% in Q3 2025 to 46.3% in Q3 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fifthperson.com Q3 2026 capex",
+          "excerpt": "Capital expenditures declined from US$37.5 billion to US$31.9 billion quarter-on-quarter. The company returned US$10.2 billion to shareholders"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fifthperson.com Q3 2026 guidance",
+          "excerpt": "CapEx is expected to exceed US$40 billion in Q4 2026 and reach US$190 billion in 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "globaldatacenterhub.com capex",
+          "excerpt": "The selloff was not about earnings quality. It was about the disclosed 2026 calendar capex plan of approximately $190 billion, which exceeded analyst consensus of $154.6 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "globaldatacenterhub.com margins",
+          "excerpt": "Gross margin declined to 67.6 percent from 68.7 percent, the lowest level since 2022"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stockstory.org FCF",
+          "excerpt": "Free Cash Flow Margin: 19.1%, down from 29% in the same quarter last year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stockstory.org balance sheet",
+          "excerpt": "$78.27 billion of cash on its balance sheet compared to $40.26 billion of debt. This $38.01 billion net cash position"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Motley Fool 2026-05-04 Azure",
+          "excerpt": "Azure growth at 40%, exceeding analyst expectations of 39%. The company forecasts Azure growth between 39-40% going forward. At 25x trailing earnings"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Motley Fool 2026-05-03 disappointment",
+          "excerpt": "The commercial backlog barely increased sequentially ($2B gain vs. $233B prior quarter), with much of the growth attributed to OpenAI rather than broad-based demand. Azure growth remained flat at 39% constant-currency across three quarters"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MSFT",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3930,
+        "capped_chars": 3930,
+        "raw_tokens": 982,
+        "capped_tokens": 982
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242692,
+        "capped_chars": 242692,
+        "raw_tokens": 60673,
+        "capped_tokens": 60673
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4406,
+        "capped_chars": 4406,
+        "raw_tokens": 1102,
+        "capped_tokens": 1102
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 342390,
+        "capped_chars": 76513,
+        "raw_tokens": 85598,
+        "capped_tokens": 19128
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88600,
+        "capped_chars": 64039,
+        "raw_tokens": 22149,
+        "capped_tokens": 16010
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 59178,
+  "started_at": "2026-08-07T02:59:56+00:00"
+}

@@ -1,0 +1,190 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32407,
+    "tokens_out": 1371,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03652,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.35,
+      "rationale": "Goldman Sachs shows strong fundamental health and positive trajectory. Q1 2026 revenue of $17.23B grew 14.4% YoY with EPS of $17.55 (up 24.3% YoY), driven by a 48% surge in investment banking fees to $2.84B and robust trading activity. The firm is executing a disciplined refocus on its core institutional franchise\u2014Global Banking & Markets and Asset & Wealth Management\u2014while exiting lower-return consumer activities. ROE improved to 14.7% (from ~12% a year ago), and net margin expanded to 29.9%. The investment banking backlog is at multi-year highs, providing visibility into future fee generation. However, balance sheet leverage is high (total liabilities $1.94T vs equity $122.8B), operating cash flow was deeply negative at -$31.87B in Q1 (typical for GS's trading-book dynamics but still a risk factor), and the TTM data is incomplete due to a fiscal reporting gap, limiting full-cycle assessment. On valuation, the stock trades at a P/E of 17.2x, near the top of its 12-month range (13.1\u201318.4x), and P/B of 2.53x is at the high end of its 1.6\u20132.5x window\u2014suggesting the market has already priced in much of the earnings recovery. This caps the upside from a pure valuation standpoint. The near-term catalyst is credible: Goldman was named lead underwriter for SpaceX's potentially record-breaking IPO (targeting $75B+ raise at $1.75T valuation in June 2026), which could generate over $1B in underwriting fees and has already driven a 5.8% stock pop. Combined with a record M&A pipeline and expectations for continued capital markets recovery, this provides a modest positive tilt. The score of +0.35 reflects solid fundamentals and a real near-term catalyst, tempered by valuation that is no longer cheap versus its own recent history.",
+      "key_factors": [
+        "Q1 2026 revenue +14.4% YoY to $17.23B; EPS +24.3% YoY to $17.55; investment banking fees surged 48% to $2.84B",
+        "ROE improved to 14.7% from ~12% a year ago; net margin expanded to 29.9%; operating margin 37.5%",
+        "Record investment banking backlog provides multi-quarter fee visibility",
+        "Strategic refocus on high-return Global Banking & Markets and Asset & Wealth Management; exit from consumer banking",
+        "Lead underwriter for SpaceX IPO (June 2026, $75B+ raise, $1.75T valuation) \u2014 potential $1B+ in fees",
+        "P/E of 17.2x near top of 12-month range (13.1\u201318.4x); P/B of 2.53x at high end of 1.6\u20132.5x window \u2014 not cheap",
+        "Operating cash flow deeply negative at -$31.87B in Q1; high balance sheet leverage ($1.94T liabilities vs $122.8B equity)",
+        "GSIB surcharge increase of 50bps in Q1 2026 with possible further 50bps in 2028 constraining capital deployment",
+        "Elevated expense pressures from compensation competition and technology investments (OneGS 3.0)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.23B net_income=5.63B eps_diluted=17.55 operating_income=6.49B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=15.06B eps_diluted=14.12"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=17.189 p_b=2.53 net_margin=0.299 roe=0.147 operating_margin=0.375"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-29",
+          "excerpt": "pe_diluted=13.189 p_b=1.579"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-20",
+          "excerpt": "Goldman Sachs stock surged 5.8% after being named lead underwriter for SpaceX's upcoming June IPO, valued at $2 trillion. The IPO could generate over $1 billion in underwriting fees"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-18",
+          "excerpt": "Goldman Sachs experienced a strong Q1 with investment banking revenue surging 48% year-over-year to $2.84 billion, driven by a surge in M&A activity"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st 2026-05-13",
+          "excerpt": "annualized Return on Tangible Equity (RoTE) of 16.5%...record-shattering investment banking backlog...advisory and underwriting operations experienced an exceptional product-mix acceleration, expanding at a striking 42% year-over-year clip"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com SWOT",
+          "excerpt": "expected increase in its Global Systemically Important Bank surcharge of 50 basis points in the first quarter of 2026, with the possibility of an additional 50 basis point increase in 2028"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 cash flow",
+          "excerpt": "operating_cash_flow=-31.87B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 balance sheet",
+          "excerpt": "total_assets=2060.18B total_liabilities=1937.40B total_equity=122.78B"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4443,
+        "capped_chars": 4443,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 219562,
+        "capped_chars": 219562,
+        "raw_tokens": 54890,
+        "capped_tokens": 54890
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 854,
+        "capped_chars": 854,
+        "raw_tokens": 214,
+        "capped_tokens": 214
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2645,
+        "capped_chars": 2645,
+        "raw_tokens": 661,
+        "capped_tokens": 661
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 64952,
+        "capped_chars": 8544,
+        "raw_tokens": 16238,
+        "capped_tokens": 2136
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 122641,
+        "capped_chars": 100443,
+        "raw_tokens": 30660,
+        "capped_tokens": 25112
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 53537,
+  "started_at": "2026-08-07T03:01:26+00:00"
+}

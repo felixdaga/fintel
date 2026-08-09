@@ -1,0 +1,172 @@
+{
+  "cell": "MCD",
+  "symbols": [
+    "MCD"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 28844,
+    "tokens_out": 802,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03125,
+    "basis": "reported"
+  },
+  "views": {
+    "MCD": {
+      "symbol": "MCD",
+      "score": 0.15,
+      "rationale": "McDonald's presents a mixed but slightly positive picture. The franchise-heavy model (~95% franchised) generates high-margin, recurring revenue streams from rent and royalties, providing structural resilience. Q1 2026 showed solid YoY growth (revenue +9.4%, EPS +6.9%), though QoQ trends were negative due to seasonal factors. The stock has pulled back ~10% over the past quarter, trading near 52-week lows, which may offer a modest entry point for long-term investors. However, significant headwinds persist: negative equity (-$1.29B), elevated leverage, consumer spending pressures, and margin compression risks from value promotions and cost inflation. The valuation data is incomplete (P/E showing 0), making a precise assessment difficult, but the stock appears to be trading at a discount to its recent history based on the price decline. No clear near-term fundamental catalyst exists until the September investor event, limiting rerating potential.",
+      "key_factors": [
+        "Franchise model (~95% franchised) provides high-margin, recurring revenue from rent and royalties",
+        "Q1 2026 YoY growth: revenue +9.4%, EPS +6.9%, operating income +12%",
+        "Stock near 52-week lows with ~10% quarterly decline, potentially offering value entry",
+        "Negative equity (-$1.29B) and high leverage constrain financial flexibility",
+        "Consumer spending pressures and margin compression from value promotions and cost inflation",
+        "No clear near-term catalyst until September investor event"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=6.52B net_income=1.98B eps_diluted=2.78 operating_income=2.95B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+9.4% eps_diluted=+6.9% net_income=+6.2%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_equity=-1.29B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "excerpt": "close=276.49 quarterly delta=-9.9%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-27",
+          "excerpt": "McDonald's reported 4% comparable store sales growth but faces investor concerns over inflation and rising labor costs pressuring margins"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "247wallst.com",
+          "excerpt": "restructuring charges running through 2027, 4% to 6% higher interest expense, and a 22.0% effective tax rate versus 19.8% prior year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "247wallst.com",
+          "excerpt": "the NEXT strategy financial details not due until the September investor event, there is no obvious near-term catalyst to force a re-rating"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MCD",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215489,
+        "capped_chars": 215489,
+        "raw_tokens": 53872,
+        "capped_tokens": 53872
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1384,
+        "capped_chars": 1384,
+        "raw_tokens": 346,
+        "capped_tokens": 346
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 7021,
+        "capped_chars": 2088,
+        "raw_tokens": 1755,
+        "capped_tokens": 522
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 76353,
+        "capped_chars": 59743,
+        "raw_tokens": 19089,
+        "capped_tokens": 14936
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 31659,
+  "started_at": "2026-08-07T03:07:11+00:00"
+}

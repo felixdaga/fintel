@@ -1,0 +1,188 @@
+{
+  "cell": "HD",
+  "symbols": [
+    "HD"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30958,
+    "tokens_out": 1365,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035053,
+    "basis": "reported"
+  },
+  "views": {
+    "HD": {
+      "symbol": "HD",
+      "score": 0.15,
+      "rationale": "Home Depot is a wide-moat, best-in-class retailer with dominant market share (~30%+ US), exceptional ROIC (~33%), and a strategic pivot toward the Pro ecosystem via SRS/GMS acquisitions that expand TAM to ~$1T. However, fundamentals show softening: Q3 FY25 revenue of $41.35B and EPS of $3.62 represent only modest QoQ growth (+3.8% rev, +4.9% EPS), operating cash flow declined QoQ (-7.3%), and the balance sheet carries elevated liabilities ($94.16B) with thin equity ($12.12B) reflecting acquisition-related leverage. The company has guided for flat-to-2% comps in FY26 and mid-single-digit EPS decline in Q1, with management explicitly framing upside as housing-recovery dependent. Valuation has compressed meaningfully: P/E of 20.75x is at the low end of its 365-day range (20.6-28.8), and the stock is down 22% over the last quarter to $304.35, suggesting the market has priced in much of the near-term headwind. Morningstar's fair value estimate of $335 and the Motley Fool's $358 suggest modest upside, while a DCF model yields ~$236, indicating the stock is not cheap on a conservative basis. The Q1 earnings report on May 19 is a near-term catalyst, but consensus expects a 3.9% EPS decline, limiting re-rating potential. News sentiment is moderately positive (mean 0.389). The macro backdrop is mixed: rising 10Y yields (4.47%) and oil ($104.66) are headwinds for consumer spending, but the Fed funds rate is easing slightly (3.63%). Overall, HD is a quality franchise at a more reasonable valuation, but near-term trajectory is constrained by housing headwinds and acquisition integration, warranting a mildly positive score.",
+      "key_factors": [
+        "Wide-moat franchise with ~33% ROIC and dominant 30%+ US market share in $1T+ TAM",
+        "Pro ecosystem expansion via SRS ($18.25B) and GMS ($5.5B) acquisitions driving long-term TAM growth",
+        "P/E of 20.75x at low end of 365-day range (20.6-28.8), stock down 22% in last quarter",
+        "Near-term headwinds: flat-to-2% FY26 comp guidance, Q1 EPS expected -3.9% YoY, housing market weakness",
+        "Elevated balance sheet leverage ($94.16B liabilities vs $12.12B equity) from acquisition funding",
+        "Q1 earnings on May 19 as near-term catalyst, but consensus expects decline limiting re-rating",
+        "Rising rates (10Y at 4.47%) and oil ($104.66) pressuring consumer discretionary spending"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-11-02 Q3",
+          "excerpt": "revenue=41.35B net_income=3.60B eps_diluted=3.62 operating_cash_flow=4.01B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-11-02 Q3 balance sheet",
+          "excerpt": "total_assets=106.27B total_liabilities=94.16B total_equity=12.12B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=20.753 p_b=24.994 roe=1.204"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-14",
+          "excerpt": "close=304.35 quarterly delta -22.0%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st 2026-05-07",
+          "excerpt": "ROIC of 33.2%, TAM expansion to over $1 trillion, fair value $358"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "morningstar 2026",
+          "excerpt": "fair value estimate $335, wide moat, 2026 comps flat to 2%, EPS growth flat to 4%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "acquirersmultiple.com 2026-05-07",
+          "excerpt": "DCF Value: ~$236 Current Price: ~$329 Margin of Safety: ~-28%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-04 Motley Fool",
+          "excerpt": "Higher gas prices squeezing consumer spending, but HD presents buying opportunity due to improved valuations"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "yahoo finance 2026-05-08",
+          "excerpt": "Q1 EPS consensus $3.42, decline of 3.9% YoY, revenues $41.53B up 4.2% YoY"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-14",
+          "excerpt": "DGS10=4.47 DCOILWTICO=104.66 FEDFUNDS=3.63"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "HD",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3028,
+        "capped_chars": 3028,
+        "raw_tokens": 757,
+        "capped_tokens": 757
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224626,
+        "capped_chars": 224626,
+        "raw_tokens": 56156,
+        "capped_tokens": 56156
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1616,
+        "capped_chars": 1616,
+        "raw_tokens": 404,
+        "capped_tokens": 404
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 16637,
+        "capped_chars": 3312,
+        "raw_tokens": 4159,
+        "capped_tokens": 828
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 102606,
+        "capped_chars": 78228,
+        "raw_tokens": 25652,
+        "capped_tokens": 19558
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 65743,
+  "started_at": "2026-08-07T02:59:34+00:00"
+}

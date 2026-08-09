@@ -1,0 +1,186 @@
+{
+  "cell": "MSFT",
+  "symbols": [
+    "MSFT"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 55806,
+    "tokens_out": 1658,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.06078,
+    "basis": "reported"
+  },
+  "views": {
+    "MSFT": {
+      "symbol": "MSFT",
+      "score": 0.35,
+      "rationale": "Microsoft presents a solid fundamental case with strong revenue growth (+18.3% YoY in Q3 FY2026), excellent profitability (46.3% operating margin, 35.7% net margin), and a fortress balance sheet ($78.3B cash vs $40.3B debt). Azure's 40% growth and the AI business reaching a $37B annual run rate (+123% YoY) demonstrate durable competitive positioning. However, the stock is not a screaming bargain \u2014 at 30.4x trailing P/E it sits near the middle of its 25.4\u201342.8x 12-month range, roughly in line with its 5-year median rather than deeply discounted. The massive $190B 2026 capex plan creates near-term margin pressure (gross margin fell to 67.6% from 68.7%), and free cash flow compressed meaningfully. Regulatory headwinds (UK CMA probe, EU/US antitrust scrutiny) and the low 4.4% Copilot conversion rate (20M of 450M M365 subscribers) represent execution risks. On the positive side, Bill Ackman's new position, the upcoming Build conference catalyst, and the stock being the worst-performing Mag 7 name in 2026 (-12% YTD) create a modest rerating opportunity. The score reflects a high-quality franchise at a fair-to-slightly-cheap valuation with a credible near-term catalyst, but tempered by capex intensity and margin headwinds.",
+      "key_factors": [
+        "Strong Q3 FY2026: revenue +18.3% YoY to $82.9B, EPS $4.27 beating consensus by 5.5%",
+        "Azure growing 40% YoY with AI business at $37B annual run rate (+123% YoY)",
+        "P/E of 30.4x sits near middle of 12-month range (25.4\u201342.8x), not deeply discounted vs own history",
+        "Massive $190B 2026 capex plan pressuring margins: gross margin fell to 67.6% from 68.7%, FCF compressed",
+        "Fortress balance sheet: $78.3B cash vs $40.3B debt, net cash of $38B",
+        "Low Copilot conversion at 4.4% (20M of 450M M365 seats) \u2014 large runway but execution risk",
+        "Regulatory headwinds: UK CMA probe (May 14), EU/US antitrust investigations active",
+        "Bill Ackman built new 5.6M share position in Feb 2026; Microsoft Build conference upcoming as catalyst",
+        "Stock -12% YTD, worst Mag 7 performer, creating potential value entry point",
+        "Operating cash flow strong at $46.7B in Q3 (+26% YoY) despite capex surge"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-29 Q3 FY2026",
+          "excerpt": "revenue=82.89B net_income=31.78B eps_diluted=4.27 operating_income=38.40B operating_cash_flow=46.68B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=30.386 ev_to_ebit=23.019 p_b=8.78 net_margin=0.357 roe=0.289 gross_margin=0.688 operating_margin=0.463"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-05-29..2026-05-28",
+          "excerpt": "pe_diluted 25.4..42.8 | ev_to_ebit 19.2..34.1 | p_b 7.3..12.6"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_assets=694.23B total_equity=414.37B total_debt=40.26B cash=78.27B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SWOT Analysis 2026",
+          "excerpt": "Azure grew 40% in Q3 FY2026 and holds roughly 21\u201324% of the global cloud infrastructure market. Only 20 million of Microsoft's 450 million M365 commercial subscribers pay for Copilot \u2014 about 4.4%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "globaldatacenterhub capex analysis",
+          "excerpt": "Calendar 2026 capex plan of approximately $190 billion, which exceeded analyst consensus of $154.6 billion. Gross margin declined to 67.6 percent from 68.7 percent"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14 Reuters CMA probe",
+          "excerpt": "Britain will investigate Microsoft's dominance in business software. CMA to examine bundling of Windows, Word, Excel, Teams, Copilot"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-5-19 Ackman position",
+          "excerpt": "Bill Ackman's Pershing Square sold 95% of its Alphabet holdings to increase positions in Microsoft Microsoft Amazon. Q1 news_id2026-05-28 MotMot2icrosoft stock surged26-Microsoft stock surged surged.34%4 stock surged surged234 stock remains down 12% down 3.4% down  .26-news_sentimentiment22026-0amentalsamentalsamentalssource_id222026-03--3-026-0.30.0.26.0260.26amentalsamentals,0.2026-05-06260002226-0222,"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-22 Ackman MSFT",
+          "excerpt": "Bill Ackman's Pershing Square Capital Management has added Microsoft as a fourth Magnificent Seven stock, purchased at 21x forward earnings"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MSFT",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3930,
+        "capped_chars": 3930,
+        "raw_tokens": 982,
+        "capped_tokens": 982
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 243534,
+        "capped_chars": 243534,
+        "raw_tokens": 60884,
+        "capped_tokens": 60884
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4404,
+        "capped_chars": 4404,
+        "raw_tokens": 1101,
+        "capped_tokens": 1101
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 334937,
+        "capped_chars": 73386,
+        "raw_tokens": 83734,
+        "capped_tokens": 18346
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 113428,
+        "capped_chars": 93154,
+        "raw_tokens": 28357,
+        "capped_tokens": 23289
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 63578,
+  "started_at": "2026-08-07T03:01:44+00:00"
+}

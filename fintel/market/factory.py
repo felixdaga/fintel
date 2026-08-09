@@ -27,7 +27,7 @@ from fintel.market.data.sentiment import NewsSentiment
 from fintel.market.data.store import PriceStore, RecordCache
 from fintel.market.data.synthetic import SyntheticPrices
 from fintel.market.data.web import WebSearch
-from fintel.market.schedule import CustomDates, Quarterly, Schedule, SinglePoint
+from fintel.market.schedule import CustomDates, Quarterly, Schedule, SinglePoint, WeeklyFridays
 from fintel.market.settings import MarketConfig
 from fintel.market.universe import STATIC_PRESETS, Universe, static_preset, symbol_universe
 from fintel.models.market import DataBinding, ScheduleRef, UniverseRef
@@ -37,6 +37,7 @@ SCHEDULES: dict[str, str] = {
     "single_point": "fintel.market.schedule:SinglePoint",
     "custom_dates": "fintel.market.schedule:CustomDates",
     "quarterly": "fintel.market.schedule:Quarterly",
+    "weekly_fridays": "fintel.market.schedule:WeeklyFridays",
 }
 
 # Data sources are not listed here — `catalog` owns that registry so the library
@@ -101,6 +102,8 @@ def build_schedule(ref: ScheduleRef, *, calendar: TradingCalendar | None = None)
         return CustomDates(dates_=tuple(as_date(d) for d in raw), start=start, end=end)
     if ref.kind == "quarterly":
         return Quarterly(start=start, end=end, calendar=cal)
+    if ref.kind == "weekly_fridays":
+        return WeeklyFridays(start=start, end=end, calendar=cal)
     if ":" in ref.kind:
         return resolve(ref.kind)(**params)
     raise ValueError(f"unknown schedule kind {ref.kind!r}; available: {sorted(SCHEDULES)}")

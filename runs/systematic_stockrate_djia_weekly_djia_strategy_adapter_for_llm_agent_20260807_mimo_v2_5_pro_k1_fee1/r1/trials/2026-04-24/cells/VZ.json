@@ -1,0 +1,189 @@
+{
+  "cell": "VZ",
+  "symbols": [
+    "VZ"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 39126,
+    "tokens_out": 1295,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041923,
+    "basis": "reported"
+  },
+  "views": {
+    "VZ": {
+      "symbol": "VZ",
+      "score": 0.15,
+      "rationale": "Verizon presents a mixed but mildly attractive picture. Fundamentals are stable with modest QoQ growth (revenue +3.0%, EPS +2.6% in Q2 2025), strong operating cash flow ($8.97B in Q2 2025), and a solid balance sheet (equity $104.36B). The company is executing on its convergence strategy with the Frontier acquisition expanding fiber to 30M+ locations, and management projects 2026 FCF of $19.5-20.5B with 4-5% EPS growth. However, the U.S. wireless market is saturated with flat wireless service revenue growth expected, and competition from T-Mobile and AT&T remains intense. Valuation has expanded significantly: P/E has risen from ~16.4x in late 2025 to 19.4x currently, near the top of its 15.8-21.2x range, making it less compelling vs its own history. The 6%+ dividend yield provides income support. A near-term catalyst exists with Q1 2026 earnings on April 27, which could re-rate the stock if execution on cost cuts and subscriber momentum continues, but the elevated valuation limits upside. Risks include high debt ($116B net debt), regulatory scrutiny (FCC fines, contractor disputes), and margin pressure from competitive dynamics.",
+      "key_factors": [
+        "Stable fundamentals with modest QoQ growth and strong cash generation",
+        "Frontier acquisition and convergence strategy expanding fiber footprint to 30M+ locations",
+        "Management guidance of 2026 FCF $19.5-20.5B and 4-5% EPS growth",
+        "Valuation expanded: P/E at 19.4x vs 16.4x low in late 2025, near top of historical range",
+        "Saturated U.S. wireless market with flat wireless service revenue growth expected",
+        "Intense competition from T-Mobile and AT&T",
+        "High debt load (~$116B net debt) and regulatory risks (FCC fines, contractor disputes)",
+        "Q1 2026 earnings on April 27 as near-term catalyst"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30 Q2",
+          "excerpt": "revenue=34.50B net_income=5.12B eps_diluted=1.18 operating_cash_flow=8.97B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=33.48B eps_diluted=1.15"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=19.441 p_b=2.043 earnings_yield=0.051"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "sparse_history",
+          "excerpt": "pe_diluted range 15.8..21.2 | p_b 1.7..2.2"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-18 Motley Fool",
+          "excerpt": "Verizon Communications is experiencing a turnaround with strong Q4 2025 results showing 616,000 postpaid phone net additions (best since 2019) and free cash flow of $20.1 billion. Management projects 2026 free cash flow of $21.5 billion with 4-5% earnings per share growth."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Verizon Q3 earnings",
+          "excerpt": "Verizon reaffirmed its full-year 2025 guidance, expecting: Wireless service revenue growth of 2.0%\u20132.8%; Adjusted EBITDA growth of 2.5%\u20133.5%; Adjusted EPS growth of 1.0%\u20133.0%; Operating cash flow between $37\u201339 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Verizon 2026 guidance",
+          "excerpt": "For 2026, Verizon projects total mobility and broadband service revenue growth of 2.0 percent to 3.0 percent, equating to approximately $93 billion. Wireless service revenue is expected to remain approximately flat"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Verizon capital allocation",
+          "excerpt": "Board authorization for up to $25 billion of share repurchases, with at least $3 billion expected in 2026, and an estimated $55 billion of total cash returned to shareholders through the end of 2028"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-22",
+          "excerpt": "Verizon Communications will announce its Q1 2026 earnings on April 27, 2026, via webcast"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Verizon risks",
+          "excerpt": "High debt burden makes it vulnerable to macro headwinds. With a Zacks Rank #3 (Hold), VZ appears to be treading in the middle of the road"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "VZ",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 2216,
+        "capped_chars": 2216,
+        "raw_tokens": 554,
+        "capped_tokens": 554
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 244819,
+        "capped_chars": 244819,
+        "raw_tokens": 61205,
+        "capped_tokens": 61205
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 758,
+        "capped_chars": 758,
+        "raw_tokens": 190,
+        "capped_tokens": 190
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2165,
+        "capped_chars": 2165,
+        "raw_tokens": 541,
+        "capped_tokens": 541
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 36377,
+        "capped_chars": 7857,
+        "raw_tokens": 9094,
+        "capped_tokens": 1964
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 127816,
+        "capped_chars": 104149,
+        "raw_tokens": 31954,
+        "capped_tokens": 26038
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 41020,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

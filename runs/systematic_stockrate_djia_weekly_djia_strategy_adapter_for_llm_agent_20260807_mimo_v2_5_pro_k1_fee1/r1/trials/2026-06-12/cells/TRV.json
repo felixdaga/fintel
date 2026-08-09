@@ -1,0 +1,174 @@
+{
+  "cell": "TRV",
+  "symbols": [
+    "TRV"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29302,
+    "tokens_out": 1080,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032542,
+    "basis": "reported"
+  },
+  "views": {
+    "TRV": {
+      "symbol": "TRV",
+      "score": 0.35,
+      "rationale": "TRV presents a solid fundamental picture for a P&C insurer. Q1 2026 showed strong profitability with EPS of $7.78 (YoY +358% from a weak Q1 2025 base of $1.70), net margin of 15.5%, and ROE of 23.8%. The company has delivered seven consecutive quarters of pre-tax underwriting income exceeding $1 billion, with $1.2B in Q1 2026. Balance sheet is healthy with $31.99B equity and a new $1.2B revolving credit facility. Revenue grew modestly YoY (+1.0%) but was down QoQ (-4.4%), and the quarterly trajectory shows some volatility (Q3 2025 EPS of $8.24 was the peak). Valuation is attractive: P/E of 8.73 is near the low end of its 365-day range (8.3-14.4), and P/B of 2.075 is mid-range (1.9-2.2). The stock is trading at a significant discount to its own history \u2014 the P/E was 14.3x just a year ago. Earnings yield of 11.5% is compelling. However, risks include catastrophe losses ($761M pre-tax in Q1), social inflation in casualty lines, and climate-related pressures on homeowners insurance. The macro backdrop is mixed: higher Treasury yields (10Y at 4.45%) support investment income but rising rates could pressure the economy. No clear near-term fundamental catalyst is identified beyond continued earnings momentum and potential for further buybacks. The combination of strong profitability, attractive valuation vs. own history, and solid capital returns supports a mildly-to-moderately positive score.",
+      "key_factors": [
+        "P/E of 8.73x is near the low end of 365-day range (8.3-14.4), significantly below the 14.3x level from a year ago \u2014 attractive vs own history",
+        "Strong underwriting profitability: 7 consecutive quarters of >$1B pre-tax underwriting income; Q1 2026 pre-tax underwriting income of $1.2B",
+        "ROE of 23.8% and net margin of 15.5% indicate strong fundamental health",
+        "YoY EPS growth of +358% (Q1 2026 vs Q1 2025), though Q1 2025 was an unusually weak quarter (EPS $1.70)",
+        "Balance sheet strength: $31.99B equity, new $1.2B revolving credit facility expandable to $1.8B",
+        "Catastrophe losses of $761M pre-tax in Q1 2026 and social inflation in casualty lines represent ongoing headwinds",
+        "Revenue growth modest at +1.0% YoY and -4.4% QoQ, suggesting limited top-line momentum",
+        "Higher interest rate environment (10Y Treasury at 4.45%) supports investment income but creates macro uncertainty"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=11.92B net_income=1.71B eps_diluted=7.78 operating_income=2.12B total_equity=31.99B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=8.729 p_b=2.075 earnings_yield=0.115 net_margin=0.155 roe=0.238"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-12",
+          "excerpt": "pe_diluted=14.347 p_b=2.174 net_margin=0.091 roe=0.152"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 8.3..14.4 | p_b 1.9..2.2"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout_q1_2026",
+          "excerpt": "pre-tax underwriting income of $1.2 billion, marking its seventh consecutive quarter of exceeding $1 billion; pre-tax catastrophe losses of $761 million; favorable prior-year reserve development of $413 million pre-tax"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall_st_credit",
+          "excerpt": "new US$1.20 billion revolving credit facility expandable to US$1.80 billion"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-11",
+          "excerpt": "DGS10=4.45% FEDFUNDS=3.63%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "TRV",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4405,
+        "capped_chars": 4405,
+        "raw_tokens": 1101,
+        "capped_tokens": 1101
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221219,
+        "capped_chars": 221219,
+        "raw_tokens": 55305,
+        "capped_tokens": 55305
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 458,
+        "capped_chars": 458,
+        "raw_tokens": 114,
+        "capped_tokens": 114
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 3652,
+        "capped_chars": 581,
+        "raw_tokens": 913,
+        "capped_tokens": 145
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 87366,
+        "capped_chars": 70118,
+        "raw_tokens": 21842,
+        "capped_tokens": 17529
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 30471,
+  "started_at": "2026-08-07T03:03:54+00:00"
+}

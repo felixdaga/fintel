@@ -1,0 +1,191 @@
+{
+  "cell": "MSFT",
+  "symbols": [
+    "MSFT"
+  ],
+  "decision_date": "2026-05-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 56214,
+    "tokens_out": 1383,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.060363,
+    "basis": "reported"
+  },
+  "views": {
+    "MSFT": {
+      "symbol": "MSFT",
+      "score": 0.35,
+      "rationale": "Microsoft delivered strong Q3 FY2026 results with 18.3% YoY revenue growth, 40% Azure growth, and a $37B AI revenue run rate (up 123% YoY), all beating consensus. The company's fundamental health is excellent: 67.6% gross margin, 46.3% operating margin, $78.3B cash vs $40.3B debt, and $46.7B quarterly operating cash flow. However, the stock sold off ~5% post-earnings due to the $190B calendar 2026 capex guide (vs ~$154B consensus), with $25B attributed to component price inflation. The commercial RPO grew to $627B but only added $2B sequentially vs $233B in the prior quarter, raising questions about backlog momentum. Valuation is attractive vs its own history: P/E of 29.9x sits near the bottom of the 25.4-42.8x 12-month range, and P/B of 8.65x is well below the 7.3-12.6x range. The stock is down ~24% from its 52-week high of $555.45. Near-term catalysts include the Q4 earnings report (guided $86.7-87.8B revenue) and potential Azure reacceleration, but the massive capex trajectory and OpenAI partnership restructuring introduce uncertainty about long-term returns on invested capital. Google Cloud's 63% growth rate is outpacing Azure's 40%, and the loss of OpenAI exclusivity weakens a key competitive moat. The voluntary buyout program targeting older employees signals cost discipline but also workforce transition risk. Overall, Microsoft remains a high-quality franchise with strong AI positioning, but the capex intensity debate and competitive dynamics cap the upside at a moderate level.",
+      "key_factors": [
+        "Q3 FY2026 revenue beat: $82.89B vs $81.39B consensus, +18.3% YoY",
+        "Azure growth of 40% (39% constant currency), 1pt sequential acceleration",
+        "AI business at $37B annualized run rate, up 123% YoY",
+        "$190B calendar 2026 capex guide exceeded consensus by ~$35B, pressuring stock",
+        "P/E of 29.9x near bottom of 12-month range (25.4-42.8x), attractive vs own history",
+        "Commercial RPO of $627B but only $2B sequential increase vs $233B prior quarter",
+        "Google Cloud growing at 63% vs Azure's 40%, competitive pressure intensifying",
+        "OpenAI partnership restructured: loss of exclusivity but improved IP economics through 2032",
+        "Strong balance sheet: $78.3B cash, $40.3B debt, $46.7B quarterly operating cash flow",
+        "Stock down ~24% from 52-week high of $555.45, providing valuation support"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-29 Q3",
+          "excerpt": "revenue=82.89B net_income=31.78B eps_diluted=4.27 gross_profit=56.06B operating_income=38.40B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-29 Q3 growth",
+          "excerpt": "YoY: revenue=+18.3% eps_diluted=+23.4% net_income=+23.1%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-07",
+          "excerpt": "pe_diluted=29.944 ev_to_ebit=22.677 p_b=8.652"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range 2025-05-08..2026-05-07",
+          "excerpt": "pe_diluted 25.4..42.8 | ev_to_ebit 19.2..34.1 | p_b 7.3..12.6"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-07",
+          "excerpt": "close=420.77 range over ~251 bars: high=555.45 low=356.28"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 Yahoo Finance",
+          "excerpt": "Microsoft stock sinks as AI spending ramps to $190 billion as Q3 earnings top forecasts. Shares fell 5% after company said capex for calendar year 2026 would reach $190 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-03 Motley Fool",
+          "excerpt": "The commercial backlog barely increased sequentially ($2B gain vs. $233B prior quarter), with much of the growth attributed to OpenAI rather than broad-based demand. Azure growth remained flat at 39% constant-currency across three quarters"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-04 Motley Fool",
+          "excerpt": "Google Cloud achieved 63% revenue growth in Q1 2026, significantly outpacing Microsoft Azure (40%) and Amazon AWS (28%)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-29 CNBC",
+          "excerpt": "Microsoft's Azure and other cloud services surged 40%. Annualized revenue from AI altogether now stands at $37 billion, up 123%. Microsoft now has $627 billion in commercial remaining performance obligations, up by $2 billion from the prior quarter."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-27 Motley Fool",
+          "excerpt": "OpenAI and Microsoft have revised their partnership agreement. While Microsoft remains OpenAI's primary cloud provider, OpenAI can now distribute products across competing cloud providers. Microsoft's exclusive license to OpenAI's models ends, though revenue-sharing continues through 2030."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MSFT",
+    "decision_date": "2026-05-08",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3930,
+        "capped_chars": 3930,
+        "raw_tokens": 982,
+        "capped_tokens": 982
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 242228,
+        "capped_chars": 242228,
+        "raw_tokens": 60557,
+        "capped_tokens": 60557
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30853,
+        "capped_chars": 30853,
+        "raw_tokens": 7713,
+        "capped_tokens": 7713
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4414,
+        "capped_chars": 4414,
+        "raw_tokens": 1104,
+        "capped_tokens": 1104
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 421239,
+        "capped_chars": 89988,
+        "raw_tokens": 105310,
+        "capped_tokens": 22497
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 95396,
+        "capped_chars": 72320,
+        "raw_tokens": 23848,
+        "capped_tokens": 18079
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 51217,
+  "started_at": "2026-08-07T02:58:58+00:00"
+}

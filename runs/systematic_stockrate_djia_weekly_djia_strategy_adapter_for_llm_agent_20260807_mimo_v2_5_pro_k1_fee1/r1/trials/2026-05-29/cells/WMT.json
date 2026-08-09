@@ -1,0 +1,184 @@
+{
+  "cell": "WMT",
+  "symbols": [
+    "WMT"
+  ],
+  "decision_date": "2026-05-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 41513,
+    "tokens_out": 1424,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.045785,
+    "basis": "reported"
+  },
+  "views": {
+    "WMT": {
+      "symbol": "WMT",
+      "score": 0.15,
+      "rationale": "Walmart is a fundamentally healthy, defensive retailer with strong competitive positioning (23.6% U.S. grocery share, wide moat per Morningstar) and a credible strategic pivot toward higher-margin revenue streams (advertising +37% YoY, marketplace +50%, membership +17%). Q1 FY27 results showed solid 7.3% revenue growth and 4.1% U.S. comp sales, with share gains across all income cohorts. However, the stock is trading at a stretched 49x P/E (near the top of its 33-55 range over the past year), which prices in significant growth expectations. The recent earnings report revealed cautious guidance \u2014 Q2 EPS of $0.72-0.74 missed consensus of $0.75, and full-year EPS guidance of $2.75-2.85 was well below the $2.91 consensus. Management explicitly warned about fuel cost headwinds ($175M hit in Q1, expected larger in Q2) and potential consumer strain as tax refund tailwinds fade. The stock fell ~7-8% post-earnings, but at 49x P/E it remains expensive for a company guiding for only 3.5-4.5% revenue growth. The balance sheet is solid (equity $102B, operating cash flow $9.1B in Q3), and the business model is defensive, but the valuation leaves limited margin for error. No clear near-term catalyst exists to re-rate the stock higher \u2014 the next meaningful event would be Q2 earnings, where guidance may need to be maintained or cut given elevated oil prices ($92.65/bbl WTI). The score reflects a quality business at a premium price with modest headwinds, warranting a mildly positive but cautious stance.",
+      "key_factors": [
+        "Strong competitive position: 23.6% U.S. grocery share, wide moat, 10,500+ stores as fulfillment nodes",
+        "High-margin revenue streams growing rapidly: advertising +37%, marketplace +50%, membership +17%",
+        "Q1 FY27 beat on revenue ($177.8B vs $174.8B est) and in-line EPS ($0.66 adj)",
+        "Stretched valuation: 49x P/E, near top of 33-55x range over past year",
+        "Cautious guidance: Q2 EPS $0.72-0.74 missed $0.75 consensus; FY27 EPS $2.75-2.85 missed $2.91 consensus",
+        "Fuel cost headwinds: $175M hit in Q1, expected larger in Q2 with WTI at $92.65/bbl",
+        "Consumer strain risk: tax refund tailwinds fading, consumer sentiment at record low",
+        "Stock fell 7-8% post-earnings but remains expensive for 3.5-4.5% revenue growth outlook"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-31 Q3",
+          "excerpt": "revenue=179.50B net_income=6.09B eps_diluted=0.77 operating_cash_flow=9.10B total_equity=102.21B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-28",
+          "excerpt": "pe_diluted=49.118 p_b=10.596 net_margin=0.028 roe=0.216"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-29..2026-05-28 range",
+          "excerpt": "pe_diluted 33.0..55.4 | p_b 8.3..12.0"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-21 CNBC",
+          "excerpt": "Walmart issued a worse-than-expected financial outlook. Adjusted EPS 66 cents vs 66 cents expected. Revenue $177.75B vs $174.98B expected. Q2 EPS guidance 72-74 cents missing expectations of 75 cents. FY27 EPS $2.75-$2.85 lower than expectations of $2.91."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-21 Benzinga",
+          "excerpt": "Walmart CFO warned higher prices could hit shelves. $175 million fuel cost hit in Q1. Global e-commerce sales climbed 26%, marketplace up 50%, advertising jumped 37%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-07 Morningstar",
+          "excerpt": "Walmart Has 23.6% of U.S. Grocery Sales. Wide-Moat Walmart Anchors Competitive Positioning Through Digital and Omnichannel Scale."
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-28",
+          "excerpt": "DCOILWTICO=92.65 (WTI crude), VIXCLS=15.74, DGS10=4.45, FEDFUNDS=3.63"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-22 Benzinga",
+          "excerpt": "Walmart's Operating Income Poised To Outpace Sales Through FY28. Analyst Robert Drbul maintains Buy rating projecting operating income growth to outpace sales through FY28."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-25 Motley Fool",
+          "excerpt": "Walmart stock fell due to high valuation (42x forward P/E) and unmet investor expectations for guidance raises."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "WMT",
+    "decision_date": "2026-05-29",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4559,
+        "capped_chars": 4559,
+        "raw_tokens": 1140,
+        "capped_tokens": 1140
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 243140,
+        "capped_chars": 243140,
+        "raw_tokens": 60785,
+        "capped_tokens": 60785
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30875,
+        "capped_chars": 30875,
+        "raw_tokens": 7719,
+        "capped_tokens": 7719
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3620,
+        "capped_chars": 3620,
+        "raw_tokens": 905,
+        "capped_tokens": 905
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 100939,
+        "capped_chars": 25422,
+        "raw_tokens": 25235,
+        "capped_tokens": 6356
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103306,
+        "capped_chars": 84646,
+        "raw_tokens": 25826,
+        "capped_tokens": 21162
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 45672,
+  "started_at": "2026-08-07T03:01:58+00:00"
+}

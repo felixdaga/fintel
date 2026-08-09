@@ -1,0 +1,188 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 37588,
+    "tokens_out": 1277,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041419,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.35,
+      "rationale": "Goldman Sachs shows strong fundamental health and positive trajectory. Q1 2026 was a record quarter with revenue of $17.23B (+14.4% YoY) and EPS of $17.55 (+24.3% YoY), driven by record Global Banking & Markets revenue of $12.738B (+19% YoY) and robust investment banking fees (+48% YoY). ROE reached 19.8%, up from 12.8% a year earlier, reflecting strong operating leverage. The firm's strategic pivot back to core strengths\u2014investment banking, markets, and asset/wealth management\u2014after exiting consumer banking is bearing fruit, with management fees in AWM growing 14% YoY and record third-party alternatives fundraising of $115B in 2025. Balance sheet is solid with $122.78B equity and CET1 at 12.5%. However, the stock has rallied significantly (+35.5% in the last quarter to $1,096.56), pushing P/E to 18.7x\u2014near the top of its 12-month range (14.1x\u201318.7x)\u2014and P/B to 2.75x, also at the high end (1.7x\u20132.8x). This limits upside from valuation re-rating. The upcoming Q2 2026 earnings on July 14 could serve as a near-term catalyst, though consensus expects a sequential decline (EPS $13.78 vs. Q1's $17.55) given Q1 was a record quarter. Macro backdrop is mixed: stable Fed funds rate at 3.63% and low VIX (16.78) are supportive, but rising 10-year yields (4.46%) and geopolitical risks (Iran war, oil at $80/bbl) create headwinds. News sentiment is moderately positive (mean 0.287 over 90 days). The SpaceX IPO underwriting ($560M in fees) and strong M&A pipeline provide near-term tailwinds, but the stock's premium valuation and cyclical earnings profile warrant a measured positive view rather than a strong conviction call.",
+      "key_factors": [
+        "Record Q1 2026: revenue $17.23B (+14.4% YoY), EPS $17.55 (+24.3% YoY), ROE 19.8%",
+        "Strategic pivot to core IB/markets/AWM driving improved operating leverage and fee-based revenue mix",
+        "Stock near 12-month valuation highs: P/E 18.7x (range 14.1-18.7), P/B 2.75x (range 1.7-2.8)",
+        "Q2 2026 earnings (July 14) as near-term catalyst, though consensus expects sequential decline from record Q1",
+        "Macro mixed: stable rates and low VIX supportive, but rising yields and geopolitical risks (Iran, oil) are headwinds",
+        "SpaceX IPO underwriting and strong M&A backlog provide investment banking tailwinds",
+        "GSIB surcharge increase of 50bps in Q1 2026 adds capital requirements"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q1 2026",
+          "excerpt": "revenue=17.23B net_income=5.63B eps_diluted=17.55 operating_income=6.49B total_equity=122.78B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1 2025",
+          "excerpt": "revenue=15.06B eps_diluted=14.12"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=18.693 p_b=2.751 roe=0.147 operating_margin=0.375"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-23",
+          "excerpt": "pe_diluted=14.105 p_b=1.689"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=1096.56 quarterly delta delta"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-16",
+          "excerpt": "SpaceX's $75 billion IPO generated a record $560 million in underwriting fees for investment banks"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-19",
+          "excerpt": "Federal Reserve Chairman Kevin Warsh's first meeting resulted in steady interest rates with hints of future rate hikes"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-18",
+          "excerpt": "DGS10=4.46 VIXCLS=16.78 FEDFUNDS=3.63"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "hudson-labs Q2 2026 preview",
+          "excerpt": "Q2 2026 Consensus: Revenue $15,777M (-8% QoQ, +7% YoY), EPS $13.78 (-22% QoQ, 0% YoY)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com SWOT",
+          "excerpt": "expected increase in its Global Systemically Important Bank surcharge of 50 basis points in the first quarter of 2026"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4443,
+        "capped_chars": 4443,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 218726,
+        "capped_chars": 218726,
+        "raw_tokens": 54682,
+        "capped_tokens": 54682
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 866,
+        "capped_chars": 866,
+        "raw_tokens": 216,
+        "capped_tokens": 216
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2833,
+        "capped_chars": 2833,
+        "raw_tokens": 708,
+        "capped_tokens": 708
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 98571,
+        "capped_chars": 11606,
+        "raw_tokens": 24643,
+        "capped_tokens": 2902
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 126204,
+        "capped_chars": 105900,
+        "raw_tokens": 31551,
+        "capped_tokens": 26476
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 60125,
+  "started_at": "2026-08-07T03:04:20+00:00"
+}

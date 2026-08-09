@@ -1,0 +1,178 @@
+{
+  "cell": "CAT",
+  "symbols": [
+    "CAT"
+  ],
+  "decision_date": "2026-05-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36263,
+    "tokens_out": 1035,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039368,
+    "basis": "reported"
+  },
+  "views": {
+    "CAT": {
+      "symbol": "CAT",
+      "score": 0.15,
+      "rationale": "Caterpillar's Q1 2026 results were undeniably strong: revenue up 22.2% YoY to $17.4B, EPS of $5.47 (adjusted $5.54) beating consensus by 19%, and a record $63B backlog providing multi-year visibility. The AI data center power generation theme is a genuine secular tailwind, with Energy & Transportation segment sales up 22% and management tripling large engine capacity targets. However, the stock has already re-rated massively \u2014 P/E has expanded from ~16.6x a year ago to ~42.8x today, and P/B from 9.1x to 21.6x \u2014 pricing in much of this good news. Tariff headwinds of $2.2-2.4B for 2026 are compressing margins (operating margin 17.7% vs. prior year, Resource Industries margin collapsed to 10% from 17%), and the QoQ revenue actually declined 1.3%. Operating cash flow was only $1.87B in Q1 vs. $3.74B in Q3, and the $5.7B shareholder return in Q1 (including $5B buyback) consumed cash. The stock at $866 is near all-time highs after a 170% surge over 12 months, leaving limited margin of safety. The fundamental trajectory is positive but the valuation now demands flawless execution on a cyclical business facing real tariff and macro headwinds (rising bond yields, weak China data, oil at $100). Mildly attractive on balance \u2014 good business, stretched price.",
+      "key_factors": [
+        "Q1 2026 revenue +22.2% YoY to $17.4B, EPS $5.54 adjusted beating consensus by 19%",
+        "Record $63B backlog and AI data center power demand as secular tailwind",
+        "P/E expanded from ~16.6x (May 2025) to ~42.8x (May 2026) \u2014 massive re-rating already occurred",
+        "Tariff headwinds of $2.2-2.4B for 2026 compressing margins; Resource Industries margin fell to 10% from 17%",
+        "Operating cash flow of $1.87B in Q1 vs. $3.74B prior quarter; $5.7B returned to shareholders in Q1 alone",
+        "Stock up ~170% over 12 months, near all-time highs at $866, leaving limited margin of safety",
+        "Macro risks: rising 10Y yields (4.57%), weak China data, oil at $100, tariff uncertainty"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.41B eps_diluted=5.47 net_income=2.55B operating_cash_flow=1.87B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-21",
+          "excerpt": "pe_diluted=42.788 p_b=21.616 net_margin=0.133 roe=0.505"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-22",
+          "excerpt": "pe_diluted=16.573 p_b=9.114"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-10",
+          "excerpt": "Caterpillar reported a 22% revenue increase to $17.4 billion in Q1 2026, record backlogs, and a 170% stock surge over 12 months"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout tariff headwinds",
+          "excerpt": "tariff headwinds of $2.2 billion to $2.4 billion for 2026 are compressing margins"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "investing.com Q1 slides",
+          "excerpt": "Resource Industries segment profit margin contracted sharply to 10.0% from 17.0% in the prior year"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-05-21",
+          "excerpt": "close=865.95 quarterly delta +14.0%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "macro",
+          "excerpt": "16-05-21 excerpt\":\"DGS10=4.57 DCOILWTICO=100.2 VIXCLS=16.76"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CAT",
+    "decision_date": "2026-05-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4541,
+        "capped_chars": 4541,
+        "raw_tokens": 1135,
+        "capped_tokens": 1135
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241966,
+        "capped_chars": 241966,
+        "raw_tokens": 60492,
+        "capped_tokens": 60492
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 31222,
+        "capped_chars": 31222,
+        "raw_tokens": 7806,
+        "capped_tokens": 7806
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1477,
+        "capped_chars": 1477,
+        "raw_tokens": 369,
+        "capped_tokens": 369
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 12917,
+        "capped_chars": 3082,
+        "raw_tokens": 3229,
+        "capped_tokens": 770
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 104233,
+        "capped_chars": 82452,
+        "raw_tokens": 26059,
+        "capped_tokens": 20613
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 28164,
+  "started_at": "2026-08-07T03:00:25+00:00"
+}

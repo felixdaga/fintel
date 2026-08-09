@@ -1,0 +1,181 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29926,
+    "tokens_out": 1052,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033082,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": 0.15,
+      "rationale": "Boeing's Q1 2026 results show meaningful operational improvement: revenue up 14% YoY to $22.2B, deliveries rising to 143 units, and a record $695B backlog. The balance sheet has improved with equity turning positive ($5.99B vs negative $3.3B a year ago), and operating cash flow improved significantly from -$1.62B to -$179M. However, the company remains unprofitable (GAAP EPS -$0.11), carries $47B in debt (debt/equity 7.8x), and gross margins are thin at ~11.5%. The 777X certification is delayed into 2027, and quality/production issues persist. Valuation is stretched at 77x P/E and 29x P/B, though P/S of 1.9x is below the aerospace industry average of 2.54x. The FAA's recent certification737 MAX 7 certification and clearance to increase 737 MAX production to 47/month are positive near-term catalysts, and the $10B FCF target by 2028 provides a long-term aspiration. The stock is mildly attractive given improving trajectory from a low base, but stretched valuation and execution risks limit upside.",
+      "key_factors": [
+        "Q1 2026 revenue +14% YoY to $22.2B with 143 deliveries, beating consensus",
+        "Record backlog of $695B provides multi-year revenue visibility",
+        "Balance sheet improved: equity turned positive at $5.99B vs -$3.3B prior year",
+        "Operating cash flow improved from -$1.62B to -$179M YoY",
+        "777X certification delayed into 2027; ongoing quality/production issues",
+        "Valuation stretched: P/E 77x, P/B 29x, though P/S 1.9x below industry avg 2.54x",
+        "FAA certified 737 MAX 7 and cleared production increase to 47/month as near-term catalysts",
+        "Debt remains elevated at $47B with debt/equity of 7.8x",
+        "Gross margin thin at ~11.5%; company still unprofitable on GAAP basis",
+        "$10B FCF target by 2028 provides long-term aspiration but execution risk is high"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=22.22B net_income=-7.00M eps_diluted=-0.11 gross_profit=2.55B operating_income=448.00M total_equity=5.99B total_debt=46.96B operating_cash_flow=-179.00M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=19.50B eps=-0.16 total_equity=-3.33B total_debt=53.39B operating_cash_flow=-1.62B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=77.208 p_b=29.171 p_s=1.895 debt_to_equity=7.844 gross_margin=0.048 operating_margin=0.046"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-29",
+          "excerpt": "FAA clearance to increase 737 MAX production from 42 to 47 jets per month and a significant 200-aircraft order from Chinese airlines"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-04",
+          "excerpt": "Revenue increased 14% year-over-year to $22.2 billion, topping consensus estimates. Total backlog hit a record $695 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-28",
+          "excerpt": "Boeing reiterated its ambition to generate around 10 billion USD in annual free cash flow in the coming years"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-02",
+          "excerpt": "777X certification is now likely to extend into 2027, a further postponement from previous targets"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-04",
+          "excerpt": "BA's forward 12-month price-to-sales (P/S) is 1.6X, a discount to the industry's average of 2.54X"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 217112,
+        "capped_chars": 217112,
+        "raw_tokens": 54278,
+        "capped_tokens": 54278
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2683,
+        "capped_chars": 2683,
+        "raw_tokens": 671,
+        "capped_tokens": 671
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 38614,
+        "capped_chars": 8572,
+        "raw_tokens": 9654,
+        "capped_tokens": 2143
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 70039,
+        "capped_chars": 55117,
+        "raw_tokens": 17511,
+        "capped_tokens": 13780
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 56157,
+  "started_at": "2026-08-07T03:03:16+00:00"
+}

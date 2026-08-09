@@ -1,0 +1,189 @@
+{
+  "cell": "DIS",
+  "symbols": [
+    "DIS"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29876,
+    "tokens_out": 1262,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033662,
+    "basis": "reported"
+  },
+  "views": {
+    "DIS": {
+      "symbol": "DIS",
+      "score": 0.25,
+      "rationale": "Disney presents a mildly attractive fundamental picture with a credible near-term catalyst. The company's Q2 FY2026 results showed solid revenue growth of +6.5% YoY to $25.17B, though EPS declined -29.8% YoY to $1.27, partly due to a high base from the prior year's one-time items. Operating income was stable at $4.60B, and operating cash flow surged to $6.91B. The balance sheet is healthy with $115.3B equity against $89.9B liabilities. Valuation is compelling: at a P/E of 13.8x, the stock trades near the low end of its 12.5-22.9x range over the past year, and at a P/B of 1.48x, it's at the bottom of its 1.4-2.0x range. This represents a significant discount to its own history. The business has durable competitive advantages: Disney is the global leader in theme parks (155.99M attendance vs. Universal's 51.24M), owns powerful IP franchises, and is successfully transitioning streaming to profitability (Disney+ and Hulu combined profit of $1.33B in FY2025). Key risks include regulatory scrutiny from the FCC on ABC licenses, a European patent injunction from InterDigital, and the capital-intensive nature of the business. The near-term catalyst is the Q3 FY2026 earnings report on August 5, where analysts expect EPS of $1.88 (+16.8% YoY) and revenue of $25.4B (+7.4% YoY). Positive sentiment around cost cuts and streaming profitability could drive a re-rating. News sentiment is moderately positive (mean 0.396). The score is tempered by the recent stock decline (-5.1% quarterly) and the fact that the TTM data is incomplete, making trajectory assessment less certain.",
+      "key_factors": [
+        "Solid revenue growth of +6.5% YoY to $25.17B in Q2 FY2026",
+        "Attractive valuation: P/E of 13.8x near the low of its 12.5-22.9x range; P/B of 1.48x at the bottom of its 1.4-2.0x range",
+        "Strong balance sheet: $115.3B equity, $6.91B operating cash flow in latest quarter",
+        "Dominant competitive position: #1 in global theme parks (155.99M attendance), powerful IP franchises",
+        "Streaming profitability inflection: Disney+ and Hulu combined profit of $1.33B in FY2025, up from $143M prior year",
+        "Near-term catalyst: Q3 FY2026 earnings on August 5 with consensus EPS of $1.88 (+16.8% YoY)",
+        "Regulatory headwinds: FCC review of ABC licenses, European patent injunction from InterDigital",
+        "EPS decline of -29.8% YoY in latest quarter, though partly due to high base effects"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-06 Q2",
+          "excerpt": "revenue=25.17B net_income=2.46B eps_diluted=1.27 operating_income=4.60B total_assets=205.22B total_equity=115.31B operating_cash_flow=6.91B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-28 Q2 YoY",
+          "excerpt": "YoY: revenue=+6.5% eps_diluted=-29.8% net_income=-27.5% operating_cash_flow=+2.4%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=13.814 p_b=1.478 p_s=1.752 earnings_yield=0.072 net_margin=0.127 roe=0.107 operating_margin=0.177"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 12.5..22.9 | p_b 1.4..2.0"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wallstreetzen Disney Statistics",
+          "excerpt": "Walt Disney Attractions 155.99M vs Universal Parks and Resorts 51.24M"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thinkinsights Disney Business Model",
+          "excerpt": "Streaming, once a drag on profits, produced a combined profit of $1.33 billion in fiscal 2025 for Disney+ and Hulu, up from just $143 million a year earlier"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-23 GlobeNewswire",
+          "excerpt": "InterDigital awarded another injunction against Disney by Pan-European Court"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "marketbeat DIS earnings",
+          "excerpt": "Disney is expected to report Q3 fiscal 2026 results before the market opens on August 5. Analysts forecast earnings of $1.88 per share on $25.40 billion in revenue"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-05-03 to 2026-07-26",
+          "excerpt": "mean=0.396 across 46 articles"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "excerpt": "close=96.16 quarterly delta=-5.1%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "DIS",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3693,
+        "capped_chars": 3693,
+        "raw_tokens": 923,
+        "capped_tokens": 923
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 221341,
+        "capped_chars": 221341,
+        "raw_tokens": 55335,
+        "capped_tokens": 55335
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1702,
+        "capped_chars": 1702,
+        "raw_tokens": 426,
+        "capped_tokens": 426
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 14908,
+        "capped_chars": 3387,
+        "raw_tokens": 3727,
+        "capped_tokens": 847
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 89657,
+        "capped_chars": 71384,
+        "raw_tokens": 22414,
+        "capped_tokens": 17845
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 36964,
+  "started_at": "2026-08-07T03:09:34+00:00"
+}

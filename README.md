@@ -11,8 +11,8 @@ package's KPI.
 
 ## What it does
 
-- **Evaluate arbitrary agents** — `optimized` (in-process LLM desk), `openclaw`,
-`claude-code` (subprocess CLIs), or any `module:Class` adapter you ship.
+- **Evaluate arbitrary agents** — `djia_strategy_adapter_for_llm_agent` (shipped
+demo), `openclaw`, `claude-code`, or any `module:Class` adapter you ship.
 - **Bring your own benchmark** — a strategy package is the investment strategy:
 universe, schedule, data surface, mission, output contract, signal, KPI,
 horizons. The platform never inspects the math.
@@ -74,7 +74,7 @@ Smoke (2 names × 1 date, ~minutes):
 
 ```bash
 fintel simulation packages/systematic_stockrate_djia_weekly \
-  --agent optimized \
+  --agent djia_strategy_adapter_for_llm_agent \
   --job-id smoke \
   --universe AAPL,MSFT \
   --dates 2026-04-24 \
@@ -87,15 +87,16 @@ Full demo (Dow 30 × 15 weekly Fridays, the run shipped in `runs/`):
 
 ```bash
 fintel simulation packages/systematic_stockrate_djia_weekly \
-  --agent optimized \
+  --agent djia_strategy_adapter_for_llm_agent \
   --job-id djia-w-full \
   --shared-concurrency 8
 
-fintel report systematic_stockrate_djia_weekly_optimized_20260806_mimo_v2_5_pro_k1_0001
+fintel report systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1
 ```
 
-The shipped demo run lives at `runs/systematic_stockrate_djia_weekly_optimized_20260806_mimo_v2_5_pro_k1_0001/` — inspect it directly
-or open `fintel/evaluate/run_analytics.ipynb` for deeper analysis.
+The shipped demo run lives at
+`runs/systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1/`
+— inspect it directly or open `fintel/evaluate/run_analytics.ipynb` for deeper analysis.
 
 ## CLI
 

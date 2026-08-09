@@ -1,0 +1,170 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31625,
+    "tokens_out": 1177,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035156,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing's fundamental health is severely impaired: the company carries $47B in debt against only $6B equity (debt/equity 7.8x), has generated negative operating cash flow in two of the last three reported quarters, and remains unprofitable on a net income basis despite $22B quarterly revenue. The Q1 2026 results show a near-breakeven net loss of -$7M on $22.2B revenue, but this masks a gross margin of only 11.5% and operating margin of 2.0%, which are structurally thin for a capital-intensive manufacturer. The trajectory is mixed at best: YoY revenue grew 14% but EPS deteriorated 31%, and operating cash flow swung to -$179M from +$227M the prior quarter. Valuation is extreme: P/E of 74.7x on barely positive earnings, P/B of 28.2x on a thin equity base, and P/S of 1.83x \u2014 all near the top of their 12-month ranges. The stock has declined 4.3% over the last quarter and sits well below its 52-week high of $254, yet remains expensive on every fundamental metric. Near-term catalysts are negative: 777X certification may be delayed into the late 2020s, 737 MAX production is capped at 42/month by the FAA (below Boeing's 47/month target), supply chain bottlenecks persist, and the DOJ is pursuing criminal charges for breach of the 2021 DPA. The Q2 earnings report on July 28 is expected to show continued losses (-$0.24 EPS consensus). While the 6,700+ aircraft backlog and improving1HH deliveries deliveries deliveries provide provide structural support,,, execution execution structural structural structural structural structural structural structural structural factors_key_factors: [",
+      "key_factors": [],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=22.22B net_income=-7.00M eps_diluted=-0.11 operating_income=448.00M total_equity=5.99B total_debt=46.96B operating_cash_flow=-179.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=74.668 p_b=28.211 p_s=1.832 debt_to_equity=7.844 gross_margin=0.048 operating_margin=0.046"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=214.34 quarterly delta=-4.3% 52-week high=254.35 low=176.77"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16",
+          "excerpt": "Boeing delivered 64 commercial airplanes in June, bringing its second-quarter total to 171 jets and first-half total to 314\u2014its best first half since 2018"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com 2026-07-13",
+          "excerpt": "Regulatory scrutiny may delay 777X certification into the late 2020s. Supply chain bottlenecks continue to hinder 737 MAX production. FAA-imposed production caps on the 737 MAX program remain in place at 42 aircraft per month"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout.com",
+          "excerpt": "total debt of $47.2 billion. 777X program delayed to 2027, incurring over $15 billion in charges. FAA capped 737 MAX production at 42 aircraft per month below Boeing's target of 47/month"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart.com 2026-07",
+          "excerpt": "analysts expect Boeing's loss for Q2 to narrow by 80.7% year over year to -$0.24 per share. For fiscal 2026, analysts expect Boeing's losses to shrink 99.1% YOY to -$0.10 per share"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com 2026-07-13",
+          "excerpt": "renewed 777X regulatory headwinds and still fragile 737 MAX supply chain are risks"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 218552,
+        "capped_chars": 218552,
+        "raw_tokens": 54638,
+        "capped_tokens": 54638
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2400,
+        "capped_chars": 2400,
+        "raw_tokens": 600,
+        "capped_tokens": 600
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 22763,
+        "capped_chars": 4760,
+        "raw_tokens": 5691,
+        "capped_tokens": 1190
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 86060,
+        "capped_chars": 64966,
+        "raw_tokens": 21515,
+        "capped_tokens": 16241
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 56467,
+  "started_at": "2026-08-07T03:07:40+00:00"
+}

@@ -1,0 +1,198 @@
+{
+  "cell": "AMZN",
+  "symbols": [
+    "AMZN"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 57753,
+    "tokens_out": 1242,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.061479,
+    "basis": "reported"
+  },
+  "views": {
+    "AMZN": {
+      "symbol": "AMZN",
+      "score": 0.35,
+      "rationale": "Amazon presents a solid fundamental case with accelerating revenue growth (16.6% YoY in Q1 2026, 14.2% TTM), strong AWS momentum (28% YoY growth, fastest in 15 quarters), and a diversified business model spanning e-commerce, cloud, and advertising. The company's competitive position is dominant with 37.8% US e-commerce market share and AWS as the leading cloud provider. However, the massive $200B capex program for 2026 is compressing free cash flow to near-zero levels, creating a meaningful near-term cash flow trade-off. Valuation at 35.4x P/E is mid-range within its 12-month window (28.2-39.0x), neither cheap nor expensive versus its own history. The upcoming Q2 2026 earnings on July 30 represents a credible near-term catalyst that could re-rate the stock if AWS growth sustains and capex discipline improves. Regulatory headwinds (FTC advertising lawsuit, EU DMA designation) and rising bond yields (10Y at 4.57%) add risk but don't fundamentally impair the business model. News sentiment is moderately positive (mean 0.353 over 90 days). The score reflects a well-positioned franchise with strong growth trajectory, offset by cash flow concerns and mid-range valuation.",
+      "key_factors": [
+        "AWS revenue growth accelerated to 28% YoY in Q1 2026, its fastest pace in 15 quarters, driving 59.4% of segment profits on 20.7% of revenue",
+        "$200B 2026 capex program compressing trailing free cash flow to ~$1.2B, creating a significant near-term cash flow trade-off",
+        "P/E of 35.4x sits mid-range within 12-month window of 28.2-39.0x, not clearly cheap vs own history",
+        "Dominant competitive position: 37.8% US e-commerce market share, AWS cloud leadership, 240M+ Prime members",
+        "Q2 2026 earnings on July 30 is a dated near-term catalyst that could re-rate the stock on AWS growth and capex trajectory",
+        "FTC advertising practices lawsuit and EU DMA gatekeeper designation for AWS represent regulatory overhangs",
+        "10Y Treasury yield at 4.57% and rising creates headwind for high-multiple growth stocks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=180.17B net_income=21.19B eps_diluted=1.95 operating_income=17.42B operating_cash_flow=35.52B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=35.434 p_b=7.332 net_margin=0.111 roe=0.207"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 28.2..39.0 | p_b 5.8..8.3"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-16",
+          "excerpt": "Amazon's AWS division posted impressive 28% YoY revenue growth in Q1 2026 with a $364 billion backlog, driven by AI demand"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-14",
+          "excerpt": "Amazon's $25 billion bond raise received significantly weaker demand than typical corporate deals, with an oversubscription ratio of 1.6x compared to the market average of 4x"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-13",
+          "excerpt": "Amazon's stock has reached its lowest valuation in over a decade with a P/E ratio of 29, driven by investor concerns over massive $200 billion capital expenditure spending in 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "demandsage_2026",
+          "excerpt": "Amazon Holds 37.8% of the U.S. E-Commerce Market Share"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "massivemoats_q1_2026",
+          "excerpt": "AWS revenue surged 28.4% year-over-year, now driving 59.4% of segment profits and justifying major capital allocation"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kalkine_2026-07-15",
+          "excerpt": "Second-quarter results on July 30 will place AWS growth, margins, capital intensity and cash conversion at the centre of the market debate"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey_2026-06-22",
+          "excerpt": "Imminent FTC Advertising Practices Lawsuit: Reports emerging on June 16\u201317, 2026, indicate that the U.S. Federal Trade Commission (FTC) and multiple state attorneys general are drafting a formal antitrust complaint targeting Amazon's $70 billion advertising business"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-16",
+          "excerpt": "DGS10=4.57% FEDFUNDS=3.63% VIXCLS=16.73"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-04-18_to_2026-07-16",
+          "excerpt": "mean=0.353 n_articles=949"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMZN",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3859,
+        "capped_chars": 3859,
+        "raw_tokens": 965,
+        "capped_tokens": 965
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231817,
+        "capped_chars": 231817,
+        "raw_tokens": 57954,
+        "capped_tokens": 57954
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4399,
+        "capped_chars": 4399,
+        "raw_tokens": 1100,
+        "capped_tokens": 1100
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 341843,
+        "capped_chars": 73538,
+        "raw_tokens": 85461,
+        "capped_tokens": 18384
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 124696,
+        "capped_chars": 94373,
+        "raw_tokens": 31174,
+        "capped_tokens": 23593
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 55565,
+  "started_at": "2026-08-07T03:07:34+00:00"
+}

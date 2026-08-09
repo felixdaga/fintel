@@ -1,0 +1,179 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30969,
+    "tokens_out": 1168,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034473,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.35,
+      "rationale": "Goldman Sachs delivered a blowout Q1 2026 with record-equivalent earnings (EPS $17.55, second-highest ever), 19.8% ROE, and record Global Banking & Markets revenue of $12.7B driven by advisory (+89% YoY) and record equities ($5.3B). The firm is the #1 global M&A advisor with 32% market share, and AUS hit a record $3.65T. However, the stock has already re-rated significantly: P/E has expanded from ~13x a year ago to 16.5x now, and P/B from 1.6x to 2.4x, pricing in much of the improvement. Operating cash flow was deeply negative at -$31.9B in Q1 (typical for GS given balance-sheet dynamics but still a risk flag). The macro backdrop is mixed \u2014 elevated oil prices and rising long-term yields create headwinds for deal activity, though the VIX has normalized. No clear near-term fundamental catalyst beyond the strong Q1 print that is already reflected in the price. The score reflects strong fundamentals and trajectory offset by a valuation that has already moved to the upper end of its 1-year range.",
+      "key_factors": [
+        "Q1 2026 record-equivalent earnings: EPS $17.55, revenue $17.23B, ROE 19.8%, ROTE 21.3%",
+        "#1 global M&A advisor with 32% market share and $1.48T in 2025 deals; advisory revenue +89% YoY in Q1",
+        "Record equities revenue of $5.3B and record AUS of $3.65T with $62B long-term inflows",
+        "P/E expanded from ~13x (May 2025) to 16.5x (May 2026), P/B from 1.6x to 2.4x \u2014 valuation now at upper end of 1-year range",
+        "Operating cash flow deeply negative at -$31.9B in Q1 2026, though partly structural for GS",
+        "Macro headwinds: oil at $105/barrel, 10Y yield at 4.47%, potential deal-activity slowdown from geopolitical tensions",
+        "71% revenue concentration in cyclical Global Banking & Markets segment",
+        "No clear near-term catalyst beyond the already-reported Q1 beat; next earnings not until July 14, 2026"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.23B net_income=5.63B eps_diluted=17.55 operating_income=6.49B total_assets=2060.18B total_equity=122.78B operating_cash_flow=-31.87B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=16.518 p_b=2.431 p_s=4.937 earnings_yield=0.061 net_margin=0.299 roe=0.147 operating_margin=0.375"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-15",
+          "excerpt": "pe_diluted=13.43 p_b=1.608 net_margin=0.274 roe=0.12"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "swotpal.com",
+          "excerpt": "#1 global M&A advisor: $1.48T deals, 32% market share; Record equities trading revenue $16.5B (+23% YoY); $3.6T AUS, record $115B alternatives fundraising"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com Q1 2026 earnings call",
+          "excerpt": "Net Revenue: $17.2 billion, second highest in Goldman Sachs history. Net Earnings: $5.6 billion, second highest in Goldman Sachs history. EPS: $17.55. ROE: 19.8%. ROTE: 21.3%. Global Banking & Markets Revenue: $12.7 billion, record quarterly revenue. Advisory Revenue: $1.5 billion, up 89% year-over-year. Equities Net Revenue: $5.3 billion, record quarterly revenue. AUS: $3.7 trillion, record high."
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-05-14",
+          "excerpt": "DGS10=4.47% DCOILWTICO=104.66 VIXCLS=17.26"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-04",
+          "excerpt": "Military tensions in the Strait of Hormuz drove oil prices up 3%, pressuring energy-sensitive stocks like Goldman Sachs and Caterpillar."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "financhill.com",
+          "excerpt": "The next quarterly earnings date for The Goldman Sachs Group, Inc. is scheduled on July 14, 2026."
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4443,
+        "capped_chars": 4443,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 219555,
+        "capped_chars": 219555,
+        "raw_tokens": 54889,
+        "capped_tokens": 54889
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2692,
+        "capped_chars": 2692,
+        "raw_tokens": 673,
+        "capped_tokens": 673
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 43467,
+        "capped_chars": 7146,
+        "raw_tokens": 10867,
+        "capped_tokens": 1786
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 131384,
+        "capped_chars": 104708,
+        "raw_tokens": 32846,
+        "capped_tokens": 26177
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 53719,
+  "started_at": "2026-08-07T02:59:34+00:00"
+}

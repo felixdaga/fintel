@@ -1,0 +1,187 @@
+{
+  "cell": "MRK",
+  "symbols": [
+    "MRK"
+  ],
+  "decision_date": "2026-07-17",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34660,
+    "tokens_out": 1334,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038662,
+    "basis": "reported"
+  },
+  "views": {
+    "MRK": {
+      "symbol": "MRK",
+      "score": -1.0,
+      "rationale": "Merck's Q1 2026 results reveal a severe earnings collapse: net income of -$4.24B and EPS of -$1.72, driven by a $9B one-time Cidara charge and the pending Terns acquisition's ~$5.8B IPR&D charge. While revenue grew 4.9% YoY to $16.29B, the GAAP loss is not a one-off noise \u2014 it reflects aggressive M&A spending that will depress 2026 EPS to ~$4.35 (down 51.6% from $8.98 in 2025). The stock has rallied 48% from its 52-week low of $76.66 to $127.63, yet the P/E has ballooned to 35.3x \u2014 the top of its 365-day range (11.1\u201335.8) \u2014 while net margin has halved to 13.6% and ROE has fallen to 19.5% from 36.1% a year ago. This is the most expensive the stock has been on trailing earnings in the available window, precisely when fundamentals are at their weakest. The Keytruda patent cliff (late 2028) remains the dominant structural risk, with Keytruda accounting for ~49% of 2024 revenue. Gardasil sales declined 22% in Q1 due to China regulatory issues. The LITESPARK-012 readout failed. Q2 2026 EPS is expected to be $1.36, down 36.2% YoY. There is no near-term fundamental catalyst to justify the elevated multiple \u2014 the next earnings report (Aug 4) is more likely to be a de-rating event given the expected double-digit profit decline. The combination of deteriorating earnings trajectory, peak valuation, and concentrated Keytruda risk makes MRK strongly unattractive at current levels.",
+      "key_factors": [
+        "Q1 2026 GAAP net loss of $4.24B (EPS -$1.72) driven by $9B Cidara charge and Terns acquisition IPR&D charges",
+        "P/E of 35.3x is at the top of its 365-day range (11.1\u201335.8), while net margin halved to 13.6% and ROE fell to 19.5% from 36.1%",
+        "2026 non-GAAP EPS guidance of $4.35 is down 51.6% from $8.98 in 2025; Q2 2026 EPS expected at $1.36, down 36.2% YoY",
+        "Keytruda patent cliff (late 2028) with ~49% revenue concentration; Gardasil sales declined 22% in Q1 due to China issues",
+        "Stock has rallied 48% from 52-week low to $127.63 despite fundamental deterioration \u2014 peak valuation meets trough earnings",
+        "Next earnings report (Aug 4, 2026) expected to show continued profit decline, creating de-rating risk"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=16.29B net_income=-4.24B eps_diluted=-1.72 operating_income=-3.53B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-16",
+          "excerpt": "pe_diluted=35.311 p_b=6.869 net_margin=0.136 roe=0.195"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-17",
+          "excerpt": "pe_diluted=11.823 p_b=4.263 net_margin=0.273 roe=0.361"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-16",
+          "excerpt": "close=127.63; range over ~251 bars: high=130.29 low=76.66"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "excerpt": "FY 2026 EPS (Non-GAAP) $5.14; FY 2027 EPS (Non-GAAP) $9.64; P/E 32x; 2Y Excs Rtn is -43%, 3Y Excs Rtn is -57%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "barchart.com earnings preview",
+          "excerpt": "analysts expect the company's EPS to be $1.36 on a diluted basis, down 36.2% from $2.13 in the year-ago quarter"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "inkl.com earnings preview",
+          "excerpt": "For fiscal 2026, analysts project the company's EPS to be $4.35, down 51.6% from $8.98 in fiscal 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tipranks.com earnings call",
+          "excerpt": "Q1 loss per share of $1.28 that included a $3.62 per-share onetime Cidara charge; Terns deal expected to add a onetime R&D charge of about $5.8 billion (~$2.35 per share)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com segments",
+          "excerpt": "Keytruda Patent Cliff: primary U.S. patents are set to expire in late 2028; Keytruda accounting for nearly half of its pharmaceutical sales in 2024"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "excerpt": "Flags risks around weaker GARDASIL demand in China, possible tariffs, competition, loss of exclusivity for KEYTRUDA and pricing pressure across major markets"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "MRK",
+    "decision_date": "2026-07-17",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4573,
+        "capped_chars": 4573,
+        "raw_tokens": 1143,
+        "capped_tokens": 1143
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224727,
+        "capped_chars": 224727,
+        "raw_tokens": 56182,
+        "capped_tokens": 56182
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30257,
+        "capped_chars": 30257,
+        "raw_tokens": 7564,
+        "capped_tokens": 7564
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1846,
+        "capped_chars": 1846,
+        "raw_tokens": 462,
+        "capped_tokens": 462
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 33258,
+        "capped_chars": 6643,
+        "raw_tokens": 8314,
+        "capped_tokens": 1661
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108438,
+        "capped_chars": 88972,
+        "raw_tokens": 27109,
+        "capped_tokens": 22244
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 49036,
+  "started_at": "2026-08-07T03:08:06+00:00"
+}

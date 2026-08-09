@@ -1,0 +1,191 @@
+{
+  "cell": "AMZN",
+  "symbols": [
+    "AMZN"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 60436,
+    "tokens_out": 1333,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.064435,
+    "basis": "reported"
+  },
+  "views": {
+    "AMZN": {
+      "symbol": "AMZN",
+      "score": 0.35,
+      "rationale": "Amazon demonstrates strong fundamental health and accelerating trajectory across its key segments. Q1 2026 results showed 17% revenue growth to $181.5B, with AWS accelerating to 28% YoY growth (fastest in 15 quarters), operating margin expanding to a record 13.1%, and advertising growing 22% YoY. The quarterly trajectory from the quantitative data shows consistent sequential improvement: revenue grew from $155.67B (Q1 2025) to $167.70B (Q2) to $180.17B (Q3), with EPS rising from $1.59 to $1.68 to $1.95. Balance sheet is solid with $369.6B equity and manageable $55.1B debt (debt-to-equity 0.149). However, the $200B capex commitment for 2026 has compressed free cash flow to just $1.2B TTM (down 95% YoY), which is a meaningful constraint. On valuation, the current P/E of 37.6x sits near the top of its 12-month range (28.2-40.9x), having expanded significantly from the 28.3x trough in late March 2026. The stock has rallied ~25% in 30 days, which has moved valuation from clearly attractive to fair-to-slightly-rich territory. The Q1 earnings beat (EPS $2.78 vs $1.64 est, though aided by $16.8B Anthropic gains) and AWS reacceleration provide a near-term positive catalyst that has already been partially priced in with the post-earnings move. News sentiment is moderately positive (mean 0.30 over 90 days). The combination of excellent business trajectory but elevated near-term valuation and massive capex uncertainty yields a mildly-to-moderately attractive score.",
+      "key_factors": [
+        "AWS revenue growth accelerated to 28% YoY in Q1 2026, fastest in 15 quarters, reaching $150B annualized run rate",
+        "Record operating margin of 13.1% with operating income of $23.9B in Q1 2026",
+        "$200B capex commitment for 2026 compressing free cash flow to $1.2B TTM (down 95% YoY)",
+        "Current P/E of 37.6x near top of 12-month range (28.2-40.9x) after 25% rally in 30 days",
+        "Advertising revenue growing 22% YoY to $17.2B, with TTM exceeding $70B",
+        "Custom chip business reached $20B annual revenue run rate growing triple digits",
+        "Strong balance sheet with $369.6B equity and low debt-to-equity of 0.149",
+        "Q1 2026 earnings beat with EPS $2.78 vs $1.64 estimate (includes $16.8B Anthropic investment gains)",
+        "Regulatory overhang from California price-fixing lawsuit and FTC antitrust case",
+        "Sequential quarterly revenue and EPS improvement across Q1-Q3 2025 data"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=180.17B net_income=21.19B eps_diluted=1.95 operating_income=17.42B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-30 Q2",
+          "excerpt": "revenue=167.70B eps_diluted=1.68"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=155.67B eps_diluted=1.59"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "excerpt": "pe_diluted=37.585 p_b=7.777 net_margin=0.111 roe=0.207 debt_to_equity=0.149"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_2025-05-01_to_2026-04-30",
+          "excerpt": "pe_diluted 28.2..40.9 | p_b 5.8..8.3"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 aboutamazon Q1 2026",
+          "excerpt": "Net sales increased 17% to $181.5 billion; AWS segment sales increased 28% year-over-year to $37.6 billion; Operating income increased to $23.9 billion; Operating Margin 13.1% highest ever"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 aboutamazon Q1 202",
+          "excerpt": "Free cash flow decreased to $1.2 billion for the trailing twelve months, driven primarily by a year-over-year increase of $59.3 billion in purchases of property and equipment"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30 aboutamazon Q1 2026",
+          "excerpt": "chips business topped a $20 billion revenue run rate (growing triple digits year-over-year), Advertising grew to over $70 billion in TTM revenue"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-20 nytimes",
+          "excerpt": "California Accuses Amazon of Price Fixing in Legal Filing; lawsuit scheduled to go to trial next year"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-02-01_to_2026-04-30",
+          "excerpt": "mean=0.301 n_articles=976"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMZN",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3859,
+        "capped_chars": 3859,
+        "raw_tokens": 965,
+        "capped_tokens": 965
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 231835,
+        "capped_chars": 231835,
+        "raw_tokens": 57959,
+        "capped_tokens": 57959
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 854,
+        "capped_chars": 854,
+        "raw_tokens": 214,
+        "capped_tokens": 214
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30817,
+        "capped_chars": 30817,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4378,
+        "capped_chars": 4378,
+        "raw_tokens": 1094,
+        "capped_tokens": 1094
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 393118,
+        "capped_chars": 91154,
+        "raw_tokens": 98280,
+        "capped_tokens": 22788
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 119050,
+        "capped_chars": 97628,
+        "raw_tokens": 29762,
+        "capped_tokens": 24407
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 46165,
+  "started_at": "2026-08-07T02:57:42+00:00"
+}

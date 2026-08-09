@@ -1,0 +1,174 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35279,
+    "tokens_out": 952,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.037047,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing's fundamental health is severely impaired. The company is still loss-making on1 2026 (GAAP EPS -$0.11, core EPS -$0.20), with negative operating cash flow of -$179M and negative free cash flow of -$1.5B. The balance sheet is dangerously leveraged with total debt of $46.96B against total equity of only $5.99B (debt-to-equity 7.84x). While revenue grew 14% YoY to $22.2B and deliveries improved, the Commercial Airplanes segment still operates at -6.1% margins, and the company remains years away from sustainable profitability. Valuation is extremely stretched at a P/E of 81.6x and P/B of 30.8x for a company that is barely profitable and burning cash. The stock has declined 6.9% over the past quarter but remains expensive relative to its fundamental trajectory. Near-term catalysts are limited - the Q1 earnings beat was already priced in with the stock surging 4.7% pre-market, and the $1-3B positive FCF guidance for 2026 is aspirational given the $4B CapEx budget and 777X development costs. The $1.5T Pentagon budget proposal is a long-term tailwind but won't meaningfully impact near-term financials. Risks include continued FAA regulatory scrutiny, production execution challenges, and the massive debt overhang that will constrain capital allocation for years.",
+      "key_factors": [
+        "Q1 2026 GAAP loss per share of -$0.11 with negative operating cash flow of -$179M",
+        "Debt-to-equity ratio of 7.84x with $46.96B total debt against $5.99B equity",
+        "P/E ratio of 81.6x and P/B of 30.8x for a loss-making, cash-burning company",
+        "Commercial Airplanes segment operating margin of -6.1% despite delivery improvements",
+        "Free cash flow of -$1.5B in Q1 with $4B CapEx budget for 2026",
+        "777X program delayed until 2027 with ongoing development costs",
+        "FAA regulatory overhang with new airworthiness directives for 787 Dreamliner",
+        "Stock already rallied 4.7% pre-market on Q1 earnings beat, limiting near-term upside"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-04-22 Q1",
+          "excerpt": "GAAP loss per share of ($0.11) and core loss per share (non-GAAP) of ($0.20). Operating cash flow of ($0.2) billion and free cash flow (non-GAAP) of ($1.5) billion"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 balance sheet",
+          "excerpt": "total_debt=46.96B total_equity=5.99B debt_to_equity=7.844"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=81.569 p_b=30.818"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-22 Boeing Q1 results",
+          "excerpt": "Boeing's Commercial Airplanes unit posted revenue $9.2 billion, up 13%, though it still posted a loss from operations. Operating margin of -6.1%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-22 earnings call",
+          "excerpt": "Free cash flow for 2026 is structurally constrained by three specific outflows: an elevated $4 billion capital expenditure budget"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-03-26 FAA AD",
+          "excerpt": "The FAA proposes to adopt a new airworthiness directive for all Boeing Model 787-8, 787-9, and 787-10 airplanes. This proposed AD was prompted by reports of fatigue cracks found on the thrust reverser"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "excerpt": "close=234.15 quarterly delta=-6.9%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 215013,
+        "capped_chars": 215013,
+        "raw_tokens": 53753,
+        "capped_tokens": 53753
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2547,
+        "capped_chars": 2547,
+        "raw_tokens": 637,
+        "capped_tokens": 637
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 36738,
+        "capped_chars": 7584,
+        "raw_tokens": 9184,
+        "capped_tokens": 1896
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 105364,
+        "capped_chars": 83751,
+        "raw_tokens": 26340,
+        "capped_tokens": 20938
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 32390,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

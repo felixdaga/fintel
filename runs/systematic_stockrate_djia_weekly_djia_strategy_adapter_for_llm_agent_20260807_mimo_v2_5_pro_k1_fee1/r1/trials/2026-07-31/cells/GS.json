@@ -1,0 +1,189 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-07-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 36964,
+    "tokens_out": 1360,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.041044,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.35,
+      "rationale": "Goldman Sachs shows strong fundamental health and trajectory. Q1 2026 revenue of $17.23B and EPS of $17.55 represent robust YoY growth of +14.4% and +24.3% respectively, with QoQ acceleration of +13.5% and +43.3%. The firm just reported a record Q2 2026 EPS of $20.98, crushing consensus of $14.47 by 45%, with revenue of $20.34B up 39.4% YoY. This was driven by a 53% increase in Global Banking & Markets revenue and record assets under management exceeding $4 trillion. Net margin has improved to 29.9% and ROE to 14.7%, up from 12% a year ago. The franchise remains elite in investment banking and trading, with strategic focus on growing recurring fee-based asset and wealth management revenue. Valuation is moderate: P/E of 17.47x sits in the middle of its 14.5-19.6x 12-month range, while P/B of 2.57x is near the top of its 1.8-2.9x range. The stock has rallied +13.2% over the past quarter to $1,024.86, partially reflecting the strong Q2 beat. Near-term catalyst exists: the Q2 earnings beat on July 14 was massive and the stock jumped 9% the next day, but the stock has since pulled back from $1,140 to $1,025, suggesting the market may not have fully digested the earnings power. However, macro headwinds are notable: 10Y Treasury yields have risen to 4.68%, the yield curve has flattened (T10Y2Y at 0.45%), and geopolitical tensions with oil price volatility create uncertainty for capital markets activity. The operating cash flow of -$31.87B in Q1 2026 is a concern, though this is typical for large banks with volatile working capital. Overall, the fundamental trajectory is clearly positive with strong earnings momentum, but valuation is not cheap enough to warrant a higher score, and macro risks temper enthusiasm.",
+      "key_factors": [
+        "Record Q2 2026 EPS of $20.98, beating consensus by 45% with revenue up 39.4% YoY",
+        "Strong Q1 2026 YoY growth: revenue +14.4%, EPS +24.3%, net income +18.8%",
+        "Net margin improved to 29.9% and ROE to 14.7% from 12% a year ago",
+        "P/E of 17.47x in middle of 12-month range (14.5-19.6x); P/B of 2.57x near top of range (1.8-2.9x)",
+        "Stock rallied 9% post-Q2 beat but has pulled back from $1,140 to $1,025",
+        "Rising 10Y yields (4.68%) and geopolitical tensions create macro headwinds for capital markets",
+        "Strategic shift toward recurring fee-based asset and wealth management revenue; AUM exceeded $4 trillion",
+        "Operating cash flow of -$31.87B in Q1 2026, though volatile for large banks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.23B net_income=5.63B eps_diluted=17.55 operating_income=6.49B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+14.4% eps_diluted=+24.3% net_income=+18.8%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-14 Q2 earnings",
+          "excerpt": "Q2 2026 earnings on July 14, 2026, reporting an EPS of $20.98, which topped analysts' consensus estimates of $14.47 by $6.51. Quarterly revenue rose 39.4% year-over-year to $20.34 billion"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-14",
+          "excerpt": "record performance in the second quarter, including record revenue of $20.3 billion, record fees, record assets under management of more than $4 trillion, and record earnings per share of $20.98. Global banking and markets revenue increased 53% year over year"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30",
+          "excerpt": "pe_diluted=17.47 p_b=2.571 net_margin=0.299 roe=0.147"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-30 range",
+          "excerpt": "pe_diluted 14.5..19.6 | p_b 1.8..2.9"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-30",
+          "excerpt": "close=1024.86 quarterly delta +13.2%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-14 post-earnings",
+          "excerpt": "Price 1 Day Before: $1045.91, Price 1 Day After: $1140.00, Percentage Change: +9.00%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-30",
+          "excerpt": "DGS10=4.68% T10Y2Y=0.45"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 cash flow",
+          "excerpt": "operating_cash_flow=-31.87B"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-07-31",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4443,
+        "capped_chars": 4443,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 219632,
+        "capped_chars": 219632,
+        "raw_tokens": 54908,
+        "capped_tokens": 54908
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30561,
+        "capped_chars": 30561,
+        "raw_tokens": 7640,
+        "capped_tokens": 7640
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2918,
+        "capped_chars": 2918,
+        "raw_tokens": 730,
+        "capped_tokens": 730
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 45717,
+        "capped_chars": 6135,
+        "raw_tokens": 11429,
+        "capped_tokens": 1534
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 109500,
+        "capped_chars": 81836,
+        "raw_tokens": 27375,
+        "capped_tokens": 20459
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 52078,
+  "started_at": "2026-08-07T03:09:35+00:00"
+}

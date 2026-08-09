@@ -1,0 +1,189 @@
+{
+  "cell": "GS",
+  "symbols": [
+    "GS"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32259,
+    "tokens_out": 1303,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.036168,
+    "basis": "reported"
+  },
+  "views": {
+    "GS": {
+      "symbol": "GS",
+      "score": 0.35,
+      "rationale": "Goldman Sachs shows strong fundamental health and positive trajectory. Q1 2026 revenue of $17.23B (+14.4% YoY) and EPS of $17.55 (+24.3% YoY) demonstrate robust earnings growth, with operating margins of 37.5% and net margins of 29.9% reflecting high profitability. The firm's ROE has improved to 14.7% (from 12% a year ago), and the balance sheet, while leveraged as expected for a G-SIB, shows total equity of $122.78B against $2.06T in assets. The strategic pivot back to core investment banking and markets is paying dividends\u2014Q1 saw a hot M&A market with $1.2T in deals and investment banking revenue up 48%. The firm just passed the Fed stress test and announced an 11% dividend increase to $5.00/share, its 15th consecutive year of increases, signaling confidence. Valuation is moderately elevated vs. its own history: P/E of 17.4x sits near the top of its 14.5-18.9x 365-day range, and P/B of 2.56x is at the high end of 1.8-2.8x. This is not cheap, but the improved ROE and earnings trajectory partially justify the multiple expansion. A near-term catalyst exists: Q2 earnings on July 14, with consensus expecting $13.95 EPS (up from $10.91 YoY) and $15.9B revenue. The firm is also positioned to benefit from major upcoming IPOs (SpaceX, OpenAI, Anthropic). However, risks include: (1) operating cash flow was deeply negative at -$31.87B in Q1, typical for banks but worth monitoring; (2) the Fed now expects at least one rate hike in 2026, which historically correlates with market corrections; (3) CET1 ratio dropped to 12.5% due to aggressive buybacks; and (4) the stock has already rallied +18.7% in the past quarter, limiting upside. The score of +0.35 reflects solid fundamentals and a credible near-term catalyst, tempered by rich valuation and macro headwinds.",
+      "key_factors": [
+        "Q1 2026 revenue +14.4% YoY, EPS +24.3% YoY \u2014 strong earnings trajectory",
+        "Operating margin 37.5%, net margin 29.9%, ROE improved to 14.7% \u2014 high profitability",
+        "11% dividend increase to $5.00/share after passing Fed stress test \u2014 capital return confidence",
+        "P/E 17.4x near top of 14.5-18.9x range, P/B 2.56x at high end of 1.8-2.8x \u2014 valuation somewhat stretched",
+        "Q2 earnings July 14 with consensus $13.95 EPS \u2014 near-term catalyst",
+        "Fed expects rate hikes in 2026; historical precedent of market corrections following rate increase cycles",
+        "Stock +18.7% over past quarter \u2014 significant recent appreciation may limit near-term upside",
+        "CET1 ratio at 12.5% after aggressive buybacks \u2014 capital adequacy worth monitoring"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.23B net_income=5.63B eps_diluted=17.55 operating_income=6.49B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=15.06B eps_diluted=14.12"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=17.405 p_b=2.561 net_margin=0.299 roe=0.147 operating_margin=0.375"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-07",
+          "excerpt": "pe_diluted=15.502 p_b=1.856 roe=0.12"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-01",
+          "excerpt": "Goldman plans to raise its dividend from $4.50 to $5 per share"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-30",
+          "excerpt": "Goldman Sachs raised its quarterly dividend by 11% to $5.00 per share after passing the Federal Reserve's stress test, marking the 15th consecutive year of dividend increases"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-29",
+          "excerpt": "Analysts expect quarterly earnings of $13.95 per share, up from $10.91 per share in the year-ago period. The consensus estimate for Goldman Sachs' quarterly revenue is $15.9 billion."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-01",
+          "excerpt": "The Federal Reserve now expects at least one interest rate increase in 2026, reversing earlier expectations for rate cuts. Historical data shows that the previous four rate-increase cycles since 1999 coincided with stock market corrections"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-02",
+          "excerpt": "close=1021.00 quarterly delta +18.7%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-15",
+          "excerpt": "The bank's CET1 ratio dropped sharply to 12.5%, driven by aggressive share buybacks and balance sheet expansion"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "GS",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4443,
+        "capped_chars": 4443,
+        "raw_tokens": 1111,
+        "capped_tokens": 1111
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 218736,
+        "capped_chars": 218736,
+        "raw_tokens": 54684,
+        "capped_tokens": 54684
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 866,
+        "capped_chars": 866,
+        "raw_tokens": 216,
+        "capped_tokens": 216
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2926,
+        "capped_chars": 2926,
+        "raw_tokens": 732,
+        "capped_tokens": 732
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 89567,
+        "capped_chars": 11539,
+        "raw_tokens": 22392,
+        "capped_tokens": 2885
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 103472,
+        "capped_chars": 84726,
+        "raw_tokens": 25868,
+        "capped_tokens": 21181
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 48820,
+  "started_at": "2026-08-07T03:06:08+00:00"
+}

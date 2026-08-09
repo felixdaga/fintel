@@ -1,0 +1,186 @@
+{
+  "cell": "BA",
+  "symbols": [
+    "BA"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30125,
+    "tokens_out": 1395,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.03431,
+    "basis": "reported"
+  },
+  "views": {
+    "BA": {
+      "symbol": "BA",
+      "score": -1.0,
+      "rationale": "Boeing's fundamental health is severely impaired: the company carries $46.96B in debt against only $5.99B in equity (debt-to-equity 7.8x), has generated negative operating cash flow in two of the last three quarters, and remains unprofitable on a net income basis (Q1 2026 net income -$7M, EPS -$0.11). The 777X program has been delayed to 2027 with over $15B in cumulative charges, the 737 MAX production cap remains at 42/month (below the 47/month target), and a live jury trial related to 737 MAX safety allegations poses additional legal and financial risk. Valuation is extremely stretched at 77.7x P/E and 29.4x P/B, pricing in a recovery that is far from assured given persistent operational, regulatory, and legal headwinds. The stock has traded in a narrow range ($176.77-$254.35) over the past year with no clear upward momentum, and the near-term catalyst calendar offers more downside risk (777X delays, legal proceedings, potential further production constraints) than upside. The combination of deteriorating fundamentals, extreme leverage, stretched valuation, and unresolved execution risks makes Boeing one of the most unattractive large-cap industrial names.",
+      "key_factors": [
+        "Debt-to-equity of 7.8x ($46.96B debt vs $5.99B equity) creates severe financial fragility",
+        "Negative operating cash flow in Q1 2026 (-$179M) and Q1 2025 (-$1.62B) despite revenue growth",
+        "777X program delayed to 2027 with $15B+ in cumulative charges; cash neutrality not targeted until 2028",
+        "737 MAX production capped at 42/month by FAA, below Boeing's 47/month target; regulatory scrutiny ongoing",
+        "Live jury trial (LOT Polish Airlines) on 737 MAX safety allegations could trigger additional lawsuits and damages",
+        "P/E of 77.7x and P/B of 29.4x are extremely stretched for a company with negative net margins and negative cash flow",
+        "Net income barely positive ($-7M in Q1 2026) despite 14% YoY revenue growth, indicating margin compression",
+        "Operating margin of 4.6% and gross margin of 4.8% are thin for a capital-intensive manufacturer",
+        "Analyst consensus 'Moderate Buy' with average target ~$262 implies only ~17% upside, insufficient given risk profile",
+        "Near-term catalysts (777X delays, legal proceedings, production cap constraints) skew to downside risk"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=22.22B net_income=-7.00M eps_diluted=-0.11 operating_income=448.00M total_equity=5.99B total_debt=46.96B operating_cash_flow=-179.00M"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=77.724 p_b=29.365 p_s=1.907 debt_to_equity=7.844 gross_margin=0.048 operating_margin=0.046 net_margin=0.025"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-01",
+          "excerpt": "Boeing provides diversified operations and stability but carries high debt and production challenges"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout",
+          "excerpt": "$47.2 billion debt load, ongoing 777X program delays to 2027, and a live jury trial related to 737 MAX safety allegations"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingview",
+          "excerpt": "Boeing quietly delivered 60 commercial aircraft in May, a 33% year-over-year (YOY) surge that mechanically drives the free cash flow required for aggressive balance sheet deleveraging"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ad-hoc-news",
+          "excerpt": "Boeing has kept 737 MAX production at constrained levels after a January 2024 Alaska Airlines incident prompted intensified Federal Aviation Administration (FAA) inspections and a production cap on the model"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "theamericanreporter",
+          "excerpt": "In 2025: Airbus delivered 793 planes to customers, while Boeing only managed 600. In 2026 (Year-to-Date through May): Airbus maintains the lead with 262 deliveries compared to Boeing's 250"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "prices",
+          "excerpt": "},{"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st",
+          "excerpt": "Boeing's financial struggles persist despite a $25 billion capital raise, with weak earnings and cash flow justifying a downgrade from 'hold' to 'sell'"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "BA",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3838,
+        "capped_chars": 3838,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 218240,
+        "capped_chars": 218240,
+        "raw_tokens": 54560,
+        "capped_tokens": 54560
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 842,
+        "capped_chars": 842,
+        "raw_tokens": 210,
+        "capped_tokens": 210
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 2400,
+        "capped_chars": 2400,
+        "raw_tokens": 600,
+        "capped_tokens": 600
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 25362,
+        "capped_chars": 5542,
+        "raw_tokens": 6340,
+        "capped_tokens": 1386
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 75196,
+        "capped_chars": 56282,
+        "raw_tokens": 18799,
+        "capped_tokens": 14071
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 41250,
+  "started_at": "2026-08-07T03:06:45+00:00"
+}

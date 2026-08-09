@@ -1,0 +1,186 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 32280,
+    "tokens_out": 1121,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035643,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "rationale": "Chevron's fundamental health and trajectory are deteriorating sharply. Q1 2026 showed EPS of $1.11, down 44.5% YoY from $2.00, with operating cash flow collapsing 51.6% to $2.51B. The quarterly trajectory is non-contiguous (Q1,Q3,Q2,Q1) making TTM unreliable, but the most recent quarter shows severe margin compression: net margin fell to 5.9% from 7.8% a year ago, operating margin at 9.5%, and ROE collapsed to 5.9% from 10.5%. Valuation is extremely stretched: P/E of 30.4x is near the top of its 16-35 range over the past year, having expanded from 16x in June 2025 despite earnings declining. P/B of 1.8x is mid-range but supported by a balance sheet that saw total equity decline from $195.6B to $189.4B QoQ. The stock has already declined 16% in the past quarter from $205 to $172, yet remains expensive relative to deteriorating fundamentals. Oil prices have crashed 30% from $105 to $73/bbl (WTI), directly threatening Chevron's upstream earnings. The U.S.-Iran peace deal reopening the Strait of Hormuz removes the geopolitical premium that had supported oil prices. While the Microsoft data center deal is a positive long-term growth platform, it's modest relative to Chevron's scale and won't offset near-term earnings headwinds. The Hess acquisition integration adds production but also complexity and legal risk from Exxon's arbitration claim. Dividend coverage is strained with earnings yield at only 3.3%. No credible near-term fundamental catalyst exists to re-rate the stock higher; the next earnings event will likely show continued pressure from lower oil prices.",
+      "key_factors": [
+        "Q1 2026 EPS down 44.5% YoY to $1.11, severe earnings deterioration",
+        "P/E expanded to 30.4x from 16x a year ago despite declining earnings - extreme valuation disconnect",
+        "WTI crude crashed 30% from ~$105 to $73/bbl, directly threatening upstream earnings",
+        "Operating cash flow collapsed 51.6% YoY to $2.51B in Q1 2026",
+        "Net margin compressed to 5.9% from 7.8% year ago, ROE fell to 5.9% from 10.5%",
+        "U.S.-Iran peace deal removesing geopolitical oil premium, removing support for oil prices",
+        "Stock down 16% in past quarter but still trading near top of historical P/E range",
+        " earnings yield only 3.3%",
+        " dividend coverage strained",
+        "Hess acquisition faces Exxon arbitration risk on Guyana assets"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=48.61B net_income=2.29B eps_diluted=1.11 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=47.61B eps=2.00 net_income=3.51B operating_cash_flow=5.19B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=30.361 p_b=1.806 earnings_yield=0.033 net_margin=0.059 roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-26",
+          "excerpt": "pe_diluted=16.103 p_b=1.686 net_margin=0.078 roe=0.105"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-25",
+          "excerpt": "DCOILWTICO=72.67, down from 104.69 on 2026-03-30 (-30.6%)"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=172.24, quarterly delta -16.0% from 205.15"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-15",
+          "excerpt": "U.S.-Iran peace agreement reopens Strait of Hormuz, crude oil tumbled 5%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-24",
+          "excerpt": "Chevron-Microsoft 20-year natural gas power deal for AI data center, $7B project"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey.com",
+          "excerpt": "Hess acquisition stalled by arbitration claim from Exxon Mobil and CNOOC regarding right of first refusal on key Guyana assets"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225241,
+        "capped_chars": 225241,
+        "raw_tokens": 56310,
+        "capped_tokens": 56310
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3336,
+        "capped_chars": 3336,
+        "raw_tokens": 834,
+        "capped_tokens": 834
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 28313,
+        "capped_chars": 6672,
+        "raw_tokens": 7078,
+        "capped_tokens": 1668
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 108146,
+        "capped_chars": 86336,
+        "raw_tokens": 27037,
+        "capped_tokens": 21585
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 55297,
+  "started_at": "2026-08-07T03:05:12+00:00"
+}

@@ -1,0 +1,184 @@
+{
+  "cell": "NKE",
+  "symbols": [
+    "NKE"
+  ],
+  "decision_date": "2026-05-15",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35308,
+    "tokens_out": 1095,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038593,
+    "basis": "reported"
+  },
+  "views": {
+    "NKE": {
+      "symbol": "NKE",
+      "score": -1.0,
+      "rationale": "Nike's fundamental health and trajectory are severely impaired. Q3 FY2026 (Feb 2026) showed revenue flat YoY at $11.28B but EPS collapsed 35% to $0.35, with net margin shrinking to 4.8% (from 9.4% a year prior). Operating income fell to $650M from $844M YoY, and operating cash flow plunged 76% to $430M. The company faces multiple structural headwinds: declining China sales (down 10%), margin compression from inventory overhang, EEOC investigation into DEI practices, 14,000 layoffs, and intensifying competition from On, Hoka, and New Balance. Management has guided for continued low single-digit revenue declines over the next three quarters and delayed gross margin expansion to Q2 2027. Valuation remains elevated at 27.7x PE despite deteriorating fundamentals, with the stock down 32% YTD but still trading above its 52-week low. Near-term catalysts are negative: Q4 FY2026 earnings (Jun 25) expected to show further EPS decline to $0.14, and the dividend payout ratio of 108.6% signals unsustainability. The combination of collapsing profitability, structural competitive threats, regulatory overhang, and rich valuation relative to deteriorating earnings power makes this extremely unattractive.",
+      "key_factors": [
+        "Q3 FY2026 EPS down 35% YoY to $0.35; net margin compressed to 4.8% from 9.4%",
+        "Operating cash flow down 76% YoY to $430M; dividend payout ratio 108.6% unsustainable",
+        "China revenue down 10% with structural shift to domestic brands; EEOC investigation ongoing",
+        "14,000 layoffs and 'Win Now' overhaul signal deep operational distress",
+        "PE of 27.7x remains elevated vs deteriorating earnings; stock down 32% YTD but not cheap",
+        "Q4 FY2026 EPS consensus $0.14 (flat YoY); guidance for continued revenue declines",
+        "Competition from On (30%+ growth), Hoka, New Balance eroding market share",
+        "Gross margin expansion delayed to Q2 2027; inventory overhang persists"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-02-28 Q3",
+          "excerpt": "revenue=11.28B eps=0.35 net_income=520M operating_income=650M operating_cash_flow=430M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-02-28 Q3",
+          "excerpt": "revenue=11.27B eps=0.54 net_income=794M operating_income=844M operating_cash_flow=1.79B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-05-14",
+          "excerpt": "pe_diluted=27.67 net_margin=0.048 roe=0.16"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-15",
+          "excerpt": "pe_diluted=20.495 net_margin=0.094 roe=0.322"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-06",
+          "excerpt": "Nike stock has plummeted 32% year-to-date and 76% from its 2021 peak, facing multiple headwinds including declining sales (especially in China where sales fell 10%), shrinking profit margins from 12.8% to 4.8%, an EEOC investigation into DEI hiring practices"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-03",
+          "excerpt": "Nike stock fell 16% in April following disappointing Q3 earnings where revenue was flat and profits tumbled. The company lowered its recovery forecast, expecting low single-digit revenue declines over the next three quarters and delayed gross margin expansion to Q2 2027"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-08",
+          "excerpt": "Nike is expected to post earnings of $0.14 per share for the current quarter; consensus earnings estimate of $1.51 for the current fiscal year indicates a year-over-year change of -30.1%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-05-08",
+          "excerpt": "NIKE's payout ratio is presently 108.61%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-04-16",
+          "excerpt": "On (On Holding) reported revenue growth exceeding 30% YoY in recent quarters; Hoka (Deckers) and On target technical runners, eroding Nike's running dominance"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "NKE",
+    "decision_date": "2026-05-15",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4500,
+        "capped_chars": 4500,
+        "raw_tokens": 1125,
+        "capped_tokens": 1125
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224386,
+        "capped_chars": 224386,
+        "raw_tokens": 56096,
+        "capped_tokens": 56096
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30868,
+        "capped_chars": 30868,
+        "raw_tokens": 7717,
+        "capped_tokens": 7717
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1817,
+        "capped_chars": 1817,
+        "raw_tokens": 454,
+        "capped_tokens": 454
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 8222,
+        "capped_chars": 2815,
+        "raw_tokens": 2056,
+        "capped_tokens": 704
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 131538,
+        "capped_chars": 85494,
+        "raw_tokens": 32885,
+        "capped_tokens": 21374
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 53346,
+  "started_at": "2026-08-07T02:59:57+00:00"
+}

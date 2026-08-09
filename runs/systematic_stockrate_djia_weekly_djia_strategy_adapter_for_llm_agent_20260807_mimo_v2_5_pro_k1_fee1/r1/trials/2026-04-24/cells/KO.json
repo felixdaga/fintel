@@ -1,0 +1,188 @@
+{
+  "cell": "KO",
+  "symbols": [
+    "KO"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31362,
+    "tokens_out": 1474,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035784,
+    "basis": "reported"
+  },
+  "views": {
+    "KO": {
+      "symbol": "KO",
+      "score": 0.25,
+      "rationale": "Coca-Cola is a high-quality defensive franchise with strong fundamentals: 61% gross margin, 28% operating margin, 40% ROE, and a 64-year dividend growth streak. Q2 2025 showed solid QoQ revenue growth of +12.6% and EPS growth of +14.3%.. the company holds ~45% global sparkling soft drink value share with an asset-light concentrate model. However, the stock trades at a27x P/E, near the upper end of its 23-30x 12-month range, and at 10.9x P/B \u2014 7.0x P/S \u2014 suggesting limited upside vs its own history. The balance sheet shows $74B in liabilities vs $30B equity ( $12.3B cash, with debt-to equity of 1.23x. The near-term catalyst is Q1 2026 earnings on April 28, where consensus expects $0.81 EPS (+11% YoY) and UBS projects mid-to-high single-digit organic revenue growth. Full-year 2026 guidance targets 4-5% organic revenue growth and 7-8% EPS growth, with $12.2B free cash flow guidance. News sentiment is broadly positive (mean 0.69) with multiple articles highlighting KO as a safe-haven dividend stock amid market volatility. Risks include currency headwinds (76% international revenue), sugar regulations, and commodity inflation (oil up 64% over the period). The stock is mildly attractive: solid franchise with positive trajectory, but valuation is fair-to-slightly-rich vs its own history, limiting the upside case.",
+      "key_factors": [
+        "Strong fundamental health: 61% gross margin, 28% operating margin, 40% ROE, asset-light concentrate model with ~45% global sparkling soft drink value share",
+        "Positive trajectory: Q2 2025 showed QoQ revenue +12.6%, EPS +14.3%; 2026 guidance targets 4-5% organic revenue growth and 7-8% EPS growth",
+        "Valuation fair-to-slightly-rich: P/E of 27x is near upper half of 23-30x 12-month range; P/B 10.9x and P/S 7.0x suggest limited multiple expansion potential",
+        "Near-term catalyst: Q1 2026 earnings on April 28 with consensus $0.81 EPS (+11% YoY) and UBS expecting mid-to-high single-digit organic revenue growth",
+        "Defensive positioning: low beta 0.33, 2.7% dividend yield, 64-year dividend growth streak, positive news sentiment (mean 0.69) as safe-haven in volatile market",
+        "Risks: 76% international revenue exposes to currency headwinds; oil up 64% over period pressures input costs; sugar tax regulations in key markets",
+        "Balance sheet: $74.15B total liabilities vs $30.18B equity, debt-to-equity 1.23x; $12.25B cash; 2026 FCF guidance of $12.2B supports dividend coverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-06-27 Q2",
+          "excerpt": "revenue=12.54B net_income=3.80B eps_diluted=0.88 gross_profit=7.82B operating_income=4.28B total_assets=104.33B total_equity=30.18B cash=12.25B operating_cash_flow=3.81B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=26.977 p_b=10.905 p_s=6.994 earnings_yield=0.037 net_margin=0.259 roe=0.404 gross_margin=0.614 operating_margin=0.28"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 23.2..30.1 | p_b 9.4..11.7 | net_margin 0.2..0.3 | roe 0.4..0.4"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-23",
+          "excerpt": "close=76.28 open=75.44 high=76.66 low=75.16 volume=12060271"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-21",
+          "excerpt": "Coca-Cola Q1 earnings set to show resilience amid uncertain backdrop... UBS expects Q1 earnings per share of $0.81, in line with market consensus... full-year underlying guidance is unlikely to change. The company is currently targeting organic sales growth of 4% to 5% and earnings growth of 5% to 6% for fiscal 2026"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-18",
+          "excerpt": "Coca-Cola is presented as a stable, low-maintenance investment option for risk-averse investors. The company's consistent profitability, 64-year dividend growth streak, and strong brand moat make it a reliable portfolio foundation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "matrixbcg.com competitive landscape",
+          "excerpt": "The company holds an estimated 45 percent global value share in the sparkling soft drink category as of late 2025... Operating margins hovered around 29 percent in 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com dividend coverage",
+          "excerpt": "Coca-Cola guided for free cash flow of approximately $12.2 billion in 2026, driven by expected operating cash flow of approximately $14.4 billion against capital expenditures of approximately $2.2 billion"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "excerpt": "DCOILWTICO=99.27 \u0394=38.81 (64.19%) over 63 days; VIXCLS=19.31 \u0394=3.16 (19.57%)"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "2026-01-25 to 2026-04-23",
+          "excerpt": "n_articles=144 n_scored=144 mean=0.691"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "KO",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3045,
+        "capped_chars": 3045,
+        "raw_tokens": 761,
+        "capped_tokens": 761
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 223385,
+        "capped_chars": 223385,
+        "raw_tokens": 55846,
+        "capped_tokens": 55846
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 770,
+        "capped_chars": 770,
+        "raw_tokens": 192,
+        "capped_tokens": 192
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3324,
+        "capped_chars": 3324,
+        "raw_tokens": 831,
+        "capped_tokens": 831
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 52377,
+        "capped_chars": 12138,
+        "raw_tokens": 13094,
+        "capped_tokens": 3034
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 123115,
+        "capped_chars": 78034,
+        "raw_tokens": 30779,
+        "capped_tokens": 19509
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 110048,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

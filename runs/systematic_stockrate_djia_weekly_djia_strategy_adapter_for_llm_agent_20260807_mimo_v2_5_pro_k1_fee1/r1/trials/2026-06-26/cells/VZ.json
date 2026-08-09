@@ -1,0 +1,178 @@
+{
+  "cell": "VZ",
+  "symbols": [
+    "VZ"
+  ],
+  "decision_date": "2026-06-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 30385,
+    "tokens_out": 1093,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.033664,
+    "basis": "reported"
+  },
+  "views": {
+    "VZ": {
+      "symbol": "VZ",
+      "score": 0.25,
+      "rationale": "Verizon presents a mildly attractive fundamental picture with stable, modestly growing earnings and a compelling valuation discount versus its own recent history. Q1 2026 showed solid execution: revenue +2.9% YoY, EPS +4.3% YoY, operating income expanding, and the first positive Q1 postpaid phone net additions since 2013 (55K). Management raised FY2026 adjusted EPS guidance to $4.95-$4.99 (up from $4.90-$4.95), signaling confidence. The stock trades at a P/E of ~10.9x, well below the 12-month range of 10.6-21.2x and significantly below the ~17-20x levels seen through most of 2025 and early 2026. This valuation compression appears driven by the Supreme Court ruling reinforcing FCC enforcement authority (stock fell 3.8% on June 5), the Q1 revenue miss vs consensus ($34.44B vs ~$35B expected), and a -8.5% quarterly price decline. However, the fundamental trajectory is intact: broadband expansion via FWA (5.4M subscribers) and fiber (Frontier integration) provides a growth offset to mature wireless, and the company targets 750K-1M postpaid phone net additions in 2026. Risks include elevated debt (~$313B total liabilities), regulatory headwinds from the Supreme Court ruling, and competitive pressure from T-Mobile. The near-term catalyst is Q2 2026 earnings (expected soon), where investors will be watching for continued subscriber momentum, cost transformation progress, and capital allocation updates. The combination of improving fundamentals, depressed valuation vs history, and an upcoming earnings event supports a modestly positive score.",
+      "key_factors": [
+        "P/E of 10.9x is near the bottom of the 12-month range (10.6-21.2x), a significant discount to the ~17-20x range prevailing through most of 2025-early 2026",
+        "Q1 2026 EPS of $1.20 (+4.3% YoY) beat consensus of $1.22 adjusted, with management raising FY2026 adjusted EPS guidance to $4.95-$4.99",
+        "First positive Q1 postpaid phone net additions since 2013 (55K), signaling improved competitive positioning",
+        "Broadband growth via FWA (5.4M subs) and fiber expansion provides structural growth offset; management targets 2-3% mobility+broadband service revenue growth in 2026",
+        "Supreme Court ruling (June 5) strengthening FCC enforcement authority adds regulatory overhang and contributed to recent stock weakness",
+        "Elevated balance sheet leverage ($313B total liabilities vs $105B equity) constrains financial flexibility",
+        "Q2 2026 earnings preview is a near-term catalyst for re-rating if subscriber and margin trends hold"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-01 Q1",
+          "excerpt": "revenue=34.44B net_income=5.15B eps_diluted=1.2 operating_income=8.24B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-25",
+          "excerpt": "pe_diluted=10.914 p_b=1.854 earnings_yield=0.092 net_margin=0.128 roe=0.17"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-02-12",
+          "excerpt": "pe_diluted=20.363 p_b=2.145 net_margin=0.076 roe=0.105"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-25",
+          "excerpt": "close=46.07 quarterly delta -8.5%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-05",
+          "excerpt": "Verizon shares dropped 3.8% as Supreme Court ruling increased FCC enforcement authority pressure on telecom sector"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "markets.financialcontent.com",
+          "excerpt": "Verizon reported a surprise net gain of 55,000 postpaid phone subscribers, its first positive first-quarter addition in that category since 2013"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.trefis.com",
+          "excerpt": "2026 Adjusted EPS 4.95 4.97 4.99 Raised from Guidance: 4.92 for 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.hudson-labs.com",
+          "excerpt": "Integration of Frontier is progressing, with synergy realization and broadband expansion in focus. Investors are watching for sustained improvement in wireless and broadband KPIs"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "VZ",
+    "decision_date": "2026-06-26",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 2952,
+        "capped_chars": 2952,
+        "raw_tokens": 738,
+        "capped_tokens": 738
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241246,
+        "capped_chars": 241246,
+        "raw_tokens": 60312,
+        "capped_tokens": 60312
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 782,
+        "capped_chars": 782,
+        "raw_tokens": 196,
+        "capped_tokens": 196
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30516,
+        "capped_chars": 30516,
+        "raw_tokens": 7629,
+        "capped_tokens": 7629
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1987,
+        "capped_chars": 1987,
+        "raw_tokens": 497,
+        "capped_tokens": 497
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 9970,
+        "capped_chars": 2160,
+        "raw_tokens": 2492,
+        "capped_tokens": 540
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 81051,
+        "capped_chars": 61599,
+        "raw_tokens": 20263,
+        "capped_tokens": 15400
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 40035,
+  "started_at": "2026-08-07T03:05:51+00:00"
+}

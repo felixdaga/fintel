@@ -1,0 +1,174 @@
+{
+  "cell": "CSCO",
+  "symbols": [
+    "CSCO"
+  ],
+  "decision_date": "2026-06-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 29974,
+    "tokens_out": 858,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032548,
+    "basis": "reported"
+  },
+  "views": {
+    "CSCO": {
+      "symbol": "CSCO",
+      "score": 0.15,
+      "rationale": "Cisco shows solid fundamental trajectory with accelerating revenue and EPS growth (Q2 FY26 revenue +9.7% YoY, EPS +31.1% YoY), strong gross margins (~65%), and a healthy balance sheet (debt-to-equity 0.515). The Q3 FY26 earnings report (April 25, 2026) showed record revenue of $15.8B, 12% YoY growth, with networking revenue up 25% and AI infrastructure orders raised to $9B for FY26. However, valuation has expanded dramatically \u2014 P/E has moved from ~27x a year ago to ~44x currently, and P/B from 5.7x to 10.2x \u2014 pricing in much of the good news. The stock has rallied +56.7% in the last quarter alone. While the business trajectory is genuinely positive (campus refresh cycle, AI networking demand, software transition), the current valuation leaves limited margin of safety. Operating cash flow declined QoQ (-43.3%) and YoY (-18.7%), and gross margins are under pressure from memory costs and product mix. The near-term catalyst of Q3 earnings has already passed and been well-received. Net: good business, but stretched valuation caps the attractiveness.",
+      "key_factors": [
+        "Accelerating revenue and EPS growth trajectory (Q2 FY26: +9.7% YoY revenue, +31.1% YoY EPS)",
+        "Record Q3 FY26 revenue of $15.8B with networking up 25% YoY and AI orders raised to $9B",
+        "P/E expanded from ~27x to ~44x over the past year, pricing in much of the positive trajectory",
+        "Stock up +56.7% in the last quarter, leaving limited near-term upside",
+        "Gross margin pressure from unfavorable product mix and rising memory costs",
+        "Operating cash flow declined -43.3% QoQ and -18.7% YoY in latest quarter",
+        "Strong balance sheet with debt-to-equity of 0.515 and solid ROE of 23.2%",
+        "Campus networking refresh cycle and AI infrastructure demand provide multi-year tailwinds"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24 Q2",
+          "excerpt": "revenue=15.35B eps_diluted=0.8, YoY revenue=+9.7% eps=+31.1%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-14 Q3 earnings",
+          "excerpt": "Record revenue of $15.8 billion, up 12% year over year; GAAP EPS of $0.85, up 37% year over year; Networking revenue up 25%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-11",
+          "excerpt": "pe_diluted=43.822 p_b=10.171"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-12",
+          "excerpt": "pe_diluted=26.606 p_b=5.672"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-11",
+          "excerpt": "close=121.83, quarterly delta +56.7%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-01-24 Q2 cash flow",
+          "excerpt": "operating_cash_flow=1.82B, QoQ -43.3%, YoY -18.7%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis CSCO risks",
+          "excerpt": "Key risks include market share erosion from intense competition in core networking and cybersecurity businesses, and challenges executing strategic transition from hardware to software-subscription model"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CSCO",
+    "decision_date": "2026-06-12",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3841,
+        "capped_chars": 3841,
+        "raw_tokens": 960,
+        "capped_tokens": 960
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230751,
+        "capped_chars": 230751,
+        "raw_tokens": 57688,
+        "capped_tokens": 57688
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30894,
+        "capped_chars": 30894,
+        "raw_tokens": 7724,
+        "capped_tokens": 7724
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1656,
+        "capped_chars": 1656,
+        "raw_tokens": 414,
+        "capped_tokens": 414
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 19171,
+        "capped_chars": 3842,
+        "raw_tokens": 4793,
+        "capped_tokens": 960
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 88548,
+        "capped_chars": 68918,
+        "raw_tokens": 22137,
+        "capped_tokens": 17229
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 50685,
+  "started_at": "2026-08-07T03:03:21+00:00"
+}

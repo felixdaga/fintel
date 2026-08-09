@@ -1,0 +1,199 @@
+{
+  "cell": "SHW",
+  "symbols": [
+    "SHW"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 27770,
+    "tokens_out": 1419,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.032027,
+    "basis": "reported"
+  },
+  "views": {
+    "SHW": {
+      "symbol": "SHW",
+      "score": 0.15,
+      "rationale": "Sherwin-Williams is a high-quality franchise with strong brand, extensive store network (~4,900+ locations), and leading North American coatings market position. However, the near-term picture is mixed. Q1 2026 showed solid YoY growth (revenue +6.8%, EPS +7.5%) but significant QoQ declines (revenue -10.9%, EPS -35.8%) reflecting normal seasonality in a Q1-heavy business. Operating cash flow was weak at $139M vs $1.3B in Q3 2025, though this is partly seasonal. The balance sheet carries meaningful leverage (debt/equity ~2.1x, total debt $9.3B vs equity $4.4B). Valuation at P/E ~29.6x is near the low end of its 12-month range (28.0-37.1), suggesting the stock has de-rated somewhat from peak multiples. P/B at 17.4x is also at the lower end of its range (16.4-21.4). The Q2 earnings report expected July 28 is a near-term catalyst \u2014 consensus expects $3.56 EPS (+5.3% YoY) and $6.62B revenue, with Zacks Earnings ESP of +0.94% suggesting a likely beat. Management raised FY2026 guidance to $11.50-$11.90 EPS. However, rising interest rates (10Y at 4.71%, up from 4.35 in late April) and elevated oil prices ($93/bbl) create headwinds for the housing/renovation cycle that drives demand. The lead paint litigation risk, while largely historical, remains a disclosed contingent liability. Overall, a solid but not exceptional setup \u2014 good franchise at a fair-to-slightly-cheap valuation with a modest near-term catalyst.",
+      "key_factors": [
+        "Strong franchise: 4,900+ store network, leading North American coatings position, $23-24B annual revenue",
+        "Q1 2026 YoY growth solid (rev +6.8%, EPS +7.5%) but QoQ decline reflects seasonality and soft Q1 weakness",
+        "Valuation de-rated: P/E 29.6x near 12-month low (range 28.0-37.1), P/B 17.4x at low end (16.4-21.4)",
+        "Q2 earnings July 28 as near-term catalyst: consensus $3.56 EPS, Zacks Earnings ESP +0.94% suggests likely beat",
+        "FY2026 guidance raised to $11.50-$11.90 EPS; analysts expect $11.78",
+        "Balance sheet leverage: debt/equity 2.1x, $9.3B debt vs $4.4B equity",
+        "Rising rates (10Y 4.71%) and oil ($93/bbl) as macro headwinds for housing/renovation demand",
+        "Lead paint litigation remains a disclosed contingent liability but largely historical"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=5.67B net_income=534.70M eps_diluted=2.15 gross_profit=2.78B operating_income=679.80M total_assets=26.38B total_equity=4.43B total_debt=9.32B operating_cash_flow=139.10M"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+6.8% eps_diluted=+7.5% net_income=+6.1% gross_profit=+8.7% operating_cash_flow=-327.7%"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 QoQ",
+          "excerpt": "QoQ: revenue=-10.9% eps_diluted=-35.8% net_income=-35.8% gross_profit=-11.0% operating_cash_flow=-89.4%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=29.641 p_b=17.387 p_s=3.219 earnings_yield=0.034 net_margin=0.109 roe=0.587 debt_to_equity=2.104"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 28.0..37.1 | p_b 16.4..21.4"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-17",
+          "excerpt": "Sherwin-Williams has set its FY 2026 guidance at 11.500-11.900 EPS. Equities research analysts expect that Sherwin-Williams will post 11.78 earnings per share"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-17",
+          "excerpt": "Zacks Consensus Estimate: quarterly earnings of $3.56 per share, year-over-year change of +5.3%. Revenues expected to be $6.62 billion, up 4.8%. Earnings ESP of +0.94%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "excerpt": "DGS10=4.7100000000 (10-Year Treasury); DCOILWTICO=93.08 (WTI Crude)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-13",
+          "excerpt": "Sherwin-Williams blends 1866 heritage, 3 segments, and 5,000+ stores with pro sales, retail reach, Color of the Year, and 2024 revenue of $23.1B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-07-11",
+          "excerpt": "Sherwin-Williams knew lead paint was poisonous decades before federal regulation \u2014 but continued to market and sell it anyway"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "SHW",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 10,
+      "empty": 1
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4517,
+        "capped_chars": 4517,
+        "raw_tokens": 1129,
+        "capped_tokens": 1129
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230041,
+        "capped_chars": 230041,
+        "raw_tokens": 57510,
+        "capped_tokens": 57510
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 178,
+        "capped_chars": 178,
+        "raw_tokens": 44,
+        "capped_tokens": 44
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 0,
+        "capped_chars": 0,
+        "raw_tokens": 0,
+        "capped_tokens": 0
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 81025,
+        "capped_chars": 56048,
+        "raw_tokens": 20257,
+        "capped_tokens": 14013
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 10,
+        "empty": 1
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [
+        {
+          "kind": "news",
+          "query": {
+            "symbol": "SHW",
+            "lookback_days": 14
+          }
+        }
+      ],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 42835,
+  "started_at": "2026-08-07T03:09:10+00:00"
+}

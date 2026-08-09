@@ -1,0 +1,194 @@
+{
+  "cell": "CAT",
+  "symbols": [
+    "CAT"
+  ],
+  "decision_date": "2026-06-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35479,
+    "tokens_out": 1301,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.039382,
+    "basis": "reported"
+  },
+  "views": {
+    "CAT": {
+      "symbol": "CAT",
+      "score": -1.0,
+      "rationale": "Caterpillar's fundamental health is strong \u2014 Q1 2026 showed +22.2% YoY revenue growth, +30.2% EPS growth, 50.5% ROE, and a record $51-63B backlog. However, the valuation is extremely stretched: P/E of 46.5x is at the absolute top of its 365-day range (16.8-46.5), P/B of 23.5x is near the ceiling (9.2-23.9), and the stock has tripled from ~$346 to $940 in roughly a year. This is a cyclical industrial trading at a premium typically reserved for high-growth tech, despite facing $2.2-2.4B in tariff headwinds for 2026, Q1 operating cash flow that halved QoQ to $1.87B, and margin compression (Q4 2025 adjusted operating margin fell 270bps to 15.6%). The net margin has already compressed from 15.7% to 13.3%. The stock is priced for flawless execution on AI data center and services narratives, but the actual earnings trajectory \u2014 while solid \u2014 does not justify a 46x multiple for a company whose revenue is cyclical and whose margins are being actively eroded by tariffs. The near-term catalyst (Q2 2026 earnings Aug 5) is more likely to disappoint elevated expectations than beat them, especially given the $700M tariff hit expected in Q2 and the risk of dealer destocking. This is a classic case of a great business at a terrible price.",
+      "key_factors": [
+        "P/E of 46.5x is at the absolute top of 365-day range (16.8-46.5), representing extreme valuation for a cyclical industrial",
+        "P/B of 23.5x near ceiling of 9.2-23.9 range; stock has tripled from ~$346 to $940 in ~12 months",
+        "Tariff headwinds of $2.2-2.4B for 2026 with $700M expected in Q2 alone, compressing margins \u2014 Q4 2025 adjusted operating margin fell 270bps to 15.6%",
+        "Q1 2026 operating cash flow of $1.87B was -50% QoQ vs $3.74B in Q3 2025, raising questions about cash conversion",
+        "Net margin compressed from 15.7% to 13.3% over the valuation window, signaling earnings quality deterioration",
+        "Record backlog ($51-63B) is priced in but carries conversion risk from data center delays, supply chain issues, and potential dealer destocking",
+        "Near-term catalyst (Q2 earnings Aug 5) more likely to disappoint given elevated expectations and margin headwinds",
+        "Macro risks: 10Y yield at 4.47%, rising bond yields, weak China data, and slowing global GDP growth to 2.6%"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-04",
+          "excerpt": "pe_diluted=46.47 p_b=23.477 psource=6.191 earnings_yield=0.022 net_margin=0.133 roe=0.505"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-06-05",
+          "excerpt": "pe_diluted=16.754 p_b=9.214 net_margin=0.157 roe=0.55"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.41B net_income=2.55B eps_diluted=5.47 operating_cash_flow=1.87B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "operating_cash_flow=3.74B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-04",
+          "excerpt": "close=940.48 range high=946.83 low=345.85"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-05-26",
+          "excerpt": "Caterpillar stock initially declined 6.7% following the start of the Iran war in late February but has since rebounded strongly, gaining 9.9% over a month-long period"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout tariff headwinds",
+          "excerpt": "Management has guided to a substantial tariff headwind in the range of $2.2 billion to $2.4 billion for 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout margin compression",
+          "excerpt": "Adjusted operating profit margin narrowed to 15.6% in Q4 2025 from 18.3% in the prior year, primarily due to higher manufacturing costs driven by tariffs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr Q1 margin",
+          "excerpt": "In Q1 2026, the segment delivered approximately 20.6% operating margin, down 170 basis points year-over-year as tariffs and manufacturing ramp costs hit simultaneously"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey china",
+          "excerpt": "China's weak economic data impacted Caterpillar's share price. Rising bond yields and oil prices fueled market anxieties"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "kavout backlog risk",
+          "excerpt": "The impressive $63 billion backlog, while a source of multi-year visibility, carries conversion risk; delays in data center build-outs or supply chain bottlenecks could slow its translation into revenue"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CAT",
+    "decision_date": "2026-06-05",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4541,
+        "capped_chars": 4541,
+        "raw_tokens": 1135,
+        "capped_tokens": 1135
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241978,
+        "capped_chars": 241978,
+        "raw_tokens": 60494,
+        "capped_tokens": 60494
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30893,
+        "capped_chars": 30893,
+        "raw_tokens": 7723,
+        "capped_tokens": 7723
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1477,
+        "capped_chars": 1477,
+        "raw_tokens": 369,
+        "capped_tokens": 369
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 10149,
+        "capped_chars": 2811,
+        "raw_tokens": 2537,
+        "capped_tokens": 703
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 119780,
+        "capped_chars": 99267,
+        "raw_tokens": 29945,
+        "capped_tokens": 24818
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 51932,
+  "started_at": "2026-08-07T03:02:11+00:00"
+}

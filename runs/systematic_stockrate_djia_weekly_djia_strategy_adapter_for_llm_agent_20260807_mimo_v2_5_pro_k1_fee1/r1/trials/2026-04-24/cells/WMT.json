@@ -1,0 +1,178 @@
+{
+  "cell": "WMT",
+  "symbols": [
+    "WMT"
+  ],
+  "decision_date": "2026-04-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 38209,
+    "tokens_out": 1237,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.040832,
+    "basis": "reported"
+  },
+  "views": {
+    "WMT": {
+      "symbol": "WMT",
+      "score": -1.0,
+      "rationale": ",",
+      "key_factors": [
+        "P/E of 54.5x as of 2026-04-23, near the top of its 32.4\u201355.3x 1-year range, up from ~32.6x a year ago \u2014 a 67% multiple expansion with no commensurate acceleration in earnings growth",
+        "P/B of 11.8x, also near the top of its 8.2\u201311.9x range, indicating the market is pricing in significant future margin expansion",
+        "FY2027 EPS guidance of $2.75\u2013$2.85 came in below the $2.96 consensus, and management pre-guided for lower Q1 operating income growth due to tariff timing",
+        "Net margin compressed to 2.8% in recent quarters (from 3.6% a year ago), while the stock has re-rated to a tech-like multiple \u2014 a dangerous combination",
+        "Grocery market share continues to erode: down from 20.4% in 2024 to 19.9% in 2026 per Numerator data",
+        "Rising oil prices ($99/bbl, up 64% over the period) and elevated 10Y yields (4.34%) create a challenging macro backdrop for a low-margin, high-volume retailer",
+        "Q1 FY2027 earnings expected ~May 14, 2026 \u2014 management has already pre-guided for tariff headwinds, creating downside risk at an already stretched valuation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-23",
+          "excerpt": "pe_diluted=54.542 p_b=11.766 p_s=1.552 earnings_yield=0.018 net_margin=0.028 roe=0.216"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-04-24",
+          "excerpt": "pe_diluted=32.611 p_b=8.216 net_margin=0.036 roe=0.252"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-22",
+          "excerpt": "Walmart's Aerial Advantage: Drone Deliveries Can Boost Sales and Customer Loyalty \u2014 the stock's forward P/E ratio of 43.2 is considered expensive by conservative investors"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com",
+          "excerpt": "Management's fiscal 2027 EPS guidance of $2.75\u2013$2.85 came in below the $2.96 consensus per LSEG, and the market sold the news"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "supermarketnews.com",
+          "excerpt": "Walmart's leading share of the grocery market continues to decline \u2014 currently holds a 19.9% share, down from 20% in 2025 and 20.4% in 2024"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "henryfund.tippie.uiowa.edu",
+          "excerpt": "Our DCF and Economic Profit models produce a consistent intrinsic value of $83.24 \u2014 the current valuation implies a degree of margin expansion that may prove difficult for even best-in-class retail operators to achieve"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-04-23",
+          "excerpt": "DCOILWTICO=99.27 \u0394=38.81 (64.2%); DGS10=4.34; FEDFUNDS=3.64"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-10-31",
+          "excerpt": "net_margin=0.028 (Q3 FY2026) vs net_margin=0.036 (Q3 FY2025)"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "WMT",
+    "decision_date": "2026-04-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4559,
+        "capped_chars": 4559,
+        "raw_tokens": 1140,
+        "capped_tokens": 1140
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 240440,
+        "capped_chars": 240440,
+        "raw_tokens": 60110,
+        "capped_tokens": 60110
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30818,
+        "capped_chars": 30818,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3583,
+        "capped_chars": 3583,
+        "raw_tokens": 896,
+        "capped_tokens": 896
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 35317,
+        "capped_chars": 10337,
+        "raw_tokens": 8829,
+        "capped_tokens": 2584
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 100486,
+        "capped_chars": 78775,
+        "raw_tokens": 25122,
+        "capped_tokens": 19694
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 52051,
+  "started_at": "2026-08-07T02:57:08+00:00"
+}

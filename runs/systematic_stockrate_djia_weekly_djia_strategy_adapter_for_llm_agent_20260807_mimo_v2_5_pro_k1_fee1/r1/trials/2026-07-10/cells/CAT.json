@@ -1,0 +1,189 @@
+{
+  "cell": "CAT",
+  "symbols": [
+    "CAT"
+  ],
+  "decision_date": "2026-07-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31306,
+    "tokens_out": 1097,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.034597,
+    "basis": "reported"
+  },
+  "views": {
+    "CAT": {
+      "symbol": "CAT",
+      "score": -1.0,
+      "rationale": "Caterpillar's fundamental health is strong with excellent revenue growth (+22.2% YoY in Q1 2026) and robust EPS growth (+30.2% YoY), but the valuation has become extremely stretched. The stock trades at a P/E of 46.4x versus a historical range of 19.4-52.6x over the past year, and a P/B of 23.4x versus a range of 10.7-26.6x. This represents a massive premium to its own history. The company faces significant headwinds including $2.2-2.4B in projected tariff costs for 2026, margin contraction in Resource Industries (39% YoY profit decline), and rising manufacturing costs. Michael Burry has initiated a short position citing unsustainable valuation. The stock has rallied 150% over 12 months, creating extreme multiple compression risk. While the Q2 earnings beat is a near-term positive, the stock is priced for perfection with a P/E of 46x for a cyclical industrial company, making it extremely vulnerable to any slowdown in AI data center spending or macroeconomic weakness.",
+      "key_factors": [
+        "Extreme valuation: P/E of 46.4x vs historical range of 19.4-52.6x, P/B of 23.4x vs range of 10.7-26.6x",
+        "Tariff headwinds: $2.2-2.4B projected tariff costs for 2026 constraining margins",
+        "Resource Industries margin contraction: 39% YoY profit decline, segment margins at 10%",
+        "Michael Burry short position citing unsustainable valuation and 30-year high price-to-sales ratio",
+        "Stock up 150% over 12 months creating extreme multiple compression risk",
+        "Cyclical industrial company priced like a high-growth tech stock at 46x P/E",
+        "Hawkish Fed policy and elevated interest rates threatening customer capital expenditures",
+        "Index reclassification risks: dropped from Russell 1000 Value-Defensive and Growth-Defensive indices"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-09",
+          "excerpt": "pe_diluted=46.367 p_b=23.425 p_s=6.178 earnings_yield=0.022 net_margin=0.133 roe=0.505 gross_margin=0.334 operating_margin=0.165"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-10",
+          "excerpt": "pe_diluted=19.605 p_b=10.781 net_margin=0.157 roe=0.55"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1",
+          "excerpt": "revenue=17.41B net_income=2.55B eps_diluted=5.47 gross_profit=6.11B operating_income=3.08B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q1 growth",
+          "excerpt": "YoY: revenue=+22.2% eps_diluted=+30.2% net_income=+27.2% gross_profit=+15.6% operating_cash_flow=+45.1%"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-01",
+          "excerpt": "Michael Burry initiated a short position citing unsustainable valuation and high price-to-sales ratios. Resource Industries segment profitability declined amid rising manufacturing expenses and potential tariff headwinds."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-26",
+          "excerpt": "Caterpillar's stock valuation rose significantly due to demand for data center power infrastructure. Hawkish Federal Reserve interest rate policy threatens Caterpillar's capital-intensive industrial and machinery demand."
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-29",
+          "excerpt": "Caterpillar appears overvalued with a P/E ratio of 50x versus its historical average of 19x"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-26",
+          "excerpt": "Management's projected full-year fiscal 2026 tariff headwind of $2.2 billion to $2.4 billion continues to directly constrain the bottom line"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2026-06-30",
+          "excerpt": "39% year-over-year profit plunge in the mining-focused Resource Industries segment that compressed its segment margin by 700 basis points to 10.0%"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-07-09",
+          "excerpt": "close=938.39 quarterly delta (~63 trading days, from 2026-04-08): +21.6%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CAT",
+    "decision_date": "2026-07-10",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4541,
+        "capped_chars": 4541,
+        "raw_tokens": 1135,
+        "capped_tokens": 1135
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241981,
+        "capped_chars": 241981,
+        "raw_tokens": 60495,
+        "capped_tokens": 60495
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 818,
+        "capped_chars": 818,
+        "raw_tokens": 204,
+        "capped_tokens": 204
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30221,
+        "capped_chars": 30221,
+        "raw_tokens": 7555,
+        "capped_tokens": 7555
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1523,
+        "capped_chars": 1523,
+        "raw_tokens": 381,
+        "capped_tokens": 381
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 14406,
+        "capped_chars": 2703,
+        "raw_tokens": 3602,
+        "capped_tokens": 676
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 84519,
+        "capped_chars": 65824,
+        "raw_tokens": 21130,
+        "capped_tokens": 16456
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 44749,
+  "started_at": "2026-08-07T03:06:50+00:00"
+}

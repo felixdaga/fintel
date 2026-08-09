@@ -1,0 +1,183 @@
+{
+  "cell": "PG",
+  "symbols": [
+    "PG"
+  ],
+  "decision_date": "2026-07-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 34814,
+    "tokens_out": 1094,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038096,
+    "basis": "reported"
+  },
+  "views": {
+    "PG": {
+      "symbol": "PG",
+      "score": 0.15,
+      "rationale": "PG is a high-quality defensive franchise with 70 consecutive years of dividend increases, strong brand portfolio, and consistent cash generation (operating cash flow $4.04B in Q3 FY2026). However, the near-term trajectory is mixed: Q3 FY2026 showed YoY revenue +7.4% and EPS +5.8%, but QoQ trends are negative (revenue -4.4%, EPS -8.4%) with sequential margin compression. The company faces real headwinds from ~$400M in after-tax tariff costs, rising commodity/oil prices (WTI back to $93), and a restructuring program targeting 7,000 job cuts. Valuation at 23x P/E sits in the lower half of its 12-month range (21.7-26.3), suggesting the market has partially priced in these pressures. The upcoming Q4 earnings on July 29 is a near-term catalyst, with consensus expecting EPS of ~$1.42 (a 10.7% decline), which could either confirm the trough or disappoint further. Balance sheet is solid (equity $54.7B, debt manageable for A-rated issuer). The score reflects a durable but slow-growth business facing temporary cost headwinds, trading at a modest discount to its own history, with a binary earnings event approaching that could re-rate modestly in either direction.",
+      "key_factors": [
+        "70 consecutive years of dividend increases; 2.9% yield with 63% payout ratio",
+        "Q3 FY2026 YoY growth positive (rev +7.4%, EPS +5.8%) but QoQ deceleration (rev -4.4%, EPS -8.4%)",
+        "~$400M after-tax tariff headwinds for FY2026; rising oil ($93 WTI) adds commodity pressure",
+        "P/E of 23x at lower end of 12-month range (21.7-26.3), suggesting partial de-rating already occurred",
+        "Q4 FY2026 earnings on July 29 with consensus EPS ~$1.42; potential re-rating catalyst",
+        "Restructuring program targeting 7,000 job cuts adds near-term charges but aims at long-term efficiency",
+        "Strong balance sheet: $54.7B equity, A-rated credit, robust cash generation ($4.04B OCF in Q3)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-03-31 Q3",
+          "excerpt": "revenue=21.23B net_income=3.95B eps_diluted=1.63 operating_cash_flow=4.04B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "growth_panel",
+          "excerpt": "YoY: revenue=+7.4% eps_diluted=+5.8%; QoQ: revenue=-4.4% eps_diluted=-8.4%"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-23",
+          "excerpt": "pe_diluted=23.105 p_b=6.852 earnings_yield=0.043 net_margin=0.186 roe=0.297"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range_365d",
+          "excerpt": "pe_diluted 21.7..26.3 | p_b 6.4..7.8"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-17 Motley Fool",
+          "excerpt": "P&G raised its quarterly dividend by 3% in April, marking its 70th consecutive year of dividend increases. Current yield of 2.9%, payout ratio of 63%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tikr.com P&G down 16%",
+          "excerpt": "P&G is absorbing roughly $400 million in after-tax tariff costs in fiscal 2026. Core gross margin compressed 100 basis points last quarter. Restructuring program targeting up to 7,000 non-manufacturing job cuts"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tickeron.com earnings preview",
+          "excerpt": "PG is expected to report earnings to fall 10.69% to $1.42 per share on July 29. Revenue estimates center near $21.4 billion"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-07-23",
+          "excerpt": "DCOILWTICO=93.08 (WTI crude); DGS10=4.71%; FEDFUNDS=3.63%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingview Q4 earnings",
+          "excerpt": "PG projects all-in sales growth of 1-5% for fiscal 2026. Earnings expected to trend toward the lower end of 1-6% growth as cost headwinds persist"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "PG",
+    "decision_date": "2026-07-24",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3010,
+        "capped_chars": 3010,
+        "raw_tokens": 752,
+        "capped_tokens": 752
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 241345,
+        "capped_chars": 241345,
+        "raw_tokens": 60336,
+        "capped_tokens": 60336
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 806,
+        "capped_chars": 806,
+        "raw_tokens": 202,
+        "capped_tokens": 202
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30421,
+        "capped_chars": 30421,
+        "raw_tokens": 7605,
+        "capped_tokens": 7605
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 1980,
+        "capped_chars": 1980,
+        "raw_tokens": 495,
+        "capped_tokens": 495
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 19480,
+        "capped_chars": 4821,
+        "raw_tokens": 4870,
+        "capped_tokens": 1205
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 117973,
+        "capped_chars": 94315,
+        "raw_tokens": 29495,
+        "capped_tokens": 23579
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 44950,
+  "started_at": "2026-08-07T03:09:07+00:00"
+}

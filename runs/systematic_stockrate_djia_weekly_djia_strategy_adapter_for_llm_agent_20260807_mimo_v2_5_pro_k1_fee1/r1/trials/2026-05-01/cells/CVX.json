@@ -1,0 +1,203 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-05-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 35093,
+    "tokens_out": 1291,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.038966,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": 0.15,
+      "rationale": "Chevron is a high-quality integrated energy major with a fortress balance sheet (debt-to-equity ~0.2x per web context), 39-year dividend increase streak, and a wide economic moat from scale, low-cost Permian assets, and vertical integration. The Iran/Hormuz crisis has driven WTI to ~$109, providing a massive near-term tailwind to upstream earnings ($1.6-$2.2B price benefit expected in Q1). However, several factors temper enthusiasm: (1) Q1 2026 consensus EPS of $0.92 represents a 57.8% YoY decline due to $2.7-3.7B negative timing effects and a $350-400M legal charge; (2) the stock has already re-rated significantly \u2014 P/E has expanded from ~14.7x a year ago to ~29.2x currently, near the top of its 365-day range (14.6-31.9x), meaning much of the oil price windfall is priced in; (3) ROE has compressed from ~10.7% to 6.6% and net margin from 8.5% to 6.6% over the past year, suggesting deteriorating profitability despite higher revenues; (4) the geopolitical premium is fragile \u2014 any ceasefire or de-escalation could trigger a sharp reversal as the August WTI contract already trades around $81. The May 1 earnings call is a near-term catalyst that could clarify production timelines and the true earnings power, but the stock is expensive relative to its own history and near-term earnings are depressed by non-recurring items. The integrated model provides downside protection and the long-term project pipeline (Permian, Guyana via Hess, Tengiz) is strong, but at 29x trailing earnings the risk/reward is not compelling.",
+      "key_factors": [
+        "P/E expanded from ~14.7x to ~29.2x over past year \u2014 near top of 365-day range, expensive vs own history",
+        "Q1 2026 consensus EPS of $0.92 down 57.8% YoY due to $2.7-3.7B timing effects and $350-400M legal charge",
+        "Iran/Hormuz crisis driving WTI to ~$109 provides $1.6-2.2B upstream price benefit but geopolitical premium is fragile",
+        "ROE compressed from 10.7% to 6.6% and net margin from 8.5% to 6.6% over trailing year",
+        "Fortress balance sheet, 39-year dividend streak, wide moat from scale and integration \u2014 structural quality is high",
+        "May 1 earnings call is imminent catalyst but near-term results are noisy with non-recurring items",
+        "Oil futures curve suggests market expects disruption to ease (Aug WTI ~$81 vs spot ~$109)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "ratios",
+          "source_id": "2026-04-30",
+          "excerpt": "pe_diluted=29.164 p_b=1.923 net_margin=0.066 roe=0.066"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-05-01",
+          "excerpt": "pe_diluted=14.715 p_b=1.568 net_margin=0.085 roe=0.107"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range",
+          "excerpt": "pe_diluted 14.6..31.9 | p_b 1.5..2.1"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-30",
+          "excerpt": "WTI at $110.31/barrel, Brent at $126.41/barrel due to Iran blockade"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-29",
+          "excerpt": "Trump met with oil and gas executives, including Chevron CEO Mike Wirth"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-04-17",
+          "excerpt": "Iran opened the Strait of Hormuz to commercial vessels during the Lebanon ceasefire, easing geopolitical tensions \u2014 Chevron stock fell 7%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stocktitan",
+          "excerpt": "Q1 2026 headwinds from $2.7\u2013$3.7B timing effects, $2\u2013$4B working capital outflow and a $350\u2013$400M legal charge, partly offset by $1.6\u2013$2.2B Upstream price benefits"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingview",
+          "excerpt": "consensus earnings per share forecast remains at 92 cents, indicating a significant 57.8% decline compared to the earnings reported a year ago"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ainvest",
+          "excerpt": "U.S. oil contract for August delivery trading around $81 per barrel, suggesting a belief the disruption will ease in coming weeks"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tradingkey",
+          "excerpt": "operational break-even is below $50/barrel, enabling dividend payments and capital expenditures even at lower prices"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "marketbeat",
+          "excerpt": "P/E Ratio 27.50, Dividend Yield 3.87%, Price/Book 1.92"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30",
+          "excerpt": "revenue=49.73B net_income=3.61B eps_diluted=1.82 total_equity=195.60B"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-04-30",
+          "excerpt": "close=193.31 quarterly delta +12.9%"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-05-01",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 225253,
+        "capped_chars": 225253,
+        "raw_tokens": 56313,
+        "capped_tokens": 56313
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 794,
+        "capped_chars": 794,
+        "raw_tokens": 198,
+        "capped_tokens": 198
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30817,
+        "capped_chars": 30817,
+        "raw_tokens": 7704,
+        "capped_tokens": 7704
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3287,
+        "capped_chars": 3287,
+        "raw_tokens": 822,
+        "capped_tokens": 822
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 60803,
+        "capped_chars": 15432,
+        "raw_tokens": 15201,
+        "capped_tokens": 3858
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 98019,
+        "capped_chars": 79407,
+        "raw_tokens": 24505,
+        "capped_tokens": 19852
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 48682,
+  "started_at": "2026-08-07T02:57:48+00:00"
+}

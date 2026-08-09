@@ -1,0 +1,206 @@
+{
+  "cell": "AMZN",
+  "symbols": [
+    "AMZN"
+  ],
+  "decision_date": "2026-06-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 56995,
+    "tokens_out": 1537,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.061606,
+    "basis": "reported"
+  },
+  "views": {
+    "AMZN": {
+      "symbol": "AMZN",
+      "score": 0.35,
+      "rationale": "Amazon presents a solid fundamental case with strong trajectory. Q3 2025 showed $180.2B revenue with accelerating EPS growth (Q1: $1.59 \u2192 Q2: $1.68 \u2192 Q3: $1.95), robust operating cash flow ($35.5B quarterly), and a fortress balance sheet ($369.6B equity, $55.1B debt, debt-to-equity 0.149). AWS is the profit engine, generating ~57-59% of operating income on ~18-21% of revenue, with Q1 2026 growth accelerating to 28% YoY. The business model is structurally sound: retail drives scale and customer acquisition while AWS, advertising (~$68.5B annualized), and subscriptions generate the profits. However, several factors temper the score. Valuation is mid-range vs own history: P/E of 34.7 sits within the 28-39 range of the past year, not cheap. The massive $200B 2026 capex plan for AI infrastructure is compressing free cash flow (FCF fell to $11.2B in FY2025 despite $139.5B operating cash flow), and Goldman Sachs warns this spending could erode ROE by ~700bps. Regulatory headwinds are material: FTC antitrust trial scheduled for October 2026, EU cloud procurement review, and a $2.5B Prime settlement already paid. Competition is intensifying from Azure (40% growth) and Google Cloud (63% growth) outpacing AWS. The near-term catalyst is Prime Day (June 23-26) and Q2 earnings on July 30, with consensus expecting 16.8% revenue growth and 8.3% EPS growth. News sentiment is moderately positive (mean 0.354 over 90 days). The stock is 12% below its 52-week high of $278.56, having recovered +17.1% from the March trough. Overall, a quality franchise with strong growth vectors but not undervalued enough to warrant a higher score given capex pressure and regulatory risk.",
+      "key_factors": [
+        "AWS profit engine: ~57-59% of operating income on ~18-21% of revenue, accelerating to 28% growth in Q1 2026",
+        "Strong revenue trajectory: Q3 2025 $180.2B with sequential EPS growth ($1.59\u2192$1.68\u2192$1.95)",
+        "Massive $200B 2026 capex for AI infrastructure compressing free cash flow to $11.2B in FY2025",
+        "Valuation mid-range: P/E 34.7 within 28-39 one-year range, not a clear bargain",
+        "Regulatory headwinds: FTC antitrust trial Oct 2026, EU cloud procurement review, $2.5B Prime settlement",
+        "Competition intensifying: Azure growing 40%, Google Cloud 63% vs AWS 28%",
+        "Near-term catalysts: Prime Day June 23-26, Q2 earnings July 30 with 16.8% revenue growth expected",
+        "Balance sheet strength: $369.6B equity, $55.1B debt, debt-to-equity 0.149",
+        "Advertising business reaching ~$68.5B annualized with 22% growth",
+        "Stock 12% below 52-week high, +17.1% from March trough"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-09-30 Q3",
+          "excerpt": "revenue=180.17B net_income=21.19B eps_diluted=1.95 operating_cash_flow=35.52B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "quarterly trajectory",
+          "excerpt": "Q1 rev=155.67B eps=1.59; Q2 rev=167.70B eps=1.68; Q3 rev=180.17B eps=1.95"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-06-18",
+          "excerpt": "pe_diluted=34.654 p_b=7.17 debt_to_equity=0.149 roe=0.207"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "range over window",
+          "excerpt": "pe_diluted 28.2..39.0 | p_b 5.8..8.3"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessmodelanalyst.com",
+          "excerpt": "AWS alone produced $45.6 billion of operating income, roughly 57% of the company's total $80 billion. Free cash flow fell to just $11.2 billion. Amazon increased its purchases of property and equipment by more than $50 billion in a single year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "tickeron.com Q1 2026",
+          "excerpt": "AWS revenue grew 28% to $37.6 billion with operating income of $14.2 billion; fastest growth in 15 quarters. Operating income rose 30% to $23.9 billion, achieving a record 13.1% operating margin"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "trefis.com",
+          "excerpt": "Key risks include escalating global regulatory scrutiny targeting its marketplace and labor practices, and significant pressure on profitability from massive investments"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "stockstoday.com",
+          "excerpt": "FTC's antitrust trial for October 2026. European Commission is drafting strict sovereignty rules for public-sector cloud contracts"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-18 Benzinga",
+          "excerpt": "Amazon is reportedly in early talks to sell its custom Trainium AI chips to external customers, potentially competing with Nvidia's dominant GPU market"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-06-19 Motley Fool",
+          "excerpt": "Amazon is on track to reach $1 trillion in revenue by 2028 with established e-commerce and cloud computing leadership"
+        },
+        {
+          "source_type": "news_sentiment",
+          "source_id": "90d mean",
+          "excerpt": "mean=0.354, n_articles=996"
+        },
+        {
+          "source_type": "prices",
+          "source_id": "2026-06-18",
+          "excerpt": "close=244.39, range high=278.56 low=196.00, quarterly delta +17.1%"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "2026-06-18",
+          "excerpt": "FEDFUNDS=3.63, DGS10=4.46, VIXCLS=16.78"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "AMZN",
+    "decision_date": "2026-06-22",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 3859,
+        "capped_chars": 3859,
+        "raw_tokens": 965,
+        "capped_tokens": 965
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 230906,
+        "capped_chars": 230906,
+        "raw_tokens": 57726,
+        "capped_tokens": 57726
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30533,
+        "capped_chars": 30533,
+        "raw_tokens": 7633,
+        "capped_tokens": 7633
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 4411,
+        "capped_chars": 4411,
+        "raw_tokens": 1103,
+        "capped_tokens": 1103
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 409704,
+        "capped_chars": 88369,
+        "raw_tokens": 102426,
+        "capped_tokens": 22092
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 125170,
+        "capped_chars": 103122,
+        "raw_tokens": 31293,
+        "capped_tokens": 25781
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 49663,
+  "started_at": "2026-08-07T03:04:08+00:00"
+}

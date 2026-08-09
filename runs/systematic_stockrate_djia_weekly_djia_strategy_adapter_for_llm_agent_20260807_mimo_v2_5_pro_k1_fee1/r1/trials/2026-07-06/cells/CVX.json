@@ -1,0 +1,184 @@
+{
+  "cell": "CVX",
+  "symbols": [
+    "CVX"
+  ],
+  "decision_date": "2026-07-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 31536,
+    "tokens_out": 1195,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.035121,
+    "basis": "reported"
+  },
+  "views": {
+    "CVX": {
+      "symbol": "CVX",
+      "score": -1.0,
+      "rationale": "Chevron's fundamental health and trajectory are deteriorating sharply. Q1 2026 EPS of $1.11 represents a -44.5% YoY decline and -39.0% QoQ decline, with net income falling to $2.29B from $3.51B a year ago. Operating cash flow collapsed to $2.51B from $5.19B YoY (-51.6%) and -73.2% QoQ. Net margin has compressed to 5.9% from 7.8% a year ago, and ROE has fallen to 5.9% from 10.5%. The balance sheet shows rising liabilities ($140.18B vs $106.32B a year ago) with total equity growing only modestly despite the Hess acquisition. Meanwhile, WTI crude has crashed from ~$114/barrel in early April to ~$70/barrel by early July (-39%), which will further pressure upstream earnings in coming quarters. Valuation is stretched: the P/E of 29.8x is near the top of its 365-day range (16.4-34.8x) and far above the 16.4x level from July 2025, despite materially worse earnings. The stock has already declined -14.3% in the latest quarter, but this does not reflect the full earnings deterioration given the lagged oil price collapse. The Q2 2026 earnings call on July 31 is a likely negative catalyst as the oil price decline flows through to results. The Microsoft/Project Kilby deal is a modest long-term positive but is immaterial relative to the core upstream earnings decline. Dividend coverage is flagged as a concern by multiple sources. All three pillars\u2014deteriorating fundamentals, expensive valuation, and a likely negative near-term earnings catalyst\u2014point strongly downward.",
+      "key_factors": [
+        "Q1 2026 EPS $1.11, down -44.5% YoY and -39.0% QoQ; net income $2.29B vs $3.51B prior year",
+        "Operating cash flow collapsed to $2.51B from $5.19B YoY (-51.6%) and -73.2% QoQ",
+        "WTI crude oil crashed from ~$114/barrel (Apr 7) to ~$70/barrel (Jul 2), a -39% decline that will further pressure upstream earnings",
+        "P/E of 29.8x is near the top of its 365-day range (16.4-34.8x), far above the 16.4x level from July 2025 despite materially worse earnings",
+        "Net margin compressed to 5.9% from 7.8% a year ago; ROE fell to 5.9% from 10.5%",
+        "Q2 2026 earnings call scheduled July 31, 2026 is a likely negative catalyst as oil price decline flows through to results",
+        "Dividend coverage flagged as a concern by multiple sources; not fully backed by earnings or free cash flow",
+        "Balance sheet shows rising liabilities ($140.18B) with total equity of $189.37B; leverage increasing post-Hess acquisition"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "fundamentals",
+          "source_id": "2026-05-07 Q1 filing",
+          "excerpt": "revenue=48.61B net_income=2.29B eps_diluted=1.11 operating_cash_flow=2.51B"
+        },
+        {
+          "source_type": "fundamentals",
+          "source_id": "2025-03-31 Q1",
+          "excerpt": "revenue=47.61B eps=2 net_income=3.51B operating_cash_flow=5.19B"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2026-07-02",
+          "excerpt": "pe_diluted=29.826 p_b=1.774 net_margin=0.059 roe=0.059"
+        },
+        {
+          "source_type": "ratios",
+          "source_id": "2025-07-07",
+          "excerpt": "pe_diluted=16.433 p_b=1.72 net_margin=0.078 roe=0.105"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "DCOILWTICO 2026-07-02",
+          "excerpt": "69.73 \u0394=-44.85 (-39.14%)"
+        },
+        {
+          "source_type": "macro",
+          "source_id": "DCOILWTICO 2026-04-07",
+          "excerpt": "114.58"
+        },
+        {
+          "source_type": "news",
+          "source_id": "2026-07-02",
+          "excerpt": "Chevron Corporation's 2Q 2026 Earnings Conference Call on Friday, July 31, 2026"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "sahmcapital.com",
+          "excerpt": "a 4.21% dividend that is not fully backed by earnings or free cash flow, recent insider selling"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "simplywall.st Venezuela",
+          "excerpt": "analysts have flagged that Chevron's dividend is not well covered by earnings or free cash flow"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "cell": "CVX",
+    "decision_date": "2026-07-06",
+    "kinds": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "n_reads": 11,
+    "by_status": {
+      "ok": 11
+    },
+    "kinds_used": [
+      "fundamentals",
+      "macro",
+      "news",
+      "news_sentiment",
+      "prices",
+      "ratios",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "fundamentals": {
+        "n_reads": 1,
+        "raw_chars": 4553,
+        "capped_chars": 4553,
+        "raw_tokens": 1138,
+        "capped_tokens": 1138
+      },
+      "ratios": {
+        "n_reads": 1,
+        "raw_chars": 224357,
+        "capped_chars": 224357,
+        "raw_tokens": 56089,
+        "capped_tokens": 56089
+      },
+      "prices": {
+        "n_reads": 1,
+        "raw_chars": 830,
+        "capped_chars": 830,
+        "raw_tokens": 208,
+        "capped_tokens": 208
+      },
+      "macro": {
+        "n_reads": 1,
+        "raw_chars": 30246,
+        "capped_chars": 30246,
+        "raw_tokens": 7562,
+        "capped_tokens": 7562
+      },
+      "news_sentiment": {
+        "n_reads": 1,
+        "raw_chars": 3293,
+        "capped_chars": 3293,
+        "raw_tokens": 823,
+        "capped_tokens": 823
+      },
+      "news": {
+        "n_reads": 1,
+        "raw_chars": 48711,
+        "capped_chars": 11597,
+        "raw_tokens": 12178,
+        "capped_tokens": 2899
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 81669,
+        "capped_chars": 60324,
+        "raw_tokens": 20416,
+        "capped_tokens": 15082
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 11,
+      "by_status": {
+        "ok": 11
+      },
+      "kinds_used": [
+        "fundamentals",
+        "macro",
+        "news",
+        "news_sentiment",
+        "prices",
+        "ratios",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 45282,
+  "started_at": "2026-08-07T03:06:04+00:00"
+}
