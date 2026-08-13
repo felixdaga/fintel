@@ -132,17 +132,11 @@ class LLMAgent:
         symbols = tuple(sorted(env.policy.decidable))
         item_schema = emit.item_schema_from_text(self.output_schema_text)
         submit_params = emit.submit_schema(symbols, item_schema=item_schema)
-        submit = as_tool_spec(
-            emit.SUBMIT_TOOL, emit.submit_description(symbols), submit_params
-        )
+        submit = as_tool_spec(emit.SUBMIT_TOOL, emit.submit_description(symbols), submit_params)
         if self.channel == "pack":
-            payload, note = self._one_shot(
-                env, symbols, submit, submit_params=submit_params
-            )
+            payload, note = self._one_shot(env, symbols, submit, submit_params=submit_params)
         else:
-            payload, note = self._tool_loop(
-                env, symbols, submit, submit_params=submit_params
-            )
+            payload, note = self._tool_loop(env, symbols, submit, submit_params=submit_params)
         return self._respond(env, payload, note)
 
     # ── channels ────────────────────────────────────────────────────────────

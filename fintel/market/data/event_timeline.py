@@ -107,7 +107,7 @@ class EventTimeline:
     def _load_json(self, path: Path) -> None:
         data = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(data, list):
-            raise DataError(f"event_timeline: JSON file must be a list of entries")
+            raise DataError("event_timeline: JSON file must be a list of entries")
         self._entries = [
             {"entry_date": str(e["entry_date"]), "body": str(e.get("body", ""))}
             for e in data
@@ -121,9 +121,7 @@ class EventTimeline:
         through = decision_date - timedelta(days=1)
 
         visible = [
-            e
-            for e in self._entries
-            if since.isoformat() <= e["entry_date"] <= through.isoformat()
+            e for e in self._entries if since.isoformat() <= e["entry_date"] <= through.isoformat()
         ]
         return {
             "as_of": decision_date.isoformat(),

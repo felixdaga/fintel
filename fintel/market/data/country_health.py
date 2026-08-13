@@ -49,21 +49,21 @@ USA_SERIES: tuple[str, ...] = (
     "baa_yield",
     "wti_oil",
     "vix",
-    "IMPCH",    # US imports from China
-    "EXPCH",    # US exports to China
-    "BOPGTB",   # US goods trade balance
+    "IMPCH",  # US imports from China
+    "EXPCH",  # US exports to China
+    "BOPGTB",  # US goods trade balance
     "DEXCHUS",  # CNY per USD (daily)
 )
 
 # Verified FRED series IDs for China-side indicators (as of 2026).
 CHN_SERIES: tuple[str, ...] = (
     "CHNPRINTO01IXPYM",  # Industrial production excl. construction
-    "CHNCPIALLMINMEI",   # CPI
-    "INTDSRCNM193N",     # Discount rate
-    "TRESEGCNM052N",     # Total reserves excl. gold
-    "XTEXVA01CNM667S",   # Merchandise exports
-    "XTIMVA01CNM667S",   # Merchandise imports
-    "EXCHUS",            # CNY per USD (monthly)
+    "CHNCPIALLMINMEI",  # CPI
+    "INTDSRCNM193N",  # Discount rate
+    "TRESEGCNM052N",  # Total reserves excl. gold
+    "XTEXVA01CNM667S",  # Merchandise exports
+    "XTIMVA01CNM667S",  # Merchandise imports
+    "EXCHUS",  # CNY per USD (monthly)
 )
 
 

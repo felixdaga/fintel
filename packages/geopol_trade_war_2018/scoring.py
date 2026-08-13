@@ -92,7 +92,6 @@ def geopol_kpi(
     # Here we provide the signal-level metrics the platform can compute.
 
     per_date: dict[str, dict] = {}
-    action_errors: list[float] = []
     direction_matches: list[bool] = []
 
     for d in dates:

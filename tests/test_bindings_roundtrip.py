@@ -88,7 +88,7 @@ def test_bindings_roundtrip_rebuilds_the_same_tools(tmp_path):
     """The invariant end-to-end: orchestrator builds sources → writes bindings
     → MCP rebuild reads bindings → reconstructs the same tool set. If any
     strategy param is lost on the way, the rebuilt tools differ."""
-    from fintel.agents.adapters.base import SubprocessAgent, BINDINGS_FILE
+    from fintel.agents.adapters.base import BINDINGS_FILE, SubprocessAgent
     from fintel.environment import Cell, RuntimeConfig, build_environment
     from fintel.environment.mcp_server import rebuild_environment
     from fintel.market.factory import build_data_sources
@@ -105,7 +105,9 @@ def test_bindings_roundtrip_rebuilds_the_same_tools(tmp_path):
     ]
     sources = build_data_sources(bindings, config=config)
     env = build_environment(
-        cell=Cell(run_id="r1", decision_date=__import__("datetime").date(2018, 7, 5), symbols=("USA",)),
+        cell=Cell(
+            run_id="r1", decision_date=__import__("datetime").date(2018, 7, 5), symbols=("USA",)
+        ),
         sources=sources,
         universe=["USA", "CHN"],
         kinds=tuple(sources),

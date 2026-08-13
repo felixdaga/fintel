@@ -67,6 +67,7 @@ def _strip_comments(text: str) -> str:
         return text.strip()
     return json.dumps(_scrub(data), ensure_ascii=False, indent=2)
 
+
 # ── Host-supplied dependencies (structural protocols, no platform import) ──
 
 
@@ -769,9 +770,7 @@ class OptimizedAgent:
             include_verification=self.enable_verification,
         )
         if self.output_schema_text.strip():
-            pm_user += (
-                "\n\n## Output schema\n" + _strip_comments(self.output_schema_text)
-            )
+            pm_user += "\n\n## Output schema\n" + _strip_comments(self.output_schema_text)
         if submit_tool is None:
             submit_tool = _as_tool_spec(
                 self.submit_tool_name, self.submit_tool_description, self.submit_tool_schema

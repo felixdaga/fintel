@@ -124,11 +124,7 @@ def parse_views(
 
 
 def _pack_extras(raw: dict) -> dict:
-    return {
-        k: v
-        for k, v in raw.items()
-        if k not in _PLATFORM_VIEW_KEYS and v is not None
-    }
+    return {k: v for k, v in raw.items() if k not in _PLATFORM_VIEW_KEYS and v is not None}
 
 
 def _parse_sources(raw: Any) -> list[SourceRef]:

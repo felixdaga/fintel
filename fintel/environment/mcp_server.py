@@ -161,10 +161,7 @@ def serve() -> None:
         "fintel mcp server serving %s for %s (submit schema items required=%s)",
         env.cell.name,
         symbols,
-        (submit_params.get("properties") or {})
-        .get("views", {})
-        .get("items", {})
-        .get("required"),
+        (submit_params.get("properties") or {}).get("views", {}).get("items", {}).get("required"),
     )
     server.run(transport="stdio")
 

@@ -19,6 +19,8 @@ from fintel.market.calendar import TradingCalendar
 from fintel.market.constituents import INDEX_PRESETS, historical_universe
 from fintel.market.data.av_news import AlphaVantageNews
 from fintel.market.data.base import DataSource
+from fintel.market.data.country_health import CountryHealth
+from fintel.market.data.event_timeline import EventTimeline
 from fintel.market.data.filings import MassiveFilingText
 from fintel.market.data.fred import FredMacro
 from fintel.market.data.http import MassiveClient
@@ -218,10 +220,8 @@ def alphavantage_news(*, config: MarketConfig, **params: Any) -> AlphaVantageNew
     return AlphaVantageNews(api_key=key or "", **keep)
 
 
-def event_timeline(*, config: MarketConfig, **params: Any) -> EventTimelineDS:
+def event_timeline(*, config: MarketConfig, **params: Any) -> EventTimeline:
     """Curated event chronology. Reads a file path from the strategy binding."""
-    from fintel.market.data.event_timeline import EventTimeline as EventTimelineDS
-
     keep = {k: v for k, v in params.items() if k in {"lookback_days", "event_file"}}
     # Resolve relative paths against the fintel project root so MCP subprocesses
     # (cwd = repo root) and operator shells started elsewhere both find the file.
@@ -236,20 +236,14 @@ def event_timeline(*, config: MarketConfig, **params: Any) -> EventTimelineDS:
             cwd_candidate = Path.cwd() / raw
             if cwd_candidate.is_file():
                 keep["event_file"] = str(cwd_candidate.resolve())
-    return EventTimelineDS(**keep)
+    return EventTimeline(**keep)
 
 
-def country_health(*, config: MarketConfig, **params: Any) -> CountryHealthDS:
+def country_health(*, config: MarketConfig, **params: Any) -> CountryHealth:
     """Curated FRED bundle for both parties. Delegates to FredMacro for fetch+cache."""
-    from fintel.market.data.country_health import CountryHealth as CountryHealthDS
-
     key = None if config.offline else config.fred_api_key
-    keep = {
-        k: v
-        for k, v in params.items()
-        if k in {"lookback_days", "country_overrides_file"}
-    }
-    return CountryHealthDS(
+    keep = {k: v for k, v in params.items() if k in {"lookback_days", "country_overrides_file"}}
+    return CountryHealth(
         cache=RecordCache(root=config.cache_root, kind="macro"),
         api_key=key or None,
         **keep,

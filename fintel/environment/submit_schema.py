@@ -78,11 +78,7 @@ def _strip_internal_notes(node: Any) -> Any:
     not leak into the agent-visible tool schema or prompt text.
     """
     if isinstance(node, dict):
-        return {
-            k: _strip_internal_notes(v)
-            for k, v in node.items()
-            if k != "$comment"
-        }
+        return {k: _strip_internal_notes(v) for k, v in node.items() if k != "$comment"}
     if isinstance(node, list):
         return [_strip_internal_notes(v) for v in node]
     return node
@@ -235,9 +231,7 @@ def _schema_without_numeric_bounds(schema: dict[str, Any]) -> dict[str, Any]:
 
     def walk(node: Any) -> Any:
         if isinstance(node, dict):
-            return {
-                k: walk(v) for k, v in node.items() if k not in ("minimum", "maximum")
-            }
+            return {k: walk(v) for k, v in node.items() if k not in ("minimum", "maximum")}
         if isinstance(node, list):
             return [walk(v) for v in node]
         return node

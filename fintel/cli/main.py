@@ -186,7 +186,9 @@ def build_parser() -> argparse.ArgumentParser:
         "(lets you start the TUI before the simulation). Default 0 (no wait).",
     )
 
-    rep = sub.add_parser("report", help="Evaluate a finished job (KPI + stochasticity + holdings + agent eval)")
+    rep = sub.add_parser(
+        "report", help="Evaluate a finished job (KPI + stochasticity + holdings + agent eval)"
+    )
     rep.add_argument("job_id", help="Job id under --output-root")
     rep.add_argument("--output-root", default="runs")
     rep.add_argument(

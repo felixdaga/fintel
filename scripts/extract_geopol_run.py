@@ -146,7 +146,9 @@ def main() -> None:
     out = OUT_DIR / name
     out.write_text(json.dumps(data, indent=2) + "\n")
     n_cells = sum(len(d) for r in data["runs"].values() for d in r["dates"].values())
-    print(f"wrote {out.relative_to(ROOT)} — runs={len(data['runs'])} cells={n_cells} dates={len(data.get('outcomes',{}))}")
+    print(
+        f"wrote {out.relative_to(ROOT)} — runs={len(data['runs'])} cells={n_cells} dates={len(data.get('outcomes', {}))}"
+    )
 
 
 if __name__ == "__main__":

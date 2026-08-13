@@ -6,7 +6,6 @@ import json
 
 from fintel.agents import emit
 
-
 GEOPOL_ITEM = {
     "type": "object",
     "title": "GeopolView",
@@ -132,7 +131,9 @@ def test_validate_accepts_pack_shaped_view():
 
 def test_abstain_skips_item_validation():
     schema = emit.submit_schema(("USA",), item_schema=GEOPOL_ITEM)
-    assert emit.validate_submit({"views": [], "abstain": True, "abstain_reason": "thin"}, schema) == []
+    assert (
+        emit.validate_submit({"views": [], "abstain": True, "abstain_reason": "thin"}, schema) == []
+    )
 
 
 def test_item_schema_from_text_roundtrip():
@@ -145,7 +146,6 @@ def test_item_schema_from_text_roundtrip():
 def test_bindings_persist_output_schema_for_mcp(tmp_path):
     """Subprocess host writes pack schema into bindings.json for MCP rebuild."""
     import stat
-    import textwrap
 
     from fintel import agents
     from fintel.agents.adapters import SubprocessAgent

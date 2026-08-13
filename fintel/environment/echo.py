@@ -25,8 +25,8 @@ from __future__ import annotations
 
 from typing import Any
 
-from fintel.environment.tools import ToolSpec, spec_for, tool_name
 from fintel.environment.submit_schema import for_agent_text
+from fintel.environment.tools import ToolSpec, spec_for, tool_name
 from fintel.market import catalog
 from fintel.models.run import RunConfig
 

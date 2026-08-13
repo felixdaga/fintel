@@ -453,6 +453,4 @@ class SubprocessAgent:
             )
         outcome: Outcome = "ok" if views else "empty"
         detail = "; ".join(notes) if not views else ""
-        return AgentResponse(
-            views=views, outcome=outcome, detail=detail, trace=trace, usage=usage
-        )
+        return AgentResponse(views=views, outcome=outcome, detail=detail, trace=trace, usage=usage)

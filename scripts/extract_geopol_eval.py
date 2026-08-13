@@ -9,6 +9,7 @@ rating fields the blog's ``EvalRating`` type uses.
 Usage:
     python scripts/extract_geopol_eval.py <job_id> <out.json>
 """
+
 from __future__ import annotations
 
 import json
@@ -66,8 +67,11 @@ def extract(job_id: str) -> dict:
         clean.setdefault("lookahead_bias_rationale", "")
         dates.setdefault(date, {})[party] = clean
 
-    summary = {f: payload.get("summary", {}).get(f) for f in SUMMARY_FIELDS
-               if f in payload.get("summary", {})}
+    summary = {
+        f: payload.get("summary", {}).get(f)
+        for f in SUMMARY_FIELDS
+        if f in payload.get("summary", {})
+    }
     return {"dates": dates, "summary": summary}
 
 

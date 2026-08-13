@@ -49,8 +49,7 @@ def single_name_signal(views: dict[Symbol, View]) -> dict[Symbol, float]:
     evaluation must see the gap.
     """
     return {
-        sym: float(v.score) if v.score is not None else float("nan")
-        for sym, v in views.items()
+        sym: float(v.score) if v.score is not None else float("nan") for sym, v in views.items()
     }
 
 

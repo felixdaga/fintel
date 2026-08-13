@@ -44,8 +44,8 @@ from fintel.market.factory import build_data_sources
 from fintel.market.settings import MarketConfig
 from fintel.models.agent import AgentSpec, ModelSpec
 from fintel.models.common import Symbol
-from fintel.models.strategy import EvalSpec
 from fintel.models.paths import JobPaths
+from fintel.models.strategy import EvalSpec
 
 logger = logging.getLogger(__name__)
 
@@ -120,9 +120,7 @@ def evaluate(
     # from the pack's strategy.toml bindings, with lookback caps removed
     # so the full timeline is visible from today's vantage point.
     if market_config is None:
-        market_config = MarketConfig.from_env(
-            cache_root=cache_root or (job_dir.parent / "cache")
-        )
+        market_config = MarketConfig.from_env(cache_root=cache_root or (job_dir.parent / "cache"))
     sources = _build_rating_sources(strategy_root, eval_spec, market_config)
 
     # Walk the selected run's cells and collect (date, cell_name, output) triples.
@@ -182,9 +180,7 @@ def evaluate(
         date_eval_dir.mkdir(parents=True, exist_ok=True)
 
         if rating is not None:
-            (date_eval_dir / f"{name}.json").write_text(
-                json.dumps(rating, indent=2, default=str)
-            )
+            (date_eval_dir / f"{name}.json").write_text(json.dumps(rating, indent=2, default=str))
             progress.emit(
                 "cell_done",
                 cell=name,
@@ -261,9 +257,7 @@ def evaluate(
     result = {"available": n_rated > 0, "per_cell": per_cell, "summary": summary}
 
     # Write the summary file.
-    (eval_dir / "eval.json").write_text(
-        json.dumps(result, indent=2, default=str)
-    )
+    (eval_dir / "eval.json").write_text(json.dumps(result, indent=2, default=str))
 
     return result
 
@@ -356,7 +350,10 @@ def _rate_one_cell(
     if response.outcome != "ok" or not response.views:
         logger.warning(
             "eval: rating agent returned %s for %s@%s: %s",
-            response.outcome, cell_name, original_decision_date, response.detail,
+            response.outcome,
+            cell_name,
+            original_decision_date,
+            response.detail,
         )
         return None
 
@@ -410,14 +407,16 @@ def _compose_rating_instruction(
         "```",
     ]
     if rating_schema:
-        parts.extend([
-            "",
-            "## Rating schema",
-            "",
-            "```json",
-            rating_schema,
-            "```",
-        ])
+        parts.extend(
+            [
+                "",
+                "## Rating schema",
+                "",
+                "```json",
+                rating_schema,
+                "```",
+            ]
+        )
     parts.append("")
     return "\n".join(parts)
 

@@ -757,9 +757,7 @@ def test_shared_concurrency_pool_rolls_across_k_repeats(tmp_path):
     job.__dict__["k_repeats"] = 2
     job.__dict__["max_concurrent"] = 2
     job.__dict__["shared_concurrency"] = 3
-    job.__dict__["schedule"] = ScheduleRef(
-        kind="custom_dates", dates=["2024-01-02", "2024-01-03"]
-    )
+    job.__dict__["schedule"] = ScheduleRef(kind="custom_dates", dates=["2024-01-02", "2024-01-03"])
 
     from fintel.market.settings import MarketConfig
 
