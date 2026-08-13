@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-11-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8045,
+    "tokens_out": 849,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0080064,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should maintain its current retaliatory posture without further escalation, while signaling willingness to negotiate if the U.S. engages in good faith. Avoid making unilateral concessions that would weaken China's bargaining position, but do not provoke additional U.S. tariffs that could cover the remaining ~$267 billion in trade.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. As of the decision date, the U.S. has imposed tariffs on $250 billion of Chinese imports (roughly half of bilateral trade), with President Trump threatening to tariff the remaining $267 billion if China retaliates further (Fox Business/Motley Fool transcript). China has retaliated on $110 billion of the $130 billion in U.S. goods it imports, meaning nearly all cards have been played on both sides. The Brookings analysis notes that China's export economy is affected but that 'this is not a big hit for the overall U.S. economy' and that 'it is unlikely that the Chinese leadership will cave in and do anything major.' The Washington Post reports that Chinese leaders feel betrayed after multiple failed deal attempts with Ross and Mnuchin, suggesting deep distrust of U.S. negotiating sincerity. China's retaliatory tariffs have strategically avoided crude oil and have lowered tariffs on goods from other countries to redirect trade away from the U.S. (Fox Business). The threat score of +0.5 reflects that major export sectors are under tariff pressure and nearly half of bilateral trade is affected, but China retains retaliatory leverage and the ability to diversify suppliers. The action score of 0.0 (hold) reflects the assessment that further escalation risks triggering the remaining $267 billion in U.S. tariffs, while unilateral concession would be strategically premature given the lack of scheduled high-level talks and the Trump administration's apparent satisfaction with the pre-election tariff posture.",
+      "key_factors": [
+        "$250 billion of Chinese exports now subject to U.S. tariffs (roughly half of bilateral trade)",
+        "China has retaliated on $110B of $130B in U.S. imports \u2014 nearly exhausted retaliatory capacity",
+        "Trump threatens additional $267B in tariffs if China retaliates further",
+        "No high-level negotiations currently scheduled; deep distrust after failed deals with Ross and Mnuchin",
+        "China strategically avoiding crude oil tariffs and redirecting trade to non-U.S. suppliers",
+        "Brookings assessment: unlikely Chinese leadership will 'cave in' on anything major",
+        "Midterm election context: Trump administration views tariffs as politically advantageous"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "President Trump has said that if China were to take retaliatory action on these tariffs, which they have, in fact, and I'll explain that here in a second, that he's going to put in place another $267 billion worth of imports. For all intents and purposes, that would put a tariff in place on 100% of U.S.-China trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "It is unlikely that the Chinese leadership will cave in and do anything major. China is willing to buy more products from the U.S. and open more markets, so their offer is clear"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down \u2014 this time via Twitter."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "They've also done something interesting in that, while they've increased the tariffs on American goods, they've lowered the tariffs on some of the other goods from other places."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-11-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20384,
+        "capped_chars": 16158,
+        "raw_tokens": 5096,
+        "capped_tokens": 4040
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 17513,
+  "started_at": "2026-08-13T10:54:44+00:00"
+}

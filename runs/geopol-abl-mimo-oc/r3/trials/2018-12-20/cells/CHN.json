@@ -1,0 +1,141 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-12-20",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Continue the 90-day negotiation track with the US while compartmentalizing the Huawei/Meng Wanzhou crisis. Offer concrete early-deliverable purchases (agricultural, energy, autos) to build goodwill and buy time, but do not make major structural concessions under duress. Resist nationalist pressure to escalate against the US or Canada \u2014 the economy cannot afford a breakdown in talks.\n\nSUPPORTING RATIONALE: China faces a genuinely high threat level driven by three converging pressures. First, the economy is decelerating sharply: Q3 GDP fell to 6.5% (weakest since 2009), industrial production growth slowed to 5.4% below consensus, car sales dropped 11.7% YoY, smartphone shipments fell 15.2%, and consumer confidence is deteriorating (SCMP, Nov 23 2018; CNBC, Oct 19 2018). The tariff war is already biting \u2014 List 3 covers $200B at 10% with a scheduled jump to 25% on January 1, 2019 (timeline: Sept 17/24 entries). Second, the Huawei/Meng arrest (Dec 1) represents an escalation into tech-supply-chain warfare and entity-list targeting of China's most important technology champion. Trump explicitly told Reuters he would intervene in her case if it served the trade deal, confirming China's fear that the US is using extraterritorial legal tools as economic leverage (WSWS, Dec 13; NPR, Dec 7). China detained two Canadians (Dec 10) but has limited retaliatory options that don't backfire. Third, the A-share market has fallen over 30% since January with $600B in pledged-share forced-selling risk, and the RMB has depreciated ~5% \u2014 both creating financial stability vulnerabilities (Business Insider, Oct/Nov 2018). The action score of -0.15 (mild negotiate/hold) reflects the asymmetric risk: China's economy is more exposed to tariff escalation than the US, the 90-day truce window is only 19 days old, and concrete purchase commitments (agriculture, energy, auto tariff cuts from 40% to 15%) are already being prepared (Business Insider, Dec 14). Escalation would be domestically satisfying but economically ruinous \u2014 it risks the January 1 tariff hike, capital flight, and deeper manufacturing recession. The rational play is to engage seriously, offer tangible deliverables, and protect the negotiation channel while the economy stabilizes.",
+      "key_factors": [
+        "China Q3 GDP slowed to 6.5%, weakest since 2009 financial crisis",
+        "List 3 tariffs ($200B at 10%) scheduled to rise to 25% on Jan 1, 2019 \u2014 11 days away",
+        "Huawei CFO Meng Wanzhou arrested Dec 1; Trump confirmed willingness to use her as trade leverage",
+        "A-share market down 30%+ YTD with $600B in pledged-share forced-selling risk",
+        "Consumer confidence deteriorating \u2014 car sales -11.7%, smartphone shipments -15.2%",
+        "China detaining two Canadians (Dec 10) but has limited non-escalatory retaliatory tools",
+        "90-day truce only 19 days old; early-deliverable purchase commitments being prepared",
+        "PBOC has already cut RRR four times in 2018 \u2014 policy space is narrowing"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended. Same day: Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-12-10",
+          "excerpt": "China detains Canadians Michael Kovrig and Michael Spavor (widely viewed as retaliation for the Meng arrest)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_china_q3_gdp_2018-10-19",
+          "excerpt": "China's economic growth slowed more than expected to the weakest pace since the first quarter of 2009... grew 6.5 percent year-over-year in the third quarter... Industrial production for September grew 5.8 percent compared to a year ago, missing expectations of a 6 percent expansion."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp_china_slowdown_2018-11-23",
+          "excerpt": "Car sales dropped 11.7% YoY. Smartphone shipments down 15.2%. Consumer confidence has been seriously dampened by the trade tensions. Alibaba revised down its full-year revenue estimate."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wsws_meng_arrest_2018-12-13",
+          "excerpt": "Trump declared he would 'certainly intervene' in the case if he thought it was 'good for what will be certainly the largest trade deal ever made' \u2014 making clear her fate was a bargaining chip."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bi_china_stocks_crash_2018-11-27",
+          "excerpt": "Shanghai Composite has fallen more than 30% since January. About 4.18 trillion yuan ($603 billion) worth of shares pledged as collateral \u2014 forced selling spiral risk."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bi_trade_talks_progress_2018-12-14",
+          "excerpt": "China is preparing to start purchases of American agricultural and energy goods. Cabinet considering proposal to lower tariffs on US-made autos to 15% from 40%."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-12-20",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 7,
+    "by_status": {
+      "ok": 7
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4487,
+        "capped_chars": 4487,
+        "raw_tokens": 1122,
+        "capped_tokens": 1122
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11445,
+        "capped_chars": 11445,
+        "raw_tokens": 2861,
+        "capped_tokens": 2861
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 120100,
+        "capped_chars": 120100,
+        "raw_tokens": 30026,
+        "capped_tokens": 30026
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 7,
+      "by_status": {
+        "ok": 7
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 389158,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

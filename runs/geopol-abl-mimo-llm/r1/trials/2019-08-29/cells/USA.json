@@ -1,0 +1,114 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-08-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7363,
+    "tokens_out": 1076,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.010591,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should continue to escalate tariffs on Chinese goods, maintaining pressure to force China to make meaningful concessions on intellectual property theft, market access, and structural reforms. The US should follow through on the threatened tariff increases on $200 billion of goods from 10% to 25% and prepare to impose tariffs on the remaining $300 billion of Chinese imports if negotiations fail to produce concrete results. This approach leverages America's stronger economic position and China's greater dependence on exports to the US market.\n\nSUPPORTING RATIONALE: The threat score of 0.35 reflects a moderate but significant threat to US interests. The US trade deficit with China stands at $419 billion (BBC, 2019-05-08), representing a substantial imbalance. China's unfair trading practices including intellectual property theft, forced technology transfer, and market restrictions continue to disadvantage American companies (BBC, 2019-05-08; USC Annenberg analysis). The IMF has flagged US-China trade tensions as contributing to weakened global expansion (BBC, 2019-05-08). However, the US economy remains relatively strong with the Dow Jones up 11% in 2019 (BBC, 2019-05-08), and the US has leverage as the world's largest consumer market.\n\nThe action score of -1 reflects the assessment that this is a rare opportunity to restructure the US-China trade relationship on more favorable terms. Senator Graham's assessment that 'this is the best chance in my lifetime to get China to change their cheating ways' (Fox Business, 2019-05-12) captures the strategic logic. White House economic adviser Kudlow acknowledged 'both sides will pay' but the disruption to China's supply chain poses a bigger threat to their economy than to America's (Fox Business, 2019-05-12). The tariffs are already bringing China to the table (Fox Business, 2019-05-12), and maintaining maximum pressure is necessary to extract meaningful structural reforms rather than empty pledges that 'haven't always yielded actual change' (USC Annenberg). The threat of tariffs on all remaining Chinese imports ($300 billion) provides additional leverage that should be preserved and used if China continues to 'row back on a trade deal' (BBC, 2019-05-08).",
+      "key_factors": [
+        "$419 billion US trade deficit with China",
+        "China's IP theft and forced technology transfer practices",
+        "US economic strength (Dow up 11% in 2019)",
+        "Tariffs bringing China to negotiating table",
+        "Threat of additional tariffs on $300 billion remaining imports",
+        "China's greater vulnerability to supply chain disruption",
+        "IMF warning about global growth impact from trade tensions",
+        "China's history of making pledges without actual implementation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com - Trade war: US-China trade battle in charts",
+          "excerpt": "The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com - Trade war: US-China trade battle in charts",
+          "excerpt": "The US accuses China of stealing intellectual property, but it wants Beijing to make changes to its economic policies, which it says unfairly favour domestic companies through subsidies"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com - Trade war: US-China trade battle in charts",
+          "excerpt": "The Dow Jones Industrial Average fell nearly 6% in 2018 and is already up some 11% this year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "This is the best chance in my lifetime to get China to change their cheating ways. The tariffs are tools that bring China to the table"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "When you put tariffs on products coming out of China, it makes other countries a cheaper place to do business which eventually moves market share away from China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu - Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The American side has been insisting on changes in Chinese laws to permit greater access to Chinese markets and bans on forced sharing of technology with Chinese firms, as well as fuller and more effective protection of intellectual property"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-08-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 17257,
+        "capped_chars": 13956,
+        "raw_tokens": 4314,
+        "capped_tokens": 3489
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 24293,
+  "started_at": "2026-08-13T10:54:39+00:00"
+}

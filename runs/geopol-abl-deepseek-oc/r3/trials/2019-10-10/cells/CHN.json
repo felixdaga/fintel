@@ -1,0 +1,124 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 140186,
+    "tokens_out": 3105,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.5,
+      "rationale": "RECOMMENDATION: Enter the October 10-11 high-level talks in Washington with a posture of negotiation and modest goodwill, seeking a partial de-escalation rather than escalation. Signal continued willingness on agricultural purchases and tariff-exemption lists, but condition any broader concession on concrete US relief \u2014 at minimum a pause on the looming $250B List-3 hike and genuine Huawei/entity-list easing. Do not capitulate on core structural demands (forced tech transfer, industrial policy) which Beijing cannot concede without undermining its model.\n\nSUPPORTING RATIONALE: The threat reading is driven by hard evidence that the dispute is already biting the real economy: exports to the US fell ~6.5% in July with imports down 19%, PPI turned negative for the first time in three years, the official manufacturing PMI sits at 49.8 (below the 50 contraction line) with export orders falling for a 16th straight month, and Q2 GDP slowed to 6.2% - its weakest in 27 years (Forbes; Reuters; Al Jazeera). On top of that, the US broke CNY past 7 and designated China a currency manipulator (timeline 2019-08-05), placed Huawei and affiliates on the Entity List (timeline 2019-05-16), and has floated delisting Chinese companies - channelling pressure straight at China's export economy and flagship firms. That is squarely the +0.5 anchor (major export sectors hit, FX pressure, firm-level targeting) - material but not existential given ~6% growth, healthy reserves, and policy headroom. On action: escalating further would deepen the export damage China can least afford right now, whereas signing on to talks with goodwill gestures (timeline 2019-09-11 first tariff-exemption list; 2019-09-13 farm-good exclusion) plus China's own levers (rare-earth signal, $75B retaliation already in place, auto-tariff reimposition) give Beijing negotiating room to seek a truce that relieves the pressure without one-sided structural capitulation. A mild de-escalation-leaning negotiate stance (rather than maximal concession) is the correct response to a real but manageable threat.",
+      "key_factors": [
+        "US tariffs at 25% on ~$250B and 15% on ~$300B List 4, with List-3 hike to 30% looming",
+        "Huawei on Entity List; US threatening to delist Chinese firms",
+        "CNY broke 7; US currency-manipulator designation",
+        "China exports to US -6.5% (Jul), PPI negative, official PMI 49.8, export orders down 16 straight months",
+        "Q2 GDP 6.2% - 27-year low, but ~6% growth and stimulus headroom remain",
+        "Oct 10-11 high-level talks in Washington; Beijing signalling goodwill (farm exclusions, tariff exemptions)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-13",
+          "excerpt": "Chinese state media reports soybeans, pork, and some other farm goods will be excluded from additional retaliatory tariffs (goodwill signal ahead of talks)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Forbes 2019-08-09",
+          "excerpt": "Exports to US in July fell 6.5%... PPI turned negative -0.3%... manufacturing PMI 49.7."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters 2019-09-30",
+          "excerpt": "GDP slowed to 6.2% in Q2, weakest in at least 27 years... official PMI 49.8 in September, below 50... export orders down 16th straight month."
+        }
+      ],
+      "threat_score": 0.5,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5498,
+        "capped_chars": 5498,
+        "raw_tokens": 1374,
+        "capped_tokens": 1374
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48170,
+        "capped_chars": 48170,
+        "raw_tokens": 12042,
+        "capped_tokens": 12042
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 41935,
+        "capped_chars": 41935,
+        "raw_tokens": 10483,
+        "capped_tokens": 10483
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 261137,
+  "started_at": "2026-08-13T07:51:00+00:00"
+}

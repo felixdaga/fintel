@@ -1,0 +1,107 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10661,
+    "tokens_out": 863,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0106644,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should maintain a firm retaliatory posture, matching any new U.S. tariffs with proportional counter-tariffs on American agricultural and industrial goods, while keeping the door open for negotiation through diplomatic channels. We should signal willingness to talk but make clear that escalation will be met in kind, preserving leverage and domestic credibility.\n\nSUPPORTING RATIONALE: The threat to China is real but not yet existential. The U.S. has announced tariffs on up to $153 billion of Chinese goods targeting high-tech sectors central to Made in China 2025 (Bruegel analysis: 84% of targeted exports are high-end). However, as of June 14, 2018, the tariffs remain largely in proposal stage \u2014 Larry Kudlow stated 'Nothing's happened. Nothing's been executed' (CBS News, April 6). The May 20 Mnuchin-Liu He agreement put tariffs 'on hold' (The Guardian), though the White House reversed course on June 5 announcing it would proceed with the list on June 15. This volatility suggests the U.S. position is unstable and the threat is elevated but manageable. China's retaliation targeting soybeans ($14B), aircraft, and autos directly hits U.S. political constituencies in farm belt and rust belt states (CBS News, Bruegel). The Wired analysis (June 12) notes that 43% of Chinese exports to the U.S. come from foreign-owned firms, meaning U.S. tariffs would also punish American companies \u2014 a structural constraint limiting how far the U.S. can go. China should retaliate proportionally to demonstrate resolve without provoking a full cascade, while the interdependence of supply chains provides natural limits on escalation from both sides.",
+      "key_factors": [
+        "U.S. tariffs targeting Made in China 2025 high-tech sectors (84% high-end per Bruegel)",
+        "Tariffs still largely in proposal stage as of decision date; Kudlow: 'Nothing's been executed'",
+        "May 20 Mnuchin-Liu He 'on hold' agreement collapsed by June 5 White House reversal",
+        "China's retaliation on soybeans/aircraft/autos hits U.S. political constituencies",
+        "43% of Chinese exports to U.S. from foreign-owned firms limits U.S. escalation appetite",
+        "ZTE sanctions case shows U.S. leverage but also Trump's willingness to compromise for geopolitical cooperation (North Korea)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China. Trump said he would consider adding another $100 billion worth of products. Larry Kudlow: 'This is just a proposed idea. Nothing's happened. Nothing's been executed.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.theguardian.com",
+          "excerpt": "Mnuchin: 'We're putting the trade war on hold, right now, we have agreed to put the tariffs on hold while we try to execute the framework.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports. The U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.wired.com",
+          "excerpt": "43 percent of Chinese exports are sourced from foreign (i.e., non-Chinese) owned firms. It's impossible to penalize China without simultaneously penalizing American businesses, workers, and consumers."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China has increased tariffs by up to 25 percent on 128 U.S. products, from frozen pork and wine to certain fruits and nuts, escalating a dispute between the world's biggest economies."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 33576,
+        "capped_chars": 28970,
+        "raw_tokens": 8394,
+        "capped_tokens": 7242
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 17031,
+  "started_at": "2026-08-13T10:55:24+00:00"
+}

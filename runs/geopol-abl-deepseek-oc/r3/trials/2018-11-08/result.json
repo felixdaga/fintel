@@ -1,0 +1,54 @@
+{
+  "decision_date": "2018-11-08",
+  "status": "partial",
+  "cells": [
+    {
+      "cell": "USA",
+      "symbols": [
+        "USA"
+      ],
+      "status": "ok",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 422894,
+      "usage": {
+        "n_llm_calls": 4,
+        "tokens_in": 143430,
+        "tokens_out": 4453,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "health": "ok",
+      "health_issues": []
+    },
+    {
+      "cell": "CHN",
+      "symbols": [
+        "CHN"
+      ],
+      "status": "failed",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 400883,
+      "usage": {
+        "n_llm_calls": 5,
+        "tokens_in": 189165,
+        "tokens_out": 4866,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "error": "1 tool error(s) the agent saw (MCP timeout/connection); agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views: must be array\n\nReceived arguments:\n{\n  \"views\": \"[{\\\"symbo",
+      "health": "broken",
+      "health_issues": [
+        "1 tool error(s) the agent saw (MCP timeout/connection)",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views: must be array\n\nReceived arguments:\n{\n  \"views\": \"[{\\\"symbo"
+      ]
+    }
+  ],
+  "n_views": 2,
+  "missing": [],
+  "started_at": "2026-08-13T07:36:48+00:00",
+  "finished_at": "2026-08-13T08:00:31+00:00",
+  "duration_ms": 0,
+  "health": "broken"
+}

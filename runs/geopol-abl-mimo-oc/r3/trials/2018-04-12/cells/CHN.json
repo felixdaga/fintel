@@ -1,0 +1,139 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-04-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Maintain our retaliatory tariffs and hold firm while signaling willingness to negotiate. Do not escalate further, but do not concede \u2014 the U.S. has initiated this conflict and must demonstrate good faith before we make any structural concessions. Use the 60-day comment period to rally international opinion and apply counter-pressure through targeted agricultural and aerospace tariffs.\n\nSUPPORTING RATIONALE: The U.S. Section 301 tariff list directly targets 'Made in China 2025' sectors \u2014 aerospace, ICT, robotics, machinery \u2014 representing a strategic challenge to China's long-term industrial policy and tech self-sufficiency goals, not merely a trade dispute (event_timeline: 2018-03-22 USTR report, 2018-04-03 proposed list of ~1,300 product lines at 25%). This elevates the threat above a routine tariff skirmish. However, China's economy is performing strongly heading into this confrontation: industrial output accelerated to 7.2% YoY in Jan-Feb 2018 (web_search: chinaeconomicreview.com, March 2018), and 2017 GDP growth was 6.9% (web_search: stats.gov.cn). Our retaliation has been swift and strategically targeted \u2014 $50B in tariffs on soybeans ($14B in annual exports, concentrated in Trump-supporting farm states), automobiles, and aircraft (event_timeline: 2018-04-04). Market reaction validates our leverage: U.S. stock futures fell 1.4%, soybean futures plunged 4.5%, and Boeing shares dropped 7.2% in pre-market (web_search: Reuters, April 4, 2018). Deputy Finance Minister Zhu Guangyao signaled the door remains open to settlement (web_search: Fortune, April 4, 2018). The U.S. economy is healthy but not invulnerable \u2014 consumer sentiment dipped to 98.8 in April from 101.4 in March (country_health: UMCSENT), and the dollar has weakened ~3% over six months (country_health: DTWEXBGS). The 60-day U.S. comment period means tariffs are not yet implemented, giving both sides time. Escalation beyond proportional retaliation risks a genuine trade war that would damage China's export-dependent economy more than the U.S.; concession would legitimize U.S. interference in China's industrial policy. Retaliate and hold is the correct posture.",
+      "key_factors": [
+        "U.S. Section 301 directly targets Made in China 2025 \u2014 strategic threat to tech autonomy",
+        "China's economy strong entering dispute: 7.2% industrial output growth, 6.9% GDP",
+        "Retaliation strategically targeted at politically sensitive U.S. sectors (soybeans, Boeing, autos)",
+        "Market turbulence validates China's leverage: Dow futures -1.4%, soybeans -4.5%, Boeing -7.2%",
+        "60-day U.S. comment period provides negotiation window \u2014 tariffs not yet implemented",
+        "China's matching $50B retaliation signals resolve without over-escalation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-22",
+          "excerpt": "USTR releases Section 301 report finding China's IP/tech-transfer practices unreasonable or discriminatory. Trump signs presidential memorandum directing tariffs on Chinese imports, a WTO case, and investment restrictions."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list: ~1,300 Chinese product lines (~$50B), targeting aerospace, ICT, robotics, machinery and related sectors."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods (including soybeans, automobiles, and aircraft) in response to the Section 301 list."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortune-2018-04-04",
+          "excerpt": "China said it would levy an additional 25% tariff on imports of 106 U.S. products including soybeans, automobiles, chemicals and aircraft. Officials signaled that the implementation would depend on when the U.S. applied its own, and that there was still time for both sides to agree to a settlement."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2018-04-04",
+          "excerpt": "U.S. stock futures sliding 1.4 percent, soybean futures plunging 4.5 percent and the dollar and China's yuan both hit. Boeing shares fell 7.2 percent in pre-market trading."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "chinaeconomicreview-2018-03-16",
+          "excerpt": "Industrial output growth jumped to 7.2% year-on-year (from 6.2% in December), exceeding expectations."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "University of Michigan Consumer Sentiment: 98.8 in April 2018, down from 101.4 in March."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Nominal Broad U.S. Dollar Index: 107.12 on April 11, down from 110.54 in October 2017 (-3.1%)."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": -0.3,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-04-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2046,
+        "capped_chars": 2046,
+        "raw_tokens": 512,
+        "capped_tokens": 512
+      },
+      "country_health": {
+        "n_reads": 2,
+        "raw_chars": 94760,
+        "capped_chars": 94760,
+        "raw_tokens": 23690,
+        "capped_tokens": 23690
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 26972,
+        "capped_chars": 26972,
+        "raw_tokens": 6743,
+        "capped_tokens": 6743
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 395027,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

@@ -1,0 +1,109 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8679,
+    "tokens_out": 1089,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0093604,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should signal willingness to negotiate and engage in high-level trade talks with the United States, while maintaining its retaliatory tariffs as leverage. We should offer concrete purchase commitments (agricultural goods, energy) and modest market-opening measures, but resist structural reform demands that would undermine state-led industrial policy. The goal is to de-escalate before the threatened escalation to cover 100% of bilateral trade materializes.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has imposed tariffs on $250 billion of Chinese goods (roughly half of bilateral trade), and Trump has threatened to tariff the remaining $267 billion, which would cover virtually all US-China trade (Fox Business, Motley Fool transcript). China's retaliatory capacity is nearly exhausted at $110 billion of $130 billion in US imports already covered. The RAND analysis notes that China's exports to the US represent about 5% of GDP versus only 0.7% for US exports to China, creating an asymmetric vulnerability. The yuan has already depreciated 6% (from 6.28 to 6.64 per dollar) since April 2018, reflecting market pressure. However, several factors mitigate the threat: the Brookings analysis notes that more than half the value of China's exports consists of components from other countries (South Korea, Japan), meaning US tariffs also hurt US firms and third-country suppliers. The US deliberately excluded consumer goods (smartphones, monitors) to avoid domestic consumer backlash, limiting the direct impact. China has also lowered tariffs on goods from non-US sources to redirect trade flows. The Fox Business opinion piece frames this as an existential contest, but the analytical sources suggest the economic damage is manageable in the near term. The action_score of -1 (mild escalation framing) reflects that China should negotiate from a position of demonstrated resolve \u2014 maintaining existing retaliatory tariffs while offering a face-saving deal structure. Conceding too quickly would invite further demands, particularly on Made in China 2025 and structural reforms. But pure escalation risks triggering the full $267 billion tariff threat, which would be significantly more damaging.",
+      "key_factors": [
+        "US has tariffed $250B of ~$505B Chinese exports; threatens full coverage of remaining $267B",
+        "China's retaliatory tariffs already cover $110B of $130B in US imports \u2014 near exhaustion of tit-for-tat capacity",
+        "Asymmetric exposure: Chinese exports to US ~5% of GDP vs US exports to China ~0.7% of GDP (RAND analysis)",
+        "Yuan depreciated 6% (6.28 to 6.64/USD) since April 2018, reflecting market stress",
+        "US deliberately excluded consumer electronics to avoid domestic backlash, limiting tariff impact on China",
+        "More than half of China's export value is foreign-origin components, so US tariffs create collateral damage for US firms and allies",
+        "China has lowered tariffs on non-US goods to redirect trade flows away from US suppliers",
+        "No high-level negotiations scheduled as of early 2019; both sides locked in escalation cycle"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness_motley_fool_trade_war_explained",
+          "excerpt": "President Trump has said that if China were to take retaliatory action on these tariffs, which they have, in fact... he's going to put in place another $267 billion worth of imports. For all intents and purposes, that would put a tariff in place on 100% of U.S.-China trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "rand_us_china_trade_war_different_messages",
+          "excerpt": "$505 billion in potentially lost exports is a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "rand_us_china_trade_war_different_messages",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "brookings_unpacked_trade_war",
+          "excerpt": "more than half of the value of those products are in parts and components from other countries like South Korea and Japan\u2014so there will definitely be collateral damage from U.S. tariffs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "rand_us_china_trade_war_different_messages",
+          "excerpt": "Consumer goods, including sophisticated items such as smartphones and monitors, are not on the list, presumably because tariffs would directly and quickly affect consumers"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 23881,
+        "capped_chars": 20119,
+        "raw_tokens": 5970,
+        "capped_tokens": 5030
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 26278,
+  "started_at": "2026-08-13T10:55:09+00:00"
+}

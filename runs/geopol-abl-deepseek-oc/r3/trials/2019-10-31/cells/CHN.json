@@ -1,0 +1,128 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 141253,
+    "tokens_out": 3103,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: We should hold the negotiating course toward a written Phase One agreement \u2014 continue the goodwill signals already made (agricultural purchases, tariff exemptions, market-access and currency commitments) while pressing to have the December 15 tariff tranche on ~$156B of goods and the September 1 List 4A tariffs removed, and Huawei's Entity List status revisited, before any final signing. We should not escalate further, since our growth is already under pressure and escalation would raise the cost of the dispute at exactly the moment the opponent is showing the most interest in de-escalation ahead of its 2020 election.\n\nSUPPORTING RATIONALE: The threat is real and materially elevated, putting this near the high (+0.5) anchor but slightly tempered by the recent de-escalation. The trade war is visibly biting the real economy: Q3 2019 GDP grew just 6.0% y/y, the slowest in ~30 years and below the 6.1% forecast, with September exports and imports both falling y/y (SCIO/Reuters), while US tariffs now cover essentially all ~$550B of Chinese exports at rates up to 25% plus 15% on List 4A, Huawei remains under Commerce Entity List (May 16), and the US designated China a currency manipulator (Aug 5). Yet this is not existential: China is still growing near its official target, industrial output rebounded to +5.8% in September, reserves remain ample, and China holds leverage (rare earths, the world's largest import market, USD reserves). The trajectory is improving: the Oct 11 Phase One deal in principle suspended the Oct 15 tariff hike and both sides reported being 'close to finalizing' sections of the pact (USTR/Al Jazeera, Oct 25). That de-escalation, plus the opponent's farm-belt political incentive to close a deal, argues for leaning into a negotiated settlement rather than holding a hard line. Hence a mild de-escalatory action stance (negotiate, ~+0.15) consistent with a moderate-high but non-existential threat: engage constructively and make the ag-purchase commitments needed to lock in relief, but withhold full rollback/concession until the written text removes the December tariffs and addresses Huawei \u2014 escalation would only deepen the GDP and export drag we already see.",
+      "key_factors": [
+        "China Q3 2019 GDP growth 6.0%, slowest in ~30 years and below forecast, with September exports/imports falling (Reuters/SCIO)",
+        "US tariffs cover essentially all ~$550B of Chinese exports; Huawei on Entity List since May 16; currency-manipulator designation Aug 5",
+        "Oct 11 Phase One deal in principle: Oct 15 tariff hike suspended, China to buy $40-50B US farm goods annually; sides 'close to finalizing' as of Oct 25",
+        "December 15 tariff tranche (~$156B) and List 4A 15% tariffs still unresolved, and Huawei relief unclear",
+        "China retains leverage: rare earths, world's largest import market, ample FX reserves; growth still near official target"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "After Washington talks, Trump announces a 'Phase One' deal in principle: China to buy roughly $40-50B of US agricultural products annually; IP and currency issues also cited. Planned mid-October tariff hike delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List. US firms generally barred from selling to Huawei without a license."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110-125B of Chinese imports). China's first tranche of the ~$75B retaliation also takes effect."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters/CNBC China Q3 GDP",
+          "excerpt": "China's third-quarter GDP grew 6.0% y/y, slowest in at least 27.5 years, below the 6.1% forecast; September exports/imports both down y/y."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Al Jazeera Oct 25, 2019",
+          "excerpt": "US and China 'close to finalising' parts of phase-one trade pact; December 15 tariffs and existing tariffs remain contended."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5762,
+        "capped_chars": 5762,
+        "raw_tokens": 1440,
+        "capped_tokens": 1440
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47598,
+        "capped_chars": 47598,
+        "raw_tokens": 11900,
+        "capped_tokens": 11900
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 41500,
+        "capped_chars": 41500,
+        "raw_tokens": 10376,
+        "capped_tokens": 10376
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 308226,
+  "started_at": "2026-08-13T07:52:08+00:00"
+}

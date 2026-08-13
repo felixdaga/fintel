@@ -1,0 +1,105 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-07-18",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7637,
+    "tokens_out": 987,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0080124,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should retaliate with targeted tariffs on remaining US imports while continuing to negotiate. Retaliation signals resolve and preserves leverage, but should be calibrated to avoid full economic decoupling. Maintain willingness to talk while demonstrating that escalation carries costs for both sides.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has already imposed tariffs on $250bn of Chinese goods and raised rates on $200bn from 10% to 25% (BBC, May 2019). Trump has threatened tariffs on an additional $300bn+ of remaining Chinese imports (Fox Business). The IMF has cut global growth forecasts citing US-China tensions (BBC). China's Shanghai Composite fell ~25% in 2018, and the yuan depreciated 5% against the dollar (BBC). However, markets have partially recovered in 2019 (Shanghai +16%, Hang Seng +12%), suggesting the economy is absorbing the shock. China has already retaliated on $110bn of US goods and strategically targeted Republican-district products like soybeans (BBC). The US side acknowledges 'both sides will suffer' (Kudlow, Fox Business), indicating China's retaliation has bite. China's threat score of +0.45 reflects material export sector exposure and supply chain disruption risk, but not existential danger given China's ability to diversify and the partial market recovery. The action score of -1 (retaliate) is justified because: (1) the US has escalated unilaterally by raising tariffs from 10% to 25% on $200bn, (2) capitulation would invite further demands on structural reforms and IP law changes that threaten CCP industrial policy autonomy (Annenberg/USC analysis), (3) retaliation preserves negotiating leverage as talks continue, and (4) the US political landscape shows bipartisan support for toughness on China (both Van Drew (D) and Graham (R) support tariffs), meaning concessions are unlikely to be reciprocated with de-escalation.",
+      "key_factors": [
+        "US raised tariffs from 10% to 25% on $200bn of Chinese goods (May 2019)",
+        "Trump threatened additional tariffs on ~$300bn of remaining Chinese imports",
+        "China already retaliated on $110bn of US goods targeting strategic products",
+        "IMF cut global growth forecasts citing trade war uncertainty",
+        "Shanghai Composite fell 25% in 2018 but recovered 16% in 2019",
+        "Yuan depreciated 5% against USD in 2018",
+        "Bipartisan US support for tariffs (Graham R, Van Drew D)",
+        "US demands include structural reforms and IP law changes threatening China's industrial policy",
+        "White House adviser Kudlow acknowledged 'both sides will suffer'"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com - Trade war: US-China trade battle in charts",
+          "excerpt": "US imposed tariffs on $250bn worth of Chinese products. Tariffs on $200bn worth of Chinese goods were due to rise to 25% from 10%. Trump vowed to slap 25% duties on another $325bn of Chinese goods."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - US-China immersed in a tit-for-tat tariff trade war",
+          "excerpt": "The U.S. will increase tariffs at midnight tonight on $200 billion in goods, increasing from 10 percent to 25 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu - Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The American side has been insisting on changes in Chinese laws to permit greater access to Chinese markets and bans on forced sharing of technology with Chinese firms, as well as fuller and more effective protection of intellectual property."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-07-18",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18895,
+        "capped_chars": 15037,
+        "raw_tokens": 4724,
+        "capped_tokens": 3759
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 18766,
+  "started_at": "2026-08-13T10:55:28+00:00"
+}

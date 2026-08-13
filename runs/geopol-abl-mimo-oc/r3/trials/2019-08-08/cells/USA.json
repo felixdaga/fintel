@@ -1,0 +1,138 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-08-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Hold existing tariffs in place as leverage but do not escalate further. Actively signal willingness to resume negotiations before List 4 takes effect September 1, using the month-long window as a diplomatic off-ramp. The currency manipulator designation should be used as leverage at the IMF and in bilateral talks, not as a pretext for additional tariff rounds.\n\nSUPPORTING RATIONALE: The threat to US interests is genuine but not existential (threat_score 0.35). On the damage side: the Dow plunged 760 points on August 5 in its worst day of 2019; $1.4 trillion in S&P value was wiped out in under a week (CNBC, Aug 6). The yield curve inverted to its widest since 2007, flashing a recession signal (Wharton, Aug 6). Tariffs are already costing US households over $1,200/year (CNN, Aug 2). China has suspended ALL US agricultural purchases as of August 5-6, a 'body blow' to farmers already reeling from the trade war \u2014 farm exports collapsed from $19.5B (2017) to $9.1B (2018) per the American Farm Bureau. List 4 would hit consumer electronics, apparel, and toys directly, with economists warning of 'permanently higher prices' and reduced US firm competitiveness (Wharton analysis). The Huawei Entity List, while strategically useful, has created significant disruption for US chip suppliers, with the Temporary General License expiring August 19 adding urgency.\n\nOn the leverage side: China's economy is slowing and the yuan breach of 7/USD signals their pain. The currency manipulator designation gives the US diplomatic tools. Bipartisan support exists \u2014 Schumer endorsed the designation. Tariffs now cover ~$550B of Chinese imports, giving maximum negotiating pressure.\n\nHowever, further escalation risks are substantial. The trade war has become a currency war (Peterson Institute's Bergsten, Aug 6). China retains asymmetric retaliation tools: rare earth leverage (Xi's Jiangxi visit May 20), the unreliable entity list (announced May 31), and regulatory harassment of US firms operating in China. Penn Wharton modeling shows the tariff war is 'doing permanent damage to the US economy' by reducing foreign capital inflows and eroding US firm competitiveness globally. US companies are relocating supply chains not to the US but to higher-cost alternatives in Asia \u2014 a permanent efficiency loss.\n\nThe action_score of -0.15 reflects mild forward pressure: maintain the existing tariff architecture as leverage, resist domestic hawks pushing for immediate List 4 escalation to 25%, and use the September 1 deadline as a natural negotiation catalyst. This is not concession \u2014 it is strategic patience. The opponent is under more pressure than we are, but the costs of further escalation to both sides make a negotiated outcome preferable to mutual attrition.",
+      "key_factors": [
+        "Dow -760 points Aug 5, $1.4T S&P wipeout in 4 days",
+        "Yield curve inversion widest since 2007 \u2014 recession signal",
+        "China suspended ALL US agricultural purchases Aug 5-6",
+        "Farm exports collapsed from $19.5B (2017) to $9.1B (2018)",
+        "List 4 targets $300B in consumer goods (electronics, apparel, toys) before holiday season",
+        "Tariffs costing US households >$1,200/year",
+        "Currency manipulator designation \u2014 symbolic but escalatory",
+        "Huawei Entity List Temp General License expires Aug 19",
+        "China retains rare earth, unreliable entity list, and regulatory retaliation options",
+        "Penn Wharton: permanent damage to US economy from tariff war"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry:2019-08-01",
+          "excerpt": "Trump announces 10% tariffs on remaining ~$300B of Chinese goods (List 4), effective Sept 1"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry:2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc:2019-08-05:dow-plunges",
+          "excerpt": "Dow plunges 760 points in worst day of 2019 as trade war intensifies. $1.4 trillion S&P wipeout in under a week."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wharton:2019-08-06",
+          "excerpt": "Penn Wharton Budget Model: escalating trade war leads to dire results. Permanent damage to US economy, reduced foreign capital inflows, lower wages."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters:2019-08-05:ag-halt",
+          "excerpt": "China has halted its purchases of U.S. agricultural products and will not rule out levying import tariffs on American farm imports purchased after Aug. 3."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn:2019-08-02:consumer-prices",
+          "excerpt": "Tariffs already costing typical US household more than $1,200 a year. List 4 will hit consumer electronics, clothing, shoes, toys."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usnews:2019-08-06:currency-manipulator",
+          "excerpt": "The bigger point is that this is another escalating step whereby these two countries seem to be diverging further rather than making some attempts at finding some way out."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-08-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 7,
+    "by_status": {
+      "ok": 7
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4860,
+        "capped_chars": 4860,
+        "raw_tokens": 1215,
+        "capped_tokens": 1215
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 100040,
+        "capped_chars": 100040,
+        "raw_tokens": 25010,
+        "capped_tokens": 25010
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 7,
+      "by_status": {
+        "ok": 7
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 386861,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

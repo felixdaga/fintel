@@ -1,0 +1,145 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.35,
+      "rationale": "RECOMMENDATION: Hold the current tariff posture and maintain the credible threat of further escalation ($267B covering all remaining Chinese exports), but do not escalate further this week. Keep the door open for talks after the November midterms, likely at the Buenos Aires G20. The US is negotiating from a position of strength; there is no reason to make concessions, but also no reason to escalate into a pause before assessing List 3's impact.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate and the US holds clear structural leverage, warranting a threat_score of -0.35 (moderate opportunity). China's retaliation capacity is nearly exhausted \u2014 it can only match ~$110B vs. US $250B already imposed, and at lower rates (5-10% vs. 10-25%). CNN reports China 'ran low on ways to retaliate' and was forced to cut its List 3 rates from the threatened range. The US has $267B more in tariff headroom (essentially all remaining Chinese exports) while China has no equivalent room. US macro fundamentals are strong: consumer sentiment at 100.1 (UMCSENT Sep 2018), industrial production rising to 104.1 (INDPRO Sep), and the economy absorbing tariff impacts without recession signals. The 12% rise in the 10-year Treasury yield (DGS10: 2.73\u21923.06) reflects growth expectations, not distress. The soybean impact is real \u2014 Chinese purchases down 80% year-over-year per USDA sales data, and a $1.90/bushel price gap has opened between Brazilian and US soybeans \u2014 but the $12B USDA Market Facilitation Program provides a political bridge for farm-state Republicans ahead of midterms. The action_score of -0.2 (negotiate with leverage) reflects the judgment that List 3 took effect just 3 days ago (Sept 24) and the market/economy need time to digest it before the next move. Escalating now would be premature; conceding would surrender leverage at the moment of maximum advantage. The hardliner camp (Navarro) has the President's ear and there is no domestic political reason to soften \u2014 the trade stance polls well with the base. The key risk is that China may shift to non-tariff retaliation (targeting US companies, rare earths, yuan depreciation) as tariff ammunition runs out, but as of Sept 27 these have not materialized at scale. The correct posture is to consolidate, signal willingness to talk (Kudlow's Sept 12 invitation), and wait for the post-midterm window when Xi and Trump can engage directly.",
+      "key_factors": [
+        "Asymmetric tariff leverage: US $250B imposed with $267B headroom vs China ~$110B at lower rates",
+        "China retaliation capacity nearly exhausted \u2014 forced to cut List 3 rates to 5-10%",
+        "US macro strong: consumer sentiment 100.1, industrial production rising, no recession signals",
+        "Soybean pain real (sales down 80%) but USDA $12B aid package contains political damage",
+        "Negotiations stalled \u2014 no high-level talks likely until post-midterm G20 Buenos Aires window",
+        "List 3 just took effect Sept 24 \u2014 too early to assess impact or escalate further",
+        "Hardliner camp (Navarro) has Trump's ear; no domestic pressure to concede"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn-2018-09-18",
+          "excerpt": "China had already gone blow for blow with the United States on tariffs on more than $50 billion of each other's goods this year. But its options for responding further are getting increasingly complicated. The tariff range of 5% to 10% is lower than the 5%-to-25% range China had threatened in early August."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt-2018-09-19",
+          "excerpt": "Aides to Mr. Trump say the president believes that the United States has the upper hand on China, with an ability to impose tariffs on a far larger number of goods than the Chinese can match given that America imports far more than it exports. And while the tariffs are unpopular with Republican lawmakers, farmers and manufacturers, his trade approach remains popular with his political base."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT-2018-09",
+          "excerpt": "Consumer Sentiment: 100.1 (Sep 2018), up from 96.2 in August."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO-2018-09",
+          "excerpt": "Industrial Production: 104.1 (Sep 2018), steady upward trend."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "farmdoc-2018-09-10",
+          "excerpt": "Sales to China came in at 46.5 million bushels, down 80 percent from the same time last year. A large pullback in Chinese demand for U.S. soybeans appears set to continue indefinitely."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usda-2018-07-24",
+          "excerpt": "USDA will authorize up to $12 billion in programs, which is in line with the estimated $11 billion impact of the unjustified retaliatory tariffs on U.S. agricultural goods."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washingtonpost-2018-09-14",
+          "excerpt": "We are under no pressure to make a deal with China. They are under pressure to make a deal with us. Our markets are surging, theirs are collapsing. \u2014 Trump tweet, Sept 2018"
+        }
+      ],
+      "threat_score": -0.35,
+      "action_score": -0.2,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4035,
+        "capped_chars": 4035,
+        "raw_tokens": 1009,
+        "capped_tokens": 1009
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48411,
+        "capped_chars": 48411,
+        "raw_tokens": 12103,
+        "capped_tokens": 12103
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 55032,
+        "capped_chars": 55032,
+        "raw_tokens": 13758,
+        "capped_tokens": 13758
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 388600,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

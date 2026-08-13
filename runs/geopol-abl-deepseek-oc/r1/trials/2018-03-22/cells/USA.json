@@ -1,0 +1,140 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-03-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 147662,
+    "tokens_out": 5048,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.35,
+      "rationale": "RECOMMENDATION: Proceed with the Section 301 tariff action against China, but keep its scope calibrated and explicitly leave the door open to negotiation, so we press our leverage without triggering a self-defeating tariff war. Continue the Section 232 steel/aluminum tariffs and solar/washer actions as applied, but signal willingness to engage China and our allies on a rules-based path to avoid a broad unilateral action that alienates the EU/Japan and hands China legal cover to retaliate. The objective is to convert our strong-negotiating position into real concessions on IP and forced technology transfer, not to maximize the tariff bill.\n\nSUPPORTING RATIONALE: The threat reading is favorable-to-neutral for the US because we are the initiating party holding the initiative, and the US economy shows no trade-war drag: consumer sentiment is elevated (101.4 in March), industrial production is still climbing (102.2), and the dollar is broadly stable \u2014 there is no material recession risk from the dispute yet. The Section 301 investigation has run since August 2017 with clear bipartisan support (timeline Aug 14, 2017; Politico Mar 7, 2018 reports the tariff action is 'nearly ready to go'). Against that, the risks that keep this from being a clean \u22120.5 opportunity are the substantial downsides of overreach: legal analyses (Cato/Newsweek, Jan 5, 2018) warn broad unilateral Section 301 tariffs are likely WTO-inconsistent and would be condemned by other members, and Section 232 has already drawn ally backlash, with Mattis and McMaster warning the global tariffs could damage key allies (NatLawReview, Mar 5, 2018). Those self-inflicted risks \u2014 WTO challenge, ally friction, and likely Chinese retaliation against US farm and export goods \u2014 argue for escalating the tariffs we are committed to but keeping scope disciplined and preserving a negotiation lane. Hence threat_score \u22120.35 (mild opportunity, not existential) and action_score \u22120.45 (moderate escalation: raise/expand tariffs via the Section 301 action while signaling readiness to talk).",
+      "key_factors": [
+        "US holds the initiative: Section 301 investigation since Aug 2017; solar/washer Section 201 (Jan 2018) and steel/aluminum Section 232 (Mar 1/8, 2018) tariffs already imposed",
+        "US economy shows no trade-war drag: sentiment 101.4, industrial production 102.2 rising, dollar broadly stable, no material recession risk",
+        "Mildly favorable leverage: bipartisan support for 301 (Politico Mar 7), opportunity to extract IP/tech-transfer concessions and onshore industry",
+        "Overreach risk: broad unilateral Section 301 tariffs likely WTO-inconsistent and would be condemned (Cato/Jan 5), ally alienation from Section 232 (Mattis/McMaster opposition, Mar 5), and likely Chinese retaliation against US exports",
+        "Recommend calibrated moderate escalation preserving a negotiation lane",
+        "action_score and action_level: moderate escalation consistent with escalate_tariffs band",
+        "threat_score and score both set to \u22120.35"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2017-08-14",
+          "excerpt": "Trump signs memorandum directing USTR to investigate China's IP and technology-transfer practices under Section 301."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-08",
+          "excerpt": "Trump signs Section 232 proclamations imposing steel (25%) and aluminum (10%) tariffs."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-02",
+          "excerpt": "Trump tweets: 'trade wars are good, and easy to win.'"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "US consumer sentiment 101.4 in March 2018, elevated."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US industrial production rising to 102.2, no recession drag."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Politico 2018-03-07",
+          "excerpt": "Section 301 tariff action is 'nearly ready to go'; administration eager to act."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Cato/Newsweek 2018-01-05",
+          "excerpt": "Broad unilateral Section 301 tariffs likely WTO-inconsistent and would be condemned by other WTO members."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NatLawReview 2018-03-05",
+          "excerpt": "Section 232 global tariffs draw international backlash; Mattis and McMaster warned broad tariffs could damage key allies."
+        }
+      ],
+      "threat_score": -0.35,
+      "action_score": -0.45,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-03-22",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 1128,
+        "capped_chars": 1128,
+        "raw_tokens": 282,
+        "capped_tokens": 282
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47437,
+        "capped_chars": 47437,
+        "raw_tokens": 11859,
+        "capped_tokens": 11859
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 68108,
+        "capped_chars": 68108,
+        "raw_tokens": 17027,
+        "capped_tokens": 17027
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 522164,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

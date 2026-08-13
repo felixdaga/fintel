@@ -1,0 +1,105 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7637,
+    "tokens_out": 974,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0079734,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue engaging in negotiations with the United States while maintaining a firm but measured posture. We should avoid further escalation that could trigger the threatened tariffs on the remaining $300 billion of Chinese exports, but we must not concede on core interests such as industrial policy sovereignty and technology self-sufficiency. Strategic patience is warranted \u2014 the US domestic political calendar (2020 election) creates pressure on Washington to show results, which gives us leverage over time.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has already imposed tariffs on $250 billion of Chinese goods and raised rates on $200 billion from 10% to 25% (BBC, May 2019). Trump has threatened to extend tariffs to essentially all remaining imports (~$300 billion). However, as Larry Kudlow acknowledged, 'both sides will suffer' from tariffs (Fox Business, May 2019), and the US faces its own costs \u2014 consumers paying more for goods, supply chain disruption, and 24 states suing over tariffs. The IMF has flagged US-China tensions as contributing to weakened global growth, creating pressure on both sides. China's retaliation on $110 billion of US goods and strategic targeting of Republican-district products (soybeans, whiskey) demonstrates our capacity to impose costs. The yuan's 5% depreciation in 2018 partly absorbed tariff impact. At +0.45, the threat is elevated \u2014 major export sectors are exposed and the $300 billion threat looms \u2014 but China retains significant retaliatory capacity and the US faces its own political and economic constraints. An action_score of -0.1 reflects a negotiate posture: we should stay at the table, signal willingness to discuss structural issues on our terms, but not make unilateral concessions that undermine Made in China 2025 or technology sovereignty. The US side's own admission that 'both sides will pay' and bipartisan domestic pressure suggest Washington has incentives to reach a deal, which we should test.",
+      "key_factors": [
+        "US tariffs already cover $250bn of Chinese goods at 25% rate on $200bn tranche",
+        "Trump threatened tariffs on remaining ~$300bn of Chinese imports",
+        "China has retaliated on $110bn of US goods with strategic targeting of Republican districts",
+        "US officials (Kudlow) acknowledged 'both sides will suffer' from tariffs",
+        "24 US states sued Trump over tariffs, indicating domestic political friction",
+        "IMF flagged US-China tensions as factor in weakened global growth",
+        "Yuan depreciated ~5% in 2018, partially offsetting tariff impact",
+        "US demands include structural changes to Chinese laws on IP, market access, and forced technology transfer",
+        "US 2020 election cycle creates time pressure on Washington to show trade results"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com - Trade war: US-China trade battle in charts",
+          "excerpt": "The US imposed tariffs on $250bn worth of Chinese products last year. Beijing has retaliated with duties on $110bn worth of American products. Tariffs on $200bn worth of Chinese goods were due to rise to 25% from 10%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - US-China trade war: How tariffs are tools",
+          "excerpt": "Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - US-China immersed in a tit-for-tat tariff trade war",
+          "excerpt": "Trump has threatened additional tariffs of $267 billion worth of goods, meaning all Chinese imports could be subject to tariffs."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com - Trade war: US-China trade battle in charts",
+          "excerpt": "The yuan fell over 5% against the US dollar last year, before broadly stabilising in 2019. The IMF said the escalation of US-China trade tension was one factor to have contributed to a 'significantly weakened global expansion'."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18895,
+        "capped_chars": 15037,
+        "raw_tokens": 4724,
+        "capped_tokens": 3759
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 18678,
+  "started_at": "2026-08-13T10:55:23+00:00"
+}

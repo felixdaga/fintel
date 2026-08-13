@@ -1,0 +1,129 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.25,
+      "rationale": "RECOMMENDATION: Hold the current tariff posture and continue negotiations toward the March 2 deadline, but do not escalate further yet. Use the deadline as leverage to extract meaningful structural concessions on enforcement mechanisms, IP protection, and technology transfer. Signal willingness to extend the deadline only if China moves on structural issues, not just purchase commitments.\n\nSUPPORTING RATIONALE: The threat reading of -0.25 reflects that the US holds a moderate leverage advantage as of mid-February 2019. China's economy is clearly under pressure: manufacturing PMI has been contracting for two consecutive months (official 49.5, Caixin 48.3 in January \u2014 lowest since 2016), GDP growth hit a 28-year low at 6.6% in 2018, and Q4 slowed to 6.4% (SCMP, Jan 31 2019; CNBC, Feb 1 2019). The end of export front-loading means China's trade data will likely worsen further. Meanwhile, US economic fundamentals remain sound: Q4 growth tracking near 2.7-3% (CNBC, Feb 6), the Fed holding rates at 2.40%, and 10-year yields declining from 3.2% to 2.65% \u2014 suggesting markets see the trade war as manageable rather than catastrophic. The CBO projects tariffs will shave only 0.1% annually from US GDP (Reuters, Jan 28).\n\nThe US has also gained significant non-tariff leverage: the Huawei indictments (Jan 28) and the campaign to block Huawei from allied 5G networks have put China's tech champion on the defensive. The arrest of Meng Wanzhou and the detention of two Canadians in retaliation have further isolated Beijing diplomatically.\n\nHowever, the threat is not purely one-sided. The March 2 deadline to raise List 3 tariffs from 10% to 25% on $200B of Chinese goods creates real escalation risk. The Feb 14-15 talks showed progress on purchase commitments but the enforcement mechanism \u2014 the core structural issue \u2014 remains disputed (NYT, Feb 15; LA Times, Feb 15). Trump signaled he may extend the deadline, which is tactically sound but risks weakening leverage if not tied to structural concessions. The action_score of -0.1 (firm hold, leaning slightly toward continued pressure) reflects the judgment that the US should maintain its leverage position \u2014 the existing tariffs plus the Huawei campaign \u2014 while giving negotiations room to work. Escalating to 25% prematurely could trigger Chinese retaliation that hurts US agriculture and manufacturing without solving the structural issues. The optimal play is to use the existing pressure to extract an enforceable deal, not to escalate for escalation's sake.",
+      "key_factors": [
+        "China manufacturing PMI contracting two consecutive months (49.5 official, 48.3 Caixin) \u2014 economy weakening",
+        "March 2 deadline for List 3 tariff hike from 10% to 25% on $200B \u2014 leverage window",
+        "Huawei indictments and 5G allied pressure campaign \u2014 significant non-tariff leverage",
+        "Talks showing progress on purchases but enforcement mechanism unresolved",
+        "US economy tracking ~2.7-3% Q4 growth; CBO projects only 0.1% annual GDP drag from tariffs",
+        "Trump signaling possible deadline extension \u2014 tactical flexibility but leverage risk"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-14",
+          "excerpt": "Another round of talks (through Feb 15). Progress reported on purchases; enforcement mechanism still disputed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-02-01-caixin-pmi",
+          "excerpt": "The Caixin/Markit Manufacturing PMI came in at 48.3 in January \u2014 the second-consecutive month of contraction and the lowest reading since 2016."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-01-28-cbo",
+          "excerpt": "Tariffs imposed by the Trump administration will limit growth of U.S. real gross domestic product by an average of 0.1 percent each year for the next 10 years if they remain in place at current levels."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt-2019-02-15-talks",
+          "excerpt": "Both sides said 'progress' had been made in the talks but deep disagreements remain ahead of the March deadline. Trump: 'There is a possibility that I will extend the date.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-02-06-q4-growth",
+          "excerpt": "Economists boosted their fourth quarter growth forecasts to 2.7 percent. Several economists have forecasts of 3 percent for the fourth quarter."
+        }
+      ],
+      "threat_score": -0.25,
+      "action_score": -0.1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5015,
+        "capped_chars": 5015,
+        "raw_tokens": 1254,
+        "capped_tokens": 1254
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11204,
+        "capped_chars": 11204,
+        "raw_tokens": 2801,
+        "capped_tokens": 2801
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 89339,
+        "capped_chars": 89339,
+        "raw_tokens": 22335,
+        "capped_tokens": 22335
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 359697,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

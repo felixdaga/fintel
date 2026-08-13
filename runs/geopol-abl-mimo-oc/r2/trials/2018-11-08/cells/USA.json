@@ -1,0 +1,145 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-11-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.35,
+      "rationale": "RECOMMENDATION: Hold the current tariff posture and use the upcoming G20 Trump-Xi dinner (Dec 1, Buenos Aires) as a serious negotiating moment. Do not escalate to List 3 at 25% before the meeting \u2014 the Jan 1 scheduled increase is leverage, not a deadline to rush. Enter the G20 with concrete structural demands (IP protection, forced tech transfer, market access) and let China's economic pain do the negotiating work.\n\nSUPPORTING RATIONALE: The US holds a favorable position. The macro evidence shows the American economy absorbing the trade war well: industrial production at 104.07 (Nov) and growing, consumer sentiment at 97.5, unemployment low, and the dollar strong (broad index up 4.4% over 6 months to 115.25). Meanwhile, China faces slowing growth, a weakening yuan, and limited retaliation options \u2014 it has already matched tariffs on ~$110B of US goods but cannot go much further without hurting its own consumers and supply chains. The ZTE denial order (Apr 16) demonstrated US leverage over Chinese tech supply chains.\n\nPolitically, the Nov 6 midterms delivered a split Congress (Dem House, GOP Senate), but experts note Trump retains full executive authority on trade and both parties support a tough-on-China stance (CNBC, Nov 7). The Trump-Xi phone call (Nov 1) opened a channel but Kudlow explicitly said 'no massive movement' toward a deal. The G20 dinner is the right venue \u2014 not a moment for unilateral concession, but for extracting structural commitments while US leverage is near peak.\n\nKey risks to monitor: Baa corporate bond yields have risen to 5.18% (up 37bp in 6 months), signaling rising credit stress. Oil prices have dropped from $76 to $63, partly reflecting global growth fears. If the US overplays its hand \u2014 especially by escalating List 3 to 25% before talks \u2014 it risks tipping into a scenario where domestic costs (consumer prices, supply chain disruption, market selloff) erode the negotiating position. The threat is below neutral because the US has leverage, not because the dispute is benign.",
+      "key_factors": [
+        "US economy strong: industrial production growing, consumer sentiment solid at 97.5, dollar strong",
+        "China's retaliation options constrained \u2014 already hit ~$110B of US goods, limited further ammunition",
+        "G20 Trump-Xi dinner Dec 1 in Buenos Aires is the key near-term negotiating venue",
+        "Midterms (Nov 6) delivered split Congress but bipartisan support for tough China stance; Trump retains executive trade authority",
+        "Corporate bond stress rising: Baa yields at 5.18%, up 37bp in 6 months \u2014 warns against over-escalation",
+        "List 3 scheduled to rise from 10% to 25% on Jan 1 \u2014 this is leverage to use at G20, not a trigger to pull early",
+        "ZTE denial order (Apr) demonstrated US supply-chain leverage over Chinese tech sector"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US Industrial Production: 104.07 (Nov 2018), up 0.87 over 6 months \u2014 economy absorbing trade war."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer Sentiment: 97.5 (Nov 2018), holding solid."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad Dollar Index: 115.25 (Nov 7), up 4.4% over 6 months \u2014 strong dollar reflects capital inflows and relative US economic strength."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DBAA",
+          "excerpt": "Moody's Baa Corporate Bond Yield: 5.18% (Nov 7), up from 4.81% six months ago \u2014 credit stress rising, a warning sign against further escalation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2018-11-07-midterms",
+          "excerpt": "Both Democrats and Republicans support a tougher stance on Chinese trade practices. Trump retains executive power on trade regardless of Congress."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes-2018-11-02",
+          "excerpt": "Kudlow: 'there's no massive movement' to get something done quickly. Trade talks on hiatus for weeks."
+        }
+      ],
+      "threat_score": -0.35,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-11-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4164,
+        "capped_chars": 4164,
+        "raw_tokens": 1041,
+        "capped_tokens": 1041
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 43629,
+        "capped_chars": 43629,
+        "raw_tokens": 10907,
+        "capped_tokens": 10907
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 40119,
+        "capped_chars": 40119,
+        "raw_tokens": 10030,
+        "capped_tokens": 10030
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 376841,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

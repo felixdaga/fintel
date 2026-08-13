@@ -1,0 +1,129 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should proceed with its announced retaliatory tariffs on ~$50B of US goods (soybeans, autos, aircraft) as a calibrated mirror response. This demonstrates resolve without maximal escalation, while leaving the door open for future negotiation if the US signals willingness to talk.\n\nSUPPORTING RATIONALE: The threat to China is substantial and escalating. Three factors drive the +0.55 threat score: (1) The ZTE denial order (April 16) exposed China's critical dependency on US semiconductor components\u2014ZTE's main business operations ceased (Reuters, May 9), and 25-30% of its components come from US firms like Qualcomm and Intel. This vulnerability extends across China's tech sector. (2) The May 19 truce collapsed within 10 days when the White House announced it would proceed with 25% tariffs on ~$50B of Chinese imports under Section 301 (timeline, May 29), signaling the US is not negotiating in good faith. (3) The 301 tariff list targets China's strategic sectors\u2014aerospace, ICT, robotics, machinery\u2014directly threatening Made in China 2025 ambitions.\n\nThe -0.3 action score reflects calibrated retaliation rather than maximal escalation for several reasons: China's macro position is stable (IP growth 6.9% YoY, CPI 1.8%, reserves $3.137T, merchandise trade surplus $28.7B in May), providing a buffer to absorb retaliatory costs. Retaliating on agricultural goods targets US political constituencies (farm-belt states) while avoiding escalation into areas where China is more vulnerable. However, full escalation would be unwise\u2014China's tech supply chain dependency on the US (demonstrated by ZTE) means further non-tariff retaliation risks devastating Chinese firms. The collapsed truce means negotiation channels are strained but not closed; retaliation may actually create leverage for future talks by demonstrating China will not absorb tariffs without response.",
+      "key_factors": [
+        "ZTE denial order exposed critical US component dependency - operations ceased",
+        "May 19 truce collapsed within 10 days - US proceeded with 301 tariffs",
+        "301 tariff list targets strategic sectors (aerospace, ICT, robotics, machinery)",
+        "China's macro buffer stable: 6.9% IP growth, $3.1T reserves, contained CPI",
+        "Retaliation targets US agricultural constituencies for political leverage",
+        "Tech supply chain vulnerability limits China's non-tariff escalation options"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods (including soybeans, automobiles, and aircraft) in response to the Section 301 list."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-zte-may-2018",
+          "excerpt": "ZTE Corp's main business operations have ceased due to a ban imposed by the U.S. government. ZTE relies on U.S. companies such as Qualcomm and Intel for up to a third of its components."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHN_INDPRO",
+          "excerpt": "China industrial production YoY growth 6.9% as of May 2018"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHN_TOTRESNS",
+          "excerpt": "China total reserves excluding gold: $3,137.7B (latest available, Jan 2018)"
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.3,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 3,
+    "by_status": {
+      "ok": 3
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2623,
+        "capped_chars": 2623,
+        "raw_tokens": 656,
+        "capped_tokens": 656
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47502,
+        "capped_chars": 47502,
+        "raw_tokens": 11876,
+        "capped_tokens": 11876
+      },
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20912,
+        "capped_chars": 20912,
+        "raw_tokens": 5228,
+        "capped_tokens": 5228
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 3,
+      "by_status": {
+        "ok": 3
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 366577,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

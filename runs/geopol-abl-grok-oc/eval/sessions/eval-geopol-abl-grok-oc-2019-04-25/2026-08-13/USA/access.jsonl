@@ -1,0 +1,5 @@
+{"ts": "2026-08-13T07:12:41.162116+00:00", "event": "cell_opened", "run_id": "eval-geopol-abl-grok-oc-2019-04-25", "decision_date": "2026-08-13", "symbols": ["USA"], "scope": "single_name"}
+{"ts": "2026-08-13T07:12:41.165657+00:00", "event": "read", "kind": "event_timeline", "query": {"symbol": "USA"}, "status": "ok", "source": "event_timeline", "latency_ms": 0.02, "raw_chars": 10522, "capped_chars": 10522, "raw_tokens": 2630, "capped_tokens": 2630}
+{"ts": "2026-08-13T07:13:01.501277+00:00", "event": "agent_returned", "agent": "llm", "elapsed_ms": 20335.6}
+{"ts": "2026-08-13T07:13:01.502117+00:00", "event": "submitted", "n_views": 1, "dropped": []}
+{"ts": "2026-08-13T07:13:01.503169+00:00", "event": "cell_closed", "n_reads": 1, "by_status": {"ok": 1}, "kinds_used": ["event_timeline"], "degraded": false, "chars_by_kind": {"event_timeline": {"n_reads": 1, "raw_chars": 10522, "capped_chars": 10522, "raw_tokens": 2630, "capped_tokens": 2630}}}

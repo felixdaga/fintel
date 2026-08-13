@@ -1,0 +1,128 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-12-20",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 136748,
+    "tokens_out": 3391,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Hold firm within the 90-day truce and pursue the negotiation hard, but do not escalate. Keep the Jan 1 List 3 hike suspended and push China to deliver on concrete structural concessions and farm purchases, using the tariffs already in place (~$250B) as leverage rather than ratcheting them up. Manage the Huawei/Meng and detained-Canadians issue carefully so the hostage standoff does not torpedo the talks or alienate Canada.\n\nSUPPORTING RATIONALE: The threat is moderate, not existential. US fundamentals remain solid (consumer sentiment ~98.3, industrial production rising, CPI ~2%), so the dispute is not yet cratering the broader economy. But the costs are real and concentrated: soybean exports to China are down roughly 94-97% and 2018 is the worst farm-income year since 2002 (period-press reports), a domestic political and economic pressure point; markets are fragile (10Y yield fell from ~3.2% to 2.77%, WTI collapsed from ~$75 to ~$46, and the Dow swung ~800 points on the Meng news); and the Dec 1 Meng Wanzhou arrest plus China's Dec 10 detention of two Canadians is an unplanned escalation that threatens the truce agreed at the G20 and strains ally cohesion with Canada. This is material GDP/farm drag and domestic political pressure (roughly the +0.5 'high' anchor, tempered by the fact the US holds the initiative and the truce is intact), hence +0.35. Action-wise, the US still holds leverage and the 90-day window is the right vehicle to extract concessions on IP/tech-transfer and reopen the farm market, so escalation (breaking the truce to 25%) would hurt US farmers and markets precisely when China is already withholding soybean purchases; maximal concession would squander leverage. Thus a hold/negotiate stance at +0.1 is appropriate.",
+      "key_factors": [
+        "90-day G20 truce intact (Dec 1); Jan 1 tariff hike suspended",
+        "US farm belt badly hurt: soybean exports to China down 94-97%, worst farm income since 2002",
+        "Fragile markets: 10Y yield 3.2%->2.77%, WTI ~$75->$46, Dow swing ~800 pts",
+        "Meng Wanzhou arrest (Dec 1) + China detaining 2 Canadians (Dec 10) threaten truce and Canada ties",
+        "US macro solid: sentiment ~98, IP up, CPI ~2%, but Fed tightening to 2.27%"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires: Trump and Xi agree to 90-day negotiation window; planned Jan 1, 2019 hike of List 3 from 10% to 25% suspended. Same day Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-10",
+          "excerpt": "China detains Canadians Michael Kovrig and Michael Spavor, widely viewed as retaliation for the Meng arrest."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "axios 2018-11-05",
+          "excerpt": "US soybean sales to China down 94% thanks to Trump trade war."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn 2018-12-13",
+          "excerpt": "China didn't restart buying soybeans after truce; Farm Bureau estimates soybean exports to China down 97% this year; 2018 worst net farm income since 2002."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10Y yield fell from ~3.2% (early Oct) to 2.77% (Dec 19), a sharp risk-off move."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DCOILWTICO",
+          "excerpt": "WTI fell from ~$75 to ~$46 by mid-December, signaling growth concerns."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-12-20",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4487,
+        "capped_chars": 4487,
+        "raw_tokens": 1122,
+        "capped_tokens": 1122
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47776,
+        "capped_chars": 47776,
+        "raw_tokens": 11944,
+        "capped_tokens": 11944
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 33830,
+        "capped_chars": 33830,
+        "raw_tokens": 8458,
+        "capped_tokens": 8458
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 268179,
+  "started_at": "2026-08-13T07:51:15+00:00"
+}

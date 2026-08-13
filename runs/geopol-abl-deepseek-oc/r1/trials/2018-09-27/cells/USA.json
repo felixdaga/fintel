@@ -1,0 +1,128 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 147528,
+    "tokens_out": 4032,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.3,
+      "rationale": "RECOMMENDATION: Hold the tariff posture already in force and restart a negotiation track with Beijing rather than escalating to the threatened additional $267B or rushing further action. Keep the scheduled Jan 1 rise to 25% as standing pressure, and signal willingness to talk once China returns to the table, while pairing this with relief for the farm belt before the midterms.\n\nSUPPORTING RATIONALE: The threat to US interests is real but contained, so I score it +0.3. List 3 (~$200B at 10%, rising to 25% Jan 1) took effect Sept 24, pushing combined Section 301 coverage to ~$250B, while China retaliated the same day with 5-10% tariffs on ~$60B of US goods including soybeans and pork (NPR/BI, 9/18). That retaliation is targeted squarely at the farm belt \u2014 the NYT (4/19) and Globe & Mail (9/23) report GOP incumbents and farm groups warning of midterm losses, and even the $12B aid package is described as an insufficient 'mute button' (Des Moines Register, 8/3). Meanwhile US fundamentals remain strong (IP 104.1, consumer sentiment 100.1, dollar firm ~113.7, unemployment lowest since 2000), whereas China's economy is visibly slowing (Shanghai Comp -20% YTD, RMB slide to ~6.88/$). That asymmetry argues against an existential threat reading \u2014 but the collapse of the Liu He talks and domestic political exposure to escalating farm retaliation keep this a mild threat, not a clean US opportunity. On action, I recommend a near-neutral +0.15 stance: the US has already applied maximum pressure and retains leverage through the scheduled 25% tier, so escalating further to $267B now would raise consumer costs exactly ahead of the midterms and harden a deadlock, with no talks venue active. De-escalating unilaterally would forfeit hard-won leverage. Holding and re-engaging diplomatically while relieving farmers is the posture most consistent with both the threat level and US leverage.",
+      "key_factors": [
+        "~$250B of Chinese imports now under Section 301 tariffs; 25% tier scheduled Jan 1",
+        "China retaliation (~$60B, incl. soybeans/pork) targets GOP farm-belt states before Nov midterms",
+        "Liu He talks knocked off; no active negotiation track",
+        "US macro strong (IP, sentiment, dollar, lowest unemployment since 2000) vs slowing China economy",
+        "Threatened additional $267B escalation would raise consumer costs ahead of midterms with no talks venue"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% on ~$200B effective Sept 24, rising to 25% Jan 1, 2019"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%; China retaliates 5-10% on ~$60B of US goods; combined coverage ~$250B"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-INDPRO/UMCSENT/DTWEXBGS",
+          "excerpt": "IP 104.1, consumer sentiment 100.1, broad dollar index ~113.7 \u2014 US economy firm"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NPR 2018-09-18",
+          "excerpt": "China sets tariffs on $60B in US goods in response to $200B US duties"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NYT 2018-04-18",
+          "excerpt": "Midwest farmers warn of GOP losses over China tariffs hitting soybeans"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Des Moines Register 2018-08-03",
+          "excerpt": "Trump's $12B farm aid is a mute button for tariff gripes before the midterms"
+        }
+      ],
+      "threat_score": 0.3,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4035,
+        "capped_chars": 4035,
+        "raw_tokens": 1009,
+        "capped_tokens": 1009
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48411,
+        "capped_chars": 48411,
+        "raw_tokens": 12103,
+        "capped_tokens": 12103
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 57946,
+        "capped_chars": 57946,
+        "raw_tokens": 14487,
+        "capped_tokens": 14487
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 939006,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

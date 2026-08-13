@@ -1,0 +1,118 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-10-18",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 137117,
+    "tokens_out": 3667,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Maintain the current posture \u2014 keep the Section 301 tariffs (~$250B of Chinese imports, with the $200B List 3 scheduled to rise from 10% to 25% on Jan 1, 2019) on the table as leverage, while preparing to engage seriously at the Trump\u2013Xi G20 meeting in Buenos Aires in late November. Do not push to full 25% prematurely and do not pre-commit to concessions; hold firm, let China make the first substantive move, and be ready to trade a rollback only for verifiable concessions on IP, forced technology transfer, and import purchases.\n\nSUPPORTING RATIONALE: The threat to US interests is modestly favorable (-0.3), not existential. US macro data show no material damage yet: industrial production ~104, consumer sentiment 98.6, Fed funds 2.19% with the fed still hiking, and the broad dollar index at 114.2 \u2014 the US economy is absorbing the escalation, and the US holds the offensive (timeline: List 1-3 deployed; China retaliating on only ~$60B, i.e., asymmetric exposure favoring the US). This is opportunity terrain per the USA anchors. However, costs are accumulating and argue against over-escalation: China's ~$60B retaliation including US soybeans pressures the farm belt ahead of the Nov 6 midterms, retail/consumer import-price effects are emerging (Dollar Tree commentary), and October has seen equity and credit volatility (Baa spread widening to ~5.07) tied to trade uncertainty. The action stance (hold, -0.05) reflects that the escalation is already scheduled and needs no new action to preserve leverage, while the confirmed Trump-Xi G-20 meeting (Reuters/WSJ, Oct 11; Kudlow: 'talks have to be serious') creates a genuine off-ramp \u2014 but only if talks are serious and yield concrete commitment, which China has not yet offered ('rather unsatisfactory' per Kudlow). Pushing to full 25% now would risk a sharper Chinese response and more market/farm pain with midterms days away; conceding early would waste hard-won leverage before the leaders meet. Hold, negotiate hard at Buenos Aires, and require verifiable commitments before any rollback.",
+      "key_factors": [
+        "US tariffs now cover ~$250B of Chinese imports; $200B List 3 at 10% scheduled to rise to 25% on Jan 1, 2019",
+        "China retaliated against ~$60B of US goods including soybeans, pressuring the US farm belt before Nov 6 midterms",
+        "US macro robust (Fed funds 2.19%, IP ~104, consumer sentiment 98.6, broad dollar 114.2) \u2014 no material GDP damage yet",
+        "Trump-Xi G20 Buenos Aires meeting confirmed Oct 11-12; Kudlow: talks must be 'serious'; China offers so far 'unsatisfactory'",
+        "October market volatility and widening Baa spreads signal rising cost of over-escalation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%; China retaliates on ~$60B. Combined Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% on ~$200B effective Sept 24, rising to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters/WSJ 2018-10-11",
+          "excerpt": "Trump and Xi plan to meet at G20 Buenos Aires in late November; Kudlow says talks 'have to be serious'."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Fed funds 2.19% (Oct 2018); US consumer sentiment 98.6, IP ~104, broad dollar 114.2."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": -0.05,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-10-18",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4035,
+        "capped_chars": 4035,
+        "raw_tokens": 1009,
+        "capped_tokens": 1009
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48239,
+        "capped_chars": 48239,
+        "raw_tokens": 12060,
+        "capped_tokens": 12060
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 32725,
+        "capped_chars": 32725,
+        "raw_tokens": 8182,
+        "capped_tokens": 8182
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 248718,
+  "started_at": "2026-08-13T07:53:58+00:00"
+}

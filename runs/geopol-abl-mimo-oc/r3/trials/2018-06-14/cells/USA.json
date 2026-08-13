@@ -1,0 +1,141 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Proceed with the already-announced 25% tariffs on ~$50B of Chinese imports as scheduled for June 15, but do not broaden the scope further at this time. Use the tariff implementation as leverage to restart substantive negotiations on forced technology transfer, IP theft, and Made in China 2025 subsidies. Signal willingness to negotiate while maintaining pressure.\n\nSUPPORTING RATIONALE: The US holds a position of moderate advantage (threat_score: -0.3) driven by several factors. First, the US economy is strong as of mid-June 2018: industrial production is growing steadily (103.2, up 1.7% over 6 months), consumer sentiment remains elevated at 98.2, and unemployment is low. This gives the US capacity to absorb retaliatory costs. Second, the Section 301 investigation has produced a legitimate, WTO-grounded finding of unreasonable IP/tech-transfer practices, giving the US moral and legal high ground. Third, the ZTE denial order (April 16) demonstrated that the US controls critical chokepoints in China's tech supply chain \u2014 ZTE purchases 25-30% of its components from US firms and faced operational shutdown before the June 7 settlement. This is genuine leverage.\n\nHowever, several factors counsel against maximal escalation. China's retaliation targeting $50B of US goods \u2014 specifically soybeans ($12B+ in annual exports), autos, and aircraft \u2014 will hit politically sensitive farm-belt states hard. Chinese buyers have already halted new soybean orders from the US, and farmers in Iowa, Minnesota, and Illinois are expressing alarm (NYT, June 7; Star Tribune, May 29). With midterms in November 2018, this creates real domestic political risk. Senator Grassley has warned that catastrophic outcomes would produce 'real disappointment' among farm-state voters.\n\nAdditionally, the US is simultaneously fighting trade battles with its own allies: steel/aluminum tariffs were extended to Canada, Mexico, and the EU on June 1, provoking 'unanimous concern and disappointment' from the other G-7 finance ministers (NPR, June 3). At the G-7 summit (June 8-9), Trump refused to endorse the joint declaration and feuded publicly with Trudeau. This isolation weakens the US position vis-\u00e0-vis China \u2014 a coordinated allied front on Chinese IP practices would be far more effective than unilateral action.\n\nThe May 19 joint statement 'truce' collapsed in 10 days when the White House announced it would proceed with tariffs anyway. China has explicitly warned that 'all economic and trade outcomes of the talks will not take effect if the U.S. side imposes any trade sanctions' (Politico, June 4). The June 2-3 Ross-Liu He talks produced no breakthrough. This suggests China is prepared to absorb pain rather than make structural concessions under threat.\n\nThe recommended action (escalate_tariffs, action_score -0.35) is calibrated: follow through on the announced $50B list to maintain credibility and pressure, but keep the scope targeted at Made in China 2025 sectors (aerospace, ICT, robotics, machinery) rather than broadening to consumer goods. This preserves leverage while limiting domestic economic damage. The primary goal should be forcing China back to the table on structural reforms \u2014 forced technology transfer, joint venture requirements, and state subsidies \u2014 not a tariff spiral.",
+      "key_factors": [
+        "US economy strong: industrial production growing, consumer sentiment 98.2, low unemployment \u2014 capacity to absorb trade friction",
+        "Section 301 finding gives legal/moral high ground on IP/tech-transfer practices",
+        "ZTE denial order demonstrated US supply-chain chokepoint leverage over Chinese tech sector",
+        "China retaliation targeting soybeans/farm products creates domestic political risk in farm-belt states ahead of midterms",
+        "Simultaneous trade disputes with G-7 allies (EU, Canada, Mexico) isolate the US and weaken bargaining position vs China",
+        "May 19 truce collapsed in 10 days; China warns trade outcomes won't take effect if US imposes tariffs",
+        "June 2-3 Ross-Liu He talks produced no breakthrough; negotiations at impasse",
+        "Final tariff list due June 15 \u2014 deadline pressure forces a decision point"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods (including soybeans, automobiles, and aircraft) in response to the Section 301 list."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_INDPRO",
+          "excerpt": "Industrial Production at 103.198 (June 2018), up 1.7% over 6 months \u2014 economy growing solidly."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_UMCSENT",
+          "excerpt": "Consumer Sentiment at 98.2 (June 2018), near cycle highs \u2014 household confidence intact."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico_2018-06-04",
+          "excerpt": "China warned that 'all economic and trade outcomes of the talks will not take effect if the U.S. side imposes any trade sanctions, including raising tariffs.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt_2018-06-07",
+          "excerpt": "Farmers pressuring Congress for compromise with China. Senator Grassley: 'If this turns out to be catastrophic, there's obviously going to be real disappointment' among farm-state voters."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "npr_2018-06-03",
+          "excerpt": "Six non-US G-7 finance ministers issued statement expressing 'unanimous concern and disappointment' with US trade actions."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": -0.35,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 7,
+    "by_status": {
+      "ok": 7
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2623,
+        "capped_chars": 2623,
+        "raw_tokens": 656,
+        "capped_tokens": 656
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47502,
+        "capped_chars": 47502,
+        "raw_tokens": 11876,
+        "capped_tokens": 11876
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 111038,
+        "capped_chars": 111038,
+        "raw_tokens": 27759,
+        "capped_tokens": 27759
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 7,
+      "by_status": {
+        "ok": 7
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 403071,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

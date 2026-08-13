@@ -1,0 +1,136 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-10-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.3,
+      "rationale": "RECOMMENDATION: Continue pushing to finalize the Phase One deal announced October 11 without new escalation. Hold the December 15 tariff hike as leverage to secure a written agreement, but do not raise existing tariffs or add new entities to the list. The priority is locking in agricultural purchase commitments and currency provisions before the December deadline, while keeping structural reform demands for later phases.\n\nSUPPORTING RATIONALE: The threat reading of +0.3 reflects moderate but real economic damage to the US. The ISM manufacturing PMI hit 47.8 in September\u2014worst since June 2009\u2014with new export orders at 41%, the lowest since March 2009 (CNBC, Oct 1). Services PMI dropped to a 3-year low of 52.6 (Guardian, Oct 3). The IMF projects the trade war will reduce US GDP by 0.6% and global growth to 3.0%, the slowest since the financial crisis (Reuters, Oct 15). Fortune analysis (Oct 8) estimates total US deadweight costs at ~1.0% of GDP versus China's ~0.4%, meaning the US is absorbing 2.5x more pain per dollar of GDP. However, China's Q3 GDP slowed to 6.0%, a near-30-year low (Reuters, Oct 18), showing the tariffs are biting on both sides.\n\nThe action score of -0.1 (slight lean toward holding firm) reflects the delicate balance. The Oct 11 Phase One announcement is progress\u2014the planned October tariff hike was shelved, and China is making goodwill purchases (record pork sales, soybean tariff waivers for 10M tons). But the deal has no written text, no agreed timeline, and China's actual commitment appears to start at ~$20B annually (Bloomberg, Oct 24), far below Trump's claimed $40-50B. China wants existing tariffs rolled back as a precondition for larger purchases (Bloomberg, Oct 17). The impeachment inquiry weakens Trump's negotiating leverage\u2014Beijing perceives he needs a deal more than they do (Foreign Policy, Oct 9; WaPo, Oct 8). Escalating now would risk collapsing the talks and triggering the December tariff hike automatically, further damaging US manufacturing and agriculture ahead of the 2020 election cycle. But conceding prematurely (rolling back existing tariffs without enforceable commitments) would surrender leverage on structural issues\u2014IP theft, forced tech transfer, state subsidies\u2014that remain completely unaddressed in Phase One. The right posture is firm negotiation: finalize the agricultural and currency deal, keep December tariffs as a forcing function, and defer structural demands to Phase Two.",
+      "key_factors": [
+        "US manufacturing in recession (ISM 47.8, worst since 2009) \u2014 tariff damage is self-inflicted",
+        "Phase One deal announced Oct 11 but unwritten; key details (purchase amounts, timeline, enforcement) unresolved",
+        "China offering ~$20B/yr ag purchases vs Trump's claimed $40-50B; gap is large",
+        "China conditioning larger purchases on tariff rollback \u2014 wants existing duties removed",
+        "Impeachment inquiry weakens Trump's leverage; Beijing perceives US needs deal more",
+        "IMF warns trade war cutting global growth to decade-low 3.0%; US bears 2.5x more deadweight cost than China",
+        "China's Q3 GDP at 6.0% (near 30-year low) \u2014 tariffs biting there too, but Xi can't appear to cave",
+        "December 15 tariff hike on $156B of consumer goods remains as unresolved leverage point"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "After Washington talks, Trump announces a 'Phase One' deal in principle: China to buy roughly $40\u201350B of US agricultural products annually; IP and currency issues also cited. Planned mid-October tariff hike delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-23",
+          "excerpt": "China announces retaliation on ~$75B of US goods (5\u201310%). Trump orders US companies to 'immediately start looking for an alternative to China' and directs a 5-point increase on List 4 rate."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC Oct 1 2019 \u2014 ISM Manufacturing",
+          "excerpt": "ISM Manufacturing slipped to 47.8 in September, the lowest since June 2009. New export orders index was only 41%, lowest since March 2009. 'We have now tariffed our way into a manufacturing recession.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters Oct 15 2019 \u2014 IMF WEO",
+          "excerpt": "IMF projects 2019 GDP growth at 3.0%, down from 3.2% in July. By 2020, announced tariffs would reduce global economic output by 0.8%, a loss of $700 billion. China's GDP output falling 2% near-term; U.S. output declining 0.6%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Fortune Oct 8 2019 \u2014 deadweight costs",
+          "excerpt": "Projected cost to China: .4% of GDP. Projected cost to U.S.: 1.0% of GDP. China wins in a two-and-a-half-to-one walk away. The killer for the U.S. is the deadweight cost of sourcing from more expensive third countries."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Foreign Policy Oct 9 2019",
+          "excerpt": "'The impeachment inquiry adds to the idea in China that Trump needs to make a deal, so they can hold out for a better price. Anything that makes Trump weaker makes them stronger.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Bloomberg Oct 17 2019 \u2014 China conditions",
+          "excerpt": "Beijing wants a rollback in tariffs before China can feasibly agree to buy as much as $50B of American agriculture products. China's tit-for-tit tariffs make it more expensive to import; would only lift if U.S. reciprocates."
+        }
+      ],
+      "threat_score": 0.3,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-10-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 7,
+    "by_status": {
+      "ok": 7
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5762,
+        "capped_chars": 5762,
+        "raw_tokens": 1440,
+        "capped_tokens": 1440
+      },
+      "country_health": {
+        "n_reads": 2,
+        "raw_chars": 164,
+        "capped_chars": 164,
+        "raw_tokens": 40,
+        "capped_tokens": 40
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 101510,
+        "capped_chars": 101510,
+        "raw_tokens": 25378,
+        "capped_tokens": 25378
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 7,
+      "by_status": {
+        "ok": 7
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 381069,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

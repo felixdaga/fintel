@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-06-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7850,
+    "tokens_out": 1178,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0087984,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should proceed with the planned tariff escalation on the remaining ~$300 billion of Chinese goods and maintain pressure on the $200 billion tranche at 25%. This is the moment to lock in maximum leverage before negotiations resume, as China's economy is more exposed to tariff disruption than the US economy, and domestic political support for toughness is strong. The US should not soften its stance until China commits to enforceable structural reforms on IP theft, forced technology transfer, and state subsidies.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects that the trade war poses real but manageable risks to the US economy. White House adviser Larry Kudlow acknowledged 'both sides will pay' (Fox Business, May 2019), and the USC analysis notes consumers will face higher prices on goods from fish to auto parts, with new cars potentially costing $1,000-$3,000 more. The IMF has cut its 2019 global growth forecast partly due to trade tensions (BBC). However, the US economy is in a relatively strong position: the Dow Jones is up ~11% in 2019 after only a ~6% decline in 2018, while China's Shanghai Composite fell nearly 25% in 2018 (BBC). The US trade deficit with China stands at $419 billion, giving the US more room to absorb tariff costs than China has to lose export revenue.\n\nThe action score of -1.0 (maximal escalation via tariffs) is justified by several factors: (1) Senator Graham's assessment that 'this is the best chance in my lifetime to get China to change their cheating ways' reflects strong bipartisan congressional support for the tariff approach; (2) China's structural practices\u2014state subsidies, forced joint ventures, IP theft, and WTO 'developing nation' status abuse\u2014represent long-term threats to US tech leadership in AI, cloud computing, robotics, and green tech (USC/Fox Business analysis); (3) the CFR report documenting hundreds of billions in Chinese subsidies and tax breaks confirms the scale of unfair competition; (4) with the $200bn tranche already raised to 25% and China retaliating on only $60bn of US goods, the US has asymmetric leverage. The risk of escalation is that it could trigger recession or supply chain disruption, but the evidence suggests China's export-dependent economy faces greater structural damage, making this the optimal window to extract concessions.",
+      "key_factors": [
+        "US tariffs on $200bn of Chinese goods raised to 25% from 10%; threat to tariff remaining ~$300bn",
+        "China retaliated with tariffs on only $60bn of US goods\u2014demonstrating asymmetric leverage",
+        "US stock markets recovered strongly (Dow +11% YTD) while China markets suffered steep 2018 losses (Shanghai -25%)",
+        "White House adviser Kudlow acknowledged 'both sides will pay' but China faces greater export disruption",
+        "Strong bipartisan support: Sen. Graham called this 'best chance in my lifetime' to change China's behavior",
+        "Structural issues at stake: IP theft, forced tech transfer, state subsidies, market access restrictions in AI/tech sectors",
+        "IMF cut 2019 global growth forecast citing US-China trade tensions as a factor",
+        "US trade deficit with China at $419bn provides asymmetric negotiating position"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "bbc_trade_war_charts",
+          "excerpt": "US President Donald Trump vowed to more than double tariffs on $200bn of Chinese goods on Friday and to introduce fresh ones 'shortly.' The US trade deficit with China is $419bn. In 2018, Hong Kong's Hang Seng index fell more than 13% and the Shanghai Composite slumped nearly 25%. The Dow Jones fell nearly 6% in 2018 and is already up some 11% this year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usc_trade_war_analysis",
+          "excerpt": "Consumers will pay more for many products, from fish and furniture to vitamins and virtual reality headsets. Chinese auto parts are found in many cars and some estimate new cars will cost $1,000 to $3,000 more. The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future\u2014AI, cloud computing, robotics and green tech."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness_tariffs_tools",
+          "excerpt": "Sen. Lindsey Graham: 'This is the best chance in my lifetime to get China to change their cheating ways. The tariffs are tools that bring China to the table.' White House economic adviser Larry Kudlow: 'Both sides will suffer on this.' The U.S. increased tariffs on $200 billion worth of Chinese goods to 25 percent from 10 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness_why_america_must_win",
+          "excerpt": "The Council on Foreign Relations' August 2018 report outlines how China will provide hundreds of billions in subsidies and tax breaks, with state-controlled financial institutions providing low interest financing. China uses per-capita GDP to depict a 'developing' nation while simultaneously stating Trump's tariffs are meant to contain their rise."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-06-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20217,
+        "capped_chars": 16251,
+        "raw_tokens": 5054,
+        "capped_tokens": 4063
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 33497,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

@@ -1,0 +1,108 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-05-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9876,
+    "tokens_out": 1049,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0104374,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.15,
+      "rationale": "RECOMMENDATION: Maintain current posture and hold the trade war on hold as agreed with China, while continuing to press for concrete commitments on IP protection, market access, and deficit reduction. Do not escalate further at this moment, but do not roll back either \u2014 use the breathing room to build leverage and prepare next steps if China drags its feet.\n\nSUPPORTING RATIONALE: The threat score is mildly positive (0.15) because the situation as of May 24, 2018 is relatively favorable for the US. The US has successfully pressured China into negotiations, and Treasury Secretary Mnuchin announced on May 20 that the trade war is 'on hold' with China agreeing to 'significantly increase purchases of United States goods and services' (The Guardian, May 20). The US retains significant leverage: the proposed $153 billion in tariffs on Chinese goods has not been implemented but remains as a credible threat (CBS News, April 6). China's retaliation options are constrained \u2014 it imported only $130 billion of US goods vs. the US importing $506 billion from China, meaning China cannot match US tariff escalation dollar-for-dollar (CBS News). The US tariff list specifically targets China's technological ambitions under 'Made in China 2025,' hitting high-tech sectors where 84% of targeted products are high-end exports (Bruegel analysis). This gives the US structural leverage over China's development priorities.\n\nHowever, the threat is not negative (opportunity) because significant risks remain. China has shown willingness to retaliate swiftly \u2014 it already imposed tariffs on $3 billion of US agricultural products and prepared a $50 billion retaliation list targeting soybeans, cars, and aircraft (Reuters, April 2). US farmers and manufacturers face real exposure: soybean prices fell to two-year lows, and companies like Boeing (25% of commercial airplane sales to China) and auto exporters are vulnerable (CBS News). The 'framework' Mnuchin described lacks a specific $200 billion deficit reduction target, and JP Morgan's chief market strategist warned the US could 're-engage' if China drags its feet (The Guardian). The hold is fragile.\n\nThe action score of 0.0 (hold) reflects the wisdom of maintaining the current posture. The negotiations just produced a framework; escalating now would undermine the diplomatic channel and risk the agricultural and manufacturing sectors that are already exposed. But conceding (rolling back proposed tariffs) would surrender leverage before China has made any concrete, verifiable commitments. The right move is to hold, monitor China's follow-through on purchase commitments, and prepare a clear escalation timeline if promises prove empty.",
+      "key_factors": [
+        "Mnuchin announced trade war 'on hold' on May 20 after talks with Liu He, with China committing to increase purchases of US goods and services",
+        "US proposed tariffs on up to $153 billion of Chinese goods remain as credible leverage but have not been implemented",
+        "China's retaliation constrained by trade asymmetry: $130B US imports vs $506B Chinese imports to US",
+        "US tariff targets focus on Made in China 2025 high-tech sectors (84% high-end exports per Bruegel)",
+        "China already retaliated with $3B tariffs on US agricultural products; soybean prices at 2-year lows",
+        "No specific deficit reduction amount agreed; framework lacks enforcement mechanisms",
+        "JP Morgan strategist warns US could re-engage if China drags on fulfilling pledges"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.theguardian.com",
+          "excerpt": "Mnuchin says: 'We have agreed to put the tariffs on hold while we try to execute the framework.' China will significantly increase purchases of United States goods and services."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China. China imported only $130 billion of U.S. goods last year, leaving it unable to match that amount."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China has increased tariffs by up to 25 percent on 128 U.S. products, from frozen pork and wine to certain fruits and nuts."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports. The U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "Soybean prices fell to their lowest level in two years on Wednesday after China's list came out. Boeing sold one-fourth of its commercial airplanes to China last year."
+        }
+      ],
+      "threat_score": 0.15,
+      "action_score": -1.0,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-05-24",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 29488,
+        "capped_chars": 25063,
+        "raw_tokens": 7372,
+        "capped_tokens": 6266
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22130,
+  "started_at": "2026-08-13T10:55:21+00:00"
+}

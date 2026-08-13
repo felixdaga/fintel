@@ -1,0 +1,120 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-10-18",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 140159,
+    "tokens_out": 5568,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.25,
+      "rationale": "RECOMMENDATION: Hold our tariff posture and use the agreed Trump-Xi meeting at the Buenos Aires G-20 next month as the venue to press for concrete concessions on structural IP and technology-transfer, without pre-committing to any rollback and without escalating the list further this cycle. Do not raise new tariffs now \u2014 markets are brittle and the farm-belt midterm base is already absorbing retaliation \u2014 and do not concede, since we retain escalation dominance and China is the one feeling the pain.\n\nSUPPORTING RATIONALE: Threat to US interests is modest and net-negative: we initiated the dispute, hold escalation dominance (Section 301 coverage of ~$250B vs China's ~$60-77B retaliation per the Sept 24 entries), and the US macro economy remains strong through it \u2014 industrial production up ~1.5% since April, consumer sentiment ~98.6, the dollar up ~4.8%, and CPI contained near 0.8% (country_health). That is the -0.25 reading: a mild opportunity, not a clear one. The offsetting costs are real and visible at the decision date: the Dow fell 831 points on Oct 10 in the worst session in eight months, with the S&P down ~5% from its peak, attributed partly to the trade war plus rising rates (10-year at a seven-year high of ~3.2%, Baa yields up to 5.07%) \u2014 evidence the dispute is now feeding financial fragility and could bite via credit and equity channels. The diplomatic track is the operative fact: Trump and Xi have agreed to meet at the G-20 in Buenos Aires (WaPo, Oct 11; Kudlow, Oct 5), our first direct leader talks since August, creating an off-ramp. Given that off-ramp plus the Nov 6 midterms and fragile markets, escalating further would harden Beijing's position and feed the sell-off while surrender would waste leverage; negotiating from our position of strength is the disciplined move.",
+      "key_factors": [
+        "US holds escalation dominance (~$250B Section 301 coverage vs China's ~$60-77B retaliation; Sept 24 timeline entries)",
+        "US economy strong through dispute: IP +1.5%, sentiment 98.6, dollar +4.8%, CPI contained (~0.8%)",
+        "October equity selloff (Dow -831 Oct 10; S&P -5% from peak) partly attributed to trade war + rising rates",
+        "10-yr Treasury at 7-year high (~3.2%) and Baa yield at 5.07% signal tightening financial conditions",
+        "Trump-Xi meeting agreed at G-20 Buenos Aires (end Nov) \u2014 first leader-level talks since August",
+        "Jan 1, 2019 scheduled rise of List 3 from 10% to 25% retains credible leverage",
+        "Nov 6 midterms + farm-belt soybean retaliation create domestic political sensitivity"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washingtonpost.com 2018-10-11",
+          "excerpt": "President Trump and Chinese leader Xi Jinping have agreed to meet next month at the G-20 summit in Buenos Aires in hopes of resolving their intensifying trade conflict."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "theguardian.com 2018-10-10",
+          "excerpt": "Dow falls 831 points (3.1%), Nasdaq >4%, fifth consecutive daily decline for S&P; selling driven by rising bond yields plus fears of escalating China trade tensions."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO/DGS10/DTWEXBGS/UMCSENT/DBAA",
+          "excerpt": "US IP +1.5% since May; 10-yr to 3.19%; broad dollar +4.8%; consumer sentiment 98.6; Baa corporate yield to 5.07%."
+        }
+      ],
+      "threat_score": -0.25,
+      "action_score": 0.05,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-10-18",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4035,
+        "capped_chars": 4035,
+        "raw_tokens": 1009,
+        "capped_tokens": 1009
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48239,
+        "capped_chars": 48239,
+        "raw_tokens": 12060,
+        "capped_tokens": 12060
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 32454,
+        "capped_chars": 32454,
+        "raw_tokens": 8113,
+        "capped_tokens": 8113
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 330795,
+  "started_at": "2026-08-13T07:44:55+00:00"
+}

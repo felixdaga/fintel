@@ -1,0 +1,148 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 140229,
+    "tokens_out": 4063,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.5,
+      "rationale": "RECOMMENDATION: Enter the October 10-11 high-level talks in Washington in a negotiating posture, seeking to lock in de-escalation \u2014 specifically the postponement of the threatened Oct 1 30% hike on $250B and the Dec 15 15% List 4B hike \u2014 while preserving Beijing's red lines on structural (subsidy/tech-transfer) reform and Huawei. Maintain the goodwill signals already on the table (tariff-exemption lists, farm-goods exclusions) but make no new unreciprocated commitments. Do not escalate; the economy cannot afford a broader confrontation, and talks are the one credible path to unwind the tariff overhang.\n\nSUPPORTING RATIONALE: The threat reading is driven by clear, firm-level and economy-wide damage visible as of the decision date. The US has built a tariff wall around ~$500B of Chinese goods \u2014 List 3 raised to 25% on $250B (May 10), List 4A at 15% on ~$110-125B (Sept 1) \u2014 with 30% on $250B threatened for Oct 1 and 15% on ~$170B (List 4B, cell phones/laptops) for Dec 15. More corrosive, Huawei was placed on the entity list (May 16) and lost Google GMS and US chip supply (May 20), a direct assault on China's tech-self-sufficiency crown jewel. The macro toll is visible: August industrial output rose just 4.4% y/y, the lowest single-month figure since 2002, PPI turned negative (-0.3%) for the first time in three years, manufacturing PMI was below 50 (contraction), and Q2 growth slowed to 6.2%, the weakest in 27 years; US-bound exports fell 6.5% in July. Added to that, CNY broke 7.0 and Washington designated China a currency manipulator (Aug 5). This is squarely a 'High' threat for China on the party-relative scale, though not existential given reserves, stimulus, and non-US market diversification, hence +0.5. The action stance is negotiate (+0.15) rather than escalate because the damage is already material and escalating further would deepen domestic weakness while inviting a 30%/Dec 15 response, whereas both sides have already signaled de-escalation intent \u2014 the US delayed its Oct 1 hike and delisted 400+ items, and China issued exemption lists and farm exclusions ahead of the talks. Committing more (concede_purchases) is premature until Washington matches; the correct posture is to negotiate for tariff relief and delay without unilateral concession on structural issues or Huawei.",
+      "key_factors": [
+        "~$500B tariff wall: 25% List 3, 15% List 4A (Sept 1), threatened 30% (Oct 1) and 15% List 4B (Dec 15)",
+        "Huawei Entity List (May 16) + Google GMS/chip cutoff (May 20) \u2014 tech self-sufficiency under direct attack",
+        "CNY breached 7.0 and US named China a currency manipulator (Aug 5)",
+        "August industrial output +4.4% y/y (weakest since 2002), PPI -0.3% (first negative in 3 yrs), PMI <50, Q2 GDP 6.2% (weakest in 27 yrs)",
+        "13th-round high-level talks Oct 10-11; both sides signaling goodwill (US delayed Oct 1 hike, delisted 400+ items; China exemption lists + farm exclusions)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-10",
+          "excerpt": "List 3 tariff rate rises from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-20",
+          "excerpt": "Google suspends Huawei's access to Android/GMS; major US chip suppliers pause sales."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "CNY breaks 7; US Treasury designates China a currency manipulator."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110-125B of Chinese imports)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-11",
+          "excerpt": "China announces first tariff-exemption list for some US products."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-13",
+          "excerpt": "Chinese state media reports soybeans, pork excluded from additional retaliatory tariffs."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.japantimes.co.jp/news/2019/09/16/business/china-industrial-output-growth/",
+          "excerpt": "Industrial output rose 4.4% y/y in August, weakest single-month since 2002; Q2 growth 6.2% weakest in 27 years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.forbes.com/sites/charleswallace1/2019/08/09/trade-war-hurting-chinas-economy/",
+          "excerpt": "US-bound exports fell 6.5% in July; PPI turned negative (-0.3%) for first time in 3 years; PMI 49.7 below 50."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.politico.com/story/2019/09/25/us-china-trade-1767065",
+          "excerpt": "High-level talks expected Oct 10-11; interim deal chatter; China increased US soybean purchases, US delayed Oct 1 tariff hike."
+        }
+      ],
+      "threat_score": 0.5,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5498,
+        "capped_chars": 5498,
+        "raw_tokens": 1374,
+        "capped_tokens": 1374
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48170,
+        "capped_chars": 48170,
+        "raw_tokens": 12042,
+        "capped_tokens": 12042
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 40011,
+        "capped_chars": 40011,
+        "raw_tokens": 10003,
+        "capped_tokens": 10003
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 512002,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

@@ -1,0 +1,136 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-01-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: Continue negotiations aggressively while the window is open. Offer expanded commodity purchases and incremental market-access gestures to lock in the tariff truce past March 2, but do not yield on structural reforms (industrial policy, Made in China 2025 subsidies, IP regime overhaul) that would undermine the development model. Use the positive momentum from this week's extended Beijing talks to propose a leaders-level framework that front-loads purchases and back-loads structural discussions.\n\nSUPPORTING RATIONALE: The threat to China is substantial and rising. Tariffs already cover ~$250B of Chinese exports at 10-25%, with a further hike to 25% on $200B scheduled for March 2 if no deal is reached (event timeline, Sept 17 2018). The IMF projects a full-blown trade war would cut China's GDP by 1.6% versus baseline (IMF, Oct 2018). China's economy is visibly decelerating: Q3 2018 GDP growth fell to 6.5% (lowest in a decade), manufacturing PMI contracted in December for the first time in 2+ years, car sales dropped 11.7% YoY in October, and consumer confidence is falling (SCMP, Nov 23 2018). The yuan depreciated 5.3% in 2018 and FX reserves fell $67B for the year, though they remain at $3.07T (Reuters, Jan 7 2019). Beyond tariffs, the arrest of Huawei CFO Meng Wanzhou on Dec 1 \u2014 the same day as the G20 truce \u2014 signals the US is expanding the dispute into a technology containment campaign targeting China's 5G and semiconductor ambitions. Two Canadians were detained in likely retaliation (timeline, Dec 10 2018), adding a hostage-diplomacy dimension that risks alienating third-party allies.\n\nHowever, the situation is not yet existential. Reserves remain large, capital flight has been contained through controls, and the PBOC has room to ease (RRR cuts already underway). The January 7-9 Beijing talks were extended to an unscheduled third day with both sides describing them as 'constructive,' progress was made on commodity purchases (soybeans, GM crop approvals), and Trump tweeted 'Talks with China are going very well!' (CNN, Jan 8; CNBC, Jan 9). This gives China a narrow window to secure favorable terms.\n\nThe action_score of +0.3 reflects a moderate conciliatory stance: China should make tangible purchase commitments and market-access gestures (which cost little structurally) to demonstrate good faith and buy time, while holding firm on the industrial-policy and technology-transfer issues that are non-negotiable for the CCP's long-term strategy. Escalation would be catastrophic given the economy's sensitivity to export disruption. But maximal concession (full_rollback or concede_purchases on structural terms) would sacrifice Made in China 2025 and the Party's legitimacy narrative. The middle path \u2014 negotiate seriously, extend the timeline, and separate 'easy wins' (purchases) from 'hard issues' (structural reform) \u2014 is the only move that preserves both economic stability and strategic autonomy.",
+      "key_factors": [
+        "US tariffs already cover ~$250B of Chinese exports; 25% hike on $200B looms March 2",
+        "China GDP slowing to 6.5% (Q3 2018), manufacturing contracting, consumer confidence falling",
+        "Meng Wanzhou arrest signals US expanding dispute into technology containment of Huawei/5G",
+        "Beijing talks extended to 3rd day with constructive tone; progress on commodity purchases",
+        "Yuan depreciated 5.3% in 2018; FX reserves fell $67B but still at $3.07T \u2014 no capital flight crisis",
+        "China has limited retaliatory leverage (imports far less from US than it exports)",
+        "Two Canadians detained in likely retaliation \u2014 risks alienating neutral parties",
+        "IMF projects full trade war would cut China GDP by 1.6% vs baseline"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended. Same day: Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2019-01-07",
+          "excerpt": "Trade talks resume in Beijing (working / mid-level). China discusses increased purchases of US goods; structural issues remain open."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2019-01-09",
+          "excerpt": "Meetings about the U.S.-China trade war are wrapping up and the U.S. trade delegation will return to the United States later on Wednesday after a 'good few days.' Asian stocks markets jumped after the talks were extended for an unscheduled third day."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp_2018-11-23",
+          "excerpt": "Chinese economic growth slowed in the third quarter to its lowest in 10 years. Total vehicle sales dropped 11.7 per cent. Consumer confidence has been seriously dampened by the trade tensions."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_2019-01-07",
+          "excerpt": "China's annual foreign exchange reserves fell by $67.24 billion last year to $3.073 trillion. The yuan fell 5.3 percent for 2018 as a whole."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "imf_2018-10-09",
+          "excerpt": "Assuming the US slaps tariffs on all Chinese imports, the effect would cut the GDP of the United States by more than 0.9 per cent in 2019, while Chinese economic output would be 1.6 per cent lower than it otherwise would be."
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": 0.3,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-01-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4661,
+        "capped_chars": 4661,
+        "raw_tokens": 1165,
+        "capped_tokens": 1165
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11354,
+        "capped_chars": 11354,
+        "raw_tokens": 2838,
+        "capped_tokens": 2838
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 112707,
+        "capped_chars": 112707,
+        "raw_tokens": 28177,
+        "capped_tokens": 28177
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 387784,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

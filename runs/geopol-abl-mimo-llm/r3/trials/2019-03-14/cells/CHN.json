@@ -1,0 +1,98 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-03-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8837,
+    "tokens_out": 1077,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0094824,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: Continue active negotiations with the US toward a comprehensive deal, making targeted concessions on purchases (agricultural, energy, semiconductors) and some structural issues (IP protection, market access) while resisting demands that would fundamentally undermine state-led industrial policy or sovereignty over enforcement mechanisms. Do not escalate retaliatory tariffs further; the current posture of near-total coverage of bilateral trade already maximizes leverage without additional benefit.\n\nSUPPORTING RATIONALE: The threat to China is real but not yet existential. US tariffs cover approximately $250 billion of Chinese exports (roughly half of bilateral trade), with the threat of escalation to cover virtually all $500+ billion if China retaliates further (Fox Business, Motley Fool transcript). The tariff burden is being absorbed partly by US importers and consumers, but China's export-oriented sectors\u2014particularly those integrated into global value chains as final assemblers (smartphones, computers, tablets)\u2014face meaningful margin pressure (Brookings, Dollar). China's retaliatory tariffs already cover $110 billion of $130 billion in US imports to China, leaving little room for further tit-for-tat escalation without diminishing returns.\n\nHowever, the negotiation landscape as of late February 2019 is cautiously positive. CNBC reports (Feb 21, 2019) that six MOUs are being drafted covering the core structural issues: forced technology transfer, IP rights, services, currency, agriculture, and non-tariff barriers. A 10-item purchase list is being discussed. Both sides are in a 'sprint phase' per Chinese officials. The March 1 deadline for tariff escalation from 10% to 25% on the $200 billion tranche creates urgency but also a clear incentive structure for both sides. Trump has signaled willingness to extend the deadline.\n\nThe threat score of +0.5 reflects that major export sectors are exposed, the entity-list/tech-supply-chain risk (Huawei, ZTE precedents) looms, and the enforcement mechanism the US is pushing\u2014regular reviews with tariff snapback\u2014could create ongoing leverage over Chinese policy. The score is moderated from the +0.5 anchor because: (a) China has successfully diversified some trade away from US markets, (b) the tariffs are partially self-defeating for the US as costs are borne by American firms and consumers, and (c) the negotiation process itself offers a viable off-ramp.\n\nThe action score of +0.1 (negotiate) reflects that China should engage constructively in the MOU process, offer meaningful purchase commitments and some structural concessions (financial services opening, IP enforcement), but resist an enforcement mechanism that gives the US unilateral judgment authority. Conceding too much on structural reform would undermine the CCP's economic model; escalating further would risk the $267 billion tariff threat covering all remaining trade. The optimal path is a negotiated deal that allows both sides to claim victory\u2014purchases and some structural reform from China, tariff rollback from the US.",
+      "key_factors": [
+        "US tariffs cover ~$250B of Chinese exports; threat of escalation to all $500B+ if China retaliates further",
+        "Six MOUs under negotiation on structural issues (forced tech transfer, IP, services, currency, agriculture, non-tariff barriers)",
+        "March 1 deadline for tariff rate increase from 10% to 25% on $200B tranche creates urgency",
+        "China's retaliatory tariffs already cover $110B of $130B in US imports\u2014limited room for further tit-for-tat",
+        "US pushing enforcement mechanism with regular reviews and tariff snapback authority",
+        "China's export sectors integrated into global value chains face margin pressure but tariffs partially borne by US consumers/firms",
+        "Negotiations described as in 'sprint phase' by Chinese officials as of late Feb 2019"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_us_china_sketching_outlines",
+          "excerpt": "Negotiators are drawing up six memorandums of understanding on structural issues: forced technology transfer and cyber theft, intellectual property rights, services, currency, agriculture and non-tariff barriers to trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness_trade_war_explained",
+          "excerpt": "The $250 billion aggregate tariff amount...is about half of U.S.-China trade. President Trump has also indicated that if things don't go as to what he wants to happen, he's going to do it on the rest of it"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "brookings_unpacked_trade_war",
+          "excerpt": "China's exports to the United States include technologies like smartphones, computers, and tablets. Such goods are part of 'global value chains,' with China at the end of the chain. While China is the final assembler from many products, actually more than half of the value of those products are in parts and components from other countries"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-03-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 25178,
+        "capped_chars": 20694,
+        "raw_tokens": 6294,
+        "capped_tokens": 5174
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 26921,
+  "started_at": "2026-08-13T10:55:09+00:00"
+}

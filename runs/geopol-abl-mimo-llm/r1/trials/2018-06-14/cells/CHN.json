@@ -1,0 +1,110 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10661,
+    "tokens_out": 1275,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0119004,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: China should maintain a firm retaliatory posture, matching any new U.S. tariff actions with proportional counter-tariffs on U.S. agricultural and automotive exports, while keeping the door open for negotiation. Retaliatory measures should be calibrated to maximize political pressure on U.S. farm-belt constituencies while minimizing self-inflicted damage, particularly by avoiding tariffs on semiconductors and other irreplaceable U.S. technology inputs.\n\nSUPPORTING RATIONALE: The threat to China is moderate-to-elevated (threat_score = 0.35). The U.S. has announced tariffs on $50 billion of Chinese goods targeting high-tech sectors central to Made in China 2025, and Trump has threatened an additional $100 billion (CBS News, April 6 2018). The Bruegel analysis confirms that 84% of targeted U.S. products are high-end exports, directly aimed at constraining China's technological advancement. However, the threat is not yet existential because: (1) as of June 14, no Section 301 tariffs have actually been implemented \u2014 the Wired article notes the trade war 'remains a war of words' with 'harsh words not translating into harsh actions'; (2) the May 20 Guardian report shows Mnuchin declared the trade war 'on hold' after China agreed to 'significantly increase purchases of United States goods and services'; (3) China's own retaliatory capacity is real \u2014 it has already imposed tariffs on $3 billion of U.S. goods (Reuters, April 2) and has a prepared list targeting $50 billion more including soybeans, cars, and aircraft that would hit politically sensitive U.S. constituencies.\n\nThe action_score of -1 (retaliate) is justified because: (a) the U.S. is targeting China's future technological capacity via Made in China 2025 sectors, which represents a strategic threat requiring a firm response; (b) China's retaliation targeting U.S. agricultural exports (soybeans at $14 billion, per CBS) and automotive exports creates direct political pressure on Trump's base; (c) the Bruegel analysis notes China has deliberately focused retaliation on lower-end products to minimize self-inflicted cost while maximizing impact on U.S. exporters' present revenues; (d) the Global Times editorial warned that if the U.S. thought China would 'only take symbolic countermeasures, it could say goodbye to that delusion' \u2014 signaling domestic political expectations for a strong response. However, China should avoid escalation beyond retaliation (e.g., devaluing the yuan or dumping Treasuries) given the 'on hold' framework from May 20 and the risk of broader financial instability.",
+      "key_factors": [
+        "U.S. Section 301 tariffs targeting $50B of Chinese high-tech goods (Made in China 2025 sectors) announced but not yet implemented as of June 14",
+        "Trump threatened additional $100B in tariffs beyond the initial $50B list",
+        "May 20 'on hold' framework after Liu He-Mnuchin talks, with China committing to increase U.S. purchases",
+        "China's existing retaliation on $3B of U.S. goods and prepared $50B counter-list targeting soybeans, cars, aircraft",
+        "84% of U.S. targeted products are high-end exports, directly aimed at constraining China's tech advancement (Bruegel analysis)",
+        "China deliberately targets lower-end U.S. products to minimize self-inflicted cost while maximizing political pressure",
+        "Wired assessment that trade war 'remains a war of words' with no tariffs actually implemented",
+        "ZTE sanctions as leverage point \u2014 Trump offered relief as goodwill gesture for North Korea cooperation",
+        "43% of Chinese exports to U.S. sourced from foreign-owned firms, meaning U.S. tariffs partly hurt U.S. companies"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China. Trump said he would consider adding another $100 billion worth of products to the list. China's list names cars, aircraft, soybeans, corn, sorghum, whiskey, beef, tobacco, cotton and plastic products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China has increased tariffs by up to 25 percent on 128 U.S. products, from frozen pork and wine to certain fruits and nuts, escalating a dispute between the world's biggest economies in response to U.S. duties on imports of aluminum and steel."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.theguardian.com",
+          "excerpt": "Mnuchin said: 'We have agreed to put the tariffs on hold while we try to execute the framework.' China will significantly increase purchases of United States goods and services."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports. The U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder. China is trying to minimize the self-inflicted cost of retaliation by focusing on lower-end products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.wired.com",
+          "excerpt": "The trade war remains almost entirely verbal, with dueling press releases and proposed tariffs to take effect at some point, which are often delayed when that point is reached. 43 percent of Chinese exports are sourced from foreign (i.e., non-Chinese) owned firms."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 33576,
+        "capped_chars": 28970,
+        "raw_tokens": 8394,
+        "capped_tokens": 7242
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 31604,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

@@ -1,0 +1,130 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-04-04",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Continue intensive negotiations while holding firm on the enforcement mechanism \u2014 do not accept unilateral US tariff snap-back rights. The talks are close to a deal and China has already made unprecedented concessions on forced tech transfer. Push for reciprocal enforcement and sequenced tariff rollback, but avoid escalation that would derail the near-agreement or further damage export sectors already under stress.\n\nSUPPORTING RATIONALE: The threat to China is moderate-to-elevated but not existential at this moment. $250B in Chinese exports face US tariffs (Lists 1-3), industrial output growth has fallen to a 17-year low at 5.3% (Reuters, March 14), and manufacturing PMI contracted in February (49.5). The Huawei/Meng extradition case (approved by Canada March 1) and DOJ fraud charges (unsealed Jan 28) represent a direct technology-suppression threat to China's national champion, damaging Made in China 2025 ambitions. China's retaliatory detention of two Canadians (Kovrig, Spavor, charged with espionage) has generated reputational costs with allies.\n\nHowever, several factors mitigate the threat and counsel continued negotiation rather than escalation: (1) The US is showing significant economic strain \u2014 10Y Treasury yields collapsed from 3.22% in October to 2.52% by April 3, the Fed has paused rate hikes, and US farm states face political pressure from Chinese retaliatory tariffs on soybeans. Trump's repeated delays of the List 3 tariff hike (originally scheduled Jan 1, then delayed Feb 24) signal eagerness for a deal. (2) China has already extracted major concessions through negotiation \u2014 'unprecedented' offers from the US side on tech transfer issues (CNBC, March 28), with both sides working on text in six areas. (3) Beijing has fiscal ammunition deployed (hundreds of billions in tax cuts and infrastructure spending per Premier Li Keqiang), and domestic demand is partially offsetting export weakness (retail sales +8.2% y/y, consumer confidence rising to 126 in Feb). (4) Escalation at this juncture would be counterproductive \u2014 China has less tariff headroom than the US (fewer American goods to tax), and further economic stress from a broader trade war would compound the industrial slowdown without gaining leverage. The optimal strategy is to hold the line on enforcement reciprocity (rejecting unilateral US tariff snap-back), accept that some tariffs will persist in the near term, and close a deal that preserves core sovereignty over industrial policy while securing tariff rollback sequencing.",
+      "key_factors": [
+        "$250B in Chinese exports under US tariffs; industrial output at 17-year low",
+        "Huawei/Meng extradition case threatens national tech champion",
+        "US showing economic strain: Treasury yields collapsed 70bp, Fed paused hikes, farm-state political pressure",
+        "Trade talks near completion: 'unprecedented' tech transfer offers, six-area text being negotiated",
+        "Enforcement mechanism is the critical sticking point \u2014 China must reject unilateral US snap-back tariffs",
+        "China retaliatory detention of Canadians generating reputational costs with allies",
+        "Beijing deploying fiscal stimulus (tax cuts, infrastructure) to cushion slowdown"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks between US and Chinese negotiators; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-03-14",
+          "excerpt": "Growth in China's industrial output fell to a 17-year low in the first two months of the year and the jobless rate rose, pointing to further weakness in the world's second-biggest economy."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-03-28",
+          "excerpt": "Progress in all areas under discussion in U.S.-China trade talks has been made, with unprecedented movement on the touchy issue of forced technology transfers, U.S. officials said."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-04-02",
+          "excerpt": "Chances are increasing for a deal to end the U.S.-China trade war, but negotiations this week are 'critical' to resolving stubborn differences over an enforcement mechanism and a plan to lift U.S. tariffs on Chinese goods."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10Y Treasury yield: 3.22% (Oct 2018) \u2192 2.52% (April 3, 2019), a decline of 70bp signaling significant US growth concerns and reduced Fed tightening capacity."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "npr-2019-03-06",
+          "excerpt": "Meng Wanzhou extradition hearing in Canada; China charged both detained Canadians with espionage. Trump said he would consider intervening in Meng's case if it could help secure a trade deal."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-04-04",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11268,
+        "capped_chars": 11268,
+        "raw_tokens": 2817,
+        "capped_tokens": 2817
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 45246,
+        "capped_chars": 45246,
+        "raw_tokens": 11311,
+        "capped_tokens": 11311
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 381613,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

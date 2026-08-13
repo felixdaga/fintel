@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-11-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8042,
+    "tokens_out": 869,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0080634,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The U.S. should maintain and escalate tariff pressure on China. The current leverage is real\u2014China cannot match U.S. tariff levels dollar-for-dollar given the trade deficit asymmetry ($506B imports vs $130B exports). With midterms just concluded and a strong domestic mandate, now is the time to press for structural concessions on IP theft, forced technology transfer, and market access. Negotiate from a position of strength, but do not roll back tariffs without concrete, verifiable commitments.\n\nSUPPORTING RATIONALE: The threat to U.S. interests is moderate and asymmetric. The trade deficit of $375 billion (CBS News) means the U.S. has more tariff ammunition than China\u2014China can only retaliate on ~$130B of U.S. goods while the U.S. can target $500B+ of Chinese imports. However, specific sectors face real pain: soybean prices down 20% (Brookings), Boeing exposed (one-fourth of commercial sales to China), and auto manufacturers in Southern states feeling pressure. The $250B in tariffs already imposed covers roughly half of bilateral trade (Fox Business/Motley Fool), and Trump has signaled willingness to tariff the remainder. China's retaliation has nearly exhausted its import base ($110B of $130B covered). The Brookings analysis notes this is 'not a big hit for the overall U.S. economy' but hurts specific sectors. China has shown willingness to buy more U.S. products and open markets, suggesting room for a deal favorable to U.S. terms. The Washington Post reports crossed wires in negotiations\u2014China felt betrayed after deals with Ross and Mnuchin were vetoed\u2014indicating the U.S. has been extracting maximum leverage. With midterms just completed (Nov 6), domestic political pressure to appear tough on China is manageable, and the administration has electoral cover to negotiate. The action_score of -1.0 reflects that the U.S. holds asymmetric leverage and should use it: the threat is real but manageable, and the opportunity to restructure the trade relationship on U.S. terms is genuine.",
+      "key_factors": [
+        "Trade deficit asymmetry: $506B U.S. imports from China vs $130B exports gives U.S. more tariff headroom",
+        "$250B in tariffs already in place covering ~half of bilateral trade; Trump signaled willingness to tariff remainder",
+        "China's retaliation nearly exhausted at $110B of $130B import base",
+        "Soybean prices down 20%, specific sector pain in agriculture, autos, Boeing",
+        "Post-midterm political window: administration has electoral mandate and cover to negotiate from strength",
+        "China has signaled willingness to buy more U.S. products and open markets\u2014room for favorable deal",
+        "No high-level negotiations scheduled; U.S. can maintain pressure without immediate domestic cost"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. buys $506 billion worth of goods from China but only exports $130 billion, leaving a trade deficit of $375 billion between the two countries"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "The price of soybeans is already down 20 percent. This is not a big hit for the overall U.S. economy but it will hurt some specific sectors"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "The $250 billion aggregate tariff amount...is about half of U.S.-China trade. President Trump has also indicated that if things don't go as to what he wants to happen, he's going to do it on the rest of it"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-11-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20384,
+        "capped_chars": 16158,
+        "raw_tokens": 5096,
+        "capped_tokens": 4040
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22747,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

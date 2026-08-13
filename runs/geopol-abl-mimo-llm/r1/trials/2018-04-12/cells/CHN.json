@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-04-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9608,
+    "tokens_out": 971,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0099354,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue to signal willingness to retaliate in kind against U.S. tariff escalations while keeping the door open for negotiation. We should prepare and publicize a targeted retaliation list focused on politically sensitive U.S. exports (soybeans, automobiles, aircraft) to maximize leverage, but hold off on full implementation pending the U.S. comment period (May 11 deadline). This maintains deterrence without foreclosing diplomatic channels.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The U.S. has proposed tariffs on up to $153 billion of Chinese imports (CBS News, April 6), targeting high-tech sectors central to Made in China 2025 \u2014 84% of the targeted products are high-end exports (Bruegel analysis). This directly threatens China's technological modernization agenda. However, as of April 12, these tariffs remain in proposal stage with a public comment period until May 11 and a hearing on May 15 (CBS News), and Trump adviser Larry Kudlow stated 'Nothing's happened. Nothing's been executed.' The threat is real but not yet materialized.\n\nChina's retaliation posture is justified because: (1) the U.S. Section 301 investigation targets China's core industrial policy ambitions, making concession on this point strategically unacceptable; (2) China's existing retaliation on $3 billion of U.S. goods (Reuters, April 2) has been criticized domestically as insufficient \u2014 former Finance Minister Lou Jiwei publicly stated China has not hit the U.S. 'where it hurts' and recommended targeting soybeans, autos, and airplanes (Times of India); (3) China's leverage is asymmetric but real \u2014 U.S. farmers, Boeing, and automakers are highly exposed, with soybean prices already falling to two-year lows (CBS News). A measured retaliatory stance signals resolve to domestic and international audiences while the proposal stage provides a window for negotiation. Escalating beyond retaliation (e.g., dumping Treasuries) would risk financial instability and is premature.",
+      "key_factors": [
+        "U.S. proposed tariffs on $153B of Chinese imports targeting high-tech sectors (Made in China 2025)",
+        "Tariffs still in proposal stage with May 11 comment period \u2014 not yet executed",
+        "84% of U.S.-targeted products are high-end exports critical to China's tech ambitions",
+        "China's initial $3B retaliation seen as insufficient domestically (Lou Jiwei criticism)",
+        "China's counter-retaliation leverage on soybeans, autos, aircraft is significant but asymmetric",
+        "Liu He-Mnuchin phone call signals diplomatic channel still open",
+        "Semiconductors exempted from China's list due to irreplaceable nature \u2014 limits retaliation options"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China... Trump said he would consider adding another $100 billion worth of products... The public has until May 11 to submit comments on the proposed list of U.S. tariffs, with a hearing scheduled for May 15."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports... The U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "timesofindia.indiatimes.com",
+          "excerpt": "Lou Jiwei, chairman of the National Council for Social Security Fund, said so far China's response to the Trump administration's tariffs has not hit the US 'where it hurts.' 'If I were still in the government, I would be hitting soybeans, automobiles, and airplanes.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China has increased tariffs by up to 25 percent on 128 U.S. products, from frozen pork and wine to certain fruits and nuts... 'Even though China and the U.S. have not publicly said they are in a trade war, the sparks of such a war have already started to fly.'"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-04-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 29183,
+        "capped_chars": 24151,
+        "raw_tokens": 7296,
+        "capped_tokens": 6038
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 23328,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

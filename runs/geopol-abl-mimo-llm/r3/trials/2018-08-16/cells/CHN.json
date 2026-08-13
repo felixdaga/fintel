@@ -1,0 +1,108 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-08-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 11066,
+    "tokens_out": 1065,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0116754,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue to retaliate in kind against U.S. tariffs, matching each escalation with proportional counter-tariffs on American agricultural products, automobiles, and other politically sensitive goods. China should also signal willingness to negotiate but refuse to make unilateral concessions, as the asymmetry of the trade deficit actually limits U.S. staying power in a prolonged tariff war.\n\nSUPPORTING RATIONALE: The threat to China is real but not existential at this stage. The U.S. has implemented 25% tariffs on $34 billion of Chinese goods (July 6, 2018) with threats to escalate to $250 billion or more (Brookings, RAND analyses). China's exports to the U.S. total ~$505 billion, representing about 5% of GDP (RAND), making this a significant but manageable exposure. However, several factors mitigate the threat: (1) China's retaliatory tariffs target politically sensitive U.S. sectors\u2014soybeans (down 20% in price per Brookings), automobiles, and agricultural products concentrated in Trump-supporting states, creating domestic political pressure on the U.S. side; (2) the yuan has already depreciated ~6% from 6.28 to 6.64 per dollar (RAND), providing a natural offset to tariff impacts; (3) more than half the value of China's exports to the U.S. consists of components from other countries (Brookings), meaning tariffs also hurt U.S. allies and supply chain partners; (4) China can source food imports from alternative suppliers like Australia and Brazil. The RAND analysis explicitly notes that 'Chinese businesses are therefore likely to lose less overall than American businesses from this first round.' The action_score of -1 (retaliate) is justified because: matching U.S. escalation maintains deterrence and signals resolve; China's retaliation targets are strategically chosen to maximize U.S. political pain; the Brookings assessment that 'it is unlikely that the Chinese leadership will cave in and do anything major' reflects the correct strategic posture; and premature concession would invite further escalation. China should hold firm through the U.S. midterm election cycle (November 2018), after which Brookings suggests 'we're likely to see the two sides come together and negotiate something so that they can both save face.'",
+      "key_factors": [
+        "U.S. tariffs on $34B of Chinese goods implemented July 6, 2018 with threats to escalate to $250B",
+        "China's retaliatory tariffs target politically sensitive U.S. sectors (soybeans, autos, agriculture)",
+        "Yuan depreciation of ~6% (6.28 to 6.64/USD) provides natural offset",
+        "China's exports to U.S. (~$505B) represent ~5% of GDP - significant but manageable",
+        "Over half of China's export value consists of foreign components, limiting tariff impact on China",
+        "U.S. midterm elections in November 2018 create political pressure point for eventual negotiation",
+        "No high-level negotiations currently scheduled per Brookings assessment"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "Chinese businesses are therefore likely to lose less overall than American businesses from this first round of the trade war. Consumers in China will likely be unaffected as food importers in China switch to other exporting countries, such as Australia"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "It is unlikely that the Chinese leadership will cave in and do anything major. China is willing to buy more products from the U.S. and open more markets, so their offer is clear. After the 2018 elections, we're likely to see the two sides come together and negotiate something so that they can both save face"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent. The U.S. exports cars from Southern states like Tennessee, so the effects of this change will be felt there"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "$505 billion in potentially lost exports is a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent)"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-08-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35798,
+        "capped_chars": 31232,
+        "raw_tokens": 8950,
+        "capped_tokens": 7808
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22502,
+  "started_at": "2026-08-13T10:55:03+00:00"
+}

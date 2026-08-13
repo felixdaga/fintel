@@ -1,0 +1,97 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-09-19",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7586,
+    "tokens_out": 563,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0066894,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should continue to escalate tariffs on Chinese goods, maintaining pressure on Beijing to make meaningful concessions on intellectual property theft, forced technology transfer, and market access. The US should also maintain the Huawei entity list restrictions and consider expanding sanctions to other Chinese firms engaged in surveillance or IP theft. SUPPORTING RATIONALE: The US has significant leverage in this dispute. The trade deficit with China stands at $419 billion, giving the US substantial room to impose tariffs while China has limited retaliatory options. China's economy is more vulnerable to trade disruption - their export-dependent model means tariffs directly threaten their growth model and CCP legitimacy. The US has already successfully brought China to the negotiating table through tariff pressure, as evidenced by ongoing talks despite escalation. Senator Graham's support indicates bipartisan backing for the tough stance. The US can absorb short-term consumer cost increases while China faces more severe structural threats to its supply chain dominance. The Huawei restrictions demonstrate effective non-tariff pressure that threatens China's tech ambitions. The US should maintain maximum pressure to extract meaningful structural reforms rather than settling for superficial purchase commitments.",
+      "key_factors": [
+        "$419 billion US trade deficit with China provides leverage",
+        "China's export-dependent economy more vulnerable to tariff disruption",
+        "Bipartisan political support for tough stance (Graham)",
+        "Huawei entity list restrictions effective at threatening China's tech ambitions",
+        "US can better absorb short-term consumer costs than China can absorb structural supply chain disruption",
+        "Ongoing negotiations despite escalation show pressure is working"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. Not only does the US accuse China of stealing intellectual property, but it wants Beijing to make changes to its economic policies, which it says unfairly favour domestic companies through subsidies. The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "'This is the best chance in my lifetime to get China to change their cheating ways,' Graham, R-S.C., told 'Sunday Morning Futures.' 'The tariffs are tools that bring China to the table. I'm standing 100 percent with the president.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "Beijing has said it would retaliate after President Donald Trump blacklisted Chinese telecom giant Huawei and the United States extended tariffs to cover almost all Chinese imports"
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-09-19",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 19056,
+        "capped_chars": 15846,
+        "raw_tokens": 4764,
+        "capped_tokens": 3962
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 13726,
+  "started_at": "2026-08-13T10:54:39+00:00"
+}

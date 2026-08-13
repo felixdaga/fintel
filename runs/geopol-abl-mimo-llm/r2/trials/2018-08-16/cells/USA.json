@@ -1,0 +1,109 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-08-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 11063,
+    "tokens_out": 1046,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0116154,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The United States should proceed with the proposed escalation of tariffs on an additional $200 billion of Chinese goods, maintaining maximum pressure while the asymmetry of leverage remains favorable. The administration should use the comment period to refine the product list to minimize consumer impact while maximizing pressure on China's industrial policy apparatus. No negotiations should be initiated until China offers concrete structural concessions on technology transfer, IP theft, and industrial subsidies.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects a moderate but not yet existential threat to U.S. interests. The trade deficit of $375 billion (CBS News) represents a structural imbalance that has enabled China's technology acquisition strategy. China's retaliatory capacity is constrained \u2014 it imported only $130 billion of U.S. goods versus $506 billion flowing the other direction (CBS News, RAND), meaning China will 'run out of exports to levy retaliatory tariffs upon long before the United States does' (RAND). The U.S. economy is performing well enough to absorb short-term costs, and the tariffs on $34 billion in goods represent only a 'minor blip' for the overall economy (Brookings/Dollar). However, the threat is not negligible: specific sectors face real pain \u2014 soybean prices already down 20% (Brookings), Boeing exposed with one-fourth of commercial airplane sales to China, and U.S. firms with China-based supply chains face disruption from machinery/equipment tariffs (RAND). The yuan has already depreciated 6% from 6.28 to 6.64 per dollar (RAND), partially offsetting tariff effects.\n\nThe action score of -1.0 (maximal escalation via tariff hikes) is justified by the current leverage asymmetry. The RAND analysis confirms the U.S. has a structural advantage in a tit-for-tat escalation: the U.S. can target $213 billion in non-consumer industrial goods from China, while China's retaliatory space is limited to $130 billion. The CFR analysis documents that China's core complaints \u2014 forced technology transfer, massive domestic subsidies, and 'buy China' procurement policies \u2014 are deeply embedded structural issues that will not be resolved through polite negotiation. As Brookings notes, 'it is unlikely that the Chinese leadership will cave in and do anything major' without sustained pressure, and 'no high-level negotiations are scheduled.' The Trump administration views this as a winning strategy for the 2018 midterms, providing domestic political cover for sustained escalation. The window of maximum leverage may close after November if political dynamics shift, making now the optimal time to press the advantage.",
+      "key_factors": [
+        "Asymmetric trade exposure: US exports $130B to China vs China exports $506B to US, giving US structural leverage in tit-for-tat",
+        "China's yuan depreciation of 6% (6.28 to 6.64/USD) partially offsets tariff impact, signaling China is already absorbing costs",
+        "Soybean prices down 20%, specific sector pain in agriculture/autos/Boeing, but overall economy impact described as 'minor blip'",
+        "China's structural complaints (tech transfer, subsidies, buy-China policies) deeply embedded and unlikely to yield without sustained pressure",
+        "No high-level negotiations scheduled; Brookings assessment that Chinese leadership unlikely to 'cave' without pressure",
+        "2018 midterm political dynamics favor sustained tough stance through November",
+        "Consumer goods largely spared from current tariff lists, limiting domestic political backlash",
+        "China's retaliatory tariffs at 15% vs US at 25%, and China targeting easily-sourced alternatives (food, wine, steel pipes)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. buys $506 billion worth of goods from China but only exports $130 billion, leaving a trade deficit of $375 billion between the two countries"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "the Chinese will run out of items on which to raise tariffs, while the United States can keep on going...the U.S. economy is doing well and is unlikely to be affected by China's retaliatory tariffs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors...It is unlikely that the Chinese leadership will cave in and do anything major"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "The price of soybeans is already down 20 percent"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-08-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35798,
+        "capped_chars": 31232,
+        "raw_tokens": 8950,
+        "capped_tokens": 7808
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 27933,
+  "started_at": "2026-08-13T10:54:41+00:00"
+}

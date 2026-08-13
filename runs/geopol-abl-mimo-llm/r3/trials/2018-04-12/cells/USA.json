@@ -1,0 +1,102 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-04-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9605,
+    "tokens_out": 899,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0097164,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The United States should escalate tariffs on Chinese goods to $153 billion as threatened, targeting high-tech sectors aligned with Made in China 2025. This is a once-in-a-generation opportunity to restructure the trade relationship on US terms while China is still dependent on US technology and markets. The US should also impose investment restrictions on Chinese companies within the 60-day window directed by President Trump.\n\nSUPPORTING RATIONALE: The threat score is -1 (clear opportunity) because China is overextended and vulnerable. The US trade deficit of $375 billion gives the US far more tariff ammunition than China has in retaliation capacity - China imported only $130 billion of US goods versus $506 billion the US imports from China, meaning China cannot match US tariff escalation (CBS News, April 6). China's retaliation so far has been limited to $3 billion on agricultural products, and even former Finance Minister Lou Jiwei acknowledged China's response has not hit the US 'where it hurts' (Times of India, citing China Development Forum). The Bruegel analysis confirms the US tariff list targets 84% high-end exports, striking at China's technological ambitions while China's retaliation focuses on lower-end primary products with shorter-term impact. China's own tariffs risk hurting Chinese consumers and producers - 28% of China's imported vehicles come from the US, 41% of imported soybeans, and 63% of imported aircraft (Bruegel). The US is targeting China's future technological capacity while China can only target US exporters' present revenues, creating asymmetric leverage. Larry Kudlow noted nothing has been executed yet, meaning the US retains maximum flexibility. The action score of -1 reflects that this is the optimal moment to press the advantage before China can diversify supply chains or achieve tech self-sufficiency.",
+      "key_factors": [
+        "US trade deficit of $375B gives asymmetric tariff leverage - China can only match $130B in retaliation vs $506B US imports",
+        "US tariff list targets 84% high-end exports aligned with Made in China 2025, striking at China's tech ambitions",
+        "China's retaliation limited to $3B agricultural products so far; former FM Lou Jiwei admits response hasn't hit US 'where it hurts'",
+        "China's own tariffs risk self-harm: 41% of imported soybeans, 63% of aircraft, 28% of vehicles come from US",
+        "Proposed tariffs still in comment period (until May 11) - nothing executed yet, preserving US flexibility",
+        "China warned of countermeasures but People's Daily commentary targeting Apple/Boeing/Intel suggests defensive posture"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China... China has promised to respond in kind, but it would be unable to match that amount since it imported only $130 billion of U.S. goods last year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "timesofindia.indiatimes.com",
+          "excerpt": "Lou Jiwei, chairman of the National Council for Social Security Fund, said so far China's response to the Trump administration's tariffs has not hit the US 'where it hurts.' 'If I were still in the government, I would be hitting soybeans, automobiles, and airplanes'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports... the U.S. is targeting China's future technological capacity, and China is responding by targeting U.S. exporters' present revenues"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China has increased tariffs by up to 25 percent on 128 U.S. products, from frozen pork and wine to certain fruits and nuts"
+        }
+      ],
+      "threat_score": -1,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-04-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 29183,
+        "capped_chars": 24151,
+        "raw_tokens": 7296,
+        "capped_tokens": 6038
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 12939,
+  "started_at": "2026-08-13T10:55:32+00:00"
+}

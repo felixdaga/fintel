@@ -1,0 +1,128 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-05-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 131728,
+    "tokens_out": 3122,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Hold the current trajectory and continue negotiating within the May 19 truce framework \u2014 keep the trade war 'on hold' by honoring the agreed purchase increases and remaining open to a ZTE resolution, while not making new unilateral concessions. Press for relief on the ZTE ban as part of the ongoing talks (the U.S. administration is reportedly open to a preliminary deal that swaps some ZTE mitigation for board changes and fines), but avoid escalating tariffs or non-tariff retaliation, which would put the $150B tariff threat and the ZTE ban back into force against our export economy.\n\nSUPPORTING RATIONALE: Threat is elevated but not existential. The dispute has moved from open escalation to a fragile truce: the May 19 joint statement put the trade war 'on hold' with China committing to 'significantly increase' US purchases (Washington Times/PBS), and Mnuchin confirmed planned tariffs on up to $150B of Chinese goods are off the table while talks proceed (NYT). The fundamental threat drivers remain real \u2014 the April 3 Section 301 list targets ~$50B of Chinese aerospace, ICT, robotics and machinery (our core tech-export sectors), and the April 16 US Commerce ban has forced ZTE to halt operations, exposing our heavy reliance on US components (Qualcomm chips, Android/Google) (Guardian). The failed push to free ZTE during the talks shows our leverage is limited on firm-level issues even as the broader truce holds. This sits near the +0.5 'firm-level targeting + major export sectors hit' anchor, tempered by the fact that no tariff has yet been implemented and the truce gives room to negotiate; hence +0.4. Action leans mildly toward de-escalation (+0.1, negotiate) because escalation would be self-defeating: hitting back re-arms the very $150B tariff threat and deepens the ZTE disruption, while a controlled truce protects our export economy and preserves our own leverage (soybean retaliation targeted at US agricultural/rust-belt constituencies, per PBS/Guardian). We should keep negotiating to secure ZTE relief and avoid locking in structural IP/purchase concessions beyond what we've already committed.",
+      "key_factors": [
+        "May 19 joint statement puts trade war 'on hold'; tariffs on up to $150B of Chinese goods suspended while talks proceed",
+        "April 3 Section 301 proposed list targets ~$50B of Chinese aerospace/ICT/robotics/machinery \u2014 core tech-export sectors",
+        "April 16 ZTE ban (US component cutoff) forces operational shutdown; ZTE relief unresolved after talks",
+        "China's soybean retaliation gives leverage over US agricultural/rust-belt constituencies",
+        "No tariffs yet implemented; China committed to 'significantly increase' US purchases without a numerical target"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "US and China release joint statement... China agrees to 'significantly increase' purchases of US goods and services. Mnuchin says trade war is 'on hold.'"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list: ~1,300 Chinese product lines (~$50B), targeting aerospace, ICT, robotics, machinery and related sectors."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes.com/2018/05/20",
+          "excerpt": "'We're putting the trade war on hold'... planned tariffs on as much as $150 billion worth of Chinese goods are off the table while the talks proceed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "guardian.com/2018/05/10",
+          "excerpt": "ZTE, one of the world's largest telecom equipment makers, may be the first major casualty of a trade war... banned American firms from selling hardware and software to ZTE for seven years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortune.com/2018/05/22",
+          "excerpt": "A preliminary deal may see ZTE pulled back from the brink... Chinese government would force ZTE to make big changes in management and board seats and pay large fines. In exchange, the U.S. would drop the ban."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-05-24",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2446,
+        "capped_chars": 2446,
+        "raw_tokens": 612,
+        "capped_tokens": 612
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47806,
+        "capped_chars": 47806,
+        "raw_tokens": 11952,
+        "capped_tokens": 11952
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 28247,
+        "capped_chars": 28247,
+        "raw_tokens": 7062,
+        "capped_tokens": 7062
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 361355,
+  "started_at": "2026-08-13T07:45:44+00:00"
+}

@@ -1,0 +1,134 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-04-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.2,
+      "rationale": "RECOMMENDATION: Hold the current posture and engage China diplomatically through the public comment period. Do not escalate further, but do not roll back the Section 301 list \u2014 use the ~60-day comment window to negotiate structural concessions on IP and tech transfer while the threat of implementation maintains leverage.\n\nSUPPORTING RATIONALE: The US economy is fundamentally strong as of early April 2018 \u2014 industrial production is growing (103.3, up 2% over 6 months), consumer sentiment is elevated (98.8), and unemployment is at 4.1%. The macro backdrop gives the US room to negotiate from strength. The Section 301 investigation correctly identified real grievances: forced tech transfer, IP theft, and state-backed acquisitions targeting Made in China 2025 sectors. The $50B proposed tariff list (event timeline, April 3) is a credible bargaining chip.\n\nHowever, China's retaliatory list (April 4) \u2014 targeting soybeans ($14B in annual exports), automobiles, and aircraft \u2014 is deliberately calibrated to inflict political pain on Trump's rural base in Iowa, Ohio, Missouri, and Indiana. Soybean futures already dropped 5% on the announcement, and the American Soybean Association warned of 'devastating' effects with potential 70% export decline. Farm-state Republicans like Sen. Joni Ernst are publicly opposing the tariffs. Boeing dropped 6% premarket on April 4.\n\nThe threat score is slightly negative (-0.2) because the US initiated this escalation and holds structural leverage: China exports ~$500B to the US vs ~$140B in US exports to China, giving the US more tariff surface area. China's retaliation, while sharp, is proportionally constrained. Deputy Finance Minister Zhu Guangyao explicitly signaled that implementation timing depends on negotiations. The public comment period doesn't end until May 22, and Lighthizer has until August 18 to finalize \u2014 this is a negotiation window, not a fait accompli.\n\nThe risk of further escalation is real: if the US adds more tariffs, China will likely retaliate against additional politically sensitive sectors. Commerce Secretary Ross himself said 'even shooting wars end with negotiations.' The prudent course is to use the existing leverage without triggering a cycle that could drag on GDP and midterm prospects.",
+      "key_factors": [
+        "China's retaliatory $50B list targets politically sensitive US exports (soybeans, autos, aircraft)",
+        "US economy strong: industrial production growing, consumer sentiment high, unemployment 4.1%",
+        "60-day public comment period provides negotiation window before tariffs take effect",
+        "Farm-state political pressure mounting \u2014 ASA warns of devastating soybean export losses",
+        "China signaled willingness to negotiate (Deputy FM Zhu Guangyao)",
+        "Trade asymmetry gives US structural leverage ($500B vs $140B in bilateral exports)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list: ~1,300 Chinese product lines (~$50B), targeting aerospace, ICT, robotics, machinery and related sectors. Public comment process opens."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods (including soybeans, automobiles, and aircraft) in response to the Section 301 list."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US Industrial Production at 103.3 (April 2018), up from 101.3 in November \u2014 steady growth."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer Sentiment at 98.8 (April 2018), slightly down from 101.4 in March but still elevated."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "csmonitor_2018-04-05",
+          "excerpt": "A Purdue University study suggested a 30% tariff would cut US soybean exports to China by 71% \u2014 'I can't imagine us losing 70 percent of our exports to China.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortune_2018-04-04",
+          "excerpt": "'China's response was tougher than what the market was expecting \u2014 investors didn't foresee the country levying additional tariffs on sensitive products such as soybeans and airplanes.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washpost_2018-04-04",
+          "excerpt": "Commerce Secretary Wilbur Ross: 'Even shooting wars end with negotiations. So it wouldn't be surprising at all if the net outcome of all this is some sort of negotiation.'"
+        }
+      ],
+      "threat_score": -0.2,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-04-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2046,
+        "capped_chars": 2046,
+        "raw_tokens": 512,
+        "capped_tokens": 512
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47380,
+        "capped_chars": 47380,
+        "raw_tokens": 11845,
+        "capped_tokens": 11845
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 43169,
+        "capped_chars": 43169,
+        "raw_tokens": 10792,
+        "capped_tokens": 10792
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 345598,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

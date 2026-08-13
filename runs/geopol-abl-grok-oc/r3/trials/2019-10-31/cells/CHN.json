@@ -1,0 +1,174 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 228380,
+    "tokens_out": 5025,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.42,
+      "rationale": "RECOMMENDATION: Lock a written Phase One now by committing to the already-signaled $40\u201350bn annual U.S. agricultural purchases and the limited IP/currency language already on the table, while refusing industrial-policy or Huawei concessions in this tranche. Use the purchases\u2014which we need anyway for the African swine fever pork shock\u2014to keep the mid-October 25%\u219230% hike frozen and to press for a decision against the 15 December List 4B tariffs. Do not escalate tariffs or activate the unreliable-entity list while the text is being drafted; do not offer a full rollback of our own retaliation until Washington puts matching tariff relief on paper.\n\nSUPPORTING RATIONALE: Threat is high but not existential. List 3 at 25% (10 May), Huawei and affiliates on the Entity List (16 May) with Google/chip cutoffs, List 4A at 15% (~$110\u2013125bn, 1 Sept), and the 5 Aug currency-manipulator designation after CNY broke 7 all hit export hubs, tech champions, and FX confidence. Chinese IP growth slowed (104.7 in Oct vs 106.3 in June), SA merchandise exports eased (~$210.5bn to $207.7bn), and CPI rose 107.7\u2192110.8 as pork prices surged. Reserves remain ~$3.12tn and the yuan has firmed modestly to 7.05 after the August overshoot, so this is not a financial-stability crisis. The 11 Oct \u201cPhase One\u201d announcement and the U.S. suspension of the mid-October hike, plus 25 Oct reports that sections are close to final, lower the immediate threat relative to August\u2014but the deal is still unwritten (3\u20135 weeks to paper), Huawei is explicitly outside it, and Lighthizer has not decided on 15 Dec. That combination justifies threat_score +0.42 (just below the +0.5 \u201cmajor export/Huawei/FX\u201d anchor). Action should be moderate concession, not hold or escalate: May\u2019s collapse after a near-deal showed that walking back text invites a tariff snap-back we cannot absorb on top of existing levies and supply-chain leakage to Vietnam. Farm purchases are a cheap, domestically useful concession (ASF has already forced pork imports and September\u2013October soybean/pork buying and tariff exemptions were underway). Escalation would risk the remaining ~$160bn Dec-15 consumer list and further entity-list expansion; a full rollback would surrender leverage before Washington has offered more than a pause. Hence action_score +0.45 and concede_purchases.",
+      "key_factors": [
+        "Unsigned Phase One: $40\u201350bn ag + limited IP/FX vs paused Oct 15 hike; Dec 15 List 4B still live",
+        "Huawei remains on the Entity List and is outside Phase One",
+        "Existing U.S. tariffs still cover most of the export basket (List 3 at 25%, List 4A at 15%)",
+        "Export-hub and IP slowdown plus CNY >7 and manipulator label, but reserves stable",
+        "ASF pork shock makes U.S. farm purchases a dual-use concession rather than a pure giveaway",
+        "May 2019 near-deal collapse: drafting risk argues for locking text, not reopening structural fights now"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "After Washington talks, Trump announces a Phase One deal in principle: China to buy roughly $40\u201350B of US agricultural products annually; IP and currency issues also cited. Planned mid-October tariff hike delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List. US firms generally barred from selling to Huawei without a license."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110\u2013125B of Chinese imports). China's first tranche of the ~$75B retaliation also takes effect."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-13",
+          "excerpt": "Chinese state media reports soybeans, pork, and some other farm goods will be excluded from additional retaliatory tariffs (goodwill signal ahead of talks)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHNPRINTO01IXPYM",
+          "excerpt": "China industrial production index same-period previous year: 106.3 (Jun) to 104.7 (Oct)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHNCPIALLMINMEI",
+          "excerpt": "China CPI index rose 107.7 (Jun) to 110.8 (Oct), +2.9% over the window."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "XTEXVA01CNM667S",
+          "excerpt": "China SA merchandise exports eased from $210.5bn (Jun) to $207.7bn (Oct)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DEXCHUS",
+          "excerpt": "CNY/USD 6.76 in early May, broke 7 on 5 Aug, latest 7.0541 on 30 Oct."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "TRESEGCNM052N",
+          "excerpt": "China reserves ex-gold stable near $3.12tn (Oct), only ~0.4% down over the window."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.reuters.com/article/us-usa-trade-china/us-outlines-phase-1-trade-deal-with-china-suspends-october-tariff-hike-idUSKBN1WQ10X/",
+          "excerpt": "Deal covers agriculture, currency and some IP; up to five weeks to write; Huawei not part of the deal; Dec-15 tariffs undecided; Trump acknowledged it could fall apart while being papered."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.cbsnews.com/news/trump-china-trade-trump-meets-with-chinese-vice-premier-liu-he-today-2019-10-11-live-updates/",
+          "excerpt": "U.S. suspends the Oct 15 hike on ~$250bn; no decision on Dec 15 consumer-goods round; Phase One does not address Huawei."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.politico.com/news/2019/10/26/china-trade-war-058425",
+          "excerpt": "26 Oct: Liu-Lighthizer-Mnuchin call; sides say good progress / close to finalizing some sections; China still faces a possible 15% tariff on ~$160bn on Dec 15."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.npr.org/2019/10/10/768569711/has-the-trade-war-taken-a-bite-out-of-china-s-economy-yes-but-its-complicated",
+          "excerpt": "China's US-bound exports down >12% this year; industrial output growth hit a 17-year low this summer; factories relocating to Vietnam/Indonesia."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.reuters.com/article/us-usa-trade-china-agriculture/china-says-it-has-already-bought-700000-tonnes-of-pork-sorghum-from-us-in-2019-idUSKBN1WU0YT",
+          "excerpt": "ASF-driven pork need; Beijing already booking US pork/soy; Trump's $40\u201350bn ag figure is the Phase One purchase ask."
+        }
+      ],
+      "threat_score": 0.42,
+      "action_score": 0.45,
+      "action_level": "concede_purchases"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5762,
+        "capped_chars": 5762,
+        "raw_tokens": 1440,
+        "capped_tokens": 1440
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47598,
+        "capped_chars": 47598,
+        "raw_tokens": 11900,
+        "capped_tokens": 11900
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 88705,
+        "capped_chars": 88705,
+        "raw_tokens": 22175,
+        "capped_tokens": 22175
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 316591,
+  "started_at": "2026-08-13T06:14:52+00:00"
+}

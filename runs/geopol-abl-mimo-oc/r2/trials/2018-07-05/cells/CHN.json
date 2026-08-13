@@ -1,0 +1,91 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-07-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Retaliate in kind against the $50B Section 301 tariffs taking effect July 6 with matching tariffs on US goods, while signaling readiness to negotiate if the US de-escalates. Do not initiate new escalatory measures beyond retaliation, but do not concede \u2014 the US has shown willingness to collapse truces (May 19\u2192May 29), so unilateral restraint would be read as weakness. Preserve leverage for negotiations by keeping the soybean and energy tariffs in place.\n\nSUPPORTING RATIONALE: The threat to China is real and elevated (threat_score +0.55). The finalized $50B tariffs on List 1 (effective July 6) target aerospace, ICT, robotics, and machinery \u2014 sectors central to Made in China 2025 goals (timeline entry 2018-06-15). The additional $200B threat (timeline entry 2018-06-18) could escalate this to a quarter-trillion-dollar trade war, materially threatening export-dependent manufacturing hubs. The ZTE denial order (timeline entry 2018-04-16) exposed a critical vulnerability: China's tech sector depends on US components for 25-30% of inputs, and ZTE was forced to cease major operations. This supply chain risk extends beyond tariffs into existential territory for firms like Huawei if the US expands entity-list actions.\n\nHowever, several factors prevent this from reaching existential levels (+1.0). China's macro remains resilient \u2014 the World Bank projects 6.5% GDP growth in 2018, and industrial production maintains momentum even as investment moderates. China retains significant retaliation capacity: tariffs on US soybeans have already driven prices to 9-year lows (CNBC, June 19), directly targeting the US farm belt's $14B annual export market and creating domestic political pressure on Trump in key Republican states. The ZTE crisis, while damaging, has catalyzed a national push for tech self-sufficiency \u2014 Xi Jinping and major tech firms (Alibaba, Tencent) have publicly called for developing domestic semiconductor capabilities, turning a vulnerability into a rallying point.\n\nThe action_score of -0.4 (retaliate) reflects the asymmetry of the situation: China must demonstrate it will not absorb tariffs passively \u2014 the May 19 truce collapsed within 10 days when the US reversed course, showing that unilateral restraint gains nothing. Matching retaliation preserves negotiating leverage while avoiding the risk of triggering the additional $200B escalation prematurely. The soybean tariff is particularly effective as it creates political costs for the US administration in farm-belt constituencies. Retaliation, not escalation, is the correct posture because China's own economy faces headwinds from domestic deleveraging, and a full escalation cycle could destabilize export-dependent employment before China's domestic consumption base is ready to absorb the shock.",
+      "key_factors": [],
+      "sources_cited": [],
+      "threat_score": 0.55,
+      "action_score": -0.4,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-07-05",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3015,
+        "capped_chars": 3015,
+        "raw_tokens": 754,
+        "capped_tokens": 754
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47842,
+        "capped_chars": 47842,
+        "raw_tokens": 11960,
+        "capped_tokens": 11960
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 51999,
+        "capped_chars": 51999,
+        "raw_tokens": 13000,
+        "capped_tokens": 13000
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 385286,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

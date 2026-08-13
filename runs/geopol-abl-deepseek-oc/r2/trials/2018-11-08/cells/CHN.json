@@ -1,0 +1,126 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-11-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 192865,
+    "tokens_out": 4026,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Hold our current retaliatory posture but signal readiness to negotiate at the G20 meeting agreed in the Nov 1 Trump-Xi call, with the concrete goal of freezing the threatened Jan 1 escalation of List 3 from 10% to 25%. Offer incremental US import purchases as a face-saving path to a truce, but make no structural concessions on IP/tech-transfer before talks bear fruit. Do not escalate further, as escalation risks drawing US coverage of all Chinese exports onto a broader battlefield at a moment our currency and reserves are already under pressure.\n\nSUPPORTING RATIONALE: The threat is high but not existential. By decision date the US had already locked in ~$250B of tariffs on Chinese goods (List 1+2 at 25%, List 3 at 10% since Sept 24) with List 3 scheduled to jump to 25% on Jan 1, and Trump has threatened to extend tariffs to effectively all Chinese exports (~$500B+). That is a direct, material hit to the export economy. Simultaneously the yuan has lost ~9-10% versus the dollar and is pressing toward the 7.0 level, FX reserves fell a record ~$34B in October to an 18-month low of ~$3.05T, and the PBOC was forced to act (hiking the short-yuan reserve requirement to 20% and cutting bank reserve ratios to support a slowing economy). Offsetting these, China's exports remained surprisingly resilient in the short run \u2014 September exports rose ~15% y/y \u2014 but that strength is sustained by order front-loading ahead of the January hike and is not durable; the economy is still growing near its ~6.5% target with ample reserves, and Beijing retains policy levers (retaliation, easing, trade diversification). This lands between the +0.5 'high' anchor and the existential threshold. On action: with a leaders' meeting at the G20 now agreed, the rational move is to negotiate rather than escalate \u2014 escalation would legitimize a US move to blanket coverage and the 25% rate at a time of FX and reserve strain. De-escalation to full concession is premature, since talks are not yet advanced and there is no matching US offer; 'negotiate' \u2014 maintain posture, seek a freeze on the Jan 1 hike via purchases \u2014 is the calibrated stance.",
+      "key_factors": [
+        "~$250B of Chinese exports tariffed (List 1+2 at 25%, List 3 at 10%), rising to 25% Jan 1 2019",
+        "Trump threat to extend tariffs to all ~$500B+ of Chinese exports",
+        "Yuan down ~9-10% vs USD, pressing toward 7.0",
+        "FX reserves fell a record ~$34B in Oct to 18-month low ~$3.05T",
+        "PBOC measures: raised short-yuan reserve req to 20%, cut bank reserve ratio (easing)",
+        "Exports resilient short-term via order front-loading, unsustainable",
+        "Nov 1 Trump-Xi call agreeing to G20 meeting = diplomatic opening",
+        "China economy still growing near ~6.5% target with ample reserves, giving policy levers"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17/2018-09-24 List 3 finalize + effective at 10%, rising to 25% Jan 1; combined coverage ~$250B",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-11-01 Trump-Xi call",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters 2018-11-07 FX reserves",
+          "excerpt": "China's foreign exchange reserves fell more than expected to an 18-month low in October... Reserves fell by $33.93 billion in October to $3.053 trillion... biggest monthly decline since December 2016... yuan slipped closer to the psychologically important level of 7 per dollar."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNN 2018-10-12 exports",
+          "excerpt": "Chinese exports rose nearly 15% in September... US tariffs set to become more punishing... resilience of exports is unlikely to be sustained."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Politico 2018-11-02 G20",
+          "excerpt": "Trump and Xi agreed to meet... The two leaders had a call on Thursday, officially agreeing to meet in Argentina and laying the ground for further discussions on trade."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-11-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4164,
+        "capped_chars": 4164,
+        "raw_tokens": 1041,
+        "capped_tokens": 1041
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48269,
+        "capped_chars": 48269,
+        "raw_tokens": 12067,
+        "capped_tokens": 12067
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 60353,
+        "capped_chars": 60353,
+        "raw_tokens": 15088,
+        "capped_tokens": 15088
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 287587,
+  "started_at": "2026-08-13T07:50:02+00:00"
+}

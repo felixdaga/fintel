@@ -1,0 +1,337 @@
+{"ts": "2026-08-13T10:54:18+00:00", "event": "run_start", "run_id": "geopol-abl-mimo-llm-v2-r1", "k_index": 1, "k_repeats": 3}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "run_echo", "echo": "== run echo\n   agent:    llm  model=xiaomi/mimo-v2.5-pro  pit=access\n   strategy: geopol_trade_war_2018  scope=single_name  digest=adc402dcc08f\u2026\n   universe: {'preset': None, 'symbols': ['USA', 'CHN'], 'source': None}  symbols=['USA', 'CHN']\n   schedule: {'kind': 'custom_dates', 'start': '2018-03-01', 'end': '2019-12-12', 'dates': ['2018-03-01', '2018-03-22', '2018-04-12', '2018-05-03', '2018-05-24', '2018-06-14', '2018-07-05', '2018-07-26', '2018-08-16', '2018-09-06', '2018-09-27', '2018-10-18', '2018-11-08', '2018-11-29', '2018-12-20', '2019-01-10', '2019-01-31', '2019-02-21', '2019-03-14', '2019-04-04', '2019-04-25', '2019-05-16', '2019-06-06', '2019-06-27', '2019-07-18', '2019-08-08', '2019-08-29', '2019-09-19', '2019-10-10', '2019-10-31', '2019-11-21', '2019-12-12']}  dates=['2018-03-01', '2018-03-22', '2018-04-12', '2018-05-03', '2018-05-24', '2018-06-14', '2018-07-05', '2018-07-26', '2018-08-16', '2018-09-06', '2018-09-27', '2018-10-18', '2018-11-08', '2018-11-29', '2018-12-20', '2019-01-10', '2019-01-31', '2019-02-21', '2019-03-14', '2019-04-04', '2019-04-25', '2019-05-16', '2019-06-06', '2019-06-27', '2019-07-18', '2019-08-08', '2019-08-29', '2019-09-19', '2019-10-10', '2019-10-31', '2019-11-21', '2019-12-12']\n   data:     [{'kind': 'event_timeline', 'source': 'event_timeline'}, {'kind': 'country_health', 'source': 'country_health'}, {'kind': 'web_search', 'source': 'web_search'}]\n   tools:\n     - get_event_timeline params=['lookback_days']\n     - get_country_health params=['lookback_days']\n     - web_search       params=['lookback_days', 'max_results', 'query'] (required)\n   prompt:   mission=8191c  schema=3485c  instruction=14183c\n   fingerprint: 0a9577642054\u2026"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-03-01", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-03-22", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-04-12", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-05-03", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-05-24", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-06-14", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-07-05", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-07-26", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-08-16", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-09-06", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-09-27", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-10-18", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-11-08", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-11-29", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2018-12-20", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-01-10", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-01-31", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-02-21", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-03-14", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-04-04", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-04-25", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-05-16", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-06-06", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-06-27", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-07-18", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-08-08", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-08-29", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-09-19", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-10-10", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-10-31", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-11-21", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "trial_start", "decision_date": "2019-12-12", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-03-01"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-03-01"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "run_grid", "grid": "== cells\n   \u2026 USA      started       calls=0  idle=0s"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-03-22"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-03-22"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-04-12"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-04-12"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-05-03"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-05-03"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-05-24"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-05-24"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-06-14"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-06-14"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-07-05"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-07-05"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-07-26"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-07-26"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-08-16"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-08-16"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-09-06"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-09-06"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 35298, "capped_chars": 31103, "raw_tokens": 8824, "capped_tokens": 7776}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-09-27"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-09-27"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-10-18"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 35298, "capped_chars": 31103, "raw_tokens": 8824, "capped_tokens": 7776}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-10-18"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-11-08"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-11-08"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-11-29"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-11-29"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 34588, "capped_chars": 30461, "raw_tokens": 8647, "capped_tokens": 7615}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-12-20"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-12-20"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-01-10"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 34588, "capped_chars": 30461, "raw_tokens": 8647, "capped_tokens": 7615}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-01-10"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-01-31"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-01-31"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-02-21"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-02-21"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-03-14"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-03-14"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-04-04"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-04-04"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-04-25"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-04-25"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-05-16"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-05-16"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 29183, "capped_chars": 24151, "raw_tokens": 7296, "capped_tokens": 6038}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-06-06"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 29183, "capped_chars": 24151, "raw_tokens": 7296, "capped_tokens": 6038}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-06-06"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-06-27"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-06-27"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 33055, "capped_chars": 28711, "raw_tokens": 8264, "capped_tokens": 7178}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 33055, "capped_chars": 28711, "raw_tokens": 8264, "capped_tokens": 7178}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-07-18"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-07-18"}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 29488, "capped_chars": 25063, "raw_tokens": 7372, "capped_tokens": 6266}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 29488, "capped_chars": 25063, "raw_tokens": 7372, "capped_tokens": 6266}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 33576, "capped_chars": 28970, "raw_tokens": 8394, "capped_tokens": 7242}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 33576, "capped_chars": 28970, "raw_tokens": 8394, "capped_tokens": 7242}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 32814, "capped_chars": 28441, "raw_tokens": 8204, "capped_tokens": 7110}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 32814, "capped_chars": 28441, "raw_tokens": 8204, "capped_tokens": 7110}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 35798, "capped_chars": 31232, "raw_tokens": 8950, "capped_tokens": 7808}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 35798, "capped_chars": 31232, "raw_tokens": 8950, "capped_tokens": 7808}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 35798, "capped_chars": 31232, "raw_tokens": 8950, "capped_tokens": 7808}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 35798, "capped_chars": 31232, "raw_tokens": 8950, "capped_tokens": 7808}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 26481, "capped_chars": 15741, "raw_tokens": 6620, "capped_tokens": 3935}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 26481, "capped_chars": 15741, "raw_tokens": 6620, "capped_tokens": 3935}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 28465, "capped_chars": 17802, "raw_tokens": 7116, "capped_tokens": 4450}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 28465, "capped_chars": 17802, "raw_tokens": 7116, "capped_tokens": 4450}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 27507, "capped_chars": 16845, "raw_tokens": 6877, "capped_tokens": 4211}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 27507, "capped_chars": 16845, "raw_tokens": 6877, "capped_tokens": 4211}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 20384, "capped_chars": 16158, "raw_tokens": 5096, "capped_tokens": 4040}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 20384, "capped_chars": 16158, "raw_tokens": 5096, "capped_tokens": 4040}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 20384, "capped_chars": 16158, "raw_tokens": 5096, "capped_tokens": 4040}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 20384, "capped_chars": 16158, "raw_tokens": 5096, "capped_tokens": 4040}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 24717, "capped_chars": 13660, "raw_tokens": 6179, "capped_tokens": 3415}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 24717, "capped_chars": 13660, "raw_tokens": 6179, "capped_tokens": 3415}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 33204, "capped_chars": 28223, "raw_tokens": 8301, "capped_tokens": 7056}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 33204, "capped_chars": 28223, "raw_tokens": 8301, "capped_tokens": 7056}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 26729, "capped_chars": 16022, "raw_tokens": 6682, "capped_tokens": 4006}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 26729, "capped_chars": 16022, "raw_tokens": 6682, "capped_tokens": 4006}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 23881, "capped_chars": 20119, "raw_tokens": 5970, "capped_tokens": 5030}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 23881, "capped_chars": 20119, "raw_tokens": 5970, "capped_tokens": 5030}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 25178, "capped_chars": 20694, "raw_tokens": 6294, "capped_tokens": 5174}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 25178, "capped_chars": 20694, "raw_tokens": 6294, "capped_tokens": 5174}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 18202, "capped_chars": 14601, "raw_tokens": 4550, "capped_tokens": 3650}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 18202, "capped_chars": 14601, "raw_tokens": 4550, "capped_tokens": 3650}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 31524, "capped_chars": 26295, "raw_tokens": 7881, "capped_tokens": 6574}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 31524, "capped_chars": 26295, "raw_tokens": 7881, "capped_tokens": 6574}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 19814, "capped_chars": 15891, "raw_tokens": 4954, "capped_tokens": 3973}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 19814, "capped_chars": 15891, "raw_tokens": 4954, "capped_tokens": 3973}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 20217, "capped_chars": 16251, "raw_tokens": 5054, "capped_tokens": 4063}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 20217, "capped_chars": 16251, "raw_tokens": 5054, "capped_tokens": 4063}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 20217, "capped_chars": 16251, "raw_tokens": 5054, "capped_tokens": 4063}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 20217, "capped_chars": 16251, "raw_tokens": 5054, "capped_tokens": 4063}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 18895, "capped_chars": 15037, "raw_tokens": 4724, "capped_tokens": 3759}
+{"ts": "2026-08-13T10:54:18+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 18895, "capped_chars": 15037, "raw_tokens": 4724, "capped_tokens": 3759}
+{"ts": "2026-08-13T10:54:37+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-08-16", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:37+00:00", "event": "run_grid", "grid": "== cells\n   \u2026 USA      one_shot      calls=0  idle=0s\n   \u2026 CHN      started       calls=0  idle=19s"}
+{"ts": "2026-08-13T10:54:37+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-07-18", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:37+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-07-18", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 19225, "n_llm_calls": 1, "tokens_in": 7634, "tokens_out": 810, "cost_usd": 0.0074784, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:37+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-08-16", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 19230, "n_llm_calls": 1, "tokens_in": 11063, "tokens_out": 741, "cost_usd": 0.0107004, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:37+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-08-08"}
+{"ts": "2026-08-13T10:54:37+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-08-08"}
+{"ts": "2026-08-13T10:54:37+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 18764, "capped_chars": 14743, "raw_tokens": 4691, "capped_tokens": 3686}
+{"ts": "2026-08-13T10:54:37+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 18764, "capped_chars": 14743, "raw_tokens": 4691, "capped_tokens": 3686}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-01-31", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-01-31", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 20704, "n_llm_calls": 1, "tokens_in": 7792, "tokens_out": 726, "cost_usd": 0.0073844, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-08-29"}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 17257, "capped_chars": 13956, "raw_tokens": 4314, "capped_tokens": 3489}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-01-31", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-01-31", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 20988, "n_llm_calls": 1, "tokens_in": 7795, "tokens_out": 818, "cost_usd": 0.0076506, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-08-29"}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 17257, "capped_chars": 13956, "raw_tokens": 4314, "capped_tokens": 3489}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-05-16", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      one_shot      calls=0  idle=0s\n   \u2713 CHN      started       calls=0  idle=0s"}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-05-16", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 21567, "n_llm_calls": 1, "tokens_in": 8271, "tokens_out": 874, "cost_usd": 0.0083074, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-09-19"}
+{"ts": "2026-08-13T10:54:39+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 19056, "capped_chars": 15846, "raw_tokens": 4764, "capped_tokens": 3962}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-12-20", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-12-20", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 21684, "n_llm_calls": 1, "tokens_in": 7319, "tokens_out": 790, "cost_usd": 0.0071034, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-09-19"}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 19056, "capped_chars": 15846, "raw_tokens": 4764, "capped_tokens": 3962}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-03-01", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-03-01", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 21842, "n_llm_calls": 1, "tokens_in": 10487, "tokens_out": 936, "cost_usd": 0.0107094, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-10-10"}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 15476, "capped_chars": 12257, "raw_tokens": 3869, "capped_tokens": 3064}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-02-21", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-02-21", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 22056, "n_llm_calls": 1, "tokens_in": 8676, "tokens_out": 879, "cost_usd": 0.0087274, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-10-10"}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 15476, "capped_chars": 12257, "raw_tokens": 3869, "capped_tokens": 3064}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-04-25", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-04-25", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 22577, "n_llm_calls": 1, "tokens_in": 9867, "tokens_out": 809, "cost_usd": 0.0097084, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-10-31"}
+{"ts": "2026-08-13T10:54:40+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 18895, "capped_chars": 15037, "raw_tokens": 4724, "capped_tokens": 3759}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-11-08", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-11-08", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 22747, "n_llm_calls": 1, "tokens_in": 8042, "tokens_out": 869, "cost_usd": 0.0080634, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-10-31"}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 18895, "capped_chars": 15037, "raw_tokens": 4724, "capped_tokens": 3759}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-08-16", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-08-16", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 22793, "n_llm_calls": 1, "tokens_in": 11066, "tokens_out": 897, "cost_usd": 0.0111714, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-11-21"}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 21708, "capped_chars": 17702, "raw_tokens": 5427, "capped_tokens": 4426}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-09-27", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-09-27", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 22846, "n_llm_calls": 1, "tokens_in": 8209, "tokens_out": 923, "cost_usd": 0.0083924, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-11-21"}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 21708, "capped_chars": 17702, "raw_tokens": 5427, "capped_tokens": 4426}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-05-24", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-05-24", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 22917, "n_llm_calls": 1, "tokens_in": 9876, "tokens_out": 850, "cost_usd": 0.0098404, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-12-12"}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "data_read", "cell": "USA", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 21708, "capped_chars": 17702, "raw_tokens": 5427, "capped_tokens": 4426}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-06-27", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-06-27", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 23259, "n_llm_calls": 1, "tokens_in": 7853, "tokens_out": 899, "cost_usd": 0.0079644, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-12-12"}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "data_read", "cell": "CHN", "kind": "web_search", "source": "web_search", "status": "ok", "cached": false, "raw_chars": 21708, "capped_chars": 17702, "raw_tokens": 5427, "capped_tokens": 4426}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-05-03", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-05-03", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 23298, "n_llm_calls": 1, "tokens_in": 10626, "tokens_out": 879, "cost_usd": 0.0106774, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-04-12", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-04-12", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 23328, "n_llm_calls": 1, "tokens_in": 9608, "tokens_out": 971, "cost_usd": 0.0099354, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-07-26", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-07-26", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 23413, "n_llm_calls": 1, "tokens_in": 11066, "tokens_out": 980, "cost_usd": 0.0114204, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-04-04", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-04-04", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 23425, "n_llm_calls": 1, "tokens_in": 7546, "tokens_out": 921, "cost_usd": 0.0077234, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-06-14", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-06-14", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 23541, "n_llm_calls": 1, "tokens_in": 10658, "tokens_out": 877, "cost_usd": 0.0107034, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-04-04", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      one_shot      calls=0  idle=0s\n   \u2713 CHN      done          calls=0  idle=0s"}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-04-04", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 23602, "n_llm_calls": 1, "tokens_in": 7543, "tokens_out": 914, "cost_usd": 0.0076994, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-09-06", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:41+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-09-06", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 23623, "n_llm_calls": 1, "tokens_in": 7727, "tokens_out": 913, "cost_usd": 0.0078804, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:42+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-10-18", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:42+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-10-18", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 23874, "n_llm_calls": 1, "tokens_in": 8133, "tokens_out": 942, "cost_usd": 0.0083734, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:42+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-07-05", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:42+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-07-05", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 23979, "n_llm_calls": 1, "tokens_in": 10418, "tokens_out": 871, "cost_usd": 0.0104454, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-03-14", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      one_shot      calls=0  idle=0s\n   \u2713 CHN      done          calls=0  idle=1s"}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-03-14", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 25699, "n_llm_calls": 1, "tokens_in": 8834, "tokens_out": 923, "cost_usd": 0.0090174, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-03-14", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-03-14", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 25770, "n_llm_calls": 1, "tokens_in": 8837, "tokens_out": 947, "cost_usd": 0.0090924, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-07-05", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-07-05", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 26156, "n_llm_calls": 1, "tokens_in": 10415, "tokens_out": 985, "cost_usd": 0.0107844, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-12-20", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-03-22", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-12-20", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 26565, "n_llm_calls": 1, "tokens_in": 7322, "tokens_out": 944, "cost_usd": 0.0075684, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-03-22", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 26570, "n_llm_calls": 1, "tokens_in": 10494, "tokens_out": 965, "cost_usd": 0.0108034, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-10-18", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:44+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-10-18", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 26670, "n_llm_calls": 1, "tokens_in": 8136, "tokens_out": 996, "cost_usd": 0.0085384, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:45+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-01-10", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:45+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-01-10", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 26697, "n_llm_calls": 1, "tokens_in": 10294, "tokens_out": 999, "cost_usd": 0.011563, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:45+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-03-22", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:45+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-03-22", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 27136, "n_llm_calls": 1, "tokens_in": 10491, "tokens_out": 979, "cost_usd": 0.0108424, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:45+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-05-16", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:45+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-05-16", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 27149, "n_llm_calls": 1, "tokens_in": 8274, "tokens_out": 1053, "cost_usd": 0.011433, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:45+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-09-06", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:45+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-09-06", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 27260, "n_llm_calls": 1, "tokens_in": 7730, "tokens_out": 1061, "cost_usd": 0.0083274, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:46+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-03-01", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:46+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done          calls=0  idle=1s\n   \u2713 CHN      one_shot      calls=0  idle=0s"}
+{"ts": "2026-08-13T10:54:46+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-03-01", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 28210, "n_llm_calls": 1, "tokens_in": 10490, "tokens_out": 1022, "cost_usd": 0.0109576, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:46+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-11-29", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:46+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-11-29", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 28295, "n_llm_calls": 1, "tokens_in": 8045, "tokens_out": 1029, "cost_usd": 0.0085464, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:46+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-01-10", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:46+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-01-10", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 28298, "n_llm_calls": 1, "tokens_in": 10297, "tokens_out": 1068, "cost_usd": 0.0109154, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:46+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-04-12", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:46+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-04-12", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 28347, "n_llm_calls": 1, "tokens_in": 9605, "tokens_out": 1019, "cost_usd": 0.0100764, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:46+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-04-25", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:46+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-04-25", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 28387, "n_llm_calls": 1, "tokens_in": 9864, "tokens_out": 994, "cost_usd": 0.0102604, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:47+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-05-03", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:47+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-05-03", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 28867, "n_llm_calls": 1, "tokens_in": 10629, "tokens_out": 1051, "cost_usd": 0.0111836, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:47+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-05-24", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:47+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-05-24", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 29495, "n_llm_calls": 1, "tokens_in": 9879, "tokens_out": 1040, "cost_usd": 0.0104134, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:47+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-11-29", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:47+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-11-29", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 29512, "n_llm_calls": 1, "tokens_in": 8042, "tokens_out": 1073, "cost_usd": 0.0086754, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:48+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-06-06", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:48+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-06-06", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 29788, "n_llm_calls": 1, "tokens_in": 7850, "tokens_out": 1170, "cost_usd": 0.0087744, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:48+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-02-21", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:48+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-02-21", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 29885, "n_llm_calls": 1, "tokens_in": 8679, "tokens_out": 1090, "cost_usd": 0.0093634, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:49+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-06-14", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:49+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done          calls=0  idle=1s\n   \u2713 CHN      one_shot      calls=0  idle=0s"}
+{"ts": "2026-08-13T10:54:49+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-06-14", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 31604, "n_llm_calls": 1, "tokens_in": 10661, "tokens_out": 1275, "cost_usd": 0.0119004, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:50+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2018-07-26", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:50+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-07-26", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 32498, "n_llm_calls": 1, "tokens_in": 11063, "tokens_out": 1116, "cost_usd": 0.0118254, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:51+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-11-08", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:51+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-11-08", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 32849, "n_llm_calls": 1, "tokens_in": 8045, "tokens_out": 1117, "cost_usd": 0.0088104, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:51+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-06-27", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:51+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-06-27", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 33497, "n_llm_calls": 1, "tokens_in": 7850, "tokens_out": 1178, "cost_usd": 0.0087984, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:52+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2018-09-27", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:52+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done          calls=0  idle=0s\n   \u2713 CHN      one_shot      calls=0  idle=0s"}
+{"ts": "2026-08-13T10:54:52+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-09-27", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 33940, "n_llm_calls": 1, "tokens_in": 8212, "tokens_out": 1208, "cost_usd": 0.0092504, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:53+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-07-18", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:53+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-07-18", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 35202, "n_llm_calls": 1, "tokens_in": 7637, "tokens_out": 1253, "cost_usd": 0.0088104, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:53+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-09-19", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:53+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-09-19", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 13726, "n_llm_calls": 1, "tokens_in": 7586, "tokens_out": 563, "cost_usd": 0.0066894, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:53+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-06-06", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:53+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-06-06", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 35303, "n_llm_calls": 1, "tokens_in": 7853, "tokens_out": 1290, "cost_usd": 0.0091374, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:56+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-09-19", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:56+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done          calls=0  idle=2s\n   \u2713 CHN      one_shot      calls=0  idle=0s"}
+{"ts": "2026-08-13T10:54:56+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-09-19", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 16335, "n_llm_calls": 1, "tokens_in": 7589, "tokens_out": 743, "cost_usd": 0.0072324, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:58+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-10-10", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:58+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-10-10", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 17668, "n_llm_calls": 1, "tokens_in": 6953, "tokens_out": 786, "cost_usd": 0.0067254, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:58+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-08-08", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:58+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-08-08", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 20598, "n_llm_calls": 1, "tokens_in": 7953, "tokens_out": 976, "cost_usd": 0.0082954, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:54:58+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-10-31", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:54:58+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      one_shot      calls=0  idle=0s\n   \u2713 CHN      done          calls=0  idle=0s"}
+{"ts": "2026-08-13T10:54:58+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-10-31", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 17965, "n_llm_calls": 1, "tokens_in": 7634, "tokens_out": 853, "cost_usd": 0.0076074, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:55:00+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-08-08", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:55:00+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-08-08", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 22760, "n_llm_calls": 1, "tokens_in": 7950, "tokens_out": 976, "cost_usd": 0.0082924, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:55:01+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-11-21", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:55:01+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done          calls=0  idle=0s\n   \u2713 CHN      one_shot      calls=0  idle=0s"}
+{"ts": "2026-08-13T10:55:01+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-11-21", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 20076, "n_llm_calls": 1, "tokens_in": 8143, "tokens_out": 886, "cost_usd": 0.0082154, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:55:03+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-08-29", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:55:03+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      one_shot      calls=0  idle=0s\n   \u2713 CHN      done          calls=0  idle=2s"}
+{"ts": "2026-08-13T10:55:03+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-08-29", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 24293, "n_llm_calls": 1, "tokens_in": 7363, "tokens_out": 1076, "cost_usd": 0.010591, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:55:03+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-10-10", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:55:03+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-10-10", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 23323, "n_llm_calls": 1, "tokens_in": 6950, "tokens_out": 941, "cost_usd": 0.0071874, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:55:03+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-11-21", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:55:03+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-11-21", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 22467, "n_llm_calls": 1, "tokens_in": 8140, "tokens_out": 987, "cost_usd": 0.0085154, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:55:03+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-08-29", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:55:03+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-08-29", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 24513, "n_llm_calls": 1, "tokens_in": 7366, "tokens_out": 1090, "cost_usd": 0.0080376, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:55:06+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-12-12", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:55:06+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      one_shot      calls=0  idle=0s\n   \u2713 CHN      done          calls=0  idle=2s"}
+{"ts": "2026-08-13T10:55:06+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-12-12", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 25356, "n_llm_calls": 1, "tokens_in": 8140, "tokens_out": 1074, "cost_usd": 0.0087764, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:55:06+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-10-31", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:55:06+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-10-31", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 25781, "n_llm_calls": 1, "tokens_in": 7637, "tokens_out": 1142, "cost_usd": 0.0084646, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-12-12", "stage": "one_shot", "text": ""}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done          calls=0  idle=2s\n   \u2713 CHN      one_shot      calls=0  idle=0s"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-12-12", "outcome": "ok", "health": "ok", "n_reads": 1, "elapsed_ms": 27907, "n_llm_calls": 1, "tokens_in": 8143, "tokens_out": 1179, "cost_usd": 0.0090944, "cost_basis": "reported", "detail": ""}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-03-01", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-03-22", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-04-12", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-05-03", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-05-24", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-06-14", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-07-05", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-07-26", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-08-16", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-09-06", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-09-27", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-10-18", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-11-08", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-11-29", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2018-12-20", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-01-10", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-01-31", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-02-21", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-03-14", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-04-04", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-04-25", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-05-16", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-06-06", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-06-27", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-07-18", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-08-08", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-08-29", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-09-19", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-10-10", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-10-31", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-11-21", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "trial_done", "decision_date": "2019-12-12", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T10:55:09+00:00", "event": "run_done", "run_id": "geopol-abl-mimo-llm-v2-r1", "status": "ok", "n_views": 64, "health": "ok"}

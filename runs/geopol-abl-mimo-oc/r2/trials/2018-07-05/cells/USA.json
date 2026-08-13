@@ -1,0 +1,156 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-07-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Proceed with the planned $34B List 1 tariffs taking effect July 6 as scheduled. Maintain the $200B threat as leverage but do not activate it yet \u2014 let China's response to the first tranche reveal their escalation appetite before committing to the larger package. Use the intervening period to quietly prepare agricultural relief measures for farm-belt constituencies targeted by Chinese retaliation.\n\nSUPPORTING RATIONALE: The US holds a favorable position as of July 5, 2018, warranting a negative threat score (opportunity-leaning). The macro backdrop supports this: industrial production at 103.4 (up 1.6% over the period), Fed funds rising from 1.42% to 1.91% reflecting a tightening economy with room to absorb disruption, and the broad dollar index up 3.4% to 113.3, conferring purchasing-power leverage. Consumer sentiment has softened only marginally (99.7 \u2192 97.9), far from recessionary territory.\n\nThe US has legitimate leverage from the Section 301 findings on IP/tech-transfer practices, and the ZTE denial order demonstrated the potency of non-tariff tools \u2014 ZTE was forced into a $1.7B settlement and US compliance monitors (WaPo, Jun 7). The action_score of -0.45 reflects that moderate escalation is warranted: the US initiated this confrontation on solid legal and strategic footing, and the first tranche targets industrial/technology goods (818 lines, aerospace, ICT, robotics) that serve the strategic goal of constraining China's Made in China 2025 ambitions.\n\nHowever, two risks temper the recommendation toward the moderate end. First, China's retaliatory targeting of soybeans ($14B annual trade) and agricultural products directly threatens Trump's political base in farm states \u2014 Iowa farmers face up to $624M in losses (Iowa State estimate), and farm income has already fallen 75% in five years. Second, the $200B escalation threat, if activated prematurely, would broaden tariffs to consumer goods and risk genuine economic disruption. The May 19 truce collapse (timeline entry) shows negotiation has failed; the June 3 Beijing impasse (NYT) confirms China won't concede without tariff pressure. But the US should let the $34B tranche do its work before escalating further.",
+      "key_factors": [
+        "$34B List 1 tariffs taking effect July 6 \u2014 first concrete escalation beyond steel/aluminum",
+        "China's matching $34B retaliation targeting soybeans and agriculture ($14B annual trade)",
+        "Trump's $200B additional tariff threat (Jun 18) creates massive escalation overhang",
+        "ZTE settlement ($1B fine, US compliance monitors) demonstrates non-tariff leverage",
+        "Strong US macro: IP rising, dollar up 3.4%, consumer sentiment still near 98",
+        "Farm-belt political risk: soybean prices at 1-year low, Iowa farm income down 75% over 5 years",
+        "May 19 truce collapsed \u2014 negotiation without leverage has failed",
+        "Section 301 report provides legal foundation for IP/tech-transfer corrective action"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-15",
+          "excerpt": "USTR announces final two-stage $50B tariff plan: 25% on List 1 (~$34B, 818 lines, effective July 6) and List 2 (~$16B, later). China announces matching retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-18",
+          "excerpt": "Trump directs USTR to identify an additional ~$200B of Chinese imports for 10% tariffs if China retaliates against the $50B action."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "US and China release joint statement after talks: China agrees to 'significantly increase' purchases of US goods and services. Mnuchin says trade war is 'on hold.'"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US Industrial Production: 103.36 (Jul 2018), up 1.63% over period \u2014 economy expanding."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer Sentiment: 97.9 (Jul 2018), down from 99.7 in Feb \u2014 mild softening, not alarming."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad Dollar Index: 113.3 (Jul 3), up 3.4% \u2014 dollar strength provides purchasing power leverage."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Fed Funds Rate: 1.91% (Jul 2018), up from 1.42% \u2014 tightening cycle reflects confidence in economic strength."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "farmpolicynews-2018-06-17",
+          "excerpt": "China targets soybeans, corn in retaliation. Soybean trade worth $14B annually. Iowa farmers could lose up to $624M. U.S. farm income cut in half over past five years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washingtonpost-2018-06-07",
+          "excerpt": "ZTE deal: $1B fine plus $400M escrow, US compliance team embedded. Trump intervened to save Chinese jobs, drew bipartisan criticism."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": -0.45,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-07-05",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3015,
+        "capped_chars": 3015,
+        "raw_tokens": 754,
+        "capped_tokens": 754
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47842,
+        "capped_chars": 47842,
+        "raw_tokens": 11960,
+        "capped_tokens": 11960
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 39547,
+        "capped_chars": 39547,
+        "raw_tokens": 9887,
+        "capped_tokens": 9887
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 376926,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

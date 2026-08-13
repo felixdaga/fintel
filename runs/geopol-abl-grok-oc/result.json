@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "job_id": "geopol-abl-grok-oc",
+  "strategy": "geopol_trade_war_2018",
+  "agent": "openclaw",
+  "k_repeats": 3,
+  "status": "failed",
+  "runs": [
+    {
+      "run_id": "geopol-abl-grok-oc-r1",
+      "k_index": 1,
+      "dir": "r1",
+      "status": "ok",
+      "n_views": 64,
+      "health": "ok"
+    },
+    {
+      "run_id": "geopol-abl-grok-oc-r2",
+      "k_index": 2,
+      "dir": "r2",
+      "status": "ok",
+      "n_views": 64,
+      "health": "broken"
+    },
+    {
+      "run_id": "geopol-abl-grok-oc-r3",
+      "k_index": 3,
+      "dir": "r3",
+      "status": "ok",
+      "n_views": 64,
+      "health": "broken"
+    }
+  ],
+  "started_at": "2026-08-13T05:59:47+00:00",
+  "finished_at": "2026-08-13T06:39:07+00:00",
+  "usage": {
+    "n_llm_calls": 984,
+    "tokens_in": 42549286,
+    "tokens_out": 1014421,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "health": "broken",
+  "health_issues": [
+    "11 cell(s) broken",
+    "geopol-abl-grok-oc-r2: health=broken",
+    "geopol-abl-grok-oc-r3: health=broken"
+  ]
+}

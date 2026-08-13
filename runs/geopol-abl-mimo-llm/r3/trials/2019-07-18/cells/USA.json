@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-07-18",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7634,
+    "tokens_out": 872,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0076644,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should proceed with the planned tariff escalation on the remaining ~$300 billion of Chinese goods and maintain pressure through the existing tariff structure. The leverage created by tariffs is the primary tool to force China into structural reforms on IP theft, forced technology transfer, and market access. We should continue negotiations from a position of strength rather than concede prematurely.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects a moderate but real threat to US interests. The $419 billion trade deficit (BBC) remains a structural concern, and China's history of backtracking on commitments (Trump stated 'they broke the deal' per Fox Business) suggests that without sustained pressure, meaningful reform is unlikely. The US economy is performing well enough to absorb short-term costs \u2014 the Dow is up ~11% in 2019 (BBC) \u2014 giving us room to maintain leverage. However, the threat is not existential: Larry Kudlow acknowledged 'both sides will pay' (Fox Business), and consumer costs on autos could rise $1,000-$3,000 (USC Annenberg), but these are manageable. The action score of -1 reflects the judgment that this is a rare window of leverage. Senator Graham's framing \u2014 'this is the best chance in my lifetime to get China to change their cheating ways' (Fox Business) \u2014 captures the strategic logic. China's retaliatory tariffs on $110 billion of US goods are already near their ceiling given the trade asymmetry, meaning China has limited retaliatory room. The key industries at stake \u2014 AI, cloud computing, robotics, green tech (USC Annenberg) \u2014 are the most important and profitable industries of the future, making this the moment to extract structural concessions before China's tech self-sufficiency goals mature under Made in China 2025.",
+      "key_factors": [
+        "$419 billion US trade deficit with China provides leverage",
+        "China broke deal commitments per Trump, suggesting need for sustained pressure",
+        "Dow up 11% in 2019 \u2014 US economy can absorb short-term tariff costs",
+        "Key future industries (AI, cloud, robotics) at stake \u2014 strategic window",
+        "China's retaliatory capacity limited by trade asymmetry ($110B vs $250B+ already tariffed)",
+        "Both sides acknowledged short-term pain but long-term structural reform is the goal",
+        "IMF flagged trade tensions as contributing to weakened global expansion"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China immersed in a tit-for-tat tariff trade war",
+          "excerpt": "Trump said 'they broke the deal.' Lighthizer and Mnuchin thought China was willing to rewrite key national security and trade laws to reduce the theft of intellectual property."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "Graham: 'This is the best chance in my lifetime to get China to change their cheating ways.' Kudlow: 'Both sides will suffer on this.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-07-18",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18895,
+        "capped_chars": 15037,
+        "raw_tokens": 4724,
+        "capped_tokens": 3759
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19517,
+  "started_at": "2026-08-13T10:55:15+00:00"
+}

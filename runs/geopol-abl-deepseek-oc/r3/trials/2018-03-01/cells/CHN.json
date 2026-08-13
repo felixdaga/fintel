@@ -1,0 +1,119 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-03-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 131143,
+    "tokens_out": 3444,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Maintain a posture of active negotiation without new concessions \u2014 keep the Trump\u2013Xi engagement channel open and signal willingness to address US commercial grievances, while holding firm on our core technology-sovereignty agenda (Made in China 2025) and preparing contingency responses in case Washington issues a punitive Section 301 finding. Do not escalate now: provoking a broader trade war with the US would hit our export economy far harder than it would hurt theirs, and no matching offer exists that would justify concession. Watch the imminent USTR announcement closely and calibrate response to its actual content.\n\nSUPPORTING RATIONALE: The threat is real and building but not yet material. The Section 301 investigation launched in August 2017 (per the timeline, 2017-08-14) directly targets China's technology-transfer and IP practices \u2014 the very foundation of our tech self-sufficiency push \u2014 and an affirmative finding with broad remedy recommendations was widely reported as imminent. This explains the moderate-high threat reading. However, as of this decision date no broad tariff, entity-list, or firm-level action (e.g. against Huawei) has been imposed: only narrow Section 201 safeguard tariffs on solar panels and washing machines are in effect (timeline 2018-01-22), and Section 232 steel/aluminium is still under investigation. The Chinese economy shows no sign of distress \u2014 January exports grew 11.1% in dollar terms and the yuan has strengthened ~9% over the year \u2014 so threat sits below the +0.5 'export sectors hit / firm targeting' anchor. This justifies an action stance in the negotiate band (0.0 to +0.1): escalating would hand Washington justification for the broad trade war it is clearly preparing for, while early concession would surrender leverage on technology-transfer rules with no US compromise to show for it. The right move is to manage the escalation phase diplomatically, keep the commercial-deal thread alive from the November 2017 Beijing visit, and avoid handing the US a pretext \u2014 while standing ready to retaliate defensively only if the US actually strikes.",
+      "key_factors": [
+        "Section 301 investigation ongoing, targets China's tech-transfer/IP and Made in China 2025 \u2014 genuine strategic threat to tech autonomy",
+        "No broad tariff, entity-list, or firm-level action yet; only narrow Section 201 solar/washing-machine tariffs in effect",
+        "Section 232 steel/aluminium still under investigation, not yet actioned",
+        "China real economy solid: January exports +11.1% (dollar), yuan up ~9% over year \u2014 no material economic distress",
+        "Escalating now would hand Washington pretext for broader trade war; conceding now forfeits leverage with no US offer",
+        "Diplomatic channel open (Nov 2017 Beijing visit, commercial deals) \u2014 viable path to manage escalation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2017-08-14",
+          "excerpt": "Trump signs memorandum directing USTR to investigate China's IP and technology-transfer practices under Section 301."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-01-22",
+          "excerpt": "Trump approves Section 201 safeguard tariffs on solar panels and washing machines."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bloomberg-2018-02-08",
+          "excerpt": "China exports rose 11.1% in January in dollar terms despite trade tensions; imports +36.9%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "orrick-2018-01-20",
+          "excerpt": "Sources close to USTR indicate affirmative Section 301 finding and remedy recommendations expected within the month."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-03-01",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 682,
+        "capped_chars": 682,
+        "raw_tokens": 170,
+        "capped_tokens": 170
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46539,
+        "capped_chars": 46539,
+        "raw_tokens": 11635,
+        "capped_tokens": 11635
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 30268,
+        "capped_chars": 30268,
+        "raw_tokens": 7567,
+        "capped_tokens": 7567
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 275164,
+  "started_at": "2026-08-13T07:53:20+00:00"
+}

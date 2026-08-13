@@ -1,0 +1,105 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-09-19",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7589,
+    "tokens_out": 743,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0072324,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should retaliate proportionally against US tariff escalation while signaling willingness to negotiate, and prepare targeted countermeasures including the unreliable entities list and rare earth leverage. Maintain a firm but measured response that demonstrates resolve without triggering full economic decoupling.\n\nSUPPORTING RATIONALE: The threat to China is HIGH and approaching existential territory. The US has escalated tariffs on $200 billion of Chinese goods from 10% to 25% (BBC, May 2019), and Trump has called for tariffs on 'essentially all remaining imports from China, valued at approximately $300 billion' (Fox Business). This threatens China's export economy and manufacturing base. The Huawei entity list action (Reuters) directly targets China's tech development ambitions. The US-China trade deficit of $419 billion (BBC) gives the US leverage, and the US is explicitly trying to 'break the stranglehold China has on the supply chain' (Graham, Fox Business). China's currency has already weakened ~4% since July 2018 (Reuters), absorbing some tariff impact but signaling economic stress. The IMF has cut global growth forecasts citing trade tensions (BBC). However, China retains significant leverage: rare earth supply (80% of US needs, per Reuters), the unreliable entities list threat, ability to target US companies like Apple, and agricultural tariffs targeting Trump's political base. China should retaliate to maintain credibility and deterrence while keeping the door open for negotiations, as both sides 'will suffer' (Kudlow, Fox Business).",
+      "key_factors": [
+        "US tariff escalation to 25% on $200B of Chinese goods",
+        "Threat of tariffs on remaining ~$300B of Chinese imports",
+        "Huawei entity list targeting China's tech sector",
+        "China's rare earth leverage (80% of US supply)",
+        "US-China trade deficit of $419B gives US negotiating leverage",
+        "China's currency weakening absorbing some tariff impact",
+        "IMF global growth forecast cuts due to trade tensions",
+        "US political support for tariffs (bipartisan, per Graham)",
+        "China's unreliable entities list as potential countermeasure"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "US President Donald Trump vowed to more than double tariffs on $200bn of Chinese goods on Friday and to introduce fresh ones 'shortly'. Tariffs on $200bn worth of Chinese goods were due to rise to 25% from 10%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "Beijing has said it would retaliate after President Donald Trump blacklisted Chinese telecom giant Huawei. China supplies 80% of U.S. rare earths. The Chinese currency has weakened nearly 4 percent since July 2018."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "'When you put tariffs on products coming out of China, it makes other countries a cheaper place to do business which eventually moves market share away from China,' Graham said."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-09-19",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 19056,
+        "capped_chars": 15846,
+        "raw_tokens": 4764,
+        "capped_tokens": 3962
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 16335,
+  "started_at": "2026-08-13T10:54:40+00:00"
+}

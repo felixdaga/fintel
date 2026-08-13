@@ -1,0 +1,158 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-05-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Hold the current tariff posture and Huawei Entity List pressure without further escalation. Signal willingness to negotiate at the upcoming G20 Osaka summit (late June) but concede nothing while China has backtracked on its commitments. Do not yet trigger the remaining ~$300B tariff tranche \u2014 that weapon is more valuable as a credible threat than as a fired round, given the direct hit to US consumers it would represent.\n\nSUPPORTING RATIONALE: The threat to US interests is real but asymmetric \u2014 we hold more leverage than China, yet the costs are mounting. On the threat side: $1.1 trillion in S&P 500 market value has been erased since May 5 (CNBC, May 13). The 10-year Treasury yield has collapsed from 3.06% (Nov 2018) to 2.37% (May 15), a 69bp flight-to-safety that signals genuine growth anxiety (country_health, DGS10). The yield curve is dangerously flat \u2014 2Y at 2.16%, 10Y at 2.37 \u2014 flashing recession warning signals. Tariffs are fully passed through to US importers, costing the average household $300-$800/year (Econofact, May 14), and the White House has already spent $12B on farmer bailouts (Guardian, May 13). Soybean prices hit 10-year lows. If we extend 25% tariffs to the remaining $300B of Chinese imports, the cost disproportionately hits consumer products like iPhones, directly threatening the consumption-driven US economy (CNBC/FTSE Russell, May 13).\n\nHowever, the leverage calculus favors us. China backtracked on nearly all aspects of the draft deal \u2014 deleting commitments on IP, forced tech transfer, competition policy, financial services, and currency (Reuters, May 8). This gave us legitimate cause to escalate. Our Huawei Entity List action (May 15) is a precision weapon: Huawei depends on US suppliers (Qualcomm, Intel, Google Android) and this threatens to cripple China's premier tech champion. China's retaliation capacity is constrained by the trade imbalance \u2014 they can only target $60B of our goods vs. our $250B coverage. China's economy faces 0.5-1 percentage point GDP drag if this escalates further (Morgan Stanley, via WaPo, May 13). Consumer sentiment remains strong at 100 (UMCSENT, May), the dollar is stable at ~115.9 (DTWEXBGS), and the Fed has room to cut if needed (Fed Funds at 2.39%).\n\nThe action score of -0.1 reflects a hold posture with a slight hawkish tilt. We should maintain all existing pressure \u2014 the 25% tariffs on $250B and the Huawei Entity List \u2014 but pause before firing the $300B tranche. The G20 in Osaka provides a natural off-ramp if China returns to the table with real concessions on enforcement. The worst outcome is triggering consumer-facing tariffs that tip us into recession while China digs in; the best is that Huawei pressure and existing tariff pain bring Beijing back with binding enforcement language. Hold the line.",
+      "key_factors": [
+        "$1.1 trillion in stock market value lost since May 5 tariff threat",
+        "10Y Treasury yield collapsed 69bp to 2.37% \u2014 flight to safety and recession signal",
+        "Yield curve near inversion (2Y 2.16% vs 10Y 2.37%)",
+        "China backtracked on nearly all aspects of draft trade deal (Reuters exclusive)",
+        "Huawei Entity List placement (May 15) \u2014 powerful leverage over China's tech champion",
+        "Tariffs fully passed through to US importers, $300-800/household annually",
+        "White House already spent $12B on farmer bailouts; soybean prices at 10-year lows",
+        "Consumer sentiment strong at 100; dollar stable \u2014 no imminent domestic crisis",
+        "G20 Osaka summit (late June) provides natural negotiation venue",
+        "Remaining $300B tariff list would disproportionately hit US consumer products"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2019-05-05",
+          "excerpt": "Trump tweets that negotiations are going 'too slowly' and that China is attempting to 'renegotiate.' Orders List 3 raised from 10% to 25% on May 10 and directs preparation of tariffs on remaining Chinese imports (~$300B)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2019-05-15",
+          "excerpt": "Trump signs Executive Order 13873 (securing information/communications technology supply chains). Commerce moves to restrict Huawei."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10_latest",
+          "excerpt": "10Y Treasury yield: 2.37% on May 15, down from 3.06% in November 2018 \u2014 a 69bp decline signaling flight to safety and growth concerns."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS2_latest",
+          "excerpt": "2Y Treasury yield: 2.16% on May 15, down from 2.79% in November. Yield curve nearly flat/inverted vs 10Y at 2.37%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT_latest",
+          "excerpt": "Consumer Sentiment at 100 in May 2019, up from 97.2 in April \u2014 no domestic panic yet."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_may13",
+          "excerpt": "$1.1 trillion in stock market value lost since May 5. S&P 500 down 2.4% on May 13 alone. Dow lost 617 points. Tech and industrials hardest hit."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_may8",
+          "excerpt": "China backtracked on nearly all aspects of U.S. trade deal \u2014 deleted commitments on IP theft, forced tech transfer, competition policy, financial services, and currency manipulation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "econofact_may14",
+          "excerpt": "Tariffs are fully passed through to US importers. Cost to average US household estimated at $300-800 per year. Agricultural exports to China fallen by half since 2017."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "guardian_may13",
+          "excerpt": "Wall Street suffers worst day since January. Dow down 617 points (2.4%). Trump promises aid for farmers. Soybean prices hit 10-year low. White House already paid out $12B in aid."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_may15_huawei",
+          "excerpt": "U.S. Commerce Department adding Huawei Technologies and 70 affiliates to Entity List, making it much more difficult to buy parts from U.S. companies."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washpost_may13",
+          "excerpt": "Latest US charges could knock 0.5 percentage points off annual Chinese economic growth. Loss could widen to 1 percentage point if both sides extend penalties to all exports."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -0.1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-05-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 7,
+    "by_status": {
+      "ok": 7
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4720,
+        "capped_chars": 4720,
+        "raw_tokens": 1180,
+        "capped_tokens": 1180
+      },
+      "country_health": {
+        "n_reads": 2,
+        "raw_chars": 35368,
+        "capped_chars": 35368,
+        "raw_tokens": 8842,
+        "capped_tokens": 8842
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 100221,
+        "capped_chars": 100221,
+        "raw_tokens": 25056,
+        "capped_tokens": 25056
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 7,
+      "by_status": {
+        "ok": 7
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 401774,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

@@ -1,0 +1,141 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-06-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: China should engage Trump at the G20 Osaka summit (June 29) and agree to resume trade negotiations, but without offering major new concessions. Maintain all existing retaliatory tariffs and the unreliable entity list as leverage. The goal is to prevent further escalation (the threatened $300B tariff round) while avoiding structural concessions that compromise sovereignty. Use the rare-earth threat as implicit leverage, not as an explicit weapon \u2014 actual cutoff would accelerate US decoupling and hurt China long-term.\n\nSUPPORTING RATIONALE: The threat to China is high but not yet existential. Evidence for the threat reading: (1) Manufacturing PMI fell to 49.4 in May \u2014 contraction territory \u2014 with employment sub-index at 47.0, lowest since March 2009 (Reuters, May 31 2019). (2) Export orders declined for 12 straight months, dropping to 46.5 from 49.2 (Reuters). (3) Capital Economics reports exports on the $50B tariff list down ~30% YoY in Jan-Apr 2019; the $200B list now also slumping. (4) The Huawei Entity List designation (May 16) directly threatens China's tech champion \u2014 Google suspended Android access, US chip suppliers paused sales, threatening Huawei's $27B quarterly smartphone shipments and 5G equipment business. This strikes at Made in China 2025. (5) Trump threatens 25% tariffs on remaining ~$300B of Chinese exports, covering virtually all Chinese goods entering the US.\n\nChina retains significant leverage, justifying a negotiate-rather-than-concede stance: (1) Soybean retaliation effectively zeroed bilateral trade, hitting US farm-belt politics. (2) Rare-earth threats \u2014 Xi's May 20 Jiangxi visit and NDRC warnings \u2014 rattled US markets and prompted Pentagon to seek domestic rare-earth funding (CNBC, May 28). (3) CFR analysis (June 14) shows China's tariffs on US manufactures had modest impact \u2014 China has held back retaliation in reserve. (4) Trump faces domestic pressure: 0.3-0.5pp GDP drag from existing tariffs; the $300B round would hit US consumers directly on electronics. (5) Both sides agreed to meet at G20 after June 18 phone call; markets rallied \u2014 Trump has incentive to show a win for his re-election campaign.\n\nThe action_score of -0.1 reflects: China should not escalate \u2014 Huawei supply chain disruption is too severe and rare earths are a nuclear option that would backfire by accelerating US decoupling. But China should not concede \u2014 structural demands on IP, tech transfer, and subsidies amount to asking China to abandon its development model, which Beijing considers a sovereignty issue. The right posture is disciplined engagement: resume talks, buy time, maintain retaliatory leverage, and wait for US domestic political pressure to shift the negotiating calculus.",
+      "key_factors": [
+        "Manufacturing PMI at 49.4 (contraction), employment sub-index at 47.0 lowest since 2009",
+        "Huawei Entity List (May 16) cuts off US chips/Android threatening Made in China 2025",
+        "Exports on $50B tariff list down ~30% YoY; $200B list now also slumping",
+        "Trump threatens $300B additional tariffs covering nearly all Chinese exports to US",
+        "Rare-earth leverage available but risky \u2014 would accelerate US decoupling if deployed",
+        "G20 Osaka meeting (June 29) provides diplomatic off-ramp after June 18 phone call",
+        "China soybean retaliation effective but manufacturing retaliation limited \u2014 held back firepower",
+        "US domestic cost rising: 0.3-0.5pp GDP drag; $300B round would hit US consumers directly"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List. US firms generally barred from selling to Huawei without a license."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-05-20",
+          "excerpt": "Google suspends Huawei access to Android updates/GMS; major US chip suppliers pause sales. Xi Jinping visits rare-earth facility in Jiangxi."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-05-05",
+          "excerpt": "Trump tweets negotiations going too slowly. Orders List 3 raised from 10% to 25% and directs preparation of tariffs on remaining ~$300B."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-06-18",
+          "excerpt": "Trump and Xi agree by phone to meet at the G20 in Osaka."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_pmi_may2019",
+          "excerpt": "China factory activity in May slumped into deeper contraction. Export orders declined for 12th straight month, sub-index to 46.5 from 49.2."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "capital_economics_tariff_impact",
+          "excerpt": "Shipments of goods in the $50bn list were almost 30% lower in the first four months of 2019 than a year before."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_rare_earths_may28",
+          "excerpt": "Chinese official warned that products made from China's rare earth materials should not be used against China's development."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "guardian_g20_june26",
+          "excerpt": "Scott Kennedy, CSIS: at best a superficial agreement to halt further escalation and resume negotiations."
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-06-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4647,
+        "capped_chars": 4647,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 98595,
+        "capped_chars": 98595,
+        "raw_tokens": 24649,
+        "capped_tokens": 24649
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 403081,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

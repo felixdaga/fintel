@@ -1,0 +1,108 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-05-03",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10626,
+    "tokens_out": 879,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0106774,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should hold its current posture and avoid further escalation while the proposed tariffs are still in the comment period. The US has significant leverage given China's inability to match tariff levels dollar-for-dollar, but premature escalation risks damaging US companies with major China exposure (Boeing, Apple, Qualcomm, GE) and alienating allies. The public comment period runs until May 11 with a hearing May 15 \u2014 use this window to assess China's willingness to negotiate before executing.\n\nSUPPORTING RATIONALE: The threat score reflects that the US holds a clear advantage in this dispute. The US trade deficit of $375 billion means China cannot match US tariff threats dollar-for-dollar (China imported only $130 billion of US goods vs US importing $506 billion from China), giving the US asymmetric leverage. The US tariff list targets 84% high-end/tech products aligned with Made in China 2025, hitting China's strategic weak point. However, the situation is not without risk: major US companies (Boeing sold 1/4 of commercial planes to China, Apple gets 20.3% of sales from Greater China, GE has 37 manufacturing bases in China) face significant retaliation exposure. The EU is also drawing up retaliatory tariffs on US goods (Harley Davidson, Jack Daniels), threatening ally cohesion. Larry Kudlow himself noted 'Nothing's happened. Nothing's been executed' \u2014 the tariffs remain proposals. The action score of -1.0 (maximal escalation stance) reflects the strategic opportunity, but the recommended action is 'hold' because the comment period provides a natural pause to test whether China will offer concessions before the US executes. Escalating further before the current proposals take effect would be premature and could undermine the leverage the US already has.",
+      "key_factors": [
+        "US trade deficit of $375B gives asymmetric leverage \u2014 China cannot match tariffs dollar-for-dollar",
+        "US tariff list targets 84% high-end tech products, hitting Made in China 2025 strategic goals",
+        "China's retaliation targets US agricultural exports (soybeans $14B) and autos, causing immediate pain to US exporters",
+        "Major US companies with China exposure at risk: Boeing ($37B plane deal), Apple (20.3% China sales), GE (37 manufacturing bases)",
+        "EU drawing retaliatory tariffs on US goods, threatening ally cohesion",
+        "Tariffs still in proposal stage with comment period until May 11 and hearing May 15",
+        "China signaled willingness to escalate: 'China has yet to unsheathe its sword' per Xinhua"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. trade deficit with China was a record $375 billion in 2017. China imported only $130 billion of U.S. goods last year. The public has until May 11 to submit comments on the proposed list of U.S. tariffs, with a hearing scheduled for May 15."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports. The U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "Boeing inked agreement to sell 300 planes worth $37 billion. Greater China accounted for 20.3% of sales for Apple. GE has 37 manufacturing bases and eight research teams in China."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "About the Section 301 investigation, China had 'yet to unsheathe its sword,' the official Xinhua news agency said."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "Larry Kudlow told reporters Friday morning. 'Nothing's happened. Nothing's been executed.'"
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-05-03",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 33055,
+        "capped_chars": 28711,
+        "raw_tokens": 8264,
+        "capped_tokens": 7178
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 23298,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

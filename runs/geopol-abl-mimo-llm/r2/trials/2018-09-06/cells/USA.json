@@ -1,0 +1,98 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7727,
+    "tokens_out": 758,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0074154,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should maintain its current tariff posture and avoid further escalation while holding firm on existing measures. The trade war is in an early but escalating phase, and the US holds structural leverage given the $375 billion trade deficit. However, further escalation risks collateral damage to US farmers, automakers, and tech firms, and could trigger broader economic disruption before midterm elections.\n\nSUPPORTING RATIONALE: The US initiated tariffs on $50 billion of Chinese goods targeting industrially significant technologies, and China retaliated in kind. The US has threatened to escalate to $153 billion total. The trade deficit ($375 billion in 2017) gives the US asymmetric leverage\u2014China cannot match US tariffs dollar-for-dollar since it only imports $130 billion of US goods. However, specific US sectors face real pain: soybean prices already down 20%, farmers in the Midwest are feeling the impact, Boeing faces risk (sells 25% of commercial planes to China), and automakers in Southern states are exposed. The Brookings analysis notes this is 'not a big hit for the overall U.S. economy' but will hurt specific sectors. The Trump administration sees this as a winning strategy for midterm elections. No high-level negotiations are scheduled, and the situation is likely locked in through November 2018. The US should hold its current position\u2014existing tariffs provide leverage without requiring further escalation that could backfire politically or economically before the midterms.",
+      "key_factors": [
+        "US has asymmetric leverage due to $375B trade deficit\u2014China cannot match tariffs dollar-for-dollar",
+        "Soybean prices down 20%, Midwest farmers already feeling pain from Chinese retaliation",
+        "Boeing at risk (25% of commercial plane sales to China), automakers in Southern states exposed",
+        "No high-level negotiations scheduled; situation likely locked through November 2018 midterms",
+        "Trump administration views trade war as politically advantageous for midterms",
+        "US economy broadly resilient but specific sectors face real damage",
+        "China has offered to buy more US products and open markets\u2014potential basis for future negotiation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent. U.S. exports cars from Southern states like Tennessee... Boeing is concentrated in the Northwest but has production in most states. It's hard to see the off-ramp right now. The Trump administration sees this as a winning strategy for the midterm elections in 2018."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com \u2014 Trade war with China: What you need to know",
+          "excerpt": "The U.S. buys $506 billion worth of goods from China but only exports $130 billion, leaving a trade deficit of $375 billion between the two countries. Soybean prices fell to their lowest level in two years. Boeing, which last year sold one-fourth of its commercial airplanes to China."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com \u2014 How the U.S.-China trade war could play out",
+          "excerpt": "The Trump administration has identified multiple ways Beijing steals U.S. technology and undermines U.S. access to the Chinese market, which are the basis for the new tariffs. Trump has threatened to escalate the war with tariffs on an additional $100 billion in Chinese goods if China retaliates."
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 26481,
+        "capped_chars": 15741,
+        "raw_tokens": 6620,
+        "capped_tokens": 3935
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 16502,
+  "started_at": "2026-08-13T10:54:41+00:00"
+}

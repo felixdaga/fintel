@@ -1,0 +1,91 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Maintain retaliatory posture with the announced ~$50B tariff list (soybeans, autos, aircraft) and prepare targeted non-tariff measures, but avoid further unilateral escalation beyond matching US actions. Use the ZTE crisis as a rallying point for domestic tech self-sufficiency investment while seeking diplomatic channels to prevent a broader containment spiral.\n\nSUPPORTING RATIONALE: Threat reading at +0.55 reflects a compound threat. The tariff dimension ($50B Section 301 list targeting aerospace, ICT, robotics, machinery) is significant but manageable given China's 6.8% Q1 GDP growth and diversified export base (event timeline, Apr 3 2018). The more severe threat is non-tariff: the ZTE denial order (Apr 16 2018) forced China's second-largest telecom equipment maker to cease 'major operating activities' due to dependence on US components (25-30% of inputs from US suppliers), exposing a critical structural vulnerability in China's tech supply chain (Reuters, May 9 2018). The May 19 truce collapsed within 10 days (May 29), signaling the US is pursuing strategic tech containment rather than a good-faith trade negotiation \u2014 the White House explicitly tied actions to Section 301 IP/tech-transfer findings, and reports indicate Huawei is also under DOJ investigation (Wharton analysis). The World Bank (June 2018) identifies 'rising trade tensions' as a key risk to China's outlook. Action score at -0.4 (retaliate) reflects that China has already announced proportional retaliation on ~$50B of US goods, which is strategically sound: it mirrors US escalation while targeting politically sensitive US exports (soybeans hit farm-belt constituencies, autos hit industrial states). Retaliation also serves domestic legitimacy \u2014 the CCP cannot appear to capitulate under pressure. However, further escalation beyond matching moves is inadvisable because the ZTE episode demonstrated China's tech supply chain remains exposed, and aggressive retaliation risks prompting additional entity-list actions against Huawei or other firms. The rational posture is measured retaliation to establish deterrence, combined with accelerated domestic semiconductor investment, while keeping diplomatic channels open.",
+      "key_factors": [],
+      "sources_cited": [],
+      "threat_score": 0.55,
+      "action_score": -0.4,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2623,
+        "capped_chars": 2623,
+        "raw_tokens": 656,
+        "capped_tokens": 656
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47502,
+        "capped_chars": 47502,
+        "raw_tokens": 11876,
+        "capped_tokens": 11876
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 33820,
+        "capped_chars": 33820,
+        "raw_tokens": 8456,
+        "capped_tokens": 8456
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 359993,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

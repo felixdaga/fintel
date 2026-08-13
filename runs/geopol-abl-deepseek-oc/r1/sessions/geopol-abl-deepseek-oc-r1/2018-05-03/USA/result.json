@@ -1,0 +1,48 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "score": 0.2,
+      "threat_score": 0.2,
+      "action_score": 0,
+      "action_level": "negotiate",
+      "rationale": "RECOMMENDATION: Proceed with this week's Beijing talks in a firm but non-escalatory posture \u2014 keep the proposed $50B Section 301 tariff list and the ZTE entity action on the table as leverage, but avoid any new escalatory move while the delegation is at the table. Treat the talks as the venue to secure a concrete framework on intellectual-property/tech-transfer practices and purchases, and be prepared to demonstrate progress rather than walk away without an agreed path.\n\nSUPPORTING RATIONALE: The threat is moderate (~+0.2), not existential: as of May 3 no tariffs on Chinese goods are actually in force \u2014 the $50B Section 301 list of April 3 is still in public-comment and would not take effect until late May at the earliest (Politico) \u2014 and US fundamentals show no trade-driven drag (industrial production rising, UMich sentiment ~98, fed funds tightening to 1.70%, no recession signal). The US holds the initiative: it escalated (Section 232, Section 301 memorandum, ZTE denial order on 2018-04-16) and China has responded only in mirror-image fashion ($3B on 2018-04-02; proposed $50B on soybeans/autos/aircraft on 2018-04-04), signaling resolve but also a return to the table. The main risk is a spiral that would hit US agriculture (soybean retaliation) and tech supply chains, and inject volatility into still-rich markets \u2014 hence not a clear opportunity. Action stance is hold-to-negotiate (action_score 0.0, negotiate): escalating further ahead of the talks would harden Beijing's position and cost the leverage that makes the modest threat manageable, while rolling back now would forfeit the negotiating advantage the proposed tariffs provide. Engaging talks without new commitments is the appropriate next step.",
+      "key_factors": [
+        "Section 301 $50B tariff list published 2018-04-03 but NOT implemented (comment period to late May)",
+        "US economic team en route to Beijing for talks (Mnuchin, Ross, Lighthizer, Kudlow, Navarro)",
+        "US economy strong: industrial production up, sentiment ~98, no GDP drag from dispute yet",
+        "China retaliated tit-for-tat ($3B Apr 2; proposed $50B on soybeans/autos Apr 4) but returned to table",
+        "ZTE denial order 2018-04-16 = non-tariff escalation kept in reserve as leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list ~$50B, public comment opens"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US bans ZTE from buying US components (denial order)"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods incl. soybeans, autos, aircraft"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.nytimes.com/2018/04/24/us/politics/mnuchin-china-trump-trade-tariffs.html",
+          "excerpt": "Mnuchin leads delegation to Beijing next week to try to forestall an all-out trade war; tariffs could have damaging economic repercussions"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO-USA",
+          "excerpt": "US industrial production rising through 2018; no trade-driven recession signal"
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

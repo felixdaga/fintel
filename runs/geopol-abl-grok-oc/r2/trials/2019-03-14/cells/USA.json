@@ -1,0 +1,153 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-03-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 202525,
+    "tokens_out": 3153,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: Keep existing Section 301 tariffs in place and stay at the table. Press Beijing for a written, enforceable package on IP, forced tech transfer, subsidies, and a snap-back mechanism, and do not hike List 3 or roll tariffs back until those terms are locked. Treat purchase pledges as a deliverable inside a deal, not a substitute for structural change.\n\nSUPPORTING RATIONALE: Threat is modestly negative (opportunity) because the US is negotiating from strength, not distress. Combined Section 301 coverage is already ~$250B, List 3 remains at 10% after the Feb 24 delay of the 25% hike, and China is still seeking full tariff removal (timeline 2018-09-24, 2019-02-24, 2019-03-01). US goods imports from China have fallen sharply (IMPCH latest $31.1B vs $52.1B in Oct, about -40%), while US consumer sentiment has recovered to 98.4, VIX is 13.41, and the goods deficit has narrowed modestly \u2014 the domestic economy is not in a tariff-driven crisis. The residual threat is real but contained: farm retaliation has cost soy growers (USDA ~$7.9B last year; large unsold stocks) and industrial production is slightly softer, and Lighthizer told Senate Finance on Mar 12 that \u201cmajor issues\u201d \u2014 especially enforcement and how far tariffs would come off \u2014 remain unresolved. Escalating now would likely blow up talks he described as in the \u201cfinal weeks\u201d; conceding purchases or a partial rollback before enforcement is written would spend leverage for a May 2018-style purchase truce that already collapsed. Continuous talks (Lighthizer\u2013Mnuchin calls Mar 11) are the right channel: negotiate without new unilateral commitments.",
+      "key_factors": [
+        "Existing $250B Section 301 tariffs still in force; List 3 10%\u219225% hike delayed, not cancelled",
+        "Talks in 'final weeks' but enforcement, IP/tech transfer, SOE subsidies, and tariff-rollback sequencing still open",
+        "US macro resilient (sentiment 98.4, VIX 13.4); China-to-US imports down ~40%, giving leverage",
+        "Farm-belt retaliation is the main domestic cost (soy unsold stocks, ~$7.9B USDA hit) and argues against a long stalemate",
+        "Huawei/Meng track is a parallel pressure point, not a reason to blow up the goods negotiation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-24",
+          "excerpt": "Trump tweets that talks have made substantial progress and further delays the scheduled List 3 hike from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-03-01",
+          "excerpt": "The original 90-day tariff-hike deadline passes without an increase (already delayed on Feb 24)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-30",
+          "excerpt": "Purchase commitments discussed; enforcement and structural IP/tech-transfer issues unresolved."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "IMPCH",
+          "excerpt": "US imports from China latest $31.08B (2019-03) vs $52.08B (2018-10), change -40.3%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Michigan consumer sentiment recovered to 98.4 in March 2019 after dipping to 91.2 in January."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "VIXCLS",
+          "excerpt": "VIX 13.41 on 2019-03-13 \u2014 risk premia not signaling a trade-war crisis."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US industrial production slightly softer: 102.88 vs 103.99 in Oct (-1.1%)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.nytimes.com/2019/03/12/us/politics/us-china-trade-talks.html",
+          "excerpt": "Lighthizer told Senate Finance on Mar 12 that major issues remain unresolved, he cannot predict success, hopes talks are in the final weeks, and China is pushing for all US tariffs to be removed; enforcement still the biggest obstacle."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.washingtonpost.com/business/economy/trump-trade-official-says-us-china-in-final-weeks-of-talks-for-a-deal/2019/03/12/c6af3a34-44e6-11e9-8aab-95b8d80a1e4f_story.html",
+          "excerpt": "Lighthizer: negotiators working more or less continuously; hope we are in the final weeks."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.businessinsider.com/trump-china-trade-war-25-million-tonnes-of-us-soybeans-to-go-unsold-2019-2",
+          "excerpt": "USDA chief economist: ~27.5 million tons of US soybeans expected unsold in 2019; trade tensions cost soybean farmers $7.9B last year."
+        }
+      ],
+      "threat_score": -1,
+      "action_score": 0.05,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-03-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4923,
+        "capped_chars": 4923,
+        "raw_tokens": 1231,
+        "capped_tokens": 1231
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46840,
+        "capped_chars": 46840,
+        "raw_tokens": 11710,
+        "capped_tokens": 11710
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 69701,
+        "capped_chars": 69701,
+        "raw_tokens": 17425,
+        "capped_tokens": 17425
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 310346,
+  "started_at": "2026-08-13T06:14:56+00:00"
+}

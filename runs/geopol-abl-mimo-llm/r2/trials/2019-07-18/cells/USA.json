@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-07-18",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7634,
+    "tokens_out": 972,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0079644,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should follow through on the threat to impose tariffs on the remaining ~$300 billion of Chinese goods not yet covered, maintaining maximum pressure while keeping the door open for negotiations. This is the moment to lock in leverage before any deal is struck, as China's economy is under strain from existing tariffs and the supply chain diversification away from China is already underway. The US should not back down from the May 2019 tariff hike on $200 billion (10% to 25%) and should prepare the next tranche.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects a moderate but real threat to US interests. The trade war has created genuine uncertainty for US businesses and consumers \u2014 as the BBC notes, the IMF cut its 2019 global growth forecast partly due to US-China trade tensions, and US consumers will pay more for products from fish to auto parts (Annenberg/USC). The $419 billion trade deficit with China remains a structural concern. However, the US holds significant leverage: China's economy is more export-dependent on the US than vice versa, and as Sen. Graham noted, tariffs are 'tools that bring China to the table' and are already shifting supply chains away from China (Fox Business). The US stock market recovered 11% in 2019 vs. China's partial recovery, suggesting the US economy is absorbing the shock better. The action score of -1.0 (maximal escalation via tariffs) is justified because: (1) China has been 'stealing intellectual technology' and engaging in unfair practices for years with no structural reform (Fox Business, BBC), (2) Lighthizer and Mnuchin believed China was willing to rewrite laws but then backed away \u2014 'they broke the deal' per Trump (Fox Business), (3) the current leverage window may close if the US shows weakness, and (4) the pain is asymmetric \u2014 China's export economy and supply chain dominance are more vulnerable than the US consumer market. The risk of escalation is real (both sides will pay, per Kudlow), but the long-term cost of not forcing structural change is higher.",
+      "key_factors": [
+        "US has imposed tariffs on $250B of Chinese goods; China retaliated on $110B \u2014 asymmetric leverage favors US",
+        "Trump threatened to raise $200B tranche from 10% to 25% and tariff remaining ~$300B of Chinese imports",
+        "China reportedly backed away from agreed deal terms, breaking the deal mid-negotiation",
+        "IMF cut 2019 global growth forecast citing US-China trade tensions as a factor",
+        "US stock market up 11% in 2019; China's Shanghai Composite down 25% in 2018 with partial recovery",
+        "Supply chain diversification away from China already underway \u2014 tariffs accelerate this structural shift",
+        "Bipartisan support for firm stance: both Republican (Graham) and Democratic (Van Drew) lawmakers support holding firm",
+        "US demands center on IP theft, forced tech transfer, market access \u2014 structural issues requiring enforcement leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. Not only does the US accuse China of stealing intellectual property, but it wants Beijing to make changes to its economic policies"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China immersed in a tit-for-tat tariff trade war",
+          "excerpt": "Trump has threatened additional tariffs of $267 billion worth of goods, meaning all Chinese imports could be subject to tariffs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "This is the best chance in my lifetime to get China to change their cheating ways. The tariffs are tools that bring China to the table."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "Consumers will pay more for many products, from fish and furniture to vitamins and virtual reality headsets. Chinese auto parts are found in many cars and some estimate new cars will cost $1,000 to $3,000 more."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-07-18",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18895,
+        "capped_chars": 15037,
+        "raw_tokens": 4724,
+        "capped_tokens": 3759
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22130,
+  "started_at": "2026-08-13T10:54:53+00:00"
+}

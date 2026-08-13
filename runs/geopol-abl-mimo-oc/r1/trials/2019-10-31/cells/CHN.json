@@ -1,0 +1,125 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Continue engaging on the Phase One deal text but resist further concessions beyond what has already been signaled. Use the negotiation window to lock in tariff rollback commitments from the US side before finalizing agricultural purchase pledges. Avoid escalation \u2014 the domestic economy cannot absorb further tariff damage \u2014 but do not rush to sign a deal that leaves existing tariffs in place while extracting only Chinese purchase commitments.\n\nSUPPORTING RATIONALE: China faces meaningful but not existential economic pressure from this dispute. GDP growth fell to 6.0% in Q3 2019 \u2014 the slowest since 1992 \u2014 with economists forecasting further deceleration to 5.8-5.9% in Q4 (Reuters, Oct 18). Exports are declining, imports have contracted for five straight months, and factory gate prices fell at their fastest pace in three years. The Huawei Entity List designation (May 16, 2019) plus 46 additional affiliates added Aug 19 represents a direct attack on China's tech champion, with CEO Ren Zhengfei publicly acknowledging 'major structural shifts' needed (Bloomberg, Aug 2). The currency manipulator designation (Aug 5) adds reputational pressure. However, the Phase One deal announcement (Oct 11) provides an off-ramp \u2014 the planned October tariff hike was suspended, and talks continue with text 'basically completed' (China Commerce Ministry, late Oct). China's leverage exists but is asymmetric: Trump needs visible farm-state wins for 2020, but China's economy is more tariff-exposed. The $40-50B agricultural purchase demand is roughly double pre-trade-war levels and lacks written specifics on timeline or pricing (WSJ, Oct 12). China should negotiate firmly on the text, insisting that any purchase commitments are contingent on proportional US tariff rollback, while avoiding retaliation that would derail the fragile truce.",
+      "key_factors": [
+        "GDP growth at 6.0% Q3 \u2014 lowest since 1992, trade war hitting factory production",
+        "Huawei Entity List + 46 affiliates: direct tech supply chain threat",
+        "Phase One deal announced Oct 11 but unwritten; US demands $40-50B ag purchases with no tariff rollback commitment",
+        "Currency manipulator designation (Aug 5) adds reputational pressure",
+        "China's leverage exists via Trump's 2020 election need for farm-state wins",
+        "Existing tariffs on ~$360B of Chinese goods remain in place; deal does not remove them",
+        "Exports declining, imports contracting 5 months, factory prices falling at fastest pace in 3 years"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "After Washington talks, Trump announces a 'Phase One' deal in principle: China to buy roughly $40\u201350B of US agricultural products annually; IP and currency issues also cited. Planned mid-October tariff hike delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List. US firms generally barred from selling to Huawei without a license."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-10-18-china-gdp",
+          "excerpt": "Gross domestic product (GDP) rose just 6.0% year-on-year, marking a further loss of momentum for the economy from the second quarter's 6.2% growth... the slowest since the first quarter of 1992."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "business-insider-2019-10-24-china-20b",
+          "excerpt": "China is willing to buy as much as $20 billion of US farm goods in the first year if a phase-one trade deal is signed with the US... would consider boosting those purchases down the line."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5762,
+        "capped_chars": 5762,
+        "raw_tokens": 1440,
+        "capped_tokens": 1440
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 61301,
+        "capped_chars": 61301,
+        "raw_tokens": 15326,
+        "capped_tokens": 15326
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 358715,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

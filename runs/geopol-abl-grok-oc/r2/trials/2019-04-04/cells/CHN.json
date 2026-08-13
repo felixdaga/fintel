@@ -1,0 +1,148 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-04-04",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 210418,
+    "tokens_out": 4567,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.32,
+      "rationale": "RECOMMENDATION: Stay at the Washington table and keep drafting text, including enforcement language, without new unilateral concessions or new retaliation. Treat additional U.S. purchases as a closing element of a package that also lifts or schedules down existing Section 301 tariffs\u2014not as a standalone gift. Do not escalate on tariffs or the Huawei/Meng track while the List 3 hike remains suspended and both sides are reporting progress on text.\n\nSUPPORTING RATIONALE: Threat is real but not existential. Combined U.S. Section 301 coverage is still ~$250B of Chinese exports (Lists 1\u20133, List 3 at 10%), and U.S. goods imports from China have fallen about 26% in the lookback window (IMPCH latest $34.5B vs $46.3B), so the export channel is already being hit. Firm-level pressure is also live: Meng Wanzhou remains in the Canadian extradition process after the Jan 28 DOJ charges, and Huawei is a core industrial-policy asset. That maps below the +0.5 CHN anchor because FX and financial-stability stress are not showing: CNY strengthened to about 6.71 from ~6.92, reserves ticked up to ~$3.11T, industrial production is still expanding (latest 105.4), and March factory PMI rebounded after a winter contraction. The immediate tariff-hike clock has been stopped twice (G20 90-day pause; Trump\u2019s Feb 24 delay), and the April 3 Washington round reports progress on text, including enforcement, with no deal signed. Action should therefore stay near zero. Escalating now would risk restoring the 25% List 3 hike that Washington has twice postponed. Unilateral purchase commitments or a partial rollback would be premature: U.S. officials still treat tariff removal as the main U.S. concession, Trump has signaled he may keep the 25% on the first $50B, and the Chamber publicly said China is unlikely to accept a snap-back enforcement device unless current tariffs come off. Negotiate the package; do not close it on U.S. terms alone.",
+      "key_factors": [
+        "~$250B of Chinese exports still under Section 301; List 3 remains at 10% after two delays of the 25% hike",
+        "April 3 Washington talks report progress on text/enforcement but no signed deal; remaining gaps are IP, industrial policy, and how enforcement/tariff lift are sequenced",
+        "Huawei/Meng extradition and the Kovrig/Spavor detentions sit alongside talks and keep tech-sovereignty risk elevated",
+        "Bilateral goods flow already compressed (US IMPCH down ~26%); China-wide exports only mildly weaker and CNY/reserves stable",
+        "U.S. offer is mainly tariff relief in exchange for structural change; conceding purchases now without a tariff path would give away leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: 90-day negotiation window; planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended. Same day: Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-24",
+          "excerpt": "Trump tweets that talks have made substantial progress and further delays the scheduled List 3 hike from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "IMPCH",
+          "excerpt": "U.S. imports from China down ~25.6% in the window; latest $34.5B vs $46.3B in Nov 2018."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DEXCHUS",
+          "excerpt": "CNY strengthened to 6.7098 on 2019-04-03 from ~6.92 in early October; no FX-stress signal."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "TRESEGCNM052N",
+          "excerpt": "China reserves excluding gold ~$3.114T, slightly higher over the window."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.cnbc.com/2019/04/02/reuters-america-update-1-tariff-enforcement-issues-still-hurdles-to-us-china-trade-deal-us-chamber.html",
+          "excerpt": "April 2: Chamber says chances of a deal are rising but this week is critical on enforcement and a plan to lift U.S. tariffs; China unlikely to accept snap-back tariffs unless current tariffs are removed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.chinausfocus.com/media-report/2019-04-03.html",
+          "excerpt": "April 3: Liu He in Washington; outstanding issues include IP protection and an enforcement mechanism; Kudlow says good headway but no deal yet."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.cnn.com/2019/03/31/business/china-caixin-pmi",
+          "excerpt": "March 2019 factory PMI rebound after late-2018/early-2019 contraction; stimulus beginning to show, even as ~$250B of Chinese exports remain tariffed."
+        }
+      ],
+      "threat_score": 0.32,
+      "action_score": 0.05,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-04-04",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46832,
+        "capped_chars": 46832,
+        "raw_tokens": 11708,
+        "capped_tokens": 11708
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 67208,
+        "capped_chars": 67208,
+        "raw_tokens": 16802,
+        "capped_tokens": 16802
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 318999,
+  "started_at": "2026-08-13T06:15:04+00:00"
+}

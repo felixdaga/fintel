@@ -1,0 +1,108 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-09-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7730,
+    "tokens_out": 1061,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0083274,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue to retaliate in kind against US tariffs, matching each escalation dollar-for-dollar where possible, while signaling willingness to negotiate if the US de-escalates. Retaliation preserves China's credibility and deters further US escalation, but China should avoid actions that go beyond tit-for-tat to prevent a spiral. Simultaneously, China should pursue WTO complaints and quietly open back-channel talks to explore a face-saving off-ramp after the US midterm elections.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has imposed 25% tariffs on $34 billion of Chinese goods (effective July 6, 2018) with an additional $16 billion pending, and Trump has threatened up to $250 billion total (Brookings, Politico). This targets roughly 10% of China's $505 billion in exports to the US, concentrated in technology and industrial goods. However, China's retaliatory capacity is constrained \u2014 it imported only $130 billion of US goods, meaning it cannot fully match a $250 billion escalation (CBS News). Soybean prices have already fallen 20%, hurting US farmers in a politically sensitive midterm election year, which gives China leverage (Brookings). The Brookings analysis notes that 'more than half the value' of China's exports come from foreign-sourced components, meaning US tariffs also hurt US allies like South Korea and Japan, creating potential diplomatic leverage for China. The SCMP analysis notes China's position that it 'will not fire the first shot' but has responded in lockstep. The threat score of +0.45 reflects that while China's export economy faces real pressure, the tariffs so far cover a manageable fraction of total exports, China has retaliatory tools (agricultural tariffs targeting Trump's political base), and the situation is likely to shift after US midterms when negotiations become more feasible. The action score of -1 (retaliate) reflects the strategic necessity of matching US escalation to maintain credibility and deterrence, while the specific action_level of 'retaliate' (rather than escalate_tariffs or escalate_non_tariff) signals that China's moves are responsive, not initiatory \u2014 preserving moral high ground and leaving room for negotiation.",
+      "key_factors": [
+        "US tariffs on $34B of Chinese goods effective July 6, 2018, with $16B pending and $250B threatened",
+        "China's retaliatory tariffs on US agricultural products, automobiles, and aquatic products targeting Trump's political base",
+        "China's limited retaliatory capacity ($130B US imports vs $505B Chinese exports to US)",
+        "Soybean prices down 20%, creating political pressure in US farm belt ahead of midterms",
+        "Collateral damage to US allies (South Korea, Japan) from tariffs on Chinese-assembled goods with foreign components",
+        "No high-level negotiations scheduled; Brookings expects talks only after November 2018 midterms",
+        "Trump administration framing trade war as midterm election strategy"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The U.S. has announced $250 billion of tariffs on products from China, and China has partially retaliated and will probably come out with more retaliation. For the next several months we will probably be locked into this situation. No high-level negotiations are scheduled."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com \u2014 Trade war with China: What you need to know",
+          "excerpt": "China has promised to respond in kind, but it would be unable to match that amount since it imported only $130 billion of U.S. goods last year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com \u2014 How the U.S.-China trade war could play out",
+          "excerpt": "The 25 percent tariffs will be placed on roughly $50 billion in imports from China... China exported about $505 billion in goods to the U.S. in 2017, so this hits about 10 percent of goods"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "more than half of the value of those products are in parts and components from other countries like South Korea and Japan\u2014so there will definitely be collateral damage from U.S. tariffs"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-09-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 26481,
+        "capped_chars": 15741,
+        "raw_tokens": 6620,
+        "capped_tokens": 3935
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 27260,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

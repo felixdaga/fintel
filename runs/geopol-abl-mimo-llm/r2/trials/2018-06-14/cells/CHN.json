@@ -1,0 +1,109 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10661,
+    "tokens_out": 1035,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0111804,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: China should maintain a firm retaliatory posture, matching any US tariff actions with proportional counter-tariffs while keeping the door open for negotiation. We should continue to target politically sensitive US exports (soybeans, automobiles, aircraft) to maximize domestic political pressure on the Trump administration, while avoiding actions that would disproportionately harm Chinese consumers or producers. We should also signal willingness to increase purchases of US goods as a face-saving off-ramp, but only if the US withdraws its tariff threats first.\n\nSUPPORTING RATIONALE: The threat to China is moderate-to-high (0.35) but not yet existential. The US has announced tariffs on $50 billion of Chinese goods targeting high-tech sectors aligned with Made in China 2025, and Trump has threatened to expand to $153 billion (CBS News, April 6). However, as of June 14, 2018, none of these tariffs have actually been implemented \u2014 the White House said it would release a list on June 15, and the situation remains in the proposal/announcement phase (Wired). The May 20 Mnuchin-Liu He meeting produced a temporary 'hold' on tariffs (The Guardian), but the White House reversed course days later, creating uncertainty. The Bruegel analysis confirms the US is specifically targeting China's technological advancement capacity, which directly threatens Made in China 2025 goals. However, China's own retaliation list strategically targets US agricultural and automotive exports that hit politically sensitive US constituencies, giving China leverage. The Wired analysis notes that 43% of Chinese exports to the US come from foreign-owned firms, meaning US tariffs would partly punish American companies \u2014 a structural advantage for China. The action_score of -1 (retaliate) is justified because: (1) the US has not yet implemented tariffs, so matching retaliation to any actual implementation is proportionate; (2) China's retaliation targets give it political leverage in farm-belt and rust-belt states; (3) conceding now would embolden further US demands and undermine CCP legitimacy domestically; (4) the WTO framework supports China's right to retaliate (Reuters, April 2). However, China should avoid maximal escalation beyond retaliation, as self-inflicted costs from tariffs on soybeans, aircraft, and automobiles are real \u2014 China imports 41% of soybeans and 63% of aircraft from the US (Bruegel).",
+      "key_factors": [
+        "US tariffs on $50B of Chinese goods announced but not yet implemented as of June 14",
+        "Trump threatened additional $100B in tariffs, potentially reaching $153B total",
+        "May 20 Mnuchin-Liu He 'hold' on tariffs subsequently reversed by White House",
+        "US targeting specifically aims at Made in China 2025 high-tech sectors",
+        "China's retaliation list targets politically sensitive US exports (soybeans, autos, aircraft)",
+        "43% of Chinese exports to US from foreign-owned firms \u2014 US tariffs partly self-defeating",
+        "China's self-inflicted costs from retaliation are real but manageable short-term",
+        "WTO framework supports China's retaliatory rights"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China. Trump said he would consider adding another $100 billion worth of products to the list."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.theguardian.com",
+          "excerpt": "Mnuchin said: 'We have agreed to put the tariffs on hold while we try to execute the framework.' But the White House subsequently reversed course."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "The U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder. The U.S. is hitting China where it hurts the most, especially as technological modernization is officially enshrined in China's Manufacturing 2025 plan."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.wired.com",
+          "excerpt": "43 percent of Chinese exports are sourced from foreign (i.e., non-Chinese) owned firms. Tariffs on US imports from China therefore amount to taxes on US companies and US products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China's suspension of its tariff concessions is a legitimate action adopted under WTO rules to safeguard China's interests."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 33576,
+        "capped_chars": 28970,
+        "raw_tokens": 8394,
+        "capped_tokens": 7242
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 16727,
+  "started_at": "2026-08-13T10:55:30+00:00"
+}

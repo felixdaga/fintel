@@ -1,0 +1,139 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 138891,
+    "tokens_out": 5074,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Proceed with the already-committed Section 301 tariff package (~$50B at 25%) as the lever we have publicly staked our credibility on, but do not broaden it to the threatened $100B+ tranche or add new entity-list actions. Keep the negotiated channel open (Ross-Liu talks) and resist the temptation to expand, because China has explicitly tied its increased-purchase offers to the US not imposing further tariffs. Hold at the committed posture, impose as planned mid-June, and re-engage Beijing without new escalatory commitments.\n\nSUPPORTING RATIONALE: The threat is moderate, not existential. The US is the initiating party and holds leverage: the Section 301 investigation produced findings (March 22, 2018) of unreasonable/discriminatory forced technology-transfer practices, and the US economy is demonstrably strong going into this \u2014 industrial production rose (INDPRO 101.5 in Jan to 103.2 in May/June), consumer sentiment ~98, and the broad dollar strengthened to ~112 (up from ~108), showing no material GDP drag yet. The material risk is China's threatened retaliation on ~$50B of US goods, which deliberately targets soybeans, corn, autos and aircraft \u2014 i.e., the farm belt that is the president's political base ahead of the November midterms (China's retaliation hit roughly $16.5B of ag/food and ~57% of US soybean exports go to China). That political-exposure factor, plus the G7 allies' 'unanimous concern' over the steel/aluminum tariffs, is what keeps this above neutral. But because the US is on the offensive with a strong economy and China's own package is contingent on us not escalating further, the situation still reads as manageably in our favor \u2014 hence +0.35 rather than +0.5. On action: escalating to the $100B+ level (which Trump floated on April 5) or forcing export controls would invite symmetrical retaliation directly against our farm exports and undercut the leverage we want to preserve in negotiation; conceding (dropping the tariffs) would void the only pressure we have and hand China a win. The disciplined move is to hold at the committed $50B level, impose as scheduled, and use the standing threat of further action to extract concessions in continuing talks. This aligns a mildly negative action_score (maintain the committed escalation rather than expand or retreat) with the moderate threat reading.",
+      "key_factors": [
+        "Section 301 findings (Mar 22) on China's forced tech transfer justify US action and give US the initiative",
+        "US economy strong: INDPRO up to ~103, consumer sentiment ~98, broad dollar to ~112 \u2014 no material GDP drag yet",
+        "China retaliation (~$50B) targets soybeans/autos/aircraft, hitting the farm belt \u2014 Trump's political base before midterms",
+        "China's increased-purchase offer is explicitly conditional on US NOT imposing further tariffs",
+        "G7 allies voiced unanimous concern over US steel/aluminum tariffs",
+        "May truce collapsed May 29; US due to publish/impose 25% tariff list by mid-June"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-22",
+          "excerpt": "USTR releases Section 301 report finding China's IP/tech-transfer practices unreasonable or discriminatory."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list: ~1,300 Chinese product lines (~$50B)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods (incl. soybeans, automobiles, aircraft)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces US will proceed with Section 301 actions, incl. 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US industrial production 101.5 (Jan) to 103.2 (May/June), still growing."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad US dollar ~108 (Feb) to ~112 (mid-June), appreciating."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usda-301-retaliation",
+          "excerpt": "China's retaliation hits ~$16.5B of US ag/food; soybeans account for ~57% of US soybean exports."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico-june",
+          "excerpt": "White House to publish final tariff list by Jun 15 and impose shortly after; China warns all trade outcomes void if US imposes tariffs."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -0.05,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2623,
+        "capped_chars": 2623,
+        "raw_tokens": 656,
+        "capped_tokens": 656
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47502,
+        "capped_chars": 47502,
+        "raw_tokens": 11876,
+        "capped_tokens": 11876
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 38034,
+        "capped_chars": 38034,
+        "raw_tokens": 9508,
+        "capped_tokens": 9508
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 208351,
+  "started_at": "2026-08-13T07:44:19+00:00"
+}

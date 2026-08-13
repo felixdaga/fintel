@@ -1,0 +1,63 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "score": 0.3,
+      "threat_score": 0.3,
+      "action_score": 0,
+      "action_level": "negotiate",
+      "rationale": "RECOMMENDATION: Continue the Osaka truce and pursue the resumed negotiations with China, holding existing tariffs in place as leverage without imposing new tariffs and without unilateral concessions. Do not escalate (that would break the truce and compound the yield-curve stress already visible), but also do not give ground on Huawei removal or the enforcement mechanism until Beijing makes firm, verifiable commitments on agricultural purchases and structural reform. Maintain the current posture while the working-level talks (Lighthizer/Mnuchin-Liu contact) gather momentum.\n\nSUPPORTING RATIONALE: The threat to U.S. interests is real but bounded \u2014 positive but moderate (+0.3). The bond market is signaling genuine economic strain from the trade war: the 10-yr Treasury yield collapsed from ~2.74% to ~2.06% and the 2-yr from ~2.58% to ~1.83% over the window (country_health DGS10/DGS2), a flattening curve indicating growth concern and expected Fed easing, while industrial production ticked down (INDPRO to ~101.9) \u2014 a material, if not existential, drag on sentiment and capex. However, this is not existential: consumer sentiment is robust (UMCSENT ~98.4), inflation is contained (CPI ~255.8), and the immediate escalation threat was defused at Osaka, where Washington suspended new tariffs on the ~$300B basket and agreed to resume talks while keeping existing tariffs (event_timeline 2019-06-29; Reuters/NPR/BBC, 2019-06-29/07-02). Because the truce has removed the near-term escalation cliff and the U.S. retains the leverage of ~$250B in 25% tariffs plus Huawei on the Entity List, the contentious state is a manageable standoff rather than a crisis. On the action axis, escalation would be counterproductive \u2014 markets already fear the trade war's drag and breaking the truce would risk the recession signal the yield curve is flashing; unilateral concession is also premature since Beijing has not made firm purchase commitments and still demands removal of all tariffs (Bloomberg 2019-07-05, Globe and Mail 2019-07-10). Hence hold/negotiate at 0.0 is the disciplined stance: keep the pressure credible, extract verifiable concessions, and wait \u2014 with Huawei's Temporary General License running to Aug 19 and licensing promised 'where there is no threat to national security' (HK Law/RCR Wireless, 2019-07-10/16), the U.S. can calibrate relief to progress rather than concede in advance.",
+      "key_factors": [
+        "Post-Osaka truce: talks resumed, no new tariffs on ~$300B, but ~$250B of 25% tariffs and Huawei Entity List remain (PIT: event_timeline 2019-06-29)",
+        "Yield curve stress: 10Y fell ~2.74%\u21922.06%, 2Y ~2.58%\u21921.83% since Jan \u2014 growth/recession concern from trade war (country_health DGS10/DGS2)",
+        "US fundamentals still solid: consumer sentiment ~98, contained CPI, USD firm \u2014 no existential threat (country_health UMCSENT/CPIAUCSL)",
+        "China demands removal of all existing tariffs for a deal; ag purchase commitments not firm (Bloomberg/Globe and Mail, early July)",
+        "Huawei remains on Entity List with 90-day TGL to Aug 19; Commerce to grant licenses where no national-security threat \u2014 a calibrated bargaining chip"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-06-29",
+          "excerpt": "G20 Osaka: Trump and Xi agree to resume talks; existing tariffs remain; no new tariffs 'for the time being'; easing of some Huawei restrictions, Huawei stays on Entity List."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce adds Huawei and affiliates to Entity List."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10-yr Treasury yield fell from ~2.74% (Jan) to ~2.06% (mid-July 2019)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS2",
+          "excerpt": "2-yr Treasury yield fell from ~2.58% (Jan) to ~1.83% (mid-July 2019); flattening curve."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment ~98.4 in July 2019 \u2014 robust."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters 2019-07-02",
+          "excerpt": "Trump/Xi restart talks at Osaka; no new tariffs; existing tariffs remain; China to buy farm products; Huawei left on Entity List."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Bloomberg 2019-07-05",
+          "excerpt": "Beijing reiterates all existing US tariffs must be removed to reach a deal."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "HK Law 2019-07-16 / RCR Wireless 2019-07-10",
+          "excerpt": "Huawei stays on Entity List; TGL to Aug 19; Commerce to issue licenses where no threat to national security."
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

@@ -1,0 +1,123 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 168679,
+    "tokens_out": 4027,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Proceed with the negotiated Phase One framework \u2014 honor the agreed multi-billion-dollar agricultural purchase commitments and hold firm on structural IP/technology issues \u2014 in order to lock in the tariff relief America has already signaled (delayed mid-October and threatened December hikes) and stop the bleeding on Chinese exports. Continue negotiating to convert the in-principle Phase One (Oct 11) into a signed deal that rolls back or delays the remaining 15% tariffs on consumer electronics and other goods slated for December 15. Do not escalate further, as the economic cost is already material and additional retaliation would only deepen the drag. Hold the line on the most sensitive structural demands to preserve long-term leverage, but treat the purchase package as a worthwhile price for de-escalation.\n\nSUPPORTING RATIONALE: The threat is genuinely elevated but not existential. China's Q3 2019 GDP slowed to 6.0% y/y, the weakest in at least 27 years (CNBC/Reuters, Oct 18), with exports and imports soft and the trade war explicitly cited as the prime drag; the renminbi has broken and now hovers near 7.05-7.15 per USD after the U.S. designated China a currency manipulator (Aug 5) and the CNY broke 7 (Aug 5, timeline). U.S. tariffs have hit ~$110-125B of Chinese imports at 15% plus the earlier 25% List 3, and Huawei sits on the Entity List \u2014 a direct blow to China's tech self-sufficiency and to major export sectors. This maps to the CHN +0.5 'High' anchor (major export sectors hit, FX pressure, firm-level targeting). I shade it to +0.4 rather than +0.5 because the trajectory at the decision date is a genuine off-ramp: a Phase One deal was announced 'in principle' Oct 11 with China committing to buy $40-50B of U.S. farm goods annually, and the mid-October tariff hike was delayed \u2014 a matching concession that makes de-escalation actionable. On action, escalation is the wrong response to real, already-landed pain: GDP is at a 27-year low with limited policy room (BBVA/Reuters note constrained stimulus and elevated inflation limiting PBoC easing). Committing to the negotiated agricultural purchases is a comparatively cheap concession China can absorb (it needs soybeans/pork anyway) and directly buys relief on the consumer-electronics tariffs due Dec 15, protecting the export economy. This justifies a moderate de-escalation stance \u2014 concede_purchases (+0.4) \u2014 while China preserves leverage by withholding deeper structural reform, so this is not a full rollback.",
+      "key_factors": [
+        "Q3 2019 GDP at 6.0%, slowest in ~27 years, trade-war-driven drag",
+        "Renminbi broke 7 and holds ~7.05-7.15/USD after US currency-manipulator designation (Aug 5)",
+        "US Sector-wide tariffs: ~$110-125B imports at 15% plus 25% List 3; Huawei on Entity List",
+        "Phase One deal 'in principle' (Oct 11): $40-50B ag purchases + delayed mid-Oct tariff hike = viable off-ramp",
+        "Limited policy room for stimulus due to inflation and fiscal constraints"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "Phase One deal in principle announced: China to buy $40-50B of US agricultural products annually; planned mid-October tariff hike delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "after CNY breaks 7 per USD, US Treasury designates China a currency manipulator"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce adds Huawei to Entity List"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-china-q3-gdp",
+          "excerpt": "China's Q3 GDP grows 6.0% y/y, slowest in at least 27-1/2 years, as demand falters amid a bruising Sino-US trade war"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-china-q3-gdp",
+          "excerpt": "China Q3 GDP growth slowest in at least 27 years; September industrial output +5.8% but outlook weak"
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0.4,
+      "action_level": "concede_purchases"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5762,
+        "capped_chars": 5762,
+        "raw_tokens": 1440,
+        "capped_tokens": 1440
+      },
+      "country_health": {
+        "n_reads": 2,
+        "raw_chars": 81870,
+        "capped_chars": 81870,
+        "raw_tokens": 20468,
+        "capped_tokens": 20468
+      },
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 25210,
+        "capped_chars": 25210,
+        "raw_tokens": 6302,
+        "capped_tokens": 6302
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 307592,
+  "started_at": "2026-08-13T07:53:07+00:00"
+}

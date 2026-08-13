@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "job_id": "geopol-abl-grok-oc",
+  "strategy": "/Users/lucky/.openclaw/workspace/projects/fintel/packages/geopol_trade_war_2018",
+  "agent": {
+    "name": "openclaw",
+    "model": {
+      "id": "openrouter/x-ai/grok-4.6",
+      "allow_fallbacks": false,
+      "extra_params": {}
+    },
+    "allow_sub_agents": false,
+    "options": {}
+  },
+  "k_repeats": 3,
+  "trial_concurrency": 1,
+  "shared_concurrency": 60,
+  "output_root": "/Users/lucky/.openclaw/workspace/projects/fintel/runs",
+  "dry_run": false,
+  "prefetch": true,
+  "prefetch_workers": 8
+}

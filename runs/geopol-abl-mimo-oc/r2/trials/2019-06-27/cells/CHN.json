@@ -1,0 +1,151 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-06-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Engage constructively at the G20 Osaka meeting with Trump this weekend, seeking a tariff ceasefire and restart of negotiations. Do not make major structural concessions but signal willingness to increase purchases and discuss IP protections. Avoid escalation \u2014 the economy is too fragile and Huawei is too exposed to risk a further spiral. Use the G20 window to buy time.\n\nSUPPORTING RATIONALE: The threat to China is elevated but not existential. Three factors drive the +0.55 reading. First, the Huawei Entity List designation (May 16) is a direct strike at China's tech champion \u2014 Google has suspended Android access, US chip suppliers have paused sales, and the 90-day temporary license expires August 19 (timeline entry 2019-05-16, 2019-05-20). This threatens Made in China 2025 ambitions and 5G leadership. Second, Trump has threatened 25% tariffs on the remaining ~$300B of Chinese exports (timeline entry 2019-05-05), which would cover consumer electronics and directly hit Chinese manufacturers. Third, economic data is weakening \u2014 April retail sales fell to 7.2% (16-year low) and industrial production dropped to 5.4% vs 6.5% expected (CNBC, 2019-05-15), casting doubt on the Q1 recovery. The IMF cut its 2019 growth forecast to 6.2% citing trade tensions (Reuters, 2019-06-05).\n\nHowever, China is not cornered. Beijing has room for stimulus \u2014 six RRR cuts since 2018, fast-tracked infrastructure spending, and tax cuts worth trillions of yuan (Reuters, 2019-06-05). The IMF says current stimulus is sufficient to stabilize growth absent further escalation. China retains leverage through rare earths (Xi's May 20 factory visit was a clear signal), the unreliable entity list announcement (May 31), and its role as the US's second-largest creditor. The rare earth threat, while likely bluster in practice (Business Insider, 2019-06-02), has already prompted the Pentagon to seek new funding for domestic production \u2014 showing it has deterrent value even without execution.\n\nThe action recommendation is negotiate at slight firmness (-0.1) because: (a) the G20 is a natural venue with low expectations \u2014 any positive signal moves markets favorably; (b) escalation would be self-defeating \u2014 triggering the $300B tariff tranche and deeper Huawei restrictions would compound the economic slowdown; (c) Trump faces his own pressures (US GDP growth averaging 2.4%, election cycle approaching, farm-belt frustration) and may be open to a deal that lets him claim victory; (d) but China should not concede on structural issues (industrial policy, sovereignty) without matching US concessions on Huawei and tariffs. The optimal play is a G20 truce that halts further escalation and reopens talks.",
+      "key_factors": [
+        "Huawei Entity List (May 16) threatens tech supply chain and 5G ambitions",
+        "Threatened $300B tariff tranche would hit consumer goods directly",
+        "Weakening economic data: retail sales at 16-year low, IP miss in April",
+        "IMF cut 2019 GDP forecast to 6.2% on trade tensions",
+        "Rare earth leverage provides counter-deterrent but experts doubt execution",
+        "G20 Osaka meeting imminent \u2014 natural de-escalation window",
+        "China has fiscal/monetary stimulus room to absorb short-term tariff impact",
+        "US also faces costs: tariff pass-through to consumers, 0.5% annual GDP drag"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List. US firms generally barred from selling to Huawei without a license."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-20",
+          "excerpt": "Google suspends Huawei's access to Android updates / GMS; major US chip suppliers pause sales. Same day: Xi Jinping visits a rare-earth facility in Jiangxi."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-05",
+          "excerpt": "Trump tweets that negotiations are going 'too slowly' and that China is attempting to 'renegotiate.' Orders List 3 raised from 10% to 25% on May 10 and directs preparation of tariffs on remaining Chinese imports (~$300B)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-31",
+          "excerpt": "China announces it will establish an 'unreliable entity list' targeting foreign firms that cut supplies to Chinese companies for non-commercial reasons."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-06-18",
+          "excerpt": "Trump and Xi agree by phone to meet at the G20 in Osaka."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-05-15-gdp",
+          "excerpt": "China's retail sales rose 7.2% in April, the slowest pace in 16 years. China's April industrial production rose 5.4%, less than the 6.5% expected or the 8.5% gain in March."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-06-05-imf",
+          "excerpt": "The International Monetary Fund cut its 2019 economic growth forecast for China to 6.2% on heightened uncertainty around trade frictions."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "forbes-2019-05-09-tariff-cost",
+          "excerpt": "If Trump went ahead and tariffed a combined $500 billion of Chinese imports, it would be the equivalent of roughly 4% of China's GDP."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "business-insider-2019-06-02-rare-earth",
+          "excerpt": "Rare-earth experts believe Beijing won't follow through with rare earth threats, with one expert calling them just 'loud saber-rattling' to get Washington back to the negotiating table."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "npr-2019-06-26-g20",
+          "excerpt": "The White House has downplayed expectations of a deal. The likeliest course is a temporary truce that leaves existing tariffs in place, but postpones additional taxes on Chinese imports."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-06-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 7,
+    "by_status": {
+      "ok": 7
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4647,
+        "capped_chars": 4647,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 112896,
+        "capped_chars": 112896,
+        "raw_tokens": 28224,
+        "capped_tokens": 28224
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 7,
+      "by_status": {
+        "ok": 7
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 389874,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

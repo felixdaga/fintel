@@ -1,0 +1,64 @@
+{
+  "views": [
+    {
+      "symbol": "CHN",
+      "score": 0.55,
+      "threat_score": 0.55,
+      "action_score": 0.2,
+      "action_level": "negotiate",
+      "rationale": "RECOMMENDATION: Stay inside the 90-day truce window and keep negotiating in the Washington talks rather than answering the Huawei/Meng escalation with trade retaliation. Offer credible, phased purchase commitments and structural IP/enforcement concessions that Trump can point to, while defending Huawei through legal and diplomatic channels (and quietly accelerating tech self-sufficiency) instead of mirror escalation that would blow up the truce and deepen the export shock. Hold the line that unresolved items like force-technology-transfer and enforcement be finessed rather than ceded wholesale, but keep the momentum toward a deal that suspends the threatened rise of the $200B tariff to 25%.\n\nSUPPORTING RATIONALE: The threat to China is high, driven by concrete, compounding evidence. Section 301 tariffs already cover ~$250B of Chinese exports (25% on $50B, 10% on ~$200B), with a further hike to 25% threatened at end of the truce window (timeline). The December trade data show real damage: overall exports fell 4.4% y/y (biggest drop in two years), imports -7.6%, high-tech component imports -14.9%, and manufacturing activity contracted for the first time in over two years, even though the 2018 US surplus hit a record $323.3B (web: CNBC/Bloomberg/Reuters, Jan 2019). Weakening demand plus FX pressure is visible: yuan fell 5.3% in 2018 and FX reserves dropped $67B for the year (Reuters Jan 7). Most alarmingly, the firm-level escalation is unmistakable: Meng Wanzhou's arrest, the Jan 28 DOJ indictment and formal extradition request, and 5G bans by Australia/New Zealand/UK-BT all target Huawei \u2014 a direct hit to China's tech flagship and Made-in-China-2025 ambitions (timeline; web: SMH/Axios/PBS). That cluster justifies a threat score slightly above the +0.5 anchor. The action stance is de-escalatory-by-negotiation rather than escalation because the cost-benefit is asymmetric: China holds a record $3.07T reserve cushion and a record surplus, so it can afford to trade time for concessions, whereas retaliatory escalation (as with the Canadian detentions) risks collapsing the truce and accelerating the very tariff escalation and Huawei/E-list spiral that hurts most. A negotiated purchase-and-rollback path is the least-bad route to protect the export economy and keep Huawei out of the worst entity-list scenario; hence a mild positive action_score of +0.2, consistent with `negotiate` inside the [-0.2,+0.2] band.",
+      "key_factors": [
+        "~$250B of Chinese exports already under Section 301 tariffs; 25% hike on $200B tranche threatened at end of 90-day truce",
+        "December 2018 trade slump: exports -4.4% y/y (2-year low), imports -7.6%, high-tech imports -14.9%, manufacturing PMI contraction",
+        "Firm-level targeting of Huawei: Meng arrest, Jan 28 DOJ indictment + extradition request, 5G bans by AU/NZ/UK",
+        "Yuan depreciated 5.3% in 2018; FX reserves fell $67B for the year though stabilizing near $3.07T",
+        "Cushions: record $323.3B 2018 US trade surplus and $3.07T reserves allow trading time for a deal",
+        "90-day G20 truce and active Jan 7 / Jan 30 high-level talks offer a real rollback path"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10% ... Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended. Same day: Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-30",
+          "excerpt": "Lighthizer and Mnuchin in Beijing for high-level talks. Purchase commitments discussed; enforcement and structural IP/tech-transfer issues unresolved."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC China December trade 2019-01-14",
+          "excerpt": "China's overall December exports unexpectedly fell 4.4% y/y, biggest monthly drop in two years; imports fell 7.6%, biggest since July 2016; tech imports -14.9%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters FX reserves 2019-01-07",
+          "excerpt": "China's FX reserves fell $67.24B in 2018 to $3.073T; yuan fell 5.3% for 2018; manufacturing contracted in December for first time in over two years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SMH Huawei charges 2019-01-29",
+          "excerpt": "US unsealed indictment against Huawei/Meng on eve of trade talks; China accused US of using state power to stifle Huawei; extradition request lodged."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Daily Mail China trade surplus 2019-01-14",
+          "excerpt": "China's 2018 trade surplus with US surged to record $323.3B even while December exports contracted 3.5% y/y."
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

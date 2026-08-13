@@ -1,0 +1,131 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-11-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: Enter the G20 meeting with a posture of constructive engagement \u2014 signal willingness to discuss structural issues (IP protection, market access, forced tech transfer) and offer concrete purchase commitments on agriculture and energy, but do not concede on core industrial policy (Made in China 2025). The goal is to secure a tariff freeze or modest rollback that prevents the Jan 1 escalation to 25%, while preserving China's strategic autonomy.\n\nSUPPORTING RATIONALE: The threat reading of +0.65 reflects the serious and escalating economic damage China faces. US tariffs now cover ~$250B of Chinese exports (timeline: Lists 1-3, effective through Sept 24, 2018), with the scheduled Jan 1 increase to 25% threatening to deepen the pain. Q3 GDP fell to 6.5%, the weakest since 2009 (CNN, Oct 19). The Shanghai Composite has lost 30%+ from its January peak, with $603B in pledged shares creating forced-seller risk (Bloomberg, Oct 18). The yuan is at 6.94/USD, near the psychologically critical 7.0 mark that Beijing is defending to avoid capital flight and US accusations of manipulation (Washington Post, Oct 18). Consumer confidence is weakening \u2014 auto, smartphone, and property sales all declining, with Golden Week spending growing at the slowest pace since 2000 (SCMP, Nov 23). The ZTE denial order (April 16) exposed China's semiconductor supply-chain vulnerability. While Bloomberg (Nov 14) argues the macro tariff impact is 'tiny,' the confluence of financial market stress, slowing growth, and the threat of further escalation makes the situation materially dangerous.\n\nThe action_score of -0.1 (mild negotiate posture) reflects the following calculus: (1) The G20 meeting on Nov 30-Dec 1 is an immediate off-ramp \u2014 entering it with aggression would be counterproductive. (2) China's retaliation on US agriculture has been effective \u2014 soybean sales to China are down 94% (NYT, Nov 5), creating real political pain in Trump's base states. This leverage is best used as a bargaining chip, not escalated further. (3) Conceding too much (e.g., abandoning Made in China 2025) would undermine long-term strategic goals. (4) The US economy is still strong (Fed funds at 2.20%, 10Y at 3.06%), so China cannot expect American economic pain to force concessions soon. (5) Offering concrete purchase commitments (soybeans, energy, semiconductors) is low-cost for China and gives Trump a headline win \u2014 this is the smart play to freeze escalation before January.",
+      "key_factors": [
+        "$250B of Chinese exports under US tariff, Jan 1 escalation to 25% imminent",
+        "Q3 GDP at 6.5% \u2014 slowest since 2009; stimulus measures being deployed",
+        "Shanghai Composite down 30%+; $603B in pledged shares create forced-seller risk",
+        "Yuan at 6.94/USD approaching the 7.0 red line",
+        "China's soybean retaliation effective \u2014 US sales down 94%, creating farm-belt political pressure",
+        "G20 meeting (Nov 30-Dec 1) provides natural off-ramp for de-escalation",
+        "ZTE denial order (April) exposed semiconductor supply-chain vulnerability",
+        "Consumer confidence declining across auto, smartphone, property sectors"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNN-2018-10-19",
+          "excerpt": "China's economy grew 6.5% in Q3 2018 \u2014 weakest quarterly growth since the depths of the global financial crisis in early 2009."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Bloomberg-2018-10-18",
+          "excerpt": "Shanghai Composite closed at 2,486, its lowest finish since November 2014. The gauge has slumped about 30 percent from a January high."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SCMP-2018-11-23",
+          "excerpt": "Consumer durables consumption is directly related to consumer confidence, which has been seriously dampened by the trade tensions between China and the US."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NYT-2018-11-05",
+          "excerpt": "American soybean sales to China have declined by 94 percent from last year's harvest."
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-11-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 7,
+    "by_status": {
+      "ok": 7
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3976,
+        "capped_chars": 3976,
+        "raw_tokens": 994,
+        "capped_tokens": 994
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11485,
+        "capped_chars": 11485,
+        "raw_tokens": 2871,
+        "capped_tokens": 2871
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 68707,
+        "capped_chars": 68707,
+        "raw_tokens": 17177,
+        "capped_tokens": 17177
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 7,
+      "by_status": {
+        "ok": 7
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 387837,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

@@ -1,0 +1,108 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-09-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7730,
+    "tokens_out": 1058,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0083184,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue to retaliate in kind against US tariffs, matching each escalation with proportional counter-tariffs on US agricultural products, automobiles, and other politically sensitive goods. We should signal willingness to negotiate but refuse to make unilateral concessions under pressure. Retaliatory measures should target goods with high political salience in the US (soybeans, automobiles, aircraft) to maximize domestic political pressure on the Trump administration.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has implemented 25% tariffs on $34 billion of Chinese imports effective July 6, 2018, with an additional $16 billion pending, and Trump has threatened up to $250 billion total (Brookings, Politico). This targets roughly 10% of China's $505 billion in exports to the US, focusing on 'industrially significant technologies' including aerospace, robotics, and automobiles (Politico). However, as Brookings notes, 'more than half of the value of those products are in parts and components from other countries like South Korea and Japan,' meaning the direct hit to Chinese value-added is smaller than headline figures suggest. China's retaliatory capacity is constrained\u2014China imported only $130 billion of US goods versus $506 billion in US imports from China (CBS News)\u2014but China's retaliation is strategically targeted at politically sensitive sectors: soybeans (prices already down 20%, per Brookings), automobiles (tariffs would double to 50%), and agricultural products concentrated in Trump-supporting Midwest and Southern states. The Brookings assessment that 'it is unlikely that the Chinese leadership will cave in and do anything major' and that post-midterm elections (November 2018) 'we're likely to see the two sides come together' suggests the current pressure is survivable. The Trump administration views tariffs as a midterm election strategy, meaning the political calculus may shift after November. China should maintain retaliatory pressure to demonstrate resolve, protect its negotiating position, and avoid signaling weakness that would invite further escalation. Conceding now would set a precedent for future US demands on technology transfer, IP protection, and market access that strike at China's industrial policy core (Made in China 2025).",
+      "key_factors": [
+        "US tariffs on $34B Chinese goods effective July 6, 2018 with $16B pending and threats of $250B total",
+        "Trump administration using trade war as midterm election strategy, creating potential post-November negotiation window",
+        "China's retaliation constrained by asymmetric trade volumes ($130B US imports vs $506B US imports from China)",
+        "Soybean prices already down 20%, targeting politically sensitive US agricultural sectors",
+        "More than half of China's export value is foreign-sourced components, reducing direct Chinese economic damage",
+        "No high-level negotiations currently scheduled; Brookings predicts post-election talks",
+        "US targeting of 'industrially significant technologies' threatens Made in China 2025 industrial policy"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The U.S. has announced $250 billion of tariffs on products from China, and China has partially retaliated and will probably come out with more retaliation. For the next several months we will probably be locked into this situation. No high-level negotiations are scheduled."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com \u2014 How the U.S.-China trade war could play out",
+          "excerpt": "For context, China exported about $505 billion in goods to the U.S. in 2017, so this hits about 10 percent of goods that come here from China."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com \u2014 Trade war with China: What you need to know",
+          "excerpt": "China has promised to respond in kind, but it would be unable to match that amount since it imported only $130 billion of U.S. goods last year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "It is unlikely that the Chinese leadership will cave in and do anything major. After the 2018 elections, we're likely to see the two sides come together and negotiate something so that they can both save face"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-09-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 26481,
+        "capped_chars": 15741,
+        "raw_tokens": 6620,
+        "capped_tokens": 3935
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 25580,
+  "started_at": "2026-08-13T10:54:41+00:00"
+}

@@ -1,0 +1,109 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-12-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8143,
+    "tokens_out": 851,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0081104,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue engaging in negotiations with the US while maintaining a firm stance on core interests. We should not make unilateral concessions on structural reforms or IP law changes, but should signal willingness to increase purchases of US agricultural goods and other products as a goodwill gesture. We must avoid retaliatory escalation that could trigger the threatened tariffs on the remaining ~$300 billion of Chinese exports.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. UNCTAD data shows US tariffs caused a $35 billion export loss in H1 2019, with office machinery and communication equipment hit hardest (55% decline). However, Chinese firms maintained 75% of their exports to the US despite tariffs, and trade diversion to Vietnam, Taiwan, Mexico, and EU partially offset losses. The yuan depreciated ~5% in 2018 but stabilized in 2019, and Shanghai Composite recovered 16% YTD. The immediate threat is the potential escalation: Trump has threatened tariffs on all remaining Chinese imports (~$300 billion) and the 25% tariff hike on $200 billion already took effect in May 2019. The US side (Lighthizer, Mnuchin) insists on changes to Chinese national security and trade laws, IP protection, and market access\u2014structural demands that go beyond purchase commitments. China's retaliatory tariffs on $110 billion of US goods have limited leverage since the US exports far less to China ($100 billion) than China exports to the US. The trade war is a lose-lose (per UNCTAD), but China's export-dependent economy faces disproportionate risk from further escalation. The strategic calculation is that continued negotiation preserves the possibility of a partial deal (purchase commitments in exchange for tariff rollback) while avoiding the worst-case scenario of universal US tariffs. Retaliation would be counterproductive given the asymmetry in trade volumes.",
+      "key_factors": [
+        "US tariffs caused $35B export loss in H1 2019 per UNCTAD",
+        "Trump threatened tariffs on remaining ~$300B of Chinese imports",
+        "Chinese firms maintained 75% of US exports despite tariffs",
+        "Trade diversion to Vietnam, Taiwan, Mexico partially offset losses",
+        "US demands include structural reforms (IP, market access, law changes) beyond purchase commitments",
+        "Asymmetric trade volumes limit China's retaliatory leverage ($100B US exports vs $419B deficit)",
+        "Shanghai Composite up 16% YTD, yuan stabilized in 2019 suggesting resilience",
+        "Larry Kudlow acknowledged 'both sides will suffer' from tariffs"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "US tariffs caused a 25% export loss, inflicting a US$35 billion blow to Chinese exports in the US market for tariffed goods in the first half of 2019"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "Chinese firms have recently started absorbing part of the costs of the tariffs by reducing the prices of their exports. Chinese firms maintained 75% of their exports to the US"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "Trump has vowed to slap 25% duties on another $325bn of Chinese goods 'shortly'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "Lighthizer and Mnuchin thought China was willing to rewrite key national security and trade laws to reduce the theft of intellectual property, open its markets to US financial firms"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "The US trade deficit with China is $419bn. The yuan fell over 5% against the US dollar last year, before broadly stabilising in 2019"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-12-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 21708,
+        "capped_chars": 17702,
+        "raw_tokens": 5427,
+        "capped_tokens": 4426
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 17535,
+  "started_at": "2026-08-13T10:55:26+00:00"
+}

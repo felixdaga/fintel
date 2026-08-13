@@ -1,0 +1,146 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.35,
+      "rationale": "RECOMMENDATION: Hold the current tariff posture without new escalation or concession. List 3 just took effect on September 24, covering ~$250B of Chinese imports; the built-in escalation from 10% to 25% on January 1, 2019 already provides forward leverage. Allow time for these measures to bite before considering the remaining ~$267B or engaging in premature talks. Signal willingness to negotiate if China offers structural reforms on IP and tech transfer, but do not initiate new action.\n\nSUPPORTING RATIONALE: The US holds a clear asymmetric advantage as of late September 2018. US macroeconomic fundamentals are robust: consumer sentiment at 100.1 (Sep), industrial production growing steadily to 104.1, unemployment at generational lows, and GDP growth strong. By contrast, China's economy is visibly weakening \u2014 manufacturing PMI at 50.6 and falling, export orders declining for five consecutive months, stock markets down sharply, and the yuan depreciating ~7% against the dollar (CNN, Sep 4; DW, Jul 30). Trump explicitly noted 'our markets are surging, theirs are collapsing' (WaPo, Sep 14). The asymmetric economic pain favors the US.\n\nHowever, the threat score is modestly negative (opportunity) rather than strongly negative because: (1) US soybean farmers face severe distress \u2014 orders from China down 80% YoY, prices fallen by a third, with farmers reporting $243K losses on a typical crop (NPR, Sep 19; farmdoc daily, Sep 10); (2) corporate bond spreads are widening (Baa yields up to 4.9%), suggesting tightening financial conditions; (3) the dispute has no clear resolution path \u2014 analysts note the principal objective may be 'to force US multinational companies to pull back their investments in China' rather than reach a deal (Gavekal, via CNN Sep 19), making negotiations structurally difficult. China's retaliatory capacity is dwindling (only able to match at 5-10% rates on $60B vs US 10% on $200B), but this also means China may resort to non-tariff retaliation (customs delays, regulatory harassment of US firms).\n\nThe hold posture is justified because List 3 just landed three days ago. Escalating to the remaining $267B risks: (a) directly hitting consumer goods and holiday retail, causing visible domestic price increases; (b) eliminating all remaining leverage for future negotiation; (c) provoking China into non-tariff measures against US companies operating in China (Apple, Boeing). Conceding now would waste the leverage built over months of escalation. The January 2019 step-up to 25% is already on the calendar \u2014 that is the next pressure point, not a new tariff announcement.",
+      "key_factors": [
+        "US economy strong: consumer sentiment 100.1, industrial production growing, unemployment at generational lows",
+        "China economy weakening: PMI falling, export orders declining 5 months, yuan down 7%, stocks down sharply",
+        "US soybean farmers severely impacted: China orders down 80% YoY, prices down ~33%",
+        "List 3 just took effect Sep 24 \u2014 built-in escalation to 25% on Jan 1, 2019 already scheduled",
+        "China unable to match US tariff-for-tariff (5-10% on $60B vs 10% on $200B)",
+        "Risk of China resorting to non-tariff retaliation against US firms operating in China",
+        "No clear path to structural deal on IP/tech transfer \u2014 analysts skeptical of breakthrough",
+        "Corporate bond spreads widening (Baa at 4.9%), signaling tightening financial conditions"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_UMCSENT",
+          "excerpt": "Consumer sentiment: 100.1 (Sep 2018), up from 96.2 in August."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_INDPRO",
+          "excerpt": "Industrial production: 104.1 (Sep 2018), steady growth from 103.3 in April."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_DBAA",
+          "excerpt": "Moody's Baa corporate bond yield: 4.90% (Sep 26), up from 4.59% in early April \u2014 widening credit spreads."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "npr_soybeans_2018-09-19",
+          "excerpt": "Soybean orders from China have stopped coming in. Cash price of soybeans has fallen by as much as a third. Farmers reporting $243,000 losses on typical crop."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn_trade_war_2018-09-18",
+          "excerpt": "China has been unable to match the US dollar-for-dollar in this round of tariffs. China's retaliatory tariffs at 5-10% lower than previously threatened 5-25% range."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn_trade_war_2018-09-19_gavekal",
+          "excerpt": "The principal objective of the tariffs is probably not to bring Beijing to the bargaining table. Rather, it is to force US multinational companies to pull back their investments in China."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn_china_pmi_2018-09-04",
+          "excerpt": "China manufacturing PMI fell to 50.6 in August, slowest in 14 months. Export orders slumped for fifth month in row. Chinese stock market and currency pummeled."
+        }
+      ],
+      "threat_score": -0.35,
+      "action_score": -0.1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4035,
+        "capped_chars": 4035,
+        "raw_tokens": 1009,
+        "capped_tokens": 1009
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48411,
+        "capped_chars": 48411,
+        "raw_tokens": 12103,
+        "capped_tokens": 12103
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 46402,
+        "capped_chars": 46402,
+        "raw_tokens": 11600,
+        "capped_tokens": 11600
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 380417,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

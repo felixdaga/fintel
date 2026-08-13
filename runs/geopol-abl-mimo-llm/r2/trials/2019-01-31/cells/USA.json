@@ -1,0 +1,98 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7792,
+    "tokens_out": 805,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0076214,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.15,
+      "rationale": "RECOMMENDATION: The US should continue engaging in trade negotiations with China while maintaining the current tariff structure as leverage. No new escalatory measures should be taken at this time, but existing tariffs should remain in place as bargaining chips. The US should push for concrete structural reforms on IP protection, forced technology transfer, and market access rather than settling for superficial purchase commitments.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but manageable. The trade war has caused sector-specific pain\u2014soybean prices down 20%, agricultural and auto exports hit by Chinese retaliation (Brookings, Dollar)\u2014but the overall macroeconomic impact has been described as 'a minor blip' for the US economy (Brookings). The US has significant leverage: tariffs cover roughly half of all Chinese imports ($250 billion), and Trump has threatened to tariff the remaining $267 billion (Fox Business). China's retaliation has nearly exhausted its import base ($110 billion of $130 billion in US imports already tariffed), limiting further retaliatory capacity. However, the situation carries real risks: supply chain disruptions affect US firms operating in China, consumer prices may rise as costs are passed through (Fox Business), and collateral damage extends to third-country suppliers in the value chain. The Fox Business analysis notes China's structural unfair practices\u2014subsidies, forced JVs, WTO gaming\u2014which represent the deeper strategic threat the US must address. Trump's own statement that 'things are moving in the right direction' after Beijing talks (Fox Business/Walser) suggests diplomatic channels remain open. The US should negotiate firmly from a position of relative strength rather than escalate further, which would risk broader economic disruption and ally backlash.",
+      "key_factors": [
+        "US tariffs cover ~$250B of Chinese imports, with threat to tariff remaining ~$267B",
+        "China retaliation nearly maxed out at $110B of $130B US imports",
+        "Sector-specific pain: soybeans down 20%, agriculture and autos hit",
+        "Overall US economic impact described as 'minor blip' per Brookings analysis",
+        "Trade talks ongoing with Trump signaling positive direction",
+        "China's structural practices (subsidies, forced JVs, IP theft) represent core strategic concern",
+        "Supply chain collateral damage to US firms operating in China"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent. This is not a big hit for the overall U.S. economy but it will hurt some specific sectors... On the whole this is a minor blip so the Trump administration will probably not change its strategy soon."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "The $250 billion aggregate tariff amount... is about half of U.S.-China trade. President Trump has also indicated that if things don't go as to what he wants to happen, he's going to do it on the rest of it... another $267 billion worth of imports."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "We're negotiating and having tremendous success with China... China will provide hundreds of billions in subsidies and tax breaks... requires foreign corporations to create joint-ventures with Chinese companies in order to acquire access to the Chinese market."
+        }
+      ],
+      "threat_score": 0.15,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 26729,
+        "capped_chars": 16022,
+        "raw_tokens": 6682,
+        "capped_tokens": 4006
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 17389,
+  "started_at": "2026-08-13T10:54:45+00:00"
+}

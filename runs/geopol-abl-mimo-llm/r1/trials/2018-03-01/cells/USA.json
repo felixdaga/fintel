@@ -1,0 +1,109 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-03-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10487,
+    "tokens_out": 936,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0107094,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The United States should immediately impose broad tariffs on Chinese goods, targeting key sectors such as steel, aluminum, and technology products. This action should be accompanied by a clear public statement linking the tariffs to China's unfair trade practices, including forced technology transfer, intellectual property theft, and industrial overcapacity. The administration should also initiate a Section 301 investigation to provide a legal framework for further actions. This approach will send a strong signal to China and rally domestic support, while also setting the stage for future negotiations from a position of strength.\n\nSUPPORTING RATIONALE: The threat score of -1 reflects a clear opportunity for the United States to address long-standing trade imbalances and unfair practices by China. The USTR's annual trade barriers report highlights China's chronic industrial overcapacity, forced technology transfers, and bans on U.S. products, which have distorted global markets and undermined U.S. competitors. The Trump administration's view that the U.S. mistakenly supported China's WTO accession in 2001, as stated in the annual report to Congress, indicates a strong belief that current rules are insufficient to constrain China's market-distorting behavior. The Brookings analysis notes that Xi Jinping's consolidation of power and his willingness to stand firm against U.S. pressure suggest that brinkmanship may be necessary to compel Beijing to make concessions. The Time article acknowledges that while a trade war would be costly, the U.S. has greater leverage due to China's larger export dependence (trade accounts for almost 40% of Chinese GDP vs. less than 30% in the U.S.). The CNAS report recommends a balanced approach but also notes that the U.S. has leverage to roll back China's unfair practices, and that unilateral tariffs can be effective if targeted. Given these factors, the U.S. is in a strong position to escalate tariffs, which will pressure China to negotiate on more favorable terms and address the structural issues in the trade relationship.",
+      "key_factors": [
+        "China's forced technology transfer and intellectual property theft",
+        "China's industrial overcapacity in steel and aluminum",
+        "U.S. trade deficit with China",
+        "China's bans on U.S. products (e.g., beef, electronic payment services)",
+        "Xi Jinping's consolidation of power and willingness to stand firm",
+        "U.S. leverage due to China's export dependence",
+        "Trump administration's belief that WTO rules are insufficient",
+        "Section 301 investigation as a legal framework for action"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 U.S. trade barriers report slams China on overcapacity, tech transfer ...",
+          "excerpt": "USTR, controlled by the White House, said that Chinese government industrial policies and financial support for industries such as steel and aluminum have resulted in overproduction and a flood of exports that have distorted global markets and undermined competitors."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 Trump administration says U.S. mistakenly backed China WTO accession ...",
+          "excerpt": "It seems clear that the United States erred in supporting China's entry into the WTO on terms that have proven to be ineffective in securing China's embrace of an open, market-orientated trade regime."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 How to avert a trade war with China",
+          "excerpt": "Xi gains politically in Beijing by standing firm against U.S. pressure and punching back against punitive measures. Historically, China has always retaliated proportionately to U.S. trade actions."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "time.com \u2014 The U.S. Can Win a Trade War With China. It Shouldn't Try",
+          "excerpt": "Trade accounts for almost 40% of Chinese GDP vs. less than 30% in the U.S."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnas.org \u2014 U.S.-China Trade: A Balanced Approach",
+          "excerpt": "The United States has leverage to roll back many of China's unfair trade practices short of imposing across the board tariffs \u2013 especially if the United States is willing to do the hard work to create a unified front with other large economies, especially European or Japanese."
+        }
+      ],
+      "threat_score": -1,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-03-01",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35298,
+        "capped_chars": 31103,
+        "raw_tokens": 8824,
+        "capped_tokens": 7776
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 21842,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

@@ -1,0 +1,135 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-11-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.25,
+      "rationale": "RECOMMENDATION: Enter the Trump-Xi G20 dinner from a position of strength but with willingness to negotiate. Hold the existing tariff architecture as leverage, signal readiness to delay the Jan 1 List 3 escalation to 25% if China offers substantive concessions on IP protection, forced tech transfer, and market access. Do not preemptively concede; do not announce new tariffs before the meeting.\n\nSUPPORTING RIBAL: The US holds a mild structural advantage (threat_score = -0.25). China is under considerably more economic pressure: Caixin PMI fell to a 14-month low of 50.6 in August, export orders declined for five straight months, the yuan depreciated ~9% vs USD since April, and analysts estimate the trade war shaves 0.5-0.7pp from China's GDP growth (CNBC, TS Lombard). China cannot match US tariffs dollar-for-dollar and has already retaliated on nearly all it can ($110B vs US $250B). The US economy, by contrast, grew 4.1% in Q2 and unemployment remains low.\n\nHowever, costs for the US are rising and the situation is not without risk. The S&P 500 erased all 2018 gains by Nov 20 and entered correction territory (down ~10% from Sept highs), driven partly by trade-war uncertainty. FAANG stocks are in bear market territory. The List 3 tariffs (Sept 24) are the first to directly hit US consumer goods \u2014 24% of items are consumer products \u2014 and economists estimate this could add ~0.5pp to CPI, with the jump to 25% in January amplifying the pain (Pantheon Macroeconomics). GM announced major layoffs the same week. The APEC summit ended without a joint communique for the first time in history, signaling that the US-China rift is now straining multilateral relationships.\n\nAnalysts broadly expect only a 'mock deal' or photo op from the G20 dinner (TS Lombard, CNBC Nov 23). The US should aim higher than that. The leverage is real but not unlimited: pushing toward the full $500B+ tariff threat would risk consumer backlash, deeper market declines, and ally fragmentation. The smarter play is to use the Jan 1 escalation deadline as a negotiating wedge \u2014 offer to freeze the rate at 10% in exchange for concrete Chinese commitments on IP, tech transfer, and agricultural purchases. This preserves domestic political advantage (tough on China) while avoiding the inflationary and market costs of full escalation.",
+      "key_factors": [
+        "China's economy under significant pressure: PMI at 14-month lows, yuan down 9%, export orders declining 5 straight months",
+        "US stock market in correction territory; S&P 500 erased 2018 gains; FAANG stocks in bear market",
+        "List 3 tariffs first to directly hit US consumer goods; scheduled jump from 10% to 25% on Jan 1 would amplify consumer pain",
+        "G20 dinner (Dec 1) offers a natural negotiating moment with Xi; leverage exists but is not unlimited",
+        "APEC failed to produce joint communique for first time ever \u2014 multilateral strain from trade dispute",
+        "China cannot match US tariffs dollar-for-dollar ($110B retaliated vs $250B imposed by US)",
+        "GM layoffs and tech sector weakness creating domestic political pressure"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2018-11-23",
+          "excerpt": "Expect a photo opportunity, a 'mock deal' \u2014 and temporary market relief from the much-touted meeting between Trump and Xi at the G-20, said Bo Zhuang, TS Lombard."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2018-09-03",
+          "excerpt": "Caixin PMI came in at 50.6, the weakest since June 2017. Export sales fell for the fifth straight month. 'China's economy is now facing relatively obvious downward pressure.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usatoday_2018-11-20",
+          "excerpt": "The Dow dropped 552 points and the S&P 500 plunged 1.8%, erasing 2018 gains. FAANG stocks all in bear market territory."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "businessinsider_2018-09-24",
+          "excerpt": "24% of the goods hit by the $200B tariffs are consumer goods \u2014 first time consumer goods directly hit. Could add 0.5pp to CPI."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes_2018-11-27",
+          "excerpt": "Behind Trump's tough talk is a creeping anxiety about the costs of a prolonged trade war on the financial markets and the broader economy. GM layoffs this week rattled Trump."
+        }
+      ],
+      "threat_score": -0.25,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-11-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3976,
+        "capped_chars": 3976,
+        "raw_tokens": 994,
+        "capped_tokens": 994
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11485,
+        "capped_chars": 11485,
+        "raw_tokens": 2871,
+        "capped_tokens": 2871
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 86836,
+        "capped_chars": 86836,
+        "raw_tokens": 21709,
+        "capped_tokens": 21709
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 369562,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

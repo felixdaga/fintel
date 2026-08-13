@@ -1,0 +1,130 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-05-03",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 138332,
+    "tokens_out": 4435,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Engage fully in the Beijing talks now underway (US delegation led by Mnuchin meeting Liu He on May 3-4) and pursue a negotiating track rather than further escalation. We should press hard for relief on the ZTE denial order and for the $50B Section 301 list not to take effect, offering limited, reversible concessions (auto-tariff reductions, increased US purchases) while holding Our core interest firm: no concessions on the 'Made in China 2025' technology program. Do not escalate retaliation at this moment, because a full trade war would hurt Our export-reliant economy and tech supply chains far more than the US, and the US has opened a channel to walk this back.\n\nSUPPORTING RATIONALE: The threat is genuinely high but not yet existential. The April 16 US denial order banning American components to ZTE is an acute firm-level hit to a flagship telecom/5G champion and threatens its very survival ('could put the company immediately into a coma' per ZTE's chairman; 25-40% of its components come from US suppliers) \u2014 squarely matching the +0.5 'firm-level targeting' anchor, and the April 3 $50B list is deliberately aimed at Our ICT, robotics, aerospace and advanced-machinery sectors (the 'Made in China 2025' industries). So I score threat at +0.55. But several constraints keep it below existential: the $50B tariffs are still only proposed (public comment open), the broader economy has not yet absorbed a tariff shock, and we retain real leverage \u2014 Our April 4 counter-list on soybeans/autos/aircraft targets politically sensitive US export sectors, and Our status as the world's largest chip buyer gives us supply-chain weight. The ZTE episode is also energizing a nationalist, state-backed push for semiconductor self-sufficiency under the National Integrated Circuits fund, which is an opportunity embedded in the threat. This is exactly the wrong moment to escalate: the US has signalled willingness to negotiate (Mnuchin traveling to Beijing this week, markets and the moderate faction wanting to keep the dispute from spiking), and Our asymmetric dependence on US chips/software means escalation (further retaliation, refusing to talk) would invite a broader entity-list expansion that could reach Huawei and others, which would be far more damaging. A posture of engaged negotiation \u2014 no new tariff escalation while the talks attempt to trade relief on ZTE and the tariff threat for limited, reversible concessions \u2014 is the disciplined play. Escalation would make an already-high threat worse; negotiation is how we defend Our core interests and minimize damage.",
+      "key_factors": [
+        "US April 16 denial order bans ZTE from US components \u2014 acute firm-level targeting of a flagship 5G/telecom champion",
+        "April 3 US Section 301 list of ~$50B targets China's ICT/robotics/aerospace sectors (Made in China 2025 industries)",
+        "US delegation (Mnuchin/Ross/Lighthizer/Kudlow/Navarro) in Beijing for talks with Liu He May 3-4 \u2014 negotiation channel open",
+        "China holds leverage: $50B counter-list on US soybeans/autos/aircraft and status as top chip buyer",
+        "ZTE ban rallying nationalist, state-backed push for semiconductor self-sufficiency (National Integrated Circuits fund)",
+        "Tariffs proposed but not yet in force; economy has not yet absorbed the shock",
+        "China's asymmetric dependence on US chips/software means a full trade war hurts us more than the US"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list: ~1,300 Chinese product lines (~$50B), targeting aerospace, ICT, robotics, machinery."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods (soybeans, automobiles, aircraft)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://money.usnews.com/investing/news/articles/2018-05-02/chinas-vice-premier-to-meet-us-trade-delegation-in-beijing-state-tv",
+          "excerpt": "US delegation led by Mnuchin meets Liu He in Beijing May 3-4; likely outcome 'agreement to keep talking'; China refuses to negotiate on Made in China 2025 core interests."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.weekinchina.com/2018/04/stakes-raised-in-chip-ban/",
+          "excerpt": "ZTE chairman: sanctions 'could put the company immediately into a coma'; 25-40% of ZTE components from US suppliers; ban spurs China self-sufficiency push."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.reuters.com/article/idUSKBN1HR085/",
+          "excerpt": "ZTE says US ban threatens its survival; Alibaba acquires a chipmaker; state/media call to accelerate domestic chip self-reliance."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": 0.2,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-05-03",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2222,
+        "capped_chars": 2222,
+        "raw_tokens": 556,
+        "capped_tokens": 556
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47387,
+        "capped_chars": 47387,
+        "raw_tokens": 11847,
+        "capped_tokens": 11847
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 42015,
+        "capped_chars": 42015,
+        "raw_tokens": 10504,
+        "capped_tokens": 10504
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 538282,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

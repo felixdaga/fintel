@@ -1,0 +1,133 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 135136,
+    "tokens_out": 4660,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.5,
+      "rationale": "RECOMMENDATION: We should stay inside the 90-day truce and keep negotiating with the US delegation now in Beijing (Jan 30-31) to prevent the reinstated 25% tariff on ~$200B of our exports and to protect Huawei. We should not escalate on the trade track in response to the Huawei charges \u2014 that would invite the very 25% step-up and faster US tech decoupling that would hurt us more. Hold our retaliation at the current level (Canadians detained as leverage) and pursue a deal that locks in the truce, contains the Huawei damage, and trades calibrated purchase commitments for a rollback of the threatened escalation.\n\nSUPPORTING RATIONALE: The threat is high but not existential, anchoring at +0.5 on the CHN scale. Roughly $250B of our exports sit under US Section 301 tariffs, with the 25% hike on the ~$200B List 3 suspended for the 90-day window agreed at the G20 dinner (event_timeline 2018-12-01); losing that suspension is the main downside. Firm-level targeting of our flagship tech sector is real and escalating: Meng Wanzhou arrested Dec 1, DOJ unsealed fraud/sanctions charges and requested extradition Jan 28, and the US/UK/Aus/NZ have moved to block Huawei from 5G (web: theworld.org, BBC). The macro evidence confirms real economic bite: 2018 GDP hit a 28-year low, December exports fell 4.4% y/y (largest drop in two years) and imports -7.6%, the RMB depreciated ~6% in 2018 and equities fell ~20% (Reuters GDP instantview; CNBC Dec trade; World Bank China Update). That is material export-sector damage and FX pressure \u2014 consistent with the +0.5 anchor. But it is not existential: the 25% escalation is currently suspended and high-level talks (Lighthizer/Mnuchin in Beijing, Jan 30) are actively discussing purchase commitments while structural IP/tech-transfer issues remain open (event_timeline 2019-01-30), signaling the US wants a deal and giving us leverage. On action, the disciplined reading is that escalation now would make the situation worse \u2014 we are the party more exposed to a tariff step-up and technology decoupling, and the treaty path that could spare us (avoiding the 25% hike, containing Huawei) is open. High threat here argues for de-escalatory negotiation, not provocation. Hence negotiate at ~0.0: engage to lock in the truce and convert purchase-commitment discussions into a deal, without new unilateral concessions on core structural issues.",
+      "key_factors": [
+        "~$250B of Chinese exports under US Section 301 tariffs; 25% List 3 hike suspended within 90-day G20 truce (2018-12-01)",
+        "Firm-level targeting of Huawei: Meng arrest Dec 1, DOJ indictment + extradition request Jan 28, Western 5G bans",
+        "China macro under pressure: 2018 GDP at 28-year low; Dec exports -4.4% (biggest drop in 2 yrs), imports -7.6%; RMB -6% in 2018; equities -20%",
+        "De-escalation path open: high-level Beijing talks Jan 30-31 with Lighthizer/Mnuchin; purchase commitments discussed, structural issues unresolved",
+        "China holds leverage (detained Canadians) but should not derail talks that could prevent the 25% step-up and protect Huawei"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to 90-day negotiation window; Jan 1 List 3 hike to 25% suspended; Huawei CFO Meng arrested same day"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; formally requests extradition"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-30",
+          "excerpt": "Lighthizer and Mnuchin in Beijing for high-level talks; purchase commitments discussed; structural IP/tech-transfer issues unresolved"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc.com/2019/01/14/china-trade",
+          "excerpt": "China December exports -4.4% y/y (biggest drop in two years), imports -7.6%; US trade deficit with China at record"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters.com/article/us-china-economy-gdp",
+          "excerpt": "China's 2018 growth weakest in 28 years; Dec industrial output +5.7%; trade war pressure and weak global demand"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "worldbank.org china-economic-update-december-2018",
+          "excerpt": "China GDP moderated to 6.5% in Q3; equities lost ~20%, renminbi depreciated ~6% against USD in 2018"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "theworld.org 2018/12/06 huawei",
+          "excerpt": "Meng arrest clouding truce; Huawei facing US sanctions probe; Western moves to restrict Huawei 5G"
+        }
+      ],
+      "threat_score": 0.5,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4863,
+        "capped_chars": 4863,
+        "raw_tokens": 1216,
+        "capped_tokens": 1216
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46316,
+        "capped_chars": 46316,
+        "raw_tokens": 11579,
+        "capped_tokens": 11579
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 26709,
+        "capped_chars": 26709,
+        "raw_tokens": 6677,
+        "capped_tokens": 6677
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 468819,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

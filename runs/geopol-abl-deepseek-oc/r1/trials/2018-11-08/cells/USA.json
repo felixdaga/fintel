@@ -1,0 +1,139 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-11-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 140506,
+    "tokens_out": 4253,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: We should enter the G20 meeting with Xi as a genuine negotiation, using the scheduled January 1 escalation of the $200B list (10% to 25%) as leverage rather than prematurely triggering it. Hold the current tariff posture in place, signal openness to scaling back if Beijing delivers concrete, verifiable commitments on IP/tech-transfer and purchases, and avoid any new escalation that would spook already-stressed markets and further alienate farm-belt constituents. This is a moment to negotiate from strength, not to overplay our hand.\n\nSUPPORTING RATIONALE: The dispute is not an existential threat to US interests; we initiated the Section 301 action, hold ~$250B of Chinese imports under tariffs (timeline: Lists 1-2 at 25%, List 3 at 10% effective Sept 24), and China is the more exposed party \u2014 so the terrain is favorable and the reading is a mild opportunity (threat_score -0.3). But it is not a clean -0.5/-1.0 opportunity because the costs are real and rising: Chinese retaliation has hit the soybean/pork farm belt (CNN: prices tanked, farm values down ~$200k, a political liability that already shaped the midterms), and US macro shows accumulating stress \u2014 corporate credit spreads widened (Moody's Baa yield up to ~5.18% from ~4.8-4.9), the Fed is tightening (fed funds 2.20%, up ~20bp over the window), CPI is running near 3%, a strong dollar (broad index ~115) and the October equity selloff/VIX spike point to fragility (CBS/Deutsche Bank). These costs argue against maximal escalation. The action stance is negotiate (action_score ~0.0): the Nov 1 Trump-Xi call with a positive tone and agreement to meet at the G20, plus Kudlow's stated willingness to hold off and potentially scale back if talks succeed, provides a concrete off-ramp; with the Democrats taking the House in January, unilateral trade actions will draw heavier congressional scrutiny, making a negotiated settlement that returns farm-belt exports and calms markets the least-cost path. Escalating now would risk the opposite of our intent \u2014 inviting further retaliation and compounding domestic economic and political stress \u2014 so we hold firm at the table rather than pulling the trigger.",
+      "key_factors": [
+        "US holds offensive initiative with ~$250B of Chinese imports under Section 301 tariffs",
+        "Nov 1 Trump-Xi call + agreement to meet at G20; Kudlow signals willingness to scale back if talks succeed",
+        "China retaliation hitting US farm belt (soybeans/pork), a midterm political liability",
+        "US macro showing stress: widening Baa credit spreads (~5.18%), Fed tightening, ~3% CPI, strong dollar, October market selloff",
+        "Democrats won House in Nov 6 midterms; greater congressional scrutiny of trade policy ahead",
+        "January 1 escalation of $200B list (10%->25%) available as leverage, not yet triggered"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DBAA",
+          "excerpt": "Moody's Baa corporate bond yield rose to ~5.18% (from ~4.8%) over the window \u2014 credit stress widening."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Federal funds rate 2.20% at decision date, up ~20bp over the window; Fed tightening."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.usatoday.com/story/news/politics/2018/11/01/donald-trump-xi-jinping-discuss-u-s-chinese-trade-battle/1844488002/",
+          "excerpt": "Trump-Xi 'long and very good conversation'; Kudlow: hold off on further tariffs and may scale back existing ones if talks succeed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.cbsnews.com/news/midterm-elections-2018-how-race-results-could-affect-the-economy/",
+          "excerpt": "Dismal October wiped out most of the year's market gains; elevated VIX; Democratic House means Congress plays a bigger role in trade policy."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://edition.cnn.com/2018/06/22/politics/soybeans-in-the-2018-election/index.html",
+          "excerpt": "Soybean/pork growers 'collateral damage'; farms losing over $200k in value as commodity prices slump amid the China dispute."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": 0.05,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-11-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4164,
+        "capped_chars": 4164,
+        "raw_tokens": 1041,
+        "capped_tokens": 1041
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48269,
+        "capped_chars": 48269,
+        "raw_tokens": 12067,
+        "capped_tokens": 12067
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 39206,
+        "capped_chars": 39206,
+        "raw_tokens": 9801,
+        "capped_tokens": 9801
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 495176,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

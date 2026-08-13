@@ -1,0 +1,139 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-05-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Hold the current posture and let the May 19 joint statement framework play out. Do not escalate further \u2014 the ZTE denial order has already demonstrated devastating US leverage over Chinese tech, and China has made vague concessions (increased purchases, IP cooperation). Push for concrete specifics in the upcoming follow-up team visit to China, but avoid new tariff actions that could unravel the fragile truce and expose US farm states to further retaliation.\n\nSUPPORTING RATIONALE: The threat score of -0.30 reflects a moderate US opportunity, not a threat. Three factors drive this reading:\n\n(a) The ZTE denial order (Apr 16, 2018) proved that US export controls can effectively shut down a major Chinese company \u2014 ZTE ceased major operations, with Chinese fund managers slashing valuations 20-30%. This demonstrated asymmetric leverage: China's tech sector depends on US components for 25-30% of inputs (Reuters, Axios). Xi Jinping personally lobbied Trump to ease the ban, signaling how acute the pain is.\n\n(b) China's retaliatory tariffs hit US agriculture ($50B targeting soybeans, autos, aircraft), creating real political pressure in farm states. However, the US economy remains strong: industrial production grew from 101.5 to 102.4 (Oct 2017 to May 2018), consumer sentiment at 98, and the labor market is tight. The economic fundamentals can absorb the trade friction.\n\n(c) The May 19 joint statement is vague \u2014 no dollar figures, no timelines, no structural IP reform commitments. China pledged to 'significantly increase purchases' but resisted the US demand to cut the deficit by $200B. The statement's weakness means the US has not yet extracted meaningful concessions, but the negotiating leverage (especially ZTE-type export controls) remains intact.\n\nThe action score of -0.10 (hold) reflects the need to consolidate gains without overplaying the hand. Escalation risks: further tariff threats could trigger a broader retaliatory cycle hitting US consumers and farm exporters, and the $150B tariff threat has already been deployed as leverage. De-escalation risks: rolling back the ZTE denial order or tariffs prematurely (as Trump signaled he might for ZTE at Xi's request) would surrender the single most powerful leverage point. The right move is to hold, demand specifics in the follow-up negotiations, and preserve the export-control weapon as a credible threat.",
+      "key_factors": [
+        "ZTE denial order (Apr 16) demonstrated devastating US export-control leverage \u2014 ZTE ceased operations, Xi personally lobbied Trump",
+        "May 19 joint statement is vague: no dollar figures, no timelines, no structural IP reform \u2014 concessions are aspirational only",
+        "China's retaliatory tariffs on US agriculture ($50B) create farm-state political pressure but US macro remains strong",
+        "US economy robust: industrial production rising, consumer sentiment 98, unemployment low \u2014 can absorb trade friction",
+        "Trump signaled willingness to ease ZTE sanctions at Xi's request \u2014 risks undermining key leverage point",
+        "Section 301 tariff list ($50B) still pending finalization \u2014 preserves escalation option"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-05-19",
+          "excerpt": "US and China release joint statement after talks: China agrees to 'significantly increase' purchases of US goods and services. Mnuchin says trade war is 'on hold.'"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods (including soybeans, automobiles, and aircraft) in response to the Section 301 list."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "axios_zte_2018-05-10",
+          "excerpt": "ZTE announced its major operations have ceased as a result of a U.S. ban. U.S. sanctions have brought operations at a major Chinese company to a screeching halt. It's a sign that Washington still has significant economic leverage over Beijing."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_zte_valuation_2018-04-23",
+          "excerpt": "Chinese mutual fund managers cut the value of ZTE stock by 20-30%. Around 40 Chinese mutual funds have adjusted the valuation since trading was suspended."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes_joint_statement_2018-05-19",
+          "excerpt": "Trump administration officials had said China was prepared to make up to $200 billion in additional purchases. Notably absent from Saturday's announcement were any dollar figures."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_INDPRO",
+          "excerpt": "US Industrial Production rose from 101.46 (Dec 2017) to 102.40 (May 2018), showing continued expansion."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_UMCSENT",
+          "excerpt": "Consumer Sentiment at 98.0 (May 2018), up from 95.9 (Dec 2017). Economy remains resilient."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": -0.1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-05-24",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2446,
+        "capped_chars": 2446,
+        "raw_tokens": 612,
+        "capped_tokens": 612
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47806,
+        "capped_chars": 47806,
+        "raw_tokens": 11952,
+        "capped_tokens": 11952
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 39579,
+        "capped_chars": 39579,
+        "raw_tokens": 9895,
+        "capped_tokens": 9895
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 373281,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

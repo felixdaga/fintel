@@ -1,0 +1,134 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Continue negotiations through the March 1 deadline window without making major new concessions on structural issues. Signal willingness to increase purchases of US goods (soybeans, energy, semiconductors) as a goodwill gesture, but resist US demands for binding structural reform on subsidies and forced technology transfer. Use the approaching deadline as leverage \u2014 the US side faces its own economic pressures and Trump has already signaled willingness to extend.\n\nSUPPORTING RATIONALE: The threat to China is moderate but real. US tariffs now cover ~$250B of Chinese imports at 10%, with List 3 scheduled to rise to 25% on March 1 if no deal (timeline entry 2018-09-17). China's GDP growth has slowed to 6.4% in Q4 2018, a 28-year low, with manufacturing PMI falling below 50 in December \u2014 the trade war is contributing to economic deceleration (CNBC, 2019-01-21). The Huawei/Meng Wanzhou situation represents a serious non-tariff escalation: DOJ unsealed criminal charges on Jan 28, 2019 for fraud and sanctions violations, and the US formally requested Meng's extradition (NPR, 2019-01-28). This signals the US may pursue broader entity-list actions against Chinese tech firms, threatening China's 5G and tech self-sufficiency ambitions.\n\nHowever, several factors argue against escalation and for continued negotiation. First, talks are actively progressing \u2014 the Feb 14-15 Beijing round produced 'important step-by-step progress' per Xi Jinping himself, and both sides are discussing an MOU framework (Reuters, 2019-02-16). Second, Trump has repeatedly hinted at extending the March 1 deadline, saying 'there is a possibility I will extend the date' if a deal is close (CNBC, 2019-02-14). Third, the US economy shows signs of strain \u2014 the 10-year Treasury yield has fallen from 3.23% in October to 2.65%, and the yield curve is flattening, suggesting weakening US growth that constrains Trump's ability to sustain a prolonged trade war (country_health data). Fourth, China's retaliatory tariffs on ~$60B of US goods and the detention of two Canadians provide some counter-leverage. China's best strategy is patient negotiation: offer purchase commitments that Trump can sell domestically as wins, while holding firm on structural reforms that would undermine China's industrial policy model. Escalation would risk triggering the 25% tariff hike and further Huawei restrictions; premature concession on structural issues would be far more damaging long-term.",
+      "key_factors": [
+        "US tariffs cover ~$250B of Chinese imports; List 3 rate hike to 25% looms on March 1 deadline",
+        "Huawei criminal charges and Meng extradition request signal broadening tech war beyond tariffs",
+        "China GDP at 28-year low (6.4% Q4 2018), manufacturing PMI below 50 \u2014 trade war contributing to slowdown",
+        "Active negotiations with progress; Trump signals possible deadline extension",
+        "US yield curve flattening (10Y from 3.23% to 2.65%) suggests US economic constraints on sustained trade war",
+        "China's leverage: retaliatory tariffs on ~$60B US goods, detained Canadians, semiconductor supply chain importance"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-14",
+          "excerpt": "Another round of talks (through Feb 15). Progress reported on purchases; enforcement mechanism still disputed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-02-14",
+          "excerpt": "Trump told reporters negotiations progressing 'very well' and 'there is a possibility I will extend the date' if deal is close."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-02-16",
+          "excerpt": "Xi: 'The consultations between the two sides' teams achieved important step-by-step progress.' Sources say 'stalemate on the important stuff' regarding structural issues."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-01-21",
+          "excerpt": "China GDP growth 6.6% in 2018, slowest in 28 years. Q4 at 6.4%. Industrial output grew 5.7% in December, beating expectations."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "US 10-year Treasury yield fell from 3.23% (Oct 5) to 2.65% (Feb 20), indicating yield curve flattening."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5015,
+        "capped_chars": 5015,
+        "raw_tokens": 1254,
+        "capped_tokens": 1254
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11204,
+        "capped_chars": 11204,
+        "raw_tokens": 2801,
+        "capped_tokens": 2801
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 86909,
+        "capped_chars": 86909,
+        "raw_tokens": 21727,
+        "capped_tokens": 21727
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 421928,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

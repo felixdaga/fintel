@@ -1,0 +1,141 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.6,
+      "rationale": "RECOMMENDATION: Continue negotiations actively and offer substantial purchase commitments to secure a deal before the March 2 deadline, but resist US demands for unilateral enforcement mechanisms and sweeping structural reforms that would undermine state-led industrial policy. The immediate economic costs of escalation are too high to risk a breakdown, but core developmental sovereignty is non-negotiable.\n\nSUPPORTING RATIONALE: The threat reading of +0.6 reflects multiple converging pressures. China's manufacturing PMI contracted for two consecutive months (49.5 in January 2019, below the 50 threshold), with the Caixin PMI hitting 48.3\u2014its worst reading since February 2016\u2014and new orders at 47.3, the lowest since September 2015 (Reuters, Feb 1 2019). GDP growth fell to 6.6% in 2018, a 28-year low (The Diplomat, Jan 21 2019). The tariff landscape is severe: $250B of Chinese exports already face US tariffs (10% on List 3, 25% on Lists 1&2), with the List 3 rate scheduled to rise to 25% on March 2 if no deal is reached (timeline entry, Sep 17 2018). UBS forecasts GDP could slip to 5.5% if the trade war further escalates (SCMP, Nov 24 2018). The Huawei/Meng Wanzhou situation compounds the threat\u2014US DOJ unsealed 13 criminal counts on Jan 28 2019 and formally requested extradition, directly targeting China's most important tech champion and its access to US semiconductor technology (NPR, Jan 28 2019). China's retaliatory capacity is constrained: it has already imposed tariffs on ~$110B of US goods but its imports from the US are far smaller than its exports, limiting symmetric retaliation options (PBS, Jan 10 2019).\n\nThe action_score of +0.25 (negotiate, leaning toward moderate concession on purchases) reflects several factors. First, the economic pain is real and growing\u2014consumer confidence is declining, exports contracted in December 2018, and stimulus measures haven't yet taken hold (BBC, Jan 31 2019). Second, Trump is increasingly eager for a deal to lift markets (the S&P fell ~8% since the G20 truce), creating leverage for China to extract favorable terms on purchases without conceding on structural issues. Third, purchase commitments\u2014soybeans, LNG, manufactured goods\u2014are the easy part; the US-China Economic and Security Review Commission and multiple reports confirm the real gap is on structural reforms (forced tech transfer, subsidies, IP protection) and enforcement mechanisms (NYT, Feb 12 2019). China should offer generous purchase packages to satisfy Trump's need for a visible 'win' while holding firm on: (a) rejecting automatic tariff-snapback enforcement mechanisms that would cede sovereignty, (b) preserving Made in China 2025 industrial policy core, and (c) not agreeing to unilateral verification regimes. The internal displeasure in Beijing with the G20 stopgap deal (NYT, Feb 12 2019) means any agreement must be framed domestically as a win, not a capitulation. The March 2 deadline creates urgency but also a window\u2014delay beyond it risks 25% tariffs on $200B of exports, which would materially worsen the slowdown.",
+      "key_factors": [
+        "Manufacturing PMI contraction (49.5 official, 48.3 Caixin) \u2014 worst since 2016",
+        "$250B of Chinese exports already under US tariffs, List 3 rate set to rise from 10% to 25% on March 2",
+        "GDP growth at 6.6% (2018), 28-year low; forecasts of further decline to 6.2% or lower",
+        "Huawei DOJ indictment + Meng extradition request directly threatens China's tech champion",
+        "US demanding structural reforms (tech transfer, subsidies, IP) that China cannot accept without undermining core economic model",
+        "Enforcement mechanism dispute: US wants automatic tariff snapback; China must reject unilateral compliance judgments",
+        "China's retaliatory capacity limited \u2014 already tariffed ~$110B of US goods, imports far smaller than exports",
+        "Trump's eagerness for a deal (market pressure) gives China negotiating leverage on purchase terms"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-14",
+          "excerpt": "Another round of talks (through Feb 15). Progress reported on purchases; enforcement mechanism still disputed"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-caixin-pmi-2019-02-01",
+          "excerpt": "The Caixin/Markit Manufacturing PMI for January fell to 48.3 - its worst reading since February 2016. New orders contracted to 47.3, the lowest reading since September 2015"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thediplomat-2019-01-21",
+          "excerpt": "China's economic growth hit a three-decade low in 2018... Growth slowed to 6.6 percent from 2017's 6.9 percent"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt-2019-02-12",
+          "excerpt": "American negotiators want to create a mechanism that would automatically raise tariffs on Chinese goods if its exports to the United States keep rising"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "pbs-2019-01-10",
+          "excerpt": "USTR statement emphasized American insistence on 'structural changes' in Chinese technology policy... It gave no sign of progress in those areas"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp-2018-11-24",
+          "excerpt": "If the trade war further escalates, GDP growth in China could slip to 5.5 per cent next year, according to UBS"
+        }
+      ],
+      "threat_score": 0.6,
+      "action_score": 0.25,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5015,
+        "capped_chars": 5015,
+        "raw_tokens": 1254,
+        "capped_tokens": 1254
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11204,
+        "capped_chars": 11204,
+        "raw_tokens": 2801,
+        "capped_tokens": 2801
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 79681,
+        "capped_chars": 79681,
+        "raw_tokens": 19920,
+        "capped_tokens": 19920
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 378362,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

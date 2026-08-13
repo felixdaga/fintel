@@ -1,0 +1,5 @@
+{"ts": "2026-08-13T08:04:16.652879+00:00", "event": "cell_opened", "run_id": "eval-geopol-abl-deepseek-oc-2018-04-12", "decision_date": "2026-08-13", "symbols": ["USA"], "scope": "single_name"}
+{"ts": "2026-08-13T08:04:16.656011+00:00", "event": "read", "kind": "event_timeline", "query": {"symbol": "USA"}, "status": "ok", "source": "event_timeline", "latency_ms": 0.02, "raw_chars": 10522, "capped_chars": 10522, "raw_tokens": 2630, "capped_tokens": 2630}
+{"ts": "2026-08-13T08:07:40.561768+00:00", "event": "agent_returned", "agent": "llm", "elapsed_ms": 203905.1}
+{"ts": "2026-08-13T08:07:40.562203+00:00", "event": "submitted", "n_views": 1, "dropped": []}
+{"ts": "2026-08-13T08:07:40.562869+00:00", "event": "cell_closed", "n_reads": 1, "by_status": {"ok": 1}, "kinds_used": ["event_timeline"], "degraded": false, "chars_by_kind": {"event_timeline": {"n_reads": 1, "raw_chars": 10522, "capped_chars": 10522, "raw_tokens": 2630, "capped_tokens": 2630}}}

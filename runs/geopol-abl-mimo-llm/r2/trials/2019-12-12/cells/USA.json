@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-12-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8140,
+    "tokens_out": 777,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0078854,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.25,
+      "rationale": "RECOMMENDATION: Continue negotiations with China from a position of strength, maintaining existing tariffs as leverage while pursuing a Phase One deal. Do not escalate further with new tariff rounds, but do not roll back existing tariffs without concrete commitments on IP protection, market access, and enforcement mechanisms. Use the current pressure to lock in verifiable structural reforms.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate (threat_score +0.25). The trade war has imposed real costs on US consumers and businesses \u2014 UNCTAD found US consumers bear the heaviest brunt of tariffs, with higher prices passed down to them and importing firms. The IMF cut global growth forecasts partly due to US-China trade tensions. However, the US also holds significant leverage: Chinese exports to the US fell 25% ($35B loss in H1 2019 per UNCTAD), China's economy is under pressure, and trade diversion is benefiting US allies like Mexico, Taiwan, and Vietnam. The US trade deficit with China stood at $419B, and bipartisan support exists for confronting China on IP theft, forced technology transfer, and market access barriers. Sen. Graham called this 'the best chance in my lifetime to get China to change their cheating ways.' The action_score of -0.15 reflects a negotiate posture: the US should maintain pressure but avoid further escalation that would increase costs to American consumers and risk broader economic disruption. The Phase One deal framework is emerging \u2014 the US should push for maximum structural concessions while tariffs remain in place as leverage.",
+      "key_factors": [
+        "US tariffs caused 25% export loss ($35B) to Chinese exports in H1 2019, demonstrating leverage",
+        "US consumers bear heaviest brunt of tariffs per UNCTAD study \u2014 higher prices passed to consumers",
+        "Bipartisan support for confronting China on IP theft, forced tech transfer, market access",
+        "IMF cut global growth forecasts citing US-China trade tensions as a factor",
+        "Trade diversion benefiting allies (Mexico +$3.5B, Taiwan +$4.2B, EU +$2.7B)",
+        "$419B US trade deficit with China provides political justification for maintaining pressure",
+        "Phase One deal negotiations ongoing \u2014 leverage should be used to extract maximum structural concessions"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org \u2014 Trade war leaves both US and China worse off",
+          "excerpt": "US tariffs caused a 25% export loss, inflicting a US$35 billion blow to Chinese exports in the US market for tariffed goods in the first half of 2019. Consumers in the US are bearing the heaviest brunt of the US tariffs on China."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "This is the best chance in my lifetime to get China to change their cheating ways. The tariffs are tools that bring China to the table."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The U.S. is concerned that while China has had ready access to the US market and to invest in the U.S., American companies are locked out of these markets in China."
+        }
+      ],
+      "threat_score": 0.25,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-12-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 21708,
+        "capped_chars": 17702,
+        "raw_tokens": 5427,
+        "capped_tokens": 4426
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20169,
+  "started_at": "2026-08-13T10:55:06+00:00"
+}

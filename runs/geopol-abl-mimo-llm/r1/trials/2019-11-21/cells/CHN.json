@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-11-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8143,
+    "tokens_out": 886,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0082154,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue engaging in negotiations with the United States while maintaining a firm stance on core interests. We should avoid further escalation that would deepen economic damage, but also resist making unilateral concessions that undermine our development model. A patient, calibrated approach that signals willingness to talk while protecting strategic sectors is the best path forward.\n\nSUPPORTING RATIONALE: The threat to China is significant but not existential. UNCTAD data shows US tariffs caused a $35 billion blow to Chinese exports in the US market in H1 2019, with office machinery and communication equipment sectors hit hardest (55% trade decline). However, Chinese firms maintained 75% of their exports to the US despite tariffs, and trade diversion to Vietnam, Taiwan, and Mexico partially offset losses. The yuan fell over 5% against the dollar in 2018 but stabilized in 2019, and the Shanghai Composite recovered 16% YTD. The US has escalated tariffs on $200 billion of goods from 10% to 25% and threatened tariffs on an additional $300 billion, creating real pressure on export hubs and supply chains. However, the US side also bears costs\u2014White House adviser Kudlow acknowledged 'both sides will suffer'\u2014and the IMF has flagged trade tensions as weakening global expansion. China's strategic retaliation on $110 billion of US goods, targeting Republican-district products like soybeans, provides leverage. The negotiation stance is appropriate because: (1) further escalation risks triggering the threatened $300 billion tariff round, which would be far more damaging; (2) the US is also under domestic pressure from consumers and businesses bearing tariff costs; (3) maintaining talks preserves optionality while China accelerates diversification and tech self-sufficiency goals under Made in China 2025.",
+      "key_factors": [
+        "US tariffs on $200bn raised from 10% to 25%, threatening additional $300bn",
+        "UNCTAD: $35bn Chinese export loss in H1 2019, but 75% of exports maintained",
+        "Trade diversion to Vietnam, Taiwan, Mexico partially offsets losses",
+        "US domestic costs acknowledged by White House (Kudlow: 'both sides will suffer')",
+        "Shanghai Composite up 16% YTD, yuan stabilized in 2019 after 2018 decline",
+        "China's $110bn retaliatory tariffs strategically targeting Republican districts",
+        "IMF flagged US-China tensions as factor in weakened global expansion"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "US tariffs caused a 25% export loss, inflicting a US$35 billion blow to Chinese exports in the US market for tariffed goods in the first half of 2019. Chinese firms maintained 75% of their exports to the US."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org \u2014 Trade war leaves both US and China worse off",
+          "excerpt": "Of the $35 billion Chinese export losses in the US market, about $21 billion (or 63%) was diverted to other countries, while the remainder of $14 billion was either lost or captured by US producers."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The yuan fell over 5% against the US dollar last year, before broadly stabilising in 2019. Shanghai Composite slumped nearly 25% in 2018 but recovered 16% so far in 2019."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-11-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 21708,
+        "capped_chars": 17702,
+        "raw_tokens": 5427,
+        "capped_tokens": 4426
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20076,
+  "started_at": "2026-08-13T10:54:41+00:00"
+}

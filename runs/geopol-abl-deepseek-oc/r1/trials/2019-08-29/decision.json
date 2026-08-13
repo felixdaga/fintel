@@ -1,0 +1,145 @@
+{
+  "USA": {
+    "symbol": "USA",
+    "score": 0.55,
+    "rationale": "RECOMMENDATION: Hold the full September 1 escalation in abeyance, refrain from raising existing tariff lists further, and reopen a negotiated channel while keeping current tariffs as leverage. Do not follow through on the threatened hike of List 4 to 15% or the new hikes on existing lists; signal that we will trade tariff restraint for enforceable progress on purchases and enforcement. This is a strategic pause to avoid self-inflicted damage, not a surrender of our leverage.\n\nSUPPORTING RATIONALE: The threat to US interests is now material and rising. The 10-year Treasury yield has collapsed from ~2.5% in March to 1.47% with the 2-year at 1.50% (country_health DGS10/DGS2), an inversion that the market reads as a recession signal; University of Michigan consumer sentiment plunged from 100 in May to 89.8 (country_health UMCSENT). Each escalation move has triggered sharp selloffs (Dow down ~500 points on Aug 23 after Trump's tweets; CNBC/LA Times) and business groups strongly warn the Aug 23 5-point List 4 hike and $75B Chinese retaliation will hit US consumers, tech, and retailers directly (timeline Aug 13, Aug 23; CNN/Lexology). Critically, continued escalation has not extracted concessions: China renegotiated rather than sign (timeline May 5, Aug 1) and retaliated again rather than fold (timeline Aug 23, auto tariffs re-imposed). The US still holds genuine leverage \u2014 the dollar is strong at 117.9 and industrial production is still growing (country_health DTWEXBGS, INDPRO) \u2014 so the right stance is to keep that leverage and negotiate from strength rather than escalate into a spiral that risks the recession the yield curve is already pricing. Hence a threat_score of +0.55 (material GDP/market drag but not existential) and an action_score of +0.15 (hold/negotiate): a tempered, deliberate pivot toward talks that preserves our negotiating position.",
+    "key_factors": [
+      "Inverted 10Y/2Y yield curve (1.47% vs 1.50%) pricing recession risk from the trade war",
+      "Consumer sentiment collapse to 89.8 from 100 in May",
+      "Aug 23 China retaliation on $75B of US goods and re-imposed auto tariffs; US ordered 5-pt List 4 hike to 15%",
+      "Continued escalation (May 5 renegotiation, Aug 1 announcement) has yielded little \u2014 China retaliates rather than concedes",
+      "US retains leverage: strong dollar (117.9) and still-growing industrial production",
+      "Fed already cut to 2.13 and cannot fully offset trade-war damage; business groups urge restraint"
+    ],
+    "sources_cited": [
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-08-23",
+        "excerpt": "China announces retaliation on ~$75B of US goods... Trump orders US companies to find alternative to China and directs a 5-point increase on List 4 and threatened hikes on existing lists."
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-08-13",
+        "excerpt": "USTR splits List 4... 4A effective Sept 1; 4B delayed to Dec 15."
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-08-01",
+        "excerpt": "Trump announces 10% tariffs on the remaining ~$300B of Chinese goods (List 4), effective Sept 1."
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-08-05",
+        "excerpt": "Treasury designates China a currency manipulator after CNY breaks 7."
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "DGS10",
+        "excerpt": "10-year Treasury yield at 1.47% (Aug 28), down from ~2.5% in March."
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "DGS2",
+        "excerpt": "2-year Treasury yield at 1.50% \u2014 yield curve inverted."
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "UMCSENT",
+        "excerpt": "Consumer sentiment fell to 89.8 in Aug from 100 in May."
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "cnbc.com/2019/08/23",
+        "excerpt": "Yield curve inverts again Friday as Trump reignites fears the trade war will lead to a recession; 10Y at 1.535%, 2Y at 1.513%."
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "latimes.com 2019-08-23",
+        "excerpt": "Dow sank more than 500 points after Trump tweets; 10Y fell to 1.53%."
+      }
+    ],
+    "threat_score": 0.55,
+    "action_score": 0.15,
+    "action_level": "negotiate"
+  },
+  "CHN": {
+    "symbol": "CHN",
+    "score": 0.55,
+    "rationale": "RECOMMENDATION: Hold the line and signal willingness to return to the negotiating table without making new concessions. Do not escalate further in response to the US List 4 hike to 15% (effective Sept 1) \u2014 further retaliation would deepen self-inflicted damage on our more trade-exposed economy and feed Washington's decoupling narrative. Instead, maintain our measured $75B response and let the mounting pressure building inside the US economy (inverted curve, Fed cuts, crumbling consumer sentiment) bring the Americans back to the table on more favorable terms.\n\nSUPPORTING RATIONALE: The threat is high but not existential. US tariffs at 25% on ~$250B and 15% on the remaining ~$300B are biting the real economy: our industrial production growth slid from 106.3 to 104.4 y/y (June-Aug), PPI went negative for the first time in three years, the manufacturing PMI sits at 49.7 (contraction), and Q2 GDP at 6.2% is the weakest in 27 years (web/country_health). Exports to the US fell 6.5% in July and the RMB broke 7 per dollar after Hanoi's currency-manipulator designation, while Huawei remains on the Entity List with Google and chip suppliers cut off. Offsetting the existential anchor are strong buffers \u2014 reserves are steady near $3.1T and the discount rate is unchanged at 2.9%, so financial stability holds. This justifies a ~+0.55 threat score. On action: further escalation would hurt us more than the US (we are more export-dependent), and the US side is already signalling distress \u2014 the 10Y yield collapsed to 1.47% with an inverted curve, the Fed cut rates, and consumer sentiment plunged from ~98 to 89.8. That US pressure is our leverage; patience and a firm-but-open negotiating posture (action_score +0.1, negotiate) is the disciplined play rather than either escalating or capitulating.",
+    "key_factors": [
+      "US tariffs raised to 25% on ~$250B and List 4 (~$300B) set to 15% effective Sept 1",
+      "China exports to US fell 6.5% in July; imports from US -19.1%; PPI turned negative first time in 3 years",
+      "Manufacturing PMI 49.7 contraction; Q2 GDP 6.2% weakest in 27 years; export orders shrinking",
+      "CNY broke 7 per USD (Aug 5) followed by US 'currency manipulator' designation",
+      "Huawei on Entity List since May 16; Google GMS and US chip suppliers cut off",
+      "China's measured retaliation: $75B tariff list + auto tariffs on Aug 23",
+      "US recession signals \u2014 10Y yield 1.47%, inverted curve, Fed cut, consumer sentiment 89.8 \u2014 US under pressure",
+      "China's buffers intact: reserves ~$3.1T, discount rate steady at 2.9%"
+    ],
+    "sources_cited": [
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-05-10",
+        "excerpt": "List 3 tariff rate rises from 10% to 25%"
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-08-23",
+        "excerpt": "China announces retaliation on ~$75B of US goods, including re-imposing tariffs on US autos"
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-08-05",
+        "excerpt": "US Treasury designates China a currency manipulator"
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-08-13",
+        "excerpt": "USTR splits List 4; List 4A effective Sept 1, List 4B delayed to Dec 15"
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "CHNPRINTO01IXPYM",
+        "excerpt": "China industrial production 106.3 (Jun) to 104.4 (Aug) Y/Y"
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "TRESEGCNM052N",
+        "excerpt": "China reserves ~$3.126T, broadly stable"
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "EXCHUS",
+        "excerpt": "CNY/USD 6.8775 (Jul) to 7.0629 (Aug)"
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "DGS10",
+        "excerpt": "US 10Y Treasury yield 1.47% on 2019-08-28, down from ~2.1%"
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "UMCSENT",
+        "excerpt": "US consumer sentiment 89.8 in Aug, down from ~98"
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "FEDFUNDS",
+        "excerpt": "Fed funds eased to 2.13% by Aug 2019"
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "forbes-2019-08-09",
+        "excerpt": "Exports to US fell 6.5% in July; PPI turned negative first time in 3 years; PMI 49.7 contraction"
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "cnbc-2019-07-23",
+        "excerpt": "Q2 GDP 6.2%, weakest in 27 years; industrial output growth hit 17-year low of 5.0% in May"
+      }
+    ],
+    "threat_score": 0.55,
+    "action_score": 0.1,
+    "action_level": "negotiate"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-01-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10294,
+    "tokens_out": 1033,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0108074,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.3,
+      "rationale": "RECOMMENDATION: The United States should escalate tariffs on Chinese goods, leveraging its stronger economic position to pressure China into meaningful negotiations on structural issues like technology transfer, IP theft, and market access. The current tariff regime has already imposed costs on China's export economy, and the asymmetry in trade volumes ($505B Chinese exports to US vs. $130B US exports to China) gives the US significant leverage in a tit-for-tat scenario. However, escalation should be targeted and strategic, focusing on sectors that maximize pressure on China while minimizing collateral damage to US consumers and supply chains.\n\nSUPPORTING RATIONALE: The threat score of 0.3 reflects a moderate but manageable threat to US interests. While the trade war has caused some pain in specific sectors\u2014soybean prices down 20%, agricultural and automotive exports to China hit by retaliation\u2014the overall US economy remains strong, and the impact is described as 'a minor blip' (Brookings). The RAND analysis notes that US tariffs on $34B of Chinese goods result in only a 'small reduction in U.S. employment' and a transfer of $6.7B from businesses to government revenue. The real threat is not immediate economic damage but the long-term strategic challenge posed by China's industrial policies: forced technology transfer, massive domestic subsidies, and 'buy China' procurement policies that systematically disadvantage US firms (CFR). China's Made in China 2025 initiative aims to displace US technology leadership in key sectors like semiconductors, aircraft, and electric vehicles.\n\nThe action score of -1.0 (maximal escalation) is justified by several factors: (1) The US has asymmetric leverage\u2014China's exports to the US are ~5% of its GDP vs. ~0.7% for US exports to China (RAND), meaning China will 'run out of exports to levy retaliatory tariffs upon long before the United States does.' (2) China has shown unwillingness to make structural concessions\u2014previous deals with Ross and Mnuchin were vetoed by Trump, and China's offers have been limited to purchasing more US goods rather than addressing fundamental market access issues (Washington Post). (3) The current moment offers political cover\u2014the Trump administration sees this as a winning strategy, and the 2018 midterm elections have passed, reducing domestic political constraints. (4) Delaying escalation risks allowing China to further entrench its industrial policies and reduce dependence on US technology. The CFR analysis documents how China's import substitution policies are accelerating across autos, semiconductors, and construction equipment, with foreign firms being pressured to become 'more Chinese' to maintain market access.",
+      "key_factors": [
+        "Asymmetric trade leverage: $505B Chinese exports to US vs. $130B US exports to China gives US significant tit-for-tat advantage",
+        "China's structural industrial policies (forced tech transfer, subsidies, buy-China) pose long-term threat to US tech leadership",
+        "Previous negotiation attempts failed\u2014China's offers limited to purchases, not structural reform",
+        "US economy strong enough to absorb short-term costs; impact described as 'minor blip'",
+        "China's Made in China 2025 aims to displace US in semiconductors, aircraft, EVs",
+        "Soybean prices down 20%, agricultural/auto sectors already bearing costs of retaliation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors... The price of soybeans is already down 20 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "$505 billion in potentially lost exports is a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com \u2014 How the U.S. and China misread the signals in the trade war",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cfr.org \u2014 U.S.-China Trade War: How We Got Here",
+          "excerpt": "China's industrial policy largely shifted from export promotion to import substitution after 2009... foreign firms often believe that they have to invest in China to supply the Chinese market because of a mix of formal barriers at the border and informal pressure to produce in China"
+        }
+      ],
+      "threat_score": 0.3,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-01-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 33204,
+        "capped_chars": 28223,
+        "raw_tokens": 8301,
+        "capped_tokens": 7056
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 25696,
+  "started_at": "2026-08-13T10:55:07+00:00"
+}

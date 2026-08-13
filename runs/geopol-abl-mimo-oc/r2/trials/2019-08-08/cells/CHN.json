@@ -1,0 +1,135 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-08-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.6,
+      "rationale": "RECOMMENDATION: China should signal willingness to resume talks while maintaining its existing retaliatory measures (agricultural purchase suspension, currency flexibility). It should not escalate further at this moment\u2014the economy is too fragile and the US has demonstrated a willingness to match or exceed every Chinese move. Instead, use the September Washington talks as a diplomatic opening while quietly accelerating domestic stimulus and tech self-sufficiency investments.\n\nSUPPORTING RATIONALE: The threat to China is high. The timeline shows the US has systematically expanded tariffs from $50B (Lists 1-2) to $200B (List 3 at 25%) to a new $300B List 4 announced Aug 1 at 10%, meaning nearly all Chinese exports to the US face tariffs. The Huawei Entity List action (May 16) directly targets China's tech self-sufficiency goals by cutting off access to US chips and Android\u2014Huawei reportedly stockpiled 8-12 months of components but faces a hard deadline. The Treasury's Aug 5 currency manipulator designation, while largely symbolic per expert analysis (Vox, NPR, Cato Institute), opens a pathway to additional countervailing duties and further escalation. China's Q2 GDP fell to 6.2%, a 27-year low (CNBC, Reuters), and factories are shedding jobs at the fastest pace since the 2008 crisis. Imports fell 7.3% in June.\n\nHowever, the threat is not yet existential. GDP remains within the government's 6.0-6.5% target range. Beijing has fiscal ammunition: 2 trillion yuan in tax cuts and 2.15 trillion yuan in special bond issuance are already deployed, with room for more. June industrial production surprised to the upside at 6.3% (vs 5.0% in May). China has already retaliated effectively\u2014suspended all US agricultural purchases (a $9.1B market in 2018, down from $19.5B in 2017), and allowed CNY to weaken past 7, which partially offsets tariff impacts on exporters. The 'unreliable entity list' tool is available but not yet deployed.\n\nThe action_score of -0.2 reflects a stance just below neutral: maintain the retaliatory posture already adopted but do not add new escalation. Further escalation risks triggering US responses (broader Entity List actions, additional tariff rates, or secondary sanctions) that could push China toward the existential territory. The September talks in Washington offer a face-saving off-ramp. Domestically, accelerating stimulus and tech investment strengthens China's hand for future negotiations.",
+      "key_factors": [
+        "List 4 tariffs ($300B at 10%) now cover nearly all Chinese exports to US",
+        "Huawei Entity List action threatens tech self-sufficiency goals, with Aug 19 temporary license expiration approaching",
+        "Currency manipulator designation opens pathway to further US escalation",
+        "Q2 GDP at 6.2% (27-year low), factory job losses accelerating",
+        "China has already retaliated with agricultural suspension and CNY flexibility",
+        "Beijing retains fiscal stimulus capacity and alternative tools (unreliable entity list, rare earths)",
+        "September Washington talks offer diplomatic opening"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-08-01",
+          "excerpt": "After the Shanghai round, Trump announces 10% tariffs on the remaining ~$300B of Chinese goods (List 4), effective Sept 1."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List. US firms generally barred from selling to Huawei without a license."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_china_q2_gdp",
+          "excerpt": "China's economy grew 6.2% in the second quarter from a year ago \u2014 the weakest rate in at least 27 years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp_ag_purchases",
+          "excerpt": "China announced it has suspended purchases of US agricultural products in retaliation for 'a serious violation' of agreements."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_china_gdp",
+          "excerpt": "For June, both exports and imports fell, and an official survey showed factories were shedding jobs at the fastest pace since the global crisis a decade ago."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico_currency",
+          "excerpt": "Treasury designates China as a currency manipulator \u2014 'this is more symbolic than anything at this point' but signals further escalation."
+        }
+      ],
+      "threat_score": 0.6,
+      "action_score": -0.2,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-08-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4860,
+        "capped_chars": 4860,
+        "raw_tokens": 1215,
+        "capped_tokens": 1215
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 98578,
+        "capped_chars": 98578,
+        "raw_tokens": 24645,
+        "capped_tokens": 24645
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 388224,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

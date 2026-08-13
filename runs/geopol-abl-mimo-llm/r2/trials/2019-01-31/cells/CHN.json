@@ -1,0 +1,102 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7795,
+    "tokens_out": 864,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0077886,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should engage in negotiations with the United States while maintaining its current retaliatory tariffs as leverage. We should signal willingness to increase purchases of US goods and open specific market sectors, but resist structural reforms that undermine state-led industrial policy. The goal is to de-escalate without conceding on core strategic interests like Made in China 2025.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has imposed tariffs on $250 billion of Chinese imports (roughly half of US-China trade), and China has retaliated covering $110 billion of the $130 billion in US imports to China (Fox Business). The tariff escalation has already depressed soybean prices 20% and hurt US agricultural and manufacturing sectors, giving China some retaliatory leverage (Brookings). However, China's position is constrained: the US threatens to tariff the remaining $267 billion of imports if China retaliates further, which would cover virtually 100% of bilateral trade (Fox Business). China's export economy remains exposed, and the US frames the conflict around structural issues\u2014IP theft, forced joint ventures, state subsidies, and technology transfer\u2014that go beyond trade balances (Fox Business, SCMP). The SCMP analysis notes the US must accept China's need to support technological development, while China should work with US policymakers who oppose tariffs but want market opening and IP protection. This suggests a negotiated path exists. China's retaliatory tariffs have already nearly maxed out, limiting further escalation options. The smart play is to negotiate from a position of demonstrated resolve while the window for talks remains open, as both sides have incentives to reach a face-saving deal.",
+      "key_factors": [
+        "US tariffs cover $250B of ~$500B Chinese exports; threat to escalate to 100% coverage",
+        "China's retaliatory tariffs nearly exhausted at $110B of $130B US imports",
+        "US structural demands (IP, subsidies, tech transfer) threaten Made in China 2025",
+        "China retains leverage through agricultural retaliation and supply chain interdependence",
+        "Both sides have domestic political incentives to reach a deal",
+        "Soybean price drop of 20% demonstrates China's retaliatory effectiveness"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness.com - US-China trade war: Why America must win",
+          "excerpt": "Effective Sept. 24, President Trump announced a 10% tariff on $200 billion in Chinese imports... this $250 billion aggregate tariff amount... is about half of U.S.-China trade. President Trump has also indicated that if things don't go as to what he wants to happen, he's going to do it on the rest of it"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness.com - The U.S.-China Trade War, Explained",
+          "excerpt": "This second round of Chinese tariffs is going to now cover $110 billion of the $130 billion of U.S.-China trade -- again, almost 100% of the entire trading relationship"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "brookings.edu - Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent... It's hard to see the off-ramp right now. The U.S. has announced $250 billion of tariffs on products from China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp.com - US-China trade war could end with a 'big deal'",
+          "excerpt": "The US must accept China's need to support technological development, while China should work with US policymakers who oppose tariffs but want the country to further open its markets and protect intellectual property rights"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 26729,
+        "capped_chars": 16022,
+        "raw_tokens": 6682,
+        "capped_tokens": 4006
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19947,
+  "started_at": "2026-08-13T10:54:46+00:00"
+}

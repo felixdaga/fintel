@@ -1,0 +1,140 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-04-04",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Continue the current intensive negotiations in Washington without making major new concessions, but do not escalate. The talks are at a critical juncture with real progress on text; premature escalation would collapse the deal framework and deepen economic pain. Push hard on tariff removal as part of any agreement while accepting that some residual US tariffs are likely unavoidable in the near term.\n\nSUPPORTING RATIONALE: The threat to China is moderate-to-high (threat_score: +0.4). The economic evidence is sobering: industrial output growth fell to a 17-year low of 5.3% in Jan-Feb 2019 (Reuters, Mar 14 2019), manufacturing PMI contracted in February for the first time since 2009, exports tumbled the most in three years, and the jobless rate rose from 4.9% to 5.3%. McKinsey estimates the direct tariff impact at 0.5-0.8% of GDP, but warns the indirect effects through consumer confidence and job losses could be much larger. The Shanghai Composite fell ~30% over 12 months. China's retaliatory capacity is asymmetrically constrained \u2014 it imports ~$130B from the US versus ~$540B in US-bound exports, meaning China is running out of US goods to tariff. The Huawei/Meng Wanzhou situation adds a non-tariff dimension: DOJ unsealed 13 counts of fraud and sanctions charges (Jan 2019), Canada authorized extradition proceedings (Mar 1 2019), and two Canadians remain detained in what is widely viewed as retaliation, further isolating China diplomatically.\n\nHowever, the action recommendation is cautious hold/negotiate (action_score: -0.1) rather than escalation, because the negotiation dynamics as of April 3-4 are genuinely promising. Reuters reported (Mar 28) that China has shifted its position on forced technology transfer further than ever before, with US officials acknowledging progress across all six negotiating text areas (IP, tech transfer, services, currency, agriculture, non-tariff barriers). Lighthizer told the Washington Post (Mar 12) the two sides are in the 'final weeks' of talks. The enforcement mechanism \u2014 the key sticking point \u2014 appears close to resolution, with both sides discussing a structure for grievances and tariff responses post-deal. China should press its advantage: its concessions on tech transfer and structural issues give it leverage to demand meaningful tariff rollback rather than the 'some tariffs will stay' posture the US is signaling. Escalation at this moment would be self-defeating \u2014 it would hand hawks like Lighthizer and Schumer (who already warned against a 'weak deal') ammunition to harden the US position, while China's own economy cannot absorb additional shock. The smarter play is to finish the deal on the best terms available, securing tariff relief to stabilize export hubs in Guangdong where factories are already closing early and some permanently (Reuters, Jan 2019).",
+      "key_factors": [
+        "Industrial output at 17-year low (5.3% Jan-Feb 2019), manufacturing contraction, rising unemployment",
+        "China's retaliatory tariff capacity exhausted \u2014 asymmetric trade exposure ($130B vs $540B)",
+        "Huawei/Meng Wanzhou extradition proceeding + DOJ charges add non-tariff pressure",
+        "Genuine negotiation progress on tech transfer, IP, and enforcement mechanism as of early April",
+        "US insistence that 'some tariffs will stay' \u2014 need to push for maximum rollback in deal",
+        "Export hubs in Guangdong experiencing factory closures; 27.5M tons of US soybeans unsold showing mutual pain",
+        "Debt at 253% of GDP limits fiscal stimulus capacity if trade war deepens"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks between US and Chinese negotiators; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-10",
+          "excerpt": "China detains Canadians Michael Kovrig and Michael Spavor (widely viewed as retaliation for the Meng arrest)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-industrial-output-2019-03-14",
+          "excerpt": "Growth in China's industrial output fell to a 17-year low in the first two months of the year and the jobless rate rose... China's industrial output rose 5.3 percent in January-February, less than expected and the slowest pace since early 2002."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-china-tech-transfer-2019-03-28",
+          "excerpt": "China has made proposals in talks with the United States on a range of issues that go further than it has before, including on forced technology transfer... They're talking about forced technology transfer in a way that they've never wanted to talk about before."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washington-post-lighthizer-2019-03-12",
+          "excerpt": "U.S. Trade Representative Robert Lighthizer says US and China are 'in final weeks' of talks for a deal. 'Some tariffs will stay,' the second official said."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wharton-china-2019-01-08",
+          "excerpt": "The narrow short-term GDP impact on China of the tariffs alone is modest, on the order of 0.5% to 0.8% of GDP. But if tariffs lead to job losses in China and then a decline in consumer confidence, the medium-term impact will be much, much greater."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-04-04",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 5954,
+        "capped_chars": 5954,
+        "raw_tokens": 1488,
+        "capped_tokens": 1488
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 70339,
+        "capped_chars": 70339,
+        "raw_tokens": 17584,
+        "capped_tokens": 17584
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 367935,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

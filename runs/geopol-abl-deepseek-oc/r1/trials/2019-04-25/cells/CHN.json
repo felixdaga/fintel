@@ -1,0 +1,128 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-04-25",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 135951,
+    "tokens_out": 2854,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: Continue to engage constructively in the ongoing US-China negotiations without new concessions or escalation, pressing to hold the tariff line (Lists 1-3 at current 10-25% levels, List 3 hike suspended) and work toward removing the Section 301 tariffs as the talks approach a possible summit deal. Do not retaliate or raise our own barriers now, because our economy is already showing strain and escalation would only deepen the slowdown and jeopardize the de-escalation path that is currently open.\n\nSUPPORTING RATIONALE: The threat to China is material but short of existential: industrial output growth hit a 17-year low and February factory output contracted for the first time since January 2009, with December exports falling the most in two years and imports slumping (Reuters Mar 2019; Bloomberg/Guardian), while the tariff regime covers ~$250B of our exports to the US at 10-25%. Firm-level targeting of Huawei and the Meng Wanzhou case remain a live national-security front (Politico). That warrants a threat_score of +0.45, between the 'neutral' and 'high' anchors. However, the dispute is in an active de-escalation phase: the List 3 hike to 25% has been repeatedly deferred (Feb 24, Mar 1), and April 3 intensive Washington talks report 'major headway' with a deal possibly near and a possible Trump-Xi summit (VOA Apr 4). Because our real economy is already ailing, escalation would be self-harming, so the correct action is to negotiate \u2014 keep engaging, keep the tariff suspension, and avoid new commitments or retaliation \u2014 rather than to escalate or to capitulate prematurely on structural concessions.",
+      "key_factors": [
+        "China industrial output at 17-year low; Feb 2019 factory output contracted first time since Jan 2009",
+        "December 2018 exports fell most in two years; early-2019 imports slumping",
+        "~$250B of Chinese exports under US Section 301 tariffs (Lists 1-3), List 3 hike to 25% suspended",
+        "Huawei/Meng Wanzhou firm-level targeting and Canadian detentions as parallel front",
+        "April 2019 Washington talks reporting headway; possible Trump-Xi summit; ongoing de-escalation path"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks between US and Chinese negotiators; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-24",
+          "excerpt": "Trump tweets that talks have made substantial progress and further delays the scheduled List 3 hike from 10% to 25%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters article china industrial output 17-year low Mar 2019",
+          "excerpt": "China industrial output growth falls to 17-year low... manufacturing output contracted in February for the first time since January 2009."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "guardian Jan 2019 China exports fall",
+          "excerpt": "China's exports fell 4.4% in December... biggest fall in exports in two years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "voanews Apr 4 2019",
+          "excerpt": "Trump: 'We're certainly getting a lot closer'; no new trade agreement yet; possible summit with Xi; still major issues per Lighthizer."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico Huawei charges trade talks",
+          "excerpt": "Trump says Huawei charges on the table in China trade talks; Huawei criminal charges/Meng extradition a bargaining front."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": 0.2,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-04-25",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4024,
+        "capped_chars": 4024,
+        "raw_tokens": 1006,
+        "capped_tokens": 1006
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46810,
+        "capped_chars": 46810,
+        "raw_tokens": 11702,
+        "capped_tokens": 11702
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 34486,
+        "capped_chars": 34486,
+        "raw_tokens": 8621,
+        "capped_tokens": 8621
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 434007,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

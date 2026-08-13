@@ -1,0 +1,65 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "score": -0.2,
+      "threat_score": -0.2,
+      "action_score": -0.4,
+      "action_level": "escalate_tariffs",
+      "rationale": "RECOMMENDATION: Proceed with a calibrated, targeted Section 301 tariff response on Chinese goods to convert our ongoing investigation into concrete leverage on IP protection and technology transfer, but keep the scope disciplined and leave an explicit negotiating off-ramp open. Do not broaden into a maximal, blanket escalation that would risk a full-blown trade war, deepen ally defection over the steel/aluminum tariffs, or further spook already-stressed markets. Signal willingness to roll back the Section 301 tariffs in exchange for concrete Chinese concessions on the isssues identified in the forthcoming USTR finding.\n\nSUPPORTING RATIONALE: The threat to US interests is currently mild-to-favorable rather than acute: we are the initiating party here, our economy is robust (industrial production rose to 102.2 and consumer sentiment to 101.4 per country_health), and the Section 301 process has bipartisan support and gives us genuine leverage over China's forced technology-transfer and IP practices (web_search: Covington 'Next Up: Section 301,' March 15, 2018). That supports a slightly negative threat_score reflecting opportunity, not danger. The tempering factors are the second-order risks: China's minimal direct steel/aluminum exposure (~2% of US steel imports, NYT Mar 3) means the metals tariffs hit allies more than Beijing, straining EU/Canada/Japan cooperation on the very China-IP agenda we want to advance, and Beijing is explicitly threatening politically sensitive retaliation against US agriculture and aircraft (VOA Mar 9; CNBC/Baucus). Markets are already signaling disquiet \u2014 Moody's Baa spreads widened from ~4.28% to 4.71% over the window and equities fell sharply on tariff announcements \u2014 so an over-broad escalation could cascade into a self-inflicted economic and ally-cohesion cost. These facts justify the moderate-escalation action_score: follow through with targeted Section 301 tariffs to press our leverage, but discipline the scope and keep negotiation open, rather than maximal escalation or premature concession. The escalation here is calibrated and reversible, aimed at extracting concessions rather than engineering a trade war.",
+      "key_factors": [
+        "US economy strong entering dispute: IP 102.2, consumer sentiment 101.4, fed funds rising (country_health)",
+        "US is initiating party \u2014 Section 301 probe (Aug 2017) culminating; bipartisan support and leverage on IP/tech-transfer",
+        "China minimal direct steel/alum exposure (~2% of US steel imports); metals tariffs hit allies more than Beijing",
+        "Steel/alum tariffs straining EU, Canada, Japan \u2014 risking ally cooperation on the broader China-IP agenda",
+        "China threatening politically sensitive retaliation on US agriculture and aircraft (sorghum probe started)",
+        "Markets stressed: Baa spreads 4.28\u21924.71, VIX elevated, Dow -420 on tariff news",
+        "US-China trade deficit ~$375B (2017); administration pressing for cuts"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2017-08-14",
+          "excerpt": "Trump signs memorandum directing USTR to investigate China's IP and technology-transfer practices under Section 301."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-08",
+          "excerpt": "Trump signs Section 232 proclamations imposing steel (25%) and aluminum (10%) tariffs."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-02",
+          "excerpt": "Trump tweets: 'trade wars are good, and easy to win.'"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US industrial production 102.2 (up); consumer sentiment 101.4."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DBAA",
+          "excerpt": "Baa corporate yield widened 4.28 to 4.71 over window \u2014 rising credit stress."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Covington Next Up: Section 301 (Mar 15, 2018)",
+          "excerpt": "US poised to implement Section 301 sanctions; concern EU/Japan less willing to cooperate after steel/alum tariffs; China could retaliate, e.g. sorghum probe."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "VOA Mar 9, 2018",
+          "excerpt": "China gearing up to retaliate; industry associations urge measures against US coal, agriculture, electronics; analysts flag politically targeted retaliation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NYT Mar 3, 2018",
+          "excerpt": "China ~2% of US steel imports; Beijing cautious, calibrating retaliation to direct effects."
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

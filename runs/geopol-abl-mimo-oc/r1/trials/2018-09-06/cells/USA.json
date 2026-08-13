@@ -1,0 +1,135 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Maintain current tariff pressure ($50B fully in effect) while engaging the newly-resumed low-level trade talks with China. Do not rush to implement the $200B List 3 escalation \u2014 use it as leverage while diplomatic channels are open. The US holds the stronger hand and should press for structural concessions on IP theft and forced technology transfer, but a premature jump to $200B risks unnecessary consumer pain and ally alienation.\n\nSUPPORTING RATIONALE: The threat score of -0.3 reflects genuine US leverage. The domestic economy is robust: consumer sentiment hit 100.1 in September (up from 96.2 in August), industrial production is growing steadily at 104.1, and the dollar has strengthened ~6.3% over six months. China, by contrast, is under visible stress \u2014 the yuan has depreciated from 6.33 to 6.83 per dollar (~5.4%), signaling capital outflow pressure and Beijing's tacit acceptance of currency weakness to cushion export sectors. China's retaliatory capacity is structurally limited: it can only target ~$130B of US imports versus ~$506B the US imports from China, meaning China runs out of tariff ammunition first (LA Times, Aug 3 2018). China has already retaliated on $50B and announced $60B more, approaching its ceiling.\n\nHowever, the threat is not purely negative. The $50B tariffs already in effect and the threatened $200B List 3 (now at proposed 25%, comment period closed Sept 5) risk raising prices on consumer goods \u2014 the NRF warns American consumers will feel price increases on everyday products (Politico EU, July 11). Industry groups and some Republican senators (e.g., Sen. Hatch) are expressing concern about the broad scope. Tariffs at this scale begin to function as a tax on US consumers and businesses using Chinese intermediate goods.\n\nThe action score of -0.15 (leaning toward negotiation, mildly below neutral) reflects the strategic opportunity. Low-level talks are resuming: China's Vice Commerce Minister Wang Shouwen is meeting US Treasury Undersecretary David Malpass in late August (USA Today, Aug 16). These are below the senior level (no Lighthizer or Liu He), suggesting exploratory dialogue rather than a deal framework \u2014 but it is the first formal contact since talks collapsed in June. Trump himself told Reuters he doesn't 'anticipate much' from these talks (NPR, Aug 23), which paradoxically creates space: low expectations reduce the political cost of engaging. The US should use this window to test whether China is willing to address structural issues (IP theft, forced tech transfer, Made in China 2025 subsidies) rather than merely offer purchase commitments. The previous May 'deal' that collapsed was essentially purchase promises with no structural reform \u2014 that is not worth repeating. Given the strong US macro position and China's weakening hand, patience is the higher-leverage play than immediate escalation.",
+      "key_factors": [
+        "US economy strong: consumer sentiment 100.1, industrial production growing, dollar up 6.3%",
+        "China under pressure: yuan depreciated 5.4% (6.33\u21926.83), reserves steady but FX weakening",
+        "China retaliation approaching ceiling: ~$60B announced vs US capacity to tariff ~$506B",
+        "$50B tariffs fully in effect (List 1 + List 2), List 3 ($200B at 25%) comment period closed Sept 5",
+        "Low-level trade talks resuming (Wang/Malpass), first formal dialogue since June collapse",
+        "Industry/political pushback rising: NRF, Sen. Hatch warn against broad consumer tariffs",
+        "Previous May truce collapsed \u2014 purchase-only deals without structural reform are not durable"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-08-23",
+          "excerpt": "List 2 tariffs take effect: US 25% on ~$16B (completing the $50B package). China imposes matching ~$16B retaliation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-08-01",
+          "excerpt": "At Trump's direction, USTR says it is considering raising the proposed List 3 rate from 10% to 25%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_UMCSENT",
+          "excerpt": "Consumer Sentiment: 100.1 in September 2018, up from 96.2 in August."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHN_XUSDCNY",
+          "excerpt": "CNY/USD depreciated from ~6.33 to ~6.83 over the period (~5.4% weakening)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "latimes_20180803",
+          "excerpt": "The U.S. imported $506 billion in goods from China last year... China imported $130 billion in goods from the U.S. in 2017. These two sides effectively have equal leverage over one another."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usatoday_20180816",
+          "excerpt": "China's Ministry of Commerce announced Thursday that Vice Minister of Commerce Wang Shouwen will lead a delegation to the U.S. in late August to hold talks."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politicoeu_20180711",
+          "excerpt": "Retailers warned that consumers were certain to feel the impact of the new duties. 'Tariffs on such a broad scope of products make it inconceivable that American consumers will dodge this tax increase.'"
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3477,
+        "capped_chars": 3477,
+        "raw_tokens": 869,
+        "capped_tokens": 869
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48144,
+        "capped_chars": 48144,
+        "raw_tokens": 12036,
+        "capped_tokens": 12036
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 47185,
+        "capped_chars": 47185,
+        "raw_tokens": 11796,
+        "capped_tokens": 11796
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 386306,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

@@ -1,0 +1,102 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 6953,
+    "tokens_out": 686,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0064254,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue to engage in trade negotiations with the United States while maintaining a firm stance on core interests. We should avoid further escalation but not make unilateral concessions, instead seeking a phased agreement that preserves our sovereignty over industrial policy and technology development. We should signal willingness to increase purchases of US agricultural goods as a goodwill gesture while holding firm on structural reform demands.\n\nSUPPORTING RATIONALE: The threat score of +0.45 reflects significant but not existential pressure on China's economy. The US has already raised tariffs on $200 billion of Chinese goods from 10% to 25% and threatened tariffs on the remaining ~$300 billion of imports (Fox Business, May 2019). The trade war has expanded into a 'tech war' with restrictions on Huawei and technology transfer, threatening China's high-tech ambitions (Wiley academic paper). However, China retains leverage: the US economy also suffers ('both sides will pay' per Kudlow), and China's rare earth dominance is a potential counterweight (Bloomberg, May 2019). The action score of -0.15 reflects a negotiate posture: talks are ongoing and a deal is still possible. Escalation would be counterproductive given the mutual economic damage, but China should not capitulate to US demands for structural reforms that undermine our development model. The upcoming high-level talks (Liu He visiting Washington around Oct 10-11) provide an opportunity to de-escalate with a limited 'mini-deal' involving agricultural purchases in exchange for tariff relief.",
+      "key_factors": [
+        "US tariffs already at 25% on $200B of Chinese goods, threat of further escalation to remaining $300B",
+        "Trade war expanding into tech war with Huawei restrictions and technology transfer curbs",
+        "Mutual economic damage acknowledged by US officials (Kudlow: 'both sides will suffer')",
+        "China's rare earth leverage as potential counterweight",
+        "Upcoming high-level negotiations (Liu He in Washington) as de-escalation opportunity",
+        "US domestic political pressure (24 states suing over tariffs, consumer cost increases)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "onlinelibrary.wiley.com",
+          "excerpt": "The escalation of the trade war into a tech war could lead to a decoupling between the US and Chinese economies"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "The U.S. increased tariffs Friday on $200 billion worth of Chinese goods to 25 percent from 10 percent"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "Both sides will suffer on this. Both sides will pay."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "onlinelibrary.wiley.com",
+          "excerpt": "China gears up to weaponize rare earths dominance in trade war"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 15476,
+        "capped_chars": 12257,
+        "raw_tokens": 3869,
+        "capped_tokens": 3064
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 17220,
+  "started_at": "2026-08-13T10:55:04+00:00"
+}

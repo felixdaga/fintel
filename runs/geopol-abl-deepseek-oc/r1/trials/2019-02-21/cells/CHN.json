@@ -1,0 +1,125 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 145013,
+    "tokens_out": 3568,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.5,
+      "rationale": "RECOMMENDATION: Stay in the negotiation lane and keep the 90-day truce alive rather than escalate or capitulate. We should press forward on purchase commitments and market-access concessions that are domestically palatable, while holding the line on the structural IP/forced-technology-transfer and SOE-subsidy demands that threaten our economic model and CCP legitimacy. The immediate objective is to prevent the March 1 List 3 escalation from 10% to 25% on ~$200B of our exports \u2014 by securing a deadline extension and demonstrating genuine progress \u2014 not to force a comprehensive settlement we cannot accept on structural terms.\n\nSUPPORTING RATIONALE: The threat is high but not existential. On tariffs, the timeline shows US Section 301 coverage already at ~$250B (25% on Lists 1-2, 10% on ~$200B), with the G20 Buenos Aires truce suspending the jump to 25% only until March 1; that cliff is the proximate danger. Structurally, firm-level targeting is well underway \u2014 the ZTE denial order (Apr 16, 2018), the arrest of Huawei CFO Meng Wanzhou (Dec 1, 2018), and the DOJ unsealing criminal charges against Huawei/Meng with an extradition request (Jan 28, 2019) \u2014 squarely hitting the flagship that embodies our tech self-sufficiency ambitions, which justifies the +0.5 high-threat anchor. Macro data corroborates real, not hypothetical, damage: December exports fell 4.4% (worst in two years) and imports fell 7.6%, GDP growth slowed to its weakest since 2008, and our record ~$323B 2018 surplus with the US keeps inviting fresh pressure (web-search evidence). Yet the situation is genuinely in play rather than hopeless: high-level talks resumed in Beijing (Jan 7, Jan 30 and Feb 14) and Washington (Feb 19), purchase commitments are already being made (China bought 2.6M tonnes of US soybeans since December), and Trump has repeatedly signalled openness to pushing the deadline back, calling March 1 'not a magical date.' Escalation would all but guarantee the 25% hike and collapse the truce, while maximal concession on structural reform is politically untenable \u2014 hence negotiate with a mild de-escalatory bias rather than either extreme.",
+      "key_factors": [
+        "March 1 cliff: List 3 tariffs on ~$200B rising 10%\u219225% if no deal",
+        "Firm-level targeting: ZTE ban, Huawei/Meng criminal charges + extradition",
+        "Export slowdown: Dec exports -4.4% (worst in 2 yrs), imports -7.6%, growth weakest since 2008",
+        "Record $323B 2018 US surplus invites further US pressure",
+        "Talks progressing: multiple high-level rounds, soybean purchases, Trump open to deadline extension",
+        "Structural IP/forced tech-transfer & SOE subsidy demands unacceptable",
+        "Possible 60-day deadline extension under discussion"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires: 90-day window; Jan 1 hike of List 3 from 10% to 25% suspended. Same day Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud/sanctions charges against Huawei and Meng; US formally requests extradition."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%; combined Section 301 coverage ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes 2019-01-31 / guardian 2019-01-14",
+          "excerpt": "December exports -4.4% (worst in two years), imports -7.6%; China GDP slowest since 2008; record ~$323B US surplus for 2018."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc 2019-02-14 / reuters 2019-02-19",
+          "excerpt": "High-level talks in Beijing and Washington ahead of March 1; purchase commitments incl. 2.6M tonnes of US soybeans; Trump signals deadline not 'magical'."
+        }
+      ],
+      "threat_score": 0.5,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5015,
+        "capped_chars": 5015,
+        "raw_tokens": 1254,
+        "capped_tokens": 1254
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46548,
+        "capped_chars": 46548,
+        "raw_tokens": 11637,
+        "capped_tokens": 11637
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 47655,
+        "capped_chars": 47655,
+        "raw_tokens": 11914,
+        "capped_tokens": 11914
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 470263,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

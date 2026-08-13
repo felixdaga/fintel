@@ -1,0 +1,140 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-05-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.5,
+      "rationale": "RECOMMENDATION: Continue engaging in trade negotiations without making additional concessions at this moment. The May 19 joint statement created a framework for dialogue, but Trump's May 22-23 signals ('not satisfied,' 'no deal' on ZTE, 'it may not be possible') suggest the US side is politically constrained and internally divided \u2014 not a moment to offer more. Prioritize domestic semiconductor self-sufficiency acceleration (Made in China 2025 goals) while maintaining retaliatory leverage on agriculture and services.\n\nSUPPORTING RATIONALE: The threat to China is substantial but not yet existential. The ZTE denial order (Apr 16) exposed a critical structural vulnerability \u2014 China's second-largest telecom firm had its operations 'cease' within weeks because it depended on US microchips from Qualcomm and Android licensing from Google. This is a +0.5-level threat: major firm-level targeting with systemic implications for tech self-sufficiency goals, but the broader macro economy shows no immediate damage (industrial production rising, $3.1T reserves stable, CPI moderate). The proposed $50B Section 301 tariffs targeting aerospace, ICT, and robotics remain pending (public comment period), and China has already signaled proportional retaliation on soybeans, automobiles, and aircraft.\n\nThe action stance is near-neutral (negotiate, -0.1) because the situation is genuinely ambiguous. On one hand, China has leverage: its $50B retaliation targets politically sensitive US farm states (soybeans = $14B in exports, concentrated in Trump-won states), and the US needs China's cooperation on North Korea. On the other hand, the ZTE case revealed how exposed China is to US tech chokepoints \u2014 escalation risks further entity-list actions against Huawei or other firms. Trump's mixed signals (Mnuchin said 'trade war on hold' on May 20, but Trump reversed course on May 22) and the Senate's 32-2 bipartisan vote to block ZTE relief indicate that even if Trump wants a deal, Congress may constrain him. The $200B surplus-reduction demand (per Reuters, early May) is likely unacceptable without structural reforms that would undermine CCP industrial policy. The best play is to keep talks alive, avoid triggering new US escalation, and buy time for domestic chip development while the US political dynamic fractures between the White House and Congress.",
+      "key_factors": [
+        "ZTE denial order exposed critical semiconductor dependency on US suppliers",
+        "May 19 joint statement paused escalation but Trump reversed tone by May 22-23",
+        "Senate 32-2 bipartisan vote to block ZTE relief signals Congressional hawkishness",
+        "China's $50B soybean/agricultural retaliation targets Trump's political base",
+        "US demand for $200B surplus reduction likely requires unacceptable structural concessions",
+        "China macro still healthy \u2014 no immediate economic damage from dispute",
+        "Made in China 2025 tech autonomy goals now seen as urgent national security priority"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "US and China release joint statement after talks: China agrees to 'significantly increase' purchases of US goods and services. Mnuchin says trade war is 'on hold.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washingtontimes-2018-05-22",
+          "excerpt": "Trump saying he wasn't happy with the progress and lawmakers moving to undercut his ability to lift a ban on Chinese telecom giant ZTE Corp. Senate Banking Committee advanced legislation in a 32-2 vote limiting the president's ability to ease sanctions on Chinese telecom companies."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "npr-2018-05-15",
+          "excerpt": "Chinese observers were despondent to find that one of their country's top companies is 'hollow at its core' and reliant on the U.S. for its microchips."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2018-05-04",
+          "excerpt": "The Trump administration has drawn a hard line in trade talks with China, demanding a $200 billion cut in the Chinese trade surplus with the United States, sharply lower tariffs and advanced technology subsidies."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "desmoinesregister-2018-04-04",
+          "excerpt": "China issued a $50 billion list of U.S. goods including soybeans, beef and aircraft for possible tariff hikes. About 40 percent of China's soybean imports come from the U.S. and are valued at $14 billion."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHN_INDPRO",
+          "excerpt": "China industrial production rising steadily through early 2018, no sign of trade-war impact on broader economy."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHN_RESERVES",
+          "excerpt": "China foreign reserves stable around $3.1 trillion, no capital flight signal."
+        }
+      ],
+      "threat_score": 0.5,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-05-24",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2446,
+        "capped_chars": 2446,
+        "raw_tokens": 612,
+        "capped_tokens": 612
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47806,
+        "capped_chars": 47806,
+        "raw_tokens": 11952,
+        "capped_tokens": 11952
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 34272,
+        "capped_chars": 34272,
+        "raw_tokens": 8568,
+        "capped_tokens": 8568
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 341995,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

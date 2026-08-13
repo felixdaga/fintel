@@ -1,0 +1,3477 @@
+{
+  "job_id": "geopol-full-0001",
+  "k_repeats": 3,
+  "strategy": "/Users/lucky/.openclaw/workspace/projects/fintel/packages/geopol_trade_war_2018",
+  "signal": "geopol_trade_war_2018.scoring:geopol_signal",
+  "transform": "identity",
+  "kpi": "geopol_trade_war_2018.scoring:geopol_kpi",
+  "metric_key": "outcome_alignment",
+  "horizons": [
+    1,
+    2,
+    4
+  ],
+  "decision_dates": [
+    "2018-03-01",
+    "2018-03-22",
+    "2018-04-12",
+    "2018-05-03",
+    "2018-05-24",
+    "2018-06-14",
+    "2018-07-05",
+    "2018-07-26",
+    "2018-08-16",
+    "2018-09-06",
+    "2018-09-27",
+    "2018-10-18",
+    "2018-11-08",
+    "2018-11-29",
+    "2018-12-20",
+    "2019-01-10",
+    "2019-01-31",
+    "2019-02-21",
+    "2019-03-14",
+    "2019-04-04",
+    "2019-04-25",
+    "2019-05-16",
+    "2019-06-06",
+    "2019-06-27",
+    "2019-07-18",
+    "2019-08-08",
+    "2019-08-29",
+    "2019-09-19",
+    "2019-10-10",
+    "2019-10-31",
+    "2019-11-21",
+    "2019-12-12"
+  ],
+  "universe": [
+    "CHN",
+    "USA"
+  ],
+  "kpi_result": {
+    "ensemble": {
+      "kpi": "geopol_kpi",
+      "metric_key": "outcome_alignment",
+      "horizons": [
+        1,
+        2,
+        4
+      ],
+      "n_dates": 32,
+      "n_parties": 2,
+      "directional_accuracy": 0.6406,
+      "n_directional_checks": 64,
+      "per_date": {
+        "2018-03-01": {
+          "CHN": {
+            "recommended_threat": 0.3833,
+            "actual_action_score": -0.4,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": -0.2667,
+            "actual_action_score": -0.6,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2018-03-22": {
+          "CHN": {
+            "recommended_threat": 0.35,
+            "actual_action_score": -0.4,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": -0.3167,
+            "actual_action_score": -0.6,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2018-04-12": {
+          "CHN": {
+            "recommended_threat": 0.4,
+            "actual_action_score": -0.5,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": -0.0667,
+            "actual_action_score": -0.5,
+            "actual_action": "escalate_non_tariff"
+          }
+        },
+        "2018-05-03": {
+          "CHN": {
+            "recommended_threat": 0.4833,
+            "actual_action_score": 0.1,
+            "actual_action": "negotiate"
+          },
+          "USA": {
+            "recommended_threat": -0.2667,
+            "actual_action_score": 0.1,
+            "actual_action": "negotiate"
+          }
+        },
+        "2018-05-24": {
+          "CHN": {
+            "recommended_threat": 0.4767,
+            "actual_action_score": -0.4,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": -0.25,
+            "actual_action_score": -0.5,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2018-06-14": {
+          "CHN": {
+            "recommended_threat": 0.55,
+            "actual_action_score": -0.5,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": -0.1,
+            "actual_action_score": -0.7,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2018-07-05": {
+          "CHN": {
+            "recommended_threat": 0.6,
+            "actual_action_score": -0.6,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": -0.0667,
+            "actual_action_score": -0.8,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2018-07-26": {
+          "CHN": {
+            "recommended_threat": 0.5667,
+            "actual_action_score": 0.0,
+            "actual_action": "hold"
+          },
+          "USA": {
+            "recommended_threat": -0.0833,
+            "actual_action_score": -0.7,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2018-08-16": {
+          "CHN": {
+            "recommended_threat": 0.6067,
+            "actual_action_score": -0.5,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": 0.3,
+            "actual_action_score": -0.7,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2018-09-06": {
+          "CHN": {
+            "recommended_threat": 0.6167,
+            "actual_action_score": -0.5,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": -0.1167,
+            "actual_action_score": -0.8,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2018-09-27": {
+          "CHN": {
+            "recommended_threat": 0.65,
+            "actual_action_score": -0.5,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": -0.3333,
+            "actual_action_score": -0.7,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2018-10-18": {
+          "CHN": {
+            "recommended_threat": 0.6,
+            "actual_action_score": 0.1,
+            "actual_action": "negotiate"
+          },
+          "USA": {
+            "recommended_threat": -0.1333,
+            "actual_action_score": 0.1,
+            "actual_action": "negotiate"
+          }
+        },
+        "2018-11-08": {
+          "CHN": {
+            "recommended_threat": 0.5833,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          },
+          "USA": {
+            "recommended_threat": -0.3167,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          }
+        },
+        "2018-11-29": {
+          "CHN": {
+            "recommended_threat": 0.5833,
+            "actual_action_score": -0.4,
+            "actual_action": "escalate_non_tariff"
+          },
+          "USA": {
+            "recommended_threat": -0.0667,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          }
+        },
+        "2018-12-20": {
+          "CHN": {
+            "recommended_threat": 0.5667,
+            "actual_action_score": -0.4,
+            "actual_action": "escalate_non_tariff"
+          },
+          "USA": {
+            "recommended_threat": 0.0667,
+            "actual_action_score": -0.5,
+            "actual_action": "escalate_non_tariff"
+          }
+        },
+        "2019-01-10": {
+          "CHN": {
+            "recommended_threat": 0.5333,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          },
+          "USA": {
+            "recommended_threat": -0.2833,
+            "actual_action_score": 0.1,
+            "actual_action": "negotiate"
+          }
+        },
+        "2019-01-31": {
+          "CHN": {
+            "recommended_threat": 0.5833,
+            "actual_action_score": 0.1,
+            "actual_action": "negotiate"
+          },
+          "USA": {
+            "recommended_threat": -0.0833,
+            "actual_action_score": 0.1,
+            "actual_action": "negotiate"
+          }
+        },
+        "2019-02-21": {
+          "CHN": {
+            "recommended_threat": 0.5167,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          },
+          "USA": {
+            "recommended_threat": -0.3,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          }
+        },
+        "2019-03-14": {
+          "CHN": {
+            "recommended_threat": 0.4167,
+            "actual_action_score": 0.0,
+            "actual_action": "hold"
+          },
+          "USA": {
+            "recommended_threat": -0.3333,
+            "actual_action_score": 0.0,
+            "actual_action": "hold"
+          }
+        },
+        "2019-04-04": {
+          "CHN": {
+            "recommended_threat": 0.35,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          },
+          "USA": {
+            "recommended_threat": 0.0167,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          }
+        },
+        "2019-04-25": {
+          "CHN": {
+            "recommended_threat": 0.3833,
+            "actual_action_score": -0.4,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": -0.1167,
+            "actual_action_score": -0.7,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2019-05-16": {
+          "CHN": {
+            "recommended_threat": 0.55,
+            "actual_action_score": -0.5,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": 0.3333,
+            "actual_action_score": -0.8,
+            "actual_action": "escalate_non_tariff"
+          }
+        },
+        "2019-06-06": {
+          "CHN": {
+            "recommended_threat": 0.5833,
+            "actual_action_score": 0.0,
+            "actual_action": "hold"
+          },
+          "USA": {
+            "recommended_threat": 0.0833,
+            "actual_action_score": -0.6,
+            "actual_action": "escalate_non_tariff"
+          }
+        },
+        "2019-06-27": {
+          "CHN": {
+            "recommended_threat": 0.5833,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          },
+          "USA": {
+            "recommended_threat": 0.1167,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          }
+        },
+        "2019-07-18": {
+          "CHN": {
+            "recommended_threat": 0.5167,
+            "actual_action_score": 0.0,
+            "actual_action": "negotiate"
+          },
+          "USA": {
+            "recommended_threat": 0.0833,
+            "actual_action_score": 0.0,
+            "actual_action": "negotiate"
+          }
+        },
+        "2019-08-08": {
+          "CHN": {
+            "recommended_threat": 0.5333,
+            "actual_action_score": -0.5,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": 0.3333,
+            "actual_action_score": -0.8,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2019-08-29": {
+          "CHN": {
+            "recommended_threat": 0.6167,
+            "actual_action_score": -0.5,
+            "actual_action": "retaliate"
+          },
+          "USA": {
+            "recommended_threat": 0.4,
+            "actual_action_score": -0.6,
+            "actual_action": "escalate_tariffs"
+          }
+        },
+        "2019-09-19": {
+          "CHN": {
+            "recommended_threat": 0.5667,
+            "actual_action_score": 0.3,
+            "actual_action": "partial_rollback"
+          },
+          "USA": {
+            "recommended_threat": 0.0833,
+            "actual_action_score": 0.0,
+            "actual_action": "hold"
+          }
+        },
+        "2019-10-10": {
+          "CHN": {
+            "recommended_threat": 0.4167,
+            "actual_action_score": 0.5,
+            "actual_action": "concede_purchases"
+          },
+          "USA": {
+            "recommended_threat": 0.35,
+            "actual_action_score": 0.3,
+            "actual_action": "negotiate"
+          }
+        },
+        "2019-10-31": {
+          "CHN": {
+            "recommended_threat": 0.4333,
+            "actual_action_score": 0.3,
+            "actual_action": "negotiate"
+          },
+          "USA": {
+            "recommended_threat": 0.3167,
+            "actual_action_score": 0.3,
+            "actual_action": "negotiate"
+          }
+        },
+        "2019-11-21": {
+          "CHN": {
+            "recommended_threat": 0.4833,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          },
+          "USA": {
+            "recommended_threat": 0.25,
+            "actual_action_score": 0.2,
+            "actual_action": "negotiate"
+          }
+        },
+        "2019-12-12": {
+          "CHN": {
+            "recommended_threat": 0.35,
+            "actual_action_score": 0.6,
+            "actual_action": "concede_purchases"
+          },
+          "USA": {
+            "recommended_threat": -0.2833,
+            "actual_action_score": 0.1,
+            "actual_action": "hold"
+          }
+        }
+      },
+      "note": "Signal-level directional proxy. Full view-level scoring (action_score alignment, action_level match, hindsight assessment) is computed in the report notebook from raw decision.json files, which carry conviction (action_score) and time_horizon (action_level)."
+    },
+    "per_run": [
+      {
+        "kpi": "geopol_kpi",
+        "metric_key": "outcome_alignment",
+        "horizons": [
+          1,
+          2,
+          4
+        ],
+        "n_dates": 32,
+        "n_parties": 2,
+        "directional_accuracy": 0.6875,
+        "n_directional_checks": 64,
+        "per_date": {
+          "2018-03-01": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-03-22": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-04-12": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.25,
+              "actual_action_score": -0.5,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2018-05-03": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.2,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-05-24": {
+            "CHN": {
+              "recommended_threat": 0.5,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.25,
+              "actual_action_score": -0.5,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-06-14": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.25,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-07-05": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": -0.6,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.3,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-07-26": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-08-16": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-09-06": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-09-27": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.35,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-10-18": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-11-08": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-11-29": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.4,
+              "actual_action": "escalate_non_tariff"
+            },
+            "USA": {
+              "recommended_threat": -0.25,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-12-20": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": -0.4,
+              "actual_action": "escalate_non_tariff"
+            },
+            "USA": {
+              "recommended_threat": -0.25,
+              "actual_action_score": -0.5,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2019-01-10": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.25,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-01-31": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-02-21": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-03-14": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            },
+            "USA": {
+              "recommended_threat": -0.35,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            }
+          },
+          "2019-04-04": {
+            "CHN": {
+              "recommended_threat": 0.4,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.15,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-04-25": {
+            "CHN": {
+              "recommended_threat": 0.3,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2019-05-16": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2019-06-06": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            },
+            "USA": {
+              "recommended_threat": 0.25,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2019-06-27": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.25,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-07-18": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": 0.0,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.2,
+              "actual_action_score": 0.0,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-08-08": {
+            "CHN": {
+              "recommended_threat": 0.5,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2019-08-29": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2019-09-19": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.3,
+              "actual_action": "partial_rollback"
+            },
+            "USA": {
+              "recommended_threat": 0.3,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            }
+          },
+          "2019-10-10": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.5,
+              "actual_action": "concede_purchases"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.3,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-10-31": {
+            "CHN": {
+              "recommended_threat": 0.4,
+              "actual_action_score": 0.3,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.3,
+              "actual_action_score": 0.3,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-11-21": {
+            "CHN": {
+              "recommended_threat": 0.5,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.2,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-12-12": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.6,
+              "actual_action": "concede_purchases"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.1,
+              "actual_action": "hold"
+            }
+          }
+        },
+        "note": "Signal-level directional proxy. Full view-level scoring (action_score alignment, action_level match, hindsight assessment) is computed in the report notebook from raw decision.json files, which carry conviction (action_score) and time_horizon (action_level)."
+      },
+      {
+        "kpi": "geopol_kpi",
+        "metric_key": "outcome_alignment",
+        "horizons": [
+          1,
+          2,
+          4
+        ],
+        "n_dates": 32,
+        "n_parties": 2,
+        "directional_accuracy": 0.6406,
+        "n_directional_checks": 64,
+        "per_date": {
+          "2018-03-01": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.35,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-03-22": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.35,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-04-12": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.25,
+              "actual_action_score": -0.5,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2018-05-03": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-05-24": {
+            "CHN": {
+              "recommended_threat": 0.38,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.5,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-06-14": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.25,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-07-05": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": -0.6,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-07-26": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-08-16": {
+            "CHN": {
+              "recommended_threat": 0.52,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.2,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-09-06": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.3,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-09-27": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-10-18": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.2,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-11-08": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.35,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-11-29": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": -0.4,
+              "actual_action": "escalate_non_tariff"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-12-20": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": -0.4,
+              "actual_action": "escalate_non_tariff"
+            },
+            "USA": {
+              "recommended_threat": 0.25,
+              "actual_action_score": -0.5,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2019-01-10": {
+            "CHN": {
+              "recommended_threat": 0.4,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-01-31": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.2,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-02-21": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.35,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-03-14": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            }
+          },
+          "2019-04-04": {
+            "CHN": {
+              "recommended_threat": 0.3,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-04-25": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.25,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2019-05-16": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.3,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2019-06-06": {
+            "CHN": {
+              "recommended_threat": 0.5,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2019-06-27": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.25,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-07-18": {
+            "CHN": {
+              "recommended_threat": 0.5,
+              "actual_action_score": 0.0,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.25,
+              "actual_action_score": 0.0,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-08-08": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.3,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2019-08-29": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.25,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2019-09-19": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": 0.3,
+              "actual_action": "partial_rollback"
+            },
+            "USA": {
+              "recommended_threat": -0.35,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            }
+          },
+          "2019-10-10": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": 0.5,
+              "actual_action": "concede_purchases"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.3,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-10-31": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": 0.3,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.4,
+              "actual_action_score": 0.3,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-11-21": {
+            "CHN": {
+              "recommended_threat": 0.4,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.25,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-12-12": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.6,
+              "actual_action": "concede_purchases"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.1,
+              "actual_action": "hold"
+            }
+          }
+        },
+        "note": "Signal-level directional proxy. Full view-level scoring (action_score alignment, action_level match, hindsight assessment) is computed in the report notebook from raw decision.json files, which carry conviction (action_score) and time_horizon (action_level)."
+      },
+      {
+        "kpi": "geopol_kpi",
+        "metric_key": "outcome_alignment",
+        "horizons": [
+          1,
+          2,
+          4
+        ],
+        "n_dates": 32,
+        "n_parties": 2,
+        "directional_accuracy": 0.625,
+        "n_directional_checks": 64,
+        "per_date": {
+          "2018-03-01": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.15,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-03-22": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-04-12": {
+            "CHN": {
+              "recommended_threat": 0.4,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.2,
+              "actual_action_score": -0.5,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2018-05-03": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-05-24": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.2,
+              "actual_action_score": -0.5,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-06-14": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-07-05": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.6,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.2,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-07-26": {
+            "CHN": {
+              "recommended_threat": 0.5,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-08-16": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-09-06": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.35,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-09-27": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.35,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2018-10-18": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-11-08": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-11-29": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": -0.4,
+              "actual_action": "escalate_non_tariff"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2018-12-20": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": -0.4,
+              "actual_action": "escalate_non_tariff"
+            },
+            "USA": {
+              "recommended_threat": 0.2,
+              "actual_action_score": -0.5,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2019-01-10": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-01-31": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.25,
+              "actual_action_score": 0.1,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-02-21": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": -0.25,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-03-14": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            },
+            "USA": {
+              "recommended_threat": -0.35,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            }
+          },
+          "2019-04-04": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.2,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-04-25": {
+            "CHN": {
+              "recommended_threat": 0.4,
+              "actual_action_score": -0.4,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": -0.3,
+              "actual_action_score": -0.7,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2019-05-16": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2019-06-06": {
+            "CHN": {
+              "recommended_threat": 0.65,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            },
+            "USA": {
+              "recommended_threat": -0.35,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_non_tariff"
+            }
+          },
+          "2019-06-27": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-07-18": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": 0.0,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.2,
+              "actual_action_score": 0.0,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-08-08": {
+            "CHN": {
+              "recommended_threat": 0.5,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": -0.8,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2019-08-29": {
+            "CHN": {
+              "recommended_threat": 0.6,
+              "actual_action_score": -0.5,
+              "actual_action": "retaliate"
+            },
+            "USA": {
+              "recommended_threat": 0.6,
+              "actual_action_score": -0.6,
+              "actual_action": "escalate_tariffs"
+            }
+          },
+          "2019-09-19": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.3,
+              "actual_action": "partial_rollback"
+            },
+            "USA": {
+              "recommended_threat": 0.3,
+              "actual_action_score": 0.0,
+              "actual_action": "hold"
+            }
+          },
+          "2019-10-10": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": 0.5,
+              "actual_action": "concede_purchases"
+            },
+            "USA": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.3,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-10-31": {
+            "CHN": {
+              "recommended_threat": 0.45,
+              "actual_action_score": 0.3,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.25,
+              "actual_action_score": 0.3,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-11-21": {
+            "CHN": {
+              "recommended_threat": 0.55,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            },
+            "USA": {
+              "recommended_threat": 0.3,
+              "actual_action_score": 0.2,
+              "actual_action": "negotiate"
+            }
+          },
+          "2019-12-12": {
+            "CHN": {
+              "recommended_threat": 0.35,
+              "actual_action_score": 0.6,
+              "actual_action": "concede_purchases"
+            },
+            "USA": {
+              "recommended_threat": -0.25,
+              "actual_action_score": 0.1,
+              "actual_action": "hold"
+            }
+          }
+        },
+        "note": "Signal-level directional proxy. Full view-level scoring (action_score alignment, action_level match, hindsight assessment) is computed in the report notebook from raw decision.json files, which carry conviction (action_score) and time_horizon (action_level)."
+      }
+    ]
+  },
+  "behaviour": {
+    "available": true,
+    "per_cell": {
+      "2018-03-01|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.33,
+        "n_tool_calls_std": 0.94,
+        "n_tool_calls_range": [
+          4,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.33
+      },
+      "2018-03-01|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4.67,
+        "n_tool_calls_std": 0.94,
+        "n_tool_calls_range": [
+          4,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4.67
+      },
+      "2018-03-22|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          4,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5
+      },
+      "2018-03-22|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4.33,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          4,
+          5
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4.33
+      },
+      "2018-04-12|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          5,
+          5
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5
+      },
+      "2018-04-12|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          4,
+          4
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4
+      },
+      "2018-05-03|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          4,
+          4
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4
+      },
+      "2018-05-03|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4.33,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          4,
+          5
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4.33
+      },
+      "2018-05-24|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          4,
+          4
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4
+      },
+      "2018-05-24|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4.33,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          4,
+          5
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4.33
+      },
+      "2018-06-14|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          3,
+          5
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4
+      },
+      "2018-06-14|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5,
+        "n_tool_calls_std": 1.41,
+        "n_tool_calls_range": [
+          4,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5
+      },
+      "2018-07-05|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          4,
+          5
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4.67
+      },
+      "2018-07-05|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          4,
+          4
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4
+      },
+      "2018-07-26|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          4,
+          4
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4
+      },
+      "2018-07-26|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4.33,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          4,
+          5
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4.33
+      },
+      "2018-08-16|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2018-08-16|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4.33,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          4,
+          5
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4.33
+      },
+      "2018-09-06|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          4,
+          5
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4.67
+      },
+      "2018-09-06|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          4,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5
+      },
+      "2018-09-27|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4.33,
+        "n_tool_calls_std": 0.94,
+        "n_tool_calls_range": [
+          3,
+          5
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4.33
+      },
+      "2018-09-27|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4.33,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          4,
+          5
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4.33
+      },
+      "2018-10-18|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          4,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5
+      },
+      "2018-10-18|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          4,
+          4
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4
+      },
+      "2018-11-08|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.33,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.33
+      },
+      "2018-11-08|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 4,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          4,
+          4
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 4
+      },
+      "2018-11-29|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6.33,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          6,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6.33
+      },
+      "2018-11-29|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          6,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2018-12-20|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          5,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2018-12-20|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2019-01-10|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          5,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2019-01-10|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2019-01-31|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2019-01-31|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2019-02-21|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          5,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2019-02-21|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          5,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2019-03-14|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2019-03-14|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          6,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2019-04-04|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2019-04-04|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2019-04-25|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2019-04-25|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6.33,
+        "n_tool_calls_std": 1.25,
+        "n_tool_calls_range": [
+          5,
+          8
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6.33
+      },
+      "2019-05-16|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          6,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2019-05-16|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.33,
+        "n_tool_calls_std": 1.25,
+        "n_tool_calls_range": [
+          4,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.33
+      },
+      "2019-06-06|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.33,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.33
+      },
+      "2019-06-06|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          6,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6.67
+      },
+      "2019-06-27|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          6,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6.67
+      },
+      "2019-06-27|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 7,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          7,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 7
+      },
+      "2019-07-18|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          5,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2019-07-18|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          5,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2019-08-08|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2019-08-08|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          6,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6.67
+      },
+      "2019-08-29|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          5,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2019-08-29|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 7,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          7,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 7
+      },
+      "2019-09-19|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          4,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5
+      },
+      "2019-09-19|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2019-10-10|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6.67,
+        "n_tool_calls_std": 0.94,
+        "n_tool_calls_range": [
+          6,
+          8
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6.67
+      },
+      "2019-10-10|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          5,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2019-10-31|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 5.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          5,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 5.67
+      },
+      "2019-10-31|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6.67,
+        "n_tool_calls_std": 0.47,
+        "n_tool_calls_range": [
+          6,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6.67
+      },
+      "2019-11-21|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          5,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2019-11-21|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6.33,
+        "n_tool_calls_std": 0.94,
+        "n_tool_calls_range": [
+          5,
+          7
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6.33
+      },
+      "2019-12-12|CHN": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 6,
+        "n_tool_calls_std": 0.0,
+        "n_tool_calls_range": [
+          6,
+          6
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 6
+      },
+      "2019-12-12|USA": {
+        "n_runs": 3,
+        "n_tool_calls_mean": 7,
+        "n_tool_calls_std": 0.82,
+        "n_tool_calls_range": [
+          6,
+          8
+        ],
+        "n_tool_errors_mean": 0,
+        "n_reads_mean": 7
+      }
+    },
+    "summary": {
+      "available": true,
+      "n_cells": 64,
+      "mean_call_count_std": 0.525
+    }
+  },
+  "variance": {
+    "available": true,
+    "per_cell": {
+      "2018-03-01|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.3833,
+        "score_std": 0.0471,
+        "score_range": [
+          0.35,
+          0.45
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-03-01|USA": {
+        "n_runs": 3,
+        "score_mean": -0.2667,
+        "score_std": 0.085,
+        "score_range": [
+          -0.35,
+          -0.15
+        ],
+        "sign_agreement": true,
+        "signs": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "2018-03-22|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.35,
+        "score_std": 0.0,
+        "score_range": [
+          0.35,
+          0.35
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-03-22|USA": {
+        "n_runs": 3,
+        "score_mean": -0.3167,
+        "score_std": 0.0236,
+        "score_range": [
+          -0.35,
+          -0.3
+        ],
+        "sign_agreement": true,
+        "signs": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "2018-04-12|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.4,
+        "score_std": 0.0408,
+        "score_range": [
+          0.35,
+          0.45
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-04-12|USA": {
+        "n_runs": 3,
+        "score_mean": -0.0667,
+        "score_std": 0.2248,
+        "score_range": [
+          -0.25,
+          0.25
+        ],
+        "sign_agreement": false,
+        "signs": [
+          -1,
+          1,
+          -1
+        ]
+      },
+      "2018-05-03|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.4833,
+        "score_std": 0.0943,
+        "score_range": [
+          0.35,
+          0.55
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-05-03|USA": {
+        "n_runs": 3,
+        "score_mean": -0.2667,
+        "score_std": 0.0471,
+        "score_range": [
+          -0.3,
+          -0.2
+        ],
+        "sign_agreement": true,
+        "signs": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "2018-05-24|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.4767,
+        "score_std": 0.0713,
+        "score_range": [
+          0.38,
+          0.55
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-05-24|USA": {
+        "n_runs": 3,
+        "score_mean": -0.25,
+        "score_std": 0.0408,
+        "score_range": [
+          -0.3,
+          -0.2
+        ],
+        "sign_agreement": true,
+        "signs": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "2018-06-14|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.55,
+        "score_std": 0.0,
+        "score_range": [
+          0.55,
+          0.55
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-06-14|USA": {
+        "n_runs": 3,
+        "score_mean": -0.1,
+        "score_std": 0.2483,
+        "score_range": [
+          -0.3,
+          0.25
+        ],
+        "sign_agreement": false,
+        "signs": [
+          1,
+          -1,
+          -1
+        ]
+      },
+      "2018-07-05|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.6,
+        "score_std": 0.0408,
+        "score_range": [
+          0.55,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-07-05|USA": {
+        "n_runs": 3,
+        "score_mean": -0.0667,
+        "score_std": 0.2625,
+        "score_range": [
+          -0.3,
+          0.3
+        ],
+        "sign_agreement": false,
+        "signs": [
+          1,
+          -1,
+          -1
+        ]
+      },
+      "2018-07-26|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5667,
+        "score_std": 0.0624,
+        "score_range": [
+          0.5,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-07-26|USA": {
+        "n_runs": 3,
+        "score_mean": -0.0833,
+        "score_std": 0.3064,
+        "score_range": [
+          -0.3,
+          0.35
+        ],
+        "sign_agreement": false,
+        "signs": [
+          -1,
+          1,
+          -1
+        ]
+      },
+      "2018-08-16|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.6067,
+        "score_std": 0.0613,
+        "score_range": [
+          0.52,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-08-16|USA": {
+        "n_runs": 3,
+        "score_mean": 0.3,
+        "score_std": 0.0707,
+        "score_range": [
+          0.2,
+          0.35
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-09-06|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.6167,
+        "score_std": 0.0471,
+        "score_range": [
+          0.55,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-09-06|USA": {
+        "n_runs": 3,
+        "score_mean": -0.1167,
+        "score_std": 0.2953,
+        "score_range": [
+          -0.35,
+          0.3
+        ],
+        "sign_agreement": false,
+        "signs": [
+          -1,
+          1,
+          -1
+        ]
+      },
+      "2018-09-27|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.65,
+        "score_std": 0.0,
+        "score_range": [
+          0.65,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-09-27|USA": {
+        "n_runs": 3,
+        "score_mean": -0.3333,
+        "score_std": 0.0236,
+        "score_range": [
+          -0.35,
+          -0.3
+        ],
+        "sign_agreement": true,
+        "signs": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "2018-10-18|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.6,
+        "score_std": 0.0408,
+        "score_range": [
+          0.55,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-10-18|USA": {
+        "n_runs": 3,
+        "score_mean": -0.1333,
+        "score_std": 0.2357,
+        "score_range": [
+          -0.3,
+          0.2
+        ],
+        "sign_agreement": false,
+        "signs": [
+          -1,
+          1,
+          -1
+        ]
+      },
+      "2018-11-08|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5833,
+        "score_std": 0.0236,
+        "score_range": [
+          0.55,
+          0.6
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-11-08|USA": {
+        "n_runs": 3,
+        "score_mean": -0.3167,
+        "score_std": 0.0236,
+        "score_range": [
+          -0.35,
+          -0.3
+        ],
+        "sign_agreement": true,
+        "signs": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "2018-11-29|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5833,
+        "score_std": 0.0943,
+        "score_range": [
+          0.45,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-11-29|USA": {
+        "n_runs": 3,
+        "score_mean": -0.0667,
+        "score_std": 0.2953,
+        "score_range": [
+          -0.3,
+          0.35
+        ],
+        "sign_agreement": false,
+        "signs": [
+          -1,
+          -1,
+          1
+        ]
+      },
+      "2018-12-20|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5667,
+        "score_std": 0.0236,
+        "score_range": [
+          0.55,
+          0.6
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2018-12-20|USA": {
+        "n_runs": 3,
+        "score_mean": 0.0667,
+        "score_std": 0.2248,
+        "score_range": [
+          -0.25,
+          0.25
+        ],
+        "sign_agreement": false,
+        "signs": [
+          -1,
+          1,
+          1
+        ]
+      },
+      "2019-01-10|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5333,
+        "score_std": 0.1027,
+        "score_range": [
+          0.4,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-01-10|USA": {
+        "n_runs": 3,
+        "score_mean": -0.2833,
+        "score_std": 0.0236,
+        "score_range": [
+          -0.3,
+          -0.25
+        ],
+        "sign_agreement": true,
+        "signs": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "2019-01-31|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5833,
+        "score_std": 0.0471,
+        "score_range": [
+          0.55,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-01-31|USA": {
+        "n_runs": 3,
+        "score_mean": -0.0833,
+        "score_std": 0.2392,
+        "score_range": [
+          -0.3,
+          0.25
+        ],
+        "sign_agreement": false,
+        "signs": [
+          -1,
+          -1,
+          1
+        ]
+      },
+      "2019-02-21|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5167,
+        "score_std": 0.1179,
+        "score_range": [
+          0.35,
+          0.6
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-02-21|USA": {
+        "n_runs": 3,
+        "score_mean": -0.3,
+        "score_std": 0.0408,
+        "score_range": [
+          -0.35,
+          -0.25
+        ],
+        "sign_agreement": true,
+        "signs": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "2019-03-14|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.4167,
+        "score_std": 0.0471,
+        "score_range": [
+          0.35,
+          0.45
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-03-14|USA": {
+        "n_runs": 3,
+        "score_mean": -0.3333,
+        "score_std": 0.0236,
+        "score_range": [
+          -0.35,
+          -0.3
+        ],
+        "sign_agreement": true,
+        "signs": [
+          -1,
+          -1,
+          -1
+        ]
+      },
+      "2019-04-04|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.35,
+        "score_std": 0.0408,
+        "score_range": [
+          0.3,
+          0.4
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-04-04|USA": {
+        "n_runs": 3,
+        "score_mean": 0.0167,
+        "score_std": 0.2248,
+        "score_range": [
+          -0.3,
+          0.2
+        ],
+        "sign_agreement": false,
+        "signs": [
+          1,
+          -1,
+          1
+        ]
+      },
+      "2019-04-25|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.3833,
+        "score_std": 0.0624,
+        "score_range": [
+          0.3,
+          0.45
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-04-25|USA": {
+        "n_runs": 3,
+        "score_mean": -0.1167,
+        "score_std": 0.2593,
+        "score_range": [
+          -0.3,
+          0.25
+        ],
+        "sign_agreement": false,
+        "signs": [
+          -1,
+          1,
+          -1
+        ]
+      },
+      "2019-05-16|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.55,
+        "score_std": 0.0816,
+        "score_range": [
+          0.45,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-05-16|USA": {
+        "n_runs": 3,
+        "score_mean": 0.3333,
+        "score_std": 0.0236,
+        "score_range": [
+          0.3,
+          0.35
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-06-06|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5833,
+        "score_std": 0.0624,
+        "score_range": [
+          0.5,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-06-06|USA": {
+        "n_runs": 3,
+        "score_mean": 0.0833,
+        "score_std": 0.3091,
+        "score_range": [
+          -0.35,
+          0.35
+        ],
+        "sign_agreement": false,
+        "signs": [
+          1,
+          1,
+          -1
+        ]
+      },
+      "2019-06-27|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5833,
+        "score_std": 0.0471,
+        "score_range": [
+          0.55,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-06-27|USA": {
+        "n_runs": 3,
+        "score_mean": 0.1167,
+        "score_std": 0.2625,
+        "score_range": [
+          -0.25,
+          0.35
+        ],
+        "sign_agreement": false,
+        "signs": [
+          -1,
+          1,
+          1
+        ]
+      },
+      "2019-07-18|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5167,
+        "score_std": 0.0624,
+        "score_range": [
+          0.45,
+          0.6
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-07-18|USA": {
+        "n_runs": 3,
+        "score_mean": 0.0833,
+        "score_std": 0.2014,
+        "score_range": [
+          -0.2,
+          0.25
+        ],
+        "sign_agreement": false,
+        "signs": [
+          -1,
+          1,
+          1
+        ]
+      },
+      "2019-08-08|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5333,
+        "score_std": 0.0471,
+        "score_range": [
+          0.5,
+          0.6
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-08-08|USA": {
+        "n_runs": 3,
+        "score_mean": 0.3333,
+        "score_std": 0.0236,
+        "score_range": [
+          0.3,
+          0.35
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-08-29|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.6167,
+        "score_std": 0.0236,
+        "score_range": [
+          0.6,
+          0.65
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-08-29|USA": {
+        "n_runs": 3,
+        "score_mean": 0.4,
+        "score_std": 0.1472,
+        "score_range": [
+          0.25,
+          0.6
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-09-19|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.5667,
+        "score_std": 0.0236,
+        "score_range": [
+          0.55,
+          0.6
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-09-19|USA": {
+        "n_runs": 3,
+        "score_mean": 0.0833,
+        "score_std": 0.3064,
+        "score_range": [
+          -0.35,
+          0.3
+        ],
+        "sign_agreement": false,
+        "signs": [
+          1,
+          -1,
+          1
+        ]
+      },
+      "2019-10-10|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.4167,
+        "score_std": 0.0471,
+        "score_range": [
+          0.35,
+          0.45
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-10-10|USA": {
+        "n_runs": 3,
+        "score_mean": 0.35,
+        "score_std": 0.0,
+        "score_range": [
+          0.35,
+          0.35
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-10-31|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.4333,
+        "score_std": 0.0236,
+        "score_range": [
+          0.4,
+          0.45
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-10-31|USA": {
+        "n_runs": 3,
+        "score_mean": 0.3167,
+        "score_std": 0.0624,
+        "score_range": [
+          0.25,
+          0.4
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-11-21|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.4833,
+        "score_std": 0.0624,
+        "score_range": [
+          0.4,
+          0.55
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-11-21|USA": {
+        "n_runs": 3,
+        "score_mean": 0.25,
+        "score_std": 0.0408,
+        "score_range": [
+          0.2,
+          0.3
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-12-12|CHN": {
+        "n_runs": 3,
+        "score_mean": 0.35,
+        "score_std": 0.0,
+        "score_range": [
+          0.35,
+          0.35
+        ],
+        "sign_agreement": true,
+        "signs": [
+          1,
+          1,
+          1
+        ]
+      },
+      "2019-12-12|USA": {
+        "n_runs": 3,
+        "score_mean": -0.2833,
+        "score_std": 0.0236,
+        "score_range": [
+          -0.3,
+          -0.25
+        ],
+        "sign_agreement": true,
+        "signs": [
+          -1,
+          -1,
+          -1
+        ]
+      }
+    },
+    "per_date": {
+      "2018-03-01": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-03-22": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-04-12": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-05-03": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-05-24": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-06-14": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-07-05": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-07-26": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-08-16": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-09-06": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-09-27": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-10-18": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-11-08": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-11-29": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2018-12-20": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-01-10": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-01-31": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-02-21": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-03-14": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-04-04": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-04-25": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-05-16": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-06-06": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-06-27": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-07-18": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-08-08": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-08-29": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 1
+      },
+      "2019-09-19": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-10-10": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 1
+      },
+      "2019-10-31": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-11-21": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      },
+      "2019-12-12": {
+        "mean_rank_corr": 1.0,
+        "n_pairs": 3
+      }
+    },
+    "summary": {
+      "available": true,
+      "n_cells": 64,
+      "mean_score_std": 0.0963,
+      "min_sign_agreement": false,
+      "mean_rank_corr": 1.0
+    }
+  },
+  "holdings": null,
+  "agent_eval": null,
+  "meta": {
+    "n_runs": 3
+  }
+}

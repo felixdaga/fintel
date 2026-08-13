@@ -1,0 +1,141 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-03-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.35,
+      "rationale": "RECOMMENDATION: Continue negotiating from a position of leverage without introducing new escalatory measures. Hold existing tariffs as bargaining chips, press hard on the enforcement mechanism and structural IP/tech-transfer reforms, and be willing to extend the timeline rather than rush a weak deal. Do not raise List 3 to 25% yet \u2014 the threat of escalation is more valuable than executing it while talks are progressing.\n\nSUPPORTING RATIONALE:\n\nTHREAT SCORE (-0.35): The US holds meaningful leverage in this dispute. China's economy is materially weaker than ours: manufacturing PMI has been contracting for two consecutive months (official 49.4-49.5, Caixin 48.3 in Jan 2019), export orders shrinking for 7+ months, and GDP growth forecast to slow to 6.2% \u2014 the weakest in nearly 30 years. The end of front-loading effects means China's export sector faces further deterioration (Nomura analysis). Meanwhile, the US economy, while slowing (Q4 GDP 2.6%, down from 3.5% in Q3), still has near-50-year low unemployment and a Fed that has paused rate hikes. The 10-year Treasury yield has fallen from 3.2% to 2.61%, signaling growth concerns, but no recession is imminent. Our tariff coverage ($250B of Chinese imports) vastly exceeds China's retaliation ($110B of US goods), giving us asymmetric leverage. The Huawei prosecution and Meng Wanzhou extradition (hearing underway March 6 in Vancouver) add non-tariff pressure on China's tech ambitions. China is the party under greater economic stress.\n\nACTION SCORE (-0.15): Despite favorable leverage, maximal escalation would be counterproductive at this moment. First, talks are actively progressing \u2014 six MOUs are being drafted on structural issues (forced tech transfer, IP, services, currency, agriculture, non-tariff barriers), and China has reportedly prepared structural concessions (NYT, Feb 21). Second, US domestic costs are real: the trade deficit has widened (soybean exports collapsed under Chinese retaliation), farmers are hurting, GDP forecasts for 2019 are being trimmed to 1.9-2.3%, and the Mercatus March 2019 report flags trade policy as one of three 'dark clouds' alongside the shutdown aftermath and Fed uncertainty. Third, the enforcement mechanism \u2014 not tariff levels \u2014 is the critical prize. Lighthizer's team wants a process allowing tariffs to snap back if China reneges; getting that structural commitment matters more than squeezing another few points of tariff pressure now. The List 3 hike from 10% to 25% was already delayed once (Feb 24); keeping it suspended as leverage while pressing on enforcement is the optimal strategy. Escalation remains available if talks stall, but premature escalation would undercut our negotiating partners (Liu He) and rally Chinese domestic nationalism.",
+      "key_factors": [
+        "China manufacturing PMI in contraction (49.4-49.5 official, 48.Caixin) for 2+ months",
+        "US tariff coverage asymmetric: $250B vs China's $110B retaliation",
+        "Six MOUs being drafted on structural issues; enforcement mechanism still disputed",
+        "Huawei criminal charges and Meng extradition proceedings add non-tariff pressure",
+        "US economy slowing (Q4 GDP 2.6%) but fundamentally sound; Fed paused hikes",
+        "China GDP forecast to slow to 6.2%, weakest in 30 years",
+        "List 3 tariff hike (10\u219225%) already delayed; threat more valuable than execution",
+        "US agricultural sector hurting from Chinese retaliation (soybean exports collapsed)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-24",
+          "excerpt": "Trump tweets that talks have made substantial progress and further delays the scheduled List 3 hike from 10% to 25%"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-02-21",
+          "excerpt": "Negotiators are drawing up six memorandums of understanding on structural issues: forced technology transfer and cyber theft, intellectual property rights, services, currency, agriculture and non-tariff barriers to trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2018-12-31",
+          "excerpt": "China's factory activity contracted for the first time in over two years in December; PMI fell to 49.4, below the 50-point level"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-02-01",
+          "excerpt": "Caixin PMI came in at 48.3 in January \u2014 second-consecutive month of contraction and lowest reading since 2016"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "mercatus-2019-03",
+          "excerpt": "Trade policy is one of three dark clouds alongside shutdown aftermath and Fed uncertainty; GDP forecasts trimmed"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10-year Treasury yield fell from 3.2% peak (Oct 2018) to 2.61% by March 13, 2019"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Fed funds rate at 2.41% as of March 2019; Fed has paused rate hikes"
+        }
+      ],
+      "threat_score": -0.35,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-03-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4923,
+        "capped_chars": 4923,
+        "raw_tokens": 1231,
+        "capped_tokens": 1231
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11282,
+        "capped_chars": 11282,
+        "raw_tokens": 2820,
+        "capped_tokens": 2820
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 65724,
+        "capped_chars": 65724,
+        "raw_tokens": 16430,
+        "capped_tokens": 16430
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 380728,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

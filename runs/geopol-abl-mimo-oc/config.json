@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "job_id": "geopol-full-0001",
+  "strategy": "/Users/lucky/.openclaw/workspace/projects/fintel/packages/geopol_trade_war_2018",
+  "agent": {
+    "name": "openclaw",
+    "model": {
+      "allow_fallbacks": false,
+      "extra_params": {}
+    },
+    "allow_sub_agents": false,
+    "options": {
+      "profile": "delorean"
+    }
+  },
+  "k_repeats": 3,
+  "max_concurrent": 1,
+  "trial_concurrency": 1,
+  "shared_concurrency": 60,
+  "output_root": "/Users/lucky/.openclaw/workspace/projects/fintel/runs",
+  "dry_run": false,
+  "prefetch": true,
+  "prefetch_workers": 8
+}

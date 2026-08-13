@@ -1,0 +1,134 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-03-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 134112,
+    "tokens_out": 3660,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Maintain our current calibrated posture rather than escalating preemptively. We should keep the dialogue channel open and emphasize that we will respond proportionately and lawfully only if and when the US actually imposes Section 301 tariffs, while continuing quiet preparation of a measured retaliatory list (agriculture, aircraft, soybeans, coal) so we are ready to act without being baited into firing first.\n\nSUPPORTING RATIONALE: The threat is real but not yet fully materialized. The US has signed steel (25%) and aluminum (10%) Section 232 tariffs (timeline 2018-03-08) and a Section 301 action against roughly $30-50 billion of Chinese imports is reported as imminent, with the president declaring \"trade wars are good, and easy to win\" (timeline 2018-03-02). Our exposure is genuine: the US is our largest export market and the bilateral surplus is large \u2014 over 60% of our total trade surplus \u2014 so a tariff cascade would bite export hubs and tech-transfer-sensitive sectors. That drives threat_score toward +0.4. However, our hand is strong: FX reserves are ~$3.1 trillion and stable (nine straight months of gains), the yuan has appreciated ~4.9% over the past year, and GDP is growing ~6.9%, giving us buffer to absorb friction. Escalating now \u2014 before any Section 301 tariff is formally announced \u2014 risks validating Washington's narrative, rallying US domestic pressure against us, and starting a spiral in which we, holding the larger export dependence on the US market, stand to lose more. Foreign Minister Wang Yi's framing (\"trade wars are never the solution\" while committing to a \"justified and necessary response\") points to firm-but-calculated, not maximal, escalation. Hence action_score near zero with a hold stance: prepare calibrated retaliation, defend via WTO, keep talking \u2014 and respond proportionately only if attacked.",
+      "key_factors": [
+        "Section 301 IP/tech-transfer investigation ongoing since Aug 2017 with an imminently expected tariff action (~$30-50B) against Chinese imports",
+        "Steel (25%) and aluminum (10%) Section 232 tariffs signed by the US on 2018-03-08, effective shortly after the decision date",
+        "Trump tweet on 2018-03-02: 'trade wars are good, and easy to win' signaling willingness to escalate",
+        "China's large bilateral surplus with the US (~$117-143B, over 60% of total surplus) makes the US market a key vulnerability",
+        "Resilient domestic position buffering the threat: ~$3.1tn stable FX reserves, yuan appreciation, ~6.9% GDP growth",
+        "China signaling proportionate, WTO-grounded retaliation (sorghum probe, agriculture/coal targets) while Foreign Minister Wang Yi urges 'calm and constructive dialogue'"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-08",
+          "excerpt": "Trump signs Section 232 proclamations imposing the steel (25%) and aluminum (10%) tariffs."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-02",
+          "excerpt": "Trump tweets: \"trade wars are good, and easy to win.\""
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2017-08-14",
+          "excerpt": "Trump signs memorandum directing USTR to investigate China's IP and technology-transfer practices under Section 301."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "POLITICO Morning Trade 2018-03-19",
+          "excerpt": "The Trump administration will propose tariffs on at least $30 billion worth of Chinese imports as part of its Section 301 action... the tariff rollout could still occur as soon as this week."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "VOA 2018-03-09 China Gears Up to Retaliate",
+          "excerpt": "Chinese Foreign Minister Wang Yi... history has taught us that trade wars are never the solution... China will surely make a justified and necessary response."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters China FX reserves Nov 2017",
+          "excerpt": "China's foreign exchange reserves rose in October for a ninth straight month... to $3.109 trillion... the yuan has gained about 4.9 percent against the dollar so far this year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters China trade surplus with US",
+          "excerpt": "the surplus with the United States, China's largest export market... $117.5 billion... The surplus with the U.S. accounted for 64 percent of China's total surplus."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0.05,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-03-22",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 1128,
+        "capped_chars": 1128,
+        "raw_tokens": 282,
+        "capped_tokens": 282
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47437,
+        "capped_chars": 47437,
+        "raw_tokens": 11859,
+        "capped_tokens": 11859
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 36184,
+        "capped_chars": 36184,
+        "raw_tokens": 9046,
+        "capped_tokens": 9046
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 471312,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

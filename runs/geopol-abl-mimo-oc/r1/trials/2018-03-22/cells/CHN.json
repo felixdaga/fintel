@@ -1,0 +1,91 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-03-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Prepare calibrated retaliatory tariffs targeting politically sensitive US exports (soybeans, agricultural goods, automobiles) while pursuing WTO dispute settlement. Use the crisis to accelerate domestic tech self-sufficiency under Made in China 2025. Signal willingness to negotiate but do not preemptively concede \u2014 the US announcement is imminent and unprovoked retaliation framing is essential.\n\nSUPPORTING RATIONALE: The threat reading of +0.35 reflects a genuine but not yet existential risk. The Section 301 investigation, initiated Aug 2017, is about to produce $30-60B in tariffs targeting China's technology and telecommunications sectors \u2014 the core of Made in China 2025 ambitions (CNBC, Mar 21; Washington Post, Mar 19; Reuters, Mar 13). This directly threatens China's tech upgrading strategy and could slow high-tech manufacturing growth. However, China's macroeconomic position is strong: 6.9% GDP growth in 2017, the fastest in 7 years (NBS, Jan 2018), high foreign reserves, and surging exports in early 2018 (Straits Times, Mar 8). The tariffs have not yet been imposed \u2014 only announced. And the US is acting unilaterally without allied support, having alienated the EU and Japan with steel/aluminum tariffs (Covington analysis, Mar 15), which gives China diplomatic room.\n\nThe action score of -0.3 (moderate retaliation, not maximal escalation) reflects several considerations. First, China must retaliate to maintain credibility \u2014 the Commerce Ministry has explicitly warned of 'all necessary measures' (Orrick, Jan 2018). Second, targeted retaliation on soybeans ($14B in US exports to China) and Boeing would hit politically sensitive US constituencies (CNN, Feb 17; LA Times, Mar 21), creating domestic political pressure on Trump. Third, WTO challenge positions China as defender of multilateral trade order, winning international sympathy. Fourth, China should NOT escalate maximally because a full trade war would genuinely harm export-dependent manufacturing hubs and disrupt supply chains. Fifth, the US business community itself opposes these tariffs (ITI letter; Business Roundtable opposition, NPR Mar 21), meaning restraint could let domestic US opposition build. China's leverage over US agricultural exports and its WTO framing option make measured retaliation the optimal strategy \u2014 firm enough to impose costs, restrained enough to avoid uncontrollable escalation.",
+      "key_factors": [],
+      "sources_cited": [],
+      "threat_score": 0.35,
+      "action_score": -0.3,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-03-22",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 1128,
+        "capped_chars": 1128,
+        "raw_tokens": 282,
+        "capped_tokens": 282
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47437,
+        "capped_chars": 47437,
+        "raw_tokens": 11859,
+        "capped_tokens": 11859
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 79968,
+        "capped_chars": 79968,
+        "raw_tokens": 19992,
+        "capped_tokens": 19992
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 346781,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

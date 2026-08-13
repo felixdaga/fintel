@@ -1,0 +1,129 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-12-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 144383,
+    "tokens_out": 4220,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: We should hold the line on our existing tariff leverage but decline to trigger the Dec 15 escalation on consumer goods, and push to close and sign the Phase One deal now. Do not grant the tariff rollback China is demanding as a precondition, but use the credible threat and the imminent deadline to convert the already-agreed agricultural, IP and currency commitments into a signed agreement, keeping deeper structural issues (subsidies, tech transfer) for a Phase Two once Phase One is locked in.\n\nSUPPORTING RATIONALE: Threat reading: this dispute is a mild opportunity, not an existential threat, for the United States. We own the escalation path \u2014 tariffs now cover roughly $360B of Chinese goods (timeline, 2019-05 through 2019-09 entries) \u2014 and China is making concessions (ag purchases, currency accord, tariff exemptions), not the reverse. The domestic economy is absorbing the shock: consumer sentiment rebounded from its August trough (89.8) to 99.3, industrial production is roughly flat, and the dollar is holding near 116 on the broad index (country_health, USA). The principal residual risks are self-inflicted \u2014 pushing the Dec 15 15% tariff on ~$160B of phones, laptops and toys would hit US consumers, retailers and tech supply chains at holiday peak and delay a deal we are positioned to win (web_search, CNBC 2019-12-10; Politico listing phones/laptops/footwear). Action stance: because we hold leverage and are near a favorable settlement, the optimal move is de-escalatory-but-not-concessive \u2014 defer the December tariffs to clear the path to a signed Phase One while preserving our tariff structure as leverage, rather than escalate into an outcome that hurts US consumers and invites renewed retaliation on US exports such as autos and agriculture (timeline 2019-08-23). This is consistent with a mild-opportunity threat reading driving a moderate negotiate stance.",
+      "key_factors": [
+        "Phase One agreed in principle (Oct 11) but unsigned \u2014 $40-50B ag purchases, IP, currency commitments",
+        "Dec 15 deadline: 15% tariff on ~$160B consumer goods (phones, laptops, toys) would hit US consumers/retailers/tech at holiday peak",
+        "US holds leverage: ~$360B of tariffs imposed; China making goodwill concessions",
+        "Macro resilience: consumer sentiment 99.3 (from 89.8 Aug trough), flat IP, stable dollar ~116, no US recession",
+        "Hardball signals ('no deadline', could wait past 2020 election) while talks remain on the doorstep",
+        "Hong Kong Human Rights Act adds collateral tension but talks continue ('fight and talk')"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "Phase One deal in principle announced: China to buy ~$40-50B US ag year, IP/currency cited; planned mid-October tariff hike delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-23",
+          "excerpt": "China retaliation on ~$75B US goods incl. re-imposing tariffs on US autos."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "US consumer sentiment recovered to 99.3 (Dec) from 89.8 (Aug trough)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad dollar index stable near 116."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2019-12-10",
+          "excerpt": "Trump administration reportedly plans to delay Dec 15 tariffs on ~$160B of Chinese consumer goods (toys, phones, laptops, clothes)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Politico 2019-10-11",
+          "excerpt": "Trump threatening 15% tariff on consumer goods like laptops, smartphones, footwear; no decision made on suspending Dec 15 wave."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-12-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5122,
+        "capped_chars": 5122,
+        "raw_tokens": 1280,
+        "capped_tokens": 1280
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47984,
+        "capped_chars": 47984,
+        "raw_tokens": 11996,
+        "capped_tokens": 11996
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 46836,
+        "capped_chars": 46836,
+        "raw_tokens": 11709,
+        "capped_tokens": 11709
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 155348,
+  "started_at": "2026-08-13T07:44:04+00:00"
+}

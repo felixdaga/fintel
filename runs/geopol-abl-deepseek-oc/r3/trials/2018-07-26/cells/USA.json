@@ -1,0 +1,134 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-07-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 145943,
+    "tokens_out": 4199,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.2,
+      "rationale": "RECOMMENDATION: Hold the current tariff posture \u2014 List 1 ($34B) is already in effect and List 3 ($200B) is in public comment \u2014 but do not trigger the full $200B round yet. Use the credible threat of further escalation as leverage to convert China's demonstrated willingness to make purchase commitments (the May 19 joint statement) into a durable negotiated settlement, while signaling openness to talks through Secretary Ross/Liu He channels. Escalating to the full $200B now would hand China the justification for disruptive, non-tariff countermeasures that hurt US consumers and supply chains far more than the incremental leverage gained.\n\nSUPPORTING RATIONALE: The US threat reading is mildly opportunistic, not elevated. The domestic economy is strong and has not yet felt the dispute: industrial production is rising (INDPRO ~103.4), the broad dollar is up over 5% on the year, the Fed funds rate is climbing, and CPI is tame \u2014 no recession signal. The US holds the initiative and structural leverage: China imports only ~$130B of US goods against ~$500B of Chinese exports, so Beijing cannot match dollar-for-dollar and is describing the $200B threat as 'extreme pressure and blackmail.' That asymmetry, plus the May 19 truce (China agreeing to 'significantly increase purchases'), undermines an existential reading. However, the score is not deeply negative because China has real counter-leverage through non-tariff levers (supply-chain disruption, Qualcomm/NXP approval, higher consumer prices on List 3 staples like textiles and handbags) and because the retaliation has already landed on US agriculture \u2014 soybeans, the number-two US export to China, targeted at 25% \u2014 creating genuine domestic political vulnerability in the GOP farm belt ahead of the 2018 midterms (Bloomberg, July 24: 17 House races re-rated toward Democrats on farm-belt anxiety; Senate Finance Chairman Hatch calling the escalation 'reckless'). The action stance is neutral-to-negotiate because the marginal move \u2014 imposing the full $200B \u2014 risks converting a contained, asymmetric confrontation into a broad trade war that injures US consumers and manufacturing, while the existing threat is already enough to keep China at the table; the disciplined play is to bank concessions before further escalation, keeping the $200B live as the stick rather than as an executed policy.",
+      "key_factors": [
+        "US economy strong and not yet showing trade-war damage (rising IP, dollar up ~5%, tame CPI)",
+        "US holds structural leverage: China cannot match tariff retaliation dollar-for-dollar",
+        "China counter-leverage via non-tariff levers and direct hits on US agriculture (soybeans)",
+        "Domestic political risk: GOP farm-belt midterm vulnerability from soybean retaliation",
+        "List 1 ($34B) in effect since July 6; List 3 ($200B) proposed but not triggered",
+        "May 19 truce shows China willing to make purchase commitments to avoid tariffs"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "China agrees to 'significantly increase' purchases of US goods and services. Mnuchin says trade war is 'on hold.'"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-06",
+          "excerpt": "List 1 tariffs take effect: US 25% on ~$34B of Chinese goods. China imposes matching ~$34B retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-10",
+          "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for an additional 10% tariff. Public comment/hearing process begins."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US industrial production rising to 103.4, no trade-war recession signal."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad US dollar index up from ~107 to ~112.9 (roughly +5%) over the window."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Bloomberg 2018-07-24",
+          "excerpt": "Trump's Trade War Tremors Hit the Farm Belt; 17 House race ratings moved toward Democrats on farm-belt anxiety."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "LA Times 2018-06-28",
+          "excerpt": "China's Commerce Ministry calls the $200B tariff threat 'extreme pressure and blackmail'; voters/retail/equipment makers warn of harm to consumers, farmers and companies."
+        }
+      ],
+      "threat_score": -0.2,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-07-26",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3366,
+        "capped_chars": 3366,
+        "raw_tokens": 842,
+        "capped_tokens": 842
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48154,
+        "capped_chars": 48154,
+        "raw_tokens": 12038,
+        "capped_tokens": 12038
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 57451,
+        "capped_chars": 57451,
+        "raw_tokens": 14363,
+        "capped_tokens": 14363
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 286768,
+  "started_at": "2026-08-13T07:44:32+00:00"
+}

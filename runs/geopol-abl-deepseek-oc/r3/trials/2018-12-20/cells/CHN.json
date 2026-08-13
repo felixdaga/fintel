@@ -1,0 +1,125 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-12-20",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 144033,
+    "tokens_out": 3322,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: Preserve and work the 90-day negotiation window opened at the Buenos Aires G20 dinner rather than escalate. Keep the Huawei/Meng affair quarantined from the trade track as much as possible, signal resolve on the Meng case through diplomatic channels, but avoid further retaliatory escalation that could collapse the truce and trigger the scheduled January 1 rise of List 3 tariffs from 10% to 25%. The priority now is holding the talks to prevent the far costlier 25% outcome.\n\nSUPPORTING RATIONALE: The threat reading is high but short of existential (+0.45). Already-active US tariffs cover roughly $250B of Chinese exports (25% on the $50B List 1/2 plus 10% on the ~$200B List 3 effective Sept 24). The Dec 1 arrest of Huawei CFO Meng Wanzhou at US request is direct firm-level targeting of a flagship tech company \u2014 the CHN +0.5 anchor \u2014 and Chinese firms in export hubs report squeezed margins, front-loaded orders, and yuan depreciation of ~9% over six months approaching the psychologically important 7 level, all on top of an economy already slowing to near-decade-low growth. These are genuine, material stresses. Yet the situation is not existential because the Jan 1 escalation to 25% is currently suspended (Dec 1) and both sides have an incentive to talk. On action, escalation would be self-defeating: Beijing cannot match the US dollar-for-dollar (US ~$506B imports vs China ~$130B), and provoking a collapse would bring down the 25% hike in weeks, hitting export hubs far harder. China has already retaliated with the Dec 10 detention of two Canadians to demonstrate resolve on Meng without touching the trade track. The right posture is hold-and-negotiate \u2014 maintain the truce, manage the Meng affair diplomatically, and avoid new escalation that risks the January cliff.",
+      "key_factors": [
+        "90-day truce with Jan 1 List 3 25% hike suspended (Dec 1 G20)",
+        "Meng Wanzhou arrest = firm-level targeting of Huawei flagship threatening talks",
+        "China's Dec 10 detention of Canadians = retaliatory signal of resolve",
+        "US tariffs already cover ~$250B of Chinese exports (10% List 3 + 25% $50B)",
+        "Yuan down ~9% in six months, exporters' margins squeezed, economy near decade-low growth",
+        "Beijing lacks dollar-for-dollar retaliation capacity (~$130B imports vs ~$506B US)",
+        "Escalation risks collapsing truce and triggering far costlier 25% tariff in January"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires: 90-day negotiation window; Jan 1 List 3 hike to 25% suspended; Canada arrests Huawei CFO Meng Wanzhou"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-10",
+          "excerpt": "China detains Canadians Michael Kovrig and Michael Spavor (widely viewed as retaliation for Meng arrest)"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%; combined Section 301 coverage now ~$250B of Chinese imports"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SCMP Chinese exporters",
+          "excerpt": "yuan weakened >9% in six months; exporters losing profit margins; products on 10% tariff set to rise to 25% Jan 1"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Business Insider China economy",
+          "excerpt": "GDP weakest in nearly a decade in Q3; US tariffs on roughly half of China's exports to US"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": 0.05,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-12-20",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4487,
+        "capped_chars": 4487,
+        "raw_tokens": 1122,
+        "capped_tokens": 1122
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47776,
+        "capped_chars": 47776,
+        "raw_tokens": 11944,
+        "capped_tokens": 11944
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 51160,
+        "capped_chars": 51160,
+        "raw_tokens": 12790,
+        "capped_tokens": 12790
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 348262,
+  "started_at": "2026-08-13T07:45:20+00:00"
+}

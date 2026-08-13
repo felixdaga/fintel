@@ -1,0 +1,129 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 143981,
+    "tokens_out": 3823,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.2,
+      "rationale": "RECOMMENDATION: Continue pressing the negotiation inside the 90-day G20 truce window rather than escalating or conceding. Keep the ~$250B of Section 301 tariffs in place as leverage, demand enforceable purchase commitments plus structural IP/forced-transfer reform, and hold the suspended 10%-to-25% List 3 escalation as a credible March 1 stick \u2014 but do not trigger it without exhausting the talks, since escalation now would break the truce, roil already-volatile markets, and deepen farm-belt losses ahead of the March deadline.\n\nSUPPORTING RATIONALE: The threat to US interests is real but modest-to-favorable, not existential. The US holds the negotiating initiative and the opponent is under visible pressure: China is posting its slowest growth since 1990 and Huawei faces DOJ charges (timeline: 2019-01-28), giving Washington leverage to extract IP and purchase concessions. Yet costs are concrete: US soybean sales to China have fallen ~94%, farm bankruptcies are rising across the Midwest, and a $12B aid program has paid out little (NYT/Reason/Politico). US consumer sentiment fell from 100.1 to 91.2 and markets were turbulent in Q4 (UMCSENT series), signalling that further escalation, not de-escalation, is the risky path. Lighthizer has signaled the March 1 deadline will not be extended, and China has reportedly not tabled anything substantively new (Politico, Jan 29; US-China Business Council). That combination argues for holding firm and negotiating hard for a verifiable deal while keeping the tariff lever credible \u2014 hence a mildly negative threat reading (-0.2) and a mild negotiate stance (+0.15), consistent with neither breaking the truce nor surrendering leverage.",
+      "key_factors": [
+        "~$250B of Chinese imports under Section 301 tariffs; List 3 held at 10% under the truce",
+        "March 1 expiry of 90-day G20 window; Lighthizer signals no extension",
+        "Soybean exports to China down ~94%; farm-belt bankruptcies rising (political exposure)",
+        "US consumer sentiment 100.1 -> 91.2 and elevated Q4 market volatility",
+        "Huawei/Meng DOJ charges (Jan 28) add legal friction with allies but are held separate from talks",
+        "China's slowing growth gives the US negotiation leverage on IP/purchase commitments"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires: Trump and Xi agree to 90-day negotiation window; Jan 1 List 3 hike to 25% suspended (tariffs remain at 10%)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; formal extradition request."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-30",
+          "excerpt": "Lighthizer and Mnuchin in Beijing for high-level talks; purchase commitments discussed; enforcement and structural IP issues unresolved."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "US consumer sentiment fell from 100.1 (Sep) to 91.2 (Jan)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico-2019-01-29",
+          "excerpt": "Lighthizer signals March 1 tariff deadline will not be extended; US business council says China has not tabled anything substantively new."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reason-soybeans",
+          "excerpt": "US soybean exports to China down ~40% year over year (94% decline in sales to China vs prior harvest); $12B aid paid out little; farm bankruptcies rising."
+        }
+      ],
+      "threat_score": -0.2,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4863,
+        "capped_chars": 4863,
+        "raw_tokens": 1216,
+        "capped_tokens": 1216
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46316,
+        "capped_chars": 46316,
+        "raw_tokens": 11579,
+        "capped_tokens": 11579
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 47620,
+        "capped_chars": 47620,
+        "raw_tokens": 11905,
+        "capped_tokens": 11905
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 366210,
+  "started_at": "2026-08-13T07:45:25+00:00"
+}

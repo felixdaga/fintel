@@ -1,0 +1,74 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-05-03",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10626,
+    "tokens_out": 346,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0090784,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should maintain its current posture and avoid further escalation at this time. The proposed tariffs are still in the comment period (until May 11) with hearings scheduled for May 15, so there is no need to rush additional actions. The administration should use this window to assess China's response and coordinate with allies before executing any tariff actions.\n\nSUPPORTING RATIONALE: The US holds significant leverage in this dispute. The trade deficit of $375 billion gives the US asymmetric retaliatory capacity - as CBS News notes, China 'would be unable to match' $153 billion in tariffs since it only imported $130 billion of US goods. The US tariff list strategically targets China's technological ambitions under Made in China 2025, with 84% of targeted products being high-end exports (Bruegel analysis). China's retaliation so far has been limited to $3 billion on agricultural products, and even their proposed $50 billion list focuses on lower-end products, suggesting China is trying to minimize self-inflicted damage. However, there are real risks: Boeing, Apple, Qualcomm, and agricultural exporters face significant exposure, and the EU is preparing its own sanctions against US goods. The threat score reflects that while the US has leverage, the situation is not yet a clear opportunity - the tariffs remain proposals, allied coordination is uncertain, and domestic industries are lobbying against escalation. A hold position allows the US to maintain pressure while preserving negotiating flexibility.",
+      "key_factors": [],
+      "sources_cited": [],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-05-03",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 33055,
+        "capped_chars": 28711,
+        "raw_tokens": 8264,
+        "capped_tokens": 7178
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 11162,
+  "started_at": "2026-08-13T10:54:58+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8676,
+    "tokens_out": 966,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0089884,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.3,
+      "rationale": "RECOMMENDATION: The US should pursue active negotiations with China while maintaining the current tariff structure as leverage. The trade war has already escalated to cover roughly half of bilateral trade ($250 billion in tariffs), and further blanket escalation risks significant collateral damage to US firms embedded in Chinese supply chains and to agricultural constituencies. However, the US retains structural leverage \u2014 China's exports to the US ($505 billion) dwarf US exports to China ($130 billion), giving the US more room in a tit-for-tat dynamic. We should use this leverage at the negotiating table rather than burning it through further unilateral tariff hikes.\n\nSUPPORTING RATIONALE: The threat score of +0.3 reflects moderate but not existential concern. The trade war is causing real damage to specific US sectors \u2014 soybean prices down 20% (Brookings/Dollar), agricultural and manufacturing communities in the Midwest and South are feeling pain, and US firms operating in China face collateral damage. The RAND analysis notes that US tariffs on machinery and equipment hit American companies whose supply chains depend on Chinese inputs, with an immediate $8.5 billion cost increase. However, the overall macro impact is described as 'a minor blip' for the US economy (Brookings), and the US has asymmetric leverage given the trade deficit structure. The threat is sectoral and political rather than systemic.\n\nThe action score of -0.15 (negotiate) reflects the judgment that the US should hold its current tariff position as bargaining leverage while actively engaging China in talks. Fox Business reports that Trump himself described 'tremendous success' in negotiations with China in early 2019, suggesting talks were already underway. The RAND analysis undermines the maximalist US argument that China will 'run out of exports to levy retaliatory tariffs upon' \u2014 the real gap is only about $84 billion if the US avoids consumer goods, and China can adjust tariff rates upward. This means further escalation has diminishing returns and increasing domestic costs. The optimal strategy is to convert existing leverage into a deal that addresses structural issues (IP theft, forced joint ventures, state subsidies per the CFR report cited by Fox Business) rather than continuing to absorb the costs of an open-ended tariff war.",
+      "key_factors": [
+        "US tariffs cover ~$250 billion of Chinese imports, roughly half of bilateral trade",
+        "China has retaliated on ~$110 billion of $130 billion in US exports to China",
+        "Soybean prices down 20%, agricultural and manufacturing sectors under pressure",
+        "US supply chain costs rising \u2014 $8.5 billion immediate cost from machinery tariffs (RAND)",
+        "US has asymmetric leverage: $505B Chinese exports vs $130B US exports",
+        "RAND analysis shows the 'run out of exports' argument is weaker than claimed \u2014 real gap ~$84B",
+        "Trade talks underway in early 2019 with Trump describing 'tremendous success'",
+        "Structural issues (IP theft, state subsidies, forced JVs) remain unaddressed"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "Soybean price already down 20 percent; U.S. exports concentrated in agricultural products, automobiles, Boeing; 'minor blip' for overall U.S. economy"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "Immediate effect: rise in business costs of $8.5 billion; true gap in tariff-able goods is $84 billion; Chinese yuan depreciated 6% from 6.28 to 6.64"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "$250 billion aggregate tariff covers about half of US-China trade; China tariffs cover $110 billion of $130 billion in US goods"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "Trump: 'We're negotiating and having tremendous success with China'; CFR report on Chinese subsidies, forced JVs, and WTO manipulation"
+        }
+      ],
+      "threat_score": 0.3,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 23881,
+        "capped_chars": 20119,
+        "raw_tokens": 5970,
+        "capped_tokens": 5030
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 24779,
+  "started_at": "2026-08-13T10:55:09+00:00"
+}

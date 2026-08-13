@@ -1,0 +1,1649 @@
+{
+  "schema_version": 1,
+  "run_id": "geopol-abl-grok-oc-r3",
+  "job_id": "geopol-abl-grok-oc",
+  "k_index": 3,
+  "status": "ok",
+  "started_at": "2026-08-13T05:59:47+00:00",
+  "finished_at": "2026-08-13T06:23:59+00:00",
+  "duration_ms": 1451870,
+  "n_trials": 32,
+  "n_decisions": 27,
+  "n_views": 64,
+  "trials": [
+    {
+      "decision_date": "2018-03-01",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 425821,
+          "usage": {
+            "n_llm_calls": 6,
+            "tokens_in": 304223,
+            "tokens_out": 9559,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 299240,
+          "usage": {
+            "n_llm_calls": 4,
+            "tokens_in": 198741,
+            "tokens_out": 4530,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2018-03-22",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 306441,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 247847,
+            "tokens_out": 4504,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 333658,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 231120,
+            "tokens_out": 5748,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2018-04-12",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 181084,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 195871,
+            "tokens_out": 4083,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 224590,
+          "usage": {
+            "n_llm_calls": 4,
+            "tokens_in": 177272,
+            "tokens_out": 4002,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2018-05-03",
+      "status": "partial",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "failed",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 228093,
+          "usage": {
+            "n_llm_calls": 4,
+            "tokens_in": 175724,
+            "tokens_out": 3762,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "error": "1 tool error(s) the agent saw (MCP timeout/connection); agent saw fintel__web_search: {\n  \"status\": \"ok\",\n  \"data\": {\n    \"query\": \"ZTE ban US Commerce denial order April 2018 reaction China\",\n    \"search_w",
+          "health": "broken",
+          "health_issues": [
+            "1 tool error(s) the agent saw (MCP timeout/connection)",
+            "agent saw fintel__web_search: {\n  \"status\": \"ok\",\n  \"data\": {\n    \"query\": \"ZTE ban US Commerce denial order April 2018 reaction China\",\n    \"search_w"
+          ]
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 259976,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 222423,
+            "tokens_out": 5918,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "broken"
+    },
+    {
+      "decision_date": "2018-05-24",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 248708,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 207302,
+            "tokens_out": 3840,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 267903,
+          "usage": {
+            "n_llm_calls": 4,
+            "tokens_in": 184501,
+            "tokens_out": 4436,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2018-06-14",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 334248,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 199797,
+            "tokens_out": 5008,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 369450,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 235888,
+            "tokens_out": 6642,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2018-07-05",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 375048,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 228440,
+            "tokens_out": 6675,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 345944,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 195928,
+            "tokens_out": 4246,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2018-07-26",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 346850,
+          "usage": {
+            "n_llm_calls": 4,
+            "tokens_in": 189506,
+            "tokens_out": 3591,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 362963,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 192726,
+            "tokens_out": 4346,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2018-08-16",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 363339,
+          "usage": {
+            "n_llm_calls": 4,
+            "tokens_in": 178924,
+            "tokens_out": 4424,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 357542,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 195415,
+            "tokens_out": 4473,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2018-09-06",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 441572,
+          "usage": {
+            "n_llm_calls": 6,
+            "tokens_in": 271392,
+            "tokens_out": 7541,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 441558,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 254718,
+            "tokens_out": 7969,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2018-09-27",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 374841,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 201975,
+            "tokens_out": 5209,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 446768,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 214889,
+            "tokens_out": 5813,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2018-10-18",
+      "status": "partial",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "failed",
+          "n_views": 1,
+          "attempts": 2,
+          "duration_ms": 974596,
+          "usage": {
+            "n_llm_calls": 8,
+            "tokens_in": 418303,
+            "tokens_out": 13142,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "error": "3 tool error(s) the agent saw (MCP timeout/connection); agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+          "health": "broken",
+          "health_issues": [
+            "3 tool error(s) the agent saw (MCP timeout/connection)",
+            "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+            "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+            "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >="
+          ]
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 410666,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 278428,
+            "tokens_out": 5937,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "broken"
+    },
+    {
+      "decision_date": "2018-11-08",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 2,
+          "duration_ms": 838794,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 225737,
+            "tokens_out": 4368,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 383260,
+          "usage": {
+            "n_llm_calls": 4,
+            "tokens_in": 184285,
+            "tokens_out": 4463,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2018-11-29",
+      "status": "partial",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 389012,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 186852,
+            "tokens_out": 4692,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "failed",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 377987,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 196701,
+            "tokens_out": 3530,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "error": "1 tool error(s) the agent saw (MCP timeout/connection); agent saw fintel__web_search: {\n  \"status\": \"ok\",\n  \"data\": {\n    \"query\": \"Huawei ZTE US entity list export ban 2018 China technology tariffs\",\n    \"",
+          "health": "broken",
+          "health_issues": [
+            "1 tool error(s) the agent saw (MCP timeout/connection)",
+            "agent saw fintel__web_search: {\n  \"status\": \"ok\",\n  \"data\": {\n    \"query\": \"Huawei ZTE US entity list export ban 2018 China technology tariffs\",\n    \""
+          ]
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "broken"
+    },
+    {
+      "decision_date": "2018-12-20",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 398663,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 197794,
+            "tokens_out": 4685,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 411141,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 252234,
+            "tokens_out": 5397,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-01-10",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 424096,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 230397,
+            "tokens_out": 4789,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 374784,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 175355,
+            "tokens_out": 3318,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-01-31",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 413305,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 182091,
+            "tokens_out": 4160,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 401465,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 262393,
+            "tokens_out": 4339,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-02-21",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 2,
+          "duration_ms": 909006,
+          "usage": {
+            "n_llm_calls": 7,
+            "tokens_in": 423693,
+            "tokens_out": 9219,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 393263,
+          "usage": {
+            "n_llm_calls": 4,
+            "tokens_in": 174725,
+            "tokens_out": 4167,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-03-14",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 436625,
+          "usage": {
+            "n_llm_calls": 6,
+            "tokens_in": 292030,
+            "tokens_out": 5115,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 381874,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 189396,
+            "tokens_out": 3681,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-04-04",
+      "status": "partial",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "failed",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 520774,
+          "usage": {
+            "n_llm_calls": 8,
+            "tokens_in": 392817,
+            "tokens_out": 11563,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "error": "3 tool error(s) the agent saw (MCP timeout/connection); agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+          "health": "broken",
+          "health_issues": [
+            "3 tool error(s) the agent saw (MCP timeout/connection)",
+            "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+            "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+            "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >="
+          ]
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 376515,
+          "usage": {
+            "n_llm_calls": 4,
+            "tokens_in": 166539,
+            "tokens_out": 3896,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "broken"
+    },
+    {
+      "decision_date": "2019-04-25",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 369967,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 188188,
+            "tokens_out": 3530,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 415886,
+          "usage": {
+            "n_llm_calls": 6,
+            "tokens_in": 277610,
+            "tokens_out": 5384,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-05-16",
+      "status": "partial",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 432243,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 219178,
+            "tokens_out": 6915,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "failed",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 427048,
+          "usage": {
+            "n_llm_calls": 9,
+            "tokens_in": 505822,
+            "tokens_out": 14605,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "error": "3 tool error(s) the agent saw (MCP timeout/connection); agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie",
+          "health": "broken",
+          "health_issues": [
+            "3 tool error(s) the agent saw (MCP timeout/connection)",
+            "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie",
+            "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie",
+            "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie"
+          ]
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "broken"
+    },
+    {
+      "decision_date": "2019-06-06",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 272184,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 199441,
+            "tokens_out": 4189,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 260083,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 148582,
+            "tokens_out": 5788,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-06-27",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 253279,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 175213,
+            "tokens_out": 5137,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 204933,
+          "usage": {
+            "n_llm_calls": 6,
+            "tokens_in": 209662,
+            "tokens_out": 6197,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-07-18",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 179824,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 168844,
+            "tokens_out": 4285,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 211848,
+          "usage": {
+            "n_llm_calls": 6,
+            "tokens_in": 190735,
+            "tokens_out": 5539,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-08-08",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 220980,
+          "usage": {
+            "n_llm_calls": 6,
+            "tokens_in": 200724,
+            "tokens_out": 5561,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 304255,
+          "usage": {
+            "n_llm_calls": 6,
+            "tokens_in": 270349,
+            "tokens_out": 3900,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-08-29",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 296539,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 201527,
+            "tokens_out": 3892,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 304415,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 197157,
+            "tokens_out": 4525,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-09-19",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 307849,
+          "usage": {
+            "n_llm_calls": 6,
+            "tokens_in": 283973,
+            "tokens_out": 3771,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 311938,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 196394,
+            "tokens_out": 4305,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-10-10",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 301482,
+          "usage": {
+            "n_llm_calls": 4,
+            "tokens_in": 145129,
+            "tokens_out": 3812,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 319431,
+          "usage": {
+            "n_llm_calls": 6,
+            "tokens_in": 282136,
+            "tokens_out": 5138,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-10-31",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 329567,
+          "usage": {
+            "n_llm_calls": 4,
+            "tokens_in": 192397,
+            "tokens_out": 4216,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 316591,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 228380,
+            "tokens_out": 5025,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-11-21",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 331557,
+          "usage": {
+            "n_llm_calls": 6,
+            "tokens_in": 194253,
+            "tokens_out": 5660,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 267244,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 145456,
+            "tokens_out": 4085,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    },
+    {
+      "decision_date": "2019-12-12",
+      "status": "ok",
+      "cells": [
+        {
+          "cell": "USA",
+          "symbols": [
+            "USA"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 264591,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 162206,
+            "tokens_out": 4137,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        },
+        {
+          "cell": "CHN",
+          "symbols": [
+            "CHN"
+          ],
+          "status": "ok",
+          "n_views": 1,
+          "attempts": 1,
+          "duration_ms": 297766,
+          "usage": {
+            "n_llm_calls": 5,
+            "tokens_in": 183862,
+            "tokens_out": 4932,
+            "reasoning_tokens": 0,
+            "basis": "unknown"
+          },
+          "health": "ok",
+          "health_issues": []
+        }
+      ],
+      "n_views": 2,
+      "missing": [],
+      "started_at": "2026-08-13T05:59:47+00:00",
+      "finished_at": "2026-08-13T06:23:59+00:00",
+      "duration_ms": 0,
+      "health": "ok"
+    }
+  ],
+  "usage": {
+    "n_llm_calls": 332,
+    "tokens_in": 14301610,
+    "tokens_out": 341308,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "health": "broken"
+}

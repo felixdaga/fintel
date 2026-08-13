@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-05-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8271,
+    "tokens_out": 863,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0082744,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should escalate tariffs on China, raising the rate on $200 billion of Chinese goods from 10% to 25% as threatened, and begin the process of imposing tariffs on the remaining ~$300 billion of Chinese imports. This is a moment of leverage where China has been caught backtracking on commitments, and the US has broad domestic political support for being tough on China.\n\nSUPPORTING RATIONALE: The threat score is -1.0 (clear opportunity) because the current state of the dispute strongly favors the US. China has been exposed as backtracking on nearly all aspects of a draft trade pact (Reuters timeline, May 9 2019), giving the US moral high ground and negotiating leverage. The US economy is performing well - the Dow is up ~11% YTD in 2019 (BBC), suggesting resilience to trade war pressures. China's economy is more vulnerable: its stock markets fell 25% in 2018 (BBC), and its export-dependent model is more exposed to tariff disruption. Senator Graham's framing that 'this is the best chance in my lifetime to get China to change their cheating ways' (Fox Business) reflects strong bipartisan support for the escalation. White House adviser Kudlow acknowledged 'both sides will suffer' but the asymmetry favors the US since China's supply chain dependency is greater. The Brookings analysis confirms that 'more than half the value' of China's exports to the US are actually foreign components, meaning tariffs incentivize supply chain diversification away from China - a long-term US strategic win. The action score of -1.0 reflects that this is the optimal moment to escalate: China is on the defensive after being caught renegotiating, US markets are stable, and the political window for maximum pressure is open. Escalation now strengthens the US hand for any future negotiations.",
+      "key_factors": [
+        "China backtracked on nearly all aspects of draft trade pact (Reuters, May 9 2019)",
+        "US markets resilient - Dow up ~11% YTD 2019, showing economy can absorb trade war",
+        "China's Shanghai Composite fell ~25% in 2018, showing greater vulnerability",
+        "Strong bipartisan political support for tough stance (Graham, Fox Business)",
+        "Supply chain diversification away from China is a long-term US strategic benefit (Brookings)",
+        "Trump already threatened tariffs on remaining ~$300 billion of Chinese imports (Fox Business)",
+        "IMF cut global growth forecasts citing US-China tensions, but US economy relatively insulated",
+        "Larry Kudlow acknowledged 'both sides will pay' but China's export dependency creates asymmetry"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 Timeline: Key dates in the U.S.-China trade war",
+          "excerpt": "Reuters reported that China had backtracked on almost all aspects of a draft U.S.-China trade pact."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The Dow Jones Industrial Average fell nearly 6% in 2018 and is already up some 11% this year. In 2018, Hong Kong's Hang Seng index fell more than 13% and the Shanghai Composite slumped nearly 25%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "'This is the best chance in my lifetime to get China to change their cheating ways,' Graham, R-S.C., told 'Sunday Morning Futures.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "While China is the final assembler from many products, actually more than half of the value of those products are in parts and components from other countries like South Korea and Japan"
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-05-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 19814,
+        "capped_chars": 15891,
+        "raw_tokens": 4954,
+        "capped_tokens": 3973
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19787,
+  "started_at": "2026-08-13T10:54:48+00:00"
+}

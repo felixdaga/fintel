@@ -1,0 +1,109 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-11-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8045,
+    "tokens_out": 1122,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0088126,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should signal willingness to negotiate and seek a face-saving off-ramp while maintaining current retaliatory tariffs as leverage. We should propose high-level talks focused on concrete purchase commitments and market-opening measures that address US grievances without requiring structural reforms that compromise sovereignty. Avoid further escalation that could trigger the additional $267 billion in tariffs Trump has threatened, which would cover virtually all bilateral trade.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has imposed tariffs on $250 billion of Chinese imports (roughly half of all US-China trade), with 10% rates set to rise to 25% at year-end 2018 (Fox Business/Motley Fool). China has retaliated on $110 billion of $130 billion in US imports it receives, meaning nearly all cards have been played on both sides. However, Trump has explicitly threatened to tariff the remaining $267 billion if China retaliates further, which would effectively place 100% of bilateral trade under tariff barriers. China's retaliatory capacity is constrained because it imports far less from the US ($130B) than the US imports from China ($506B), creating an asymmetry in escalation potential (CBS News). The Brookings analysis notes this is 'not a big hit for the overall U.S. economy' but will hurt specific sectors, while the Trump administration views the trade war as politically beneficial ahead of the 2018 midterms and is unlikely to change strategy soon. The Washington Post reports that Chinese leaders feel betrayed after multiple failed deal attempts with Ross and Mnuchin that Trump personally vetoed, suggesting deep distrust but also that the US side has internal divisions China could potentially exploit. The G20 summit in Buenos Aires (Nov 30-Dec 1) presents an imminent opportunity for a Trump-Xi meeting that could open negotiations. China's best play is to offer substantive purchase commitments and selective market opening while holding firm on structural issues like 'Made in China 2025' industrial policy, leveraging the upcoming G20 as a diplomatic off-ramp.",
+      "key_factors": [
+        "US tariffs now cover $250B of Chinese exports (~50% of bilateral trade), with 10% rate set to rise to 25% end of 2018",
+        "Trump threatens additional $267B tariffs if China retaliates further, which would cover virtually all bilateral trade",
+        "Asymmetric retaliatory capacity: China imports only $130B from US vs $506B US imports from China",
+        "China has already retaliated on $110B of $130B in available US imports, nearly exhausting retaliatory options",
+        "Multiple failed deal attempts (Ross deal, Mnuchin deal) vetoed by Trump suggest deep distrust but also US internal divisions",
+        "G20 Buenos Aires summit (Nov 30-Dec 1) provides imminent diplomatic opportunity for Trump-Xi meeting",
+        "Soybean prices down 20%, Midwest farmers and auto exporters hurt - potential US domestic political pressure point",
+        "China has strategically lowered tariffs on goods from non-US countries to redirect trade away from US suppliers"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "Effective Sept. 24, President Trump announced a 10% tariff on $200 billion in Chinese imports. That tariff is currently 10%, but at the end of 2018, that's expected to rise to 25%... this $250 billion aggregate tariff amount... is about half of U.S.-China trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "President Trump has said that if China were to take retaliatory action on these tariffs, which they have, in fact... that he's going to put in place another $267 billion worth of imports. For all intents and purposes, that would put a tariff in place on 100% of U.S.-China trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "China has promised to respond in kind, but it would be unable to match that amount since it imported only $130 billion of U.S. goods last year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors... the Trump administration will probably not change its strategy soon. It is unlikely that the Chinese leadership will cave in and do anything major."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-11-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20384,
+        "capped_chars": 16158,
+        "raw_tokens": 5096,
+        "capped_tokens": 4040
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 26594,
+  "started_at": "2026-08-13T10:55:07+00:00"
+}

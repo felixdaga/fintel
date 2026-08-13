@@ -1,0 +1,145 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should engage earnestly in the upcoming October 10-11 high-level talks with a willingness to make near-term purchase commitments (especially agricultural goods where domestic need is real due to African swine fever), while holding firm against sweeping structural concessions on state subsidies and data sovereignty. The goal should be an interim deal that freezes the tariff escalation before the December 15 List 4B deadline, buying time without surrendering core interests.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential, warranting a score of +0.45. On the damage side: industrial production growth has collapsed to 4.4% in August (worst since 2002, per CNN/NBS data), Q2 GDP hit a 27-year low of 6.2%, exports to the US fell 16% year-on-year in August (BBC), and urban unemployment rose to 5.3%. The Huawei Entity List designation (May 16) and subsequent expansion to 69+ affiliates threatens China's tech champion \u2014 Google suspended Android access, major chip suppliers paused sales, and Huawei's CEO is restructuring for self-sufficiency over 3-5 years. The yuan breaching 7/USD triggered a US currency manipulator designation (August 5), and while a weaker yuan partially offsets tariff impact, it raises capital flight risks given China's $730B in dollar-denominated debt (Bloomberg).\n\nHowever, several factors prevent this from reaching +0.5+ territory. First, China retains meaningful leverage: rare earth mineral control (Xi's May 20 Jiangxi visit was widely read as a signal), the ability to purchase or withhold US farm goods (directly affecting Trump's rural base), and the unreliable entity list tool still in preparation. Second, the US side faces its own pressures \u2014 recession fears are mounting (yield curve inversions, Goldman/Guardian reporting), Trump faces 2020 election incentives for a deal, and US companies are lobbying against tariffs. Third, China's share of global exports has actually grown over the past year (Capital Economics), showing some trade diversion is occurring. Fourth, confidence-building measures are already underway: China exempted 16 categories of US products from tariffs (Sept 11) and signaled soybean/pork exclusions (Sept 13).\n\nThe action score of -0.1 (negotiate) reflects that China should be willing to make tactical concessions \u2014 particularly on agricultural purchases that serve China's own food security needs given African swine fever \u2014 but should not accept the comprehensive structural reforms the US demands (eliminating state enterprise subsidies, data flow rules, cybersecurity standards). Trump's own mixed signals ('looking for a complete deal' vs. 'I'd consider a partial deal' on Sept 12) create an opening. The October talks are the last window before Dec 15 tariffs hit virtually all Chinese exports to the US. An interim deal on purchases + tariff delay is achievable and preferable to continued escalation that risks pushing China's economy below the 6% growth floor that CCP legitimacy requires.",
+      "key_factors": [
+        "Industrial production growth at 17-year low (4.4% Aug) \u2014 real economic bite",
+        "Huawei Entity List + 69 affiliates threatening tech supply chain",
+        "Yuan breached 7/USD, US currency manipulator designation Aug 5",
+        "Upcoming Oct 10-11 Liu He-Lighthizer talks \u2014 last window before Dec 15 tariffs",
+        "China retains leverage: rare earths, farm purchases affecting Trump's base, unreliable entity list",
+        "US recession fears and 2020 election cycle creating American incentive for a deal",
+        "African swine fever creating genuine need for US agricultural imports"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List. US firms generally barred from selling to Huawei without a license."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-01",
+          "excerpt": "After the Shanghai round, Trump announces 10% tariffs on the remaining ~$300B of Chinese goods (List 4), effective Sept 1."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110-125B of Chinese imports). China's first tranche of the ~$75B retaliation also takes effect."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-13",
+          "excerpt": "Chinese state media reports soybeans, pork, and some other farm goods will be excluded from additional retaliatory tariffs (goodwill signal ahead of talks)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNN 2019-09-16",
+          "excerpt": "Industrial production increased by just 4.4% in August compared to a year earlier. That's worse than the sector's performance in July, when it grew by 4.8%, its weakest growth in 17 years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "BBC 2019-09-26",
+          "excerpt": "Chinese exports fell in August by 1% from a year earlier, and by a sharp 16% to the US - a clear sign that the dispute with the US is hurting bilateral trade."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Caixin 2019-09-21",
+          "excerpt": "Trump said he did not need to seal a trade deal with China before the 2020 presidential election and was not interested in a partial agreement. 'We're looking for a complete deal. I'm not looking for a partial deal.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Bloomberg 2019-08-05",
+          "excerpt": "The stockpile of Chinese dollar debt has more than doubled since the end of 2015 to $729.8 billion. Capital-flight fears hang over yuan after slide past 7."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5498,
+        "capped_chars": 5498,
+        "raw_tokens": 1374,
+        "capped_tokens": 1374
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 84979,
+        "capped_chars": 84979,
+        "raw_tokens": 21245,
+        "capped_tokens": 21245
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 380402,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

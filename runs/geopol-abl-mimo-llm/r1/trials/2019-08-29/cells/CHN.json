@@ -1,0 +1,108 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-08-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7366,
+    "tokens_out": 1090,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0080376,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should retaliate with targeted tariffs on remaining US imports and signal willingness to escalate non-tariff measures if the US follows through on its threat to tariff all remaining Chinese goods. Beijing should simultaneously keep diplomatic channels open but refuse to negotiate from a position of forced concession. Domestically, accelerate support for export diversification and import substitution in key technology sectors.\n\nSUPPORTING RATIONALE: The threat to China is HIGH and approaching existential territory. As of late August 2019, the US has already imposed 25% tariffs on $200 billion of Chinese goods (raised from 10%), and President Trump has called on USTR Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, valued at approximately $300 billion' (Fox Business, May 2019). This would cover virtually all Chinese exports to the US. The BBC reports the US trade deficit with China stood at $419 billion, and the US is demanding structural changes to Chinese economic policies including IP protection, market access, and subsidy reform \u2014 demands that strike at core elements of China's economic model. The USC analysis notes the dispute is 'not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future' including AI, cloud computing, robotics, and green tech \u2014 sectors central to Made in China 2025. Senator Graham explicitly stated the US goal is to 'break the stranglehold China has on the supply chain,' signaling a long-term decoupling intent. China's retaliatory tariffs on $110 billion of US goods have already been deployed, and the yuan fell over 5% against the dollar in 2018. The threat score of +0.55 reflects that while China faces major export sector exposure and potential supply chain disruption, the situation has not yet reached the $300 billion tariff escalation, and China retains significant retaliatory leverage and domestic policy tools. The action score of -1.0 (maximal retaliation stance) reflects that China must signal it will not capitulate to maximalist US demands. Retaliating firmly preserves negotiating leverage, rallies domestic nationalism, and deters the US from implementing the threatened $300 billion tranche. Conceding now, before the US has even followed through on its latest threat, would invite further escalation and undermine China's position in any future negotiations.",
+      "key_factors": [
+        "US has raised tariffs to 25% on $200B of Chinese goods and threatened tariffs on remaining ~$300B",
+        "US demands include structural reforms to China's economic model (IP, subsidies, market access)",
+        "Dispute targets future strategic industries (AI, robotics, green tech) central to Made in China 2025",
+        "US explicitly aims to break China's supply chain dominance (Sen. Graham)",
+        "China has already retaliated on $110B of US goods; yuan depreciated 5% in 2018",
+        "IMF cut global growth forecasts citing US-China trade tensions",
+        "Diplomatic channels remain open \u2014 talks resuming despite escalation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. Not only does the US accuse China of stealing intellectual property, but it wants Beijing to make changes to its economic policies... The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "'This is the best chance in my lifetime to get China to change their cheating ways,' Graham, R.S.C., told 'Sunday Morning Futures.' ... 'He's trying to break the stranglehold China has on the supply chain.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "the negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The yuan fell over 5% against the US dollar last year, before broadly stabilising in 2019... The International Monetary Fund (IMF) said the escalation of US-China trade tension was one factor to have contributed to a 'significantly weakened global expansion'"
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-08-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 17257,
+        "capped_chars": 13956,
+        "raw_tokens": 4314,
+        "capped_tokens": 3489
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 24513,
+  "started_at": "2026-08-13T10:54:39+00:00"
+}

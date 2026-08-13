@@ -1,0 +1,98 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-12-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 147419,
+    "tokens_out": 3566,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: We are three days from the December 15 tariff deadline on ~$156-160 billion of Chinese consumer goods, with a Phase One deal announced only 'in principle' (Oct 11) and still unsigned. We should finalize and sign that deal now: convert the reported plan to delay the December 15 tariffs into a signed agreement that locks in the $40-50 billion agricultural purchase framework, IP/financial-services commitments, and the currency pact, while keeping existing tariffs on ~$360 billion of Chinese goods in place as leverage for Phase Two. We should formally announce the December 15 deferral as part of that signing, not before, so we preserve maximum negotiating leverage. Do not overreach with further escalation, but also do not trade away the credible threat still embedded in the existing tariff schedule.\n\nSUPPORTING RATIONALE: The threat environment does not justify a defensive or crisis posture. US macro data at the decision date show an economy absorbing the trade war well: consumer sentiment has rebounded from its 89.8 August trough to 99.3 in December, the Fed has cut the funds rate to 1.55%, 10-year yields have stabilized near 1.79%, Baa corporate spreads are tight at 3.83%, and oil is benign near $58. The drag is real but contained and known: industrial production is flat, and the farm belt is in a genuine recession, with two rounds of taxpayer assistance already paid out and China slow-walking confirmation of the promised purchases (Beijing has never confirmed the $40-50B figure). That asymmetry is why the threat reads mildly negative (opportunistic) rather than neutral: the US sits on the escalation side of every remaining lever, the trade deficit with China is falling more than 10% this year, and the other side is under duress from a decelerating economy. The action stance is negotiation, not concession: delaying the December 15 tariffs in exchange for a signed text is not a concession but the capstone of the current strategy, and reports the administration is already preparing exactly this deferral confirm it is the low-risk path. The risk to manage is execution risk, not counterparty strength - China has not yet delivered a written commitment on the headline purchase numbers, and the Hong Kong Human Rights Act signing adds a parallel track of friction that must not be allowed to contaminate the trade channel. Signing Phase One to a first-step deadline, with the December 15 hike already deferred, hard-wires the result most favorable to the American economy while retaining ~$360 billion of tariff headroom for the next round.",
+      "key_factors": [
+        "US economy resilient at decision date: consumer sentiment 99.3 (rebound from 89.8 Aug trough), Fed cuts to 1.55%, 10Y ~1.79%, tight Baa spreads",
+        "Phase One deal (Oct 11) announced only 'in principle' - $40-50B ag, IP, FX - but unsigned; China has never confirmed the headline purchase figures",
+        "Dec 15 deadline on ~$156-160B of List 4B consumer goods is 3 days away; Dec 10 reporting indicates administration plans to delay it",
+        "US holds escalation leverage: ~$360B of existing tariffs retained, trade deficit with China falling >10% in 2019",
+        "Risks: farm economy in recession (two rounds of assistance paid), industrial production flat, Hong Kong Human Rights Act adds non-trade friction, two prior truces (Buenos Aires, Osaka) collapsed",
+        "Oil benign (~$58) and easy financial conditions limit systemic stress from further escalation"
+      ],
+      "sources_cited": [],
+      "threat_score": -0.3,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-12-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5122,
+        "capped_chars": 5122,
+        "raw_tokens": 1280,
+        "capped_tokens": 1280
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47984,
+        "capped_chars": 47984,
+        "raw_tokens": 11996,
+        "capped_tokens": 11996
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 58295,
+        "capped_chars": 58295,
+        "raw_tokens": 14574,
+        "capped_tokens": 14574
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 442357,
+  "started_at": "2026-08-13T07:46:26+00:00"
+}

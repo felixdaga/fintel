@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-07-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 11063,
+    "tokens_out": 936,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0112854,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The United States should escalate tariffs on Chinese goods to maximum levels, targeting the full $505 billion in imports if necessary. This is a once-in-a-generation opportunity to restructure the US-China trade relationship on American terms, as China's export dependence on the US market gives Washington overwhelming leverage in a tit-for-tat escalation.\n\nSUPPORTING RATIONALE: The current trade dispute represents a clear opportunity for the United States, not a threat. The fundamental asymmetry in trade flows\u2014$505 billion in Chinese exports to the US versus $130 billion in US exports to China\u2014means China will exhaust its retaliatory capacity long before the US does (RAND analysis). China's exports to the US represent approximately 5% of its GDP, while US exports to China represent only 0.7% of US GDP, giving the US a decisive structural advantage. The US economy is performing well and is unlikely to be materially affected by Chinese retaliation, which imposes a 'tiny burden relative to the size of the U.S. economy' (RAND). The Trump administration sees this as a winning strategy for the 2018 midterm elections, and the political momentum is favorable. China's unfair trade practices\u2014forced technology transfer, massive domestic subsidies, 'buy China' procurement policies, and Made in China 2025 industrial policy\u2014represent longstanding grievances that this leverage can address. The yuan has already depreciated 6% from 6.28 to 6.64 per dollar since April, partially offsetting tariff impacts but also signaling Chinese economic vulnerability. No high-level negotiations are currently scheduled, and the Brookings analysis suggests the Chinese leadership is unlikely to 'cave in' without sustained pressure. The US should maintain maximum pressure through the midterm elections, after which negotiations may produce a comprehensive settlement restructuring the trade relationship on US terms.",
+      "key_factors": [
+        "Asymmetric trade flows: $505B Chinese exports to US vs $130B US exports to China gives US structural leverage",
+        "China's exports to US represent ~5% of Chinese GDP vs only 0.7% of US GDP for US exports to China",
+        "US economy performing well, unlikely to be materially affected by Chinese retaliation",
+        "China will run out of exports to tariff before the US does in tit-for-tat escalation",
+        "Yuan depreciation of 6% (6.28 to 6.64) signals Chinese economic pressure",
+        "Political momentum favorable for 2018 midterm elections",
+        "No high-level negotiations currently scheduled - leverage window is open",
+        "Longstanding grievances over forced technology transfer, subsidies, and Made in China 2025"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "The U.S. economy is doing well and is unlikely to be affected by China's retaliatory tariffs, which will impose a tiny burden relative to the size of the U.S. economy. Second, even if this leads to escalation, the United States has less to lose since its exports to China are $130 billion while China's exports to the United States are $505 billion a year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "It is unlikely that the Chinese leadership will cave in and do anything major. China is willing to buy more products from the U.S. and open more markets, so their offer is clear. After the 2018 elections, we're likely to see the two sides come together and negotiate something so that they can both save face"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cfr.org",
+          "excerpt": "China has made it hard to produce abroad and sell to China and, China has made it hard to invest in China in order to produce and sell in China if your firm isn't Chinese"
+        }
+      ],
+      "threat_score": -1,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-07-26",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35798,
+        "capped_chars": 31232,
+        "raw_tokens": 8950,
+        "capped_tokens": 7808
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19186,
+  "started_at": "2026-08-13T10:54:41+00:00"
+}

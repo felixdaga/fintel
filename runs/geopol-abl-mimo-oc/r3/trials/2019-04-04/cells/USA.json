@@ -1,0 +1,145 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-04-04",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.2,
+      "rationale": "RECOMMENDATION: Continue the intensive negotiations currently underway in Washington without making new concessions. The US should press for a strong enforcement mechanism and genuine structural reforms on IP and forced technology transfer, but should NOT rush to sign a deal built primarily on purchase commitments. Maintain existing tariffs as leverage until a enforceable deal is finalized.\n\nSUPPORTING RATIONALE: The threat to US interests sits at +0.2 \u2014 above neutral but well short of high \u2014 because the trade war imposes real but manageable costs while the US holds significant leverage.\n\n(a) What drives the threat reading: The US economy is slowing but not in crisis. Q4 2018 GDP growth decelerated to 2.2% (BEA third estimate), down from 3.4% in Q3, and 2019 forecasts have been trimmed to ~2.3% (CBO, Mercatus). The yield curve has flattened dramatically \u2014 the 10Y-2Y spread collapsed from ~33bp in October 2018 to just ~19bp as of April 3, 2019 (10Y at 2.52%, 2Y at 2.33%), a recession-warning signal. February payrolls came in at just 20,000, far below trend. The tariffs on ~$250B of Chinese imports (Lists 1-3) impose costs on US importers and consumers. The Huawei/Meng situation has added geopolitical friction beyond trade.\n\n(b) What justifies the action stance: China is under considerably more pressure. Industrial output growth fell to a 17-year low of 5.3% in Jan-Feb 2019 (Reuters). Manufacturing PMI contracted. Exports tumbled. Beijing is ramping up fiscal stimulus with hundreds of billions in tax cuts. This asymmetry gives the US negotiating leverage. China has made 'unprecedented proposals' on forced technology transfer (CNBC, March 28). An enforcement mechanism framework has been agreed (Lighthizer testimony, Feb 27) \u2014 monthly, quarterly, and semi-annual meetings with US right to act 'proportionally but unilaterally.' The critical remaining issues are enforcement specifics and tariff sequencing (US Chamber, April 2). The risk of signing too quickly on weak terms exceeds the risk of holding out. The US should negotiate firmly but not escalate \u2014 additional tariffs (e.g., List 4 on remaining imports) would hurt US consumers and businesses and risk recession given the yield curve signal. The slight negative action score (-0.15) reflects a stance that leans slightly toward holding firm rather than making concessions, but stays within 'negotiate' territory since active talks are producing progress.",
+      "key_factors": [
+        "Trade talks showing genuine progress \u2014 enforcement mechanism framework agreed, China making unprecedented concessions on tech transfer",
+        "US economy slowing (Q4 GDP 2.2%, Feb payrolls 20K, yield curve near inversion) but not in crisis",
+        "China under greater economic pressure (IP growth at 17-year low, manufacturing contracting, fiscal stimulus ramping up)",
+        "Tariffs on $250B of Chinese goods provide leverage but impose costs on US economy",
+        "Huawei/Meng extradition adds geopolitical complexity beyond trade",
+        "Risk of signing weak deal (purchase-only) exceeds risk of continued negotiation",
+        "Fed has paused rate hikes, signaling concern about economic momentum"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2019-04-03",
+          "excerpt": "Intensive Washington talks between US and Chinese negotiators; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Same day: Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2019-02-24",
+          "excerpt": "Trump tweets that talks have made substantial progress and further delays the scheduled List 3 hike from 10% to 25%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp_enforcement_mechanism_2019-02-27",
+          "excerpt": "US and China reach deal on enforcement mechanism \u2014 monthly meetings at office director level, quarterly at vice-ministerial, semi-annual at ministerial. US 'would expect to act unilaterally' if problems unresolved."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_china_unprecedented_proposals_2019-03-28",
+          "excerpt": "China making 'unprecedented proposals' on forced technology transfer 'both in terms of scope and specifics' \u2014 US officials."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_tariff_enforcement_hurdles_2019-04-02",
+          "excerpt": "Tariff and enforcement issues still hurdles to US-China trade deal. US Chamber says 'this is a critical week' and unlikely China will agree to re-imposition of unilateral tariffs without current tariffs being removed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "mercatus_economic_situation_march_2019",
+          "excerpt": "Q4 GDP growth 2.2%, CBO forecasts 2.3% for 2019. 'A recession is not in the data for 2019, but I can't say about 2020.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_china_industrial_output_2019-03-14",
+          "excerpt": "China's industrial output rose 5.3% in January-February, slowest since early 2002. Jobless rate rose to 5.3%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_treasury_yields",
+          "excerpt": "10Y Treasury yield fell from 3.21% (Oct 2018) to 2.52% (Apr 3, 2019). 2Y fell from 2.88% to 2.33%. Spread compressed to ~19bp."
+        }
+      ],
+      "threat_score": 0.2,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-04-04",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11268,
+        "capped_chars": 11268,
+        "raw_tokens": 2817,
+        "capped_tokens": 2817
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 78256,
+        "capped_chars": 78256,
+        "raw_tokens": 19564,
+        "capped_tokens": 19564
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 382159,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

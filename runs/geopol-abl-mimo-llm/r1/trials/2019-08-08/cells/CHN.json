@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-08-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7953,
+    "tokens_out": 976,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0082954,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should immediately announce retaliatory tariffs on the remaining ~$75 billion of U.S. imports not yet covered, targeting politically sensitive sectors (agriculture, energy, autos) to maximize leverage in key U.S. swing states. Simultaneously, signal willingness to resume negotiations if the U.S. rolls back the May 2019 escalation, but do not offer unilateral concessions.\n\nSUPPORTING RATIONALE: The threat to China is HIGH (0.55). As of August 2019, the U.S. has already raised tariffs from 10% to 25% on $200 billion of Chinese goods (effective May 10, 2019), and Trump has called for tariffs on 'essentially all remaining imports from China, valued at approximately $300 billion' (Reuters timeline, May 10 entry; Fox Business). This threatens China's export economy and manufacturing employment in export hubs. The USC analysis notes the trade war is 'principally about the most important and potentially profitable industries of the future \u2014 AI, cloud computing, robotics, green tech,' meaning the dispute targets China's core industrial policy ambitions (Made in China 2025). White House adviser Kudlow acknowledged 'both sides will suffer,' confirming mutual economic damage. However, China has already retaliated on $110 billion of U.S. goods and has room to target remaining U.S. exports, particularly agriculture in Trump's political base. Senator Graham's admission that tariffs will cause 'short-term pain in America' reveals U.S. domestic vulnerability. The action_score of -1.0 (maximal retaliation) is justified because: (1) the U.S. escalation to 25% on $200B and threat of tariffs on all remaining imports leaves China little room for further concession without capitulating on core industrial policy; (2) retaliatory tariffs on U.S. farm and energy exports create political pressure on Trump ahead of the 2020 election cycle; (3) China's economy, while stressed, can absorb the shock better than the U.S. political cycle can absorb farm-belt discontent. Retaliation is the appropriate action level because this is a direct mirror response to the U.S. May escalation, not a new initiative.",
+      "key_factors": [
+        "U.S. raised tariffs to 25% on $200B of Chinese goods (May 10, 2019)",
+        "Trump called for tariffs on all remaining ~$300B of Chinese imports",
+        "Dispute targets China's core tech/AI industrial policy ambitions",
+        "China has already retaliated on $110B of U.S. goods with room to expand",
+        "U.S. domestic political vulnerability in farm belt and manufacturing states",
+        "Kudlow acknowledged 'both sides will suffer' \u2014 mutual economic damage confirmed",
+        "Graham admitted short-term pain in America, revealing U.S. vulnerability window"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 Timeline: Key dates in the U.S.-China trade war",
+          "excerpt": "Trump orders USTR to increase the tariffs on $200 billion of Chinese imports to 25% from the originally proposed 10%. Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes. 'Both sides will suffer on this.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "Graham: 'We are going to have some short-term pain in America to get China to change their behavior, and if we don't get China to change they're going to destroy our economy over time.'"
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-08-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18764,
+        "capped_chars": 14743,
+        "raw_tokens": 4691,
+        "capped_tokens": 3686
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20598,
+  "started_at": "2026-08-13T10:54:37+00:00"
+}

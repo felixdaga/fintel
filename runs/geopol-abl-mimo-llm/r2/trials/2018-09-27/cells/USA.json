@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8209,
+    "tokens_out": 817,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0080744,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should escalate tariffs on China to $250 billion worth of goods, targeting high-technology items and machinery to weaken China's Made in China 2025 strategy. The US has a significant asymmetric advantage in this trade war and should press it while the domestic political environment supports confrontation.\n\nSUPPORTING RATIONALE: The US faces a clear opportunity (threat_score: -1.0) rather than a threat. Multiple sources confirm the US holds asymmetric leverage: (1) The US trade deficit of $375 billion means China will run out of goods to tariff before the US does (RAND analysis); (2) China's exports to the US represent ~5% of its economy vs only ~0.7% for US exports to China (RAND); (3) The US economy is performing well and is unlikely to be significantly affected by Chinese retaliation (RAND, Brookings); (4) The Trump administration views this as a winning strategy for the 2018 midterms (Brookings). The US tariffs deliberately target high-technology items to weaken China's drive to become a sophisticated exporter by 2025 (RAND). While there will be some collateral damage to US firms in supply chains and agricultural sectors, Brookings notes this is 'a minor blip' for the overall US economy. The yuan has already depreciated 6% from 6.28 to 6.64 per dollar (RAND), partially offsetting tariff impacts. China's retaliation has been limited to lower-technology and consumer-facing goods at lower tariff rates (typically 15% vs US 25%), suggesting their counterpunch is weaker. No high-level negotiations are scheduled, and the US should maintain pressure to extract maximum concessions on IP theft, market access, and technology transfer practices.",
+      "key_factors": [
+        "US trade deficit of $375B creates asymmetric leverage - China runs out of goods to tariff first",
+        "China exports to US = ~5% of Chinese economy vs US exports to China = ~0.7% of US economy",
+        "US economy performing well; trade war is 'minor blip' per Brookings analysis",
+        "US tariffs deliberately target high-tech items to weaken Made in China 2025",
+        "Yuan depreciated 6% (6.28 to 6.64/USD) partially offsetting tariff impacts",
+        "China retaliation limited to lower-tech goods at lower rates (15% vs 25%)",
+        "Domestic political environment supports confrontation ahead of 2018 midterms",
+        "No high-level negotiations currently scheduled"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "The U.S. economy is doing well and is unlikely to be affected by China's retaliatory tariffs...the United States has less to lose since its exports to China are $130 billion while China's exports to the United States are $505 billion a year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors...On the whole this is a minor blip so the Trump administration will probably not change its strategy soon"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "$505 billion in potentially lost exports is a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "the Trump administration has selected relatively high-technology items...a deliberate strategy designed to weaken China's drive to be a sophisticated exporting country by 2025"
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 28465,
+        "capped_chars": 17802,
+        "raw_tokens": 7116,
+        "capped_tokens": 4450
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20110,
+  "started_at": "2026-08-13T10:54:41+00:00"
+}

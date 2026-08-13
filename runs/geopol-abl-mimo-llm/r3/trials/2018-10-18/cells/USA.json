@@ -1,0 +1,107 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-10-18",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8133,
+    "tokens_out": 811,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0079804,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The United States should escalate tariffs on China to maximum levels, covering all remaining Chinese imports not yet subject to tariffs. This will pressure China to negotiate on structural issues like intellectual property theft, forced technology transfer, and market access restrictions. The US economy is strong enough to absorb short-term costs while China faces greater structural vulnerabilities.\n\nSUPPORTING RATIONALE: The threat score is -1 (clear opportunity) because China is overextended and the US has leverage. The US has already imposed tariffs on $250 billion of Chinese goods, covering about half of US-China trade, and China has retaliated with tariffs on $110 billion of US goods but is running out of room to match since it only imports $130 billion total from the US. China's retaliation capacity is nearly exhausted while the US can still tariff another $267 billion. The US economy is growing strongly while China's export-dependent economy faces greater risk. The action score is -1 (maximal escalation) because this is a rare moment of leverage: China cannot match further US escalation, the Trump administration has domestic political support heading into midterms, and the longer the US waits, the more China can diversify supply chains. Escalating now maximizes US bargaining position for eventual negotiations.",
+      "key_factors": [
+        "US has tariffed $250B of Chinese imports (~50% of trade); can still tariff $267B more",
+        "China's retaliation nearly exhausted at $110B of $130B total US imports",
+        "US economy strong; China more vulnerable as export-dependent",
+        "No high-level negotiations scheduled; Trump admin sees trade war as midterm election winner",
+        "China accused of unfair trade practices: IP theft, forced tech transfer, market restrictions",
+        "Soybean prices down 20%; specific US sectors hurt but overall economy minor blip per Brookings"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "The $250 billion aggregate tariff amount... is about half of U.S.-China trade. President Trump has also indicated that if China were to take retaliatory action... he's going to put in place another $267 billion worth of imports. For all intents and purposes, that would put a tariff in place on 100% of U.S.-China trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "This second round of Chinese tariffs is going to now cover $110 billion of the $130 billion of U.S.-China trade -- again, almost 100% of the entire trading relationship"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors... the Trump administration will probably not change its strategy soon"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "It is unlikely that the Chinese leadership will cave in and do anything major. China is willing to buy more products from the U.S. and open more markets, so their offer is clear"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. says China treats American companies unfairly by restricting access to its markets and stealing proprietary technology. The U.S. buys $506 billion worth of goods from China but only exports $130 billion, leaving a trade deficit of $375 billion"
+        }
+      ],
+      "threat_score": -1,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-10-18",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 27507,
+        "capped_chars": 16845,
+        "raw_tokens": 6877,
+        "capped_tokens": 4211
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 17086,
+  "started_at": "2026-08-13T10:55:06+00:00"
+}

@@ -1,0 +1,98 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7795,
+    "tokens_out": 818,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0076506,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should pursue active negotiations with the United States while maintaining its current retaliatory tariffs as leverage. Beijing should signal willingness to make targeted concessions on market access and IP protection, but avoid capitulating on core industrial policy goals like Made in China 2025. The goal is to de-escalate before the trade war escalates further to cover 100% of bilateral trade.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has imposed tariffs on $250 billion of Chinese goods (roughly half of US-China trade), and Trump has threatened to tariff the remaining $267 billion, which would cover virtually all bilateral trade (Fox Business, Sept 2018). China has retaliated with tariffs on $110 billion of the $130 billion in US imports, leaving almost no further retaliatory room. However, the evidence suggests the direct macroeconomic hit is manageable \u2014 Brookings notes the tariffs are 'a minor blip' for the overall US economy, and by implication China's export economy, while hurt in specific sectors, is not collapsing. The real threat is escalation: if talks fail, the US could impose 25% tariffs on all remaining Chinese goods, and the entity-list targeting of firms like Huawei represents a non-tariff threat to China's tech ambitions. China's leverage includes its willingness to buy more US products and open markets, which is a clear offer on the table (Brookings). The Fox Business article from late January 2019 notes Trump said things are 'moving in the right direction' after Beijing trade talks, suggesting a window for negotiation. China should negotiate now while it still has retaliatory tariffs as bargaining chips and before the US escalates to full coverage. Escalation would be counterproductive given China has nearly exhausted its retaliatory capacity on goods trade.",
+      "key_factors": [
+        "US has tariffed $250B of Chinese goods; threatens to tariff remaining $267B covering 100% of trade",
+        "China has retaliated on $110B of $130B in US imports \u2014 nearly exhausted retaliatory capacity",
+        "Trump signals positive direction after late January 2019 Beijing talks",
+        "Entity-list and tech restrictions (Huawei) represent non-tariff escalation risk",
+        "China's offer to buy more US products and open markets remains on the table",
+        "Soybean prices down 20% \u2014 US agricultural pain gives China some leverage",
+        "No high-level negotiations were scheduled as of mid-2018, but talks resumed by Jan 2019"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "President Trump has said that if China were to take retaliatory action on these tariffs, which they have, in fact, and I'll explain that here in a second, that he's going to put in place another $267 billion worth of imports. For all intents and purposes, that would put a tariff in place on 100% of U.S.-China trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "It is unlikely that the Chinese leadership will cave in and do anything major. China is willing to buy more products from the U.S. and open more markets, so their offer is clear"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "According to President Trump, things are moving in the right direction after talks this week between US and Chinese trade negotiators in Beijing"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 26729,
+        "capped_chars": 16022,
+        "raw_tokens": 6682,
+        "capped_tokens": 4006
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20988,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

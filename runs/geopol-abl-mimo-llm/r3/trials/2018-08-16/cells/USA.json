@@ -1,0 +1,107 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-08-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 11063,
+    "tokens_out": 847,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0110184,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The United States should escalate tariffs on Chinese goods, targeting the full $200 billion list as threatened, and prepare additional non-tariff measures including entity-list restrictions on Chinese technology firms. This is the moment to press the advantage before midterm election politics and potential economic slowdown reduce leverage.\n\nSUPPORTING RATIONALE: The threat score of -1.0 reflects a clear opportunity for the US. The evidence shows the US has structural leverage: the trade deficit is $375 billion (CBS News), meaning China runs out of retaliatory targets at $130 billion in US exports while the US can tariff $505 billion in Chinese goods (RAND analysis). China's yuan has already depreciated 6% from 6.28 to 6.64 per dollar (RAND), signaling financial stress. The US economy is performing well with low unemployment, and the Trump administration views this as politically advantageous ahead of 2018 midterms (Brookings). US tariffs target high-technology items aligned with Made in China 2025, strategically weakening China's industrial policy ambitions (RAND, CFR). While specific sectors like agriculture (soybeans down 20%, Brookings) and autos face pain, RAND analysis shows the first-stage net impact is a manageable $6.7 billion transfer from businesses to government with small employment effects. The asymmetry in exposure\u2014China's exports to US represent ~5% of GDP vs ~0.7% for US exports to China (RAND)\u2014gives the US decisive leverage. China's retaliation has been limited to lower-technology consumer-facing goods at 15% rates vs US 25% rates (RAND), suggesting Beijing is constrained. The CFR analysis confirms China's industrial policies (forced technology transfer, domestic subsidies, buy-China procurement) represent genuine structural grievances that tariffs can address. This is a window to restructure the trade relationship on US terms before China's tech self-sufficiency efforts mature.",
+      "key_factors": [
+        "$375B trade deficit gives US asymmetric leverage - China exhausts retaliatory capacity at $130B",
+        "Yuan depreciation of 6% (6.28\u21926.64) signals Chinese financial stress from trade pressure",
+        "US tariffs strategically target Made in China 2025 high-tech sectors",
+        "US economy strong enough to absorb sectoral pain; politically advantageous pre-midterms",
+        "China's retaliation constrained to lower-tech goods at lower tariff rates (15% vs 25%)",
+        "Structural grievances (tech transfer, subsidies, buy-China) justify sustained pressure"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. buys $506 billion worth of goods from China but only exports $130 billion, leaving a trade deficit of $375 billion between the two countries"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "China's exports to the United States are $505 billion a year. In a tit-for-tat exercise, China will run out of exports to levy retaliatory tariffs upon long before the United States does"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "The price of soybeans is already down 20 percent"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cfr.org",
+          "excerpt": "China has made it hard to produce abroad and sell to China and China has made it hard to invest in China in order to produce and sell in China if your firm isn't Chinese"
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-08-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35798,
+        "capped_chars": 31232,
+        "raw_tokens": 8950,
+        "capped_tokens": 7808
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20113,
+  "started_at": "2026-08-13T10:55:03+00:00"
+}

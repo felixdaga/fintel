@@ -1,0 +1,140 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-05-03",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 144766,
+    "tokens_out": 4499,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Take the negotiation now opening in Beijing (Mnuchin/Lighthizer/Kudlow vs. Liu He) and use the outstanding tariff threat as leverage to secure a package of structural concessions \u2014 tech-transfer curbs, financial-sector opening, auto-tariff cuts, and a meaningful reduction in the ~$375B goods deficit \u2014 without triggering the $50B tariffs or threatening a further $100B round. Do not unilaterally escalate while talks are live, and do not roll back leverage (ZTE denial, proposed list) prematurely. Hold the line, demand concrete deliverables, and only turn the screws if Beijing stalls.\n\nSUPPORTING RATIONALE: The threat to US interests is mild-to-favorable rather than existential. The US holds the initiative: it published the $50B Section 301 list (timeline 2018-04-03), banned ZTE (2018-04-16), and threatened an additional $100B, while no US tariff on Chinese goods is actually in force \u2014 the comment window runs to May 22 and implementation is conditional on negotiations (Politico/US News, 2018-04/05-02). Macro fundamentals support that favorable reading: industrial production rose (INDPRO +0.9% over the window to 102.4), UMich consumer sentiment held at ~98, and the broad dollar firmed to ~110, so the dispute is not yet biting. That said, the reading is tempered rather than a clean 'opportunity' anchor because China has targeted the farm belt the US needs for the 2018 midterms \u2014 soybeans (~$14B/yr, roughly half of US soybean exports) plus pork, sorghum and aircraft on the April 4 retaliation list \u2014 hitting an already-depressed farm income (CNBC/US News/Mercury News, 2018-03-15 to 04-07), and credit conditions are tightening (Baa yield to ~4.8%, 10yr near 3.0%). Hence threat_score of roughly -0.3 (favorable terrain and leverage, but genuine escalation downside). The action stance reflects that the opportunity is best captured at the table, not by pulling the trigger: escalading further risks a retaliatory spiral that lands hardest on US farmers and consumers, while conceding now would squander hard-won leverage. With Xi already signalling openness (auto-tariff reductions) and both sides' penalties explicitly contingent on the talks' outcome, 'negotiate' \u2014 maintain the threat as leverage, extract concessions, avoid both unilateral escalation and premature rollback \u2014 is the value-maximizing move at this decision date.",
+      "key_factors": [
+        "US holds initiative: $50B Section 301 list (Apr 3), ZTE denial (Apr 16), $100B threat pending",
+        "No US tariff on Chinese goods yet in effect \u2014 comment period to May 22, conditional on talks",
+        "Beijing talks launching May 3-4; Xi signalled openness (auto tariff cuts)",
+        "US macro strong \u2014 IP +0.9%, sentiment ~98, dollar firm ~110",
+        "China retaliation targets farm belt (soybeans ~$14B/yr, ~half US soybean exports) ahead of 2018 midterms",
+        "Credit conditions tightening (Baa ~4.8%, 10yr ~3.0%) and farm income already depressed",
+        "Internal split: Mnuchin/Kudlow moderates vs Lighthizer/Navarro hawks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list: ~1,300 Chinese product lines (~$50B)"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods (soybeans, autos, aircraft)"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce bans ZTE from buying US components (denial order)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Politico 2018-04-06 Mnuchin",
+          "excerpt": "No tariffs would take effect until late May at earliest; administration pledged to invite public comments and negotiate"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "US News 2018-05-02 Beijing talks",
+          "excerpt": "Talks launch Thursday; most likely outcome is agreement to keep talking; China will not negotiate on Made in China 2025 core interests"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2018-03-15/04-07 soybeans",
+          "excerpt": "China buys more than half of US soybean exports (~$14bn); farm income at lowest since 2006; farm belt is Trump base"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US industrial production +0.9% to 102.4; UMich sentiment ~98; broad dollar ~110"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DBAA",
+          "excerpt": "Baa corporate yield ~4.8%, 10-yr ~3.0% \u2014 modest credit tightening"
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-05-03",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2222,
+        "capped_chars": 2222,
+        "raw_tokens": 556,
+        "capped_tokens": 556
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47387,
+        "capped_chars": 47387,
+        "raw_tokens": 11847,
+        "capped_tokens": 11847
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 54087,
+        "capped_chars": 54087,
+        "raw_tokens": 13522,
+        "capped_tokens": 13522
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 371275,
+  "started_at": "2026-08-13T07:45:04+00:00"
+}

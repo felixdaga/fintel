@@ -1,0 +1,128 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-10-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 140726,
+    "tokens_out": 3764,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Enter the 13th-round Washington talks opening Oct 10 ready to negotiate constructively toward a phase-one agreement. We should press China to convert its goodwill signals (soybean/pork purchases, tariff exemptions) into enforceable commitments on agriculture, energy and enforcement, while using the scheduled Oct 15 and Dec 15 tariff increases as standing leverage rather than activating them prematurely. Do not escalate into the talks, and do not concede a broad rollback before Beijing makes matching structural commitments.\n\nSUPPORTING RATIONALE: Threat reading (+0.4) is driven by the trade war now demonstrably hurting the US: ISM manufacturing fell to 47.8 in September (worst since the Great Recession, after 49.1 in August) with export orders plunging, explicitly blamed on the tariffs; the Fed has been forced to cut (fed funds 2.39%\u21921.83%, 10Y yield down to 1.59%), and consumer sentiment dropped to 89.8 in August before partially recovering. That is a material GDP/manufacturing drag with rising domestic political pressure (farm belt, manufacturers, retailers), squarely at the +0.5 anchor zone, though not existential \u2014 the dollar is strong (broad index ~117.7), inflation is low, and the US holds the initiative. Action stance (+0.1, negotiate) reflects that this is the wrong moment to escalate: both sides have signaled they want a deal before the Oct 15/Dec 15 hikes, and further escalation risks torpedoing talks and deepening the manufacturing recession, while a premature full rollback would forfeit the leverage the scheduled increases provide. Negotiating a phase-one that locks in China's purchase commitments is the leverage-consistent middle path.",
+      "key_factors": [
+        "US manufacturing in contraction (ISM 47.8 Sept), trade-war-driven",
+        "Fed cutting rates / 10Y at 1.59% \u2014 recession signals",
+        "US holds leverage: tariffs on ~$360B, strong dollar, currency-manipulator tag",
+        "China goodwill: soybean/pork exclusions, 3.5M t soybean bookings, exemption lists",
+        "Oct 10 high-level talks open; Oct 15 & Dec 15 tariff hikes pending"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-13",
+          "excerpt": "China state media reports soybeans, pork and some farm goods will be excluded from additional retaliatory tariffs (goodwill signal ahead of talks)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110-125B of Chinese imports)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "adn.com 2019-10-02",
+          "excerpt": "ISM Manufacturing Index was 47.8 in September, worst month for U.S. manufacturing since June 2009; companies blamed the trade war."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "axios 2019-10-07",
+          "excerpt": "White House confirmed the next round of high-level trade talks will take place in Washington beginning Oct 10."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "globeandmail 2019-10-07",
+          "excerpt": "China has booked deals for about 3.5 million tonnes of U.S. soybeans since early September; a scheduled increase of tariffs on $250B of Chinese goods to 30% looms if no progress."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Federal funds rate fell 2.39% (May) to 1.83% (Oct) as the Fed cut to guard against trade-driven slowdown."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-10-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5498,
+        "capped_chars": 5498,
+        "raw_tokens": 1374,
+        "capped_tokens": 1374
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48170,
+        "capped_chars": 48170,
+        "raw_tokens": 12042,
+        "capped_tokens": 12042
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 39429,
+        "capped_chars": 39429,
+        "raw_tokens": 9857,
+        "capped_tokens": 9857
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 501556,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

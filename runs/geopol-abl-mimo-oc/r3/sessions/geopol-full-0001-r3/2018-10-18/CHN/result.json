@@ -1,0 +1,66 @@
+{
+  "views": [
+    {
+      "symbol": "CHN",
+      "score": 0.65,
+      "threat_score": 0.65,
+      "action_score": -0.15,
+      "action_level": "negotiate",
+      "rationale": "RECOMMENDATION: Seek to reopen negotiations with the US while maintaining current retaliatory posture \u2014 do not escalate further. China should signal willingness to discuss structural issues (IP protection, market access) and offer increased purchase commitments as a pathway to de-escalation, while privately accepting that some concessions on structural reform may be necessary. Domestically, accelerate fiscal stimulus and monetary easing to cushion the export slowdown.\n\nSUPPORTING RATIONALE: The threat to China is substantial and rising (threat_score: +0.65). The US has imposed tariffs on ~$250B of Chinese exports (Lists 1-3, covering roughly half of US imports from China), with List 3 at 10% scheduled to rise to 25% on Jan 1, 2019. Trump has threatened a List 4 covering an additional $267B, which would effectively tariff all Chinese exports to the US (timeline entry 2018-09-24, web search USTR Sept 18 finalization). China's manufacturing PMI export orders have contracted for five consecutive months (Caixin-Markit, reported Aug 31, 2018), and export growth slowed to under 10% in August. The economy faces 'relatively obvious downward pressure' per CEBM Group analysis.\n\nCritically, the asymmetry is severe. The US economy is booming \u2014 GDP growth at 4.1%, consumer sentiment at 98.6, industrial production rising \u2014 giving Washington room to absorb trade war pain and escalate further. China's economy is decelerating with GDP slowing to 6.7% and analysts forecasting potential drops to 5%. China has retaliated on ~$110B of US goods but has exhausted its high-impact agricultural targets and must now tariff intermediate goods that damage its own supply chains (NYT Oct 3 analysis, Chad Bown/Peterson Institute). Soybean tariffs risk domestic food price inflation as China cannot source enough from Brazil alone to replace US supply (CNN Oct 1, Rabobank analysis).\n\nChina has some buffers \u2014 $3.1T in FX reserves, yuan depreciation of ~8% partially offsetting tariffs, capital controls preventing mass outflows (FXStreet Aug 7). But the yuan weapon carries 2015-2016-style capital flight risks, and the PBoC has signaled it won't pursue competitive devaluation (CNBC Sept 28). The ZTE denial order (April 2018) demonstrated acute US leverage over Chinese tech supply chains.\n\nThe action_score of -0.15 reflects a 'negotiate' posture that avoids further escalation while preserving dignity. China scotched planned trade talks after the List 3 escalation (WSJ, reported in farm policy sources), but this was reactive. Proactively re-engaging \u2014 with concrete offers on IP reform and purchases \u2014 is the least-bad option. Further escalation risks a List 4 that China cannot meaningfully counter-retaliate against, and domestic economic pain is mounting in export hubs. The key is to negotiate before the Jan 1 List 3 rate increase locks in harder positions.",
+      "key_factors": [
+        "US tariffs now cover ~$250B of Chinese exports (~50% of total), with List 3 rate rising to 25% on Jan 1, 2019",
+        "China retaliatory capacity exhausted \u2014 ~$110B vs US's ~$250B, agricultural targets used up, now hitting own supply chains",
+        "Severe economic asymmetry: US booming (GDP 4.1%, sentiment 98.6) vs China decelerating (GDP 6.7%, PMI export orders contracting 5 months)",
+        "Yuan depreciated ~8% but using currency as weapon carries capital flight risks from 2015-2016",
+        "ZTE denial order (April 2018) exposed critical US leverage over Chinese tech supply chains",
+        "China's soybean tariffs risk domestic food inflation \u2014 cannot fully replace US supply from alternative sources",
+        "Trump has threatened List 4 ($267B) which would tariff all Chinese exports to the US",
+        "China pulled out of planned trade talks after List 3 escalation, signaling reactive rather than strategic posture"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn_china_exports_sept2018",
+          "excerpt": "Growth in Chinese exports slowed to just under 10% in August... Chinese stocks and currency have been pummeled in recent months by investors concerned about the health of the country's economy."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "swlaw_oct15_2018",
+          "excerpt": "The most recent set of tariffs brings the total amount of Chinese goods subject to tariffs to about $250 billion\u2014approximately half of the $505 billion in goods the U.S. imported from China in 2017."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn_soybeans_oct2018",
+          "excerpt": "There simply aren't enough soybeans in the world to satisfy Chinese demand if you take out US supplies... This could cause a cascade of price increases across the country's meat and fish industries' supply chains."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt_tariff_retaliation_oct2018",
+          "excerpt": "China was more precise in its first round of retaliation \u2014 focused heavily on agricultural products \u2014 than in its second round in September. By then it had exhausted its agricultural imports from the United States and had to put tariffs on lots of intermediate goods, parts and components that lack the same political impact and might damage supply chains at home."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_INDPRO",
+          "excerpt": "US Industrial Production rising steadily from 102.4 (May) to 104.0 (Sep), showing no trade war damage to US manufacturing."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHN_macro",
+          "excerpt": "FX reserves stable at ~$3.1T despite yuan depreciation; PBoC imposed 20% reserves requirement on shorting yuan derivatives to prevent speculative attacks."
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

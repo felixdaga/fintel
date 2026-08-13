@@ -1,0 +1,92 @@
+{
+  "USA": {
+    "symbol": "USA",
+    "score": -0.3,
+    "rationale": "RECOMMENDATION: Continue negotiating firmly to close a deal on US terms \u2014 lock in the enforcement mechanism, strengthened IP protection, and China's purchase commitments, while holding the existing ~$250B tariff structure as leverage. Do not escalate in this critical week (that risks destroying a near-deal the US largely wants), but do not unilaterally roll back tariffs before binding enforcement is secured. The April 3 Washington talks have both sides reporting progress on enforcement text (event timeline) yet no final deal, so the correct posture is to hold the line and finish the deal rather than make new commitments or escalate.\n\nSUPPORTING RATIONALE: The threat to US interests is modestly negative-to-neutral because the US holds clear leverage and is near a favorable settlement, not facing an existential or high threat. The US has imposed Section 301 tariffs on ~$250B of Chinese imports (timeline: Sept 24, 2018) and China has been the more pressured party \u2014 it has agreed to increase purchases (timeline: Dec 1 G20 truce; Feb 2019 pledge on 5mT soybeans) and both presidents want a deal (US Chamber, Apr 2). This asymmetric, deal-near position reads as a mild opportunity (-0.3), tempered by real domestic costs: the farm belt is badly exposed, with soybean sales to China down ~80-94%, record 3.7B bushel stocks, and mounting 2019 planting/financial pressure (farm policy/CNN/Reuters reporting); and US macro shows a flattening yield curve (10yr 2.52 vs 2yr 2.33, ~19bp spread from ~50bp in Nov), a mild GDP-drag signal, plus consumer sentiment still strong at 97.2 (country_health). These costs argue against blithe escalation, while the favorable negotiating trajectory argues against pre-emptive concession \u2014 hence action_score 0.0 (negotiate/hold) to finalize enforcement and purchases on US terms rather than escalate (which would deepen farm and recession risk) or concede early (which would forfeit leverage).",
+    "key_factors": [
+      "~$250B US tariffs in place on Chinese imports = leverage",
+      "April 3-4 Washington talks near deal, enforcement text unresolved",
+      "Both presidents want a deal; purchase commitments (5mT soybeans) pledged",
+      "Farm belt hard-hit: soybean exports to China down ~80-94%, record 3.7B bushel stocks, acreage/loan stress",
+      "US yield curve flattening (10-2yr ~19bp) = mild GDP-drag/recession signal",
+      "Consumer sentiment strong (97.2); only modest CPI rise",
+      "Huawei/Meng extradition adds allied-friction (Canada) but not central to trade calculus"
+    ],
+    "sources_cited": [
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-04-03",
+        "excerpt": "Intensive Washington talks between US and Chinese negotiators; both sides report progress on text, including enforcement language. No final deal signed."
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-09-24",
+        "excerpt": "List 3 takes effect at 10% ... Combined US Section 301 coverage now ~$250B of Chinese imports."
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-12-01",
+        "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 suspended."
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "cnbc 2019-04-02 (Reuters)",
+        "excerpt": "Chances are increasing for a deal ... negotiations this week are 'critical' to resolving stubborn differences over enforcement mechanism and plan to lift US tariffs."
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "CNN 2019-03-20 soybean farmers",
+        "excerpt": "Soybean sales to China down ~80-94%; record 3.7B bushels in storage; farm financial pressure."
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "DGS10/DGS2 USA",
+        "excerpt": "10yr at 2.52 vs 2yr at 2.33 on 2019-04-03, ~19bp spread, flattening from ~50bp in Nov 2018."
+      }
+    ],
+    "threat_score": -0.3,
+    "action_score": 0,
+    "action_level": "negotiate"
+  },
+  "CHN": {
+    "symbol": "CHN",
+    "score": 0.55,
+    "rationale": "RECOMMENDATION: Stay in the intensive Washington/Beijing negotiations and hold our current posture \u2014 do not escalate and do not quit the table. We should continue closing on enforcement language and finalize a deal at the planned summit, while resisting maximal structural concessions on IP and technology transfer that remain the hard sticking points. Escalation now would be self-defeating given the tariff drag already biting our export economy.\n\nSUPPORTING RATIONALE: The threat is genuinely high for China: US Section 301 tariffs now cover ~$250B of our goods (timeline: List 3 took effect Sept 24, 2018, and combined coverage reached ~$250B), US exports to that market fell 14.1% YoY in Jan-Feb 2019 and total exports plunged 20.7% in February \u2014 the weakest start since 2016, with analysts openly talking of a 'trade recession'. Firm-level targeting is real (ZTE denial order, Huawei DOJ charges and Meng extradition request). This sits at the +0.5 anchor of high threat: major export sectors hit, FX pressure, firm-level targeting. Yet this is not existential: talks are the closest they have ever been to a deal \u2014 Trump twice postponed the List 3 hike from 10% to 25%, both sides report progress on text and enforcement, Liu He is in Washington, and a late-April signing summit is contemplated. Precisely because the tariff drag is already real and the deal is near, escalation would be counterproductive while full-concession would forfeit our bargaining position on the unresolved structural/enforcement issues. Hence a mild positive action stance toward negotiation without new commitments, and no rollback until a matching final settlement is on the table.",
+    "key_factors": [
+      "US tariffs on ~$250B of Chinese goods already in force (List 1/2/3)",
+      "China Jan-Feb 2019 exports to US -14.1%; Feb total exports -20.7%, 'trade recession' talk",
+      "Huawei firm-level targeting and Meng extradition proceeding",
+      "Talks at crunch point: List 3 hike postponed twice, progress on enforcement text, late-April summit planned",
+      "No final deal signed as of April 3, 2019; enforcement and IP/tech-transfer still contested"
+    ],
+    "sources_cited": [
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-09-24 List 3 10% effective, combined ~$250B coverage"
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-04-03 intensive Washington talks, progress on enforcement, no final deal"
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-02-24 Trump delays List 3 hike from 10% to 25%"
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "Reuters 2019-02/03 China Feb exports -20.7%, 'trade recession'"
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "Fox/CNBC Jan-Feb 2019 China exports to US -14.1%, weakest start since 2016"
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "Bloomberg 2019-04-03 Liu He in DC, talks 'making good headway', no deal yet"
+      }
+    ],
+    "threat_score": 0.55,
+    "action_score": 0.05,
+    "action_level": "negotiate"
+  }
+}

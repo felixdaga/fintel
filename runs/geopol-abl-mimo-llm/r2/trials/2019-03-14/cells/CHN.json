@@ -1,0 +1,109 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-03-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8837,
+    "tokens_out": 924,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0090234,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Continue active negotiations with the US, working toward a deal before the March 1 deadline or a short extension. Offer concrete purchase commitments on agricultural goods, energy, and semiconductors while resisting structural reform demands that would undermine state economic governance. Avoid retaliatory escalation that could trigger the threatened tariff increase from 10% to 25% on $200B of goods.\n\nSUPPORTING RATIONALE: The threat to China is moderate-to-elevated. The US has already imposed tariffs on $250 billion of Chinese imports (roughly half of US-China trade), and the March 1 deadline threatens escalation from 10% to 25% on $200B of goods (CNBC, Feb 21 2019). China's retaliatory tariffs now cover $110B of $130B in US imports to China, meaning nearly all bilateral trade is under tariff barriers (Fox Business). However, negotiations are actively progressing: six MOUs are being drafted on structural issues including forced technology transfer, IP, services, currency, agriculture, and non-tariff barriers (CNBC, Feb 21 2019). A 10-item purchase list is also being discussed. The Chinese side has signaled 'basically reached consensus on alleviating trade imbalances' though 'core demands' still have differences (CNBC). This suggests a deal is within reach if China makes purchase concessions while holding firm on structural sovereignty. The threat is real but not existential\u2014China's economy can absorb the tariffs, and the negotiation process itself provides leverage. Escalation would be counterproductive given the US administration's willingness to tariff 100% of trade, but full concession on structural reforms would undermine CCP economic control. The optimal path is to negotiate a face-saving deal centered on purchase commitments.",
+      "key_factors": [
+        "US tariffs already cover $250B of Chinese imports (~50% of bilateral trade); threatened escalation to 25% on $200B by March 1",
+        "Six MOUs under negotiation on structural issues: forced tech transfer, IP, services, currency, agriculture, non-tariff barriers",
+        "China's retaliatory tariffs cover $110B of $130B in US imports\u2014retaliatory capacity nearly exhausted",
+        "10-item purchase list being discussed (agricultural, energy, semiconductors) as near-term concession tool",
+        "Chinese officials signal consensus on trade balance but differences on 'core demands' remain",
+        "US enforcement mechanism under discussion: regular reviews with tariff reinstatement for violations",
+        "Soybean prices down 20%, US agricultural sector under pressure\u2014gives China some leverage in negotiations",
+        "Global supply chain disruption and collateral damage to third countries limits both sides' appetite for prolonged conflict"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_us_china_sketching_deal",
+          "excerpt": "Negotiators are drawing up six memorandums of understanding on structural issues: forced technology transfer and cyber theft, intellectual property rights, services, currency, agriculture and non-tariff barriers to trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_us_china_sketching_deal",
+          "excerpt": "Time is running short ahead of the March 1 deadline to resolve the dispute or see U.S. tariffs on $200 billion worth of Chinese goods rise from 10 percent to 25 percent"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness_trade_war_explained",
+          "excerpt": "China also announced some tariffs on $60 billion worth of goods... This second round of Chinese tariffs is going to now cover $110 billion of the $130 billion of U.S.-China trade -- again, almost 100% of the entire trading relationship"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_us_china_sketching_deal",
+          "excerpt": "Several Chinese government sources told Reuters that the two countries have basically reached a consensus on alleviating the trade imbalances, but there were still some differences on each other's 'core demands'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "brookings_unpacked",
+          "excerpt": "The price of soybeans is already down 20 percent"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-03-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 25178,
+        "capped_chars": 20694,
+        "raw_tokens": 6294,
+        "capped_tokens": 5174
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 21416,
+  "started_at": "2026-08-13T10:54:46+00:00"
+}

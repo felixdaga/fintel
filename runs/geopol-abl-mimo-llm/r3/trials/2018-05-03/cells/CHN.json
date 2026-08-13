@@ -1,0 +1,104 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-05-03",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10629,
+    "tokens_out": 1011,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0110764,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should announce retaliatory tariffs on the proposed U.S. $50 billion list (106 products including soybeans, aircraft, and automobiles) to signal resolve and deter further escalation. Simultaneously, China should file a WTO complaint and leave the door open for negotiations, framing its response as defensive and rule-based. This maintains leverage while avoiding actions that would close off diplomatic channels.\n\nSUPPORTING RATIONALE: The threat score of +0.45 reflects that the U.S. has escalated significantly beyond the initial steel/aluminum tariffs. The Section 301 investigation targets China's core industrial policy \u2014 Made in China 2025 \u2014 with tariffs on 1,333 high-tech products (84% high-end exports per Bruegel analysis). Trump has threatened up to $153 billion in tariffs, which would cover a massive share of China's $506 billion in exports to the U.S. The U.S. is explicitly trying to constrain China's technological advancement, not just correct the trade deficit. However, the threat is not yet existential: tariffs remain in proposal stage (public comment until May 11, hearing May 15), Larry Kudlow has said 'nothing's been executed,' and China retains significant retaliatory leverage through targeting U.S. agricultural exports ($14B in soybeans alone) and Boeing. The action score of -1.0 (retaliate) is justified because: (1) China has already demonstrated it will respond in kind \u2014 it imposed tariffs on $3B of U.S. goods on April 2 and announced a $50B retaliation list; (2) failing to retaliate would signal weakness and invite further escalation, as the Global Times warned against the delusion that China would 'easily make concessions'; (3) China's retaliation targets politically sensitive U.S. sectors (soybeans, autos, aircraft) that create domestic political pressure on Trump; (4) semiconductors were wisely exempted from China's list due to dependency, showing calibrated response. The WTO filing provides multilateral cover. Retaliation now, while tariffs are still proposals, establishes deterrence before the U.S. commits to implementation.",
+      "key_factors": [
+        "U.S. Section 301 tariffs targeting $50B+ of Chinese high-tech exports tied to Made in China 2025",
+        "Trump threatening additional $100B in tariffs ($153B total) \u2014 largest trade action in history",
+        "Tariffs still in proposal stage with public comment period until May 11 \u2014 window for deterrence",
+        "China's retaliation list targets politically sensitive U.S. sectors: soybeans ($14B), aircraft (Boeing), automobiles",
+        "84% of U.S. tariff targets are high-end exports \u2014 direct threat to China's tech upgrading goals",
+        "China exempted semiconductors from retaliation, showing calibrated approach given dependency",
+        "U.S. trade deficit with China was record $375B in 2017, giving Trump political motivation to escalate",
+        "WTO complaint provides multilateral legal framework for China's defensive posture"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China. Trump said he would consider adding another $100 billion worth of products to the list. The public has until May 11 to submit comments on the proposed list of U.S. tariffs, with a hearing scheduled for May 15."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China has increased tariffs by up to 25 percent on 128 U.S. products, from frozen pork and wine to certain fruits and nuts, escalating a dispute between the world's biggest economies in response to U.S. duties on imports of aluminum and steel"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports. The U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder. Semiconductors, the fourth largest item in China's imports from the U.S., have been exempted probably due to the irreplaceable nature and the urgent need of such technologies."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "Trump's tariff imposition is anticipated to shrink that amount significantly, resulting in collapse of businesses and job losses. The U.S. tariff imposition can encourage its allies to become hostile toward China, further hurting export capabilities."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-05-03",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 33055,
+        "capped_chars": 28711,
+        "raw_tokens": 8264,
+        "capped_tokens": 7178
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 23367,
+  "started_at": "2026-08-13T10:55:00+00:00"
+}

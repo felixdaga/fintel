@@ -1,0 +1,69 @@
+{
+  "views": [
+    {
+      "symbol": "CHN",
+      "score": 0.35,
+      "threat_score": 0.35,
+      "action_score": 0.1,
+      "action_level": "negotiate",
+      "rationale": "RECOMMENDATION: Continue negotiating in good faith to lock in the Phase One deal and secure a rollback or postponement of the looming Dec 15 tariff, while holding existing retaliatory tariffs as leverage until terms are on paper. Do not escalate now: both sides are on the doorstep of an agreement intended to forestall the Dec 15 hike, and escalation would risk the near-term truce and be answered in kind. Keep pressing for relief on the Sept 1 tariffs and for the Dec 15 list to be taken off the table, without over-committing on purchases ahead of a signed text.\n\nSUPPORTING RATIONALE: The threat is real but moderate (threat_score +0.35), not existential. The US has imposed broad tariffs (List 3 at 25% on 2019-05-10; List 4A at 15% on 2019-09-01; List 4B ~$156-160B due Dec 15), placed Huawei and affiliates on the Entity List (2019-05-16), and designated China a currency manipulator (2019-08-05) \u2014 all genuine hits to export sectors and tech supply chains. Yet China's macro fundamentals remain firm at the decision date: reserves held at ~$3.13T (TRESEGCNM052N stable month-on-month), merchandise exports ~$211B and rising slightly (XTEXVA01CNM667S), CNY steady around 7.0 (EXCHUS 7.01, appreciating from ~7.15 in Sept), and industrial production growth 6-7% yoy (CHNPRINTO01IXPYM 106.9). There is also a clear de-escalation path: a Phase One deal was agreed in principle on 2019-10-11 (China to buy ~$40-50B US ag products/yr, IP and currency cited, Oct tariff hike delayed), and reporting through early December indicates both sides are close and expect to forestall the Dec 15 tariffs rather than let them bite. That combination \u2014 genuine costs but stable economy and an active truce path \u2014 justifies a mild stance (action_score +0.1, negotiate): the prudent move is to sustain talks and secure tariff relief rather than escalate into a fight China can absorb but would prefer to settle, especially with a 2020 US election and volatile US rhetoric in play.",
+      "key_factors": [
+        "Broad US tariff coverage incl. 25% List 3 and 15% List 4A, with ~$156-160B List 4B due Dec 15",
+        "Huawei Entity List (2019-05-16) threatens flagship tech/export firm",
+        "China macro stable at decision date: reserves ~$3.13T, exports ~$211B, CNY ~7.0, IP growth 6-7%",
+        "Phase One agreed in principle 2019-10-11 (~$40-50B ag purchases), not yet signed",
+        "Both sides signaling intent to forestall Dec 15 tariffs",
+        "Currency-manipulation designation (2019-08-05) adds FX/title risk"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "Phase One deal in principle: China to buy ~$40-50B US ag products annually; IP and currency cited; Oct tariff hike delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce adds Huawei and affiliates to Entity List; US firms barred from selling to Huawei without license."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "US Treasury designates China a currency manipulator."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110-125B of Chinese imports)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "TRESEGCNM052N",
+          "excerpt": "China total reserves excl. gold ~$3.127T on 2019-12-01, stable."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "XTEXVA01CNM667S",
+          "excerpt": "China exports ~$211.5B 2019-12-01, +1.8% m/m."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "EXCHUS",
+          "excerpt": "CNY 7.0137 on 2019-12-01, appreciating from ~7.10 in Oct."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "markets.businessinsider.com 2019-12-04",
+          "excerpt": "US and China close to agreeing amount of tariffs to be rolled back in phase-one deal, expected before Dec 15."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc.com 2019-11-22",
+          "excerpt": "Phase one deal may not be signed before Dec 15 tariffs; deal would forestall further escalation."
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

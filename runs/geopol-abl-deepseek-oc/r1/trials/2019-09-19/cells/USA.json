@@ -1,0 +1,129 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-09-19",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 144817,
+    "tokens_out": 3984,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Hold the current posture and go into the early-October Washington talks (13th round) without escalating further. Keep the scheduled Oct 1 hike on the $250B list and the Dec 15 consumer-goods list as leverage on the table, but signal willingness to suspend them if China makes concrete, enforceable commitments on IP/tech-transfer and farm purchases. Do not pursue a full rollback yet (no matching offer from Beijing has been made), and do not escalate into the holiday-shopping season where it would hit consumers and add recession risk.\n\nSUPPORTING RATIONALE: Threat is moderate-to-high rather than existential. Evidence shows real, material costs to the US: the Federal Reserve has cut the fed funds rate ~40bp (2.40% to 2.04%), the 10-year yield has fallen ~26% to 1.80% with the curve near inversion, Baa spreads have been volatile, and University of Michigan consumer sentiment dropped from 100 (May) to 89.8 (Aug) before a partial rebound to 93.2 in Sept \u2014 all consistent with escalating recession risk from the trade war (country_health USA: FEDFUNDS, DGS10, UMCSENT). The NY Fed estimates tariffs cost the average US household ~$831/yr, and the farm belt \u2014 a crucial 2020 constituency \u2014 is hurting, with $16B in bailouts already paid and soybean growers pressuring the administration for a cease-fire (web_search, NYT/CNBC farm-aid). These justify a +0.4 threat reading: material GDP/consumer drag and mounting domestic political pressure, but not existential since US IP/industrial production (INDPRO ~flat at 102.3) remains stable, the dollar is strong (DTWEXBGS up ~2.2%), and the US holds the initiating leverage. Action stance is mildly de-escalatory (negotiate, +0.15) because further escalation is self-defeating at this exact juncture: China has already signalled goodwill by exempting soybeans/pork from added retaliatory tariffs on Sept 13 and scheduling the October talks (event_timeline 2019-09-13; web_search, CNBC/Politico 2019-09-05). Escalating on Oct 1/Dec 15 would impose costs on US consumers before the holidays, worsen the growth picture the Fed is already cushioning, and could push Beijing to walk from the table. Negotiating from strength \u2014 keeping the existing 25%/15% tariffs in place as leverage while holding the scheduled hikes as a credible threat rather than executing them \u2014 best serves US interests.",
+      "key_factors": [
+        "Fed funds cut from 2.40% to 2.04% and 10-yr yield down 26% to 1.80% signal rising recession risk from the trade war",
+        "Consumer sentiment fell from 100 (May) to 89.8 (Aug), recovering only to 93.2 by Sept",
+        "Farm-belt political pressure: $16B bailout paid, soybean growers urging a cease-fire ahead of 2020",
+        "China granted soy/pork goodwill exemptions Sept 13 and agreed to early-October Washington talks",
+        "US holds initiating leverage and stable industrial production; dollar strong",
+        "Scheduled Oct 1 hike (25%\u219230% on $250B) and Dec 15 consumer-goods tariffs bite US consumers/holiday season"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-13",
+          "excerpt": "Chinese state media reports soybeans, pork, and some other farm goods will be excluded from additional retaliatory tariffs (goodwill signal ahead of talks)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110-125B of Chinese imports). China's first tranche of the ~$75B retaliation also takes effect."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-FEDFUNDS",
+          "excerpt": "Fed funds effective rate down from 2.40% (Jul) to 2.04% (Sep), -15.7%"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-UMCSENT",
+          "excerpt": "Consumer sentiment: 100 (May) -> 89.8 (Aug) -> 93.2 (Sep)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-09-05",
+          "excerpt": "China and US agree to meet in early October; deputy-level talks in mid-September to 'lay the groundwork for meaningful progress'."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes-2019-07-25-farm-aid",
+          "excerpt": "$16B farm aid package; soybean growers urge trade cease-fire; farmers a key 2020 constituency."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-09-19",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5700,
+        "capped_chars": 5700,
+        "raw_tokens": 1425,
+        "capped_tokens": 1425
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48190,
+        "capped_chars": 48190,
+        "raw_tokens": 12048,
+        "capped_tokens": 12048
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 48975,
+        "capped_chars": 48975,
+        "raw_tokens": 12244,
+        "capped_tokens": 12244
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 494815,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

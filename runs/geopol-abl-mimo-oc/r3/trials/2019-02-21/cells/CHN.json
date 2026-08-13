@@ -1,0 +1,141 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.6,
+      "rationale": "RECOMMENDATION: Continue active negotiations toward a deal before the March 2 deadline, offering substantial purchase commitments and IP reform language while resisting enforcement mechanisms that amount to unilateral US oversight. Do not escalate \u2014 the domestic economy cannot absorb further tariff pain \u2014 but do not concede on sovereignty-undermining enforcement terms. The goal is a face-saving deal that buys time and stabilizes the export sector.\n\nSUPPORTING RATIONALE: China faces a moderately high threat level (0.6) driven by several converging pressures. First, the macro picture is deteriorating: 2018 GDP growth hit a 28-year low at 6.6% (Q4: 6.4%), provinces are slashing 2019 targets to 6-6.5%, and economists estimate the tariffs alone are shaving 0.5-0.8% off GDP (McKinsey/Wharton analysis). UBS warned that further escalation could push growth to 5.5%. Second, tariffs already cover ~$250B of Chinese exports at 10-25%, and a March 2 deadline threatens to raise List 3 from 10% to 25% on $200B \u2014 a potential tariff cascade. Third, the Huawei situation has escalated sharply: DOJ unsealed criminal indictments on Jan 28, 2019 against the company and CFO Meng Wanzhou (bank fraud, sanctions evasion, trade secret theft), and formally requested extradition. This targets China's most important tech champion and signals the dispute is broadening beyond trade into technology containment. China's retaliatory tariffs on US agriculture (soybean exports down 63%) have imposed real costs on US farm states, but China is also paying \u2014 supply chains are shifting to Southeast Asia, and the yuan faces pressure near 7/$.\n\nThe action stance is slight negotiation lean (-0.1) rather than escalation because: (1) China's economy is more export-dependent and vulnerable to tariff escalation than the US; (2) the enforcement mechanism dispute is the critical bottleneck \u2014 the US wants automatic tariff-trigger authority, which China rightly sees as sovereignty-impairing, but there may be room for face-saving compromise through WTO-compatible monitoring; (3) China has leverage through its retaliatory tariffs on US agriculture (farm-belt political pressure on Trump), its record $323B trade surplus (which Trump wants reduced), and its ability to offer substantial purchase commitments; (4) escalation risks triggering List 3 at 25% plus potential entity-list actions against more Chinese tech firms. The optimal strategy is to offer enough (purchases, IP law reform, subsidy transparency) to get a deal that pauses escalation, while structuring enforcement as bilateral rather than unilateral US judgment. China's Made in China 2025 ambitions and tech self-sufficiency goals are long-term plays \u2014 a tactical deal now preserves space to pursue them.",
+      "key_factors": [
+        "China GDP at 28-year low (6.6% in 2018); provinces slashing 2019 growth targets",
+        "March 2 deadline: List 3 tariffs may rise from 10% to 25% on $200B of exports",
+        "Huawei CFO Meng Wanzhou indicted Jan 28, 2019; extradition sought \u2014 tech containment signal",
+        "Enforcement mechanism is key sticking point; US demands automatic tariff triggers vs China's sovereignty concerns",
+        "China's retaliatory tariffs on US soybeans effective (exports down 63%) but China also bearing costs",
+        "China's record $323B trade surplus with US in 2018 gives Trump domestic political leverage",
+        "Supply chains shifting out of China to Southeast Asia; long-term structural risk",
+        "Two Canadians detained by China (Dec 2018) as apparent retaliation for Meng arrest \u2014 diplomatic fallout"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-14",
+          "excerpt": "Another round of talks (through Feb 15). Progress reported on purchases; enforcement mechanism still disputed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended. Same day: Canada arrests Huawei CFO Meng Wanzhou"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-01-21-china-gdp",
+          "excerpt": "China's economy grew 6.6% in 2018, the lowest pace in 28 years. Industrial output grew 5.7 percent in December."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp-2019-01-16-provincial-targets",
+          "excerpt": "Eight provinces have set lower GDP growth targets for 2019; Henan cut from 7.5% to 6.5%, Beijing to 6-6.5%, Tianjin to 4.5%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wsj-2019-02-02-enforcement",
+          "excerpt": "Lighthizer: 'If we can get an agreement, it's worth nothing without enforcement.' US wants mechanism to automatically raise tariffs if China's exports keep rising."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "newsday-2019-01-14-trade-surplus",
+          "excerpt": "China's 2018 trade surplus with the United States surged to a record $323.3 billion but exports contracted in December."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "crs-report-r45448-soybeans",
+          "excerpt": "U.S. soybean exports to China for January through October 2018 are 63% lower than during the same time period in 2017."
+        }
+      ],
+      "threat_score": 0.6,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 7,
+    "by_status": {
+      "ok": 7
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5015,
+        "capped_chars": 5015,
+        "raw_tokens": 1254,
+        "capped_tokens": 1254
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11204,
+        "capped_chars": 11204,
+        "raw_tokens": 2801,
+        "capped_tokens": 2801
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 97590,
+        "capped_chars": 97590,
+        "raw_tokens": 24398,
+        "capped_tokens": 24398
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 7,
+      "by_status": {
+        "ok": 7
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 384923,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

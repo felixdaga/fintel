@@ -1,0 +1,146 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-07-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: China must retaliate with matching tariffs on the $50B US goods list effective July 6 to preserve negotiating credibility, while signaling willingness to resume talks if the US de-escalates. Retaliating is necessary but should be calibrated \u2014 matching scale, not exceeding it \u2014 to avoid triggering the threatened $200B escalation. Simultaneously, accelerate emergency domestic semiconductor development programs and diversify supply chains away from US dependency.\n\nSUPPORTING RATIONALE: The threat to China is serious but not yet existential. The $50B Section 301 tariffs (finalized June 15, targeting aerospace, ICT, robotics, machinery) directly hit China's high-tech export sectors that are central to Made in China 2025 (event timeline, 2018-06-15). Trump's June 18 directive to identify an additional ~$200B of Chinese imports for 10% tariffs if China retaliates raises the stakes dramatically \u2014 a potential escalation to $250B in total tariff coverage. The ZTE denial order (2018-04-16) exposed China's deepest structural vulnerability: ZTE ceased 'major operating activities' because it sources 25-30% of components from US companies (Reuters, 2018-05-09). This demonstrated that US export controls are 'economic weapons of mass destruction' that can paralyze even China's second-largest telecom equipment maker (Forbes, 2018-05-22). China's entire tech sector faces this dependency \u2014 semiconductors, operating systems, and core components remain heavily US-sourced.\n\nHowever, several factors prevent the threat from reaching +1.0 (existential). The US economy is strong enough to sustain the tariffs short-term \u2014 industrial production at 103.4 and rising (country_health), consumer sentiment still elevated at 97.9 \u2014 which means the US has political capacity to maintain pressure. But US domestic opposition is building: the American Soybean Association has twice requested meetings with Trump, the National Association of Manufacturers called for a bilateral trade agreement instead of tariffs, and the U.S. Chamber of Commerce warned that ~$75B in US exports face retaliatory tariffs in early July (The Hill, 2018-06-15). Capital Economics analysts assessed the direct tariff impact would shave under 0.5 percentage points off China's growth, manageable with fiscal/monetary stimulus (Reuters, 2018-06-15). China's retaliation on soybeans ($14B annually \u2014 nearly a third of the US crop) and automobiles targets politically sensitive US constituencies ahead of midterm elections.\n\nThe action_score of -0.5 (moderate escalation via retaliation) reflects the necessity of matching the US move to maintain domestic credibility and negotiating leverage, while the `retaliate` label (rather than `escalate_tariffs`) signals this is a defensive response, not a new provocation. The May 19 joint statement truce collapsed when the US proceeded with tariffs anyway (timeline, 2018-05-29), and China declared previous trade commitments 'invalid' (CNBC, 2018-06-15). Conceding now without retaliation would invite further escalation and undermine the CCP's domestic legitimacy. But escalating beyond matching retaliation \u2014 e.g., targeting US firms' operations in China or dumping Treasury bonds \u2014 risks triggering the $200B follow-on before China has diversified its tech supply chain. The rational play is proportional retaliation now, combined with accelerated domestic semiconductor investment and WTO dispute filing, to preserve optionality as US domestic political costs mount.",
+      "key_factors": [
+        "ZTE denial order exposed critical US tech dependency \u2014 25-30% component sourcing from US firms, operations ceased",
+        "Trump's June 18 threat of additional ~$200B tariffs if China retaliates creates escalation ladder",
+        "US economy strong (IP rising, sentiment 97.9, Fed tightening) \u2014 can sustain trade pressure short-term",
+        "China's retaliation targets politically sensitive US sectors (soybeans, autos) ahead of midterms",
+        "May truce collapsed \u2014 previous trade commitments declared invalid by China",
+        "Capital Economics: tariff impact <0.5pp of China growth, manageable with policy stimulus",
+        "US domestic opposition building (ASA, NAM, Chamber of Commerce) \u2014 leverage potential",
+        "Global supply chain fragmentation risks isolating Chinese tech firms from US-controlled ecosystems"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-15",
+          "excerpt": "USTR announces final two-stage $50B tariff plan: 25% on List 1 (~$34B, 818 lines, effective July 6) and List 2 (~$16B, later). China announces matching retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-18",
+          "excerpt": "Trump directs USTR to identify an additional ~$200B of Chinese imports for 10% tariffs if China retaliates against the $50B action."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2018-06-15",
+          "excerpt": "Analysts at Capital Economics said the impact of the tariffs on China's economy would be small. Even if the U.S. duties reach the full $150 billion, they estimated it would shave well under a half-percentage point off China's annual growth rate."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2018-05-09",
+          "excerpt": "ZTE relies on U.S. companies such as Qualcomm and Intel for up to a third of its components. 'As a result of the Denial Order, the major operating activities of the company have ceased.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thehill-2018-06-15",
+          "excerpt": "Farmers for Free Trade: 'For American farmers this isn't theoretical anymore, it's downright scary.' ASA twice requested meeting with Trump. NAM called for bilateral trade agreement."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_INDPRO",
+          "excerpt": "US Industrial Production rising from 101.7 (Feb) to 103.4 (Jul 2018), indicating robust economic capacity to absorb tariff impacts."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_UMCSENT",
+          "excerpt": "Consumer Sentiment at 97.9 (Jul 2018), down from 101.4 (Mar) but still elevated \u2014 US domestic political capacity for trade pressure remains."
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": -0.5,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-07-05",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3015,
+        "capped_chars": 3015,
+        "raw_tokens": 754,
+        "capped_tokens": 754
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47842,
+        "capped_chars": 47842,
+        "raw_tokens": 11960,
+        "capped_tokens": 11960
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 54775,
+        "capped_chars": 54775,
+        "raw_tokens": 13694,
+        "capped_tokens": 13694
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 384115,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

@@ -1,0 +1,109 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-11-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8140,
+    "tokens_out": 885,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0082094,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.15,
+      "rationale": "RECOMMENDATION: Continue negotiations with China while maintaining current tariff levels as leverage. The US should push for a Phase One deal that secures meaningful structural commitments on IP protection, market access, and agricultural purchases, but should not escalate further until the current negotiating track is exhausted. The US holds leverage \u2014 China's export losses are real and significant \u2014 but further tariff escalation risks domestic consumer pain and ally defection.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but manageable (threat_score: +0.15). The UNCTAD study confirms that US tariffs have inflicted a $35 billion export loss on China in H1 2019, with Chinese firms maintaining only 75% of their tariffed exports to the US \u2014 demonstrating real leverage. However, the same study warns that 'consumers in the US are bearing the heaviest brunt of the US tariffs on China' and that 'both sides will suffer' (Kudlow, Fox Business). The US trade deficit with China stood at $419 billion (BBC), and the core issues \u2014 IP theft, forced technology transfer, market access \u2014 remain unresolved. The trade war has contributed to weakened global expansion per the IMF (BBC). Tariff escalation to cover all remaining ~$300 billion in Chinese imports (as Trump threatened) would significantly increase consumer costs on everyday goods. Meanwhile, trade diversion is benefiting Mexico ($3.5B), EU ($2.7B), Vietnam ($2.6B), and Taiwan ($4.2B) \u2014 meaning some supply chain restructuring is already underway in the US's favor without further escalation. The bipartisan political support for staying firm (Van Drew, Graham) gives the administration room to negotiate from strength without appearing weak. The optimal strategy is to hold current tariff levels as leverage while pursuing a Phase One deal that locks in structural concessions, rather than risking further escalation that could tip the US economy toward recession and fracture allied support.",
+      "key_factors": [
+        "UNCTAD study: $35B Chinese export loss in H1 2019, 25% decline in tariffed exports",
+        "US consumers bearing heaviest cost of tariffs per UNCTAD analysis",
+        "Trade diversion benefiting Mexico, EU, Vietnam, Taiwan \u2014 supply chain shift underway",
+        "Trump threatened tariffs on remaining ~$300B of Chinese imports",
+        "Bipartisan political support for firm stance (Graham, Van Drew)",
+        "IMF cut global growth forecast citing US-China trade tensions",
+        "Core structural issues (IP, market access, tech transfer) remain unresolved",
+        "Kudlow acknowledged 'both sides will suffer' from tariffs"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "US tariffs caused a 25% export loss, inflicting a US$35 billion blow to Chinese exports in the US market for tariffed goods in the first half of 2019"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "consumers in the US are bearing the heaviest brunt of the US tariffs on China, as their associated costs have largely been passed down to them and importing firms in the form of higher prices"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "Both sides will suffer on this. When you put tariffs on products coming out of China, it makes other countries a cheaper place to do business which eventually moves market share away from China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "The International Monetary Fund (IMF) said the escalation of US-China trade tension was one factor to have contributed to a significantly weakened global expansion"
+        }
+      ],
+      "threat_score": 0.15,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-11-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 21708,
+        "capped_chars": 17702,
+        "raw_tokens": 5427,
+        "capped_tokens": 4426
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19474,
+  "started_at": "2026-08-13T10:55:06+00:00"
+}

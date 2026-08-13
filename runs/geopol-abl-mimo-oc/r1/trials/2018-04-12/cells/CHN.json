@@ -1,0 +1,135 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-04-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Maintain the retaliatory tariffs already announced on ~$50B of US goods (soybeans, automobiles, aircraft, chemicals) as a proportionate response. Signal willingness to negotiate but do not escalate further or offer concessions prematurely. The US has opened a comment period and hearings that provide a natural window for diplomacy.\n\nSUPPORTING RATIONALE: The threat to China is real but not yet existential. The US Section 301 tariff list directly targets Made in China 2025 sectors \u2014 aerospace, ICT, robotics, machinery \u2014 threatening China's strategic industrial upgrade program (timeline entry 2018-04-03). However, the tariffs are still proposals with a public comment period ending May 22 and hearings scheduled for May 15, meaning no concrete action has been taken yet. China's economy is in strong shape: 6.9% GDP growth in 2017 (fastest in 7 years), industrial production growth at 6.6%, and a large trade surplus with the US (~$375B). The macro data does not show the dispute biting the real economy yet.\n\nChina's retaliatory targeting of US soybeans ($14B annual trade, critical to Trump's farm-belt base) and aircraft (Boeing) is strategically astute \u2014 it concentrates pain on politically sensitive US constituencies. The American Soybean Association has called the tariffs 'devastating' and publicly pressured the White House to back down. This creates domestic US pressure for negotiation that works in China's favor.\n\nBoth sides have signaled the current tariffs are negotiating positions, not final actions. China's Vice Finance Minister Zhu Guangyao said implementation depends on bilateral negotiations. US officials (Kudlow, Ross) have publicly downplayed the tariffs as an 'early stage of a process.' This suggests a negotiated settlement remains likely, which is the best outcome for China \u2014 it avoids a prolonged trade war that would expose China's greater structural dependence on US export demand while preserving access to the US market.\n\nThe action_score of -0.15 reflects the need to maintain retaliatory leverage (we cannot appear weak) while staying within the 'retaliate' band \u2014 mirroring the opponent's move rather than initiating new escalation. A further escalation risk: the US has signaled it may propose investment restrictions and entity-list actions (Mnuchin plan expected in May), which could be far more damaging to China's tech sector than tariffs. Provoking the US at this stage would be unwise. Hold the current position, let the farm-belt pressure do its work, and prepare for negotiations.",
+      "key_factors": [
+        "US Section 301 tariff list directly targets Made in China 2025 sectors (aerospace, ICT, robotics, machinery) - $50B of product lines",
+        "China's retaliation on US soybeans ($14B) and aircraft creates domestic political pressure in US farm belt",
+        "Tariffs are still proposals with comment period (May 22 deadline) - no concrete action yet taken",
+        "China's economy strong: 6.9% GDP growth, 6.6% industrial production growth, $375B bilateral trade surplus",
+        "Both sides signaling negotiation is the goal - Zhu Guangyao, Kudlow, Ross all publicly downplaying escalation",
+        "Risk of US escalation to investment restrictions and entity-list actions (Mnuchin plan expected May) if China provokes further",
+        "Market volatility: global stocks fell on April 4 tariff announcements but partially recovered - situation not yet spiraling"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list: ~1,300 Chinese product lines (~$50B), targeting aerospace, ICT, robotics, machinery and related sectors."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods (including soybeans, automobiles, and aircraft) in response to the Section 301 list."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-22",
+          "excerpt": "USTR releases Section 301 report finding China's IP/tech-transfer practices unreasonable or discriminatory. Trump signs presidential memorandum directing tariffs on Chinese imports, a WTO case, and investment restrictions."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortune-2018-04-04",
+          "excerpt": "The U.S. list suggests that the government is targeting the 'Made in China 2025' initiative, while China's retaliation intends to bring Americans back to the negotiation table."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "farmpolicynews-2018-04-05",
+          "excerpt": "China's planned retaliatory tariffs 'will have a devastating effect on every soyabean farmer in America,' said John Heisdorffer, president of the American Soybean Association."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "npr-2018-01-18",
+          "excerpt": "China is reporting its fastest economic growth in seven years, saying its gross domestic product grew by 6.9 percent in 2017."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnnmoney-2018-04-04",
+          "excerpt": "Larry Kudlow: 'I can understand the stock market anxiety. I get that. But don't overreact. This is the early stages of a process of negotiations that will end with a pot of gold.'"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -0.15,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-04-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2046,
+        "capped_chars": 2046,
+        "raw_tokens": 512,
+        "capped_tokens": 512
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47380,
+        "capped_chars": 47380,
+        "raw_tokens": 11845,
+        "capped_tokens": 11845
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 46421,
+        "capped_chars": 46421,
+        "raw_tokens": 11606,
+        "capped_tokens": 11606
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 376994,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

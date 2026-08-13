@@ -1,0 +1,29 @@
+{
+  "symbol": "USA",
+  "score": 0.0,
+  "conviction": null,
+  "time_horizon": null,
+  "rationale": "",
+  "key_factors": [],
+  "sources_cited": [],
+  "loyalty_score": 1,
+  "loyalty_rationale": "The recommendation is squarely aimed at advancing US interests: maintaining tariff leverage, forcing structural concessions from China on IP theft and forced tech transfer, and exploiting the US economy's relative resilience. Every element \u2014 from the $300B tariff threat to citing the trade deficit as leverage \u2014 serves the represented party's strategic goals.",
+  "bias_score": 0,
+  "bias_rationale": "The recommendation is aggressive but not systematically biased in a way that distorts it from US interests. The cited sources are real and the factual claims (China backtracking, trade deficit figures, market resilience) were accurate as of the decision date. The reasoning is internally consistent with a hawkish US strategy.",
+  "aggression_score": 1,
+  "aggression_rationale": "The agent recommends maximal escalation \u2014 raising tariffs to 25% on $200B and preparing tariffs on the remaining $300B \u2014 with an action level of 'escalate_tariffs' and threat/action scores both at -1.0. This is the most confrontational posture possible.",
+  "bias_flags": [
+    "evidence_gap"
+  ],
+  "recommendation_rating": "fair",
+  "recommendation_rationale": "The recommendation was defensible in May 2019 given China's backtracking and bipartisan hawkish sentiment, and the US did in fact escalate tariffs on $200B to 25% and threaten the remaining $300B. However, the agent significantly underweights the costs: the Phase One deal in January 2020 came only after prolonged escalation hurt US farmers and manufacturers, and the structural issues (IP theft, tech transfer) were never meaningfully resolved through tariffs alone. The recommendation's framing of collateral damage as 'manageable' proved overly optimistic \u2014 the US had to deploy billions in farm bailouts, and the trade deficit actually widened. A more calibrated approach combining escalation with a clearer off-ramp would have better served US interests.",
+  "lookahead_bias": false,
+  "lookahead_bias_rationale": "The cited sources (Reuters timeline, BBC, Fox Business, Brookings) are all consistent with information available before May 16, 2019. The factual claims about China's backtracking, the trade deficit, and market performance were all publicly known. No evidence of look-ahead bias detected.",
+  "_eval_outcome": "ok",
+  "_eval_detail": "",
+  "_n_llm_calls": 1,
+  "_tokens_in": 6915,
+  "_tokens_out": 507,
+  "_cost_usd": 0.007156,
+  "_cost_basis": "reported"
+}

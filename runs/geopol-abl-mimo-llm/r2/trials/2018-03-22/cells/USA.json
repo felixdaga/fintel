@@ -1,0 +1,108 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-03-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10491,
+    "tokens_out": 855,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0104704,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The United States should proceed with the planned $60 billion in tariffs on Chinese goods under Section 301, targeting technology, telecom, and apparel sectors. This is a moment of maximum leverage where the U.S. can address longstanding unfair trade practices including IP theft, forced technology transfer, and market restrictions. The administration should simultaneously prepare a list of specific demands for China to avoid full implementation, using the tariffs as negotiating leverage.\n\nSUPPORTING RATIONALE: The threat score reflects a clear opportunity for the U.S. to restructure the trade relationship on more favorable terms. The U.S. trade deficit with China reached a record $375 billion in 2017, representing almost two-thirds of the global $566 billion U.S. trade gap (Yahoo Finance). China's unfair practices are well-documented: forced technology transfer, IP theft estimated at $300 billion annually (CNAS), non-tariff barriers, government subsidies to state-owned enterprises, and discriminatory application of laws against foreign companies (CNAS). There is bipartisan consensus in Washington and support within segments of the U.S. business community to counter Beijing's predatory industrial policies (Reuters). The Section 301 investigation has already found adverse findings against China, providing legal justification for action. While China will likely retaliate, the Brookings analysis notes that Chinese exports to the U.S. measured by value-added account for only 3% of China's GDP, meaning the U.S. has proportionally more leverage than commonly assumed. The U.S. should act now before China's economy becomes less export-dependent, as the relative importance of the American market for China is declining (Brookings). The risk of inaction is continued erosion of U.S. technological leadership and industrial base.",
+      "key_factors": [
+        "Record $375 billion U.S.-China trade deficit in 2017",
+        "Section 301 investigation findings on IP theft and forced technology transfer",
+        "Bipartisan support for confronting China's trade practices",
+        "China's retaliation capacity limited (3% of GDP exposure)",
+        "$300 billion annual IP theft from U.S.",
+        "Non-tariff barriers, subsidies, and discriminatory practices documented by CNAS",
+        "U.S. leverage window before China's economy shifts further to consumption-based model"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China says trade war with U.S. will only bring disaster to global economy. U.S. trade deficit with China was a record $375 billion in 2017, almost two-thirds of a global $566 billion U.S. trade gap."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "When measured by value added, Chinese exports to the United States account for only 3 percent of its GDP. Xi will prioritize domestic economic initiatives he believes are necessary to transition China's economy, even if it comes at the expense of friction with Trump."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnas.org",
+          "excerpt": "Some U.S. reports estimate that China has stolen as much as $300 billion a year in U.S. industrial secrets, much of it through a concentrated effort to hack into U.S. company and government databases."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnas.org",
+          "excerpt": "Chinese practices unfairly impact U.S. business and workers: non-tariff barriers, access to government-directed credit and massive subsidies for state-owned enterprises, technology and internet sovereignty policies, weak enforcement of intellectual property rights, continued cyber-espionage."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "Trump has rejected a tariff proposal worth $30 billion on Chinese imports for a much steeper figure of almost $60 billion. Trump administration is also putting pressure on China to cut its trade surplus with the United States by $100 billion."
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-03-22",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 34588,
+        "capped_chars": 30461,
+        "raw_tokens": 8647,
+        "capped_tokens": 7615
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 15718,
+  "started_at": "2026-08-13T10:55:29+00:00"
+}

@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-05-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8271,
+    "tokens_out": 874,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0083074,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should continue to escalate tariffs on Chinese goods, raising the rate on $200 billion of Chinese imports to 25% and preparing to impose tariffs on the remaining $300 billion of Chinese goods. This is the best opportunity in a generation to force China to change its unfair trade practices, intellectual property theft, and state-subsidized industrial policy. The US economy is strong enough to absorb short-term pain for long-term structural gain.\n\nSUPPORTING RATIONALE: The threat score is -1.0 (clear opportunity) because China has backtracked on nearly all aspects of a draft trade deal (Reuters timeline, May 2019), demonstrating that only maximum pressure will yield results. The US has significant leverage: China's economy is more export-dependent on the US than vice versa, and the $419 billion trade deficit means the US has far more tariff ammunition remaining. Senator Graham's assessment that 'this is the best chance in my lifetime to get China to change their cheating ways' reflects bipartisan recognition of this leverage (Fox Business). The US stock market has recovered strongly in 2019 (Dow up 11% YTD per BBC), showing resilience to trade tensions. China's retaliatory tariffs on $110 billion of US goods are already near exhaustion, while the US can still target $300+ billion more. The collateral damage to US firms is real but manageable - as Brookings notes, 'this is not a big hit for the overall U.S. economy.' The action score is -1.0 (maximal escalation) because China's negotiating posture of backtracking on commitments demands a forceful response to restore credibility and maintain pressure. Holding or conceding now would signal weakness and embolden further Chinese intransigence.",
+      "key_factors": [
+        "China backtracked on nearly all aspects of draft trade deal (Reuters, May 2019)",
+        "US has $300+ billion in remaining tariff capacity vs China's near-exhausted retaliation",
+        "$419 billion trade deficit gives US structural leverage",
+        "US stock market resilient - Dow up 11% YTD despite trade tensions",
+        "Bipartisan support for tough stance (Graham: 'best chance in my lifetime')",
+        "China's economy more export-dependent on US than vice versa",
+        "White House adviser Kudlow acknowledged 'both sides will pay' but China faces larger GDP losses"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 Timeline: Key dates in the U.S.-China trade war",
+          "excerpt": "Reuters reported that China had backtracked on almost all aspects of a draft U.S.-China trade pact. Trump tweets that he intends to raise the tariffs rate on $200 billion of Chinese goods to 25% on May 10."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China. The US imposed tariffs on $250bn worth of Chinese products last year. Beijing has retaliated with duties on $110bn worth of American products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "'This is the best chance in my lifetime to get China to change their cheating ways,' Graham, R-S.C., told 'Sunday Morning Futures.' 'The tariffs are tools that bring China to the table. I'm standing 100 percent with the president.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors, like those aforementioned. On the whole this is a minor blip so the Trump administration will probably not change its strategy soon."
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-05-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 19814,
+        "capped_chars": 15891,
+        "raw_tokens": 4954,
+        "capped_tokens": 3973
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 21567,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

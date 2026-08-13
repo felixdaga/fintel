@@ -1,0 +1,56 @@
+{
+  "decision_date": "2019-05-16",
+  "status": "partial",
+  "cells": [
+    {
+      "cell": "USA",
+      "symbols": [
+        "USA"
+      ],
+      "status": "ok",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 432243,
+      "usage": {
+        "n_llm_calls": 5,
+        "tokens_in": 219178,
+        "tokens_out": 6915,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "health": "ok",
+      "health_issues": []
+    },
+    {
+      "cell": "CHN",
+      "symbols": [
+        "CHN"
+      ],
+      "status": "failed",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 427048,
+      "usage": {
+        "n_llm_calls": 9,
+        "tokens_in": 505822,
+        "tokens_out": 14605,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "error": "3 tool error(s) the agent saw (MCP timeout/connection); agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie",
+      "health": "broken",
+      "health_issues": [
+        "3 tool error(s) the agent saw (MCP timeout/connection)",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.action_score: must be >= -1\n\nReceived arguments:\n{\n  \"vie"
+      ]
+    }
+  ],
+  "n_views": 2,
+  "missing": [],
+  "started_at": "2026-08-13T05:59:47+00:00",
+  "finished_at": "2026-08-13T06:23:59+00:00",
+  "duration_ms": 0,
+  "health": "broken"
+}

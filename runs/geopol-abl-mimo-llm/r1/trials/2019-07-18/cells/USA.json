@@ -1,0 +1,107 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-07-18",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7634,
+    "tokens_out": 810,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0074784,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should continue to escalate tariffs on Chinese goods, maintaining pressure on Beijing to make meaningful concessions on intellectual property theft, market access, and trade imbalances. The current leverage is strong, and backing down now would squander the opportunity to restructure the trade relationship on US terms.\n\nSUPPORTING RATIONALE: The US has significant leverage in this dispute. The US trade deficit with China stands at $419 billion, giving the US substantial room to impose tariffs while China has far less US goods to target in retaliation. China's retaliation has been limited to $110 billion in US goods compared to US tariffs on $250 billion in Chinese goods. The US economy remains strong with the Dow Jones up 11% in 2019, while China's Shanghai Composite fell 25% in 2018. Senator Graham correctly identifies this as 'the best chance in my lifetime to get China to change their cheating ways.' The US should maintain pressure through tariffs as tools to bring Beijing to the table and force structural reforms on IP theft, forced technology transfer, and market access barriers.",
+      "key_factors": [
+        "US trade deficit with China at $419 billion provides leverage",
+        "China's retaliation limited to $110 billion vs US tariffs on $250 billion",
+        "US stock market strong (Dow up 11% in 2019) while China's market fell 25% in 2018",
+        "Bipartisan support for tough stance on China (both parties agree China has been 'eating our lunch')",
+        "Tariffs are effective tools to bring China to negotiating table",
+        "Opportunity to restructure trade relationship on US terms"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com - Trade war: US-China trade battle in charts",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. Not only does the US accuse China of stealing intellectual property, but it wants Beijing to make changes to its economic policies, which it says unfairly favour domestic companies through subsidies. The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com - Trade war: US-China trade battle in charts",
+          "excerpt": "The US imposed tariffs on $250bn worth of Chinese products last year. Beijing has retaliated with duties on $110bn worth of American products"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com - Trade war: US-China trade battle in charts",
+          "excerpt": "By comparison, the Dow Jones Industrial Average fell nearly 6% in 2018 and is already up some 11% this year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "This is the best chance in my lifetime to get China to change their cheating ways. The tariffs are tools that bring China to the table. I'm standing 100 percent with the president."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - US-China immersed in a tit-for-tat tariff trade war",
+          "excerpt": "we have known for a long time whether it was money manipulation, whether it was stealing technology, and intellectual property that china in some cases has been eating our lunch and hasn't been playing a fair game"
+        }
+      ],
+      "threat_score": -1,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-07-18",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18895,
+        "capped_chars": 15037,
+        "raw_tokens": 4724,
+        "capped_tokens": 3759
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19225,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

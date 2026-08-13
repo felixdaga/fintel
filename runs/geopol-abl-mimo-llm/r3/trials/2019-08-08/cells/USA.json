@@ -1,0 +1,102 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-08-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7950,
+    "tokens_out": 962,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0082504,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should proceed with the planned tariff escalation on the remaining ~$300 billion of Chinese imports, maintaining maximum pressure while keeping the door open for negotiations. The current leverage is real but time-limited; China's economy is under strain from existing tariffs and supply chain diversification is already underway. However, we should calibrate the escalation to avoid triggering a broader financial market rout that would undermine domestic support for the strategy.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects a moderate but not existential threat to US interests. The trade war is causing real pain \u2014 White House economic adviser Larry Kudlow acknowledged 'both sides will suffer,' and consumers face higher prices on a wide range of goods from handbags to car tires (Fox Business). The USC analysis notes that new cars could cost $1,000-$3,000 more due to Chinese auto parts tariffs, and California's ports (handling ~50% China-related goods) face disruption. However, the US has structural advantages: the trade deficit ($100B in US exports vs. much larger Chinese exports to US) gives the US more tariff 'ammunition,' and China's retaliatory capacity on $110B of US goods is already near-exhausted relative to the US's $250B+ already tariffed plus $300B threatened. Senator Graham's framing \u2014 that tariffs are 'tools that bring China to the table' and that short-term pain is justified to prevent China from 'destroying our economy over time' \u2014 captures the strategic logic. The action score of -1 (maximal escalation via tariff increase) is justified because: (1) China reportedly 'backtracked on almost all aspects of a draft U.S.-China trade pact' (Reuters timeline, May 2019), signaling that moderate pressure was insufficient; (2) the US has already demonstrated willingness to negotiate (Lighthizer/Mnuchin Beijing trip, Mnuchin saying 'we're close to done') but China's backtracking suggests more pressure is needed; (3) the threat of tariffs on all remaining Chinese imports ($300B) is the last major leverage point before the dispute shifts to non-tariff measures like entity lists, which carry higher escalation risks. The key risk is that 24 states have sued Trump over tariffs, indicating domestic political opposition, but bipartisan congressional support (evidenced by both Republican Graham and Democrat Van Drew backing firmness) provides cover.",
+      "key_factors": [
+        "China backtracked on draft trade pact (May 2019), undermining negotiation progress",
+        "US has asymmetric tariff leverage \u2014 $300B remaining Chinese imports vs. limited Chinese retaliatory capacity",
+        "Both sides acknowledged mutual economic pain (Kudlow: 'both sides will suffer')",
+        "Bipartisan congressional support for firm stance (Graham R, Van Drew D)",
+        "Domestic legal challenge (24 states suing) creates political risk but not decisive barrier",
+        "Consumer cost increases (cars +$1K-$3K, port disruption) are real but manageable short-term"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China immersed in a tit-for-tat tariff trade war",
+          "excerpt": "The U.S. will increase tariffs at midnight tonight on $200 billion in goods, increasing from 10 percent to 25 percent"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 Timeline: Key dates in the U.S.-China trade war",
+          "excerpt": "Reuters reported that China had backtracked on almost all aspects of a draft U.S.-China trade pact."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "some estimate new cars will cost $1,000 to $3,000 more"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-08-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18764,
+        "capped_chars": 14743,
+        "raw_tokens": 4691,
+        "capped_tokens": 3686
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 25750,
+  "started_at": "2026-08-13T10:55:10+00:00"
+}

@@ -1,0 +1,108 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-08-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 11063,
+    "tokens_out": 741,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0107004,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The United States should escalate tariffs on Chinese goods to maximum levels, targeting the full $505 billion in imports if necessary. This is a once-in-a-generation opportunity to restructure the US-China trade relationship on terms favorable to American workers and businesses. The US economy is strong, unemployment is low, and we have the leverage to force China to make meaningful concessions on intellectual property theft, forced technology transfer, and market access barriers.\n\nSUPPORTING RATIONALE: The US has a massive $375 billion trade deficit with China, giving us significant leverage in any tariff war. China can only retaliate against $130 billion in US exports, while we can target $505 billion in Chinese exports - a 4:1 asymmetry that favors the US. The US economy is performing well and can absorb the short-term costs, while China's export-dependent economy is more vulnerable. China's unfair trade practices - including forced technology transfer, IP theft, and market barriers - have cost American jobs and undermined our technological leadership for decades. The Trump administration's strategy of using tariffs to force China to the negotiating table is working, and we should maintain maximum pressure to extract meaningful structural reforms. The midterm elections provide political cover for this approach, as voters support standing up to China's trade abuses.",
+      "key_factors": [
+        "US-China trade deficit of $375 billion provides significant leverage",
+        "Asymmetric retaliation capacity: US can target $505B vs China's $130B",
+        "Strong US economy with low unemployment can absorb short-term costs",
+        "China's unfair trade practices: IP theft, forced tech transfer, market barriers",
+        "Midterm election year provides political support for tough stance",
+        "Soybean prices down 20% but overall economic impact is minor",
+        "No high-level negotiations scheduled - need to maintain pressure"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "cbsnews_trade_war_april_2018",
+          "excerpt": "The U.S. buys $506 billion worth of goods from China but only exports $130 billion, leaving a trade deficit of $375 billion between the two countries"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "rand_trade_war_different_messages",
+          "excerpt": "the United States has less to lose since its exports to China are $130 billion while China's exports to the United States are $505 billion a year. In a tit-for-tat exercise, it is argued, China will run out of exports to levy retaliatory tariffs upon long before the United States does"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "brookings_trade_war_began",
+          "excerpt": "The price of soybeans is already down 20 percent"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "brookings_unpacked_trade_war",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cfr_trade_war_how_we_got_here",
+          "excerpt": "China has made it hard to produce abroad and sell to China and, China has made it hard to invest in China in order to produce and sell in China if your firm isn't Chinese"
+        }
+      ],
+      "threat_score": -1,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-08-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35798,
+        "capped_chars": 31232,
+        "raw_tokens": 8950,
+        "capped_tokens": 7808
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19230,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

@@ -1,0 +1,131 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-03-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.35,
+      "rationale": "RECOMMENDATION: Continue negotiating firmly from a position of leverage while the window remains open, but resist the urge to close a deal prematurely. The US holds significant structural advantage \u2014 tariffs covering ~$250B of Chinese goods remain in place, China's manufacturing sector is contracting (PMI below 50 for 3 consecutive months, lowest since 2009), and allies are aligning on Huawei restrictions. Push hard on structural reforms (IP protection, forced tech transfer, subsidies, enforcement mechanism) rather than settling for purchase commitments alone.\n\nSUPPORTING RATIONALE: The US is in an advantageous negotiating position. China's economy is deteriorating \u2014 manufacturing PMI fell to 49.4 in December 2018 (first contraction in 2+ years), new export orders at decade lows in February 2019, and the World Bank forecasts growth slowing to 6.2% in 2019. Meanwhile, the US economy, while slowing (Atlanta Fed Q1 GDPNow at 0.3%), had 2.9% growth in 2018 and 2.6% in Q4 2018. The tariff leverage is real: $250B of Chinese goods face US duties while China has retaliated on only ~$110B of US goods, creating asymmetric pressure. The Huawei/Meng Wanzhou situation (extradition proceedings approved March 1, hearing March 6) and allied 5G bans (Australia, New Zealand, UK restrictions) give the US additional non-tariff leverage. However, the threat reading is tempered by several risks: (1) Lighthizer's March 12 testimony that 'nothing is really done until everything is done' suggests gaps remain on enforcement and structural issues; (2) Trump's eagerness for a Mar-a-Lago signing summit risks accepting a weak deal heavy on purchases but light on structural reform; (3) Schumer's March 12 criticism that 'China is playing us' reflects bipartisan pressure for a strong deal; (4) US Q1 growth is tracking near stall speed, giving China leverage to wait. The optimal stance is continued firm negotiation \u2014 neither escalating tariffs (which would hurt the slowing US economy) nor prematurely conceding (which would waste the leverage).",
+      "key_factors": [
+        "China manufacturing PMI contraction for 3 consecutive months",
+        "US tariffs covering ~$250B of Chinese goods vs China's ~$110B retaliation",
+        "Lighthizer 'final weeks' testimony March 12 but 'nothing done until everything done'",
+        "Huawei/Meng Wanzhou extradition proceedings underway",
+        "US Q1 2019 GDP tracking near zero (Atlanta Fed 0.3%)",
+        "Trump eagerness for Mar-a-Lago summit risks weak deal",
+        "Schumer bipartisan criticism of potential weak deal",
+        "China detaining two Canadians (Kovrig, Spavor) as retaliation \u2014 reputational cost"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_2019-03-01",
+          "excerpt": "The original 90-day tariff-hike deadline passes without an increase (already delayed on Feb 24)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washingtonpost_2019-03-12",
+          "excerpt": "Lighthizer told the Senate Finance Committee that negotiators are 'working more or less continuously' to reach a deal with China. 'Our hope is that we are in the final weeks' of negotiations."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_2018-12-31",
+          "excerpt": "China's factory activity contracted for the first time in over two years in December. The official PMI fell to 49.4, below the 50-point level."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thediplomat_2019-03-05",
+          "excerpt": "Manufacturing activity contracted for the third consecutive month in February 2019. The official manufacturing PMI has reached its lowest levels since 2009."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2019-03-01",
+          "excerpt": "The Atlanta Fed's GDPNow initial model estimate shows negligible growth for the first quarter \u2014 just 0.3 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes_2019-02-24",
+          "excerpt": "The Chinese have still yet to make written commitments to any of the core issues. The two sides did not sign an official agreement and the White House did not release details on any agreements."
+        }
+      ],
+      "threat_score": -0.35,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-03-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4923,
+        "capped_chars": 4923,
+        "raw_tokens": 1231,
+        "capped_tokens": 1231
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11282,
+        "capped_chars": 11282,
+        "raw_tokens": 2820,
+        "capped_tokens": 2820
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 103716,
+        "capped_chars": 103716,
+        "raw_tokens": 25928,
+        "capped_tokens": 25928
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 374211,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

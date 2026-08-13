@@ -1,0 +1,109 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-11-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8140,
+    "tokens_out": 987,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0085154,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Maintain current tariff posture and continue negotiations without further escalation or concession. The US has already imposed tariffs on $250B of Chinese goods and raised rates on $200B from 10% to 25%; additional escalation risks further harm to US consumers and supply chains, while conceding now would squander leverage. Hold firm and let Phase 1 talks proceed.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but real. The UNCTAD study shows US tariffs have caused a $35B blow to Chinese exports but consumers in the US are bearing the heaviest brunt of higher prices (UNCTAD, 2019). White House adviser Larry Kudlow acknowledged 'both sides will suffer' (Fox Business, May 2019). The USC analysis warns that tariffs will raise costs for American consumers on everything from fish to furniture, and new cars could cost $1,000-$3,000 more (Annenberg/USC). The IMF has cut global growth forecasts partly due to trade tensions (BBC). However, the US also has leverage: China absorbed only 75% of its prior exports to the US despite substantial tariffs, showing vulnerability (UNCTAD). Senator Graham argues this is the best chance to change China's 'cheating ways' on IP theft and market access (Fox Business). The US trade deficit with China stands at $419B (BBC), and the core issues\u2014IP theft, forced technology transfer, market access\u2014remain unresolved. With Phase 1 talks ongoing and the tariff hike to 25% already in effect, the US should hold its current position rather than escalate further (which risks recession and ally defection to third-country suppliers) or concede (which would waste the leverage already built). The trade diversion effect\u2014$21B flowing to Mexico, Vietnam, Taiwan, and the EU\u2014partially offsets Chinese losses but also means US supply chains are already reconfiguring, which is a long-term strategic gain worth preserving.",
+      "key_factors": [
+        "US tariffs on $250B of Chinese goods already in effect, with 25% rate on $200B tranche",
+        "UNCTAD study: $35B Chinese export loss but US consumers bearing heaviest cost burden",
+        "White House adviser Kudlow: 'both sides will suffer'",
+        "IMF cut global growth forecasts citing trade tensions",
+        "US core demands (IP protection, market access, end forced tech transfer) remain unresolved",
+        "Trade diversion of $21B to third countries (Mexico, Vietnam, Taiwan, EU) partially offsets Chinese losses",
+        "Phase 1 negotiations ongoing; premature concession would waste leverage",
+        "US trade deficit with China at $419B; structural issues persist"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "US tariffs caused a 25% export loss, inflicting a US$35 billion blow to Chinese exports in the US market for tariffed goods in the first half of 2019. Consumers in the US are bearing the heaviest brunt of the US tariffs on China."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu",
+          "excerpt": "Consumers will pay more for many products, from fish and furniture to vitamins and virtual reality headsets. Chinese auto parts are found in many cars and some estimate new cars will cost $1,000 to $3,000 more."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China. The International Monetary Fund said the escalation of US-China trade tension was one factor to have contributed to a 'significantly weakened global expansion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "Sen. Lindsey Graham: 'This is the best chance in my lifetime to get China to change their cheating ways. The tariffs are tools that bring China to the table.'"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-11-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 21708,
+        "capped_chars": 17702,
+        "raw_tokens": 5427,
+        "capped_tokens": 4426
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22467,
+  "started_at": "2026-08-13T10:54:41+00:00"
+}

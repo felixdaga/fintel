@@ -1,0 +1,70 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "score": -0.35,
+      "threat_score": -0.35,
+      "action_score": 0,
+      "action_level": "negotiate",
+      "rationale": "RECOMMENDATION: Enter the Trump-Xi G20 meeting with a negotiating posture \u2014 hold the existing tariff coverage (~$250B, with the $200B tranche set to rise to 25% on Jan 1) intact as leverage and press Xi for concrete, enforceable commitments on purchases, market access, and forced-technology-transfer without making any unilateral rollback in advance. Do not pre-concede before the only scheduled direct encounter prior to the January 1 deadline, and do not reflexively escalate further (e.g., new $267B/Apple tariffs) before seeing what Beijing actually offers. Advisory posture: strong, deal-ready, leveraging the credible threat of January escalation as our main negotiating chip.\n\nSUPPORTING RATIONALE: Threat is a mild opportunity, not a danger. The US is the escalator and sits in the stronger position: the US economy is running hot (consumer sentiment 97.5; industrial production ~104 and rising; Fed funds up to 2.20; dollar up ~5% over the window) with no material GDP drag yet (country_health), while China is the more exposed party \u2014 analysts quoted before this date estimate China's growth shaved 0.5\u20130.7pp into 2019 (CNBC, 11/23) and China has already retaliated on ~$110B. That asymmetry gives Washington leverage, supporting a negative threat score. The countervailing constraints that keep it only mildly negative rather than a clean -0.5: real domestic costs are accumulating \u2014 US soybean sales to China down ~94% from last harvest and prices off ~$11 to under $9 hitting the farm belt (NYT 11/5; Politico/LA Times), plus 100+ S&P companies warning on tariff pass-through and tech/market volatility (CNN 11/26). This justifies holding (not extending) the posture and taking a negotiation stance (action_score ~0): deploy existing leverage at Buenos Aires rather than escalate into added uncertainty or concede before Xi makes a matching offer. The Jan 1 increase to 25% is our strongest card, and sitting ready to negotiate while credibly threatening that increase is the optimal play for extracting concessions without paying the domestic/economic cost of a premature capitulation or an unnecessary new round of escalation.",
+      "key_factors": [
+        "US economy strong / no material GDP drag (sentiment 97.5, IP ~104, Fed hiking)",
+        "US holds ~$250B tariff coverage; $200B tranche to rise to 25% on Jan 1 provides leverage",
+        "China more exposed (GDP shaved ~0.5-0.7pp; already retaliated ~$110B)",
+        "Domestic costs: soybean sales to China down ~94%, farm-belt political pressure",
+        "G20 dinner is only scheduled direct encounter before the Jan 1 tariff deadline",
+        "Trump signaling openness to a deal while holding hard line",
+        "Tech/market volatility and 100+ S&P firms warning on tariff damage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% on ~$200B effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "US consumer sentiment 97.5 (Nov), near cycle highs."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Fed funds effective rate rose to 2.20 (Nov)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Nominal broad dollar up ~5% over the 6-month window (111.8 to ~116.8)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NYT 2018-11-05 soybeans farmers",
+          "excerpt": "US soybean sales to China down 94% from last year's harvest; prices fell."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2018-11-23",
+          "excerpt": "China GDP growth shaved 0.5-0.7pp from start of 2019 by trade war."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNN 2018-11-26 G20",
+          "excerpt": "100+ S&P companies warned of tariff damage; Trump threatens $267B/Apple tariffs; G20 only imminent chance before Jan 1."
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

@@ -1,0 +1,109 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-04-25",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9864,
+    "tokens_out": 994,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0102604,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.15,
+      "rationale": "RECOMMENDATION: Escalate tariffs on $200B of Chinese goods from 10% to 25% as threatened, to maintain maximum leverage while negotiations continue. Use the tariff hike as a forcing function to close remaining gaps on structural issues (IP theft, forced tech transfer, enforcement mechanism). Do not settle for a purchase-only mini-deal that leaves core grievances unaddressed.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but real \u2014 soybean prices down 20%, agricultural and manufacturing sectors hurt, and the trade deficit hit a record $400B+ in 2018 (Brookings, Politico). However, the overall economic impact is described as 'a minor blip' for the US economy (Brookings), and China's economy is slowing more severely \u2014 Q4 2018 saw the slowest growth since 1992 (Politico). This asymmetry favors the US.\n\nThe negotiation evidence is mixed but tilts toward US leverage. As of late February 2019, six MOUs were being drafted on structural issues (CNBC, Feb 21), but China 'has offered very few commitments on structural changes' and continued to focus on purchases rather than reform (Politico). Lighthizer told Senator Grassley 'no progress had been made on structural overhaul' (Politico). China's own officials acknowledged they are 'in the sprint phase' with 'some problems still quite complicated' (CNBC). The March 1 deadline had already passed by our decision date, and the tariff hike to 25% had not yet been implemented \u2014 maintaining the threat without executing it risks losing credibility.\n\nThe US has structural leverage: China needs tariff relief more than the US needs a deal (Xi's legitimacy tied to economic stability), and the enforcement mechanism question \u2014 where the US wants to be 'judge and jury' \u2014 is a key US demand that should not be conceded (Politico). Escalating now preserves the credible threat that got China to the table in the first place, while the domestic political calculus (2020 campaign, farm-belt pressure) actually rewards toughness on China. The risk of retaliation exists but China has already tariffed ~85% of US imports, leaving limited room for further escalation on their side.",
+      "key_factors": [
+        "China's economy slowing significantly (worst quarterly growth since 1992) \u2014 US has asymmetric leverage",
+        "Negotiations progressing on MOUs but China offering few structural commitments, focusing on purchases",
+        "US trade deficit with China hit record $400B+ in 2018 \u2014 core grievance unaddressed",
+        "Soybean prices down 20%, agricultural sector hurting \u2014 domestic pressure to show results",
+        "China has already tariffed ~85% of US imports, limiting their retaliatory capacity",
+        "Enforcement mechanism is critical US demand \u2014 must not settle for weak WTO-based enforcement",
+        "March 1 deadline passed without tariff hike \u2014 credibility of threat requires follow-through",
+        "Six MOUs drafted on forced tech transfer, IP, services, currency, agriculture, non-tariff barriers \u2014 framework exists but substance lacking"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "The U.S. exports cars from Southern states like Tennessee... The price of soybeans is already down 20 percent. This is not a big hit for the overall U.S. economy but it will hurt some specific sectors."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnbc.com",
+          "excerpt": "Negotiators are drawing up six memorandums of understanding on structural issues: forced technology transfer and cyber theft, intellectual property rights, services, currency, agriculture and non-tariff barriers to trade."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "China 'has offered very few commitments on structural changes, but continued to focus on buying American goods to reduce the deficit.' Senate Finance Chairman Chuck Grassley conveyed that Lighthizer told him no progress had been made on structural overhaul."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "In the last quarter of 2018, China reported the slowest growth rate since its government began publishing quarterly figures in 1992."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "Final figures for 2018 are expected to show the U.S. deficit in goods trade with China set a new record of more than $400 billion."
+        }
+      ],
+      "threat_score": 0.15,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-04-25",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 31524,
+        "capped_chars": 26295,
+        "raw_tokens": 7881,
+        "capped_tokens": 6574
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 28387,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

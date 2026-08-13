@@ -1,0 +1,119 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-12-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8143,
+    "tokens_out": 816,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0080054,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue engaging in negotiations with the US while maintaining a firm stance on core interests. We should avoid further escalation that could trigger additional US tariffs on the remaining ~$300 billion of Chinese goods, while not making unilateral concessions that undermine our industrial policy goals. A negotiated partial deal that secures tariff rollback on existing duties in exchange for increased agricultural purchases is the best available outcome.\n\nSUPPORTING RATIONALE: The threat to China is significant but not existential at this stage. UNCTAD data shows US tariffs caused a $35 billion export loss for China in H1 2019, with office machinery and communication equipment hit hardest (55% decline). However, Chinese firms maintained 75% of their tariffed exports to the US, demonstrating resilience. The yuan depreciated over 5% against the dollar in 2018, providing a partial offset. The real danger is further escalation: Trump has threatened tariffs on all remaining Chinese imports (~$300 billion), which would devastate consumer electronics and broader export sectors. The IMF has already cut global growth forecasts citing trade tensions. China's strategic retaliation on $110 billion of US goods, targeting Republican-district products like soybeans, has provided some leverage but cannot offset the asymmetry of US tariff reach. The Phase One deal discussions offer a path to freeze escalation and roll back some existing tariffs in exchange for agricultural purchases\u2014a manageable concession that preserves space for China's long-term tech self-sufficiency goals under Made in China 2025.",
+      "key_factors": [
+        "US tariffs caused $35 billion Chinese export loss in H1 2019 (UNCTAD)",
+        "Trump threatened tariffs on remaining ~$300 billion of Chinese imports",
+        "Office machinery and communication equipment sectors hit hardest with 55% trade decline",
+        "Chinese firms maintained 75% of tariffed exports showing resilience",
+        "Yuan depreciated 5%+ in 2018 providing partial offset",
+        "IMF cut global growth forecasts citing US-China trade tensions",
+        "Phase One deal negotiations ongoing as of decision date",
+        "Trade diversion to Vietnam, Mexico, Taiwan reducing China's market share"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "US tariffs caused a 25% export loss, inflicting a US$35 billion blow to Chinese exports in the US market for tariffed goods in the first half of 2019"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "Chinese firms which, despite the substantial tariffs, maintained 75% of their exports to the US"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "The office machinery and communication equipment sectors were hit the hardest, suffering a $15 billion reduction of US imports from China as trade in tariffed goods in those sectors fell by an average of 55%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bbc.com",
+          "excerpt": "Trump has threatened additional tariffs of $267 billion worth of goods, meaning all Chinese imports could be subject to tariffs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bbc.com",
+          "excerpt": "The yuan fell over 5% against the US dollar last year, before broadly stabilising in 2019"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bbc.com",
+          "excerpt": "The International Monetary Fund (IMF) said the escalation of US-China trade tension was one factor to have contributed to a significantly weakened global expansion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness.com",
+          "excerpt": "Lighthizer and Mnuchin thought China was willing to rewrite key national security and trade laws to reduce the theft of intellectual property, open its markets to U.S. financial firms"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-12-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 21708,
+        "capped_chars": 17702,
+        "raw_tokens": 5427,
+        "capped_tokens": 4426
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 17332,
+  "started_at": "2026-08-13T10:55:06+00:00"
+}

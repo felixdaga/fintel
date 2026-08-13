@@ -1,0 +1,129 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 134411,
+    "tokens_out": 4874,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.42,
+      "rationale": "RECOMMENDATION: Hold a measured line and keep the negotiation channel open rather than escalating or capitulating. We should not torch the relationship by escalating further \u2014 that plays into Washington's 'trade war is easy to win' framing and risks the broader export economy \u2014 but we should also make clear, as we already have, that any US tariff imposition will void the May 19 trade outcomes and trigger full retaliation on soybeans, autos and aircraft. Preserve our leverage (agriculture exports that pressure the US farm belt, plus the ~$70B purchase offer) while pushing for the US to stand down on the Section 301 list.\n\nSUPPORTING RATIONALE: The threat is real and concentrated on our high-tech future rather than on current stability. The imminent ~$50B / 25% Section 301 tariff list targets aerospace, ICT, robotics and machinery \u2014 precisely the Made in China 2025 sectors, so this reads as a direct challenge to our technology self-sufficiency goals (threat driver). The ZTE denial order in April was the sharpest firm-level escalation, but it was substantially defused in early June by a deal under which the US suspended the ban after Xi's intervention \u2014 evidence that Washington is willing to bend under leverage, which lowers the existential edge. Our macro position is not under acute stress: the yuan has been stable and foreign-exchange intervention is back to pre-2015 levels, so there is no financial-stability crisis forcing a deal. The 'high' anchor (+0.5) shades toward our case but, with FX stable, the tariffs still prospective (not yet in force at the decision date), and the ZTE crisis defused, a slightly-below-anchor +0.42 is warranted rather than an escalation toward +1.0. On action: restraint is right because we have already demonstrated proportionate retaliation and a concrete purchase offer, and the US re-escalated unilaterally on May 29 \u2014 escalating further now would hand Trump an excuse to broaden the list, while conceding unilaterally would forfeit leverage we clearly retain. Negotiate from strength, hold resilience in reserve, and make our 'void the agreement + full retaliation' condition explicit. action_score 0.0 ('negotiate') reflects this balanced, no-new-commitment posture.",
+      "key_factors": [
+        "Imminent ~$50B Section 301 tariffs (25%) targeting aerospace/ICT/robotics/machinery \u2014 a direct challenge to Made in China 2025 / tech self-sufficiency",
+        "ZTE denial order (Apr 16) was the peak firm-level escalation but was defused by the early-June deal (ban lifted after Xi's personal intervention) \u2014 a US concession",
+        "Yuan stable and FX intervention at pre-2015 levels \u2014 no financial-stability crisis forcing capitulation",
+        "China holds leverage: soybean/agriculture retaliation pressures US farm belt; ~$70B US-goods purchase offer is a concession tool",
+        "May 29 US re-escalation collapsed the May 19 truce; China warned it would void all negotiated outcomes and retaliate fully if tariffs imposed",
+        "Tariffs still prospective at decision date (final list not yet in force) \u2014 threat is real but not yet biting the export economy"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list: ~1,300 Chinese product lines (~$50B), targeting aerospace, ICT, robotics, machinery and related sectors."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.latimes.com/business/la-fi-china-zte-deal-20180607-story.html",
+          "excerpt": "U.S. reached a deal allowing ZTE back in business after record $1.4B fine + management changes; ban suspended for 10 years. Trump said initial fine led to 'too many jobs in China lost'."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.nytimes.com/2018/06/03/world/asia/us-china-trade.html",
+          "excerpt": "US-China trade talks ended in impasse; China said if US introduces tariffs, 'all the economic and trade outcomes negotiated by the two parties will not take effect.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.cbc.ca/news/business/china-tariffs-trade-u-s-trump-1.4684091",
+          "excerpt": "China hints at retaliation on $50B US list (beef, soybeans) as US says $50B tariffs are back on; China offered to buy nearly $70B of US goods if tariffs dropped."
+        }
+      ],
+      "threat_score": 0.42,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2623,
+        "capped_chars": 2623,
+        "raw_tokens": 656,
+        "capped_tokens": 656
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47502,
+        "capped_chars": 47502,
+        "raw_tokens": 11876,
+        "capped_tokens": 11876
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 30890,
+        "capped_chars": 30890,
+        "raw_tokens": 7722,
+        "capped_tokens": 7722
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 409631,
+  "started_at": "2026-08-13T07:45:48+00:00"
+}

@@ -1,0 +1,99 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-09-19",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7589,
+    "tokens_out": 890,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0076734,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should retaliate with targeted tariffs on remaining untaxed US goods and signal willingness to deploy non-tariff measures (rare earths leverage, unreliable entities list) while keeping the door open for negotiations. Retaliation preserves negotiating leverage and signals to domestic and international audiences that China will not accept unilateral pressure. However, escalation beyond tit-for-tat should be avoided to prevent further damage to China's export economy.\n\nSUPPORTING RATIONALE: The threat to China is substantial and rising. The US has already imposed tariffs on $250bn of Chinese goods and raised rates on $200bn from 10% to 25% (BBC, trade war charts). Trump has called for tariffs on 'essentially all remaining imports from China, valued at approximately $300 billion' (Fox Business). This would cover virtually all Chinese exports to the US, directly threatening China's export-dependent growth model and employment in export hubs. The US has also blacklisted Huawei, a critical national champion in 5G technology (Reuters). China's retaliatory capacity is more limited \u2014 it has only imposed duties on $110bn of US goods and has roughly $10bn of untaxed US goods remaining (Reuters). The asymmetry in tariff headroom is a structural disadvantage. However, China retains non-tariff levers: rare earths (supplying 80% of US needs, per Reuters), the unreliable entities list targeting US firms, and potential currency flexibility (yuan already weakened ~4% since July 2018 per Reuters). The threat score of +0.55 reflects that while the situation is serious \u2014 major export sectors at risk, Huawei targeted, and further tariff escalation threatened \u2014 it is not yet existential because China has tools to mitigate damage and the domestic economy is not in crisis. The action_score of -1.0 (maximal within retaliation band) reflects the need to match US escalation firmly: failing to retaliate would signal weakness and invite further pressure. Retaliation is defensive and proportional, preserving China's position as a rules-based actor while maintaining leverage for future negotiations.",
+      "key_factors": [
+        "US raised tariffs on $200bn of Chinese goods from 10% to 25% in May 2019",
+        "Trump threatened tariffs on remaining ~$300bn of Chinese imports",
+        "Huawei blacklisted by US, threatening China's 5G technology ambitions",
+        "China has only ~$10bn of untaxed US goods remaining, limiting tariff retaliation capacity",
+        "China controls 80% of US rare earth supply \u2014 a key non-tariff lever",
+        "Yuan has weakened ~4% since July 2018, partially offsetting tariff impact",
+        "IMF cut global growth forecasts citing US-China trade tensions",
+        "China's 'unreliable entities list' announced as potential countermeasure against US firms"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US imposed tariffs on $250bn worth of Chinese products last year. Beijing has retaliated with duties on $110bn worth of American products. Tariffs on $200bn worth of Chinese goods were due to rise to 25% from 10%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to...",
+          "excerpt": "Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 U.S.-China trade war - the levers they can pull",
+          "excerpt": "China could impose tariffs on around $10 billion of U.S. goods that as yet carry no retaliatory tariffs. China supplies 80% of U.S. rare earths. The Chinese currency has weakened nearly 4 percent since July 2018."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-09-19",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 19056,
+        "capped_chars": 15846,
+        "raw_tokens": 4764,
+        "capped_tokens": 3962
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19536,
+  "started_at": "2026-08-13T10:55:02+00:00"
+}

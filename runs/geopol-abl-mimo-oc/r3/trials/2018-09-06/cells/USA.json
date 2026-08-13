@@ -1,0 +1,161 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.35,
+      "rationale": "RECOMMENDATION: Hold the current tariff posture ($50B in effect, List 3 under consideration) without further escalation for now. Use the breathing room to push for higher-level negotiations focused on structural reforms. Do not implement List 3 until after midterms and until talks have had a chance to produce results at a more senior level.\n\nSUPPORTING RATIONALE: The threat reading is -0.35 (moderate opportunity) because the US economy is well-positioned to absorb the current trade friction while China faces greater structural stress. Consumer sentiment at 100.1 (Sep 2018) is near cycle highs, industrial production is expanding (104.1), and inflation remains contained (CPI +0.78% over the period). The Fed is tightening gradually (1.69% \u2192 1.95%), and the broad dollar has appreciated ~6.3%, giving the US purchasing-power cushion. Meanwhile, China's economy is cooling enough that Beijing is shifting to monetary stimulus and currency stabilization, its stock markets are tumbling, and there are rare internal CCP criticisms of trade policy handling. The US has already demonstrated leverage: $50B in tariffs are in effect with China matching but unable to escalate further without disproportionate harm to its own export economy.\n\nHowever, the action stance is -0.1 (hold, not escalate further) for several reasons. First, List 3 ($200B at 25%) would cross the threshold from intermediate/industrial goods into consumer products, directly raising prices for American voters just two months before midterms \u2014 a political risk the administration cannot afford. Second, the Aug 23 low-level talks were described as 'frank' but produced no breakthrough; however, both sides agreed to 'stay in contact,' suggesting a narrow diplomatic channel exists. Escalating now would close that channel. Third, the administration faces domestic legal headwinds (Cohen plea, Manafort conviction) that make political stability more valuable than trade-war brinksmanship. Fourth, soybean prices have already fallen ~24% and the $12B farmer bailout is generating bipartisan criticism \u2014 further escalation risks eroding the agricultural base. Fifth, the bilateral trade deficit hit a record $36.8B in July, suggesting tariffs alone are not reducing the deficit and that the structural issues (IP theft, forced tech transfer, subsidies) require negotiation, not just tariff pressure. The current $50B in tariffs maintains leverage; List 3 should be held as a credible threat while pursuing a deal at the principals level.",
+      "key_factors": [
+        "US economy strong: consumer sentiment 100.1, IP expanding, CPI contained",
+        "China economy cooling: Beijing shifting to stimulus, currency stabilization, stock market decline",
+        "$50B tariffs fully in effect, China matched but cannot escalate further without self-harm",
+        "List 3 ($200B) would hit consumer goods \u2014 political risk before Nov midterms",
+        "Aug 23 talks were 'frank' but no breakthrough; diplomatic channel still open",
+        "Record bilateral deficit ($36.8B Jul) suggests tariffs alone won't fix structural issues",
+        "Domestic political headwinds: Cohen/Manafort, farmer bailout criticism, Republican divisions",
+        "Trump views tariffs as winning midterm issue but polls show voter skepticism in key states"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-08-23",
+          "excerpt": "List 2 tariffs take effect: US 25% on ~$16B (completing the $50B package). China imposes matching ~$16B retaliation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-08-01",
+          "excerpt": "At Trump's direction, USTR says it is considering raising the proposed List 3 rate from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-07-10",
+          "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for an additional 10% tariff (~6,000 product lines)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_UMCSENT",
+          "excerpt": "Consumer sentiment: 100.1 (Sep 2018), up from 96.2 in Aug \u2014 near cycle highs."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_INDPRO",
+          "excerpt": "Industrial production: 104.1 (Sep 2018), expanding steadily throughout the period."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_CPIAUCSL",
+          "excerpt": "CPI: 252.2 (Sep 2018), +0.78% over 6 months \u2014 contained inflation."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_FEDFUNDS",
+          "excerpt": "Fed funds rate: 1.95% (Sep 2018), up from 1.69% \u2014 gradual tightening."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_DTWEXBGS",
+          "excerpt": "Broad dollar index: 114.75 (Sep 5), up 6.3% over the period \u2014 strong dollar provides purchasing power cushion."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_2018-08-24",
+          "excerpt": "U.S.-China trade talks end with no breakthrough as tariffs kick in. Trump on Monday told Reuters he did not 'anticipate much' from this week's talks."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "uscc_sept_2018",
+          "excerpt": "U.S.-China goods trade deficit reached $36.8 billion in July 2018, the highest monthly deficit on record. Beijing is shifting toward monetary stimulus, stepping up efforts to boost bank lending amid cooling economic growth."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bloomberg_soybeans_2018-07",
+          "excerpt": "Soybean futures sank 14 percent in June. China's tariffs targeting the largest agricultural commodity the country imports from the U.S., accounting for about 60 percent of U.S. $20 billion agricultural exports to China."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico_midterms_2018-07",
+          "excerpt": "Nearly half, or 49 percent, of all respondents to the Pew poll said they feel tariffs are a bad thing for the country. NBC/Marist poll found tariff policy failed to catch on in Pennsylvania, Texas and Illinois."
+        }
+      ],
+      "threat_score": -0.35,
+      "action_score": -0.1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3477,
+        "capped_chars": 3477,
+        "raw_tokens": 869,
+        "capped_tokens": 869
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48144,
+        "capped_chars": 48144,
+        "raw_tokens": 12036,
+        "capped_tokens": 12036
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 69629,
+        "capped_chars": 69629,
+        "raw_tokens": 17406,
+        "capped_tokens": 17406
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 379584,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

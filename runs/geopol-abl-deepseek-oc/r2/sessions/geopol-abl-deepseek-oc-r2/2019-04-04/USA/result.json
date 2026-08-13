@@ -1,0 +1,53 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "score": -0.2,
+      "threat_score": -0.2,
+      "action_score": 0,
+      "action_level": "negotiate",
+      "rationale": "RECOMMENDATION: Continue the high-level negotiating track and work toward closing a deal, keeping the threatened List 3 escalation (10%\u219225%) and a snapback enforcement mechanism on the table as leverage, but do not escalate now and do not concede enforcement or structural terms prematurely. Our posture should be to hold current tariffs while driving to signature \u2014 ideally at the planned summit \u2014 because the opponent is currently making more concessions than we are.\n\nSUPPORTING RATIONALE: The threat to US interests from the current state of the dispute is low-to-modest (threat_score \u22120.2). The escalation wave of 2018 has been contained: the timeline shows tariffs held at 10% on ~$250B since the Dec 1 G20 truce and the March 1 hike repeatedly delayed as talks progressed (event_timeline: 2018-12-01, 2019-02-24, 2019-03-01, 2019-04-03). Lighthizer publicly said negotiations are in the 'final weeks,' and officials reported 'unprecedented' Chinese movement on forced tech transfer, with progress across IP, currency, and purchases (web_search: CNBC 2019-03-28; WaPo 2019-03-12). This is favorable terrain \u2014 the US is extracting concessions and being seen as tough, closer to the \u22120.5 opportunity anchor, but I temper it because the deal is unfinished, enforcement remains the sticking point, and a failed summit could snap tariffs back to 25% with market/ally fallout. Macro confirms no material trade-war damage yet: consumer sentiment recovered to ~97, Baa credit spreads tightened to ~4.75%, though long-end yields are sharply lower (~2.5% on 10Y) and industrial production is drifting down \u2014 i.e., the economy can absorb continued negotiation but not an abrupt escalation. Hence action_score ~0.0 with action_level negotiate: escalate now would both risk derailing a working negotiation and add domestic uncertainty, while full concession would forfeit the leverage that is producing these concessions. The right move is to keep negotiating with the credible threat of escalation intact but unlevered until the deal is reached or talks clearly fail.",
+      "key_factors": [
+        "Section 301 tariffs ~$250B held at 10%, 25% hike repeatedly deferred since Dec 2018 G20 truce",
+        "Lighthizer: talks in 'final weeks'; China making unprecedented tech-transfer/purchase/currency concessions",
+        "Enforcement mechanism and structural IP/tech-transfer remain unresolved sticking points",
+        "US macro stable/slightly soft: sentiment ~97, credit spreads tight, but 10Y yields down sharply and IP drifting",
+        "US holds strong leverage via threatened tariff hike and snapback; deal target end-April at summit"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires: 90-day window, Jan 1 List 3 hike suspended, tariffs remain at 10%"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks; both sides report progress on text incl. enforcement; no final deal"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.cnbc.com/2019/03/28/china-makes-unprecedented-offers-to-us-on-tech-transfer-trade.html",
+          "excerpt": "China makes unprecedented proposals on tech transfer; progress in all areas, IP/enforcement still sticking points"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.washingtonpost.com/business/economy/trump-trade-official-says-us-china-in-final-weeks-of-talks-for-a-deal/2019/03/12/c6af3a34-44e6-11e9-8aab-95b8d80a1e4f_story.html",
+          "excerpt": "Lighthizer: 'in final weeks' of negotiations, making headway on toughest issues"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment recovered to 97.2 (Apr 2019) after Jan dip to 91.2"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DBAA",
+          "excerpt": "Baa corporate yield tightened to ~4.75% (Apr 2019), credit conditions improving"
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

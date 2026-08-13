@@ -1,0 +1,153 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 186152,
+    "tokens_out": 3604,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: Keep the existing Section 301 tariff schedule in place as leverage and continue the Washington round with Liu He without new hikes or rollbacks. Press for a written, enforceable package on IP, forced tech transfer, and a snap-back mechanism; treat Chinese purchase offers as a down payment, not the deal. If talks remain productive into the March 1 window, hold List 3 at 10% rather than automatically lifting it to 25%\u2014do not trade away tariffs for a handshake.\n\nSUPPORTING RATIONALE: Threat is a modest US opportunity, not a high-danger moment. The G20 truce (2018-12-01) froze the List 3 hike and opened a 90-day window; subsequent rounds (2019-01-07, 2019-01-30, 2019-02-14) show purchase progress while enforcement and structural IP/tech-transfer issues remain open\u2014exactly the 301 case that started this (2018-03-22). That is leverage, not distress: China\u2019s SA merchandise exports are down ~8.7% in the window and Beijing has resumed soybean buying and dangled larger purchases, while US VIX has fallen back to 14.02 (2019-02-20) from the December spike. Offsetting costs are real but contained\u2014US goods exports to China are down ~17% (EXPCH), industrial production has slipped to 102.8, and Michigan sentiment dipped to 91.2 in January before a partial rebound to 93.8\u2014so this is not a +0.5 GDP-drag reading. Escalating List 3 to 25% now, while Trump has already said March 1 \u201cis not a magical date\u201d and Mnuchin called Beijing talks \u201cproductive,\u201d would risk collapsing a live negotiation and inviting broader retaliation against farm-belt goods. Conceding or rolling back would repeat the May 2018 false truce (2018-05-19/05-29): purchases without an enforcement mechanism. Huawei/Meng charges (2019-01-28) and the Kovrig/Spavor detentions sit on a parallel legal/consular track; they raise atmosphere risk but the White House has kept them formally separate from the trade table, so they do not justify either a hostage-style concession or a tariff blow-up this week.",
+      "key_factors": [
+        "Live high-level talks with purchase progress but no enforcement/IP deal",
+        "Existing ~$250B Section 301 coverage is the main US lever; March 1 List 3 hike is optional not mandatory",
+        "China export softening and resumed ag purchases show opponent under more pressure than the US",
+        "US farm-export and sentiment costs are real but not recessionary",
+        "Huawei/Meng legal track is formally separate; do not bargain it into a trade concession"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-14",
+          "excerpt": "Another round of talks (through Feb 15). Progress reported on purchases; enforcement mechanism still disputed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-30",
+          "excerpt": "Lighthizer and Mnuchin in Beijing for high-level talks. Purchase commitments discussed; enforcement and structural IP/tech-transfer issues unresolved."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-22",
+          "excerpt": "USTR Section 301 report finding China's IP/tech-transfer practices unreasonable or discriminatory."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "EXPCH",
+          "excerpt": "US exports to China latest 8083.6 (2019-02) vs 9733.1 (2018-09), about -17% in the window."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "XTEXVA01CNM667S",
+          "excerpt": "China merchandise exports latest 197.6B (2019-02) vs 216.3B (2018-09), about -8.7%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "VIXCLS",
+          "excerpt": "VIX 14.02 on 2019-02-20 after December spike above 36; market stress has receded during the truce."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Michigan sentiment 91.2 in Jan 2019 then 93.8 in Feb, down from 100.1 in Sep 2018\u2014softening, not collapse."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.npr.org/2019/02/20/696343041/trade-talks-with-china-continue-as-trump-shies-from-a-hard-deadline-for-a-deal",
+          "excerpt": "Talks continue in Washington; Trump said March 1 'is not a magical date' and the real question is whether to raise tariffs."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.washingtonpost.com/world/asia_pacific/mnuchin-calls-us-china-trade-talks-productive-but-no-sign-of-a-deal/2019/02/15/1fe22818-3106-11e9-ac6c-14eea99d5e24_story.html",
+          "excerpt": "Mnuchin called Beijing talks productive; White House said much work remains on structural issues; Trump said he might extend if close."
+        }
+      ],
+      "threat_score": -1,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5015,
+        "capped_chars": 5015,
+        "raw_tokens": 1254,
+        "capped_tokens": 1254
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46548,
+        "capped_chars": 46548,
+        "raw_tokens": 11637,
+        "capped_tokens": 11637
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 69508,
+        "capped_chars": 69508,
+        "raw_tokens": 17376,
+        "capped_tokens": 17376
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 70402,
+  "started_at": "2026-08-13T06:37:57+00:00"
+}

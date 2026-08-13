@@ -1,0 +1,58 @@
+{
+  "decision_date": "2018-07-05",
+  "status": "partial",
+  "cells": [
+    {
+      "cell": "USA",
+      "symbols": [
+        "USA"
+      ],
+      "status": "failed",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 529395,
+      "usage": {
+        "n_llm_calls": 10,
+        "tokens_in": 594466,
+        "tokens_out": 16778,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "error": "5 tool error(s) the agent saw (MCP timeout/connection); agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+      "health": "broken",
+      "health_issues": [
+        "5 tool error(s) the agent saw (MCP timeout/connection)",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >="
+      ]
+    },
+    {
+      "cell": "CHN",
+      "symbols": [
+        "CHN"
+      ],
+      "status": "ok",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 403023,
+      "usage": {
+        "n_llm_calls": 5,
+        "tokens_in": 225231,
+        "tokens_out": 5575,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "health": "ok",
+      "health_issues": []
+    }
+  ],
+  "n_views": 2,
+  "missing": [],
+  "started_at": "2026-08-13T05:59:47+00:00",
+  "finished_at": "2026-08-13T06:24:12+00:00",
+  "duration_ms": 0,
+  "health": "broken"
+}

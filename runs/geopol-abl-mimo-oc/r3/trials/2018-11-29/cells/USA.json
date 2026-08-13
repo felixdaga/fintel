@@ -1,0 +1,136 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-11-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Use the G20 meeting with Xi to engage in substantive negotiations without making new concessions or commitments. Hold the January 1 tariff increase as leverage but signal willingness to discuss a framework. The US has created significant negotiating pressure through three tariff rounds covering $250B of Chinese imports \u2014 now is the time to test whether China's pain threshold produces real structural concessions, not to escalate further while domestic costs mount.\n\nSUPPORTING RATIONALE: The threat reading of +0.35 reflects a situation where the US has leverage but is not unscathed. On the threat side, the trade war has inflicted real costs: the S&P 500 erased all 2018 gains as of Nov 20, FAANG stocks are in bear market territory (-20%+), business investment is slowing due to uncertainty, and US farmers/retailers are suffering from retaliation and import cost inflation (CNN, Nov 19; USA Today, Nov 20). The Axios report (Nov 27) confirms Trump's unwavering faith in tariffs, but a former top trade official warned 'Wall Street needs to stop being so optimistic that Trump is going to negotiate away this China thing in the relatively near future' \u2014 suggesting the market expects a prolonged fight that will continue to drag on US equities and confidence.\n\nHowever, the balance of leverage favors the US. China's manufacturing PMI dropped to a 27-month low of 50.2 in October, with export orders contracting sharply at 46.9 (Caixin, Oct 31). GDP growth hit 6.5% \u2014 the weakest since the 2009 financial crisis. Over 70% of US firms in southern China are considering relocating manufacturing (Reuters, Oct 29). China has already offered 142 concessions, which Trump rejected as insufficient (CNN, Nov 19). The Rabobank analysis (Nov 26) shows China bearing disproportionate economic losses, especially under escalation scenarios. China's retaliatory capacity is nearly exhausted \u2014 they've already tariffed 87% of US exports to China.\n\nThe action score of +0.1 (negotiate) reflects the strategic calculus: the US has extracted maximum leverage through the tariff escalation to date, and further escalation (moving to 25% on Jan 1 or tariffing the remaining $257B) risks tipping the US into recession while only marginally increasing pressure on China, which is already weakening significantly. Conversely, premature rollback would waste the leverage built over 10 months. The G20 meeting is the right venue to probe for a deal framework \u2014 specifically around IP protection, forced tech transfer, and market access \u2014 without committing to anything concrete. The Jan 1 deadline provides natural pressure. If China offers meaningful structural reforms (not just purchase commitments), a partial delay of the rate increase could be explored. If not, the increase goes ahead as planned.",
+      "key_factors": [
+        "S&P 500 erased all 2018 gains; FAANG stocks in bear market (-20%+)",
+        "China manufacturing PMI at 27-month low (50.2); export orders contracting (46.9)",
+        "China offered 142 concessions \u2014 rejected as 'not acceptable' by Trump",
+        "Jan 1 deadline: 10% tariff on $200B set to rise to 25%",
+        "APEC failed to produce joint statement for first time in history",
+        "Business investment slowing due to tariff uncertainty",
+        "70%+ of US firms in southern China considering relocating",
+        "China retaliation nearly exhausted \u2014 87% of US exports to China already tariffed"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn_2018-11-19",
+          "excerpt": "China offered a list of 142 concessions that Trump described as 'not acceptable.' The collapse of preliminary meetings leaves the two leaders without staff-negotiated draft agreements."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "axios_2018-11-27",
+          "excerpt": "Trump told WSJ the likelihood of delaying the January tariff increase was 'highly unlikely.' A former top trade official said: 'Maybe Wall Street needs to stop being so optimistic that Trump is going to negotiate away this China thing.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usatoday_2018-11-20",
+          "excerpt": "The latest wave of selling erased the 2018 gains for the Dow and S&P 500. More than 45% of S&P 500 stocks are down more than 20% from their highs \u2014 nearly half in bear market territory."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "caixin_2018-10-31",
+          "excerpt": "China's manufacturing PMI dipped to 50.2 in October \u2014 lowest since July 2016. New export orders dropped to 46.9, falling further into contraction amid escalating trade war."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "rabobank_2018-11-26",
+          "excerpt": "China disproportionately bears the brunt of a US-China trade war. In escalation scenario, China loses ~USD 1,500 per capita vs USD 1,100 for the US. China's currency depreciation further amplifies losses."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-11-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3976,
+        "capped_chars": 3976,
+        "raw_tokens": 994,
+        "capped_tokens": 994
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11485,
+        "capped_chars": 11485,
+        "raw_tokens": 2871,
+        "capped_tokens": 2871
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 86162,
+        "capped_chars": 86162,
+        "raw_tokens": 21541,
+        "capped_tokens": 21541
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 387005,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

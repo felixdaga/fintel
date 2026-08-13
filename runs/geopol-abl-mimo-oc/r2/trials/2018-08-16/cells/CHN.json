@@ -1,0 +1,136 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-08-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.52,
+      "rationale": "RECOMMENDATION: Maintain current retaliatory posture without further escalation. Hold the announced $60B retaliation in reserve as leverage, do not escalate further, and signal willingness to negotiate while managing domestic economic fallout through targeted monetary easing and fiscal support. Avoid weaponizing the yuan \u2014 the depreciation risks are too high given capital flight concerns.\n\nSUPPORTING RATIONALE: The threat score of +0.52 reflects that China faces a severe and accelerating tariff assault \u2014 $34B already in effect, $16B coming Aug 23, and the $200B List 3 raised from 10% to 25% on Aug 1, which if enacted would cover nearly half of all Chinese exports to the US (timeline entries Jun 15\u2013Aug 1). The ZTE denial order (Apr 16) exposed critical supply chain vulnerability in semiconductors that cannot be quickly replaced. GDP has slowed to 6.7% in Q2, industrial output fell to a 2-year low of 6.0% in June, and fixed asset investment hit a record low \u2014 all BEFORE the tariffs' real bite hits in H2 (Reuters, Jul 16). The yuan has depreciated ~6% since March, providing some cushion but raising capital flight concerns (France24, Jul 20; Business Insider, Jul 8). China's deleveraging campaign constrains the policy response: easing monetary policy supports growth but undermines financial stability goals (CNBC, Jul 18; MERICS, Jul 20). China also runs out of US goods to tariff \u2014 it imported only $135B from the US last year versus $505B in exports \u2014 meaning proportional retaliation has a ceiling (LATimes, Jul 10). The action score of -0.10 reflects a hold posture: China should maintain announced retaliatory measures to demonstrate resolve but should NOT escalate further. Escalation at this point risks: (a) provoking the full $200B+ tariff implementation, (b) triggering capital outflows if the yuan weakens sharply, and (c) undermining the deleveraging campaign by forcing aggressive stimulus. The $60B retaliation announced Aug 3 is already a signal of resolve. Meanwhile, Larry Kudlow's Aug 3 comments suggest some openness to revived negotiations on the US side \u2014 a window that should be explored rather than slammed shut. Domestically, Beijing should focus on targeted support for affected export sectors and manage the yuan depreciation carefully rather than weaponizing it, which analysts warn would be 'too costly' (Deutsche Bank, Citigroup \u2014 Business Insider, Jul 8).",
+      "key_factors": [
+        "$200B List 3 tariff raised to 25% \u2014 covers nearly half of Chinese exports to US",
+        "ZTE denial order exposed semiconductor supply chain vulnerability",
+        "GDP slowing to 6.7%, industrial output at 2-year low (6.0%) before tariff impact hits",
+        "Yuan depreciated ~6% since March \u2014 cushion but also capital flight risk",
+        "China runs out of US goods to tariff before matching $200B (imports $135B vs exports $505B)",
+        "Deleveraging campaign constrains monetary policy response",
+        "No active negotiations since May truce collapsed",
+        "US consumer sentiment declining but administration showing willingness to absorb pain"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-08-01",
+          "excerpt": "At Trump's direction, USTR says it is considering raising the proposed List 3 rate from 10% to 25%"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_china_q2_gdp_2018-07-16",
+          "excerpt": "Industrial output for June matched the slowest growth rate in over two years at 6.0 percent and missed forecasts of 6.5 percent expansion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "france24_yuan_2018-07-20",
+          "excerpt": "The yuan fell to 6.7943 per dollar, its lowest levels in a year. Its decline provides a significant offset to the loss in export competitiveness"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "latimes_200b_tariffs_2018-07-10",
+          "excerpt": "China only bought about $135 billion in U.S. goods last year, meaning it will run out of American products to tax before it matches Trump's latest move"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "merics_q2_2018-07-20",
+          "excerpt": "The direct effects of tariffs on economic growth are likely to be subdued, but indirect effects on the economy will likely lead to a less stable economic environment"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT_2018-08-01",
+          "excerpt": "US consumer sentiment fell from 101.4 in March to 96.2 in August \u2014 a 5.1% decline"
+        }
+      ],
+      "threat_score": 0.52,
+      "action_score": -0.1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-08-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3319,
+        "capped_chars": 3319,
+        "raw_tokens": 830,
+        "capped_tokens": 830
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48158,
+        "capped_chars": 48158,
+        "raw_tokens": 12040,
+        "capped_tokens": 12040
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 95005,
+        "capped_chars": 95005,
+        "raw_tokens": 23752,
+        "capped_tokens": 23752
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 416719,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

@@ -1,0 +1,139 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-06-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 146228,
+    "tokens_out": 3818,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Go into the G20 Osaka meeting with Xi holding our current leverage but seeking a Buenos Aires-style truce: resume negotiations, keep existing tariffs and the Huawei entity list in place, and refrain from activating the threatened next $300B round absent real progress. Do not further escalate before or during the summit; use the meeting to restart the negotiating track and lock in a freeze on escalation, positioning any tariff concessions as conditional on China's structural commitments.\n\nSUPPORTING RATIONALE: Threat is moderately elevated, not existential. The real US economy is still strong (consumer sentiment 98.2, benign CPI, industrial production roughly flat per country_health), and Washington holds substantial leverage (25% tariffs on ~$250B already live since List 3 rose to 25% on 2019-05-10, plus the Huawei entity list added 2019-05-16). The threat drivers are forward-looking and political: the 10-yr Treasury yield has collapsed from ~2.69% (late 2018) to 2.05% by 2019-06-26 with the 2-yr at 1.77%, compressing the 10s-2s curve toward inversion \u2014 markets pricing growth/recession risk from the stalemate \u2014 and the farm belt is in acute pain (China, formerly buyer of ~1/3 of US soybeans, has stopped buying), forcing a second aid package ($16B announced May 23) and drawing public balking from GOP senators like Grassley ahead of 2020. Reuters' pre-summit reporting described a 'poisonous atmosphere' and low expectations, with the likeliest favorable path a temporary truce that postpones the $300B threat. Against that backdrop, further escalation is the wrong move: it would deepen market stress, intensify farm-belt/domestic political blowback, and alienate allies we need for WTO reform \u2014 while a negotiate/hold stance preserves all our bargaining chips and sets up a conditional de-escalation. Action is thus mild de-escalatory posture (negotiate, ~+0.1), not concession: no rollbacks or purchase commitments until China offers matching structural concessions.",
+      "key_factors": [
+        "Tariff peak: 25% on ~$250B live since 2019-05-10; Huawei entity list 2019-05-16",
+        "Yield-curve stress: 10s-2s ~28bp near inversion; 10-yr 2.69%\u21922.05%",
+        "Farm-belt political cost: second aid package ($16B, May 23); Grassley/GOP balking",
+        "June 18 confirmed Trump-Xi G20 Osaka meeting + resumption of talks",
+        "Strong US fundamentals: consumer sentiment 98.2, benign CPI, flat IP",
+        "Low pre-summit expectations; most likely outcome a truce postponing $300B round"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-10",
+          "excerpt": "List 3 tariff rate rises from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-06-18",
+          "excerpt": "Trump and Xi agree by phone to meet at the G20 in Osaka."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10-yr Treasury yield 2.69% (2018-12-31) to 2.05% (2019-06-26)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS2",
+          "excerpt": "2-yr Treasury yield 2.48% (2018-12-31) to 1.77% (2019-06-26); narrow 10s-2s spread."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment 98.2 (June 2019), near cycle high."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters expectations low Trump-Xi talks",
+          "excerpt": "Expectations low; atmosphere poisonous; likeliest outcome a temporary truce postponing tariff escalation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NYT farm aid $16B",
+          "excerpt": "Trump gives farmers $16 billion in aid amid prolonged China trade war; GOP senators balk."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-06-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4647,
+        "capped_chars": 4647,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47660,
+        "capped_chars": 47660,
+        "raw_tokens": 11915,
+        "capped_tokens": 11915
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 55077,
+        "capped_chars": 55077,
+        "raw_tokens": 13769,
+        "capped_tokens": 13769
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 282004,
+  "started_at": "2026-08-13T07:49:19+00:00"
+}

@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-09-19",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7586,
+    "tokens_out": 1068,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0082044,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should maintain and implement the planned tariff escalation on remaining Chinese imports while continuing negotiations. The leverage created by tariffs is the primary tool to force structural changes on IP theft, forced technology transfer, and market access. We should proceed with the scheduled tariff increases while keeping the door open for talks, but not make concessions without verifiable commitments from Beijing.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate-to-elevated (0.35). The trade deficit with China stood at $419 billion, reflecting deep structural imbalances. China's unfair practices\u2014IP theft, forced technology sharing, subsidies to domestic firms, and restricted market access\u2014pose a genuine long-term threat to US technological leadership in AI, cloud computing, robotics, and green tech (Annenberg/USC analysis). The IMF has flagged US-China trade tensions as contributing to 'significantly weakened global expansion,' and Larry Kudlow himself acknowledged 'both sides will suffer.' However, the US economy is not in existential danger: the Dow Jones was up ~11% in 2019, and the US has diversified supply chain options. The threat is real but manageable.\n\nThe action_score of -1 (maximal escalation via tariffs) is justified because: (1) Senator Graham's assessment that 'this is the best chance in my lifetime to get China to change their cheating ways' reflects broad bipartisan support for using tariffs as leverage; (2) China's retaliatory capacity is asymmetrically limited\u2014Beijing has only ~$10B of untariffed US goods remaining, while the US still has ~$300B+ of Chinese goods to target; (3) China's supply chain dependency is the key pressure point\u2014tariffs are already redirecting supply chains away from China to other countries, as Graham noted; (4) the Huawei entity-list action and potential sanctions on Hikvision show non-tariff tools are also being deployed effectively. The risk of consumer cost increases (estimated $1,000-$3,000 per new car) is real but is a calculated cost of forcing structural reform. Conceding now would waste the leverage already built up over a year of tariff pressure.",
+      "key_factors": [
+        "$419B US trade deficit with China reflects structural imbalance",
+        "China's IP theft, forced tech transfer, and market restrictions threaten US tech leadership",
+        "IMF flagged trade tensions as weakening global expansion",
+        "US has asymmetric leverage: $300B+ of Chinese goods still available to tariff vs China's ~$10B remaining",
+        "Bipartisan support for tariff strategy (Graham: 'best chance to get China to change')",
+        "Supply chain diversification away from China is already underway",
+        "Dow Jones up ~11% in 2019, showing US economy resilient enough to sustain pressure",
+        "Huawei entity list and potential Hikvision sanctions provide additional non-tariff leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com - Trade war: US-China trade battle in charts",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. Not only does the US accuse China of stealing intellectual property, but it wants Beijing to make changes to its economic policies, which it says unfairly favour domestic companies through subsidies. The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu - Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech. The U.S. is concerned that while China has had ready access to the U.S. market and to invest in the U.S., American companies are locked out of these markets in China."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "This is the best chance in my lifetime to get China to change their cheating ways. The tariffs are tools that bring China to the table. I'm standing 100 percent with the president."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com - U.S.-China trade war - the levers they can pull",
+          "excerpt": "China could impose tariffs on around $10 billion of U.S. goods that as yet carry no retaliatory tariffs... The United States could increase tariffs on Chinese imports... One option would be to raise levies on $50 billion worth of Chinese technology goods"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-09-19",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 19056,
+        "capped_chars": 15846,
+        "raw_tokens": 4764,
+        "capped_tokens": 3962
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20979,
+  "started_at": "2026-08-13T10:55:19+00:00"
+}

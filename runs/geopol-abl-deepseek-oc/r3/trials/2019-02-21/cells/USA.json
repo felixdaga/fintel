@@ -1,0 +1,123 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 138163,
+    "tokens_out": 3866,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.2,
+      "rationale": "RECOMMENDATION: Stay in the negotiation lane and press the talks to a deal rather than break the truce by escalating. The suspended January List 3 hike (10% to 25% on ~$200B) is a credible lever that expires at the March 1 deadline, so we should use it to extract enforceable Chinese commitments on purchases and structural issues while keeping the option of extending the deadline if talks are making genuine progress. Do not unilaterally escalate now, and do not concede the enforcement/IP platform we still hold.\n\nSUPPORTING RATIONALE: For the USA this dispute reads as a mild opportunity rather than a threat. The US holds the offensive \u2014 it imposed Section 301 tariffs on ~$250B of Chinese goods (timeline: 2018-09-24) and forced a 90-day truce at G20 (2018-12-01) that froze the 25% hike \u2014 while China's economy is slowing and Beijing is eager to avoid the tariff jump. That is leverage to extract concessions and a domestic political credit for being tough on China. However, the threat is not a clean -0.5: China's retaliation has already hit US exports (soybeans, autos; 2018-04-04, 2018-09-24), and the macro picture is softening \u2014 University of Michigan sentiment fell to a Trump-presidency low in January (UMCSENT), industrial production dipped, and the 10Y yield drifted down to ~2.65% while economists' surveys ranked the trade war as the top 2019 US downside risk (web search). The near-term hazard is a hard deadline failure re-triggering full escalation into a fragile market. That mix justifies negotiate (action_score 0.0): we keep our leverage and the suspended tariff threat, seek an enforceable agreement, and avoid both a destabilizing escalation and a premature concession on enforcement/tech-transfer issues.",
+      "key_factors": [
+        "US holds ~$250B Section 301 tariffs and the suspended 25% hike as leverage",
+        "90-day truce expires ~March 1; talks progressing on purchases but enforcement/IP unresolved",
+        "China economy slowing and eager to avoid tariff escalation",
+        "US macro softening: sentiment near low, IP down, 10Y falling, economists flag trade war as top risk",
+        "Farm-belt/export retaliation already in effect"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-14",
+          "excerpt": "Another round of talks. Progress reported on purchases; enforcement mechanism still disputed."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment fell to 91.2 (Jan) then 93.8 (Feb) from 100.1 in Sep."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.businessinsider.com/trump-china-trade-war-tariffs-biggest-2019-us-economic-threat-2018-12",
+          "excerpt": "47% of economists cited the trade war with China as the top 2019 US economic threat."
+        }
+      ],
+      "threat_score": -0.2,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5015,
+        "capped_chars": 5015,
+        "raw_tokens": 1254,
+        "capped_tokens": 1254
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46548,
+        "capped_chars": 46548,
+        "raw_tokens": 11637,
+        "capped_tokens": 11637
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 34454,
+        "capped_chars": 34454,
+        "raw_tokens": 8613,
+        "capped_tokens": 8613
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 428418,
+  "started_at": "2026-08-13T07:45:29+00:00"
+}

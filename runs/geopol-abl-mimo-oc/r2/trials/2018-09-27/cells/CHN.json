@@ -1,0 +1,142 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-09-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: China should pursue calibrated negotiation without making preemptive concessions, while continuing to deploy domestic stimulus to offset tariff damage. Retaliate symmetrically on any further escalation, but signal willingness to talk \u2014 the asymmetry of the trade relationship means time is not on China's side, and the List 3 escalation to 25% in January 2019 would be significantly more damaging than the current 10%. Avoid further yuan depreciation beyond what has already occurred to prevent capital flight and accusations of manipulation.\n\nSUPPORTING RATIONALE: The threat reading of +0.65 reflects the severe and escalating nature of the trade war as of September 27, 2018. The US has now imposed tariffs on approximately $250 billion of Chinese imports across three lists (timeline entry 2018-09-24: List 3 took effect at 10%, combined Section 301 coverage ~$250B), and Trump has explicitly threatened to tariff ALL remaining Chinese imports (~$267B more) if China retaliates (timeline entry 2018-06-18). Economists estimate tariffs could reduce Chinese GDP growth by 0.5-0.6 percentage points in 2019 if List 3 rises to 25% as scheduled (CNBC, Sept 19, 2018). The Caixin PMI fell to a 14-month low of 50.6 in August with export orders declining for five consecutive months (CNBC, Sept 3, 2018), and Premier Li Keqiang acknowledged 'greater difficulties in keeping stable performance of the Chinese economy' (CNBC, Sept 19). The yuan has depreciated ~7% against the dollar since April, providing some offset but raising capital flight risks \u2014 the PBOC reintroduced the counter-cyclical factor in late August to arrest the decline (Reuters, Sept 3). China's retaliatory capacity is constrained by the trade asymmetry: China exports ~4x as much to the US as it imports, meaning matching retaliation has a ceiling. Meanwhile, the US economy shows remarkable strength \u2014 consumer sentiment at 100.1, industrial production rising, dollar appreciating ~5.5% \u2014 meaning the US can absorb trade war pain more easily.\n\nThe action score of -0.15 (mild negotiate) reflects a strategic calculus: China cannot win an escalation spiral given the asymmetry, but neither should it capitulate. The List 3 tariff is only at 10% now, not 25% \u2014 there is a window before January 2019 to explore terms. China should leverage its remaining tools (stimulus, selective retaliation, multilateral positioning as defender of WTO rules) while engaging diplomatically. Domestically, the RRR cuts and infrastructure spending already underway should be accelerated. The goal is to buy time and reach a framework that avoids the 25% escalation without conceding structural issues (Made in China 2025, state subsidies) that would undermine long-term strategic objectives.",
+      "key_factors": [
+        "US tariffs now cover ~$250B of Chinese imports; List 3 at 10% scheduled to rise to 25% Jan 1, 2019",
+        "Trump has threatened tariffs on ALL remaining Chinese imports (~$267B) if China retaliates",
+        "Trade asymmetry limits China's retaliatory capacity (exports 4x more to US than it imports)",
+        "Caixin PMI at 14-month low (50.6), export orders declining 5 straight months",
+        "Yuan depreciated ~7% vs dollar since April; PBOC defending 7.0 level, capital flight risk",
+        "US economy strong (consumer sentiment 100.1, industrial production rising), can absorb trade war pain",
+        "Economists estimate 0.5-0.6pp GDP hit to China from tariff escalation",
+        "China deploying stimulus (RRR cuts, infrastructure) to offset slowdown",
+        "List 3 escalation to 25% in January would be significantly more damaging than current 10%"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-18",
+          "excerpt": "Trump directs USTR to identify an additional ~$200B of Chinese imports for 10% tariffs if China retaliates against the $50B action."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC-2018-09-19",
+          "excerpt": "JP Morgan expects China's growth to slow by 0.6 percentage points because of the weakening of both export and import activity. The current tariffs are likely to affect U.S. growth modestly, by 0.1 or 0.2 percentage points."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC-2018-09-03",
+          "excerpt": "The private Caixin/Markit Purchasing Manager's Index came in at 50.6, down from 50.8 in July... export sales fell for the fifth straight month... China's economy is now facing relatively obvious downward pressure."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters-2018-09-03",
+          "excerpt": "China's central bank reintroduced a 'counter-cyclical factor' in its daily yuan fixing, arresting a record-breaking 10-week fall in the yuan's value that saw it dip to 6.9340 per dollar."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT-2018-09",
+          "excerpt": "University of Michigan Consumer Sentiment at 100.1 in September 2018, up from 96.2 in August \u2014 US economy showing resilience."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC-2018-09-19-Li",
+          "excerpt": "Chinese Premier Li Keqiang said Wednesday that his government is able to help the Chinese economy withstand challenges, but that the economy is inevitably affected by changes in the global economy and trade. 'Indeed, we're facing greater difficulties in keeping stable performance of the Chinese economy.'"
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-09-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4035,
+        "capped_chars": 4035,
+        "raw_tokens": 1009,
+        "capped_tokens": 1009
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48411,
+        "capped_chars": 48411,
+        "raw_tokens": 12103,
+        "capped_tokens": 12103
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 56243,
+        "capped_chars": 56243,
+        "raw_tokens": 14060,
+        "capped_tokens": 14060
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 387997,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

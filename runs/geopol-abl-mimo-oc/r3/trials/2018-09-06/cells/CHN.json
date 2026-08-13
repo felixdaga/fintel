@@ -1,0 +1,142 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-09-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: Maintain current retaliatory posture without further escalation, while signaling willingness to negotiate. China should hold its $50B in matching tariffs in place, continue domestic economic stabilization (RRR cuts, targeted fiscal stimulus), and leave the door open for talks \u2014 but should not initiate new escalation or make unilateral concessions. The priority is buying time for domestic adjustment while the asymmetry of further escalation works against us.\n\nSUPPORTING RATIONALE: The threat reading of +0.65 reflects a genuinely dangerous but not yet existential situation. On the threat side: (1) $50B in tariffs are already in effect (List 1 effective Jul 6, List 2 effective Aug 23, per timeline entries), with $200B+ List 3 proposed at an escalated 25% rate (Aug 1 USTR announcement) \u2014 if implemented, this would cover roughly half of China's ~$500B in US-bound exports and impose a meaningful GDP drag; (2) The ZTE denial order (Apr 16) exposed devastating supply-chain vulnerability in Chinese tech, demonstrating the US can weaponize component dependencies; (3) China's retaliatory capacity is structurally constrained \u2014 we can only match ~$130B in US imports versus $500B+ the US can target, creating an asymmetric escalation disadvantage; (4) The yuan has depreciated ~8-10% against the dollar since April (broad dollar index up 6.3% per macro data), which partially offsets tariff costs but raises capital flight risk and draws US accusations of currency manipulation; (5) Domestically, GDP growth slowed from 6.8% to 6.7% in Q2 (CNBC, Jul 16), industrial production growth fell to 6.0% (Reuters), fixed asset investment hit a record low of 6.0%, and the PBOC has already cut RRR three times \u2014 stimulus ammunition is being deployed early.\n\nOn the action side, a hold posture (action_score -0.05) is justified because: (a) further escalation would invite the $200B+ List 3 at 25%, which would be far more damaging to China than to the US given the trade surplus asymmetry; (b) the US economy is resilient \u2014 consumer sentiment at 100.1 (UMCSENT Sep), industrial production rising to 104.1 (INDPRO Aug), unemployment low \u2014 meaning the US can absorb retaliatory pain better than China can absorb a broader tariff war; (c) the White House perceives China as vulnerable (Kudlow publicly stated 'their economy looks terrible' per NYT Aug 23), which means escalation would feed the hawks' narrative rather than deter them; (d) however, conceding now without a matching US offer would be politically untenable domestically and would reward escalation \u2014 the CCP cannot appear to capitulate under pressure; (e) China's FX reserves remain stable at ~$3.12T (FXStreet, Aug 7) and capital controls are holding, giving us time to wait. The optimal strategy is to hold retaliatory measures in place, continue internal stabilization, and signal openness to structured negotiations \u2014 forcing the US to decide whether to escalate into $200B+ (which carries its own domestic political costs for Trump given midterms in November) or return to the table.",
+      "key_factors": [
+        "$200B List 3 tariff threat at 25% rate \u2014 asymmetric escalation disadvantage for China",
+        "ZTE denial order (Apr 16) exposed tech supply-chain vulnerability",
+        "Yuan depreciation ~8-10% vs USD since April \u2014 partial offset but capital flight risk",
+        "China GDP slowing to 6.7% Q2, industrial production and FAI at 6.0%",
+        "US economy resilient: consumer sentiment 100.1, industrial production rising",
+        "Structural retaliation asymmetry: China can only match ~$130B vs US $500B+ targeting capacity",
+        "FX reserves stable at $3.12T, capital controls holding \u2014 buys time",
+        "US midterms in November create political window \u2014 Trump faces domestic costs from escalation too",
+        "PBOC already deployed 3 RRR cuts \u2014 stimulus ammunition being used early"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-08-01",
+          "excerpt": "At Trump's direction, USTR says it is considering raising the proposed List 3 rate from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-10",
+          "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for an additional 10% tariff (~6,000 product lines)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer Sentiment: 100.1 (Sep 2018) \u2014 US consumer confidence remains high."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US Industrial Production: 104.1 (Aug 2018), up from 103.3 in Apr \u2014 US economy resilient."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-china-q2-gdp",
+          "excerpt": "China posted second-quarter GDP growth of 6.7 percent from a year ago, slightly lower than 6.8 percent in the first quarter. Fixed asset investment growth for the first half of 2018 was a record low at 6.0%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fxstreet-reserves-aug7",
+          "excerpt": "Even though the yuan has depreciated 2.96% in July, we don't see massive capital outflows as reflected by the foreign exchange reserves \u2014 which went up by $5.82 billion to 3117.95 billion."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt-trade-war-aug23",
+          "excerpt": "China's softening economy has led some within the Trump Administration to believe Beijing is vulnerable. Larry Kudlow pointed out China's own official statistics for business investment, retail sales and industrial production have shown weakness."
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": -0.05,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-09-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3477,
+        "capped_chars": 3477,
+        "raw_tokens": 869,
+        "capped_tokens": 869
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48144,
+        "capped_chars": 48144,
+        "raw_tokens": 12036,
+        "capped_tokens": 12036
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 34734,
+        "capped_chars": 34734,
+        "raw_tokens": 8684,
+        "capped_tokens": 8684
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 378283,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

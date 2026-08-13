@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-09-19",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7586,
+    "tokens_out": 710,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0071304,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should escalate tariffs on China to maximum levels, targeting all remaining imports not yet covered by tariffs. This is the optimal moment to leverage America's stronger economic position and force China to make structural concessions on intellectual property theft, forced technology transfer, and market access restrictions.\n\nSUPPORTING RATIONALE: The US has a clear opportunity to restructure the trade relationship on favorable terms. China's economy is more vulnerable to tariff pressure than the US, as evidenced by the significant decline in Chinese stock markets (Shanghai Composite fell nearly 25% in 2018) compared to modest US declines (Dow fell nearly 6%). The US trade deficit of $419 billion with China demonstrates the asymmetric dependency. Senator Graham's assessment that 'this is the best chance in my lifetime to get China to change their cheating ways' reflects bipartisan support for maintaining pressure. The US should capitalize on this leverage before China can diversify its supply chains or develop domestic alternatives to US technology.",
+      "key_factors": [
+        "US-China trade deficit of $419 billion demonstrates asymmetric economic dependency",
+        "Chinese stock markets fell 25% in 2018 vs only 6% decline in Dow, showing greater Chinese vulnerability",
+        "Bipartisan political support for tariffs (Senator Graham endorsement)",
+        "China's structural unfair trade practices: IP theft, forced technology transfer, market access restrictions",
+        "US leverage position: tariffs are 'tools that bring China to the table' per Graham",
+        "Larry Kudlow acknowledgment that 'both sides will suffer' but China faces greater GDP losses",
+        "China's supply chain disruption poses 'bigger threat to their economy' per Graham analysis"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. Not only does the US accuse China of stealing intellectual property, but it wants Beijing to make changes to its economic policies, which it says unfairly favour domestic companies through subsidies. The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "In 2018, Hong Kong's Hang Seng index fell more than 13% and the Shanghai Composite slumped nearly 25%. By comparison, the Dow Jones Industrial Average fell nearly 6% in 2018 and is already up some 11% this year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "'This is the best chance in my lifetime to get China to change their cheating ways,' Graham, R-S.C., told 'Sunday Morning Futures.' 'The tariffs are tools that bring China to the table. I'm standing 100 percent with the president.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "'When you put tariffs on products coming out of China, it makes other countries a cheaper place to do business which eventually moves market share away from China,' the senator said. 'This is what Trump's trying to do. He's trying to break the stranglehold China has on the supply chain.'"
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-09-19",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 19056,
+        "capped_chars": 15846,
+        "raw_tokens": 4764,
+        "capped_tokens": 3962
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 14996,
+  "started_at": "2026-08-13T10:55:02+00:00"
+}

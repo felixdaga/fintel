@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-12-20",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7322,
+    "tokens_out": 944,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0075684,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should signal willingness to engage in substantive negotiations while maintaining current retaliatory tariffs as leverage. We should not escalate further but neither should we make unilateral concessions. The December 1 G20 truce created a 90-day window; we should use it to propose concrete offers on market access and IP protection that address US concerns without sacrificing core industrial policy goals like Made in China 2025.\n\nSUPPORTING RATIONALE: The threat to China is significant but not existential at this stage. The US has imposed tariffs on $250 billion of Chinese goods (roughly half of bilateral trade), and Trump has threatened to tariff the remaining $267 billion if China retaliates further (Fox Business, Sept 2018). China has already retaliated on $110 billion of the $130 billion in US imports, covering nearly all bilateral trade. The tariff escalation has hit China's export economy, but the evidence shows China is actively diversifying \u2014 lowering tariffs on non-US goods to redirect supply chains away from American products (Fox Business). Soybean prices are down 20% hurting US farmers, and US sectors like autos, agriculture, and Boeing are feeling real pain (Brookings, Dollar). This gives China leverage.\n\nHowever, the threat is real: China's export-dependent manufacturing hubs face unemployment risk, and the broader uncertainty is dampening investment. The Washington Post reporting (Oct 2018) reveals that previous Chinese offers were rejected by Trump, suggesting the US side is internally divided and unpredictable \u2014 making unilateral concessions risky since they may not be reciprocated. The G20 dinner on Dec 1 produced a 90-day truce, which is an opening but not a resolution.\n\nThe action_score of -1 (negotiate, at the lower end of the band) reflects that China should engage actively but from a position of firmness, not weakness. We have retaliatory capacity, domestic political support for standing firm, and the US faces its own costs. Conceding now would signal weakness and invite further demands. But refusing to talk would allow the US to justify further escalation. The optimal path is structured negotiation with concrete proposals that address legitimate US concerns (market access, IP) while protecting strategic sectors.",
+      "key_factors": [
+        "US tariffs cover $250B of Chinese exports, roughly half of bilateral trade; Trump threatens to tariff remaining $267B",
+        "China has retaliated on nearly all $130B of US imports to China, leaving little room for further tariff retaliation",
+        "US domestic sectors (agriculture, autos, Boeing) are experiencing real pain, giving China negotiating leverage",
+        "Previous Chinese offers were rejected by Trump administration, suggesting internal US divisions and unpredictability",
+        "G20 Dec 1 truce created 90-day negotiation window that should be utilized",
+        "China is actively diversifying trade away from US by lowering tariffs on non-US goods",
+        "Export-dependent manufacturing regions in China face employment risk from prolonged trade war"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "Effective Sept. 24, President Trump announced a 10% tariff on $200 billion in Chinese imports... President Trump has also indicated that if things don't go as to what he wants to happen, he's going to do it on the rest of it... $250 billion aggregate tariff amount... is about half of U.S.-China trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "The price of soybeans is already down 20 percent... U.S. exports to China are concentrated in agricultural products like soybeans, plus automobiles and Boeing aircraft sales"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "while they've increased the tariffs on American goods, they've lowered the tariffs on some of the other goods from other places... That's an effort to try to drive their own consumers away from choosing U.S. products and choosing others"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-12-20",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 24717,
+        "capped_chars": 13660,
+        "raw_tokens": 6179,
+        "capped_tokens": 3415
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 26565,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

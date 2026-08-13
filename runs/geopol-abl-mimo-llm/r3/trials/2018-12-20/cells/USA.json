@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-12-20",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7319,
+    "tokens_out": 906,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0074514,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.25,
+      "rationale": "RECOMMENDATION: Maintain current tariff posture and hold firm on existing demands without further escalation for now. The US has already imposed tariffs on roughly half of Chinese imports ($250 billion), and China has retaliated in kind. With the G20 truce just weeks old (Dec 1, 2018 ceasefire) and 90-day negotiations window open, the US should use this period to consolidate leverage and press for structural concessions rather than escalate further or concede.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but manageable. The tariffs are causing sectoral pain\u2014soybean prices down 20%, agricultural and auto exports hit hard by Chinese retaliation (Brookings, SCMP)\u2014but the overall macroeconomic impact is described as 'a minor blip' for the US economy (Brookings). The US has structural leverage: China's export economy is more exposed, and the US has threatened to tariff the remaining ~$267 billion of Chinese imports if China retaliates further (Fox Business). However, the threat is not negligible\u2014collateral damage to US firms operating in China, rising consumer prices from tariff pass-through (Fox Business explains tariffs are paid by US importers, not China), and disruption to global value chains where China is the final assembler but US firms capture profits (SCMP). The political environment favors holding firm: Trump sees this as a winning strategy post-midterms (Brookings), and the US has not yet exhausted its leverage. The risk of further escalation is that it could trigger a broader economic slowdown or market panic, but at current levels the US economy is absorbing the shock. The 90-day negotiation window agreed at G20 provides a natural pause to test whether China will offer meaningful structural reforms on IP theft, forced tech transfer, and market access\u2014core US demands that go beyond purchase commitments.",
+      "key_factors": [
+        "$250B in US tariffs already in place covering ~half of Chinese imports; $267B more threatened",
+        "China retaliation covers $110B of $130B US-China trade, nearly exhausting their tariff room",
+        "Soybean prices down 20%; agricultural/auto/Boeing sectors bearing concentrated pain",
+        "Tariffs paid by US importers, raising consumer prices domestically",
+        "90-day G20 negotiation window just opened (Dec 1, 2018)",
+        "Overall US economic impact described as 'minor blip' but sectoral damage real",
+        "China unlikely to 'cave' but willing to buy more and open markets",
+        "Collateral damage to US firms operating in China and global value chains"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The U.S. has announced $250 billion of tariffs on products from China... This is not a big hit for the overall U.S. economy but it will hurt some specific sectors... The Trump administration sees this as a winning strategy for the midterm elections in 2018."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "President Trump has said that if China were to take retaliatory action on these tariffs... he's going to put in place another $267 billion worth of imports. For all intents and purposes, that would put a tariff in place on 100% of U.S.-China trade."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.scmp.com \u2014 US-China trade war could end with a 'big deal'",
+          "excerpt": "The trade deficit includes the cost of intermediary products, like displays and chips for iPhones, which are produced in other countries; the Chinese assembly cost constitutes only a small fraction of the full cost"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com \u2014 How the U.S. and China misread the signals",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down."
+        }
+      ],
+      "threat_score": 0.25,
+      "action_score": -1.0,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-12-20",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 24717,
+        "capped_chars": 13660,
+        "raw_tokens": 6179,
+        "capped_tokens": 3415
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22907,
+  "started_at": "2026-08-13T10:55:07+00:00"
+}

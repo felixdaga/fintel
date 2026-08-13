@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-10-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 6950,
+    "tokens_out": 815,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0068094,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Maintain current tariff posture and continue negotiations without new concessions or escalations ahead of the upcoming high-level talks. The US has leverage from existing tariffs and China's economic slowdown, but further escalation risks domestic consumer backlash and ally fragmentation. Hold firm on structural demands while keeping the door open for a limited deal.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate-to-elevated (threat_score +0.35). The trade war has already imposed costs on American consumers and companies \u2014 as noted by USC's Clayton Dube, tariffs raise prices on consumer goods and auto parts, and California's ports and export sectors are exposed. White House adviser Larry Kudlow acknowledged 'both sides will pay.' However, the threat is not existential because the US economy remains strong and China faces greater structural pressure from supply chain diversification away from China, as Sen. Graham argued. The US has already raised tariffs to 25% on $200B of Chinese goods and threatened the remaining ~$300B, giving significant leverage.\n\nThe action_score of -1.0 (maximal escalation) is NOT recommended despite the leverage, because: (1) the decision date of Oct 10, 2019 falls just before anticipated high-level talks (Liu He was expected in Washington), and premature escalation would undermine negotiations; (2) 24 states have sued over tariffs, indicating domestic political costs; (3) the academic literature warns that escalation into a 'tech war' risks full economic decoupling that would harm US firms dependent on Chinese markets and supply chains. Instead, the US should hold its current position \u2014 tariffs are already at punitive levels \u2014 and use the upcoming talks to press for structural reforms on IP protection, market access, and forced technology transfer. The leverage exists; squandering it through over-escalation before talks would be counterproductive.",
+      "key_factors": [
+        "Upcoming high-level trade talks (Liu He expected in Washington) create a window for negotiation",
+        "US tariffs already at 25% on $200B of Chinese goods with threat of additional tariffs on remaining ~$300B",
+        "Both sides suffering economic costs \u2014 Kudlow acknowledged 'both sides will pay'",
+        "24 states suing Trump over tariffs indicates domestic political pressure",
+        "Risk of tech war escalation leading to economic decoupling per academic analysis",
+        "China's supply chain disruption and economic slowdown provide US leverage",
+        "Structural issues (IP, market access, forced tech transfer) remain unresolved"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu",
+          "excerpt": "Consumers will pay more for many products... Chinese auto parts are found in many cars and some estimate new cars will cost $1,000 to $3,000 more"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "onlinelibrary.wiley.com",
+          "excerpt": "The escalation of the trade war into a tech war could lead to a decoupling between the US and Chinese economies, if not a world economy divided into two economic blocs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools",
+          "excerpt": "24 states sue Trump over latest tariffs"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-10-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 15476,
+        "capped_chars": 12257,
+        "raw_tokens": 3869,
+        "capped_tokens": 3064
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20460,
+  "started_at": "2026-08-13T10:55:02+00:00"
+}

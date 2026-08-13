@@ -1,0 +1,174 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-11-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 186852,
+    "tokens_out": 4692,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.12,
+      "rationale": "RECOMMENDATION: Use the G20 dinner with Xi to open a time-limited negotiating track without new unilateral commitments. Keep the existing Section 301 tariffs in place and do not pre-commit to cancelling the scheduled January 1 List 3 step-up or to a purchase-only deal; make any pause of the 10-to-25 percent hike contingent on a written work program with dates and enforcement, not another May-style handshake. Do not launch the threatened additional ~$267 billion list before talks are tested.\n\nSUPPORTING RATIONALE: Threat is modestly above neutral, not high. Combined US Section 301 coverage is already ~$250B after List 3 took effect at 10% on 2018-09-24, with a legal step-up to 25% set for 2019-01-01 and a further ~$267B list still unused, so Washington still holds unused tariff leverage (timeline 2018-09-17/24; USTR/Federal Register). The core US real economy is not in a tariff recession: industrial production is ~104.1, Michigan sentiment is still 97.5, and CPI is contained. What is biting US interests is concentrated and political: China\u2019s matching retaliation on soy/autos/aircraft has collapsed soybean sales to China by ~94% (China normally takes ~60% of US soy, ~$12B), with harvests rotting or being plowed under and only a fraction of the $12B farm-aid package paid by mid-November. Markets are also signaling cost: VIX is ~18.5 (up ~45% in the window), Baa yields have risen to 5.28%, WTI has fallen to ~$50, and the dollar is stronger. That is farm-belt and financial-volatility pain, not existential supply-chain or ally-cohesion failure \u2014 hence +0.12, not +0.5.\n\nAction should be negotiate, not escalate or concede. Escalating into the G20 (or locking in the January hike before Xi is tested) would likely draw further farm/consumer retaliation and a full-coverage tariff war just as APEC already failed to produce a communiqu\u00e9 and China\u2019s Q3 growth has slowed to 6.5% with the yuan ~9% weaker \u2014 i.e., Beijing is under pressure and may bargain, but a purchase-only truce already collapsed on 2018-05-29 after the 2018-05-19 joint statement. China\u2019s 142-point list is judged by US officials as lacking timetable and enforcement. Therefore hold the current tariff stock, refuse unilateral rollback or purchase concessions, and use Buenos Aires to explore a delay of the January step-up only against verifiable structural talks.",
+      "key_factors": [
+        "G20 Trump-Xi meeting is the immediate decision node (phone call 2018-11-01; dinner 2018-11-30/12-01)",
+        "List 3 already live at 10% on ~$200B; 25% step-up is scheduled for 2019-01-01; unused ~$267B threat remains",
+        "US soy channel is badly hit (~94% drop; storage/rot; incomplete farm aid) \u2014 concentrated political cost",
+        "US macro still resilient (IP, sentiment, CPI); stress is in VIX, credit spreads, oil, and a stronger dollar",
+        "China is slowing (Q3 GDP 6.5%, yuan ~-9%) but has not offered enforceable structural change (142-point list)",
+        "May 19 purchase truce collapsed within 10 days \u2014 do not repeat a handshake-for-purchases deal"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "US and China release joint statement after talks: China agrees to \"significantly increase\" purchases of US goods and services. Mnuchin says trade war is \"on hold.\""
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-22",
+          "excerpt": "USTR releases Section 301 report finding China's IP/tech-transfer practices unreasonable or discriminatory."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US industrial production latest 104.0681 (2018-11-01); still slightly up over the window, not a production collapse."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Michigan consumer sentiment 97.5 in November \u2014 high and only marginally softer."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "VIXCLS",
+          "excerpt": "VIX 18.49 on 2018-11-28, +45% over the window after the October spike."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DBAA",
+          "excerpt": "Moody\u2019s Baa corporate yield 5.28 on 2018-11-28, up ~46bp \u2014 credit conditions tightening."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad dollar index 116.83 on 2018-11-28, +4.5% \u2014 tighter financial conditions and pressure on CNY."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.nytimes.com/2018/11/05/business/soybeans-farmers-trade-war.html",
+          "excerpt": "American soybean sales to China down 94% from last year\u2019s harvest after China\u2019s retaliatory soybean tariff; China is the largest market for one of America\u2019s largest exports."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.nytimes.com/2018/11/27/us/politics/trump-xi-trade-g-20.html",
+          "excerpt": "Officials say a G20 truce could delay the Jan 1 hike to 25% and hold off ~$267B of new tariffs while talks continue; Kudlow sees a \u201cgood possibility\u201d of a deal, but China\u2019s 142-point list is judged to lack timetable and enforcement."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.axios.com/2018/11/27/trump-trade-war-tariffs-china-g20-summit",
+          "excerpt": "Asked if he would delay or suspend the 10-to-25 percent hike on January 1, Trump said \u201cI think it would be highly unlikely,\u201d signaling he is not expecting a near-term giveaway of leverage."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://edition.cnn.com/2018/11/09/economy/china-economy-risks/index.html",
+          "excerpt": "China growing at slowest pace since the financial crisis; yuan sunk more than 9% vs USD since January; exports still growing but a January step-up to 25% would add pressure."
+        }
+      ],
+      "threat_score": 0.12,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-11-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3976,
+        "capped_chars": 3976,
+        "raw_tokens": 994,
+        "capped_tokens": 994
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 36261,
+        "capped_chars": 36261,
+        "raw_tokens": 9065,
+        "capped_tokens": 9065
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 73436,
+        "capped_chars": 73436,
+        "raw_tokens": 18360,
+        "capped_tokens": 18360
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 389012,
+  "started_at": "2026-08-13T06:07:46+00:00"
+}

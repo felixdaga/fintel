@@ -1,0 +1,154 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-04-04",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 8,
+    "tokens_in": 390599,
+    "tokens_out": 9719,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.0,
+      "rationale": "RECOMMENDATION: Keep negotiating in the Washington round without new tariff hikes, rollbacks, or purchase-only commitments. Push for written enforcement language and IP/tech-transfer text while leaving the unused List 3 hike to 25% on the table as leverage. Do not trade the Huawei/Meng cases for a deal and do not spend tariff leverage before a text is signed.\n\nSUPPORTING RATIONALE: Net threat to US interests is roughly balanced as of 2019-04-03. Leverage is real: List 3 is still at 10% after the Feb 24 delay, the March 1 hike window passed unused, and about $250B of Chinese goods remain under Section 301, while April 3 talks reported progress on draft text including enforcement. US macro is not in crisis\u2014Michigan sentiment 97.2, VIX 13.74, CNY firmer near 6.71. Offsetting that, costs are sectoral and political: IMPCH is down about 26% in the window, industrial production is off about 1.7%, and farm retaliation remains acute (record 3.7 billion bushels of soy in storage; China had taken about 60% of US soy exports). Escalating now would risk collapsing the closest approach to a text since Buenos Aires; conceding rollbacks before enforcement is signed would give away the remaining hike threat. Hold the current tariff stock and negotiate the unfinished structural issues.",
+      "key_factors": [
+        "Washington talks reporting progress on enforcement text but no signed deal",
+        "Unused List 3 10-to-25% hike still held in reserve after Feb 24 delay",
+        "US sentiment and vol not signaling a trade-war emergency",
+        "Sharp drop in US imports from China and a modest IP dip",
+        "Soybean overhang and incomplete purchase pledges keep farm-belt pressure on",
+        "Huawei/Meng legal track should stay separate from tariff bargaining"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-24",
+          "excerpt": "Talks made substantial progress; List 3 hike from 10% to 25% further delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. Combined US Section 301 coverage now about $250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 90-day window; planned Jan 1 List 3 hike suspended. Same day Canada arrests Huawei CFO Meng Wanzhou on a US request."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "IMPCH",
+          "excerpt": "US goods imports from China latest about $34.5B vs $46.3B in Nov 2018, about -26% over the window."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US industrial production slipped from 104.07 (Nov 2018) to 102.27 (Apr 2019), about -1.7%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Michigan consumer sentiment recovered to 97.2 in April 2019 after a January dip to 91.2."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "VIXCLS",
+          "excerpt": "VIX at 13.74 on 2019-04-03, well below the Dec 2018 spike above 30."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DEXCHUS",
+          "excerpt": "CNY/USD strengthened from about 6.92 in Oct 2018 to 6.71 on 2019-04-03."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.chinausfocus.com/media-report/2019-04-03.html",
+          "excerpt": "Kudlow: making good headway but not there yet; outstanding issues include IP protection and an enforcement mechanism."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.cnn.com/2019/03/20/politics/soybean-farmers-trump-trade-war/index.html",
+          "excerpt": "US soybean stocks hit a record 3.7 billion bushels; pledged Chinese purchases would still leave a large overhang."
+        }
+      ],
+      "threat_score": 0,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-04-04",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46832,
+        "capped_chars": 46832,
+        "raw_tokens": 11708,
+        "capped_tokens": 11708
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 63673,
+        "capped_chars": 63673,
+        "raw_tokens": 15918,
+        "capped_tokens": 15918
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 411887,
+  "started_at": "2026-08-13T06:15:02+00:00"
+}

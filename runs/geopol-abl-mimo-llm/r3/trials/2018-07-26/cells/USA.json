@@ -1,0 +1,109 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-07-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 11063,
+    "tokens_out": 746,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0107154,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should escalate tariffs on China to the maximum extent possible. The current trade war is a clear opportunity for the US to restructure the trade relationship on its terms, as China's retaliatory capacity is limited by the trade deficit. The US should leverage its economic strength and China's vulnerability to extract maximum concessions.\n\nSUPPORTING RATIONALE: The threat score of -1 reflects a clear opportunity for the US. The evidence shows that the US has a significant advantage in the trade war due to the trade deficit ($375 billion), which limits China's ability to retaliate in kind. The US economy is strong and can absorb the impact of tariffs, while China's economy is more vulnerable. The US is targeting high-technology items to weaken China's Made in China 2025 strategy, which is a strategic opportunity to maintain US technological leadership. The action score of -1 reflects the need to escalate tariffs to the maximum extent possible to capitalize on this opportunity. The US should follow through on the threat to impose tariffs on up to $153 billion of Chinese imports, as this will put maximum pressure on China and force them to make concessions. The US should also consider adding more firms to the entity list and implementing export controls to further restrict China's access to US technology.",
+      "key_factors": [
+        "Trade deficit of $375 billion limits China's retaliatory capacity",
+        "US economy is strong and can absorb tariff impacts",
+        "US targeting high-technology items to weaken Made in China 2025",
+        "China's retaliatory tariffs are lower (15%) compared to US tariffs (25%)",
+        "US has less to lose in relative terms (exports to China are $130 billion vs $505 billion)",
+        "China's currency has depreciated 6% since April, showing vulnerability",
+        "US farmers and specific sectors will be affected but overall impact is minor",
+        "No high-level negotiations are scheduled, suggesting US can maintain pressure"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China after China formally filed a trade complaint"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "The U.S. economy is doing well and is unlikely to be affected by China's retaliatory tariffs, which will impose a tiny burden relative to the size of the U.S. economy"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "The U.S. has less to lose since its exports to China are $130 billion while China's exports to the United States are $505 billion a year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "For the next several months we will probably be locked into this situation. No high-level negotiations are scheduled"
+        }
+      ],
+      "threat_score": -1,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-07-26",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35798,
+        "capped_chars": 31232,
+        "raw_tokens": 8950,
+        "capped_tokens": 7808
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 15839,
+  "started_at": "2026-08-13T10:55:03+00:00"
+}

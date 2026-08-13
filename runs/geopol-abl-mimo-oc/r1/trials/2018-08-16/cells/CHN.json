@@ -1,0 +1,131 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-08-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: China should pursue active negotiations with the US while maintaining its existing retaliatory tariffs as leverage. Do not escalate further, but do not concede structural issues (Made in China 2025, industrial policy). Use back-channel talks (Mnuchin-Liu He channels reported as restarting per Bloomberg July 31) to explore a purchase-based interim deal that addresses Trump's trade-deficit fixation without surrendering development strategy. Allow continued gradual yuan depreciation as a natural shock absorber.\n\nSUPPORTING RATIONALE: The threat to China is serious and escalating. The US has already imposed 25% tariffs on $34B of Chinese goods (List 1, effective July 6), with List 2 ($16B) imminent and List 3 ($200B, now being considered at 25% rather than 10% per Trump's August 1 directive) in the pipeline. If all three lists materialize, roughly $250B of Chinese exports\u2014about 40% of exports to the US and ~2.5% of GDP\u2014face punitive tariffs. The ZTE episode (April denial order, lifted July 13 after $1.4B in penalties and forced management overhaul) demonstrated catastrophic supply-chain vulnerability: China's second-largest telecom firm was pushed to the brink of collapse by a single US regulatory action, underscoring deep dependence on US semiconductors and software.\n\nMacroeconomic indicators show the shock is arriving at a bad time. China was mid-deleveraging (JP Morgan analysts noted the timing 'couldn't have been worse' per CNBC July 18). The yuan has depreciated ~6% since April (from 6.28 to ~6.76 per dollar), which partially offsets tariff competitiveness losses but risks capital outflow pressure and financial instability if it accelerates too fast. ING revised China's 2H18 growth forecast downward. PMI export orders are declining.\n\nHowever, China has meaningful buffers. The yuan depreciation provides a significant cushion\u2014RAND estimated Chinese businesses may lose less overall than American businesses from the first round. China's retaliatory targeting of US agriculture (soybeans, pork, wheat) directly pressures Trump's farm-belt political base ahead of November midterms. US consumer sentiment has declined from 101.4 in March to 96.2 in August (UMich index). The US farm sector is under severe stress, with the American Soybean Association calling tariffs 'devastating.' The Mnuchin-Liu He back-channel is active, and both sides are reportedly seeking to restart formal talks.\n\nEscalation would be counterproductive: China's economy is more export-dependent (~5% of GDP exposed to US market vs ~0.7% US GDP exposed to China), and further US retaliation could target Huawei and broader tech supply chains. But full concession is also inappropriate\u2014the structural issues (IP forced transfer, Made in China 2025) are non-negotiable core interests. The correct stance is engaged negotiation, offering purchase increases (energy, agriculture) that address Trump's headline number obsession while protecting strategic autonomy.",
+      "key_factors": [
+        "List 3 ($200B at 25%) escalation threat",
+        "ZTE supply-chain vulnerability exposed",
+        "Yuan depreciation (6% since April) as partial offset",
+        "China mid-deleveraging complicating macro response",
+        "US farm-belt political pressure as leverage",
+        "Mnuchin-Liu He back-channel talks restarting",
+        "US consumer sentiment declining (101.4\u219296.2)",
+        "Made in China 2025 non-negotiable"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_2018-08-01",
+          "excerpt": "At Trump's direction, USTR says it is considering raising the proposed List 3 rate from 10% to 25%"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer Sentiment declined from 101.4 (March) to 96.2 (August 2018)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2018-07-18",
+          "excerpt": "J.P. Morgan: 'The timing couldn't have been worse... China finally began to focus in earnest on curbing credit growth \u2014 its Achilles's heel \u2014 from around mid-2017'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "rand_2018-07-20",
+          "excerpt": "Chinese yuan depreciated 6% from 6.28 to 6.64 per dollar since April, providing 'significant offset to loss in export competitiveness'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bloomberg_2018-07-31",
+          "excerpt": "Representatives of U.S. Treasury Secretary Steven Mnuchin and Chinese Vice Premier Liu He are having private conversations as they look for ways to reengage in negotiations"
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-08-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3319,
+        "capped_chars": 3319,
+        "raw_tokens": 830,
+        "capped_tokens": 830
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48158,
+        "capped_chars": 48158,
+        "raw_tokens": 12040,
+        "capped_tokens": 12040
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 74048,
+        "capped_chars": 74048,
+        "raw_tokens": 18512,
+        "capped_tokens": 18512
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 382008,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

@@ -1,0 +1,135 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-07-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: Retaliate proportionally against the $34B List 1 tariffs already in effect and the pending $16B List 2, while filing WTO complaints and signaling willingness to negotiate. Do not escalate beyond mirroring \u2014 the asymmetric trade exposure ($500B exports to US vs $130B imports from US) means China cannot win a tit-for-tat tariff war at scale. Pursue diplomatic channels through WTO and multilateral fora while preparing non-tariff countermeasures as deterrents.\n\nSUPPORTING RATIONALE: The threat reading of +0.65 reflects a genuinely dangerous escalation trajectory. The US has already imposed 25% tariffs on $34B of Chinese goods (List 1, effective July 6), with $16B more pending (List 2). On July 10, USTR published List 3 targeting an additional $200B of Chinese imports at 10% \u2014 covering ~6,000 product lines including consumer goods. Trump has threatened to extend tariffs to $400B+ more if China retaliates. The ZTE denial order (April 16) demonstrated US willingness to weaponize technology supply chains against Chinese firms, directly threatening Made in China 2025 ambitions. No trade talks have occurred since Commerce Secretary Ross's June 3 visit to Beijing ended without progress.\n\nHowever, China's macro position remains resilient, moderating the threat: Q2 2018 GDP was 6.7% (within the 6.7-6.9% range maintained for 12 consecutive quarters), manufacturing value-added grew 6.9% YoY in H1, high-tech manufacturing grew 11.6%, industrial profits rose 16.5% in Jan-May, and PMI remained in expansion at 51.5%. Fixed asset investment growth hit a record low of 6.0% and June industrial output slowed to 6.0% (slowest in 2+ years), signaling early trade-war stress but not crisis.\n\nThe action_score of -0.35 (moderate retaliation) reflects: (1) China must retaliate to maintain credibility and signal that coercion has costs \u2014 failure to respond would invite further escalation; (2) the math constrains China \u2014 having already retaliated on $34B with another $16B planned, only ~$80B of US imports remain before China runs out of tariff room; (3) WTO complaints (filed July 16 on the $200B list) provide multilateral legitimacy; (4) escalation beyond mirroring risks triggering the full $400B+ Trump has threatened, which would be far more damaging to China's export-dependent growth than to the US economy. Retaliate firmly but proportionally, and leave the door open for negotiation.",
+      "key_factors": [
+        "US List 3 ($200B at 10%) proposed July 10 \u2014 massive escalation threatening consumer goods sectors",
+        "Asymmetric trade exposure: China exports ~$500B to US vs ~$130B imports \u2014 tariff-matching math favors US",
+        "ZTE denial order (April 16) precedent for entity-list weaponization against Chinese tech firms",
+        "Q2 GDP 6.7% resilient but June IP slowed to 6.0%, FAI at record low 6.0% \u2014 early stress signals",
+        "No trade talks since June 3 Ross visit; diplomatic channel stalled",
+        "China has only ~$80B of US imports remaining for tariff retaliation after current rounds",
+        "WTO complaints filed July 16 \u2014 multilateral legal avenue still open"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-07-10",
+          "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for an additional 10% tariff (~6,000 product lines). Public comment / hearing process begins."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-07-06",
+          "excerpt": "List 1 tariffs take effect: US 25% on ~$34B of Chinese goods. China imposes matching ~$34B retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-06-18",
+          "excerpt": "Trump directs USTR to identify an additional ~$200B of Chinese imports for 10% tariffs if China retaliates against the $50B action."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2018-07-16",
+          "excerpt": "China posted second-quarter GDP growth of 6.7 percent from a year ago, slightly lower than 6.8 percent in the first quarter. Fixed asset investment growth for the first half of 2018 was a record low at 6.0 percent, while industrial output for June matched the slowest growth rate in over two years at 6.0 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "apnews_2018-07-11",
+          "excerpt": "China bought $130 billion of U.S. goods last year. Both governments have raised tariffs on $34 billion worth of each other's goods... That would leave China only $80 billion for further retaliation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "npr_2018-07-16",
+          "excerpt": "China has filed a case with the World Trade Organization against the U.S. to protest the Trump administration's plan to put new tariffs on $200 billion worth of Chinese imports."
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": -0.35,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-07-26",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3366,
+        "capped_chars": 3366,
+        "raw_tokens": 842,
+        "capped_tokens": 842
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48154,
+        "capped_chars": 48154,
+        "raw_tokens": 12038,
+        "capped_tokens": 12038
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 39998,
+        "capped_chars": 39998,
+        "raw_tokens": 9999,
+        "capped_tokens": 9999
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 370879,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

@@ -1,0 +1,129 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-08-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 141111,
+    "tokens_out": 4659,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.6,
+      "rationale": "RECOMMENDATION: Maintain our retaliatory posture and keep the negotiation channel alive rather than escalating further or conceding. We have already answered the August 23 US move with tariffs on $75B of US goods and reimposed auto duties, so another escalation step would risk triggering the broader decoupling Trump just ordered; instead we should hold our current stance, keep talking (deputy talks were described as constructive and principals are due to meet in September), and signal readiness for a fair settlement without pre-committing concessions.\n\nSUPPORTING RATIONALE: This reads as a high, borderline-existential threat. US tariffs now cover effectively all of our exports to the US (25% on ~$250B plus 15% on List 4's ~$300B, split Sept 1/Dec 15), the yuan broke 7 and the US designated us a currency manipulator on Aug 5, and Trump directed American firms to find alternatives to China (timeline 8/1, 8/5, 8/13, 8/23). The trade war is biting the real economy: industrial production grew only 4.8% in July \u2014 a 17-year low \u2014 urban unemployment rose to 5.3% from 5.1%, retail sales missed, and Q2 GDP hit a 27-year low of 6.2% (country_health/CNN/NYT). That justifies threat_score +0.6. The action stance follows from the same evidence: continued escalation would make a bad situation existential by accelerating decoupling, and full concession would forfeit our leverage (rare earths, the unreliable-entity list) and destabilize domestic politics. Because we have already retaliated and the opponent paused after Aug 23, the highest-value move is to hold firm and negotiate \u2014 action_score -0.1, action_level negotiate \u2014 buying time while the US's own market strain (10-year yield collapsing to 1.47%, sentiment plunge) builds pressure on its side for a deal.",
+      "key_factors": [
+        "US tariffs effectively cover all Chinese exports to the US (25% on ~$250B + 15% on List 4)",
+        "Yuan broke 7 per USD and US currency-manipulator designation (Aug 5)",
+        "China industrial production +4.8% in July (17-year low); urban jobless 5.3%; Q2 GDP 6.2% (27-year low)",
+        "Huawei entity list + Trump decoupling directive ('find an alternative to China')",
+        "China already retaliated $75B + auto tariffs; holds rare-earth and unreliable-entity leverage",
+        "Post-Aug 23 pause in rhetoric; deputy talks 'constructive'; Sept principals meeting planned"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-23",
+          "excerpt": "China announces retaliation on ~$75B of US goods... Trump orders US companies to 'immediately start looking for an alternative to China' and directs a 5-point increase on List 4 (to 15%)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first since 1994)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2019-08-14 CNN China economy",
+          "excerpt": "Industrial production in China grew just 4.8% in July... worst growth for that sector in 17 years; urban jobless rate increased to 5.3% from 5.1%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2019-07-14 NYT China GDP",
+          "excerpt": "China's growth fell to 6.2% between April and June, slowest pace in nearly three decades; exports dipped 1.3%, imports fell 7.3%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "2019-08-23 Politico China $75B",
+          "excerpt": "China will go ahead with tariffs of as much as 10% on $75B of US products... reimpose 25% tariffs on US autos."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "US 10-year Treasury yield collapsed from ~2.3% to 1.47% by Aug 28; UMCSENT dropped from 98.4 to 89.8 in August."
+        }
+      ],
+      "threat_score": 0.6,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-08-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5363,
+        "capped_chars": 5363,
+        "raw_tokens": 1341,
+        "capped_tokens": 1341
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47863,
+        "capped_chars": 47863,
+        "raw_tokens": 11966,
+        "capped_tokens": 11966
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 38089,
+        "capped_chars": 38089,
+        "raw_tokens": 9522,
+        "capped_tokens": 9522
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 322038,
+  "started_at": "2026-08-13T07:50:47+00:00"
+}

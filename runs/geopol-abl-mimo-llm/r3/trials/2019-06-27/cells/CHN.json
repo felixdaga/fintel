@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-06-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7853,
+    "tokens_out": 949,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0081144,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should announce retaliatory tariffs on remaining US goods and signal willingness to restrict rare earth exports, while keeping diplomatic channels open for future negotiations. This demonstrates resolve without foreclosing talks.\n\nSUPPORTING RATIONALE: The threat to China is HIGH (0.55). The US has escalated tariffs on $200bn of Chinese goods from 10% to 25% and threatened tariffs on an additional ~$300bn of remaining imports (BBC, Fox Business). This directly threatens China's export economy and manufacturing hubs. The US framing\u2014per Sen. Graham\u2014explicitly aims to 'break the stranglehold China has on the supply chain' by making other countries cheaper alternatives, which threatens China's long-term manufacturing dominance (Fox Business). Larry Kudlow acknowledged 'both sides will suffer,' but the asymmetric exposure is significant: China's $419bn trade surplus with the US means tariff escalation hits China's export sector harder in absolute terms (BBC). China has already retaliated on $110bn of US goods and announced new levies on $60bn of US products (USC Annenberg), but the US is now threatening essentially all remaining Chinese imports.\n\nThe action_score of -1.0 (maximal escalation via retaliation) is justified because: (1) China must signal it will not capitulate under pressure\u2014conceding now would invite further US demands on structural issues like IP, subsidies, and market access that strike at China's economic model (USC Annenberg, Fox Business on CFR report); (2) China has leverage through rare earths, agricultural targeting of Republican districts (already begun with soybeans per BBC), and the ability to make US companies' operations in China more difficult; (3) the G20 meeting is imminent (Trump-Xi expected at Osaka summit late June 2019), and demonstrating retaliatory capacity strengthens China's negotiating position; (4) domestic political considerations under Xi Jinping require projecting strength\u2014capitulation would undermine CCP legitimacy. However, retaliation should be calibrated to leave room for the G20 dialogue.",
+      "key_factors": [
+        "US tariff escalation to 25% on $200bn of Chinese goods, with threat of additional tariffs on ~$300bn remaining imports",
+        "China's $419bn trade surplus creates asymmetric exposure to tariff escalation",
+        "US strategic goal to relocate supply chains away from China (Graham: 'break the stranglehold')",
+        "China has already retaliated on $110bn US goods but faces diminishing retaliatory capacity",
+        "Imminent G20 Trump-Xi meeting provides diplomatic off-ramp after demonstrating resolve",
+        "US demands on structural reforms (IP, subsidies, market access) threaten China's economic model",
+        "Domestic political pressure under Xi Jinping requires projecting strength, not capitulation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "bbc_trade_war_charts",
+          "excerpt": "US President Donald Trump vowed to more than double tariffs on $200bn of Chinese goods on Friday and to introduce fresh ones 'shortly'. The US imposed tariffs on $250bn worth of Chinese products last year. Beijing has retaliated with duties on $110bn worth of American products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness_tariffs_tools",
+          "excerpt": "The U.S. increased tariffs Friday on $200 billion worth of Chinese goods to 25 percent from 10 percent. Additionally, Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness_why_america_must_win",
+          "excerpt": "The Council on Foreign Relations' August 2018 report outlines how China will provide hundreds of billions in subsidies and tax breaks, with state-controlled financial institutions providing low interest financing... At the same time, it requires foreign corporations to create joint-ventures with Chinese companies in order to acquire access to the Chinese market."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usc_annenberg_trade_war",
+          "excerpt": "The American side has been insisting on changes in Chinese laws to permit greater access to Chinese markets and bans on forced sharing of technology with Chinese firms, as well as fuller and more effective protection of intellectual property."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-06-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20217,
+        "capped_chars": 16251,
+        "raw_tokens": 5054,
+        "capped_tokens": 4063
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22122,
+  "started_at": "2026-08-13T10:55:15+00:00"
+}

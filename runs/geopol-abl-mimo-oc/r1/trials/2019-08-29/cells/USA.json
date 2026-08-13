@@ -1,0 +1,141 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-08-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should engage China in negotiations without committing to new escalatory actions. The tariff war has now reached a point where continued escalation carries material domestic economic risk. The upcoming Sept 1 List 4A implementation should proceed as already announced (credibility), but no new tariff threats should be added. Signal willingness to talk seriously about enforcement mechanisms and structural issues while holding the current line.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects that the trade war is now inflicting measurable damage on the US economy, though not yet existential. Key evidence: (1) US manufacturing PMI fell to 49.9 in August \u2014 first contraction in nearly a decade (IHS Markit, Aug 22), with new orders dropping the most in 10 years and export sales at their lowest since 2009. (2) Gross private domestic investment tumbled 5.5% in Q2, the worst since Q4 2015, pulling a full percentage point from GDP growth (CNBC, Aug 26). (3) The yield curve inverted further \u2014 3-month T-bills yielding 32bp above 10-year notes \u2014 a reliable recession predictor (Axios, Aug 6). (4) Morgan Stanley warns global recession within 6-9 months if tariffs go to 25% across the board (CNBC, Aug 26). (5) CBO estimates tariffs will reduce real US GDP by 0.3% by 2020 (Fox Business, Aug 21). (6) Farm belt support eroding \u2014 farmer approval of Trump dropped from 79% to 71% in one month (Farm Journal, Aug 23); farm bankruptcies up 13% (NBC, Aug 11); China halted all US agricultural purchases (CNBC, Aug 10). (7) The Fed itself reported tariffs have had 'material' impact on manufacturing growth (Globe and Mail, Jul 5).\n\nHowever, the threat is not existential for the US because: (a) The Fed's own model estimates implemented tariffs reduce US GDP by only 0.19% long-run (Federal Reserve FEDS Notes, Jul 15), and even full escalation only 0.31% \u2014 modest. (b) China faces worse structural damage \u2014 their GDP impact is comparable but they also face capital flight risk from yuan depreciation, $3T in external debt, and food inflation at 7% (LA Times, Aug 13). (c) The US has stronger negotiating leverage: China's economy is slowing faster, the yuan has broken 7 for the first time since 2008 (NPR, Aug 11), and China is burning political capital defending its currency.\n\nThe action score of -0.15 (mild negotiate) reflects that the US should hold firm on existing tariffs but not add new ones. Escalation would be counterproductive given manufacturing is already contracting and recession fears are real. But concession is premature \u2014 China has not offered structural reforms on IP, tech transfer, or enforcement. The rational move is to keep the pressure that exists (the $250B at 25% and upcoming List 4A) while creating space for talks to address the structural issues that tariffs alone cannot solve. The split of List 4 into 4A (Sept 1) and 4B (Dec 15) already provides a natural de-escalation lever \u2014 delay or modify 4B if talks show genuine progress.",
+      "key_factors": [
+        "US manufacturing PMI contraction (49.9, first in decade)",
+        "Yield curve inversion deepening \u2014 recession signal",
+        "Farm belt political pressure rising \u2014 China halted ag purchases",
+        "GDP growth slowing to ~1.5% annualized per PMI data",
+        "Business investment collapsing (-5.5% in Q2)",
+        "CBO: tariffs reducing US GDP by 0.3% by 2020",
+        "China under greater structural stress (yuan past 7, capital flight risk, $3T external debt)",
+        "No structural reform offers from China yet \u2014 premature to concede"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-manufacturing-pmi-aug22",
+          "excerpt": "The U.S. manufacturing PMI was 49.9 in August, below the neutral 50.0 threshold for the first time since September 2009. New orders received by manufacturers dropped the most in 10 years, while export sales tanked to the lowest level since August 2009."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-recession-risk-aug26",
+          "excerpt": "Morgan Stanley says that the global economy would fall into recession if the U.S. raises tariffs on all imports from China to 25% and Beijing follows suit. Gross private domestic investment tumbled 5.5% in the second quarter, the worst since the fourth quarter of 2015."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness-cbo-aug21",
+          "excerpt": "CBO expects the changes in U.S. and foreign trade policies since January 2018 to reduce the level of real U.S. GDP by about 0.3 percent by 2020."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline-aug23",
+          "excerpt": "China announces retaliation on ~$75B of US goods (5-10%, split Sept 1 / Dec 15), including re-imposing tariffs on US autos. Trump orders US companies to 'immediately start looking for an alternative to China.'"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline-aug05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "npr-currency-war-aug11",
+          "excerpt": "China let the yuan drop to its lowest value since 2008. The currency is now trading at just over 7 yuan to the dollar. The U.S. Treasury Department labeled China a 'currency manipulator.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "newsweek-farmers-aug28",
+          "excerpt": "Farm Journal found 71 percent of farmers approve of what Trump is doing, down from 79 percent in July. Soybean prices dropped from $5.70 to $3.96 per bushel locally."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "feds-notes-jul15",
+          "excerpt": "The direct long-run impact of the currently implemented tariffs on Chinese output is likely to be small, effectively reducing the level of real GDP by 0.25 percent. US GDP would fall by 0.19 percent."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-08-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 7,
+    "by_status": {
+      "ok": 7
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5363,
+        "capped_chars": 5363,
+        "raw_tokens": 1341,
+        "capped_tokens": 1341
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 94438,
+        "capped_chars": 94438,
+        "raw_tokens": 23609,
+        "capped_tokens": 23609
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 7,
+      "by_status": {
+        "ok": 7
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 378324,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

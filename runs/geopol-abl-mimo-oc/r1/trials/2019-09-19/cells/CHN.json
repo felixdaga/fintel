@@ -1,0 +1,130 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-09-19",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should engage seriously in the upcoming October talks while maintaining its current retaliatory posture. Avoid new escalation but do not make major concessions before gauging US flexibility. Use the goodwill gestures already made (Sep 11 tariff exemptions, Sep 13 soybean/pork exclusions) as a foundation, and push for a structured de-escalation framework that preserves China's core development policy space (Made in China 2025, industrial subsidies). The window for negotiation is narrowing \u2014 if the Oct 1 hike to 30% takes effect and List 4B hits Dec 15, the economic damage accelerates and domestic political space for concessions shrinks.\n\nSUPPORTING RATIONALE: The threat reading of +0.55 reflects a serious but not yet existential position. Three factors drive this above neutral: (1) The tariff wall is now near-comprehensive \u2014 $550B of Chinese exports face US duties, with rates of 15-25% and a further hike to 30% looming on Oct 1 (event timeline, Aug 23/Aug 30 entries). (2) The Huawei Entity List action and its expansion (46 additional affiliates added Aug 19 per web search) represent a direct strike at China's tech ambitions and expose supply-chain vulnerability \u2014 Google's Android suspension cuts Huawei off from global mobile ecosystem access (timeline, May 16-20). (3) The decoupling trend is accelerating: US firms are actively relocating supply chains to Vietnam and Thailand (CNBC, Sep 6: 'decoupling has gone from theory to something that's really happening'), threatening China's role as the world's manufacturing hub \u2014 this is structural, not cyclical. Supporting factors: GDP at 6.2% (27-year low, Q2 data), PPI deflation, manufacturing PMI below 50, exports to US down 6.5% in July. The threat stays below +0.7 because: China's economy is still growing above 6%, stimulus measures are feeding through (Rabobank: 'expect Beijing's stimulus to feed through more strongly in H2'), China retains policy tools (RRR cuts, fiscal spending, further currency flexibility), and the US faces its own pressures \u2014 recession fears, yield curve inversion, election-year politics \u2014 which constrain Trump's escalation appetite. The action score of -0.1 (slightly toward negotiate) reflects the judgment that the October talks represent the best near-term opportunity. China has already signaled goodwill (Sep 11 exemptions, Sep 13 farm goods exclusion). Escalation now would squander that signal and risk the Oct 1 hike plus further entity-list expansion. But maximal concession is wrong too \u2014 the US demands on structural reform (IP, subsidies, state-owned enterprises) strike at the core of China's development model, and conceding on these under duress would be strategically catastrophic. The 'fight fight, talk talk' posture (cited in Washington Post, Sep 5) is sound: maintain retaliatory leverage while engaging. Key risk: if talks fail again (as the July Shanghai round did), Trump may interpret China's engagement posture as weakness and escalate further. China must enter October with a credible walk-away position.",
+      "key_factors": [
+        "Comprehensive tariff wall ($550B, 15-25%, Oct 1 hike to 30% looming)",
+        "Huawei Entity List + supply chain decoupling threat to tech ambitions",
+        "GDP slowing to 6.2% (27-year low), PPI deflation, PMI below 50",
+        "October talks represent best near-term negotiation window",
+        "US domestic constraints (recession fears, election cycle) limit Trump's escalation appetite",
+        "Goodwill gestures already deployed (Sep 11 exemptions, Sep 13 farm goods)",
+        "Structural decoupling of supply chains to Vietnam/Thailand is the long-term threat"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-23",
+          "excerpt": "China announces retaliation on ~$75B of US goods (5-10%, split Sept 1 / Dec 15), including re-imposing tariffs on US autos. Trump orders US companies to 'immediately start looking for an alternative to China'"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110-125B of Chinese imports). China's first tranche of the ~$75B retaliation also takes effect."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-13",
+          "excerpt": "Chinese state media reports soybeans, pork, and some other farm goods will be excluded from additional retaliatory tariffs (goodwill signal ahead of talks)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-sep-6-2019",
+          "excerpt": "Thanks to some major news about Google, the world got its clearest notice yet that U.S.-China decoupling has gone from just a theory to something that's really happening."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "aljazeera-gdp-q2-2019",
+          "excerpt": "Growth in gross domestic product slowed to 6.2 percent in the second quarter, down from 6.4 percent in the first three months of the year, the slowest quarterly growth rate since 1992."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washingtonpost-sep-5-2019",
+          "excerpt": "Chinese President Xi Jinping has played down the possibility of a swift and comprehensive resolution to the trade conflict. In recent speeches, he has rallied the ruling Communist Party for a protracted 'struggle' with foreign adversaries."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-09-19",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5700,
+        "capped_chars": 5700,
+        "raw_tokens": 1425,
+        "capped_tokens": 1425
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 82073,
+        "capped_chars": 82073,
+        "raw_tokens": 20517,
+        "capped_tokens": 20517
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 383017,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

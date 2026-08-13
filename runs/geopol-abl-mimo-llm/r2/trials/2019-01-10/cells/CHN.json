@@ -1,0 +1,113 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-01-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10297,
+    "tokens_out": 882,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0103574,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should maintain its retaliatory posture and signal willingness to negotiate from a position of strength, while avoiding further unilateral escalation beyond matching US moves. Retaliate proportionally to any new US tariffs, but keep the door open for talks once the US demonstrates good faith.\n\nSUPPORTING RATIONALE: The threat to China is real but not yet existential. The US has imposed tariffs on $250 billion of Chinese goods, and China's exports to the US ($505 billion) represent about 5% of GDP (RAND analysis). However, several factors mitigate the threat: (1) the yuan has already depreciated ~6% from 6.28 to 6.64 per dollar, partially offsetting tariff impacts; (2) China's retaliation targeting US agriculture and autos is politically effective, hitting Trump's base in the Midwest where soybean prices are down 20%; (3) as RAND notes, the US tariffs deliberately avoid consumer goods (58% of US imports from China) to avoid US consumer backlash, limiting the actual scope; (4) China can source food imports from alternative suppliers like Australia. The CFR analysis shows China's system of domestic subsidies, technology transfer requirements, and 'buy China' policies provide structural resilience. However, the US strategy specifically targets Made in China 2025 sectors (semiconductors, high-tech machinery), which poses a medium-term threat to China's technology upgrading goals. The Washington Post reporting on 'crossed wires' suggests negotiations have repeatedly collapsed due to US inconsistency (Trump vetoing deals with Ross and Mnuchin), making unilateral concessions risky. China's best strategy is to retaliate symmetrically while maintaining sovereignty, rally domestic nationalism, and wait for US domestic political pressure (farm belt distress, midterm election dynamics) to create conditions for genuine negotiation.",
+      "key_factors": [
+        "US tariffs on $250B of Chinese goods targeting high-tech sectors aligned with Made in China 2025",
+        "Yuan depreciation of 6% (6.28 to 6.64/USD) partially offsets tariff impact",
+        "China's retaliation on US agriculture effective - soybean prices down 20% in Midwest",
+        "US deliberately avoids consumer goods tariffs (58% of imports) limiting scope",
+        "China's structural advantages: domestic subsidies, technology transfer requirements, buy-China policies",
+        "Repeated US negotiation failures (Trump vetoing Ross and Mnuchin deals) undermine trust",
+        "China's $505B exports to US = ~5% of GDP - significant but manageable with policy response"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "China's exports to the United States are $505 billion a year...a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "The price of soybeans is already down 20 percent"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org",
+          "excerpt": "Consumer goods, including sophisticated items such as smartphones and monitors, are not on the list, presumably because tariffs would directly and quickly affect consumers"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cfr.org",
+          "excerpt": "China's industrial policy largely shifted from export promotion to import substitution after 2009"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-01-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 33204,
+        "capped_chars": 28223,
+        "raw_tokens": 8301,
+        "capped_tokens": 7056
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 21233,
+  "started_at": "2026-08-13T10:54:45+00:00"
+}

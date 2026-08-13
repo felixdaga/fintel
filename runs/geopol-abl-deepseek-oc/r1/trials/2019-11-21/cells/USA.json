@@ -1,0 +1,139 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-11-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 140897,
+    "tokens_out": 3237,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.2,
+      "rationale": "RECOMMENDATION: The United States should hold its current leverage and move to conclude the Phase One agreement now in progress \u2014 locking in China's ~$40-50B annual agricultural purchase commitment, the phased tariff-rollback framework, currency and IP provisions \u2014 while leaving deeper structural issues (subsidies, forced technology transfer, data rules) for a later phase. Cancel the scheduled Dec. 15 tariffs on ~$156B of consumer goods as part of the deal, but tie each phase of rollback to verified Chinese compliance rather than ceding tariff leverage up front.\n\nSUPPORTING RATIONALE: The dispute currently reads as a mild opportunity for the US, not a threat. The timeline shows the US holding the initiative throughout 2019 \u2014 List 3 raised to 25% (May 10), Huawei placed on the Entity List (May 16), List 4A imposed at 15% (Sept 1) \u2014 and by Oct 11 a Phase One deal in principle with China committing to $40-50B/yr of US agricultural purchases, IP, currency and financial-services provisions (timeline: 2019-10-11). China has agreed in principle to a phased mutual tariff rollback as progress is made (web: Nov 7 Reuters), confirming Beijing is conceding on purchases and enforcement. US macro corroborates that the escalation has not yet hurt the US: consumer sentiment rebounded to 96.8 in Nov from an Aug trough of 89.8, the 10Y yield recovered to ~1.73%, credit spreads (Baa) tightened to ~3.9%, and the Fed has eased aggressively (fed funds down from 2.38% to 1.55%), cushioning any drag. This supports a mildly negative threat score (-0.2): the US has extraction leverage and a near-term deal, but the unresolved structural issues and the risk of the pact collapsing keep it from being a clear unilateral win. The action stance is moderate de-escalation (negotiate, +0.15): with an interim deal on the table and the imminently scheduled Dec. 15 tariff hike, pushing to finalize and implement the phased rollback is the highest-value move \u2014 it secures the ag purchases and begins unwinding the war \u2014 while escalating further now would jeopardize the agreement and reignite the recession risk that the Fed's easing and sentiment data show the market is still pricing as a downside tail. Escalation carries a material second-order risk (Chinese retaliation, farm-belt harm already reflected in the August sentiment shock), so the disciplined course is to close Phase One and preserve leverage for the harder phases.",
+      "key_factors": [
+        "Phase One deal in principle reached Oct 11: $40-50B US ag purchases, IP, currency",
+        "China agreed in principle to phased mutual tariff rollback (Nov 7) - concession signal",
+        "Dec 15 tariff on ~$156B consumer goods scheduled; canceling it is part of the deal",
+        "US macro resilient: sentiment 96.8 (from 89.8 Aug trough), 10Y ~1.73%, Baa tight, Fed eased to 1.55%",
+        "Huawei Entity List + List 3/4 tariffs show US holds escalation initiative",
+        "Unresolved structural issues (subsidies, forced tech transfer) deferred to later phases"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "Phase One deal in principle: China to buy ~$40-50B US agricultural products annually; planned mid-Oct tariff hike delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-10",
+          "excerpt": "List 3 tariff rate rises from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce adds Huawei and affiliates to Entity List."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110-125B of Chinese imports)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters 2019-11-07",
+          "excerpt": "U.S., China agree to roll back tariffs as part of phase one trade deal, in phases as progress is made."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment 96.8 in Nov 2019, up from 89.8 Aug trough."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Fed funds fell from 2.38% (Jun) to 1.55% (Nov 2019)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10Y Treasury recovered to ~1.73% by mid-Nov 2019."
+        }
+      ],
+      "threat_score": -0.2,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-11-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5633,
+        "capped_chars": 5633,
+        "raw_tokens": 1408,
+        "capped_tokens": 1408
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47961,
+        "capped_chars": 47961,
+        "raw_tokens": 11990,
+        "capped_tokens": 11990
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 42904,
+        "capped_chars": 42904,
+        "raw_tokens": 10726,
+        "capped_tokens": 10726
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 121516,
+  "started_at": "2026-08-13T07:44:02+00:00"
+}

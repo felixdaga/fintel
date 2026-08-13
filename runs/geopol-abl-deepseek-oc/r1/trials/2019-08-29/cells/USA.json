@@ -1,0 +1,144 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-08-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 143322,
+    "tokens_out": 4515,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Hold the full September 1 escalation in abeyance, refrain from raising existing tariff lists further, and reopen a negotiated channel while keeping current tariffs as leverage. Do not follow through on the threatened hike of List 4 to 15% or the new hikes on existing lists; signal that we will trade tariff restraint for enforceable progress on purchases and enforcement. This is a strategic pause to avoid self-inflicted damage, not a surrender of our leverage.\n\nSUPPORTING RATIONALE: The threat to US interests is now material and rising. The 10-year Treasury yield has collapsed from ~2.5% in March to 1.47% with the 2-year at 1.50% (country_health DGS10/DGS2), an inversion that the market reads as a recession signal; University of Michigan consumer sentiment plunged from 100 in May to 89.8 (country_health UMCSENT). Each escalation move has triggered sharp selloffs (Dow down ~500 points on Aug 23 after Trump's tweets; CNBC/LA Times) and business groups strongly warn the Aug 23 5-point List 4 hike and $75B Chinese retaliation will hit US consumers, tech, and retailers directly (timeline Aug 13, Aug 23; CNN/Lexology). Critically, continued escalation has not extracted concessions: China renegotiated rather than sign (timeline May 5, Aug 1) and retaliated again rather than fold (timeline Aug 23, auto tariffs re-imposed). The US still holds genuine leverage \u2014 the dollar is strong at 117.9 and industrial production is still growing (country_health DTWEXBGS, INDPRO) \u2014 so the right stance is to keep that leverage and negotiate from strength rather than escalate into a spiral that risks the recession the yield curve is already pricing. Hence a threat_score of +0.55 (material GDP/market drag but not existential) and an action_score of +0.15 (hold/negotiate): a tempered, deliberate pivot toward talks that preserves our negotiating position.",
+      "key_factors": [
+        "Inverted 10Y/2Y yield curve (1.47% vs 1.50%) pricing recession risk from the trade war",
+        "Consumer sentiment collapse to 89.8 from 100 in May",
+        "Aug 23 China retaliation on $75B of US goods and re-imposed auto tariffs; US ordered 5-pt List 4 hike to 15%",
+        "Continued escalation (May 5 renegotiation, Aug 1 announcement) has yielded little \u2014 China retaliates rather than concedes",
+        "US retains leverage: strong dollar (117.9) and still-growing industrial production",
+        "Fed already cut to 2.13 and cannot fully offset trade-war damage; business groups urge restraint"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-23",
+          "excerpt": "China announces retaliation on ~$75B of US goods... Trump orders US companies to find alternative to China and directs a 5-point increase on List 4 and threatened hikes on existing lists."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-13",
+          "excerpt": "USTR splits List 4... 4A effective Sept 1; 4B delayed to Dec 15."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-01",
+          "excerpt": "Trump announces 10% tariffs on the remaining ~$300B of Chinese goods (List 4), effective Sept 1."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "Treasury designates China a currency manipulator after CNY breaks 7."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10-year Treasury yield at 1.47% (Aug 28), down from ~2.5% in March."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS2",
+          "excerpt": "2-year Treasury yield at 1.50% \u2014 yield curve inverted."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment fell to 89.8 in Aug from 100 in May."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc.com/2019/08/23",
+          "excerpt": "Yield curve inverts again Friday as Trump reignites fears the trade war will lead to a recession; 10Y at 1.535%, 2Y at 1.513%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "latimes.com 2019-08-23",
+          "excerpt": "Dow sank more than 500 points after Trump tweets; 10Y fell to 1.53%."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-08-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5363,
+        "capped_chars": 5363,
+        "raw_tokens": 1341,
+        "capped_tokens": 1341
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47863,
+        "capped_chars": 47863,
+        "raw_tokens": 11966,
+        "capped_tokens": 11966
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 42191,
+        "capped_chars": 42191,
+        "raw_tokens": 10547,
+        "capped_tokens": 10547
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 484158,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

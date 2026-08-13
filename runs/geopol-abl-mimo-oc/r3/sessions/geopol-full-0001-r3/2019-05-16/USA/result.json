@@ -1,0 +1,78 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "score": 0.35,
+      "threat_score": 0.35,
+      "action_score": -0.1,
+      "action_level": "hold",
+      "rationale": "RECOMMENDATION: Hold current posture and do not escalate further. The recent actions (List 3 hike to 25%, Huawei entity list) have already sent a strong signal. Let the June G20 Trump-Xi meeting serve as a natural checkpoint for negotiations. The Huawei restrictions are a powerful lever that takes time to bite \u2014 there is no need to add more tariffs before seeing the effect. Maintain the threat of the $300B list as leverage without activating it.\n\nSUPPORTING RATIONALE: Threat score of +0.35 reflects a moderately elevated but manageable threat. The dispute has escalated sharply \u2014 List 3 raised from 10% to 25% on May 10, China retaliated on May 13 with higher tariffs on ~$60B of US goods, and on May 15 Trump signed EO 13873 restricting Huawei and added Huawei + 70 affiliates to the Entity List (event_timeline, May 10-15 entries). Markets have reacted violently: the Dow plunged 600+ points on May 13, S&P 500 down 4%+ in May, and the 10-year Treasury yield collapsed from 3.06% in November 2018 to 2.37% on May 15 (country_health DGS10), signaling a flight to safety and growth concerns. Analyst estimates suggest the 25% tariffs could trim 0.3pp from US GDP growth and cost 934,000 jobs, with $767/year in added costs per family of four (web_search: USA Today/Trade Partnership analysis). The agricultural sector is under direct pressure \u2014 soybean prices at $8.04/bushel, lowest since December 2008 (web_search: HeraldNet). However, the threat is not existential for the US: consumer sentiment is at 100 in May (country_health UMCSENT), the broad dollar index is stable at ~115.86 (country_health DTWEXBGS), and the Fed holds rates steady at 2.39%. The US has significant leverage \u2014 Huawei's supply chain dependence on US chips gives the entity list real teeth, and the $300B tariff threat remains in reserve. Action score of -0.1 (hold) is justified because: (a) the Huawei action is only one day old and needs time to take effect and signal resolve, (b) further tariff escalation risks tipping the US into recession given existing damage, (c) Trump has signaled willingness to meet Xi at the G20 in Japan in June (NYT, May 13), creating a near-term diplomatic window, and (d) China is already hurting \u2014 facing slowing growth and African swine flu impacting their food supply (web_search: Wharton analysis) \u2014 meaning time works in America's favor. Escalating now would foreclose the G20 opportunity and risk further market damage.",
+      "key_factors": [
+        "List 3 tariff hike from 10% to 25% on $200B of Chinese goods (May 10)",
+        "China retaliated with higher tariffs on ~$60B of US goods (May 13)",
+        "Huawei + 70 affiliates placed on Entity List via EO 13873 (May 15)",
+        "US stock market plunging: Dow -600+, S&P -4%+ in May",
+        "10-year Treasury yield collapsed from 3.06% to 2.37% (flight to safety)",
+        "GDP growth impact estimated at 0.3pp, ~934K jobs at risk from 25% tariffs",
+        "Soybean prices at lowest since Dec 2008, farm sector under pressure",
+        "Consumer sentiment still strong at 100 (May), dollar stable",
+        "G20 Trump-Xi meeting possible in June as diplomatic window",
+        "China facing slowing growth + African swine flu, limiting their options"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-10",
+          "excerpt": "List 3 tariff rate rises from 10% to 25%"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-13",
+          "excerpt": "China announces it will raise retaliatory tariff rates on its ~$60B US-goods list"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-15",
+          "excerpt": "Trump signs Executive Order 13873 (securing information/communications technology supply chains). Commerce moves to restrict Huawei."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10-year Treasury yield: 3.06% (Nov 2018) \u2192 2.37% (May 15, 2019), change -0.69"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer Sentiment: 100 in May 2019 (up from 91.2 in January)"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad dollar index stable at ~115.86 as of May 15"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usatoday_2019-05-10",
+          "excerpt": "25% tariff would cut U.S. employment by 934,000 and cost the average family of four $767 a year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "heraldnet_2019-05-13",
+          "excerpt": "Soybeans sliding to $8.04 a bushel, lowest since December 2008"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wharton_2019-05-14",
+          "excerpt": "China has its own food crisis right now; losing about half their pigs to African swine flu"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes_2019-05-13",
+          "excerpt": "President Trump said on Monday that he would meet with China's president, Xi Jinping, next month in Japan"
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

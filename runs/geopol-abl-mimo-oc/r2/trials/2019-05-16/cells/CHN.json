@@ -1,0 +1,136 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-05-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: Continue measured retaliation to demonstrate resolve while signaling willingness to resume talks at the G20 in late June. The immediate priority is to absorb the Huawei entity-list blow by accelerating domestic chip development and diversifying supply chains, while retaliating proportionally on tariffs and holding the line on structural sovereignty issues. Do not over-escalate to the point where a G20 meeting becomes politically impossible.\n\nSUPPORTING RATIONALE: The threat reading of +0.65 reflects a sharply deteriorating position. The US raised List 3 tariffs from 10% to 25% on May 10 covering ~$200B of Chinese exports (event_timeline, 2019-05-10). Trump has ordered preparation of tariffs on essentially ALL remaining Chinese imports (~$300B), which would bring total coverage to ~$500B \u2014 equivalent to roughly 4% of China's GDP (web_search, Forbes 2019-05-09). Most critically, on May 15 Commerce placed Huawei on the entity list (event_timeline, 2019-05-15), directly threatening China's largest tech company and the Made in China 2025 agenda by potentially cutting off access to US semiconductor components. China's economy showed resilience in Q1 2019 at 6.4% growth beating expectations (web_search, CNN/SCMP 2019-04-17), but April data already shows cracks \u2014 retail sales growth hit a 16-year low at 7.2% and industrial production slowed sharply to 5.4% from March's 8.5% (web_search, Al Jazeera 2019-05-15). Morgan Stanley estimates the tariff hike alone could trim 0.5pp from annual growth (web_search, CBS News 2019-05-13). China has already retaliated with tariffs on $60B of US goods effective June 1 (event_timeline, 2019-05-13), matching but not exceeding the US move. However, China's retaliatory toolkit is asymmetrically limited \u2014 the US imports far more from China than vice versa, so China cannot match tit-for-tat on tariffs alone. The action_score of -0.45 (moderate escalation) reflects the judgment that China must retaliate to signal it will not buckle under pressure \u2014 both for domestic legitimacy and to maintain leverage \u2014 but should avoid actions that foreclose the G20 meeting between Trump and Xi, which Larry Kudlow indicated is likely (web_search, NPR 2019-05-13). The key structural challenge is that the US demands codification of reforms into Chinese law (web_search, CNBC 2019-05-08), which Beijing views as a sovereignty violation. This is the core impasse, and it is unlikely to be resolved quickly. China's best strategy is to weather the tariff storm with stimulus (already showing results), retaliate proportionally, and wait for the political dynamics on the US side \u2014 particularly farm-belt pressure and business community concerns \u2014 to create space for a deal. The risk of full escalation to all Chinese imports is real but would also hurt US consumers and businesses, which provides some natural ceiling.",
+      "key_factors": [
+        "US raised List 3 from 10% to 25% on $200B (May 10) \u2014 tariff escalation is real and immediate",
+        "Huawei placed on entity list (May 15) \u2014 existential threat to China's tech champion and Made in China 2025",
+        "Trump preparing tariffs on remaining ~$300B of Chinese imports \u2014 would cover nearly all bilateral trade",
+        "China retaliated with $60B tariffs on US goods (effective June 1) \u2014 measured, proportional response",
+        "China Q1 GDP 6.4% beat expectations, but April data shows sharp slowdown (retail sales 16-year low, IP down to 5.4%)",
+        "Deal collapsed because US demands Chinese law changes; Beijing views this as sovereignty violation",
+        "G20 meeting in late June remains possible \u2014 natural next checkpoint for negotiations",
+        "China's retaliatory toolkit is asymmetrically limited due to trade imbalance"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-10",
+          "excerpt": "List 3 tariff rate rises from 10% to 25%"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-13",
+          "excerpt": "China announces it will raise retaliatory tariff rates on its ~$60B US-goods list (higher rates phased in; many effective June 1)"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-15",
+          "excerpt": "Trump signs Executive Order 13873 (securing information/communications technology supply chains). Commerce moves to restrict Huawei."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "forbes-2019-05-09",
+          "excerpt": "If Trump went ahead and tariffed a combined $500 billion of Chinese imports, it would be the equivalent of roughly 4% of China's $13.5 trillion GDP"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "aljazeera-2019-05-15",
+          "excerpt": "Retail sales grew by 7.2 percent year-on-year in April, significantly lower than the 8.7 percent growth recorded in March. Industrial production expanded by 5.4 percent, far lower than the 8.5 percent growth recorded in March"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-05-08",
+          "excerpt": "In each of the seven chapters of the draft trade deal, China had deleted its commitments to change laws to resolve core complaints"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cbsnews-2019-05-13",
+          "excerpt": "According to Morgan Stanley economists, the tariff hike could trim China's annual economic growth by 0.5 percentage points"
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": -0.45,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-05-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4720,
+        "capped_chars": 4720,
+        "raw_tokens": 1180,
+        "capped_tokens": 1180
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 17684,
+        "capped_chars": 17684,
+        "raw_tokens": 4421,
+        "capped_tokens": 4421
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 67564,
+        "capped_chars": 67564,
+        "raw_tokens": 16890,
+        "capped_tokens": 16890
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 387177,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

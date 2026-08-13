@@ -1,0 +1,61 @@
+{
+  "USA": {
+    "symbol": "USA",
+    "score": -0.2,
+    "rationale": "RECOMMENDATION: Stay in the negotiation lane and press the talks to a deal rather than break the truce by escalating. The suspended January List 3 hike (10% to 25% on ~$200B) is a credible lever that expires at the March 1 deadline, so we should use it to extract enforceable Chinese commitments on purchases and structural issues while keeping the option of extending the deadline if talks are making genuine progress. Do not unilaterally escalate now, and do not concede the enforcement/IP platform we still hold.\n\nSUPPORTING RATIONALE: For the USA this dispute reads as a mild opportunity rather than a threat. The US holds the offensive \u2014 it imposed Section 301 tariffs on ~$250B of Chinese goods (timeline: 2018-09-24) and forced a 90-day truce at G20 (2018-12-01) that froze the 25% hike \u2014 while China's economy is slowing and Beijing is eager to avoid the tariff jump. That is leverage to extract concessions and a domestic political credit for being tough on China. However, the threat is not a clean -0.5: China's retaliation has already hit US exports (soybeans, autos; 2018-04-04, 2018-09-24), and the macro picture is softening \u2014 University of Michigan sentiment fell to a Trump-presidency low in January (UMCSENT), industrial production dipped, and the 10Y yield drifted down to ~2.65% while economists' surveys ranked the trade war as the top 2019 US downside risk (web search). The near-term hazard is a hard deadline failure re-triggering full escalation into a fragile market. That mix justifies negotiate (action_score 0.0): we keep our leverage and the suspended tariff threat, seek an enforceable agreement, and avoid both a destabilizing escalation and a premature concession on enforcement/tech-transfer issues.",
+    "key_factors": [
+      "US holds ~$250B Section 301 tariffs and the suspended 25% hike as leverage",
+      "90-day truce expires ~March 1; talks progressing on purchases but enforcement/IP unresolved",
+      "China economy slowing and eager to avoid tariff escalation",
+      "US macro softening: sentiment near low, IP down, 10Y falling, economists flag trade war as top risk",
+      "Farm-belt/export retaliation already in effect"
+    ],
+    "sources_cited": [
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-09-24",
+        "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B."
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-12-01",
+        "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended."
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-02-14",
+        "excerpt": "Another round of talks. Progress reported on purchases; enforcement mechanism still disputed."
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "UMCSENT",
+        "excerpt": "Consumer sentiment fell to 91.2 (Jan) then 93.8 (Feb) from 100.1 in Sep."
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "https://www.businessinsider.com/trump-china-trade-war-tariffs-biggest-2019-us-economic-threat-2018-12",
+        "excerpt": "47% of economists cited the trade war with China as the top 2019 US economic threat."
+      }
+    ],
+    "threat_score": -0.2,
+    "action_score": 0,
+    "action_level": "negotiate"
+  },
+  "CHN": {
+    "symbol": "CHN",
+    "score": 0.45,
+    "rationale": "RECOMMENDATION: Continue the ongoing negotiations through to the March 1 deadline, match the US's constructive tone, and keep delivering on the promised purchase commitments (soybeans, energy, manufactured goods) as tangible de-escalation currency \u2014 but hold firm against US demands for a direct enforcement mechanism that would let Washington monitor Chinese legal and economic decisions, which we must treat as a sovereignty red line. Do not retaliate or escalate further, since that would all but guarantee the $200B tariff tranche jumps from 10% to 25% on March 1 and deepen the damage to an already-slowing export economy.\n\nSUPPORTING RATIONALE: The threat is real and high, but not existential. US Section 301 tariffs already cover ~$250B of Chinese goods (timeline 2018-09-24), and the suspended Jan 1 hike to 25% on ~$200B is now a hard March 1 deadline (Lighthizer: 'hard deadline'; 2018-12-10/2019-02-14 reporting). This is a genuine overhang on our export base at a moment when China's economy hit a three-decade-low 6.6% growth in 2018 with Q4 at 6.4%, exports contracting in December, and imports from the US down 41.2% \u2014 all PIT-visible before the decision date. Huawei is under direct firm-level targeting: DOJ unsealed charges and a formal extradition request on Jan 28 (timeline), and Washington is pressuring allies to exclude Huawei from 5G, a direct assault on our tech-autonomy ambitions (Made in China 2025). That combination \u2014 tariff overhang plus tech containment plus a slowing economy \u2014 pushes threat to +0.45. It is NOT +0.8/+1.0 because the escalation has been paused: the US suspended the Jan 1 hike, high-level talks are progressing (Jan 30, Feb 14-15) with genuine purchase progress, and both sides have signaled a deal is possible, so this reads as a high, manageable threat rather than an existential one. Actionally, escalatory retaliation is the wrong instrument \u2014 it answers the opponent's likely response poorly (raising tariffs to 25% that they have explicitly threatened) and hurts our own slowing exporters; maximal concession is equally wrong because the US demands (IP, forced tech-transfer rollback, subsidy wind-down, and above all an enforcement mechanism) touch core economic sovereignty and would be politically untenable and strategically self-defeating to grant wholesale. The disciplined middle is negotiate: keep the deal alive, bank goodwill through purchases, and probe for an enforcement compromise without pre-committing beyond what talks warrant.",
+    "key_factors": [
+      "US tariffs on ~$250B of Chinese goods at 10%, with $200B tranche set to rise to 25% on March 1 if no deal (hard deadline)",
+      "90-day truce from G20 with talks resuming Jan 7, Jan 30, Feb 14-15; progress on purchases, enforcement/structural IP unresolved",
+      "Huawei targeted: DOJ charges + extradition request Jan 28; US pressuring allies to bar Huawei from 5G \u2014 tech containment of Made in China 2025",
+      "China economy at 3-decade low (6.6% in 2018, 6.4% Q4), December export contraction, imports from US down 41.2%; stimulus being deployed",
+      "US enforcement-mechanism demand conflicts with China's economic-sovereignty red line",
+      "Escalation paused (Jan 1 hike suspended) and both sides signaling a deal is reachable \u2014 high but not existential threat"
+    ],
+    "sources_cited": [],
+    "threat_score": 0.45,
+    "action_score": 0.1,
+    "action_level": "negotiate"
+  }
+}

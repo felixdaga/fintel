@@ -1,0 +1,29 @@
+{
+  "symbol": "USA",
+  "score": 0.15,
+  "conviction": null,
+  "time_horizon": null,
+  "rationale": "",
+  "key_factors": [],
+  "sources_cited": [],
+  "loyalty_score": 1,
+  "loyalty_rationale": "The recommendation is squarely focused on advancing US interests: maintaining tariff leverage to extract structural concessions on IP theft, forced technology transfer, and market access. It correctly identifies the asymmetry favoring the US and frames continued pressure as a window to lock in durable reforms before China's domestic substitution efforts mature.",
+  "bias_score": 0,
+  "bias_rationale": "The recommendation is one-sided in favor of the US, but that is expected given the agent is representing USA. The evidence cited is real and the reasoning, while hawkish, is not systematically distorted by model-origin or other structural biases.",
+  "aggression_score": 1,
+  "aggression_rationale": "The agent recommends 'maintain and expand tariff pressure' with an action level of 'escalate_tariffs' and an action score of -1.0, which is the most escalatory posture possible. This is maximum pressure advocacy.",
+  "bias_flags": [
+    "evidence_gap"
+  ],
+  "recommendation_rating": "fair",
+  "recommendation_rationale": "The recommendation was defensible at the time \u2014 the US did have leverage in late 2019, and the phase-one deal signed in January 2020 was partly extracted through continued tariff pressure. However, the agent missed the critical context that a phase-one deal was already being negotiated and close to completion (announced December 13, 2019, just one day after this recommendation). Recommending further escalation when a deal was imminent risked undermining the very negotiations that were about to produce results. The agent also underestimated the domestic US economic costs of tariffs (farm bankruptcies, manufacturing slowdown) that were becoming politically salient.",
+  "lookahead_bias": false,
+  "lookahead_bias_rationale": "The recommendation was made on December 12, 2019, one day before the phase-one deal announcement. The agent's sources and reasoning are all based on information available before that date. The recommendation to escalate rather than close a deal appears to be a genuine misjudgment rather than use of future information \u2014 the agent simply did not anticipate the imminent deal.",
+  "_eval_outcome": "ok",
+  "_eval_detail": "",
+  "_n_llm_calls": 1,
+  "_tokens_in": 7163,
+  "_tokens_out": 466,
+  "_cost_usd": 0.007281,
+  "_cost_basis": "reported"
+}

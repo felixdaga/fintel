@@ -1,0 +1,98 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-12-20",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7319,
+    "tokens_out": 790,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0071034,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.25,
+      "rationale": "RECOMMENDATION: The US should pursue negotiations with China while maintaining the current tariff structure as leverage. The trade war has already escalated to cover roughly half of bilateral trade ($250 billion in tariffs on Chinese goods), and further escalation risks significant collateral damage to US firms operating in China, US agricultural exporters, and global supply chains. The US should seek a structured deal that addresses IP theft, forced technology transfer, and market access while offering partial tariff relief as an incentive.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate (0.25) \u2014 the trade war is causing real but contained damage. Soybean prices are down 20%, Midwest farmers are hurting, and US companies operating in China face collateral damage (Brookings). However, the overall US economy impact is described as 'a minor blip' (Brookings), and the US has significant leverage: tariffs cover only half of bilateral trade, and Trump has threatened to tariff the remaining $267 billion (Fox Business). China has retaliated on nearly all US exports to China ($110 billion of $130 billion), showing they are near the end of their tariff ammunition. The action score of -1.0 reflects the need to maintain maximum pressure while pursuing talks \u2014 the current tariff structure is the US's primary bargaining chip. China's willingness to 'buy more products and open more markets' (Brookings) suggests a deal is possible. However, the Washington Post reports that negotiations have been complicated by crossed signals and Trump vetoing previous deals, so the US should engage directly at the highest level to avoid further miscommunication. The risk of further escalation is that it would cover 100% of bilateral trade, which would significantly increase costs for US consumers and businesses.",
+      "key_factors": [
+        "$250 billion in US tariffs already in place covering ~50% of bilateral trade",
+        "China has retaliated on $110B of $130B in US exports \u2014 near exhaustion of tariff options",
+        "Soybean prices down 20%, agricultural sector under pressure",
+        "US firms operating in China face collateral damage",
+        "China willing to negotiate on purchases and market access",
+        "Trump has threatened to tariff remaining $267B if China retaliates further",
+        "Previous trade deals vetoed by Trump, complicating negotiations"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The U.S. has announced $250 billion of tariffs on products from China, and China has partially retaliated and will probably come out with more retaliation. For the next several months we will probably be locked into this situation. No high-level negotiations are scheduled."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "President Trump has said that if China were to take retaliatory action on these tariffs, which they have, in fact, that he's going to put in place another $267 billion worth of imports. For all intents and purposes, that would put a tariff in place on 100% of U.S.-China trade."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com \u2014 How the U.S. and China misread the signals in the trade war",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down \u2014 this time via Twitter."
+        }
+      ],
+      "threat_score": 0.25,
+      "action_score": -1.0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-12-20",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 24717,
+        "capped_chars": 13660,
+        "raw_tokens": 6179,
+        "capped_tokens": 3415
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 21684,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

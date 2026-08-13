@@ -1,0 +1,102 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-04-04",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7546,
+    "tokens_out": 951,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0078006,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should announce retaliatory tariffs on the newly threatened US goods, matching the scale and scope of the US escalation, while publicly signaling willingness to negotiate if the US de-escalates. This maintains deterrence and demonstrates resolve without foreclosing the diplomatic channel.\n\nSUPPORTING RATIONALE: The threat score of +0.45 reflects that as of early April 2019, the US has imposed tariffs on $250 billion of Chinese goods (roughly half of bilateral trade), with President Trump threatening to tariff the remaining $267 billion if China retaliates (Fox Business/Motley Fool transcript). China's export economy is heavily exposed \u2014 smartphones, computers, and tablets assembled in China are major export categories, and the tariff escalation directly threatens manufacturing hubs and employment. However, the threat is not yet existential because: (1) more than half the value of China's assembled exports comes from foreign components (Brookings/Dollar), meaning the tariffs also hurt US firms and third-country suppliers, creating collateral pressure on the US to negotiate; (2) China has already retaliated on $110 billion of $130 billion in US imports into China, nearly exhausting its tariff retaliation capacity but also demonstrating resolve; (3) China has strategically lowered tariffs on goods from other countries to redirect trade away from the US, showing adaptive capacity. The action score of -1.0 (retaliate) is justified because: the US has escalated to $250 billion and is threatening full coverage \u2014 capitulation now would signal weakness and invite further demands on structural issues (IP theft, state subsidies, joint-venture requirements) that go to the core of China's economic model. As the Fox Business analysis notes, the US is explicitly framing this as a contest over China's 'global rise,' meaning concessions on structural issues would undermine China's development strategy. Retaliation preserves bargaining leverage for eventual negotiations. The Brookings analysis suggests that after the 2018 US midterms, 'we're likely to see the two sides come together and negotiate something so that they can both save face' \u2014 maintaining pressure now keeps that option open on favorable terms.",
+      "key_factors": [
+        "US has tariffed $250B of Chinese goods, threatening to cover all $500B+ of bilateral trade",
+        "China's export economy exposed but tariffs also hurt US firms via global value chains (over half of export value is foreign components)",
+        "China has already retaliated on $110B of $130B in US imports, nearly maxing out tariff retaliation capacity",
+        "US framing of dispute as existential competition over China's global rise makes structural concessions unacceptable",
+        "China has lowered tariffs on non-US goods to redirect trade, showing adaptive strategy",
+        "Post-2018-midterm window for face-saving negotiations remains plausible per Brookings analysis"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "President Trump has said that if China were to take retaliatory action on these tariffs, which they have, in fact, and I'll explain that here in a second, that he's going to put in place another $267 billion worth of imports. For all intents and purposes, that would put a tariff in place on 100% of U.S.-China trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "While China is the final assembler from many products, actually more than half of the value of those products are in parts and components from other countries like South Korea and Japan\u2014so there will definitely be collateral damage from U.S. tariffs."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "After the 2018 elections, we're likely to see the two sides come together and negotiate something so that they can both save face, but it is unlikely that this will be anytime soon"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "No, acquiescence to the status quo now without a real trade deal only helps China further their global rise at our own expense. Plain and simple, this is one war America must win"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-04-04",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18202,
+        "capped_chars": 14601,
+        "raw_tokens": 4550,
+        "capped_tokens": 3650
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 23858,
+  "started_at": "2026-08-13T10:55:11+00:00"
+}

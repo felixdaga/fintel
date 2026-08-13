@@ -1,0 +1,102 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-05-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9879,
+    "tokens_out": 863,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0098824,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: China should continue engaging in negotiations with the United States while maintaining a firm but measured posture. The May 20 joint statement putting tariffs 'on hold' represents a fragile de-escalation window that should be preserved. China should commit to increased purchases of U.S. goods and services as a goodwill gesture while avoiding structural concessions on Made in China 2025 or technology transfer policies that would undermine long-term strategic goals.\n\nSUPPORTING RATIONALE: The threat to China is moderate and real but not yet existential. The U.S. has proposed tariffs on up to $153 billion of Chinese goods (CBS News, April 6), and the Section 301 investigation specifically targets China's technological advancement under Made in China 2025 (Bruegel analysis). The U.S. tariff list focuses 84% on high-end exports, directly threatening China's technology upgrade ambitions. However, as of the May 24 decision date, none of the proposed tariffs have actually been implemented. The May 20 Guardian report confirms Mnuchin announced the trade war is 'on hold' following Liu He's negotiations in Washington, with a joint statement committing to 'effective measures' to cut the trade deficit. This creates a window for managed de-escalation. China's own retaliation list targets $50 billion in U.S. goods including soybeans, cars, and aircraft \u2014 sectors that would hurt U.S. exporters but also impose costs on Chinese consumers and producers (Bruegel notes China buys 41% of imported soybeans and 63% of imported aircraft from the U.S.). The self-inflicted cost of retaliation argues against further escalation. At the same time, the U.S. has not achieved its stated goal of a $200 billion deficit reduction, and the 'hold' is fragile \u2014 JP Morgan's Tai Hui warns the U.S. could re-engage if it perceives China as 'dragging its feet.' China should negotiate in good faith on purchase commitments while protecting its core technology policy autonomy.",
+      "key_factors": [
+        "U.S. proposed tariffs on up to $153 billion of Chinese goods but none yet implemented as of May 24, 2018",
+        "May 20 joint statement puts trade war 'on hold' after Liu He-Mnuchin negotiations",
+        "U.S. Section 301 investigation targets Made in China 2025 technology advancement goals",
+        "84% of U.S. tariff targets are high-end exports, directly threatening China's tech upgrade path",
+        "China's retaliation targets ($50B) impose self-inflicted costs (41% of soybeans, 63% of aircraft from U.S.)",
+        "Fragility of the truce: U.S. could re-engage if China seen as dragging feet on commitments"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China after China formally filed a trade complaint"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.theguardian.com",
+          "excerpt": "We have agreed to put the tariffs on hold while we try to execute the framework"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports; the U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China has increased tariffs by up to 25 percent on 128 U.S. products, from frozen pork and wine to certain fruits and nuts"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-05-24",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 29488,
+        "capped_chars": 25063,
+        "raw_tokens": 7372,
+        "capped_tokens": 6266
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 13515,
+  "started_at": "2026-08-13T10:55:30+00:00"
+}

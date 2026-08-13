@@ -1,0 +1,108 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-07-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 11066,
+    "tokens_out": 980,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0114204,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue to retaliate in kind against U.S. tariffs, matching each escalation with proportional counter-tariffs on American agricultural and industrial goods. This maintains China's credibility and signals that coercion will not yield unilateral concessions. Beijing should also begin quietly diversifying soybean and energy supply chains toward Brazil, Russia, and other suppliers to reduce long-term vulnerability.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The U.S. has imposed 25% tariffs on $34 billion of Chinese goods (effective July 6, 2018) and is threatening up to $250 billion more (Brookings, Dollar). China's exports to the U.S. total ~$505 billion, roughly 5% of GDP, making it far more exposed in absolute dollar terms than the U.S. (whose $130B exports to China are ~0.7% of GDP) (RAND analysis). The yuan has already depreciated 6% from 6.28 to 6.64 per dollar since April, providing some buffer but also signaling capital outflow pressure (RAND). However, China retains significant retaliatory capacity: it can target politically sensitive U.S. sectors\u2014soybeans (already down 20%), automobiles, Boeing aircraft\u2014concentrated in electorally important U.S. states (Brookings, CBS News). The Trump administration views this trade war as a midterm election strategy, meaning pressure will intensify before November 2018 (Brookings, Dollar). China's retaliation is justified on sovereignty grounds and is economically rational: RAND's analysis shows Chinese businesses will lose less overall than American businesses in the first round because China's retaliatory list targets lower-technology, consumer-facing goods that are easier to source from alternative suppliers (e.g., Australia for food). Retaliation now preserves negotiating leverage for the post-midterm period when Brookings analysts expect both sides may seek a face-saving deal.",
+      "key_factors": [
+        "U.S. imposed 25% tariffs on $34B of Chinese goods on July 6, 2018; threatening up to $250B more",
+        "China's exports to U.S. (~$505B) represent ~5% of GDP vs. U.S. exports to China (~$130B) at ~0.7% of GDP",
+        "Yuan depreciated 6% (6.28\u21926.64/USD) since April, providing partial offset but signaling stress",
+        "China's retaliation targets politically sensitive U.S. sectors: soybeans (price down 20%), autos, Boeing",
+        "Trump admin views trade war as midterm election strategy; no off-ramp before November 2018",
+        "RAND analysis: Chinese firms likely to lose less than American firms in first round due to nature of targeted goods",
+        "No high-level negotiations currently scheduled; Brookings expects post-election talks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The U.S. has announced $250 billion of tariffs on products from China, and China has partially retaliated and will probably come out with more retaliation. For the next several months we will probably be locked into this situation. No high-level negotiations are scheduled."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "Chinese businesses are therefore likely to lose less overall than American businesses from this first round of the trade war."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The Trump administration sees this as a winning strategy for the midterm elections in 2018. Trump said he would hit China, and now he has"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com \u2014 Trade war with China: What you need to know",
+          "excerpt": "Soybean prices fell to their lowest level in two years on Wednesday after China's list came out"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-07-26",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35798,
+        "capped_chars": 31232,
+        "raw_tokens": 8950,
+        "capped_tokens": 7808
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 23413,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

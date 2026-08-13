@@ -1,0 +1,107 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-07-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10418,
+    "tokens_out": 922,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.013184,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should immediately implement its announced retaliatory tariffs on $34 billion of U.S. goods starting July 6 as planned, and prepare the additional $16 billion tranche. Retaliation must be firm and proportional to signal that coercive trade tactics will not go unanswered, while avoiding actions that would disproportionately harm China's own supply chains (e.g., semiconductors should remain exempt).\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The U.S. has announced 25% tariffs on ~$50 billion of Chinese imports targeting 'industrially significant technologies' including aerospace, robotics, and automobiles (Politico, CBS News). These tariffs are explicitly designed to constrain China's technological advancement under Made in China 2025 (Bruegel analysis: 'the U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder'). This represents a direct strategic threat to China's industrial policy goals. However, as of July 5, the tariffs have not yet taken effect (the first $34 billion tranche is set for July 6), and there was a brief 'hold' period in May (Guardian, May 20) suggesting the situation remains fluid. The threat is elevated (+0.45) because the U.S. targeting is specifically aimed at high-tech sectors central to China's development strategy, but tempered by the fact that actual implementation is still pending and the U.S. has shown willingness to negotiate.\n\nThe action_score of -1.0 (retaliate) is justified because: (1) China has already announced matching retaliatory tariffs and must follow through to maintain credibility\u2014failure to retaliate would invite further escalation; (2) China's retaliation strategically targets U.S. agricultural exports (soybeans, $14B annually) and automotive sectors that hit politically sensitive U.S. constituencies (farm-belt, rust belt), creating domestic political pressure on Trump; (3) the Bruegel analysis confirms China has calibrated its retaliation to minimize self-inflicted harm by focusing on lower-end, substitutable products while exempting semiconductors; (4) as the Wired article notes, 43% of Chinese exports to the U.S. come from foreign-owned firms, meaning U.S. tariffs partly punish American companies, giving China leverage. Retaliation now preserves negotiating position for future talks.",
+      "key_factors": [
+        "U.S. tariffs on $50B targeting Made in China 2025 sectors (aerospace, robotics, autos) set to take effect July 6",
+        "China's retaliation strategically targets politically sensitive U.S. sectors (soybeans, agriculture, autos)",
+        "Bruegel analysis: U.S. aims to constrain China's technological ascent, not just reduce trade deficit",
+        "May 2018 'hold' agreement collapsed; tariffs now imminent",
+        "China exempted semiconductors from retaliation to protect own supply chain",
+        "43% of Chinese exports to U.S. from foreign-owned firms means U.S. tariffs partly self-defeating"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "The 25 percent tariffs will be placed on roughly $50 billion in imports from China... products containing 'industrially significant technologies,' like aerospace, robotics and automobiles"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "the U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.theguardian.com",
+          "excerpt": "We're putting the trade war on hold, right now, we have agreed to put the tariffs on hold while we try to execute the framework"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "China wasted no time saying it would punch back with $50 billion in tariffs on 106 products it imports from America"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.wired.com",
+          "excerpt": "43 percent of Chinese exports are sourced from foreign (i.e., non-Chinese) owned firms"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-07-05",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 32814,
+        "capped_chars": 28441,
+        "raw_tokens": 8204,
+        "capped_tokens": 7110
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 18744,
+  "started_at": "2026-08-13T10:55:25+00:00"
+}

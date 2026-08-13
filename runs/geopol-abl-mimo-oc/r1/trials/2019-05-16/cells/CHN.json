@@ -1,0 +1,136 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-05-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Announce our already-planned retaliatory tariff increases on $60B of US goods as scheduled, but keep the response proportional and avoid escalatory rhetoric. Signal through state media and back-channels that we remain willing to negotiate, targeting the G20 Osaka summit (late June) as the next opportunity for leaders to meet. Do NOT dump Treasurys or take other financial-nuclear options. Restrict rare earth export discussions to aspirational policy signals, not concrete action yet.\n\nSUPPORTING RATIONALE: The threat to China is high but not existential. Three converging pressures drive my +0.55 threat score:\n\n(a) Tariff escalation is accelerating: List 3 rose from 10% to 25% on May 10, covering $250B of Chinese exports, and USTR has initiated process for 25% tariffs on the remaining ~$300B (timeline entry 2019-05-05, 2019-05-10). If enacted, this would cover virtually all Chinese exports to the US \u2014 our largest single-country export market.\n\n(b) The Huawei Entity List action (EO 13873, signed May 15) represents a qualitative escalation beyond tariffs into technology containment. Adding Huawei and 70 affiliates to the Commerce Entity List threatens our most globally competitive tech firm and signals the US is willing to weaponize supply chains, not just impose tariffs. This directly threatens Made in China 2025 ambitions.\n\n(c) Our retaliatory capacity is structurally constrained. China imports far less from the US (~$120B) than it exports (~$540B), meaning we are running out of US goods to tariff. Our $60B retaliation list (announced May 13) is already near the ceiling of what we can target. Reuters analysis (May 15) confirms China is 'running out of options to hit back without hurting its own interests.'\n\nHowever, several factors prevent me from scoring this as existential (+0.8 or higher): Q1 2019 GDP came in at 6.4% \u2014 beating expectations and matching Q4 2018 \u2014 with industrial production surging 8.5% in March, the strongest since July 2014 (CNBC, SCMP, April 17). Our stimulus measures (record 8.2T yuan in Q1 credit) are working. The $300B tariff is in public comment phase with a June 17 hearing, buying time. And the US is not unscathed: US 10-year yields have fallen 69bp (3.06\u21922.37%), consumer sentiment data shows fragility, and US farmers are hurting from our agricultural retaliation.\n\nThe action_score of -0.3 (mild retaliation) reflects the need to demonstrate resolve \u2014 domestically and to the US \u2014 without triggering a further spiral. We must retaliate proportionally to maintain credibility (we promised 'necessary countermeasures'), but our limited retaliatory toolkit and strong Q1 data mean we can afford to be disciplined. Escalating aggressively risks triggering the $300B tariff before the G20, while conceding now would signal weakness and invite further demands on structural issues (IP, subsidies, SOEs) that strike at our development model. The optimal strategy is calibrated retaliation plus quiet negotiation channels, aiming for a Trump-Xi meeting at Osaka.",
+      "key_factors": [
+        "List 3 tariff hike from 10% to 25% on $250B of Chinese exports (May 10)",
+        "USTR initiated 25% tariff on remaining ~$300B of Chinese imports (May 10-13)",
+        "Huawei + 70 affiliates added to Commerce Entity List (May 15, EO 13873)",
+        "China's constrained retaliatory capacity \u2014 $60B list near ceiling vs US $540B exports",
+        "Strong Q1 2019 GDP (6.4%) and industrial production (8.5% March) from stimulus",
+        "US yield curve compression (10Y: 3.06%\u21922.37%) signaling recession fears",
+        "G20 Osaka summit as potential off-ramp for Trump-Xi meeting",
+        "Yuan depreciation near 7.0 psychological threshold \u2014 risk of capital flight if weaponized"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-05",
+          "excerpt": "Trump tweets that negotiations are going 'too slowly' and that China is attempting to 'renegotiate.' Orders List 3 raised from 10% to 25% on May 10 and directs preparation of tariffs on remaining Chinese imports (~$300B)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-10",
+          "excerpt": "List 3 tariff rate rises from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-13",
+          "excerpt": "China announces it will raise retaliatory tariff rates on its ~$60B US-goods list (higher rates phased in; many effective June 1)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-15",
+          "excerpt": "Trump signs Executive Order 13873 (securing information/communications technology supply chains). Commerce moves to restrict Huawei."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC-2019-04-17",
+          "excerpt": "China's GDP expanded 6.4% in Q1 2019, beating expectations of 6.3%. Industrial production jumped 8.5% year-on-year in March \u2014 surging past the 5.9% estimate to register the fastest growth since July 2014."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters-2019-05-15",
+          "excerpt": "China is running out of options to hit back at the United States without hurting its own interests, as Washington intensifies pressure on Beijing."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "US 10-year Treasury yield fell from 3.06% (Nov 2018) to 2.37% (May 15, 2019), a decline of 69 basis points, signaling market expectations of economic slowdown."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.3,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-05-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4720,
+        "capped_chars": 4720,
+        "raw_tokens": 1180,
+        "capped_tokens": 1180
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 17684,
+        "capped_chars": 17684,
+        "raw_tokens": 4421,
+        "capped_tokens": 4421
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 68684,
+        "capped_chars": 68684,
+        "raw_tokens": 17171,
+        "capped_tokens": 17171
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 378652,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

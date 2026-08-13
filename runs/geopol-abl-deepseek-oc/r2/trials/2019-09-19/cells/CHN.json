@@ -1,0 +1,125 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-09-19",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 140668,
+    "tokens_out": 3733,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Maintain the current posture of pursuing a negotiated settlement and hold to our core red lines \u2014 full tariff removal and meaningful Huawei relief \u2014 as we head into the 13th round of talks in Washington in early October. Do not escalate further and do not make new unilateral concessions; mirror the goodwill gestures already signalled (Sept 11 exemptions, Sept 13 farm exclusions) by keeping the door open, but leave concrete purchase commitments to be traded against US concessions at the table.\n\nSUPPORTING RATIONALE: The threat is high (0.55) but not existential. The US has now placed tariffs on virtually our entire export base \u2014 List 3 at 25%, List 4A at 15% from Sept 1, List 4B deferred to Dec 15, with threats to lift existing lists toward 30% \u2014 and has targeted our flagship Huawei via the Entity List and Android/component cutoffs (timeline 2019-05-16, 2019-08-23, 2019-09-01). The real economy is now demonstrably feeling it: August industrial output of +4.4% y/y is the weakest since Feb 2002, export deliveries fell 4.3%, and the official manufacturing PMI has been in contraction (49.5) for four straight months (CNBC/Reuters/NBS). Yet this is not existential: growth remains in the high single digits, FX reserves are ample, and Beijing has responded with its 7th RRR cut since 2018, showing fiscal/monetary room to cushion. The US is itself wobbling \u2014 10y UST collapsed ~26% to 1.80, the Fed is cutting, and consumer sentiment dropped \u2014 so Washington needs a deal at least as much as we do, strengthening our hand. Escalation would deepen self-inflicted damage to an already-slowing exporter and hand Washington a propaganda win; unilateral concession would forfeit the leverage we currently hold. The correct stance is therefore to negotiate (action 0.0): proceed to the October talks, keep goodwill in reserve as currency, and insist on an equal and balanced deal that removes tariffs and lifts Huawei sanctions in exchange for purchases, exactly as our commerce ministry has framed it (CNBC/Politico).",
+      "key_factors": [
+        "US tariffs now cover virtually all Chinese exports (List 3 25%, List 4A 15%, List 4B Dec 15)",
+        "Huawei on Entity List; Android/chip supplies suspended",
+        "CNY broke 7; US named China a currency manipulator (Aug 5)",
+        "Real-economy bite: Aug industrial output +4.4% (weakest since 2002), PMI 49.5 contraction, export deliveries down",
+        "US under strain: 10y yield ~1.80 (-26%), Fed cutting, consumer sentiment down",
+        "Beijing goodwill signals (Sept 11 exemptions, Sept 13 farm exclusions) + Oct Washington talks agreed",
+        "China buffers: ample FX reserves, 7th RRR cut, rare-earth/unreliable-entity-list leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110-125B of Chinese imports); China's first tranche of the ~$75B retaliation also takes effect."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters: china-slowdown-deepens",
+          "excerpt": "Industrial output growth unexpectedly weakened to 4.4% in August... slowest pace since February 2002. Value of delivered industrial exports fell 4.3% on-year, the first monthly decline since at least two years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc: caixin-manufacturing-pmi-august-2019",
+          "excerpt": "The official PMI survey fell to 49.5 in August... The gauge for new export orders remained in contractionary territory and fell to the lowest level this year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico: us-china-october-meeting",
+          "excerpt": "China and US agree to meet in early October... China insisted a trade deal should be equal and balanced, including removing tariffs and agreeing reasonable quantities of purchases."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-09-19",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5700,
+        "capped_chars": 5700,
+        "raw_tokens": 1425,
+        "capped_tokens": 1425
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48190,
+        "capped_chars": 48190,
+        "raw_tokens": 12048,
+        "capped_tokens": 12048
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 38270,
+        "capped_chars": 38270,
+        "raw_tokens": 9567,
+        "capped_tokens": 9567
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 303974,
+  "started_at": "2026-08-13T07:52:43+00:00"
+}

@@ -1,0 +1,109 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-11-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8143,
+    "tokens_out": 888,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0082214,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should continue engaging in negotiations with the US while maintaining a firm stance on core interests. We should not make unilateral concessions on structural reforms or IP law changes demanded by the US, but should signal willingness to increase purchases of US goods and offer incremental market access openings. Retaliatory tariffs should remain in place as leverage but should not be expanded further at this time.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The UNCTAD study shows US tariffs caused a $35 billion export loss for China in H1 2019, with office machinery and communication equipment sectors hit hardest (55% decline). However, Chinese firms maintained 75% of their exports to the US despite tariffs, and trade diversion to Vietnam, Taiwan, and Mexico partially offsets losses. The US has threatened to raise tariffs on $200bn of goods from 10% to 25% and potentially tariff all remaining $300bn+ of Chinese imports, which would be devastating. The US side (Lighthizer, Mnuchin) has demanded changes to Chinese national security and trade laws, IP protections, and market access for US financial firms - demands that touch on core CCP economic governance model. The trade war has already contributed to weakened global expansion per the IMF, and the yuan fell 5% against the dollar in 2018. However, China's strategic retaliation on $110bn of US goods targeting Republican districts gives us political leverage. The negotiation posture is appropriate because: (1) escalation risks triggering the remaining $300bn in tariffs which would be catastrophic for export hubs; (2) the US is also suffering (both sides pay per Kudlow) and US political pressure from affected industries may create deal space; (3) China can absorb short-term pain better than the US politically given CCP control, but prolonged decoupling threatens Made in China 2025 goals.",
+      "key_factors": [
+        "$35 billion Chinese export loss in H1 2019 from US tariffs (UNCTAD study)",
+        "US threat to raise tariffs on $200bn goods from 10% to 25% and potentially tariff remaining $300bn+",
+        "US demands for structural reforms to Chinese laws on IP, market access, and technology transfer",
+        "Chinese firms maintained 75% of US exports despite tariffs, showing resilience",
+        "Trade diversion to Vietnam, Taiwan, Mexico partially offsets losses",
+        "IMF warning that trade tensions contributing to weakened global expansion",
+        "Yuan depreciation of 5% in 2018 against dollar",
+        "China's retaliatory tariffs on $110bn US goods strategically targeting Republican districts"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "US tariffs caused a 25% export loss, inflicting a US$35 billion blow to Chinese exports in the US market for tariffed goods in the first half of 2019"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "Tariffs on $200bn worth of Chinese goods were due to rise to 25% from 10%...Mr Trump is saying this increase will go ahead on Friday...he has vowed to slap 25% duties on another $325bn of Chinese goods shortly"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu",
+          "excerpt": "The American side has been insisting on changes in Chinese laws to permit greater access to Chinese markets and bans on forced sharing of technology with Chinese firms, as well as fuller and more effective protection of intellectual property"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "Chinese firms have recently started absorbing part of the costs of the tariffs by reducing the prices of their exports...maintained 75% of their exports to the US"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "The yuan fell over 5% against the US dollar last year, before broadly stabilising in 2019"
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-11-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 21708,
+        "capped_chars": 17702,
+        "raw_tokens": 5427,
+        "capped_tokens": 4426
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 21762,
+  "started_at": "2026-08-13T10:55:06+00:00"
+}

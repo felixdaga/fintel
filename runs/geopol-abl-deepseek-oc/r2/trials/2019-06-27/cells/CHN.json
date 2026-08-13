@@ -1,0 +1,128 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-06-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 137761,
+    "tokens_out": 2615,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.6,
+      "rationale": "RECOMMENDATION: Enter the Osaka G20 meeting (agreed June 18 via Trump-Xi phone call) with a posture aimed at halting further escalation \u2014 offer to resume negotiations and agree to a temporary truce/ceasefire that delays any US move to extend tariffs to the remaining ~$300B of imports, while holding firm that structural demands must respect Chinese sovereignty. Do not escalate now; the meeting is the clearest available off-ramp and further confrontation entrenches the conflict at higher cost to our export economy.\n\nSUPPORTING RATIONALE: The threat to China is high and rising. The US has raised List 3 tariffs to 25% on ~$200B of Chinese goods (May 10), added Huawei and 68 affiliates to the Entity List (May 16), and Trump has threatened a further ~$300B tranche plus Huawei license removal (Reuters June 12). The Huawei listing is firm-level targeting of China's flagship-tech champion and a direct hit on our tech self-sufficiency ambitions \u2014 CNN notes it 'essentially challenges Huawei's ability to produce equipment and service existing customers,' a challenge to 'China's most successful company,' and Google suspended Android/GMS access (timeline May 20). This sits at the high (+0.5) anchor, with the standing ~$300B threat and FX/export pressure pushing it to +0.6. However, this is not existential (+1.0): we retain counter-leverage (rare-earth signal from Xi's Jiangxi visit, our own unreliable-entity list, a large domestic market) and, critically, a negotiation window has reopened \u2014 Trump said the June 18 call was 'very good' and teams will begin talks before the G20 meeting (Japan Times June 19). Given that window and our exposure, the right action is to negotiate a pause rather than escalate: Beijing's own public line \u2014 'both sides need to compromise, not just one side' (US vice commerce minister Wang Shouwen) \u2014 supports a moderate, face-saving stance. Escalating now would risk triggering the full $300B tariff tranche and deeper decoupling, which we can least afford; a truce at Osaka is the lowest-cost path to relieve the immediate threat.",
+      "key_factors": [
+        "US List 3 tariffs raised to 25% on ~$200B of Chinese goods (May 10)",
+        "Huawei + 68 affiliates added to US Entity List (May 16), hitting tech self-sufficiency and flagship firm",
+        "Threat of extending tariffs to remaining ~$300B of imports and removing Huawei licenses",
+        "Trump-Xi June 18 phone call agreeing to meet at G20 Osaka \u2014 reopened negotiation window",
+        "China holding counter-leverage (rare-earth signaling, unreliable-entity list) while endorsing mutual compromise"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-10",
+          "excerpt": "List 3 tariff rate rises from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-06-18",
+          "excerpt": "Trump and Xi agree by phone to meet at the G20 in Osaka."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters 2019-06-12",
+          "excerpt": "Trump threatened more tariffs on Chinese imports if there is not enough progress; ~$300B tranche; Huawei license removal possible."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Japan Times 2019-06-19",
+          "excerpt": "Trump said the phone call was 'very good'; teams will begin talks before the G20 meeting."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC/ABC 2019-06-25",
+          "excerpt": "Expectations of a truce/de-escalation at G20; markets awaiting the Trump-Xi summit."
+        }
+      ],
+      "threat_score": 0.6,
+      "action_score": 0.2,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-06-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4647,
+        "capped_chars": 4647,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47660,
+        "capped_chars": 47660,
+        "raw_tokens": 11915,
+        "capped_tokens": 11915
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 38742,
+        "capped_chars": 38742,
+        "raw_tokens": 9685,
+        "capped_tokens": 9685
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 304549,
+  "started_at": "2026-08-13T07:52:20+00:00"
+}

@@ -1,0 +1,136 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should continue engaging in trade negotiations through the March deadline while making calibrated purchase commitments, but avoid retaliatory escalation on the Huawei/Meng front. The economy is too fragile to absorb further tariff shocks, and the US is under its own political and market pressure \u2014 time favors patience over confrontation. Use the next round of Liu He's Washington visit to lock in agricultural and energy purchase pledges while holding firm on structural reform redlines.\n\nSUPPORTING RATIONALE: The threat to China is substantial and rising. GDP growth slowed to 6.4% in Q4 2018, the weakest since the global financial crisis, with full-year 2018 growth at a 28-year low of 6.6% (Reuters, Jan 21 2019). December exports contracted 4.4% \u2014 the steepest monthly drop in two years \u2014 while imports fell 7.6%, the biggest decline since July 2016 (Reuters, Jan 14 2019). Factories in Guangdong's export hub are shutting early, migrant workers face unemployment, and foreign companies are reportedly avoiding China-made electronic components (ING, Jan 14 2019). Tariffs now cover ~$250B of Chinese exports at rates up to 25%, with List 3 set to jump from 10% to 25% if no deal is reached by March 1 (timeline entry, Sep 17 2018).\n\nThe Huawei situation escalates the threat beyond trade into the technology/supply chain domain. The Jan 28 DOJ indictments \u2014 13 criminal charges including bank fraud, sanctions violations, and trade secret theft \u2014 and the formal extradition request for Meng Wanzhou represent a direct assault on China's most important tech company (CNBC, Jan 28 2019). This follows the April 2018 ZTE denial order that nearly shut that company down, signaling the US is willing to weaponize export controls against Chinese tech champions.\n\nHowever, the threat is not yet existential. China retains policy tools \u2014 five RRR cuts in the past year, planned 2 trillion yuan in tax cuts, and local government bond issuance (Reuters, Jan 21 2019). The record $323B trade surplus with the US shows the tariff impact has been manageable so far, though the December data marks a turning point. China can rally domestic nationalism around the Huawei case to strengthen its negotiating position.\n\nThe action stance is mildly toward negotiation (action_score: -0.1) rather than retaliation because: (1) retaliation has diminishing returns \u2014 China has already matched tariffs on ~$110B of US goods and cannot match the US tariff-for-tariff given the bilateral trade imbalance; (2) the economy cannot withstand further export disruption; (3) the US faces its own pressures \u2014 the government shutdown, stock market volatility (10Y Treasury yields fell from 3.23% in Oct to 2.70% by late Jan per country health data), and Trump's desire for a deal before the 2020 campaign cycle \u2014 which gives China some leverage in negotiations. Retaliating on the Huawei/Meng front (e.g., further detaining Canadians, restricting US firms in China) risks triggering an entity-list cascade that would devastate Chinese tech supply chains. Better to let the March deadline work in China's favor as US business pressure mounts for a deal.",
+      "key_factors": [
+        "GDP growth at 28-year low (6.6% full-year, 6.4% Q4), economy under genuine duress",
+        "December exports contracted 4.4%, imports fell 7.6% \u2014 tariff impact now biting after front-loading faded",
+        "DOJ Huawei indictments and Meng extradition request expand dispute from trade into tech/supply chain domain",
+        "March 1 deadline for List 3 hike from 10% to 25% \u2014 time pressure on both sides",
+        "US facing government shutdown, falling Treasury yields, stock market volatility \u2014 political pressure to settle",
+        "Record $323B US-China trade surplus may fuel US hardliners but also signals China still has leverage",
+        "Structural issues (IP, forced tech transfer, Made in China 2025) remain unresolved and represent China's core redlines",
+        "China retains fiscal/monetary stimulus capacity (RRR cuts, tax cuts, special bonds)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-01-30",
+          "excerpt": "Lighthizer and Mnuchin in Beijing for high-level talks. Purchase commitments discussed; enforcement and structural IP/tech-transfer issues unresolved."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_2019-01-21_gdp",
+          "excerpt": "Fourth-quarter GDP grew at the slowest pace since the global financial crisis, easing to 6.4 percent year-on-year. Full-year 2018 growth 6.6%, slowest since 1990."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_2019-01-14_trade",
+          "excerpt": "China's exports unexpectedly fell the most in two years in December (down 4.4%), while imports also contracted (down 7.6%)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2019-01-28_huawei",
+          "excerpt": "The U.S. Justice Department filed criminal charges Monday against Meng Wanzhou \u2014 13-count indictment including bank fraud, wire fraud, and IEEPA violations."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thediplomat_2019-01-11_trade_talks",
+          "excerpt": "China carrying out strategy of aggressively purchasing US goods to lessen pressure on China to undertake difficult structural measures. Structural issues remain the core gap."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4863,
+        "capped_chars": 4863,
+        "raw_tokens": 1216,
+        "capped_tokens": 1216
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11242,
+        "capped_chars": 11242,
+        "raw_tokens": 2810,
+        "capped_tokens": 2810
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 92020,
+        "capped_chars": 92020,
+        "raw_tokens": 23005,
+        "capped_tokens": 23005
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 378680,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

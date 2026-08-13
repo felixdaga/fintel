@@ -1,0 +1,109 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-07-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10415,
+    "tokens_out": 1072,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0110454,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should proceed with implementing the $34 billion in tariffs on Chinese goods scheduled for July 6, 2018, and prepare the additional $16 billion tranche. The US holds leverage in this dispute and should use it to force meaningful structural concessions from Beijing on IP theft, forced technology transfer, and market access \u2014 not settle for vague purchase commitments.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects a moderate but real threat to US interests. China's retaliatory tariffs target politically sensitive US sectors \u2014 soybeans ($14B in exports to China), automobiles (50% tariff if enacted), and agricultural products \u2014 which could hurt US farmers and manufacturers in key electoral districts (CBS News, Politico). The $375B trade deficit gives China limited room to match US tariff escalation dollar-for-dollar (it imported only $130B of US goods), but the retaliation is surgically targeted at US political vulnerabilities. However, the threat is not existential: the US economy is strong, the tariffs target only ~10% of Chinese imports initially, and the US has structural leverage.\n\nThe action score of -1.0 (maximal escalation via tariffs) is justified because: (1) The US tariff list specifically targets China's 'industrially significant technologies' \u2014 aerospace, robotics, semiconductors \u2014 directly addressing the core grievance of IP theft and forced tech transfer (Politico, Bruegel analysis). (2) 84% of products on the US list are high-end exports, hitting China's Made in China 2025 ambitions where it hurts most (Bruegel). (3) The May 2018 'trade war on hold' agreement produced only vague commitments to 'significantly increase purchases' with no specific dollar amount \u2014 far short of the $200B deficit reduction the US sought (Guardian). This suggests negotiation alone will not yield results. (4) China's own retaliation is constrained \u2014 it cannot match $153B in tariffs given its smaller import base, and its retaliation targets lower-end products, suggesting defensive positioning (Bruegel). (5) The ZTE episode showed China's vulnerability when the US restricts technology access, reinforcing US leverage (Wired). The window to extract structural reforms is now, before China achieves greater tech self-sufficiency.",
+      "key_factors": [
+        "$34B tariffs on Chinese goods set to take effect July 6, 2018 \u2014 imminent implementation window",
+        "China's retaliation targets politically sensitive US sectors: soybeans, autos, agriculture",
+        "US tariff list targets high-tech/industrially significant products (84% high-end per Bruegel analysis)",
+        "May 2018 'on hold' agreement yielded only vague purchase commitments, no structural reform",
+        "$375B trade deficit limits China's ability to match US tariff escalation dollar-for-dollar",
+        "ZTE episode demonstrated US leverage over China's technology supply chain",
+        "43% of Chinese exports to US sourced from foreign-owned firms \u2014 tariffs partly hit US companies",
+        "China's Made in China 2025 plan is the underlying strategic target of US tech-focused tariffs"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China. China's list names cars, aircraft, soybeans, corn, sorghum, whiskey, beef, tobacco, cotton and plastic products. Soybean prices fell to their lowest level in two years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "The 25 percent tariffs will be placed on roughly $50 billion in imports from China. They are products containing industrially significant technologies, like aerospace, robotics and automobiles. Tariffs on about $34 billion in Chinese imports will go into effect July 6."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.theguardian.com",
+          "excerpt": "Mnuchin said the US has won several commitments from Chinese officials that should cut America's trade deficit with China. However, Beijing has not agreed to cut the deficit by a particular amount, despite the Trump administration pushing for a $200bn reduction."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports. The U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder. China's retaliation covers more primary products than high-tech products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.wired.com",
+          "excerpt": "43 percent of Chinese exports are sourced from foreign (i.e., non-Chinese) owned firms. ZTE depends on US technology companies such as Qualcomm for components, the ban would have the effect of driving ZTE out of business."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-07-05",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 32814,
+        "capped_chars": 28441,
+        "raw_tokens": 8204,
+        "capped_tokens": 7110
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 21093,
+  "started_at": "2026-08-13T10:55:24+00:00"
+}

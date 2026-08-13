@@ -1,0 +1,97 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-04-04",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 140321,
+    "tokens_out": 3561,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.35,
+      "rationale": "RECOMMENDATION: Stay the course at the negotiating table and press to close a deal now that leverage is maximized, while holding the scheduled List 3 increase from 10% to 25% in reserve as an explicit stick rather than exercising it. Signal readiness to finalize at the proposed leaders' summit, but do not trade away the enforcement mechanism or any tariff relief before Beijing puts concrete, verifiable purchase and structural commitments in writing. Use the summit as the venue to bank China's goodwill gestures (soybean purchases, currency agreement, financial-services opening) into a binding, enforceable framework.\n\nSUPPORTING RATIONALE: The threat reading is mildly net-negative (opportunity tilt) because every macro and negotiation data point says the US holds the stronger hand and the trade book is not yet costing the US economy. US financial conditions are benign and stable\u201410Y Treasury at 2.52%, Baa credit spreads tight at 4.75%, consumer sentiment recovered to 97.2, VIX suppressed, and WTI back to $62 (country_health). The dispute has not produced a US slowdown; if anything the December 2018 equities/VIX scare has been fully unwound. The timeline shows consistent US-side momentum: G20 truce (12/1), three negotiated delays of the 25% hike (1/1, 2/24, and passing 3/1 without action), and intensive Washington talks as of 4/3 with both sides reporting progress on text including enforcement language\u2014Liu He calling a deal 'very likely.' Meanwhile Beijing keeps paying real economic costs: soybean export commitments to China collapsed to 4.3M tons versus 24.5M a year earlier, and its goodwill purchases are a fraction of historical run-rate. On the action axis, de-escalation-by-default is wrong (that would squander leverage), but escalation-by-default is also wrong: hiking to 25% now would raise US farming's $8B in unsold inventory exposure, invite full-bore retaliation, and spook the very equity-market calm that makes the White House's position credible. Hence 'negotiate' at +0.15\u2014competitive-pressure posture, maximum flexibility, no new unilateral concessions, and let China's disclosed concessions (currency notification, soybeans, market access) become the floor of the final package. Tail risk to monitor rather than pre-empt: if talks collapse, the 25% tariff snap and retaliation would hit exactly when growth and rate signals (yield-curve flattening from 10Y 3.22% to 2.52%) have thinned the economy's margin for error.",
+      "key_factors": [
+        "US macro resilient through the dispute: 10Y at 2.52%, Baa 4.75%, UMich consumer sentiment 97.2, VIX low, WTI $62 \u2014 no trade-war recession visible in the data",
+        "US holds credible tariff leverage: ~$250B of Chinese imports covered by Section 301 with the 10%\u219225% List 3 hike preserved as a threat that has already been delayed three times (timeline: 1/1, 2/24, 3/1)",
+        "China is the one making concessions: goodwill soybean purchases (~6.5M t vs 24.5M t prior-year commitments), currency non-manipulation agreement with notification duties, financial-services opening",
+        "US domestic costs are real but contained: ~$8B unsold soybean inventory and WTO suits/uncertainty pressuring farms, but no broad GDP or labor-market damage yet",
+        "Talks at a hand-off moment: intensive Washington round completed 4/3 with both sides citing progress on enforcement text and a leaders' summit floated \u2014 bad time to either tip to 25% or give ground unilaterally"
+      ],
+      "sources_cited": [],
+      "threat_score": -0.35,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-04-04",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46832,
+        "capped_chars": 46832,
+        "raw_tokens": 11708,
+        "capped_tokens": 11708
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 43474,
+        "capped_chars": 43474,
+        "raw_tokens": 10869,
+        "capped_tokens": 10869
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 577926,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

@@ -1,0 +1,102 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-03-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10487,
+    "tokens_out": 629,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0097884,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The United States should escalate tariffs on Chinese goods to address the persistent trade imbalance and unfair trade practices. The current situation presents a clear opportunity for the U.S. to leverage its position and force China to make concessions on intellectual property theft, forced technology transfer, and market access barriers.\n\nSUPPORTING RATIONALE: The evidence shows that China has been engaging in systematic unfair trade practices including forced technology transfers, intellectual property theft, and non-tariff barriers that disadvantage U.S. companies. The U.S. trade deficit with China has ballooned, and China's compliance with WTO commitments has been inadequate. The Trump administration has already launched Section 301 and Section 232 investigations, indicating a clear policy direction toward confrontation. China's vulnerabilities are greater than the U.S. in a trade war scenario, as trade accounts for almost 40% of Chinese GDP versus less than 30% in the U.S. The U.S. has leverage now before China's economic transition reduces its dependence on exports to America.",
+      "key_factors": [
+        "China's forced technology transfer and IP theft practices",
+        "U.S. trade deficit with China has ballooned under Trump's watch",
+        "China's trade accounts for almost 40% of its GDP vs. less than 30% for U.S.",
+        "Section 301 investigation into China's IP practices launched",
+        "China's non-tariff barriers and market access restrictions",
+        "U.S. has leverage before China's economy becomes less export-dependent"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 U.S. trade barriers report slams China on overcapacity, tech transfer ...",
+          "excerpt": "USTR also accused China of using a range of measures to engineer the transfer of foreign technology to Chinese firms. They include denying financial or regulatory approvals to companies using foreign-owned intellectual property (IP) or that do not conduct research or manufacture products in China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 Trump administration says U.S. mistakenly backed China WTO accession ...",
+          "excerpt": "It seems clear that the United States erred in supporting China's entry into the WTO on terms that have proven to be ineffective in securing China's embrace of an open, market-orientated trade regime"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "time.com \u2014 The U.S. Can Win a Trade War With China. It Shouldn't Try",
+          "excerpt": "trade accounts for almost 40% of Chinese GDP vs. less than 30% in the U.S."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 How to avert a trade war with China",
+          "excerpt": "Xi gains politically in Beijing by standing firm against U.S. pressure and punching back against punitive measures. Historically, China has always retaliated proportionately to U.S. trade actions."
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-03-01",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35298,
+        "capped_chars": 31103,
+        "raw_tokens": 8824,
+        "capped_tokens": 7776
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 12958,
+  "started_at": "2026-08-13T10:55:15+00:00"
+}

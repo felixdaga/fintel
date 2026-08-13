@@ -1,0 +1,57 @@
+{
+  "decision_date": "2019-05-16",
+  "status": "partial",
+  "cells": [
+    {
+      "cell": "USA",
+      "symbols": [
+        "USA"
+      ],
+      "status": "failed",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 435089,
+      "usage": {
+        "n_llm_calls": 9,
+        "tokens_in": 510338,
+        "tokens_out": 13509,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "error": "4 tool error(s) the agent saw (MCP timeout/connection); agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=; agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+      "health": "broken",
+      "health_issues": [
+        "4 tool error(s) the agent saw (MCP timeout/connection)",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >=",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views.0.score: must be >= -1\n  - views.0.threat_score: must be >="
+      ]
+    },
+    {
+      "cell": "CHN",
+      "symbols": [
+        "CHN"
+      ],
+      "status": "ok",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 383581,
+      "usage": {
+        "n_llm_calls": 5,
+        "tokens_in": 258829,
+        "tokens_out": 6740,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "health": "ok",
+      "health_issues": []
+    }
+  ],
+  "n_views": 2,
+  "missing": [],
+  "started_at": "2026-08-13T05:59:47+00:00",
+  "finished_at": "2026-08-13T06:24:12+00:00",
+  "duration_ms": 0,
+  "health": "broken"
+}

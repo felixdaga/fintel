@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-04-25",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9867,
+    "tokens_out": 809,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0097084,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: Continue active negotiations with the United States, offering concrete purchase commitments on agricultural and energy goods while holding firm on resisting structural reforms that would undermine state economic governance. Avoid retaliatory escalation but do not preemptively concede on enforcement mechanisms that give the US unilateral judgment power over compliance.\n\nSUPPORTING RATIONALE: The threat to China is real but not existential as of April 25, 2019. US tariffs cover $250 billion of Chinese goods at 10-25% rates, and the March 2 deadline for escalation to 25% on $200B has passed without a clear resolution (CNBC, Feb 21 2019). China's economy is slowing \u2014 Q4 2018 saw the slowest growth since 1992 (Politico), and export hubs face employment pressure. However, the situation is manageable: negotiations are active, six MOUs are being drafted on structural issues (CNBC), and China has leverage through its willingness to buy US goods. The US side faces its own pressures \u2014 Trump needs a deal for his 2020 reelection campaign (Politico), and US farmers and manufacturers are hurting from Chinese retaliation (Brookings). China's best play is to offer purchase commitments that give Trump a visible 'win' while protecting core structural autonomy. The risk of escalation is real \u2014 Lighthizer wants to keep tariffs as leverage and the US insists on enforcement with reinstatement provisions (Politico) \u2014 but China should not accept a deal where the US is 'judge and jury' (CSIS/Kennedy). The negotiation track is the right one: it preserves China's export economy while buying time for domestic economic adjustment and tech self-sufficiency efforts.",
+      "key_factors": [
+        "US tariffs on $250B of Chinese goods at 10-25% create real export pressure",
+        "China's Q4 2018 GDP growth slowest since 1992, adding urgency to resolve dispute",
+        "Six MOUs being drafted on structural issues \u2014 negotiations are substantive",
+        "US insistence on enforcement mechanism with unilateral reinstatement of tariffs is a key red line",
+        "Trump's 2020 reelection motivation creates US-side pressure to reach a deal",
+        "China's offer of purchase commitments (agriculture, energy, semiconductors) is a viable concession without structural reform",
+        "US farmers and manufacturers suffering from Chinese retaliation \u2014 limits US appetite for prolonged trade war"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2019-02-21",
+          "excerpt": "Negotiators are drawing up six memorandums of understanding on structural issues: forced technology transfer and cyber theft, intellectual property rights, services, currency, agriculture and non-tariff barriers to trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico_trade_war",
+          "excerpt": "Xi is overseeing a drastic slowdown in China's economic growth, which adds pressure on him to find a quick end to the trade war. In the last quarter of 2018, China reported the slowest growth rate since its government began publishing quarterly figures in 1992."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico_trade_war_2",
+          "excerpt": "Trump is soon going to focus his attention on his 2020 reelection campaign, and he will be motivated to rapidly shrink the U.S. trade deficit with China to fulfill a core promise"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "brookings_trade_war",
+          "excerpt": "The price of soybeans is already down 20 percent... U.S. exports cars from Southern states like Tennessee, so the effects of this change will be felt there"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-04-25",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 31524,
+        "capped_chars": 26295,
+        "raw_tokens": 7881,
+        "capped_tokens": 6574
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22577,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

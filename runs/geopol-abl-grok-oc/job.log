@@ -1,0 +1,11 @@
+{"ts": "2026-08-13T05:59:47+00:00", "event": "job_start", "job_id": "geopol-abl-grok-oc", "strategy": "geopol_trade_war_2018", "agent": "openclaw", "k_repeats": 3}
+{"ts": "2026-08-13T05:59:47+00:00", "event": "preflight_ok", "n_dates": 32, "n_symbols": 2}
+{"ts": "2026-08-13T05:59:47+00:00", "event": "probe_start", "kinds": ["country_health", "event_timeline", "web_search"], "symbol": "USA", "timeout_s": 15}
+{"ts": "2026-08-13T05:59:47+00:00", "event": "probe_kind", "kind": "country_health", "source": "country_health", "status": "ok", "latency_ms": 6.2, "n": null}
+{"ts": "2026-08-13T05:59:47+00:00", "event": "probe_kind", "kind": "event_timeline", "source": "event_timeline", "status": "ok", "latency_ms": 0.0, "n": null}
+{"ts": "2026-08-13T05:59:47+00:00", "event": "probe_kind", "kind": "web_search", "source": "web_search", "status": "ok", "latency_ms": 0.3, "n": null}
+{"ts": "2026-08-13T05:59:47+00:00", "event": "probe_ok", "n_ok": 3, "n_kinds": 3}
+{"ts": "2026-08-13T05:59:47+00:00", "event": "preflight_start", "n_symbols": 2, "kinds": ["country_health", "event_timeline", "web_search"], "from_date": "2017-03-01", "through_date": "2019-12-11"}
+{"ts": "2026-08-13T05:59:47+00:00", "event": "preflight_done", "n_warmed": 0, "n_failed": 0, "elapsed_ms": 0}
+{"ts": "2026-08-13T06:24:12+00:00", "event": "job_health", "status": "broken", "n_cells": 192, "issues": ["15 cell(s) broken"]}
+{"ts": "2026-08-13T06:24:12+00:00", "event": "job_done", "job_id": "geopol-abl-grok-oc", "status": "failed", "health": "broken", "elapsed_ms": 1465149}

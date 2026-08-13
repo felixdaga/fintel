@@ -1,0 +1,114 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-11-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8143,
+    "tokens_out": 827,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0080384,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue engaging in negotiations with the US while maintaining a firm stance on core interests. We should avoid further escalation but not make unilateral concessions. The phase-one deal discussions should be pursued pragmatically, offering agricultural purchases and IP protections that align with our own reform goals, while resisting structural demands that compromise our economic sovereignty.\n\nSUPPORTING RATIONALE: The threat to China is significant but not existential at this point. The UNCTAD study shows US tariffs caused a $35 billion blow to Chinese exports in the US market in H1 2019, with office machinery and communication equipment sectors hit hardest (55% trade decline). However, Chinese firms maintained 75% of their exports to the US despite tariffs, and trade diversion to Vietnam, Mexico, Taiwan, and EU partially offset losses. The 25% tariff on $200 billion of goods is already in effect, and Trump has threatened tariffs on remaining $300 billion of imports. The yuan depreciated over 5% against the dollar in 2018, providing some buffer. China's retaliatory tariffs on $110 billion of US goods have strategic value (targeting Republican districts and soybeans). The situation is asymmetric - as Larry Kudlow acknowledged, 'both sides will suffer' and the UNCTAD confirms a 'lose-lose' dynamic. China should negotiate from a position of resilience rather than weakness, leveraging the fact that US consumers bear the heaviest brunt of tariffs and that US businesses in China (Tesla's $3 billion in sales) create mutual dependencies. Escalation would be counterproductive given our export exposure, but concessions without reciprocity would be strategically damaging.",
+      "key_factors": [
+        "$35 billion export loss in US market in H1 2019 per UNCTAD study",
+        "75% of Chinese exports to US maintained despite tariffs",
+        "Trade diversion to Vietnam ($2.6B), Mexico ($3.5B), Taiwan ($4.2B), EU ($2.7B) partially offsetting losses",
+        "Trump threat to impose tariffs on remaining ~$300 billion of Chinese imports",
+        "US consumers bearing heaviest cost of tariffs per UNCTAD",
+        "Yuan depreciation of 5%+ in 2018 providing export competitiveness buffer",
+        "Office machinery and communication equipment sectors hit hardest (55% trade decline)",
+        "Phase-one deal negotiations ongoing as of November 2019"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "US tariffs caused a 25% export loss, inflicting a US$35 billion blow to Chinese exports in the US market for tariffed goods in the first half of 2019"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "Chinese firms which, despite the substantial tariffs, maintained 75% of their exports to the US"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "Of the $35 billion Chinese export losses in the US market, about $21 billion (or 63%) was diverted to other countries"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "Trump has vowed to slap 25% duties on another $325bn of Chinese goods 'shortly'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "The yuan fell over 5% against the US dollar last year, before broadly stabilising in 2019"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-11-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 21708,
+        "capped_chars": 17702,
+        "raw_tokens": 5427,
+        "capped_tokens": 4426
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 16289,
+  "started_at": "2026-08-13T10:55:26+00:00"
+}

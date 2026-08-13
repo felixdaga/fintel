@@ -1,0 +1,130 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-04-04",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 139987,
+    "tokens_out": 3324,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Continue negotiating firmly to close a deal on US terms \u2014 lock in the enforcement mechanism, strengthened IP protection, and China's purchase commitments, while holding the existing ~$250B tariff structure as leverage. Do not escalate in this critical week (that risks destroying a near-deal the US largely wants), but do not unilaterally roll back tariffs before binding enforcement is secured. The April 3 Washington talks have both sides reporting progress on enforcement text (event timeline) yet no final deal, so the correct posture is to hold the line and finish the deal rather than make new commitments or escalate.\n\nSUPPORTING RATIONALE: The threat to US interests is modestly negative-to-neutral because the US holds clear leverage and is near a favorable settlement, not facing an existential or high threat. The US has imposed Section 301 tariffs on ~$250B of Chinese imports (timeline: Sept 24, 2018) and China has been the more pressured party \u2014 it has agreed to increase purchases (timeline: Dec 1 G20 truce; Feb 2019 pledge on 5mT soybeans) and both presidents want a deal (US Chamber, Apr 2). This asymmetric, deal-near position reads as a mild opportunity (-0.3), tempered by real domestic costs: the farm belt is badly exposed, with soybean sales to China down ~80-94%, record 3.7B bushel stocks, and mounting 2019 planting/financial pressure (farm policy/CNN/Reuters reporting); and US macro shows a flattening yield curve (10yr 2.52 vs 2yr 2.33, ~19bp spread from ~50bp in Nov), a mild GDP-drag signal, plus consumer sentiment still strong at 97.2 (country_health). These costs argue against blithe escalation, while the favorable negotiating trajectory argues against pre-emptive concession \u2014 hence action_score 0.0 (negotiate/hold) to finalize enforcement and purchases on US terms rather than escalate (which would deepen farm and recession risk) or concede early (which would forfeit leverage).",
+      "key_factors": [
+        "~$250B US tariffs in place on Chinese imports = leverage",
+        "April 3-4 Washington talks near deal, enforcement text unresolved",
+        "Both presidents want a deal; purchase commitments (5mT soybeans) pledged",
+        "Farm belt hard-hit: soybean exports to China down ~80-94%, record 3.7B bushel stocks, acreage/loan stress",
+        "US yield curve flattening (10-2yr ~19bp) = mild GDP-drag/recession signal",
+        "Consumer sentiment strong (97.2); only modest CPI rise",
+        "Huawei/Meng extradition adds allied-friction (Canada) but not central to trade calculus"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks between US and Chinese negotiators; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10% ... Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 suspended."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc 2019-04-02 (Reuters)",
+          "excerpt": "Chances are increasing for a deal ... negotiations this week are 'critical' to resolving stubborn differences over enforcement mechanism and plan to lift US tariffs."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNN 2019-03-20 soybean farmers",
+          "excerpt": "Soybean sales to China down ~80-94%; record 3.7B bushels in storage; farm financial pressure."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10/DGS2 USA",
+          "excerpt": "10yr at 2.52 vs 2yr at 2.33 on 2019-04-03, ~19bp spread, flattening from ~50bp in Nov 2018."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-04-04",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46832,
+        "capped_chars": 46832,
+        "raw_tokens": 11708,
+        "capped_tokens": 11708
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 42888,
+        "capped_chars": 42888,
+        "raw_tokens": 10722,
+        "capped_tokens": 10722
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 349701,
+  "started_at": "2026-08-13T07:45:32+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "job_id": "geopol-abl-mimo-llm-v2",
+  "strategy": "geopol_trade_war_2018",
+  "agent": "llm",
+  "k_repeats": 3,
+  "status": "ok",
+  "runs": [
+    {
+      "run_id": "geopol-abl-mimo-llm-v2-r1",
+      "k_index": 1,
+      "dir": "r1",
+      "status": "ok",
+      "n_views": 64,
+      "health": "ok"
+    },
+    {
+      "run_id": "geopol-abl-mimo-llm-v2-r2",
+      "k_index": 2,
+      "dir": "r2",
+      "status": "ok",
+      "n_views": 64,
+      "health": "ok"
+    },
+    {
+      "run_id": "geopol-abl-mimo-llm-v2-r3",
+      "k_index": 3,
+      "dir": "r3",
+      "status": "ok",
+      "n_views": 64,
+      "health": "ok"
+    }
+  ],
+  "started_at": "2026-08-13T10:54:18+00:00",
+  "finished_at": "2026-08-13T10:55:49+00:00",
+  "usage": {
+    "n_llm_calls": 192,
+    "tokens_in": 1681050,
+    "tokens_out": 181628,
+    "reasoning_tokens": 0,
+    "cost_usd": 1.732622,
+    "basis": "reported"
+  },
+  "health": "ok",
+  "health_issues": []
+}

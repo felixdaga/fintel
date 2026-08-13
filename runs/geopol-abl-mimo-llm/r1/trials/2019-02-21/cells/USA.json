@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8676,
+    "tokens_out": 879,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0087274,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.2,
+      "rationale": "RECOMMENDATION: The US should continue negotiations with China while maintaining current tariff levels as leverage. We should not escalate further at this point, as the trade war is already covering roughly half of bilateral trade and additional tariffs risk significant collateral damage to US firms and consumers. However, we should not concede prematurely, as the structural issues around IP theft, forced technology transfer, and state subsidies remain unresolved.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but manageable (threat_score: +0.2). The evidence shows that US tariffs on $250 billion of Chinese goods are already in place, covering about half of bilateral trade, with China retaliating on nearly all of its $130 billion in US imports (Fox Business). The RAND analysis indicates that the first-stage impact shows American businesses bearing significant costs - a transfer of $6.7 billion from US businesses to the US government, with some employment reduction. Soybean prices are down 20%, affecting Midwest farmers, and auto exports from Southern states are impacted (Brookings). However, the US economy is performing well overall, and the trade deficit argument gives the US structural leverage since China's exports to the US ($505B) represent about 5% of their economy versus only 0.7% for US exports to China ($130B) (RAND). The Fox Business opinion piece argues this is a necessary confrontation given China's state subsidies, forced joint ventures, and WTO gaming. The action_score of -1 reflects that the US should maintain maximum negotiating leverage through current tariff levels while engaging in talks, as Trump indicated 'tremendous success' in negotiations. Escalating to cover 100% of trade would risk significant consumer price increases and supply chain disruption without clear additional leverage.",
+      "key_factors": [
+        "US tariffs already cover $250B of ~$500B in Chinese imports",
+        "China has retaliated on nearly all $130B of US exports to China",
+        "Soybean prices down 20%, Midwest farmers and Southern auto exporters affected",
+        "US economy performing well overall, providing buffer",
+        "Trade deficit gives US structural leverage ($505B vs $130B)",
+        "Structural issues (IP theft, state subsidies, forced JVs) remain unresolved",
+        "Trump reported 'tremendous success' in recent negotiations",
+        "Risk of further escalation hitting consumer goods and raising prices"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "Effective Sept. 24, President Trump announced a 10% tariff on $200 billion in Chinese imports... this $250 billion aggregate tariff amount... is about half of U.S.-China trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "the United States has less to lose since its exports to China are $130 billion while China's exports to the United States are $505 billion a year... $505 billion in potentially lost exports is a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent... U.S. exports cars from Southern states like Tennessee, so the effects of this change will be felt there"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "According to President Trump, things are moving in the right direction after talks this week between US and Chinese trade negotiators in Beijing"
+        }
+      ],
+      "threat_score": 0.2,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 23881,
+        "capped_chars": 20119,
+        "raw_tokens": 5970,
+        "capped_tokens": 5030
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22056,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

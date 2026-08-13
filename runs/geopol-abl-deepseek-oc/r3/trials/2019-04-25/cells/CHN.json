@@ -1,0 +1,130 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-04-25",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 139005,
+    "tokens_out": 3430,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Continue to negotiate in good faith toward a comprehensive agreement that secures the removal of US Section 301 tariffs, without new escalation. Stay at the table through the next round(s) and a likely Trump\u2013Xi summit, holding firm on the most intrusive structural demands (forced-tech-transfer and enforcement provisions) while signaling flexibility on purchase commitments. Do not escalate now \u2014 doing so would destroy the near-term deal and the enforcement mechanism both sides have nearly agreed. Do not concede fully either, since there is no matching US offer to lift tariffs yet.\n\nSUPPORTING RATIONALE: The threat is real but not existential. US tariffs on ~$250B of Chinese imports remain in force and are a measurable drag on the export sector (Q1 exports up only 1.4%, imports down 4.8%; Feb exports plunged ~21%, CNN/March 2019), and the Huawei/Meng episode is a live firm-level irritant (2019-01-28 DOJ, extradition request). However, the trajectory is clearly de-escalatory and knowable as of 2019-04-25: the 25% List 3 hike has been postponed twice (2019-02-24, 2019-03-01), talks produced 'unprecedented' Chinese offers on tech transfer (CNBC, 2019-03-28), Mnuchin reported the enforcement mechanism 'pretty much agreed' (Reuters, 2019-04-11), and Trump said 'we'll know over the next four weeks' with a possible summit (CNBC, 2019-04-04). Macro is stabilizing \u2014 March exports rebounded +14.2%, CNY was steady ~6.72, and the IMF held China's 2019 growth at 6.3% with stimulus cushioning. This places the threat at the high-but-manageable end (+0.4), not existential. Given the talks are advanced and genuinely progressing, the correct action is to keep negotiating (action_score \u2248 +0.1): escalation would be self-defeating, and full concession is premature absent a US commitment on tariff removal.",
+      "key_factors": [
+        "~$250B US Section 301 tariffs still in force, dragging exports",
+        "Trajectory de-escalatory: 25% hike postponed twice, enforcement mechanism near-agreed",
+        "Truce holding; Trump-Xi summit in prospect (end-April timeline)",
+        "Huawei/Meng firm-level targeting an ongoing irritant",
+        "Structural demands (IP, forced tech transfer) touch CCP industrial policy, hard to concede fully",
+        "Macro stabilizing: March exports +14.2%, CNY ~6.72, IMF holds China at 6.3%",
+        "China has already made unprecedented concessions (tech transfer, farm purchases, fentanyl ban)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-24",
+          "excerpt": "Trump tweets talks made substantial progress, further delays List 3 hike from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals charges against Huawei and Meng; requests extradition."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters 2019-04-11",
+          "excerpt": "Mnuchin: 'We've pretty much agreed on an enforcement mechanism... both sides will establish enforcement offices.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2019-04-04",
+          "excerpt": "Trump: 'we'll know over the next four weeks' on a deal; sticking points on IP/theft and whether tariffs used as enforcement tool."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters 2019-04-12",
+          "excerpt": "China Q1 exports +1.4%, imports -4.8%; March exports +14.2%; CNY steady ~6.72; IMF holds China 2019 growth at 6.3%."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-04-25",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4024,
+        "capped_chars": 4024,
+        "raw_tokens": 1006,
+        "capped_tokens": 1006
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46810,
+        "capped_chars": 46810,
+        "raw_tokens": 11702,
+        "capped_tokens": 11702
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 40891,
+        "capped_chars": 40891,
+        "raw_tokens": 10223,
+        "capped_tokens": 10223
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 288473,
+  "started_at": "2026-08-13T07:53:48+00:00"
+}

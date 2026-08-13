@@ -1,0 +1,130 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-11-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: Engage actively with the US at the upcoming G20 in Argentina, signaling willingness to negotiate on structural issues (IP protection, market access) but avoid major unilateral concessions before securing a tariff freeze. Use the meeting to buy time and prevent the January 1 escalation to 25% on List 3. Diversify trade relationships and accelerate domestic consumption stimulus in parallel.\n\nSUPPORTING RATIONALE: The threat to China is high and rising. The US has imposed tariffs on ~$250B of Chinese imports across three lists (timeline entries, June-September 2018), covering roughly half of China's exports to the US, with Trump threatening to extend tariffs to all remaining ~$267B if China retaliates (CNN, Nov 19). China's retaliation capacity is asymmetric \u2014 it imported only ~$130B from the US vs. $506B in Chinese exports to the US (Business Insider, Nov 9), meaning China is running out of matching tariff targets. The ZTE denial order in April demonstrated the US's ability to cripple Chinese tech firms by cutting off US components, and the August Defense Authorization Act banned Huawei and ZTE from US government contracts (TechCrunch, Aug 13) \u2014 signaling the tech restrictions extend beyond tariffs into entity-list actions that threaten Made in China 2025. Economic data is deteriorating: Q3 GDP growth was the weakest in nearly a decade (Business Insider, Nov 9), manufacturing PMI fell to 51.2, smartphone shipments dropped 15.2% YoY (Canalys via SCMP, Nov 23), car sales fell 11.7% YoY, and Alibaba revised down revenue estimates (SCMP, Nov 23). Consumer confidence is being dampened by trade tensions. The yuan has depreciated ~9% since April (CNN, Sep 19), which partially offsets tariff impact but raises capital flight risks and tensions with Washington. The Shanghai Composite is down ~25% YTD. However, the situation is not yet existential: exports held up better than expected (11% growth in October), the economy is still growing above 6%, and Beijing retains fiscal and monetary policy tools. The APEC summit ended without a joint communique for the first time (CNBC, Nov 19), showing US-China tensions are straining multilateral forums, which creates an opening for China to position itself as the defender of the multilateral trade order. The action score of -0.15 (mild negotiate posture) reflects the need to engage seriously at G20 \u2014 the only direct Trump-Xi meeting before the January 1 deadline \u2014 while maintaining leverage. Escalation would be counterproductive given the asymmetric exposure, but major concessions without a guaranteed tariff freeze would be premature. The goal is to prevent further escalation while preserving negotiating leverage on structural issues.",
+      "key_factors": [
+        "US tariffs now cover ~$250B of Chinese imports with Jan 1 escalation to 25% imminent",
+        "Asymmetric retaliation capacity: China imports ~$130B from US vs $506B in exports",
+        "ZTE denial order and Huawei/ZTE bans signal US willingness to use tech supply chain as weapon",
+        "Chinese economic data deteriorating: weak GDP, falling PMI, consumer confidence down",
+        "Yuan depreciated ~9% since April, partially offsetting tariffs but raising capital flight risk",
+        "G20 Trump-Xi meeting is the only opportunity before Jan 1 deadline",
+        "APEC failure signals China's diplomatic isolation on trade rules"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp-2018-11-23",
+          "excerpt": "GDP expanded at weakest pace in nearly a decade; smartphone shipments down 15.2% YoY; car sales down 11.7% YoY; consumer confidence dampened by trade war."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn-2018-11-19",
+          "excerpt": "China offered 142 concessions that Trump described as 'not acceptable'; Chinese negotiators cancelled Washington trip; APEC ended without joint statement for first time."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2018-09-28",
+          "excerpt": "Yuan could depreciate another 10% if US raises tariffs to 25%; currency has lost about 9% of its value since April."
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-11-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3976,
+        "capped_chars": 3976,
+        "raw_tokens": 994,
+        "capped_tokens": 994
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11485,
+        "capped_chars": 11485,
+        "raw_tokens": 2871,
+        "capped_tokens": 2871
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 72996,
+        "capped_chars": 72996,
+        "raw_tokens": 18248,
+        "capped_tokens": 18248
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 370952,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

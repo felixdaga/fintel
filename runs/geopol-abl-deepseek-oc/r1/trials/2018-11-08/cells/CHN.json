@@ -1,0 +1,130 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-11-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 139145,
+    "tokens_out": 3663,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.6,
+      "rationale": "RECOMMENDATION: Hold our current posture and pursue a negotiated path at the scheduled G20 meeting in Buenos Aires rather than escalating further. We should keep retaliation measured and proportional if provoked, but use the imminent Xi-Trump summit and the warm Nov 1 phone call as the opening to seek a framework deal on purchases (agricultural/energy) while firmly defending our positions on IP and industrial policy. Do not escalate pre-emptively: an escalation now invites the threatened additional $267B of tariffs and the scheduled Jan 1, 2019 rise of the $200B List-3 tariff to 25%, exactly when our growth is already decelerating.\n\nSUPPORTING RATIONALE: The threat to China is high and rising. US Section 301 tariffs already cover roughly $250B of our exports (List 1 $34B at 25% on Jul 6; List 2 $16B on Aug 23; List 3 $200B at 10% on Sep 24) with the $200B tranche set to jump to 25% on Jan 1 and a further $267B threatened \u2014 essentially all China-US trade (event_timeline). The real economy is already showing the strain: Q3 GDP slowed to 6.5%, the weakest since 2009, October official manufacturing PMI fell to 50.2 (lowest since July 2016), and new export orders contracted for a fifth straight month to 46.9, with SME sub-indices in contraction and the yuan under depreciation pressure (Reuters, CNBC, Politico, Oct 31). Firm-level targeting is the live non-tariff threat \u2014 the ZTE denial order in April and the looming Huawei risk directly pressure our export champions and Made-in-China-2025 tech-autonomy goals. A 25% tariff on all trade could shave ~1.2pp off 2019 GDP per Moody's (politico.com, Oct 31). This is a material, high-level threat \u2014 above the +0.5 'high' anchor \u2014 though not yet existential: exports have held up on front-loading, we hold deep FX reserves and policy room (RRR cuts, export rebates, stimulus), and the G20 channel is open. That justifies action_score leaning toward de-escalation (negotiate, +0.1) rather than escalation: a hawkish move would crystallize the Jan 1 25% hike and the $267B threat at the moment our export order book is weakest, whereas the Nov 1 Xi-Trump call \u2014 described as 'long and very good,' with Xi eager to lower the temperature and Trump signaling openness to scaling back tariffs if talks succeed (NYT, USA Today, Nov 1-2) \u2014 gives us a realistic off-ramp. We should not unilaterally concede structural reform or purchasing commitments before a matching US offer, so negotiate/hold-current-stance is the right level, not full concession.",
+      "key_factors": [
+        "US Section 301 tariffs on ~$250B of Chinese exports, with $200B at 10% scheduled to rise to 25% on Jan 1, 2019",
+        "Threatened additional $267B tariffs = virtually all China-US trade",
+        "Q3 2018 GDP growth 6.5% \u2014 slowest since 2009; Oct PMI 50.2, lowest since 2016; new export orders contracted 5th straight month",
+        "Non-tariff tech targeting: ZTE denial order precedent, looming Huawei entity-list / supply-chain risk",
+        "Yuan depreciation pressure against a broadly stronger dollar",
+        "G20 Buenos Aires meeting scheduled, following a warm, 56-minute Xi-Trump phone call on Nov 1",
+        "China retains policy room (RRR cuts, export rebates, stimulus) and deep reserves to cushion the shock"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24 List 3",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters.com 2018-10-31 PMI",
+          "excerpt": "Official PMI fell to 50.2 in October, lowest since July 2016... new export orders contracted for a fifth straight month to 46.9."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico.com 2018-10-31",
+          "excerpt": "Moody's estimated that a 25% tariff on all China-US trade... China's GDP growth would fall by 1.2 percentage points to 5.2% in 2019."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes.com 2018-11-02",
+          "excerpt": "Xi issued a similarly warm statement... predicting the two sides could reach a deal. Chinese officials... eager to lower the temperature."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "abc.net.au 2018-10-19",
+          "excerpt": "Third-quarter GDP grew by 6.5% from a year ago - the weakest result since Q1 2009... authorities have eased bank financing costs, taxes and increased export rebates for the second time this year."
+        }
+      ],
+      "threat_score": 0.6,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-11-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4164,
+        "capped_chars": 4164,
+        "raw_tokens": 1041,
+        "capped_tokens": 1041
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48269,
+        "capped_chars": 48269,
+        "raw_tokens": 12067,
+        "capped_tokens": 12067
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 39130,
+        "capped_chars": 39130,
+        "raw_tokens": 9783,
+        "capped_tokens": 9783
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 495916,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

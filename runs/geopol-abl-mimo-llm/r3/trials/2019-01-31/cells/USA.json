@@ -1,0 +1,97 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7792,
+    "tokens_out": 807,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0076274,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.15,
+      "rationale": "RECOMMENDATION: Maintain current tariff posture and hold firm on existing demands without further escalation at this moment. The US has already imposed tariffs on $250 billion of Chinese goods, covering roughly half of bilateral trade, and has leverage to demand structural reforms. However, the situation is not yet ripe for a decisive move in either direction \u2014 negotiations are nascent, and both sides are still calibrating. Hold the current position and let the pressure work while engaging in talks.\n\nSUPPORTING RATIONALE: The threat to US interests as of January 31, 2019 is moderate but manageable. The trade war has imposed costs on specific US sectors \u2014 soybean prices down 20%, agricultural and auto exporters in the Midwest and South facing Chinese retaliation on $110 billion of US goods (Fox Business, Sept 2018). However, the overall macroeconomic impact is described as 'a minor blip' for the US economy (Brookings, Dollar). The US has significant leverage: tariffs cover $250 billion of Chinese imports, and Trump has threatened to extend to essentially 100% of bilateral trade. China's retaliation has nearly exhausted its import base ($110B of $130B in US imports already tariffed). Meanwhile, structural grievances \u2014 IP theft, forced joint ventures, state subsidies, and China's WTO 'developing nation' status \u2014 remain unaddressed (Fox Business, Walser; CFR August 2018 report cited therein). The threat is not existential to the US but the status quo of unfair trade practices is costly long-term. On the action side, the current leverage position favors holding firm: China is under more structural pressure (export dependency, tech supply chain vulnerabilities), and premature de-escalation would waste the leverage already built. However, maximal escalation risks further collateral damage to US firms operating in China and allied supply chains (Brookings: 'half of that pain will be felt by other countries'). The optimal stance is to hold current tariffs, maintain pressure, and negotiate from strength for structural concessions.",
+      "key_factors": [
+        "US tariffs cover $250B of ~$500B Chinese imports; Trump threatens full coverage",
+        "China retaliation nearly exhausted at $110B of $130B US imports",
+        "Soybean prices down 20%; agricultural/auto sectors hurt but overall economy impact described as 'minor blip'",
+        "Structural issues (IP theft, forced JVs, state subsidies) remain unresolved",
+        "No high-level negotiations scheduled as of late 2018; talks beginning in early 2019",
+        "US leverage position is strong but further escalation risks collateral damage to US firms and allies"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "brookings_unpacked_trade_war",
+          "excerpt": "The U.S. has announced $250 billion of tariffs on products from China... This is not a big hit for the overall U.S. economy but it will hurt some specific sectors"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness_trade_war_explained",
+          "excerpt": "The $250 billion aggregate tariff amount... is about half of U.S.-China trade. President Trump has also indicated... he's going to do it on the rest of it"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness_why_america_must_win",
+          "excerpt": "China's middle class alone is expected to exceed the entire US population by 2022... China cheats to get where it wants to go"
+        }
+      ],
+      "threat_score": 0.15,
+      "action_score": -1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 26729,
+        "capped_chars": 16022,
+        "raw_tokens": 6682,
+        "capped_tokens": 4006
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 18589,
+  "started_at": "2026-08-13T10:55:08+00:00"
+}

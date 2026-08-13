@@ -1,0 +1,109 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-04-25",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9867,
+    "tokens_out": 951,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0101344,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: Continue active negotiations with the United States, offering concrete purchase commitments on agricultural and energy goods while holding firm against demands for sweeping structural reforms that would undermine state-directed economic policy. Use the negotiation window to secure partial tariff relief and avoid the escalation to 25% on $200B of goods. Do not concede on enforcement mechanisms that give the US unilateral judge-and-jury authority.\n\nSUPPORTING RATIONALE: The threat to China is significant but not existential at this point. US tariffs cover $250B of Chinese exports at 10-25%, and the March 2 deadline for escalation to 25% on $200B was extended, buying time. China's economy is slowing \u2014 Q4 2018 saw the slowest growth since 1992 (Politico), and export hubs face real pressure. However, the US is also under pressure: soybean prices down 20%, Midwest farmers hurting, Boeing exposed, and Trump faces 2020 reelection pressure (Brookings, Politico). Negotiations have produced six MOUs covering forced tech transfer, IP, services, currency, agriculture, and non-tariff barriers (CNBC, Feb 2019), indicating real progress. China has leverage in that the US deficit hit a record $400B+ in 2018, and Trump needs a deal to claim victory. The US side is split between Lighthizer hardliners wanting structural reform and those willing to accept a lighter deal centered on purchases (Politico). China should negotiate actively \u2014 offering purchase commitments that give Trump a political win \u2014 while resisting structural concessions that would fundamentally alter the state-led economic model. The enforcement mechanism is the key red line: China should not accept US-as-judge arrangements. A WTO-based enforcement framework would be more acceptable. The threat score of +0.45 reflects material but manageable economic damage; the action score of +0.1 reflects a negotiating posture that offers some concessions (purchases) while holding firm on core structural autonomy.",
+      "key_factors": [
+        "US tariffs on $250B of Chinese goods at 10-25%, with threat of escalation to 25% on $200B",
+        "China's Q4 2018 GDP growth slowest since 1992, economic fundamentals deteriorating",
+        "Six MOUs under negotiation covering structural issues \u2014 real progress but gaps remain",
+        "US domestic pressure: soybean prices down 20%, Midwest farmers, Boeing exposure, 2020 election cycle",
+        "China's leverage: US trade deficit hit record $400B+ in 2018, Trump needs visible deal",
+        "Enforcement mechanism is critical sticking point \u2014 US wants unilateral review authority",
+        "China has offered few structural commitments, focusing on purchase-based deficit reduction",
+        "US side divided between hardliners (Lighthizer) and those open to lighter deal"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnbc.com",
+          "excerpt": "Negotiators are drawing up six memorandums of understanding on structural issues: forced technology transfer and cyber theft, intellectual property rights, services, currency, agriculture and non-tariff barriers to trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "Xi is overseeing a drastic slowdown in China's economic growth, which adds pressure on him to find a quick end to the trade war. In the last quarter of 2018, China reported the slowest growth rate since its government began publishing quarterly figures in 1992."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "The price of soybeans is already down 20 percent. U.S. exports cars from Southern states like Tennessee, so the effects of this change will be felt there. Boeing is concentrated in the Northwest but has production in most states."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "Final figures for 2018 are expected to show the U.S. deficit in goods trade with China set a new record of more than $400 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "China 'has offered very few commitments on structural changes, but continued to focus on buying American goods to reduce the deficit'"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-04-25",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 31524,
+        "capped_chars": 26295,
+        "raw_tokens": 7881,
+        "capped_tokens": 6574
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22923,
+  "started_at": "2026-08-13T10:55:11+00:00"
+}

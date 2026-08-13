@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-08-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7950,
+    "tokens_out": 976,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0082924,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should proceed with the planned tariff escalation on the remaining ~$300 billion of Chinese imports, maintaining maximum leverage while keeping the door open for negotiations. The current moment represents a window where US economic fundamentals remain strong enough to absorb short-term costs, and China's backtracking on the draft trade pact (per Reuters timeline, May 2019) signals that only sustained pressure will yield structural concessions on IP theft, forced technology transfer, and market access.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects a moderate but real threat to US interests. The trade war is causing tangible harm \u2014 consumers paying more for goods, auto parts costs rising $1,000-$3,000 per vehicle (USC/Annenberg), and key sectors like California aerospace and ports facing disruption (half of LA/Long Beach port goods tied to China). However, the US economy is not in existential danger: the US runs a large services surplus with China ($6B+ in California alone), and the structural grievances (IP theft, market access restrictions, forced tech transfer) are legitimate and long-standing. The threat is asymmetric \u2014 China's export-dependent economy faces greater structural risk from supply chain diversification than the US consumer economy does from higher import prices.\n\nThe action score of -1 (maximal escalation via tariffs) is justified by several factors: (1) China backtracked on nearly all aspects of the draft trade pact in May 2019, signaling that moderate pressure has been insufficient; (2) bipartisan support exists for a firm stance \u2014 even Democratic Rep. Van Drew states 'we have to show China we do mean business'; (3) Sen. Graham's argument that tariffs 'break the stranglehold China has on the supply chain' by making other countries cheaper alternatives has strategic merit; (4) WH adviser Kudlow's admission that 'both sides will pay' is honest but the asymmetry favors the US \u2014 China's GDP losses from diminished export markets exceed US consumer cost increases; (5) the Trump administration has already signaled intent to raise tariffs on the remaining $300B, and backing down now after China's backtracking would undermine negotiating credibility. The short-term pain is real but manageable, and the long-term prize \u2014 structural reform of China's trade practices in AI, cloud computing, robotics, and green tech (per USC analysis) \u2014 justifies the cost.",
+      "key_factors": [
+        "China backtracked on nearly all aspects of draft trade pact (May 2019 Reuters timeline)",
+        "Tariffs on $200B already raised from 10% to 25% in May 2019; remaining ~$300B targeted",
+        "Bipartisan congressional support for firm stance (Graham R, Van Drew D)",
+        "US services surplus and consumer economy provide buffer vs China's export dependency",
+        "Structural issues at stake: IP theft, forced tech transfer, market access in future industries (AI, cloud, robotics)",
+        "Supply chain diversification away from China is a strategic US benefit of sustained tariffs",
+        "Both sides acknowledged mutual pain but asymmetry favors US leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 Timeline: Key dates in the U.S.-China trade war",
+          "excerpt": "Reuters reported that China had backtracked on almost all aspects of a draft U.S.-China trade pact (May 2019)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "Consumers will pay more for many products... some estimate new cars will cost $1,000 to $3,000 more. California exported $25 billion in goods and over $10 billion in services to China and Hong Kong in 2018."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "Graham: 'This is the best chance in my lifetime to get China to change their cheating ways.' Kudlow: 'Both sides will suffer on this.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China immersed in a tit-for-tat tariff trade war",
+          "excerpt": "Van Drew: 'At this point in time, I think that we have to show China we do mean business.' Trump threatened additional tariffs of $267 billion worth of goods."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-08-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18764,
+        "capped_chars": 14743,
+        "raw_tokens": 4691,
+        "capped_tokens": 3686
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22760,
+  "started_at": "2026-08-13T10:54:37+00:00"
+}

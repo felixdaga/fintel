@@ -1,0 +1,135 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-12-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 6,
+    "tokens_in": 210518,
+    "tokens_out": 2991,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Hold the Dec 15 tariff threat as leverage but delay implementation; press for Phase One signing on terms favorable to the US (ag purchases, IP commitments, enforcement mechanism) without conceding on tariff rollback. Use the Hong Kong bill as background pressure but keep it formally separate from trade talks.\n\nSUPPORTING RATIONALE: The US holds a moderate structural advantage (-0.3 threat = mild opportunity). China's economy is under genuine distress: exports fell for four consecutive months (Reuters, Dec 8), manufacturing PMI spent six months in contraction before barely returning to 50.2 in November (NBS, Nov 30), and growth is near 30-year lows. By contrast, the US economy added 266,000 jobs in November with unemployment at 3.5%, a 50-year low (BLS, Dec 6). This asymmetry gives the US leverage.\n\nHowever, the threat reading is mild rather than strong because: (1) the trade war is measurably hurting US industrial states \u2014 Delaware, Ohio, Wisconsin, and others showing contraction risk (Mercatus/Philly Fed, Dec 3); (2) the ~$360B in existing tariffs are raising costs for US consumers and manufacturers; (3) the Dec 15 tariffs would hit consumer electronics (phones, laptops) just before the holidays, creating domestic political risk; and (4) the Hong Kong bill (signed Nov 27) has introduced a new irritant \u2014 China's Foreign Ministry threatened 'consequences' and warned it would affect 'cooperation in important areas' (SCMP, Nov 28).\n\nThe action recommendation (negotiate, -0.15) reflects a near-hold stance with active deal-seeking. Pushing harder via new tariffs risks collapsing the Phase One talks entirely \u2014 China has made tariff rollback a red line (Global Times, Dec 1), and further escalation could push Beijing to retaliate or walk away. But the US should NOT concede on tariff rollback either: the existing tariffs are the primary leverage mechanism, and giving them up for a Phase One deal that defers structural issues (IP, subsidies, tech transfer) to 'future talks' would mean surrendering the core asset for a limited purchase commitment. The optimal move is to delay Dec 15 tariffs (as WSJ reported negotiators are already exploring, Dec 10), lock in Phase One on current terms (ag purchases + limited IP/financial access commitments without tariff rollback), and preserve tariffs as leverage for Phase Two negotiations on structural issues.",
+      "key_factors": [
+        "China exports fell for 4 consecutive months as of Nov 2019 data",
+        "US unemployment at 3.5% (50-year low), 266K jobs added in Nov",
+        "Phase One deal close but stuck on tariff rollback demand",
+        "Dec 15 tariff deadline on $160B consumer goods provides leverage",
+        "Hong Kong bill signed Nov 27 complicates but doesn't derail trade talks",
+        "US industrial states (OH, WI, DE) showing trade-war-related stress",
+        "China PMI barely back to expansion at 50.2 after 6 months contraction"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-10-11",
+          "excerpt": "Trump announces a 'Phase One' deal in principle: China to buy roughly $40\u201350B of US agricultural products annually; IP and currency issues also cited."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-08-05",
+          "excerpt": "US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_dec10_tariff_delay",
+          "excerpt": "The U.S. and China are taking steps to delay the next round of American tariffs set for Sunday as they seek a deal to rein in a raging trade war, The Wall Street Journal reported Tuesday."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_china_nov_exports",
+          "excerpt": "China's exports in November shrank for the fourth consecutive month, underscoring persistent pressures on manufacturers from the Sino-U.S. war."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bls_nov_jobs",
+          "excerpt": "Total nonfarm payroll employment rose by 266,000 in November, and the unemployment rate was little changed at 3.5 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp_nov28_hk_bill",
+          "excerpt": "All consequences arising from the bill's becoming law must be borne entirely by the United States."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-12-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 8,
+    "by_status": {
+      "ok": 8
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5122,
+        "capped_chars": 5122,
+        "raw_tokens": 1280,
+        "capped_tokens": 1280
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 6,
+        "raw_chars": 124879,
+        "capped_chars": 124879,
+        "raw_tokens": 31219,
+        "capped_tokens": 31219
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 8,
+      "by_status": {
+        "ok": 8
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 105704,
+  "started_at": "2026-08-13T03:00:09+00:00"
+}

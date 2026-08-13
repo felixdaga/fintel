@@ -1,0 +1,54 @@
+{
+  "decision_date": "2018-05-03",
+  "status": "partial",
+  "cells": [
+    {
+      "cell": "USA",
+      "symbols": [
+        "USA"
+      ],
+      "status": "failed",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 382949,
+      "usage": {
+        "n_llm_calls": 5,
+        "tokens_in": 227937,
+        "tokens_out": 4104,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "error": "1 tool error(s) the agent saw (MCP timeout/connection); agent saw fintel__web_search: {\n  \"status\": \"ok\",\n  \"data\": {\n    \"query\": \"ZTE ban US Commerce denial order April 2018 impact China response\",\n    \"s",
+      "health": "broken",
+      "health_issues": [
+        "1 tool error(s) the agent saw (MCP timeout/connection)",
+        "agent saw fintel__web_search: {\n  \"status\": \"ok\",\n  \"data\": {\n    \"query\": \"ZTE ban US Commerce denial order April 2018 impact China response\",\n    \"s"
+      ]
+    },
+    {
+      "cell": "CHN",
+      "symbols": [
+        "CHN"
+      ],
+      "status": "ok",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 393068,
+      "usage": {
+        "n_llm_calls": 4,
+        "tokens_in": 140275,
+        "tokens_out": 3639,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "health": "ok",
+      "health_issues": []
+    }
+  ],
+  "n_views": 2,
+  "missing": [],
+  "started_at": "2026-08-13T05:59:47+00:00",
+  "finished_at": "2026-08-13T06:24:12+00:00",
+  "duration_ms": 0,
+  "health": "broken"
+}

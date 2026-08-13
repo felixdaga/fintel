@@ -1,0 +1,135 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-08-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.2,
+      "rationale": "RECOMMENDATION: Hold the current tariff posture without escalating to the proposed $200B List 3, and signal willingness to resume negotiations. The US economy is strong enough to absorb current tariffs, but the next round would directly hit consumer goods, risking domestic political backlash without a clear path to Chinese concessions. Use the existing leverage to re-engage Beijing rather than burning more negotiating capital.\n\nSUPPORTING RATIONALE: Threat reading (+0.2): The US economy remains fundamentally strong \u2014 industrial production rose 1.8% over the period (country_health INDPRO 102.2\u2192104.0), CPI is contained at ~2.9% YoY, and unemployment is low. This gives the US genuine leverage. However, warning signs are accumulating: consumer sentiment has declined from 101.4 to 96.2 (country_health UMCSENT), a 5.1% drop reflecting trade-war uncertainty. China has matched every US escalation tit-for-tat \u2014 $34B retaliation on Jul 6, $16B retaliation announced for Aug 23, and a $60B threat against the proposed $200B List 3 (event_timeline entries Jun 15, Jul 6, Aug 1). Soybean prices have fallen ~15%, forcing a $12B USDA farm bailout (web_search USDA July 24). The US has identified legitimate grievances (Section 301 IP/tech-transfer findings), but the escalation ladder is running out of rungs without a negotiation channel \u2014 the two sides haven't held talks since the May truce collapsed (web_search Fortune Aug 8). Action stance (-0.1): The current $50B in tariffs (List 1 effective, List 2 imminent Aug 23) provides meaningful pressure. But the proposed $200B List 3 would shift the tariff burden from industrial inputs to consumer goods, directly raising prices for American households. The US Chamber of Commerce estimates 2.6 million jobs at risk (web_search Fortune Aug 8). With no active negotiations and China showing willingness to absorb pain, further escalation risks entering a war of attrition where the US loses its leverage advantage as domestic costs mount. The wiser play is to hold current pressure, demonstrate resolve through List 2 implementation, but signal readiness to negotiate \u2014 leveraging the implicit threat of List 3 rather than firing it.",
+      "key_factors": [
+        "US economy strong \u2014 IP rising, CPI contained, unemployment low",
+        "Consumer sentiment declining (101.4\u219296.2), trade uncertainty biting",
+        "China matching every escalation with equal retaliation, no negotiation channel since May",
+        "Agricultural sector under severe stress \u2014 USDA $12B bailout needed",
+        "List 3 ($200B) would hit consumer goods directly, raising household prices",
+        "US has legitimate Section 301 grievances but no clear endgame strategy",
+        "Strong dollar (+7%) hurting US exporters alongside tariffs"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-07-06",
+          "excerpt": "List 1 tariffs take effect: US 25% on ~$34B of Chinese goods. China imposes matching ~$34B retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-08-01",
+          "excerpt": "At Trump's direction, USTR says it is considering raising the proposed List 3 rate from 10% to 25%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment: 101.4 (Mar) \u2192 96.2 (Aug), decline of 5.2 points (-5.1%)"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "Industrial production: 102.2 (Mar) \u2192 104.0 (Aug), rise of 1.8%"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad dollar index: 107.6 (Feb) \u2192 115.2 (Aug), appreciation of ~7%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortune_aug8_2018",
+          "excerpt": "After months of escalation, neither China nor the U.S. seems willing to make any concessions to end the trade war. The two sides haven't held negotiations for months."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usda_jul24_2018",
+          "excerpt": "USDA will authorize up to $12 billion in programs to assist farmers in response to trade damage from unjustified retaliation on soybeans, sorghum, corn, wheat, cotton, dairy, and hogs."
+        }
+      ],
+      "threat_score": 0.2,
+      "action_score": -0.1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-08-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3319,
+        "capped_chars": 3319,
+        "raw_tokens": 830,
+        "capped_tokens": 830
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48158,
+        "capped_chars": 48158,
+        "raw_tokens": 12040,
+        "capped_tokens": 12040
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 46757,
+        "capped_chars": 46757,
+        "raw_tokens": 11689,
+        "capped_tokens": 11689
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 380255,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

@@ -1,0 +1,111 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-06-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7850,
+    "tokens_out": 1170,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0087744,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should proceed with the planned tariff escalation on $200 billion of Chinese goods (raising from 10% to 25%) and prepare tariffs on the remaining ~$300 billion of Chinese imports. This is the moment to maintain maximum pressure while negotiations are ongoing, as China's willingness to renegotiate commitments signals that leverage is working. The US should not back down until structural reforms on IP theft, forced technology transfer, and market access are locked into enforceable legal changes.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects a moderate but real threat to US interests. The US trade deficit with China stood at $419 billion (BBC, 2019-05-08), and China's economic model of state subsidies, forced technology transfer, and IP theft poses a long-term competitive threat to US leadership in AI, cloud computing, robotics, and green tech (USC Annenberg analysis). However, the US economy is not in existential danger \u2014 the Dow Jones is up 11% in 2019 (BBC), and the US has leverage as the demand-side economy. The action score of -1.0 (maximal escalation via tariffs) is justified because: (1) China reportedly attempted to walk back commitments during negotiations (BBC: 'claims Beijing is trying to row back on a trade deal'), which demands a strong response to restore credibility; (2) Senator Graham's assessment that 'this is the best chance in my lifetime to get China to change their cheating ways' reflects bipartisan recognition that the structural issues require sustained pressure (Fox Business, 2019-05-12); (3) White House adviser Kudlow acknowledged 'both sides will pay' but the asymmetry favors the US since China's export-dependent economy is more vulnerable to supply chain disruption than the US consumer market; (4) China's retaliation on $110 billion of US goods is already near-exhausted given the trade imbalance, limiting their retaliatory capacity. The risk of short-term consumer cost increases and market volatility is real but manageable compared to the long-term cost of allowing China's state-directed economic model to continue unchecked.",
+      "key_factors": [
+        "US-China trade deficit of $419 billion creates structural leverage for the US",
+        "China reportedly attempted to renegotiate already-agreed commitments, undermining trust",
+        "US tariffs on $250bn already in place; escalation to $200bn at 25% and potential $300bn additional represents maximum pressure moment",
+        "China's retaliatory capacity is near-exhausted ($110bn vs US's $250bn+ already tariffed)",
+        "Bipartisan support for tough stance (Graham: 'best chance in my lifetime')",
+        "Long-term tech competition (AI, cloud, robotics) is the real stakes, not just trade balance",
+        "US economy showing resilience: Dow up 11% YTD in 2019",
+        "IMF cut global growth forecasts citing trade tensions, but US is relatively insulated",
+        "Both sides acknowledged mutual pain (Kudlow: 'both sides will pay') but asymmetry favors US",
+        "24 states suing Trump over tariffs shows domestic political risk but also political salience of the issue"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. Not only does the US accuse China of stealing intellectual property, but it wants Beijing to make changes to its economic policies... The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts (tariff details)",
+          "excerpt": "The US imposed tariffs on $250bn worth of Chinese products last year. Beijing has retaliated with duties on $110bn worth of American products. Tariffs on $200bn worth of Chinese goods were due to rise to 25% from 10%... Mr Trump is saying this increase will go ahead on Friday... he has vowed to slap 25% duties on another $325bn of Chinese goods 'shortly'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "'This is the best chance in my lifetime to get China to change their cheating ways,' Graham, R.S.C., told 'Sunday Morning Futures.' 'The tariffs are tools that bring China to the table. I'm standing 100 percent with the president.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools (Kudlow)",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-06-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20217,
+        "capped_chars": 16251,
+        "raw_tokens": 5054,
+        "capped_tokens": 4063
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 29788,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

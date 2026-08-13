@@ -1,0 +1,108 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-07-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10415,
+    "tokens_out": 1064,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0110214,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should proceed with implementing the $34 billion in tariffs scheduled for July 6, 2018, and maintain the threat of an additional $16 billion tranche. The US holds leverage given the asymmetric trade deficit ($375 billion) and should use this moment to pressure China into meaningful structural concessions on IP theft, forced technology transfer, and market access. However, the US should keep the door open for negotiations and avoid the additional $100 billion escalation threat unless China retaliates disproportionately.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects a moderate but real threat to US interests. China's systematic IP theft, forced technology transfer, and restricted market access represent genuine long-term risks to US technological leadership and economic competitiveness (Politico: 'The Trump administration has identified multiple ways Beijing steals U.S. technology and undermines U.S. access to the Chinese market'). The US trade deficit with China hit $375 billion in 2017, and China's retaliation targets are strategically chosen to hit US agricultural exporters and manufacturers in politically sensitive regions (Bruegel: 'China's retaliation so far appears to be aimed at hurting U.S. exporters in terms of scale, and this includes large items such as soybeans, aircraft and vehicles'). However, the threat is not existential \u2014 the tariffs are still in proposal stage, and Larry Kudlow noted 'Nothing's happened. Nothing's been executed' (CBS News). The action score of -1 reflects the assessment that this is a moment of US leverage. The $375 billion trade deficit means China cannot match US tariff escalation dollar-for-dollar ('China has promised to respond in kind, but it would be unable to match that amount since it imported only $130 billion of U.S. goods last year' \u2014 CBS News). The US tariff list strategically targets high-tech products ('84 percent of the total value of the products are high-end exports' \u2014 Bruegel), directly addressing the core concern of China's 'Made in China 2025' technological ambitions. The Mnuchin 'hold' agreement in May produced only vague commitments with no specific deficit reduction target, suggesting that continued pressure is needed to extract meaningful concessions. The risk of escalation is real \u2014 43% of Chinese exports to the US come from foreign-owned firms (Wired), meaning US companies bear some cost \u2014 but the structural issues (IP theft, market access, technology transfer) are too important to defer.",
+      "key_factors": [
+        "$375 billion US-China trade deficit provides asymmetric leverage \u2014 China cannot match tariff escalation",
+        "China's systematic IP theft and forced technology transfer threaten long-term US tech leadership",
+        "US tariff list strategically targets high-tech sectors aligned with Made in China 2025",
+        "May 2018 Mnuchin-Liu He 'hold' produced only vague commitments, no specific targets",
+        "China's retaliation targets (soybeans, autos) designed to hit politically sensitive US sectors",
+        "43% of Chinese exports sourced from foreign-owned firms, meaning tariffs partially hit US companies",
+        "Tariffs still in proposal stage as of decision date \u2014 $34B set for July 6 implementation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China. China has promised to respond in kind, but it would be unable to match that amount since it imported only $130 billion of U.S. goods last year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "The Trump administration has identified multiple ways Beijing steals U.S. technology and undermines U.S. access to the Chinese market, which are the basis for the new tariffs."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports. China's retaliation so far appears to be aimed at hurting U.S. exporters in terms of scale."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.theguardian.com",
+          "excerpt": "Mnuchin said the US has won several commitments from Chinese officials that should cut America's trade deficit with China. However, Beijing has not agreed to cut the deficit by a particular amount, despite the Trump administration pushing for a $200bn reduction."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.wired.com",
+          "excerpt": "43 percent of Chinese exports are sourced from foreign (i.e., non-Chinese) owned firms. In the tech sector then, tariffs on US imports from China therefore amount to taxes on US companies and US products."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-07-05",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 32814,
+        "capped_chars": 28441,
+        "raw_tokens": 8204,
+        "capped_tokens": 7110
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19030,
+  "started_at": "2026-08-13T10:55:23+00:00"
+}

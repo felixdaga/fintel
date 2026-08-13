@@ -1,0 +1,140 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-04-25",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Continue negotiations but resist binding structural concessions and reject any enforcement mechanism that grants the US unilateral reimposition rights without reciprocal Chinese authority. Use the strong Q1 economic data as a buffer to negotiate from a position of stability rather than desperation. Push for tariff rollback as a precondition for any final deal rather than accepting tariffs-as-leverage permanence.\n\nSUPPORTING RATIONALE: The threat reading of 0.4 reflects a moderately elevated but manageable situation. On the downside: (1) US tariffs cover ~$250B of Chinese exports at 10-25%, creating real drag on export sectors (timeline: Lists 1-3 through Sep 2018); (2) Huawei faces escalating legal and political pressure \u2014 DOJ fraud/sanctions charges unsealed Jan 28, US intelligence accusing Huawei of state security funding (Reuters, Apr 20), and a global campaign to exclude Huawei from 5G networks; (3) The US is pushing for structural reforms (IP theft, forced tech transfer, industrial subsidies) that directly threaten Made in China 2025 ambitions (Lighthizer Congressional testimony: 'structural change and it has to be enforceable'); (4) The proposed enforcement mechanism \u2014 with US seeking unilateral tariff reimposition rights \u2014 effectively asks China to accept permanent US leverage (Reuters, Apr 11: 'US may seek to keep tariffs in place, only removing them when China meets certain benchmarks').\n\nHowever, the threat is moderated by: (1) China's Q1 2019 GDP beat expectations at 6.4% (NBS, Apr 17), with industrial production surging 8.5% in March \u2014 strongest since July 2014 \u2014 indicating stimulus is working; (2) Record Q1 credit injection of 8.2 trillion yuan ($1.22T) provides substantial economic cushion; (3) China has made 'unprecedented proposals' on tech transfer (US officials to Reuters, Mar 28), giving negotiating room; (4) The US side has repeatedly delayed the List 3 hike from 10% to 25%, signaling Trump wants a deal; (5) Trump faces domestic political incentive to close a deal (bipartisan support for tough stance, but also desire for a 'win').\n\nThe action_score of -0.1 (negotiate, slightly guarded) reflects the judgment that China should stay at the table but not rush to close. The US enforcement framework as described would lock in asymmetric disadvantage. China's economy is stable enough to sustain current tariff levels through 2019 while negotiating harder on terms. The key leverage point is that Trump wants a deal more than he wants permanent tariffs \u2014 use that asymmetry. However, avoid escalation (no new retaliation) as that would undermine the 'reasonable party' positioning and risk triggering the $200B List 3 hike to 25% that Trump has repeatedly threatened but held in abeyance.",
+      "key_factors": [
+        "US tariffs cover ~$250B of Chinese exports; List 3 hike to 25% suspended but threatened",
+        "China Q1 2019 GDP 6.4% beat expectations; industrial production +8.5% in March strongest since 2014",
+        "US pushing for unilateral tariff reimposition enforcement mechanism \u2014 structural sovereignty concern",
+        "Huawei under escalating legal/political pressure (DOJ charges, 5G exclusion campaign, state security accusations)",
+        "China made unprecedented proposals on forced tech transfer but structural IP enforcement remains unresolved",
+        "8.2 trillion yuan Q1 credit injection provides stimulus buffer against trade war impact",
+        "Trump signaled desire for deal ('four weeks' timeline) but wants tariffs to remain as leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks between US and Chinese negotiators; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-04-10",
+          "excerpt": "Mnuchin: We've pretty much agreed on an enforcement mechanism. We've agreed that both sides will establish enforcement offices. Mnuchin declined to comment on whether the U.S. will use tariffs as an enforcement tool."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-04-11",
+          "excerpt": "People familiar with the discussions have said that U.S. negotiators are seeking that right [unilateral reimposition], but that China is reluctant to agree. The United States may seek to keep tariffs in place, only removing them when China meets certain benchmarks."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp-2019-04-17",
+          "excerpt": "China's GDP expanded 6.4% in Q1, beating expectations of 6.3%. Industrial production expanded 8.5% in March, strongest since July 2014. Record 8.2 trillion yuan in credit pumped into economy in Q1."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-03-28",
+          "excerpt": "China has made unprecedented proposals on forced technology transfer. 'They're talking about forced technology transfer in a way that they've never wanted to talk about before.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-04-20",
+          "excerpt": "U.S. intelligence has accused Huawei Technologies of being funded by Chinese state security."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-04-25",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4024,
+        "capped_chars": 4024,
+        "raw_tokens": 1006,
+        "capped_tokens": 1006
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11283,
+        "capped_chars": 11283,
+        "raw_tokens": 2821,
+        "capped_tokens": 2821
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 58432,
+        "capped_chars": 58432,
+        "raw_tokens": 14607,
+        "capped_tokens": 14607
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 376282,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

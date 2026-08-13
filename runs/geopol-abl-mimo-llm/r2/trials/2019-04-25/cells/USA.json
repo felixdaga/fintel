@@ -1,0 +1,82 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-04-25",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9864,
+    "tokens_out": 1232,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0109744,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.25,
+      "rationale": "RECOMMENDATION: The US should raise tariffs on $200 billion of Chinese goods from 10% to 25% as threatened, maintaining maximum leverage while negotiations continue. This preserves the credible threat that has driven China to the table and signals resolve on structural issues. The US should simultaneously keep negotiations open but refuse to settle for a purchase-only deal that fails to address forced technology transfer, IP theft, and state subsidies.\n\nSUPPORTING RATIONALE: The threat score of +0.25 reflects a moderate but not existential threat to US interests. The trade war has caused localized pain\u2014soybean prices down 20%, agricultural and auto exports hit by Chinese retaliation (Brookings)\u2014but the overall US economy impact is described as 'a minor blip' (Brookings). The real threat is structural: China's forced technology transfer, cyber theft of IP, state subsidies, and non-tariff barriers represent long-term erosion of US tech leadership and competitive advantage (CNBC, Politico). However, as of April 2019, negotiations are actively progressing with six MOUs being drafted on structural issues (CNBC, Feb 2019), giving the US leverage.\n\nThe action score of -1.0 (maximal escalation via tariff hike) is justified by the leverage dynamics. China's economy is slowing\u2014Q4 2018 saw the slowest growth since 1992 (Politico)\u2014giving the US significant bargaining power. China has 'offered very few commitments on structural changes' and continues to focus on purchases rather than reform (Politico). Raising tariffs to 25% maintains the credible threat that keeps China at the table and pushes for the structural reforms that US business groups (US Chamber of Commerce, AmCham China) are demanding. The risk of escalation is manageable: China has already retaliated on ~85% of US imports it buys, so its retaliatory capacity is largely exhausted. The March 1 deadline was already extended once; allowing it to lapse without action would signal weakness and reduce US leverage in the enforcement mechanism negotiations that are a key sticking point.",
+      "key_factors": [
+        "China's economy slowing significantly (Q4 2018 slowest growth since 1992) - US has leverage",
+        "Negotiations progressing on 6 MOUs covering structural issues but China offering few structural commitments",
+        "US soybean prices down 20%, agricultural/auto sectors hurt by retaliation but overall economic impact is minor",
+        "China has retaliated on ~85% of US imports it buys - limited further retaliatory capacity",
+        "US business groups demanding structural reforms, not just purchase commitments",
+        "Enforcement mechanism remains a key unresolved sticking point",
+        "China focused on purchase commitments rather than structural reform - US must maintain pressure"
+      ],
+      "sources_cited": [],
+      "threat_score": 0.25,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-04-25",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 31524,
+        "capped_chars": 26295,
+        "raw_tokens": 7881,
+        "capped_tokens": 6574
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 27493,
+  "started_at": "2026-08-13T10:54:47+00:00"
+}

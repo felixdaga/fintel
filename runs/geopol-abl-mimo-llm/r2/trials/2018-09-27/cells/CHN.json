@@ -1,0 +1,102 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-09-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8212,
+    "tokens_out": 776,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0079544,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue to retaliate proportionally against U.S. tariffs while signaling willingness to negotiate. Maintain the current retaliatory tariffs on U.S. agricultural and automotive products, and prepare additional countermeasures targeting politically sensitive U.S. sectors. Simultaneously, keep diplomatic channels open for potential talks after the U.S. midterm elections in November 2018.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The U.S. has implemented tariffs on $250 billion of Chinese goods (Brookings), and the trade war is escalating with no high-level negotiations scheduled. China's exports to the U.S. represent about 5% of GDP (RAND), making this a material economic threat. However, China has several mitigating factors: the yuan has already depreciated 6% from 6.28 to 6.64 per dollar (RAND), partially offsetting tariff impacts; China can source food imports from alternative suppliers like Australia; and the U.S. is deliberately avoiding consumer goods tariffs to protect its own consumers, limiting the political pressure on China.\n\nThe action_score of -1 reflects the need for strong retaliation. China must demonstrate it will not capitulate under pressure, as RAND analysis shows China's retaliatory tariffs on consumer-facing goods are strategically superior to U.S. targeting of machinery. The Brookings assessment that 'it is unlikely that the Chinese leadership will cave' supports maintaining a firm stance. However, the recommendation to keep diplomatic channels open reflects the Brookings prediction that post-midterm negotiations are likely, giving China an opportunity to extract concessions while the U.S. faces domestic political pressure from affected agricultural and manufacturing sectors.",
+      "key_factors": [
+        "U.S. tariffs on $250 billion of Chinese goods with escalation potential",
+        "China's retaliatory tariffs strategically target U.S. agricultural and consumer sectors",
+        "Yuan depreciation of 6% partially offsets tariff impacts",
+        "No high-level negotiations scheduled until after U.S. midterms",
+        "U.S. deliberately avoiding consumer goods tariffs to limit domestic political fallout",
+        "China can source alternative suppliers for affected imports"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The U.S. has announced $250 billion of tariffs on products from China, and China has partially retaliated and will probably come out with more retaliation. For the next several months we will probably be locked into this situation. No high-level negotiations are scheduled."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "$505 billion in potentially lost exports is a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "It is unlikely that the Chinese leadership will cave in and do anything major. China is willing to buy more products from the U.S. and open more markets, so their offer is clear"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-09-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 28465,
+        "capped_chars": 17802,
+        "raw_tokens": 7116,
+        "capped_tokens": 4450
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 16100,
+  "started_at": "2026-08-13T10:54:42+00:00"
+}

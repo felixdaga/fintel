@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-04-04",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7543,
+    "tokens_out": 952,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0078134,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The United States should proceed with the planned tariff escalation on $200 billion of Chinese goods (raising from 10% to 25%) and signal willingness to tariff the remaining ~$267 billion if China retaliates further. This maintains negotiating leverage while talks continue. The US should simultaneously push for concrete structural concessions on IP theft, forced technology transfer, and state subsidies rather than settling for purchase commitments alone.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate and asymmetric \u2014 the trade war is causing real but concentrated pain (soybean prices down 20%, agricultural and auto sectors in the Midwest and South hit hard, per Brookings/Dollar), but the overall US economy impact is described as 'a minor blip' (Brookings). Meanwhile, the structural threat from China's industrial policy \u2014 state subsidies, forced joint ventures, IP theft, and WTO gaming as a 'developing' nation (Fox Business/Walser, CFR August 2018 report) \u2014 represents a genuine long-term challenge to US tech leadership and manufacturing. The US has leverage: $250 billion already tariffed represents half of US-China trade, and China has nearly exhausted its retaliatory capacity ($110 billion of $130 billion in US imports already covered). China's economy is more export-dependent on the US than vice versa. However, the risk of collateral damage to US firms operating in China and global supply chains (Brookings: 'half of that pain will be felt by other countries') tempers the threat reading. The action_score of -1 reflects that this is a window of leverage \u2014 China has nearly maxed out retaliation, US macro conditions are still favorable, and the political moment (post-midterms, pre-2020) supports a tough stance. Escalation now maximizes US bargaining position for a deal that addresses structural issues, not just purchase targets.",
+      "key_factors": [
+        "US tariffs cover ~$250B of $500B+ in Chinese imports; Trump threatens additional $267B",
+        "China retaliation covers $110B of $130B in US imports \u2014 nearly exhausted retaliatory capacity",
+        "Soybean prices down 20%, agricultural/auto sectors under pressure but overall macro impact described as 'minor blip'",
+        "Structural issues: IP theft, forced tech transfer, state subsidies, JV requirements (CFR 2018 report)",
+        "China lowered tariffs on non-US goods to redirect trade away from US \u2014 strategic countermove",
+        "No high-level negotiations scheduled as of late 2018; talks resuming in early 2019",
+        "Wilson Center (March 2019) warns of unintended consequences of protectionism from historical precedent"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The U.S. has announced $250 billion of tariffs on products from China... It's hard to see the off-ramp right now... This is not a big hit for the overall U.S. economy but it will hurt some specific sectors"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "If all the threats and allegations with regard to tariffs are followed through upon, all of U.S.-China trade is set to be under some kind of tariff barrier in 2018. China has covered $110 billion of the $130 billion of U.S.-China trade."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "The Council on Foreign Relations' August 2018 report outlines how China will provide hundreds of billions in subsidies and tax breaks... requires foreign corporations to create joint-ventures with Chinese companies"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.wilsoncenter.org \u2014 The China-U.S. Trade War: Lessons from History",
+          "excerpt": "Felix Boecking discusses the unintended consequences of protectionism and the difficulties of strategizing trade wars"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-04-04",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18202,
+        "capped_chars": 14601,
+        "raw_tokens": 4550,
+        "capped_tokens": 3650
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 17512,
+  "started_at": "2026-08-13T10:55:28+00:00"
+}

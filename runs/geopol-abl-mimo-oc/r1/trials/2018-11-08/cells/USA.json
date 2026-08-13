@@ -1,0 +1,165 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-11-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Use the upcoming G20 Argentina meeting with Xi as a negotiating venue, not an escalation trigger. Hold existing tariff levels steady \u2014 the scheduled rise of List 3 from 10% to 25% on Jan 1, 2019 already provides a credible deadline and leverage. Avoid new tariff threats before the summit; let China's deteriorating economy do the pressing. Seek a framework deal that extracts structural concessions on IP, tech transfer, and market access while preserving the option to escalate if talks fail.\n\nSUPPORTING RATIONALE: The US holds a clear position of advantage, warranting a negative threat score of -0.30. The US economy is absorbing the trade war with remarkable resilience: industrial production continues rising (104.07, up 0.84% over the period), consumer sentiment remains elevated at 97.5, unemployment is at historic lows, and GDP growth is strong. CPI is well-contained at 252.6 (up only 0.6%), and while the Fed is tightening (Fed funds rate up to 2.20%), this reflects confidence rather than distress. Oil prices have fallen sharply from ~$76 in early October to ~$60 by early November, providing a de facto tax cut for US consumers.\n\nBy contrast, China is under genuine economic strain. Q3 GDP growth slowed to 6.5% \u2014 the weakest since the 2009 financial crisis (CNN, Oct 19). Manufacturing PMI dropped to 50.2 in October, barely above contraction (Politico, Oct 31). The yuan has weakened to 6.97/USD, foreign reserves declined ~$30B, and the PBOC cut its discount rate \u2014 all signs of a defensive posture. Analysts warned 'the worst is yet to come' as the full tariff impact and the Jan 1 rate hike to 25% have not yet been felt (CNN, Politico). China has been front-loading exports to beat tariffs, meaning a cliff in orders is likely in Q1 2019.\n\nThe Trump-Xi phone call on Nov 1 and the planned G20 dinner signal both sides want to talk (Reuters, SCMP). Trump's team has been asked to draft deal terms (Bloomberg via Reuters). This is leverage the US should use, not squander by escalating prematurely. The threat of $267B in additional tariffs and the Jan 1 rate increase are powerful backstops; the US does not need to fire them now to maintain pressure.\n\nSecond-order risks counsel against further escalation at this moment: the corporate bond spread (Baa) has risen to 5.18% (up 7.7%), signaling tightening financial conditions; the strong dollar (up 4.4%) is already pressuring US exporters; and allies (EU, Japan, Canada) share US concerns about China's practices but would fracture under unilateral US tariff escalation. A negotiate-now posture preserves coalition alignment while extracting maximum leverage from China's economic weakness.",
+      "key_factors": [
+        "US economy resilient: industrial production rising, consumer sentiment 97.5, low unemployment, contained CPI",
+        "China economy weakening: Q3 GDP 6.5% (lowest since 2009), manufacturing PMI 50.2, yuan at 6.97/USD, reserves declining",
+        "Jan 1, 2019 List 3 rate hike to 25% provides a credible deadline \u2014 no need to escalate before it",
+        "G20 Argentina summit (late Nov) offers a structured negotiating venue with leader-level authority",
+        "Trump asked officials to draft deal terms after Nov 1 Xi call \u2014 signal of genuine US interest in a deal",
+        "Rising corporate bond spreads (Baa at 5.18%) and strong dollar create second-order risks from further escalation",
+        "Allies share US structural concerns about China but would fracture under unilateral tariff escalation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_INDPRO",
+          "excerpt": "Industrial Production latest value: 104.07 (up 0.84% over period)"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_UMCSENT",
+          "excerpt": "Consumer Sentiment: 97.5 (Nov 2018)"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_CPIAUCSL",
+          "excerpt": "CPI: 252.6, up 0.6% \u2014 well-contained inflation"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_DCOILWTICO",
+          "excerpt": "WTI crude fell from ~$76 (early Oct) to ~$60 (early Nov)"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_DBAA",
+          "excerpt": "Moody's Baa corporate bond yield: 5.18%, up 7.7% \u2014 tightening financial conditions"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA_DTWEXBGS",
+          "excerpt": "Broad dollar index: 115.25, up 4.4% over 6 months"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHN_INDPRO",
+          "excerpt": "China industrial production growth slowed to 5.8% YoY (Oct 2018)"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHN_XDCUS",
+          "excerpt": "CNY/USD weakened to 6.97"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn_china_gdp_q3",
+          "excerpt": "China grew 6.5% in Q3 2018 \u2014 weakest since 2009 financial crisis. Officials turned to tax cuts, infrastructure spending and looser monetary policy."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico_china_pmi",
+          "excerpt": "Manufacturing PMI dropped to 50.2 in October, lowest in two years, barely above contraction. 'The worst is yet to come.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_trump_xi_call",
+          "excerpt": "Trump tweeted trade discussions 'moving along nicely' and asked officials to begin drafting possible deal terms after Xi call."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-11-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4164,
+        "capped_chars": 4164,
+        "raw_tokens": 1041,
+        "capped_tokens": 1041
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 43629,
+        "capped_chars": 43629,
+        "raw_tokens": 10907,
+        "capped_tokens": 10907
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 45473,
+        "capped_chars": 45473,
+        "raw_tokens": 11368,
+        "capped_tokens": 11368
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 390968,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

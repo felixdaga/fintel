@@ -1,0 +1,59 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "threat_score": 0.45,
+      "score": 0.45,
+      "action_score": 0.2,
+      "action_level": "negotiate",
+      "rationale": "RECOMMENDATION: Hold the current tariff posture but use the scheduled Trump\u2013Xi meeting at the G20 in Osaka (late June) as an off-ramp to restart substantive negotiations rather than escalating to the threatened $300B tranche. Keep List 3 at 25% and the Huawei entity list in place as leverage, but signal a credible path to de-escalation on enforcement and purchases so we reach a framework deal without triggering China's rare-earth retaliation.\n\nSUPPORTING RATIONALE: The threat to US interests is material and rising (threat_score +0.45). The bond market is flashing a hard recession warning before the decision date: the 10Y yield fell from ~2.85% (Dec) to 2.12% and the 2Y to 1.83% by June 5, inverting the 10Y-3M curve, while WTI slid from ~$66 to ~$51.5 \u2014 all knowable signals of growth/risk stress from the May escalation (List 3 raised to 25% on May 10, Huawei entity-listed May 16, China's $60B retaliation effective June 1). Politically, China's shutdown of the agriculture market forced a $16B farm bailout (May 23), with soybean exports down ~50%, putting Trump's own farm-belt base under strain and fueling domestic political pressure. China's rare-earth counter-leverage threat (state media, May 29) exposes genuine US electronics/defense supply-chain vulnerability, and PIIE estimates put the full-tariff household cost at ~$2,200/yr. That is why I do NOT recommend further escalation: adding the $300B tranche and taxing essentially all Chinese imports would hit US consumers directly and invite rare-earth retaliation at a moment when the yield curve already signals recession risk. The high threat argues for de-escalation, not more pressure. With a presidential G20 meeting already on the calendar, the disciplined move is to negotiate a deal while retaining tariffs as enforcement leverage \u2014 hence action_score +0.2 / 'negotiate'.",
+      "key_factors": [
+        "Inverted 10Y-3M yield curve and sharp drop in 10Y (2.85\u21922.12) and 2Y (2.72\u21921.83) by June 5, signaling recession risk",
+        "WTI crude fell ~$66\u2192$51.5, reflecting growth/risk stress from May tariff escalation",
+        "$16B farm bailout (May 23) and ~50% drop in soybean exports to China \u2014 political cost to farm-belt base",
+        "Huawei entity list (May 16) + China's rare-earth retaliation threat expose US electronics/defense supply-chain vulnerability",
+        "Trump\u2013Xi G20 Osaka meeting scheduled for late June provides a concrete off-ramp for talks",
+        "PIIE estimate: full tariff realization could cost a typical US family ~$2,200/yr"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-05",
+          "excerpt": "Trump orders List 3 raised from 10% to 25% on May 10 and directs preparation of tariffs on remaining ~$300B of Chinese imports"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US adds Huawei to Entity List; US firms barred from selling to Huawei without license"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10Y Treasury yield fell from ~2.85% (Dec 2018) to 2.12% by 2019-06-05"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DCOILWTICO",
+          "excerpt": "WTI crude fell from ~$66 (late Apr) to ~$51.5 by 2019-06-05"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.nytimes.com/2019/05/23/us/politics/farm-aid-package.html",
+          "excerpt": "Trump unveiled a $16B bailout for farmers hurt by China's retaliatory tariffs, signaling a protracted fight"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://markets.businessinsider.com/news/stocks/stocks-down-trade-war-fears-china-threatens-us-rare-earth-2019-5-1028238167",
+          "excerpt": "China state media called rare-earth export limits a 'powerful weapon'; US relies on China for over 80% of rare-earth imports"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.cnbc.com/2019/05/13/trump-says-he-will-meet-with-xi-and-putin-at-g20-summit.html",
+          "excerpt": "Trump confirmed he will meet Xi at G-20 in Japan in late June; said he has not decided on the $325B tariff tranche"
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

@@ -1,0 +1,140 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-08-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 143375,
+    "tokens_out": 4533,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: Hold the recent escalation in place as leverage but pivot to active negotiation and pause the scheduled September 1 List 4 tariffs before they take effect. Do not add further escalatory measures. Re-engage Beijing on a path to de-escalation while keeping the just-announced tariffs and the currency-manipulator designation on the table as bargaining chips, and signal willingness to resume farm purchases once talks advance.\n\nSUPPORTING RATIONALE: The threat is real and rising. At this decision date the escalation is already hitting the US economy directly: the S&P 500 fell 3% on Aug 5 (worst loss of the year) and stocks sat ~6% below their record on a six-day slide (PBS, 2019-08-05); 10-year Treasury yields plunged to 1.71% and 2-year to 1.59% with the 3-month yield above the 10-year \u2014 a classic recession warning (country_health DGS10/DGS2); and University of Michigan consumer sentiment collapsed from 98.4 to 89.8 in a single month, an 8.6-point drop (country_health UMCSENT). The Fed was forced to cut for the first time in ~11 years (to 2.13%), burning policy ammunition. The farm belt \u2014 a core 2020 constituency in swing states like Iowa, Ohio and Wisconsin \u2014 remains exposed after China halted soybean purchases and a $16B bailout could not reverse ~15% lower prices (NYT, 2019-05-14/23; Politico, 2019-05-20). This justifies a mild-to-materially-positive threat score: material GDP/confidence drag and mounting domestic political pressure, but not existential since jobs (+164k) and unemployment (3.7%) remain healthy and the US holds leverage. Because further escalation would deepen exactly these self-inflicted costs (analysts flagged >50% recession odds if List 4 takes effect), the right stance is to avoid additional provocation and move to negotiation \u2014 keeping current tariffs as leverage rather than conceding unilaterally. That yields a mildly de-escalatory action score and a 'negotiate' posture.",
+      "key_factors": [
+        "List 4 tariffs on remaining ~$300B announced Aug 1, effective Sept 1",
+        "Currency-manipulator designation Aug 5, first since 1994",
+        "S&P 500 -3% on Aug 5, stocks ~6% off record, six-day slide",
+        "University of Michigan sentiment 98.4 -> 89.8 in one month",
+        "10yr/2yr near-inversion; 3-month above 10-year (recession signal)",
+        "Fed first cut in ~11 years (to 2.13%)",
+        "Farm-belt exposure: China halted soybeans, $16B bailout, swing-state political pressure"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-01",
+          "excerpt": "Trump announces 10% tariffs on remaining ~$300B of Chinese goods (List 4), effective Sept 1."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment 98.4 (Jul) -> 89.8 (Aug 1), change -8.6."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10-year Treasury at 1.71% on Aug 7; 2-year at 1.59%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Federal funds effective rate at 2.13% in Aug (first cut in ~11 years)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "PBS 2019-08-05",
+          "excerpt": "S&P 500 -3%, worst loss of year; 3-month yield above 10-year signals recession in ~a year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNN 2019-08-03",
+          "excerpt": "Escalating trade war threatens a shock the Fed cannot absorb; >50% recession odds if tariffs take effect."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NYT 2019-05-23",
+          "excerpt": "$16B farm bailout; China canceled pork/soybean purchases; swing states Iowa, Ohio, Wisconsin hit hard."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-08-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4860,
+        "capped_chars": 4860,
+        "raw_tokens": 1215,
+        "capped_tokens": 1215
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48113,
+        "capped_chars": 48113,
+        "raw_tokens": 12028,
+        "capped_tokens": 12028
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 44683,
+        "capped_chars": 44683,
+        "raw_tokens": 11171,
+        "capped_tokens": 11171
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 334002,
+  "started_at": "2026-08-13T07:52:27+00:00"
+}

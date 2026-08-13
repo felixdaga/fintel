@@ -1,0 +1,114 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-08-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 11066,
+    "tokens_out": 1228,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0121644,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue to retaliate in kind against U.S. tariffs, matching each escalation with proportional counter-tariffs on U.S. agricultural and industrial exports, while signaling willingness to negotiate if the U.S. de-escalates. Retaliation preserves China's negotiating leverage and deters further escalation, while avoiding actions that would destabilize China's own economy or alienate potential allies.\n\nSUPPORTING RATIONALE: The threat score of +0.45 reflects a serious but not yet existential threat to China's interests. The U.S. has implemented 25% tariffs on $34 billion of Chinese goods (July 6, 2018) and has threatened up to $250 billion in total tariffs, targeting machinery, equipment, and high-technology items central to Made in China 2025 (RAND analysis). The U.S. explicitly aims to 'weaken China's drive to be a sophisticated exporting country by 2025.' China's exports to the U.S. total $505 billion annually (~5% of GDP), making China more exposed in absolute terms than the U.S. (RAND). Soybean prices have already fallen 20%, and U.S. farmers are feeling pain, but China's export hubs face real unemployment risk. The yuan has depreciated 6% from 6.28 to 6.64 per dollar (RAND), providing some buffer but also signaling capital outflow pressure. However, the threat is not yet existential: consumer goods like smartphones are largely spared from U.S. tariffs to avoid hurting American consumers (RAND), and China can source food imports from alternative suppliers like Australia and Brazil (RAND). The action score of -1 (retaliate) is justified because: (1) China has already demonstrated it can target politically sensitive U.S. sectors\u2014soybeans, cars, aircraft, agricultural products from Trump-supporting states (CBS News, Brookings); (2) the U.S. midterm elections in November 2018 create political pressure on the Trump administration, and sustained retaliation on farm-belt exports increases that pressure (Brookings: 'Trump administration sees this as a winning strategy for the midterm elections'); (3) RAND analysis shows China's retaliatory tariffs on consumer-facing and agricultural goods are easier for China to absorb than U.S. tariffs on Chinese machinery, since importers can switch suppliers; (4) China's offer to buy more U.S. products and open markets is already on the table (Brookings), so retaliation now preserves leverage for post-election negotiations when 'the two sides come together' (Brookings). Caving now would invite further escalation; matching retaliation signals resolve while remaining proportionate.",
+      "key_factors": [
+        "U.S. tariffs on $34B of Chinese goods at 25%, targeting Made in China 2025 sectors",
+        "Threat of escalation to $250B total U.S. tariffs on Chinese imports",
+        "China's $505B annual exports to U.S. (~5% of GDP) create significant exposure",
+        "Yuan depreciation of 6% (6.28 to 6.64/USD) provides partial offset but signals stress",
+        "U.S. midterm elections in Nov 2018 create political leverage for China's retaliation on farm-belt exports",
+        "China's retaliatory tariffs on agricultural/consumer goods are strategically easier to absorb",
+        "No high-level negotiations currently scheduled; post-election window more promising",
+        "Soybean prices down 20%, U.S. farmers already feeling pain from Chinese retaliation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "The U.S. tariffs on 818 items average 25 percent. The items are largely machinery and equipment...the Trump administration has selected relatively high-technology items...designed to weaken China's drive to be a sophisticated exporting country by 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The Trump administration sees this as a winning strategy for the midterm elections in 2018. Trump said he would hit China, and now he has"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "After the 2018 elections, we're likely to see the two sides come together and negotiate something so that they can both save face, but it is unlikely that this will be anytime soon"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com \u2014 Trade war with China: What you need to know",
+          "excerpt": "China's list names cars, aircraft, soybeans, corn, sorghum, whiskey, beef, tobacco, cotton and plastic products"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-08-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35798,
+        "capped_chars": 31232,
+        "raw_tokens": 8950,
+        "capped_tokens": 7808
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 29973,
+  "started_at": "2026-08-13T10:54:41+00:00"
+}

@@ -1,0 +1,124 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 147839,
+    "tokens_out": 4383,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.25,
+      "rationale": "RECOMMENDATION: Hold the current posture \u2014 keep List 3 in place as scheduled (10% now, rising to 25% on Jan 1, 2019) to keep pressure on Beijing, and keep the negotiating window open, but do not trigger a further escalation round (the threatened ~$267B List 4) or pull the Jan 1 increase forward before judging China's response. Do not make unilateral concessions either; the leverage is ours to keep.\n\nSUPPORTING RATIONALE: The dispute state reads as a mild opportunity for the US, not a threat: the U.S. economy is robust (industrial production index rising to 104.1, consumer sentiment at 100.1, 10Y yield 3.06%, broad dollar strong near 113.7), and the US holds the structural upper hand \u2014 tariff coverage of ~$250B (half of Chinese imports) with a credible path to cover essentially everything China ships, while China, importing far fewer US goods, cannot fully retaliate in kind; market consensus is that the US is 'winning so far' (Forbes 2018-08-23, NYT 2018-09-17). That justifies a slightly negative threat score. However, the reason to hold rather than escalate further is domestic and second-order: China is retaliating on soybeans and other farm products concentrated in electorally decisive states weeks before the November midterms, GOP members (e.g., Ways & Means chair Brady; Sen. Heitkamp) call the tariffs a tax on US consumers, and pushing the $200B round to 25% now or triggering List 4 would raise consumer prices at peak holiday-shipping season and add market volatility. With China signaling it may decline serious talks until after the midterms, the disciplined move is to hold the course already set and remain available for negotiation \u2014 neither over-escalating nor conceding.",
+      "key_factors": [
+        "US holds initiative and leverage (~$250B coverage, credible path to cover all Chinese imports; China can't fully retaliate in kind)",
+        "US economy strong and unaffected so far (IP 104.1, sentiment 100.1, 10Y 3.06%, dollar 113.7)",
+        "List 3 effective Sept 24 at 10%, scheduled to rise to 25% Jan 1 2019 \u2014 pressure already in motion",
+        "China retaliation on soybeans/farm products hitting electorally vital states before Nov midterms",
+        "GOP criticism that tariffs are a consumer tax; risk of further escalation raising consumer prices near holidays",
+        "China may decline serious talks until after midterms \u2014 hold and keep negotiation window open"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17 List 3 finalized; 2018-09-18 published; 2018-09-24 List 3 effective at 10%, to 25% Jan 1 2019",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B effective Sept 24, rising to 25% Jan 1 2019. China retaliates 5-10% on ~$60B."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "US INDPRO/UMCSENT/DGS10/DTWEXBGS/FEDFUNDS",
+          "excerpt": "Industrial production 104.1, consumer sentiment 100.1, 10Y 3.06%, broad dollar ~113.7, fed funds 1.95% \u2014 US economy strong, no recession signal."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "USA TODAY / CNN / NYT 2018-09-17/18",
+          "excerpt": "Trump escalates to $200B tariffs; USTR finalizes List 3; nearly half of Chinese imports to face tariffs; US prepared to add $267B if China retaliates against farmers."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "USA TODAY 2018-09-18; NPR 2018-09-26",
+          "excerpt": "China's farm-product retaliation targets electorally important states; GOP members criticize tariffs as a tax on consumers; '$12B farm aid' announced."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Forbes 2018-08-23",
+          "excerpt": "Consensus in the market has Trump winning the trade war so far; China imports far fewer US goods so cannot retaliate in kind."
+        }
+      ],
+      "threat_score": -0.25,
+      "action_score": -0.1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4035,
+        "capped_chars": 4035,
+        "raw_tokens": 1009,
+        "capped_tokens": 1009
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48411,
+        "capped_chars": 48411,
+        "raw_tokens": 12103,
+        "capped_tokens": 12103
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 57397,
+        "capped_chars": 57397,
+        "raw_tokens": 14349,
+        "capped_tokens": 14349
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 306468,
+  "started_at": "2026-08-13T07:48:00+00:00"
+}

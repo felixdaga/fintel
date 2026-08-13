@@ -1,0 +1,129 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-01-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 142219,
+    "tokens_out": 3407,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.25,
+      "rationale": "RECOMMENDATION: Stay inside the 90-day G20 truce and press the negotiation track that resumed in Beijing on Jan 7 \u2014 do not re-impose the Jan 1 escalation to 25% on the $200B list. Use the suspended tariff hike as the leverage to lock in a 'very substantial' Chinese purchase commitment (agriculture, energy, industrial products) and real progress on IP/forced-technology-transfer and non-tariff barriers before the 90-day window closes. Avoid any new escalation that would collapse the talks, roil already-fragile markets, and deepen the farm-belt damage.\n\nSUPPORTING RATIONALE: The threat is moderate, not existential. The US has real leverage: the G20 deal (Dec 1) secured a 90-day truce with China agreeing to large purchases and structural-tech talks, and Beijing is under its own economic pressure (slowing IP/industrial output and weakened macro readings) to reach a deal \u2014 supportive context for holding a tough line without escalation. But the current dispute already carries material, politically sensitive costs: China's 25% soybean tariff has cut US soybean exports to China by roughly 94-97%, pushed Chicago soybean futures to 10-year lows, and strained Trump's farm-belt base despite a $12B aid program that has paid out little; meanwhile Q4 financial-market stress (10Y Treasury yield falling from ~3.2% to 2.74%, Baa credit spreads widening ~37bps, oil collapsing from ~$76 to ~$52, consumer sentiment dropping from 98.3 to 91.2 in January) shows markets are jittery about trade war fallout. The Huawei/Meng arrest and Beijing's detention of two Canadians add diplomatic friction but neither rises to a supply-chain or existential threat. On the action axis, re-escalating now would be self-defeating: it would breach the truce, trigger the reciprocal path, amplify market and farm-belt pain, and forfeit the leverage we already have; conversely there is no matching offer yet that justifies unilateral concessions. The correct posture is negotiate/hold \u2014 keep the tariff threat in reserve as leverage while extracting concrete purchases and structural commitments during the 90-day window.",
+      "key_factors": [
+        "90-day G20 truce active; Beijing talks resumed Jan 7 with structural/IP issues still open",
+        "USD ~$250B tariffs in place vs ~$110B China retaliation incl. 25% soybean tariff",
+        "US soybean exports to China down 94-97%; 10-year-low prices; $12B relief program largely unspent",
+        "Q4-2018 market stress: 10Y yield 3.2%->2.74%, Baa spreads +37bps, sentiment 98.3->91.2",
+        "Huawei/Meng arrest and Canadian detentions add diplomatic friction, not existential risk",
+        "US retains leverage: China's economy slowing and eager for a deal"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20: 90-day window, Jan 1 25% hike suspended, China agrees to increase purchases; Meng arrest; Canadians detained"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-07",
+          "excerpt": "Trade talks resume in Beijing; China discusses increased purchases; structural issues open"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10Y yield fell from ~3.2% (Oct) to 2.74% (Jan 9)"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment dropped from 98.3 (Dec) to 91.2 (Jan)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2018-12-03",
+          "excerpt": "White House: Jan 1 leave $200B at 10%, not raise to 25%; China to buy substantial ag/energy/industrial goods"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNN 2018-12-13",
+          "excerpt": "Soybean exports to China down 97%; Chinese orders not yet appearing in data"
+        }
+      ],
+      "threat_score": 0.25,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-01-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4661,
+        "capped_chars": 4661,
+        "raw_tokens": 1165,
+        "capped_tokens": 1165
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47285,
+        "capped_chars": 47285,
+        "raw_tokens": 11821,
+        "capped_tokens": 11821
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 44611,
+        "capped_chars": 44611,
+        "raw_tokens": 11153,
+        "capped_tokens": 11153
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 408341,
+  "started_at": "2026-08-13T07:45:21+00:00"
+}

@@ -1,0 +1,140 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-12-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 135344,
+    "tokens_out": 2619,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Continue negotiating toward a Phase One deal but do not concede on the tariff-rollback demand. The Dec 15 deadline creates pressure on both sides \u2014 use it as leverage rather than capitulating. Signal willingness on agricultural purchases and IP commitments, but hold firm that any deal must include proportional tariff reductions. If the Dec 15 tariffs go through, they will hurt US consumers and retailers more than they hurt China's already-stimulated economy, strengthening our hand for 2020.\n\nSUPPORTING RATIONALE:\n\nThreat reading (0.35 \u2014 moderate-high): The trade war has materially damaged China's economy. GDP growth hit a 27-year low of 6.2% in Q2 2019 (CNN, Jul 15). Exports to the US fell 8.1% in H1 2019; imports from the US plunged 30% (CNN, Jul 15). Industrial output growth requires 'arduous efforts' to meet the 5.5-6% target (CNBC, Jul 23). The Huawei Entity List (May 16) threatens China's tech champion \u2014 Google suspended Android access and US chip suppliers paused sales (timeline, May 20). Manufacturing is actively relocating: 588 foreign firms left Guangdong for Vietnam/Thailand/Malaysia (CNBC, Jul 23). The currency manipulator designation (Aug 5) adds a new vector of pressure. However, the threat is not existential: stimulus measures have stabilized the economy (record 8.2T yuan in Q1 credit, SCMP Apr 17), and the Phase One framework offers an off-ramp.\n\nAction rationale (-0.1, negotiate): The situation as of Dec 12 is genuinely ambiguous. A Phase One deal is 'on the doorsteps' (SCMP, Nov 21) but stuck on tariff rollback \u2014 China insists tariffs must be reduced proportionally (CNBC, Dec 5), while Trump says he won't roll back (CNBC, Nov 22). The Hong Kong Human Rights Act (signed ~Nov 27) adds political friction but analysts assess it won't derail trade talks (BBC, Nov 28; Eurasia Group). The Dec 15 tariffs on $156B of consumer goods (phones, laptops, toys) would hurt US consumers and retailers significantly \u2014 US Chamber of Commerce's Brilliant acknowledged 'tariffs are starting to have a negative impact on the US economy' (BBC, Nov 28). This asymmetry is China's leverage. Conceding now (accepting a deal without tariff rollback) would undermine domestic credibility and set a precedent for future rounds. Escalating would be counterproductive when a deal is close. The correct posture is firm negotiation: stay at the table, demonstrate good faith on purchases and IP, but make clear that the tariff rollback demand is non-negotiable. If Dec 15 tariffs go through, they strengthen China's hand as US domestic pain mounts heading into 2020 election season.",
+      "key_factors": [
+        "Phase One deal close but stuck on tariff rollback \u2014 China insists on proportional reductions (CNBC Dec 5, US News Dec 1)",
+        "Dec 15 tariff deadline on $156B consumer goods creates mutual pressure; hurts US consumers more than China's stimulated economy",
+        "GDP at 27-year low (6.2% Q2) but stimulus measures deployed and economy stabilizing",
+        "Huawei Entity List threatens tech sector but China can rally nationalism around tech self-sufficiency",
+        "Hong Kong Human Rights Act adds political friction but unlikely to derail trade talks per analysts",
+        "Manufacturing relocation to Southeast Asia is a real medium-term concern but manageable in the near term",
+        "Trump faces impeachment proceedings and 2020 election \u2014 has domestic incentive to claim a deal"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2019-10-11",
+          "excerpt": "Trump announces a 'Phase One' deal in principle: China to buy roughly $40\u201350B of US agricultural products annually; IP and currency issues also cited. Planned mid-October tariff hike delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List. US firms generally barred from selling to Huawei without a license."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2019-12-05_china_tariffs_rollback",
+          "excerpt": "'The Chinese side believes that if the two sides reach a phase one deal, tariffs should be lowered accordingly,' ministry spokesman Gao Feng told reporters."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp_2019-11-21_doorstep_deal",
+          "excerpt": "Sources say it is likely tariffs will at least be postponed because 'it is in both sides' interests.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn_2019-07-15_china_gdp",
+          "excerpt": "China's GDP grew at 6.2% in Q2 2019, the slowest quarterly growth rate since 1992. Exports to US decreased 8.1% for H1 2019. Imports from US plunged 30% year on year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2019-07-23_industrial_output",
+          "excerpt": "Output growth fell to a 17-year low of 5.0% in May. 'Arduous efforts' needed to meet 2019 industrial output goal. 588 foreign manufacturers adjusted capacity and moved to Vietnam, Thailand or Malaysia."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "bbc_2019-11-28_hong_kong_trade",
+          "excerpt": "Analysts say Hong Kong law will not derail trade negotiations. 'The Trump administration appears reluctant to go ahead with the December tariffs because tariffs are starting having a negative impact on the US economy.'"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-12-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5122,
+        "capped_chars": 5122,
+        "raw_tokens": 1280,
+        "capped_tokens": 1280
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 79739,
+        "capped_chars": 79739,
+        "raw_tokens": 19935,
+        "capped_tokens": 19935
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 77993,
+  "started_at": "2026-08-13T03:07:50+00:00"
+}

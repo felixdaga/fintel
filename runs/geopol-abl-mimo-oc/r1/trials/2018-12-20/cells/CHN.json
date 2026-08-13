@@ -1,0 +1,141 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-12-20",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.6,
+      "rationale": "RECOMMENDATION: China should continue engaging in trade negotiations within the 90-day truce window while avoiding escalation over the Meng Wanzhou arrest. Use the 40th anniversary of reform and opening-up as a domestic framing device to justify market-opening concessions without appearing to cave to US pressure. Prioritize the negotiation track led by Lighthizer and Mnuchin while managing nationalist sentiment through calibrated diplomatic protests.\n\nSUPPORTING RATIONALE: The threat reading of +0.6 reflects the convergence of multiple pressure vectors on China. The trade war has already imposed tariffs on ~$250B of Chinese exports at 10-25%, with a scheduled escalation to 25% on List 3 ($200B) on Jan 1, 2019 if the 90-day talks fail (timeline entry 2018-09-17, 2018-12-01). China's economy is slowing to its weakest pace since the financial crisis \u2014 Q3 GDP at 6.5% (CNN, Oct 18), car sales down 11.7% YoY (SCMP, Nov 23), and the Shanghai Composite down ~25% for the year (Business Insider, Nov 27). The yuan has depreciated ~6% against the dollar in 2018 (Malay Mail, Dec 3). While some of this slowdown predates the tariffs and reflects a deliberate deleveraging campaign (Business Insider, Nov 6), the trade war is amplifying consumer and business confidence damage \u2014 consumer durables, property, and electronics are all weakening (SCMP, Nov 23). The Meng Wanzhou arrest on Dec 1 (same day as the G20 truce) and subsequent detention of two Canadians on Dec 10 have injected dangerous nationalist pressure that could derail the negotiation track (NYT, Dec 9; NPR, Dec 7). The Huawei/tech dimension adds entity-list risk beyond tariffs.\n\nHowever, the threat is not yet existential. Exports have held up better than expected \u2014 11% growth in October despite tariffs, partly from front-loading and weaker yuan (Business Insider, Nov 6). China retains fiscal and monetary stimulus capacity. And the 90-day truce, however fragile, has suspended the immediate tariff escalation. The action score of -0.05 (hold/negotiate) reflects the judgment that the narrow negotiation window must be preserved: retaliation over Meng would likely trigger the Jan 1 tariff hike and potentially a fourth tranche covering all remaining Chinese exports (CM Trade Law, Dec 4). China's Commerce Ministry has already signaled confidence in reaching a deal within 90 days (NPR, Dec 7; Washington Post, Dec 6). The reform anniversary provides political cover for concessions on IP protection, market access, and forced technology transfer that the US seeks, without the optics of capitulation. Escalation carries severe second-order risks: Lighthizer has been appointed to lead negotiations, signaling US seriousness, and Trump faces domestic pressure to be tough \u2014 a Chinese provocation could harden the US position further. The optimal play is disciplined engagement.",
+      "key_factors": [
+        "90-day truce window suspended tariff escalation but expires ~March 1, 2019",
+        "China's economy slowing to decade-low GDP growth (6.5% Q3), consumer confidence weakening sharply",
+        "Meng Wanzhou arrest (Dec 1) creating nationalist pressure and risk of derailment",
+        "~$250B of Chinese exports already under US tariffs at 10-25%",
+        "Shanghai Composite down ~25% for the year, yuan depreciated ~6%",
+        "China already retaliated on ~$110B of US goods; asymmetric retaliation capacity limited",
+        "Reform anniversary provides political cover for structural concessions",
+        "Two Canadians detained Dec 10 \u2014 calibrated retaliation that keeps trade track separate"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-12-10",
+          "excerpt": "China detains Canadians Michael Kovrig and Michael Spavor (widely viewed as retaliation for the Meng arrest)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn_2018-10-18_china_gdp",
+          "excerpt": "China grew 6.5% in the third quarter, its weakest quarterly growth since the depths of the global financial crisis in early 2009."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp_2018-11-23_china_economy",
+          "excerpt": "Total vehicle sales dropped 11.7% YoY; smartphone shipments down 15.2% QoQ; consumer confidence dampened by trade tensions."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt_2018-12-09_meng_balance",
+          "excerpt": "China's leadership is trying to strike a delicate balance between outrage and necessity, as it seeks to maintain a recent thaw with the United States while lashing out at the arrest of a top Chinese tech executive."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt_2018-12-14_china_slowdown",
+          "excerpt": "Car sales are falling. Housing is slow. Workers get three-month unpaid vacations. For Chinese leaders, pressure for a trade deal with President Trump is rising."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2018-12-03_truce_experts",
+          "excerpt": "Experts expressed doubt that any concrete steps to totally ease tensions between the two economic giants can be achieved within that time frame."
+        }
+      ],
+      "threat_score": 0.6,
+      "action_score": -0.05,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-12-20",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4487,
+        "capped_chars": 4487,
+        "raw_tokens": 1122,
+        "capped_tokens": 1122
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11445,
+        "capped_chars": 11445,
+        "raw_tokens": 2861,
+        "capped_tokens": 2861
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 94215,
+        "capped_chars": 94215,
+        "raw_tokens": 23554,
+        "capped_tokens": 23554
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 384920,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

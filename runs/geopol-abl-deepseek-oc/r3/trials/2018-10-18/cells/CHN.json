@@ -1,0 +1,130 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-10-18",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 140221,
+    "tokens_out": 4444,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: Hold the proportionate retaliatory posture but pivot actively to negotiation, using the approaching G20 window to seek to halt the scheduled Jan 1, 2019 escalation of List 3 from 10% to 25% and to forestall Phase 3 (~$267B). Do not escalate further, which would invite near-total tariff coverage; do not concede unilaterally, which would yield nothing concrete while the US has made no matching offer. Keep counter-tariffs in place as leverage while opening talks.\n\nSUPPORTING RATIONALE: The threat is high and rising. US Section 301 tariffs now cover ~$250B of Chinese exports ($50B at 25% effective July/Aug; $200B List 3 at 10% effective Sept 24), with an automatic rise to 25% on Jan 1, 2019 and an explicit Phase 3 threat of ~$267B further should China retaliate (event_timeline 2018-09-17/09-24; CNBC 2018-09-18; USTR Sept 2018). Compounding this, non-tariff targeting of a flagship firm (ZTE denial order, event_timeline 2018-04-16) signals the tech-supply/entity-list front is live. Domestic conditions are already softening independently of the trade war: official manufacturing PMI fell to a 7-month low of 50.8 and Caixin PMI stalled at 50.0 with export orders falling fastest in over two years, while the PBoC executed its fourth RRR cut this year (~$109B) to prop growth and the yuan is down ~6% YTD (CNBC/CNN, Sept-Oct 2018). That combination\u2014delivered tariffs, a looming Jan 1 25% escalation, a credible Phase 3, and a slowing economy already being eased\u2014drives a threat reading above the 'high' anchor toward +0.65. The action stance leans mildly de-escalatory (+0.15, negotiate) precisely because the threat is high: further escalation would likely trigger Phase 3 covering essentially all remaining Chinese exports and worsen a slowdown China can ill afford, whereas full rollback would surrender leverage with no reciprocal US offer. Proportionate retaliation already established on our side plus an active talks track is the correct response to a threat that is severe but not yet existential.",
+      "key_factors": [
+        "US tariffs now cover ~$250B of Chinese exports, ~$200B scheduled to rise from 10% to 25% on Jan 1, 2019",
+        "Explicit Phase 3 threat of ~$267B additional if China retaliates further",
+        "Non-tariff front live (ZTE denial order targeting flagship tech firm)",
+        "China's manufacturing PMI at 7-month low 50.8; Caixin PMI stalled at 50.0 with export orders falling fastest in 2+ years",
+        "PBoC's fourth RRR cut this year (~$109B) signals domestic growth support already needed",
+        "Yuan down ~6% YTD / ~9% since April; Shanghai Composite in bear market",
+        "China has already retaliated proportionally (~$50B matching, ~$60B vs List 3), preserving leverage without overreach"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B effective Sept 24, rising to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce bans ZTE from buying US components (denial order). Major non-tariff escalation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2018-10-01",
+          "excerpt": "Official manufacturing PMI fell to a 7-month low of 50.8 in September from 51.3; Caixin PMI fell to 50.0 in September, export orders falling fastest in over two years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNN 2018-10-08",
+          "excerpt": "PBoC freed up 750 billion yuan ($109 billion) for new lending, the fourth RRR cut this year; yuan down almost 6% against the dollar this year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2018-09-18",
+          "excerpt": "Tariffs will rise to 25% on Jan 1, 2019; if China takes retaliatory action against US farmers or other industries, US will pursue Phase 3 (~$267B)."
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-10-18",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4035,
+        "capped_chars": 4035,
+        "raw_tokens": 1009,
+        "capped_tokens": 1009
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48239,
+        "capped_chars": 48239,
+        "raw_tokens": 12060,
+        "capped_tokens": 12060
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 40821,
+        "capped_chars": 40821,
+        "raw_tokens": 10206,
+        "capped_tokens": 10206
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 360472,
+  "started_at": "2026-08-13T07:45:01+00:00"
+}

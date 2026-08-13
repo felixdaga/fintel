@@ -1,0 +1,104 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-06-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7853,
+    "tokens_out": 1037,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0083784,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should announce retaliatory tariffs on the remaining ~$60 billion of US goods not yet covered, matching the US escalation on $200bn (raised to 25%) and the threatened additional $300bn. Simultaneously, signal willingness to continue negotiations but make clear that coercion will not produce concessions. Maintain strategic targeting of US agricultural and politically sensitive exports to maximize domestic US political pressure.\n\nSUPPORTING RATIONALE: The threat to China is HIGH (0.55). The US has already imposed tariffs on $250bn of Chinese goods and on May 10, 2019 raised tariffs on $200bn from 10% to 25%, with Trump threatening to extend tariffs to essentially all remaining imports (~$300bn more). This directly threatens China's export economy \u2014 the backbone of its growth model. The BBC reports the US trade deficit with China stood at $419bn, and the US is explicitly targeting China's industrial policy, IP practices, and tech ambitions (USC analysis). Fox Business reports that Senator Graham and the administration view tariffs as a tool to 'break the stranglehold China has on the supply chain,' signaling a long-term strategic containment posture, not a short-term negotiating tactic. China has already retaliated on $110bn of US goods and announced new levies on $60bn of US products. The IMF has cut global growth forecasts citing trade tensions. However, China is not yet in existential territory \u2014 the yuan has stabilized in 2019, and Chinese stock indices have recovered 12-16% YTD. The threat is serious but manageable, warranting a firm retaliatory stance rather than panic or concession. Retaliation is appropriate because: (1) conceding under tariff pressure would invite further escalation and undermine CCP legitimacy; (2) strategic retaliation on US agricultural goods targets Trump's political base in farm states; (3) China's domestic market and Belt and Road diversification provide partial insulation; (4) the US faces its own costs \u2014 Larry Kudlow acknowledged 'both sides will suffer,' and 24 states have sued Trump over tariffs, indicating domestic US political vulnerability.",
+      "key_factors": [
+        "US raised tariffs on $200bn of Chinese goods from 10% to 25% on May 10, 2019",
+        "Trump threatened tariffs on additional ~$300bn of remaining Chinese imports",
+        "China already retaliated on $110bn of US goods; announced new levies on $60bn",
+        "US explicitly targeting China's tech ambitions, IP practices, and industrial policy",
+        "IMF cut global growth forecasts citing US-China trade tensions",
+        "China's stock markets recovered 12-16% YTD and yuan stabilized \u2014 not yet existential",
+        "US domestic political pressure: 24 states sued Trump over tariffs; Kudlow admitted 'both sides will pay'",
+        "Strategic retaliation on US agricultural goods targets politically sensitive US districts"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "US President Donald Trump vowed to more than double tariffs on $200bn of Chinese goods on Friday and to introduce fresh ones 'shortly'. The US imposed tariffs on $250bn worth of Chinese products last year. Beijing has retaliated with duties on $110bn worth of American products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The U.S. is concerned that while China has had ready access to the U.S. market and to invest in the U.S., American companies are locked out of these markets in China. The worry is that if China can protect its companies from competition at home, it will be better able to compete with U.S. firms outside of China."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "'This is the best chance in my lifetime to get China to change their cheating ways,' Graham said. 'The tariffs are tools that bring China to the table.' Larry Kudlow said 'both sides will pay.' 24 states sue Trump over latest tariffs."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "China's middle class alone is expected to exceed the entire US population by 2022. The Council on Foreign Relations' August 2018 report outlines how China will provide hundreds of billions in subsidies and tax breaks, with state-controlled financial institutions providing low interest financing."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-06-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20217,
+        "capped_chars": 16251,
+        "raw_tokens": 5054,
+        "capped_tokens": 4063
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 23805,
+  "started_at": "2026-08-13T10:54:51+00:00"
+}

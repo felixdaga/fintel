@@ -1,0 +1,140 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.25,
+      "rationale": "RECOMMENDATION: Proceed with the Section 301 tariff list on ~$50B of Chinese goods as announced on May 29, but implement selectively and maintain back-channel engagement. The US economy is strong enough to absorb retaliation, and the political and strategic momentum demands follow-through after the truce collapse. However, avoid broadening to the full $150B threat \u2014 keep scope calibrated to preserve negotiating leverage without triggering a full trade cascade.\n\nSUPPORTING RATIONALE: The threat score of -0.25 reflects mild US advantage. The US economy is performing robustly: industrial production at 103.2 (up 1.7% over the period), consumer sentiment at 98.2, unemployment at 3.8% (18-year low), and GDP growth at 2.2%. The US has already demonstrated willingness to use non-tariff tools (ZTE denial order of April 16 forced ZTE to near-shutdown before the June 7 settlement deal), and China's retaliatory options are constrained \u2014 its ~$3B April 2 retaliation was modest relative to US actions. The US holds structural leverage because China's export economy depends more on US demand than vice versa.\n\nHowever, the threat is not negative enough to read as a clear opportunity. Risks include: (1) China's explicit warning that if the US imposes tariffs, 'all economic and trade outcomes negotiated by the two parties will not take effect' (June 3 Beijing talks impasse); (2) potential retaliation targeting US agriculture (soybeans represent >$12B in annual exports to China) and US firms operating in China; (3) the ZTE reversal (lifting the ban on June 7 after a $1B fine) drew bipartisan congressional criticism and may signal weakness that emboldens Beijing; (4) coordination risk with allies \u2014 the G-7 summit in Quebec (June 8-9) exposed tensions with Canada and EU over steel/aluminum tariffs.\n\nThe action score of -0.5 (moderate escalation) is justified because: (a) the administration has already committed publicly to the $50B list and reversal would damage credibility domestically and with allies; (b) the May 19 truce collapsed because China's purchase commitments were vague and non-binding \u2014 further negotiation without tariff leverage is unlikely to produce structural concessions on IP/tech transfer; (c) the ZTE settlement ($1B fine, board replacement, embedded compliance team) shows the non-tariff toolkit works and should remain available; (d) domestic political pressure from farm-belt constituencies is manageable in the near term given the administration's stated commitment to shield farmers, though this window narrows if retaliation hits soybeans hard. The recommended posture is: implement the tariffs, signal willingness to negotiate scope and timing, but do not concede the structural IP/tech-transfer agenda that motivated the Section 301 investigation in the first place.",
+      "key_factors": [
+        "US economy strong: industrial production up 1.7%, unemployment 3.8% 18-year low, consumer sentiment 98.2",
+        "May 19 truce collapsed May 29 \u2014 US announced it would proceed with $50B Section 301 tariffs",
+        "China warned all trade outcomes void if US imposes tariffs (June 3 Beijing talks impasse)",
+        "ZTE settlement June 7 ($1B fine, board replacement) showed non-tariff leverage works but drew bipartisan criticism",
+        "China retaliatory tariffs so far modest (~$3B) targeting agriculture \u2014 farm-belt political risk",
+        "G-7 summit (June 8-9) exposed allied tensions over steel/aluminum tariffs",
+        "Final tariff list expected by June 15 \u2014 decision point imminent"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "US and China release joint statement after talks: China agrees to 'significantly increase' purchases of US goods and services. Mnuchin says trade war is 'on hold.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes-2018-06-03",
+          "excerpt": "China warned that 'all economic and trade outcomes of the talks will not take effect if the U.S. side imposes any trade sanctions, including raising tariffs.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes-2018-06-07",
+          "excerpt": "Trump handed ZTE a lifeline... agreeing to lift tough American sanctions over the objections of Republican lawmakers. The deal: $1B fine, replace board, embedded compliance team."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-INDPRO",
+          "excerpt": "Industrial Production at 103.198 (June 2018), up 1.7% over the period"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-UNRATE",
+          "excerpt": "Unemployment at 3.8% (May 2018), 18-year low"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-UMCSENT",
+          "excerpt": "Consumer Sentiment at 98.2 (June 2018)"
+        }
+      ],
+      "threat_score": -0.25,
+      "action_score": -0.5,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2623,
+        "capped_chars": 2623,
+        "raw_tokens": 656,
+        "capped_tokens": 656
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47502,
+        "capped_chars": 47502,
+        "raw_tokens": 11876,
+        "capped_tokens": 11876
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 43672,
+        "capped_chars": 43672,
+        "raw_tokens": 10918,
+        "capped_tokens": 10918
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 381595,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

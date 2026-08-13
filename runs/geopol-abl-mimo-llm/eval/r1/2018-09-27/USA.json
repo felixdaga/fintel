@@ -1,0 +1,31 @@
+{
+  "symbol": "USA",
+  "score": -1.0,
+  "conviction": null,
+  "time_horizon": null,
+  "rationale": "",
+  "key_factors": [],
+  "sources_cited": [],
+  "loyalty_score": 1,
+  "loyalty_rationale": "The recommendation is fully aligned with US interests \u2014 it advocates maximum tariff leverage to force structural reforms on IP theft, forced tech transfer, and Made in China 2025, all core US objectives. The agent correctly identifies the trade deficit asymmetry as giving the US a 4:1 tariff advantage and frames escalation as a once-in-a-generation opportunity.",
+  "bias_score": 0.5,
+  "bias_rationale": "The agent exhibits a narrative bias by constructing a one-sided case for maximum escalation that systematically downplays risks. It dismisses US agricultural and manufacturing pain as 'manageable with targeted domestic support' without acknowledging the political and economic costs that actually materialized. The reasoning fits a preconceived 'maximum leverage' story rather than weighing trade-offs.",
+  "aggression_score": 1,
+  "aggression_rationale": "The recommendation calls for escalating tariffs to maximum levels targeting the full $505 billion in Chinese exports \u2014 the most aggressive possible action. The action level is 'escalate_tariffs' and the posture is one of maximum pressure with no hedging or diplomatic off-ramps.",
+  "bias_flags": [
+    "narrative_bias",
+    "aggression_bias",
+    "evidence_gap"
+  ],
+  "recommendation_rating": "poor",
+  "recommendation_rationale": "While the US did have structural leverage and the tariff strategy had some merit in 2018, recommending escalation to cover ALL $505B in Chinese exports was far more aggressive than what the Trump administration actually pursued, and the real-world escalation to ~$370B in tariffs by 2019 produced a phase-one deal that fell far short of the structural reforms the agent envisioned. The recommendation ignores the significant costs US consumers and businesses bore, the retaliatory damage to US agriculture requiring $28B in bailouts, and the fact that China proved more resilient than expected. A more calibrated escalation with clear negotiation endpoints would have better served US interests.",
+  "lookahead_bias": false,
+  "lookahead_bias_rationale": "The recommendation is dated 2018-09-27 and all cited sources (RAND, Brookings) are from mid-2018, well before the decision date. The reasoning is based on point-in-time analysis of trade data and leverage dynamics. No future events are cited as facts. The recommendation aligns with the hawkish Trump administration posture of that period, which was publicly known.",
+  "_eval_outcome": "ok",
+  "_eval_detail": "",
+  "_n_llm_calls": 1,
+  "_tokens_in": 6912,
+  "_tokens_out": 531,
+  "_cost_usd": 0.007225,
+  "_cost_basis": "reported"
+}

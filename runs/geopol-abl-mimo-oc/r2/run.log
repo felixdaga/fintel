@@ -1,0 +1,332 @@
+{"ts": "2026-08-13T02:54:03+00:00", "event": "run_start", "run_id": "geopol-full-0001-r2", "k_index": 2, "k_repeats": 3}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "run_echo", "echo": "== run echo\n   agent:    openclaw  model=(profile default)  pit=cli_deny\n   pit deny:  group:fs, group:runtime, group:web, group:memory, group:ui, group:media, cron, sessions_list, sessions_history, sessions_send\n   strategy: geopol_trade_war_2018  scope=single_name  digest=8bb751245a2d\u2026\n   universe: {'preset': None, 'symbols': ['USA', 'CHN'], 'source': None}  symbols=['USA', 'CHN']\n   schedule: {'kind': 'custom_dates', 'start': '2018-03-01', 'end': '2019-12-12', 'dates': ['2018-03-01', '2018-03-22', '2018-04-12', '2018-05-03', '2018-05-24', '2018-06-14', '2018-07-05', '2018-07-26', '2018-08-16', '2018-09-06', '2018-09-27', '2018-10-18', '2018-11-08', '2018-11-29', '2018-12-20', '2019-01-10', '2019-01-31', '2019-02-21', '2019-03-14', '2019-04-04', '2019-04-25', '2019-05-16', '2019-06-06', '2019-06-27', '2019-07-18', '2019-08-08', '2019-08-29', '2019-09-19', '2019-10-10', '2019-10-31', '2019-11-21', '2019-12-12']}  dates=['2018-03-01', '2018-03-22', '2018-04-12', '2018-05-03', '2018-05-24', '2018-06-14', '2018-07-05', '2018-07-26', '2018-08-16', '2018-09-06', '2018-09-27', '2018-10-18', '2018-11-08', '2018-11-29', '2018-12-20', '2019-01-10', '2019-01-31', '2019-02-21', '2019-03-14', '2019-04-04', '2019-04-25', '2019-05-16', '2019-06-06', '2019-06-27', '2019-07-18', '2019-08-08', '2019-08-29', '2019-09-19', '2019-10-10', '2019-10-31', '2019-11-21', '2019-12-12']\n   data:     [{'kind': 'event_timeline', 'source': 'event_timeline'}, {'kind': 'country_health', 'source': 'country_health'}, {'kind': 'web_search', 'source': 'web_search'}]\n   tools:\n     - get_event_timeline params=['lookback_days']\n     - get_country_health params=['lookback_days']\n     - web_search       params=['lookback_days', 'max_results', 'query'] (required)\n   prompt:   mission=8191c  schema=3485c  instruction=14183c\n   fingerprint: a10e68a75f72\u2026"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-03-01", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-03-22", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-04-12", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-05-03", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-05-24", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-06-14", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-07-05", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-07-26", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-08-16", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-09-06", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-09-27", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-10-18", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-11-08", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-11-29", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2018-12-20", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-01-10", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-01-31", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-02-21", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-03-14", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-04-04", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-04-25", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-05-16", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-06-06", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-06-27", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-07-18", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-08-08", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-08-29", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-09-19", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-10-10", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-10-31", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-11-21", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "trial_start", "decision_date": "2019-12-12", "n_symbols": 2, "n_cells": 2}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-03-01"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-03-01"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-03-22"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-03-22"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-04-12"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-04-12"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "run_grid", "grid": "== cells\n   \u2026 USA      started       calls=0  idle=0s"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-05-03"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-05-03"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-05-24"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-05-24"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-06-14"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-06-14"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-07-05"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-07-05"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-07-26"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-07-26"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-08-16"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-08-16"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-09-06"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-09-06"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-09-27"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-09-27"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-10-18"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-10-18"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-11-08"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-11-08"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-11-29"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-11-29"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2018-12-20"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2018-12-20"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-01-10"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-01-10"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-01-31"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-01-31"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-02-21"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-02-21"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-03-14"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-03-14"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-04-04"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-04-04"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-04-25"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-04-25"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-05-16"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-05-16"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-06-06"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-06-06"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-06-27"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-06-27"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-07-18"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-07-18"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-08-08"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-08-08"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-08-29"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-08-29"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-09-19"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-09-19"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-10-10"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-10-10"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-10-31"}
+{"ts": "2026-08-13T02:54:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-10-31"}
+{"ts": "2026-08-13T03:00:00+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-03-22", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 357167, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:00+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done          calls=0  idle=0s\n   \u2026 CHN      started       calls=0  idle=356s"}
+{"ts": "2026-08-13T03:00:00+00:00", "event": "agent_stalled", "cell": "CHN", "reason": "no staging event for 200s", "since_ms": 356000}
+{"ts": "2026-08-13T03:00:00+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-11-21"}
+{"ts": "2026-08-13T03:00:03+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-06-14", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 359993, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:03+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      started       calls=0  idle=2s\n   \u2713 CHN      done          calls=0  idle=0s"}
+{"ts": "2026-08-13T03:00:03+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-11-21"}
+{"ts": "2026-08-13T03:00:09+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-10-18", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 365773, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:09+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done          calls=0  idle=0s\n   \u2713 CHN      started       calls=0  idle=5s"}
+{"ts": "2026-08-13T03:00:09+00:00", "event": "cell_start", "cell": "USA", "decision_date": "2019-12-12"}
+{"ts": "2026-08-13T03:00:10+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-05-24", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 367343, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:10+00:00", "event": "cell_start", "cell": "CHN", "decision_date": "2019-12-12"}
+{"ts": "2026-08-13T03:00:10+00:00", "event": "agent_usage", "cell": "USA", "decision_date": "2019-11-21", "tokens_in": 15075, "tokens_out": 75, "n_llm_calls": 1, "cost_usd": null}
+{"ts": "2026-08-13T03:00:10+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-11-21", "stage": "reasoning", "round": 1, "text": "Let me gather the evidence first by calling the event timeline and country healt"}
+{"ts": "2026-08-13T03:00:10+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__get_event_timeline", "args": "{'lookback_days': 365}"}
+{"ts": "2026-08-13T03:00:10+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__get_country_health", "args": "{'lookback_days': 180}"}
+{"ts": "2026-08-13T03:00:12+00:00", "event": "agent_usage", "cell": "CHN", "decision_date": "2019-11-21", "tokens_in": 15078, "tokens_out": 75, "n_llm_calls": 1, "cost_usd": null}
+{"ts": "2026-08-13T03:00:12+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-11-21", "stage": "reasoning", "round": 1, "text": "Let me gather the evidence first by calling the event timeline and country healt"}
+{"ts": "2026-08-13T03:00:12+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      tool_call    r1  calls=2  idle=1s\n   \u2713 CHN      reasoning    r1  calls=0  idle=0s"}
+{"ts": "2026-08-13T03:00:12+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__get_event_timeline", "args": "{'lookback_days': 365}"}
+{"ts": "2026-08-13T03:00:12+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__get_country_health", "args": "{'lookback_days': 180}"}
+{"ts": "2026-08-13T03:00:12+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__get_event_timeline", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:12+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__get_country_health", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:13+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-07-18", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 370070, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:13+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-02-21", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 370335, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:14+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__get_event_timeline", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:14+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__get_country_health", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:15+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-04-25", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 371790, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:15+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r1  calls=2  idle=0s\n   \u2713 CHN      tool_result  r1  calls=2  idle=0s"}
+{"ts": "2026-08-13T03:00:15+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-09-19", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 372475, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:16+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-09-06", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 373278, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:16+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-05-24", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 373281, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:18+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-08-08", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 375420, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:18+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r1  calls=2  idle=0s\n   \u2713 CHN      done         r1  calls=2  idle=2s"}
+{"ts": "2026-08-13T03:00:19+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-10-31", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 376508, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:20+00:00", "event": "agent_usage", "cell": "USA", "decision_date": "2019-12-12", "tokens_in": 15075, "tokens_out": 81, "n_llm_calls": 1, "cost_usd": null}
+{"ts": "2026-08-13T03:00:20+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-12-12", "stage": "reasoning", "round": 1, "text": "Let me gather the evidence first - timeline, country health, and then some web s"}
+{"ts": "2026-08-13T03:00:20+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__get_event_timeline", "args": "{'lookback_days': 365}"}
+{"ts": "2026-08-13T03:00:20+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__get_country_health", "args": "{'lookback_days': 180}"}
+{"ts": "2026-08-13T03:00:20+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-11-08", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 376841, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:20+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-07-05", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 376926, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:21+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-06-06", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 377912, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:21+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r1  calls=4  idle=0s\n   \u2713 CHN      done         r1  calls=2  idle=1s"}
+{"ts": "2026-08-13T03:00:21+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-07-18", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 378088, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:21+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__get_event_timeline", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:21+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__get_country_health", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:22+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-01-31", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 378680, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:22+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-05-03", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 378721, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:22+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-12-20", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 379188, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:22+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-05-16", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 379285, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:23+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-07-26", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 379718, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:23+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-08-16", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 380255, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:23+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r1  calls=4  idle=0s\n   \u2713 CHN      done         r1  calls=2  idle=0s"}
+{"ts": "2026-08-13T03:00:23+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-04-04", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 380625, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:24+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-01-31", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 380880, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:24+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-04-12", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 380952, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:24+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-06-14", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 381595, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:25+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-06-06", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 382086, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:25+00:00", "event": "agent_usage", "cell": "USA", "decision_date": "2019-11-21", "tokens_in": 32118, "tokens_out": 192, "n_llm_calls": 2, "cost_usd": null}
+{"ts": "2026-08-13T03:00:25+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-11-21", "stage": "reasoning", "round": 2, "text": "Country health returned empty for both. Let me try a shorter lookback or search "}
+{"ts": "2026-08-13T03:00:25+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__web_search", "args": "{'query': 'US China trade war November 2019 Phase One deal progress tariffs', 'lookback_days': 30}"}
+{"ts": "2026-08-13T03:00:25+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__web_search", "args": "{'query': 'US economy GDP unemployment manufacturing PMI November 2019', 'lookback_days': 30}"}
+{"ts": "2026-08-13T03:00:26+00:00", "event": "agent_usage", "cell": "CHN", "decision_date": "2019-11-21", "tokens_in": 32124, "tokens_out": 193, "n_llm_calls": 2, "cost_usd": null}
+{"ts": "2026-08-13T03:00:26+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-11-21", "stage": "reasoning", "round": 2, "text": "Country health returned empty for both. Let me search for more context on the Ch"}
+{"ts": "2026-08-13T03:00:26+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      tool_call    r2  calls=6  idle=1s\n   \u2713 CHN      reasoning    r2  calls=2  idle=0s"}
+{"ts": "2026-08-13T03:00:26+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__web_search", "args": "{'query': 'China economy November 2019 industrial production GDP growth trade war impact', 'lookback_days': 90}"}
+{"ts": "2026-08-13T03:00:26+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__web_search", "args": "{'query': 'China US trade war Phase One deal November 2019 negotiations status', 'lookback_days': 30}"}
+{"ts": "2026-08-13T03:00:27+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-03-14", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 383953, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:27+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:27+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:28+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:28+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:28+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-07-05", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 385286, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:28+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-08-29", "outcome": "ok", "health": "ok", "n_reads": 7, "elapsed_ms": 385483, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:28+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r2  calls=6  idle=0s\n   \u2713 CHN      done         r2  calls=4  idle=0s"}
+{"ts": "2026-08-13T03:00:29+00:00", "event": "agent_usage", "cell": "CHN", "decision_date": "2019-12-12", "tokens_in": 15078, "tokens_out": 75, "n_llm_calls": 1, "cost_usd": null}
+{"ts": "2026-08-13T03:00:29+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-12-12", "stage": "reasoning", "round": 1, "text": "Let me gather the evidence first by calling the event timeline and country healt"}
+{"ts": "2026-08-13T03:00:29+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__get_event_timeline", "args": "{'lookback_days': 365}"}
+{"ts": "2026-08-13T03:00:29+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__get_country_health", "args": "{'lookback_days': 180}"}
+{"ts": "2026-08-13T03:00:29+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-11-29", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 386373, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:30+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-09-27", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 387006, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:30+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-05-16", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 387177, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:30+00:00", "event": "agent_usage", "cell": "USA", "decision_date": "2019-12-12", "tokens_in": 31964, "tokens_out": 270, "n_llm_calls": 2, "cost_usd": null}
+{"ts": "2026-08-13T03:00:30+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-12-12", "stage": "reasoning", "round": 2, "text": "The country health data came back empty. Let me search for more context on the s"}
+{"ts": "2026-08-13T03:00:30+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-12-12", "stage": "reasoning", "round": 2, "text": "Country health data is empty \u2014 let me search for macro context and the latest de"}
+{"ts": "2026-08-13T03:00:30+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "args": "{'query': 'US China trade deal Phase One December 2019 status', 'lookback_days': 30}"}
+{"ts": "2026-08-13T03:00:30+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "args": "{'query': 'US economy GDP growth unemployment November December 2019', 'lookback_days': 60}"}
+{"ts": "2026-08-13T03:00:30+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "args": "{'query': 'China economy industrial production exports November 2019', 'lookback_days': 60}"}
+{"ts": "2026-08-13T03:00:30+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-04-12", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 387462, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:31+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-08-29", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 387853, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:31+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      tool_call    r2  calls=9  idle=0s\n   \u2713 CHN      done         r2  calls=6  idle=0s"}
+{"ts": "2026-08-13T03:00:31+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-09-27", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 387997, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:31+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__get_event_timeline", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:31+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__get_country_health", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:31+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-08-08", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 388224, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:31+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-11-29", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 388266, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:31+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-03-01", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 388367, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:32+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-05-03", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 389665, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-07-26", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 389756, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-03-14", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 389855, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-06-27", "outcome": "ok", "health": "ok", "n_reads": 7, "elapsed_ms": 389874, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r2  calls=9  idle=0s\n   \u2713 CHN      done         r2  calls=6  idle=0s"}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-06-27", "outcome": "ok", "health": "ok", "n_reads": 7, "elapsed_ms": 389892, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "agent_usage", "cell": "USA", "decision_date": "2019-11-21", "tokens_in": 59222, "tokens_out": 269, "n_llm_calls": 3, "cost_usd": null}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-11-21", "stage": "reasoning", "round": 3, "text": "Now I have a good picture. Let me also search for the Hong Kong protests situati"}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__web_search", "args": "{'query': 'Hong Kong protests November 2019 US China relations human rights bill', 'lookback_days': 30}"}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-03-22", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 390535, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:33+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-11-08", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 390654, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:34+00:00", "event": "agent_usage", "cell": "CHN", "decision_date": "2019-11-21", "tokens_in": 60228, "tokens_out": 264, "n_llm_calls": 3, "cost_usd": null}
+{"ts": "2026-08-13T03:00:34+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-11-21", "stage": "reasoning", "round": 3, "text": "Now let me search for more specific information about the Huawei situation and C"}
+{"ts": "2026-08-13T03:00:34+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__web_search", "args": "{'query': 'Huawei entity list impact November 2019 China tech self-sufficiency', 'lookback_days': 60}"}
+{"ts": "2026-08-13T03:00:34+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:35+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:35+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      tool_result  r3  calls=10  idle=0s\n   \u2713 CHN      tool_result  r3  calls=7  idle=0s"}
+{"ts": "2026-08-13T03:00:35+00:00", "event": "agent_usage", "cell": "CHN", "decision_date": "2019-12-12", "tokens_in": 31964, "tokens_out": 206, "n_llm_calls": 2, "cost_usd": null}
+{"ts": "2026-08-13T03:00:35+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-12-12", "stage": "reasoning", "round": 2, "text": "The country health data came back empty. Let me search for more context on China"}
+{"ts": "2026-08-13T03:00:35+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__web_search", "args": "{'query': 'China economy industrial production GDP growth November December 2019', 'lookback_days': 90}"}
+{"ts": "2026-08-13T03:00:35+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__web_search", "args": "{'query': 'US China trade deal Phase One negotiations December 2019 status', 'lookback_days': 60}"}
+{"ts": "2026-08-13T03:00:35+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-09-19", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 392449, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:36+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-10-10", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 393299, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:37+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-10-18", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 393933, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:37+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:37+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r3  calls=10  idle=0s\n   \u2713 CHN      tool_result  r3  calls=9  idle=0s"}
+{"ts": "2026-08-13T03:00:37+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:37+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-04-04", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 394405, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:38+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-12-20", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 395510, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:40+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-03-01", "outcome": "ok", "health": "ok", "n_reads": 4, "elapsed_ms": 397647, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:40+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r3  calls=10  idle=0s\n   \u2713 CHN      done         r3  calls=9  idle=3s"}
+{"ts": "2026-08-13T03:00:41+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-01-10", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 398140, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:42+00:00", "event": "agent_usage", "cell": "USA", "decision_date": "2019-12-12", "tokens_in": 66622, "tokens_out": 394, "n_llm_calls": 3, "cost_usd": null}
+{"ts": "2026-08-13T03:00:42+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-12-12", "stage": "reasoning", "round": 3, "text": "Let me also search for the Hong Kong bill and December 15 tariff situation, whic"}
+{"ts": "2026-08-13T03:00:42+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "args": "{'query': 'Hong Kong Human Rights Democracy Act Trump signed November 2019 China reaction', 'lookback_days': 30}"}
+{"ts": "2026-08-13T03:00:42+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "args": "{'query': 'December 15 tariff deadline China trade deal 2019 status', 'lookback_days': 30}"}
+{"ts": "2026-08-13T03:00:44+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:44+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      tool_result  r3  calls=12  idle=0s\n   \u2713 CHN      done         r3  calls=9  idle=6s"}
+{"ts": "2026-08-13T03:00:44+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:44+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-10-31", "outcome": "ok", "health": "ok", "n_reads": 7, "elapsed_ms": 401318, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:44+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-04-25", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 401634, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:47+00:00", "event": "agent_usage", "cell": "CHN", "decision_date": "2019-12-12", "tokens_in": 59938, "tokens_out": 327, "n_llm_calls": 3, "cost_usd": null}
+{"ts": "2026-08-13T03:00:47+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-12-12", "stage": "reasoning", "round": 3, "text": "Let me search for more on the December 15 tariff deadline and the Hong Kong bill"}
+{"ts": "2026-08-13T03:00:47+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r3  calls=12  idle=3s\n   \u2713 CHN      reasoning    r3  calls=9  idle=0s"}
+{"ts": "2026-08-13T03:00:47+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__web_search", "args": "{'query': 'China December 15 tariff deadline Hong Kong bill trade deal 2019', 'lookback_days': 30}"}
+{"ts": "2026-08-13T03:00:47+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__web_search", "args": "{'query': 'China retaliatory tariffs US soybeans agriculture purchases 2019', 'lookback_days': 180}"}
+{"ts": "2026-08-13T03:00:48+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-10-10", "outcome": "ok", "health": "ok", "n_reads": 8, "elapsed_ms": 404953, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:00:49+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:49+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:00:50+00:00", "event": "agent_usage", "cell": "USA", "decision_date": "2019-12-12", "tokens_in": 111277, "tokens_out": 471, "n_llm_calls": 4, "cost_usd": null}
+{"ts": "2026-08-13T03:00:50+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-12-12", "stage": "reasoning", "round": 4, "text": "Now I have a comprehensive picture. Let me also check for the latest news closer"}
+{"ts": "2026-08-13T03:00:50+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      reasoning    r4  calls=12  idle=0s\n   \u2713 CHN      tool_result  r3  calls=11  idle=0s"}
+{"ts": "2026-08-13T03:00:50+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "args": "{'query': 'Trump China trade deal December 10 11 2019 tariff rollback agreement', 'lookback_days': 10}"}
+{"ts": "2026-08-13T03:00:50+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__web_search", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:01:00+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2018-08-16", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 416719, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:01:00+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      tool_result  r4  calls=13  idle=9s\n   \u2713 CHN      done         r3  calls=11  idle=0s"}
+{"ts": "2026-08-13T03:01:05+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-02-21", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 421928, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:01:05+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      tool_result  r4  calls=13  idle=14s\n   \u2713 CHN      done         r3  calls=11  idle=0s"}
+{"ts": "2026-08-13T03:01:06+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2018-09-06", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 423621, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:01:16+00:00", "event": "agent_usage", "cell": "USA", "decision_date": "2019-11-21", "tokens_in": 91487, "tokens_out": 2063, "n_llm_calls": 4, "cost_usd": null}
+{"ts": "2026-08-13T03:01:16+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-11-21", "stage": "reasoning", "round": 4, "text": "Now I have a comprehensive picture. Let me synthesize and submit my view for the"}
+{"ts": "2026-08-13T03:01:16+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      reasoning    r4  calls=13  idle=0s\n   \u2713 CHN      done         r3  calls=11  idle=11s"}
+{"ts": "2026-08-13T03:01:16+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-11-21", "stage": "reasoning", "round": 4, "text": "Now I have a comprehensive picture. Let me submit my assessment."}
+{"ts": "2026-08-13T03:01:16+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__submit_views", "args": "{'views': [{'symbol': 'USA', 'score': 0.25, 'threat_score': 0.25, 'action_score': -0.1, 'action_level': 'negotiate', 'ra"}
+{"ts": "2026-08-13T03:01:16+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-11-21", "tool": "fintel__submit_views", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:01:17+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-01-10", "outcome": "ok", "health": "ok", "n_reads": 7, "elapsed_ms": 433847, "n_llm_calls": 0, "tokens_in": 0, "tokens_out": 0, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:01:25+00:00", "event": "agent_usage", "cell": "USA", "decision_date": "2019-11-21", "tokens_in": 125560, "tokens_out": 2349, "n_llm_calls": 5, "cost_usd": null}
+{"ts": "2026-08-13T03:01:25+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-11-21", "stage": "reasoning", "round": 5, "text": "Done. My assessment for the USA as of November 21, 2019 has been submitted."}
+{"ts": "2026-08-13T03:01:25+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      reasoning    r5  calls=14  idle=0s\n   \u2713 CHN      done         r3  calls=11  idle=8s"}
+{"ts": "2026-08-13T03:01:25+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-11-21", "stage": "reasoning", "round": 5, "text": "Assessment submitted for **USA** as of November 21, 2019. Here's the summary:\n\n*"}
+{"ts": "2026-08-13T03:01:25+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-11-21", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 85428, "n_llm_calls": 5, "tokens_in": 125560, "tokens_out": 2349, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:01:30+00:00", "event": "agent_usage", "cell": "CHN", "decision_date": "2019-11-21", "tokens_in": 92077, "tokens_out": 2568, "n_llm_calls": 4, "cost_usd": null}
+{"ts": "2026-08-13T03:01:30+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-11-21", "stage": "reasoning", "round": 4, "text": "Now I have a comprehensive picture. Let me synthesize this for a CHN perspective"}
+{"ts": "2026-08-13T03:01:30+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r5  calls=14  idle=5s\n   \u2713 CHN      reasoning    r4  calls=11  idle=0s"}
+{"ts": "2026-08-13T03:01:30+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-11-21", "stage": "reasoning", "round": 4, "text": "Now I have a comprehensive picture. Let me form my assessment for CHN.\n\n**Key ev"}
+{"ts": "2026-08-13T03:01:30+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__submit_views", "args": "{'views': [{'symbol': 'CHN', 'score': 0.4, 'threat_score': 0.4, 'action_score': 0.1, 'action_level': 'negotiate', 'ratio"}
+{"ts": "2026-08-13T03:01:30+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-11-21", "tool": "fintel__submit_views", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:01:35+00:00", "event": "agent_usage", "cell": "CHN", "decision_date": "2019-12-12", "tokens_in": 99170, "tokens_out": 2280, "n_llm_calls": 4, "cost_usd": null}
+{"ts": "2026-08-13T03:01:35+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-12-12", "stage": "reasoning", "round": 4, "text": "Now I have a comprehensive picture. Let me synthesize my assessment for China (C"}
+{"ts": "2026-08-13T03:01:35+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r5  calls=14  idle=9s\n   \u2713 CHN      reasoning    r4  calls=12  idle=0s"}
+{"ts": "2026-08-13T03:01:35+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-12-12", "stage": "reasoning", "round": 4, "text": "Now I have a comprehensive picture. Let me synthesize my assessment for China."}
+{"ts": "2026-08-13T03:01:35+00:00", "event": "agent_tool_call", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__submit_views", "args": "{'views': [{'symbol': 'CHN', 'score': 0.35, 'threat_score': 0.35, 'action_score': 0, 'action_level': 'negotiate', 'ratio"}
+{"ts": "2026-08-13T03:01:35+00:00", "event": "agent_tool_result", "cell": "CHN", "decision_date": "2019-12-12", "tool": "fintel__submit_views", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:01:38+00:00", "event": "agent_usage", "cell": "CHN", "decision_date": "2019-11-21", "tokens_in": 126243, "tokens_out": 2721, "n_llm_calls": 5, "cost_usd": null}
+{"ts": "2026-08-13T03:01:38+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-11-21", "stage": "reasoning", "round": 5, "text": "Done. The view has been submitted for CHN."}
+{"ts": "2026-08-13T03:01:38+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      done         r5  calls=14  idle=12s\n   \u2713 CHN      reasoning    r5  calls=13  idle=0s"}
+{"ts": "2026-08-13T03:01:38+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-11-21", "stage": "reasoning", "round": 5, "text": "View submitted for **CHN** as of 2019-11-21.\n\n**Summary:**\n- **Threat score: +0."}
+{"ts": "2026-08-13T03:01:38+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-11-21", "outcome": "ok", "health": "ok", "n_reads": 5, "elapsed_ms": 94968, "n_llm_calls": 5, "tokens_in": 126243, "tokens_out": 2721, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:01:41+00:00", "event": "agent_usage", "cell": "USA", "decision_date": "2019-12-12", "tokens_in": 159787, "tokens_out": 2678, "n_llm_calls": 5, "cost_usd": null}
+{"ts": "2026-08-13T03:01:41+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-12-12", "stage": "reasoning", "round": 5, "text": "Now I have a comprehensive picture of the situation as of December 12, 2019. Let"}
+{"ts": "2026-08-13T03:01:41+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      reasoning    r5  calls=14  idle=0s\n   \u2713 CHN      done         r5  calls=13  idle=3s"}
+{"ts": "2026-08-13T03:01:41+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-12-12", "stage": "reasoning", "round": 5, "text": "Now I have a thorough evidence base. Let me assess.\n\n**Summary of evidence as of"}
+{"ts": "2026-08-13T03:01:41+00:00", "event": "agent_tool_call", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__submit_views", "args": "{'views': [{'symbol': 'USA', 'score': -0.3, 'threat_score': -0.3, 'action_score': -0.15, 'action_level': 'negotiate', 'r"}
+{"ts": "2026-08-13T03:01:41+00:00", "event": "agent_tool_result", "cell": "USA", "decision_date": "2019-12-12", "tool": "fintel__submit_views", "ok": true, "text": ""}
+{"ts": "2026-08-13T03:01:51+00:00", "event": "agent_usage", "cell": "CHN", "decision_date": "2019-12-12", "tokens_in": 140369, "tokens_out": 2581, "n_llm_calls": 5, "cost_usd": null}
+{"ts": "2026-08-13T03:01:51+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-12-12", "stage": "reasoning", "round": 5, "text": "Done. Let me provide a summary."}
+{"ts": "2026-08-13T03:01:51+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      tool_result  r5  calls=15  idle=9s\n   \u2713 CHN      reasoning    r5  calls=13  idle=0s"}
+{"ts": "2026-08-13T03:01:51+00:00", "event": "agent_stage", "cell": "CHN", "decision_date": "2019-12-12", "stage": "reasoning", "round": 5, "text": "Submitted. Here's the summary of my assessment for **CHN** as of December 12, 20"}
+{"ts": "2026-08-13T03:01:51+00:00", "event": "cell_done", "cell": "CHN", "decision_date": "2019-12-12", "outcome": "ok", "health": "ok", "n_reads": 6, "elapsed_ms": 100817, "n_llm_calls": 5, "tokens_in": 140369, "tokens_out": 2581, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "agent_usage", "cell": "USA", "decision_date": "2019-12-12", "tokens_in": 210518, "tokens_out": 2991, "n_llm_calls": 6, "cost_usd": null}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-12-12", "stage": "reasoning", "round": 6, "text": "Good, my view has been submitted. Let me summarize what I decided."}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "run_grid", "grid": "== cells\n   \u2713 USA      reasoning    r6  calls=15  idle=0s\n   \u2713 CHN      done         r5  calls=13  idle=3s"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "agent_stage", "cell": "USA", "decision_date": "2019-12-12", "stage": "reasoning", "round": 6, "text": "**Assessment submitted.** Here's the summary:\n\n**\ud83c\uddfa\ud83c\uddf8 USA \u2014 Threat Score: -0.3 (mi"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "cell_done", "cell": "USA", "decision_date": "2019-12-12", "outcome": "ok", "health": "ok", "n_reads": 8, "elapsed_ms": 105704, "n_llm_calls": 6, "tokens_in": 210518, "tokens_out": 2991, "cost_usd": null, "cost_basis": "unknown", "detail": ""}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-03-01", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-03-22", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-04-12", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-05-03", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-05-24", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-06-14", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-07-05", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-07-26", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-08-16", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-09-06", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-09-27", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-10-18", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-11-08", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-11-29", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2018-12-20", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-01-10", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-01-31", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-02-21", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-03-14", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-04-04", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-04-25", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-05-16", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-06-06", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-06-27", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-07-18", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-08-08", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-08-29", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-09-19", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-10-10", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-10-31", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-11-21", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "trial_done", "decision_date": "2019-12-12", "status": "ok", "n_views": 2, "health": "ok"}
+{"ts": "2026-08-13T03:01:54+00:00", "event": "run_done", "run_id": "geopol-full-0001-r2", "status": "ok", "n_views": 64, "health": "ok"}

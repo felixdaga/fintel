@@ -1,0 +1,104 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-09-19",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7589,
+    "tokens_out": 747,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0072444,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should retaliate proportionally against the latest US tariff escalation while signaling willingness to resume negotiations. Retaliatory tariffs on remaining US goods, combined with the unreliable entities list and rare earth leverage, demonstrate resolve without closing the door to talks. Beijing should also continue diversifying supply chains away from US dependence.\n\nSUPPORTING RATIONALE: The threat to China is HIGH and approaching existential territory. The US has escalated tariffs on $200bn of Chinese goods from 10% to 25% and is threatening tariffs on essentially all remaining imports (~$300bn). The Huawei entity-list action directly targets China's tech development ambitions. As the BBC reports, the US trade deficit with China stands at $419bn, giving the US enormous leverage over China's export economy. The USC analysis notes the dispute is fundamentally about 'the most important and potentially profitable industries of the future' including AI, cloud computing, and robotics \u2014 core to China's Made in China 2025 strategy. Fox Business reports that tariffs are designed to 'break the stranglehold China has on the supply chain,' threatening China's manufacturing base. However, China retains significant counter-leverage: rare earths (80% of US supply per Reuters), the unreliable entities list targeting US firms, and the ability to target US agriculture in politically sensitive states. The currency has already weakened ~4% since July 2018, partially absorbing tariff impact. Retaliation is warranted because: (1) capitulation would invite further escalation, (2) China's counter-leverage on rare earths and US farm exports is real, and (3) domestic political legitimacy requires a firm response. The action_score of -1.0 reflects that this is a moment requiring strong retaliatory signaling, though the retaliation should be calibrated to leave room for negotiation.",
+      "key_factors": [
+        "US tariff escalation from 10% to 25% on $200bn of Chinese goods",
+        "Threat of tariffs on remaining ~$300bn of Chinese imports",
+        "Huawei entity-list action targeting China's tech sector",
+        "China's rare earth leverage (80% of US supply)",
+        "US-China trade deficit of $419bn giving US leverage",
+        "Dispute centered on future tech industries (AI, cloud, robotics)",
+        "China's unreliable entities list as counter-tool",
+        "Currency depreciation partially absorbing tariff impact"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu",
+          "excerpt": "the negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "He's trying to break the stranglehold China has on the supply chain"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "President Xi Jinping visited a rare earth firm in Southern China earlier in May, fueling speculation China could cut off supplies of the metals... China supplies 80% of U.S. rare earths"
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-09-19",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 19056,
+        "capped_chars": 15846,
+        "raw_tokens": 4764,
+        "capped_tokens": 3962
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 16957,
+  "started_at": "2026-08-13T10:55:21+00:00"
+}

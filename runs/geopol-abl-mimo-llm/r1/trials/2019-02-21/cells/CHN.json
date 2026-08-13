@@ -1,0 +1,108 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8679,
+    "tokens_out": 1090,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0093634,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should pursue active negotiations with the United States while maintaining its retaliatory tariffs as leverage. We should signal willingness to increase purchases of US goods (particularly agricultural products and energy) and open select market sectors, but resist structural concessions on industrial policy (Made in China 2025) or state subsidies. The goal is to de-escalate before the threatened escalation to cover all bilateral trade, while preserving core strategic interests.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The evidence shows that by late 2018, tariffs already covered $250 billion of Chinese exports to the US (roughly half of the $500+ billion total), with President Trump threatening to tariff the remaining $267 billion if China retaliates further (Fox Business, Motley Fool transcript). China has already retaliated on $110 billion of $130 billion in US imports it receives, meaning nearly all cards have been played on both sides. The RAND analysis notes that China's exports to the US represent about 5% of GDP versus only 0.7% for the US, creating an asymmetric vulnerability. The yuan depreciated 6% (from 6.28 to 6.64 per dollar) between April and July 2018, reflecting real economic pressure. However, the RAND analysis also shows that US tariffs primarily hit American businesses through higher costs ($8.5 billion in the first round), and that China's retaliatory targeting of consumer-facing goods is strategically smarter than the US focus on machinery. The Brookings assessment notes that China's offer\u2014buying more US products and opening more markets\u2014is already on the table, and that it is 'unlikely the Chinese leadership will cave and do anything major.' The Fox Business opinion piece frames the dispute as existential for US interests, suggesting the US side has strong domestic political motivation to maintain pressure. Given that nearly all bilateral trade is now tariffed and further escalation would cover 100% of the relationship, the marginal cost of continued escalation is high for China. Negotiation is the prudent path: it preserves leverage through existing retaliatory tariffs while exploring a face-saving deal that offers purchase commitments without structural surrender.",
+      "key_factors": [
+        "$250 billion in US tariffs already covering ~50% of Chinese exports to US, with threat of full coverage",
+        "China's exports to US (~5% of GDP) create asymmetric vulnerability vs US exports to China (~0.7% of GDP)",
+        "Yuan depreciated 6% (6.28 to 6.64/USD) reflecting real economic pressure from trade war",
+        "China has retaliated on $110B of $130B in US imports\u2014nearly exhausted retaliatory capacity",
+        "US domestic political motivation strong (framed as existential for US competitiveness)",
+        "China's existing offer of increased purchases and market opening provides negotiation basis",
+        "Further escalation risks covering 100% of bilateral trade with no additional leverage gained"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "President Trump has said that if China were to take retaliatory action on these tariffs, which they have, in fact, and I'll explain that here in a second, that he's going to put in place another $267 billion worth of imports. For all intents and purposes, that would put a tariff in place on 100% of U.S.-China trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "$505 billion in potentially lost exports is a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "China is willing to buy more products from the U.S. and open more markets, so their offer is clear"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "No, acquiescence to the status quo now without a real trade deal only helps China further their global rise at our own expense. Plain and simple, this is one war America must win"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 23881,
+        "capped_chars": 20119,
+        "raw_tokens": 5970,
+        "capped_tokens": 5030
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 29885,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

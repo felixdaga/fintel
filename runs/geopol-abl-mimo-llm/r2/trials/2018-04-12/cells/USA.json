@@ -1,0 +1,91 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-04-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9605,
+    "tokens_out": 496,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0085074,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should escalate tariffs on Chinese goods, targeting the $50 billion list of high-tech products identified in the Section 301 investigation. This is a strategic opportunity to address unfair trade practices and intellectual property theft while maintaining leverage in negotiations.\n\nSUPPORTING RATIONALE: The threat score is -1.0 (clear opportunity) because China's retaliatory capacity is limited - they can only match up to $130 billion in imports versus the US's $506 billion exposure, giving the US significant asymmetric leverage (CBS News, 2018-04-06). China's response has been constrained to agricultural products and lower-end goods, while the US is targeting China's technological future through Made in China 2025 sectors (Bruegel analysis). The action score is -1.0 (maximal escalation) because this is the optimal moment to press advantage: China has signaled willingness to negotiate but has not yet made concessions, the US economy is strong, and the targeted tariffs focus on high-tech sectors where China is most vulnerable to IP enforcement. The US should maintain pressure while leaving the door open for negotiations that address structural issues like market access and technology transfer.",
+      "key_factors": [
+        "China's retaliatory capacity limited to $130B vs US $506B exposure",
+        "US targeting Made in China 2025 high-tech sectors",
+        "China's response focused on agricultural products, not strategic industries",
+        "US economy strong enough to absorb tariff impacts",
+        "Opportunity to address structural IP and market access issues"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "If the U.S. follows through, that would mean $153 billion in Chinese imports would be subject to tariffs. China has promised to respond in kind, but it would be unable to match that amount since it imported only $130 billion of U.S. goods last year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "Our interpretation of these findings is that the U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder"
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-04-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 29183,
+        "capped_chars": 24151,
+        "raw_tokens": 7296,
+        "capped_tokens": 6038
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 11338,
+  "started_at": "2026-08-13T10:55:18+00:00"
+}

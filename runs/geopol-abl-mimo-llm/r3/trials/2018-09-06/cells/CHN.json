@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-09-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7730,
+    "tokens_out": 846,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0076824,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue to retaliate in kind against US tariffs, matching each escalation with proportional counter-tariffs on US agricultural and industrial goods. We should signal willingness to negotiate but refuse to make unilateral concessions under pressure. Retaliation preserves our bargaining leverage and demonstrates to domestic and international audiences that China will not be coerced.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has imposed 25% tariffs on $34 billion of Chinese goods effective July 6, 2018, with an additional $16 billion pending, and Trump has threatened up to $153 billion total (CBS News, April 2018). China's export economy is exposed\u2014China exported $505 billion to the US in 2017 (Politico), and the tariffs target technology sectors central to Made in China 2025. However, Brookings notes that 'more than half the value' of China's tech exports come from foreign components, meaning the direct hit to Chinese value-added is moderated. Soybean prices have fallen 20% (Brookings), demonstrating that US retaliation is also painful for American farmers, giving China leverage. The Trump administration views tariffs as a midterm election strategy (Brookings), suggesting political pressure may ease after November 2018, creating a window for future negotiation. China has already retaliated with $34 billion in counter-tariffs on US agricultural products, automobiles, and aquatic products (Politico), and this proportional response is the correct posture. Conceding now would invite further escalation; retaliation maintains deterrence while the political calendar in the US may shift incentives toward negotiation after the midterms.",
+      "key_factors": [
+        "US tariffs of 25% on $34B of Chinese goods effective July 6, 2018, with $16B additional pending",
+        "Trump threatened escalation to $153B total in Chinese imports subject to tariffs",
+        "China exported $505B to US in 2017, making it highly exposed to tariff actions",
+        "China's retaliatory tariffs on US soybeans, cars, and agricultural products already causing 20% soybean price drop",
+        "Trump administration views trade war as midterm election strategy, suggesting post-November negotiation window",
+        "More than half the value of China's tech exports comes from foreign components, moderating direct Chinese value-added impact",
+        "No high-level negotiations currently scheduled (Brookings)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China...The U.S. last month announced tariffs on imports of steel and aluminum, in part targeting China. In response, China on Sunday slapped tariffs on $3 billion on agricultural products from the U.S."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "The U.S. has announced $250 billion of tariffs on products from China...The price of soybeans is already down 20 percent...For the next several months we will probably be locked into this situation. No high-level negotiations are scheduled."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "China exported about $505 billion in goods to the U.S. in 2017, so this hits about 10 percent of goods that come here from China...China will impose tariffs on U.S. goods valued at $34 billion, including agricultural products, automobiles, and aquatic products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "While China is the final assembler from many products, actually more than half of the value of those products are in parts and components from other countries like South Korea and Japan"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-09-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 26481,
+        "capped_chars": 15741,
+        "raw_tokens": 6620,
+        "capped_tokens": 3935
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 16172,
+  "started_at": "2026-08-13T10:55:25+00:00"
+}

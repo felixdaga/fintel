@@ -1,0 +1,140 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-11-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 144092,
+    "tokens_out": 5151,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.25,
+      "rationale": "RECOMMENDATION: Enter the G20 meeting with Xi prepared to trade a pause on the scheduled January 1, 2019 escalation (List 3 from 10% to 25%, and the threatened ~$267B in additional tariffs) for concrete Chinese commitments \u2014 verifiable purchases of US goods (soybeans, LNG) and enforceable structural reforms. Keep the tariff threat on the table as leverage, but do not let the talks collapse and do not trigger the January escalation, which would deepen the market selloff and intensify farm-belt political damage. Signal willingness to delay the January increase in exchange for a real package, as the administration is already weighing.\n\nSUPPORTING RATIONALE: The threat to US interests is real but not existential (threat_score +0.25). We hold the initiative \u2014 Section 301 tariffs cover ~$250B of Chinese imports and China has had to retaliate (timeline: List 1/2 at 25%, List 3 at 10% on 2018-09-24). But the escalation is now costing us through two channels. First, markets: the S&P corrected ~10% and the Dow turned negative for 2018 with FAANG in a bear market, October the worst month since 2011, driven substantially by trade-war fears (web: Reuters 2018-10-29, CNBC 2018-11-20); Baa corporate yields widened to 5.28% and WTI collapsed from ~$75 to ~$51, flagging a growth scare in the macro data. Second, domestic politics: China's retaliation on soybeans hurt the farm belt and anti-tariff Democrats gained farm-district seats in the November midterms (web: Forbes/Guardian). The US economy itself remains strong (industrial production up, CPI contained near 0.5% over window), and we retain clear leverage \u2014 so this is not high threat. That leverage is precisely why negotiate (action_score +0.1) is right rather than escalating: pushing to 25% on January 1 plus $267B in new tariffs would compound market and farm-belt pain and hand Xi a rationale to walk, while a pause-for-concessions deal (reportedly under internal consideration, per NYT 2018-11-27) converts our bargaining position into gains and stabilizes both markets and the political base. Firm but deal-seeking \u2014 not unilateral concession \u2014 is the correct stance at the summit.",
+      "key_factors": [
+        "~$250B of Section 301 tariffs in place, with Jan 1, 2019 escalation to 25% and $267B more threatened (timeline)",
+        "S&P ~10% correction, Dow negative for 2018, October worst month since 2011 on trade-war fears (web)",
+        "Baa corporate yield widened to 5.28%, WTI fell ~$75 to ~$51 = growth scare (country_health)",
+        "China retaliation on US soybeans hurt farm belt; anti-tariff Democrats gained farm-district midterm seats (web)",
+        "US real economy strong: industrial production up, CPI contained ~0.5% (country_health)",
+        "US holds leverage; G20 is the off-ramp to trade a tariff pause for concessions (timeline 2018-11-01, NYT)",
+        "Dollar strong/near highs reduces need for an aggressive posture"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China retaliates. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DBAA",
+          "excerpt": "Moody's Baa corporate yield rose to 5.28% (late Nov 2018) from ~4.8% in summer."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DCOILWTICO",
+          "excerpt": "WTI crude fell from ~$75 (early Oct) to ~$51 (late Nov 2018)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad US dollar index ~116.8, up ~4.5% over the window."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters 2018-10-29",
+          "excerpt": "S&P 500 neared its second 2018 correction on trade-policy tensions; Dow off 8.9% from Oct 3 peak."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NYT 2018-11-27",
+          "excerpt": "Trump anxious about costs of trade war on markets/economy; weighing postponing the January increase to 25%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2018-11-20",
+          "excerpt": "Dow fell 551 points, erased 2018 gain; FAANG closed in bear market; October worst S&P month since 2011."
+        }
+      ],
+      "threat_score": 0.25,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-11-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3976,
+        "capped_chars": 3976,
+        "raw_tokens": 994,
+        "capped_tokens": 994
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47391,
+        "capped_chars": 47391,
+        "raw_tokens": 11848,
+        "capped_tokens": 11848
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 43693,
+        "capped_chars": 43693,
+        "raw_tokens": 10923,
+        "capped_tokens": 10923
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 380723,
+  "started_at": "2026-08-13T07:45:03+00:00"
+}

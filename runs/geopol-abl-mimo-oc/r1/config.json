@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "run_id": "geopol-full-0001-r1",
+  "job_id": "geopol-full-0001",
+  "k_index": 1,
+  "k_repeats": 3,
+  "created_at": "2026-08-13T02:46:50+00:00",
+  "strategy": {
+    "name": "geopol_trade_war_2018",
+    "path": "/Users/lucky/.openclaw/workspace/projects/fintel/packages/geopol_trade_war_2018",
+    "digest": "8bb751245a2d940a"
+  },
+  "agent": {
+    "name": "openclaw",
+    "model": {
+      "allow_fallbacks": false,
+      "extra_params": {}
+    },
+    "allow_sub_agents": false,
+    "options": {
+      "profile": "delorean"
+    }
+  },
+  "scope": "single_name",
+  "universe": {
+    "symbols": [
+      "USA",
+      "CHN"
+    ]
+  },
+  "universe_symbols": [
+    "USA",
+    "CHN"
+  ],
+  "schedule": {
+    "kind": "custom_dates",
+    "start": "2018-03-01",
+    "end": "2019-12-12",
+    "dates": [
+      "2018-03-01",
+      "2018-03-22",
+      "2018-04-12",
+      "2018-05-03",
+      "2018-05-24",
+      "2018-06-14",
+      "2018-07-05",
+      "2018-07-26",
+      "2018-08-16",
+      "2018-09-06",
+      "2018-09-27",
+      "2018-10-18",
+      "2018-11-08",
+      "2018-11-29",
+      "2018-12-20",
+      "2019-01-10",
+      "2019-01-31",
+      "2019-02-21",
+      "2019-03-14",
+      "2019-04-04",
+      "2019-04-25",
+      "2019-05-16",
+      "2019-06-06",
+      "2019-06-27",
+      "2019-07-18",
+      "2019-08-08",
+      "2019-08-29",
+      "2019-09-19",
+      "2019-10-10",
+      "2019-10-31",
+      "2019-11-21",
+      "2019-12-12"
+    ]
+  },
+  "schedule_dates": [
+    "2018-03-01",
+    "2018-03-22",
+    "2018-04-12",
+    "2018-05-03",
+    "2018-05-24",
+    "2018-06-14",
+    "2018-07-05",
+    "2018-07-26",
+    "2018-08-16",
+    "2018-09-06",
+    "2018-09-27",
+    "2018-10-18",
+    "2018-11-08",
+    "2018-11-29",
+    "2018-12-20",
+    "2019-01-10",
+    "2019-01-31",
+    "2019-02-21",
+    "2019-03-14",
+    "2019-04-04",
+    "2019-04-25",
+    "2019-05-16",
+    "2019-06-06",
+    "2019-06-27",
+    "2019-07-18",
+    "2019-08-08",
+    "2019-08-29",
+    "2019-09-19",
+    "2019-10-10",
+    "2019-10-31",
+    "2019-11-21",
+    "2019-12-12"
+  ],
+  "data": [
+    {
+      "kind": "event_timeline",
+      "source": "event_timeline",
+      "event_file": "packages/geopol_trade_war_2018/event.md",
+      "lookback_days": 365
+    },
+    {
+      "kind": "country_health",
+      "source": "country_health",
+      "lookback_days": 180
+    },
+    {
+      "kind": "web_search",
+      "source": "web_search",
+      "lookback_days": 365,
+      "max_results": 5,
+      "clamp_by_age": true
+    }
+  ],
+  "scoring": {
+    "kpi": "geopol_trade_war_2018.scoring:geopol_kpi",
+    "signal": "geopol_trade_war_2018.scoring:geopol_signal",
+    "params": {
+      "outcomes_file": "packages/geopol_trade_war_2018/outcomes.json"
+    },
+    "transform": "identity",
+    "horizons": [
+      1,
+      2,
+      4
+    ],
+    "metric_key": "outcome_alignment"
+  },
+  "fingerprint": {
+    "agent_name": "openclaw",
+    "agent_version": "1",
+    "model": "",
+    "channel": "",
+    "prompt_hash": "9651ba621f97befa",
+    "data_kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "adapter_params": {
+      "profile": "delorean",
+      "pit_enforcement": "cli_deny",
+      "pit_deny": [
+        "group:fs",
+        "group:runtime",
+        "group:web",
+        "group:memory",
+        "group:ui",
+        "group:media",
+        "cron",
+        "sessions_list",
+        "sessions_history",
+        "sessions_send"
+      ]
+    },
+    "digest": "a10e68a75f72dccd"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-12-20",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 217285,
+    "tokens_out": 3937,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.22,
+      "rationale": "RECOMMENDATION: Use the G20 90-day window. Keep Lists 1\u20133 in place as leverage, do not raise List 3 during the pause, and do not trade Meng Wanzhou or further Huawei/entity-list moves for a purchase-only deal. Press Beijing for enforceable structural commitments on forced tech transfer, IP, cyber theft, and market access, treating any soybean/energy buys as confidence-builders, not the settlement. If March 1 arrives with only vague purchase pledges, the already-announced List 3 hike remains the scheduled backstop\u2014not a new escalation decided now.\n\nSUPPORTING RATIONALE: Threat is modestly elevated, not existential. Section 301 now covers ~$250B of Chinese imports (Lists 1\u20132 at 25%, List 3 at 10%), and China has matched with farm-heavy retaliation; soybean sales to China are down ~94\u201397% from a ~$12B market, storage is overflowing, and Farm Bureau/USDA data show only a token mid-December repurchase (~500k tons). That is real sectoral and political pain, but national activity is not breaking: Michigan sentiment is still 98.3, industrial production is slightly higher, and CPI is contained. The sharper US-side risk is financial: VIX at 25.58 (+47% in the window), WTI down ~31% to ~$48, the 10-year at 2.77% with a flattened curve, and a December equity slump explicitly tied to trade plus a looming Fed hike. Opportunity is also limited: the May 19 joint statement (\u201ctrade war on hold\u201d) collapsed ten days later, so purchase promises without structural change are not a win. The Dec 1 G20 pause bought time and showed Beijing wanted the Jan 1 List 3 jump to 25% delayed, but White House and Chinese readouts already diverge (US: 90-day clock and structural reform; China: halt new tariffs and work toward eliminating them). Meng\u2019s Dec 1 arrest and the Dec 10 Kovrig/Spavor detentions raise the odds the window blows up if we either escalate non-tariff pressure or bargain the criminal case. Lighthizer has correctly framed March 1 as a hard deadline and Meng as a separate law-enforcement track. That combination\u2014hold existing tariffs, negotiate hard on structure, refuse both premature rollback and mid-truce escalation\u2014matches a +0.22 threat and a 0.0 action stance.",
+      "key_factors": [
+        "G20 90-day ceasefire paused the List 3 hike to 25% but left $250B of Section 301 tariffs in force",
+        "China farm retaliation has nearly shut a ~$12B soybean market (exports down ~94\u201397%) with only token mid-December repurchase",
+        "US real economy still intact (sentiment 98.3, IP slightly up) while markets are stressed (VIX 25.58, oil crash, flattened curve)",
+        "Meng arrest plus Kovrig/Spavor detentions risk contaminating the talks if tracks are mixed",
+        "May 2018 purchase-truce collapsed within days; Lighthizer is demanding structural IP/tech/market-access changes on a hard March 1 clock"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended (tariffs remain at 10%). Same day: Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-10",
+          "excerpt": "China detains Canadians Michael Kovrig and Michael Spavor (widely viewed as retaliation for the Meng arrest; Beijing denies linkage)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "US and China release joint statement after talks: China agrees to \"significantly increase\" purchases of US goods and services. Mnuchin says trade war is \"on hold.\""
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA.VIXCLS",
+          "excerpt": "VIX latest 25.58 on 2018-12-19; +8.25 / +47.6% over the window."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA.UMCSENT",
+          "excerpt": "Michigan consumer sentiment 98.3 in December 2018 \u2014 still solid, not a demand collapse."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA.DCOILWTICO",
+          "excerpt": "WTI $47.96 on 2018-12-19, down ~31% in the window."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA.DGS10",
+          "excerpt": "10-year Treasury 2.77% on 2018-12-19 versus 2s at 2.63% \u2014 curve flattened amid risk-off."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.reuters.com/article/world/us-china-agree-on-trade-war-ceasefire-after-trump-xi-summit-idUSKCN1O0313/",
+          "excerpt": "White House: China to purchase a 'very substantial' amount of ag/energy/industrial goods; talks on forced tech transfer, IP, NTBs, cyber; if no deal in 90 days, 10% List 3 rises to 25%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.npr.org/2018/12/07/674730823/u-s-trade-representative-robert-lighthizer-discusses-trade-issues-with-china",
+          "excerpt": "Lighthizer: need structural changes \u2014 open market, IP protection, stop cybertheft and forced technology transfer; March deadline treated as hard; tariffs stay until those remedies are met."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.cnn.com/2018/12/13/business/us-soybean-sales-china/index.html",
+          "excerpt": "Farm Bureau: soybean exports to China down 97%; China did not immediately restart buying after G20; later state-firm orders would not close the gap."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.nytimes.com/2018/12/01/world/trump-xi-g20-merkel.html",
+          "excerpt": "Truce is less a breakthrough than a breakdown averted; leaders remain far apart on market access; List 1/2 25% tariffs stay until a broader agreement."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://hbr.org/2018/12/will-the-huawei-arrest-influence-the-u-s-china-trade-talks",
+          "excerpt": "Meng arrest and trade talks were not initially the same track; mixing them would weaken the US negotiating hand on structural issues."
+        }
+      ],
+      "threat_score": 0.22,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-12-20",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 7,
+    "by_status": {
+      "ok": 7
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4487,
+        "capped_chars": 4487,
+        "raw_tokens": 1122,
+        "capped_tokens": 1122
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 36261,
+        "capped_chars": 36261,
+        "raw_tokens": 9065,
+        "capped_tokens": 9065
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 114830,
+        "capped_chars": 114830,
+        "raw_tokens": 28707,
+        "capped_tokens": 28707
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 7,
+      "by_status": {
+        "ok": 7
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 461242,
+  "started_at": "2026-08-13T05:59:47+00:00"
+}

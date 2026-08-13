@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7727,
+    "tokens_out": 926,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0079194,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.25,
+      "rationale": "RECOMMENDATION: The US should continue to escalate tariffs on China, targeting the remaining $200 billion in Chinese goods as threatened, while maintaining pressure through investment restrictions and export controls. The US holds leverage given the trade deficit structure, and China's retaliatory capacity is limited by the asymmetry in bilateral trade volumes. However, escalation should be calibrated to avoid triggering a broader economic downturn before the midterm elections.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but manageable (threat_score: +0.25). The trade war has already imposed costs on specific US sectors\u2014soybean prices down 20% (Brookings), farmers and auto exporters in Southern/Midwestern states feeling pain, and Boeing exposed. However, the overall macroeconomic impact is described as 'a minor blip' for the US economy (Brookings, Dollar). The US initiated this dispute to address legitimate grievances: IP theft, forced technology transfer, cyber-espionage, and the $375 billion trade deficit (Politico). China's retaliatory capacity is constrained\u2014it imported only $130 billion of US goods versus $506 billion in US imports from China (CBS News), meaning China cannot match dollar-for-dollar escalation. The Trump administration views this as a winning midterm strategy, and public support for toughness on China provides political cover. The risk is that further escalation could raise consumer prices and disrupt supply chains (half the pain from US tariffs hits other countries including US firms operating in China, per Brookings), but the current trajectory favors maintaining pressure. No high-level negotiations are scheduled, and China is unlikely to 'cave' on structural issues without sustained pressure (Brookings). The recommended action is to escalate tariffs on the proposed $200 billion list, preserving the option to negotiate from a position of strength after the November elections.",
+      "key_factors": [
+        "US-China trade deficit of $375 billion in 2017 gives US leverage in escalation",
+        "China's retaliatory capacity limited: only $130B in US imports vs $506B in Chinese exports to US",
+        "Soybean prices down 20%, specific sector pain in agriculture and autos but overall macro impact described as 'minor blip'",
+        "No high-level negotiations scheduled; China unlikely to make major concessions under current pressure",
+        "Trump admin views trade war as politically advantageous ahead of 2018 midterms",
+        "Legitimate US grievances on IP theft, forced tech transfer, cyber-espionage, and market access restrictions",
+        "US planning additional investment restrictions and export controls beyond tariffs",
+        "Collateral damage to US firms operating in China and global supply chains (half of tariff pain felt by other countries)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent. This is not a big hit for the overall U.S. economy but it will hurt some specific sectors... On the whole this is a minor blip so the Trump administration will probably not change its strategy soon."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com \u2014 Trade war with China: What you need to know",
+          "excerpt": "China has promised to respond in kind, but it would be unable to match that amount since it imported only $130 billion of U.S. goods last year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com \u2014 How the U.S.-China trade war could play out",
+          "excerpt": "The Trump administration has identified multiple ways Beijing steals U.S. technology and undermines U.S. access to the Chinese market, which are the basis for the new tariffs."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "As the U.S. imposes tariffs [on China], half of that pain will be felt by other countries. So, yes, there will definitely be collateral damage, including to U.S. firms that produce and operate in China"
+        }
+      ],
+      "threat_score": 0.25,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 26481,
+        "capped_chars": 15741,
+        "raw_tokens": 6620,
+        "capped_tokens": 3935
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 13726,
+  "started_at": "2026-08-13T10:55:34+00:00"
+}

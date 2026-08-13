@@ -1,0 +1,64 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "score": 0.3,
+      "threat_score": 0.3,
+      "action_score": 0.1,
+      "action_level": "negotiate",
+      "rationale": "RECOMMENDATION: Continue the 90-day negotiation window opened at the G20 Buenos Aires dinner, pressing China to deliver on its promised agricultural purchases and structural commitments while holding current tariffs at 10% (List 3). Do not escalate toward the threatened 25% hike on ~$250B of imports this quarter \u2014 that would hit US consumers, retailers, and markets precisely as growth is cooling \u2014 and do not concede early while China has yet to fully deliver on purchases. Keep the Huawei/Meng and Canadian-detainee matters quarantined from the trade track where possible, as US and Chinese officials are both attempting to do.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate, not existential. The US holds the initiative and asymmetric leverage \u2014 it has imposed Section 301 tariffs on ~$250B of Chinese imports while China's retaliation covers only ~$60B (timeline: 2018-09-24). Fundamentals remain solid: consumer sentiment is 98.3, industrial production is up, and CPI is contained (country_health). But real drags exist: soybean exports to China are down ~97%, prices fell ~$2/bushel, and the administration has had to authorize a second ~$9.6B farmer-aid package (web search, CNN Dec 17-18) \u2014 material domestic political pressure in the farm belt. Markets show stress (10Y yield falling to ~2.77, Baa spreads widening, oil collapse) indicating cooling growth. The Huawei arrest of Meng Wanzhou (Dec 1) and China's detention of two Canadians (Dec 10) risk poisoning the truce, yet Kudlow and Chinese officials publicly insist the case stays separate from trade talks (CNBC Dec 7; NYT Dec 6). Given solid fundamentals and US leverage, threat sits just above neutral at +0.3; the recommendation is to negotiate (action_score +0.1) \u2014 advance the deal within Lighthizer's hard 90-day deadline without new escalation or premature concession, since China's own renewed soybean orders signal enough momentum that discarding it by escalating would be self-defeating.",
+      "key_factors": [
+        "US holds asymmetric leverage: ~$250B US tariffs on China vs ~$60B Chinese retaliation (timeline 2018-09-24)",
+        "90-day G20 truce active; Jan 1 hike to 25% suspended (timeline 2018-12-01)",
+        "Farm-belt damage severe: soybean exports to China down ~97%, $9.6B aid round 2 authorized (web search)",
+        "Huawei/Meng arrest + Canadian detentions threaten negotiation track (timeline 2018-12-01/12-10)",
+        "Markets cooling: 10Y ~2.77, Baa spreads widening, oil collapse (country_health)",
+        "US fundamentals strong: sentiment 98.3, IP up, CPI contained (country_health)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window... Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-10",
+          "excerpt": "China detains Canadians Michael Kovrig and Michael Spavor (widely viewed as retaliation for the Meng arrest)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer Sentiment 98.3 (Dec 2018)"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10Y yield falling to 2.77 by Dec 19 from ~3.2 in early Oct"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DBAA",
+          "excerpt": "Baa corporate yield widened ~4.86 to 5.04 across the fall"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNN 2018-12-17/18",
+          "excerpt": "Soybean exports to China down 97%; Trump authorizes ~$9.6B second round of farmer aid even as China resumes buying soybeans."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2018-12-07 Kudlow",
+          "excerpt": "Kudlow: Trump would consider extending 90-day truce if progress; Huawei case may not spill into trade talks; Navarro threatens higher tariffs if no deal."
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

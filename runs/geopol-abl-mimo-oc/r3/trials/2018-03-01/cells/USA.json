@@ -1,0 +1,141 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-03-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.15,
+      "rationale": "RECOMMENDATION: Use the Section 301 investigation leverage to open structured negotiations with China on IP and technology transfer, while holding off on broad tariff escalation. The US economy is strong enough to negotiate from a position of advantage, and the investigation's findings \u2014 when finalized \u2014 will provide concrete leverage. Engage EU and Japan as partners in pressing China on shared concerns to maximize pressure without unilateral escalation.\n\nSUPPORTING RATIONALE: As of March 1, 2018, the US faces a mild net opportunity rather than a threat. The US economy is performing strongly: consumer sentiment at 99.7 (near cycle highs), industrial production rising steadily to 101.7, and unemployment low \u2014 providing a solid domestic foundation (country_health). The Section 201 tariffs on solar panels (30%) and washing machines (up to 50%) approved January 22, 2018 are narrow and targeted, affecting specific sectors rather than broad bilateral trade (timeline entry 2018-01-22). China's response has been limited to diplomatic protest \u2014 calling the tariffs an 'abuse of trade remedy measures' and threatening WTO action \u2014 but no concrete retaliation yet (web search, Business Insider 2018-01-23).\n\nThe real leverage comes from the Section 301 investigation, which has identified four categories of Chinese misconduct: forced technology transfer via JV requirements, discriminatory licensing, state-directed acquisition of US technology, and cyber-enabled IP theft (web search, USTR/Federal Register). The investigation is reportedly complete and remedies under discussion include tariffs in the 'trillion-dollar range' (web search, Inside U.S. Trade). This investigation gives the US significant leverage because: (1) it has bipartisan support and broad industry backing, (2) the EU and Japan share identical concerns about China's technology transfer regime and have engaged in trilateral discussions (web search, USTR update), and (3) China's Made in China 2025 plan \u2014 a $300 billion effort targeting 10 strategic industries \u2014 has alarmed Western businesses and governments alike (web search, NYT 2017-03-07, CFR 2017-10-18).\n\nHowever, several factors counsel against premature escalation. The US-China trade deficit hit a record $375.2 billion in 2017 (web search, NYT 2018-02-06), which is partly driven by macroeconomic factors (strong US economy, strong dollar) rather than solely Chinese unfair practices \u2014 tariffs would raise prices for US consumers without addressing root causes. The US-China Business Council warned that 'wide-ranging tariffs or other broad restrictions may provide monetary compensation for lost opportunities but such actions are unlikely to address the underlying policies' (web search, USCBC submission). Corporate bond yields have risen 32 bps to 4.55% and the VIX spiked to 37 in early February before settling at ~13, indicating markets are already nervous (country_health). Premature broad tariff escalation risks: (a) Chinese retaliation targeting US agriculture and aerospace, (b) higher consumer prices, (c) market disruption, and (d) alienating allies whose cooperation is needed for maximum leverage.\n\nThe optimal strategy is to negotiate from strength: use the completed (or near-complete) 301 investigation as a credible threat, coordinate with EU and Japan, and demand structural concessions on IP protection, JV requirements, and market access. The US has leverage \u2014 the question is whether to use it smartly or squander it on broad tariffs that may be counterproductive.",
+      "key_factors": [
+        "Section 301 investigation near completion with 'trillion-dollar' tariff remedies under discussion",
+        "Record US-China trade deficit of $375.2B in 2017 provides political fuel and negotiating leverage",
+        "Strong US economy (consumer sentiment 99.7, industrial production rising) provides domestic foundation",
+        "EU and Japan share US concerns on China's technology transfer regime \u2014 trilateral coordination opportunity",
+        "China's Made in China 2025 ($300B) alarms Western allies and validates US IP concerns",
+        "Section 201 tariffs on solar/washing machines are narrow and China's response has been limited to diplomatic protest",
+        "Market nervousness (VIX spike to 37 in Feb, rising corporate yields) counsels against premature escalation",
+        "US-China Business Council warns broad tariffs unlikely to address underlying Chinese policy problems"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-01-22",
+          "excerpt": "Trump approves Section 201 safeguard tariffs on solar panels and washing machines (China among suppliers hit). First major tariff action of the administration."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2017-11-08",
+          "excerpt": "Trump visits Beijing; large package of commercial deals announced (many MOUs). No substantive concessions on structural IP / tech-transfer issues."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment at 99.7 (Feb 2018), near cycle highs"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DBAA",
+          "excerpt": "Baa corporate bond yields rose from 4.23% to 4.55% over 6 months, indicating tightening credit conditions"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "VIXCLS",
+          "excerpt": "VIX spiked to 37 in early February 2018 before settling at ~13-14, indicating elevated market anxiety"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes-2018-02-06-us-china-trade-deficit",
+          "excerpt": "The gap between Chinese goods imported to the United States and American goods exported to China rose to $375.2 billion last year, up from $347 billion the prior year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ustr-301-update",
+          "excerpt": "USTR initiated a Section 301 investigation of China's acts, policies, and practices related to technology transfer, intellectual property, and innovation. China's Ministry of Commerce expressed 'strong dissatisfaction' and decried the investigation as 'irresponsible.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "newsweek-cato-2018-01-05",
+          "excerpt": "Inside U.S. Trade says that 'the 301 remedies against China would include what some called significant tariffs covering retaliatory action in the trillion-dollar range'"
+        }
+      ],
+      "threat_score": -0.15,
+      "action_score": -0.2,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-03-01",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 682,
+        "capped_chars": 682,
+        "raw_tokens": 170,
+        "capped_tokens": 170
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46539,
+        "capped_chars": 46539,
+        "raw_tokens": 11635,
+        "capped_tokens": 11635
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 105585,
+        "capped_chars": 105585,
+        "raw_tokens": 26397,
+        "capped_tokens": 26397
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 413737,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

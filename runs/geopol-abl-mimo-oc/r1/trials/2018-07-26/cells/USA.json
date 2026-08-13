@@ -1,0 +1,160 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-07-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Proceed with finalizing the proposed $200B List 3 tariff (10% on ~6,000 Chinese product lines), but signal willingness to negotiate if China offers meaningful structural concessions on IP and technology transfer. The US economy is absorbing the trade friction well, and maintaining pressure is the only way to force China to the table on structural issues that the failed May truce proved China is unwilling to address voluntarily.\n\nSUPPORTING RATIONALE: The US economy as of mid-July 2018 is fundamentally strong enough to sustain escalation. Industrial production is up 1.6% since January (103.4, latest July reading), unemployment is at historic lows, and CPI inflation remains contained at 0.7% over six months (country_health). The Fed is tightening gradually (1.42% \u2192 1.91%), reflecting confidence in growth, not alarm. Consumer sentiment has dipped modestly (101.4 \u2192 97.9) but remains at historically healthy levels.\n\nChina's position is weaker. The yuan has depreciated ~3.5% against the dollar (6.28 \u2192 6.81 CNY/USD), and China's FX reserves have declined by ~$60B \u2014 evidence of capital outflow pressure under trade stress (country_health). China's retaliation has been strategically targeted at US agriculture \u2014 soybean prices have plunged ~20% since April, and farmers have lost an estimated $13B in value (web_search: CNBC, July 24). However, the administration just announced a $12B emergency aid package using Depression-era Commodity Credit Corporation authority (web_search: USDA, July 24), which, despite bipartisan criticism, signals willingness to absorb the political cost of continued escalation.\n\nThe ZTE ban was lifted on July 13 after a $1B fine and $400M escrow \u2014 a controversial move that drew bipartisan congressional opposition but demonstrated that the administration can use non-tariff leverage (web_search: NYT, July 13). The May 19 joint statement promising increased Chinese purchases collapsed within 10 days when the White House proceeded with Section 301 actions (timeline, May 29), proving that purchase commitments without structural reform are worthless.\n\nList 1 ($34B) took effect July 6 with China matching retaliation the same day. The administration escalated by proposing List 3 ($200B) on July 10. Trump has signaled willingness to go to $500B+ if China retaliates further. The key risk is that escalation could spiral \u2014 but the macro data shows the US can absorb more pain than China can, and midterm election pressure (Bloomberg reports farm-belt House races tilting Democratic) creates urgency to either close a deal or demonstrate toughness. The correct move is to maintain the List 3 process while keeping the door open for substantive negotiation.",
+      "key_factors": [
+        "US macro economy strong: industrial production up, inflation contained, employment solid",
+        "China under pressure: yuan depreciating 3.5%, FX reserves declining ~$60B",
+        "Farm sector pain: soybean prices down 20%, but $12B aid package announced July 24",
+        "May truce collapsed \u2014 purchase commitments without structural reform are insufficient",
+        "ZTE ban lifted July 13 shows non-tariff leverage available alongside tariffs",
+        "Bipartisan political risk: farm-belt House races leaning Democratic, Republican senators criticizing tariffs",
+        "List 3 ($200B) in comment period \u2014 proceed but signal willingness to negotiate"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-15",
+          "excerpt": "USTR announces final two-stage $50B tariff plan: 25% on List 1 (~$34B) and List 2 (~$16B). China announces matching retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-10",
+          "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for an additional 10% tariff (~6,000 product lines)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO_USA",
+          "excerpt": "US Industrial Production: 103.4 (July 2018), up 1.6% since January."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CPIAUCSL_USA",
+          "excerpt": "CPI: 251.2 (July 2018), moderate inflation trajectory."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT_USA",
+          "excerpt": "Consumer Sentiment: 97.9 (July 2018), down from 101.4 in March but historically healthy."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS_USA",
+          "excerpt": "Broad Dollar Index: 112.9 (July 25), up ~5.4% since January \u2014 dollar strengthening."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "EXCHUS_CHN",
+          "excerpt": "CNY/USD: 6.81 (July 2018), yuan depreciated ~3.5% from 6.28 in January."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "TRESEGCH01M_CHN",
+          "excerpt": "China FX reserves: declined ~$60B from $3.16T to $3.11T over 6 months."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2018-07-24_soybeans",
+          "excerpt": "Soybean prices have plunged nearly 20 percent since April when China first announced the 25 percent tariff on U.S. soybeans."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usda_2018-07-24_farmer_aid",
+          "excerpt": "Trump administration announced up to $12 billion in emergency aid to farmers caught in an escalating trade war, using Depression-era Commodity Credit Corporation authority."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt_2018-07-13_zte",
+          "excerpt": "U.S. lifted ban on ZTE after $1B penalty and $400M escrow, amid bipartisan congressional opposition citing national security concerns."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": -0.35,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-07-26",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3366,
+        "capped_chars": 3366,
+        "raw_tokens": 842,
+        "capped_tokens": 842
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48154,
+        "capped_chars": 48154,
+        "raw_tokens": 12038,
+        "capped_tokens": 12038
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 67988,
+        "capped_chars": 67988,
+        "raw_tokens": 16997,
+        "capped_tokens": 16997
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 399248,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

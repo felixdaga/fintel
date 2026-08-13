@@ -1,0 +1,124 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-04-25",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 145532,
+    "tokens_out": 3397,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: Continue negotiating at the current pace to close a comprehensive trade deal \u2014 do not escalate, since further retaliation risks triggering the suspended List 3 tariff hike to 25% and deepening the export slowdown. Press for tariff removal as the headline objective of the agreement while holding the line on new structural concessions beyond those already on the table. Maintain the truce and stay on the path toward a summit-framed settlement.\n\nSUPPORTING RATIONALE: The threat is moderate-high but not existential. US Section 301 tariffs now cover ~$250B of Chinese imports (Lists 1, 2 and 3 from May\u2013Sept 2018 timeline entries), and the bite is visible in the real economy: Chinese exports to the US fell 14.1% in Jan\u2013Feb 2019, total exports fell 4.6%, and the government cut its GDP growth target to 6% with Premier Li warning of a 'graver and more complicated environment.' Firm-level targeting (Huawei/Meng extradition, entity-list exposure) threatens tech self-sufficiency \u2014 a high-anchor element. However, this is not existential: the truce has held, the List 3 hike to 25% was suspended, and four-plus rounds of talks (Jan\u2013Apr) yielded 'concrete progress' and 'new progress' on text and enforcement, with Trump publicly expecting an outcome within weeks. That both sides still talk positively indicates a negotiated resolution is the most likely and least damaging path, so escalation would be self-defeating while the economy is already slowing. Action is therefore a negotiated hold \u2014 score +0.1, level 'negotiate': no new commitments beyond existing purchase pledges (China already agreed to 'significantly increase' purchases), but no escalation either, since the costly alternative is a 25% tariff wave that would hit exporters and consumer confidence hard.",
+      "key_factors": [
+        "~$250B of US tariffs on Chinese imports in force, with List 3 hike to 25% suspended but pending",
+        "Chinese exports to US down 14.1% (Jan-Feb 2019), total exports down 4.6%, GDP target cut to 6%",
+        "Talks advancing \u2014 'concrete/new progress' on text and enforcement; Trump expects outcome within weeks",
+        "Sticking points: enforcement mechanism and whether US keeps tariffs as leverage; China wants full tariff removal",
+        "Huawei/Meng extradition and entity-list targeting threaten tech self-sufficiency but no financial-stability break",
+        "Escalation risks triggering the 25% List 3 hike, worsening the export slowdown and consumer confidence"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%; combined Section 301 coverage ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness China exports down",
+          "excerpt": "China's exports to the US fell 14.1% in first two months of 2019; global exports sank 4.6%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters trade deal four weeks",
+          "excerpt": "Trump says deal could be announced within four weeks; China wants all US tariffs lifted, US wants to keep some for leverage."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "axios new progress",
+          "excerpt": "9th round of talks concluded with 'new progress'; Liu He met Trump; 'significant work remains'."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-04-25",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4024,
+        "capped_chars": 4024,
+        "raw_tokens": 1006,
+        "capped_tokens": 1006
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46810,
+        "capped_chars": 46810,
+        "raw_tokens": 11702,
+        "capped_tokens": 11702
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 55793,
+        "capped_chars": 55793,
+        "raw_tokens": 13948,
+        "capped_tokens": 13948
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 320620,
+  "started_at": "2026-08-13T07:51:51+00:00"
+}

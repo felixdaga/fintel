@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-04-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9608,
+    "tokens_out": 862,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0096084,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should maintain a firm retaliatory posture, matching US tariff escalations with proportional countermeasures on politically sensitive US exports (soybeans, automobiles, aircraft). We should signal willingness to negotiate but not make unilateral concessions while the US is still in proposal stage and escalating threats. Domestically, accelerate messaging around tech self-sufficiency and diversification of trade partners.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has proposed tariffs on up to $153 billion of Chinese imports (CBS News, April 6), targeting high-tech sectors aligned with Made in China 2025 \u2014 84% of targeted products are high-end exports (Bruegel analysis). This directly threatens China's technological advancement goals. However, as of April 12, these remain proposals with a public comment period ending May 11 and hearings May 15 (CBS News), meaning nothing has been executed yet. Larry Kudlow himself noted 'Nothing's happened. Nothing's been executed.' China's initial retaliation on $3 billion of US goods (Reuters, April 2) and the announced $50 billion counter-tariff list targeting soybeans, autos, and aircraft demonstrate China has leverage \u2014 US soybean prices fell to two-year lows (CBS News). Former Finance Minister Lou Jiwei's public statement that China should 'hit soybeans, automobiles, and airplanes' (Times of India) signals domestic elite consensus for firm retaliation. The Bruegel analysis notes China's retaliation targets US exporters' present revenues while the US targets China's future tech capacity \u2014 an asymmetry that favors China's near-term leverage. China should retaliate to demonstrate resolve and maintain bargaining position, while keeping channels open (Liu He's call with Mnuchin per Times of India) for negotiation once the US recognizes the costs of escalation.",
+      "key_factors": [
+        "US tariffs remain in proposal stage with May 11 comment period \u2014 not yet executed",
+        "US targeting of Made in China 2025 high-tech sectors threatens China's tech advancement goals",
+        "China's retaliation list targets politically sensitive US exports (soybeans, autos, aircraft) with immediate economic impact",
+        "Domestic elite consensus (Lou Jiwei) supports firm retaliation on agriculture and manufacturing",
+        "Liu He-Mnuchin communication channel remains open for potential negotiation",
+        "China imported only $130B of US goods vs $506B US imported from China \u2014 limits China's ability to match tariff-for-tariff but targeted retaliation on key sectors is effective",
+        "Soybean prices already fell to two-year lows showing China's leverage is real"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China... Trump said he would consider adding another $100 billion worth of products... The public has until May 11 to submit comments on the proposed list of U.S. tariffs, with a hearing scheduled for May 15."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports... the U.S. is targeting China's future technological capacity, and China is responding by targeting U.S. exporters' present revenues."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "timesofindia.indiatimes.com",
+          "excerpt": "Vice Premier Liu He told US Treasury Secretary Steven Mnuchin in a phone call that Washington's investigation into alleged Chinese infringement of US intellectual property violates international rules... 'China is prepared and has the ability to defend its national interests'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China has increased tariffs by up to 25 percent on 128 U.S. products, from frozen pork and wine to certain fruits and nuts, escalating a dispute between the world's biggest economies"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-04-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 29183,
+        "capped_chars": 24151,
+        "raw_tokens": 7296,
+        "capped_tokens": 6038
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 12375,
+  "started_at": "2026-08-13T10:55:33+00:00"
+}

@@ -1,0 +1,132 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-04-25",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 166918,
+    "tokens_out": 4730,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.35,
+      "rationale": "RECOMMENDATION: Hold the current tariff posture and press forward in the active negotiation toward a final, enforceable deal rather than escalating. The talks are at their most advanced point yet \u2014 enforcement is 'pretty much agreed' and a US delegation heads to Beijing April 30 with Liu He to Washington May 8 \u2014 so the lever that delivers maximum US value is closing the deal, not raising the stakes. Keep the threatened List 3 hike from 10% to 25% in reserve as leverage, and do not tip the negotiation into a breakdown while the growth data is already soft.\n\nSUPPORTING RATIONALE: The threat to US interests here is modest and tilt-negative: the US started this dispute, holds the stronger hand, and China is making concessionary progress on enforcement offices and purchases (April 10 Mnuchin; timeline entry 2019-04-03 intensive Washington talks with progress on enforcement text). That is the -0.5 'opportunity' anchor \u2014 leverage to restructure the trade relationship on US terms and a domestic political boost \u2014 though not -1.0 because escalating carries genuine second-order risk: US industrial production is sliding (102.3 in April vs 104.1 in Nov, -1.7%) and the 10Y/2Y spread has compressed toward ~21bp (10Y 2.53% vs 2Y 2.32%), a near-inversion growth warning that means pushing into a tariff war breakdown could feed recession risk. On the action axis, escalation now (raising/expanding the $250B tariff base to 25%) would risk scuttling an advanced negotiation and amplifying that growth anxiety, while full concession is premature \u2014 no final deal, enforcement specifics unresolved, and giving away leverage now forfeits the structural reforms and purchase commitments still at stake. The disciplined move is negotiate/hold at ~0.0: continue talks, hold tariffs as leverage, and only convert them on a signed, enforceable agreement.",
+      "key_factors": [
+        "US holds leverage with ~$250B of Chinese imports already tariffed; talks at most advanced stage (enforcement 'pretty much agreed' Apr 10; Beijing delegation Apr 30)",
+        "US industrial production sliding to 102.3 (-1.7% since Nov) and 10Y/2Y spread compressed to ~21bp near-inversion \u2014 cap how hard the US can push without growth blowback",
+        "US exports to China rebounded to ~$10.6B in March while the goods deficit stays wide (-$74.4B) \u2014 dispute has not yet healed the trade imbalance",
+        "Escalating the List 3 hike to 25% risks breaking an advanced negotiation; conceding now forfeits leverage before an enforceable deal exists"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks; both sides report progress on text including enforcement, no final deal signed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-enforcement",
+          "excerpt": "US, China agree to establish trade deal enforcement offices: Mnuchin (Apr 10) \u2014 'We've pretty much agreed on an enforcement mechanism.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-final-round",
+          "excerpt": "Mnuchin says hopes US-China trade talks nearing 'final round' (Apr 13-14)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-delegation",
+          "excerpt": "US to send delegation to China April 30; Liu He to Washington May 8 (Apr 24)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO/USA",
+          "excerpt": "Industrial Production 102.274 (Apr), -1.7% since Nov 2018."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10/DGS2/USA",
+          "excerpt": "10Y 2.53%, 2Y 2.32% \u2014 ~21bp spread, near-inversion."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "EXPCH/USA",
+          "excerpt": "US exports to China $10,574M in Mar 2019."
+        }
+      ],
+      "threat_score": -0.35,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-04-25",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4024,
+        "capped_chars": 4024,
+        "raw_tokens": 1006,
+        "capped_tokens": 1006
+      },
+      "country_health": {
+        "n_reads": 2,
+        "raw_chars": 81165,
+        "capped_chars": 81165,
+        "raw_tokens": 20291,
+        "capped_tokens": 20291
+      },
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 21260,
+        "capped_chars": 21260,
+        "raw_tokens": 5315,
+        "capped_tokens": 5315
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 163134,
+  "started_at": "2026-08-13T08:01:01+00:00"
+}

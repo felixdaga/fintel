@@ -1,0 +1,128 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-04-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 135842,
+    "tokens_out": 4084,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Maintain our proportional retaliation as standing leverage but keep the door open to talks \u2014 do not escalate further and do not concede. We should signal continued willingness to negotiate a settlement that avoids enforcement of either tariff list, since our $50B farm-belt targeting and WTO appeal give us genuine leverage while a full trade war would hurt our export economy and FX more than it hurts the US. Hold the calibrated response and pursue dialogue.\n\nSUPPORTING RATIONALE: The threat is real but not yet existential. The US Section 301 report (3/22) directly targets our 'Made in China 2025' tech sectors \u2014 aerospace, ICT, robotics, machinery \u2014 which strikes at our strategic industrial goals and material export exposure (~$50B proposed, ~1,300 product lines, 4/3). This justifies a clearly elevated threat reading near the +0.5 'high' anchor. However, three factors keep it below existential: (1) neither tariff list is in force as of the decision date \u2014 the US list is in comment until May 22 and the US then has ~180 days, and Beijing has stated enforcement depends on negotiation outcome; (2) we have already responded symmetrically, matching the ~$50B (4/4) on top of the $3B (4/2) retaliation, targeting soybeans and farm-belt Trump country to pressure US domestic politics and bring Washington back to the table; (3) China's macro fundamentals are solid \u2014 FX reserves ~$3.0T and rising, growth stabilizing near the 6.5% target, with capital controls in place \u2014 so there is no financial-stability pressure forcing a panic response. On action: escalating further is unwise because the US imports far more from us than vice versa (the $50B hit is ~1/9 of its Chinese imports vs ~1/3 of our US imports), giving Washington more room to escalate; conceding would waste hard-won leverage and signal abandonment of tech-autonomy goals. Therefore hold at the calibrated retaliation and pursue negotiation without new commitments.",
+      "key_factors": [
+        "Neither US $50B Section 301 nor China's retaliation is in force by decision date; comment period open, enforcement depends on talks",
+        "US list targets 'Made in China 2025' sectors (aerospace, ICT, robotics, machinery) \u2014 direct hit on strategic tech goals",
+        "China responded proportionally: $3B (4/2) + proposed $50B (4/4) targeting US farm-belt/soybeans for political leverage",
+        "China macro resilient: FX reserves ~$3.0T and rising, growth stabilizing ~6.5%, capital controls limit outflows",
+        "US has more escalation room (China's $50B = 1/3 of its US imports vs 1/9 of US Chinese imports), making further escalation asymmetric and costly for China"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-22",
+          "excerpt": "USTR Section 301 report + Trump memorandum directing tariffs, WTO case, investment restrictions"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed ~$50B tariff list targeting aerospace, ICT, robotics, machinery"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliation on ~$50B US goods incl. soybeans, autos, aircraft"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortune.com/2018/04/04",
+          "excerpt": "US list focused on 'Made in China 2025'; China's $50B retaliation ~1/3 of China's US imports vs <1/10 of China's exports to US; implementation depends on negotiations"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes.com/2018/04/04",
+          "excerpt": "Neither set of tariffs goes into effect right away; Zhu Guangyao: external pressure only makes Chinese people more focused on development; China doesn't want a trade war"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters.com China fx reserves",
+          "excerpt": "China FX reserves ~$3.0 trillion and rising, capital controls in place"
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-04-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2046,
+        "capped_chars": 2046,
+        "raw_tokens": 512,
+        "capped_tokens": 512
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47380,
+        "capped_chars": 47380,
+        "raw_tokens": 11845,
+        "capped_tokens": 11845
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 36581,
+        "capped_chars": 36581,
+        "raw_tokens": 9145,
+        "capped_tokens": 9145
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 134750,
+  "started_at": "2026-08-13T07:44:11+00:00"
+}

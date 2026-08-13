@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-10-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7634,
+    "tokens_out": 853,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0076074,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should maintain maximum tariff pressure on China by implementing the planned tariff hikes and threatening further escalation on remaining imports. This leverage is critical to force China into meaningful structural reforms on IP theft, forced technology transfer, and market access. The US economy remains relatively strong while China faces significant export pressure, giving us a window to extract concessions.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects moderate but not existential risk to US interests. The trade war has created uncertainty for markets and consumers (BBC notes the Dow fell ~6% in 2018, and the IMF cut global growth forecasts), and White House adviser Kudlow acknowledged 'both sides will pay' (Fox Business). However, the US has structural advantages: the $419bn trade deficit means China has more to lose from tariff escalation, and China's retaliatory capacity is limited to $110bn vs US tariffs on $250bn+ (BBC). The action score of -1.0 (maximal escalation) is justified because: (1) this is described as 'the best chance in my lifetime to get China to change their cheating ways' per Sen. Graham (Fox Business), reflecting bipartisan support for firmness; (2) China has been 'row[ing] back on a trade deal' (BBC), suggesting they are testing US resolve; (3) the core issues\u2014IP theft, forced technology transfer, market access in AI/cloud/robotics (USC/Annenberg)\u2014are existential for long-term US tech leadership; (4) the US economy can absorb short-term pain while China's export-dependent model is more vulnerable to supply chain disruption (Fox Business/Graham). Maintaining maximum pressure now, when domestic political support is strong and China is negotiating, is the optimal strategy to secure a deal on US terms.",
+      "key_factors": [
+        "$419bn US trade deficit with China gives US leverage",
+        "China accused of rolling back on trade deal commitments (BBC, May 2019)",
+        "Bipartisan Congressional support for firm stance (Graham, Van Drew quotes)",
+        "Core disputes: IP theft, forced tech transfer, market access in future industries (AI, cloud, robotics)",
+        "US tariffs on $250bn vs China retaliation on $110bn - asymmetric exposure",
+        "IMF cut global growth forecasts citing trade tensions",
+        "Both sides paying costs per Kudlow, but China more export-dependent",
+        "Planned tariff hike from 10% to 25% on $200bn goods imminent"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. Not only does the US accuse China of stealing intellectual property, but it wants Beijing to make changes to its economic policies"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China immersed in a tit-for-tat tariff trade war",
+          "excerpt": "Lighthizer and Mnuchin thought China was willing to rewrite key national security and trade laws to reduce the theft of intellectual property, open its markets to U.S. financial firms"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "This is the best chance in my lifetime to get China to change their cheating ways. The tariffs are tools that bring China to the table. I'm standing 100% with the president."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-10-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18895,
+        "capped_chars": 15037,
+        "raw_tokens": 4724,
+        "capped_tokens": 3759
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 17965,
+  "started_at": "2026-08-13T10:54:40+00:00"
+}

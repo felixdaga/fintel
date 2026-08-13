@@ -1,0 +1,87 @@
+{
+  "USA": {
+    "symbol": "USA",
+    "score": -0.3,
+    "rationale": "RECOMMENDATION: Stay the course in the near-final negotiating window without either escalating or ceding leverage. The talks are in their closing phase with enforcement language reportedly near-settled, so the highest-value move is to push the agreement across the line while retaining the tariff stick that bought US concessions. Avoid a new escalation that could blow up a deal to which China is already committing (purchases, IP/tech-transfer, enforcement), and avoid a premature full rollback that would surrender the leverage still needed to lock in enforcement.\n\nSUPPORTING RATIONALE: The dispute does not read as an existential or even high threat to US interests at this decision date. US macro data are solid: consumer sentiment is elevated (~97.2), inflation is contained (CPI ~255, sub-2% trend), and credit conditions are easing (Moody's Baa corporate yield fell to ~4.67), with the VIX subdued and the dollar broadly flat. The main genuine cost is concentrated in agriculture \u2014 USDA put FY2019 farm exports down ~$1.9B with soybean shipments to China down over 90% (22M tons) and China falling from the #2 to #5 US ag market \u2014 which fuels Midwest political pressure but is not a material economy-wide drag. On the strategic side the US holds the advantage: ~$250B of tariffs remain in place (List 3 at 10% after repeated delay of the hike to 25%), and senior negotiators (Mnuchin, USD Trade Rep per WSJ/Reuters, April 13-15) publicly framed the talks as in the 'final round/weeks' with enforcement nearly settled and China discussing $1T+ of purchases. That is terrain favorable to securing US demands, justifying a mildly negative (opportunity-leaning) threat score of -0.3. Because a deal is close and both sides have momentum, the recommended action is to negotiate to a close rather than escalate (which risks collapsing the truce) or fully concede (which forfeits enforcement leverage); hence action_score +0.1 / 'negotiate'.",
+    "key_factors": [
+      "~$250B US tariffs still in force; List 3 hike to 25% repeatedly suspended",
+      "Negotiations in 'final round/weeks' per Mnuchin/Lighthizer, enforcement nearly settled",
+      "US economy healthy: consumer sentiment ~97, credit spreads tight, VIX low, contained inflation",
+      "Agriculture hit: farm exports -$1.9B, soybean shipments to China -90%+, China to #5 ag market",
+      "China committing to large purchases ($1T+ discussed) and IP/tech-transfer terms"
+    ],
+    "sources_cited": [
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-09-24",
+        "excerpt": "List 3 takes effect at 10%; combined US Section 301 coverage now ~$250B of Chinese imports."
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-04-03",
+        "excerpt": "Intensive Washington talks; both sides report progress on text, including enforcement language. No final deal signed."
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "https://www.nytimes.com/2019/04/13/us/politics/mnuchin-china-trade-talks.html",
+        "excerpt": "Mnuchin says US and China nearing 'final stage'; biggest obstacle \u2014 enforcement \u2014 nearly settled; China discussed buying more than $1 trillion of goods."
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "https://thehill.com/.../431113",
+        "excerpt": "USDA: US farm exports to drop ~$1.9B in FY2019; soybean exports to China down 22M tons/90%."
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "UMCSENT",
+        "excerpt": "US consumer sentiment ~97.2 in Apr 2019; Baa corporate yield falling to ~4.67 (credit easing)."
+      }
+    ],
+    "threat_score": -0.3,
+    "action_score": 0.1,
+    "action_level": "negotiate"
+  },
+  "CHN": {
+    "symbol": "CHN",
+    "score": 0.45,
+    "rationale": "RECOMMENDATION: Continue negotiating at the current pace to close a comprehensive trade deal \u2014 do not escalate, since further retaliation risks triggering the suspended List 3 tariff hike to 25% and deepening the export slowdown. Press for tariff removal as the headline objective of the agreement while holding the line on new structural concessions beyond those already on the table. Maintain the truce and stay on the path toward a summit-framed settlement.\n\nSUPPORTING RATIONALE: The threat is moderate-high but not existential. US Section 301 tariffs now cover ~$250B of Chinese imports (Lists 1, 2 and 3 from May\u2013Sept 2018 timeline entries), and the bite is visible in the real economy: Chinese exports to the US fell 14.1% in Jan\u2013Feb 2019, total exports fell 4.6%, and the government cut its GDP growth target to 6% with Premier Li warning of a 'graver and more complicated environment.' Firm-level targeting (Huawei/Meng extradition, entity-list exposure) threatens tech self-sufficiency \u2014 a high-anchor element. However, this is not existential: the truce has held, the List 3 hike to 25% was suspended, and four-plus rounds of talks (Jan\u2013Apr) yielded 'concrete progress' and 'new progress' on text and enforcement, with Trump publicly expecting an outcome within weeks. That both sides still talk positively indicates a negotiated resolution is the most likely and least damaging path, so escalation would be self-defeating while the economy is already slowing. Action is therefore a negotiated hold \u2014 score +0.1, level 'negotiate': no new commitments beyond existing purchase pledges (China already agreed to 'significantly increase' purchases), but no escalation either, since the costly alternative is a 25% tariff wave that would hit exporters and consumer confidence hard.",
+    "key_factors": [
+      "~$250B of US tariffs on Chinese imports in force, with List 3 hike to 25% suspended but pending",
+      "Chinese exports to US down 14.1% (Jan-Feb 2019), total exports down 4.6%, GDP target cut to 6%",
+      "Talks advancing \u2014 'concrete/new progress' on text and enforcement; Trump expects outcome within weeks",
+      "Sticking points: enforcement mechanism and whether US keeps tariffs as leverage; China wants full tariff removal",
+      "Huawei/Meng extradition and entity-list targeting threaten tech self-sufficiency but no financial-stability break",
+      "Escalation risks triggering the 25% List 3 hike, worsening the export slowdown and consumer confidence"
+    ],
+    "sources_cited": [
+      {
+        "source_type": "event_timeline",
+        "source_id": "2019-04-03",
+        "excerpt": "Intensive Washington talks; both sides report progress on text, including enforcement language. No final deal signed."
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-09-24",
+        "excerpt": "List 3 takes effect at 10%; combined Section 301 coverage ~$250B of Chinese imports."
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "foxbusiness China exports down",
+        "excerpt": "China's exports to the US fell 14.1% in first two months of 2019; global exports sank 4.6%."
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "reuters trade deal four weeks",
+        "excerpt": "Trump says deal could be announced within four weeks; China wants all US tariffs lifted, US wants to keep some for leverage."
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "axios new progress",
+        "excerpt": "9th round of talks concluded with 'new progress'; Liu He met Trump; 'significant work remains'."
+      }
+    ],
+    "threat_score": 0.45,
+    "action_score": 0.1,
+    "action_level": "negotiate"
+  }
+}

@@ -15,8 +15,12 @@ runs/*
 .env/
 !.env.example
 
-# Demo run shipped with the repo (strategy-adapter agent — not the private optimized desk)
+# Demo / published runs shipped with the repo
 !runs/systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1/
+!runs/geopol-abl-mimo-llm/
+!runs/geopol-abl-mimo-oc/
+!runs/geopol-abl-deepseek-oc/
+!runs/geopol-abl-grok-oc/
 
 # Private F1 / site ops (not part of the open-source tool)
 scripts/f1_rebalance.sh

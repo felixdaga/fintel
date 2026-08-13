@@ -1,0 +1,6 @@
+{"ts": "2026-08-13T10:55:18.856627+00:00", "event": "cell_opened", "run_id": "geopol-abl-mimo-llm-v2-r3", "decision_date": "2019-08-29", "symbols": ["CHN"], "scope": "single_name"}
+{"ts": "2026-08-13T10:55:18.857347+00:00", "event": "read", "kind": "web_search", "query": {"query": "China US trade war", "lookback_days": 365}, "status": "ok", "source": "web_search", "latency_ms": 0.35, "raw_chars": 17257, "capped_chars": 13956, "raw_tokens": 4314, "capped_tokens": 3489}
+{"ts": "2026-08-13T10:55:38.746697+00:00", "event": "agent_returned", "agent": "llm", "elapsed_ms": 19889.9}
+{"ts": "2026-08-13T10:55:38.746832+00:00", "event": "submitted", "n_views": 1, "dropped": []}
+{"ts": "2026-08-13T10:55:38.747101+00:00", "event": "cell_closed", "n_reads": 1, "by_status": {"ok": 1}, "kinds_used": ["web_search"], "degraded": false, "chars_by_kind": {"web_search": {"n_reads": 1, "raw_chars": 17257, "capped_chars": 13956, "raw_tokens": 4314, "capped_tokens": 3489}}}
+{"ts": "2026-08-13T10:55:38.747438+00:00", "event": "health", "status": "ok", "issues": [], "n_reads": 1, "by_status": {"ok": 1}, "kinds_used": ["web_search"], "denied": [], "failed": [], "empty": [], "pit_suspects": []}

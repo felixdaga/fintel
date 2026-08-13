@@ -1,0 +1,71 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "score": 0.25,
+      "threat_score": 0.25,
+      "action_score": -0.35,
+      "action_level": "escalate_tariffs",
+      "rationale": "RECOMMENDATION: Proceed with the announced Section 301 tariffs on ~$50B of Chinese goods as signaled on May 29, but frame them narrowly around IP/tech-transfer grievances rather than broad economic confrontation. Simultaneously signal willingness to resume talks if China offers structural concessions on IP protection and market access. Do not escalate beyond the already-announced list at this stage.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but real and rising. The economy is strong \u2014 industrial production at 103.2 (up 1.7%), consumer sentiment at 98.2, unemployment claims at historic lows \u2014 providing a solid foundation to absorb retaliatory costs (country_health: INDPRO, UMCSENT). However, the threat is not existential because the $375B trade deficit means the US has asymmetric leverage: China cannot match tariff-for-tariff without exhausting its import base far sooner. China's April retaliation targeted $50B including soybeans ($14B in annual exports), but the agricultural sector is a small share of US GDP.\n\nThe action_score of -0.35 (moderate escalation) reflects the need to follow through on the May 29 announcement to preserve credibility \u2014 the truce already collapsed once, and backing down now would signal weakness. The Section 301 findings on IP theft and forced tech transfer are substantively sound and enjoy bipartisan support (timeline: Mar 22 USTR report). However, the ZTE saga undermines the administration's negotiating position: Trump reversed a national-security ban as a 'personal favor' to Xi Jinping, then bipartisan Senate opposition (Cotton, Schumer, Rubio) moved to reinstate it (web_search: CNBC June 13). This creates confusion about US red lines. Proceeding with tariffs restores some clarity.\n\nKey risks that cap the escalation: (1) China will retaliate on agriculture and autos, hurting Trump's rural base; (2) the Fed is already tightening (rates up 29% in 6 months, 10Y at 2.98%), and a trade war could amplify the tightening effect through market volatility; (3) corporate bond spreads have widened 15% (DBAA from 4.20 to 4.85), signaling credit stress; (4) allies are alienated by Section 232 steel/aluminum tariffs applied globally, reducing coalition leverage against China. The recommendation balances credibility with restraint \u2014 implement what was promised, but don't broaden the conflict.",
+      "key_factors": [
+        "Section 301 tariff list (~$50B) announcement imminent per Politico June 12 report",
+        "May 19 truce collapsed May 29 \u2014 credibility requires follow-through",
+        "Strong US macro (IP 103.2, sentiment 98.2) provides buffer against retaliation",
+        "China's retaliation targets politically sensitive sectors: soybeans ($14B), aircraft, autos",
+        "ZTE reversal created bipartisan backlash and credibility gap on China policy",
+        "Fed tightening (rates 1.42\u21921.82%, 10Y\u21922.98%) limits room for prolonged trade war",
+        "Corporate bond spreads widening (Baa +15%) signal emerging credit stress",
+        "China trade deficit ($375B) gives US asymmetric leverage in tariff war"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico-2018-06-12",
+          "excerpt": "President Donald Trump is expected to impose tariffs on Chinese goods as soon as Friday or next week... Trump ordered his administration to finalize the list of targeted goods that would be hit with a 25 percent tariff on May 29."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2018-06-13",
+          "excerpt": "The White House opposes a Senate proposal to block President Donald Trump's deal with Chinese telecommunications company ZTE... Trump moved to revive the company, which was blocked from buying U.S. parts."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-INDPRO",
+          "excerpt": "Industrial Production: 103.198 (June 2018), change +1.74% over period"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-UMCSENT",
+          "excerpt": "Consumer Sentiment: 98.2 (June 2018)"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-FEDFUNDS",
+          "excerpt": "Federal Funds Rate: 1.82% (June 2018), up from 1.42% \u2014 29% increase in 6 months"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-DGS10",
+          "excerpt": "10-Year Treasury: 2.98% (June 13, 2018)"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-DBAA",
+          "excerpt": "Baa Corporate Bond Yield: 4.85% (June 13), up from 4.20% \u2014 15.5% increase"
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

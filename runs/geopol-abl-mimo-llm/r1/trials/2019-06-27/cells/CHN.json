@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-06-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7853,
+    "tokens_out": 899,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0079644,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should announce retaliatory tariffs on the remaining ~$60 billion of US goods not yet covered, matching the US escalation on $200 billion (raised from 10% to 25%) and the threatened additional $300 billion. Retaliation signals resolve, preserves negotiating leverage, and deters further US escalation by raising costs for American consumers and exporters. China should simultaneously leave the door open for resumed negotiations at the G20 meeting.\n\nSUPPORTING RATIONALE: The threat score of +0.55 reflects the significant and escalating economic threat China faces. The US has already imposed tariffs on $250 billion of Chinese goods and raised the rate on $200 billion from 10% to 25% (BBC, 2019-05-08). Trump has called for tariffs on 'essentially all remaining imports from China, valued at approximately $300 billion' (Fox Business, 2019-05-12). This threatens China's export economy \u2014 the engine of its growth \u2014 and risks disrupting supply chains as US Senator Graham explicitly stated the goal is to 'break the stranglehold China has on the supply chain' (Fox Business, 2019-05-12). The Shanghai Composite fell nearly 25% in 2018 amid trade war uncertainty (BBC). China's retaliation on $60 billion of US goods is proportionally asymmetric given the trade imbalance ($419 billion US deficit), limiting China's retaliatory capacity, which itself is a threat factor. The action score of -1 reflects the need for firm retaliation: the US is escalating unilaterally, and concessions at this stage without a deal framework would signal weakness and invite further demands. Retaliation preserves China's leverage heading into potential G20 talks. The USC analysis notes the negotiations are 'not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future' including AI, cloud computing, and robotics \u2014 core to China's Made in China 2025 strategy (Annenberg/USC). Conceding on these structural issues would undermine China's long-term development trajectory.",
+      "key_factors": [
+        "US raised tariffs on $200bn of Chinese goods from 10% to 25% in May 2019",
+        "Trump threatened tariffs on remaining ~$300bn of Chinese imports",
+        "China's retaliatory capacity is limited by trade imbalance ($419bn US deficit)",
+        "Shanghai Composite fell 25% in 2018; market instability from trade war",
+        "Dispute centers on future tech industries (AI, robotics) core to Made in China 2025",
+        "US explicitly aims to break China's supply chain dominance",
+        "G20 meeting approaching as potential venue for leader-level talks"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "bbc_trade_war_charts",
+          "excerpt": "US imposed tariffs on $250bn worth of Chinese products. Tariffs on $200bn worth of Chinese goods were due to rise to 25% from 10%. Trump has vowed to slap 25% duties on another $325bn of Chinese goods 'shortly'."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness_tariffs_tools",
+          "excerpt": "The U.S. increased tariffs Friday on $200 billion worth of Chinese goods to 25 percent from 10 percent. Trump called for raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg_usc_trade_war",
+          "excerpt": "The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foxbusiness_why_america_must_win",
+          "excerpt": "He's trying to break the stranglehold China has on the supply chain."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-06-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20217,
+        "capped_chars": 16251,
+        "raw_tokens": 5054,
+        "capped_tokens": 4063
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 23259,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

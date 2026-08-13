@@ -1,0 +1,122 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-05-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 132190,
+    "tokens_out": 3161,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: China should consolidate the pause won in the May 19 joint statement \u2014 hold the current de-escalatory posture, follow through on the pledge to significantly increase purchases of US agriculture and energy, and deploy talks to press for ZTE relief and the shelving of the Section 301 tariff list \u2014 while refusing structural concessions on forced-technology-transfer and industrial policy. This is the moment to bank the 'trade war on hold' outcome and convert it into durable de-escalation, not to escalate.\n\nSUPPORTING RATIONALE: The threat is real but contained, so I read it at +0.35. On the threat side, the US proposed a Section 301 tariff list covering ~$50B of Chinese aerospace/ICT/robotics lines (event timeline 2018-04-03) and imposed a denial order banning ZTE from US components (2018-04-16) \u2014 genuine firm-level and sectoral targeting aimed at China's tech ambitions. Yet the trajectory since mid-May is de-escalation: the May 19 joint statement had both sides agree not to impose new tariffs while talks continue and Mnuchin explicitly said the trade war is 'on hold' (web_search: CNN/Politico). China secured this pause without committing to the $200B purchase figure, and even gained a softer US line on ZTE. Critically, the dispute is not yet biting the real economy \u2014 China Q1 exports rose 7.4% y/y and GDP grew 6.8% (web_search: Reuters/China Internet Watch), so there is no domestic urgency forcing escalation. On the action side, escalating now would be self-defeating: it would hand the US hawks (Lighthizer keeps tariffs 'in reserve') the trigger they want and unwind the pause that already favors China. Over-conceding on structural IP/tech-transfer demands would be politically and strategically costly. The disciplined move is negotiate \u2014 honor the purchase pledge to lock in the pause, seek tariff rollback and ZTE relief, and give away nothing structural yet.",
+      "key_factors": [
+        "May 19 joint statement put trade war 'on hold' \u2014 China pledged significantly more US purchases without a dollar figure",
+        "US $50B Section 301 tariff list targeting aerospace/ICT/robotics and ZTE denial order remain unresolved and 'in reserve'",
+        "Chinese macro untouched so far: Q1 exports +7.4% y/y, GDP +6.8% \u2014 no domestic pressure to escalate",
+        "Escalation would hand US hawks (Lighthizer) a trigger and unwind the pause favoring China; over-conceding on structural IP/tech-transfer demands is costly"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list: ~1,300 Chinese product lines (~$50B), targeting aerospace, ICT, robotics, machinery"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "US and China release joint statement... China agrees to 'significantly increase' purchases of US goods and services. Mnuchin says trade war is 'on hold.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "money.cnn.com/2018/05/19",
+          "excerpt": "'We're putting the trade war on hold' \u2014 no dollar amount on China's purchase commitment; Lighthizer: tariffs remain a tool to protect US technology"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters china trade y 2018",
+          "excerpt": "China Q1 yuan-denominated exports +7.4% y/y; GDP +6.8% in Q1 2018"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-05-24",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2446,
+        "capped_chars": 2446,
+        "raw_tokens": 612,
+        "capped_tokens": 612
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47806,
+        "capped_chars": 47806,
+        "raw_tokens": 11952,
+        "capped_tokens": 11952
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 30079,
+        "capped_chars": 30079,
+        "raw_tokens": 7520,
+        "capped_tokens": 7520
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 143393,
+  "started_at": "2026-08-13T07:44:18+00:00"
+}

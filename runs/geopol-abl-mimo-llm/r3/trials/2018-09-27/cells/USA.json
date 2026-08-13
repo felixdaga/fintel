@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8209,
+    "tokens_out": 1099,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0089204,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.3,
+      "rationale": "RECOMMENDATION: The US should proceed with the planned tariffs on $200 billion of Chinese goods set to take effect on September 24, 2018, and maintain pressure through the current escalation trajectory. The US holds structural leverage in this dispute \u2014 the trade deficit means China will run out of retaliatory capacity before the US does, and the US economy is strong enough to absorb short-term costs. However, the US should avoid further escalation beyond the current $200B tranche in the near term and signal willingness to negotiate if China offers meaningful structural concessions on IP theft and market access.\n\nSUPPORTING RATIONALE: The threat score of +0.3 reflects that while the trade war poses real costs to specific US sectors \u2014 soybean prices down 20% (Brookings), agricultural and auto exporters facing retaliation, and supply chain disruption for US firms using Chinese machinery (RAND) \u2014 the overall macro impact is described as 'a minor blip' for the US economy (Brookings). The US economy is performing well, and the trade deficit ($375B in 2017) gives the US asymmetric leverage since China's exports to the US ($505B) represent ~5% of China's economy versus only ~0.7% for US exports to China (RAND). The threat is moderate rather than high because the tariffs are still in early stages and consumer goods have largely been spared.\n\nThe action score of -1 (maximal escalation via escalate_tariffs) reflects the current strategic window: the US has already announced $250B in tariffs, China has partially retaliated but is running low on matching capacity, and the Trump administration views this as politically advantageous ahead of the 2018 midterms (Brookings). The RAND analysis notes that even the first-stage impact shows a manageable transfer of ~$6.7B from US businesses to the US government, with limited employment effects. China's yuan has already depreciated 6% (from 6.28 to 6.64 per dollar), partially offsetting tariff impacts but also signaling Chinese economic stress. The US should press its advantage now while the asymmetry holds, as Brookings notes no high-level negotiations are scheduled and the Chinese leadership is unlikely to 'cave' without sustained pressure. The goal is to force China to the table with meaningful structural reform offers on IP protection and market access.",
+      "key_factors": [
+        "US trade deficit of $375B provides asymmetric leverage \u2014 China runs out of retaliatory capacity first",
+        "US economy strong enough to absorb tariff costs; described as 'minor blip' by Brookings",
+        "Soybean prices down 20%, agricultural/auto sectors under pressure from Chinese retaliation",
+        "Chinese yuan depreciated 6% (6.28 to 6.64/USD) signaling economic stress on China",
+        "No high-level negotiations scheduled; Trump admin views tariffs as midterm election strategy",
+        "China's retaliation limited to $130B import base vs US targeting $250B+",
+        "Consumer goods largely spared from US tariff lists, limiting domestic political backlash"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "It is unlikely that the Chinese leadership will cave in and do anything major. China is willing to buy more products from the U.S. and open more markets, so their offer is clear. After the 2018 elections, we're likely to see the two sides come together and negotiate something so that they can both save face."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "The U.S. exports to China are $130 billion while China's exports to the United States are $505 billion a year. In a tit-for-tat exercise, China will run out of exports to levy retaliatory tariffs upon long before the United States does. $505 billion in potentially lost exports is a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent. The U.S. exports cars from Southern states like Tennessee, so the effects of this change will be felt there."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6."
+        }
+      ],
+      "threat_score": 0.3,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 28465,
+        "capped_chars": 17802,
+        "raw_tokens": 7116,
+        "capped_tokens": 4450
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 14749,
+  "started_at": "2026-08-13T10:55:34+00:00"
+}

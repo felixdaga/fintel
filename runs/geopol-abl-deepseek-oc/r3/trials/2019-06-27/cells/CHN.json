@@ -1,0 +1,132 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-06-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 194524,
+    "tokens_out": 4224,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.5,
+      "rationale": "RECOMMENDATION: Go into the G20 Osaka summit (Xi-Trump meeting agreed June 18) seeking a truce that halts further US escalation \u2014 specifically to delay the threatened 25% tariffs on the remaining ~$300B of exports and to resume suspended talks. Do not raise the stakes or capitulate to structural demands (IP/forced technology transfer) that infringe sovereignty; hold the line, defend our position as the defender of rule-based trade, and signal readiness to resume equal consultations while keeping retaliation tools (rare-earth exports, unreliable-entity list) in reserve.\n\nSUPPORTING RATIONALE: The threat reading is driven by hard, current evidence: US already applies 25% tariffs on ~$250B of our goods and placed Huawei on the Entity List (May 16), Google suspended Android/GMS and US chip suppliers paused sales (May 20) \u2014 the firm-level targeting called out in the CHN +0.5 anchor. The real economy is already biting: official manufacturing PMI fell to 49.4 in May (contraction), with new-export orders dropping to 46.5 and the employment sub-index at its lowest since March 2009, while the yuan has depreciated ~3% since the tensions flared and the IMF cut our 2019 growth forecast to 6.2% (weakest in 29 years). This is high but not existential pressure \u2014 GDP growth remains around 6.2%, reserves are ample, and Beijing is already rolling out stimulus. It does not warrant maximal concession, and capitulation on sovereignty-invading structural demands would be politically untenable. The action stance is a mild positive (negotiate): with the Xi-Trump meeting locked in for the G20, further escalation by us now would only invite the full $300B tariff round and deepen the export contraction; the wiser course is to press for a pause in escalation and a resumption of equal talks at Osaka, keeping our leverage in reserve rather than conceding upfront.",
+      "key_factors": [
+        "US 25% tariffs on ~$250B; Huawei entity-listing and Android/GMS cutoff targeting a flagship company",
+        "China May manufacturing PMI 49.4 (contraction), new-export orders 46.5, employment sub-index lowest since 2009",
+        "Yuan down ~3% since early May; IMF cut 2019 growth forecast to 6.2% (29-year low)",
+        "Threat of new US 25% tariffs on ~$300B of remaining exports",
+        "June 18 Trump-Xi phone call locks in G20 Osaka meeting \u2014 an opening for a pause and resumed talks",
+        "China's own leverage: rare-earth signal, unreliable-entity list threat, 'fight to the end' nationalist stance"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce adds Huawei and affiliates to Entity List; US firms barred from selling to Huawei without license."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-20",
+          "excerpt": "Google suspends Huawei access to Android/GMS; major US chip suppliers pause sales; Xi visits rare-earth facility."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-06-18",
+          "excerpt": "Trump and Xi agree by phone to meet at G20 in Osaka."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico.com/story/2019/05/31/china-manufacturing-economic-slump-1495334",
+          "excerpt": "May manufacturing PMI 49.4, first contraction since February; new-export orders down to 46.5; employment sub-index lowest since March 2009."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters.com/article/us-china-economy-trade/china-exports-unexpectedly-returns-to-growth-in-may-imports-shrink-idUSKCN1TB040/",
+          "excerpt": "Yuan depreciated ~3% since tensions flared in early May; IMF cut 2019 China growth forecast to 6.2%, weakest in 29 years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters.com/article/us-usa-trade-china-g20/expectations-low-for-trump-xi-talks-preparations-limited-idUSKCN1TD0DR/",
+          "excerpt": "US threatening 25% tariffs on ~$300B of Chinese goods; low expectations; trade teams have not met since May 10."
+        }
+      ],
+      "threat_score": 0.5,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-06-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4647,
+        "capped_chars": 4647,
+        "raw_tokens": 1162,
+        "capped_tokens": 1162
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47660,
+        "capped_chars": 47660,
+        "raw_tokens": 11915,
+        "capped_tokens": 11915
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 49812,
+        "capped_chars": 49812,
+        "raw_tokens": 12453,
+        "capped_tokens": 12453
+      }
+    },
+    "health": {
+      "status": "broken",
+      "issues": [
+        "1 tool error(s) the agent saw (MCP timeout/connection)",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views: must be array\n\nReceived arguments:\n{\n  \"views\": \"[{\\\"symbo"
+      ],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 267130,
+  "started_at": "2026-08-13T07:49:29+00:00"
+}

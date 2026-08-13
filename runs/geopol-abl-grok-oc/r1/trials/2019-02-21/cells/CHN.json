@@ -1,0 +1,144 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 211996,
+    "tokens_out": 5517,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Keep the Washington round focused on a written MOU that trades large, verifiable purchase commitments (soy, energy, some manufactures) for a freeze or extension of the March 1 List 3 hike from 10% to 25%. Do not add new tariffs or open another non-tariff front while talks are live; remaining US goods we can tax without hurting our own firms are limited, and a collapsed negotiation would land 25% duties on roughly $200B of our exports. Hold the line on binding structural and enforcement language that would lock in industrial-policy retreat, and keep the Meng/Huawei track legally separate unless Washington itself offers a usable linkage.\n\nSUPPORTING RATIONALE: Threat is elevated, not existential. Section 301 already covers about $250B of Chinese exports (Lists 1\u20132 at 25% plus List 3 at 10%), Huawei\u2019s CFO is under US extradition after the 28 January DOJ charges, and the domestic economy is already slowing\u2014official 2018 GDP at 6.6% (lowest in three decades), Q4 at 6.4%, manufacturing PMI at 49.5 in January after 49.4 in December, and December exports down 4.4%. That sits just below the +0.5 CHN anchor: major export exposure and firm-level targeting are real, and US customs imports from China have fallen sharply (IMPCH from ~$50B in September 2018 to ~$33B in February 2019), but FX reserves restabilized above $3T, the yuan is no longer in a disorderly slide, and January headline exports rebounded 9.1% (holiday-distorted). Action should lean slightly toward negotiation rather than retaliation because Trump has publicly said he might extend the March 1 deadline if talks are \u201cgoing in the right direction,\u201d both sides reported progress on purchases while enforcement remains the disputed core, and Xi has already framed the relationship as too interdependent for a continued conflict. Unilateral purchase concessions without a matching US tariff offer would be premature; full rollback is not on the table.",
+      "key_factors": [
+        "March 1 List 3 cliff (10% to 25% on ~$200B) still live unless talks show enough progress for an extension",
+        "Purchase commitments advancing; structural IP/tech-transfer and enforcement still unresolved",
+        "Growth already at a three-decade low, PMI in contraction, export-hub employment risk if talks fail",
+        "Huawei/Meng extradition as a parallel tech-security shock, not yet a ZTE-style shutdown",
+        "Bilateral trade collapsing (China imports from US -41% YoY in January; US IMPCH down ~34% over the window)",
+        "Limited remaining Chinese tariff ammunition without self-harm; escalation likely triggers the hike we most need to avoid"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended. Same day: Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-14",
+          "excerpt": "Another round of talks (through Feb 15). Progress reported on purchases; enforcement mechanism still disputed."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "IMPCH",
+          "excerpt": "US imports from China fell from $49.9B (Sep 2018) to $33.0B (Feb 2019), a 33.9% decline over the window."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.reuters.com/article/us-usa-trade-china/u-s-china-trade-talks-to-resume-next-week-trump-hints-at-extension-idUSKCN1Q40S0/",
+          "excerpt": "Trump said there is a possibility he will extend the March 1 date if close to a deal, at the same tariffs, and would be honored to remove tariffs if an agreement is reached."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://thediplomat.com/2019/01/chinas-economic-growth-sinks-to-3-decade-low/",
+          "excerpt": "China 2018 growth 6.6%, lowest since 1990; Q4 2018 growth 6.4%, lowest quarterly since the 2008 crisis."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.cnbc.com/2019/02/14/china-january-trade-imports-exports-beijing-reports-china-economic-data.html",
+          "excerpt": "January exports +9.1% YoY but exports to the US -2.4% and imports from the US -41.2%; surplus with the US $27.3B."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.bloomberg.com/news/articles/2019-01-31/china-s-factory-gauge-shows-resilience-amid-trade-war-slowdown",
+          "excerpt": "Official manufacturing PMI 49.5 in January after 49.4 in December, still below the 50 contraction line."
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5015,
+        "capped_chars": 5015,
+        "raw_tokens": 1254,
+        "capped_tokens": 1254
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 35337,
+        "capped_chars": 35337,
+        "raw_tokens": 8834,
+        "capped_tokens": 8834
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 101319,
+        "capped_chars": 101319,
+        "raw_tokens": 25329,
+        "capped_tokens": 25329
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 506653,
+  "started_at": "2026-08-13T05:59:47+00:00"
+}

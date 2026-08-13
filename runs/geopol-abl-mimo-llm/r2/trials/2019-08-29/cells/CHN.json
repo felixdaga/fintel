@@ -1,0 +1,108 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-08-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7366,
+    "tokens_out": 1005,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0077954,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should retaliate with targeted tariffs on remaining US imports, particularly agricultural goods from Republican-leaning states, while signaling willingness to resume negotiations. Retaliation is necessary to maintain bargaining leverage and demonstrate resolve, but should be calibrated to avoid full economic decoupling.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has already imposed tariffs on $250bn of Chinese goods and raised tariffs on $200bn from 10% to 25% in May 2019 (BBC, Fox Business). Trump has threatened tariffs on essentially all remaining imports (~$300bn). China's retaliatory capacity is asymmetric \u2014 it has only imposed duties on $110bn of US goods (BBC), leaving limited room for proportional retaliation. The trade war has already caused the Shanghai Composite to fall ~25% in 2018 and the yuan to depreciate 5% against the dollar (BBC). However, China's economy is not collapsing \u2014 markets recovered in 2019 (Shanghai Composite up 16% YTD). The US explicitly aims to 'break the stranglehold China has on the supply chain' (Sen. Graham, Fox Business), which threatens China's export-led growth model and manufacturing base. The US demand for changes to Chinese national security and trade laws, IP protections, and market access represents an attempt to restructure China's economic system (Fox Business, USC Annenberg). Retaliation is justified because: (1) it maintains deterrence against further US escalation, (2) it targets politically sensitive US sectors (agriculture in Republican districts, as noted in BBC), (3) it signals that China will not accept unilateral demands, and (4) it preserves negotiating leverage. However, China should simultaneously keep diplomatic channels open, as both sides have indicated willingness to continue talks (Fox Business).",
+      "key_factors": [
+        "US tariffs raised to 25% on $200bn of Chinese goods (May 2019)",
+        "Trump threatens tariffs on all remaining ~$300bn of Chinese imports",
+        "China's retaliatory tariffs cover only $110bn vs US tariffs on $250bn \u2014 asymmetric exposure",
+        "Shanghai Composite fell 25% in 2018, yuan depreciated 5%",
+        "US demands structural changes to Chinese economic laws and IP regime",
+        "Supply chain relocation threat \u2014 US aims to shift manufacturing away from China",
+        "Both sides still engaged in negotiations as of decision date"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US imposed tariffs on $250bn worth of Chinese products last year. Beijing has retaliated with duties on $110bn worth of American products. Tariffs on $200bn worth of Chinese goods were due to rise to 25% from 10%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "When you put tariffs on products coming out of China, it makes other countries a cheaper place to do business which eventually moves market share away from China. He's trying to break the stranglehold China has on the supply chain."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "In 2018, Hong Kong's Hang Seng index fell more than 13% and the Shanghai Composite slumped nearly 25%. The yuan fell over 5% against the US dollar last year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The American side has been insisting on changes in Chinese laws to permit greater access to Chinese markets and bans on forced sharing of technology with Chinese firms, as well as fuller and more effective protection of intellectual property."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-08-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 17257,
+        "capped_chars": 13956,
+        "raw_tokens": 4314,
+        "capped_tokens": 3489
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22363,
+  "started_at": "2026-08-13T10:55:01+00:00"
+}

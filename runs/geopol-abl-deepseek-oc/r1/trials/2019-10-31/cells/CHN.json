@@ -1,0 +1,129 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 137200,
+    "tokens_out": 3072,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should keep working to finalize the Phase One deal announced in principle on Oct 11 and secure a signed agreement that locks in the delayed October tariff hike (potentially a path to rolling back December's List 4B at 15%). Rather than reciprocating new escalation, we should hold our retaliatory cards in reserve, continue goodwill signals (ag purchases and the Sept 13 farm-goods exclusion), and use the ~5-week drafting window to pin down written terms before the APEC summit. This is engagement without preemptive structural concessions.\n\nSUPPORTING RATIONALE: The threat to China is real and material. Timelines show US tariffs now cover essentially the full export basket \u2014 List 3 at 25%, List 4 (A) at 15% since Sept 1, List 4B set for Dec 15 \u2014 while Huawei remains on the Entity List (Lighthizer confirmed it is not part of the deal), and US Treasury designated China a currency manipulator after CNY broke 7 on Aug 5. Macro confirms the pain: Q3 2019 GDP grew just 6.0%, a near-30-year low, with the official manufacturing PMI in contraction (49.5 in August) as export orders slump. That lands at the +0.5 CHN anchor (major export sectors hit, FX pressure, firm-level targeting of Huawei, export-hub unemployment risk), so ~+0.45 is appropriate \u2014 serious but not existential, because China still holds leverage (rare earths, ag-purchase goodwill, import substitution) and a de-escalation path now exists. On action, escalation would make the situation worse and China is the more export-exposed party, so we should NOT escalate; full concession would surrender leverage and un-forced structural changes, which is premature. The correct stance is negotiate (action_score ~+0.15): pursue the already-agreed-in-principle Phase One to secure the tariff-hike delay and set up December relief, without new commitments beyond what's already on the table.",
+      "key_factors": [
+        "US tariffs cover nearly all Chinese exports (List 3 25%, List 4A 15%, List 4B Dec 15)",
+        "Huawei still on Entity List; not part of Phase One (Lighthizer)",
+        "CNY broke 7; US designated China currency manipulator (Aug 5)",
+        "Q3 2019 GDP 6.0%, near 30-year low; manufacturing PMI 49.5 contraction",
+        "Phase One agreed in principle Oct 11; Oct 15 hike to 30% suspended; not yet written/signed",
+        "China's counter-leverage: rare earths, ag-purchase goodwill, import substitution"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "Trump announces a 'Phase One' deal in principle: China to buy roughly $40-50B of US agricultural products annually; IP and currency issues cited. Planned mid-October tariff hike delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei to the Entity List."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "PYMNTS 2019-10-18",
+          "excerpt": "China's GDP growth 6.0% year-on-year in Q3 2019, slowest since 1992."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SCMP 2019-08-31",
+          "excerpt": "China manufacturing PMI 49.5 in August, fourth consecutive month of contraction."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters 2019-10-11",
+          "excerpt": "Huawei's status was not part of the Phase One deal, per Lighthizer; deal not yet in writing, may take up to 5 weeks."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5762,
+        "capped_chars": 5762,
+        "raw_tokens": 1440,
+        "capped_tokens": 1440
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47598,
+        "capped_chars": 47598,
+        "raw_tokens": 11900,
+        "capped_tokens": 11900
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 32294,
+        "capped_chars": 32294,
+        "raw_tokens": 8074,
+        "capped_tokens": 8074
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 435820,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

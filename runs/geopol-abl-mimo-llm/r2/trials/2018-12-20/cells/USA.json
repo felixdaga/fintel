@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-12-20",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7319,
+    "tokens_out": 974,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0076554,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.25,
+      "rationale": "RECOMMENDATION: Hold the current tariff posture without further escalation or concession. The US has already imposed tariffs on $250 billion of Chinese goods, covering roughly half of bilateral trade, and China has retaliated in kind. With the 10% rate on the $200B tranche scheduled to rise to 25% at year-end, the existing leverage is substantial. No new escalation is warranted until the scheduled increase plays out and its effects are assessed, but no concession should be offered either given China has not yet made structural concessions on IP theft, forced technology transfer, or state subsidies.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but manageable. On the negative side, US farmers are feeling significant pain \u2014 soybean prices are down 20% (Brookings/Dollar), and agricultural and auto-exporting states face real economic drag. Tariffs are taxes paid by US importers and ultimately US consumers (Fox Business/Motley Fool), and China has retaliated on nearly all $130B of US exports to China. However, the overall macro hit is described as 'a minor blip' for the US economy (Brookings), and the US retains leverage: Trump has threatened to tariff the remaining $267B of Chinese imports, and China's export economy is more exposed to US demand than vice versa. The political environment favors holding firm \u2014 the Trump administration views this as a winning strategy domestically. China has shown willingness to buy more US products and open markets but has not offered structural reforms on IP or industrial policy. The Washington Post reporting shows that China feels betrayed by repeated US walk-aways from deals, which makes further negotiation difficult but also means the US should not signal weakness. The right posture is to hold current tariffs, let the scheduled 25% increase take effect, and wait for China to come to the table with meaningful structural offers before engaging in serious negotiations.",
+      "key_factors": [
+        "US tariffs cover ~$250B of Chinese imports (half of bilateral trade); 10% rate set to rise to 25% at year-end",
+        "China has retaliated on nearly all $130B of US exports to China, hitting agriculture and autos",
+        "Soybean prices down 20%; Midwest farmers and Southern auto exporters feeling real pain",
+        "Overall US economic impact described as 'minor blip' \u2014 not existential",
+        "China has not offered structural reforms on IP, tech transfer, or state subsidies",
+        "Trump has threatened to tariff remaining $267B if China retaliates further",
+        "Political environment favors holding firm; no domestic pressure to concede",
+        "China lowered tariffs on non-US goods to divert trade away from US companies"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent. It's hard to see the off-ramp right now. The U.S. has announced $250 billion of tariffs on products from China. This is not a big hit for the overall U.S. economy but it will hurt some specific sectors."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "Effective Sept. 24, President Trump announced a 10% tariff on $200 billion in Chinese imports. That tariff is currently 10%, but at the end of 2018, that's expected to rise to 25%. President Trump has said that if China were to take retaliatory action, he's going to put in place another $267 billion worth of imports."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com \u2014 How the U.S. and China misread the signals in the trade war",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.scmp.com \u2014 US-China trade war could end with a 'big deal' through baby steps",
+          "excerpt": "China is willing to buy more products from the U.S. and open more markets, so their offer is clear. After the 2018 elections, we're likely to see the two sides come together and negotiate something so that they can both save face."
+        }
+      ],
+      "threat_score": 0.25,
+      "action_score": -1.0,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-12-20",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 24717,
+        "capped_chars": 13660,
+        "raw_tokens": 6179,
+        "capped_tokens": 3415
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 24927,
+  "started_at": "2026-08-13T10:54:44+00:00"
+}

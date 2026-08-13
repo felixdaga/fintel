@@ -1,0 +1,142 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-01-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Continue the current 90-day negotiation window with China, pressing for structural concessions on IP, tech transfer, and market access while maintaining existing tariff leverage. Do not escalate further\u2014List 3 remains at 10% with the scheduled hike to 25% suspended\u2014nor roll back tariffs prematurely. Use the working-level talks resumed January 7 in Beijing to push for verifiable commitments beyond purchase agreements.\n\nSUPPORTING RATIONALE: The US holds a favorable negotiating position as of January 10, 2019. China's economy is under genuine stress: Q3 2018 GDP growth hit 6.5%, the slowest since the 2009 financial crisis (CNN, Oct 18, 2018); manufacturing PMI dropped to 50.2, barely above contraction (Politico, Oct 31, 2018); export orders in Guangdong are deteriorating sharply (Guardian, Jan 5, 2019); and the PBOC has cut reserve requirements five times in a year, freeing $116B for lending (Guardian, Jan 5, 2019). China has already signaled concessions: resuming soybean purchases, cutting auto tariffs, and revising patent laws (Diplomat, Jan 8, 2019). This positions the US to extract meaningful structural reforms rather than mere purchase commitments.\n\nHowever, the threat reading is only moderately favorable (-0.3, not lower) because the US faces its own headwinds. The S&P 500 fell ~6% in 2018, its worst year in a decade, with the worst December since 1931 (CNBC, Dec 31, 2018). The WSJ survey found 47% of economists cite the trade war as the top US economic threat for 2019, with 85% seeing downside risks (Business Insider, Dec 17, 2018). The US trade deficit with China actually widened 22.3% to $344.4B through October 2018 (Forbes, Dec 10, 2018), undermining the core rationale for tariffs. Apple cut its sales forecast citing China's slowdown (Guardian, Jan 5, 2019). Treasury yields fell sharply\u2014the 10-year from 3.23% in October to 2.74% by January 9\u2014signaling the bond market is pricing in slower growth (country_health data). The Huawei CFO arrest (Dec 1) adds diplomatic friction and complicates good-faith negotiations.\n\nThe action stance of negotiate (-0.2) reflects the judgment that the US should maintain pressure but avoid escalation. Escalating to 25% on List 3 or broadening tariffs risks accelerating the US slowdown without proportionate gains\u2014China is already feeling maximum pain from existing tariffs. Conceding prematurely would waste leverage when China is most vulnerable. The optimal play is to hold the line, press for structural reforms in the current talks, and use the March 1 deadline as a forcing function.",
+      "key_factors": [
+        "China's economy slowing to 2009-crisis levels (6.5% GDP, PMI 50.2)",
+        "China already making concessions (soybeans, auto tariffs, IP law revision)",
+        "US stock market worst year in a decade, worst December since 1931",
+        "47% of US economists cite trade war as top 2019 threat",
+        "US trade deficit with China widened 22.3% despite tariffs",
+        "90-day negotiation window active (Dec 1 - ~March 1), working-level talks resumed Jan 7",
+        "Huawei CFO arrest adding diplomatic complexity",
+        "10-year Treasury yield declining from 3.23% to 2.74%, signaling growth concerns",
+        "PBOC cutting reserve requirements 5 times in a year to prop up economy"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2019-01-07",
+          "excerpt": "Trade talks resume in Beijing (working / mid-level). China discusses increased purchases of US goods; structural issues remain open."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10-year Treasury yield: latest 2.74% (Jan 9), down from 3.23% peak in October. Change: -0.11 over lookback period."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Fed Funds rate: 2.40% (Jan 2019), up 25.65% over lookback. Fed tightening continuing."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "guardian_china_slowdown_2019-01-05",
+          "excerpt": "China's central bank cut reserve requirements for the fifth time in a year, freeing $116bn for new lending. Export-sensitive Guangdong region shows severe deterioration in foreign orders."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "business_insider_trade_war_threat_2018-12-17",
+          "excerpt": "47.3% of economists surveyed cited US-China trade war as top threat to US economy in 2019. 85% said risks tilted to downside."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "forbes_trade_gap_2018-12-10",
+          "excerpt": "US trade deficit with China rose 22.3% to $344.4 billion through October. Deficit hit $55.5B in October alone, highest in ten years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_worst_year_2018-12-31",
+          "excerpt": "S&P 500 and Dow fell for first time in three years. Worst December performance since 1931. S&P 500 down ~20% from record high at Christmas Eve low."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": -0.2,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-01-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4661,
+        "capped_chars": 4661,
+        "raw_tokens": 1165,
+        "capped_tokens": 1165
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11354,
+        "capped_chars": 11354,
+        "raw_tokens": 2838,
+        "capped_tokens": 2838
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 65560,
+        "capped_chars": 65560,
+        "raw_tokens": 16390,
+        "capped_tokens": 16390
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 398140,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

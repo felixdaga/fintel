@@ -1,0 +1,123 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-05-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 146316,
+    "tokens_out": 4546,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Hold the current escalated posture (25% on ~$200B of Chinese goods plus the May 15 Huawei/ICT action) as leverage, but do not execute the threatened ~$300B round that would directly tax U.S. consumers and tech supply chains. Keep the negotiating channel open toward the possible Xi meeting, pressing China to come back to the table without making new unilateral concessions or adding self-harming escalation.\n\nSUPPORTING RATIONALE: The threat to U.S. interests is material but not existential. The dispute is already biting: the 10-year Treasury yield fell from ~2.51 around May 6 to 2.37 by May 15 (with a partial inversion of 3-month above 10-year noted by the NYT on May 13), and the Dow dropped 617 points on May 13 after China retaliated with tariffs on ~$60B of U.S. goods (timeline, 2019-05-13). The farm belt is the clearest political casualty \u2014 soybean prices ran 20-25% below pre-tariff levels and net farm income fell from $75B to $63B, with the American Soybean Association urging the administration on May 13 to \"hold off on additional tariffs\" and conclude a deal. That is a material GDP/export drag and mounting domestic political pressure, which supports a moderate threat.reading around +0.4 (between the 0.0 neutral and +0.5 high anchors, and well short of the +1.0 supply-chain/tech existential anchor). The action stance is deliberately not escalating further: the ~$300B next round (public hearing June 17) would hit consumer goods such as iPhones and apparel \u2014 the AAFA estimated it would cost a family of four ~$500/year \u2014 harming U.S. consumers and risking a deeper market selloff, while the U.S. has already secured substantial leverage with the current 25% tariffs and the Huawei action. Given escalating further has rising domestic costs and diminishing returns, the right move is to hold leverage and negotiate rather than concede or pile on more tariffs.",
+      "key_factors": [
+        "US escalated 25% tariff on ~$200B of Chinese goods (May 10); China retaliated on ~$60B (May 13); EO 13873/Huawei action (May 15)",
+        "10-year Treasury yield fell to 2.37 (from ~2.51 on May 6); partial 3-month/10-year inversion signals growth concerns",
+        "Dow fell 617 pts on May 13; Apple -5%, Boeing -3% on trade escalation",
+        "Farm belt distress: soybean prices 20-25% below pre-tariff levels, farm income $75B->$63B; ASA urging no additional tariffs (May 13)",
+        "Threatened ~$300B round (June 17 hearing) would hit consumer electronics/apparel, US consumers bear tariff cost"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-13",
+          "excerpt": "China announces it will raise retaliatory tariff rates on its ~$60B US-goods list"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-15",
+          "excerpt": "Trump signs Executive Order 13873... Commerce moves to restrict Huawei"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.theguardian.com/business/live/2019/may/13/...",
+          "excerpt": "Dow fell 617 pts / 2.35%; soybean prices hit ten-year low; China tariffs on $60B"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://soygrowers.com/news-releases/soy-growers-are-fed-up-with-tariffs/",
+          "excerpt": "ASA: cannot withstand another year... soybean prices 20-25% below pre-tariff levels; farm income dropped to $63B"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10-year yield fell from ~3.06 (Nov 2018) to 2.37 (2019-05-15)"
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-05-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4720,
+        "capped_chars": 4720,
+        "raw_tokens": 1180,
+        "capped_tokens": 1180
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47034,
+        "capped_chars": 47034,
+        "raw_tokens": 11758,
+        "capped_tokens": 11758
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 50071,
+        "capped_chars": 50071,
+        "raw_tokens": 12518,
+        "capped_tokens": 12518
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 347224,
+  "started_at": "2026-08-13T07:52:10+00:00"
+}

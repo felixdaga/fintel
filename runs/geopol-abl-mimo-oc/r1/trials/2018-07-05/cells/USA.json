@@ -1,0 +1,139 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-07-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.3,
+      "rationale": "RECOMMENDATION: Maintain the current tariff posture ($50B in two tranches) but do NOT proceed with the threatened $200B escalation at this time. Hold the existing tariffs as leverage while signaling openness to structured negotiations. The July 6 List 1 tariffs should take effect as scheduled to demonstrate resolve, but the $200B threat should remain a threat, not an action, until China's response is assessed.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate (threat_score = +0.3) \u2014 elevated but not yet critical, for the following reasons:\n\n(a) What drives the threat reading:\n- The US economy is performing well: industrial production at 103.4 (up 1.6% over the period), GDP growing, unemployment low, boosted by tax reform (INDPRO data, FRED). This gives the US a position of strength.\n- However, the farm sector is under severe stress. Soybean futures hit one-year lows after China's retaliatory tariffs targeted $14B in annual US soybean exports (Reuters, June 15). Iowa farmers face potential losses of $624M; farm income has already fallen 50% over five years (Des Moines Register via farmpolicynews). China is already redirecting purchases to Brazil (Bunge CEO, May 2018). This damages a core Trump constituency in Republican-leaning farm states.\n- Consumer sentiment has declined from 99.7 to 97.9 (UMich), signaling early caution. The $200B threat would hit consumer goods \u2014 smartphones, TVs, toys \u2014 directly raising prices for American households (Washington Post, June 18).\n- Oil prices have surged from ~$62 to ~$73.5/bbl (WTI), adding to consumer cost pressures.\n- Corporate bond yields (Baa) have risen ~60bp, indicating tighter financial conditions.\n\n(b) What justifies the hold stance (action_score = -0.05):\n- The US has legitimate grievances on IP theft and forced tech transfer (Section 301 report, March 22). The $50B tariffs are a proportionate first step. But the May 19 truce collapsed in just 10 days (timeline: May 19 joint statement \u2192 May 29 reversal), demonstrating that rapid escalation produces rapid counter-escalation, not concessions.\n- China cannot match $450B in tariffs proportionately (US exports to China were only $130B in 2017), but Beijing has other levers: disrupting US business operations in China, redirecting contracts to European/Japanese competitors, and targeting services trade (NYT, June 18; Reuters, June 19). US-China Business Council members report Beijing already meeting with Chinese firms to shift contracts away from US suppliers.\n- The $200B escalation carries asymmetric domestic risk: it enlists American consumers as combatants. The original $50B targeted industrial inputs; $200B would hit consumer goods. This could erode domestic political support for the trade stance.\n- China's Commerce Ministry has vowed 'comprehensive measures' matching in 'quantity and quality' \u2014 signaling willingness to absorb pain. Xi Jinping faces domestic pressure not to appear weak (Tu Xinquan, WTO Studies, Beijing). Further escalation may harden rather than soften Beijing's position.\n- The 60-day public comment period on the $200B list provides a natural pause. Use this window to assess China's response to the July 6 tariffs and to explore back-channel communications.\n\nKey factors: (1) Farm-belt economic damage threatens political coalition; (2) Consumer tariff exposure in $200B list; (3) May truce collapse shows escalation produces counter-escalation; (4) US economy strong enough to hold but not to absorb unlimited escalation; (5) China has non-tariff retaliation options not yet deployed.",
+      "key_factors": [
+        "Farm sector under severe stress \u2014 soybean prices at 1-year lows, $14B export market at risk, farm income down 50% over 5 years",
+        "Consumer sentiment declining (97.9) amid rising oil prices and tariff uncertainty",
+        "May 19 truce collapsed in 10 days, demonstrating escalation-creates-counter-escalation dynamic",
+        "US economy strong (IP growing, low unemployment) but $200B tariff would directly hit consumer goods",
+        "China has non-tariff retaliation levers (contract redirection, services disruption) not yet fully deployed",
+        "60-day public comment period provides natural pause for assessment"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-15",
+          "excerpt": "USTR announces final two-stage $50B tariff plan: 25% on List 1 (~$34B, 818 lines, effective July 6) and List 2 (~$16B, later). China announces matching retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-18",
+          "excerpt": "Trump directs USTR to identify an additional ~$200B of Chinese imports for 10% tariffs if China retaliates against the $50B action."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19-to-2018-05-29",
+          "excerpt": "May 19 joint statement: China agrees to 'significantly increase' purchases. May 29: White House reverses, proceeds with Section 301 tariffs. Truce collapsed in 10 days."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-soybeans-2018-06-15",
+          "excerpt": "U.S. soybean futures plunged 2.5 percent to a one-year low... China is by far the biggest buyer. 'We can't find other markets through the world big enough to offset the loss of China' \u2014 Chad Hart, Iowa State."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washingtonpost-200b-2018-06-18",
+          "excerpt": "The president threatened Monday to levy tariffs on nearly all of China's products... forcing Americans to pay more for smartphones, computers, toys, televisions and just about every other middle-class staple."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-UMCSENT",
+          "excerpt": "Consumer sentiment: 99.7 (Feb) \u2192 97.9 (Jul). Declining trend amid trade uncertainty."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-INDPRO",
+          "excerpt": "Industrial production: 101.7 (Feb) \u2192 103.4 (Jul). Economy still expanding, providing resilience."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA-DCOILWTICO",
+          "excerpt": "WTI crude: ~$62 (Jan) \u2192 ~$73.5 (late June). Rising energy costs compound consumer price pressure."
+        }
+      ],
+      "threat_score": 0.3,
+      "action_score": -0.05,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-07-05",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3015,
+        "capped_chars": 3015,
+        "raw_tokens": 754,
+        "capped_tokens": 754
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47842,
+        "capped_chars": 47842,
+        "raw_tokens": 11960,
+        "capped_tokens": 11960
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 54378,
+        "capped_chars": 54378,
+        "raw_tokens": 13594,
+        "capped_tokens": 13594
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 374710,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

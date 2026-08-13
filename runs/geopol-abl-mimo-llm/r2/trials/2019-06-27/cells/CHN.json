@@ -1,0 +1,104 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-06-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7853,
+    "tokens_out": 1056,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0084226,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should retaliate with measured counter-tariffs on remaining US goods while continuing to signal willingness to negotiate. Retaliation preserves domestic credibility and demonstrates that coercion will not extract unilateral concessions, but the response should be calibrated to avoid full economic decoupling. We should simultaneously accelerate diversification of export markets and supply chains away from US dependency.\n\nSUPPORTING RATIONALE: The threat to China is substantial and rising. The US has already imposed tariffs on $250bn of Chinese goods and raised tariffs on $200bn from 10% to 25% in May 2019 (BBC, 2019-05-08). Trump has called for tariffs on 'essentially all remaining imports from China, valued at approximately $300 billion' (Fox Business, 2019-05-12). This escalation threatens China's export economy \u2014 the backbone of growth and employment in export hubs. The USC analysis notes that the trade war is 'not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future' including AI, cloud computing, robotics, and green tech (Annenberg/USC). This framing suggests the US aims to structurally constrain China's technological ascent, not merely rebalance trade flows \u2014 a direct threat to Made in China 2025 objectives. China's stock markets fell 25% in 2018 (BBC), and the yuan depreciated over 5% against the dollar, signaling financial stress. However, markets partially recovered in early 2019 (Shanghai Composite up 16% YTD), suggesting some resilience. The action_score of -1.0 reflects the need for firm retaliation: Senator Graham explicitly states the US strategy is 'to break the stranglehold China has on the supply chain' (Fox Business). Conceding under this pressure would invite further escalation and signal weakness. Retaliation \u2014 mirroring the US tariff hikes with counter-tariffs on $60bn of US goods (as China announced in May 2019) \u2014 is the minimum necessary to maintain bargaining leverage. China has already demonstrated this capacity. The key is to retaliate firmly while keeping diplomatic channels open, as both sides have an interest in eventual resolution given that 'both sides will suffer' (Kudlow, Fox Business).",
+      "key_factors": [
+        "US raised tariffs on $200bn of Chinese goods from 10% to 25% in May 2019",
+        "Trump called for tariffs on remaining ~$300bn of Chinese imports",
+        "Trade war targets future tech industries (AI, cloud, robotics) \u2014 core to Made in China 2025",
+        "China's Shanghai Composite fell 25% in 2018; yuan depreciated 5%+ against USD",
+        "US strategy explicitly aims to break China's supply chain dominance (Sen. Graham)",
+        "Both sides acknowledged mutual economic pain (Kudlow: 'both sides will suffer')",
+        "China already retaliated with tariffs on $60bn of US goods",
+        "IMF cut 2019 global growth forecast citing US-China tensions"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "US President Donald Trump vowed to more than double tariffs on $200bn of Chinese goods on Friday and to introduce fresh ones 'shortly'. The US imposed tariffs on $250bn worth of Chinese products last year. Beijing has retaliated with duties on $110bn worth of American products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "The U.S. increased tariffs Friday on $200 billion worth of Chinese goods to 25 percent from 10 percent. Additionally, Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "When you put tariffs on products coming out of China, it makes other countries a cheaper place to do business which eventually moves market share away from China. This is what Trump's trying to do. He's trying to break the stranglehold China has on the supply chain."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-06-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20217,
+        "capped_chars": 16251,
+        "raw_tokens": 5054,
+        "capped_tokens": 4063
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22640,
+  "started_at": "2026-08-13T10:54:52+00:00"
+}

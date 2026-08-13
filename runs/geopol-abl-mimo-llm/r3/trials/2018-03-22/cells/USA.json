@@ -1,0 +1,108 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-03-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10491,
+    "tokens_out": 748,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0101494,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The United States should proceed with imposing tariffs on Chinese goods as leverage to address longstanding unfair trade practices, including intellectual property theft, forced technology transfer, and market access barriers. The current moment presents a clear opportunity: China's economy is export-dependent, the U.S. has bipartisan support for confronting Beijing, and the Section 301 investigation has provided a legal basis for action. The administration should use the threat of $60 billion in tariffs as a negotiating tool while simultaneously pursuing specific demands for market opening and IP protections.\n\nSUPPORTING RATIONALE: The threat score reflects a clear opportunity for the U.S. at this decision point. The Section 301 investigation has concluded with adverse findings against China, providing legal and political cover for action. The U.S. trade deficit with China hit a record $375 billion in 2017, representing nearly two-thirds of the global $566 billion U.S. trade gap, demonstrating the scale of the imbalance. There is growing bipartisan consensus in Washington and support within segments of the U.S. business community for countering Beijing's predatory industrial policies. China's Commerce Minister has signaled reluctance to initiate a trade war, suggesting the U.S. has leverage. However, the action must be calibrated: experts warn that a full trade war could hit American farmers hard and potentially trigger recession, and the EU is already preparing retaliatory measures on Harley Davidson and bourbon. The recommended approach is to use tariffs as leverage for negotiation rather than as an end in themselves, following the Brookings strategy of introducing specific, achievable demands that give Xi an opportunity to showcase strength while making real concessions.",
+      "key_factors": [
+        "Section 301 investigation findings against China on IP theft and forced technology transfer",
+        "Record $375 billion U.S.-China trade deficit in 2017",
+        "Bipartisan support for confronting China's trade practices",
+        "China's reluctance to initiate trade war signals U.S. leverage",
+        "Risk of retaliation targeting U.S. agriculture and major corporations (Boeing, Apple, Qualcomm)",
+        "EU preparing own retaliatory measures, complicating U.S. position",
+        "Xi Jinping's consolidated power and willingness to absorb economic pain for political gain"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China says trade war with U.S. will only bring disaster to global economy; China's Commerce Minister Zhong Shan said China does not want a trade war and will not initiate one"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "Trump's plan to slap as much as $60 billion in tariffs on imported Chinese goods could eventually trigger a trade war that slams American farmers"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "trade deficit with China was a record $375 billion in 2017, almost two-thirds of a global $566 billion U.S. trade gap"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "Xi gains politically in Beijing by standing firm against U.S. pressure; Xi likely calculates that Trump needs Xi more on North Korea than vice versa"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnas.org",
+          "excerpt": "The United States has leverage to roll back many of China's unfair trade practices short of imposing across the board tariffs \u2013 especially if the United States is willing to create a unified front with other large economies"
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-03-22",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 34588,
+        "capped_chars": 30461,
+        "raw_tokens": 8647,
+        "capped_tokens": 7615
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 18331,
+  "started_at": "2026-08-13T10:54:58+00:00"
+}

@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-10-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7634,
+    "tokens_out": 862,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0076344,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Maintain current tariff posture and continue negotiations without further escalation or concession. The US has already imposed tariffs on $250B of Chinese goods and raised rates on $200B from 10% to 25%; further escalation risks domestic economic pain and market instability. However, the US should not roll back tariffs prematurely while structural issues (IP theft, forced tech transfer, market access) remain unresolved.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but real. The trade deficit with China stood at $419B (BBC, 2019-05-08), and China has retaliated with tariffs on $110B of US goods, strategically targeting Republican-district products like soybeans. The IMF has cut global growth forecasts citing US-China tensions (BBC). White House economic adviser Larry Kudlow acknowledged 'both sides will suffer' from tariffs (Fox Business, 2019-05-12). Consumers face higher prices on a wide range of goods, and California's ports \u2014 where half the value of goods handled involves China \u2014 are at risk (Annenberg/USC). However, the US also has leverage: China's economy is more export-dependent, and Senator Graham's argument that tariffs are 'tools that bring China to the table' reflects a strategic logic that the US can sustain pain longer than China. The threat score of +0.35 reflects material but not existential risk \u2014 GDP drag and consumer costs are real, but the US economy remains strong (Dow up 11% in 2019). The action score of 0 (hold) reflects the judgment that the US has already deployed significant tariff leverage and should now focus on negotiating a deal that addresses structural issues, rather than either escalating further (which risks recession and market panic) or conceding prematurely (which abandons leverage).",
+      "key_factors": [
+        "US trade deficit with China at $419B",
+        "Tariffs already raised to 25% on $200B of Chinese goods",
+        "China retaliated with tariffs on $110B of US goods targeting strategic products",
+        "IMF cut global growth forecasts due to trade tensions",
+        "Both sides acknowledged mutual economic pain from tariffs",
+        "US leverage remains as China is more export-dependent",
+        "Structural issues (IP theft, forced tech transfer, market access) remain unresolved"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China immersed in a tit-for-tat tariff trade war",
+          "excerpt": "Beijing hit back with tariffs on $110 billion of American goods, accusing the U.S. of starting 'the largest trade war in economic history.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "In 2018, about half the value of the goods handled at the ports was coming from or headed to China. Consumers will pay more for many products, from fish and furniture to vitamins and virtual reality headsets."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-10-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18895,
+        "capped_chars": 15037,
+        "raw_tokens": 4724,
+        "capped_tokens": 3759
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 16897,
+  "started_at": "2026-08-13T10:55:23+00:00"
+}

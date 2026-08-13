@@ -1,0 +1,136 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.65,
+      "rationale": "RECOMMENDATION: Continue negotiations toward a purchase-heavy deal while resisting structural concessions that would undermine state-led industrial policy. Offer increased agricultural and energy purchases to buy time, but do not concede on Made in China 2025 or forced technology transfer reforms. Use the remaining 30 days before the March 1 deadline to test whether Trump will accept a deal focused on deficit reduction rather than structural reform.\n\nSUPPORTING RATIONALE: The threat reading of +0.65 reflects the convergence of multiple serious pressures on China's position. (1) The domestic economy is deteriorating: 2018 GDP slowed to 6.6% (28-year low), Q4 at 6.4% (weakest since the global financial crisis), fixed-asset investment growth at its slowest since at least 1996, and retail sales hovering near 15-year lows (Reuters, Jan 21 2019). (2) The Huawei situation has escalated from a corporate arrest to a full DOJ indictment (13 criminal counts) and formal extradition request (NPR, Jan 28 2019), threatening China's most important tech champion and signaling the US intends to weaponize law enforcement against Chinese tech firms. (3) Tariffs already cover ~$250B of Chinese exports at 10-25%, with the threat of List 3 rising from 10% to 25% on $200B of goods if no deal by March 1 (timeline, Sep 17 2018). (4) US leverage is at a peak \u2014 China's economy is slowing, the US economy shows no comparable distress (10Y yield fell from 3.20% to 2.70% but this reflects Fed normalization, not crisis), and Trump can credibly threaten escalation.\n\nHowever, the situation is not yet existential because: China still has fiscal and monetary tools available (RRR cuts, tax cuts, infrastructure spending), exports held up through most of 2018 despite tariffs, and the US side faces internal divisions (Mnuchin vs. Lighthizer on deal scope \u2014 The Diplomat, Jan 11 2019). Trump has signaled willingness to accept a purchase-heavy deal (tweeting 'Talks going very well!' on Jan 8), while Lighthizer insists on structural changes (Grassley meeting, Reuters Jan 15 2019). This split creates negotiating space.\n\nThe action score of -0.15 (mild lean toward negotiation with some resistance) reflects the need to stay at the table without capitulating. China should offer concrete purchase commitments \u2014 which play to Trump's deficit-reduction framing \u2014 while holding firm on structural reforms that would undermine the CCP's economic model. The detentions of Canadians and Huawei indictments have created a nationalist domestic backdrop that makes visible concessions politically costly for Xi. The best path is a deal that lets Trump claim victory on trade numbers while preserving China's industrial policy autonomy.",
+      "key_factors": [
+        "GDP slowdown to 28-year low (6.6%), Q4 at 6.4% \u2014 weakest since GFC",
+        "Huawei DOJ indictment (13 counts) and formal extradition request for Meng Wanzhou",
+        "List 3 tariffs ($200B) scheduled to rise from 10% to 25% on March 1 absent a deal",
+        "No progress on structural issues (IP, tech transfer) per Lighthizer via Grassley",
+        "US 10Y yield decline (3.20% \u2192 2.70%) signals US growth concerns but not crisis",
+        "Trump-Lighthizer split on deal scope creates negotiating room for purchase-focused deal",
+        "China's fiscal/monetary toolkit (RRR cuts, tax cuts, infrastructure) provides buffer",
+        "Nationalist domestic sentiment around Huawei limits Xi's room for visible concessions"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2019-01-30",
+          "excerpt": "Lighthizer and Mnuchin in Beijing for high-level talks. Purchase commitments discussed; enforcement and structural IP/tech-transfer issues unresolved"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_china_gdp_2019-01-21",
+          "excerpt": "China's 2018 growth slows to 28-year low. Q4 GDP 6.4%, full-year 6.6%. Fixed-asset investment rose 5.9% in 2018, slowest since at least 1996. Retail sales hovering near 15-year lows."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_lighthizer_structural_2019-01-15",
+          "excerpt": "USTR Robert Lighthizer did not see any progress made on structural issues during U.S. talks with China last week, Republican U.S. Senator Chuck Grassley said"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thediplomat_trade_truce_2019-01-11",
+          "excerpt": "Hu Xijin noted trade issues were addressed 'most smoothly.' On structural changes and cyber security, China accepted parts in line with reform but rejected requests that harm national security."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt_huawei_retaliation_2019-01-29",
+          "excerpt": "China is in the middle of a trade war that it is eager to end as its vast economy slows. Any effort to get tough on the United States could scuttle the negotiations."
+        }
+      ],
+      "threat_score": 0.65,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4863,
+        "capped_chars": 4863,
+        "raw_tokens": 1216,
+        "capped_tokens": 1216
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11242,
+        "capped_chars": 11242,
+        "raw_tokens": 2810,
+        "capped_tokens": 2810
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 81220,
+        "capped_chars": 81220,
+        "raw_tokens": 20305,
+        "capped_tokens": 20305
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 369038,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

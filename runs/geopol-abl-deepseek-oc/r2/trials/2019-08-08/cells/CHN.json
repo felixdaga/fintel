@@ -1,0 +1,128 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-08-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 142131,
+    "tokens_out": 3864,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.6,
+      "rationale": "RECOMMENDATION: Maintain a firm but measured posture: we have already retaliated (suspending US farm purchases and allowing an orderly yuan depreciation), and we should keep the scheduled September negotiation channel open while making no new concessions and avoiding a further escalation spiral into a full currency war. Hold our existing tariff retaliation as leverage, resist the US entity-list and currency-manipulator pressure through legitimate WTO/multilateral channels, and signal willingness to return to the table \u2014 but only on terms that do not concede structural reform, tech-transfer, or exchange-rate sovereignty. Do not escalate into a broad tit-for-tat: a currency war would destabilize global markets and hurt us as much as the US.\n\nSUPPORTING RATIONALE: The threat is high but not existential. Tariff coverage is now essentially total \u2014 the US has 25% duties on ~$250B of our goods and has announced a new 10% layer on the remaining ~$300B (effective Sept 1), just after the Shanghai talks (July 30-31) produced little progress (event_timeline 2019-08-01). This is compounded by firm-level targeting (Huawei on the Entity List, May-16) and the tech-decoupling signal (Google/Android and US chip suppliers pulling back, May-20), all of which hit major export sectors and our tech-autonomy agenda \u2014 placing us above the +0.5 'high' anchor. The most acute new development is financial: the yuan broke through 7/dollar on Aug 5 and Treasury designated us a currency manipulator, the first such label since 1994, raising the risk of a broader currency war and countervailing-duty cases (web_search: POLITICO/CNBC, 2019-08-05/06). That justifies a weighted threat just above +0.5. However, it is not existential because we retain deep buffers: FX reserves above $3 trillion (fortune.com), capital controls that have prevented capital flight, and extensive PBOC policy tools \u2014 credibility that contained the market reaction after the fixing normalized Tuesday. On action: further escalation would be dangerous and self-defeating (a currency war harms all), while full concession is unjustified given we are not under existential threat and have leverage (yuan, rare earths, farm purchases). The disclosed path is to hold our existing retaliation and negotiate without new commitments, action_score -0.1, aligning with the 'negotiate' level and keeping the September talks viable.",
+      "key_factors": [
+        "US announced 10% tariffs on remaining ~$300B (List 4, effective Sept 1) after stalled Shanghai talks (timeline 2019-08-01)",
+        "CNY broke 7/USD and US Treasury designated China a currency manipulator (first since 1994), Aug 5 (timeline; POLITICO/CNBC)",
+        "Huawei on Entity List and tech-decoupling (Google/Android, chip suppliers) since mid-May (timeline)",
+        "China already retaliated: suspended US farm purchases and allowed orderly yuan depreciation (Al Jazeera/POLITICO)",
+        "Large buffers: >$3T FX reserves, capital controls, no capital flight \u2014 containment of market impact (fortune.com)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-01",
+          "excerpt": "Trump announces 10% tariffs on remaining ~$300B of Chinese goods (List 4), effective Sept 1, after Shanghai talks with little progress."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce adds Huawei to Entity List; Google suspends Android/GMS and major US chip suppliers pause sales (May 20)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "POLITICO 2019-08-05",
+          "excerpt": "Treasury designates China a currency manipulator; penalties mostly symbolic, IMF engagement, potential countervailing-duty cases."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Fortune 2019-08-06",
+          "excerpt": "World's biggest FX reserves at more than $3 trillion to defend yuan; capital controls prevent capital flight."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Al Jazeera 2019-08-05",
+          "excerpt": "Yuan devaluation drawn new battle lines; PBOC links weakness to US tariffs; policy source signals tolerance for depreciation."
+        }
+      ],
+      "threat_score": 0.6,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-08-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4860,
+        "capped_chars": 4860,
+        "raw_tokens": 1215,
+        "capped_tokens": 1215
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48113,
+        "capped_chars": 48113,
+        "raw_tokens": 12028,
+        "capped_tokens": 12028
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 46126,
+        "capped_chars": 46126,
+        "raw_tokens": 11531,
+        "capped_tokens": 11531
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 315015,
+  "started_at": "2026-08-13T07:52:33+00:00"
+}

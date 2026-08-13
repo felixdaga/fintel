@@ -1,0 +1,123 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-01-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 137470,
+    "tokens_out": 2909,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: Hold the negotiating posture and keep the 90-day truce alive. We have already made goodwill gestures (resumed soybean purchases, auto-tariff cuts) and the first formal post-G20 talks are underway in Beijing since Jan 7; we should continue productively on purchases and engagement while refusing to be rushed into structural concessions before the US makes matching commitments on tariff rollback. Avoid any escalation that would hand Washington a pretext to push List 3 from 10% to 25% on March 1.\n\nSUPPORTING RATIONALE: The threat is real but not existential at this decision point. The US Section 301 program now covers ~$250B of our exports (25% on the two $50B lists, 10% on an additional $200B) \u2014 a direct hit on major export sectors \u2014 and Huawei/Meng Wanzhou represents firm-level targeting that risks widening the trade fight into a tech/security confrontation, all of which matches the CHN +0.5 'high' anchor (timeline entries 2018-09-24, 2018-12-01). China is economically vulnerable here: our FX reserves fell in 2018, the yuan carried depreciation pressure, exporters report a weaker yuan cannot fully offset tariffs, and growth is cooling \u2014 so the dispute is already biting (Reuters 2019-01-07; SCMP exporter reports). Yet this is offset by a favorable negotiation window: the G20 truce suspended the Jan 1 hike, talks resumed Jan 7-8, and structural/technical issues remain open, so the situation is mid-negotiation rather than mid-escalation. That is why I read threat at +0.45 (high but not existential) and choose a mild de-escalatory stance (action +0.15, 'negotiate'): we are at a genuine bargaining table where hard-won tariff relief is on the line, and escalating now would invite the US to raise tariffs to 25% on $200B and to harden its tech campaign \u2014 the opposite of what our export economy needs. Continuing good-faith talks preserves the option to convert purchases into durable rollbacks, but committing to deep structural reform before the US signals reciprocal tariff removal would surrender leverage prematurely.",
+      "key_factors": [
+        "~$250B of Chinese exports under US Section 301 tariffs (25% on $50B lists, 10% on additional $200B)",
+        "G20 Buenos Aires 90-day truce; Jan 1 hike suspended; talks resumed in Beijing Jan 7-8, 2019",
+        "Huawei/Meng Wanzhou arrest and China's detention of Canadians \u2014 tech-conflict overlay risks widening the rift",
+        "China FX reserves fell in 2018; yuan depreciation pressure; exporters say weaker yuan can't fully offset tariffs",
+        "March 1 hard deadline (Lighthizer/Trump no-extension) \u2014 failure risks List 3 rising to 25% and a full tariff escalation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% suspended. Same day Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-07",
+          "excerpt": "Trade talks resume in Beijing. China discusses increased purchases of US goods; structural issues remain open."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters 2019-01-07",
+          "excerpt": "China's annual foreign exchange reserves fell for the third time in four years in 2018 as the yuan came under strong selling pressure from the cooling economy and escalating Sino-U.S. trade tensions."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SCMP exporter report 2018-10-19",
+          "excerpt": "Chinese exporters: weaker yuan won't make up for trade war impact... The tariffs have piled extra pressure on Chinese firms... Many will be forced to close or move to lower-cost countries."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-01-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4661,
+        "capped_chars": 4661,
+        "raw_tokens": 1165,
+        "capped_tokens": 1165
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47285,
+        "capped_chars": 47285,
+        "raw_tokens": 11821,
+        "capped_tokens": 11821
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 36825,
+        "capped_chars": 36825,
+        "raw_tokens": 9206,
+        "capped_tokens": 9206
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 295346,
+  "started_at": "2026-08-13T07:51:24+00:00"
+}

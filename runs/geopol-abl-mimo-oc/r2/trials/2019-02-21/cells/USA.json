@@ -1,0 +1,135 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.35,
+      "rationale": "RECOMMENDATION: Hold firm at the negotiating table without offering new concessions. Press China on structural issues (forced tech transfer, IP theft, subsidies, enforcement mechanism) while keeping the March 1 escalation threat alive as leverage. Do not rush a deal built on purchase commitments alone \u2014 the leverage window is the most favorable it has been and a weak deal wastes it.\n\nSUPPORTING RATIONALE: The US holds a position of relative advantage as of mid-February 2019. China's economy is materially weakening: GDP growth hit a 28-year low at 6.6% in 2018 (Q4 at 6.4%), manufacturing PMI contracted to 49.4 in December, new export orders have contracted for seven straight months, and export hubs like Guangdong are reporting factory closures and job losses. The US economy, by contrast, is tracking ~2.7% Q4 GDP growth with a tight labor market; the CBO projects 2.3% for 2019 \u2014 slower but stable. Tariffs have produced a temporary GDP boost via reduced imports. The Huawei indictments (Jan 28) and Meng arrest give additional non-tariff leverage.\n\nHowever, the threat to US interests is not zero. The CBO estimates tariffs will shave 0.1pp from GDP annually over a decade. Farmers are hurting from Chinese retaliation on soybeans. The March 1 deadline creates urgency \u2014 if List 3 jumps from 10% to 25%, US consumers and businesses face higher costs. A negotiated deal that only secures Chinese commodity purchases without enforcement or structural reform would be a squandered leverage position. China is trying to run out the clock and offer minimal concessions (Xinhua reports 'important progress' but structural issues remain unresolved). The US should maintain its negotiating posture \u2014 firm on demands, open to extending the timeline if real progress is made on enforcement, but willing to escalate if China offers only cosmetic changes.",
+      "key_factors": [
+        "China's economy weakening sharply \u2014 GDP at 28-year low, PMI contracting, export orders falling for 7 months",
+        "US leverage is near peak: $250B tariffs in place, Huawei indictments, March 1 escalation threat",
+        "China offering purchases but resisting structural reform and enforcement mechanisms",
+        "CBO: tariffs shaving 0.1pp/year from US GDP \u2014 real but manageable cost",
+        "US farmers and consumers bearing retaliation costs \u2014 domestic political pressure from trade war",
+        "Enforcement mechanism is the critical gap \u2014 Lighthizer insists 'enforcement, enforcement, enforcement'",
+        "China trying to run out the clock; Trump signaling willingness to extend March 1 deadline"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-14",
+          "excerpt": "Another round of talks (through Feb 15). Progress reported on purchases; enforcement mechanism still disputed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thediplomat_2019-01-21",
+          "excerpt": "China's economic growth hit a three-decade low in 2018, adding to pressure on Beijing to beef up stimulus measures and settle a tariff war with Washington. Growth slowed to 6.6 percent from 2017's 6.9 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_2018-12-31",
+          "excerpt": "China's factory activity contracted for the first time in over two years in December... The official PMI fell to 49.4 in December, below the 50-point level that separates growth from contraction."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2019-02-06",
+          "excerpt": "Economists boosted their forecasts for U.S. fourth quarter growth... median 2.7 percent. Some economists expect 3 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_2019-01-28_cbo",
+          "excerpt": "Tariffs imposed by the Trump administration will limit growth of U.S. real gross domestic product by an average of 0.1 percent each year for the next 10 years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico_2019-02-13",
+          "excerpt": "Lighthizer continues to press China to meet a list of demands that includes major structural changes to its state-run economy... China has only made offers in line with Xi's speech at last April's Boao Forum."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "guardian_2019-01-06",
+          "excerpt": "The evidence from businesses and commentators inside China is clear: the dispute is hurting. And Trump's threat to impose tariffs on almost $300bn of extra imports in March would be catastrophic."
+        }
+      ],
+      "threat_score": -0.35,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5015,
+        "capped_chars": 5015,
+        "raw_tokens": 1254,
+        "capped_tokens": 1254
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11204,
+        "capped_chars": 11204,
+        "raw_tokens": 2801,
+        "capped_tokens": 2801
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 55203,
+        "capped_chars": 55203,
+        "raw_tokens": 13800,
+        "capped_tokens": 13800
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 370335,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

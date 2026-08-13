@@ -1,0 +1,124 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-05-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 132701,
+    "tokens_out": 3142,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Stay in the negotiating lane that opened with the May 19 joint statement \u2014 honor and operationalize our commitments to increase purchases of US agriculture and energy, finalize a resolution that lifts the ZTE denial order, and keep the tariff truce intact. Do not escalate; the current de-escalation buys us time and preserves exports. Guard against over-conceding by insisting on symmetrical detail and keeping our retaliatory options formally on the table as leverage, but continue the high-level dialogue rather than rupturing it.\n\nSUPPORTING RATIONALE: The threat is real but momentarily contained, so I rate it +0.35 rather than the +0.5 high anchor. The Section 301 finding and ~$50B proposed tariff list targeting aerospace, ICT, robotics and machinery (April 3) directly threaten our export economy and tech sectors, and the April 16 ZTE denial order demonstrated how exposed we are to US components/software \u2014 an existential risk to a flagship telecom. That justifies a clearly positive threat reading. However, the May 19 joint statement suspended the tariffs (Mnuchin: trade war 'on hold'; tariffs 'off the table while talks proceed') and the US signaled it would reverse the ZTE ban in exchange for purchase commitments (a handshake deal between Mnuchin and Liu He per Reuters/WSJ), with China also lifting its sorghum anti-dumping duty. Macro evidence is consistent: our concession package is cheap for a country that needs US farm and energy imports for consumption, and US officials' conflicting statements show Washington's leverage is softer than its rhetoric. Because the acute threat is suspended and we are extracting concessions, the optimal action is moderate de-escalation-through-negotiation: continue talks, deliver the purchase increase, and lock in ZTE relief \u2014 while recognizing the US 'could put tariffs back on' if talks fail, which is exactly why we should keep them alive rather than provoke. Hence action_score +0.2 with action_level 'negotiate'.",
+      "key_factors": [
+        "~$50B Section 301 tariff list targeting ICT/robotics/machinery suspended under May 19 joint statement",
+        "ZTE denial order (Apr 16) exposed dependence on US chips; US signaling reversal for purchase concessions",
+        "May 19 joint statement: China to significantly increase US agriculture & energy purchases; tariffs 'on hold'",
+        "China lifted sorghum anti-dumping duty as goodwill gesture",
+        "US officials gave conflicting statements on tariff intent; US could reimpose tariffs if talks fail",
+        "China's purchase commitments are cheap (fit domestic consumption/import needs); structural IP issues unresolved"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "US and China release joint statement... China agrees to 'significantly increase' purchases of US goods and services. Mnuchin says trade war is 'on hold.' Markets rally."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list: ~1,300 Chinese product lines (~$50B), targeting aerospace, ICT, robotics, machinery."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "http://bgr.com/2018/05/22/zte-ban-reversal-trade-war-china/",
+          "excerpt": "There's a 'handshake deal' on ZTE between Mnuchin and Liu He. The US would drop the ban in exchange for the purchase of more US farm products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.nytimes.com/2018/05/20/us/politics/mnuchin-kudlow-china-trade.html",
+          "excerpt": "The planned tariffs on as much as $150 billion worth of Chinese goods are off the table while the talks proceed... 'We're putting the trade war on hold.'"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.2,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-05-24",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2446,
+        "capped_chars": 2446,
+        "raw_tokens": 612,
+        "capped_tokens": 612
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47806,
+        "capped_chars": 47806,
+        "raw_tokens": 11952,
+        "capped_tokens": 11952
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 29847,
+        "capped_chars": 29847,
+        "raw_tokens": 7462,
+        "capped_tokens": 7462
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 443180,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

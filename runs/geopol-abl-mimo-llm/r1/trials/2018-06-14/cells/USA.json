@@ -1,0 +1,109 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10658,
+    "tokens_out": 877,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0107034,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should proceed with the planned June 15 tariff list on $50 billion of Chinese goods, targeting high-tech sectors aligned with Made in China 2025. This is the moment to demonstrate resolve after the May 'hold' proved inconclusive. Follow through on the Section 301 tariffs while keeping the door open for negotiations on structural issues like IP theft and forced technology transfer.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate and rising. The $375 billion trade deficit (CBS News) represents a structural imbalance, and China's retaliatory tariffs on $3 billion of US agricultural goods (Reuters, April 2) have already hit US farmers and manufacturers. However, the threat is not yet existential\u2014the US economy remains strong and the tariffs are still in proposal stage. The Bruegel analysis confirms the US is strategically targeting China's technological advancement through Made in China 2025, which is the right long-term focus. The May 20 'hold' agreement (Guardian/Mnuchin) produced no concrete commitments on the $200 billion deficit reduction the US sought, and the White House has already signaled it will release the tariff list on June 15 (Wired). The Wired analysis notes that 43% of Chinese exports to the US come from foreign-owned firms, meaning tariffs will have domestic costs\u2014but the strategic imperative to constrain China's tech ambitions justifies this cost. The US has leverage: China cannot fully match $153 billion in tariffs given it only imports $130 billion of US goods (CBS News). The action_score of -1.0 reflects the need to follow through decisively on the Section 301 tariffs that have been threatened since March, as failure to act would signal weakness and embolden China's IP practices.",
+      "key_factors": [
+        "$375 billion US-China trade deficit in 2017",
+        "US Section 301 investigation targeting IP theft and Made in China 2025",
+        "May 20 'hold' agreement produced no concrete deficit reduction commitments",
+        "China's retaliatory tariffs on $3 billion US agricultural goods already in effect",
+        "43% of Chinese exports to US from foreign-owned firms (supply chain complexity)",
+        "US tariff list targeting high-tech sectors (84% high-end exports per Bruegel)",
+        "White House signaling June 15 tariff list release",
+        "China's limited retaliatory capacity ($130B imports vs potential $153B US tariffs)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China; China imported only $130 billion of U.S. goods last year; trade deficit of $375 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China has increased tariffs by up to 25 percent on 128 U.S. products, from frozen pork and wine to certain fruits and nuts"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.theguardian.com",
+          "excerpt": "Mnuchin said the US has won several commitments from Chinese officials that should cut America's trade deficit with China... However, Beijing has not agreed to cut the deficit by a particular amount, despite the Trump administration pushing for a $200bn reduction"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports; the U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.wired.com",
+          "excerpt": "The White House said only that it will release a list of affected goods on June 15, with implementation to follow at some point; 43 percent of Chinese exports are sourced from foreign (i.e., non-Chinese) owned firms"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 33576,
+        "capped_chars": 28970,
+        "raw_tokens": 8394,
+        "capped_tokens": 7242
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 23541,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

@@ -1,0 +1,112 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 6953,
+    "tokens_out": 786,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0067254,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue engaging in trade negotiations with the United States while maintaining a firm stance on core interests. We should signal willingness to discuss structural issues and increase purchases of US goods, but resist demands that fundamentally undermine our industrial policy or state-led economic model. We must avoid further escalation that would deepen the tariff burden on our export sector while also not making unilateral concessions.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The US has already raised tariffs on $200 billion of Chinese goods from 10% to 25% and threatened tariffs on essentially all remaining imports (~$300 billion). This directly threatens China's export economy and manufacturing employment in export hubs. The trade war has escalated into a tech war, with restrictions on Huawei and technology transfer representing a serious threat to China's high-tech ambitions and Made in China 2025 goals. However, China retains significant leverage: its rare earth dominance (Bloomberg, May 2019), its massive domestic market, and the fact that US consumers and companies also bear costs (as acknowledged by Larry Kudlow and USC experts). The US side is also facing domestic political pressure from 24 states suing over tariffs. China's middle class growth provides a buffer, and the trade war gives us political cover to accelerate domestic technology development and diversify supply chains. The appropriate action is to negotiate from a position of measured firmness \u2014 we are threatened but not desperate, and the US also faces real costs that constrain its escalation appetite.",
+      "key_factors": [
+        "US tariffs raised to 25% on $200B of Chinese goods, with threat of tariffs on remaining ~$300B",
+        "Trade war escalating into tech war with restrictions on Huawei and technology transfer",
+        "China's rare earth dominance as potential leverage",
+        "US domestic political constraints (24 states suing, consumer cost increases)",
+        "Both sides acknowledged to suffer from continued escalation",
+        "China's middle class growth and domestic market as structural buffer"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu",
+          "excerpt": "The U.S. increased tariffs Friday on $200 billion worth of Chinese goods to 25 percent from 10 percent"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - US-China trade war: How tariffs are tools",
+          "excerpt": "Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "onlinelibrary.wiley.com",
+          "excerpt": "The escalation of the trade war into a tech war could lead to a decoupling between the US and Chinese economies"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "onlinelibrary.wiley.com - rare earths",
+          "excerpt": "China gears up to weaponize rare earths dominance in trade war"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - Kudlow",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com - 24 states",
+          "excerpt": "24 states sue Trump over latest tariffs"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 15476,
+        "capped_chars": 12257,
+        "raw_tokens": 3869,
+        "capped_tokens": 3064
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 17668,
+  "started_at": "2026-08-13T10:54:40+00:00"
+}

@@ -1,0 +1,152 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-08-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Maintain the current tariff posture ($34B + $16B effective) but do NOT implement the proposed $200B List 3 escalation at this time. Use the List 3 threat as leverage to restart negotiations with Beijing. The August 20-23 public hearings provide a natural window to signal willingness to talk while keeping pressure on. Domestically, extend and expand the $12B farmer aid package to shore up political support ahead of November midterms.\n\nSUPPORTING RATIONALE: The threat reading of +0.35 reflects a dispute that has moved beyond neutral but remains below high-threat territory. The US has successfully imposed $50B in tariffs with China matching tit-for-tat (timeline: List 1 effective July 6, List 2 announced August 7 effective August 23). China's retaliatory capacity is structurally constrained \u2014 they imported only ~$135B from the US in 2017, meaning they are running out of US goods to tariff as the US threatens $250B+ in total duties. This asymmetry is a genuine US leverage point.\n\nHowever, domestic costs are mounting and cannot be ignored. Consumer sentiment has declined from 101.4 (March) to 96.2 (August), a 5.1% drop (country_health: UMCSENT). Soybean prices have fallen ~20% since the trade war began, with farm-group estimates of $13B in agricultural losses exceeding the $12B aid package (web_search: NYT, farmdoc). The U.S. Chamber of Commerce estimates 2.6 million American jobs at risk (web_search: Fortune). A TV manufacturing plant in South Carolina has already cut to skeleton crew. Corporate bond spreads (DBAA) have risen from 4.55% to 4.76%, signaling modestly rising credit risk. The dollar has strengthened ~7% over 6 months (DTWEXBGS: 107.6\u2192115.2), which partially offsets tariff effects but hurts exporters.\n\nThe action stance of -0.2 (negotiate with slight escalationist lean) reflects the following calculus: (1) The US has already escalated significantly and the List 3 threat is doing useful work as a bargaining chip \u2014 implementing it would broaden tariffs to consumer goods (TVs, clothing, air conditioners), raising visible costs to US consumers and intensifying political backlash before midterms. (2) No negotiations have occurred since the May 19 joint statement collapsed on May 29. Restarting talks is essential \u2014 the current trajectory of tariff-escalate-retaliate-escalate has no off-ramp. (3) The structural IP/tech-transfer issues that triggered the Section 301 investigation (March 22) remain unaddressed, and tariffs alone will not solve them. (4) Congressional concern is rising \u2014 House Ways & Means Chairman Brady and Senate Finance Chairman Hatch have both urged resolution (web_search: Lexology). The slight negative action score (-0.2) rather than 0.0 signals that the US should negotiate from a position of demonstrated willingness to escalate, not from weakness.",
+      "key_factors": [
+        "List 1 ($34B) and List 2 ($16B) tariffs already in effect or imminent; $200B List 3 proposed but not yet implemented",
+        "China's retaliatory capacity constrained by trade asymmetry ($135B imports vs $250B+ US threat)",
+        "US consumer sentiment declining 5.1% over 6 months (101.4\u219296.2)",
+        "Agricultural sector hit hard: soybeans down 20%, $13B farm losses vs $12B aid package",
+        "No negotiations since May 19 joint statement collapsed May 29",
+        "Corporate credit spreads widening (DBAA 4.55%\u21924.76%)",
+        "Dollar strengthening 7% \u2014 hurts US exporters",
+        "November 2018 midterm elections create political pressure on farm-state Republicans",
+        "IMF estimates 0.5% global GDP reduction if all threatened tariffs implemented"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-15",
+          "excerpt": "USTR announces final two-stage $50B tariff plan: 25% on List 1 (~$34B, 818 lines, effective July 6) and List 2 (~$16B, later). China announces matching retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-10",
+          "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for an additional 10% tariff (~6,000 product lines). Public comment / hearing process begins."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-08-01",
+          "excerpt": "At Trump's direction, USTR says it is considering raising the proposed List 3 rate from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment declined from 101.4 (March 2018) to 96.2 (August 2018), a 5.1% drop."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Nominal Broad US Dollar Index rose from 107.6 (Feb) to 115.2 (Aug 15), a 7% appreciation."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DBAA",
+          "excerpt": "Moody's Baa corporate bond yield rose from 4.55% to 4.76%, indicating modestly widening credit spreads."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes-2018-07-24-farmers-aid",
+          "excerpt": "One farm-group study estimates that corn, wheat and soybean farmers in the United States have already lost more \u2014 $13 billion \u2014 than the administration is proposing to provide as a result of the trade war."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortune-2018-08-08-tariffs",
+          "excerpt": "U.S. businesses are growing more weary after months of a trade war most of them recommended against... the U.S. Chamber of Commerce says 2.6 million American jobs could be lost."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "lexology-2018-07-11-section-301",
+          "excerpt": "Congress, including House Ways & Means Committee Chairman Brady and Senate Finance Committee Chairman Hatch, have expressed concerns and are urging the president to come up with a solution."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -0.2,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-08-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3319,
+        "capped_chars": 3319,
+        "raw_tokens": 830,
+        "capped_tokens": 830
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48158,
+        "capped_chars": 48158,
+        "raw_tokens": 12040,
+        "capped_tokens": 12040
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 30165,
+        "capped_chars": 30165,
+        "raw_tokens": 7541,
+        "capped_tokens": 7541
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 366252,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

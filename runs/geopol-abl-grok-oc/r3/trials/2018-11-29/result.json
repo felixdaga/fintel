@@ -1,0 +1,54 @@
+{
+  "decision_date": "2018-11-29",
+  "status": "partial",
+  "cells": [
+    {
+      "cell": "USA",
+      "symbols": [
+        "USA"
+      ],
+      "status": "ok",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 389012,
+      "usage": {
+        "n_llm_calls": 5,
+        "tokens_in": 186852,
+        "tokens_out": 4692,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "health": "ok",
+      "health_issues": []
+    },
+    {
+      "cell": "CHN",
+      "symbols": [
+        "CHN"
+      ],
+      "status": "failed",
+      "n_views": 1,
+      "attempts": 1,
+      "duration_ms": 377987,
+      "usage": {
+        "n_llm_calls": 5,
+        "tokens_in": 196701,
+        "tokens_out": 3530,
+        "reasoning_tokens": 0,
+        "basis": "unknown"
+      },
+      "error": "1 tool error(s) the agent saw (MCP timeout/connection); agent saw fintel__web_search: {\n  \"status\": \"ok\",\n  \"data\": {\n    \"query\": \"Huawei ZTE US entity list export ban 2018 China technology tariffs\",\n    \"",
+      "health": "broken",
+      "health_issues": [
+        "1 tool error(s) the agent saw (MCP timeout/connection)",
+        "agent saw fintel__web_search: {\n  \"status\": \"ok\",\n  \"data\": {\n    \"query\": \"Huawei ZTE US entity list export ban 2018 China technology tariffs\",\n    \""
+      ]
+    }
+  ],
+  "n_views": 2,
+  "missing": [],
+  "started_at": "2026-08-13T05:59:47+00:00",
+  "finished_at": "2026-08-13T06:23:59+00:00",
+  "duration_ms": 0,
+  "health": "broken"
+}

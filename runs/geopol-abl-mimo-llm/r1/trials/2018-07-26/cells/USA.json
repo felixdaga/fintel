@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-07-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 11063,
+    "tokens_out": 1116,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0118254,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The U.S. should follow through on the proposed escalation to $200 billion+ in tariffs on Chinese goods, maintaining maximum pressure while the asymmetry in trade flows gives the U.S. structural leverage. The administration should signal willingness to negotiate but not back down from the current trajectory, as the midterm election cycle rewards toughness on China and the economic impact on the U.S. is manageable relative to the structural grievances at stake.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects a moderate but not existential threat to U.S. interests. The trade war is already underway \u2014 $34 billion in tariffs are active on each side as of July 6, 2018, with China retaliating on agricultural products and automobiles (Brookings, RAND). Soybean prices are down 20%, and specific sectors (Midwest agriculture, auto exports from Southern states, Boeing) face real pain. However, the overall macroeconomic impact is described as 'a minor blip' for the U.S. economy (Brookings), since U.S. exports to China ($130B) represent only ~0.7% of GDP versus China's exports to the U.S. ($505B) at ~5% of Chinese GDP (RAND). The yuan has already depreciated 6% from 6.28 to 6.64 per dollar (RAND), partially offsetting U.S. tariff effects but also signaling Chinese economic stress.\n\nThe action score of -1 (maximal escalation via escalate_tariffs) is justified by several factors: (1) The structural asymmetry favors the U.S. \u2014 China will 'run out of exports to levy retaliatory tariffs upon long before the United States does' (RAND), though this advantage is somewhat overstated since the U.S. wishes to avoid taxing consumer goods. (2) The Trump administration views this as a winning midterm strategy (Brookings), and backing down now would squander political capital. (3) The core U.S. grievances \u2014 forced technology transfer, IP theft, de facto market closure, Made in China 2025 industrial subsidies \u2014 are structural issues that only sustained pressure can address (CFR). (4) No high-level negotiations are currently scheduled (Brookings), suggesting China has not yet felt enough pain to come to the table seriously. (5) The RAND analysis notes that even the first-stage impact shows the U.S. can sustain this pressure, with a net transfer of ~$6.7B from businesses to government that is manageable. The risk of collateral damage to U.S. firms operating in China and global supply chains is real but is the cost of addressing long-term structural imbalances.",
+      "key_factors": [
+        "Asymmetric trade exposure: U.S. exports to China ($130B, ~0.7% GDP) vs China exports to U.S. ($505B, ~5% GDP) gives U.S. structural leverage in tit-for-tat escalation",
+        "Soybean prices down 20%, agricultural/auto sectors facing real pain, but overall macro impact described as 'minor blip' for U.S. economy",
+        "Yuan depreciated 6% (6.28 to 6.64/USD) since April 2018, signaling Chinese economic stress and partially offsetting tariff effects",
+        "No high-level negotiations scheduled; Trump admin views trade war as midterm election strategy",
+        "Structural grievances (forced tech transfer, IP theft, Made in China 2025 subsidies, market closure) require sustained pressure to address",
+        "China's retaliation constrained by lower tariff rates (15% vs U.S. 25%) and willingness to target consumer-facing goods the U.S. avoids",
+        "Risk of collateral damage to U.S. firms with China supply chains and global value chain disruption"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors...the Trump administration will probably not change its strategy soon."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "$505 billion in potentially lost exports is a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cfr.org \u2014 U.S.-China Trade War: How We Got Here",
+          "excerpt": "China has made it hard to produce abroad and sell to China and, China has made it hard to invest in China in order to produce and sell in China if your firm isn't Chinese"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-07-26",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35798,
+        "capped_chars": 31232,
+        "raw_tokens": 8950,
+        "capped_tokens": 7808
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 32498,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

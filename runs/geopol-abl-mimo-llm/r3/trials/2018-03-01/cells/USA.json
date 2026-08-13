@@ -1,0 +1,112 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-03-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10487,
+    "tokens_out": 1102,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0112074,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The United States should impose broad tariffs on Chinese goods, targeting sectors where China has been engaging in unfair trade practices such as intellectual property theft, forced technology transfer, and industrial overcapacity. This action should be accompanied by a clear set of demands for structural reforms, including market access, IP protection, and the dismantling of state subsidies. The goal is to use the threat of a trade war as leverage to force China to the negotiating table on terms favorable to the U.S.\n\nSUPPORTING RATIONALE: The threat score is -1 (clear opportunity) because the evidence shows China is overextended and vulnerable. The U.S. has a massive trade deficit with China ($300 billion+), and China's economy is more dependent on trade (40% of GDP vs. less than 30% for the U.S.). The U.S. can target China's political base by focusing on agricultural and manufacturing states, and China's leadership is currently focused on internal political consolidation (Xi Jinping's power grab) and may be reluctant to engage in a prolonged trade war. The action score is -1 (maximal escalation) because the U.S. has the leverage to force concessions from China. The U.S. should use this leverage to demand structural reforms, including market access, IP protection, and the dismantling of state subsidies. The goal is to use the threat of a trade war as leverage to force China to the negotiating table on terms favorable to the U.S.",
+      "key_factors": [
+        "U.S. trade deficit with China exceeds $300 billion, providing significant leverage",
+        "China's economy is more trade-dependent (40% of GDP) than the U.S. (less than 30%)",
+        "China's leadership is focused on internal political consolidation (Xi Jinping's power grab) and may be reluctant to engage in a prolonged trade war",
+        "U.S. can target China's political base by focusing on agricultural and manufacturing states",
+        "China has been engaging in unfair trade practices, including intellectual property theft, forced technology transfer, and industrial overcapacity",
+        "The U.S. has the leverage to force concessions from China and should use this leverage to demand structural reforms"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "time.com - The U.S. Can Win a Trade War With China. It Shouldn't Try",
+          "excerpt": "In 2016, U.S. exports to China totaled $115.6 billion, according to the U.S. Census Bureau, while China's exports to the U.S. totaled $462.6 billion. Beijing can cause pain for American companies and consumers, particularly in sectors like agriculture where U.S. firms employ few Chinese workers. But international commerce still supports tens of millions of jobs in China. Although it is less important to the economy than it was, trade accounts for almost 40% of Chinese GDP vs. less than 30% in the U.S."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "time.com - The U.S. Can Win a Trade War With China. It Shouldn't Try",
+          "excerpt": "This is an especially delicate moment for China, as a once-in-five-years Party Congress this fall should replace five of seven members of the country's highest decisionmaking body and many more at other levels of its central government. It's a moment when senior Communist Party officials want to project calm confidence, shying away from fights they might not win."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "time.com - The U.S. Can Win a Trade War With China. It Shouldn't Try",
+          "excerpt": "President Trump must also understand that China will do its best to target U.S. companies and industries based in states with high concentrations of voters that are part of his political base. China's leaders can read an electoral map, and they know how to hit Trump where it hurts most."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com - U.S. trade barriers report slams China on overcapacity, tech transfer",
+          "excerpt": "USTR, controlled by the White House, said that Chinese government industrial policies and financial support for industries such as steel and aluminum have resulted in overproduction and a flood of exports that have distorted global markets and undermined competitors"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com - Trump administration says U.S. mistakenly backed China WTO accession in 2001",
+          "excerpt": "It seems clear that the United States erred in supporting China's entry into the WTO on terms that have proven to be ineffective in securing China's embrace of an open, market-orientated trade regime"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu - How to avert a trade war with China",
+          "excerpt": "Xi gains politically in Beijing by standing firm against U.S. pressure and punching back against punitive measures. Historically, China has always retaliated proportionately to U.S. trade actions."
+        }
+      ],
+      "threat_score": -1,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-03-01",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35298,
+        "capped_chars": 31103,
+        "raw_tokens": 8824,
+        "capped_tokens": 7776
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 21910,
+  "started_at": "2026-08-13T10:54:53+00:00"
+}

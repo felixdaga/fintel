@@ -1,0 +1,107 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-11-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8042,
+    "tokens_out": 1068,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0086604,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The U.S. should escalate tariffs on the remaining Chinese imports not yet covered, leveraging the current momentum to pressure China into meaningful concessions before the G20 meeting. Maintain the threat of raising the existing 10% tariff on $200 billion of goods to 25% at year-end as scheduled, and signal willingness to tariff the remaining ~$267 billion if China retaliates further. This preserves maximum negotiating leverage heading into any potential talks.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects a moderate but not existential threat to U.S. interests. The trade war has imposed real costs on specific sectors \u2014 soybean prices down 20% (Brookings), agricultural and automotive exporters facing retaliation on $110 billion of U.S. goods (Fox Business), and collateral damage to U.S. firms operating in China (Brookings). However, as Brookings notes, the overall macroeconomic impact is 'a minor blip' for the U.S. economy, and the U.S. holds structural leverage: China imports only $130 billion of U.S. goods while the U.S. imports $506 billion from China, meaning China cannot match U.S. tariff escalation symmetrically (CBS News). The action score of -1.0 (maximal escalation via tariffs) is justified by several factors: (1) the U.S. has already tariffed $250 billion of Chinese goods and the remaining $267 billion threat is credible leverage (Fox Business); (2) China has shown no signs of caving \u2014 Brookings states 'it is unlikely that the Chinese leadership will cave in and do anything major' \u2014 so maintaining pressure is necessary; (3) the Trump administration views this as politically advantageous post-midterms, and the 2018 election results strengthen the mandate; (4) China has been negotiating in bad faith per the Washington Post account of repeated deal collapses. The key risk is that escalation could trigger broader economic disruption, but the current evidence suggests the U.S. economy can absorb the costs while China faces greater structural vulnerability from export dependence.",
+      "key_factors": [
+        "U.S. has tariffed $250B of Chinese goods; remaining $267B provides escalation leverage",
+        "China cannot match U.S. tariffs symmetrically \u2014 only imports $130B of U.S. goods vs. $506B U.S. imports from China",
+        "Soybean prices down 20%, agricultural/auto sectors hurt but overall macro impact described as 'minor blip'",
+        "China unlikely to cave per Brookings assessment; repeated deal collapses suggest need for sustained pressure",
+        "Post-midterm political environment supports continued tough stance",
+        "China retaliating on $110B of $130B U.S. trade \u2014 nearly all cards played on their side"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors...the Trump administration will probably not change its strategy soon. It is unlikely that the Chinese leadership will cave in and do anything major."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "$250 billion aggregate tariff amount...is about half of U.S.-China trade. President Trump has also indicated that if things don't go as to what he wants to happen, he's going to do it on the rest of it. This second round of Chinese tariffs is going to now cover $110 billion of the $130 billion of U.S.-China trade."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com \u2014 Trade war with China: What you need to know",
+          "excerpt": "China has promised to respond in kind, but it would be unable to match that amount since it imported only $130 billion of U.S. goods last year. The U.S. buys $506 billion worth of goods from China but only exports $130 billion, leaving a trade deficit of $375 billion."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent. U.S. exports cars from Southern states like Tennessee, so the effects of this change will be felt there."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com \u2014 How the U.S. and China misread the signals in the trade war",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-11-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20384,
+        "capped_chars": 16158,
+        "raw_tokens": 5096,
+        "capped_tokens": 4040
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19282,
+  "started_at": "2026-08-13T10:55:26+00:00"
+}

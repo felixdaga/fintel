@@ -1,0 +1,135 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 208432,
+    "tokens_out": 4857,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Continue the current high-level negotiation track without new escalation or new concession commitments. We should stay at the table through the remaining weeks of the 90-day window, defend Huawei and demand Meng Wanzhou's release, and signal willingness to make incremental purchase commitments \u2014 but resist conceding on structural/sovereignty issues (forced tech-transfer, enforcement) \u2014 while keeping the threat that a breakdown would re-trigger the List 3 hike as a bargain to be avoided by both sides, not a card we play.\n\nSUPPORTING RATIONALE: The threat is genuinely high, not existential. US Section 301 tariffs now cover ~$250B of our exports (25% on Lists 1-2, 10% on List 3, with a scheduled rise to 25% on the $200B suspended only for the truce), and firm-level targeting is real \u2014 ZTE was crippled by a US component ban and US prosecutors on Jan 28 unsealed charges against Huawei/Meng and formally sought her extradition, with analysts warning export controls could threaten Huawei's survival (CNN/Gavekal). This matches the +0.5 anchor: major export sectors hit, yuan stability pressure (forex reserves fell to an 18-month low of ~$3.05T in October), and firm-level targeting of Huawei. At the same time it is not existential: December exports fell 4.4% (biggest drop in two years) and Q4 GDP slowed to 6.4%, but we still posted a record $323B surplus with the US, the yuan rebounded above 6.80 in January on truce optimism, and talks are actively ongoing \u2014 evidence we have room to manage rather than a collapse. The action stance follows: because escalation (broad retaliation) would hand Washington the excuse to impose the 25% List 3 hike and deepen the Huawei decoupling \u2014 making a bad situation materially worse for our exporters and our technology-independence program \u2014 the disciplined move is to hold and negotiate now while keeping purchase-leverage in reserve. We should not yet concede purchases (no matching US rollback is on the table, and the US just escalated on Huawei), so the calibrated stance is neutral negotiate, not rollback.",
+      "key_factors": [
+        "~$250B of Chinese exports covered by Section 301 tariffs (25% Lists 1-2, 10% List 3, rise to 25% suspended only under 90-day truce)",
+        "Firm-level targeting: ZTE ban precedent; Jan 28 DOJ unsealing of charges + extradition request for Huawei's Meng threatens national champion",
+        "December exports -4.4% (worst in 2 years), imports -7.6%; Q4 GDP 6.4%, slowest since GFC",
+        "Counterweights: record $323B US surplus, yuan rebounded ~6.79, forex reserves pressured but no 2015-style panic ($3.05T, 18-month low in Oct)",
+        "Active high-level talks (Lighthizer/Mnuchin in Beijing Jan 30-31); escalating now risks 25% List 3 hike and deeper decoupling",
+        "Huawei/Meng must be defended and secured within talks; no matching US rollback offer yet",
+        "action_level=negotiate sits at 0.0; not escalating (would worsen) but not conceding purchases (no reciprocal US concession yet)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires: 90-day negotiation window; Jan 1 List 3 hike 10%->25% suspended; Canada arrests Huawei CFO Meng Wanzhou, China demands release."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%; combined Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud/sanctions charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-30",
+          "excerpt": "Lighthizer and Mnuchin in Beijing for high-level talks; purchase commitments discussed, structural IP/tech-transfer issues unresolved."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-china-trade-dec-2019",
+          "excerpt": "China's December exports unexpectedly fell 4.4% (biggest drop in two years), imports -7.6%; Q4 growth slowed toward 6.4%; record $323.32B surplus with US in 2018."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp-forex-oct-2018",
+          "excerpt": "China's forex reserves fell US$33.93B in October to US$3.053T, an 18-month low, as yuan lost ~10% vs dollar since February."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn-huawei-jan-2019",
+          "excerpt": "Analysts say the US charges are likely to result in export controls that threaten Huawei's survival, and place the issue at the center of the trade talks."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4863,
+        "capped_chars": 4863,
+        "raw_tokens": 1216,
+        "capped_tokens": 1216
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46316,
+        "capped_chars": 46316,
+        "raw_tokens": 11579,
+        "capped_tokens": 11579
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 91025,
+        "capped_chars": 91025,
+        "raw_tokens": 22756,
+        "capped_tokens": 22756
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 311456,
+  "started_at": "2026-08-13T07:51:31+00:00"
+}

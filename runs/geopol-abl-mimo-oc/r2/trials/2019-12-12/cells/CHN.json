@@ -1,0 +1,136 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-12-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 140369,
+    "tokens_out": 2581,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Continue negotiations on the Phase One deal but do not accept terms that leave the core tariff burden intact without meaningful concessions. The December 15 deadline creates urgency, but a weak deal that locks in massive agricultural purchases while leaving most tariffs in place is worse than continued negotiation. Push for concrete tariff rollback as a condition of any agreement, and signal willingness to walk away if necessary.\n\nSUPPORTING RATIONALE: The threat to China is real but manageable. Manufacturing PMI contracted for six consecutive months before a marginal rebound to 50.2 in November (NBS data, Nov 30). Export orders fell for 18 straight months. GDP growth hit 6.0% in Q3 2019 \u2014 the slowest on record (USCC Nov 2019 bulletin). Huawei remains on the Entity List since May 16, cutting off access to US chips and Google's Android (timeline entry May 20). These are material pressures.\n\nHowever, the situation is not existential. Domestic demand has firmed on stimulus \u2014 the new orders subindex hit 51.3 in November, the highest since April (CNBC Nov 30). Beijing front-loaded 1 trillion yuan of 2020 local government bond quotas to boost infrastructure. China has alternative supply chains developing and the 'unreliable entity list' (announced May 31) gives retaliatory leverage.\n\nThe Phase One deal as described is hollow for China: it focuses on $40-50B in agricultural purchases and doesn't address core structural issues. Analysts call it a 'temporary truce, not a genuine deal' (CNBC Oct 14). China's key demand \u2014 rollback of the September tariffs on ~$112B of goods \u2014 remains unmet. Trump has denied agreeing to lift tariffs. The Hong Kong Human Rights Act (signed late November) and Xinjiang bills have further complicated negotiations (Reuters Dec 3). Vice Premier Liu He said he was 'confused' about US demands (Reuters Nov 20).\n\nThe action_score of 0.0 reflects a negotiate stance: the US faces its own pressures \u2014 farm-belt political pain, consumer goods tariffs hitting Dec 15 affecting holiday spending, and Trump's 2020 reelection creating incentive for a deal. China should use this leverage at the negotiating table rather than escalate (which would hurt China's own economy more) or concede prematurely on terms that leave the tariff architecture largely unchanged. The Dec 15 deadline is a mutual pressure point, not just a Chinese one.",
+      "key_factors": [
+        "Manufacturing PMI contraction for 6 months, slight rebound to 50.2 in November",
+        "Export orders falling for 18 consecutive months",
+        "GDP growth at 6.0% in Q3 2019 \u2014 slowest on record",
+        "Huawei on Entity List since May \u2014 tech supply chain disruption",
+        "Phase One deal described as 'hollow' \u2014 focuses on agricultural purchases, not structural issues",
+        "Hong Kong Human Rights Act signed by Trump, complicating negotiations",
+        "US faces own pressures: farm-belt pain, consumer tariff impact Dec 15, 2020 election cycle",
+        "China's stimulus measures providing some domestic demand cushion"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List. US firms generally barred from selling to Huawei without a license."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "Trump announces a 'Phase One' deal in principle: China to buy roughly $40\u201350B of US agricultural products annually; IP and currency issues also cited."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-11-30",
+          "excerpt": "The Purchasing Managers' Index (PMI) bounced back to 50.2 in November... export orders fell for an 18th straight month... GDP growth expected to slow to near three-decade low of 6.2% in 2019."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-11-20",
+          "excerpt": "Liu, China's chief negotiator, separately told one of the attendees that he was 'confused' about the U.S. demands."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-10-14",
+          "excerpt": "Analysts say the partial U.S.-China trade deal doesn't touch on thorny issues plaguing both sides... 'temporary truce than a genuine deal.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-12-03",
+          "excerpt": "Trump says new U.S. law on Hong Kong doesn't help China trade talks... 'doesn't make it better, but we'll see what happens.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "uscc-november-2019",
+          "excerpt": "China's government reports GDP grew 6.0 percent in Q3 2019\u2014the slowest growth rate ever recorded\u2014amid trade tensions, weak domestic demand, and sluggish investment."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-12-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5122,
+        "capped_chars": 5122,
+        "raw_tokens": 1280,
+        "capped_tokens": 1280
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 85506,
+        "capped_chars": 85506,
+        "raw_tokens": 21377,
+        "capped_tokens": 21377
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 100817,
+  "started_at": "2026-08-13T03:00:10+00:00"
+}

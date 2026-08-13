@@ -1,0 +1,149 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-01-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 202555,
+    "tokens_out": 3740,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.2,
+      "rationale": "RECOMMENDATION: Keep the G20 90-day truce and press the Beijing talks without new tariff hikes, rollbacks, or purchase-only deals. Use the scheduled March List 3 increase (10% to 25% on ~$200B) as leverage for enforceable IP, tech-transfer, and market-access commitments, while accepting limited Chinese agricultural/energy purchases only as a down payment, not the deal. Do not politicize the Meng extradition or add firms to the entity list during this window; a fresh escalation now would likely draw more farm-sector retaliation and blow up the only live negotiating track.\n\nSUPPORTING RATIONALE: Threat is moderately elevated, not existential. Combined Section 301 coverage is already ~$250B (Lists 1\u20133), and China has matched on ~$50B plus 5\u201310% on ~$60B more, with soybeans, autos, and aircraft explicitly targeted. U.S. goods exports to China have fallen sharply (EXPCH from $9.28B in Aug 2018 to $7.11B in Jan 2019, about \u221223%), and soybean sales to China collapsed after the July 25% duty\u2014Jan\u2013Oct 2018 exports to China were ~63% below 2017, with prices down roughly $2/bu. That is a real hit to a politically sensitive export sector, not a free lunch. Consumer sentiment dropped to 91.2 in January from 98.3 in December and VIX spiked to 36 on Dec 24 before easing to ~20, so financial and household conditions have tightened even if industrial production is only slightly softer. This is below the +0.5 \u201cmaterial GDP drag\u201d anchor because the U.S. still has unused leverage (the March 1/2 List 3 hike), China is offering purchases and has suspended extra auto tariffs, and Chinese IP/reserves are not collapsing. Action should stay at hold/negotiate: mid-level talks just resumed in Beijing on Jan 7 with purchases on the table and structural issues still open; the May 2018 \u201ctrade war on hold\u201d statement collapsed within days when Washington proceeded with 301, so premature rollback would repeat that error, while hiking now would violate the Dec 1 Trump\u2013Xi pause and likely trigger further ag retaliation before senior talks. The Meng arrest and the Kovrig/Spavor detentions raise the cost of mixing law-enforcement with tariffs; keep them compartmentalized and extract the structural concessions the 301 record was built to get.",
+      "key_factors": [
+        "G20 90-day pause keeps List 3 at 10% with a March hike still live as leverage",
+        "Jan 7 Beijing working-level talks: China discussing purchases; IP/tech-transfer/state-support issues unresolved",
+        "U.S. farm-belt exposure: soybean market largely shut, EXPCH down ~23% since August",
+        "Financial/household stress (UMCSENT 91.2, Dec VIX spike) raises the cost of immediate re-escalation",
+        "Meng/Huawei overlay and Canadian detainee retaliation risk contaminating the trade track if mixed",
+        "Prior May 2018 truce collapsed when the U.S. proceeded with 301 \u2014 do not concede the tariff clock for a purchases-only deal"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended (tariffs remain at 10%). Same day: Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-07",
+          "excerpt": "Trade talks resume in Beijing (working / mid-level). China discusses increased purchases of US goods; structural issues remain open."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "US and China release joint statement after talks: China agrees to \"significantly increase\" purchases of US goods and services. Mnuchin says trade war is \"on hold.\""
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-10",
+          "excerpt": "China detains Canadians Michael Kovrig and Michael Spavor (widely viewed as retaliation for the Meng arrest; Beijing denies linkage)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "EXPCH",
+          "excerpt": "U.S. exports of goods to mainland China fell from $9,278M (2018-08) to $7,105M (2019-01), change_pct about -23.4%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "University of Michigan consumer sentiment fell from 98.3 (2018-12) to 91.2 (2019-01)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "VIXCLS",
+          "excerpt": "VIX closed at 36.07 on 2018-12-24 and was still 19.98 on 2019-01-09, well above mid-summer teens."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.supplychaindive.com/news/us-china-trade-talks-start-tariffs-march/545404/",
+          "excerpt": "Talks began ahead of a tariff increase from 10% to 25% on $200B scheduled for March 2; mid-level only, Lighthizer absent; U.S. wants structural changes on IP, tech transfer, and other barriers."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.everycrsreport.com/reports/R45448.html",
+          "excerpt": "U.S. soybean exports to China for January\u2013October 2018 were 63% lower than the same period in 2017; China levied 25% retaliatory tariffs on U.S. soybeans."
+        }
+      ],
+      "threat_score": 0.2,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-01-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4661,
+        "capped_chars": 4661,
+        "raw_tokens": 1165,
+        "capped_tokens": 1165
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47285,
+        "capped_chars": 47285,
+        "raw_tokens": 11821,
+        "capped_tokens": 11821
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 69513,
+        "capped_chars": 69513,
+        "raw_tokens": 17379,
+        "capped_tokens": 17379
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 263987,
+  "started_at": "2026-08-13T06:17:07+00:00"
+}

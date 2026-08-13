@@ -1,0 +1,53 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "threat_score": 0.4,
+      "score": 0.4,
+      "action_score": -0.05,
+      "action_level": "negotiate",
+      "key_factors": [
+        "List 1 tariffs on $34B took effect July 6; List 2 ($16B) and List 3 ($200B) pending, with discussion of raising List 3 from 10% to 25%",
+        "China retaliated dollar-for-dollar, targeting soybeans and other farm products; US soybean shipments to China largely halted, futures down sharply",
+        "Midterm elections ~3 months away; farm-belt exports are the politically vulnerable exposure",
+        "US real economy still firm: industrial production ~104 (rising), CPI modest, dollar strong ~115 (up ~7%), Baa spreads calm at ~4.76%; not yet a broad recession threat",
+        "Consumer sentiment softening (96.2 vs 101.4 in March); markets and business groups warn of escalating consumer/supply-chain costs"
+      ],
+      "rationale": "RECOMMENDATION: Hold the current posture and return to structured negotiations with Beijing rather than pushing List 3 up to 25%. Keep the already-imposed List 1 and scheduled List 2 tariffs as leverage, but avoid broadening the fight to $200B of largely consumer-facing goods, which would invite matching retaliation, raise consumer prices into the holiday season, and deepen farm-belt losses with midterms roughly three months away.\n\nSUPPORTING RATIONALE: The threat is real but not existential. The timeline shows active escalation (List 1 effective July 6, List 2 scheduled, List 3 proposed at 10% and now floated at 25%), with China matching each action and explicitly targeting soybeans, halting US farm shipments and depressing prices \u2014 a material hit to an exposed export sector and a politically sensitive one ahead of the 2018 midterms (the Trump-friendly farm belt). That justifies a moderately positive threat reading. Offsetting that is a US economy that is still growing: industrial production is rising (~104), CPI remains low, credit spreads are calm (~4.76% Baa), and the dollar is strong (~115, up ~7%), so this is a material GDP/political drag, not an existential supply-chain or cohesion threat \u2014 hence +0.4 rather than higher. On action, the US holds structural leverage (larger trade deficit, holds the initiative on Lists 2 and 3), so this is not a time to concede. But escalating to 25% on $200B would likely trigger the $60B Chinese retaliation the timeline/coverage flags and hit US consumers and farmers through the holiday season and midterms \u2014 a poor second-order trade. The disciplined move is negotiate: keep tariffs as leverage, signal openness to talks, and avoid a self-damaging escalation before the political window. That yields action_score near zero and a negotiate stance.",
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-06",
+          "excerpt": "List 1 tariffs take effect: US 25% on ~$34B of Chinese goods. China imposes matching ~$34B retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-08-01",
+          "excerpt": "At Trump's direction, USTR says it is considering raising the proposed List 3 rate from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-10",
+          "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for an additional 10% tariff."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "latimes-20180706",
+          "excerpt": "Soybeans topped the list... US farmers shipped ~$14B of soybeans to China last year (more than half of global exports); tariffs have hurt farmers, US soybean prices fell and Chinese orders virtually stopped."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico-20180706",
+          "excerpt": "China decries 'largest trade war in economic history'; National Association of Manufacturers warns 'tariffs will bring retaliation and possibly more tariffs.'"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "US dollar index ~115.15 (Aug 15), up ~7% over window; IP ~104 rising; CPI ~251.7 low; Baa ~4.76%; consumer sentiment 96.2 down from 101.4 in March."
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

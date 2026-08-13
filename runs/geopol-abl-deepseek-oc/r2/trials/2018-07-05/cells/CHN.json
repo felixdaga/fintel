@@ -1,0 +1,134 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-07-05",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 137287,
+    "tokens_out": 4437,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.5,
+      "rationale": "RECOMMENDATION: Implement the already-announced proportionate, in-kind retaliation on $34B of US goods effective July 6 \u2014 matching the US $50B action in scale and timing \u2014 while explicitly keeping negotiation channels open and signalling that we will NOT escalate beyond the matching amount. We should resist any temptation to over-escalate or to respond asymmetrically (service/tourism/regulatory retaliation), because doing so would hand Washington the pretext to trigger the threatened additional $200B tranche, which would hit roughly 40% or more of our export economy. Hold the line to preserve credibility and domestic resolve, but leave a clearly marked off-ramp for resumed talks.\n\nSUPPORTING RATIONALE: The threat is high, driven by three PIT facts. First, USTR's June 15 final action imposes 25% on $34B of imports (List 1) effective July 6, explicitly targeted at 'Made in China 2025' industrial sectors \u2014 aerospace, ICT, robotics, machinery (timeline 2018-06-15; USTR release) \u2014 a direct strike at our technology self-sufficiency goals. Second, the truce that de-escalated the crisis (China's May 19 commitment to 'significantly increase' US purchases, 'trade war on hold') was unilaterally collapsed by the White House on May 29, proving that purchase concessions do not reliably buy a durable truce. Third, the escalation ladder is asymmetric and dangerous: on June 18 Trump directed USTR to identify an additional $200B at 10%, with statements indicating a further $200B could follow, encompassing ~90% of the $505B we export to the US, while we import only ~$130B and therefore have far less room to reciprocate (POLITICO 2018-06-18). This asymmetry \u2014 not the $34-50B tranche itself, which we can absorb \u2014 is what makes the situation genuinely threatening rather than a mere nuisance. The moderate, proportionate stance (retaliate) is justified because backing down now would invite further pressure and read at home as capitulation to 'extreme pressure and blackmail,' while escalating beyond the mirror threatens to convert a controlled $50B dispute into a $450B trade war that hits our export economy and growth far harder. Matching retaliation preserves resolve, deters a cost-free squeeze, and the capped scope preserves bargaining room and US farm-belt pressure (our soy tariffs target a $14B US export) as leverage toward an eventual negotiated settlement.",
+      "key_factors": [
+        "US $34B List 1 tariffs effective July 6 targeting Made in China 2025 sectors (aerospace, ICT, robotics)",
+        "May 19 truce collapsed by US on May 29 despite China's purchase commitments",
+        "June 18 threat of additional $200B at 10%, up to ~$450B / ~90% of China's $505B exports",
+        "Structural asymmetry: China imports only ~$130B from US, limiting retaliation capacity",
+        "China already announced in-kind $50B / $34B retaliation effective July 6",
+        "ZTE denial order (April 16) signals firm-level non-tariff targeting risk"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-15",
+          "excerpt": "USTR announces final two-stage $50B tariff plan: 25% on List 1 (~$34B, effective July 6) ... China announces matching retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-18",
+          "excerpt": "Trump directs USTR to identify an additional ~$200B of Chinese imports for 10% tariffs if China retaliates."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions ... Truce collapses."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "POLITICO 2018-06-18",
+          "excerpt": "would encompass roughly 90 percent of the $505 billion worth of goods China exported to US in 2017 ... US exported only about $130 billion to China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "UST R release 2018-06-15",
+          "excerpt": "focuses on products ... 'Made in China 2025' industrial policy ... aerospace, information and communications technology, robotics, industrial machinery"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2018-06-15",
+          "excerpt": "China ... would retaliate against new U.S. tariffs ... 25% tariff will take effect July 6 on $34 billion of U.S. goods, including agriculture products and automobiles"
+        }
+      ],
+      "threat_score": 0.5,
+      "action_score": -0.25,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-07-05",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3015,
+        "capped_chars": 3015,
+        "raw_tokens": 754,
+        "capped_tokens": 754
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47842,
+        "capped_chars": 47842,
+        "raw_tokens": 11960,
+        "capped_tokens": 11960
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 35611,
+        "capped_chars": 35611,
+        "raw_tokens": 8902,
+        "capped_tokens": 8902
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 369203,
+  "started_at": "2026-08-13T07:46:04+00:00"
+}

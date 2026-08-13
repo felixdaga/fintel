@@ -1,0 +1,131 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-10-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 191889,
+    "tokens_out": 4693,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: We should use the ongoing 13th round of talks in Washington to lock in a Phase One deal \u2014 deferring the Oct 15 tariff hike in exchange for concrete Chinese concessions (resumed farm purchases, IP/enforcement commitments) rather than escalating or capitulating. The goal is to relieve the mounting self-inflicted economic damage while holding our leverage, not to settle for a cosmetic deal or walk away.\n\nSUPPORTING RATIONALE: The threat to US interests is real but moderate, not existential. The trade war is now visibly biting the real economy: ISM manufacturing fell to 47.8 in September, the lowest since June 2009 and the second straight month of contraction, an outcome directly attributed to the trade conflict; the Fed has cut rates twice with markets pricing a ~65% chance of another October cut; 10-yr yields collapsed from ~2.5% to ~1.6%. Meanwhile China has already made goodwill moves \u2014 a first tariff-exemption list (Sept 11), soybean/pork exclusion signals (Sept 13), and resumed US farm purchases \u2014 so the US holds leverage. Consumer sentiment recovered from its 89.8 August trough to 95.5, and retail/business groups are pressing for de-escalation, keeping the US out of existential territory and framing this as a self-inflicted wound. That justifies a +0.35 threat score. The disciplined action is to negotiate a partial Phase One deal that defers the Oct 15 tariff increase and buys reciprocal rollback, rather than max escalation that would deepen the manufacturing recession the ISM report flags and hurt the farm belt; going to full concession is unwarranted because China has not yet met structural demands.",
+      "key_factors": [
+        "ISM manufacturing 47.8 in Sept, worst since June 2009, second straight contraction, attributed to trade war",
+        "Fed funds down to 1.83%, markets pricing ~65% chance of further October cut; 10-yr yield fell from ~2.5% to ~1.6%",
+        "China goodwill: Sept 11 first tariff-exemption list; Sept 13 soybean/pork exclusion signals; resumed US farm purchases",
+        "Imminent Oct 15 tariff hike on $250B (25% to 30%) hangs over the ongoing 13th round in Washington",
+        "US retail/business community pressing for de-escalation; consumer sentiment recovering from 89.8 trough to 95.5"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-11",
+          "excerpt": "China announces first tariff-exemption list for some US products (16 categories; industrial inputs/chemicals)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-13",
+          "excerpt": "Chinese state media reports soybeans, pork and some farm goods excluded from additional retaliatory tariffs (goodwill signal ahead of talks)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Federal funds effective rate fell from 2.39% (May) to 1.83% (Oct); Fed cutting through 2019."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10-yr Treasury yield fell from ~2.55% (April) to 1.59% (early Oct) \u2014 flight to safety / growth scare."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-10-01",
+          "excerpt": "ISM Manufacturing fell to 47.8 in September, lowest since 2009, second month of contraction; market prices ~65% chance of October Fed rate cut."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes-2019-09-12",
+          "excerpt": "China resumed large purchases of American soybeans; Trump delayed next tariff increase to Oct 15 as a gesture; Mnuchin/Kudlow pushing to reach a deal amid flagging indicators."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.3,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-10-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5498,
+        "capped_chars": 5498,
+        "raw_tokens": 1374,
+        "capped_tokens": 1374
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48170,
+        "capped_chars": 48170,
+        "raw_tokens": 12042,
+        "capped_tokens": 12042
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 41354,
+        "capped_chars": 41354,
+        "raw_tokens": 10338,
+        "capped_tokens": 10338
+      }
+    },
+    "health": {
+      "status": "broken",
+      "issues": [
+        "1 tool error(s) the agent saw (MCP timeout/connection)",
+        "agent saw fintel__submit_views: Validation failed for tool \"fintel__submit_views\":\n  - views: must be array\n\nReceived arguments:\n{\n  \"views\": \"[{\\\"symbo"
+      ],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 336770,
+  "started_at": "2026-08-13T07:52:46+00:00"
+}

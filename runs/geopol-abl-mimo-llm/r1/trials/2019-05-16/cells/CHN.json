@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-05-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8274,
+    "tokens_out": 1053,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.011433,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should announce retaliatory tariffs on the remaining ~$60 billion of U.S. goods not yet covered, targeting politically sensitive sectors (agriculture, automobiles, energy) concentrated in Republican-leaning districts. Simultaneously, China should signal willingness to resume negotiations but refuse to make concessions under duress, framing retaliation as defensive and consistent with WTO norms.\n\nSUPPORTING RATIONALE: The threat score of +0.55 reflects the acute escalation triggered by Trump's May 5 tweet and the May 10 implementation of 25% tariffs on $200 billion of Chinese goods (Reuters timeline). This represents a near-doubling of the tariff rate on China's largest single tranche of exports to the US, with Trump simultaneously directing USTR to begin tariff proceedings on the remaining ~$300 billion of Chinese imports (Fox Business, May 12). The Brookings analysis notes that China's export economy is deeply embedded in global value chains\u2014more than half the value of 'Chinese' exports consists of imported components from Japan, South Korea, and others\u2014meaning tariffs disrupt not just Chinese assembly but the entire regional supply chain. The BBC reports that the Shanghai Composite fell ~25% in 2018 and the yuan depreciated over 5% against the dollar, signaling real financial stress. However, the threat is not yet existential: China's economy is large enough to absorb short-term shocks, and the CCP can deploy fiscal and monetary stimulus. The action_score of -1.0 (maximal retaliation stance, executed as 'retaliate') reflects the strategic logic that capitulating under tariff pressure would invite further escalation and undermine China's negotiating position. As the Brookings expert noted, 'it is unlikely that the Chinese leadership will cave in and do anything major.' Retaliation maintains leverage, rallies domestic nationalism, and imposes costs on US political constituencies that may constrain Trump's escalation appetite. The Fox Business report quotes Larry Kudlow acknowledging 'both sides will suffer,' confirming that US pain is real and politically salient. China's retaliation on $110 billion of US goods already demonstrated the effectiveness of targeting agricultural exports in swing states. Extending this pressure is the most credible deterrent against further US escalation.",
+      "key_factors": [
+        "Trump raised tariffs on $200bn of Chinese goods from 10% to 25% effective May 10, 2019",
+        "Trump directed USTR to begin tariff process on remaining ~$300bn of Chinese imports",
+        "China's export economy is embedded in global value chains\u2014tariffs disrupt regional supply chains (Brookings)",
+        "Shanghai Composite fell ~25% in 2018; yuan depreciated >5% against USD (BBC)",
+        "China has already retaliated on $110bn of US goods, targeting agriculture in Republican districts",
+        "Larry Kudlow acknowledged 'both sides will suffer,' confirming US economic pain from tariffs",
+        "Capitulating under pressure would invite further escalation; maintaining retaliation preserves leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 Timeline: Key dates in the U.S.-China trade war",
+          "excerpt": "Trump tweets that he intends to raise the tariffs rate on $200 billion of Chinese goods to 25% on May 10. The Trump administration gives formal notice of its intent to raise tariffs on $200 billion of Chinese imports to 25% from 10%, effective May 10."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.' Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "China's exports to the United States include technologies like smartphones, computers, and tablets. Such goods are part of 'global value chains,' with China at the end of the chain. While China is the final assembler from many products, actually more than half of the value of those products are in parts and components from other countries like South Korea and Japan."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "In 2018, Hong Kong's Hang Seng index fell more than 13% and the Shanghai Composite slumped nearly 25%. The yuan fell over 5% against the US dollar last year, before broadly stabilising in 2019."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-05-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 19814,
+        "capped_chars": 15891,
+        "raw_tokens": 4954,
+        "capped_tokens": 3973
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 27149,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

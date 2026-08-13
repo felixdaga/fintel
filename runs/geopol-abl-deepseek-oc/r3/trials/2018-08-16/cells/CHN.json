@@ -1,0 +1,128 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-08-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 137573,
+    "tokens_out": 5382,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Maintain proportionate, calibrated retaliation that mirrors each U.S. escalation one-for-one (matching the $34B hit, and our announced up-to-25% duties on ~$60B of U.S. goods if Washington proceeds with the $200B List 3), while keeping the negotiation channel explicitly open and avoiding any action that hands Washington pretext to trigger the full $200B at 25%. Do not fire an out-of-proportion first strike, and do not concede structural reform absent a matching U.S. offer.\n\nSUPPORTING RATIONALE: The threat is high because U.S. actions target the exact sectors of China's economy named in the high-threat anchor: Section 301 tariffs on ~$50B of aerospace/ICT/robotics/machinery (2018-03-22, 04-03 lists), the already-in-force 25% List 1 on ~$34B (07-06), the proposed $200B List 3 raised to 25% (08-01), and the ZTE denial order that set an entity-list precedent against a Chinese tech champion (04-16). Macro confirms strain: the yuan has depreciated ~8% against the dollar this year with its worst four-month fall on record, even though July exports still grew 12.2% and the US surplus stayed near record highs, so the economy has not yet cracked. This is material-but-not-existential, hence +0.55. The action stance is calibrated retaliation (-0.3) rather than maximal escalation or unilateral concession: China's imports from the U.S. are far smaller than its exports, so it physically cannot counter $200B symmetrically, and over-escalating risks provoking the worst-case tariff; but conceding now, before any matching U.S. offer, is politically untenable and would invite further demands. Proportionate mirror-response (which Beijing has already announced) preserves resolve and face while the weakened yuan and front-loaded trade data buy time, and explicitly keeps the door open to talks so we are not the party that closes negotiation.",
+      "key_factors": [
+        "US 25% tariffs on $34B List 1 in force (2018-07-06), List 2 ~$16B queued, $200B List 3 proposed and being raised to 25% (2018-08-01)",
+        "China's asymmetric leverage: can only counter ~$60B of US imports, cannot match $200B",
+        "ZTE denial order (2018-04-16) set entity-list precedent targeting Chinese tech firms",
+        "Yuan depreciated ~8% YTD / worst 4-month fall on record, but July exports still +12.2% with near-record US surplus",
+        "Threat to tech autonomy / Made in China 2025 sectors from Section 301 lists"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-22",
+          "excerpt": "USTR releases Section 301 report; tariffs on Chinese imports, WTO case, investment restrictions"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US bans ZTE from buying US components (denial order); major non-tariff escalation"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-06",
+          "excerpt": "List 1 tariffs take effect: US 25% on ~$34B of Chinese goods; China imposes matching ~$34B retaliation"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-08-01",
+          "excerpt": "USTR says it is considering raising the proposed List 3 rate from 10% to 25%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "money.cnn.com/2018/08/03/news/economy/china-us-tariffs-retaliation",
+          "excerpt": "China plans up to 25% tariffs on $60B of US imports if the US follows through on the $200B threat"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters.com/world/chinas-july-exports-rise-more-expected-despite-us-tariffs-idUSKBN1KT0C9",
+          "excerpt": "Yuan marked worst 4-month fall on record Apr-Jul; July exports rose 12.2% despite US tariffs"
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.3,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-08-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3319,
+        "capped_chars": 3319,
+        "raw_tokens": 830,
+        "capped_tokens": 830
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48158,
+        "capped_chars": 48158,
+        "raw_tokens": 12040,
+        "capped_tokens": 12040
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 31854,
+        "capped_chars": 31854,
+        "raw_tokens": 7964,
+        "capped_tokens": 7964
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 369613,
+  "started_at": "2026-08-13T07:44:38+00:00"
+}

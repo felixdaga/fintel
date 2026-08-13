@@ -1,0 +1,131 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-03-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: Continue negotiations firmly but do not commit to structural concessions that would permanently constrain China's development model. Use the current negotiation window to secure tariff relief through purchase commitments while resisting US demands on enforcement mechanisms that would give Washington unilateral reimposition authority. Avoid new escalatory moves on Huawei or other fronts that could derail talks.\n\nSUPPORTING RATIONALE: The threat reading of +0.45 reflects genuine but not existential economic pressure. China's GDP growth has hit a 3-decade low at 6.6% (2018), with Q4 at 6.4% (event_timeline: 2019-01-21 national data release). Manufacturing PMI has contracted for three consecutive months through February 2019, hitting its lowest level since 2009, with the export orders subindex at a decade low (web_search: The Diplomat, March 5, 2019). Eight provinces have slashed 2019 growth targets \u2014 Henan from 7.5% to 6.5%, Jiangsu, Fujian, Anhui all cutting (web_search: SCMP, Jan 16, 2019). The frontloading effect that masked tariff impact through most of 2018 has now worn off.\n\nHowever, the threat is not yet existential. The McKinsey assessment cited by Wharton economists estimates direct GDP impact at 0.5-0.8%, with the real risk being a consumer confidence spiral (web_search: Knowledge@Wharton, Jan 8, 2019). China has deployed massive stimulus \u2014 the PBoC injected $83 billion in a single day through bond repos in January 2019, the RRR is being cut further, and infrastructure spending is being ramped up (web_search: The Diplomat, March 5, 2019). China's ~10% yuan depreciation in 2018 partially offset the 10% List 3 tariff, and Chinese firms are 'eating' part of the tariff costs to maintain competitiveness (web_search: Econlib, Feb 8, 2019). The US trade deficit with China actually hit a record $419.2 billion in 2018 despite tariffs (web_search: Politico, March 6, 2019), suggesting the tariff strategy has structural limits.\n\nThe Huawei/Meng situation is a serious non-tariff escalation \u2014 DOJ fraud and sanctions charges were unsealed January 28 with extradition formally requested \u2014 but China has limited retaliatory options beyond detaining Canadians, which it has already done (web_search: NYT, Jan 30, 2019). The enforcement mechanism dispute is the critical issue: the US wants a process where tariffs can 'kick back in' if China reneges on commitments (web_search: NYT, Feb 21, 2019), which would effectively give Washington permanent unilateral leverage. This is more dangerous to China's long-term interests than the current tariff levels. Six MOUs are being drafted on structural issues including forced technology transfer, IP, services, currency, agriculture, and non-tariff barriers (web_search: CNBC, Feb 21, 2019).\n\nThe action_score of -0.1 (negotiate) reflects a stance of continued engagement without new concessions. China should offer meaningful purchase commitments \u2014 agricultural goods, LNG, manufactured goods \u2014 which are reversible and don't constrain structural policy. But China must resist enforcement mechanisms that would create permanent asymmetric leverage. The economic pain is real but manageable with stimulus; capitulating on structural reform demands would be more damaging long-term than absorbing tariff costs. The risk of escalation (List 3 hike to 25% on $200B) remains if talks collapse, but Trump has shown willingness to delay, suggesting deal appetite on the US side that China can leverage.",
+      "key_factors": [
+        "Manufacturing PMI contraction for 3 consecutive months through Feb 2019 (lowest since 2009)",
+        "GDP growth at 3-decade low (6.6% full-year 2018, 6.4% Q4)",
+        "Enforcement mechanism dispute \u2014 US wants unilateral tariff reimposition authority",
+        "Huawei/Meng extradition case escalating alongside trade negotiations",
+        "Record $419.2B US-China trade deficit in 2018 despite tariffs",
+        "Massive stimulus deployed: PBoC $83B single-day injection, RRR cuts, infrastructure spending",
+        "Yuan depreciation (~10% in 2018) partially offsetting tariff impact",
+        "Six MOUs being drafted on structural issues (IP, tech transfer, currency, etc.)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-24",
+          "excerpt": "Trump tweets that talks have made substantial progress and further delays the scheduled List 3 hike from 10% to 25%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thediplomat.com/2019/03/as-chinas-economy-continues-to-slow-stimulus-rears-its-head",
+          "excerpt": "Manufacturing activity contracted for the third consecutive month in February 2019...official manufacturing PMI has reached its lowest levels since 2009...export orders subindex of China's manufacturing PMI fell to a decade low"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "knowledge.wharton.upenn.edu/article/china-in-2019",
+          "excerpt": "The narrow short-term GDP impact on China of the tariffs alone is modest, on the order of 0.5% to 0.8% of GDP. But if tariffs lead to job losses in China and then a decline in consumer confidence, the medium-term impact will be much, much greater."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico.com/story/2019/03/06/us-china-trade-deficit-record-1242498",
+          "excerpt": "The trade gap rose to $419.2 billion in 2018, from the previous record of $375.5 billion in 2017"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes.com/2019/02/21/business/economy/china-us-trade-talks.html",
+          "excerpt": "The administration is considering a process that would allow tariffs to kick back in if the Chinese are found to have reneged on a commitment"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-03-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4923,
+        "capped_chars": 4923,
+        "raw_tokens": 1231,
+        "capped_tokens": 1231
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11282,
+        "capped_chars": 11282,
+        "raw_tokens": 2820,
+        "capped_tokens": 2820
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 65927,
+        "capped_chars": 65927,
+        "raw_tokens": 16482,
+        "capped_tokens": 16482
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 386750,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

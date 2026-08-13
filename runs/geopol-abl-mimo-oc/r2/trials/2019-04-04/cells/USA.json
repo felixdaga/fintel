@@ -1,0 +1,136 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-04-04",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Continue intensive negotiations with China from a position of strength, insisting on a structurally enforceable deal that addresses IP theft, forced tech transfer, and subsidies. Maintain existing tariffs as leverage until genuine compliance mechanisms are locked in. Do not rush to sign a deal built primarily on purchase commitments \u2014 the structural issues are the real prize.\n\nSUPPORTING RATIONALE: The threat score of -0.3 reflects moderate US leverage, tilting toward opportunity. China is under significant economic pressure: GDP growth hit a 28-year low (6.6% in 2018, 6.4% in Q4), exports fell 4.4% in December 2018, factory activity is contracting, and Beijing is deploying emergency stimulus (CNN, Jan 21 2019; The Diplomat, Feb 2 2019). China has made 'unprecedented' offers on forced tech transfer (CNBC, Mar 28 2019). The $250B tariff wall is working as intended \u2014 forcing China to the table with real concessions.\n\nHowever, the US is not without costs: the CBO projects tariffs will slow GDP growth by 0.1% annually (Reuters, Jan 28 2019), NBER research estimates $51B in consumer/firm losses from tariff pass-through, 2018 GDP came in at 2.9% missing the 3% target, and the 10-year Treasury yield has dropped from 3.2% to 2.5% \u2014 a significant decline signaling growth concerns. Farm-belt states hit by Chinese retaliation are pressuring the administration (Senator Grassley's comments, Reuters Mar 29 2019).\n\nThe action score of -0.1 (negotiate, slightly firm) reflects the right posture: we have leverage but should not waste it on a weak deal. The April 3 Washington talks report 'progress on text, including enforcement language' but no final deal. The key sticking points \u2014 enforcement mechanism and tariff sequencing \u2014 are precisely what matters. China wants tariffs removed; the US (rightly) wants to retain them as compliance leverage. Lighthizer has laid down a clear marker: structural change on IP, tech transfer, and subsidies, with an enforceable dispute resolution mechanism (The Diplomat, Apr 1 2019). Congress is also watching \u2014 proposals like the Global Trade Accountability Act signal that the window for executive trade action may narrow. The US should close a deal that includes: (1) binding structural reforms, (2) an enforcement mechanism with unilateral proportional response rights, and (3) phased tariff removal tied to verified compliance \u2014 not purchase commitments alone.",
+      "key_factors": [
+        "China's economy at 28-year low (6.6% GDP), exports contracting, factory activity shrinking",
+        "China made 'unprecedented' offers on forced tech transfer (CNBC Mar 28 2019)",
+        "Enforcement mechanism and tariff sequencing remain key sticking points in negotiations",
+        "US tariffs on $250B of Chinese goods provide significant leverage",
+        "US costs mounting: CBO projects 0.1% annual GDP drag, farm-belt pressure, 10Y yield decline from 3.2% to 2.5%",
+        "Lighthizer demanding structural change with enforceable dispute resolution",
+        "Congress exploring limits on executive tariff authority (Global Trade Accountability Act)",
+        "Huawei/Meng Wanzhou situation adds non-tariff leverage but complicates broader diplomacy"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks between US and Chinese negotiators; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-03-28",
+          "excerpt": "China makes 'unprecedented' proposals on tech transfer and trade, per US officials."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNN Jan 21 2019",
+          "excerpt": "China's economy expanded 6.6% in 2018, weakest annual performance since 1990. Q4 growth at 6.4%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters Jan 28 2019",
+          "excerpt": "CBO: tariffs will limit growth of U.S. real GDP by an average of 0.1 percent each year for the next 10 years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "The Diplomat Apr 1 2019",
+          "excerpt": "Lighthizer laid down a clear marker: structural change on forced technology transfer, IP protection, subsidies, with enforceable dispute resolution."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC Apr 2 2019",
+          "excerpt": "Chances increasing for a deal but enforcement mechanism and tariff plan remain stubborn differences. US Chamber says this week 'critical'."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10-year Treasury yield declined from 3.21% (Oct 2018) to 2.52% (Apr 2019), a drop of 69 basis points signaling growth concerns."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-04-04",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11268,
+        "capped_chars": 11268,
+        "raw_tokens": 2817,
+        "capped_tokens": 2817
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 56250,
+        "capped_chars": 56250,
+        "raw_tokens": 14063,
+        "capped_tokens": 14063
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 380625,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

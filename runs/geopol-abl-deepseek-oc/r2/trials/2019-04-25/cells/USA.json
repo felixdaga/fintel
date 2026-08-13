@@ -1,0 +1,123 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-04-25",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 141622,
+    "tokens_out": 2975,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Stay the course in the near-final negotiating window without either escalating or ceding leverage. The talks are in their closing phase with enforcement language reportedly near-settled, so the highest-value move is to push the agreement across the line while retaining the tariff stick that bought US concessions. Avoid a new escalation that could blow up a deal to which China is already committing (purchases, IP/tech-transfer, enforcement), and avoid a premature full rollback that would surrender the leverage still needed to lock in enforcement.\n\nSUPPORTING RATIONALE: The dispute does not read as an existential or even high threat to US interests at this decision date. US macro data are solid: consumer sentiment is elevated (~97.2), inflation is contained (CPI ~255, sub-2% trend), and credit conditions are easing (Moody's Baa corporate yield fell to ~4.67), with the VIX subdued and the dollar broadly flat. The main genuine cost is concentrated in agriculture \u2014 USDA put FY2019 farm exports down ~$1.9B with soybean shipments to China down over 90% (22M tons) and China falling from the #2 to #5 US ag market \u2014 which fuels Midwest political pressure but is not a material economy-wide drag. On the strategic side the US holds the advantage: ~$250B of tariffs remain in place (List 3 at 10% after repeated delay of the hike to 25%), and senior negotiators (Mnuchin, USD Trade Rep per WSJ/Reuters, April 13-15) publicly framed the talks as in the 'final round/weeks' with enforcement nearly settled and China discussing $1T+ of purchases. That is terrain favorable to securing US demands, justifying a mildly negative (opportunity-leaning) threat score of -0.3. Because a deal is close and both sides have momentum, the recommended action is to negotiate to a close rather than escalate (which risks collapsing the truce) or fully concede (which forfeits enforcement leverage); hence action_score +0.1 / 'negotiate'.",
+      "key_factors": [
+        "~$250B US tariffs still in force; List 3 hike to 25% repeatedly suspended",
+        "Negotiations in 'final round/weeks' per Mnuchin/Lighthizer, enforcement nearly settled",
+        "US economy healthy: consumer sentiment ~97, credit spreads tight, VIX low, contained inflation",
+        "Agriculture hit: farm exports -$1.9B, soybean shipments to China -90%+, China to #5 ag market",
+        "China committing to large purchases ($1T+ discussed) and IP/tech-transfer terms"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%; combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.nytimes.com/2019/04/13/us/politics/mnuchin-china-trade-talks.html",
+          "excerpt": "Mnuchin says US and China nearing 'final stage'; biggest obstacle \u2014 enforcement \u2014 nearly settled; China discussed buying more than $1 trillion of goods."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://thehill.com/.../431113",
+          "excerpt": "USDA: US farm exports to drop ~$1.9B in FY2019; soybean exports to China down 22M tons/90%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "US consumer sentiment ~97.2 in Apr 2019; Baa corporate yield falling to ~4.67 (credit easing)."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-04-25",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4024,
+        "capped_chars": 4024,
+        "raw_tokens": 1006,
+        "capped_tokens": 1006
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46810,
+        "capped_chars": 46810,
+        "raw_tokens": 11702,
+        "capped_tokens": 11702
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 45893,
+        "capped_chars": 45893,
+        "raw_tokens": 11473,
+        "capped_tokens": 11473
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 304030,
+  "started_at": "2026-08-13T07:51:51+00:00"
+}

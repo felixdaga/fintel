@@ -1,0 +1,66 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "score": 0.6,
+      "threat_score": 0.6,
+      "action_score": 0.35,
+      "action_level": "partial_rollback",
+      "rationale": "RECOMMENDATION: Roll back the recent List 4 tariff increase from 15% back to 10% and delay the September 1 effective date for List 4A. This signals genuine willingness to de-escalate, protects American consumers from pre-holiday price spikes, and creates diplomatic space for talks before the 2020 election cycle makes resolution impossible. The US should pair this with a clear message: further talks must address structural issues (IP, tech transfer, enforcement), but the tariff weapon is now counterproductive.\n\nSUPPORTING RATIONALE: The threat to US interests is substantial (threat_score: +0.6) for several reasons grounded in PIT evidence. First, the tariff escalation has reached its ceiling \u2014 with Lists 3 and 4 covering virtually all Chinese imports, the US has exhausted its tariff leverage while China retains asymmetric tools (agricultural boycotts, currency depreciation, rare earth threats, unreliable entity list). Second, the economic damage is now hitting consumers directly: List 4 targets smartphones, laptops, toys, and apparel \u2014 goods American families buy daily \u2014 with the NY Fed estimating $620/year in deadweight loss per household before these new tariffs (Wharton analysis, Aug 27). Third, the yield curve inversion on August 14 \u2014 the first since 2007 \u2014 and the 800-point Dow drop signal genuine recession risk that tariff escalation is actively worsening. Fourth, US farmers are in crisis: China has halted all agricultural purchases, soybean exports dropped 74% year-on-year, farm income is down 45% since 2013, and the administration has already spent $28B on bailouts (CNBC, Aug 10; USDA data). Fifth, Goldman Sachs now expects no deal before the 2020 election, meaning this pain has no near-term resolution in sight.\n\nThe action_score of +0.35 (partial_rollback) is justified because continued escalation is self-defeating. The US gains no additional leverage from raising tariffs further \u2014 the tariff weapon is spent \u2014 while each escalation triggers Chinese retaliation that disproportionately harms Trump's rural political base. Rolling back the List 4 rate increase is a low-cost gesture that: (a) protects consumers before the holiday season, (b) removes China's pretext for further retaliation, (c) demonstrates good faith to restart negotiations, and (d) preserves the existing $250B in 25% tariffs as leverage for structural demands. The alternative \u2014 pressing ahead with 15% on $300B \u2014 risks recession, deeper farm belt losses, and no additional negotiating advantage.",
+      "key_factors": [
+        "Tariff leverage exhausted \u2014 nearly all Chinese imports already covered",
+        "Yield curve inversion (Aug 14) signals real recession risk",
+        "Consumer goods now directly targeted \u2014 prices will rise before holidays",
+        "Farm sector in crisis: China halted all purchases, $28B in bailouts",
+        "Goldman Sachs: no deal expected before 2020 election",
+        "China retains asymmetric retaliation tools (currency, rare earths, UST holdings)",
+        "Q2 GDP slowed to 2.1%; analysts project further deceleration",
+        "Huawei Entity List escalation on Aug 21 adds tech war dimension"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-23",
+          "excerpt": "China announces retaliation on ~$75B of US goods (5\u201310%, split Sept 1 / Dec 15), including re-imposing tariffs on US autos. Trump orders US companies to 'immediately start looking for an alternative to China' and directs a 5-point increase on the planned List 4 rate (to 15%) and threatened hikes on existing lists."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-01",
+          "excerpt": "After the Shanghai round, Trump announces 10% tariffs on the remaining ~$300B of Chinese goods (List 4), effective Sept 1."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wharton-2019-08-27",
+          "excerpt": "NY Fed estimates deadweight loss per household at $620, for a total annual cost of $79 billion. NBER found little evidence of cost absorption by Chinese exporters, implying most cost imposed on US consumers."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "axios-2019-08-14",
+          "excerpt": "Dow Jones fell 800 points on Aug 14 after 10-year Treasury yield fell below 2-year yield for first time since 2007 \u2014 yield curve inversion that has preceded every recession for past 50 years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-08-10",
+          "excerpt": "U.S. farmers lost their fourth largest export market. Agriculture exports to China dropped by more than half. Over the last 6 years, farm income has dropped 45% from $123.4 billion in 2013 to $63 billion."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washingtonpost-2019-08-26",
+          "excerpt": "GDP grew in Q2 at 2.1%, slower than 3.1% in Q1. Bloomberg projects GDP to slow to 1.8% annualized in Q3. Bloomberg Economics estimates world economy could lose $1.2 trillion by 2021 if trade war escalates."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-08-23",
+          "excerpt": "China has purchased about only half the U.S. soybeans it pledged to buy. USDA Undersecretary said Beijing was a long way from fulfilling commitments."
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

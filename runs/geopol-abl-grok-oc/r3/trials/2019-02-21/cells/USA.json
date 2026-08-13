@@ -1,0 +1,169 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 7,
+    "tokens_in": 423693,
+    "tokens_out": 9219,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: Keep existing Section 301 tariffs in place and continue the Washington talks. Do not automatically raise List 3 from 10% to 25% on March 1 while negotiations are still producing movement, and do not trade a purchase-only package or the Meng Wanzhou case for a premature rollback. Any short extension of the truce should be conditioned on written progress on IP, forced technology transfer, industrial subsidies, and a usable enforcement mechanism.\n\nSUPPORTING RATIONALE: The current state of the dispute is a modest US opportunity, not a high threat. Washington still holds the larger tariff footprint (about $250B of Chinese goods under Section 301 versus China's smaller matching lists) and Beijing is at the table offering purchases after the 1 Dec 2018 G20 pause of the scheduled List 3 hike (timeline 2018-12-01; 2019-01-07; 2019-01-30; 2019-02-14). Risk pricing has eased (VIX 14.02 on 2019-02-20 after the December spike) and the yuan has firmed to about 6.76 rather than breaking weaker, which is consistent with China wanting to avoid a March hike. That leverage justifies a modestly negative threat score of minus 0.25, not an existential or even high threat. It is not a clean opportunity either: US goods exports to China have fallen (about $9.7B in Sep-18 to $8.1B in Feb-19), imports from China have dropped sharply, Michigan sentiment fell from 100.1 to 93.8, and industrial production has slipped. Farm-belt retaliation is the main domestic cost\u2014soy shipments to China collapsed after China's July 2018 25% tariff, USDA aid was required, and only limited buying resumed after Buenos Aires. Action stays near zero (plus 0.05, negotiate) because hiking to 25% now would risk collapsing a live negotiation that Trump has already called a non-magical date, while rolling back or locking in purchases without enforcement would repeat the May 2018 false truce. Huawei/Meng (timeline 2018-12-01, 2019-01-28) should stay on the law-enforcement track, not be bargained into the tariff text.",
+      "key_factors": [
+        "Live Feb 2019 talks: progress on purchases, unresolved IP/tech-transfer/enforcement",
+        "US tariff leverage intact: List 3 still at 10% with a threatened hike to 25%",
+        "Farm-sector retaliation (soybeans and related) is the main US cost and political constraint",
+        "US macro is cooling at the margin (sentiment, IP, bilateral trade) but not in crisis; VIX has normalized",
+        "Huawei/Meng raises tech and security stakes and should not be folded into a cheap commercial deal",
+        "Trump has signaled March 1 can slide if a real deal is close\u2014use that optionality rather than auto-escalate"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended (tariffs remain at 10%). Same day: Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-14",
+          "excerpt": "Another round of talks (through Feb 15). Progress reported on purchases; enforcement mechanism still disputed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-30",
+          "excerpt": "Lighthizer and Mnuchin in Beijing for high-level talks. Purchase commitments discussed; enforcement and structural IP/tech-transfer issues unresolved."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA.UMCSENT",
+          "excerpt": "University of Michigan consumer sentiment fell from 100.1 (Sep 2018) to 91.2 (Jan 2019) and only partially recovered to 93.8 (Feb 2019)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA.EXPCH",
+          "excerpt": "US goods exports to mainland China declined from $9.73B (Sep 2018) to $8.08B (Feb 2019), about -17% over the window."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA.IMPCH",
+          "excerpt": "US goods imports from China fell from $52.1B (Oct 2018) to $33.0B (Feb 2019), a ~34% drop over the window."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA.VIXCLS",
+          "excerpt": "VIX closed 14.02 on 2019-02-20 after peaking at 36.07 on 2018-12-24\u2014risk pricing has normalized during the truce/talks."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA.DEXCHUS",
+          "excerpt": "CNY strengthened from a weak ~6.97 in late Oct 2018 to 6.756 on 2019-02-19, consistent with China not forcing a devaluation during talks."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.npr.org/2019/02/20/696343041/trade-talks-with-china-continue-as-trump-shies-from-a-hard-deadline-for-a-deal",
+          "excerpt": "As of 20 Feb 2019, Liu He was due in Washington; Trump said March 1 is not a magical date and the real question is whether tariffs rise."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.reuters.com/article/us-usa-trade-china-lighthizer-idUSKCN1Q10XR/",
+          "excerpt": "Trump said he could let the March 1 deadline slide if close to a real deal but was not inclined to; structural issues remain the US demand."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.reuters.com/article/world/trade-wars-cost-us-china-billions-of-dollars-each-in-2018-idUSKCN1OR1JH/",
+          "excerpt": "US ag exports to China down 42% in first 10 months of 2018 to ~$8.3B; China had been a ~$12B soybean market."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.axios.com/2019/01/29/huawei-charges-us-china-trade-talks",
+          "excerpt": "DOJ Huawei/Meng charges landed on the eve of January talks and are entangled with the broader attempt to unwind Chinese tech advantages."
+        }
+      ],
+      "threat_score": -1,
+      "action_score": 0.05,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5015,
+        "capped_chars": 5015,
+        "raw_tokens": 1254,
+        "capped_tokens": 1254
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46548,
+        "capped_chars": 46548,
+        "raw_tokens": 11637,
+        "capped_tokens": 11637
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 100156,
+        "capped_chars": 100156,
+        "raw_tokens": 25040,
+        "capped_tokens": 25040
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 909006,
+  "started_at": "2026-08-13T06:08:08+00:00"
+}

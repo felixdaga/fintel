@@ -1,0 +1,102 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-04-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9608,
+    "tokens_out": 1001,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0100254,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should announce retaliatory tariffs on the full $50 billion list of U.S. goods (soybeans, aircraft, automobiles) as already signaled, while keeping the door open for negotiation through diplomatic channels. This demonstrates resolve without foreclosing dialogue, and targets U.S. political constituencies (farm-belt states, auto manufacturers) that will pressure Washington to reconsider.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The U.S. has proposed tariffs on up to $153 billion of Chinese imports (CBS News, April 6), targeting high-end exports critical to Made in China 2025 \u2014 84% of the targeted products are high-end (Bruegel analysis). This directly threatens China's technological modernization agenda. However, as of April 12, nothing has been executed; Larry Kudlow himself said \"Nothing's happened. Nothing's been executed\" (CBS News). The public comment period runs until May 11 with a hearing May 15, leaving room for negotiation.\n\nChina's retaliatory capacity is real but asymmetric \u2014 China imported only $130 billion of U.S. goods vs. $506 billion flowing the other way (CBS News), meaning China cannot fully match U.S. tariff escalation in dollar terms. Former Finance Minister Lou Jiwei's public call to \"hit soybeans, automobiles, and airplanes\" (Times of India) signals domestic pressure for a strong response. The Bruegel analysis confirms China's retaliation list targets U.S. exporters' present revenues (agriculture, aircraft, vehicles) while the U.S. targets China's future technological capacity \u2014 a strategic asymmetry that favors retaliating now while the pain is still concentrated on U.S. exporters.\n\nThe action_score of -1.0 reflects the need for a firm retaliatory signal. China has already retaliated on $3 billion (steel/aluminum response, effective April 2 per Reuters), but the $50 billion Section 301 list demands a proportional counter. Retaliation now serves dual purposes: (1) it raises the cost of further U.S. escalation by demonstrating China will not absorb tariffs passively, and (2) it targets politically sensitive U.S. sectors \u2014 soybean farmers in Trump's base states, auto manufacturers in Michigan \u2014 creating domestic U.S. pressure for de-escalation. The risk of escalation is real, but conceding without retaliation would invite further U.S. demands and undermine China's negotiating position.",
+      "key_factors": [
+        "U.S. proposed tariffs on $50B+ of Chinese goods targeting Made in China 2025 sectors; 84% are high-end exports (Bruegel)",
+        "China's asymmetric trade position ($130B imports vs $506B exports) limits matching capacity but retaliation on soybeans/aircraft/autos targets U.S. political constituencies",
+        "Nothing executed yet \u2014 Kudlow says 'Nothing's happened'; public comment period until May 11 leaves negotiation window",
+        "Domestic pressure from figures like Lou Jiwei calling for stronger retaliation on soybeans, autos, aircraft",
+        "China already retaliated $3B on steel/aluminum (effective April 2); proportional response to Section 301 list needed",
+        "Semiconductors exempted from China's retaliation list due to irreplaceable nature \u2014 shows strategic calculation, not blind escalation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China... Trump said he would consider adding another $100 billion... Larry Kudlow: 'Nothing's happened. Nothing's been executed.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports... the U.S. is targeting China's future technological capacity, and China is responding by targeting U.S. exporters' present revenues."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "timesofindia.indiatimes.com",
+          "excerpt": "Lou Jiwei: 'If I were still in the government, I would be hitting soybeans, automobiles, and airplanes'... Liu He: 'China is prepared and has the ability to defend its national interests.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China has increased tariffs by up to 25 percent on 128 U.S. products... effective starting April 2... 'the sparks of such a war have already started to fly.'"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-04-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 29183,
+        "capped_chars": 24151,
+        "raw_tokens": 7296,
+        "capped_tokens": 6038
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 18088,
+  "started_at": "2026-08-13T10:55:29+00:00"
+}

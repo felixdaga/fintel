@@ -1,0 +1,104 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-07-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 11066,
+    "tokens_out": 1006,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0114984,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue to retaliate in kind against U.S. tariffs, matching each escalation with proportional counter-tariffs on American agricultural and industrial goods, while signaling willingness to negotiate if the U.S. de-escalates. This maintains China's credibility and leverage without overextending.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The U.S. has implemented 25% tariffs on $34 billion of Chinese goods (July 6) and is threatening up to $250 billion more (Brookings, CFR). China's exports to the U.S. total ~$505 billion, representing ~5% of GDP (RAND), making China more exposed in absolute terms than the U.S. (whose exports to China are $130B, ~0.7% of GDP). The yuan has already depreciated 6% from 6.28 to 6.64 per dollar (RAND), signaling market stress. However, China has structural advantages: it can target politically sensitive U.S. sectors (soybeans down 20%, per Brookings), U.S. firms operating in China face collateral damage, and the Trump administration's strategy of avoiding consumer goods tariffs limits its own leverage. The CFR analysis shows China's industrial policy (Made in China 2025, technology transfer requirements, domestic subsidies) is the real U.S. target, but these are largely WTO-legal and deeply embedded. Retaliation is justified because: (1) China cannot afford to appear weak domestically given CCP legitimacy concerns; (2) the U.S. midterm election timing (November 2018) creates political pressure on Trump that China can exploit by targeting farm-belt states; (3) as RAND notes, China's retaliatory tariffs on food and consumer goods cause less supply-chain disruption to China than U.S. tariffs on machinery/equipment cause to American firms. The action_score of -1.0 reflects that this is a moment requiring firm, proportional retaliation to establish deterrence, not escalation to new domains.",
+      "key_factors": [
+        "U.S. tariffs on $34B of Chinese goods effective July 6, with threats of up to $250B more",
+        "China's exports to U.S. (~$505B) represent ~5% of GDP vs U.S. exports to China (~$130B) at ~0.7%",
+        "Yuan depreciation of 6% (6.28 to 6.64/USD) since April signals market pressure",
+        "Soybean prices down 20% from Chinese retaliation targeting U.S. agricultural heartland",
+        "U.S. midterm elections in November 2018 create political leverage for China",
+        "China's retaliatory tariffs on food/consumer goods cause less supply-chain disruption than U.S. tariffs on machinery",
+        "No high-level negotiations scheduled; Brookings analyst expects talks only after U.S. elections",
+        "China's industrial policy (Made in China 2025) is the real U.S. target but is deeply embedded and largely WTO-legal"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The U.S. has announced $250 billion of tariffs on products from China, and China has partially retaliated and will probably come out with more retaliation. For the next several months we will probably be locked into this situation. No high-level negotiations are scheduled."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "$505 billion in potentially lost exports is a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent). From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cfr.org \u2014 U.S.-China Trade War: How We Got Here",
+          "excerpt": "China's industrial policy largely shifted from export promotion to import substitution after 2009. The policies that China deploys to support its efforts at import substitution aren't WTO violations per se."
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-07-26",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35798,
+        "capped_chars": 31232,
+        "raw_tokens": 8950,
+        "capped_tokens": 7808
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22456,
+  "started_at": "2026-08-13T10:55:03+00:00"
+}

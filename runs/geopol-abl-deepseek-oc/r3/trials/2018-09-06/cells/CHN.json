@@ -1,0 +1,134 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-09-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 135237,
+    "tokens_out": 4245,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Prepare a calibrated, proportionate retaliation for the imminent ~$200B List 3 tariff round \u2014 matching the two ~$50B rounds already in force and delivering on our stated ~$60B counter-threat \u2014 while simultaneously keeping a negotiation channel open so the spiral does not deepen further than Washington's own initiated action. We must defend credibility and deterrence (we have retaliated dollar-for-dollar at every step), but we should not chase maximal escalation we cannot win, since our export base to the US is far larger than US exports to us.\n\nSUPPORTING RATIONALE: The threat to China is high but not existential. The US has already imposed 25% tariffs on ~$50B of our goods (List 1, ~$34B, effective 2018-07-06; List 2, ~$16B, effective 2018-08-23), which we matched in kind both times \u2014 evidence that the dispute is actively biting, not just rhetorical. Directly ahead, the US$200B List 3 public-comment period closes 2018-09-06 and tariffs could take effect 'as soon as Friday,' with the rate possibly rising from 10% to 25%, and Trump has threatened over $500B in total. This is a major escalation target at our core electronics/components, machinery, autos and consumer-goods export sectors, and the April ZTE denial order shows firm-level/tech targeting (entity-list risk) is live. Macro confirms stress: the yuan has already depreciated ~7% since March on trade tensions, pressure PBOC reserves and raising financial-stability concerns (analysts warn a weaponized devaluation would backfire capital-flight/2015-style), even as exports to the US still account for roughly a fifth of our overseas shipments. This drives a threat reading of ~+0.55 (high: major export sectors hit, FX pressure, firm-level targeting). For action, escalation is asymmetric and costly \u2014 US exports to China are far smaller than our $506B in US-bound sales, so we cannot fully mirror a $200B round (we have only threatened $60B) \u2014 which means restraint-with-deterrence, not maximal escalation, is the correct stance: retaliate proportionately to preserve leverage and signal resolve, but avoid triggering a steeper $500B-plus cascade that would hurt our own economy and financial system more than it hurts Washington.",
+      "key_factors": [
+        "US$50B of tariffs already in force (List 1 2018-07-06, List 2 2018-08-23), matched by China",
+        "~$200B List 3 pending: comment period closes 2018-09-06, tariffs may hit this week, 10% to 25% possible",
+        "April ZTE denial order shows tech/firm-level entity-list targeting",
+        "Yuan depreciated ~7% since March amid trade tensions; reserves/FX-stability risk",
+        "Exports to US ~1/5 of China's total; asymmetry caps ability to mirror a $200B round",
+        "China has threatened ~$60B retaliation against the next US round"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-06",
+          "excerpt": "List 1 tariffs take effect: US 25% on ~$34B of Chinese goods. China imposes matching ~$34B retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-08-23",
+          "excerpt": "List 2 tariffs take effect: US 25% on ~$16B (completing the $50B package). China imposes matching ~$16B retaliation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-10",
+          "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for an additional 10% tariff (~6,000 product lines)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://edition.cnn.com/2018/09/04/politics/china-200-billion-tariffs/index.html",
+          "excerpt": "The tariffs could go into effect on $200 billion of goods as soon as the public comment period closes on September 6."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.scmp.com/news/china/economy/article/2157270/can-weaker-yuan-help-china-deal-trade-war-fallout",
+          "excerpt": "The yuan has already lost 7 per cent against the US dollar in the last four months as trade tensions rise ... exports to the US accounted for roughly a fifth of the country's total overseas shipments."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://edition.cnn.com/2018/09/04/politics/china-200-billion-tariffs/index.html",
+          "excerpt": "Beijing has retaliated at each step of the way. It has imposed 25% tariffs on $50 billion of American goods to date. It's also threatened to respond to the newest round with tariffs on another $60 billion of US goods."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.3,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-09-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3477,
+        "capped_chars": 3477,
+        "raw_tokens": 869,
+        "capped_tokens": 869
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48144,
+        "capped_chars": 48144,
+        "raw_tokens": 12036,
+        "capped_tokens": 12036
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 32401,
+        "capped_chars": 32401,
+        "raw_tokens": 8100,
+        "capped_tokens": 8100
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 311504,
+  "started_at": "2026-08-13T07:44:39+00:00"
+}

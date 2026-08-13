@@ -1,0 +1,99 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7637,
+    "tokens_out": 793,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0074176,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should maintain a firm retaliatory posture, matching US tariff escalations with proportional counter-tariffs on American goods, while continuing to signal willingness to negotiate. Beijing should not make unilateral concessions that would undermine its negotiating leverage, but should avoid actions that could trigger a broader financial decoupling.\n\nSUPPORTING RATIONALE: The threat to China is substantial and growing. The US has already imposed tariffs on $250 billion of Chinese goods and raised rates on $200 billion from 10% to 25% (BBC, May 2019). Trump has threatened to extend tariffs to essentially all remaining ~$300 billion of Chinese imports (Fox Business, May 2019). This represents a direct threat to China's export-driven economy and manufacturing hubs. The Shanghai Composite fell nearly 25% in 2018 amid trade war uncertainty (BBC). However, the threat is not yet existential \u2014 China has retaliated with tariffs on $110 billion of US goods, strategically targeting Republican-district products like soybeans (BBC), and both sides continue to negotiate. The yuan stabilized in 2019 after a 5% decline (BBC), suggesting China's financial system is absorbing the shock. Larry Kudlow acknowledged 'both sides will suffer' (Fox Business), indicating the US also faces costs, which limits how far Washington can push. China's retaliation has been calibrated and effective \u2014 Senator Graham's admission that tariffs aim to 'break the stranglehold China has on the supply chain' (Fox Business) confirms the US strategic objective, making it essential China not capitulate. A firm but measured retaliatory stance preserves negotiating leverage while signaling that escalation carries costs for both sides.",
+      "key_factors": [
+        "US tariffs already cover $250B of Chinese goods with rates raised to 25% on $200B",
+        "Trump threatened tariffs on remaining ~$300B of Chinese imports",
+        "China has retaliated on $110B of US goods with strategic targeting",
+        "Shanghai Composite fell 25% in 2018 but partially recovered in 2019",
+        "Yuan depreciated 5% in 2018 but stabilized in 2019",
+        "Both sides continue negotiations despite escalation",
+        "US officials acknowledge mutual economic pain from tariffs",
+        "US strategic goal is to restructure supply chains away from China"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "US imposed tariffs on $250bn worth of Chinese products last year. Beijing has retaliated with duties on $110bn worth of American products. Tariffs on $200bn worth of Chinese goods were due to rise to 25% from 10%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "'When you put tariffs on products coming out of China, it makes other countries a cheaper place to do business which eventually moves market share away from China' \u2014 Graham said. 'He's trying to break the stranglehold China has on the supply chain.'"
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18895,
+        "capped_chars": 15037,
+        "raw_tokens": 4724,
+        "capped_tokens": 3759
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19087,
+  "started_at": "2026-08-13T10:55:05+00:00"
+}

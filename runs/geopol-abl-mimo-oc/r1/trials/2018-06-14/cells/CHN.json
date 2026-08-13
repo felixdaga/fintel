@@ -1,0 +1,140 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Announce retaliatory tariffs matching the incoming US Section 301 tariffs on ~$50B of US goods, targeting politically sensitive exports like soybeans, automobiles, and aircraft. Simultaneously signal willingness to negotiate if the US withdraws the tariff threat, but do not offer new concessions while tariffs are being imposed. Use the ZTE settlement (June 7) as a demonstration that China can absorb punishment and survive.\n\nSUPPORTING RATIONALE: The threat reading of +0.55 reflects that the dispute has crossed from negotiation into active economic warfare. The US has demonstrated pattern-breaking unreliability \u2014 the May 19 joint statement truce collapsed within 10 days when the White House announced it would proceed with Section 301 tariffs regardless (timeline entry May 29). The ZTE denial order (April 16) exposed a critical vulnerability in China's technology supply chain: a single Commerce Department action nearly destroyed China's second-largest telecom company. The June 7 ZTE settlement \u2014 $1.4B in penalties, US-embedded compliance monitors, forced board replacement \u2014 represents an unprecedented concession extracted under duress. The US is now finalizing the $50B tariff list with implementation imminent (June 15 deadline per Politico/NYT reporting). This is not a negotiation; it is a coordinated escalation targeting Made in China 2025 sectors (aerospace, ICT, robotics, machinery \u2014 timeline entry April 3). China's macro indicators remain stable (CNY/USD at 6.40 with reserves above $3T, CPI at 1.8%), providing economic room to absorb retaliatory tariffs without systemic crisis.\n\nThe action score of -0.5 (moderate escalation via retaliation) reflects three calculations: (1) credibility \u2014 China has publicly stated that 'all economic and trade outcomes will not take effect if the US imposes trade sanctions' (per NYT/Politico reporting on June 3-4 Beijing talks). Failing to retaliate after this public stance would destroy negotiating leverage. (2) The US midterm election cycle creates asymmetric pain points \u2014 soybean-dependent farm states (Iowa, Indiana, Ohio) are politically sensitive targets that impose real domestic political costs on the administration. (3) However, full maximal escalation (-1.0) is inappropriate because China still depends on US semiconductor imports (ZTE demonstrated this), and the domestic economy needs time to build resilience. Retaliation maintains pressure while preserving room for the US to step back if domestic opposition mounts.",
+      "key_factors": [
+        "ZTE denial order exposed critical US supply chain dependency in semiconductors \u2014 $2.29B total penalties extracted",
+        "May 19 truce collapsed in 10 days \u2014 US unreliability demonstrated",
+        "Section 301 tariffs specifically target Made in China 2025 sectors (aerospace, ICT, robotics, machinery)",
+        "China macro stable: CNY/USD 6.40, reserves >$3T, CPI 1.8% \u2014 economic resilience to absorb retaliation",
+        "June 15 tariff deadline imminent \u2014 days to act",
+        "US Congress bipartisan push to block ZTE relief (Senate NDAA amendment June 7) signals institutional escalation beyond Trump alone",
+        "China's soybean retaliation targets politically sensitive US farm belt states ahead of midterms"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-04-03",
+          "excerpt": "USTR publishes proposed Section 301 tariff list: ~1,300 Chinese product lines (~$50B), targeting aerospace, ICT, robotics, machinery."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHN_CNYUSD",
+          "excerpt": "CNY/USD at 6.4000 as of 2018-05, change -0.04 over 180 days \u2014 stable."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHN_FRES",
+          "excerpt": "Total Reserves at $3,110.63B as of 2018-05 \u2014 sufficient buffer."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "CHN_CPALTT01",
+          "excerpt": "CPI at 1.80% as of 2018-05 \u2014 no inflationary pressure from trade dispute yet."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_zte_deal_20180607",
+          "excerpt": "ZTE deal includes $1B penalty, $400M escrow, US-embedded compliance team, board replacement within 30 days. Total penalties $2.29B."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt_trade_impasse_20180603",
+          "excerpt": "China warned that 'all economic and trade outcomes of the talks will not take effect if the US side imposes any trade sanctions.'"
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.5,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2623,
+        "capped_chars": 2623,
+        "raw_tokens": 656,
+        "capped_tokens": 656
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47502,
+        "capped_chars": 47502,
+        "raw_tokens": 11876,
+        "capped_tokens": 11876
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 79116,
+        "capped_chars": 79116,
+        "raw_tokens": 19779,
+        "capped_tokens": 19779
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 384928,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

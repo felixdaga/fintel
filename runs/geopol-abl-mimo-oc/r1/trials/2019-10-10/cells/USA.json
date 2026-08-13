@@ -1,0 +1,141 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-10-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Engage seriously in the talks resuming today (Oct 10-11) with Liu He, but do not rush into a partial deal that leaves structural issues unresolved. Hold the Dec 15 List 4B tariff increase as leverage. Use the economic pressure on China \u2014 which is acute \u2014 to push for meaningful concessions on IP, tech transfer, and enforcement, while recognizing that US manufacturing is also suffering and escalation carries domestic costs.\n\nSUPPORTING RATIONALE: The threat to US interests is real but asymmetric \u2014 moderate, not existential. US manufacturing is in its deepest slump since June 2009 (ISM 47.8 in September, 15 of 18 sectors contracting), with new export orders plunging to 41.0 and manufacturing employment contracting (timeline: List 4A at 15% took effect Sept 1). Farm bankruptcies are rising, and the tariffs are a self-inflicted wound on swing states like Pennsylvania and Wisconsin. However, the broader US economy is still cushioned by strong services, record-low unemployment (3.5%), and consumer spending \u2014 the pain is sectoral, not systemic.\n\nChina's position is materially worse: industrial output at a 17-year low (4.4% in August), GDP growth at 6.2% (weakest since 1992), producer prices deflating, exports to the US down 16% year-on-year, and the yuan having broken 7/USD \u2014 prompting the first currency manipulator designation since 1994. China's concessions (soybean/pork purchases, tariff exemptions, agreeing to talks) signal genuine economic pain. The leverage is real: the scheduled Oct 15 hike to 30% on $250B and Dec 15 List 4B give us escalation options without needing to deploy them.\n\nThe action_score of +0.1 (negotiate, slightly toward engagement) reflects the judgment that this is a moment to press advantage, not to escalate further. Additional tariffs hurt US manufacturers and consumers too \u2014 the ISM data and farm-belt distress make that clear. But conceding structural issues for a purchase-only deal would waste the leverage we've built. The right play is to negotiate hard from a position of relative economic strength, hold the Dec 15 increase as a deadline, and seek a deal with real enforcement and IP protections rather than settling for soybean purchases.",
+      "key_factors": [
+        "US manufacturing in recession (ISM 47.8, lowest since June 2009)",
+        "China's economy deteriorating faster \u2014 IP at 17-year low, GDP at 6.2%, producer deflation",
+        "Trade talks resuming today (Oct 10-11) with Liu He \u2014 window for deal",
+        "Scheduled escalation: $250B tariffs to rise to 30% on Oct 15, List 4B (Dec 15) as leverage",
+        "Farm distress and manufacturing job losses creating domestic political pressure",
+        "China making goodwill gestures (soybean/pork purchases, tariff exemptions) \u2014 signals real pain",
+        "Trump demanding 'complete deal' vs China pushing partial \u2014 key negotiation gap",
+        "Huawei on Entity List remains a major structural leverage point"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "wolfstreet.com/2019/10/01",
+          "excerpt": "ISM Manufacturing Report for September fell to 47.8 \u2014 fastest decline since June 2009. New Export Orders plunged to 41.0. 15 of 18 manufacturing industries reported declines."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cbsnews.com/2019/10/01",
+          "excerpt": "Manufacturers are mired in their deepest slump since the Great Recession. Manufacturing accounts for roughly 12% of US GDP."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "foreignpolicy.com/2019/10/02",
+          "excerpt": "US manufacturing index hit lowest point in more than a decade. Farm bankruptcies have been rising for a year. Of 18 manufacturing sectors, 15 showed contraction."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters.com/2019/09/16",
+          "excerpt": "China's industrial output growth fell to 4.4% in August, slowest since February 2002. Producer prices falling at fastest pace in three years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn.com/2019/09/16",
+          "excerpt": "China's exports to US fell 16% year-on-year. 65% of American Chamber of Commerce members said trade tensions are influencing long-term strategies."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc.com/2019/09/26",
+          "excerpt": "Trade talks set to resume Oct 10-11 in Washington. Chinese Vice Premier Liu He representing Beijing delegation. Tariffs on $250B of Chinese goods scheduled to rise to 30% on Oct 15."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_2019-09-13",
+          "excerpt": "China announces soybeans, pork excluded from additional retaliatory tariffs \u2014 goodwill signal ahead of talks."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110-125B of Chinese imports). China's first tranche of ~$75B retaliation also takes effect."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-10-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5498,
+        "capped_chars": 5498,
+        "raw_tokens": 1374,
+        "capped_tokens": 1374
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 62743,
+        "capped_chars": 62743,
+        "raw_tokens": 15686,
+        "capped_tokens": 15686
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 357222,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

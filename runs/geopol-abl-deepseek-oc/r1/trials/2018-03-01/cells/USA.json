@@ -1,0 +1,128 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-03-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 139773,
+    "tokens_out": 3045,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Hold the current posture. Let the Section 301 investigation conclude and keep the leverage we hold without prematurely pulling the tariff trigger. Preserve both escalation and negotiation options, and signal willingness to engage once USTR issues its findings rather than acting unilaterally in a way that would hand China and our allies a common grievance.\n\nSUPPORTING RATIONALE: At this decision date the dispute is still in its investigatory phase and is not yet biting the U.S. economy \u2014 industrial production is rising (INDPRO 101.7), consumer sentiment is high at 99.7, and the fed-funds/10-yr moves reflect a firming cycle, not trade-war stress \u2014 so the threat to U.S. interests is a mild opportunity rather than a threat (threat_score -0.3). The U.S. holds the initiative: the 2017 U.S.-China trade deficit hit a record ~$276B (SCMP/NYT, Feb 2018), and USTR's Section 301 investigation (initiated Aug 18, 2017, findings expected imminently but not yet announced as of Mar 1) plus the Jan 2018 Section 201 safeguard tariffs give the administration leverage to extract technology/IP concessions. That opportunity, however, is tempered by documented second-order risk: unilateral, non-WTO-grounded 301 tariffs could alienate allies (Cato/Newsweek and Orrick flag the WTO-legitimacy problem and 'chest-thumping unilateralism') and invite Chinese retaliation against U.S. exporters and tech supply chains \u2014 which would convert today's advantage into an all-fronts trade war. With no finding yet on the table, holding (action_score 0.0) is the disciplined move: it keeps both escalation and negotiation open while we build allied support, rather than squandering leverage on a premature escalation.",
+      "key_factors": [
+        "Section 301 investigation active but findings not yet announced as of 2018-03-01",
+        "Record 2017 U.S.-China trade deficit (~$276B) gives U.S. negotiating leverage",
+        "U.S. macro strong (IP rising, sentiment 99.7) \u2014 dispute not yet hitting real economy",
+        "First tariff action (Section 201 solar/washers, Jan 22) was a safeguard, not yet China-targeted",
+        "Risk: unilateral/WTO-questionable tariffs could alienate allies and invite Chinese retaliation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2017-08-14",
+          "excerpt": "Trump signs memorandum directing USTR to investigate China's IP and technology-transfer practices under Section 301."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-01-22",
+          "excerpt": "Trump approves Section 201 safeguard tariffs on solar panels and washing machines. First major tariff action."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US industrial production 101.71, rising (+0.68%)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "US consumer sentiment 99.7, high."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp 2018-02-07",
+          "excerpt": "Record ~$276B 2017 U.S.-China deficit; punitive Section 301 trade action 'imminent'."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Newsweek/Cato 2018-01-05",
+          "excerpt": "Warning that unilateral 301 tariffs risk being WTO-inconsistent and alienating allies ('chest-thumping unilateralism')."
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": 0,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-03-01",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 682,
+        "capped_chars": 682,
+        "raw_tokens": 170,
+        "capped_tokens": 170
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46539,
+        "capped_chars": 46539,
+        "raw_tokens": 11635,
+        "capped_tokens": 11635
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 53279,
+        "capped_chars": 53279,
+        "raw_tokens": 13320,
+        "capped_tokens": 13320
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 435607,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

@@ -1,0 +1,141 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-08-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.5,
+      "rationale": "RECOMMENDATION: Maintain current retaliatory posture \u2014 the agricultural purchase suspension and currency flexibility are calibrated responses already in play. Do not escalate further with new measures (rare earth ban, broader export controls) as this risks triggering additional US sanctions. Signal willingness to resume talks in September as planned. Use the ~3-week window before List 4 takes effect to prepare domestic stimulus and let the currency adjustment partially offset tariff impact.\n\nSUPPORTING RATIONALE: The threat to China is high and escalating. GDP growth hit a 27-year low of 6.2% in Q2 2019 (CNN, July 15). Exports to the US fell 8.1% YoY in H1 2019, imports from the US plunged 30% (CNN). The Huawei Entity List placement (May 16) directly attacks China's most prominent tech firm and threatens access to critical US semiconductor and software inputs (Wired, June 17). On August 1, Trump announced List 4 tariffs of 10% on the remaining ~$300B of Chinese goods effective September 1 (event timeline), which would bring virtually all Chinese exports to the US under tariff coverage. On August 5, the PBOC allowed the yuan to breach 7/USD \u2014 a significant psychological level \u2014 and the US Treasury formally designated China a currency manipulator for the first time since 1994 (Treasury press release SM751, Aug 5). While the currency manipulator label is largely symbolic for now (OPIC/procurement penalties don't kick in for a year per statute), it opens a pathway for the Commerce Department to treat currency undervaluation as an illegal trade subsidy, potentially triggering countervailing duties (Politico, Aug 6). China has already retaliated by suspending US agricultural purchases and has signaled rare earth leverage (Xi's May 20 visit to Jiangxi REE facility; Xinhua editorial May 29). However, a full rare earth ban would damage China's reputation as a reliable supplier and accelerate US diversification efforts (CRS report IF11259, June 2019). The IMF cut China's 2019 growth forecast to 6.2% and warned that 25% tariffs across the board would 'affect growth significantly' (Reuters, June 5). Beijing has room for fiscal/monetary stimulus \u2014 the PBOC has cut reserve requirements six times since early 2018 and the IMF judged current stimulus 'sufficient to stabilise growth' absent further escalation. The action_score of -0.15 reflects that China has already deployed meaningful retaliatory measures (ag purchases halt, currency flexibility) and should hold firm without introducing new escalation vectors, preserving the option for September talks while the List 4 deadline creates natural leverage.",
+      "key_factors": [
+        "GDP growth at 27-year low of 6.2% in Q2 2019",
+        "List 4 tariffs announced (10% on ~$300B, effective Sept 1) \u2014 covers virtually all remaining Chinese exports to US",
+        "Huawei Entity List (May 16) threatens access to US semiconductor and software supply chains",
+        "US Treasury currency manipulator designation (Aug 5) \u2014 symbolic but opens pathway to countervailing duties",
+        "Yuan breached 7/USD (Aug 5) \u2014 PBOC effectively weaponized exchange rate",
+        "China already retaliating: agricultural purchase suspension, currency flexibility, rare earth signaling",
+        "IMF warns 25% across-board tariffs would significantly impact growth",
+        "Domestic stimulus toolkit available: RRR cuts, infrastructure spending, tax cuts"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-01",
+          "excerpt": "After the Shanghai round, Trump announces 10% tariffs on the remaining ~$300B of Chinese goods (List 4), effective Sept 1."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List. US firms generally barred from selling to Huawei without a license."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn-2019-07-15-china-gdp",
+          "excerpt": "China's GDP grew at 6.2% in Q2 2019, the slowest quarterly growth rate since 1992. Exports to the United States decreased 8.1% for the first half of 2019. Imports from the United States plunged 30% year on year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-06-05-imf",
+          "excerpt": "IMF cut China's 2019 GDP growth forecast to 6.2%. 'Let me make it clear, if tariffs do go up to say 25% across the board, growth would be affected significantly.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "treasury-sm751-2019-08-05",
+          "excerpt": "Secretary Mnuchin has determined that China is a Currency Manipulator. 'China has taken concrete steps to devalue its currency, while maintaining substantial foreign exchange reserves.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "wired-2019-06-17-rare-earths",
+          "excerpt": "Xi Jinping toured a rare earth processing facility. A Xinhua editorial warned that by waging a trade war, the US risks losing supply of materials vital to sustaining its technological strength."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico-2019-08-06-currency",
+          "excerpt": "Commerce Department has previously proposed treating undervalued currencies as an illegal trade subsidy. If that becomes final, Treasury's designation could help open the floodgates to countervailing duties on Chinese goods."
+        }
+      ],
+      "threat_score": 0.5,
+      "action_score": -0.15,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-08-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4860,
+        "capped_chars": 4860,
+        "raw_tokens": 1215,
+        "capped_tokens": 1215
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 57291,
+        "capped_chars": 57291,
+        "raw_tokens": 14323,
+        "capped_tokens": 14323
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 374935,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}

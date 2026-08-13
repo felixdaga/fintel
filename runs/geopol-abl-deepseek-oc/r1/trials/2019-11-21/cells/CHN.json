@@ -1,0 +1,134 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-11-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 147416,
+    "tokens_out": 3389,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.4,
+      "rationale": "RECOMMENDATION: Continue to press forward on finalizing the Phase One deal and securing a phased rollback of the additional tariffs China has absorbed, while keeping the door open so the scheduled Dec 15 tariffs (on roughly $156B of consumer/tech goods \u2014 cell phones, laptops, toys) do not take effect. Do not escalate now: escalation would risk collapsing the de-escalation trajectory that is already yielding tariff relief, and China with its export economy under strain has more to lose from renewed escalation than Washington. Keep the existing goodwill signals (soybean/pork exclusions, purchase commitments) as negotiating currency toward locking in a reciprocal, simultaneous tariff reduction.\n\nSUPPORTING RATIONALE: The threat to China is real and materially elevated, though not existential. Trade-war damage is visible in the macro data: GDP growth fell to 6.0% in Q3 2019, the weakest since quarterly records began in 1992, factory output growth slowed, and China's exports to the U.S. dropped roughly 22% year-on-year in September while total exports fell (Reuters/Diplomat/LA Times, Oct 17-18). FX and firm-level pressure are also concrete: the yuan broke through 7 per USD in early August and the U.S. promptly labeled China a currency manipulator, and Huawei sits on the U.S. Entity List with its Android/GMS access suspended (event timeline 2019-08-05, 2019-05-16/05-20). These map directly to the CHN +0.5 anchor (export sectors hit, FX pressure, Huawei targeted), so I read threat at +0.4 rather than neutral. Offsetting the threat is that Washington has shown it wants de-escalation too: the Oct 11 Phase One announcement committed to $40-50B of U.S. farm purchases and both sides subsequently stated they agreed 'to remove additional tariffs imposed in phases... in the same proportion simultaneously' (Politico Nov 7) \u2014 a sign the opponent is under domestic-political pressure and has room to yield. That leverage, plus China's rare-earth signal (Xi's May visit to a Jiangxi facility) and its structural push for tech autonomy, trims the score below the +0.5 anchor. On action, escalation would be self-defeating: it risks the Phase One deal and leaves China absorbing the heaviest incremental cost. Negotiating toward finalization and a reciprocal tariff rollback \u2014 with no new escalation \u2014 is the stance that best converts the current de-escalation opening into durable relief, consistent with a mildly positive action_score of +0.2.",
+      "key_factors": [
+        "Q3 GDP growth at 6.0%, weakest since 1992; export sector contracting (China exports to U.S. down ~22% y/y in Sept)",
+        "Yuan broke 7 per USD (Aug 5) and U.S. designated China a currency manipulator",
+        "Huawei remains on U.S. Entity List with Android/GMS access suspended",
+        "Phase One agreed in principle (Oct 11): China commits to $40-50B U.S. ag purchases; parties agree to phased, proportional tariff rollback (Nov 7)",
+        "Dec 15 tariffs on ~$156B of consumer/tech goods still pending \u2014 fate under negotiation, no meeting set; Huawei excluded from the deal",
+        "China holds leverage: rare-earth signal, U.S. farm-belt/domestic political pressure on Trump"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "Phase One deal in principle: China to buy roughly $40-50B of US agricultural products annually; planned mid-October tariff hike delayed"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-20",
+          "excerpt": "Xi Jinping visits a rare-earth facility in Jiangxi (widely read as a signal on rare-earth leverage)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters China GDP 2019-10-18",
+          "excerpt": "Q3 GDP rose just 6.0% y/y, weakest in almost three decades, as tariffs hit factory production; slide in exports accelerated in Sept, imports contracted for a fifth straight month"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Politico 2019-11-07",
+          "excerpt": "Both sides agreed to remove the additional tariffs imposed in phases; 'both sides should roll back existing additional tariffs in the same proportion simultaneously'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2019-11-05",
+          "excerpt": "China pressing U.S. to lift Sept 1 tariffs on ~$125B and the Dec 15 tariffs on ~$156B; Huawei not part of the deal"
+        }
+      ],
+      "threat_score": 0.4,
+      "action_score": 0.2,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-11-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5633,
+        "capped_chars": 5633,
+        "raw_tokens": 1408,
+        "capped_tokens": 1408
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47961,
+        "capped_chars": 47961,
+        "raw_tokens": 11990,
+        "capped_tokens": 11990
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 57358,
+        "capped_chars": 57358,
+        "raw_tokens": 14339,
+        "capped_tokens": 14339
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 127539,
+  "started_at": "2026-08-13T07:44:04+00:00"
+}

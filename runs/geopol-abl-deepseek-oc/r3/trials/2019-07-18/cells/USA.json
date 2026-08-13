@@ -1,0 +1,123 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-07-18",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 133579,
+    "tokens_out": 3840,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Maintain the current posture and press the resumed talks without adding new commitments. We should use the already-imposed 25% tariffs on ~$200B of Chinese imports, the standing threat of the ~$300B tranche, and Huawei's Entity List status as leverage to lock in a verifiable deal on purchases, enforcement, and structural IP/tech-transfer \u2014 not escalate, and not concede. Continue the constructive phone-level discussions (Liu He-Lighthizer-Mnuchin) toward a face-to-face round, and be willing to ease Huawei only against a concrete, matching Beijing commitment.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate (threat_score +0.35): the May escalation to 25% on List 3 plus the Huawei Entity List and Executive Order 13873 have already triggered real downside. The 10-year Treasury yield fell from ~2.74% (Jan) to ~2.06% (mid-July) and the 2-year from ~2.58% to ~1.83%, flattening/inverting key segments of the curve \u2014 a credible recession warning (web reporting notes the 3M-10Y segment inverted in May and flagged ~1.5% tariff drag pushing sub-2% growth toward recession risk). This is a genuine economic threat to US growth and the farm belt, which is why we cannot afford to escalate further. But the score stays moderate rather than existential because the US emerged from the G20 Osaka truce (Jun 29) holding the advantage: existing tariffs remain in place, the new $300B tranche is suspended 'for the time being', and China has agreed to resume talks and restart agricultural purchases, while Trump committed only to ease (not remove) Huawei restrictions. That leverage and favorable terrain keep this from the +0.5 anchor. The action stance (action_score +0.05, negotiate) reflects that this is the wrong moment for maximal escalation \u2014 imposing the $300B tariffs would break the truce, provoke full Chinese retaliation, deepen the yield-curve recession signal, and risk the 2020 domestic position \u2014 while a full concession would squander hard-won leverage. The disciplined move is to hold the tariff pressure and negotiate a firmer, enforceable deal, using Huawei relief as a quid pro quo rather than an upfront gift.",
+      "key_factors": [
+        "G20 Osaka truce (2019-06-29): existing tariffs kept, $300B tranche suspended, talks resumed \u2014 favorable terrain for the US",
+        "May 2019 escalation: List 3 to 25% on ~$200B, Huawei Entity List + EO 13873 \u2014 real escalation already banked",
+        "Yield curve flattening/inversion: 10Y 2.74->2.06%, 2Y 2.58->1.83% \u2014 material recession warning constrains further escalation",
+        "Constructive resumption: Liu He-Lighthizer-Mnuchin phone calls (Jul 9, Jul 15) and expected in-person round",
+        "Huawei still on Entity List with only an easing promise \u2014 a live bargaining chip"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-05 / 2019-05-10 / 2019-05-15 / 2019-05-16",
+          "excerpt": "List 3 raised to 25%; EO 13873 signed; Commerce adds Huawei to Entity List."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-06-29",
+          "excerpt": "G20 Osaka: Trump-Xi agree to resume talks; existing tariffs remain; no new tariffs for the time being; Trump says he will ease some Huawei restrictions."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10 / DGS2",
+          "excerpt": "10Y yield ~2.74% (Jan) to ~2.06% (Jul 17); 2Y ~2.58% to ~1.83% \u2014 curve flattening/inverting."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Politico 2019-06-07",
+          "excerpt": "Trade war drag ~1.5% could push growth near/below zero; 3M-10Y curve inverted nearly a full quarter; recession risk mounting."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters/Globe 2019-07-09/10/15",
+          "excerpt": "'Constructive' Lighthizer-Mnuchin-Liu He calls after Osaka; no firm Chinese purchase commitments yet; Kudlow: 'no timeline, quality not speed.'"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.05,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-07-18",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4569,
+        "capped_chars": 4569,
+        "raw_tokens": 1142,
+        "capped_tokens": 1142
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47746,
+        "capped_chars": 47746,
+        "raw_tokens": 11936,
+        "capped_tokens": 11936
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 25484,
+        "capped_chars": 25484,
+        "raw_tokens": 6371,
+        "capped_tokens": 6371
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 232666,
+  "started_at": "2026-08-13T07:49:39+00:00"
+}

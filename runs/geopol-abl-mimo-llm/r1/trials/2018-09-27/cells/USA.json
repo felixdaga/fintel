@@ -1,0 +1,108 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8209,
+    "tokens_out": 923,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0083924,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The US should escalate tariffs on China to maximum levels, targeting the full $505 billion in Chinese exports to the US. This is a once-in-a-generation opportunity to restructure the US-China trade relationship on American terms, as China's retaliatory capacity is structurally limited by the trade deficit asymmetry.\n\nSUPPORTING RATIONALE: The US has overwhelming leverage in this dispute. The trade deficit of $375 billion means China imports only $130 billion of US goods, while the US imports $505 billion from China - giving the US a 4:1 advantage in tariff ammunition (RAND analysis). China cannot match US escalation tit-for-tat. The US economy is strong and can absorb short-term pain, while China faces greater structural exposure: exports to the US represent ~5% of China's economy versus only ~0.7% for US exports to China (RAND). China's currency has already depreciated 6% from 6.28 to 6.64 per dollar since April, signaling financial stress. The Trump administration sees this as a winning strategy for the 2018 midterms, and the political timing is optimal. Key US sectors at risk (agriculture, Boeing, autos) can be managed with targeted domestic support. The opportunity to force structural reforms on IP theft, forced technology transfer, and market access - and to weaken China's Made in China 2025 industrial policy - may not come again. Waiting risks China building alternative supply chains and reducing dependence on US markets.",
+      "key_factors": [
+        "Trade deficit asymmetry: US imports $505B from China vs $130B exports, giving 4:1 tariff leverage",
+        "China's retaliatory capacity structurally limited - will run out of US goods to tariff",
+        "US economy strong enough to absorb short-term costs; China more export-dependent",
+        "Yuan depreciation of 6% (6.28 to 6.64) signals Chinese financial stress",
+        "Opportunity to force structural reforms on IP theft, tech transfer, Made in China 2025",
+        "Political timing favorable with 2018 midterm elections approaching",
+        "Targeted sectors (agriculture, autos, Boeing) manageable with domestic policy support"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "rand.org - The U.S.-China Trade War: Different Messages",
+          "excerpt": "the United States has less to lose since its exports to China are $130 billion while China's exports to the United States are $505 billion a year. In a tit-for-tat exercise, it is argued, China will run out of exports to levy retaliatory tariffs upon long before the United States does"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "rand.org - The U.S.-China Trade War: Different Messages",
+          "excerpt": "$505 billion in potentially lost exports is a much larger slice of the Chinese economy (about 5 percent) than $130 billion is for the United States (about 0.7 percent)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "rand.org - The U.S.-China Trade War: Different Messages",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "brookings.edu - Unpacked: The US-China Trade War",
+          "excerpt": "The Trump administration sees this as a winning strategy for the midterm elections in 2018. Trump said he would hit China, and now he has"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "rand.org - The U.S.-China Trade War: Different Messages",
+          "excerpt": "the Trump administration has selected relatively high-technology items... This, according to the U.S. Trade Representative, is the result of a deliberate strategy designed to weaken China's drive to be a sophisticated exporting country by 2025"
+        }
+      ],
+      "threat_score": -1,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 28465,
+        "capped_chars": 17802,
+        "raw_tokens": 7116,
+        "capped_tokens": 4450
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 22846,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

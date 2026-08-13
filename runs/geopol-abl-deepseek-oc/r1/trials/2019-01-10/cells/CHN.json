@@ -1,0 +1,134 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-01-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 136555,
+    "tokens_out": 3991,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.5,
+      "rationale": "RECOMMENDATION: Continue the constructive negotiating path opened at the G20 truce \u2014 hold our tariff posture unchanged, signal willingness to increase purchases of US agricultural/energy goods, and push for a settlement before the March 1 deadline rather than escalating. Avoid new retaliatory measures that would deepen damage to our already-strained export sector, and keep the Huawei/Meng file separate from the trade track to avoid torpedoing talks.\n\nSUPPORTING RATIONALE: The threat to China is high \u2014 tariffs now cover ~$250B of our exports at 10-25%, the Huawei/Meng arrest signals firm-level tech-supply targeting, and the real economy is already decelerating: November industrial production fell to 5.4% (its lowest since 2009), Q3 GDP was 6.5% (slowest since 2009), export growth halved, the RMB depreciated ~6% and equities lost ~20% (World Bank/Dec 2018 trade data). That justifies a +0.5 high-banded threat score. But it is not existential: we retain stimulus headroom (PBoC liquidity, fiscal/infrastructure), large reserves, and an active truce with talks that resumed Jan 7-8. Critically, the US is also under visible strain (consumer sentiment tumbled to 91.2, the 10Y yield fell from ~3.1 to 2.56, oil crashed to ~$46-52, credit spreads widened), so the terrain favors reaching a deal rather than escalation. Because our export economy is more exposed than the US to further tariff escalation, the rational stance is de-escalatory engagement that buys time and extracts a fair settlement, not retaliation: action_score +0.1, negotiate.",
+      "key_factors": [
+        "US Section 301 tariffs now cover ~$250B of Chinese exports (List1/2 @25%, List3 @10%)",
+        "Dec 1 G20 truce suspended the Jan 1 hike to 25%; hard March 1 deadline; talks resumed Jan 7-8 Beijing",
+        "Huawei CFO Meng Wanzhou arrest + detention of two Canadians signals firm-level tech targeting",
+        "Real economy already decelerating: Nov IP growth 5.4% (lowest since 2009), GDP 6.5% (slowest since 2009), exports halved, RMB ~-6%, equities ~-20%",
+        "China has policy headroom: PBoC liquidity, infrastructure and fiscal stimulus being deployed",
+        "US itself under strain (sentiment 98.3->91.2, 10Y 3.08->2.56, oil 75->46), giving China negotiating leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China retaliates on ~$60B of US goods. Combined US Section 301 coverage now ~$250B."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20: Trump and Xi agree to 90-day negotiation window; Jan 1 hike suspended. Same day Meng Wanzhou arrested; China demands release."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-07",
+          "excerpt": "Trade talks resume in Beijing; China discusses increased purchases of US goods; structural issues remain open."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "World Bank China Economic Update Dec 2018",
+          "excerpt": "GDP growth moderated to 6.5% Q3; renminbi depreciated 6%; equities lost 20%; stimulus to support growth."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Business Insider / Societe Generale Dec 17 2018",
+          "excerpt": "China November industrial-production growth eased to 5.4%, lowest since 2009; export growth declined to 5.4% from 15.5%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "US UMCSENT / DGS10",
+          "excerpt": "US consumer sentiment fell to 91.2 in Jan; 10Y yield fell from ~3.1 to 2.56; oil crashed \u2014 US under its own strain."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Guardian/DW (Lighthizer) Dec 10 2018",
+          "excerpt": "US calls March 1 a 'hard deadline' \u2014 tariffs rise to 25% if no deal; US demands structural change on tech transfer."
+        }
+      ],
+      "threat_score": 0.5,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-01-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4661,
+        "capped_chars": 4661,
+        "raw_tokens": 1165,
+        "capped_tokens": 1165
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47285,
+        "capped_chars": 47285,
+        "raw_tokens": 11821,
+        "capped_tokens": 11821
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 31646,
+        "capped_chars": 31646,
+        "raw_tokens": 7911,
+        "capped_tokens": 7911
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 1018277,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

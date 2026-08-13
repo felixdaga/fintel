@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-08-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7953,
+    "tokens_out": 911,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0081004,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should retaliate with measured tariffs on remaining US imports to signal resolve without full economic decoupling. Maintain willingness to negotiate but demonstrate that escalation carries costs for both sides. Use the dispute to accelerate domestic consumption and supply chain diversification away from US dependency.\n\nSUPPORTING RATIONALE: The threat to China is HIGH and approaching existential territory. The US has escalated tariffs on $200 billion of Chinese goods from 10% to 25% (May 10, 2019), and Trump has called for tariffs on 'essentially all remaining imports from China, valued at approximately $300 billion' (Reuters timeline). This means nearly all Chinese exports to the US face tariff barriers, directly threatening China's export-dependent growth model. The USC analysis notes the trade war threatens 'the most important and potentially profitable industries of the future' including AI, cloud computing, and green tech \u2014 sectors central to Made in China 2025. Senator Graham explicitly states the US strategy is 'to break the stranglehold China has on the supply chain' (Fox Business). China has already retaliated on $110 billion of US goods but has limited remaining US imports to target. However, capitulation would set a precedent for US coercion and undermine CCP legitimacy. Retaliation is necessary to maintain negotiating leverage and signal that China will not accept unilateral demands. The risk of further escalation is real \u2014 White House adviser Kudlow acknowledged 'both sides will suffer' \u2014 but China's position is strengthened by the fact that US consumers and businesses also bear costs, creating domestic political pressure on Trump. China should retaliate while keeping channels open for negotiation, as both Lighthizer/Mnuchin and Chinese officials have indicated willingness to continue talks.",
+      "key_factors": [
+        "US tariffs on $200B of Chinese goods raised to 25% (May 2019)",
+        "Trump threatens tariffs on remaining ~$300B of Chinese imports",
+        "US strategy explicitly aims to break China's supply chain dominance",
+        "Trade war extends to future tech sectors (AI, cloud, green tech) central to Made in China 2025",
+        "China has already retaliated on $110B of US goods but has limited remaining imports to target",
+        "Both sides acknowledge mutual economic pain (Kudlow: 'both sides will suffer')",
+        "Negotiations ongoing but China reportedly backtracked on draft trade pact commitments"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 Timeline: Key dates in the U.S.-China trade war",
+          "excerpt": "Trump orders USTR to increase the tariffs on $200 billion of Chinese imports to 25% from the originally proposed 10%... Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "Graham said... 'When you put tariffs on products coming out of China, it makes other countries a cheaper place to do business which eventually moves market share away from China... He's trying to break the stranglehold China has on the supply chain.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-08-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18764,
+        "capped_chars": 14743,
+        "raw_tokens": 4691,
+        "capped_tokens": 3686
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20400,
+  "started_at": "2026-08-13T10:55:15+00:00"
+}

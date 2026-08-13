@@ -1,0 +1,104 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-07-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 11066,
+    "tokens_out": 1069,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0116874,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: China should maintain its retaliatory posture and signal willingness to match U.S. tariff escalation tit-for-tat, while keeping diplomatic channels open for future negotiation. Retaliation is necessary to demonstrate resolve and deter further escalation, but should be calibrated to avoid triggering a broader spiral that would disproportionately harm China's export economy.\n\nSUPPORTING RATIONALE: The threat to China is moderate-to-elevated (0.35) based on several factors. The U.S. has implemented 25% tariffs on $34 billion of Chinese goods (July 6, 2018) and is threatening up to $250 billion more (Brookings, RAND). The U.S. deliberately targets high-technology items under Made in China 2025 (RAND analysis of 818 items including aircraft tires, lithium batteries, radar equipment), directly threatening China's industrial upgrading strategy. However, the threat is not yet existential because: (1) the yuan has already depreciated ~6% from 6.28 to 6.64 per dollar, providing a natural offset (RAND); (2) China's retaliation targets are strategically chosen\u2014food products and consumer-facing goods that are easy to source elsewhere (RAND); (3) the U.S. deliberately avoided consumer goods like smartphones to limit domestic political backlash, which also limits the direct hit to China's assembly economy (RAND). The asymmetry argument ($505B Chinese exports vs $130B U.S. exports) is real but overstated\u2014more than half the value of China's exports are foreign components (Brookings), and the U.S. cannot easily tax consumer goods without domestic backlash.\n\nThe action_score of -1.0 (maximal retaliation stance) reflects the strategic necessity of matching U.S. escalation. China has already retaliated with 25% tariffs on U.S. automobiles and agricultural products including soybeans (Brookings). Soybean prices are down 20%, directly hurting U.S. farmers in politically sensitive Midwest states. The Brookings analysis notes the Trump administration views this trade war as a winning midterm election strategy\u2014meaning concessions before November 2018 would be politically futile. China's willingness to buy more U.S. products and open markets is already on the table (Brookings), but the U.S. is not negotiating. Retaliation now preserves leverage for post-election negotiations that Brookings analysts expect. China should continue retaliating proportionally while avoiding escalation to non-tariff measures that could trigger unpredictable U.S. responses.",
+      "key_factors": [
+        "U.S. tariffs on $34B of Chinese goods implemented July 6, 2018 with $250B more threatened",
+        "U.S. deliberately targets Made in China 2025 high-tech sectors (semiconductors, batteries, radar)",
+        "Yuan depreciation of 6% (6.28 to 6.64/USD) partially offsets tariff impact",
+        "China's retaliation on soybeans already driving 20% price drop, hitting U.S. farm belt",
+        "U.S. avoids consumer goods tariffs to limit domestic backlash, constraining escalation",
+        "Trump admin views trade war as midterm election strategy\u2014no deal before November 2018",
+        "More than half of China's export value is foreign components, limiting true exposure",
+        "China already has offer on table to buy more U.S. products and open markets"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The U.S. has announced $250 billion of tariffs on products from China, and China has partially retaliated and will probably come out with more retaliation. For the next several months we will probably be locked into this situation. No high-level negotiations are scheduled."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "From early April, when the talk of trade wars began in earnest and the Chinese yuan was valued at 6.28 to the dollar, the currency has depreciated by 6 percent to 6.64 to the dollar as of July 6"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "The Trump administration has selected relatively high-technology items, such as aircraft tires, lithium batteries, and radar equipment. This, according to the U.S. Trade Representative, is the result of a deliberate strategy designed to weaken China's drive to be a sophisticated exporting country by 2025"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent. The U.S. exports cars from Southern states like Tennessee, so the effects of this change will be felt there"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-07-26",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 35798,
+        "capped_chars": 31232,
+        "raw_tokens": 8950,
+        "capped_tokens": 7808
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 24960,
+  "started_at": "2026-08-13T10:54:41+00:00"
+}

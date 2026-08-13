@@ -1,0 +1,184 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 6,
+    "tokens_in": 281455,
+    "tokens_out": 7222,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.22,
+      "rationale": "RECOMMENDATION: Implement the already-noticed List 3 tariffs at the original 10 percent rate on about $200 billion of Chinese goods, keep the $50 billion Section 301 duties in place, and do not raise List 3 to 25 percent now. Pair that with a public invitation to resume talks on the Section 301 structural issues\u2014IP theft, forced tech transfer, and industrial targeting\u2014not another purchase MOU. Use the just-completed hearing record to grant targeted exclusions where US firms have no realistic non-China input, so the next step is pressure, not a self-inflicted consumer shock.\n\nSUPPORTING RATIONALE: The threat reading is modestly elevated, not existential. The US macro is still absorbing the fight: Michigan sentiment is 100.1, industrial production is up, and VIX is about 14. The damage is concentrated, not systemic. US goods exports to China have already fallen (about $10.5B in April to $9.3B in August), China matched the $50B package on soybeans, autos, and aircraft, and November beans were about 17 percent below pre-retaliation levels, forcing a $12B farm-aid program with soybeans taking ~$3.6B of the first tranche. That is a real hit to a politically and commercially exposed export sector, and List 3 would start taxing consumer and intermediate goods (bikes, furniture, appliances) that US firms told USTR they cannot quickly reshore. Those costs keep the score above zero. It is not +0.5 because there is still no material GDP drag, credit stress, or market panic, and the dollar is strong.\n\nThe action is escalate_tariffs because the May joint statement already showed the alternative: China offered larger purchases, Mnuchin called the war \u201con hold,\u201d and the White House had to collapse the truce on May 29 to keep Section 301 alive. Mid-level talks on August 22\u201323 produced no structural movement and no follow-on date. China has already retaliated dollar-for-dollar on the $50B lists, so failing to follow through on the June 18 / July 10 List 3 contingency would treat that threat as a bluff. A 10 percent List 3 rate preserves leverage while China still has more bilateral surplus to lose than the US has remaining goods for Beijing to tax (~$130\u2013135B of US goods vs a $200B US list). Raising the rate to 25 percent now, or adding another $200B immediately, would push costs onto US households just as harvest and midterms arrive, and would invite the non-tariff tools China has already signaled once it runs out of US goods. CNY has already weakened about 8 percent since spring (DEXCHUS ~6.33 to ~6.83), which blunts some of the tariff bite and argues against piling on rate hikes before the 10 percent list is even in force.",
+      "key_factors": [
+        "Section 301 $50B package fully in force and China has matched it",
+        "List 3 $200B comment/hearing process is complete; 10% vs 25% is the live choice",
+        "US farm exports, especially soybeans, are the main bilateral pain point",
+        "US macro still strong; China FX and slower IP show more strain than US GDP",
+        "August 22-23 talks failed on structural issues; May purchase-only truce already collapsed",
+        "Yuan depreciation and import front-loading are blunting US tariff leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-22",
+          "excerpt": "USTR Section 301 report finds China's IP/tech-transfer practices unreasonable; Trump directs tariffs, a WTO case, and investment restrictions."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "Joint statement: China agrees to significantly increase purchases; Mnuchin says trade war is on hold."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 25% tariffs on ~$50B; truce collapses."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-06",
+          "excerpt": "List 1 takes effect: US 25% on ~$34B; China imposes matching ~$34B the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-10",
+          "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for an additional 10% tariff."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-08-01",
+          "excerpt": "At Trump's direction, USTR says it is considering raising the proposed List 3 rate from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-08-23",
+          "excerpt": "List 2 takes effect: US 25% on ~$16B, completing the $50B package; China matches ~$16B."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "EXPCH",
+          "excerpt": "US goods exports to China fell from $10.51B (Apr) to $9.28B (Aug); latest $9.73B (Sep)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "IMPCH",
+          "excerpt": "US goods imports from China rose from $38.2B (Apr) to $49.9B (Sep), consistent with front-loading ahead of List 3."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DEXCHUS",
+          "excerpt": "CNY weakened from about 6.33 in mid-March to 6.827 on 2018-09-05 (~8%), offsetting part of the tariff."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Michigan consumer sentiment 100.1 in September; US demand not cracking."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "VIXCLS",
+          "excerpt": "VIX 13.91 on 2018-09-05; no financial-stress signal from the dispute."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.nytimes.com/2018/08/23/us/politics/us-china-trade-talks.html",
+          "excerpt": "Aug 22-23 Malpass-Wang talks ended with no breakthrough and no further talks scheduled; US pressed structural 301 issues, not purchases."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.usda.gov/about-usda/news/press-releases/2018/08/27/usda-announces-details-assistance-farmers-impacted-unjustified-retaliation",
+          "excerpt": "USDA: up to $12B authorized; initial MFP ~$4.7B with soybeans $1.65/bu (~$3.63B), plus $1.2B purchases."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.cnbc.com/2018/08/27/trump-farm-bailout-to-provide-6-billion-dollars-in-initial-relief.html",
+          "excerpt": "November soybeans ~$8.45, down ~17% since China's April duty announcement; China takes roughly one-third of US soybean rows."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.nytimes.com/2018/08/20/us/politics/china-tariffs-businesses.html",
+          "excerpt": "Nearly 400 firms testified that List 3 would raise prices on bikes, car seats, appliances and force job cuts because US capacity is gone."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.latimes.com/business/la-fi-china-tariffs-new-targets-20180710-story.html",
+          "excerpt": "China bought only ~$135B of US goods last year, so it cannot match $200B in tariffs and is more likely to use non-tariff tools."
+        }
+      ],
+      "threat_score": 0.22,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 7,
+    "by_status": {
+      "ok": 7
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3477,
+        "capped_chars": 3477,
+        "raw_tokens": 869,
+        "capped_tokens": 869
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48144,
+        "capped_chars": 48144,
+        "raw_tokens": 12036,
+        "capped_tokens": 12036
+      },
+      "web_search": {
+        "n_reads": 5,
+        "raw_chars": 107515,
+        "capped_chars": 107515,
+        "raw_tokens": 26879,
+        "capped_tokens": 26879
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 7,
+      "by_status": {
+        "ok": 7
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 134973,
+  "started_at": "2026-08-13T06:30:49+00:00"
+}

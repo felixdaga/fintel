@@ -1,0 +1,82 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-08-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7950,
+    "tokens_out": 635,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0072694,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should proceed with the planned tariff escalation on the remaining ~$300 billion of Chinese imports, maintaining maximum pressure while keeping the door open for negotiations. The current leverage is real but time-limited; China's economy is under greater strain from the tariff war than the US economy, and backing down now would squander negotiating capital. However, the escalation should be calibrated and accompanied by clear signals of willingness to negotiate if China makes substantive concessions on IP theft, forced technology transfer, and market access.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects that while the trade war poses material risks to US consumers and certain export sectors (as noted by USC's Clayton Dube: 'consumers will pay more for many products' and auto costs could rise $1,000-$3,000), the US has structural advantages. The US trade deficit means China has more to lose from tariff escalation \u2014 Beijing retaliated on only $60B vs. US tariffs on $200B+, indicating asymmetric exposure. White House adviser Kudlow acknowledged 'both sides will suffer' but Sen. Graham's framing that tariffs 'make other countries a cheaper place to do business which eventually moves market share away from China' captures the strategic logic. The Reuters timeline shows the US has been methodical: Section 301 probe (Aug 2017), graduated tariff implementation ($34B, $16B, $200B), and the May 2019 escalation to 25% on $200B after China 'backtracked on almost all aspects of a draft trade pact.' The action score of -1 reflects that this is the moment to press the advantage \u2014 China's backtracking on the draft deal (per Reuters, May 2019) demonstrates that half-measures have not produced results, and the additional $300B tariff threat is the remaining major lever. The bipartisan congressional support (Graham, Van Drew) provides political cover. The risk of escalation is real but manageable given US economic fundamentals, while the risk of concession is that it validates China's strategy of\u62d6\u5ef6 (delay) without structural reform.",
+      "key_factors": [
+        "China backtracked on nearly all aspects of draft trade pact (Reuters, May 2019)",
+        "US tariffs already at 25% on $200B of Chinese goods; additional $300B threatened",
+        "Asymmetric exposure: China retaliated on only $60B vs US tariffs on $200B+",
+        "Bipartisan support for firm stance (Graham, Van Drew)",
+        "Both sides will suffer but China's export-dependent economy faces greater structural risk",
+        "Key issues remain unresolved: IP theft, forced tech transfer, market access",
+        "US consumers face price increases but strategic leverage is at peak"
+      ],
+      "sources_cited": [],
+      "threat_score": 0.35,
+      "action_score": -1,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-08-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 18764,
+        "capped_chars": 14743,
+        "raw_tokens": 4691,
+        "capped_tokens": 3686
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 16608,
+  "started_at": "2026-08-13T10:54:58+00:00"
+}

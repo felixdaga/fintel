@@ -1,0 +1,103 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-08-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7366,
+    "tokens_out": 891,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0074534,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should retaliate with targeted tariffs on remaining US imports, particularly in sectors that maximize political pressure on the Trump administration (agriculture, energy, manufacturing in swing states). Simultaneously, China should signal willingness to resume negotiations to avoid full decoupling, while accelerating domestic stimulus and supply chain diversification to hedge against prolonged disruption.\n\nSUPPORTING RATIONALE: The threat to China is HIGH (0.55). The US has already imposed tariffs on $250 billion of Chinese goods and raised rates on $200 billion from 10% to 25% in May 2019. Trump has threatened tariffs on essentially all remaining ~$300 billion of Chinese imports. The BBC reports the US trade deficit with China stood at $419 billion, giving the US significant leverage. The USC analysis notes the dispute is fundamentally about future tech industries (AI, cloud, robotics) where China's market access practices are under direct challenge\u2014this threatens core elements of Made in China 2025. Fox Business reports that Senator Graham explicitly frames tariffs as tools to 'break the stranglehold China has on the supply chain,' indicating the US goal is structural supply chain relocation away from China, not just deficit reduction. Larry Kudlow acknowledged 'both sides will suffer,' but the asymmetry matters: China's export-dependent economy faces greater disruption from tariff escalation than the US consumer-driven economy.\n\nHowever, China retains significant retaliatory capacity ($110 billion already deployed, with room to target US agriculture and services) and the political leverage of US farm-belt constituencies. Retaliation is warranted because: (1) concession without a credible deal framework would signal weakness and invite further escalation; (2) China's existing retaliation on $110 billion of US goods has already created domestic political pressure in the US; (3) the US side has shown willingness to continue talks despite escalation, suggesting retaliation does not foreclose negotiation. The action_score of -1.0 reflects the need for firm, calibrated retaliation to maintain bargaining leverage while the situation remains fluid.",
+      "key_factors": [
+        "US tariff escalation on $200bn goods from 10% to 25% (May 2019)",
+        "Trump threat to tariff remaining ~$300bn of Chinese imports",
+        "US goal of supply chain relocation away from China (Graham statement)",
+        "Dispute centered on future tech sectors threatening Made in China 2025",
+        "China's existing retaliation on $110bn US goods creating US political pressure",
+        "Kudlow acknowledgment that 'both sides will suffer'",
+        "IMF warning of weakened global expansion from trade tensions"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to the table",
+          "excerpt": "When you put tariffs on products coming out of China, it makes other countries a cheaper place to do business which eventually moves market share away from China. This is what Trump's trying to do. He's trying to break the stranglehold China has on the supply chain."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China immersed in a tit-for-tat tariff trade war",
+          "excerpt": "Beijing hit back with tariffs on $110 billion of American goods, accusing the U.S. of starting the largest trade war in economic history."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-08-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 17257,
+        "capped_chars": 13956,
+        "raw_tokens": 4314,
+        "capped_tokens": 3489
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19891,
+  "started_at": "2026-08-13T10:55:18+00:00"
+}

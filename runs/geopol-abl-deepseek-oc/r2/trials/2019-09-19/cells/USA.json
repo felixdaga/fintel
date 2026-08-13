@@ -1,0 +1,132 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-09-19",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 141196,
+    "tokens_out": 3804,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Engage the rescheduled October high-level talks in Washington seriously and constructively, holding the existing 25%/15% tariff structure as leverage while signaling a genuine openness to de-escalation. Do not escalate further \u2014 the Oct 1 hike to 30% was already delayed to Oct 15 as a goodwill gesture, and Beijing has reciprocated with its first exemption lists (including soybeans and pork). Use this window to lock in a deal that protects the farm belt and rebuilds export access without sacrificing the structural IP/enforcement gains already locked down.\n\nSUPPORTING RATIONALE: Threat is moderate-positive (+0.35), not existential. The US holds the tactical advantage \u2014 it is on offense with 25% tariffs on ~$250B and 15% on List 4A (Sept 1) in place, the broad dollar index is strong (116.9, +2.2% since spring), and China is blinking first (Sept 5 agreement to resume talks; Sept 11 Trump deferred the Oct 1 hike at Liu He's request; Sept 13 Beijing exempting soy/pork). But the dispute is visibly biting the real economy: the 10Y yield has collapsed from ~2.5% to 1.80% with the curve flat/near-inverted (a classic recession signal), consumer sentiment dropped from 100 (May) to 89.8 (Aug), and the Federal Reserve has cut the funds rate from 2.42% to 2.04%. The sharpest vulnerability is the farm belt \u2014 soybean exports to China fell roughly three-quarters, China bought only about half the soybeans it pledged, and Senators like Grassley warn farmers are 'at risk of permanently losing an export market' \u2014 a live 2020 re-election concern in battleground states. Escalating further would deepen that farm damage and amplify recession risk at exactly the moment Beijing is offering concessions. Conversely, a full concession would waste the leverage already built. The calibrated move is to negotiate: convert Beijing's goodwill and the scheduled talks into enforceable tariff-rollback commitments while holding current tariffs as the bargaining chip. (Event timeline 2019-09-05 through 2019-09-13; country health fed funds, DGS10, DTWEXBGS, UMCSENT; web: CNBC 'Trump delays tariff hikes,' Reuters/NDTV talks reporting, farm-belt coverage.)",
+      "key_factors": [
+        "US holds offensive leverage: 25% on $250B + 15% List 4A, strong dollar, China conceding first",
+        "Yield curve flat/near-inverted (10Y 1.80%), Fed cutting to 2.04%, consumer sentiment dip to 89.8",
+        "Farm belt hardest hit \u2014 soybean exports to China down ~3/4, risk of permanently losing the market",
+        "China goodwill: resumption of Oct talks, exemption lists including soy/pork; Trump delayed Oct 1 hike"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-05",
+          "excerpt": "China and US agree to hold high-level talks in early October in Washington"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-13",
+          "excerpt": "China reports soybeans, pork and some farm goods will be excluded from additional retaliatory tariffs"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10Y Treasury 1.80% on 2019-09-18, down ~25% over the window; flat vs 2Y"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment 93.2 in Sept, had fallen to 89.8 in Aug from 100 in May"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Fed funds 2.04% in Sept, down from 2.42% in April"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2019-09-11",
+          "excerpt": "Trump delays Oct 1 tariff hike on $250B to Oct 15 as goodwill gesture at Liu He's request"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "farmpolicynews/Reuters 2019-08",
+          "excerpt": "Grassley: farmers 'at risk of permanently losing an export market'; soybean sales to China down ~74% in 2018"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-09-19",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5700,
+        "capped_chars": 5700,
+        "raw_tokens": 1425,
+        "capped_tokens": 1425
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48190,
+        "capped_chars": 48190,
+        "raw_tokens": 12048,
+        "capped_tokens": 12048
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 40048,
+        "capped_chars": 40048,
+        "raw_tokens": 10012,
+        "capped_tokens": 10012
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 329433,
+  "started_at": "2026-08-13T07:52:42+00:00"
+}

@@ -1,0 +1,108 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-05-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8274,
+    "tokens_out": 1189,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0092554,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should announce retaliatory tariffs on the remaining ~$60 billion of U.S. goods not yet covered, targeting politically sensitive sectors in Republican-leaning states (soybeans, automobiles, energy). Simultaneously, signal willingness to return to negotiations if the U.S. rolls back its May 10 escalation, preserving diplomatic off-ramps while demonstrating that coercion will not extract unilateral concessions.\n\nSUPPORTING RATIONALE: The threat reading of +0.55 reflects the acute escalation triggered by Trump's May 5 tweet and the May 10 implementation of 25% tariffs on $200 billion of Chinese goods (Reuters timeline). This raises the effective tariff burden on nearly half of China's exports to the U.S. and signals that the remaining ~$300 billion could follow (Fox Business: Trump called for Lighthizer to begin raising tariffs on 'essentially all remaining imports'). The Brookings analysis notes that China's export economy is deeply embedded in global value chains\u2014more than half the value of 'Chinese' exports consists of parts from South Korea, Japan, and others\u2014meaning tariffs disrupt not just Chinese assembly but the entire regional supply chain, threatening employment in export hubs. The BBC reports that the Shanghai Composite fell nearly 25% in 2018 and the yuan depreciated over 5% against the dollar, indicating financial market stress. The IMF has flagged US-China tensions as contributing to a 'significantly weakened global expansion.'\n\nHowever, the threat is not yet existential (+1.0) because: (1) China has already retaliated on $110 billion of U.S. goods and retains policy tools (FX management, fiscal stimulus, entity list); (2) the U.S. faces its own costs\u2014Larry Kudlow acknowledged 'both sides will pay,' and 24 states have sued Trump over tariffs (Fox Business); (3) China's domestic market and Belt and Road diversification provide partial buffers. The action_score of -1.0 (maximal retaliation stance within the retaliate band) is justified because capitulation now\u2014after the U.S. escalated unilaterally from 10% to 25% mid-negotiation\u2014would signal weakness and invite further demands. As the Brookings analysis notes, 'it is unlikely that the Chinese leadership will cave in and do anything major.' Retaliation preserves leverage, rallies domestic nationalism (a net positive for CCP legitimacy), and raises the cost to the U.S. of further escalation, potentially creating conditions for a more balanced negotiation later.",
+      "key_factors": [
+        "Trump's May 5 tweet and May 10 implementation of 25% tariffs on $200B of Chinese goods \u2014 sudden escalation mid-negotiation",
+        "Threat of tariffs on remaining ~$300B of Chinese imports (Lighthizer directive per Fox Business)",
+        "China's deep integration in global value chains means tariffs disrupt regional supply chains, not just Chinese assembly (Brookings)",
+        "Shanghai Composite fell ~25% in 2018, yuan depreciated 5%+ \u2014 financial market stress already evident (BBC)",
+        "U.S. also faces costs: Kudlow admits 'both sides will pay'; 24 states sue Trump; soybean prices down 20% (Fox Business, Brookings)",
+        "China has already retaliated on $110B and retains policy tools (FX, fiscal stimulus, entity list) \u2014 not yet existential",
+        "Capitulation mid-escalation would invite further demands; retaliation preserves leverage and signals resolve"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com \u2014 Timeline: Key dates in the U.S.-China trade war",
+          "excerpt": "May 5, 2019: Trump tweets that he intends to raise the tariffs rate on $200 billion of Chinese goods to 25% on May 10. May 10: The Trump administration gives formal notice of its intent to raise tariffs on $200 billion of Chinese imports to 25% from 10%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "Trump called for U.S. Trade Representative Robert Lighthizer to begin raising tariffs on 'essentially all remaining imports from China, which are valued at approximately $300 billion.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "China's exports to the United States include technologies like smartphones, computers, and tablets. Such goods are part of 'global value chains,' with China at the end of the chain. More than half of the value of those products are in parts and components from other countries like South Korea and Japan."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "In 2018, Hong Kong's Hang Seng index fell more than 13% and the Shanghai Composite slumped nearly 25%. The yuan fell over 5% against the US dollar last year."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "It is unlikely that the Chinese leadership will cave in and do anything major. China is willing to buy more products from the U.S. and open more markets, so their offer is clear."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -1.0,
+      "action_level": "retaliate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-05-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 19814,
+        "capped_chars": 15891,
+        "raw_tokens": 4954,
+        "capped_tokens": 3973
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 25085,
+  "started_at": "2026-08-13T10:54:49+00:00"
+}

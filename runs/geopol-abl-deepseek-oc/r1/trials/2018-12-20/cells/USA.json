@@ -1,0 +1,128 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-12-20",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 144552,
+    "tokens_out": 4282,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.2,
+      "rationale": "RECOMMENDATION: The United States should stay in the 90-day truce (March 1 deadline) and keep negotiating: hold tariffs in place, press for concrete Chinese purchase commitments and structural progress (forced tech transfer, IP, market access), and keep the suspended $200B List-3 escalation from 10% to 25% as credible leverage. Do not escalate now (that would break the truce and further spook already-fragile markets) and do not concede (China has yet to deliver verified commitments).\n\nSUPPORTING RATIONALE: Threat reading: the trade dispute itself is not an existential or even high threat to the US \u2014 the domestic economy is firm (IP index 104.09 and rising, CPI ~2% YoY, consumer sentiment 98.3, Fed funds 2.27% per country_health) and Washington holds the terrain with tariffs on $250B of imports in place while the $200B escalation is suspended as an incentive (event_timeline 2018-12-01 G20 deal; PBS/CNBC). The risks that keep this from being a strong opportunity are second-order: the Huawei/Meng arrest and China's detention of two Canadians (timeline 2018-12-01, 2018-12-10) could spiral and derail the truce; US equities sit at year lows with the 10Y yield sliding to ~2.77% and Baa spreads widening to ~5.04% (country_health) as markets weigh trade uncertainty plus Fed tightening; and Xi's mid-December speech offered no concrete proposals (NYT/CNBC). That reads as a modest net opportunity with genuine fragility. Action stance: with the truce only ~3 weeks old, engage in talks without new commitments \u2014 maximize leverage while the escalation lever is still live and the March 1 deadline concentrates Beijing, but avoid committing concessions before China demonstrates delivery, so the 25% escalation and broader tariff options remain the natural fallback if talks fail (Dorsey eligible outline). Escalation now forfeits leverage and amplifies market stress; full concession surrenders a strong position for unverified promises.",
+      "key_factors": [
+        "90-day truce with March 1 deadline; tariffs on $250B still in place and $200B 10%\u219225% escalation suspended as leverage",
+        "US macro firm: rising industrial production, ~2% CPI, 98.3 consumer sentiment \u2014 no material domestic GDP drag yet",
+        "Market fragility: S&P at 2018 lows, 10Y yield falling to ~2.77%, Baa spreads widening to ~5.04%, oil collapse \u2014 trade uncertainty + Fed tightening",
+        "Huawei CFO Meng arrest and Canada/China detentions create an escalatory overlay that could derail the truce",
+        "China's purchase/structural commitments remain vague with no verified delivery"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires: 90-day negotiation window; Jan 1 List 3 hike 10%\u219225% suspended; same-day Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-10",
+          "excerpt": "China detains Canadians Kovrig and Spavor, widely viewed as retaliation for the Meng arrest."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA/INDPRO",
+          "excerpt": "Industrial production index 104.09, rising; CPI ~2% YoY; consumer sentiment 98.3; Fed funds 2.27%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "USA/DGS10",
+          "excerpt": "10Y Treasury yield sliding to 2.77% by Dec 19; Baa corporate yield up to 5.04% \u2014 market risk-off."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "pbs.org/newshour - 2018-12-02",
+          "excerpt": "Trump held off Jan 1 hike on $200B; China to buy 'very substantial' US agricultural/energy goods; 90 days to resolve; if no deal higher tariffs take effect."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes.com - 2018-12-17",
+          "excerpt": "S&P at 2018 low; markets buffeted by trade war weighing on global growth and higher rates; Xi speech offered no specific proposals."
+        }
+      ],
+      "threat_score": -0.2,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-12-20",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4487,
+        "capped_chars": 4487,
+        "raw_tokens": 1122,
+        "capped_tokens": 1122
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47776,
+        "capped_chars": 47776,
+        "raw_tokens": 11944,
+        "capped_tokens": 11944
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 47968,
+        "capped_chars": 47968,
+        "raw_tokens": 11992,
+        "capped_tokens": 11992
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 468610,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

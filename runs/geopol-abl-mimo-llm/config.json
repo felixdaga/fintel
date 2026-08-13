@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "job_id": "geopol-abl-mimo-llm-v2",
+  "strategy": "/Users/lucky/.openclaw/workspace/projects/fintel/packages/geopol_trade_war_2018",
+  "agent": {
+    "name": "llm",
+    "model": {
+      "id": "xiaomi/mimo-v2.5-pro",
+      "allow_fallbacks": false,
+      "extra_params": {}
+    },
+    "allow_sub_agents": false,
+    "options": {}
+  },
+  "k_repeats": 3,
+  "trial_concurrency": 1,
+  "shared_concurrency": 50,
+  "output_root": "/Users/lucky/.openclaw/workspace/projects/fintel/runs",
+  "dry_run": false,
+  "prefetch": true,
+  "prefetch_workers": 8
+}

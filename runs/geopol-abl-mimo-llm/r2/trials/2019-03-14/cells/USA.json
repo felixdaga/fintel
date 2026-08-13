@@ -1,0 +1,108 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-03-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8834,
+    "tokens_out": 947,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0090894,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.2,
+      "rationale": "RECOMMENDATION: Continue active negotiations with China toward a comprehensive deal, leveraging the current momentum on MOUs covering structural issues. Do not escalate tariffs further at this juncture, but do not concede prematurely either \u2014 hold the March 1 tariff increase as leverage while talks progress. Push for enforceable commitments on forced technology transfer, IP protection, and currency manipulation.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but manageable (threat_score +0.2). The trade war has imposed real costs on specific US sectors \u2014 soybean prices down 20%, agricultural and manufacturing exporters hurt by Chinese retaliation on $110 billion of US goods (Brookings, Fox Business). However, the overall macroeconomic impact has been described as 'a minor blip' for the US economy (Brookings). The US retains significant leverage: tariffs on $250 billion of Chinese goods are already in place, and Trump has threatened to tariff the remaining $267 billion. Meanwhile, negotiations are showing genuine progress \u2014 six MOUs are being drafted on structural issues (forced tech transfer, IP, services, currency, agriculture, non-tariff barriers), and a 10-item purchase list is being discussed (CNBC, Feb 21 2019). The March 1 deadline for the tariff escalation from 10% to 25% on $200B of goods provides additional leverage. China's economy is under pressure from the tariffs, and Chinese officials describe being in a 'sprint phase' toward agreement (CNBC). The action_score of +0.1 reflects a negotiate posture: the US should stay engaged in talks, use existing leverage wisely, and push for verifiable structural reforms rather than either escalating further or making premature concessions. Escalation risks damaging US supply chains and ally relationships, while premature concession would waste the leverage already built.",
+      "key_factors": [
+        "Six MOUs under negotiation on structural issues (forced tech transfer, IP, services, currency, agriculture, non-tariff barriers)",
+        "March 1 deadline for tariff escalation from 10% to 25% on $200B of Chinese goods provides leverage",
+        "US agricultural sector under significant pressure \u2014 soybean prices down 20%",
+        "China retaliating on nearly 100% of US exports to China ($110B of $130B)",
+        "Overall US economic impact described as 'minor blip' but sectoral pain is real",
+        "Chinese officials describe 'sprint phase' toward agreement, indicating willingness to deal",
+        "US retains option to tariff remaining $267B of Chinese imports if talks fail"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnbc.com \u2014 US and China are sketching the outlines of a deal to end the trade war",
+          "excerpt": "Negotiators are drawing up six memorandums of understanding on structural issues: forced technology transfer and cyber theft, intellectual property rights, services, currency, agriculture and non-tariff barriers to trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnbc.com \u2014 US and China are sketching the outlines of a deal to end the trade war",
+          "excerpt": "It can be said that we are now in the sprint phase, and both negotiating teams are working towards the goal of reaching an agreement within the deadline, but some problems are still quite complicated to resolve"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "This second round of Chinese tariffs is going to now cover $110 billion of the $130 billion of U.S.-China trade -- again, almost 100% of the entire trading relationship"
+        }
+      ],
+      "threat_score": 0.2,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-03-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 25178,
+        "capped_chars": 20694,
+        "raw_tokens": 6294,
+        "capped_tokens": 5174
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 21190,
+  "started_at": "2026-08-13T10:54:46+00:00"
+}

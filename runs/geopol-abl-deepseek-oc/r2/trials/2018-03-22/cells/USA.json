@@ -1,0 +1,135 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-03-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 144558,
+    "tokens_out": 3970,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.25,
+      "rationale": "RECOMMENDATION: Hold the current posture rather than immediately escalating. We have a strong hand \u2014 the completed Section 301 investigation into China's IP/tech-transfer practices gives us leverage \u2014 but we should use that leverage to press for negotiation and concessions, not trigger an avoidable tariff cascade. Keep the steel/aluminum tariffs that are taking effect as negotiating chips, push China's leadership for meaningful structural commitments on IP and market access, and avoid broadening tariffs in a way that invites retaliation against our farm-belt exports.\n\nSUPPORTING RATIONALE: The threat to US interests from the current state of the dispute is modest and tilts favorable. Our real economy is strong \u2014 industrial production at 102.2 and rising, consumer sentiment at 101.4 (a multi-year high), and oil holding near $65 \u2014 so the dispute has not bitten the US growth picture yet (country_health INDPRO, UMCSENT). China has so far reacted cautiously: it represents only ~2% of US steel imports and 0.1% of its own production, and Beijing's response has been restrained rhetoric rather than concrete retaliation (NYT 2018-03-03; The Diplomat 2018-03-02). This gives the US leverage and positioning, not an existential threat. What tempers the opportunity and keeps me from moving to escalate is the asymmetric exposure: China's likely retaliation targets US agriculture and other politically sensitive sectors \u2014 a 'political acupuncture' risk directly aimed at the farm belt and the President's base (VOA 2018-03-09), and 43+ business groups including tech firms, retailers, farmers and the Chamber of Commerce plus several Republican lawmakers have publicly opposed tariffs as the wrong tool, warning of higher consumer prices and lost competitiveness (NPR 2018-03-21). Corporate credit spreads are also widening (Baa from 4.28% to 4.71%) and the Dow dropped 420 points on the tariff announcement, signaling market nervousness about escalation. With the dispute at an inflection point and the 301 finding imminent, the disciplined stance is to hold: bank the leverage, use the pending actions as bargaining chips to extract concessions, and let China respond to the steel/aluminum tariffs before committing to a broader and more costly escalation. This keeps our strong hand intact while avoiding a self-inflicted retaliation spiral.",
+      "key_factors": [
+        "US economy strong: industrial production 102.2 rising, consumer sentiment 101.4, oil ~$65",
+        "Section 301 China IP/tech-transfer investigation complete, findings imminent \u2014 gives US leverage",
+        "China's reaction restrained so far; only ~2% of US steel imports, 0.1% of China output",
+        "China likely to retaliate via agriculture/farm-belt 'political acupuncture' targeting Trump base",
+        "43+ business groups (tech, retailers, farmers, Chamber) and some Republicans oppose tariffs",
+        "Credit spreads widening (Baa 4.28->4.71) and Dow -420 on tariff announcement; markets wary",
+        "Steel/aluminum tariffs taking effect alienate allies (EU, Canada, Brazil)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US industrial production 102.2 and rising"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment 101.4, multi-year high"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-03-08",
+          "excerpt": "Trump signs Section 232 steel (25%) and aluminum (10%) tariffs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NYT 2018-03-03",
+          "excerpt": "China's initial reaction to metals tariffs cautious; China ~2% of US steel imports, 0.1% of its production"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "VOA 2018-03-09",
+          "excerpt": "China likely to target US agriculture in retaliation - 'political acupuncture'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NPR 2018-03-21",
+          "excerpt": "43+ trade groups and lawmakers oppose tariffs as wrong response"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Politico 2018-03-07",
+          "excerpt": "Trump eyes another trade crackdown; 301 actions have broad buy-in among aides"
+        }
+      ],
+      "threat_score": -0.25,
+      "action_score": 0,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-03-22",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 1128,
+        "capped_chars": 1128,
+        "raw_tokens": 282,
+        "capped_tokens": 282
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47437,
+        "capped_chars": 47437,
+        "raw_tokens": 11859,
+        "capped_tokens": 11859
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 59442,
+        "capped_chars": 59442,
+        "raw_tokens": 14860,
+        "capped_tokens": 14860
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 352792,
+  "started_at": "2026-08-13T07:44:44+00:00"
+}

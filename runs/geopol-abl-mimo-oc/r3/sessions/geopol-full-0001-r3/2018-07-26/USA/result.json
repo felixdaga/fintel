@@ -1,0 +1,75 @@
+{
+  "views": [
+    {
+      "symbol": "USA",
+      "score": -0.3,
+      "threat_score": -0.3,
+      "action_score": 0.1,
+      "action_level": "hold",
+      "rationale": "RECOMMENDATION: Hold the current tariff posture without further escalation or rollback. Let the existing $34B in tariffs (List 1) and the imminent $16B (List 2) work through the system while the $200B List 3 comment period plays out. Use this window to signal willingness to negotiate if China offers structural concessions on IP and tech transfer, but do not initiate talks from a position of weakness.\n\nSUPPORTING RATIONALE: The threat score of -0.3 reflects a moderate opportunity rather than a threat. The US economy is performing strongly \u2014 industrial production at 103.4 (up 1.6% over the period), unemployment near record lows, and consumer sentiment still elevated at 97.9 despite a mild decline from 101.4 in March (country_health: UMCSENT). The Fed is tightening (1.42% \u2192 1.91%), the dollar has strengthened 5.4% (DTWEXBGS: 107.1 \u2192 112.9), and there is no evidence of broad macro damage from the tariffs so far.\n\nThe structural asymmetry favors the US: China exports ~$500B to the US vs. ~$130B US exports to China, meaning China runs out of tariff headroom first. China's retaliatory $34B (timeline: 2018-07-06) targeted agriculture strategically \u2014 soybean prices have fallen ~20% since April (CNBC, July 24), and farm incomes in key Trump states are under real pressure. However, the administration has announced a $12B emergency farmer aid package (CNBC, July 24), and the political damage is containable given the strength of the broader economy.\n\nKey risk factors cut both ways. On the opportunity side: the ZTE denial order was lifted on July 13 after a $1B fine + $400M escrow (Federal Register, July 23), demonstrating the US can deploy devastating non-tariff leverage and then extract concessions \u2014 a template for broader negotiations. On the risk side: the $200B List 3 (proposed July 10) would significantly broaden the tariff scope to consumer goods, potentially raising prices for US consumers and drawing in more political opposition. The bipartisan criticism of the ZTE deal (NYT, July 13; The Verge, July 13) shows domestic political constraints on the administration's China policy.\n\nThe action score of +0.1 (hold) reflects that the US is already in a strong escalatory posture \u2014 $34B active, $16B imminent, $200B in the pipeline, with matching Chinese retaliation already absorbed. Further unilateral escalation now risks: (a) accelerating the tariff spiral into consumer goods territory with real domestic price effects, (b) further alienating allies (EU, Mexico, Canada have already imposed $22B in retaliatory tariffs per Politico, July 6), and (c) giving China a rallying narrative of American aggression. The smarter play is to hold pressure, let China's export sector feel the squeeze, and wait for Beijing to signal willingness to discuss structural reforms. If China makes a genuine offer on IP protection and tech transfer, that is the moment to negotiate \u2014 not before.",
+      "key_factors": [
+        "US economy strong \u2014 industrial production rising, consumer sentiment near 100, unemployment low",
+        "Asymmetric trade flows favor US: China runs out of tariff retaliation room first",
+        "Agricultural sector under real pressure \u2014 soybean prices down 20%, farm aid package announced",
+        "ZTE denial order lifted July 13 after $1.4B settlement \u2014 demonstrates non-tariff leverage",
+        "List 3 ($200B) in comment period \u2014 escalation to consumer goods carries domestic risk",
+        "No active negotiations since May truce collapsed (May 29)",
+        "Allies (EU, Mexico, Canada) imposing retaliatory tariffs \u2014 multi-front trade conflict"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-10",
+          "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for an additional 10% tariff (~6,000 product lines)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-06",
+          "excerpt": "List 1 tariffs take effect: US 25% on ~$34B of Chinese goods. China imposes matching ~$34B retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment: 101.4 (Mar) \u2192 97.9 (Jul). Still elevated but declining."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "Industrial production: 101.7 (Feb) \u2192 103.4 (Jul). Rising steadily."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad dollar index: 107.1 (Jan) \u2192 112.9 (Jul). Strong dollar environment."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS",
+          "excerpt": "Fed funds rate: 1.42% (Feb) \u2192 1.91% (Jul). Tightening cycle underway."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-soybeans-2018-07-24",
+          "excerpt": "Soybean prices have plunged nearly 20 percent since April when China first announced the 25 percent tariff on U.S. soybeans."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "federal-register-zte-2018-07-23",
+          "excerpt": "Order Terminating Denial Order against ZTE. ZTE paid $1B fine and $400M escrow."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico-farmers-2018-07-06",
+          "excerpt": "China's retaliatory tariffs on $34 billion worth of U.S. goods are directly aimed at rural regions of the country that voted heavily for President Donald Trump."
+        }
+      ]
+    }
+  ],
+  "abstain": false,
+  "abstain_reason": ""
+}

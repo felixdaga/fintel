@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-11-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8042,
+    "tokens_out": 905,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0081714,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.25,
+      "rationale": "RECOMMENDATION: Maintain current tariff posture without further escalation for now. The U.S. has already imposed tariffs on $250 billion of Chinese goods (roughly half of bilateral trade), and the midterm elections just occurred on November 6, 2018. With no high-level negotiations scheduled and China signaling unwillingness to negotiate under pressure ('putting a knife to China's neck'), the prudent course is to hold the existing leverage while signaling openness to talks after the political dust settles from the midterms.\n\nSUPPORTING RATIONALE: The threat to U.S. interests is moderate but manageable. The Brookings analysis notes the trade war is 'not a big hit for the overall U.S. economy' but hurts specific sectors\u2014Midwest soybean farmers (prices down 20%), auto exporters in Southern states, and Boeing. The U.S. has a structural advantage: it imports $506B from China vs. exporting only $130B, meaning China cannot match tariff escalation symmetrically (CBS News). China has already nearly exhausted its retaliatory capacity, covering $110B of $130B in U.S. imports (Fox Business). However, the threat is not negligible: collateral damage to U.S. firms operating in China is real, and the $200B tranche (set to rise from 10% to 25% at year-end) will raise consumer prices. The Washington Post reports that repeated deal collapses (Ross deal, Mnuchin deal vetoed by Trump) have eroded trust, making near-term breakthrough unlikely. The action score reflects a hold stance: the U.S. already holds significant leverage with tariffs covering half of bilateral trade, and further escalation risks alienating allies and raising consumer costs ahead of potential negotiations. The Brookings assessment that 'after the 2018 elections, we're likely to see the two sides come together' supports a patient posture.",
+      "key_factors": [
+        "$250B in tariffs already imposed covering ~50% of U.S.-China trade",
+        "China nearly exhausted retaliatory capacity ($110B of $130B U.S. imports already tariffed)",
+        "Soybean prices down 20%, specific sector pain in agriculture and autos",
+        "No high-level negotiations currently scheduled",
+        "Midterm elections just concluded Nov 6 \u2014 political window for talks may open",
+        "China's retaliatory tariff reduction on non-U.S. goods signals trade diversion strategy",
+        "$200B tranche tariff set to rise from 10% to 25% at end of 2018 \u2014 built-in escalation already scheduled",
+        "Repeated deal collapses have eroded bilateral trust (Washington Post reporting)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors. After the 2018 elections, we're likely to see the two sides come together and negotiate something so that they can both save face."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com \u2014 Trade war with China: What you need to know",
+          "excerpt": "The U.S. buys $506 billion worth of goods from China but only exports $130 billion, leaving a trade deficit of $375 billion between the two countries."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "This second round of Chinese tariffs is going to now cover $110 billion of the $130 billion of U.S.-China trade -- again, almost 100% of the entire trading relationship."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com \u2014 How the U.S. and China misread the signals in the trade war",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down."
+        }
+      ],
+      "threat_score": 0.25,
+      "action_score": -1.0,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-11-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20384,
+        "capped_chars": 16158,
+        "raw_tokens": 5096,
+        "capped_tokens": 4040
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 21180,
+  "started_at": "2026-08-13T10:54:44+00:00"
+}

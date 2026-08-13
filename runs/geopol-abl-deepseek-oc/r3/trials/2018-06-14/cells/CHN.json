@@ -1,0 +1,134 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 201577,
+    "tokens_out": 5588,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Keep the negotiation channel open and hold our current posture rather than escalating, while maintaining the proportional retaliation already on the table (the ~$50B counter-list on soybeans, autos, aircraft and the effective $3B response) as leverage. Signal continued willingness to reach a settlement and defer any new escalatory step until the US formally acts, so we do not hand Washington a reason to trigger its threatened $100B+ and $200B rounds. Do not make unilateral purchase commitments while US tariffs remain pending.\n\nSUPPORTING RATIONALE: The threat is high but not yet existential. On 2018-05-29 the White House re-committed to 25% Section 301 tariffs on ~$50B of Chinese high-tech exports (Made in China 2025 sectors \u2014 aerospace, ICT, robotics, machinery), with the list due June 15, and the June 3 Beijing talks ended in impasse because China refused purchase commitments without tariff relief (event_timeline; NYT). The ZTE denial order (2018-04-16) demonstrated US willingness to use export controls to shut down a national telecom champion \u2014 a genuine firm-level vulnerability. Yet China's macro base remains strong and the tariffs are not yet in effect: exports were up 5.5% and total trade up 8.8% in Jan\u2013May 2018 with ~$3.1T FX reserves and the bilateral surplus with the US still widening (ChinaDaily; Forbes). We also hold real leverage: our soybean/agriculture targeting strikes Trump's farm-belt base, and because ~43% of our exports are foreign-sourced, US tariffs largely tax US companies and consumers (Wired). Escalating now would risk the full-blown trade war we can least absorb, while conceding purchases without tariff relief would signal weakness for no gain. The optimal stance is therefore to negotiate from a holding position \u2014 refuse further commitments until tariff threats are withdrawn, keep retaliation calibrated and ready, and avoid provoking a $200B cascade. This justifies a mild de-escalation-to-neutral action score of +0.1 under a threat reading of +0.55.",
+      "key_factors": [
+        "US re-committed to 25% tariffs on ~$50B of Chinese high-tech exports (Made in China 2025 sectors), list due June 15 \u2014 not yet effective at decision date",
+        "ZTE denial order shows US export-control vulnerability for Chinese flagship firms, though partially mitigated by $1.3B fine + management removal",
+        "June 3 talks in impasse: China refused purchase commitments without US tariff relief",
+        "China macro resilient: exports +5.5%, trade +8.8% Jan\u2013May 2018, ~$3.1T reserves, surplus with US still widening",
+        "China holds leverage via soybean/ag targeting of Trump's farm base and US tariffs partly taxing US companies (43% foreign-sourced exports)",
+        "Escalation risks triggering Trump's threatened $100B+/$200B rounds; concession without tariff relief signals weakness"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports. Truce collapses."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods (soybeans, automobiles, aircraft)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NYT 2018-06-03",
+          "excerpt": "U.S.-China trade talks end in impurity; China refuses purchase commitments without agreement not to impose further tariffs."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ChinaDaily 2018-06-09",
+          "excerpt": "Foreign trade surged 8.8% YoY to 11.63tn yuan Jan-May; exports +5.5%; China's surplus with US increased May."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Forbes 2018-05-24",
+          "excerpt": "China sits on ~$3 trillion FX reserves; massive trade surplus; no balance-of-payments crisis risk."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Wired 2018-05-30",
+          "excerpt": "43 percent of Chinese exports are sourced from foreign-owned firms; tariffs on China largely tax US companies and consumers."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2623,
+        "capped_chars": 2623,
+        "raw_tokens": 656,
+        "capped_tokens": 656
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47502,
+        "capped_chars": 47502,
+        "raw_tokens": 11876,
+        "capped_tokens": 11876
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 70410,
+        "capped_chars": 70410,
+        "raw_tokens": 17603,
+        "capped_tokens": 17603
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 219530,
+  "started_at": "2026-08-13T07:44:20+00:00"
+}

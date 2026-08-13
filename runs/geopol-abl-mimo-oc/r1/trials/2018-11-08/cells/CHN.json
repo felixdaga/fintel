@@ -1,0 +1,140 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-11-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should maintain its current retaliatory posture without further escalation, signal willingness to negotiate substantive concessions at the upcoming G20 meeting with Trump, and use the next six weeks before the Jan 1 tariff hike to explore a framework deal that avoids the threatened escalation to 25% on List 3 and the additional $267B in tariffs Trump has threatened.\n\nSUPPORTING RATIONALE: The threat score of +0.55 reflects that this dispute is materially harmful to China and worsening, though not yet existential. Several factors drive this reading:\n\n(a) Asymmetric tariff exposure: The US has imposed tariffs on ~$250B of Chinese imports (Lists 1-3, effective through Sept 24, 2018), while China has retaliated on only ~$110B of US goods because it imports far less from the US. China exports roughly 4x as much to the US as it imports, meaning the tariff war hits China's export economy disproportionately (CNBC/BofA analysis, Sept 2018).\n\n(b) GDP slowdown: China's Q3 2018 GDP slowed to 6.5% YoY, the weakest since the financial crisis, missing expectations. Industrial production growth fell to 5.8% in September. Analysts estimate the trade war could shave 0.5-0.6 percentage points off 2019 growth (J.P. Morgan, BofA, Sept-Oct 2018). The slowdown compounds domestic deleveraging efforts that were already underway.\n\n(c) Currency and capital flight risk: The yuan has depreciated ~9% against the dollar since April 2018, driven by US rate hikes (Fed funds at 2.20%, up from 1.82% in June) and trade war anxiety. Premier Li Keqiang publicly pledged China would not devalue the currency (Sept 19, 2018), but this constrains Beijing's toolkit \u2014 it cannot use competitive devaluation without risking capital flight reminiscent of 2015-16.\n\n(d) Tech supply chain vulnerability: The ZTE denial order (April 2018) demonstrated that Chinese tech firms are critically dependent on US components. Though ZTE was rescued via a $1B penalty deal (July 2018), the Defense Authorization Act (Aug 2018) banned Huawei, ZTE, and other Chinese tech firms from US government contracts, signaling the tech front of this war is expanding. This threatens Made in China 2025 ambitions.\n\n(e) Escalation risk: Trump has threatened to tariff ALL remaining Chinese imports (~$267B more) if China retaliates further, and has directed USTR to consider raising List 3 from 10% to 25% on Jan 1, 2019. China is running low on US goods to target with retaliatory tariffs.\n\nThe action_score of -0.1 (slightly toward escalate, but within negotiate band) reflects that China should not concede unilaterally but should recognize the negotiation window. The Trump-Xi phone call on Nov 1, 2018, and the planned G20 meeting in Argentina create a diplomatic opening. China has leverage points \u2014 it can offer increased US commodity purchases, market access concessions, and IP protection reforms \u2014 but should not make major structural concessions (e.g., abandoning Made in China 2025) under duress. The goal is to prevent the Jan 1 escalation while preserving core strategic interests. Escalating now would be self-defeating given asymmetric exposure and the $267B threat.",
+      "key_factors": [
+        "US tariffs now cover ~$250B of Chinese imports; $267B more threatened",
+        "China GDP slowed to 6.5% in Q3 2018, weakest since financial crisis",
+        "Yuan depreciated ~9% vs dollar since April, constraining monetary policy",
+        "ZTE ban and Huawei/tech firm restrictions expose supply chain vulnerability",
+        "China's retaliatory capacity limited by trade deficit asymmetry",
+        "G20 meeting with Trump creates negotiation window before Jan 1 tariff hike",
+        "List 3 scheduled to rise from 10% to 25% on Jan 1, 2019"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-06-18",
+          "excerpt": "Trump directs USTR to identify an additional ~$200B of Chinese imports for 10% tariffs if China retaliates against the $50B action."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "timeline_entry_2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_china_q3_gdp",
+          "excerpt": "China's economic growth slowed to 6.5 percent year-over-year in the third quarter of 2018, missing expectations. Industrial production for September grew 5.8 percent."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_bofa_trade_war_impact",
+          "excerpt": "If you put tariffs across the board on both countries...it's a four times bigger hit to China because they export four times as much as they import. The tariffs announced so far could have as much as a half percent impact on Chinese growth."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn_yuan_depreciation",
+          "excerpt": "The yuan has shed about 9% versus the US dollar since April. Even though a weaker yuan makes Chinese exports cheaper, Beijing is more concerned with propping up the currency to avoid a steep plunge."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ndaa_huawei_zte_ban",
+          "excerpt": "U.S. government agencies will be forbidden from using certain components or services from several Chinese tech firms, including Huawei and ZTE. The ban was signed into law as part of the Defense Authorization Act."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-11-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4164,
+        "capped_chars": 4164,
+        "raw_tokens": 1041,
+        "capped_tokens": 1041
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 43629,
+        "capped_chars": 43629,
+        "raw_tokens": 10907,
+        "capped_tokens": 10907
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 42144,
+        "capped_chars": 42144,
+        "raw_tokens": 10536,
+        "capped_tokens": 10536
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 383462,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

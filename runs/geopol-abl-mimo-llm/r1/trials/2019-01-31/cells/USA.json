@@ -1,0 +1,98 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7792,
+    "tokens_out": 726,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0073844,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.25,
+      "rationale": "RECOMMENDATION: The US should pursue active negotiations with China while maintaining the current tariff structure as leverage. We should not escalate further at this moment, as the tariff war has already covered roughly half of bilateral trade and further escalation risks significant collateral damage to US firms and consumers. However, we should not concede ground either, as the structural issues around IP theft, forced technology transfer, and state subsidies remain unresolved.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate (0.25). While the trade war has imposed costs on specific US sectors\u2014soybean prices down 20%, agricultural and auto exports hit by Chinese retaliation (Brookings, Dollar)\u2014the overall economic impact has been described as 'a minor blip' for the US economy. The US has significant leverage: tariffs cover $250 billion of Chinese imports, and Trump has threatened to extend to essentially 100% of bilateral trade. China's retaliation has nearly exhausted its tariff options ($110B of $130B in US imports already covered). However, the structural threat from China's industrial policy\u2014subsidies, forced JVs, IP theft as outlined by the CFR (Fox Business, Walser)\u2014represents a genuine long-term challenge to US tech leadership and economic competitiveness. The action score of -1.0 reflects the need to maintain maximum negotiating leverage through the existing tariff structure while engaging in talks. The Fox Business article notes Trump reported 'tremendous success' in recent Beijing negotiations, suggesting a window for deal-making. Escalating further would risk alienating allies and increasing costs to US consumers without proportional gains, while conceding now would squander leverage before structural reforms are secured.",
+      "key_factors": [
+        "US tariffs cover ~$250B of Chinese imports, roughly half of bilateral trade",
+        "Soybean prices down 20%, agricultural/auto sectors hit by Chinese retaliation",
+        "China has nearly exhausted retaliatory tariff options ($110B of $130B)",
+        "Structural issues: IP theft, forced JVs, state subsidies (CFR report)",
+        "Trump reported 'tremendous success' in recent Beijing trade talks",
+        "Overall US economic impact described as 'minor blip' but sectoral pain is real",
+        "US firms operating in China face collateral damage from tariffs"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent... This is not a big hit for the overall U.S. economy but it will hurt some specific sectors... It's hard to see the off-ramp right now."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "$250 billion aggregate tariff amount... is about half of U.S.-China trade... China has stated that Washington is 'putting a knife to China's neck'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "The Council on Foreign Relations' August 2018 report outlines how China will provide hundreds of billions in subsidies and tax breaks... 'We're negotiating and having tremendous success with China'"
+        }
+      ],
+      "threat_score": 0.25,
+      "action_score": -1.0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 26729,
+        "capped_chars": 16022,
+        "raw_tokens": 6682,
+        "capped_tokens": 4006
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20704,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

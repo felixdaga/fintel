@@ -1,0 +1,123 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 10,
+    "tokens_in": 549860,
+    "tokens_out": 11303,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: Keep the G20 90-day window open and press the live high-level talks for enforceable structural commitments on IP, forced tech transfer, and verification. Do not hike List 3 while talks are underway, and do not roll back existing Section 301 tariffs or trade Meng/Huawei charges for a purchases-only deal. Hold the March 1 10-to-25 percent hike as unused leverage.\n\nSUPPORTING RATIONALE: For the United States this is a modest opportunity, not an existential threat. Combined Section 301 coverage is already about $250B, the January 1 hike was suspended at the December 1 G20, and Lighthizer has told Congress the March 1 deadline will not be extended. January talks show purchase interest but unresolved enforcement and structural issues\u2014the same mix that collapsed after the May 19 2018 on-hold statement. EXPCH is down about 27 percent and soy/ag is the exposed sector, but that is concentrated farm-belt pain, not a broad U.S. recession. Sentiment and industrial production have softened, yet VIX has receded and CNY has strengthened. Escalating now would likely freeze talks; conceding without enforcement would repeat May 2018. Negotiate with the clock running.",
+      "key_factors": [
+        "90-day truce and unused March 1 hike",
+        "Purchases discussed, structural IP unresolved",
+        "Ag/soy export hit is real but concentrated",
+        "Huawei/Meng is a separate law-enforcement track",
+        "Existing tariff coverage already supplies leverage"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 90-day window; List 3 hike to 25% suspended."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-30",
+          "excerpt": "Purchases discussed; structural IP/enforcement unresolved."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "Section 301 coverage about $250B of Chinese imports."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "EXPCH",
+          "excerpt": "U.S. exports to China $7.1B in January 2019, down about 27%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.politico.com/newsletters/morning-trade/2019/01/29/china-talks-are-complicated-492959",
+          "excerpt": "Lighthizer: March 1 deadline not extended."
+        }
+      ],
+      "threat_score": -1,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4863,
+        "capped_chars": 4863,
+        "raw_tokens": 1216,
+        "capped_tokens": 1216
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46316,
+        "capped_chars": 46316,
+        "raw_tokens": 11579,
+        "capped_tokens": 11579
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 77991,
+        "capped_chars": 77991,
+        "raw_tokens": 19498,
+        "capped_tokens": 19498
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 360322,
+  "started_at": "2026-08-13T06:17:28+00:00"
+}

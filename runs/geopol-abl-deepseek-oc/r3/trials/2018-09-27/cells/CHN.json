@@ -1,0 +1,134 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-09-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 139920,
+    "tokens_out": 3667,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.6,
+      "rationale": "RECOMMENDATION: Hold the retaliatory line already in place but do not escalate further; keep the door open to a new round of talks (Liu He/Wang Shouwen delegation) aimed at forestalling the Jan 1, 2019 jump of the $200B List 3 tariff from 10% to 25%. Escalating further would hand Washington the pretext for phase three ($267B, covering nearly all Chinese exports), while full concession would surrender leverage with no guarantee of relief. The right posture is firm, reciprocal, but engagement-oriented.\n\nSUPPORTING RATIONALE: The threat to China is high and rising: as of Sept 24 the US has Section 301 tariffs live on ~$250B of Chinese imports (~half of China's annual exports to the US), with the $200B tranche scheduled to rise from 10% to 25% on Jan 1 (timeline entries 2018-09-17/18/24; USTR Sept 18 finalization) and a threatened phase-three $267B that would cover essentially all of China's ~$506B in exports (NYT 9/17; Politico 9/18). China has retaliated tit-for-tat ($34B, $16B, then 5-10% on $60B on Sept 24), but it is running low on US import value (~$130B) to counter, and analysts flag that the trade war hits China's more export-dependent economy harder than the US (CNBC 9/19; CNN 9/18). The RMB has already fallen ~8-9% since April, and Beijing has publicly ruled out currency devaluation as a weapon, capping one key offset (Sun Zhigang/Li Keqiang comments, CNN Money 9/19/20). The yuan depreciation, US dollar strength, and rising US 10-yr/2-yr yields (DGS10 to ~3.06-3.10%, DGS2 to ~2.83% by late Sept) bracket a tightening external environment. This is squarely a +0.5-high or worse situation on the CHN scale \u2014 major export exposure and firm-level/tech targeting (recall ZTE denial order, 4/16) \u2014 so +0.6 reflects the live escalation and the pending 25% step-up. On action, further escalation is not in China's interest: it would trigger phase three and hurt the multinationals and FDI China depends on, and China cannot match dollar-for-dollar. Yet with Beijing's stated line that 'the only correct way to solve the dispute is through talk and consultation on the basis of equity' (Geng Shuang, Politico/FT 9/18) and its review of the Liu He trip, engaging in talks without new concessions is the disciplined stance \u2014 hence action_score near zero-positive and action_level = negotiate.",
+      "key_factors": [
+        "~$250B of Chinese exports now covered by US Section 301 tariffs, with the $200B tranche set to rise to 25% on Jan 1, 2019",
+        "Threatened phase-three $267B would cover essentially all ~$506B of China's US exports",
+        "China's retaliation capacity is limited (~$130B of US imports to target) and it has ruled out currency devaluation",
+        "RMB already down ~8-9% since April amid dollar strength and higher US yields",
+        "Tech/firm-level targeting precedent (ZTE denial order) adds strategic threat",
+        "Beijing keeps open the talks path (Liu He delegation review) as its preferred de-escalation channel"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). Major non-tariff escalation."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ustr.gov 2018-09-18",
+          "excerpt": "USTR finalizes tariffs on ~$200B of Chinese imports, effective Sept 24 at 10%, rising to 25% Jan 1, 2019."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NYT 2018-09-17",
+          "excerpt": "Trump prepared to 'immediately' place tariffs on another $267B of imports; nearly half of all Chinese imports will soon face levies."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNN Money 2018-09-19/20",
+          "excerpt": "Li Keqiang: Beijing will never devalue the yuan as a weapon; yuan has fallen ~9% since April."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2018-09-19",
+          "excerpt": "Trade war hits China's more export-dependent economy harder than the US; China not likely to blink before midterms."
+        }
+      ],
+      "threat_score": 0.6,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-09-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4035,
+        "capped_chars": 4035,
+        "raw_tokens": 1009,
+        "capped_tokens": 1009
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48411,
+        "capped_chars": 48411,
+        "raw_tokens": 12103,
+        "capped_tokens": 12103
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 42378,
+        "capped_chars": 42378,
+        "raw_tokens": 10594,
+        "capped_tokens": 10594
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 355209,
+  "started_at": "2026-08-13T07:44:52+00:00"
+}

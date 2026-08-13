@@ -1,0 +1,144 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-07-26",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 136732,
+    "tokens_out": 3970,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.5,
+      "rationale": "RECOMMENDATION: Hold our current tariff posture (we have already matched the $34B List 1 action) and keep the negotiating channel alive without new commitments. We should NOT escalate further, because doing so would hand Washington the stated pretext to implement the full ~$200B List 3, and we should not concede major purchase commitments either while that list is still only proposed and under comment. Signal continued willingness to negotiate (as the ZTE resolution demonstrates a deal path exists) while mobilizing defensive buffers against FX pressure.\n\nSUPPORTING RATIONALE: The threat is real but not yet existential. The dispute has tipped into implementation: US List 1 (25% on ~$34B of Chinese goods) took effect July 6 and we retaliated in kind the same day, and on July 10 the US proposed a further ~$200B list at 10% (timeline). This maps to the 'high threat' band for CHN: major export sectors are exposed, our currency has depreciated ~6% from ~6.28 in early April to ~6.64-6.72 by July (RAND, CNBC), and critical firms are being singled out \u2014 ZTE was pushed to the brink and only saved by a $1B fine plus embedded US monitors, while a bipartisan Senate effort would bar Huawei and ZTE from US government supply (NYT, Guardian, NPR). The strong, rising US dollar (nominal broad dollar index +5.4% over the window, country_health) adds FX pressure, and PBOC has had to publicly pledge not to weaponize the yuan out of fear of capital flight (Guardian/PBOC). Weighing against an existential reading: the ~$200B list is only proposed with a comment/hearing process, not yet in force; first-stage US effects on our exports are assessed as small-to-moderate and partly offset by the yuan's fall (RAND); and our retaliation has remained symmetric. On action: escalating would trigger the larger US response Trump has already publicly telegraphed (June 18 direction to identify $200B), while conceding purchases now is premature since no matching reciprocal offer installed. The disciplined move is to hold and negotiate, preserving leverage and avoiding a spiral that would cost us more than it gains.",
+      "key_factors": [
+        "List 1 tariffs effective July 6, matched by China",
+        "US proposed ~$200B List 3 (July 10), not yet in force",
+        "Yuan depreciation ~6% to near 11-month low; PBOC pledge against weaponization",
+        "ZTE forced into $1B fine + US monitors; bipartisan push to bar Huawei/ZTE",
+        "Strong rising USD adds FX pressure on China",
+        "Escalation would trigger the $200B response already telegraphed"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-06",
+          "excerpt": "List 1 tariffs take effect: US 25% on ~$34B of Chinese goods. China imposes matching ~$34B retaliation the same day."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-10",
+          "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for an additional 10% tariff (~6,000 product lines). Public comment/hearing process begins."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-18",
+          "excerpt": "Trump directs USTR to identify an additional ~$200B of Chinese imports for 10% tariffs if China retaliates against the $50B action."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Nominal broad US dollar index rose ~5.4% over the window to 112.92 by 2018-07-25."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc 2018-07-11",
+          "excerpt": "Yuan fell to near 11-month low (~6.67) after $200B tariff announcement; lost ~4% since mid-June; PBOC not actively stabilizing."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "guardian 2018-07-03 PBOC",
+          "excerpt": "PBOC pledged not to use yuan as a tool in trade conflict, fearing capital flight; yuan hit 11-month low ~6.7."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "rand 2018-07-20",
+          "excerpt": "First-stage US effects on China's exports assessed as small, partly mitigated by exchange-rate movements (yuan 6.28 to 6.64 since early April)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes 2018-07-13",
+          "excerpt": "US lifted ZTE ban after $1B penalty, $400M escrow, leadership overhaul, and 10-year US compliance monitors."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "npr 2018-06-12",
+          "excerpt": "Bipartisan Senate amendment would reinstate ZTE penalties and bar US government agencies from buying/leasing Huawei and ZTE equipment."
+        }
+      ],
+      "threat_score": 0.5,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-07-26",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3366,
+        "capped_chars": 3366,
+        "raw_tokens": 842,
+        "capped_tokens": 842
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48154,
+        "capped_chars": 48154,
+        "raw_tokens": 12038,
+        "capped_tokens": 12038
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 35671,
+        "capped_chars": 35671,
+        "raw_tokens": 8918,
+        "capped_tokens": 8918
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 338895,
+  "started_at": "2026-08-13T07:46:39+00:00"
+}

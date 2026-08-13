@@ -1,0 +1,131 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-12-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8143,
+    "tokens_out": 1179,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0090944,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should continue engaging in negotiations with the US while maintaining a firm stance on core interests. We should avoid further escalation that would deepen the economic damage already being absorbed by Chinese exporters, but we must not concede on structural reforms that compromise our industrial policy autonomy. A negotiated partial deal that secures tariff rollback in exchange for increased purchases is the best achievable outcome in the near term.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. UNCTAD data shows US tariffs caused a $35 billion export loss in H1 2019, with office machinery and communication equipment sectors hit hardest (55% trade decline). However, Chinese firms maintained 75% of their tariffed exports to the US, demonstrating resilience. The trade diversion effect ($21 billion of $35 billion in losses redirected to other countries like Taiwan, Mexico, and Vietnam) means China is losing market share that may be difficult to recover. The yuan fell over 5% against the USD in 2018 before stabilizing in 2019, indicating FX pressure. The Shanghai Composite fell nearly 25% in 2018, though it recovered 16% in 2019. Trump's threat to raise tariffs on $200 billion of goods from 10% to 25% and potentially tariff all remaining $300+ billion in imports represents a major escalation risk. The fact that both sides are still talking (Lighthizer/Mnuchin traveled to Beijing, talks continuing) provides a window for negotiation. China's strategic retaliation on $110 billion of US goods, targeting Republican-district products and soybeans, has been effective politically but cannot offset the larger structural damage to Chinese export sectors. The action score reflects a negotiating stance rather than concession because the US demands on IP law changes and market access represent sovereignty concerns that cannot be fully conceded, but the economic pain is real enough that a pragmatic deal on purchases is warranted.",
+      "key_factors": [
+        "UNCTAD: $35 billion Chinese export loss in H1 2019 from US tariffs",
+        "Office machinery/communication equipment sectors hit hardest with 55% trade decline",
+        "63% of export losses ($21B) diverted to third countries (Taiwan, Mexico, Vietnam, EU)",
+        "Chinese firms maintained 75% of tariffed exports despite tariffs",
+        "Trump threatened to raise tariffs on $200B goods from 10% to 25% and tariff remaining $300B+",
+        "Yuan fell 5%+ against USD in 2018 before stabilizing in 2019",
+        "Shanghai Composite fell 25% in 2018, recovered 16% in 2019",
+        "Both sides still negotiating - Lighthizer/Mnuchin visited Beijing",
+        "China retaliated on $110B of US goods targeting Republican districts and soybeans",
+        "Larry Kudlow acknowledged 'both sides will suffer' from tariffs"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "US tariffs caused a 25% export loss, inflicting a US$35 billion blow to Chinese exports in the US market for tariffed goods in the first half of 2019"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "The office machinery and communication equipment sectors were hit the hardest, suffering a $15 billion reduction of US imports from China as trade in tariffed goods in those sectors fell by an average of 55%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "Of the $35 billion Chinese export losses in the US market, about $21 billion (or 63%) was diverted to other countries"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org",
+          "excerpt": "Chinese firms have recently started absorbing part of the costs of the tariffs by reducing the prices of their exports"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "Trump is saying this increase will go ahead on Friday...he has vowed to slap 25% duties on another $325bn of Chinese goods 'shortly'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "The yuan fell over 5% against the US dollar last year, before broadly stabilising in 2019"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com",
+          "excerpt": "Shanghai Composite slumped nearly 25%...Both indices have recovered some ground this year and are up 12% and 16% respectively"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "Lighthizer and Mnuchin thought China was willing to rewrite key national security and trade laws to reduce the theft of intellectual property"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-12-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 21708,
+        "capped_chars": 17702,
+        "raw_tokens": 5427,
+        "capped_tokens": 4426
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 27907,
+  "started_at": "2026-08-13T10:54:41+00:00"
+}

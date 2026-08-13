@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-11-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8042,
+    "tokens_out": 1073,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0086754,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The U.S. should maintain and escalate tariff pressure on China ahead of the planned Trump-Xi meeting at the G20 in Buenos Aires. The current leverage is real \u2014 China's economy is slowing, its export sectors are under stress, and the December 31 deadline to raise tariffs from 10% to 25% on $200B of goods gives us a credible forcing function. We should signal that the auto tariff increase will proceed unless China offers concrete, verifiable concessions on IP theft, forced technology transfer, and market access.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects that the trade war is creating real but manageable costs for the U.S. economy. Soybean prices are down 20% (Brookings), farmers in the Midwest are feeling pain, and U.S. companies operating in China face collateral damage. However, the overall macro hit is described as 'a minor blip' for the U.S. economy (Brookings). The U.S. has already placed tariffs on $250B of Chinese goods \u2014 roughly half of bilateral trade \u2014 and China has retaliated on $110B of $130B in U.S. exports, meaning China is running out of tariff room while the U.S. still has $267B in untariffed Chinese imports as leverage (Fox Business). China's willingness to lower tariffs on goods from other countries while raising them on U.S. goods signals they are trying to diversify away from U.S. suppliers, which is a medium-term threat to U.S. market share. The Washington Post reports that Chinese leaders feel betrayed by repeated U.S. deal vetoes, suggesting trust is low and negotiations have stalled \u2014 'no high-level negotiations are scheduled' (Brookings). The action score of -1.0 reflects that this is a moment of maximum leverage: China's economy is slowing, the G20 meeting is imminent, and the December tariff escalation deadline creates urgency. Escalating now \u2014 specifically by confirming the 25% tariff increase will proceed \u2014 maximizes U.S. bargaining position heading into the Xi meeting. The risk of further retaliation from China is real but limited by their shrinking tariff headroom.",
+      "key_factors": [
+        "$250B in tariffs already imposed on Chinese goods; $267B remaining as leverage",
+        "China has retaliated on $110B of $130B in U.S. imports \u2014 nearly maxed out",
+        "Soybean prices down 20%; Midwest farmers and auto exporters (BMW, Daimler) feeling pain",
+        "No high-level negotiations scheduled; trust deficit after repeated deal vetoes",
+        "G20 Trump-Xi meeting imminent \u2014 leverage point for U.S.",
+        "December 31 deadline for 10%\u219225% tariff increase on $200B creates forcing function",
+        "China lowering tariffs on non-U.S. goods to redirect trade away from U.S. suppliers"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent. For the next several months we will probably be locked into this situation. No high-level negotiations are scheduled. This is not a big hit for the overall U.S. economy but it will hurt some specific sectors... the Trump administration will probably not change its strategy soon."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "The total U.S.-China trade is about $130 billion of imports of United States goods into China. This second round of Chinese tariffs is going to now cover $110 billion of the $130 billion of U.S.-China trade -- again, almost 100% of the entire trading relationship. President Trump has also indicated that if things don't go as to what he wants to happen, he's going to do it on the rest of it \u2014 another $267 billion worth of imports."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com \u2014 How the U.S. and China misread the signals in the trade war",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down \u2014 this time via Twitter."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com \u2014 Trade war with China: What you need to know",
+          "excerpt": "The U.S. buys $506 billion worth of goods from China but only exports $130 billion, leaving a trade deficit of $375 billion between the two countries. President Donald Trump has said that China must shave $100 billion off that goods deficit."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-11-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20384,
+        "capped_chars": 16158,
+        "raw_tokens": 5096,
+        "capped_tokens": 4040
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 29512,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

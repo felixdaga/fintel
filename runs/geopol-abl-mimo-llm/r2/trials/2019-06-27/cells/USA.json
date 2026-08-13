@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-06-27",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 7850,
+    "tokens_out": 924,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0080364,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: The US should proceed with the planned tariff escalation on the remaining ~$300 billion of Chinese goods and maintain pressure on the $200 billion tranche at 25%. The leverage created by tariffs is the primary tool to force structural concessions from Beijing on IP theft, forced technology transfer, and market access. Short-term consumer pain is a necessary cost to prevent long-term erosion of US technological and economic leadership.\n\nSUPPORTING RATIONALE: The threat score of +0.35 reflects a moderate but real threat to US interests. The US trade deficit with China stood at $419 billion (BBC, 2019-05-08), and China's economic model\u2014state subsidies, forced joint ventures, IP theft, and WTO 'developing nation' status\u2014poses a structural challenge to US competitiveness in AI, cloud computing, robotics, and green tech (USC Annenberg analysis). However, the US economy is not in existential danger: the Dow Jones was up ~11% YTD in 2019, and the US retains leverage as the world's largest consumer market. The threat is asymmetric\u2014China's export-dependent economy is more vulnerable to tariff pressure than the US consumer economy.\n\nThe action score of -1.0 (maximal escalation) is justified by the current negotiating window. Trump's threat to raise tariffs on $200 billion from 10% to 25% and to impose new tariffs on ~$300 billion of remaining imports (Fox Business, 2019-05-10) has brought China back to the table. As Sen. Graham noted, 'This is the best chance in my lifetime to get China to change their cheating ways' (Fox Business, 2019-05-10). White House adviser Kudlow acknowledged 'both sides will suffer,' but the structural stakes\u2014preventing China from locking in dominance in next-generation industries through protected markets\u2014justify short-term pain. Backing down now would signal weakness and allow China to continue its mercantilist practices unchecked. The tariff tool is working: it is disrupting China's supply chain and incentivizing companies to relocate production to other countries, reducing China's leverage over time.",
+      "key_factors": [
+        "US trade deficit with China at $419 billion (BBC)",
+        "China's structural trade practices: IP theft, forced tech transfer, state subsidies, market access barriers (USC Annenberg, Fox Business)",
+        "US tariff escalation has brought China to negotiations; leverage is at peak (Fox Business)",
+        "China's economy more export-dependent and vulnerable to tariff pressure than US consumer economy",
+        "IMF cut 2019 global growth forecast citing US-China tensions, but US markets up 11% YTD (BBC)",
+        "Strategic stakes: competition in AI, cloud computing, robotics, green tech (USC Annenberg)",
+        "Domestic political support: bipartisan concern about China's trade practices (Sen. Graham, Fox Business)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US, which accuses China of unfair trading practices, launched a trade war against China last year. The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "This is the best chance in my lifetime to get China to change their cheating ways. The tariffs are tools that bring China to the table."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "No, acquiescence to the status quo now without a real trade deal only helps China further their global rise at our own expense."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-06-27",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20217,
+        "capped_chars": 16251,
+        "raw_tokens": 5054,
+        "capped_tokens": 4063
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19955,
+  "started_at": "2026-08-13T10:54:51+00:00"
+}

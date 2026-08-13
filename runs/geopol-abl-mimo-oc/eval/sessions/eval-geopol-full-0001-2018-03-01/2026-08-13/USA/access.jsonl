@@ -1,0 +1,5 @@
+{"ts": "2026-08-13T05:13:04.452470+00:00", "event": "cell_opened", "run_id": "eval-geopol-full-0001-2018-03-01", "decision_date": "2026-08-13", "symbols": ["USA"], "scope": "single_name"}
+{"ts": "2026-08-13T05:13:04.454879+00:00", "event": "read", "kind": "event_timeline", "query": {"symbol": "USA"}, "status": "ok", "source": "event_timeline", "latency_ms": 0.03, "raw_chars": 10522, "capped_chars": 10522, "raw_tokens": 2630, "capped_tokens": 2630}
+{"ts": "2026-08-13T05:13:21.473916+00:00", "event": "agent_returned", "agent": "llm", "elapsed_ms": 17020.1}
+{"ts": "2026-08-13T05:13:21.474398+00:00", "event": "submitted", "n_views": 1, "dropped": []}
+{"ts": "2026-08-13T05:13:21.475121+00:00", "event": "cell_closed", "n_reads": 1, "by_status": {"ok": 1}, "kinds_used": ["event_timeline"], "degraded": false, "chars_by_kind": {"event_timeline": {"n_reads": 1, "raw_chars": 10522, "capped_chars": 10522, "raw_tokens": 2630, "capped_tokens": 2630}}}

@@ -1,0 +1,131 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-04-04",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.15,
+      "rationale": "RECOMMENDATION: Continue negotiating firmly but do not rush to close a deal prematurely. Maintain the existing tariff structure as leverage while pressing hard on the enforcement mechanism \u2014 the single most important structural issue. The US should resist China's demand for full tariff removal as a precondition and instead tie tariff rollback to verifiable compliance milestones. Do not escalate further (e.g., raising List 3 to 25%) while talks are productive, as this would destabilize the negotiation and impose additional costs on US consumers and farmers.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate (+0.15) \u2014 elevated above neutral but not high, because the US holds significant leverage and the domestic economy remains strong. Several factors drive this reading:\n\n(a) US leverage is at a peak. Tariffs cover ~$250B of Chinese imports, while China's retaliation covers only ~$110B of US goods (timeline entries June-Sept 2018). China's industrial output growth has fallen to a 17-year low (5.3% Jan-Feb 2019, per Reuters 2019-03-14), its 2019 GDP target was lowered to 6.0-6.5% (Premier Li, 2019-03-05), and Beijing is ramping up fiscal stimulus \u2014 signs of greater economic pain on their side. The US economy, by contrast, grew 2.9% in 2018 with unemployment at 3.8% (higherrockeducation.org, 2019-04-01).\n\n(b) Negotiations are making real progress. As of April 3, both sides reported progress on text including enforcement language (timeline entry 2019-04-03; CNBC/Reuters 2019-04-02). The US Chamber of Commerce sees 'increasing chances' for a deal. This is not the moment to escalate \u2014 it's the moment to lock in structural gains.\n\n(c) The enforcement mechanism remains the critical unresolved issue. US officials want the right to impose 'proportional unilateral' tariffs if China fails to comply; China insists on 'two-way, fair and equal' enforcement with reciprocal retaliation rights (smtcenter.net, 2019-03-16). Without a credible enforcement mechanism, any deal is just paper. The US should hold firm on this point even if it means delaying a deal.\n\n(d) The Huawei/Meng Wanzhou situation (DOJ charges filed Jan 2019, Canada approved extradition March 1, 2019) adds diplomatic friction but also leverage. China has detained two Canadians in retaliation. This dimension of the dispute should be kept separate from trade negotiations to avoid complicating the already-difficult enforcement talks.\n\n(e) Risks of further escalation are real but manageable. The List 3 tariff remains at 10% (the scheduled hike to 25% was delayed on Feb 24, 2019). Raising it now would impose costs on US consumers and businesses without proportionate strategic gain while talks are active. Conversely, the risk of a deal collapse is that tariffs go to 25% on $250B of goods \u2014 a material drag but not existential given the economy's current strength.\n\nThe action_score of +0.1 reflects a negotiate posture: the US should engage constructively, show willingness to structure tariff rollback around compliance milestones, but not concede on the enforcement mechanism or rush to a signing ceremony for political optics.",
+      "key_factors": [
+        "US tariffs on $250B of Chinese goods provide significant leverage",
+        "China industrial output at 17-year low (5.3%); lowered GDP target (6-6.5%)",
+        "Enforcement mechanism is the critical unresolved structural issue",
+        "Negotiations report progress as of April 3; US Chamber sees increasing deal chances",
+        "US economy strong (2.9% GDP growth, 3.8% unemployment) but moderating",
+        "List 3 tariff hike to 25% delayed; current 10% rate maintained",
+        "Huawei/Meng Wanzhou extradition adds diplomatic friction but also leverage",
+        "Fed has paused rate hikes; 10Y Treasury yields fallen from 3.2% to 2.5%"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks between US and Chinese negotiators; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-24",
+          "excerpt": "Trump tweets that talks have made substantial progress and further delays the scheduled List 3 hike from 10% to 25%."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-04-02",
+          "excerpt": "Chances are increasing for a deal to end the U.S.-China trade war, but negotiations this week are 'critical' to resolving stubborn differences over an enforcement mechanism and a plan to lift U.S. tariffs."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-03-14",
+          "excerpt": "China's industrial output rose 5.3 percent in January-February, less than expected and the slowest pace since early 2002."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-03-05",
+          "excerpt": "China has set its 2019 economic growth target at 6.0 to 6.5 percent, Premier Li Keqiang said."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "higherrockeducation-2019-04-01",
+          "excerpt": "The unemployment rate fell to 3.8% from 4.0% in January. The US economy grew 2.9% in 2018."
+        }
+      ],
+      "threat_score": 0.15,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-04-04",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4392,
+        "capped_chars": 4392,
+        "raw_tokens": 1098,
+        "capped_tokens": 1098
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11268,
+        "capped_chars": 11268,
+        "raw_tokens": 2817,
+        "capped_tokens": 2817
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 93887,
+        "capped_chars": 93887,
+        "raw_tokens": 23471,
+        "capped_tokens": 23471
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 381779,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

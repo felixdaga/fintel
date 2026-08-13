@@ -1,0 +1,129 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-03-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 145104,
+    "tokens_out": 3150,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.35,
+      "rationale": "RECOMMENDATION: Continue negotiating toward a deal at the imminent Mar-a-Lago summit rather than escalate. The US holds the leverage \u2014 Section 301 tariffs on ~$250B of Chinese imports remain in force and China is making large purchase commitments (soybeans, LNG, a 10-item purchase list) \u2014 so use the closing window to lock in written, enforceable commitments on IP, forced technology transfer, currency, and an enforcement/snap-back mechanism before rolling back any tariffs. Do not pre-emptively roll back or concede on enforcement, and do not escalate and risk destroying a near-completed deal.\n\nSUPPORTING RATIONALE: Threat reading is mildly favorable for the US (\u2248-0.35), not threatening: the US set the agenda throughout, kept the List 3 hike at 10% (delayed Feb 24 and March 1, not removed \u2014 timeline 2019-02-24, 2019-03-01), and by early March the sides were described as in the 'final stages' with a Mar-a-Lago summit planned and six structural MOUs being drafted (CNBC 2019-03-04). The US macro base is solid \u2014 fed funds 2.41%, 10Y at 2.61%, UMich consumer sentiment ~98, VIX moderate \u2014 so there is no material economy-wide GDP drag yet that would justify a defensive posture. The real cost of the dispute is concentrated and domestic: ag exports hammered ($7.9B in soybean losses; soybean exports to China down ~94% YoY; risk of permanent market-share loss to Brazil and political pressure from farm/Rust Belt states) (Independent 2018-11-19; Business Insider 2019-02-22). That argues for closing a deal soon rather than prolonging the fight, but not for pre-emptive capitulation. Action is accordingly a mild-hold/negotiate (+0.1): escalating now would forfeit the summit opportunity and the leverage that produced China's pledges, while conceding enforcement or rolling back tariffs before signing would surrender the leverage that still needs to force enforceable written commitments. Hold the tariff lever as a bargaining chip and close the deal at the summit.",
+      "key_factors": [
+        "US holds negotiation leverage: ~$250B of tariffs in place, List 3 hike delayed but not removed",
+        "Talks in 'final stages'; six structural MOUs drafted; Mar-a-Lago summit planned end of March",
+        "China providing purchase commitments (soybeans, LNG, 10-item list) but resisting enforcement/snap-back mechanism",
+        "US macro solid (fed funds 2.41%, 10Y 2.61%, sentiment ~98, VIX moderate) \u2014 no material GDP drag yet",
+        "Ag sector pain: ~$7.9B soybean losses, exports to China down ~94%, permanent market-share loss risk, farm-state political pressure",
+        "Enforcement mechanism unresolved \u2014 the key unresolved term before any rollback"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-24",
+          "excerpt": "Trump tweets substantial progress, delays scheduled List 3 hike from 10% to 25%"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-03-01",
+          "excerpt": "90-day tariff-hike deadline passes without an increase"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "CNBC 2019-03-04",
+          "excerpt": "US and China in 'final stages' of trade deal talks; summit planned end of March at Mar-a-Lago; six MOUs on structural issues"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Business Insider 2019-02-22",
+          "excerpt": "USDA: ~27.5M tons soybeans to go unsold; $7.9B lost by US farmers in past year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "The Independent 2018-11-19",
+          "excerpt": "US soybean exports to China down 94% due to Trump tariffs"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "FEDFUNDS/DGS10/UMCSENT",
+          "excerpt": "Fed funds 2.41%, 10Y 2.61%, UMich sentiment ~98 \u2014 solid US macro base"
+        }
+      ],
+      "threat_score": -0.35,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-03-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4923,
+        "capped_chars": 4923,
+        "raw_tokens": 1231,
+        "capped_tokens": 1231
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46840,
+        "capped_chars": 46840,
+        "raw_tokens": 11710,
+        "capped_tokens": 11710
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 53884,
+        "capped_chars": 53884,
+        "raw_tokens": 13471,
+        "capped_tokens": 13471
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 442896,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

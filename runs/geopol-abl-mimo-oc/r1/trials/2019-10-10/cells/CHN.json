@@ -1,0 +1,143 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-10-10",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: Continue engaging in talks and pursue a narrow, phased deal focused on agricultural purchases and tariff standstills, while firmly refusing structural concessions on industrial policy or subsidies. Use this week's Liu He visit to test whether a limited tariff truce is achievable, but do not overpay \u2014 the US is under its own economic and political pressure and time is not entirely against us.\n\nSUPPORTING RATIONALE: The threat reading of +0.35 reflects real but not existential damage. China's economy is slowing \u2014 GDP growth at 6.2% in Q2 (lowest since 1992), industrial production at a 17-year low of 4.8% growth in July, and analysts warning Q3 could slip below 6% (Reuters, Sep 19). The Huawei Entity List placement (May 16, plus 46 affiliates added Aug 19) threatens China's tech champion and its 5G ambitions, though temporary reprieves and TSMC's continued supply have blunted the immediate blow. Tariffs now cover virtually all Chinese exports to the US, with List 4A at 15% since Sept 1 and a threatened hike to 30% on Oct 15.\n\nHowever, the threat is moderated by several factors. China's retaliation strategy has been surgically efficient \u2014 targeting US goods easily sourced from third countries (soybeans at 28%, chemicals at 19.3%) while sparing goods with no ready substitutes, resulting in near-zero deadweight costs for China versus an estimated 0.9% GDP drag for the US (Fortune/PIIE analysis, Oct 8). The US ISM manufacturing PMI hit its lowest since the Great Recession on Oct 2, with the export sub-index particularly weak. Trump faces impeachment proceedings and a slowing economy, which China can leverage. China has also begun signaling a narrower negotiating posture \u2014 Liu He will not carry the title of 'special envoy' for Xi (SCMP, Oct 8), and Chinese officials have indicated they will not discuss industrial policy reform or subsidy restructuring (LA Times, Oct 7). The action score of +0.15 (negotiate) reflects the judgment that talks should continue and a limited deal is achievable, but without making concessions on structural issues that would undermine Made in China 2025. The optimal strategy is 'talking while fighting' \u2014 as Chinese state media Taoran Notes framed it \u2014 engaging in negotiations while being prepared to retaliate if tariffs escalate further. A narrow deal involving increased farm purchases in exchange for tariff delays is in both sides' interests, as Brookings' David Dollar noted: 'both sides' concession is something they need.' China should pursue this while accelerating domestic tech self-sufficiency and diversifying supply chains away from US dependency.",
+      "key_factors": [
+        "GDP growth slowing to 6.2% (Q2 2019), risk of sub-6% in Q3",
+        "Industrial production at 17-year low (4.8% in July)",
+        "Huawei on Entity List with temporary reprieves; 114+ affiliates affected",
+        "US manufacturing PMI at recessionary levels; US suffering higher deadweight costs",
+        "China's targeted retaliation strategy minimizing domestic economic damage",
+        "Trump impeachment crisis and election-year pressure creating negotiation leverage",
+        "Liu He visiting without 'special envoy' title \u2014 signaling low expectations",
+        "China refusing to discuss structural reforms/industrial policy in upcoming talks",
+        "Tariffs covering virtually all Chinese exports to US; 30% hike threatened Oct 15",
+        "Xi Jinping framing situation as 'strategic struggle' \u2014 hunkering down for long term"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List. US firms generally barred from selling to Huawei without a license."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator (first such designation since 1994)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-01",
+          "excerpt": "List 4A takes effect at 15% (~$110-125B of Chinese imports). China's first tranche of the ~$75B retaliation also takes effect."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "fortune_2019-10-08",
+          "excerpt": "China's lost production amounts to ~$55B, or 0.4% of GDP. The US deadweight cost is estimated at 0.9% of GDP \u2014 China wins the cost battle 2.5 to 1."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_2019-09-19",
+          "excerpt": "China's economic growth risks slipping below 6% in Q3. Industrial production at weakest in 17.5 years as trade war dents business confidence."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico_2019-10-08",
+          "excerpt": "Liu He will not carry the title of 'special envoy' for President Xi. Chinese delegation may cut short stay by one day. Not much optimism."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "latimes_2019-10-07",
+          "excerpt": "Liu He told visiting dignitaries he would bring an offer that won't include commitments on reforming Chinese industrial policy or government subsidies."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc_2019-10-09",
+          "excerpt": "ISM PMI at lowest since great recession. China's retaliatory tariffs averaging 20.7% on US goods, while lowering tariffs to all other countries from 8% to 6.7%."
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-10-10",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5498,
+        "capped_chars": 5498,
+        "raw_tokens": 1374,
+        "capped_tokens": 1374
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 99716,
+        "capped_chars": 99716,
+        "raw_tokens": 24929,
+        "capped_tokens": 24929
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 374577,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

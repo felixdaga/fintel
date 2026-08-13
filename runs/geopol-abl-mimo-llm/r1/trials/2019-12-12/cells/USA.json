@@ -1,0 +1,109 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-12-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8140,
+    "tokens_out": 1074,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0087764,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.15,
+      "rationale": "RECOMMENDATION: The US should maintain and expand tariff pressure on China, leveraging its stronger economic position to force meaningful structural concessions on IP theft, forced technology transfer, and market access. The current moment\u2014where China's export economy is absorbing real losses and trade diversion is benefiting US allies\u2014presents a window to lock in durable reforms before China's domestic substitution efforts mature.\n\nSUPPORTING RATIONALE: The threat to the US is moderate but manageable. The UNCTAD study shows US tariffs inflicted a $35 billion blow to Chinese exports in H1 2019, with Chinese firms maintaining only 75% of their prior export volumes\u2014meaning 25% real loss. Meanwhile, 63% of lost Chinese exports were diverted to allied economies (Taiwan $4.2B, Mexico $3.5B, EU $2.7B, Vietnam $2.6B), strengthening US supply chain resilience rather than weakening it. The BBC reports the US trade deficit with China stood at $419B, and the core US demand\u2014structural reform on IP, subsidies, and market access\u2014remains unmet. Fox Business reports that Lighthizer and Mnuchin believed China was willing to rewrite key laws, but talks collapsed when China reportedly walked back commitments. Sen. Graham's framing\u2014that tariffs are 'tools that bring China to the table' and this is 'the best chance in my lifetime to get China to change their cheating ways'\u2014reflects bipartisan congressional support for firmness. The USC Annenberg analysis confirms the dispute is fundamentally about future tech industries (AI, cloud, robotics, green tech) where US competitive advantage is at stake. While Larry Kudlow acknowledged 'both sides will suffer,' the asymmetry favors the US: China's export-dependent economy faces greater structural risk from sustained tariffs than the US consumer economy. The threat score is modest (+0.15) because the US economy remains strong, allies are absorbing trade diversion beneficially, and the pain is distributed; the action score is firmly escalatory (-1.0) because this is a rare leverage window where continued pressure can extract the structural reforms that justify the short-term consumer costs.",
+      "key_factors": [
+        "UNCTAD study: $35B Chinese export loss in H1 2019, 25% real export decline on tariffed goods",
+        "Trade diversion benefiting US allies: Taiwan $4.2B, Mexico $3.5B, EU $2.7B, Vietnam $2.6B",
+        "US-China trade deficit of $419B remains the core structural grievance",
+        "Talks collapsed after China reportedly walked back key commitments on IP and structural reform",
+        "Bipartisan congressional support for tariff pressure (Graham: 'best chance in my lifetime')",
+        "Dispute is about future tech industries (AI, cloud, robotics) per USC Annenberg analysis",
+        "Kudlow acknowledged 'both sides will suffer' but asymmetry favors US leverage",
+        "Chinese firms absorbing tariff costs by reducing export prices, signaling vulnerability"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "unctad.org \u2014 Trade war leaves both US and China worse off",
+          "excerpt": "US tariffs caused a 25% export loss, inflicting a US$35 billion blow to Chinese exports in the US market for tariffed goods in the first half of 2019. Of the $35 billion Chinese export losses, about $21 billion (or 63%) was diverted to other countries."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bbc.com \u2014 Trade war: US-China trade battle in charts",
+          "excerpt": "The US also wants China to buy more US goods to rein in its lofty $419bn trade deficit with China. The US imposed tariffs on $250bn worth of Chinese products last year. Beijing has retaliated with duties on $110bn worth of American products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: How tariffs are tools that bring Beijing to ...",
+          "excerpt": "'This is the best chance in my lifetime to get China to change their cheating ways,' Graham said. 'The tariffs are tools that bring China to the table.' Lighthizer and Mnuchin thought China was willing to rewrite key national security and trade laws but talks collapsed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "annenberg.usc.edu \u2014 Understanding the ongoing U.S.-China trade war",
+          "excerpt": "The negotiations are not principally about current buying and selling, but rather about the most important and potentially profitable industries of the future. These include artificial intelligence, cloud computing, robotics and green tech."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China immersed in a tit-for-tat tariff trade war",
+          "excerpt": "White House economic adviser Larry Kudlow said Sunday that 'both sides will pay,' noting that the tariffs will cause China to suffer GDP losses as its export market diminishes."
+        }
+      ],
+      "threat_score": 0.15,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-12-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 21708,
+        "capped_chars": 17702,
+        "raw_tokens": 5427,
+        "capped_tokens": 4426
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 25356,
+  "started_at": "2026-08-13T10:54:41+00:00"
+}

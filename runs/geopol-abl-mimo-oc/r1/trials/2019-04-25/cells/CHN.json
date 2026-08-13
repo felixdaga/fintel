@@ -1,0 +1,125 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-04-25",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.3,
+      "rationale": "RECOMMENDATION: Continue intensive negotiations toward a deal, accepting pragmatic concessions on IP protection and market access while holding firm on sovereignty over the enforcement mechanism. Push for a Trump-Xi summit to finalize a deal that preserves China's core industrial policy space. Do not escalate or retaliate at this stage \u2014 the current trajectory favors China.\n\nSUPPORTING RATIONALE: The threat score of +0.3 reflects a moderate, non-existential threat. The US has imposed tariffs on ~$250B of Chinese exports (Lists 1-3, timeline entries June-Sept 2018) and is demanding structural reforms on IP, forced technology transfer, subsidies, and market access that would constrain China's development model. The Huawei CFO arrest (Dec 1, 2018) and subsequent DOJ indictments (Jan 28, 2019) signal a broader technology containment strategy. However, the threat is tempered by several factors: (1) China's economy is proving resilient \u2014 Q1 2019 GDP beat expectations at 6.4%, March industrial production surged 8.5% YoY (strongest since July 2014), and retail sales grew 8.7%, all aided by massive stimulus (8.2 trillion yuan in Q1 credit); (2) negotiations are genuinely progressing \u2014 both sides report progress on text across six areas, and as of April 10, Mnuchin confirmed an enforcement mechanism is 'basically' agreed including bilateral enforcement offices; (3) China has already made 'unprecedented proposals' on forced technology transfer (US officials, March 28), showing willingness to move on substance.\n\nThe action score of +0.15 (negotiate) reflects the judgment that China's best path is continued engagement rather than escalation or capitulation. Escalation would be counterproductive: the US has bipartisan domestic support for toughness on China, and further retaliation would risk expanding tariffs to remaining Chinese exports while the stimulus cushion has limits. But maximal concession is also wrong \u2014 the US demands on enforcement mechanisms risk sovereignty (Lighthizer seeking unilateral reimposition rights), and fully dismantling state support for strategic industries would undermine Made in China 2025. The smart play is to concede on areas where China's new Foreign Investment Law already moves in the same direction (IP protection, voluntary tech transfer per Clause 22), offer substantial purchase commitments on agriculture and energy, and accept an enforcement framework that is genuinely bilateral rather than unilateral US judgment \u2014 while preserving policy space for industrial subsidies and technology development. A deal is close enough that patience and pragmatism are rewarded.",
+      "key_factors": [
+        "China Q1 2019 GDP 6.4% beat expectations; March IP +8.5% (strongest since July 2014); stimulus working",
+        "US tariffs cover ~$250B of Chinese exports; structural reform demands touch core development model",
+        "Enforcement mechanism agreed in principle (April 10) but sovereignty over implementation still contested",
+        "China made 'unprecedented proposals' on forced tech transfer (March 28); Foreign Investment Law in progress",
+        "Huawei CFO arrest + DOJ indictments signal technology containment beyond trade",
+        "'Some tariffs will stay' even after deal \u2014 US retaining leverage (US officials, March 2019)",
+        "Two Canadians detained (Dec 10, 2018) as apparent retaliation; limits China's moral high ground"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs on ~$60B of US goods. Combined US Section 301 coverage now ~$250B."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-04-03",
+          "excerpt": "Intensive Washington talks; both sides report progress on text, including enforcement language. No final deal signed."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "scmp-china-gdp-q1-2019",
+          "excerpt": "China GDP expanded 6.4% in Q1, beating 6.3% expectations. Industrial production expanded 8.5% in March \u2014 strongest since July 2014."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-enforcement-offices-2019-04-10",
+          "excerpt": "Mnuchin: We've pretty much agreed on an enforcement mechanism, we've agreed that both sides will establish enforcement offices."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-china-unprecedented-tech-transfer-2019-03-28",
+          "excerpt": "China made unprecedented proposals on forced technology transfer in a way they've never wanted to talk about before \u2014 both in terms of scope and specifics."
+        }
+      ],
+      "threat_score": 0.3,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-04-25",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4024,
+        "capped_chars": 4024,
+        "raw_tokens": 1006,
+        "capped_tokens": 1006
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11283,
+        "capped_chars": 11283,
+        "raw_tokens": 2821,
+        "capped_tokens": 2821
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 71104,
+        "capped_chars": 71104,
+        "raw_tokens": 17776,
+        "capped_tokens": 17776
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 370570,
+  "started_at": "2026-08-13T02:46:50+00:00"
+}

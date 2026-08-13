@@ -1,0 +1,103 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-03-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8834,
+    "tokens_out": 923,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0090174,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.25,
+      "rationale": "RECOMMENDATION: Continue active negotiations with China while maintaining current tariff leverage. The March 1 deadline has passed without escalation, and talks are progressing on six MOUs covering structural issues. We should press for concrete enforcement mechanisms and verifiable commitments on forced technology transfer, IP theft, and market access, but avoid new tariff escalation while negotiations are showing genuine momentum.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate (threat_score: +0.25). While the trade war has caused real pain in specific sectors \u2014 soybean prices down 20%, agricultural and auto exports hit by Chinese retaliation (Brookings/Dollar), and tariffs now cover roughly half of bilateral trade (~$250B on $500B+ total per Fox Business) \u2014 the overall macroeconomic impact remains a 'minor blip' for the US economy (Brookings). The US retains significant leverage: China's export economy is more exposed, and the structural issues (forced tech transfer, IP theft, state subsidies, JV requirements per CFR report cited by Fox Business) represent genuine long-term threats to US tech leadership.\n\nHowever, negotiations are producing real progress as of late February 2019. CNBC reports that six MOUs are being drafted on forced technology transfer, cyber theft, IP rights, services, currency, agriculture, and non-tariff barriers. A 10-item purchase list is being discussed. The process has 'become a real trade negotiation' per sources. This momentum should be preserved. Escalating tariffs now would risk collapsing talks and inflicting additional pain on US farmers and manufacturers without clear benefit. The action_score of -1.0 reflects maintaining our negotiating leverage (current tariffs stay in place) while actively engaging \u2014 we are negotiating from a position of strength, not conceding. The March 1 deadline pressure has already been useful; extending it slightly while talks progress is strategically sound.",
+      "key_factors": [
+        "Six MOUs under negotiation covering structural issues: forced tech transfer, IP, services, currency, agriculture, non-tariff barriers (CNBC Feb 2019)",
+        "US tariffs cover ~$250B of ~$500B+ Chinese imports; China has retaliated on ~$110B of $130B US exports (Fox Business)",
+        "Soybean prices down 20%, agricultural/auto/Boeing sectors hurt by retaliation (Brookings)",
+        "Overall US economic impact described as 'minor blip' (Brookings/Dollar)",
+        "China's structural practices (forced JV, state subsidies, 'developing nation' WTO status) represent genuine long-term threat (Fox Business/CFR)",
+        "March 1 deadline for tariff escalation from 10% to 25% on $200B has passed; both sides motivated to continue talks",
+        "Enforcement mechanism under discussion including regular reviews and tariff reinstatement authority (CNBC)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnbc.com \u2014 US and China are sketching the outlines of a deal to end the trade war",
+          "excerpt": "Negotiators are drawing up six memorandums of understanding on structural issues: forced technology transfer and cyber theft, intellectual property rights, services, currency, agriculture and non-tariff barriers to trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent... This is not a big hit for the overall U.S. economy but it will hurt some specific sectors... On the whole this is a minor blip"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "The $250 billion aggregate tariff amount... is about half of U.S.-China trade... China has stated that Washington is putting a knife to China's neck"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 US-China trade war: Why America must win",
+          "excerpt": "The Council on Foreign Relations' August 2018 report outlines how China will provide hundreds of billions in subsidies and tax breaks... requires foreign corporations to create joint-ventures with Chinese companies"
+        }
+      ],
+      "threat_score": 0.25,
+      "action_score": -1.0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-03-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 25178,
+        "capped_chars": 20694,
+        "raw_tokens": 6294,
+        "capped_tokens": 5174
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 25699,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

@@ -1,0 +1,128 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-03-01",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 137968,
+    "tokens_out": 3293,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Hold the current posture and pursue a negotiating track while the Section 301 IP/technology-transfer investigation completes its 12-month statutory window and the Section 232 steel/aluminum decision is finalized. Do not preemptively impose broad China-specific tariffs now; instead use the pending investigations as leverage to seek substantive concessions on forced technology transfer and structural IP practices, keeping open the option of tariff action if Beijing continues to rebuff talks (as it did after consultations were declined). This avoids triggering a full trade war before the US has consolidated its evidentiary and political position.\n\nSUPPORTING RATIONALE: The threat to US interests is modest and, on balance, tilts toward opportunity. As of 2018-03-01 the US has not yet levied China-specific tariffs \u2014 the only tariff action to date is the global Section 201 solar/washer safeguard (timeline, 2018-01-22), and the Section 301 investigation (initiated Aug 2017) remains open with its findings not yet issued, while Commerce only recommended steel/aluminum 232 remedies on Feb 16, 2018. China declined the Section 301 consultation request and voiced 'strong dissatisfaction,' yet made no structural concessions at the Nov 2017 Beijing visit. Meanwhile US macro health is solid: industrial production is rising (101.71 in Feb), consumer sentiment rebounded to 99.7 after a December dip, and the 10-year yield climbed to 2.87% on strong growth/inflation expectations \u2014 no material GDP drag or export-sector wound from the dispute yet. That combination (a pending investigation the US controls as leverage, no real-economy damage suffered, Chinese intransigence on IP) grounds a mild opportunity/leverage reading rather than a threat. The action stance is therefore mild: negotiate (action_score +0.1) without new commitments, letting the Section 301 and 232 processes apply the pressure rather than escalating tariff rhetoric prematurely \u2014 escalation now would risk immediate Chinese retaliation and a broader trade war before the US has cashed in its investigative leverage.",
+      "key_factors": [
+        "Section 301 investigation still open with no findings or tariffs yet as of 2018-03-01",
+        "Only tariff action so far is global Section 201 solar/washer safeguard, not China-specific",
+        "Commerce recommended Section 232 steel/aluminum tariffs on Feb 16, 2018, decision pending",
+        "China declined consultation request and made no structural concessions at Nov 2017 Beijing visit",
+        "US economy robust: IP rising 101.71, consumer sentiment 99.7, 10Y at 2.87%"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2017-08-14",
+          "excerpt": "Trump signs memorandum directing USTR to investigate China's IP and tech-transfer practices under Section 301"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-01-22",
+          "excerpt": "Trump approves Section 201 safeguard tariffs on solar panels and washing machines \u2014 first major tariff action"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US Industrial Production 101.71 (Feb 2018), rising"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "U Michigan sentiment rebounded to 99.7 (Feb 2018)"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ustr.gov 301 report update",
+          "excerpt": "USTR initiated Section 301 investigation Aug 18, 2017; China's MOC expressed 'strong dissatisfaction'; findings issued March 22, 2018"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "commerce 232 recommendation Feb 16 2018",
+          "excerpt": "Commerce recommends global steel tariff ~24% or 53% on 12 countries including China; aluminum options; decision pending"
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-03-01",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 682,
+        "capped_chars": 682,
+        "raw_tokens": 170,
+        "capped_tokens": 170
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46539,
+        "capped_chars": 46539,
+        "raw_tokens": 11635,
+        "capped_tokens": 11635
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 47133,
+        "capped_chars": 47133,
+        "raw_tokens": 11783,
+        "capped_tokens": 11783
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 275462,
+  "started_at": "2026-08-13T07:53:17+00:00"
+}

@@ -1,0 +1,136 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-12-20",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: China should engage actively in the 90-day negotiation window opened at the G20 while managing the Huawei crisis separately. Avoid retaliatory escalation over Meng Wanzhou that could collapse the trade truce, but do not concede structural reforms prematurely. Use the breathing room to stabilize the domestic economy through targeted fiscal and monetary measures.\n\nSUPPORTING RATIONALE: The threat reading of +0.55 reflects the cumulative weight of US tariffs now covering ~$250B of Chinese exports (Lists 1-3, with List 3 at 10% scheduled to rise to 25% on Jan 1, 2019 if talks fail \u2014 timeline entry 2018-09-17). The economic damage is already visible: Q3 GDP fell to 6.5%, the weakest since the GFC (CNBC, Oct 19, 2018), industrial production growth slowed to 5.8%, the Shanghai Composite has lost over 20% YTD reaching 4-year lows, and the yuan has depreciated ~6% toward the psychologically critical 7.0 level. The IMF estimated the trade war could knock 1.6 percentage points off China's growth over two years (CNBC, Oct 12, 2018). Crucially, the Huawei CFO arrest on Dec 1 (same day as the G20 dinner) signals the US is expanding the confrontation beyond tariffs into technology containment and legal warfare \u2014 this is a structural escalation that threatens China's tech champions and 5G ambitions directly. China's retaliatory capacity is asymmetric and constrained: it imports only ~$130B from the US versus $500B+ in exports, meaning it has already tariffed most available US goods and must resort to non-tariff measures or accept disproportionate exposure.\n\nThe action_score of -0.15 (mild negotiate stance, slightly toward hold) reflects several factors. First, the G20 truce and 90-day window represent the best available channel \u2014 collapsing it by escalating would trigger the 25% List 3 hike and potential additional tariffs on the remaining ~$267B of Chinese exports. Second, China's domestic economy is too fragile for further escalation: 19 of 31 provinces missed Q1-Q3 growth targets (D&B, Dec 2018), auto sales are declining for the first time in decades, and the PBOC has already cut RRR four times. Third, the detaining of Canadians Kovrig and Spavor (timeline entry 2018-12-10) provides leverage but risks internationalizing the dispute and alienating potential partners. However, China should not concede too much \u2014 the 90-day timeline is tight (Lighthizer called March 1 a 'hard deadline'), Trump faces domestic political incentives to be tough on China, and the Huawei case may be used as additional leverage. China's best strategy is to offer concrete near-term purchase commitments (agriculture, energy, autos as hinted by Commerce Ministry on Dec 6) while resisting structural demands on industrial policy, IP regime, and Made in China 2025 \u2014 these go to the core of the development model. The 40th anniversary of reform and opening provides a domestic framing for market-opening gestures without appearing to cave to US pressure.",
+      "key_factors": [
+        "US tariffs now cover ~$250B of Chinese exports with 25% hike threat on Jan 1, 2019",
+        "China GDP slowed to 6.5% in Q3 \u2014 weakest since GFC; industrial production at 5.8%",
+        "Shanghai Composite down 20%+ YTD; yuan near critical 7.0 level against dollar",
+        "Huawei CFO arrest Dec 1 signals US expanding confrontation into tech/legal warfare",
+        "G20 truce provides 90-day negotiation window \u2014 best available de-escalation channel",
+        "China's retaliatory capacity constrained by trade asymmetry (~$130B imports vs $500B+ exports)",
+        "IMF estimates trade war could cut 1.6pp from China growth over two years",
+        "Detention of Canadians Kovrig/Spavor adds leverage but risks internationalization"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-17",
+          "excerpt": "Trump directs USTR to finalize List 3: 10% tariffs on ~$200B of Chinese imports effective Sept 24, scheduled to rise to 25% on Jan 1, 2019."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Same day: Canada arrests Huawei CFO Meng Wanzhou."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-10",
+          "excerpt": "China detains Canadians Michael Kovrig and Michael Spavor (widely viewed as retaliation for the Meng arrest)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-q3-gdp-2018-10-19",
+          "excerpt": "China said on Friday its economic growth slowed to 6.5 percent year-over-year in the third quarter of 2018, missing expectations. That was the weakest since Q1 2009."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "imf-trade-war-impact-2018-10-12",
+          "excerpt": "At its worst, the ongoing trade tensions could knock 1.6 percentage points off China's economic growth over the first two years, according to the IMF."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "dnb-china-dec-2018",
+          "excerpt": "19 of 31 provinces failed to hit their real GDP growth targets for Q1-Q3. Industrial profit growth declined to 3.6% y/y in October."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "ecns-shanghai-stocks-2018-12-17",
+          "excerpt": "Shanghai stocks are 21 percent cheaper today than at the end of last year. The yuan tumbled around seven percent versus the dollar."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-12-20",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4487,
+        "capped_chars": 4487,
+        "raw_tokens": 1122,
+        "capped_tokens": 1122
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11445,
+        "capped_chars": 11445,
+        "raw_tokens": 2861,
+        "capped_tokens": 2861
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 80728,
+        "capped_chars": 80728,
+        "raw_tokens": 20182,
+        "capped_tokens": 20182
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 379188,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

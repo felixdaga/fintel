@@ -1,0 +1,104 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-11-29",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8045,
+    "tokens_out": 1029,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0085464,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.45,
+      "rationale": "RECOMMENDATION: China should signal willingness to engage in high-level negotiations with the United States while maintaining its existing retaliatory tariffs as leverage. Beijing should propose a structured dialogue framework that addresses US concerns about market access and IP protection in exchange for tariff rollback, without making unilateral concessions. This approach preserves domestic credibility while testing whether the Trump administration is genuinely interested in a deal after the midterm elections.\n\nSUPPORTING RATIONALE: The threat to China is significant but not yet existential. The evidence shows that by September 2018, the US had imposed tariffs on $250 billion of Chinese imports (roughly half of US-China trade), with Trump threatening to tariff the remaining $267 billion if China retaliated (Fox Business/Motley Fool transcript). China has retaliated with tariffs on $110 billion of the $130 billion in US goods it imports, covering nearly the entire bilateral trade relationship. Soybean prices have fallen 20% (Brookings), and US agricultural sectors are feeling pain, which gives China some leverage. However, the Brookings analysis notes this is 'a minor blip' for the overall US economy, suggesting the US can sustain pressure longer than China's export-dependent economy can easily absorb. The Washington Post reports that Chinese leaders feel betrayed after multiple failed deal attempts with Ross and Mnuchin, indicating deep distrust but also a desire for resolution. The Brookings expert assesses that 'it is unlikely that the Chinese leadership will cave in and do anything major' but that post-midterm elections (which have now passed) 'we're likely to see the two sides come together and negotiate something so that they can both save face.' This creates a window. China's threat score of +0.45 reflects real economic exposure\u2014export hubs face disruption, global value chains are being rerouted, and the prospect of tariffs on all bilateral trade looms\u2014but China retains retaliatory leverage and the US side also faces domestic political costs from farm-belt distress. The action score of -1.0 (maximal escalation stance) is NOT recommended; I am correcting to a negotiate posture (action_score ~0.0) because the situation calls for testing diplomatic channels now that the US midterms have passed, while maintaining existing retaliatory tariffs as bargaining chips rather than escalating further.",
+      "key_factors": [
+        "US tariffs cover $250B of ~$500B Chinese exports; threat to expand to 100% of bilateral trade",
+        "China has retaliated on $110B of $130B US imports, nearly exhausting retaliatory capacity",
+        "Soybean prices down 20%, US agricultural sector hurting\u2014provides China some leverage",
+        "Brookings assessment: 'minor blip' for US overall economy, suggesting US can sustain pressure",
+        "Post-midterm election window for negotiations per Brookings analysis",
+        "Multiple failed deal attempts (Ross, Mnuchin) indicate deep distrust but also desire for resolution",
+        "China lowered tariffs on non-US goods to redirect consumers away from US products\u2014defensive adaptation",
+        "Global value chain exposure: >50% of value in Chinese-assembled exports comes from other countries"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "Effective Sept. 24, President Trump announced a 10% tariff on $200 billion in Chinese imports... the $250 billion aggregate tariff amount... is about half of U.S.-China trade. President Trump has also indicated that if things don't go as to what he wants to happen, he's going to do it on the rest of it"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "The price of soybeans is already down 20 percent... This is not a big hit for the overall U.S. economy but it will hurt some specific sectors... It is unlikely that the Chinese leadership will cave in and do anything major... After the 2018 elections, we're likely to see the two sides come together and negotiate something so that they can both save face"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.washingtonpost.com",
+          "excerpt": "Chinese leaders believed they had a trade agreement last year with Commerce Secretary Wilbur Ross, only to see President Trump veto it. In May, they reached a second deal with Treasury Secretary Steven Mnuchin, but Trump again turned thumbs down"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com",
+          "excerpt": "China also announced some tariffs on $60 billion worth of goods... This second round of Chinese tariffs is going to now cover $110 billion of the $130 billion of U.S.-China trade -- again, almost 100% of the entire trading relationship"
+        }
+      ],
+      "threat_score": 0.45,
+      "action_score": -1.0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-11-29",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 20384,
+        "capped_chars": 16158,
+        "raw_tokens": 5096,
+        "capped_tokens": 4040
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 28295,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

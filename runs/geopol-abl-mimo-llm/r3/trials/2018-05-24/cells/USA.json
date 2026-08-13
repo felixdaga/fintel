@@ -1,0 +1,98 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-05-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9876,
+    "tokens_out": 891,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0046642,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.2,
+      "rationale": "RECOMMENDATION: The US should continue negotiations with China to lock in the framework announced by Mnuchin on May 20, pressing for concrete commitments on purchase volumes and IP protections while holding tariff threats in reserve. No new tariffs should be imposed while talks are ongoing, but neither should the US roll back existing leverage. The focus should be on converting the vague 'consensus on effective measures' into verifiable deliverables.\n\nSUPPORTING RATIONALE: As of the decision date, the immediate threat level is moderate but manageable. The May 20 Guardian report shows Mnuchin declared the trade war 'on hold' after two days of talks with Vice Premier Liu He, with China agreeing to 'significantly increase purchases of United States goods and services.' This is a meaningful de-escalation from the peak tension in early April when both sides had proposed $50B+ tariff packages. However, the threat is not zero: (1) no tariffs have actually been implemented yet \u2014 the $50B Section 301 list and China's retaliatory list remain proposals, meaning the situation could reignite; (2) the US did not secure a specific $200B deficit reduction target it sought, only a vague commitment; (3) JP Morgan's Tai Hui warned this is 'unlikely to be the end of tension' and the US could re-engage if China drags its feet. The Bruegel analysis confirms the US tariff list targets 84% high-end exports aligned with Made in China 2025, indicating the real US objective is constraining China's tech ascent, not just trade balance \u2014 a structural issue unlikely to be resolved by purchase commitments alone. The US has leverage (China cannot match $153B in tariffs given only $130B in US imports) and domestic political momentum, but escalation risks hitting US farmers (soybeans at $14B in exports to China) and automakers. The prudent course is to negotiate firmly while the 'on hold' window persists, converting the framework into specifics before the tariff proposals expire or are activated.",
+      "key_factors": [
+        "Mnuchin declared trade war 'on hold' on May 20 after talks with Liu He",
+        "China committed to 'significantly increase purchases' but no specific dollar amount agreed",
+        "US sought $200B deficit reduction but did not secure it",
+        "Proposed $50B Section 301 tariffs and China's $50B retaliation remain unimplemented",
+        "US tariff list targets 84% high-end exports tied to Made in China 2025",
+        "China's retaliation targets soybeans ($14B), autos, and aircraft \u2014 hitting US agricultural and manufacturing constituencies",
+        "China cannot fully match US tariff escalation ($130B imports vs $153B proposed US tariffs)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.theguardian.com \u2014 US and China put trade war 'on hold'",
+          "excerpt": "Mnuchin said the US has won several commitments from Chinese officials that should cut America's trade deficit with China... China will significantly increase purchases of United States goods and services"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com \u2014 Trade war with China: What you need to know",
+          "excerpt": "If the U.S. follows through, that would mean $153 billion in Chinese imports would be subject to tariffs. China has promised to respond in kind, but it would be unable to match that amount since it imported only $130 billion of U.S. goods last year"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org \u2014 What Are the Targets in the US\u2013China Trade War?",
+          "excerpt": "84 percent of the total value of the products are high-end exports... the U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder"
+        }
+      ],
+      "threat_score": 0.2,
+      "action_score": 0.0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-05-24",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 29488,
+        "capped_chars": 25063,
+        "raw_tokens": 7372,
+        "capped_tokens": 6266
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 19095,
+  "started_at": "2026-08-13T10:55:23+00:00"
+}

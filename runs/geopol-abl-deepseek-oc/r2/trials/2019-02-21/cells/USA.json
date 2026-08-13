@@ -1,0 +1,129 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 146175,
+    "tokens_out": 3952,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.15,
+      "rationale": "RECOMMENDATION: Maintain the current posture and press the negotiating track rather than either escalating to 25% on the $200B list or conceding. Hold the existing 10% tariffs in place as leverage, drive for a verifiable enforcement mechanism and structural commitments on forced technology transfer and IP, and be prepared to extend the March 1 deadline only if an enforceable memorandum is genuinely close.\n\nSUPPORTING RATIONALE: The threat to US interests is mild but not trivial. This is fundamentally a leverage-positive moment: the U.S. holds the initiative (Lists 1\u20133 tariffs imposed, 90-day truce frozen the List 3 hike, and China is the side being hurt \u2014 Chinese January imports from the U.S. fell 41.2% YoY and exports to the U.S. fell 2.4%, and Beijing is offering large purchase packages). That maps to the 'opportunity to extract concessions' region, but not a clean \u22120.5 because the costs are real: U.S. consumer sentiment slid (100.1 to 93.8), industrial production fell, the WTI collapse and the flattening 10Y/2Y curve (2.65 vs 2.50) flag growth and market stress, and Beijing's retaliatory tariffs have glutted U.S. soybean exports and pressure the farm belt. The action stance should therefore be to negotiate with the credible threat of escalation intact rather than to fire the 25% hike now \u2014 the timeline shows talks made progress on purchases through Feb 14\u201315 (soybean and broader purchase pledges) but 'much work remains' and no draft framework or enforcement mechanism exists yet (Lighthizer: 'An agreement is nothing without enforcement'). Escalating now would risk derailing a track that is producing concessions and would hit U.S. consumers, electronics and agriculture markets; conceding/rolling back before enforceable structural commitments are secured would forfeit the leverage that is currently extracting them. The correct move is to hold/negotiate: keep the 10% tariffs as pressure, condition any rollback on a binding enforcement mechanism, and extend the deadline only if close to a real deal.",
+      "key_factors": [
+        "US holds initiative with Lists 1\u20133 tariffs and the frozen List 3 hike as leverage",
+        "China is bleeding more: Jan imports from US \u221241.2% YoY, exports to US \u22122.4%",
+        "Feb 14\u201315 Beijing talks: purchase progress but structural/enforcement unresolved, no draft framework",
+        "March 1 'not a magical date' \u2014 extension weighed; Trump\u2013Xi meeting floated",
+        "US macro costs visible: consumer sentiment 100\u219293.8, IP down, WTI collapse, flattening yield curve",
+        "US farmers hit by soybean glut from Chinese retaliation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires: 90-day window; Jan 1 List 3 hike to 25% suspended (remains at 10%)"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-02-14",
+          "excerpt": "Round of talks through Feb 15: progress on purchases; enforcement mechanism still disputed"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment 100.1 (Sep) to 93.8 (Feb)"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10Y yield ~3.20 (Oct) down to 2.65 (Feb); 2Y at 2.50 \u2014 flattening"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.reuters.com/article/us-usa-trade-china-mnuchin/u-s-china-trade-talks-move-to-higher-level-as-deadline-looms-idUSKCN1Q303O/",
+          "excerpt": "China Jan imports from US fell 41.2% YoY; exports to US \u22122.4%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "https://www.npr.org/2019/02/20/696343041/trade-talks-with-china-continue-as-trump-shies-from-a-hard-deadline-for-a-deal",
+          "excerpt": "Trump: March 1 'is not a magical date'; extension weighed"
+        }
+      ],
+      "threat_score": -0.15,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5015,
+        "capped_chars": 5015,
+        "raw_tokens": 1254,
+        "capped_tokens": 1254
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 46548,
+        "capped_chars": 46548,
+        "raw_tokens": 11637,
+        "capped_tokens": 11637
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 54347,
+        "capped_chars": 54347,
+        "raw_tokens": 13587,
+        "capped_tokens": 13587
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 344841,
+  "started_at": "2026-08-13T07:51:38+00:00"
+}

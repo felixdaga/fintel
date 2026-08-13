@@ -1,0 +1,129 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-09-19",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 136641,
+    "tokens_out": 3435,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.5,
+      "rationale": "RECOMMENDATION: Enter the imminent early-October talks from a posture of measured de-escalation \u2014 keep the goodwill gestures already made (16-category exemption, soybean/pork exemption, resumed farm purchases) but do not pre-commit to broad structural concessions before the US matches with a real tariff rollback. Continue negotiating toward a limited interim deal while holding firm on red lines (Huawei entity-list treatment, no surrender of Made in China 2025 autonomy).\n\nSUPPORTING RATIONALE: The threat is high for China, not existential. The dispute is already biting the real economy: official manufacturing PMI has been below 50 for four straight months (49.7 July, 49.5 August), industrial production growth fell to 4.8% in July (lowest since Feb 2002), PPI turned negative for the first time in three years, and US-bound exports fell 6.5% in July (timeline + SCMP/Forbes). By Sept 1, List 4A hit 15% (~$110\u2013125B) and China's own $75B retaliation took effect, with a further $250B hike to 30% (Oct 15) and List 4B (Dec 15) still looming \u2014 meaning near-total tariff coverage on Chinese exports plus CNY breaking 7 and a US currency-manipulator designation. That justifies a clearly positive threat reading (~+0.5, 'major export sectors hit, FX pressure'). The action stance is de-escalatory rather than escalatory because China is under real economic strain (manufacturing contraction, weak external demand) and both sides are already signaling a truce: Trump delayed the Oct 1 hike to Oct 15 as a 'goodwill gesture,' and Beijing has matched with exemptions and resumed soybean buying (Reuters/Politico). Escalating further would risk the Oct 15 hike and deepen domestic pain (also amid swine-fever-driven food inflation and Hong Kong unrest); full concession would sacrifice red lines for no confirmed rollback. Hence hold the current posture and negotiate toward a limited deal (~+0.1).",
+      "key_factors": [
+        "Official manufacturing PMI in contraction for 4 straight months (49.7 July, 49.5 August)",
+        "Industrial production +4.8% July, lowest since 2002; PPI turned negative; US-bound exports -6.5% July",
+        "Near-total US tariff coverage: List 4A 15% (Sept 1), $250B hike to 30% (Oct 15), List 4B (Dec 15); China retaliation on $75B",
+        "CNY broke 7 and US designated China a currency manipulator (Aug 5)",
+        "Mutual goodwill: Trump delayed Oct 1 hike to Oct 15; China exempted 16 categories then soybeans/pork and resumed farm purchases",
+        "Huawei on US Entity List threatens tech supply chain / tech autonomy goal"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-23",
+          "excerpt": "China announces retaliation on ~$75B of US goods; Trump orders US companies to look at alternatives and directs 5-point List 4 hike."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-05",
+          "excerpt": "After CNY breaks 7 per USD, US Treasury designates China a currency manipulator."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-09-13",
+          "excerpt": "Chinese state media reports soybeans, pork and other farm goods excluded from additional retaliatory tariffs (goodwill signal ahead of talks)."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SCMP 2019-08-31",
+          "excerpt": "Manufacturing PMI 49.5 in August, fourth consecutive month of contraction; industrial production +4.8% July, lowest since Feb 2002; Q2 GDP 6.2% lowest on record."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Forbes 2019-08-09",
+          "excerpt": "US-bound exports fell 6.5% in July; imports from US fell 19.1%; PPI turned negative (-0.3%) for first time in three years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "Reuters/ Politico 2019-09-13",
+          "excerpt": "China exempts soybeans/pork from additional tariffs and resumes purchases; Trump delayed Oct 1 hike to Oct 15 as goodwill gesture; talks set for early October."
+        }
+      ],
+      "threat_score": 0.5,
+      "action_score": 0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-09-19",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5700,
+        "capped_chars": 5700,
+        "raw_tokens": 1425,
+        "capped_tokens": 1425
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48190,
+        "capped_chars": 48190,
+        "raw_tokens": 12048,
+        "capped_tokens": 12048
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 32689,
+        "capped_chars": 32689,
+        "raw_tokens": 8172,
+        "capped_tokens": 8172
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 216374,
+  "started_at": "2026-08-13T07:50:48+00:00"
+}

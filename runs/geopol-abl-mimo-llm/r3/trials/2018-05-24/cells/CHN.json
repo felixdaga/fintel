@@ -1,0 +1,102 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-05-24",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 9879,
+    "tokens_out": 909,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0100076,
+    "basis": "reported"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.35,
+      "rationale": "RECOMMENDATION: China should continue engaging in negotiations with the United States while maintaining a firm but measured posture. The recent 'trade war on hold' agreement (Guardian, May 20) represents a window of opportunity to lock in a framework that avoids the most damaging tariff escalation while preserving China's core interests in technological development. China should offer incremental purchase commitments on agricultural and energy goods to reduce the bilateral deficit, while resisting structural concessions on industrial policy (Made in China 2025) and technology transfer.\n\nSUPPORTING RATIONALE: The threat to China is moderate but real. The U.S. has proposed tariffs on up to $153 billion of Chinese goods (CBS News, April 6), targeting high-tech sectors central to China's 'Made in China 2025' plan \u2014 84% of the targeted products are high-end exports (Bruegel analysis). This directly threatens China's technological upgrading ambitions. However, several factors moderate the threat: (1) the tariffs remain in proposal stage with a public comment period and May 15 hearing still pending (CBS News), meaning nothing has been executed; (2) Mnuchin's May 20 announcement putting the trade war 'on hold' signals both sides prefer negotiation over escalation (Guardian); (3) China's own retaliation list targets $50 billion in U.S. goods including soybeans, cars, and aircraft, giving China meaningful leverage over U.S. agricultural and manufacturing constituencies (Reuters, April 2; Bruegel). The Bruegel analysis notes that China's retaliation focuses on lower-end products to minimize self-inflicted cost, which is strategically sound. China imported only $130 billion of U.S. goods versus $506 billion flowing the other way (CBS News), limiting China's ability to match tariff-for-tariff but also meaning the U.S. has more to lose from disrupted supply chains. The current moment favors negotiation: the U.S. has signaled willingness to pause, China has demonstrated it will retaliate credibly (Global Times: 'say goodbye to that delusion' that China would not fight back), and both sides face domestic economic pressures from escalation. An action_score of +0.15 reflects cautious engagement \u2014 not a concession, but a willingness to talk and offer limited purchase commitments while protecting core strategic interests.",
+      "key_factors": [
+        "U.S. proposed tariffs on $153B of Chinese goods targeting high-tech sectors (84% high-end per Bruegel)",
+        "Mnuchin put trade war 'on hold' on May 20 after Liu He talks \u2014 negotiation window open",
+        "China's $50B retaliation list gives leverage over U.S. agricultural/rust belt constituencies",
+        "Tariffs still in proposal stage \u2014 not yet executed as of decision date",
+        "China's semiconductors exempted from retaliation due to irreplaceable need (Bruegel)",
+        "U.S. targeting Made in China 2025 technological advancement goals, not just trade deficit"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.cbsnews.com",
+          "excerpt": "The U.S. could put tariffs on up to $153 billion of goods from China... The U.S. released a list of 1,300 products it proposed hitting with tariffs, totaling about $50 billion in trade"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.theguardian.com",
+          "excerpt": "We're putting the trade war on hold, right now, we have agreed to put the tariffs on hold while we try to execute the framework - Mnuchin, May 20, 2018"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China has increased tariffs by up to 25 percent on 128 U.S. products... in response to U.S. duties on imports of aluminum and steel"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.bruegel.org",
+          "excerpt": "84 percent of the total value of the products are high-end exports... the U.S. is not really targeting the bilateral trade deficit with China, but trying to constrain China from climbing higher up the technological ladder"
+        }
+      ],
+      "threat_score": 0.35,
+      "action_score": 0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-05-24",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 29488,
+        "capped_chars": 25063,
+        "raw_tokens": 7372,
+        "capped_tokens": 6266
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20386,
+  "started_at": "2026-08-13T10:55:01+00:00"
+}

@@ -1,0 +1,141 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-05-16",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.3,
+      "rationale": "RECOMMENDATION: Maintain the current tariff posture and Huawei entity list restriction, but signal willingness to resume negotiations without preconditions. The US has significant leverage \u2014 China's economy is visibly cracking \u2014 but further escalation risks deepening damage to US markets, farmers, and tech supply chains. Use the current pressure window to push for a structured deal with enforcement mechanisms.\n\nSUPPORTING RATIONALE: The threat reading of +0.3 reflects a dispute that is costly but asymmetrically favorable to the US. Evidence for the threat: the S&P 500 fell 4.6% in May (worst May in 50 years per MarketWatch), the Dow shed 617 points on May 13 alone after China retaliated, 10-year Treasury yields collapsed from 3.06% to 2.37% over 6 months signaling growth anxiety, and soybean prices hit a 10-year low devastating farm-belt constituencies (Guardian, May 13). Apple dropped 6%, Boeing 4.8%, and Caterpillar 4.5% on May 13 \u2014 US champions with China exposure are bleeding.\n\nHowever, the US holds structural leverage. China's industrial production growth collapsed from 8.5% in March to 5.4% in April (NBS, May 15) \u2014 well below the 6.5% consensus \u2014 with auto production down 15.8% and textiles contracting. The Huawei entity list action (Commerce Department, May 15) targets China's national champion and its access to US\u534a\u5bfc\u4f53 supply chains, which is a severe pressure point China cannot easily counter. China's retaliatory tariffs cover only ~$60B of US goods versus US tariffs on ~$250B of Chinese goods \u2014 the asymmetry is clear.\n\nThe action score of -0.2 (mild escalatory lean, within negotiate band) reflects: (1) the US should NOT escalate further right now \u2014 adding tariffs on the remaining ~$300B of Chinese imports would broadside US consumers and retailers, risking recession; (2) but neither should the US concede \u2014 the leverage is real and China's economy is weakening; (3) the right move is to hold the Huawei restriction as a bargaining chip and push for resumed talks with a focus on enforcement mechanisms, IP protection, and structural reform. Trump's own hint on May 10 that tariffs 'may or may not be removed' and Liu He's comment that talks 'went well' suggest both sides see a deal pathway. The risk of inaction is that the dispute calcifies into permanent decoupling, which hurts US tech companies and farmers far more than a structured settlement.",
+      "key_factors": [
+        "China's April industrial production slowed sharply to 5.4% YoY (vs 8.5% in March), missing consensus by 1.1pp \u2014 trade war biting",
+        "US market selloff: S&P 500 down 4.6% in May, Dow -617 on May 13, worst May in 50 years",
+        "Huawei + 70 affiliates placed on Entity List (May 15) \u2014 major escalation targeting China's tech champion",
+        "US 10Y yield collapsed from 3.06% to 2.37% over 6 months, signaling growth slowdown fears",
+        "Soybean prices at 10-year low; White House already paid $12B in farmer aid",
+        "China retaliated with tariffs on ~$60B US goods (effective June 1), but asymmetric to US coverage of ~$250B",
+        "Consumer sentiment strong at 100 in May (UMich), providing domestic buffer",
+        "Negotiations stalled after China attempted to renegotiate text; but both sides signaled willingness to continue"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-05",
+          "excerpt": "Trump tweets that negotiations are going 'too slowly' and that China is attempting to 'renegotiate.' Orders List 3 raised from 10% to 25% on May 10 and directs preparation of tariffs on remaining Chinese imports (~$300B)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-10",
+          "excerpt": "List 3 tariff rate rises from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-13",
+          "excerpt": "China announces it will raise retaliatory tariff rates on its ~$60B US-goods list (higher rates phased in; many effective June 1)."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-15",
+          "excerpt": "Trump signs Executive Order 13873 (securing information/communications technology supply chains). Commerce moves to restrict Huawei."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10-year Treasury yield fell from 3.06% (Nov 2018) to 2.37% (May 15, 2019), a decline of 69bp."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment at 100 in May 2019, up from 91.2 in January \u2014 resilient domestic economy."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-china-ip-april-2019",
+          "excerpt": "China April industrial output up 5.4%, much less than expected \u2014 analysts had forecast 6.5%, slowing from 8.5% in March."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "guardian-may13-markets",
+          "excerpt": "Dow Jones shed 617 points or 2.4%. S&P 500 fell 2.4%. Nasdaq fell 3.4%. Soybean prices hit ten-year low."
+        }
+      ],
+      "threat_score": 0.3,
+      "action_score": -0.2,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-05-16",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4720,
+        "capped_chars": 4720,
+        "raw_tokens": 1180,
+        "capped_tokens": 1180
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 17684,
+        "capped_chars": 17684,
+        "raw_tokens": 4421,
+        "capped_tokens": 4421
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 54469,
+        "capped_chars": 54469,
+        "raw_tokens": 13616,
+        "capped_tokens": 13616
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 379285,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

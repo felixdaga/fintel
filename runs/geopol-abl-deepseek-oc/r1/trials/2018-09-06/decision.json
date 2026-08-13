@@ -1,0 +1,111 @@
+{
+  "USA": {
+    "symbol": "USA",
+    "score": -0.3,
+    "rationale": "RECOMMENDATION: Hold the existing $50B of Section 301 tariffs as standing leverage and let the telegraphed $200B List 3 process run to its announced conclusion, but do NOT escalate the rate to 25% and do not broaden further. Keep the negotiating channel open (China's May 19 commitment to increase purchases of US goods shows talks are a viable off-ramp) and couple any tariff implementation with a credible path to de-escalation before the Nov 6 midterms. Push for a negotiated package rather than maximal escalation, because each US move has been reliably met in-kind and further escalation hits our own consumers and our farm-belt political base.\n\nSUPPORTING RATIONALE: The threat to US interests is modestly net-favorable, not existential. The US initiated this dispute, holds the initiative, and enters the escalation phase from a position of strength: the broad dollar index is up ~6.3% over the window, University of Michigan consumer sentiment is 100.1, and industrial production is rising \u2014 so there is no material recession risk (country_health). That supports a mild negative threat reading (opportunity/leverage), roughly -0.3. However, there are real, dated costs that argue against maximal escalation. China has matched every US action in-kind (Apr 2 and Aug 23 retaliations, and 25% tariffs on soybeans according to the event timeline and web sources), hitting soybean/pork producers whose harvest and pain land in competitive districts weeks before the Nov 6 election; farm-belt Republican incumbents and Senate races are explicitly at risk, and a $12B aid package was already needed (web_search: NYT/USA Today/POLITICO farm-belt coverage). The proposed $200B list also spans consumer goods, so raising it to 25% would impose broad price costs on US consumers and invite a wider Chinese response \u2014 the brief's discipline says a low threat should drive mild action, and ignoring the opponent's near-certain in-kind response is exactly the second-order error to avoid. Hence action_score 0.0 / 'negotiate': sustain the credible pressure already on the table (the $50B in place and the pending $200B process) without escalating to maximum, and work toward a negotiated rollback that protects the farm base and US consumers.",
+    "key_factors": [
+      "US initiated the dispute and holds the initiative; dollar +6.3%, sentiment 100.1, IP rising \u2014 economy strong, no recession signal",
+      "China has retaliated in-kind at every step (soybeans/pork), hitting competitive farm-belt districts ~2 months before the Nov 6 midterms",
+      "Pending $200B List 3 (10%, possibly raised to 25%) spans consumer goods; escalation risks US consumer costs and wider retaliation",
+      "May 19 joint statement showed China willing to commit to increased US goods purchases \u2014 a negotiating off-ramp exists",
+      "Threat is leverage/opportunity, not existential \u2014 supports mild (hold/negotiate) action rather than maximal escalation"
+    ],
+    "sources_cited": [
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-06-15",
+        "excerpt": "USTR final $50B plan; List 1 (Jul 6) and List 2 (Aug 23) 25% tariffs; China retaliates in kind"
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-07-10",
+        "excerpt": "USTR proposes List 3: ~$200B at 10%; comment/hearing process begins"
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-08-01",
+        "excerpt": "Considering raising List 3 rate from 10% to 25%"
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-05-19",
+        "excerpt": "Joint statement: China to 'significantly increase' purchases of US goods"
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "DTWEXBGS",
+        "excerpt": "Broad dollar index up ~6.3% over window; latest 114.7"
+      },
+      {
+        "source_type": "country_health",
+        "source_id": "UMCSENT",
+        "excerpt": "Consumer sentiment 100.1 (Sep); INDPRO rising"
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "reuters US-USA-CHN-trade-hearing",
+        "excerpt": "$200B tariffs expected late Sept after comment period ends Sept 5; Trump threatened 25%"
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "nytimes tariffs soybean midterms",
+        "excerpt": "Farmers warn Chinese soybean tariffs put GOP at risk in competitive Midwest races before 2018 midterms"
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "usatoday soybean path midterm",
+        "excerpt": "Trump tariffs inflict economic peril in soybean-rich states deciding the midterms; $12B farm aid a 'Band-Aid'"
+      }
+    ],
+    "threat_score": -0.3,
+    "action_score": 0,
+    "action_level": "negotiate"
+  },
+  "CHN": {
+    "symbol": "CHN",
+    "score": 0.5,
+    "rationale": "RECOMMENDATION: Hold a firm but disciplined posture: signal readiness to negotiate a de-escalatory settlement without new commitments while preparing a calibrated, retaliatory response to the imminent ~$200B/25% US tariff wave. Do not escalate further on goods \u2014 our retaliation capacity is nearly exhausted and further escalation would be self-harming given the asymmetry. Keep the WTO channel and coalition-building (Europe, Korea) active to pressure Washington and position China as the defender of the multilateral order.\n\nSUPPORTING RATIONALE: Threat is high but not existential. The US has already imposed 25% tariffs on the full $50B package (List 1 July 6, List 2 Aug 23) and China has matched each (event_timeline); now US proposes a further ~$200B at 25% (raised from 10% on Aug 1), with the comment period closing today and reports that Trump wants to act imminently, covering over half of Chinese exports (web_search: BI Aug 30; Reuters Jul 10). This hits major export/consumer-goods sectors and export-hub employment, matching the +0.5 CHN anchor. Compounding pressure: the RMB has depreciated over 7% since April, cushioning exports but signaling strain and FX concern (NYT/CNBC). Countervailing factors keep this from the existential band: our FX reserves have held, industrial production and the domestic market remain resilient, and the dispute is a rallying point for tech autonomy (Made in China 2025) and national cohesion. On action: China runs a far smaller import bill from the US (~$80B left to tax vs. Washington's $500B+ import base), so tariff-for-tariff escalation is a losing game (PBS/China WTO Institute: 'we are unable to fight equally'). Unilateral concession, however, would signal weakness into an opponent poised to escalate, so the correct stance is to hold current posture, explore negotiation without new commitments, prepare measured response, and keep international-judicial and ally pressure as leverage. Hence threat_score +0.5 / action_score 0.0 / negotiate.",
+    "key_factors": [
+      "US 25% tariffs on $50B already in force (Lists 1+2), matched by China",
+      "Imminent ~$200B/25% List 3 (comment period ends Sep 6) covering >50% of Chinese exports",
+      "China's retaliation capacity constrained (~$80B US imports left to tax) \u2014 asymmetric",
+      "RMB depreciated >7% since April; FX/reserves pressure but resilience",
+      "WTO challenge, coalition-building, tech-autonomy (Made in China 2025) opportunity"
+    ],
+    "sources_cited": [
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-07-10",
+        "excerpt": "USTR publishes proposed List 3: ~$200B of Chinese imports for additional 10% tariff"
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-08-01",
+        "excerpt": "USTR considering raising List 3 rate from 10% to 25%"
+      },
+      {
+        "source_type": "event_timeline",
+        "source_id": "2018-08-23",
+        "excerpt": "List 2 tariffs take effect: US 25% on ~$16B (completing $50B); China matches"
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "businessinsider-us-china-trade-war-trump-wants-tariff-on-200-billion-of-chinese-goods-2018-8",
+        "excerpt": "Trump told aides he wants to impose tariffs on another $200B worth of Chinese goods as early as next week; more than half of Chinese imports would be subject to tariffs"
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "pbs-china-files-wto-challenge",
+        "excerpt": "'We are unable to fight equally' \u2014 China has only ~$80B of annual imports left for penalties"
+      },
+      {
+        "source_type": "web_search",
+        "source_id": "nytimes-renminbi-dollar-tariffs-2018-07-24",
+        "excerpt": "RMB fallen over 7% since mid-April; a weaker currency cushions exports but carries capital-flight risk"
+      }
+    ],
+    "threat_score": 0.5,
+    "action_score": 0,
+    "action_level": "negotiate"
+  }
+}

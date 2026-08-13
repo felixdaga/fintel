@@ -1,0 +1,104 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-02-21",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 8676,
+    "tokens_out": 903,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0087994,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.15,
+      "rationale": "RECOMMENDATION: The US should pursue active negotiations with China while maintaining the current tariff structure as leverage. The trade war has reached a point where nearly all bilateral trade is under tariff barriers, and further escalation risks significant collateral damage to US firms and supply chains. We should use the current leverage to press for structural reforms on IP theft, forced technology transfer, and state subsidies, while signaling willingness to roll back tariffs if China makes verifiable commitments.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate but manageable (threat_score: +0.15). The US economy is performing well and the direct GDP impact of tariffs is described as 'a minor blip' (Brookings, Dollar). The US has asymmetric leverage: China exports $505B to the US vs $130B US exports to China, meaning China runs out of retaliatory targets first (RAND analysis). However, there are real costs: soybean prices down 20%, Midwest farmers hurt, Boeing and auto exporters in Southern states affected, and US firms operating in China face collateral damage (Brookings). The RAND analysis shows that US tariffs on machinery/equipment hit American companies whose supply chains depend on Chinese inputs, with a $6.7B net transfer from US businesses to the US government. China has already retaliated on $110B of $130B in US exports, nearly exhausting its tariff ammunition (Fox Business). The action_score of -1 reflects that the US should maintain maximum leverage (current tariff levels) while actively negotiating, rather than escalating further or conceding prematurely. With nearly 100% of bilateral trade already tariffed, additional escalation would primarily harm US consumers and supply chains without proportionate strategic gain. The optimal play is to hold the tariff line and negotiate hard for structural concessions on IP, tech transfer, and subsidies.",
+      "key_factors": [
+        "US has asymmetric leverage: $505B Chinese exports to US vs $130B US exports to China",
+        "China has nearly exhausted retaliatory tariff options ($110B of $130B already tariffed)",
+        "US economy strong enough to absorb tariff impact ('minor blip' per Brookings)",
+        "Real sectoral damage: soybeans down 20%, Midwest farmers, Boeing, auto exporters",
+        "US supply chains dependent on Chinese machinery/equipment face cost increases",
+        "China's yuan depreciated 6% (6.28 to 6.64/USD) partially offsetting tariff impact",
+        "No high-level negotiations scheduled as of late 2018",
+        "Trump admin views trade stance as politically beneficial"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "This is not a big hit for the overall U.S. economy but it will hurt some specific sectors...the Trump administration will probably not change its strategy soon."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.rand.org \u2014 The U.S.-China Trade War: Different Messages",
+          "excerpt": "U.S. exports to China are $130 billion while China's exports to the United States are $505 billion a year. In a tit-for-tat exercise, China will run out of exports to levy retaliatory tariffs upon long before the United States does"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.foxbusiness.com \u2014 The U.S.-China Trade War, Explained",
+          "excerpt": "This second round of Chinese tariffs is going to now cover $110 billion of the $130 billion of U.S.-China trade -- again, almost 100% of the entire trading relationship"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu \u2014 Unpacked: The US-China Trade War",
+          "excerpt": "The price of soybeans is already down 20 percent...U.S. exports cars from Southern states like Tennessee, so the effects of this change will be felt there"
+        }
+      ],
+      "threat_score": 0.15,
+      "action_score": -1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-02-21",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 23881,
+        "capped_chars": 20119,
+        "raw_tokens": 5970,
+        "capped_tokens": 5030
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 20376,
+  "started_at": "2026-08-13T10:54:46+00:00"
+}

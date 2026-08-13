@@ -1,0 +1,109 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-03-22",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 1,
+    "tokens_in": 10491,
+    "tokens_out": 979,
+    "reasoning_tokens": 0,
+    "cost_usd": 0.0108424,
+    "basis": "reported"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -1.0,
+      "rationale": "RECOMMENDATION: The United States should proceed with the planned $60 billion in tariffs on Chinese goods under Section 301, targeting technology, telecom, and apparel sectors. This is a moment of maximum leverage where the U.S. can force structural concessions from Beijing on intellectual property theft, forced technology transfer, and market access restrictions. The administration should simultaneously coordinate with allies (EU, Japan) to present a united front and maximize pressure.\n\nSUPPORTING RATIONALE: The threat score reflects a clear opportunity for the U.S. to restructure the trade relationship on more favorable terms. The Section 301 investigation has produced adverse findings against China's IP practices, giving the U.S. strong legal and political justification for action (Yahoo Finance). The U.S. trade deficit with China hit a record $375 billion in 2017, representing nearly two-thirds of the global $566 billion U.S. trade gap, demonstrating the scale of the imbalance (Yahoo Finance). China's Commerce Minister Zhong Shan acknowledged the U.S. deficit figures were over-estimated by 20%, implicitly conceding the problem exists (Reuters). There is bipartisan consensus in Washington and support within segments of the U.S. business community for countering Beijing's predatory industrial policies (Reuters). Xi Jinping's recent constitutional amendment removing term limits signals consolidation of power but also makes him vulnerable to domestic criticism if he appears weak\u2014yet Brookings analysis notes Xi gains politically by standing firm, meaning the U.S. must act decisively now before China further entrenches its position. The CNAS report identifies specific unfair practices including non-tariff barriers, government subsidies to SOEs, discriminatory procurement, and cyber-espionage estimated at $300 billion annually in stolen industrial secrets. The U.S. has leverage through CFIUS expansion, WTO cases, and targeted tariffs. However, the action must be calibrated: the Brookings analysis warns that Xi will retaliate proportionately and may use North Korea cooperation as leverage. The farm sector is particularly vulnerable to Chinese retaliation on soybeans (Politico). Despite these risks, the structural problems\u2014IP theft, forced tech transfer, market restrictions\u2014have persisted for decades and only decisive action can force change. The U.S. economy is strong enough to absorb short-term costs, and the midterm elections in November 2018 create political urgency to deliver on trade promises.",
+      "key_factors": [
+        "Record $375B U.S.-China trade deficit in 2017 (two-thirds of global gap)",
+        "Section 301 investigation findings on IP theft and forced technology transfer",
+        "Bipartisan consensus in Washington for confronting China's trade practices",
+        "China's retaliatory capacity targeting U.S. agriculture (soybeans, sorghum)",
+        "U.S. corporate exposure (Boeing, Apple, Qualcomm, Walmart, GE) as both leverage and risk",
+        "Xi Jinping's consolidated power enabling him to negotiate but also to resist",
+        "EU and allies seeking exemptions from steel/aluminum tariffs\u2014opportunity to build coalition",
+        "China's cyber-espionage estimated at $300B annually in stolen industrial secrets"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "web_search",
+          "source_id": "www.reuters.com",
+          "excerpt": "China says trade war with U.S. will only bring disaster to global economy; Zhong said U.S. official trade deficit figures had been over-estimated by about 20 percent"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "finance.yahoo.com",
+          "excerpt": "trade deficit with China was a record $375 billion in 2017, almost two-thirds of a global $566 billion U.S. trade gap; Trump has rejected a tariff proposal worth $30 billion for a much steeper figure of almost $60 billion"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.politico.com",
+          "excerpt": "If a trade war with China escalates, the American farm sector could be hit hardest; farm prices would fall and maybe even collapse"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.brookings.edu",
+          "excerpt": "Xi gains politically in Beijing by standing firm against U.S. pressure; China has always retaliated proportionately to U.S. trade actions; Xi likely calculates that Trump needs Xi more on North Korea than vice versa"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "www.cnas.org",
+          "excerpt": "Some U.S. reports estimate that China has stolen as much as $300 billion a year in U.S. industrial secrets; non-tariff barriers, government-directed credit, discriminatory application of law"
+        }
+      ],
+      "threat_score": -1.0,
+      "action_score": -1.0,
+      "action_level": "escalate_tariffs"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-03-22",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 1,
+    "by_status": {
+      "ok": 1
+    },
+    "kinds_used": [
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "web_search": {
+        "n_reads": 1,
+        "raw_chars": 34588,
+        "capped_chars": 30461,
+        "raw_tokens": 8647,
+        "capped_tokens": 7615
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 1,
+      "by_status": {
+        "ok": 1
+      },
+      "kinds_used": [
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 27136,
+  "started_at": "2026-08-13T10:54:18+00:00"
+}

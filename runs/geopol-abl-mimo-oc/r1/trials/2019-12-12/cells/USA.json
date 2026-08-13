@@ -1,0 +1,141 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-12-12",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 5,
+    "tokens_in": 146549,
+    "tokens_out": 2257,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: The US should continue negotiating toward a Phase One deal and avoid the Dec 15 tariff escalation, but should NOT make major concessions on existing tariffs. Use the looming deadline as leverage to lock in purchase commitments and IP language, while preserving tariff pressure for Phase Two structural demands.\n\nSUPPORTING RATIONALE: The threat reading is mildly favorable (-0.3) because the US holds structural leverage. China's exports have fallen for four consecutive months (Reuters, Dec 8), its PMI was in contraction for six straight months before a marginal recovery to 50.2 in November (NBS, Nov 30), and industrial profits are shrinking. Meanwhile the US economy is strong: 3.5% unemployment (50-year low), 266K jobs added in November (BLS, Dec 6), and GDP growth around 2%. China needs a deal more than the US does \u2014 its export sector is under genuine pressure and Beijing is already deploying stimulus.\n\nHowever, the threat is not as low as -0.5 or beyond because the trade war carries real costs for the US. GDP growth slowed from 3.1% in Q1 to 1.9% in Q3 (BEA). Industrial states like Ohio, Michigan, Wisconsin, and Pennsylvania \u2014 politically critical \u2014 are bearing the heaviest toll (Mercatus, Dec 2019). The trade deficit with China has not narrowed as promised. And the Phase One deal, even if signed, leaves the hardest structural issues (subsidies, forced tech transfer, state-owned enterprises) entirely for a Phase Two that may never materialize.\n\nThe action stance is near-neutral, slightly toward holding leverage (-0.15). The Phase One deal announced Oct 11 is underwhelming \u2014 largely agricultural purchases ($40-50B) with vague IP language, no Huawei resolution, and no structural reform. It does not justify rolling back existing tariffs on $360B of Chinese goods, which is China's core demand (CNBC, Nov 5). But the Dec 15 tariff hike on $156B of consumer goods (phones, laptops, toys) would hurt US consumers heading into the holiday season and invite further retaliation. The optimal move is to negotiate: use the Dec 15 deadline as a forcing function to finalize Phase One on terms favorable to the US without either escalating or conceding ground already taken. The Hong Kong bill (signed Nov 27) adds diplomatic friction but Beijing is unlikely to blow up trade talks over it \u2014 their economy is too stressed (NYT, Nov 28).",
+      "key_factors": [
+        "China exports falling 4 consecutive months; PMI in contraction for 6 months before marginal recovery",
+        "US economy strong: 3.5% unemployment, 266K Nov jobs, GDP ~2%",
+        "Phase One deal is thin \u2014 ag purchases + vague IP, no structural reform",
+        "Dec 15 tariff deadline on $156B consumer goods creates leverage but also consumer cost",
+        "China demanding rollback of existing tariffs as precondition (CNBC Nov 5)",
+        "Hong Kong bill signed Nov 27 adds diplomatic friction but unlikely to derail talks",
+        "Industrial/agricultural states bearing trade war costs (Mercatus Dec 2019)",
+        "Structural issues (SOEs, subsidies, forced tech transfer) deferred to Phase Two"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-10-11",
+          "excerpt": "Trump announces Phase One deal in principle: China to buy roughly $40-50B of US agricultural products annually; IP and currency issues also cited. Planned mid-October tariff hike delayed."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-08-23",
+          "excerpt": "China announces retaliation on ~$75B of US goods; Trump orders US companies to 'immediately start looking for an alternative to China'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-china-nov-exports-2019-12-08",
+          "excerpt": "China's exports in November shrank for the fourth consecutive month...Overseas shipments fell 1.1% from a year earlier"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-china-pmi-nov-2019",
+          "excerpt": "PMI bounced back to 50.2 in November...New export orders fell for an 18th straight month...factories continued to cut jobs"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usatoday-nov-jobs-2019-12-06",
+          "excerpt": "Economy added booming 266,000 jobs in November...unemployment rate fell to 3.5%, matching a 50-year low"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "mercatus-dec-2019",
+          "excerpt": "US GDP growth for 2019 started strong with 3.1 percent real GDP growth in the first quarter...quarterly growth fell sharply...1.9 percent Q3"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-china-tariff-rollback-nov-5",
+          "excerpt": "Chinese negotiators want Washington to drop 15% tariffs on about $125 billion worth of Chinese goods that went into effect on Sept. 1"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt-hk-china-trade-nov-28",
+          "excerpt": "Beijing will make a lot of noises but they can't afford to do much...The trade deal is so important to the Chinese that they won't let anything derail it"
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-12-12",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 5122,
+        "capped_chars": 5122,
+        "raw_tokens": 1280,
+        "capped_tokens": 1280
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 82,
+        "capped_chars": 82,
+        "raw_tokens": 20,
+        "capped_tokens": 20
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 93064,
+        "capped_chars": 93064,
+        "raw_tokens": 23266,
+        "capped_tokens": 23266
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 76789,
+  "started_at": "2026-08-13T02:52:37+00:00"
+}

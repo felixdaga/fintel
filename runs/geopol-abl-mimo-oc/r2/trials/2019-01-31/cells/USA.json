@@ -1,0 +1,135 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.2,
+      "rationale": "RECOMMENDATION: Continue the current 90-day negotiation track with firm demands on structural reforms while holding tariff levels steady. Do not raise List 3 to 25% before the March 1 deadline \u2014 use the deadline as leverage. Maintain the Huawei indictments as a separate pressure channel but do not further escalate non-tariff measures during active talks.\n\nSUPPORTING RATIONALE: The US holds a favorable leverage position as of January 31, 2019. China's economy has slowed to 6.4% GDP growth in Q4 2018 (lowest since 2009), industrial production growth fell to 5.7%, exports dropped 4.4% in December, and car sales recorded their first annual decline in two decades (Washington Post, Jan 21). The US economy, while moderating, still grew at 3.1% in 2018 with a strong labor market (SF Fed, Jan 10). China's economic pain limits its retaliation options \u2014 as the NYT noted, 'China is in the middle of a trade war that it is eager to end as its vast economy slows' (Jan 29). The Huawei indictments (23 charges unsealed Jan 28) apply maximum non-tariff pressure at minimal cost to the US, and China's Foreign Ministry response was comparatively moderate, signaling Beijing wants to keep trade talks on a separate track (The Diplomat, Jan 30). The structural issues \u2014 forced tech transfer, IP protection, cyber theft, state subsidies \u2014 remain unresolved from the Jan 7-9 Beijing talks, where China offered purchase commitments but rejected reforms 'that harm its national security' (The Diplomat, Jan 11). Lighthizer's insistence on 'complete implementation subject to ongoing verification and effective enforcement' is the right posture. The risk is that further tariff escalation (raising List 3 to 25%) would rattle markets already down ~14% from their September peak and tip sentiment, while providing limited additional leverage when China is already negotiating. The better play is to hold the existing tariff architecture, extract maximum structural concessions in the remaining weeks before March 1, and let China's economic deceleration do the work of softening Beijing's resistance. Threat score is slightly negative because the US has leverage \u2014 China's slowdown, Huawei's constrained position, and bipartisan domestic support for the tough-on-China posture all favor Washington.",
+      "key_factors": [
+        "China GDP at 6.4% Q4 2018, lowest since 2009 \u2014 limits retaliation capacity",
+        "US GDP at 3.1% 2018, strong labor market \u2014 relative economic strength",
+        "Huawei indictments (23 charges, Jan 28) apply non-tariff pressure at low cost",
+        "Structural issues (IP, tech transfer, enforcement) remain unresolved from Jan 7-9 talks",
+        "March 1 deadline for List 3 hike to 25% \u2014 leverage window still open",
+        "Market volatility: S&P down ~14% from peak, further escalation risks sentiment",
+        "China's moderate response to Huawei indictments signals deal-seeking posture"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-30",
+          "excerpt": "Lighthizer and Mnuchin in Beijing for high-level talks. Purchase commitments discussed; enforcement and structural IP/tech-transfer issues unresolved."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "washingtonpost-china-gdp-2019-01-21",
+          "excerpt": "Chinese economy grew last year at its slowest rate since 1990. Q4 growth 6.4%, industrial production 5.7%, retail sales slowing, car sales first annual drop in 20+ years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "thediplomat-trade-truce-2019-01-11",
+          "excerpt": "China accepted parts in line with reform but rejected requests that harm national security. Progress on trade, not on structural issues."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes-huawei-2019-01-29",
+          "excerpt": "China is in the middle of a trade war that it is eager to end as its vast economy slows. Any effort to get tough could scuttle the negotiations."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "frbsf-fedviews-2019-01-10",
+          "excerpt": "GDP growth averaged 3.1% for 2018. Forecast slowdown to 2.0% in 2019. Labor market very strong. Stock market volatile, 14% correction from peak."
+        }
+      ],
+      "threat_score": -0.2,
+      "action_score": -0.15,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4863,
+        "capped_chars": 4863,
+        "raw_tokens": 1216,
+        "capped_tokens": 1216
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11242,
+        "capped_chars": 11242,
+        "raw_tokens": 2810,
+        "capped_tokens": 2810
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 82515,
+        "capped_chars": 82515,
+        "raw_tokens": 20629,
+        "capped_tokens": 20629
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 380880,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

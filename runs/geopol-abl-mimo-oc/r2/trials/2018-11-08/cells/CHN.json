@@ -1,0 +1,145 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2018-11-08",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.6,
+      "rationale": "RECOMMENDATION: Pursue active negotiations through the upcoming G20 meeting with Trump while avoiding further retaliation that would accelerate the asymmetric escalation disadvantage. Prepare a substantive offer combining increased US goods purchases, modest IP protection reforms, and selective market access improvements \u2014 enough to give Trump a headline win without conceding core industrial policy (Made in China 2025). Use the three-week window before the G20 to signal willingness to engage seriously, buying time before the January 1 tariff hike to 25%.\n\nSUPPORTING RATIONALE: Threat reading (+0.6): The structural asymmetry in this dispute is severe and worsening. The US has already imposed tariffs on ~$250B of Chinese imports across three lists (event timeline: July 6, Aug 23, Sept 24, 2018), with List 3 rates scheduled to rise from 10% to 25% on January 1, 2019. China has retaliated on ~$110B of US goods but is nearly maxed out \u2014 the US exported only ~$130B to China in 2017, while China exported ~$505B to the US, leaving the US with ~$267B of additional tariff headroom. This asymmetry means China cannot match further US escalation in kind (Columbia Daily Herald, Sept 2018; RAND analysis, July 2018).\n\nMacroeconomic damage is already material: Q3 GDP fell to 6.5%, the weakest since the 2009 financial crisis (CNN, Oct 19 2018). The PMI new export orders subindex contracted for three consecutive months through August, hitting 49.4 \u2014 the lowest since tensions escalated in March (Politico, Aug 31 2018). The Shanghai Composite has fallen ~20% year-to-date, entering bear market territory alongside Turkey and Argentina (Reuters, Sept 12 2018). The yuan has depreciated ~9% against the dollar since April. A leaked government think-tank analysis warned of 'high probability of financial panic' (NYT, June 28 2018). Reuters reported (Nov 1 2018) that analysts warn 'the real economic shock is yet to come' as frontloaded export orders unwind.\n\nThe ZTE denial order (April 16 2018) demonstrated devastating non-tariff vulnerability \u2014 a single Commerce Department action nearly shut down a major Chinese technology firm. This precedent signals that the US retains powerful entity-list and export-control tools that could target Huawei or other strategic firms next.\n\nAction stance (-0.1, negotiate): Despite the serious threat, escalation would be counterproductive. China's retaliatory ammunition is nearly exhausted \u2014 it has already imposed tariffs on $110B of $130B in US imports, and further non-tariff retaliation (restricting US firms, dumping Treasuries) risks spooking foreign investors and accelerating capital flight from an already-battered stock market. The January 1 deadline for the List 3 rate increase to 25% creates urgency for a deal before conditions worsen. The Nov 1 Trump-Xi phone call and agreed G20 meeting in Argentina provide a diplomatic opening. The US midterm elections (Nov 6) have just passed, potentially giving Trump domestic room to claim victory and moderate. China should negotiate from a position of managed weakness \u2014 offering enough on purchases and IP to de-escalate, while protecting core industrial policy ambitions.",
+      "key_factors": [
+        "Asymmetric tariff exposure: US has $267B additional headroom vs China's exhausted retaliatory capacity ($110B of $130B used)",
+        "List 3 rate hike from 10% to 25% scheduled for Jan 1, 2019 \u2014 creates urgency",
+        "Q3 GDP at 6.5% (lowest since 2009), PMI export orders contracting 3 months, stock market -20% YTD",
+        "ZTE denial order demonstrated devastating non-tariff tech vulnerability",
+        "G20 meeting with Trump provides diplomatic off-ramp",
+        "Yuan depreciation (~9% since April) and capital flight risk constrain aggressive retaliation",
+        "Frontloaded exports suggest sharper downturn ahead as tariff effects fully materialize"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5-10%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-04-16",
+          "excerpt": "US Commerce Department bans ZTE from buying US components (denial order). ZTE faces operational shutdown. Major non-tariff escalation."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "entry_2018-11-01",
+          "excerpt": "Trump and Xi hold a phone call focused on trade; agree to meet at the G20 in Argentina."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "columbia_daily_herald_2018-09-18",
+          "excerpt": "China purchased roughly $130 billion in American goods last year \u2014 less than a third of what the United States ordered from Chinese enterprises. Now Beijing is poised to impose higher border taxes on a total of $110 billion in U.S. products."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnn_2018-10-19",
+          "excerpt": "The world's second biggest economy grew 6.5% in the third quarter of this year... its weakest quarterly growth since the depths of the global financial crisis in early 2009."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico_2018-08-31",
+          "excerpt": "The 'new export order' subindex in China's official PMI dropped by 0.4 points to 49.4 in August, the lowest since the China-U.S. trade tension escalated in March... the first time China has had a three-month export downturn in two years."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters_2018-09-12",
+          "excerpt": "Shanghai's stock market (.SSEC) has declined around 20 percent this year and is already the worst performer among the major stock indexes in the world, ranking alongside crisis-hit emerging markets such as Turkey, Venezuela and Argentina."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nyt_2018-06-28",
+          "excerpt": "A deeply pessimistic internal government analysis... said that with 'the Federal Reserve's interest rate hikes and the long-term and highly uncertain trade conflicts between China and the United States, we believe that in China there is currently a high probability of financial panic.'"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "rand_2018-07-20",
+          "excerpt": "The United States has less to lose since its exports to China are $130 billion while China's exports to the United States are $505 billion a year. In a tit-for-tat exercise, China will run out of exports to levy retaliatory tariffs upon long before the United States does."
+        }
+      ],
+      "threat_score": 0.6,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2018-11-08",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 5,
+    "by_status": {
+      "ok": 5
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4164,
+        "capped_chars": 4164,
+        "raw_tokens": 1041,
+        "capped_tokens": 1041
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 43629,
+        "capped_chars": 43629,
+        "raw_tokens": 10907,
+        "capped_tokens": 10907
+      },
+      "web_search": {
+        "n_reads": 3,
+        "raw_chars": 70812,
+        "capped_chars": 70812,
+        "raw_tokens": 17704,
+        "capped_tokens": 17704
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 5,
+      "by_status": {
+        "ok": 5
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 390654,
+  "started_at": "2026-08-13T02:54:03+00:00"
+}

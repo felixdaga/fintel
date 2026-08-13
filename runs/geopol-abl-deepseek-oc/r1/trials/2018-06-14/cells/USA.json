@@ -1,0 +1,140 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-06-14",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 142721,
+    "tokens_out": 4283,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.3,
+      "rationale": "RECOMMENDATION: Hold the current posture \u2014 proceed with the already-announced Section 301 25% tariffs on ~$50B of Chinese imports as leverage, but do not broaden the escalation further, and keep the negotiation channel open to convert China's stated willingness to increase US purchases into a concrete framework. Avoid any new tariff broadening that would deepen China's agricultural retaliation in the run-up to the 2018 midterms, while preserving the credibility that has already extracted concessions.\n\nSUPPORTING RATIONALE: The threat to US interests is moderate (threat_score +0.3), not existential: the US economy is demonstrably strong \u2014 industrial production at 103.2, consumer sentiment at 98.2, the 10-year yield near 2.98% and the broad dollar index at 112 rising (country_health), so there is no material GDP drag yet. The escalation is US-initiated and the US holds the leverage, having secured China's May 19 commitment to 'significantly increase' purchases of US goods (event_timeline 2018-05-19) and a ZTE reprieve deal on June 7. What drives the positive threat reading is real and concentrated: China's retaliatory tariffs on soybeans, aircraft and autos strike the farm belt hard \u2014 soybeans are the second-largest US export to China with ~61% of US soybean exports going there, and analysts put the hit from a 25% tariff in the billions with permanent market-share loss risk, in politically pivotal midterm districts in Iowa, North Dakota and Kansas (web_search). Add the strain on ally cohesion from the Section 232 steel/aluminum tariffs (EU, Canada, Mexico retaliation) and the risk of an escalation spiral. That is why the action is 'hold' at 0.0 rather than further escalation \u2014 broadening now would maximize farm-belt political cost and ally friction while China has already shown willingness to negotiate, and conceding outright would squander hard-won leverage. Staying the course on the announced tariffs while keeping talks open is the disciplined middle path.",
+      "key_factors": [
+        "US macro strong: IP 103.2, consumer sentiment 98.2, 10Y ~2.98%, broad dollar rising",
+        "$50B Section 301 25% tariffs announced May 29 and proceeding",
+        "China retaliation on soybeans/aircraft/autos threatens $14B soybean export market (~61% to China)",
+        "Farm-belt political exposure in pivotal 2018 midterm districts",
+        "May 19 joint statement: China committed to increase US purchases; talks ongoing",
+        "Ally cohesion strain from Section 232 steel/aluminum tariffs",
+        "ZTE reprieve deal signals willingness to make targeted concessions"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-29",
+          "excerpt": "White House announces the US will proceed with Section 301 actions, including 25% tariffs on ~$50B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "China agrees to 'significantly increase' purchases of US goods and services; Mnuchin says trade war 'on hold'."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-04-04",
+          "excerpt": "China announces proposed retaliatory tariffs on ~$50B of US goods (soybeans, automobiles, aircraft)."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "INDPRO",
+          "excerpt": "US industrial production 103.2, +1.7%."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "US consumer sentiment 98.2."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad dollar index 112.26, rising since late May."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "NYTimes 2018-06-08",
+          "excerpt": "China is the largest importer of US soybeans; 25% soybean tariff would hit hard in Iowa, Indiana, Missouri and North Dakota Senate/House races."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "USC Enforcing US Trade Laws",
+          "excerpt": "US expects a two-stage plan to impose 25% tariffs on $50B; risk of escalation to further lists."
+        }
+      ],
+      "threat_score": 0.3,
+      "action_score": 0,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-06-14",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 2623,
+        "capped_chars": 2623,
+        "raw_tokens": 656,
+        "capped_tokens": 656
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47502,
+        "capped_chars": 47502,
+        "raw_tokens": 11876,
+        "capped_tokens": 11876
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 48857,
+        "capped_chars": 48857,
+        "raw_tokens": 12215,
+        "capped_tokens": 12215
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 519451,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

@@ -1,0 +1,143 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2018-09-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 142420,
+    "tokens_out": 4817,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": -0.3,
+      "rationale": "RECOMMENDATION: Hold the existing $50B of Section 301 tariffs as standing leverage and let the telegraphed $200B List 3 process run to its announced conclusion, but do NOT escalate the rate to 25% and do not broaden further. Keep the negotiating channel open (China's May 19 commitment to increase purchases of US goods shows talks are a viable off-ramp) and couple any tariff implementation with a credible path to de-escalation before the Nov 6 midterms. Push for a negotiated package rather than maximal escalation, because each US move has been reliably met in-kind and further escalation hits our own consumers and our farm-belt political base.\n\nSUPPORTING RATIONALE: The threat to US interests is modestly net-favorable, not existential. The US initiated this dispute, holds the initiative, and enters the escalation phase from a position of strength: the broad dollar index is up ~6.3% over the window, University of Michigan consumer sentiment is 100.1, and industrial production is rising \u2014 so there is no material recession risk (country_health). That supports a mild negative threat reading (opportunity/leverage), roughly -0.3. However, there are real, dated costs that argue against maximal escalation. China has matched every US action in-kind (Apr 2 and Aug 23 retaliations, and 25% tariffs on soybeans according to the event timeline and web sources), hitting soybean/pork producers whose harvest and pain land in competitive districts weeks before the Nov 6 election; farm-belt Republican incumbents and Senate races are explicitly at risk, and a $12B aid package was already needed (web_search: NYT/USA Today/POLITICO farm-belt coverage). The proposed $200B list also spans consumer goods, so raising it to 25% would impose broad price costs on US consumers and invite a wider Chinese response \u2014 the brief's discipline says a low threat should drive mild action, and ignoring the opponent's near-certain in-kind response is exactly the second-order error to avoid. Hence action_score 0.0 / 'negotiate': sustain the credible pressure already on the table (the $50B in place and the pending $200B process) without escalating to maximum, and work toward a negotiated rollback that protects the farm base and US consumers.",
+      "key_factors": [
+        "US initiated the dispute and holds the initiative; dollar +6.3%, sentiment 100.1, IP rising \u2014 economy strong, no recession signal",
+        "China has retaliated in-kind at every step (soybeans/pork), hitting competitive farm-belt districts ~2 months before the Nov 6 midterms",
+        "Pending $200B List 3 (10%, possibly raised to 25%) spans consumer goods; escalation risks US consumer costs and wider retaliation",
+        "May 19 joint statement showed China willing to commit to increased US goods purchases \u2014 a negotiating off-ramp exists",
+        "Threat is leverage/opportunity, not existential \u2014 supports mild (hold/negotiate) action rather than maximal escalation"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-06-15",
+          "excerpt": "USTR final $50B plan; List 1 (Jul 6) and List 2 (Aug 23) 25% tariffs; China retaliates in kind"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-07-10",
+          "excerpt": "USTR proposes List 3: ~$200B at 10%; comment/hearing process begins"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-08-01",
+          "excerpt": "Considering raising List 3 rate from 10% to 25%"
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-05-19",
+          "excerpt": "Joint statement: China to 'significantly increase' purchases of US goods"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DTWEXBGS",
+          "excerpt": "Broad dollar index up ~6.3% over window; latest 114.7"
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "UMCSENT",
+          "excerpt": "Consumer sentiment 100.1 (Sep); INDPRO rising"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters US-USA-CHN-trade-hearing",
+          "excerpt": "$200B tariffs expected late Sept after comment period ends Sept 5; Trump threatened 25%"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "nytimes tariffs soybean midterms",
+          "excerpt": "Farmers warn Chinese soybean tariffs put GOP at risk in competitive Midwest races before 2018 midterms"
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "usatoday soybean path midterm",
+          "excerpt": "Trump tariffs inflict economic peril in soybean-rich states deciding the midterms; $12B farm aid a 'Band-Aid'"
+        }
+      ],
+      "threat_score": -0.3,
+      "action_score": 0,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2018-09-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 3477,
+        "capped_chars": 3477,
+        "raw_tokens": 869,
+        "capped_tokens": 869
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 48144,
+        "capped_chars": 48144,
+        "raw_tokens": 12036,
+        "capped_tokens": 12036
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 44091,
+        "capped_chars": 44091,
+        "raw_tokens": 11022,
+        "capped_tokens": 11022
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 555706,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

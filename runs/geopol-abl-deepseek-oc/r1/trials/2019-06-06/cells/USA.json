@@ -1,0 +1,124 @@
+{
+  "cell": "USA",
+  "symbols": [
+    "USA"
+  ],
+  "decision_date": "2019-06-06",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 4,
+    "tokens_in": 141102,
+    "tokens_out": 3714,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "USA": {
+      "symbol": "USA",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Maintain our current tariff and entity-list posture heading into the Osaka G20, while explicitly leaving the door open to resume negotiations with China and signaling we will not trigger the additional ~$300B tariffs or a rare-earth confrontation unless talks definitively fail. Hold the line for now \u2014 do not concede unilaterally, but do not escalate further into consumer-goods tariffs or new supply-chain blacklists, because the marginal escalation risk now outweighs the negotiating leverage it would buy. Use the scheduled Trump-Xi G20 meeting as the venue to test Chinese seriousness before raising the stakes again.\n\nSUPPORTING RATIONALE: The threat is real and elevated but not existential. The event timeline shows a sharp May escalation \u2014 List 3 tariffs raised to 25% on ~$200B (May 10), China retaliation on its ~$60B list effective June 1, Huawei added to the Entity List (May 16), Google suspending Android/GMS (May 20), and China credibly threatening rare-earth export restrictions plus establishing an 'unreliable entity list' (May 31). This is a genuine material GDP drag with supply-chain and farm-belt exposure, matching the +0.5 anchor: agriculture hit by retaliation (soybeans, with Trump already touting ~$15B in farm aid per web search), and markets flashing recession signals \u2014 the 10Y Treasury collapsed from ~2.85% in December to 2.12% and the 2Y to 1.83% as of June 5 (country_health), a steep bull-flattening that prices in growth fear and Fed cuts. That said, US fundamentals are not yet in acute distress \u2014 consumer sentiment at ~98, industrial production roughly flat, and Baa credit spreads actually compressed (yield 5.16\u21924.57) \u2014 so this sits at moderate-high, roughly +0.55, not existential. On action: continuing to escalate (the threatened $300B of largely consumer goods) would raise recession risk and invite rare-earth and entity-list retaliation just weeks before the G20, while conceding now would surrender all leverage before Xi has made any matching offer. Given the imminent Trump-Xi meeting and China's refusal so far to meet US demands (per the timeline's May 5 'too slowly' tweet and the broken April talks), the disciplined stance is to hold pressure and keep negotiation open \u2014 hence action_score near zero.",
+      "key_factors": [
+        "~$250B of US Section 301 tariffs in place, List 3 raised to 25% on May 10 (timeline)",
+        "China retaliation on ~$60B list effective June 1, plus veiled rare-earth export restrictions and an 'unreliable entity list' (timeline, May 31; web)",
+        "Huawei Entity List (May 16) escalated the conflict into tech/supply-chain territory",
+        "10Y Treasury collapsed to 2.12% and 2Y to 1.83% by June 5 \u2014 markets pricing recession risk (country_health)",
+        "US real-economy not yet in acute distress: sentiment ~98, Baa credit spreads compressed (country_health)",
+        "Trump-Xi meeting scheduled at Osaka G20 (June 28-29) as de-escalation channel (web)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-10",
+          "excerpt": "List 3 tariff rate rises from 10% to 25%."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-16",
+          "excerpt": "US Commerce Department adds Huawei and affiliates to the Entity List."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-05-31",
+          "excerpt": "China announces it will establish an 'unreliable entity list'."
+        },
+        {
+          "source_type": "country_health",
+          "source_id": "DGS10",
+          "excerpt": "10Y Treasury yield fell from ~2.85% (Dec) to 2.12% by 2019-06-05."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "SCMP/rare earths",
+          "excerpt": "China accounts for 90% of global rare earth supply; NDRC signals export restrictions in response to Huawei blacklist."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": 0.1,
+      "action_level": "hold"
+    }
+  },
+  "environment": {
+    "cell": "USA",
+    "decision_date": "2019-06-06",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 4,
+    "by_status": {
+      "ok": 4
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4941,
+        "capped_chars": 4941,
+        "raw_tokens": 1235,
+        "capped_tokens": 1235
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 47290,
+        "capped_chars": 47290,
+        "raw_tokens": 11822,
+        "capped_tokens": 11822
+      },
+      "web_search": {
+        "n_reads": 2,
+        "raw_chars": 43130,
+        "capped_chars": 43130,
+        "raw_tokens": 10782,
+        "capped_tokens": 10782
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 4,
+      "by_status": {
+        "ok": 4
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 454547,
+  "started_at": "2026-08-13T07:36:48+00:00"
+}

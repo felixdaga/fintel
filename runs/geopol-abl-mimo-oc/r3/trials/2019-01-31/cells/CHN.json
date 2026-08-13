@@ -1,0 +1,135 @@
+{
+  "cell": "CHN",
+  "symbols": [
+    "CHN"
+  ],
+  "decision_date": "2019-01-31",
+  "scope": "single_name",
+  "outcome": "ok",
+  "detail": "",
+  "n_views": 1,
+  "usage": {
+    "n_llm_calls": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "reasoning_tokens": 0,
+    "basis": "unknown"
+  },
+  "views": {
+    "CHN": {
+      "symbol": "CHN",
+      "score": 0.55,
+      "rationale": "RECOMMENDATION: Continue engaging in trade negotiations with the US while making purchase commitments, but resist structural reform demands that would undermine state-led industrial policy. Use the approaching March 2 deadline as leverage to push for a deal centered on purchases rather than systemic concessions. Do not escalate on the Huawei/detainee front \u2014 the diplomatic fallout is already costly and further provocation risks hardening US resolve on technology restrictions.\n\nSUPPORTING RATIONALE: The threat to China is real and elevated, driven by several converging pressures. First, the US has imposed tariffs on ~$250B of Chinese imports (Lists 1-3, currently at 10% but scheduled to rise to 25% on March 2 if no deal is reached), creating direct export-sector pain (timeline: Sept 24, 2018 List 3 takes effect). Second, China's Q4 2018 GDP growth fell to 6.4% \u2014 matching the lowest quarterly reading since 1992 (Politico, Jan 21 2019), and industrial production growth slowed to 5.7% in December, signaling the trade war is compounding an already-decelerating economy. Third, the Huawei/Meng Wanzhou crisis has exposed China's technology dependencies \u2014 the US DOJ unsealed fraud and sanctions charges on Jan 28 and is pursuing extradition, while the ZTE denial order (April 2018) demonstrated how vulnerable Chinese tech firms are to US supply-chain weaponization. Fourth, the yuan depreciated 5.7% against the dollar in 2018, and FX reserves fell $67.24B over the year (Reuters, Jan 7 2019), though they stabilized above $3T.\n\nHowever, the situation is not existential. McKinsey estimates the direct tariff GDP impact at 0.5-0.8% of GDP \u2014 painful but manageable. China retains significant policy space: the PBOC has cut RRR four times and injected liquidity, fiscal stimulus is available, and the consumer sector (78% of GDP growth in 2018) remains resilient. Negotiations showed genuine progress \u2014 the Jan 7-9 working-level talks extended to an unscheduled third day, Liu He made a surprise appearance, and both sides discussed purchase commitments (CNBC, Jan 10 2019). The Jan 30 high-level talks with Lighthizer/Mnuchin continued this trajectory.\n\nThe action stance of negotiate (not concede) reflects three calculations: (1) China's economy is slowing but not collapsing \u2014 there is time to strike a deal without making desperate concessions; (2) the US side has internal divisions (Mnuchin favors a purchase-based deal, Lighthizer demands structural reforms) that China can exploit by offering purchases while holding firm on industrial policy; (3) escalation on the Huawei front would be counterproductive \u2014 the detention of Canadians has already drawn international condemnation (143 scholars signed open letter demanding release) and a US extradition request is now formal. The optimal strategy is to offer substantive agricultural and energy purchases to give Trump his 'win' on the trade deficit while protecting the core of Made in China 2025 and resisting enforcement mechanisms that would give the US ongoing veto power over Chinese policy.",
+      "key_factors": [
+        "US tariffs on ~$250B of Chinese imports at 10%, scheduled to rise to 25% on March 2",
+        "China GDP growth at 6.4% (lowest quarterly since 1992), industrial production slowing",
+        "Huawei/Meng Wanzhou extradition crisis exposing tech dependencies",
+        "Trade talks showing modest progress \u2014 extended sessions, purchase commitments discussed",
+        "Yuan down 5.7% in 2018, FX reserves fell $67B but stabilized above $3T",
+        "PBOC has policy space with RRR cuts and fiscal stimulus available",
+        "US internal divisions between Mnuchin (purchases) and Lighthizer (structural reform)"
+      ],
+      "sources_cited": [
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-09-24",
+          "excerpt": "List 3 takes effect at 10%. China imposes retaliatory tariffs (5\u201310%) on ~$60B of US goods. Combined US Section 301 coverage now ~$250B of Chinese imports."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2018-12-01",
+          "excerpt": "G20 Buenos Aires dinner: Trump and Xi agree to a 90-day negotiation window. Planned Jan 1, 2019 hike of List 3 from 10% to 25% is suspended."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-28",
+          "excerpt": "US DOJ unseals fraud and sanctions-related charges against Huawei and Meng; US formally requests Meng's extradition from Canada."
+        },
+        {
+          "source_type": "event_timeline",
+          "source_id": "2019-01-30",
+          "excerpt": "Lighthizer and Mnuchin in Beijing for high-level talks. Purchase commitments discussed; enforcement and structural IP/tech-transfer issues unresolved."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "politico-2019-01-21",
+          "excerpt": "The fourth quarter growth rate of 6.4 percent, year on year, matched that of the first quarter of 2009... the lowest growth rate since the Chinese government began publishing quarterly growth rates at the beginning of 1992."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "reuters-2019-01-07-fx-reserves",
+          "excerpt": "China's annual foreign exchange reserves fell by $67.24 billion last year to $3.073 trillion."
+        },
+        {
+          "source_type": "web_search",
+          "source_id": "cnbc-2019-01-10-trade-talks",
+          "excerpt": "There were several signs of modest progress from these mid-level talks. First, negotiations went a day over the original schedule, indicating enough substantive discussion to at least keep officials at the table."
+        }
+      ],
+      "threat_score": 0.55,
+      "action_score": -0.1,
+      "action_level": "negotiate"
+    }
+  },
+  "environment": {
+    "cell": "CHN",
+    "decision_date": "2019-01-31",
+    "kinds": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "n_reads": 6,
+    "by_status": {
+      "ok": 6
+    },
+    "kinds_used": [
+      "country_health",
+      "event_timeline",
+      "web_search"
+    ],
+    "degraded": false,
+    "chars_by_kind": {
+      "event_timeline": {
+        "n_reads": 1,
+        "raw_chars": 4863,
+        "capped_chars": 4863,
+        "raw_tokens": 1216,
+        "capped_tokens": 1216
+      },
+      "country_health": {
+        "n_reads": 1,
+        "raw_chars": 11242,
+        "capped_chars": 11242,
+        "raw_tokens": 2810,
+        "capped_tokens": 2810
+      },
+      "web_search": {
+        "n_reads": 4,
+        "raw_chars": 77613,
+        "capped_chars": 77613,
+        "raw_tokens": 19404,
+        "capped_tokens": 19404
+      }
+    },
+    "health": {
+      "status": "ok",
+      "issues": [],
+      "n_reads": 6,
+      "by_status": {
+        "ok": 6
+      },
+      "kinds_used": [
+        "country_health",
+        "event_timeline",
+        "web_search"
+      ],
+      "denied": [],
+      "failed": [],
+      "empty": [],
+      "pit_suspects": []
+    }
+  },
+  "elapsed_ms": 376301,
+  "started_at": "2026-08-13T03:01:54+00:00"
+}
