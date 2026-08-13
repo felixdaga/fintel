@@ -158,6 +158,38 @@ def test_apply_disambiguates_same_symbol_across_dates():
     assert apr.stage == "reasoning" and apr.round == 1 and apr.calls == 0
 
 
+def test_backfill_start_reopens_after_prior_done():
+    """Second backfill appending to the same log must not leave done=True."""
+    run = _Run(tag="bf", path=Path("x"))
+    _feed(
+        run,
+        [
+            {"event": "backfill_start"},
+            {"event": "cell_start", "cell": "WBA", "decision_date": "2022-07-01"},
+            {
+                "event": "cell_done",
+                "cell": "WBA",
+                "decision_date": "2022-07-01",
+                "outcome": "ok",
+                "health": "ok",
+            },
+            {"event": "backfill_done", "status": "done"},
+        ],
+    )
+    assert run.done is True
+    assert len(run.cells) == 1
+    _feed(
+        run,
+        [
+            {"event": "backfill_start"},
+            {"event": "cell_start", "cell": "INTC", "decision_date": "2022-07-01"},
+        ],
+    )
+    assert run.done is False
+    assert run.status == "running"
+    assert set(run.cells) == {"INTC@2022-07-01"}
+
+
 def test_apply_shows_adapter_defined_stage_label():
     """TUI displays whatever stage string the adapter emitted — no remapping."""
     run = _Run(tag="opt", path=Path("x"))
@@ -184,6 +216,19 @@ def test_apply_shows_adapter_defined_stage_label():
     c = run.cells["AAPL@2025-01-01"]
     assert c.stage == "independent_verifier"
     assert c.last_reason == "checks ok"
+
+
+def test_fit_terminal_keeps_header_and_footer():
+    from fintel.cli.watch import _fit_terminal
+
+    lines = [f"line-{i}" for i in range(40)]
+    lines[0] = "fintel nerve"
+    lines[-1] = "press q (or Ctrl-C) to quit"
+    fitted = _fit_terminal(lines, rows=10, cols=80)
+    assert fitted[0] == "fintel nerve"
+    assert fitted[-1] == "press q (or Ctrl-C) to quit"
+    assert len(fitted) == 10
+    assert any("more" in l for l in fitted)
 
 
 def test_resolve_paths_handles_job_ids_and_run_log(tmp_path: Path):

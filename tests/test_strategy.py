@@ -162,6 +162,51 @@ def test_preflight_warns_on_missing_output_schema(tmp_path):
     assert any("output schema" in w for w in result.warnings)
 
 
+def test_preflight_warns_when_schema_omits_platform_hooks(tmp_path):
+    root = good_package(tmp_path)
+    import json
+
+    (root / "output_schema.json").write_text(
+        json.dumps(
+            {
+                "type": "object",
+                "properties": {
+                    "symbol": {"type": "string"},
+                    "rationale": {"type": "string"},
+                },
+                "required": ["symbol", "rationale"],
+            }
+        )
+    )
+    paths = load(root)
+    result = preflight(paths, env={})
+    assert result.ok, result.problems  # warning, not a stop
+    assert any("score" in w for w in result.warnings)
+
+
+def test_preflight_is_quiet_when_schema_declares_hooks(tmp_path):
+    root = good_package(tmp_path)
+    import json
+
+    (root / "output_schema.json").write_text(
+        json.dumps(
+            {
+                "type": "object",
+                "properties": {
+                    "symbol": {"type": "string"},
+                    "score": {"type": "number"},
+                    "rationale": {"type": "string"},
+                },
+                "required": ["symbol", "score", "rationale"],
+            }
+        )
+    )
+    paths = load(root)
+    result = preflight(paths, env={})
+    assert result.ok, result.problems
+    assert not any("platform hook" in w or "score" in w for w in result.warnings)
+
+
 def test_preflight_reports_unknown_schedule(tmp_path):
     manifest = GOOD_MANIFEST.replace('kind = "single_point"', 'kind = "no_such_schedule"')
     root = _write_package(tmp_path / "pkg", manifest=manifest)

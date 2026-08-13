@@ -26,6 +26,7 @@ from __future__ import annotations
 from typing import Any
 
 from fintel.environment.tools import ToolSpec, spec_for, tool_name
+from fintel.environment.submit_schema import for_agent_text
 from fintel.market import catalog
 from fintel.models.run import RunConfig
 
@@ -172,7 +173,7 @@ def _compose_instruction(
             "submit_views exactly once with your answer."
         )
     if output_schema_text and output_schema_text.strip():
-        parts.append(f"## Output schema (from the strategy pack)\n{output_schema_text.strip()}")
+        parts.append(f"## Output schema\n{for_agent_text(output_schema_text)}")
     return "\n\n".join(parts)
 
 

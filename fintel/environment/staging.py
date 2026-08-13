@@ -94,11 +94,21 @@ class StageTracker:
 
     def stalled(self, *, threshold_s: float, now: float | None = None) -> list[str]:
         """Cells not finished and silent longer than `threshold_s`. Each cell
-        is flagged once per stall (so the same stall isn't re-announced)."""
+        is flagged once per stall (so the same stall isn't re-announced).
+
+        A cell that has only seen ``cell_start`` (no staging event yet) is *not*
+        stalled — it is still in cold start (MCP attach, profile fork, etc.).
+        The subprocess timeout is the backstop for a cell that never starts;
+        flagging it as stalled here double-counts and misleads the operator
+        during high-concurrency stampedes.
+        """
         now = now if now is not None else time.monotonic()
         out: list[str] = []
         for cell, st in self._state.items():
             if st.done or cell in self._stalled_flagged:
+                continue
+            if st.stage == "started":
+                # Only ``cell_start`` seen — waiting to start, not stalled.
                 continue
             if (now - st.last_event_mono) >= threshold_s:
                 out.append(cell)

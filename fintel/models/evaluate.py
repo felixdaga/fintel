@@ -79,8 +79,10 @@ class ReportPayload(BaseModel):
     `runs/<job>/report/report.json` and rendered to `report.md`.
 
     The layers are the strategy-defined KPI (`kpi`), the always-on
-    stochasticity layers (`behaviour`, `variance`), and the opt-in holdings
-    (`holdings`, None when not requested). `meta` carries the run identity.
+    stochasticity layers (`behaviour`, `variance`), the opt-in holdings
+    (`holdings`, None when not requested), and the opt-in agent-on-agent
+    evaluation (`agent_eval`, None when the pack declares no `[eval]` section).
+    `meta` carries the run identity.
     """
 
     job_id: str
@@ -97,4 +99,5 @@ class ReportPayload(BaseModel):
     behaviour: dict = Field(default_factory=dict)
     variance: dict = Field(default_factory=dict)
     holdings: dict | None = None
+    agent_eval: dict | None = None
     meta: dict = Field(default_factory=dict)

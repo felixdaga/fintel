@@ -42,8 +42,16 @@ TRANSFORM_BUILTINS: dict[str, str] = {
 
 
 def single_name_signal(views: dict[Symbol, View]) -> dict[Symbol, float]:
-    """The view's score is THE signal. The default for single-name strategies."""
-    return {sym: float(v.score) for sym, v in views.items()}
+    """The view's score is THE signal. The default for single-name strategies.
+
+    A missing score (the pack omitted ``score`` from its output contract) maps
+    to NaN, not 0.0 — a missing reading is not a neutral one, and the
+    evaluation must see the gap.
+    """
+    return {
+        sym: float(v.score) if v.score is not None else float("nan")
+        for sym, v in views.items()
+    }
 
 
 def resolve_signal(name: str) -> SignalFn:

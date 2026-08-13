@@ -17,6 +17,7 @@ from __future__ import annotations
 import time
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 from fintel.agents import factory as agent_factory
 from fintel.agents.run import invoke
@@ -107,6 +108,7 @@ def run_cell(
     market_config: MarketConfig | None = None,
     progress: Progress | None = None,
     retries: int = 1,
+    cell_slots: Any | None = None,
 ) -> CellOutcome:
     """Execute one cell end to end. Never raises; a failure is a CellResult.
 
@@ -122,7 +124,48 @@ def run_cell(
     the final failure). Non-retryable outcomes (ok, refused, abstained, crashed,
     context_overflow) are recorded as-is — re-rolling them would manufacture a
     different answer or burn money reproducing a bug.
+
+    `cell_slots` is an optional job-wide semaphore (``shared_concurrency``):
+    acquire before work, release in ``finally``, so the same N slots roll
+    across dates and K repeats — same concurrency idea as cell/trial bounds.
     """
+    if cell_slots is not None:
+        cell_slots.acquire()
+    try:
+        return _run_cell_body(
+            cell=cell,
+            sources=sources,
+            universe=universe,
+            agent_spec=agent_spec,
+            runtime=runtime,
+            cell_path=cell_path,
+            mission_text=mission_text,
+            output_schema_text=output_schema_text,
+            company_names=company_names,
+            market_config=market_config,
+            progress=progress,
+            retries=retries,
+        )
+    finally:
+        if cell_slots is not None:
+            cell_slots.release()
+
+
+def _run_cell_body(
+    *,
+    cell: Cell,
+    sources: dict[str, DataSource],
+    universe: list[Symbol],
+    agent_spec: AgentSpec,
+    runtime: RuntimeConfig,
+    cell_path: Path,
+    mission_text: str = "",
+    output_schema_text: str = "",
+    company_names: dict[str, str] | None = None,
+    market_config: MarketConfig | None = None,
+    progress: Progress | None = None,
+    retries: int = 1,
+) -> CellOutcome:
     progress = progress or NullProgress()
     started = time.perf_counter()
     started_at = _now_iso()

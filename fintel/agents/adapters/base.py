@@ -42,7 +42,7 @@ from fintel.agents.pit_policy import PitEnforcement
 from fintel.environment import Environment
 from fintel.models.common import Outcome
 from fintel.models.decision import AgentResponse
-from fintel.models.trace import ReasoningTrace, TraceStep
+from fintel.models.trace import ReasoningTrace, TraceStep, Usage
 
 logger = logging.getLogger(__name__)
 
@@ -220,7 +220,7 @@ class SubprocessAgent:
                     result.stderr,
                 )
 
-            return self._collect(env, result, elapsed)
+            return self._collect(env, result, elapsed, catcher)
         finally:
             catcher.stop()
             # Always restore the operator's profile (stashed MCP servers, …),
@@ -297,9 +297,13 @@ class SubprocessAgent:
         assert env.session is not None
         bindings_path = env.session.path / BINDINGS_FILE
 
-        bindings = []
-        for kind, source in env.tools.bound.items():
-            bindings.append({"kind": kind, "source": source})
+        # Persist kind + source *and* the strategy-owned params baked into each
+        # live source (lookback_days, event_file, …). Without params the MCP
+        # rebuild falls back to catalog defaults and can fail to construct
+        # (e.g. geopol event_timeline missing event_file → tools never register).
+        from fintel.environment.bindings import extract_bindings
+
+        bindings = extract_bindings(env.tools.bound, env.access.sources)
         payload: dict[str, Any] = {
             "bindings": bindings,
             "kinds": list(env.kinds),
@@ -313,6 +317,13 @@ class SubprocessAgent:
                 "build_environment"
             )
         payload["config"] = env.market_config.to_dict(secrets=False)
+        # Pack output_schema.json (view-item shape) so the MCP server can build
+        # a pack-aware submit_views tool schema for any strategy — not prompt-only.
+        from fintel.environment.submit_schema import item_schema_from_text
+
+        item_schema = item_schema_from_text(self.output_schema_text)
+        if item_schema is not None:
+            payload["output_schema"] = item_schema
         bindings_path.write_text(json.dumps(payload, indent=2))
 
     def _mcp_server_cmd(self) -> list[str]:
@@ -395,7 +406,11 @@ class SubprocessAgent:
         return command, child_env
 
     def _collect(
-        self, env: Environment, result: subprocess.CompletedProcess, elapsed_ms: float
+        self,
+        env: Environment,
+        result: subprocess.CompletedProcess,
+        elapsed_ms: float,
+        catcher: Any = None,
     ) -> AgentResponse:
         assert env.session is not None
         result_path = env.session.result
@@ -409,12 +424,19 @@ class SubprocessAgent:
         )
         trace = ReasoningTrace(steps=[step], metadata={"agent": self.name})
 
+        # The catcher accumulated token/cost from the CLI's own transcript
+        # (the one place that sees the provider's per-turn usage for a black-box
+        # subprocess agent). Feed it into the response so the platform tracks
+        # real usage instead of a silent zeros/unknown.
+        usage = catcher.usage() if catcher is not None else Usage()
+
         if not result_path.is_file():
             return AgentResponse(
                 views={},
                 outcome="empty",
                 detail=f"{self.name} exited 0 but wrote no result.json",
                 trace=trace,
+                usage=usage,
             )
 
         payload = json.loads(result_path.read_text())
@@ -426,7 +448,11 @@ class SubprocessAgent:
         # Explicit abstain wins even if the model also stuffed a neutral score —
         # otherwise a "I couldn't get data" response reads as ok/0.0.
         if reason:
-            return AgentResponse(views={}, outcome="abstained", detail=reason, trace=trace)
+            return AgentResponse(
+                views={}, outcome="abstained", detail=reason, trace=trace, usage=usage
+            )
         outcome: Outcome = "ok" if views else "empty"
         detail = "; ".join(notes) if not views else ""
-        return AgentResponse(views=views, outcome=outcome, detail=detail, trace=trace)
+        return AgentResponse(
+            views=views, outcome=outcome, detail=detail, trace=trace, usage=usage
+        )

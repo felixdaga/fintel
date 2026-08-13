@@ -1,98 +1,41 @@
-"""How an agent hands back an answer. One schema, one parser.
+"""How an agent hands back an answer. One parser.
 
 The old repo coerced model output into `View` in three places — the MCP server,
 the HTTP agent, and each LangGraph desk — with different field names, different
 clamping and different silent drops. Two agents could therefore disagree because
 their parsers disagreed. This is the only parser.
 
-The schema gives the model an explicit way to decline. Without one, "no views"
-means both "I looked and had no opinion" and "something went wrong", which is the
-distinction the platform exists to keep.
+The ``submit_views`` **schema** + runtime validation live in
+``fintel.environment.submit_schema`` (environment layer) so the MCP server —
+the transport — can build the same pack-aware tool schema the agents
+advertise, without reaching up into agents (which would invert the layer
+ladder). This module re-exports the schema surface for back-compat with
+existing ``from fintel.agents import emit`` call sites, and owns the
+**parser** (``parse_views``) that turns a submit payload into ``View`` objects.
 """
 
 from __future__ import annotations
 
 from typing import Any
 
+from fintel.environment.submit_schema import (
+    SUBMIT_TOOL,
+    VIEW_PROPERTIES,
+    item_schema_from_text,
+    submit_description,
+    submit_schema,
+    validate_submit,
+)
 from fintel.models.common import Symbol
 from fintel.models.decision import SourceRef, View
 
-SUBMIT_TOOL = "submit_views"
-
-# Tool-facing view fields. Matches the strategy-pack output contract surface
-# (symbol / score / rationale / key_factors / sources_cited). Platform ``View``
-# may carry optional conviction / time_horizon, but emit never invents them.
-VIEW_PROPERTIES: dict[str, Any] = {
-    "symbol": {"type": "string", "description": "Ticker this view is about."},
-    "score": {
-        "type": "number",
-        "minimum": -1,
-        "maximum": 1,
-        "description": "Direction on [-1, +1]: -1 most negative, +1 most positive.",
-    },
-    "rationale": {"type": "string", "description": "Why, in a few sentences."},
-    "key_factors": {
-        "type": "array",
-        "items": {"type": "string"},
-        "description": "The specific drivers behind the score.",
-    },
-    "sources_cited": {
-        "type": "array",
-        "description": (
-            "The specific data points that moved this view. Each entry is an "
-            "object with source_type (the data kind, e.g. prices, fundamentals, "
-            "ratios, news, web_search, macro, news_sentiment), source_id (the "
-            "date or identifier of that point), and excerpt (the exact value or "
-            "short verbatim quote). A bare string is accepted for back-compat and "
-            "is treated as a source_type only."
-        ),
-        "items": {
-            "type": "object",
-            "properties": {
-                "source_type": {"type": "string"},
-                "source_id": {"type": "string"},
-                "excerpt": {"type": "string"},
-            },
-        },
-    },
-}
-
-
-def submit_schema(symbols: tuple[Symbol, ...]) -> dict:
-    listed = ", ".join(symbols) if symbols else "the assigned symbols"
-    return {
-        "type": "object",
-        "properties": {
-            "views": {
-                "type": "array",
-                "description": f"One entry per symbol you are deciding on: {listed}.",
-                "items": {
-                    "type": "object",
-                    "properties": VIEW_PROPERTIES,
-                    "required": ["symbol", "score", "rationale"],
-                },
-            },
-            "abstain": {
-                "type": "boolean",
-                "description": (
-                    "True if you are deliberately declining to take a position. "
-                    "Declining is a legitimate answer and is recorded as one — "
-                    "prefer it to inventing a score you do not believe."
-                ),
-            },
-            "abstain_reason": {"type": "string", "description": "Why you are declining."},
-        },
-        "required": ["views"],
-    }
-
-
-def submit_description(symbols: tuple[Symbol, ...]) -> str:
-    return (
-        "Submit your final answer. Call this exactly once, when you are done "
-        f"gathering evidence. You are deciding on: {', '.join(symbols) or 'the assigned symbols'}. "
-        "If you have no view, set abstain=true with a reason rather than "
-        "submitting a score you don't believe."
-    )
+# Platform View fields handled explicitly by parse_views. Anything else in
+# the raw payload is a pack-declared native field (e.g. geopol's threat_score /
+# action_score / action_level) — passed through so decision.json follows the
+# pack output_schema, not just the platform View keys.
+_PLATFORM_VIEW_KEYS = frozenset(
+    {"symbol", "score", "conviction", "time_horizon", "rationale", "key_factors", "sources_cited"}
+)
 
 
 def clamp(value: Any, low: float, high: float, default: float) -> tuple[float, bool]:
@@ -144,9 +87,16 @@ def parse_views(
             notes.append(f"{symbol} appeared twice; kept the first")
             continue
 
-        score, score_adjusted = clamp(raw.get("score"), -1.0, 1.0, 0.0)
-        if score_adjusted:
-            notes.append(f"{symbol}: score {raw.get('score')!r} coerced to {score}")
+        raw_score = raw.get("score")
+        if raw_score is None:
+            # Pack omitted `score` from its output contract — leave None so the
+            # signal layer surfaces NaN, not a silent 0.0 neutral reading.
+            score: float | None = None
+            score_adjusted = False
+        else:
+            score, score_adjusted = clamp(raw_score, -1.0, 1.0, 0.0)
+            if score_adjusted:
+                notes.append(f"{symbol}: score {raw_score!r} coerced to {score}")
 
         conviction: float | None = None
         if "conviction" in raw and raw.get("conviction") is not None:
@@ -168,8 +118,17 @@ def parse_views(
             rationale=str(raw.get("rationale") or ""),
             key_factors=[str(f) for f in raw.get("key_factors") or [] if str(f).strip()],
             sources_cited=_parse_sources(raw.get("sources_cited")),
+            **_pack_extras(raw),
         )
     return views, notes
+
+
+def _pack_extras(raw: dict) -> dict:
+    return {
+        k: v
+        for k, v in raw.items()
+        if k not in _PLATFORM_VIEW_KEYS and v is not None
+    }
 
 
 def _parse_sources(raw: Any) -> list[SourceRef]:
@@ -212,3 +171,16 @@ def abstained(payload: dict) -> str | None:
     if not payload.get("abstain"):
         return None
     return str(payload.get("abstain_reason") or "").strip() or "no reason given"
+
+
+__all__ = [
+    "SUBMIT_TOOL",
+    "VIEW_PROPERTIES",
+    "abstained",
+    "clamp",
+    "item_schema_from_text",
+    "parse_views",
+    "submit_description",
+    "submit_schema",
+    "validate_submit",
+]

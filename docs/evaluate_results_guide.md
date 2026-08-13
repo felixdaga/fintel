@@ -75,8 +75,9 @@ evaluation pipeline (architecture §12):
 
 `horizons = [1, 2, 4, 8]` are **steps on the decision-date grid**, not calendar
 weeks/months by themselves. On a weekly Friday grid, `h=1` ≈ one week; on a
-quarter-start grid, `h=1` ≈ one quarter. Forward returns use **open→open**
-prices from the cache (`market/realized.py`).
+monthly first-trading-day grid, `h=1` ≈ one month; on a quarter-start grid,
+`h=1` ≈ one quarter. Forward returns use **open→open** prices from the cache
+(`market/realized.py`).
 
 ### Holdings (MVP)
 

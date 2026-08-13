@@ -54,15 +54,18 @@ def build_parser() -> argparse.ArgumentParser:
         type=int,
         default=None,
         help=(
-            "Flat cell pool across dates (keep N cells in flight). "
-            "Replaces cell×trial fan-out; blocked when memory/feedback is on"
+            "Job-wide cell pool across dates and K repeats (keep N cells in "
+            "flight; slots roll to the next run/date/ticker as they free). "
+            "Same concurrency primitive as --cell-concurrency / "
+            "--trial-concurrency, flattened. Replaces cell×trial fan-out; "
+            "blocked when memory/feedback is on"
         ),
     )
     simulation.add_argument(
         "--max-concurrent",
         type=int,
-        default=1,
-        help="Concurrent K repeats (default 1)",
+        default=None,
+        help="Concurrent K repeats (default: auto = all K)",
     )
     simulation.add_argument(
         "--output-root",
@@ -183,13 +186,19 @@ def build_parser() -> argparse.ArgumentParser:
         "(lets you start the TUI before the simulation). Default 0 (no wait).",
     )
 
-    rep = sub.add_parser("report", help="Evaluate a finished job (KPI + stochasticity + holdings)")
+    rep = sub.add_parser("report", help="Evaluate a finished job (KPI + stochasticity + holdings + agent eval)")
     rep.add_argument("job_id", help="Job id under --output-root")
     rep.add_argument("--output-root", default="runs")
     rep.add_argument(
         "--cache-root",
         default=None,
         help="Price cache root (default: <output-root>/cache)",
+    )
+    rep.add_argument(
+        "--shared-concurrency",
+        type=int,
+        default=None,
+        help="Parallelism for agent-on-agent eval cells (default: sequential)",
     )
 
     cache = sub.add_parser("cache", help="Inspect the central data cache (read-only)")

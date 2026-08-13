@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import time
 from datetime import date as Date
+from typing import Any
 
 from fintel.environment.cell import Cell
 from fintel.environment.factory import RuntimeConfig, cells_for
@@ -105,6 +106,7 @@ def run_trial(
     company_names: dict[str, str] | None = None,
     market_config: MarketConfig | None = None,
     progress: Progress | None = None,
+    cell_slots: Any | None = None,
 ) -> TrialResult:
     """Fan out cells for one decision date, reduce, write the decision once."""
     progress = progress or NullProgress()
@@ -151,6 +153,7 @@ def run_trial(
                 company_names=company_names or {},
                 market_config=market_config,
                 progress=progress,
+                cell_slots=cell_slots,
             )
         except Exception:
             # `invoke` already classifies adapter failures; an exception here is

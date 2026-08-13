@@ -339,6 +339,23 @@ def test_subprocess_adapters_carry_mission_and_schema(name):
     assert agent.output_schema_text == "{}"
 
 
+def test_openclaw_accepts_company_names_so_pack_schema_is_not_dropped():
+    """OpenClaw ignores display names, but must accept the kwarg — otherwise
+    build_agent's TypeError fallback rebuilds without mission/output_schema."""
+    from fintel.models.agent import AgentSpec, ModelSpec
+    from fintel.simulate.cell import build_agent
+
+    agent = build_agent(
+        AgentSpec(name="openclaw", model=ModelSpec(), options={"profile": "delorean"}),
+        mission_text="score it",
+        output_schema_text='{"required":["symbol"]}',
+        company_names={"USA": "United States"},
+    )
+    assert agent.mission_text == "score it"
+    assert agent.output_schema_text == '{"required":["symbol"]}'
+    assert agent.company_names == {"USA": "United States"}
+
+
 @pytest.mark.parametrize("name", sorted(LLM_KEY_REQUIRED))
 def test_llm_adapters_satisfy_the_protocol_without_invoking(name):
     """Built, not invoked — real invocation needs a live OpenRouter key/network."""

@@ -10,9 +10,11 @@ compute their results.
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 from typing import Any
 
+from fintel.evaluate.agent_eval import evaluate as run_agent_eval
 from fintel.evaluate.behaviour import analyse as analyse_behaviour
 from fintel.evaluate.holdings import build as build_holdings
 from fintel.evaluate.kpi import compute as compute_kpi
@@ -23,7 +25,9 @@ from fintel.evaluate.variance import analyse as analyse_variance
 from fintel.market.realized import PriceLookup
 from fintel.models.evaluate import ReportPayload
 from fintel.models.paths import JobPaths
-from fintel.models.strategy import ScoringSpec
+from fintel.models.strategy import EvalSpec, ScoringSpec
+
+logger = logging.getLogger(__name__)
 
 
 def report(
@@ -32,12 +36,29 @@ def report(
     scoring: ScoringSpec,
     cache_root: str | Path | None = None,
     prices: PriceLookup | None = None,
+    eval_spec: EvalSpec | None = None,
+    strategy_root: Path | None = None,
+    shared_concurrency: int | None = None,
 ) -> ReportPayload:
     """Run the full evaluation over a finished job and return the payload.
 
     `prices` may be injected (for tests); by default it is built from the job's
     cache via `price_lookup_for`.
+
+    The pack's ``scoring.py`` is imported by module path (e.g.
+    ``geopol_trade_war_2018.scoring:geopol_signal``), which requires the pack's
+    parent directory on ``sys.path``. We insert ``strategy_root.parent`` here so
+    the signal/KPI resolution can import it — simulate never imports scoring
+    (KPI is computed here, at report time), so nothing else puts the packages
+    dir on the path.
     """
+    import sys
+
+    if strategy_root is not None:
+        parent = str(Path(strategy_root).parent)
+        if parent not in sys.path:
+            sys.path.insert(0, parent)
+
     runs = load_job(job_dir)
     signals = build_signals(runs, signal=scoring.signal, transform=scoring.transform)
     if prices is None:
@@ -53,6 +74,21 @@ def report(
     behaviour = analyse_behaviour(runs)
     variance = analyse_variance(signals.per_run)
     holdings = build_holdings(signals, prices, params=scoring.params)
+
+    # Agent-on-agent evaluation (opt-in via [eval] in strategy.toml).
+    agent_eval_result: dict | None = None
+    if eval_spec is not None and strategy_root is not None:
+        try:
+            agent_eval_result = run_agent_eval(
+                job_dir,
+                eval_spec=eval_spec,
+                strategy_root=strategy_root,
+                cache_root=cache_root,
+                shared_concurrency=shared_concurrency,
+            )
+        except Exception:
+            logger.warning("agent_eval failed", exc_info=True)
+            agent_eval_result = {"available": False, "summary": {"note": "eval raised"}}
 
     job_id = job_dir.name
     # strategy name + k_repeats from the first run's config
@@ -85,6 +121,7 @@ def report(
         behaviour=behaviour,
         variance=variance,
         holdings=holdings,
+        agent_eval=agent_eval_result,
         meta={"n_runs": len(runs)},
     )
 
@@ -195,7 +232,48 @@ def render_markdown(p: ReportPayload) -> str:
                 f"ensemble NAV: gross {gross[-1].get('nav', 1.0)}  net {net[-1].get('nav', 1.0)}"
             )
     lines.append("")
+
+    # Agent-on-agent evaluation (opt-in)
+    ae = p.agent_eval
+    if ae is not None:
+        lines.append("## Agent-on-agent evaluation")
+        if ae.get("available"):
+            s = ae.get("summary", {})
+            lines.append(
+                f"cells rated: {s.get('n_rated', 0)}  failed: {s.get('n_failed', 0)}  "
+                f"run: {s.get('rating_run', '?')}  agent: {s.get('rating_agent', '?')}  "
+                f"elapsed: {s.get('elapsed_ms', 0)}ms"
+            )
+            per_cell = ae.get("per_cell", {})
+            if per_cell:
+                lines.append("")
+                lines.append(
+                    "| date | cell | loyalty | bias | aggression | rec_rating | bias_flags |"
+                )
+                lines.append("|---|---|---|---|---|---|---|")
+                for key, rating in sorted(per_cell.items()):
+                    date_str, cell_name = key.split("|", 1)
+                    loyalty = _fmt_score(rating.get("loyalty_score"))
+                    bias = _fmt_score(rating.get("bias_score"))
+                    aggression = _fmt_score(rating.get("aggression_score"))
+                    rec = rating.get("recommendation_rating", "—")
+                    flags = rating.get("bias_flags", [])
+                    flags_str = ", ".join(flags) if flags else "—"
+                    lines.append(
+                        f"| {date_str} | {cell_name} | {loyalty} | {bias} | {aggression} | {rec} | {flags_str} |"
+                    )
+        else:
+            lines.append(f"_{ae.get('summary', {}).get('note', 'n/a')}_")
+    lines.append("")
     return "\n".join(lines)
+
+
+def _fmt_score(x: Any) -> str:
+    if x is None:
+        return "—"
+    if isinstance(x, (int, float)):
+        return f"{x:+.1f}" if x != 0 else " 0.0"
+    return str(x)
 
 
 def _fmt(x: Any) -> str:

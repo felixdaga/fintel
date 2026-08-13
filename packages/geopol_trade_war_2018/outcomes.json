@@ -1,0 +1,144 @@
+{
+  "description": "Truth file for the US-China trade war 2018-2019 geopol eval. Records what each party actually did at each decision date's forward horizon. Used by geopol_kpi for outcome alignment scoring.",
+  "parties": ["USA", "CHN"],
+  "action_levels": [
+    "escalate_tariffs",
+    "escalate_non_tariff",
+    "retaliate",
+    "negotiate",
+    "hold",
+    "partial_rollback",
+    "concede_purchases",
+    "full_rollback"
+  ],
+  "outcomes": {
+    "2018-03-01": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.6, "rationale": "Section 232 steel/aluminum announced March 1; Section 301 memo March 22"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.4, "rationale": "Section 232 retaliation effective April 2 (~$3B)"}
+    },
+    "2018-03-22": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.6, "rationale": "Section 301 memo signed; $50B list coming"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.4, "rationale": "$3B Section 232 retaliation April 2; $50B Section 301 list April 4"}
+    },
+    "2018-04-12": {
+      "USA": {"actual_action": "escalate_non_tariff", "actual_action_score": -0.5, "rationale": "ZTE denial order April 16"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.5, "rationale": "Proposed $50B retaliation April 4"}
+    },
+    "2018-05-03": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.1, "rationale": "Joint statement May 19; truce"},
+      "CHN": {"actual_action": "negotiate", "actual_action_score": 0.1, "rationale": "Agreed to increase purchases May 19"}
+    },
+    "2018-05-24": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.5, "rationale": "Truce collapsed May 29; tariffs proceeding"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.4, "rationale": "Prepared mirror retaliation"}
+    },
+    "2018-06-14": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.7, "rationale": "$50B tariff list announced June 15"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.5, "rationale": "Mirror $50B retaliation announced June 15"}
+    },
+    "2018-07-05": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.8, "rationale": "First $34B live July 6; $200B threatened July 10"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.6, "rationale": "$34B retaliation live July 6"}
+    },
+    "2018-07-26": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.7, "rationale": "Raised $200B rate from 10% to 25% Aug 1"},
+      "CHN": {"actual_action": "hold", "actual_action_score": 0.0, "rationale": "No immediate new retaliation; waited"}
+    },
+    "2018-08-16": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.7, "rationale": "Second $16B live Aug 23; $200B coming Sept"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.5, "rationale": "Matching $16B retaliation Aug 23"}
+    },
+    "2018-09-06": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.8, "rationale": "$200B at 10% announced Sept 18; effective Sept 24"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.5, "rationale": "$60B retaliation announced Sept 18"}
+    },
+    "2018-09-27": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.7, "rationale": "$200B live Sept 24; talks resumed but no breakthrough"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.5, "rationale": "$60B retaliation live Sept 24"}
+    },
+    "2018-10-18": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.1, "rationale": "Trump told Xi he wants a deal Nov 1; G20 truce coming"},
+      "CHN": {"actual_action": "negotiate", "actual_action_score": 0.1, "rationale": "Engaged for G20 preparation"}
+    },
+    "2018-11-08": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "G20 Buenos Aires truce Nov 30; 90-day pause"},
+      "CHN": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "G20 truce; agreed to increase purchases"}
+    },
+    "2018-11-29": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "G20 Buenos Aires truce Dec 1; Meng arrest same day"},
+      "CHN": {"actual_action": "escalate_non_tariff", "actual_action_score": -0.4, "rationale": "Meng arrested Dec 1; Kovrig/Spavor detained Dec 10"}
+    },
+    "2018-12-20": {
+      "USA": {"actual_action": "escalate_non_tariff", "actual_action_score": -0.5, "rationale": "Meng provisional arrest Dec 1; formal DOJ charges/extradition request Jan 28"},
+      "CHN": {"actual_action": "escalate_non_tariff", "actual_action_score": -0.4, "rationale": "Kovrig and Spavor detained Dec 10; diplomatic pressure"}
+    },
+    "2019-01-10": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.1, "rationale": "Talks resumed Jan 7; progress on purchases"},
+      "CHN": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "Offered to purchase more US goods"}
+    },
+    "2019-01-31": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.1, "rationale": "DOJ charges Jan 28; high-level talks Jan 30; structural issues unresolved"},
+      "CHN": {"actual_action": "negotiate", "actual_action_score": 0.1, "rationale": "Engaged but firm on structural reform limits"}
+    },
+    "2019-02-21": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "Feb talks; Trump delays hike Feb 24 citing progress"},
+      "CHN": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "Progress reported on purchases; enforcement open"}
+    },
+    "2019-03-14": {
+      "USA": {"actual_action": "hold", "actual_action_score": 0.0, "rationale": "March 1 deadline passed without hike (delayed Feb 24)"},
+      "CHN": {"actual_action": "hold", "actual_action_score": 0.0, "rationale": "No new retaliation; truce holding"}
+    },
+    "2019-04-04": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "April Washington talks; progress on text reported, no final deal"},
+      "CHN": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "Enforcement text progress reported; near deal but unsigned"}
+    },
+    "2019-04-25": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.7, "rationale": "Trump May 5 tweets talks too slow / renegotiation; List 3 to 25% on May 10"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.4, "rationale": "Announces higher retaliatory rates May 13"}
+    },
+    "2019-05-16": {
+      "USA": {"actual_action": "escalate_non_tariff", "actual_action_score": -0.8, "rationale": "EO 13873 May 15; Huawei Entity List May 16"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.5, "rationale": "Xi rare-earth visit May 20; unreliable entity list announced May 31"}
+    },
+    "2019-06-06": {
+      "USA": {"actual_action": "escalate_non_tariff", "actual_action_score": -0.6, "rationale": "Huawei Entity List in effect; G20 Osaka approaching"},
+      "CHN": {"actual_action": "hold", "actual_action_score": 0.0, "rationale": "Unreliable entity list announced; rare-earth signal; G20 prep"}
+    },
+    "2019-06-27": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "G20 Osaka truce June 29; backed off Huawei"},
+      "CHN": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "G20 truce; talks resume"}
+    },
+    "2019-07-18": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.0, "rationale": "Shanghai talks July 30; no progress"},
+      "CHN": {"actual_action": "negotiate", "actual_action_score": 0.0, "rationale": "Shanghai talks; no breakthrough"}
+    },
+    "2019-08-08": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.8, "rationale": "$300B tariffs tweeted Aug 1; currency manipulator Aug 5"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.5, "rationale": "$75B retaliation Aug 23; autos re-tariffed"}
+    },
+    "2019-08-29": {
+      "USA": {"actual_action": "escalate_tariffs", "actual_action_score": -0.6, "rationale": "List 4A at 15% live Sept 1; List 4B delayed to Dec 15"},
+      "CHN": {"actual_action": "retaliate", "actual_action_score": -0.5, "rationale": "First tranche of ~$75B retaliation live Sept 1"}
+    },
+    "2019-09-19": {
+      "USA": {"actual_action": "hold", "actual_action_score": 0.0, "rationale": "No new escalation; phase one talks emerging"},
+      "CHN": {"actual_action": "partial_rollback", "actual_action_score": 0.3, "rationale": "Sept 11 industrial exemptions; Sept 13 soy/pork exemption signal"}
+    },
+    "2019-10-10": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.3, "rationale": "Phase one deal announced Oct 11; tariff pause"},
+      "CHN": {"actual_action": "concede_purchases", "actual_action_score": 0.5, "rationale": "Agreed to $40-50B agricultural purchases"}
+    },
+    "2019-10-31": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.3, "rationale": "Phase one progress; tariff rollback discussed"},
+      "CHN": {"actual_action": "negotiate", "actual_action_score": 0.3, "rationale": "Purchase commitments progressing"}
+    },
+    "2019-11-21": {
+      "USA": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "Talks progress; tariff rollback schedule disputed"},
+      "CHN": {"actual_action": "negotiate", "actual_action_score": 0.2, "rationale": "Engaged; disagreement on rollback timing"}
+    },
+    "2019-12-12": {
+      "USA": {"actual_action": "hold", "actual_action_score": 0.1, "rationale": "Phase one text agreed Dec 13; tariffs kept, no new escalation"},
+      "CHN": {"actual_action": "concede_purchases", "actual_action_score": 0.6, "rationale": "Committed to $200B additional purchases over 2 years"}
+    }
+  }
+}

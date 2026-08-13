@@ -138,8 +138,21 @@ def _apply(run: _Run, ev: dict, now: float) -> None:
     cell = ev.get("cell", "?")
     date = ev.get("decision_date", "")
     if name in ("run_start", "backfill_start"):
+        # A new start after a prior *_done (e.g. second backfill appending to
+        # the same backfill.log) must reopen the dashboard — otherwise alt
+        # mode "jumps out" as soon as the historical done event is drained.
+        run.done = False
         run.status = "running"
         run.started_mono = now
+        if name == "backfill_start":
+            # Fresh wave: drop cells from an earlier backfill in this log.
+            run.cells.clear()
+            run.n_cells_done = 0
+            run.n_llm_calls = 0
+            run.tokens_in = 0
+            run.tokens_out = 0
+            run.cost_usd = None
+            run.cost_basis = "unknown"
     elif name in ("run_done", "backfill_done"):
         run.done = True
         run.status = ev.get("status", "done") or "done"
@@ -421,6 +434,31 @@ def _render(runs: list[_Run], now: float, preflight: _Preflight | None = None) -
     return _HOME + _CLEAR_SCREEN + body + "\n" + "\033[J"
 
 
+def _fit_terminal(lines: list[str], *, rows: int, cols: int) -> list[str]:
+    """Clamp a frame to the terminal so the header never scrolls off-screen.
+
+    Long cell grids (shared-concurrency 60+) exceed typical TTY height; without
+    this, alt-screen writes scroll and the ``fintel nerve`` title disappears.
+    Width-truncate first (wrap inflates height), then keep the top of the frame
+    plus the quit footer, with a single overflow marker for omitted rows.
+    """
+    width = max(20, cols - 1)
+    lines = [_truncate_ansi(l, width) for l in lines]
+    if rows <= 0 or len(lines) <= rows:
+        return lines
+    if rows == 1:
+        return lines[:1]
+    footer = lines[-1]
+    head = lines[:-1]
+    budget = rows - 1  # leave one row for the footer
+    if len(head) <= budget:
+        return head + [footer]
+    keep = max(1, budget - 1)
+    omitted = len(head) - keep
+    marker = _c("d", f"   … +{omitted} more (taller terminal shows more)")
+    return head[:keep] + [marker] + [footer]
+
+
 def _auto_mode() -> str:
     """Pick a render mode from the environment.
 
@@ -469,25 +507,25 @@ def watch_run_logs(
                 _drain(run)
             if job_log is not None:
                 _drain_preflight(preflight, job_log, pf_offset)
-            # Stream mode collapses done cells so the frame height stays roughly
-            # stable (active pool only). Alt mode has room for the full grid.
+            # Always collapse finished cells — with shared-concurrency 60 the
+            # active pool alone can fill a terminal; showing done rows pushes
+            # the header off-screen in alt mode.
+            size = shutil.get_terminal_size((80, 24))
             lines = _render_lines(
                 runs,
                 time.monotonic(),
                 preflight=preflight,
-                collapse_done=use_stream or not use_alt,
+                collapse_done=True,
             )
+            lines = _fit_terminal(lines, rows=size.lines, cols=size.columns)
             if use_alt:
                 body = "\n".join(l + _CLEAR_LINE for l in lines) + "\n"
                 sys.stdout.write(_HOME + _CLEAR_SCREEN + body + "\033[J")
             elif use_stream:
                 # Rewrite in place: CUU by the *previous content line count*
                 # (not +1 — the trailing newline already parks the cursor one
-                # row below the frame). Truncate to terminal width so wrapped
-                # lines can't desync the cursor. Pad shorter frames so leftover
-                # rows from a taller previous frame are blanked.
-                cols = shutil.get_terminal_size((80, 24)).columns
-                lines = [_truncate_ansi(l, max(20, cols - 1)) for l in lines]
+                # row below the frame). Pad shorter frames so leftover rows
+                # from a taller previous frame are blanked.
                 while len(lines) < prev_lines:
                     lines.append("")
                 body = "\n".join(l + _CLEAR_LINE for l in lines)

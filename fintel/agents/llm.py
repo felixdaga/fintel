@@ -202,7 +202,7 @@ def parse_completion(payload: dict, *, model: str) -> Completion:
 class OpenRouter:
     """Chat completions over HTTP. Retries only what retrying can fix."""
 
-    model: str = "anthropic/claude-sonnet-4"
+    model: str = "xiaomi/mimo-v2.5-pro"
     api_key: str | None = None
     temperature: float = 0.0
     timeout_s: float = 180.0

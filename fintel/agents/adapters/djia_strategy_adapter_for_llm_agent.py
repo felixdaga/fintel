@@ -34,6 +34,7 @@ from fintel.agents.evidence import (
 from fintel.agents.llm import OpenRouter, as_tool_spec
 from fintel.agents.pit_policy import PitEnforcement
 from fintel.environment import Environment
+from fintel.environment.submit_schema import for_agent_text
 from fintel.models.common import Outcome
 from fintel.models.decision import AgentResponse, View
 from fintel.models.trace import ReasoningTrace, TraceStep, Usage
@@ -178,10 +179,11 @@ class DjiaStrategyAdapterForLlmAgent:
             )
             qual = builder.qualitative_block()
 
+            item_schema = emit.item_schema_from_text(self.output_schema_text)
             submit = as_tool_spec(
                 emit.SUBMIT_TOOL,
                 emit.submit_description((sym,)),
-                emit.submit_schema((sym,)),
+                emit.submit_schema((sym,), item_schema=item_schema),
             )
             messages = [
                 {"role": "system", "content": self._system_prompt()},
@@ -312,7 +314,7 @@ class DjiaStrategyAdapterForLlmAgent:
     def _schema_block(self) -> str:
         if not self.output_schema_text.strip():
             return ""
-        return f"\n\n## Output schema (from the strategy pack)\n{self.output_schema_text.strip()}"
+        return f"\n\n## Output schema\n{for_agent_text(self.output_schema_text)}"
 
     def _user_prompt(
         self,

@@ -60,7 +60,13 @@ class OpenClawAgent(SubprocessAgent):
     timeout_s: float = 600.0
     massive_api_key: str = ""
     brave_api_key: str = ""
+    fred_api_key: str = ""
     repo_root: str = ""
+    # Accepted so build_agent can pass pack company_names.json without a
+    # TypeError fallback that would drop mission_text / output_schema_text.
+    # OpenClaw does not use display names in-process (the model sees symbols
+    # via the instruction); stored for parity with llm/optimized adapters.
+    company_names: dict[str, str] = field(default_factory=dict)
     _session_id: str = field(default="", init=False, repr=False)
     _mcp_stash: dict[str, Any] = field(default_factory=dict, init=False, repr=False)
     # Per-cell profile isolation. The operator's profile (e.g. "delorean") is
@@ -81,6 +87,8 @@ class OpenClawAgent(SubprocessAgent):
             self.massive_api_key = os.environ.get("MASSIVE_API_KEY", "")
         if not self.brave_api_key:
             self.brave_api_key = os.environ.get("BRAVE_API_KEY", "")
+        if not self.fred_api_key:
+            self.fred_api_key = os.environ.get("FRED_API_KEY", "")
         port = self._read_gateway_port()
         if port:
             self.extra_env = {**self.extra_env, "OPENCLAW_GATEWAY_PORT": str(port)}
@@ -144,6 +152,8 @@ class OpenClawAgent(SubprocessAgent):
             server_env["MASSIVE_API_KEY"] = self.massive_api_key
         if self.brave_api_key:
             server_env["BRAVE_API_KEY"] = self.brave_api_key
+        if self.fred_api_key:
+            server_env["FRED_API_KEY"] = self.fred_api_key
         fintel_entry = {
             "command": mcp_server_cmd[0],
             "args": mcp_server_cmd[1:],

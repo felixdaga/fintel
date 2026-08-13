@@ -11,6 +11,7 @@ from __future__ import annotations
 import inspect
 from datetime import date as Date
 from datetime import datetime
+from pathlib import Path
 from typing import Any
 
 from fintel.market import catalog
@@ -215,6 +216,44 @@ def alphavantage_news(*, config: MarketConfig, **params: Any) -> AlphaVantageNew
     key = None if config.offline else config.alphavantage_api_key
     keep = {k: v for k, v in params.items() if k in {"lookback_days", "limit"}}
     return AlphaVantageNews(api_key=key or "", **keep)
+
+
+def event_timeline(*, config: MarketConfig, **params: Any) -> EventTimelineDS:
+    """Curated event chronology. Reads a file path from the strategy binding."""
+    from fintel.market.data.event_timeline import EventTimeline as EventTimelineDS
+
+    keep = {k: v for k, v in params.items() if k in {"lookback_days", "event_file"}}
+    # Resolve relative paths against the fintel project root so MCP subprocesses
+    # (cwd = repo root) and operator shells started elsewhere both find the file.
+    raw = keep.get("event_file")
+    if isinstance(raw, str) and raw and not Path(raw).is_absolute():
+        project_root = Path(__file__).resolve().parents[2]
+        candidate = project_root / raw
+        if candidate.is_file():
+            keep["event_file"] = str(candidate)
+        else:
+            # Also accept a path relative to CWD (smoke tests / alternate layouts).
+            cwd_candidate = Path.cwd() / raw
+            if cwd_candidate.is_file():
+                keep["event_file"] = str(cwd_candidate.resolve())
+    return EventTimelineDS(**keep)
+
+
+def country_health(*, config: MarketConfig, **params: Any) -> CountryHealthDS:
+    """Curated FRED bundle for both parties. Delegates to FredMacro for fetch+cache."""
+    from fintel.market.data.country_health import CountryHealth as CountryHealthDS
+
+    key = None if config.offline else config.fred_api_key
+    keep = {
+        k: v
+        for k, v in params.items()
+        if k in {"lookback_days", "country_overrides_file"}
+    }
+    return CountryHealthDS(
+        cache=RecordCache(root=config.cache_root, kind="macro"),
+        api_key=key or None,
+        **keep,
+    )
 
 
 def build_data_source(

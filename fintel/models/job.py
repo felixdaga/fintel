@@ -31,14 +31,16 @@ class JobConfig(BaseModel):
         because a date's session carries the prior date's portfolio + memory.
         The memory guard in `run_run` forces this to 1 when memory is on, so a
         misconfigured job can't race on shared state.
-      · `shared_concurrency` — flat pool across *all* (date, ticker) cells in a
-        run. Keeps N cells in flight and rolls to the next date as slots free.
-        When set, it replaces the nested cell × trial fan-out. Blocked when
-        memory or feedback couples dates (independent cells only).
+      · `shared_concurrency` — same primitive as cell/trial concurrency, flattened
+        across dates *and* K repeats: keep N cells in flight job-wide, rolling
+        to the next (run, date, ticker) as a slot frees. When set, it replaces
+        the nested cell × trial fan-out inside each run and is the job's cell
+        slot budget (not multiplied by `max_concurrent`). Blocked when memory
+        or feedback couples dates (independent cells only).
 
     Peak in-flight sessions without shared = resolved `max_concurrent` ×
-    resolved `cell_concurrency` (e.g. 3 × 10 = 30). With shared =
-    `max_concurrent` × `shared_concurrency`.
+    resolved `cell_concurrency` (e.g. 3 × 10 = 30). With shared = the shared
+    pool size itself (slots reused across K and dates).
     """
 
     model_config = ConfigDict(extra="forbid")
@@ -68,7 +70,12 @@ class JobConfig(BaseModel):
     data: list[DataBinding] | None = None
 
     def resolve_run_concurrency(self) -> int:
-        """K repeats in flight. Auto = all of them."""
+        """K repeats in flight. Auto = all of them.
+
+        When `shared_concurrency` is set, auto also means all K: the shared
+        pool is job-wide, so runs must be allowed to overlap for slots to roll
+        across repeats the same way they roll across dates.
+        """
         return self.max_concurrent if self.max_concurrent is not None else self.k_repeats
 
     def resolve_cell_concurrency(self, universe_size: int) -> int:
@@ -83,10 +90,13 @@ class JobConfig(BaseModel):
     def peak_concurrent(self) -> int:
         """An upper bound on simultaneous sessions, for capacity planning. The
         real peak depends on per-date universe size, which isn't known until
-        runtime, so this uses K for the cell side when auto."""
-        run_n = self.resolve_run_concurrency()
+        runtime, so this uses K for the cell side when auto.
+
+        Shared pool is job-wide — peak is the pool size, not K × pool.
+        """
         if self.shared_concurrency is not None:
-            return run_n * self.shared_concurrency
+            return self.shared_concurrency
+        run_n = self.resolve_run_concurrency()
         cell_n = self.cell_concurrency if self.cell_concurrency is not None else self.k_repeats
         return run_n * max(1, cell_n)
 

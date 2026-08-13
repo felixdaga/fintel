@@ -25,6 +25,7 @@ from pathlib import Path
 from typing import Any
 
 from fintel.environment.progress import Progress
+from fintel.models.trace import Usage
 
 logger = logging.getLogger(__name__)
 
@@ -71,6 +72,16 @@ class _TranscriptCatcher:
         self._consecutive_errors = 0
         self.fail_fast_triggered = False
         self._round = 0
+        # Usage rollup accumulated from each assistant turn's `message.usage`.
+        # OpenClaw writes real token counts per turn (input/cacheRead/output) and
+        # a `cost` block the provider surfaced (often $0 / not surfaced). The
+        # adapter's job is to feed these into the platform's nerve + AgentResponse
+        # so a run's cost is tracked, not silently zeroed.
+        self._tok_in = 0
+        self._tok_out = 0
+        self._n_llm_calls = 0
+        self._cost_usd: float | None = None
+        self._cost_reported = False
 
     def start(self) -> None:
         if self.transcript_path is None:
@@ -113,7 +124,12 @@ class _TranscriptCatcher:
             return
 
         # Wait for the file to appear (the CLI creates it on first turn).
-        deadline = time.monotonic() + 30.0
+        # Under high concurrency (shared_concurrency), MCP attach alone can
+        # take minutes — a 30s wait bails before the transcript ever lands,
+        # and the cell looks silent to the nerve (false "stalled"). Wait the
+        # full cell lifetime instead; the subprocess timeout is the real
+        # backstop for a cell that never starts.
+        deadline = time.monotonic() + 600.0
         while not path.is_file():
             if self._stop.is_set() or time.monotonic() > deadline:
                 return
@@ -126,6 +142,51 @@ class _TranscriptCatcher:
                     time.sleep(0.1)
                     continue
                 self._process_line(line.strip())
+
+    def _accumulate_usage(self, raw: Any) -> None:
+        """Fold one assistant turn's `message.usage` into the running rollup.
+
+        OpenClaw's usage shape:
+            {input, output, cacheRead, cacheWrite, totalTokens,
+             cost: {input, output, cacheRead, cacheWrite, total}}
+
+        `input` is cache-miss input; `cacheRead`/`cacheWrite` are the cached
+        input sides. All three are input tokens, so they roll into `tokens_in`.
+        `cost.total` is the provider-surfaced charge — often 0 (not surfaced),
+        in which case `cost_usd` stays None and `basis` stays "unknown" rather
+        than stamping a misleading $0.
+        """
+        if not isinstance(raw, dict):
+            return
+        self._n_llm_calls += 1
+        self._tok_in += int(raw.get("input", 0) or 0) + int(raw.get("cacheRead", 0) or 0)
+        self._tok_out += int(raw.get("output", 0) or 0)
+        cost = raw.get("cost") or {}
+        total = cost.get("total") if isinstance(cost, dict) else None
+        if isinstance(total, (int, float)) and total > 0:
+            self._cost_usd = (self._cost_usd or 0.0) + float(total)
+            self._cost_reported = True
+        if self.nerve is not None:
+            self.nerve.emit(
+                "agent_usage",
+                cell=self.cell,
+                decision_date=self.decision_date,
+                tokens_in=self._tok_in,
+                tokens_out=self._tok_out,
+                n_llm_calls=self._n_llm_calls,
+                cost_usd=self._cost_usd,
+            )
+
+    def usage(self) -> Usage:
+        """The accumulated token/cost rollup for this cell, as a `Usage`."""
+        return Usage(
+            n_llm_calls=self._n_llm_calls,
+            tokens_in=self._tok_in,
+            tokens_out=self._tok_out,
+            reasoning_tokens=0,
+            cost_usd=self._cost_usd,
+            basis="reported" if self._cost_reported else "unknown",
+        )
 
     def _process_line(self, line: str) -> None:
         if not line:
@@ -141,6 +202,7 @@ class _TranscriptCatcher:
 
         if role == "assistant":
             self._round += 1
+            self._accumulate_usage(msg.get("usage"))
             for c in msg.get("content") or []:
                 ctype = c.get("type")
                 if ctype == "toolCall":

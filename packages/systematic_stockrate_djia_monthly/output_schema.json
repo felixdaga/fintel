@@ -82,5 +82,5 @@
   ],
   "title": "View",
   "type": "object",
-  "$comment": "Strategy-package output contract. conviction / time_horizon / SourceRef.relevance omitted — unused by this strategy's signal and not worth PM tokens. Platform View still fills conviction/time_horizon defaults on parse if absent."
+  "$comment": "Strategy-package output contract. conviction / time_horizon / SourceRef.relevance omitted — unused by this strategy's signal and not worth PM tokens. Emit persists only fields the agent submits; it does not invent defaults for omitted keys."
 }

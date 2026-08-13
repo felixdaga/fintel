@@ -95,6 +95,7 @@ def run_simulation(args: Namespace) -> int:
             offline=True,
             massive_api_key=market.massive_api_key,
             brave_api_key=market.brave_api_key,
+            fred_api_key=market.fred_api_key,
         )
     if args.no_prefetch:
         job = job.model_copy(update={"prefetch": False})

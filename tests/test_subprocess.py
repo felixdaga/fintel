@@ -166,15 +166,56 @@ def test_market_config_roundtrips_through_bindings_without_secrets(tmp_path, mon
         offline=False,
         massive_api_key="secret-massive",
         brave_api_key="secret-brave",
+        fred_api_key="secret-fred",
     )
     dumped = cfg.to_dict(secrets=False)
     assert "massive_api_key" not in dumped
+    assert "fred_api_key" not in dumped
     monkeypatch.setenv("MASSIVE_API_KEY", "from-env")
     monkeypatch.setenv("BRAVE_API_KEY", "from-env-brave")
+    monkeypatch.setenv("FRED_API_KEY", "from-env-fred")
     restored = MarketConfig.from_dict(dumped)
     assert restored.cache_root == tmp_path / "cache"
     assert restored.massive_api_key == "from-env"
     assert restored.brave_api_key == "from-env-brave"
+    assert restored.fred_api_key == "from-env-fred"
+
+
+def test_bindings_persist_source_params_for_mcp_rebuild(tmp_path):
+    """Strategy-owned params (e.g. event_file) must land in bindings.json so
+    the MCP subprocess can rebuild the same sources — not catalog defaults."""
+    from tests import fixtures
+
+    fixtures.register_all()
+    event_file = tmp_path / "timeline.md"
+    event_file.write_text(
+        "| entry_date | event_date | actors | headline | summary |\n"
+        "| --- | --- | --- | --- | --- |\n"
+        "| 2018-03-01 | 2018-03-01 | USA | Test | Test event |\n"
+    )
+    bindings = [
+        DataBinding(
+            kind="event_timeline",
+            source="event_timeline",
+            event_file=str(event_file),
+            lookback_days=90,
+        )
+    ]
+    market_config = MarketConfig(cache_root=tmp_path / "cache", offline=True)
+    sources = build_data_sources(bindings, config=market_config)
+    env = build_environment(
+        cell=Cell(run_id="test-r1", decision_date=DAY, symbols=("USA",)),
+        sources=sources,
+        universe=["USA"],
+        kinds=("event_timeline",),
+        runtime=RuntimeConfig(session_root=tmp_path / "sessions"),
+        market_config=market_config,
+    )
+    agents.invoke(_Script(binary=fake_cli(tmp_path, "exit 0"), timeout_s=10), env)
+    payload = json.loads((env.session.path / "bindings.json").read_text())
+    et = next(b for b in payload["bindings"] if b["kind"] == "event_timeline")
+    assert et["event_file"] == str(event_file.resolve()) or et["event_file"] == str(event_file)
+    assert et["lookback_days"] == 90
 
 
 def test_market_config_from_dict_requires_cache_root():
@@ -328,14 +369,16 @@ def test_compose_instruction_carries_mission_tools_and_schema(tmp_path):
     agent = _Script(
         binary="unused",
         mission_text="Be a value analyst.",
-        output_schema_text='{"score": "..."}',
+        output_schema_text='{"score": "...", "$comment": "internal note for humans"}',
     )
     instruction = agent._compose_instruction(env)
     assert "Be a value analyst." in instruction
     assert "## Tools" in instruction
     assert "get_prices" in instruction  # rendered from the bound catalog source
     assert "## Output schema" in instruction
-    assert '{"score": "..."}' in instruction
+    assert '"score"' in instruction
+    assert "$comment" not in instruction  # pack-author notes never reach the agent
+    assert "strategy pack" not in instruction  # no internal-platform naming leaks
 
 
 def test_compose_instruction_defaults_to_no_mission_or_schema(tmp_path):

@@ -11,6 +11,7 @@ losing nine because one crashed defeats that.
 from __future__ import annotations
 
 import logging
+import threading
 import time
 from datetime import date as Date
 from pathlib import Path
@@ -110,6 +111,21 @@ def run_job(
             company_names = json.loads(paths.company_names.read_text())
         except (json.JSONDecodeError, ValueError):
             logger.warning("company_names.json is not valid JSON; ignored")
+
+    # Strategy-pack-controlled ablation knobs (``[ablation]`` in strategy.toml).
+    # The platform only carries the values; the participating agent adapter
+    # decides what to do with them. Injected into the agent's options so they
+    # flow through the existing ``spec.options`` path to ``build_agent`` — but
+    # only for agents that understand them (the ``llm`` agent reads
+    # ``search_query``; ``openclaw`` does not, so injecting would TypeError).
+    ablation = manifest.ablation
+    effective_agent = job_config.agent
+    if ablation and ablation.search_query and job_config.agent.name == "llm":
+        opts = dict(job_config.agent.options)
+        opts.setdefault("search_query", ablation.search_query)
+        if ablation.search_lookback_days:
+            opts.setdefault("search_lookback_days", ablation.search_lookback_days)
+        effective_agent = job_config.agent.model_copy(update={"options": opts})
 
     # Lock the *package* identity (not the effective config).
     from fintel.market import catalog
@@ -270,6 +286,16 @@ def run_job(
         digest=strategy_lock.strategy_digest,
     )
 
+    # Job-wide cell slot pool. Same idea as cell/trial concurrency bounds —
+    # `map_parallel(..., bound=N)` — but one semaphore shared by every cell
+    # across dates *and* K repeats so `--shared-concurrency 60 --k 3` keeps
+    # 60 cells in flight total, rolling slots onto the next run as they free.
+    cell_slots = (
+        threading.BoundedSemaphore(job_config.shared_concurrency)
+        if job_config.shared_concurrency is not None
+        else None
+    )
+
     def _run_one_repeat(k: int) -> JobResult | None:
         try:
             run_config = RunConfig(
@@ -279,7 +305,7 @@ def run_job(
                 k_repeats=job_config.k_repeats,
                 created_at=_now_iso(),
                 strategy=strategy_ref,
-                agent=job_config.agent,
+                agent=effective_agent,
                 scope=manifest.decision.scope,
                 universe=effective["universe"],
                 universe_symbols=universe_snapshot,
@@ -287,6 +313,7 @@ def run_job(
                 schedule_dates=schedule_dates,
                 data=effective["data"],
                 scoring=manifest.scoring,
+                eval=manifest.eval,
             )
             return run_run(
                 run_config=run_config,
@@ -303,6 +330,7 @@ def run_job(
                 strategy_description=manifest.description,
                 progress=run_progress,
                 quiet=quiet,
+                cell_slots=cell_slots,
             )
         except Exception as exc:
             # A run that can't start is a failed run, recorded but not fatal.

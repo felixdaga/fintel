@@ -394,6 +394,26 @@ AV_NEWS_FIELDS: tuple[Field, ...] = (
     ),
 )
 
+# ── geopol event timeline (curated, PIT-clamped on entry date) ────────────────
+EVENT_TIMELINE_FIELDS: tuple[Field, ...] = (
+    Field("as_of", "date", "Decision date"),
+    Field("lookback_days", "number", "Calendar days of timeline served", "count"),
+    Field("n_entries_total", "number", "Total entries in the curated file", "count"),
+    Field("n_entries_visible", "number", "Entries within the PIT window", "count"),
+    Field("entries", "list", "[{entry_date, body}] oldest→newest, PIT < decision_date"),
+)
+
+# ── country health (curated FRED bundle, symmetric across parties) ───────────
+COUNTRY_HEALTH_FIELDS: tuple[Field, ...] = (
+    Field("as_of", "date", "Decision date"),
+    Field("lookback_days", "number", "Calendar days of macro history served", "count"),
+    Field(
+        "countries",
+        "list",
+        "[{country, series_id, title, units, observations, latest_date, latest_value, change, change_pct}]",
+    ),
+)
+
 
 def _ratio_fields() -> tuple[Field, ...]:
     from fintel.market.data.ratios import RATIO_FIELDS
@@ -570,8 +590,10 @@ def register_builtins() -> None:
             requires_env=("BRAVE_API_KEY",),
             subject="query",
             description=(
-                "Freshness-windowed search. PIT: provider window ends "
-                "decision_date-1, then optional post-clamp on Brave age dates."
+                "Freshness-windowed web search. Requires `query` (search text). "
+                "Use to dig deeper on a specific development, actor, market move, "
+                "or claim after reading primary evidence. PIT: provider window "
+                "ends decision_date-1, then optional post-clamp on Brave age dates."
             ),
         ),
         replace=True,
@@ -613,8 +635,8 @@ def register_builtins() -> None:
             subject="none",
             description=(
                 "FRED macro time series (rates, yields, inflation, labour, growth). "
-                "True dated observations, PIT-clamped on observation date — safe for "
-                "historical backtests. Omit `indicator` for the curated default bundle."
+                "True dated observations, PIT-clamped on observation date. "
+                "Omit `indicator` for the default bundle."
             ),
         ),
         replace=True,
@@ -636,6 +658,70 @@ def register_builtins() -> None:
                 "Alpha Vantage News & Sentiment: per-ticker articles with per-article "
                 "sentiment score and per-ticker relevance. Honours historical windows, "
                 "so PIT-safe for backtests."
+            ),
+        ),
+        replace=True,
+    )
+
+    # ── geopol event timeline (curated, PIT-clamped, one-off DB) ──────────────
+    register_source(
+        SourceInfo(
+            name="event_timeline",
+            kind="event_timeline",
+            provider="computed",
+            target="fintel.market.factory:event_timeline",
+            fields=EVENT_TIMELINE_FIELDS,
+            params=(
+                Param("lookback_days", "number", 365, "Calendar days of timeline to serve"),
+                Param(
+                    "event_file",
+                    "text",
+                    "event.md",
+                    "Path to the curated event chronology file (strategy-owned)",
+                    per_call=False,
+                ),
+            ),
+            subject="none",
+            description=(
+                "Chronology of the geopolitical dispute. Call this FIRST "
+                "to ground the decision date in what has already happened. No "
+                "symbol/party argument — the timeline is shared. Returns dated "
+                "entries (entry_date, body) strictly before the decision date. "
+                "Read every visible entry before scoring threat or choosing an action."
+            ),
+        ),
+        replace=True,
+    )
+    # ── country health (curated FRED bundle, symmetric across parties) ───────
+    register_source(
+        SourceInfo(
+            name="country_health",
+            kind="country_health",
+            provider="fred",
+            target="fintel.market.factory:country_health",
+            fields=COUNTRY_HEALTH_FIELDS,
+            params=(
+                Param("lookback_days", "number", 180, "Calendar days of macro history to serve"),
+                Param(
+                    "country_overrides_file",
+                    "text",
+                    None,
+                    "Optional JSON with extra non-FRED indicators (strategy-owned)",
+                    per_call=False,
+                ),
+            ),
+            requires_env=("FRED_API_KEY",),
+            subject="none",
+            description=(
+                "Macroeconomic health for BOTH parties in the dispute (symmetric "
+                "access — every cell sees USA and CHN). No symbol/party argument. "
+                "Call after the event timeline to check whether the dispute is "
+                "already biting the real economy. USA block: rates, dollar, "
+                "sentiment, IP, CPI, credit, oil, vol, plus bilateral trade "
+                "(IMPCH/EXPCH/BOPGTB) and CNY/USD. CHN block: industrial "
+                "production, CPI, discount rate, reserves, merchandise trade, "
+                "CNY/USD. Returns countries.{USA,CHN} series with latest_value, "
+                "change, and observations."
             ),
         ),
         replace=True,

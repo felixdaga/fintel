@@ -15,6 +15,7 @@ worst.
 
 from __future__ import annotations
 
+from fintel.environment.submit_schema import for_agent_text
 from fintel.environment.tools import ToolSpec
 
 
@@ -68,7 +69,7 @@ def compose_instruction(
             f"{submit_tool} exactly once with your answer."
         )
     if output_schema and output_schema.strip():
-        parts.append(f"## Output schema (from the strategy pack)\n{output_schema.strip()}")
+        parts.append(f"## Output schema\n{for_agent_text(output_schema)}")
     return "\n\n".join(parts)
 
 

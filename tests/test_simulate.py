@@ -685,6 +685,90 @@ def test_shared_concurrency_rolls_across_dates(tmp_path):
     assert counter["saw_cross_date"], "expected cells from two dates in flight together"
 
 
+def test_shared_concurrency_pool_rolls_across_k_repeats(tmp_path):
+    """Job-wide shared pool: K parallel runs reuse the same N cell slots.
+
+    With shared=3, k=2, max_concurrent=2 and 2 tickers × 2 dates, peak in-flight
+    cells across both runs must stay ≤ 3 (not 3×2).
+    """
+    import threading
+    import time
+    from dataclasses import dataclass
+
+    from fintel.models.decision import AgentResponse, View
+    from fintel.models.market import ScheduleRef
+
+    package = _write_package(tmp_path / "pkg", symbols=["A", "B"])
+    (package / "strategy.toml").write_text(
+        textwrap.dedent(
+            """
+            name = "test_pkg"
+            description = "test"
+
+            [universe]
+            symbols = ["A", "B"]
+
+            [decision]
+            scope = "single_name"
+            schedule = { kind = "custom_dates", dates = ["2024-01-02", "2024-01-03"] }
+
+            [[data]]
+            kind = "prices"
+            source = "synthetic_prices"
+
+            [scoring]
+            kpi = "icir"
+            horizons = [1]
+            """
+        ).lstrip()
+    )
+
+    counter = {"in_flight": 0, "peak": 0}
+    lock = threading.Lock()
+
+    @dataclass
+    class CountingAgent:
+        score: float = 0.5
+        name: str = "counting"
+        version: str = "1"
+        pit_enforcement: str = "access"
+
+        def decide(self, env) -> AgentResponse:
+            with lock:
+                counter["in_flight"] += 1
+                counter["peak"] = max(counter["peak"], counter["in_flight"])
+            time.sleep(0.08)
+            with lock:
+                counter["in_flight"] -= 1
+            views = {
+                s: View(symbol=s, score=self.score, rationale="counting")
+                for s in sorted(env.policy.decidable)
+            }
+            return AgentResponse(views=views)
+
+    import sys
+
+    mod = "__test_shared_k__"
+    sys.modules[mod] = type(sys)(mod)
+    sys.modules[mod].CountingAgent = CountingAgent  # type: ignore[attr-defined]
+
+    job = _job_config(package, agent_name=f"{mod}:CountingAgent")
+    job.__dict__["output_root"] = str(tmp_path / "runs")
+    job.__dict__["k_repeats"] = 2
+    job.__dict__["max_concurrent"] = 2
+    job.__dict__["shared_concurrency"] = 3
+    job.__dict__["schedule"] = ScheduleRef(
+        kind="custom_dates", dates=["2024-01-02", "2024-01-03"]
+    )
+
+    from fintel.market.settings import MarketConfig
+
+    result = run_job(job, market_config=MarketConfig(cache_root=tmp_path / "cache", offline=True))
+    assert result.status == "ok"
+    assert counter["peak"] <= 3, f"peak={counter['peak']} exceeded job-wide shared=3"
+    assert counter["peak"] == 3, f"expected the shared pool to fill (peak={counter['peak']})"
+
+
 def test_job_config_peak_concurrent_with_shared():
     from fintel.models.job import JobConfig
 
@@ -692,7 +776,8 @@ def test_job_config_peak_concurrent_with_shared():
     cfg.__dict__["k_repeats"] = 2
     cfg.__dict__["max_concurrent"] = 2
     cfg.__dict__["shared_concurrency"] = 30
-    assert cfg.peak_concurrent == 60
+    # Shared pool is job-wide — not multiplied by K / max_concurrent.
+    assert cfg.peak_concurrent == 30
 
 
 def test_cells_run_concurrently_with_auto(tmp_path):

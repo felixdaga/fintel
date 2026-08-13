@@ -62,6 +62,10 @@ class MarketConfig:
                 data["massive_api_key"] = self.massive_api_key
             if self.brave_api_key:
                 data["brave_api_key"] = self.brave_api_key
+            if self.fred_api_key:
+                data["fred_api_key"] = self.fred_api_key
+            if self.alphavantage_api_key:
+                data["alphavantage_api_key"] = self.alphavantage_api_key
         return data
 
     @classmethod
@@ -79,6 +83,10 @@ class MarketConfig:
             offline=bool(data.get("offline", False)),
             massive_api_key=data.get("massive_api_key") or os.environ.get(ENV_MASSIVE_KEY) or None,
             brave_api_key=data.get("brave_api_key") or os.environ.get(ENV_BRAVE_KEY) or None,
+            fred_api_key=data.get("fred_api_key") or os.environ.get(ENV_FRED_KEY) or None,
+            alphavantage_api_key=(
+                data.get("alphavantage_api_key") or os.environ.get(ENV_AV_KEY) or None
+            ),
         )
 
     def dir(self, *parts: str) -> Path:

@@ -7,7 +7,7 @@ from pydantic import BaseModel, ConfigDict, Field
 from fintel.models.agent import AgentSpec
 from fintel.models.common import DecisionScope, HealthStatus, Status, Symbol
 from fintel.models.market import DataBinding, ScheduleRef, UniverseRef
-from fintel.models.strategy import ScoringSpec
+from fintel.models.strategy import EvalSpec, ScoringSpec
 from fintel.models.trace import Usage
 from fintel.models.trial import TrialResult
 
@@ -46,6 +46,7 @@ class RunConfig(BaseModel):
     schedule_dates: list[str]
     data: list[DataBinding]
     scoring: ScoringSpec
+    eval: EvalSpec | None = None
     # Agent/model/prompt/data-kinds digest. Filled by run_run before trials;
     # empty when a RunConfig is only being assembled upstream.
     fingerprint: dict = Field(default_factory=dict)

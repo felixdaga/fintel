@@ -1,12 +1,15 @@
 # systematic_stockrate_djia_monthly — DJIA single-ticker systematic stock rating,
-# coarser assessment cadence than weekly, fundamental attractiveness + trajectory.
+# monthly assessment cadence, fundamental attractiveness + trajectory view.
 #
-# Sibling of systematic_stockrate_djia_weekly. Same single-ticker pattern,
-# mission pillars, data surface, and output contract — intentional differences
-# are date / horizon only:
-#   * the decision grid is quarter-starts (custom_dates) over 2022-07-01 .. 2026-04-01
-#   * scoring horizons are decision-date-grid steps: [1, 2, 3, 4]
-#   * mission pillar-3 language is quarter-to-year (weekly uses weeks-to-quarter)
+# Sibling of systematic_stockrate_djia_weekly. Same single-ticker
+# pattern, mission pillars, data surface, and output contract — intentional
+# differences are date / horizon only:
+#   * the decision grid is monthly (first trading day of each month,
+#     holiday-snapped forward) over 2022-07-01 .. 2026-08-03 — the cadence of
+#     assessment, not the view horizon
+#   * scoring horizons are decision-date-grid steps (months): [1, 2, 4, 8]
+#   * mission pillar-3 language is months-to-quarter (weekly package uses
+#     weeks-to-quarter)
 #
 # Data surface partitioning (adapter owns):
 #   quantitative specialist ← prices + fundamentals + ratios + macro + news_sentiment
@@ -14,21 +17,28 @@
 
 schema_version = 1
 name = "systematic_stockrate_djia_monthly"
-description = "Score each DJIA-30 constituent independently on a quarter-start grid (2022-07-01 to 2026-04-01), scored via pooled single-name IR."
+description = "Score each DJIA-30 constituent independently, monthly (2022-07-01 to 2026-08-03), scored via pooled single-name IR."
 
 [universe]
 preset = "dow30"
 
 [decision]
 scope = "single_name"
-# Quarterly first-trading-day grid over 2022-07-01 .. 2026-04-01. Expressed as
-# custom_dates so the frozen list is the source of truth (matches the legacy
-# window); `--start/--end` may narrow but not widen them.
-schedule = { kind = "custom_dates", start = "2022-07-01", end = "2026-04-01", dates = [
-    "2022-07-01", "2022-10-01", "2023-01-01", "2023-04-01",
-    "2023-07-01", "2023-10-01", "2024-01-01", "2024-04-01",
-    "2024-07-01", "2024-10-01", "2025-01-01", "2025-04-01",
-    "2025-07-01", "2025-10-01", "2026-01-01", "2026-04-01",
+# Monthly first-trading-day grid over 2022-07-01 .. 2026-08-03, snapped forward
+# to the next trading day when the 1st is an NYSE holiday / weekend
+# (e.g. 2023-01-01 → 2023-01-03; 2026-08-01 → 2026-08-03). There is no builtin
+# `monthly` schedule kind, so the grid is expressed as custom_dates; the dates
+# are the source of truth — `--start/--end` may narrow but not widen them.
+schedule = { kind = "custom_dates", start = "2022-07-01", end = "2026-08-03", dates = [
+    "2022-07-01", "2022-08-01", "2022-09-01", "2022-10-03", "2022-11-01", "2022-12-01",
+    "2023-01-03", "2023-02-01", "2023-03-01", "2023-04-03", "2023-05-01", "2023-06-01",
+    "2023-07-03", "2023-08-01", "2023-09-01", "2023-10-02", "2023-11-01", "2023-12-01",
+    "2024-01-02", "2024-02-01", "2024-03-01", "2024-04-01", "2024-05-01", "2024-06-03",
+    "2024-07-01", "2024-08-01", "2024-09-03", "2024-10-01", "2024-11-01", "2024-12-02",
+    "2025-01-02", "2025-02-03", "2025-03-03", "2025-04-01", "2025-05-01", "2025-06-02",
+    "2025-07-01", "2025-08-01", "2025-09-02", "2025-10-01", "2025-11-03", "2025-12-01",
+    "2026-01-02", "2026-02-02", "2026-03-02", "2026-04-01", "2026-05-01", "2026-06-01",
+    "2026-07-01", "2026-08-03",
 ] }
 
 # ── quantitative lane ───────────────────────────────────────────────────────
@@ -66,9 +76,10 @@ lookback_days = 90
 
 # ── qualitative lane ────────────────────────────────────────────────────────
 [[data]]
-# Recent news context — 14d. Supporting context for the fundamental picture,
-# not a momentum driver. Adapter renders every article in the window; the
-# context-budget ceiling handles high-coverage names.
+# Recent news context only — 14d. The mission de-emphasizes momentum, so this
+# is supporting context (qualify/sharpen the fundamental picture), not a driver.
+# Adapter renders every article in the window; the context-budget ceiling handles
+# high-coverage names (NVDA).
 kind = "news"
 source = "massive_news"
 lookback_days = 14
@@ -76,12 +87,16 @@ lookback_days = 14
 [[data]]
 # Web search, two-tier (adapter owns the plan): structural queries (business
 # model, competitive position, risk, strategy) over 30d, plus an updates
-# query over the last 7d. Binding lookback sets the structural tier.
+# query over the last 7d. Replaces the 10-K filing text with fresher, deeper
+# structured context (guidance tables, segment breakdowns). Overlaps with
+# `news` (14d) by design. The binding lookback sets the structural tier.
 kind = "web_search"
 source = "web_search"
 lookback_days = 30
 max_results = 5
 # Platform default is true; spelled here so packages see the PIT knob.
+# Brave freshness is soft — clamp_by_age drops results whose sources[url].age
+# falls outside the search window (undated kept).
 clamp_by_age = true
 
 [scoring]
@@ -96,8 +111,10 @@ signal = "single_name"
 kpi = "single_name_ir"
 metric_key = "icir"
 transform = "single_name"
-# Horizons are decision-date-grid steps (quarters on this quarterly grid):
-# [1, 2, 3, 4]. These are the measurable forward returns the KPI scores —
-# they do NOT represent the agent's view horizon (a fundamental trajectory).
-horizons = [1, 2, 3, 4]
+# Horizons are decision-date-grid steps (months on this monthly grid): [1, 2, 4, 8].
+# These are the measurable forward returns the KPI scores — they do NOT represent
+# the agent's view horizon (a fundamental trajectory plays out over quarters).
+# The agent's fundamental view is the signal; it is scored on whatever forward
+# grid exists. 8 months needs i+8 < 50 → 42 dated.
+horizons = [1, 2, 4, 8]
 params = { holdings = true, active_budget = 0.5, cost_bps = 5.0 }

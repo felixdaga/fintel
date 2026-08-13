@@ -10,7 +10,7 @@ from datetime import date as Date
 import pandas as pd
 
 from fintel.market.data import coverage as cov
-from fintel.market.data.base import DataError
+from fintel.market.data.base import DataError, EntitlementError
 from fintel.market.data.store import PriceStore
 
 logger = logging.getLogger(__name__)
@@ -31,6 +31,12 @@ def ensure_prices(
     """Return bars covering ``[need_from, through]``, filling gaps when online.
 
     Empty network spans are recorded so a quiet symbol is not re-fetched forever.
+
+    ``EntitlementError`` on a gap (plan doesn't cover that window) is treated
+    like an empty fetch: the span is recorded so we stop retrying it, and any
+    already-cached bars are still returned. Without this, a single unentitled
+    early gap (e.g. delisted WBA before the plan's history floor) aborts the
+    whole read even when later bars are already on disk.
     """
     if through < need_from:
         return store.read(symbol)
@@ -54,7 +60,20 @@ def ensure_prices(
         )
         return cached
     for lo, hi in gaps:
-        fresh = fetch_bars(lo, hi)
+        try:
+            fresh = fetch_bars(lo, hi)
+        except EntitlementError as exc:
+            logger.warning(
+                "%s: %s entitlement blocked [%s, %s] — recording empty span, "
+                "serving cached bars if any (%s)",
+                source_name,
+                symbol,
+                lo,
+                hi,
+                exc,
+            )
+            store.record_empty_span(symbol, (lo, hi))
+            continue
         if fresh is not None and not fresh.empty:
             store.merge(symbol, fresh, (lo, hi))
         else:

@@ -196,12 +196,64 @@ A good mission tells the agent:
 
 ## 4. `output_schema.json` — the View contract
 
-JSON Schema for each submitted `View`. The evaluation layer needs at minimum
-`symbol` + `score` in `[-1, 1]`. Extra fields are for audit / pitfall mining.
+JSON Schema for each submitted `View`. It is the **submit contract**: the MCP
+`submit_views` tool schema is built from this file, the agent sees it in its
+instruction, and `parse_views` validates + persists against it.
 
-The demo's schema requires `symbol`, `score`, `rationale`, and optionally
-accepts `key_factors` (array of strings) and `sources_cited` (array of
-`SourceRef` objects pointing at the datum that influenced the view):
+### Platform hooks (required)
+
+Every pack's `output_schema.json` **must** declare these two fields in
+`required`:
+
+- **`symbol`** (`string`) — the cell's assigned subject (ticker, party code,
+  …). The agent echoes it; the platform uses it to route the view to the cell.
+- **`score`** (`number`, `[-1, 1]`) — the platform signal hook.
+  `single_name_signal` reads this as THE signal for cross-sectional /
+  stochasticity evaluation. If a pack's semantics don't map onto `[-1, 1]`,
+  still include `score` (e.g. set it to the threat reading) and teach
+  `scoring.py` to read the native field if you'd rather the signal come from
+  elsewhere.
+
+If a pack omits `score`, the view persists with `score: null` and the signal
+surfaces **NaN** — not a silent `0.0` neutral reading — so the gap is visible
+in evaluation. If a pack omits `symbol`, the view is dropped (the platform
+cannot route it).
+
+### Pack-native fields (optional, persisted verbatim)
+
+Any other field declared in `properties` is a pack-native field. The platform
+`View` model is open (`extra="allow"`), so pack-native keys (e.g. geopol's
+`threat_score`, `action_score`, `action_level`) are persisted on
+`decision.json` exactly as the agent submitted them — not renamed to platform
+aliases. A pack that prefers its own vocabulary can declare native keys
+alongside the two platform hooks:
+
+```json
+{
+  "properties": {
+    "symbol": { "type": "string" },
+    "score": { "type": "number", "minimum": -1.0, "maximum": 1.0,
+              "description": "Threat score on [-1, +1] …" },
+    "threat_score": { "type": "number", "minimum": -1.0, "maximum": 1.0 },
+    "action_score": { "type": "number", "minimum": -1.0, "maximum": 1.0 },
+    "action_level": { "type": "string" },
+    "rationale": { "type": "string" }
+  },
+  "required": ["symbol", "score", "rationale"]
+}
+```
+
+### Optional platform fields
+
+`conviction` (`[0, 1]`), `time_horizon` (string), `key_factors` (string
+array), `sources_cited` (`SourceRef` array) are platform fields a pack may
+declare if its signal/audit uses them. They are persisted when the agent
+provides them; emit never invents defaults for omitted fields.
+
+### The demo's schema
+
+The demo requires `symbol`, `score`, `rationale`, and optionally accepts
+`key_factors` and `sources_cited`:
 
 ```json
 {
@@ -355,6 +407,7 @@ fintel simulation packages/systematic_stockrate_djia_weekly \
 - [ ] `strategy.toml` name unique; schedule dates intentional
 - [ ] Every `[[data]]` source resolves (catalog or `module:Callable`)
 - [ ] Computed-kind upstreams bound explicitly
+- [ ] `output_schema.json` declares `symbol` + `score` in `required` (platform hooks)
 - [ ] `mission.md` + `output_schema.json` agree with the agent
 - [ ] Required env vars documented / present in `.env/keys.env`
 - [ ] Custom sources clamp on `cutoff.decision_date`

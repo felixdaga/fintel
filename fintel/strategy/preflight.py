@@ -65,6 +65,8 @@ def preflight(paths: StrategyPaths, *, env: dict[str, str] | None = None) -> Pre
         problems.append(f"mission file {paths.mission.name!r} not found in package root")
     if not paths.output_schema.is_file():
         warnings.append(f"output schema {paths.output_schema.name!r} not found; schema-less run")
+    else:
+        warnings.extend(_check_output_schema(paths.output_schema))
 
     # 3. Universe ref — resolvable by name shape, not by fetching.
     problems.extend(_check_universe(manifest))
@@ -125,3 +127,51 @@ def _check_kpi(manifest: StrategyManifest) -> list[str]:
     if not kpi or not kpi.strip():
         return ["scoring.kpi is empty"]
     return []
+
+
+def _check_output_schema(schema_path: Path) -> list[str]:
+    """Warn (not block) when the pack output schema omits a platform hook.
+
+    `symbol` + `score` are the only required platform hooks: the cell router
+    needs `symbol`, and `single_name_signal` reads `score`. A pack that omits
+    `score` gets NaN in the signal (not a silent 0.0), but that's almost never
+    what a new pack author intends — so surface it at preflight.
+
+    Handles both schema shapes a pack may ship: item-shaped (describes one
+    view; wrapped by the platform into ``views.items``) and submit-shaped
+    (already has ``properties.views``).
+    """
+    import json
+
+    warnings: list[str] = []
+    try:
+        schema = json.loads(schema_path.read_text())
+    except (json.JSONDecodeError, OSError) as exc:
+        return [f"output schema {schema_path.name!r} is not valid JSON: {exc}"]
+    if not isinstance(schema, dict):
+        return [f"output schema {schema_path.name!r} is not a JSON object"]
+
+    props = schema.get("properties")
+    if isinstance(props, dict) and isinstance(props.get("views"), dict):
+        # submit-shaped: required hooks live on views.items
+        items = props["views"].get("items")
+        required = items.get("required") if isinstance(items, dict) else None
+    else:
+        # item-shaped: required hooks live at the top level
+        required = schema.get("required")
+
+    if not isinstance(required, list):
+        return [
+            f"output schema {schema_path.name!r} does not declare a 'required' "
+            "array on the view item; expected at least ['symbol', 'score']"
+        ]
+    missing = [k for k in ("symbol", "score") if k not in required]
+    if missing:
+        warnings.append(
+            f"output schema {schema_path.name!r} does not declare "
+            f"{missing} in the view item's 'required'; these are the platform "
+            "signal hooks (symbol routes the view; score feeds "
+            "single_name_signal). A pack that omits score gets NaN in the "
+            "signal, not 0.0."
+        )
+    return warnings

@@ -9,7 +9,7 @@ import pandas as pd
 import pytest
 
 from fintel.market.cache import ensure_prices, ensure_query_blob, ensure_records
-from fintel.market.data.base import DataError
+from fintel.market.data.base import DataError, EntitlementError
 from fintel.market.data.store import PriceStore, RecordCache
 
 
@@ -133,6 +133,54 @@ def test_ensure_prices_records_empty_span(tmp_path: Path):
         source_name="test",
     )
     assert calls == 0
+
+
+def test_ensure_prices_entitlement_serves_cached_bars(tmp_path: Path):
+    """Unentitled early gap must not abort a read when later bars are cached."""
+    store = PriceStore(root=tmp_path)
+    cached = pd.DataFrame(
+        {
+            "date": [Date(2024, 2, 1), Date(2024, 2, 2)],
+            "open": [10.0, 11.0],
+            "high": [10.5, 11.5],
+            "low": [9.5, 10.5],
+            "close": [10.2, 11.1],
+            "volume": [100.0, 110.0],
+        }
+    )
+    store.write("WBA", cached, [(Date(2024, 2, 1), Date(2024, 2, 2))])
+    calls: list[tuple[Date, Date]] = []
+
+    def fetch_bars(lo: Date, hi: Date) -> pd.DataFrame | None:
+        calls.append((lo, hi))
+        raise EntitlementError(f"plan blocked [{lo}, {hi}]")
+
+    out = ensure_prices(
+        store,
+        "WBA",
+        Date(2024, 1, 1),
+        Date(2024, 2, 2),
+        fetch_bars=fetch_bars,
+        online=True,
+        source_name="test",
+    )
+    assert out is not None
+    assert list(out["date"]) == [Date(2024, 2, 1), Date(2024, 2, 2)]
+    assert calls == [(Date(2024, 1, 1), Date(2024, 1, 31))]
+    # Gap recorded → no second fetch.
+    calls.clear()
+    out2 = ensure_prices(
+        store,
+        "WBA",
+        Date(2024, 1, 1),
+        Date(2024, 2, 2),
+        fetch_bars=fetch_bars,
+        online=True,
+        source_name="test",
+    )
+    assert calls == []
+    assert out2 is not None
+    assert len(out2) == 2
 
 
 def test_ensure_query_blob_roundtrip(tmp_path: Path):

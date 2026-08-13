@@ -109,6 +109,7 @@ def test_nerve_emits_run_grid_and_agent_stalled_from_staging_events(tmp_path: Pa
     nerve.emit("agent_stage", cell="AAPL", stage="reasoning", round=1)
     nerve.emit("agent_tool_call", cell="AAPL", tool="get_prices")
     nerve.emit("cell_start", cell="MSFT")
+    nerve.emit("agent_stage", cell="MSFT", stage="reasoning", round=1)
     # MSFT goes silent; force its last-event time into the past.
     nerve.tracker._state["MSFT"].last_event_mono -= 100.0
     # Any later staging event triggers a stall sweep.

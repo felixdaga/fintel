@@ -206,12 +206,13 @@ class OptimizedFintelAgent:
             quant_kinds = tuple(k for k in QUANT_KINDS if k in bound)
             qual_kinds = tuple(k for k in QUAL_KINDS if k in bound)
 
+            item_schema = emit.item_schema_from_text(self.output_schema_text)
             submit_tool = {
                 "type": "function",
                 "function": {
                     "name": emit.SUBMIT_TOOL,
                     "description": emit.submit_description((sym,)),
-                    "parameters": emit.submit_schema((sym,)),
+                    "parameters": emit.submit_schema((sym,), item_schema=item_schema),
                 },
             }
 

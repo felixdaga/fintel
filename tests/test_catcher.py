@@ -155,3 +155,99 @@ def test_catcher_handles_missing_transcript(tmp_path: Path) -> None:
     catcher.stop()
     catcher.finalize(tmp_path)
     assert catcher.tool_errors == []
+
+
+def test_catcher_accumulates_usage_from_assistant_turns(tmp_path: Path) -> None:
+    """The catcher feeds per-turn token/cost from the CLI transcript into the
+    platform usage rollup — the adapter's job, not the platform's. A black-box
+    subprocess agent's usage only exists in its own transcript; without this the
+    cell result stays zeros/`unknown`."""
+    transcript = tmp_path / "fintel-usage.jsonl"
+    _write_transcript(
+        transcript,
+        [
+            {
+                "timestamp": "t1",
+                "message": {
+                    "role": "assistant",
+                    "content": [{"type": "text", "text": "thinking"}],
+                    "usage": {
+                        "input": 6882,
+                        "output": 80,
+                        "cacheRead": 8192,
+                        "cacheWrite": 0,
+                        "totalTokens": 15154,
+                        "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0, "total": 0},
+                    },
+                },
+            },
+            {
+                "timestamp": "t2",
+                "message": {
+                    "role": "assistant",
+                    "content": [{"type": "text", "text": "more"}],
+                    "usage": {
+                        "input": 35383,
+                        "output": 4049,
+                        "cacheRead": 100288,
+                        "cacheWrite": 0,
+                        "totalTokens": 139720,
+                        "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0, "total": 0},
+                    },
+                },
+            },
+        ],
+    )
+
+    log = _FakeLog()
+    catcher = _TranscriptCatcher(transcript_path=transcript, access_log=log, fail_fast_errors=3)
+    catcher.start()
+    _wait_for(lambda: catcher._n_llm_calls >= 2, timeout=2.0)
+    catcher.stop()
+
+    usage = catcher.usage()
+    assert usage.n_llm_calls == 2
+    # input + cacheRead + cacheWrite rolled into tokens_in for each turn
+    assert usage.tokens_in == (6882 + 8192) + (35383 + 100288)
+    assert usage.tokens_out == 80 + 4049
+    # cost.total was 0 (not surfaced) — stays None / unknown, not a misleading 0
+    assert usage.cost_usd is None
+    assert usage.basis == "unknown"
+
+
+def test_catcher_records_reported_cost_when_provider_surfaces_it(tmp_path: Path) -> None:
+    """When the provider surfaces a real charge (>0), it is reported, not estimated."""
+    transcript = tmp_path / "fintel-paid.jsonl"
+    _write_transcript(
+        transcript,
+        [
+            {
+                "timestamp": "t1",
+                "message": {
+                    "role": "assistant",
+                    "content": [{"type": "text", "text": "x"}],
+                    "usage": {
+                        "input": 1000,
+                        "output": 200,
+                        "cacheRead": 0,
+                        "cacheWrite": 0,
+                        "totalTokens": 1200,
+                        "cost": {"input": 0.01, "output": 0.02, "cacheRead": 0, "cacheWrite": 0, "total": 0.03},
+                    },
+                },
+            },
+        ],
+    )
+
+    log = _FakeLog()
+    catcher = _TranscriptCatcher(transcript_path=transcript, access_log=log, fail_fast_errors=3)
+    catcher.start()
+    _wait_for(lambda: catcher._n_llm_calls >= 1, timeout=2.0)
+    catcher.stop()
+
+    usage = catcher.usage()
+    assert usage.n_llm_calls == 1
+    assert usage.tokens_in == 1000
+    assert usage.tokens_out == 200
+    assert usage.cost_usd == 0.03
+    assert usage.basis == "reported"

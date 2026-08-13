@@ -110,23 +110,62 @@ def serve() -> None:
     """Run the MCP stdio server. Entry point for `python -m fintel.environment.mcp_server`."""
     from mcp.server.fastmcp import FastMCP
 
+    from fintel.environment.submit_schema import (
+        SUBMIT_TOOL,
+        submit_description,
+        submit_schema,
+        validate_submit,
+    )
+
     session_path = session_dir_from_env()
     env = rebuild_environment(session_path)
     symbols = tuple(sorted(env.policy.decidable))
+    bindings_data = load_bindings(session_path)
+    item_schema = bindings_data.get("output_schema")
+    if item_schema is not None and not isinstance(item_schema, dict):
+        item_schema = None
+    submit_params = submit_schema(symbols, item_schema=item_schema)
 
     server = FastMCP(name="fintel")
 
-    @server.tool()
     def submit_views(views: list[dict], abstain: bool = False, abstain_reason: str = "") -> str:
         """Submit your final answer. Call exactly once when done."""
         payload = {"views": views, "abstain": abstain, "abstain_reason": abstain_reason}
+        errors = validate_submit(payload, submit_params)
+        if errors:
+            # Do not write result.json — a rejected payload must not look like
+            # a successful answer to the host parser.
+            return (
+                "REJECTED: submit_views failed schema validation: "
+                + "; ".join(errors)
+                + ". Fix the payload to match this tool's JSON schema and call again."
+            )
         write_result(session_path, payload)
         return "recorded"
+
+    tool = server._tool_manager.add_tool(
+        submit_views,
+        name=SUBMIT_TOOL,
+        description=submit_description(symbols),
+    )
+    # FastMCP derives parameters from the Python signature (list[dict] → free-form
+    # objects). Replace with the pack-aware JSON Schema so clients advertise the
+    # real contract; runtime validate_submit enforces it even if a client ignores
+    # the advertised schema.
+    tool.parameters = submit_params
 
     for spec in env.tools.descriptors():
         _register_data_tool(server, spec, env)
 
-    logger.info("fintel mcp server serving %s for %s", env.cell.name, symbols)
+    logger.info(
+        "fintel mcp server serving %s for %s (submit schema items required=%s)",
+        env.cell.name,
+        symbols,
+        (submit_params.get("properties") or {})
+        .get("views", {})
+        .get("items", {})
+        .get("required"),
+    )
     server.run(transport="stdio")
 
 

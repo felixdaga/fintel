@@ -6,7 +6,7 @@ Judge three pillars, in this order of importance:
 
 1. **Fundamental health & trajectory** (primary) — earnings path and durability, margins, cash generation, balance-sheet resilience, franchise / competitive position.
 2. **Valuation vs opportunity** (co-primary) — mainly vs the company's *own* recent history (is the market paying more or less for the same earnings power?).
-3. **Near-term rerating chance** (secondary boost) — a dated, fundamental catalyst that could re-rate the stock over the coming quarter-to-year (guidance, earnings event, product/regulatory clear, capital-allocation shift, leadership change with a clear strategy implication). This pillar exists because assessment is quarterly: a sound fundamental view should be slightly stronger when a credible re-rating path is in the pack.
+3. **Near-term rerating chance** (secondary boost) — a dated, fundamental catalyst that could re-rate the stock over the coming months-to-quarter (guidance, earnings event, product/regulatory clear, capital-allocation shift, leadership change with a clear strategy implication). This pillar exists because assessment is monthly: a sound fundamental view should be slightly stronger when a credible near-term re-rating path is in the pack.
 
 Pillar 3 is a *modifier*, not a thesis. It can raise or lower the score within a band once pillars 1–2 are set; it cannot turn a weak or deteriorating business into a high score, and price momentum alone is never a rerating catalyst.
 

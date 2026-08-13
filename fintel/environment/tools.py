@@ -108,8 +108,8 @@ def spec_for(
 
     cutoff_note = (
         f"Point-in-time: only information available strictly before {decision_date} "
-        f"is returned. The boundary is applied by the platform and cannot be passed, "
-        f"widened, or bypassed."
+        f"is returned. The boundary is enforced and cannot be passed, widened, "
+        f"or bypassed."
     )
     return ToolSpec(
         name=tool_name(kind),

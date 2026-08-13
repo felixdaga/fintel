@@ -485,7 +485,7 @@ def test_the_output_schema_reaches_the_pack_channel_prompt(tmp_path):
     agents.invoke(agent, an_environment(tmp_path))
     user = fake.calls[0]["messages"][1]["content"]
     assert "## Output schema" in user
-    assert '{"score": "..."}' in user
+    assert '"score"' in user
 
 
 def test_the_output_schema_reaches_the_tools_channel_prompt(tmp_path):

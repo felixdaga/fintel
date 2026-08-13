@@ -26,10 +26,19 @@ class SourceRef(BaseModel):
 
 
 class View(BaseModel):
-    model_config = ConfigDict(frozen=True)
+    # extra="allow" so a strategy pack's output_schema.json can declare native
+    # fields (e.g. geopol's threat_score / action_score / action_level) and
+    # have them persisted on decision.json alongside the platform hooks. The
+    # platform keeps `symbol` + `score` as the signal-layer hooks; everything
+    # else a pack declares is captured verbatim, not renamed.
+    model_config = ConfigDict(frozen=True, extra="allow")
 
     symbol: Symbol
-    score: float = Field(..., ge=-1.0, le=1.0)
+    # The platform signal hook. Required by the contract; if a pack omits it
+    # (e.g. a geopol pack that only declares threat_score), parse_views leaves
+    # this None and single_name_signal surfaces NaN — not a silent 0.0 — so
+    # the gap is visible in the evaluation, not buried as a neutral reading.
+    score: float | None = Field(default=None, ge=-1.0, le=1.0)
     # Optional platform fields — omit unless the submitter (or package schema)
     # actually provides them. Emit must not invent defaults for fields the
     # strategy output contract does not ask for.

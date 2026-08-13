@@ -1,0 +1,93 @@
+# geopol_trade_war_2018 — US-China trade war historical replay eval
+#
+# A geopol event package: transport frontier models back to key decision dates
+# in the 2018-2019 US-China trade war, give them only what was publicly knowable
+# at each date, and score their threat assessments + leader recommendations
+# against what actually happened.
+#
+# Universe = parties (USA, CHN). One cell per party per date. The agent is told
+# which party it represents and can only submit a view for that party.
+#
+# Data surface (both cells see the same data — symmetric access):
+#   event_timeline  ← curated chronology, PIT-clamped on entry_date
+#   country_health  ← curated FRED bundle (USA + CHN macro), PIT on observation date
+#   web_search      ← Brave search, PIT freshness window ends decision_date - 1
+#
+# Scoring: custom geopol_signal (threat_score + action_score) and geopol_kpi
+# (outcome alignment vs outcomes.json truth file + stochasticity across K).
+
+schema_version = 1
+name = "geopol_trade_war_2018"
+description = "US-China trade war 2018-2019 historical replay. Two parties (USA, CHN), 32 decision dates at 21-day cadence, scored against actual outcomes."
+
+[universe]
+symbols = ["USA", "CHN"]
+
+[decision]
+scope = "single_name"
+# 21-day cadence over 2018-03-01 .. 2019-12-12 (32 dates). Lands within ≤21 days
+# of every key event in the trade war timeline. The dates are the source of
+# truth — --start/--end may narrow but not widen them.
+schedule = { kind = "custom_dates", start = "2018-03-01", end = "2019-12-12", dates = [
+    "2018-03-01", "2018-03-22", "2018-04-12", "2018-05-03", "2018-05-24",
+    "2018-06-14", "2018-07-05", "2018-07-26", "2018-08-16", "2018-09-06",
+    "2018-09-27", "2018-10-18", "2018-11-08", "2018-11-29", "2018-12-20",
+    "2019-01-10", "2019-01-31", "2019-02-21", "2019-03-14", "2019-04-04",
+    "2019-04-25", "2019-05-16", "2019-06-06", "2019-06-27", "2019-07-18",
+    "2019-08-08", "2019-08-29", "2019-09-19", "2019-10-10", "2019-10-31",
+    "2019-11-21", "2019-12-12",
+] }
+
+# ── event timeline: curated chronology, PIT-clamped ──────────────────────────
+[[data]]
+kind = "event_timeline"
+source = "event_timeline"
+event_file = "packages/geopol_trade_war_2018/event.md"
+lookback_days = 365
+
+# ── country health: curated FRED bundle, both parties see both countries ─────
+[[data]]
+kind = "country_health"
+source = "country_health"
+lookback_days = 180
+
+# ── web search: agent can explore beyond the curated timeline ────────────────
+[[data]]
+kind = "web_search"
+source = "web_search"
+lookback_days = 365
+max_results = 5
+clamp_by_age = true
+
+[scoring]
+signal = "geopol_trade_war_2018.scoring:geopol_signal"
+kpi = "geopol_trade_war_2018.scoring:geopol_kpi"
+metric_key = "outcome_alignment"
+transform = "identity"
+horizons = [1, 2, 4]
+params = { outcomes_file = "packages/geopol_trade_war_2018/outcomes.json" }
+
+# ── agent-on-agent evaluation ───────────────────────────────────────────────
+# A rating agent with full hindsight knowledge reviews each cell's output to
+# assess loyalty to the party represented, disloyalty (possible model-origin
+# bias), and whether the recommendation was good or bad given how the trade
+# war turned out. The default llm agent (channel='pack') gets the full
+# decisions fed in; here we add the full event timeline so the rater has the
+# complete chronology alongside its own knowledge.
+[eval]
+rating_agent = "llm"
+rating_tools = ["event_timeline"]
+rating_prompt_file = "rating_prompt.md"
+rating_schema_file = "rating_schema.json"
+rating_run = "best"
+
+# ── ablation: search-only feeding for the llm agent ──────────────────────────
+# When the llm agent runs on this pack (channel='pack'), it ignores the full
+# curated evidence (event_timeline + country_health + web_search) and instead
+# runs a SINGLE predetermined web search — "China US trade war" — feeding only
+# that result to the model. Measures how much the curated timeline + exploratory
+# search mattered vs. one generic search. OpenClaw runs are unaffected: the
+# openclaw agent does not read this knob, so its setup is unchanged.
+[ablation]
+search_query = "China US trade war"
+search_lookback_days = 365

@@ -293,6 +293,13 @@ class MassiveRecords:
     def kinds(self) -> tuple[str, ...]:
         return (self.spec.kind,)
 
+    @property
+    def summary_max_chars(self) -> int | None:
+        """Exposed so _write_bindings persists it for MCP rebuild (catalog
+        declares it as a strategy param; without this attribute the rebuild
+        silently falls back to the default — the 'Tool not found' class)."""
+        return self.render_caps.get("summary_max_chars")
+
     def fetch(self, query: dict, cutoff: Cutoff) -> list[dict]:
         symbol = require(query, "symbol", self.name)
         default_lb = (

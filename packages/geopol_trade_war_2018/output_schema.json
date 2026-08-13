@@ -1,0 +1,81 @@
+{
+  "$defs": {
+    "SourceRef": {
+      "description": "A pointer to the datum that moved this view.",
+      "properties": {
+        "source_type": {
+          "enum": ["event_timeline", "country_health", "web_search", "other"],
+          "title": "Source Type",
+          "type": "string"
+        },
+        "source_id": {
+          "title": "Source Id",
+          "type": "string"
+        },
+        "excerpt": {
+          "anyOf": [{"type": "string"}, {"type": "null"}],
+          "default": null,
+          "title": "Excerpt",
+          "type": "string"
+        }
+      },
+      "required": ["source_type", "source_id"],
+      "title": "SourceRef",
+      "type": "object"
+    }
+  },
+  "description": "A geopolitical threat assessment + leader recommendation for one party at one decision date.",
+  "properties": {
+    "symbol": {
+      "description": "Party code assigned to this cell (USA or CHN). Echo it back; you do not choose it.",
+      "title": "Symbol",
+      "type": "string"
+    },
+    "score": {
+      "description": "Set this EQUAL to your threat_score. It carries your threat reading into the record so it is not lost.",
+      "maximum": 1.0,
+      "minimum": -1.0,
+      "title": "Score",
+      "type": "number"
+    },
+    "threat_score": {
+      "description": "THREAT SCORE on [-1, +1]. Perceived threat to THIS party's interests from the current state of the dispute. -1 = clear opportunity; 0 = neutral/unclear; +1 = existential threat. Use the party-relative anchors in the brief above.",
+      "maximum": 1.0,
+      "minimum": -1.0,
+      "title": "Threat Score",
+      "type": "number"
+    },
+    "action_score": {
+      "description": "ACTION SCORE on [-1, +1]. Your recommended stance on the escalate(-1) ↔ concede(+1) axis. -1 = maximal escalation; 0 = hold/negotiate; +1 = maximal concession. Use the anchors in the brief above.",
+      "maximum": 1.0,
+      "minimum": -1.0,
+      "title": "Action Score",
+      "type": "number"
+    },
+    "action_level": {
+      "description": "ACTION LEVEL: the action you recommend, from the static list in the brief above. Must be consistent with your action_score band. One of: escalate_tariffs, escalate_non_tariff, retaliate, negotiate, hold, partial_rollback, concede_purchases, full_rollback.",
+      "title": "Action Level",
+      "type": "string"
+    },
+    "rationale": {
+      "description": "Structured as: 'RECOMMENDATION: <what should we do now, 2-4 sentences>\\n\\nSUPPORTING RATIONALE: <why this threat_score and this action_score, grounded in cited evidence>'. The recommendation must align with the threat and action scores. The supporting rationale must cover both: what drives the threat reading and what justifies the action stance.",
+      "default": "",
+      "title": "Rationale",
+      "type": "string"
+    },
+    "key_factors": {
+      "items": {"type": "string"},
+      "title": "Key Factors",
+      "type": "array"
+    },
+    "sources_cited": {
+      "items": {"$ref": "#/$defs/SourceRef"},
+      "title": "Sources Cited",
+      "type": "array"
+    }
+  },
+  "required": ["symbol", "score", "threat_score", "action_score", "action_level", "rationale"],
+  "title": "GeopolView",
+  "type": "object",
+  "$comment": "Internal (not shown to the agent): native geopol fields are threat_score, action_score, action_level. symbol + score are required platform signal hooks; score mirrors threat_score. conviction/time_horizon are omitted — the geopol KPI reads action_score/action_level directly."
+}

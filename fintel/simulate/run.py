@@ -13,9 +13,10 @@ one date should not re-fetch it for the next.
 Concurrency modes:
 
   · Nested (default): `trial_concurrency` dates × `cell_concurrency` tickers.
-  · Flat: `shared_concurrency=N` keeps N cells in flight across all dates —
-    a finished cell rolls to the next (date, ticker). Requires independent
-    dates (memory and feedback off).
+  · Flat: `shared_concurrency=N` is the same bound, flattened across dates
+    (and, via a job-wide slot pool, across K repeats) — a finished cell rolls
+    to the next (run, date, ticker). Requires independent dates (memory and
+    feedback off).
 """
 
 from __future__ import annotations
@@ -24,6 +25,7 @@ import logging
 import time
 from dataclasses import dataclass
 from datetime import date as Date
+from typing import Any
 
 from fintel.environment.access import dedup_sources
 from fintel.environment.cell import Cell
@@ -70,6 +72,7 @@ def run_run(
     strategy_description: str = "",
     progress: Progress | None = None,
     quiet: bool = True,
+    cell_slots: Any | None = None,
 ) -> RunResult:
     """Execute one repeat: build the world, fan out trials, reduce.
 
@@ -83,9 +86,10 @@ def run_run(
     parallel dates can't race on shared state. This is delorean's
     `concurrent_dates` safety check, carried forward.
 
-    `shared_concurrency` is a flat pool of N cells across all dates. When set,
-    it replaces the nested cell × trial fan-out. Blocked when memory or
-    feedback couples dates.
+    `shared_concurrency` is the same concurrency primitive as cell/trial,
+    flattened across dates. When set, it replaces the nested cell × trial
+    fan-out. `cell_slots` (from the job) is the job-wide semaphore that also
+    rolls slots across K repeats. Blocked when memory or feedback couples dates.
 
     `mission_text`/`output_schema_text` are the strategy pack's mission.md and
     output_schema.json (read once by `run_job`, passed down here rather than
@@ -190,6 +194,7 @@ def run_run(
             company_names=company_names or {},
             market_config=market_config,
             progress=progress,
+            cell_slots=cell_slots,
         )
     else:
         trials = _run_nested(
@@ -207,6 +212,7 @@ def run_run(
             company_names=company_names or {},
             market_config=market_config,
             progress=progress,
+            cell_slots=cell_slots,
         )
 
     elapsed_ms = int((time.perf_counter() - started) * 1000)
@@ -246,6 +252,7 @@ def _run_nested(
     company_names: dict[str, str],
     market_config: MarketConfig,
     progress: Progress,
+    cell_slots: Any | None = None,
 ) -> list[TrialResult]:
     """Classic date × ticker fan-out (trial_concurrency × cell_concurrency)."""
 
@@ -271,6 +278,7 @@ def _run_nested(
                 company_names=company_names,
                 market_config=market_config,
                 progress=progress,
+                cell_slots=cell_slots,
             )
         except Exception as exc:
             return TrialResult(
@@ -306,8 +314,14 @@ def _run_shared(
     company_names: dict[str, str],
     market_config: MarketConfig,
     progress: Progress,
+    cell_slots: Any | None = None,
 ) -> list[TrialResult]:
-    """Flat pool: keep `shared_concurrency` cells in flight across all dates."""
+    """Flat pool: keep `shared_concurrency` cells in flight across all dates.
+
+    Same `map_parallel` bound as cell/trial concurrency — just over the
+    flattened (date, cell) work list. `cell_slots` (job-wide) additionally
+    gates the body so K repeats share one pool.
+    """
     work: list[_SharedWork] = []
     # Per-date bookkeeping so we can finalize in schedule order after the pool.
     cells_by_date: dict[Date, list[Cell]] = {}
@@ -378,6 +392,7 @@ def _run_shared(
                 company_names=company_names,
                 market_config=market_config,
                 progress=progress,
+                cell_slots=cell_slots,
             )
         except Exception:
             return CellOutcome(

@@ -40,13 +40,26 @@ def test_stalled_flags_quiet_unfinished_cells_once():
     t = StageTracker()
     t.update("cell_start", {"cell": "AAPL"})
     t.update("cell_start", {"cell": "MSFT"})
-    # AAPL goes quiet; MSFT keeps emitting.
+    # AAPL started reasoning, then went quiet; MSFT keeps emitting.
+    t.update("agent_stage", {"cell": "AAPL", "stage": "reasoning"})
+    t.update("agent_stage", {"cell": "MSFT", "stage": "reasoning"})
     base = t._state["AAPL"].last_event_mono
     # Pretend AAPL's last event was long ago.
     t._state["AAPL"].last_event_mono = base - 100.0
     stalled = t.stalled(threshold_s=60.0, now=base)
     assert stalled == ["AAPL"]
     # A second check does not re-announce the same stall.
+    assert t.stalled(threshold_s=60.0, now=base) == []
+
+
+def test_stalled_ignores_cells_in_cold_start():
+    """A cell that has only seen cell_start (no staging event yet) is waiting
+    to start — MCP attach, profile fork — not stalled. The subprocess timeout
+    is the backstop for a cell that never starts."""
+    t = StageTracker()
+    t.update("cell_start", {"cell": "AAPL"})
+    base = t._state["AAPL"].last_event_mono
+    t._state["AAPL"].last_event_mono = base - 1000.0
     assert t.stalled(threshold_s=60.0, now=base) == []
 
 

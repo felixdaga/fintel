@@ -39,6 +39,34 @@ from typing import Any, Protocol
 
 logger = logging.getLogger(__name__)
 
+
+def _strip_comments(text: str) -> str:
+    """Drop ``$comment`` keys from a JSON schema body before it reaches the agent.
+
+    Local (stdlib-only) so this module stays free of platform imports. Pack
+    authors may keep ``$comment`` notes for humans; they must not leak into the
+    agent-visible prompt.
+    """
+    import json
+
+    if not text or not str(text).strip():
+        return ""
+    try:
+        data = json.loads(text)
+    except (TypeError, json.JSONDecodeError):
+        return text.strip()
+
+    def _scrub(node: Any) -> Any:
+        if isinstance(node, dict):
+            return {k: _scrub(v) for k, v in node.items() if k != "$comment"}
+        if isinstance(node, list):
+            return [_scrub(v) for v in node]
+        return node
+
+    if not isinstance(data, dict):
+        return text.strip()
+    return json.dumps(_scrub(data), ensure_ascii=False, indent=2)
+
 # ── Host-supplied dependencies (structural protocols, no platform import) ──
 
 
@@ -742,7 +770,7 @@ class OptimizedAgent:
         )
         if self.output_schema_text.strip():
             pm_user += (
-                "\n\n## Output schema (from the strategy pack)\n" + self.output_schema_text.strip()
+                "\n\n## Output schema\n" + _strip_comments(self.output_schema_text)
             )
         if submit_tool is None:
             submit_tool = _as_tool_spec(
