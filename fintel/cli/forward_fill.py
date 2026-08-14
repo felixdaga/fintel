@@ -41,6 +41,8 @@ def run_forward_fill_cli(args) -> int:
         params: dict = {}
         if getattr(args, "schedule_start", None):
             params["start"] = args.schedule_start
+        if getattr(args, "schedule_anchor", None):
+            params["anchor"] = args.schedule_anchor
         schedule_override = ScheduleRef(kind=args.schedule_kind, **params)
 
     if args.quiet:

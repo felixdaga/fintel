@@ -261,6 +261,11 @@ def build_parser() -> argparse.ArgumentParser:
         help="Start date for the override schedule (ISO)",
     )
     forward_fill.add_argument(
+        "--schedule-anchor",
+        default=None,
+        help="Phase date for biweekly_fridays (ISO Friday of the fortnight)",
+    )
+    forward_fill.add_argument(
         "--cell-concurrency",
         type=int,
         default=1,

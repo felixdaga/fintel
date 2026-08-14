@@ -105,9 +105,9 @@ clamp_by_age = true
 # around it (transform, ensemble, holdings); the package owns what the
 # signal *is*. See docs/architecture.md §1 + the evaluation layer.
 signal = "single_name"
-# The KPI: what "good" means over signal + prices. single_name_ir reports raw
-# cross-sectional IC (Spearman, per decision-date grid) plus net-of-cost
-# returns from the holdings layer.
+# The KPI: what "good" means over signal + prices. single_name_ir reports
+# Spearman + Pearson IC at every horizon (mean, raw ICIR, ICIR × √ppy) plus
+# net-of-cost returns from the holdings layer (PW / SW / EW longs / naive tilt / MVO).
 kpi = "single_name_ir"
 metric_key = "icir"
 transform = "single_name"
@@ -117,4 +117,10 @@ transform = "single_name"
 # The agent's fundamental view is the signal; it is scored on whatever forward
 # grid exists. 8 months needs i+8 < 50 → 42 dated.
 horizons = [1, 2, 4, 8]
-params = { holdings = true, active_budget = 0.5, cost_bps = 5.0 }
+
+[scoring.params]
+holdings = true
+active_budget = 0.5
+cost_bps = 5.0
+long_thresholds = [0.0, 0.3]
+books = ["pw", "sw_long", "ew_long", "naive_tilt", "mvo"]

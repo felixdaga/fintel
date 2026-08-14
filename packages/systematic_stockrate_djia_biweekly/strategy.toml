@@ -1,12 +1,14 @@
-# systematic_stockrate_djia_weekly — DJIA single-ticker systematic stock rating,
-# weekly assessment cadence, fundamental attractiveness + trajectory view.
+# systematic_stockrate_djia_biweekly — DJIA single-ticker systematic stock rating,
+# biweekly assessment cadence, fundamental attractiveness + trajectory view.
 #
-# Sibling of systematic_stockrate_djia_monthly. Same single-ticker
+# Sibling of systematic_stockrate_djia_weekly / _monthly. Same single-ticker
 # pattern, mission pillars, data surface, and output contract — intentional
 # differences are date / horizon only:
-#   * the decision grid is weekly (Fridays, holiday-snapped forward) over
-#     2026-04-24 .. 2026-07-31 — the cadence of assessment, not the view horizon
-#   * scoring horizons are decision-date-grid steps (weeks): [1, 2, 4, 8]
+#   * the decision grid is biweekly (every other Friday, holiday-snapped
+#     forward) over 2025-06-06 .. 2026-08-14 — the cadence of assessment,
+#     not the view horizon. 32 dates, ending the last trading Friday as of
+#     package creation (2026-08-14).
+#   * scoring horizons are decision-date-grid steps (fortnights): [1, 2, 4, 8]
 #   * mission pillar-3 language is weeks-to-quarter (monthly package uses
 #     months-to-quarter)
 #
@@ -15,23 +17,27 @@
 #   qualitative specialist  ← news + web_search
 
 schema_version = 1
-name = "systematic_stockrate_djia_weekly"
-description = "Score each DJIA-30 constituent independently, weekly (2026-04-24 to 2026-07-31), scored via pooled single-name IR."
+name = "systematic_stockrate_djia_biweekly"
+description = "Score each DJIA-30 constituent independently, biweekly (2025-06-06 to 2026-08-14), scored via pooled single-name IR."
 
 [universe]
 preset = "dow30"
 
 [decision]
 scope = "single_name"
-# Weekly Fridays over 2026-04-24 .. 2026-07-31, snapped forward to the next
-# trading day when the Friday is an NYSE holiday (Juneteenth → 2026-06-22;
-# observed Independence Day → 2026-07-06). There is no builtin `weekly` schedule
-# kind, so the grid is expressed as custom_dates; the dates are the source of
-# truth — `--start/--end` may narrow but not widen them.
-schedule = { kind = "custom_dates", start = "2026-04-24", end = "2026-07-31", dates = [
-    "2026-04-24", "2026-05-01", "2026-05-08", "2026-05-15", "2026-05-22",
-    "2026-05-29", "2026-06-05", "2026-06-12", "2026-06-22", "2026-06-26",
-    "2026-07-06", "2026-07-10", "2026-07-17", "2026-07-24", "2026-07-31",
+# Biweekly Fridays over 2025-06-06 .. 2026-08-14, snapped forward to the next
+# trading day when the Friday is an NYSE holiday (Independence Day 2025-07-04
+# → 2025-07-07; Juneteenth 2026-06-19 → 2026-06-22; observed Independence Day
+# 2026-07-03 → 2026-07-06). There is no builtin `biweekly` schedule kind, so
+# the grid is expressed as custom_dates; the dates are the source of truth —
+# `--start/--end` may narrow but not widen them.
+schedule = { kind = "custom_dates", start = "2025-06-06", end = "2026-08-14", dates = [
+    "2025-06-06", "2025-06-20", "2025-07-07", "2025-07-18", "2025-08-01", "2025-08-15",
+    "2025-08-29", "2025-09-12", "2025-09-26", "2025-10-10", "2025-10-24", "2025-11-07",
+    "2025-11-21", "2025-12-05", "2025-12-19", "2026-01-02", "2026-01-16", "2026-01-30",
+    "2026-02-13", "2026-02-27", "2026-03-13", "2026-03-27", "2026-04-10", "2026-04-24",
+    "2026-05-08", "2026-05-22", "2026-06-05", "2026-06-22", "2026-07-06", "2026-07-17",
+    "2026-07-31", "2026-08-14",
 ] }
 
 # ── quantitative lane ───────────────────────────────────────────────────────
@@ -104,12 +110,11 @@ signal = "single_name"
 kpi = "single_name_ir"
 metric_key = "icir"
 transform = "single_name"
-# Horizons are decision-date-grid steps (weeks on this weekly grid): [1, 2, 4, 8].
+# Horizons are decision-date-grid steps (fortnights on this biweekly grid): [1, 2, 4, 8].
 # These are the measurable forward returns the KPI scores — they do NOT represent
-# the agent's view horizon (a fundamental trajectory plays out over quarters,
-# and the Apr-Jul window is too short to measure that). The agent's fundamental
-# view is the signal; it is scored on whatever forward grid exists. 8 weeks
-# needs i+8 < 15 → 7 dated.
+# the agent's view horizon (a fundamental trajectory plays out over quarters).
+# The agent's fundamental view is the signal; it is scored on whatever forward
+# grid exists. 8 steps needs i+8 < 32 → 24 dated.
 horizons = [1, 2, 4, 8]
 
 [scoring.params]

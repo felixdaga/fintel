@@ -131,6 +131,7 @@ The shipped demo run lives at
 ## Example packages
 
 - `packages/systematic_stockrate_djia_weekly` — weekly DJIA single-name rating
+- `packages/systematic_stockrate_djia_biweekly` — same stack, every-other-Friday grid (2025-06-06 .. 2026-08-14)
 - `packages/systematic_stockrate_djia_monthly` — same stack, monthly first-trading-day grid (2022-07-01 ..)
 
 

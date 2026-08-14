@@ -30,7 +30,14 @@ from fintel.market.data.sentiment import NewsSentiment
 from fintel.market.data.store import PriceStore, RecordCache
 from fintel.market.data.synthetic import SyntheticPrices
 from fintel.market.data.web import WebSearch
-from fintel.market.schedule import CustomDates, Quarterly, Schedule, SinglePoint, WeeklyFridays
+from fintel.market.schedule import (
+    BiweeklyFridays,
+    CustomDates,
+    Quarterly,
+    Schedule,
+    SinglePoint,
+    WeeklyFridays,
+)
 from fintel.market.settings import MarketConfig
 from fintel.market.universe import STATIC_PRESETS, Universe, static_preset, symbol_universe
 from fintel.models.market import DataBinding, ScheduleRef, UniverseRef
@@ -41,6 +48,7 @@ SCHEDULES: dict[str, str] = {
     "custom_dates": "fintel.market.schedule:CustomDates",
     "quarterly": "fintel.market.schedule:Quarterly",
     "weekly_fridays": "fintel.market.schedule:WeeklyFridays",
+    "biweekly_fridays": "fintel.market.schedule:BiweeklyFridays",
 }
 
 # Data sources are not listed here — `catalog` owns that registry so the library
@@ -107,6 +115,9 @@ def build_schedule(ref: ScheduleRef, *, calendar: TradingCalendar | None = None)
         return Quarterly(start=start, end=end, calendar=cal)
     if ref.kind == "weekly_fridays":
         return WeeklyFridays(start=start, end=end, calendar=cal)
+    if ref.kind == "biweekly_fridays":
+        anchor = as_date(params["anchor"]) if params.get("anchor") else start
+        return BiweeklyFridays(start=start, end=end, anchor=anchor, calendar=cal)
     if ":" in ref.kind:
         return resolve(ref.kind)(**params)
     raise ValueError(f"unknown schedule kind {ref.kind!r}; available: {sorted(SCHEDULES)}")

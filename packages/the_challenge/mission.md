@@ -25,11 +25,11 @@ Pillar 3 is a *modifier*, not a thesis. It can raise or lower the score within a
 
 | Score | Meaning |
 |------:|---------|
-| **−0.2** | Mildly unattractive: soft or deteriorating fundamentals and/or somewhat rich vs own history; no offsetting catalyst. |
-| **−0.5** | Strongly unattractive: poor / worsening health or trajectory *and* expensive vs own history. |
-| **−1.0** | Extremely unattractive: bad/worsening fundamentals, clearly expensive, *and* near-term downside catalyst or de-rating risk. Rare. |
+| **-0.2** | Mildly unattractive: soft or deteriorating fundamentals and/or somewhat rich vs own history; no offsetting catalyst. |
+| **-0.5** | Strongly unattractive: poor / worsening health or trajectory *and* expensive vs own history. |
+| **-1.0** | Extremely unattractive: bad/worsening fundamentals, clearly expensive, *and* near-term downside catalyst or de-rating risk. Rare. |
 
-In-between values (e.g. +0.35, −0.15) are encouraged when the case sits between anchors. Prefer milder scores when evidence is thin, gapped, or conflicting. Reserve **|score| ≥ 0.5** for multi-factor, well-cited cases; reserve **|score| ≥ 0.8** for near-full alignment of all three pillars.
+In-between values (e.g. +0.35, -0.15) are encouraged when the case sits between anchors. Prefer milder scores when evidence is thin, gapped, or conflicting. Reserve **|score| ≥ 0.5** for multi-factor, well-cited cases; reserve **|score| ≥ 0.8** for near-full alignment of all three pillars.
 
 ## How to combine (discipline)
 

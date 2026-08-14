@@ -485,7 +485,7 @@ _DEFAULT_SUBMIT_SCHEMA: dict[str, Any] = {
                 "type": "object",
                 "properties": {
                     "symbol": {"type": "string"},
-                    "score": {"type": "number", "minimum": -1, "maximum": 1},
+                    "score": {"type": "number"},
                     "rationale": {"type": "string"},
                     "key_factors": {"type": "array", "items": {"type": "string"}},
                     "sources_cited": {

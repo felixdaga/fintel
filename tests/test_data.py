@@ -69,6 +69,15 @@ def test_covers_when_fully_contained():
     assert cov.covers([(date(2024, 1, 1), date(2024, 12, 31))], date(2024, 3, 1), date(2024, 4, 1))
 
 
+def test_without_days_punches_an_interior_session():
+    coverage = [(date(2026, 4, 24), date(2026, 4, 28))]
+    assert cov.without_days(coverage, [date(2026, 4, 27)]) == [
+        (date(2026, 4, 24), date(2026, 4, 26)),
+        (date(2026, 4, 28), date(2026, 4, 28)),
+    ]
+    assert cov.without_days(coverage, []) == coverage
+
+
 def test_span_json_round_trip():
     spans = [(date(2024, 1, 1), date(2024, 1, 10))]
     assert cov.from_json(cov.to_json(spans)) == spans
@@ -120,6 +129,30 @@ def test_price_store_infers_coverage_without_a_sidecar(tmp_path):
 def test_price_store_missing_symbol_is_none(tmp_path):
     assert PriceStore(root=tmp_path).read("NOPE") is None
     assert PriceStore(root=tmp_path).coverage("NOPE") == []
+
+
+def test_price_merge_does_not_cover_skipped_trading_days(tmp_path):
+    """A sparse vendor response must not mark the skipped session as fetched."""
+    store = PriceStore(root=tmp_path)
+    fresh = pd.DataFrame(
+        {
+            "date": [date(2026, 4, 24), date(2026, 4, 28)],
+            "open": [10.0, 11.0],
+            "high": [10.0, 11.0],
+            "low": [10.0, 11.0],
+            "close": [10.0, 11.0],
+            "volume": [100.0, 100.0],
+        }
+    )
+    store.merge("AAPL", fresh, (date(2026, 4, 24), date(2026, 4, 28)))
+    coverage = store.coverage("AAPL")
+    assert cov.covers(coverage, date(2026, 4, 24), date(2026, 4, 24))
+    assert cov.covers(coverage, date(2026, 4, 25), date(2026, 4, 26))  # weekend
+    assert cov.covers(coverage, date(2026, 4, 28), date(2026, 4, 28))
+    assert not cov.covers(coverage, date(2026, 4, 27), date(2026, 4, 27))
+    assert cov.missing(coverage, date(2026, 4, 24), date(2026, 4, 28)) == [
+        (date(2026, 4, 27), date(2026, 4, 27))
+    ]
 
 
 def test_record_cache_round_trip(tmp_path):

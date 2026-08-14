@@ -252,7 +252,9 @@ def test_single_name_ir_on_synthetic_grid():
     out = single_name_ir(signal, prices, horizons=[1], params={})
     h1 = out["per_horizon"][1]
     assert h1["mean_ic"] == pytest.approx(1.0)
+    assert h1["pearson_mean"] == pytest.approx(1.0)
     assert h1["raw_icir"] is None  # zero std -> None (perfect IC, no dispersion)
+    assert h1["icir_ann"] is None
     assert h1["n_periods"] == 3  # 4 dates, horizon 1 -> 3 forward periods
 
 
@@ -291,6 +293,10 @@ class _FakePriceLookup:
 
     def latest_bar_date(self, symbols=None, *, min_coverage: float = 1.0):  # noqa: ARG002
         return self._dates[-1] if self._dates else None
+
+    def price_at(self, symbol: Symbol, on: Date) -> float | None:  # noqa: ARG002
+        # Cross-sectionally flat entry prices so PW = EW on this fake.
+        return self._p0.get(on)
 
 
 @pytest.mark.skipif(not _has_par2(), reason="runs/par2-0001 not present")
@@ -525,6 +531,88 @@ def test_holdings_on_real_job_opt_in():
     assert out["ensemble"]["gross"][0]["nav"] == 1.0
 
 
+def test_detect_cadence_biweekly_before_weekly():
+    from datetime import timedelta
+
+    from fintel.evaluate.cadence import detect_cadence
+
+    weekly = [Date(2026, 4, 24) + timedelta(days=7 * i) for i in range(8)]
+    biweekly = [Date(2025, 6, 6) + timedelta(days=14 * i) for i in range(8)]
+    monthly = [Date(2025, m, 1) for m in range(1, 9)]
+
+    assert detect_cadence(name="systematic_stockrate_djia_biweekly", dates=weekly)[
+        "cadence"
+    ] == "biweekly"
+    assert detect_cadence(name="systematic_stockrate_djia_weekly", dates=biweekly)["ppy"] == 52.0
+    assert detect_cadence(name="", dates=biweekly)["ppy"] == 26.0
+    assert detect_cadence(name="", dates=weekly)["ppy"] == 52.0
+    assert detect_cadence(name="systematic_stockrate_djia_monthly", dates=monthly)["ppy"] == 12.0
+
+
+def test_icir_ann_scales_with_ppy():
+    from fintel.evaluate.kpi import single_name_ir
+
+    dates = [Date(2026, 1, 2), Date(2026, 1, 9), Date(2026, 1, 16), Date(2026, 1, 23)]
+    signal = {
+        dates[0]: {"A": -0.5, "B": 0.0, "C": 0.5},
+        dates[1]: {"A": 0.5, "B": 0.0, "C": -0.5},
+        dates[2]: {"A": -0.5, "B": 0.0, "C": 0.5},
+        dates[3]: {"A": 0.5, "B": 0.0, "C": -0.5},
+    }
+    out = single_name_ir(signal, _FakePriceLookup(dates), horizons=[1], params={"ppy": 52})
+    h = out["per_horizon"][1]
+    assert h["raw_icir"] is not None
+    assert h["icir_ann"] == pytest.approx(h["raw_icir"] * 52**0.5)
+    assert h["pearson_icir_ann"] == pytest.approx(h["pearson_icir"] * 52**0.5)
+    assert h["t_stat"] == pytest.approx(h["raw_icir"] * h["n_periods"] ** 0.5)
+    assert h["pearson_t"] == pytest.approx(h["pearson_icir"] * h["n_periods"] ** 0.5)
+
+
+def test_holdings_books_include_pw_sw_ew_naive_mvo():
+    from fintel.evaluate.holdings import build
+    from fintel.models.evaluate import Signals
+
+    dates = [Date(2026, 1, 2), Date(2026, 4, 1), Date(2026, 7, 1)]
+    signal = {d: {"A": 0.5, "B": -0.2, "C": 0.8} for d in dates}
+    sig = Signals(per_run=[signal], ensemble=signal, decision_dates=dates, universe=["A", "B", "C"])
+    out = build(
+        sig,
+        _FakePriceLookup(dates),
+        params={"holdings": True, "ppy": 12, "strategy_name": "systematic_stockrate_djia_monthly"},
+    )
+    assert out is not None
+    for key in ("pw", "sw_0.0", "sw_0.3", "ew_0.0", "ew_0.3", "naive_tilt", "mvo"):
+        assert key in out["strategies"]
+        assert key in out["metrics"]
+        assert out["metrics"][key]["ann_sharpe"] is not None or out["metrics"][key]["n_periods"] < 2
+    # ensemble stays naive tilt
+    assert out["ensemble"]["net"][-1]["nav"] == out["strategies"]["naive_tilt"]["net"][-1]["nav"]
+    # no price store → MVO cannot build Σ
+    assert out["mvo"]["n_fallback"] == out["mvo"]["n_dates"]
+    assert out["mvo"]["distinct_from_naive"] is False
+    assert out["labels"]["pw"] == "DJIA PW"
+
+
+def test_holdings_empty_long_book_is_cash():
+    from fintel.evaluate.holdings import build
+    from fintel.models.evaluate import Signals
+
+    dates = [Date(2026, 1, 2), Date(2026, 4, 1), Date(2026, 7, 1)]
+    signal = {d: {"A": 0.1, "B": 0.2} for d in dates}
+    sig = Signals(per_run=[signal], ensemble=signal, decision_dates=dates, universe=["A", "B"])
+    out = build(
+        sig,
+        _FakePriceLookup(dates),
+        params={
+            "holdings": True,
+            "books": ["sw_long"],
+            "long_thresholds": [0.3],
+            "ppy": 12,
+        },
+    )
+    assert out["strategies"]["sw_0.3"]["net"][-1]["nav"] == pytest.approx(1.0)
+
+
 # --- Phase 5: report pipeline + CLI -------------------------------------------
 
 
@@ -573,7 +661,9 @@ def test_report_payload_shape_synthetic():
         assert payload.kpi_result["ensemble"]["kpi"] == "single_name_ir"
         # 3 dates, horizon 1 -> 2 forward periods -> IC computable
         assert payload.kpi_result["ensemble"]["per_horizon"][1]["n_periods"] == 2
+        assert "pearson_mean" in payload.kpi_result["ensemble"]["per_horizon"][1]
         assert payload.holdings is not None  # opted in
+        assert "mvo" in payload.holdings["strategies"]
         assert payload.behaviour.get("available") is False  # no traces in synth
 
 
@@ -597,6 +687,8 @@ def test_report_on_real_job():
         assert "fintel report" in md
         assert "KPI" in md
         assert "single_name_ir" in md
+        assert "sp_icir_ann" in md
+        assert "sp_t" in md
 
 
 def test_cli_report_subparser_exists():
@@ -817,3 +909,20 @@ def test_dissimilar_package_runs_end_to_end():
         # variance layer ran on the portfolio-scope signals
         assert payload.variance["available"] is True
         assert payload.universe == sorted(universe)
+
+
+def test_djia_packs_declare_comprehensive_holdings():
+    from fintel.strategy import load
+
+    root = Path(__file__).resolve().parent.parent / "packages"
+    for name in (
+        "systematic_stockrate_djia_weekly",
+        "systematic_stockrate_djia_monthly",
+        "systematic_stockrate_djia_biweekly",
+    ):
+        scoring = load(root / name).manifest.scoring
+        assert scoring.horizons == [1, 2, 4, 8]
+        assert scoring.params.get("holdings") is True
+        assert scoring.params.get("long_thresholds") == [0.0, 0.3]
+        assert scoring.params.get("books") == ["pw", "sw_long", "ew_long", "naive_tilt", "mvo"]
+

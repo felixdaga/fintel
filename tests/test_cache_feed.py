@@ -8,7 +8,12 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from fintel.market.cache import ensure_prices, ensure_query_blob, ensure_records
+from fintel.market.cache import (
+    ensure_prices,
+    ensure_query_blob,
+    ensure_records,
+    interior_session_holes,
+)
 from fintel.market.data.base import DataError, EntitlementError
 from fintel.market.data.store import PriceStore, RecordCache
 
@@ -181,6 +186,86 @@ def test_ensure_prices_entitlement_serves_cached_bars(tmp_path: Path):
     assert calls == []
     assert out2 is not None
     assert len(out2) == 2
+
+
+def _bar(d: Date, px: float = 10.0) -> dict:
+    return {"date": d, "open": px, "high": px, "low": px, "close": px, "volume": 100.0}
+
+
+def test_interior_session_holes_finds_missing_trading_day():
+    df = pd.DataFrame([_bar(Date(2026, 4, 24)), _bar(Date(2026, 4, 28))])
+    holes = interior_session_holes(df, Date(2026, 4, 24), Date(2026, 4, 28))
+    assert Date(2026, 4, 27) in {d for span in holes for d in span}
+
+
+def test_ensure_prices_refetches_interior_holes_inside_covered_span(tmp_path: Path):
+    """Coverage sidecar can claim a window while parquet is missing a session."""
+    store = PriceStore(root=tmp_path)
+    store.write(
+        "AAPL",
+        pd.DataFrame([_bar(Date(2026, 4, 24)), _bar(Date(2026, 4, 28))]),
+        [(Date(2026, 4, 24), Date(2026, 4, 28))],
+    )
+    calls: list[tuple[Date, Date]] = []
+
+    def fetch_bars(lo: Date, hi: Date) -> pd.DataFrame | None:
+        calls.append((lo, hi))
+        rows = []
+        d = lo
+        while d <= hi:
+            rows.append(_bar(d, 11.0))
+            d = Date.fromordinal(d.toordinal() + 1)
+        return pd.DataFrame(rows)
+
+    out = ensure_prices(
+        store,
+        "AAPL",
+        Date(2026, 4, 24),
+        Date(2026, 4, 28),
+        fetch_bars=fetch_bars,
+        online=True,
+        source_name="test",
+    )
+    assert calls
+    assert Date(2026, 4, 27) in list(out["date"])
+    # Second ensure is a hit — hole is gone.
+    calls.clear()
+    ensure_prices(
+        store,
+        "AAPL",
+        Date(2026, 4, 24),
+        Date(2026, 4, 28),
+        fetch_bars=fetch_bars,
+        online=True,
+        source_name="test",
+    )
+    assert calls == []
+
+
+def test_ensure_prices_does_not_refetch_empty_span_before_first_bar(tmp_path: Path):
+    """Entitlement / empty history before the first bar stays recorded, not a hole."""
+    store = PriceStore(root=tmp_path)
+    store.write(
+        "WBA",
+        pd.DataFrame([_bar(Date(2024, 2, 1)), _bar(Date(2024, 2, 2))]),
+        [(Date(2024, 1, 1), Date(2024, 2, 2))],
+    )
+    calls: list[tuple[Date, Date]] = []
+
+    def fetch_bars(lo: Date, hi: Date) -> pd.DataFrame | None:
+        calls.append((lo, hi))
+        return pd.DataFrame([_bar(lo)])
+
+    ensure_prices(
+        store,
+        "WBA",
+        Date(2024, 1, 1),
+        Date(2024, 2, 2),
+        fetch_bars=fetch_bars,
+        online=True,
+        source_name="test",
+    )
+    assert calls == []
 
 
 def test_ensure_query_blob_roundtrip(tmp_path: Path):

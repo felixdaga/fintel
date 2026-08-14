@@ -18,6 +18,9 @@ def run_backfill_cli(args) -> int:
     from fintel.market.settings import MarketConfig
     from fintel.models.paths import JobPaths
     from fintel.simulate.backfill import run_backfill
+    from fintel.utils.secrets import bootstrap_env
+
+    bootstrap_env()
 
     job_paths = JobPaths.under(args.output_root, args.job_id)
     if not job_paths.root.is_dir():

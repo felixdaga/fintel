@@ -16,10 +16,12 @@ from collections.abc import Callable, Iterator
 from contextlib import contextmanager
 from dataclasses import dataclass
 from datetime import date as Date
+from datetime import datetime as DateTime
 from pathlib import Path
 
 import pandas as pd
 
+from fintel.market.calendar import TradingCalendar
 from fintel.market.data import coverage as cov
 from fintel.market.data.base import DataError
 from fintel.market.data.coverage import Span
@@ -33,6 +35,19 @@ logger = logging.getLogger(__name__)
 
 PRICE_COLUMNS = ("date", "open", "high", "low", "close", "volume")
 LOCK_TIMEOUT_S = 60.0
+_CAL = TradingCalendar()
+
+
+def _bar_dates(df: pd.DataFrame) -> list[Date]:
+    if df is None or df.empty or "date" not in df.columns:
+        return []
+    out: list[Date] = []
+    for raw in df["date"]:
+        if isinstance(raw, DateTime):
+            out.append(raw.date())
+        elif isinstance(raw, Date):
+            out.append(raw)
+    return out
 
 
 def atomic_write(path: Path, text: str) -> None:
@@ -191,13 +206,21 @@ class PriceStore:
 
     def merge(self, symbol: str, fresh: pd.DataFrame, span: Span) -> pd.DataFrame:
         """Add a fetched span to the cache. Re-reads under the lock, so a
-        concurrent writer's bars are not lost."""
+        concurrent writer's bars are not lost.
+
+        Coverage records the fetch window so weekends and holidays inside it
+        are not retried. NYSE sessions the vendor skipped between the first
+        and last returned bar are punched out — a truncated response must
+        not look fully fetched.
+        """
         with locked(self.path(symbol)):
             existing = self.read(symbol)
             combined = (
                 fresh if existing is None else pd.concat([existing, fresh], ignore_index=True)
             )
-            self.write(symbol, combined, [*self.coverage(symbol), span])
+            holes = _CAL.interior_missing_sessions(_bar_dates(fresh), span[0], span[1])
+            coverage = cov.without_days(cov.coalesce([*self.coverage(symbol), span]), holes)
+            self.write(symbol, combined, coverage)
             out = self.read(symbol)
         return out if out is not None else combined
 

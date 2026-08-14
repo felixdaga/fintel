@@ -9,7 +9,7 @@ import pytest
 from fintel.market.calendar import TradingCalendar, easter, market_holidays
 from fintel.market.constituents import HistoricalUniverse, normalise
 from fintel.market.factory import as_date, build_schedule, build_universe
-from fintel.market.schedule import CustomDates, Quarterly, Schedule, SinglePoint
+from fintel.market.schedule import BiweeklyFridays, CustomDates, Quarterly, Schedule, SinglePoint
 from fintel.market.settings import MarketConfig
 from fintel.market.universe import STATIC_PRESETS, StaticUniverse, Universe, static_preset
 from fintel.models.market import ScheduleRef, UniverseRef
@@ -149,6 +149,7 @@ def test_schedules_satisfy_the_protocol():
     assert isinstance(SinglePoint(on=date(2024, 1, 2)), Schedule)
     assert isinstance(CustomDates(dates_=(date(2024, 1, 2),)), Schedule)
     assert isinstance(Quarterly(), Schedule)
+    assert isinstance(BiweeklyFridays(start=date(2025, 6, 6)), Schedule)
 
 
 def test_single_point():
@@ -191,6 +192,42 @@ def test_quarterly_spans_years_and_needs_a_window():
     assert got == [date(2022, 7, 1), date(2022, 10, 3), date(2023, 1, 3), date(2023, 4, 3)]
     with pytest.raises(ValueError, match="bounded window"):
         Quarterly().dates()
+
+
+def test_biweekly_fridays_phase_from_anchor():
+    s = BiweeklyFridays(
+        start=date(2026, 8, 1),
+        end=date(2026, 9, 15),
+        anchor=date(2026, 8, 14),
+    )
+    assert s.dates() == [date(2026, 8, 14), date(2026, 8, 28), date(2026, 9, 11)]
+
+
+def test_biweekly_fridays_snaps_holiday_friday():
+    # 2025-07-04 is Friday Independence Day → snap to 2025-07-07
+    s = BiweeklyFridays(
+        start=date(2025, 6, 6),
+        end=date(2025, 7, 20),
+        anchor=date(2025, 6, 6),
+    )
+    assert date(2025, 6, 6) in s.dates()
+    assert date(2025, 6, 20) in s.dates()
+    assert date(2025, 7, 7) in s.dates()
+    assert date(2025, 7, 4) not in s.dates()
+
+
+def test_build_biweekly_fridays_from_ref():
+    ref = ScheduleRef(
+        kind="biweekly_fridays",
+        start="2026-08-01",
+        end="2026-09-15",
+        anchor="2026-08-14",
+    )
+    assert build_schedule(ref).dates() == [
+        date(2026, 8, 14),
+        date(2026, 8, 28),
+        date(2026, 9, 11),
+    ]
 
 
 # ── universes ────────────────────────────────────────────────────────────────

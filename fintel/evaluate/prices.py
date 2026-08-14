@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import logging
+import sys
 from collections.abc import Iterable
 from datetime import date as Date
 from pathlib import Path
@@ -66,17 +67,33 @@ def ensure_job_prices(
 
     prices = price_lookup_for(job_dir, cache_root=cache_root)
     src = _prices_source(job_dir, cache_root=cache_root)
-    if src is not None and hasattr(src, "ensure"):
-        # MassivePrices.ensure ignores ``since`` and fills from history_start.
-        since = Date(through.year - 5, 1, 1)
-        for sym in syms:
-            try:
-                src.ensure(sym, since, through)
-            except Exception as exc:  # noqa: BLE001 — analytics warm path must not crash
-                logger.warning(
-                    "ensure_job_prices: %s failed for %s: %s", type(src).__name__, sym, exc
-                )
-        prices = price_lookup_for(job_dir, cache_root=cache_root)
+    if src is None or not hasattr(src, "ensure"):
+        print("ensure_job_prices: no online prices source; using cache as-is", file=sys.stderr)
+        return prices.latest_bar_date(syms)
+
+    from fintel.market.cache.prices import interior_session_holes
+
+    # MassivePrices.ensure ignores ``since`` and fills from history_start.
+    since = Date(through.year - 5, 1, 1)
+    n_before = sum(
+        len(interior_session_holes(prices.store.read(sym), since, through)) for sym in syms
+    )
+    for sym in syms:
+        try:
+            src.ensure(sym, since, through)
+        except Exception as exc:  # noqa: BLE001 — analytics warm path must not crash
+            logger.warning(
+                "ensure_job_prices: %s failed for %s: %s", type(src).__name__, sym, exc
+            )
+    prices = price_lookup_for(job_dir, cache_root=cache_root)
+    n_after = sum(
+        len(interior_session_holes(prices.store.read(sym), since, through)) for sym in syms
+    )
+    if n_before or n_after:
+        print(
+            f"ensure_job_prices: session holes {n_before} → {n_after}",
+            file=sys.stderr if n_after else sys.stdout,
+        )
     return prices.latest_bar_date(syms)
 
 

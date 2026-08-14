@@ -44,7 +44,11 @@ fintel cache status --source massive_news --symbol AAPL --window 2024-01-01..202
 
 Coverage is a list of `[from, through]` intervals, not a lone min/max — a cache
 warmed through 2026 with a hole in 2024 honestly reports the gap, and a request
-in the hole fetches instead of returning empty.
+in the hole fetches instead of returning empty. Price coverage is the fetch
+window with **skipped NYSE sessions punched out**: weekends/holidays stay
+covered (no bar expected), but a truncated vendor response cannot hide
+Monday's missing bar behind Friday–Tuesday coverage. `record_empty_span`
+still covers the whole window — that is "we asked, nothing is there."
 
 ## One lookback per kind
 

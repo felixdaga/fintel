@@ -6,11 +6,15 @@ resolves it and runs it over the ensemble signal (and per-run signals for
 stochasticity). It never inspects what's inside `kpi_fn`.
 
 Builtin `single_name_ir` is the current package's KPI: **raw IC** (per-date
-Spearman IC of signal vs forward return, plus mean / raw_icir / ic_values) over
-the decision-date grid. The "net returns" half of "raw IC and net" comes from
-the holdings layer (`evaluate/holdings.py`, platform mechanics), combined in
-the report — keeping the KPI (the metric) and holdings (the mechanics) separate
-per the abstraction in docs/architecture.md §1.
+Spearman and Pearson IC of signal vs forward return, plus mean / raw_icir /
+t_stat / icir_ann / ic_values) over the decision-date grid. `t_stat` is
+`raw_icir × √n` (one-sample t of mean IC vs 0). `icir_ann` is
+`raw_icir × √ppy` when `params["ppy"]` is set (cadence from the report
+layer); mean IC is a rank/linear correlation and is never annualized. The
+"net returns" half of "raw IC and net" comes from the holdings layer
+(`evaluate/holdings.py`, platform mechanics), combined in the report —
+keeping the KPI (the metric) and holdings (the mechanics) separate per the
+abstraction in docs/architecture.md §1.
 """
 
 from __future__ import annotations
@@ -90,6 +94,33 @@ def _spearman_ic(signal: dict[Symbol, float], fwd: dict[Symbol, float]) -> float
     return _pearson(rx, ry)
 
 
+def _pearson_ic(signal: dict[Symbol, float], fwd: dict[Symbol, float]) -> float | None:
+    """Cross-sectional Pearson IC over the symbols present in both."""
+    common = sorted(set(signal) & set(fwd))
+    if len(common) < 2:
+        return None
+    return _pearson([signal[s] for s in common], [fwd[s] for s in common])
+
+
+def _mean_icir(vals: list[float]) -> tuple[float | None, float | None]:
+    """Return (mean, raw ICIR = mean/sample-std). ICIR is None when n<2 or std=0."""
+    if not vals:
+        return None, None
+    mu = sum(vals) / len(vals)
+    if len(vals) < 2:
+        return mu, None
+    var = sum((v - mu) ** 2 for v in vals) / (len(vals) - 1)
+    std = var**0.5
+    return mu, (mu / std if std > 0 else None)
+
+
+def _t_stat(icir: float | None, n: int) -> float | None:
+    """One-sample t of mean IC vs 0: ``ICIR_raw × √n``. None when ICIR is undefined."""
+    if icir is None or n < 2:
+        return None
+    return icir * (n**0.5)
+
+
 def _forward_returns(
     dates: list[Date], universe: list[Symbol], prices: PriceLookup, horizon: int
 ) -> dict[Date, dict[Symbol, float]]:
@@ -120,48 +151,78 @@ def single_name_ir(
 ) -> dict:
     """Raw IC for a single-name strategy.
 
-    Per horizon: per-date Spearman IC of signal vs forward return, then mean_ic,
-    raw_icir (mean/std, no annualization), ic_values, and n_periods. This is the
-    metric half of the package's "raw IC and net" KPI; the net-returns half is
-    produced by the holdings layer.
+    Per horizon: per-date Spearman and Pearson IC of signal vs forward return,
+    then mean / raw_icir (mean/std, not annualized) / t_stat (`raw_icir × √n`) /
+    icir_ann (`raw_icir × √ppy` when `params["ppy"]` is set). Mean IC is never
+    annualized. `ic_values` stays Spearman for backward compatibility. The
+    net-returns half of the package's "raw IC and net" KPI is produced by the
+    holdings layer.
     """
     dates = sorted(signal_by_date)
     universe = sorted({s for sig in signal_by_date.values() for s in sig})
+    ppy = params.get("ppy")
+    try:
+        sqrt_ppy = float(ppy) ** 0.5 if ppy else None
+    except (TypeError, ValueError):
+        sqrt_ppy = None
+
+    def _ann(raw: float | None) -> float | None:
+        if raw is None or sqrt_ppy is None:
+            return None
+        return round(raw * sqrt_ppy, 6)
+
+    empty = {
+        "mean_ic": None,
+        "raw_icir": None,
+        "t_stat": None,
+        "icir_ann": None,
+        "pearson_mean": None,
+        "pearson_icir": None,
+        "pearson_t": None,
+        "pearson_icir_ann": None,
+        "ic_values": [],
+        "n_periods": 0,
+    }
     per_horizon: dict[int, dict] = {}
     for h in horizons:
         fwd_by_date = _forward_returns(dates, universe, prices, h)
-        ic_vals: list[float] = []
+        sp_vals: list[float] = []
+        pe_vals: list[float] = []
         for d in dates:
             if d not in fwd_by_date:
                 continue
-            ic = _spearman_ic(signal_by_date[d], fwd_by_date[d])
-            if ic is not None:
-                ic_vals.append(ic)
-        if not ic_vals:
-            per_horizon[h] = {
-                "mean_ic": None,
-                "raw_icir": None,
-                "ic_values": [],
-                "n_periods": 0,
-            }
+            sig, fwd = signal_by_date[d], fwd_by_date[d]
+            sp = _spearman_ic(sig, fwd)
+            pe = _pearson_ic(sig, fwd)
+            if sp is not None:
+                sp_vals.append(sp)
+            if pe is not None:
+                pe_vals.append(pe)
+        if not sp_vals and not pe_vals:
+            per_horizon[h] = dict(empty)
             continue
-        mu = sum(ic_vals) / len(ic_vals)
-        if len(ic_vals) >= 2:
-            var = sum((v - mu) ** 2 for v in ic_vals) / (len(ic_vals) - 1)
-            std = var**0.5
-            raw_icir = mu / std if std > 0 else None
-        else:
-            raw_icir = None
+        sp_mu, sp_ir = _mean_icir(sp_vals)
+        pe_mu, pe_ir = _mean_icir(pe_vals)
+        n_sp, n_pe = len(sp_vals), len(pe_vals)
+        sp_t = _t_stat(sp_ir, n_sp)
+        pe_t = _t_stat(pe_ir, n_pe)
         per_horizon[h] = {
-            "mean_ic": round(mu, 6),
-            "raw_icir": round(raw_icir, 6) if raw_icir is not None else None,
-            "ic_values": [round(v, 6) for v in ic_vals],
-            "n_periods": len(ic_vals),
+            "mean_ic": round(sp_mu, 6) if sp_mu is not None else None,
+            "raw_icir": round(sp_ir, 6) if sp_ir is not None else None,
+            "t_stat": round(sp_t, 6) if sp_t is not None else None,
+            "icir_ann": _ann(sp_ir),
+            "pearson_mean": round(pe_mu, 6) if pe_mu is not None else None,
+            "pearson_icir": round(pe_ir, 6) if pe_ir is not None else None,
+            "pearson_t": round(pe_t, 6) if pe_t is not None else None,
+            "pearson_icir_ann": _ann(pe_ir),
+            "ic_values": [round(v, 6) for v in sp_vals],
+            "n_periods": n_sp,
         }
     return {
         "kpi": "single_name_ir",
         "metric_key": params.get("metric_key", "icir"),
         "horizons": horizons,
+        "ppy": ppy,
         "per_horizon": per_horizon,
         "n_dates": len(dates),
     }

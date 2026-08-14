@@ -9,7 +9,7 @@ Six outputs, all for the party you have been assigned (you cannot submit for the
 1. **`symbol`** — the party code you were assigned (`USA` or `CHN`). Echo it back; you do not choose it.
 2. **`threat_score`** — on [-1, +1], how threatening is the current state of the dispute to YOUR country's interests.
 3. **`score`** — **set this EQUAL to `threat_score`.** It carries your threat reading into the record so it is not lost.
-4. **`action_score`** — on [-1, +1], your recommended stance on the escalate(−1) ↔ concede(+1) axis.
+4. **`action_score`** — on [-1, +1], your recommended stance on the escalate(-1) ↔ concede(+1) axis.
 5. **`action_level`** — the specific action you recommend, from the static list below. Must be consistent with your action_score.
 6. **`rationale`** — structured as `RECOMMENDATION: <what should we do now, 2-4 sentences>` then `SUPPORTING RATIONALE: <why this threat_score and this action_score, citing specific PIT evidence>`.
 
@@ -24,8 +24,8 @@ The same event reads differently for USA and CHN. Use the continuous range; thes
 | **+1.0** | Existential: tariff cascade threatens US supply chains, tech leadership, ally cohesion; recession risk from trade war is material |
 | **+0.5** | High: material GDP drag, key export sector exposed to retaliation, domestic political pressure mounting |
 | **0.0** | Neutral / unclear / symmetric — no clear advantage or disadvantage |
-| **−0.5** | Opportunity: leverage to extract concessions, onshore industry, domestic political boost from being tough on China |
-| **−1.0** | Clear opportunity: opponent overextended, favorable terrain, chance to restructure trade relationship on US terms |
+| **-0.5** | Opportunity: leverage to extract concessions, onshore industry, domestic political boost from being tough on China |
+| **-1.0** | Clear opportunity: opponent overextended, favorable terrain, chance to restructure trade relationship on US terms |
 
 ### CHN anchors
 
@@ -34,17 +34,17 @@ The same event reads differently for USA and CHN. Use the continuous range; thes
 | **+1.0** | Existential: tariff/entity-list threatens export economy, CCP legitimacy, tech self-sufficiency goals; financial stability risk |
 | **+0.5** | High: major export sectors hit, FX pressure, firm-level targeting (Huawei), unemployment risk in export hubs |
 | **0.0** | Neutral / unclear / symmetric |
-| **−0.5** | Opportunity: leverage to rally nationalism, accelerate tech autonomy (Made in China 2025), diversify away from USD |
-| **−1.0** | Clear opportunity: opponent overextended, chance to position China as defender of multilateral trade order |
+| **-0.5** | Opportunity: leverage to rally nationalism, accelerate tech autonomy (Made in China 2025), diversify away from USD |
+| **-1.0** | Clear opportunity: opponent overextended, chance to position China as defender of multilateral trade order |
 
-In-between values (e.g. +0.35, −0.15) are encouraged when the case sits between anchors. Prefer milder scores when evidence is thin, gapped, or conflicting.
+In-between values (e.g. +0.35, -0.15) are encouraged when the case sits between anchors. Prefer milder scores when evidence is thin, gapped, or conflicting.
 
 ## Action score anchors (symmetric for both parties)
 
 | action_score | Anchor |
 |:---:|---|
-| **−1.0** | Maximal escalation: broadest tariff hikes, full entity-list, export controls, sanctions, executive detention |
-| **−0.5** | Moderate escalation: raise/expand tariffs, add firms to entity list |
+| **-1.0** | Maximal escalation: broadest tariff hikes, full entity-list, export controls, sanctions, executive detention |
+| **-0.5** | Moderate escalation: raise/expand tariffs, add firms to entity list |
 | **0.0** | Hold / negotiate without new commitments |
 | **+0.5** | Moderate de-escalation: partial rollback, release detainees, limited commitments |
 | **+1.0** | Maximal concession: full tariff rollback, withdraw entity list, major purchase commitments, structural reform |
@@ -55,11 +55,11 @@ Your `action_level` must be one of these. It must be consistent with your action
 
 | Action level | Typical action_score band | When appropriate |
 |---|:---:|---|
-| `escalate_tariffs` | [−1.0, −0.4) | Raise or broaden tariffs on the opponent's goods |
-| `escalate_non_tariff` | [−1.0, −0.4) | Entity list, export controls, sanctions, executive detention |
-| `retaliate` | [−0.8, −0.2) | Mirror response to opponent's recent move (tariff or non-tariff) |
-| `negotiate` | [−0.2, +0.2] | Engage in talks without new commitment; explore de-escalation |
-| `hold` | [−0.1, +0.1] | Maintain current posture; no new action |
+| `escalate_tariffs` | [-1.0, -0.4) | Raise or broaden tariffs on the opponent's goods |
+| `escalate_non_tariff` | [-1.0, -0.4) | Entity list, export controls, sanctions, executive detention |
+| `retaliate` | [-0.8, -0.2) | Mirror response to opponent's recent move (tariff or non-tariff) |
+| `negotiate` | [-0.2, +0.2] | Engage in talks without new commitment; explore de-escalation |
+| `hold` | [-0.1, +0.1] | Maintain current posture; no new action |
 | `partial_rollback` | (+0.2, +0.6] | Roll back some tariffs / delist some firms / release detainees |
 | `concede_purchases` | [+0.4, +1.0] | Commit to additional purchases / structural reform commitments |
 | `full_rollback` | [+0.6, +1.0] | Full tariff removal, withdraw entity list, comprehensive settlement |

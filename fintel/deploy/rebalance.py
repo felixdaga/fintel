@@ -13,7 +13,7 @@ from dataclasses import asdict, dataclass, field
 from datetime import date as Date
 from pathlib import Path
 
-from fintel.deploy.config import DeployConfig, job_dir
+from fintel.deploy.config import DeployConfig, deploy_dir, job_dir
 from fintel.deploy.holdings import get_rule
 from fintel.evaluate.prices import ensure_job_prices, mark_as_of, price_lookup_for
 from fintel.evaluate.read import load_job
@@ -152,11 +152,11 @@ def compute_rebalance(
 
 
 def write_rebalance(report: RebalanceReport, config: DeployConfig) -> dict[str, Path]:
-    """Write rebalance.json + rebalance.md under <job_dir>/deploy/."""
-    deploy_dir = job_dir(config) / "deploy"
-    deploy_dir.mkdir(parents=True, exist_ok=True)
-    json_path = deploy_dir / "rebalance.json"
-    md_path = deploy_dir / "rebalance.md"
+    """Write rebalance.json + rebalance.md next to the live toml."""
+    out = deploy_dir(config)
+    out.mkdir(parents=True, exist_ok=True)
+    json_path = out / "rebalance.json"
+    md_path = out / "rebalance.md"
 
     json_path.write_text(json.dumps(report.to_dict(), indent=2) + "\n")
     md_path.write_text(_render_markdown(report))

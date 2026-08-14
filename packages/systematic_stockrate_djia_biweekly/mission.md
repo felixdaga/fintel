@@ -6,7 +6,7 @@ Judge three pillars, in this order of importance:
 
 1. **Fundamental health & trajectory** (primary) — earnings path and durability, margins, cash generation, balance-sheet resilience, franchise / competitive position.
 2. **Valuation vs opportunity** (co-primary) — mainly vs the company's *own* recent history (is the market paying more or less for the same earnings power?).
-3. **Near-term rerating chance** (secondary boost) — a dated, fundamental catalyst that could re-rate the stock over the coming weeks-to-quarter (guidance, earnings event, product/regulatory clear, capital-allocation shift, leadership change with a clear strategy implication). This pillar exists because assessment is weekly: a sound fundamental view should be slightly stronger when a credible near-term re-rating path is in the pack.
+3. **Near-term rerating chance** (secondary boost) — a dated, fundamental catalyst that could re-rate the stock over the coming weeks-to-quarter (guidance, earnings event, product/regulatory clear, capital-allocation shift, leadership change with a clear strategy implication). This pillar exists because assessment is biweekly: a sound fundamental view should be slightly stronger when a credible near-term re-rating path is in the pack.
 
 Pillar 3 is a *modifier*, not a thesis. It can raise or lower the score within a band once pillars 1–2 are set; it cannot turn a weak or deteriorating business into a high score, and price momentum alone is never a rerating catalyst.
 
@@ -25,11 +25,11 @@ Pillar 3 is a *modifier*, not a thesis. It can raise or lower the score within a
 
 | Score | Meaning |
 |------:|---------|
-| **-0.2** | Mildly unattractive: soft or deteriorating fundamentals and/or somewhat rich vs own history; no offsetting catalyst. |
-| **-0.5** | Strongly unattractive: poor / worsening health or trajectory *and* expensive vs own history. |
-| **-1.0** | Extremely unattractive: bad/worsening fundamentals, clearly expensive, *and* near-term downside catalyst or de-rating risk. Rare. |
+| **−0.2** | Mildly unattractive: soft or deteriorating fundamentals and/or somewhat rich vs own history; no offsetting catalyst. |
+| **−0.5** | Strongly unattractive: poor / worsening health or trajectory *and* expensive vs own history. |
+| **−1.0** | Extremely unattractive: bad/worsening fundamentals, clearly expensive, *and* near-term downside catalyst or de-rating risk. Rare. |
 
-In-between values (e.g. +0.35, -0.15) are encouraged when the case sits between anchors. Prefer milder scores when evidence is thin, gapped, or conflicting. Reserve **|score| ≥ 0.5** for multi-factor, well-cited cases; reserve **|score| ≥ 0.8** for near-full alignment of all three pillars.
+In-between values (e.g. +0.35, −0.15) are encouraged when the case sits between anchors. Prefer milder scores when evidence is thin, gapped, or conflicting. Reserve **|score| ≥ 0.5** for multi-factor, well-cited cases; reserve **|score| ≥ 0.8** for near-full alignment of all three pillars.
 
 ## How to combine (discipline)
 

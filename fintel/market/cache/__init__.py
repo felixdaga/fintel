@@ -10,7 +10,7 @@ On-disk shapes stay in :mod:`fintel.market.data.store` (``RecordCache``,
 ``PriceStore``). This package never writes its own layout.
 """
 
-from fintel.market.cache.prices import CachedPricesFeed, ensure_prices
+from fintel.market.cache.prices import CachedPricesFeed, ensure_prices, interior_session_holes
 from fintel.market.cache.query import ensure_query_blob
 from fintel.market.cache.records import CachedRecordsFeed, ensure_records
 
@@ -20,4 +20,5 @@ __all__ = [
     "ensure_prices",
     "ensure_query_blob",
     "ensure_records",
+    "interior_session_holes",
 ]

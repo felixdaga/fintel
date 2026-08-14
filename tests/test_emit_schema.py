@@ -87,6 +87,21 @@ def test_default_submit_schema_requires_symbol_score_rationale():
     assert required == ["symbol", "score", "rationale"]
 
 
+def test_advertised_submit_schema_strips_numeric_bounds():
+    """min/max on the tool schema collapse mimo tool-call negatives to -1."""
+    default = emit.submit_schema(("AAPL",))
+    score = default["properties"]["views"]["items"]["properties"]["score"]
+    assert score["type"] == "number"
+    assert "minimum" not in score
+    assert "maximum" not in score
+
+    packed = emit.submit_schema(("USA",), item_schema=GEOPOL_ITEM)
+    props = packed["properties"]["views"]["items"]["properties"]
+    for key in ("score", "conviction"):
+        assert "minimum" not in props[key]
+        assert "maximum" not in props[key]
+
+
 def test_pack_item_schema_is_wrapped_as_views_items_with_hoisted_defs():
     schema = emit.submit_schema(("USA",), item_schema=GEOPOL_ITEM)
     items = schema["properties"]["views"]["items"]

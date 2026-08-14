@@ -124,3 +124,41 @@ class WeeklyFridays:
                 out.append(snapped)
             d += timedelta(days=7)
         return sorted(set(out))
+
+
+@dataclass(frozen=True)
+class BiweeklyFridays:
+    """Every other Friday, snapped forward to a trading day if closed.
+
+    Open-ended like ``WeeklyFridays``. ``anchor`` picks the fortnight phase
+    (the Friday of that week); default is ``start``. Forward-fill extends
+    the grid by passing ``--through``.
+    """
+
+    start: Date | None = None
+    end: Date | None = None
+    anchor: Date | None = None
+    calendar: TradingCalendar = field(default_factory=TradingCalendar)
+    kind: ClassVar[str] = "biweekly_fridays"
+
+    def dates(self, start: Date | None = None, end: Date | None = None) -> list[Date]:
+        lo, hi = _window((self.start, self.end), (start, end))
+        if lo is None:
+            raise ValueError("biweekly_fridays schedule needs a start date")
+        if hi is None:
+            raise ValueError("biweekly_fridays schedule needs an end date (use --through)")
+        from datetime import timedelta
+
+        phase = self.anchor or self.start or lo
+        d = phase - timedelta(days=(phase.weekday() - 4) % 7)  # Friday of that week
+        while d - timedelta(days=14) >= lo:
+            d -= timedelta(days=14)
+        if d < lo:
+            d += timedelta(days=14)
+        out: list[Date] = []
+        while d <= hi:
+            snapped = self.calendar.snap_forward(d)
+            if _within(snapped, lo, hi):
+                out.append(snapped)
+            d += timedelta(days=14)
+        return sorted(set(out))

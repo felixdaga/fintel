@@ -6,9 +6,11 @@ import logging
 from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import date as Date
+from datetime import datetime as DateTime
 
 import pandas as pd
 
+from fintel.market.calendar import TradingCalendar
 from fintel.market.data import coverage as cov
 from fintel.market.data.base import DataError, EntitlementError
 from fintel.market.data.store import PriceStore
@@ -16,6 +18,46 @@ from fintel.market.data.store import PriceStore
 logger = logging.getLogger(__name__)
 
 FetchBars = Callable[[Date, Date], pd.DataFrame | None]
+
+
+def _as_date(raw: object) -> Date | None:
+    if raw is None:
+        return None
+    if isinstance(raw, DateTime):
+        return raw.date()
+    if isinstance(raw, Date):
+        return raw
+
+
+def interior_session_holes(
+    df: pd.DataFrame | None,
+    need_from: Date,
+    through: Date,
+    *,
+    cal: TradingCalendar | None = None,
+) -> list[tuple[Date, Date]]:
+    """NYSE sessions between the first and last cached bar that have no row.
+
+    Coverage sidecars record the *fetched window*, including weekends and
+    empty vendor responses. A sparse parquet (bars on 08-06 and 08-13, nothing
+    in between) still looks fully covered, so ``cov.missing`` will not refetch.
+    Interior holes are the opposite: we already have bars on both sides, so
+    the missing sessions are a truncated fill, not an empty market.
+    """
+    if df is None or df.empty or "date" not in df.columns:
+        return []
+    have: set[Date] = set()
+    for raw in df["date"]:
+        d = _as_date(raw)
+        if d is not None:
+            have.add(d)
+    in_window = [d for d in have if need_from <= d <= through]
+    if len(in_window) < 2:
+        return []
+    cal = cal or TradingCalendar()
+    lo, hi = min(in_window), max(in_window)
+    missing = [d for d in cal.days(lo, hi) if d not in have]
+    return cov.coalesce([(d, d) for d in missing])
 
 
 def ensure_prices(
@@ -31,6 +73,9 @@ def ensure_prices(
     """Return bars covering ``[need_from, through]``, filling gaps when online.
 
     Empty network spans are recorded so a quiet symbol is not re-fetched forever.
+    Interior session holes (sparse parquet inside a covered window) are
+    refetched but not recorded empty — a truncated vendor response should
+    retry on the next ensure.
 
     ``EntitlementError`` on a gap (plan doesn't cover that window) is treated
     like an empty fetch: the span is recorded so we stop retrying it, and any
@@ -40,11 +85,13 @@ def ensure_prices(
     """
     if through < need_from:
         return store.read(symbol)
+    cached = store.read(symbol)
     gaps = cov.missing(store.coverage(symbol), need_from, through)
-    if not gaps:
-        return store.read(symbol)
+    holes = interior_session_holes(cached, need_from, through)
+    to_fetch = cov.coalesce([*gaps, *holes])
+    if not to_fetch:
+        return cached
     if not online:
-        cached = store.read(symbol)
         if cached is None:
             raise DataError(
                 f"{source_name}: no cached prices for {symbol} covering "
@@ -56,10 +103,11 @@ def ensure_prices(
             symbol,
             need_from,
             through,
-            len(gaps),
+            len(to_fetch),
         )
         return cached
-    for lo, hi in gaps:
+    coverage_gaps = set(gaps)
+    for lo, hi in to_fetch:
         try:
             fresh = fetch_bars(lo, hi)
         except EntitlementError as exc:
@@ -76,8 +124,16 @@ def ensure_prices(
             continue
         if fresh is not None and not fresh.empty:
             store.merge(symbol, fresh, (lo, hi))
-        else:
+        elif (lo, hi) in coverage_gaps:
             store.record_empty_span(symbol, (lo, hi))
+        else:
+            logger.warning(
+                "%s: %s interior hole [%s, %s] still empty after fetch",
+                source_name,
+                symbol,
+                lo,
+                hi,
+            )
     return store.read(symbol)
 
 

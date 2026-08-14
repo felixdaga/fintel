@@ -9,6 +9,7 @@ this right.
 
 from __future__ import annotations
 
+from collections.abc import Iterable
 from dataclasses import dataclass, field
 from datetime import date as Date
 from datetime import timedelta
@@ -139,3 +140,19 @@ class TradingCalendar:
     def non_trading(self, dates: list[Date]) -> list[Date]:
         """The audit direction — which of these dates have no session."""
         return [d for d in dates if not self.is_trading_day(d)]
+
+    def interior_missing_sessions(
+        self, have: Iterable[Date], start: Date, end: Date
+    ) -> list[Date]:
+        """NYSE sessions between the first and last date in ``have`` ∩ [start, end]
+        that are absent from ``have``.
+
+        Days before the first bar (IPO / entitlement floor) and after the last
+        bar (today's session not published yet) are not holes — those are
+        empty-span / not-yet-fetched, not a truncated fill.
+        """
+        in_window = [d for d in have if start <= d <= end]
+        if len(in_window) < 2:
+            return []
+        have_set = set(have)
+        return [d for d in self.days(min(in_window), max(in_window)) if d not in have_set]

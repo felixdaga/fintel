@@ -39,6 +39,7 @@ fintel = "fintel.cli.main:main"
 mcp = ["mcp>=1.2,<2", "psutil>=5.9"]
 massive = ["httpx>=0.27"]
 llm = ["litellm>=1.90"]
+eval = ["cvxpy>=1.4"]
 dev = ["pytest>=7,<9", "ruff>=0.4", "httpx>=0.27", "mcp>=1.2,<2", "psutil>=5.9"]
 
 [build-system]

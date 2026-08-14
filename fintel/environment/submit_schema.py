@@ -133,6 +133,14 @@ def submit_schema(
       * rare case — already submit-shaped (has ``properties.views``); used as the
         base schema with platform abstain fields filled in if missing;
       * ``None`` / unusable — platform default item (``symbol``/``score``/``rationale``).
+
+    Numeric ``minimum``/``maximum`` are stripped before this schema is advertised
+    as a tool. Provider constrained-decoding (OpenRouter ``tool_choice`` on
+    mimo-v2.5-pro) treats a bounded ``number`` as an integer range: fractional
+    positives still come through, every negative collapses to ``-1``. Same pack
+    and model via OpenClaw (no provider tool grammar) emit a continuous short
+    side. Pack ``output_schema.json`` may still declare bounds for humans;
+    ``parse_views`` keeps clamping overshoots.
     """
     listed = ", ".join(symbols) if symbols else "the assigned symbols"
 
@@ -150,7 +158,7 @@ def submit_schema(
                     "description",
                     f"One entry per symbol you are deciding on: {listed}.",
                 )
-            return schema
+            return _schema_without_numeric_bounds(schema)
 
     items, defs = _items_from_pack(item_schema)
     schema: dict[str, Any] = {
@@ -168,7 +176,7 @@ def submit_schema(
     }
     if defs:
         schema["$defs"] = defs
-    return schema
+    return _schema_without_numeric_bounds(schema)
 
 
 def _items_from_pack(
