@@ -15,6 +15,12 @@ runs/*
 .env/
 !.env.example
 
+# Strategy packages are local by default; ship only curated demos
+packages/*
+!packages/geopol_trade_war_2018/
+!packages/systematic_stockrate_djia_weekly/
+!packages/the_challenge/
+
 # Demo / published runs shipped with the repo
 !runs/systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1/
 !runs/geopol-abl-mimo-llm/
@@ -27,6 +33,7 @@ scripts/f1_rebalance.sh
 scripts/publish_site.sh
 scripts/build_strategy_data.py
 scripts/execute_trades.py
+scripts/set_capital_injection.py
 scripts/fund_report.py
 f1_deploy/
 
