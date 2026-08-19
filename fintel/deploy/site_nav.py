@@ -8,9 +8,10 @@ decision date). Cadence does not change the NAV frequency.
 
 from __future__ import annotations
 
+from collections.abc import Callable
 from datetime import date as Date
 from math import ceil
-from typing import Callable, Protocol
+from typing import Protocol
 
 from fintel.market.calendar import TradingCalendar
 
@@ -25,16 +26,10 @@ def last_on_or_before(dates: list[Date], on: Date) -> Date | None:
     return max(eligible) if eligible else None
 
 
-def weighted_return(
-    weights: dict[str, float], start: Date, end: Date, prices: Prices
-) -> float:
+def weighted_return(weights: dict[str, float], start: Date, end: Date, prices: Prices) -> float:
     if not weights:
         return 0.0
-    fwd = {
-        s: r
-        for s in weights
-        if (r := prices.forward_return(s, start, end)) is not None
-    }
+    fwd = {s: r for s in weights if (r := prices.forward_return(s, start, end)) is not None}
     if not fwd:
         return 0.0
     mass = sum(weights[s] for s in fwd) or 1.0
@@ -129,8 +124,7 @@ def walk_nav(
         weights = book_on(prev)
         r = weighted_return(weights, prev, cur, prices)
         turnover = sum(
-            abs(weights.get(s, 0.0) - prev_w.get(s, 0.0))
-            for s in set(weights) | set(prev_w)
+            abs(weights.get(s, 0.0) - prev_w.get(s, 0.0)) for s in set(weights) | set(prev_w)
         )
         is_rebalance = prev in decision_set and not (first_rebalance_free and i == 0)
         cost = turnover * cost_bps / 10000.0 if is_rebalance else 0.0
@@ -142,9 +136,7 @@ def walk_nav(
     return gross, net
 
 
-def walk_benchmark(
-    daily: list[Date], universe: list[str], prices: Prices
-) -> list[dict]:
+def walk_benchmark(daily: list[Date], universe: list[str], prices: Prices) -> list[dict]:
     """Price-weighted universe, marked daily on the same grid as F1."""
     if not daily:
         return []
