@@ -20,6 +20,7 @@ from fintel.agents import (
     SafetyRefusal,
 )
 from fintel.agents.base import AgentError
+from fintel.agents.contract import PACK_CONTEXT_FIELDS
 from fintel.environment import Cell
 from fintel.models.common import RETRYABLE
 from fintel.models.decision import AgentResponse, View
@@ -66,9 +67,23 @@ SUBPROCESS_ADAPTERS: frozenset[str] = frozenset({"openclaw", "claude-code"})
 # subprocess adapters below.
 LLM_KEY_REQUIRED: frozenset[str] = frozenset({"optimized", "djia_strategy_adapter_for_llm_agent"})
 
+# Values for the fields in PACK_CONTEXT_FIELDS. A new field must be added
+# to the contract tuple *and* here, or test_pack_context_payload_matches_contract
+# fails.
+PACK_CONTEXT = {
+    "mission_text": "score it",
+    "output_schema_text": "{}",
+    "alpha_view_text": "## Alpha view\n\nRate the business.",
+}
+
 
 def envir(tmp_path, **kw):
     return an_environment(tmp_path, **kw)
+
+
+def test_pack_context_payload_matches_contract():
+    """The conformance payload and the central list cannot drift."""
+    assert tuple(PACK_CONTEXT) == PACK_CONTEXT_FIELDS
 
 
 # ── the contract ─────────────────────────────────────────────────────────────
@@ -334,9 +349,10 @@ def test_subprocess_adapters_satisfy_the_protocol_without_invoking(name):
 @pytest.mark.parametrize("name", sorted(SUBPROCESS_ADAPTERS))
 def test_subprocess_adapters_carry_mission_and_schema(name):
     """The same platform-supplied context every other adapter accepts."""
-    agent = agents.build(name, mission_text="score it", output_schema_text="{}")
-    assert agent.mission_text == "score it"
-    assert agent.output_schema_text == "{}"
+    agent = agents.build(name, **PACK_CONTEXT)
+    assert agent.mission_text == PACK_CONTEXT["mission_text"]
+    assert agent.output_schema_text == PACK_CONTEXT["output_schema_text"]
+    assert agent.alpha_view_text == PACK_CONTEXT["alpha_view_text"]
 
 
 def test_openclaw_accepts_company_names_so_pack_schema_is_not_dropped():
@@ -368,9 +384,26 @@ def test_llm_adapters_satisfy_the_protocol_without_invoking(name):
 @pytest.mark.parametrize("name", sorted(LLM_KEY_REQUIRED))
 def test_llm_adapters_carry_mission_and_schema(name):
     """The same platform-supplied context every other adapter accepts."""
-    agent = agents.build(name, mission_text="score it", output_schema_text="{}")
-    assert agent.mission_text == "score it"
-    assert agent.output_schema_text == "{}"
+    agent = agents.build(name, **PACK_CONTEXT)
+    assert agent.mission_text == PACK_CONTEXT["mission_text"]
+    assert agent.output_schema_text == PACK_CONTEXT["output_schema_text"]
+    assert agent.alpha_view_text == PACK_CONTEXT["alpha_view_text"]
+
+
+@pytest.mark.parametrize("name", sorted(agents.names()))
+def test_every_adapter_accepts_pack_context(name):
+    """Strategy-pack fields are offered uniformly. Registering an adapter
+    without declaring them fails here, which is the point: a new agent
+    inherits the pack surface by existing, not by a per-adapter test.
+
+    Accepting the kwargs is all the registry can check. An adapter that
+    spawns sub-agents still has to forward ``alpha_view_text`` itself —
+    see ``test_specialists_and_verifier_receive_alpha_view_pm_does_not_double_it``.
+    """
+    agent = agents.build(name, **CONFORMANT.get(name, {}), **PACK_CONTEXT)
+    assert agent.mission_text == PACK_CONTEXT["mission_text"]
+    assert agent.output_schema_text == PACK_CONTEXT["output_schema_text"]
+    assert agent.alpha_view_text == PACK_CONTEXT["alpha_view_text"]
 
 
 @pytest.mark.parametrize("name", sorted(agents.names()))

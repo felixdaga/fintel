@@ -32,6 +32,8 @@ fintel simulation packages/systematic_stockrate_djia_weekly \
 
 # Score it
 fintel report smoke
+# same-period sidecar (leaves report.json in place):
+# fintel report <longer-job> --start 2026-01-02
 
 # Tests
 uv run pytest tests/
@@ -57,7 +59,7 @@ fintel/
 │   └── cli/               # L9 — parse flags, build config, call simulate/evaluate, present, watch
 ├── packages/              # strategy packages (external, loaded not imported by platform)
 ├── docs/                  # architecture + guides
-├── runs/                  # job output (gitignored; demo run negated in)
+├── runs/                  # job output (gitignored; weekly demo + geopol runs negated in)
 ├── cache/                 # central data cache (gitignored)
 └── tests/                 # pytest suite, flat
 ```
@@ -74,6 +76,8 @@ An external directory the platform loads, validates, and freezes:
 packages/my_strategy/
   strategy.toml          # manifest: universe, schedule, data bindings, scoring
   mission.md             # agent character / rubric
+  alpha_view.md          # optional — standing thesis (composed into every prompt)
+  alpha_views/           # optional — dated notes YYYY-MM-DD.md (PIT)
   output_schema.json     # View contract (symbol + score in [-1,1] minimum)
   strategy.lock          # written by load_and_prepare
   my_sources.py          # optional — bring-your-own DataSource
@@ -159,7 +163,10 @@ Key files to know:
 - `tests/test_architecture.py` — the layer map + invariants. If your change
   adds a forbidden import, this fails first.
 - `tests/test_agents.py` — agent conformance suite, parametrised over the
-  registry. Adding an adapter without registering it fails here.
+  registry. Adding an adapter without registering it fails here. Pack-context
+  fields come from `fintel.agents.contract.PACK_CONTEXT_FIELDS`.
+- `tests/test_check.py` — `fintel check` / pack-feature list
+  (`fintel.strategy.inspect.PACK_FEATURES`).
 - `tests/test_evaluate.py` — the evaluation-layer conformance test (a
   dissimilar package runs end-to-end with zero platform edits).
 - `tests/test_pit.py` — point-in-time guarantees.
@@ -196,8 +203,13 @@ package. Custom sources must clamp on `cutoff.decision_date`. See
 2. Extend the right base (`LLMAgent` / `BaseInstalledAgent` / `ScriptedAgent`).
 3. Register in `fintel/agents/factory.py` name map.
 4. Declare `pit_enforcement` (`access` or `cli_deny`).
-5. `tests/test_agents.py` will pick it up via the registry parametrisation —
-   it must pass the conformance suite.
+5. Declare the pack-context fields (`mission_text`, `output_schema_text`,
+   `alpha_view_text`). If you spawn sub-agents that never see the rubric,
+   forward `alpha_view_text` into those prompts (with a note that it may
+   not apply equally to every sub-task / source) and set `subagents = True`.
+6. `tests/test_agents.py` will pick it up via the registry parametrisation —
+   it must pass the conformance suite, including pack-context acceptance.
+7. `fintel check <pack> --agent <name>` shows wired vs default vs issues.
 
 See [`docs/add_new_agents_guide.md`](docs/add_new_agents_guide.md).
 
@@ -217,8 +229,10 @@ date (membership changes over time).
 ## Important notes
 
 - The `fintel` CLI is the only operator surface — no `scripts/` one-offs.
-- `runs/` and `cache/` are gitignored; the demo run `runs/systematic_stockrate_djia_weekly_optimized_20260806_mimo_v2_5_pro_k1_0001/`
-  is negated in `.gitignore` so it ships.
+- `runs/` and `cache/` are gitignored; shipped exceptions are the weekly DJIA
+  demo `runs/systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1/`
+  and the four geopol ablations (`geopol-abl-mimo-llm`, `geopol-abl-mimo-oc`,
+  `geopol-abl-deepseek-oc`, `geopol-abl-grok-oc`).
 - Secrets load from `.env/keys.env` unless `--no-bootstrap` is set.
 - The MCP server lives in `environment/` (not `agents/`) because it rebuilds
   the environment — which requires `market.factory` — and `agents/` is barred

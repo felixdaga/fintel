@@ -9,7 +9,7 @@ and scores the outcome.
 ```mermaid
 flowchart LR
     subgraph pack["strategy package"]
-        M["mission.md<br/>output_schema.json"]
+        M["mission.md<br/>alpha_view.md<br/>output_schema.json"]
         S["strategy.toml<br/>universe · schedule · data · scoring"]
     end
     subgraph mkt["market (data layer)"]
@@ -68,7 +68,7 @@ PIT-faithful machinery to execute any such strategy and measure its outcome.
 
 | | Encapsulates | Brings |
 |---|---|---|
-| **Strategy package** | the investment strategy | universe, schedule, decision scope, data kinds + params, mission + output contract, signal, KPI, horizons, holdings params |
+| **Strategy package** | the investment strategy | universe, schedule, decision scope, data kinds + params, mission + optional alpha view + output contract, signal, KPI, horizons, holdings params |
 | **Agent** | how the mission gets executed | model, sampling, channel choice, internal decomposition |
 | **Platform (fintel)** | the evaluation harness | PIT guarantee, data serving, orchestration, concurrency, ensemble, holdings/returns math, stochasticity, report |
 
@@ -111,6 +111,7 @@ runs/<job_id>/
     sessions/…               agent workspace (access.jsonl, dossier, …)
   report/                   evaluation output (fintel report)
     report.json  report.md
+    window-YYYYMMDD.json     optional same-period sidecar (`fintel report --start`)
   cache/                     shared central cache (one root, atomic, lock-merged)
 ```
 
@@ -298,6 +299,11 @@ contract: `decide(environment) -> AgentResponse` — a returned value, not a
 The MCP server lives in `environment/` (not `agents/`) because it rebuilds
 the environment — which requires `market.factory` — and `agents/` is barred
 from importing `market/`.
+
+Every adapter is offered the pack's `mission_text` (rubric composed with the
+resolved alpha view for that decision date) and `alpha_view_text` (the view
+block alone). Single-prompt agents use the composed mission; multi-call
+agents also feed `alpha_view_text` to sub-agents that never see the rubric.
 
 ### What makes agents comparable
 

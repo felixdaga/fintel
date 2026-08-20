@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import json
 import logging
+from datetime import date as Date
 from pathlib import Path
 from typing import Any
 
@@ -31,6 +32,25 @@ from fintel.models.strategy import EvalSpec, ScoringSpec
 logger = logging.getLogger(__name__)
 
 
+def window_stem(
+    *,
+    start: Date | None = None,
+    end: Date | None = None,
+    dates: frozenset[Date] | None = None,
+) -> str | None:
+    """Sidecar basename under ``report/`` for a windowed eval. None = full sample."""
+    if dates:
+        ordered = sorted(dates)
+        return f"window-{ordered[0]:%Y%m%d}-{ordered[-1]:%Y%m%d}"
+    if start and end:
+        return f"window-{start:%Y%m%d}-{end:%Y%m%d}"
+    if start:
+        return f"window-{start:%Y%m%d}"
+    if end:
+        return f"window-through-{end:%Y%m%d}"
+    return None
+
+
 def report(
     job_dir: Path,
     *,
@@ -40,6 +60,9 @@ def report(
     eval_spec: EvalSpec | None = None,
     strategy_root: Path | None = None,
     shared_concurrency: int | None = None,
+    start: Date | None = None,
+    end: Date | None = None,
+    dates: frozenset[Date] | None = None,
 ) -> ReportPayload:
     """Run the full evaluation over a finished job and return the payload.
 
@@ -60,7 +83,14 @@ def report(
         if parent not in sys.path:
             sys.path.insert(0, parent)
 
-    runs = load_job(job_dir)
+    runs = load_job(job_dir, start=start, end=end, dates=dates)
+    if (start is not None or end is not None or dates is not None) and not any(
+        r.decision_dates for r in runs
+    ):
+        raise SystemExit(
+            f"no decision dates left in {job_dir} after the report window "
+            f"(start={start}, end={end}, dates={sorted(dates) if dates else None})"
+        )
     signals = build_signals(runs, signal=scoring.signal, transform=scoring.transform)
     if prices is None:
         prices = price_lookup_for(job_dir, cache_root=cache_root)
@@ -80,9 +110,7 @@ def report(
                 strategy_name = strat
         except json.JSONDecodeError:
             pass
-    cadence = detect_cadence(
-        name=f"{strategy_name} {job_id}", dates=list(signals.decision_dates)
-    )
+    cadence = detect_cadence(name=f"{strategy_name} {job_id}", dates=list(signals.decision_dates))
     eval_params = {
         **scoring.params,
         "metric_key": scoring.metric_key,
@@ -133,17 +161,42 @@ def report(
         variance=variance,
         holdings=holdings,
         agent_eval=agent_eval_result,
-        meta={"n_runs": len(runs), "cadence": cadence},
+        meta={
+            "n_runs": len(runs),
+            "cadence": cadence,
+            **(
+                {
+                    "window": {
+                        "start": (start or signals.decision_dates[0]).isoformat()
+                        if signals.decision_dates
+                        else None,
+                        "end": (end or signals.decision_dates[-1]).isoformat()
+                        if signals.decision_dates
+                        else None,
+                        "n_dates": len(signals.decision_dates),
+                        "dates": [d.isoformat() for d in signals.decision_dates],
+                    }
+                }
+                if (start is not None or end is not None or dates is not None)
+                else {}
+            ),
+        },
     )
 
 
-def write_report(payload: ReportPayload, job_dir: Path) -> dict[str, Path]:
-    """Write `report.json` + `report.md` under `<job_dir>/report/`. Returns the
-    paths written."""
+def write_report(
+    payload: ReportPayload, job_dir: Path, *, stem: str | None = None
+) -> dict[str, Path]:
+    """Write `report.json` + `report.md` under `<job_dir>/report/`.
+
+    ``stem`` writes a sidecar (``window-YYYYMMDD.json``) instead of overwriting
+    the full-sample report. Returns the paths written.
+    """
     report_dir = JobPaths(root=job_dir).report_dir
     report_dir.mkdir(parents=True, exist_ok=True)
-    json_path = report_dir / "report.json"
-    md_path = report_dir / "report.md"
+    base = stem or "report"
+    json_path = report_dir / f"{base}.json"
+    md_path = report_dir / f"{base}.md"
     json_path.write_text(payload.model_dump_json(indent=2))
     md_path.write_text(render_markdown(payload))
     return {"json": json_path, "markdown": md_path}
@@ -166,6 +219,12 @@ def render_markdown(p: ReportPayload) -> str:
             f"dates: {len(p.decision_dates)}  universe: {len(p.universe)} "
             f"({', '.join(p.universe[:8])}{'…' if len(p.universe) > 8 else ''})"
         )
+        window = (p.meta or {}).get("window")
+        if window:
+            lines.append(
+                f"window: {window.get('start')} .. {window.get('end')}  "
+                f"(sidecar; full-sample report.json unchanged)"
+            )
         lines.append(
             "Annualized: Sharpe, IR, vol, ICIR (×√ppy); turnover ×ppy; "
             "cost (gross/net)^(1/years)−1. Not annualized: total return, max DD, mean IC."
@@ -188,9 +247,7 @@ def render_markdown(p: ReportPayload) -> str:
             f"{f', ppy={ppy:g}' if ppy else ''}):"
         )
         lines.append("")
-        lines.append(
-            "| h | sp_mean | sp_t | sp_icir_ann | pe_mean | pe_t | pe_icir_ann | n |"
-        )
+        lines.append("| h | sp_mean | sp_t | sp_icir_ann | pe_mean | pe_t | pe_icir_ann | n |")
         lines.append("|---|---|---|---|---|---|---|---|")
         for h in p.horizons:
             row = per_horizon.get(str(h)) or per_horizon.get(h) or {}

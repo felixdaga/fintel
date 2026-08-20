@@ -87,6 +87,7 @@ class DjiaStrategyAdapterForLlmAgent:
     # Strategy-pack context (wired by simulate.cell.build_agent).
     mission_text: str = ""
     output_schema_text: str = ""
+    alpha_view_text: str = ""
 
     name: str = "djia_strategy_adapter_for_llm_agent"
     version: str = "1"

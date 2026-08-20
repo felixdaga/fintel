@@ -1,9 +1,9 @@
 """L6. Load a strategy package, validate it, freeze it.
 
 A strategy *package* is an external directory: `strategy.toml` plus a mission
-prompt and an output schema. This module is the platform's only interface to
-one — it does not contain investment logic, which lives in the package and in
-the scoring layer. Three composable steps:
+prompt, an optional alpha view, and an output schema. This module is the
+platform's only interface to one — it does not contain investment logic, which
+lives in the package and in the scoring layer. Three composable steps:
 
   * `load`    — parse the manifest. No I/O beyond the file.
   * `preflight` — every reason the package cannot run, before any cost.
@@ -18,20 +18,35 @@ from pathlib import Path
 
 from fintel.market import catalog
 from fintel.models.strategy import StrategyPaths
+from fintel.strategy.inspect import PackReport, inspect_pack
 from fintel.strategy.load import ManifestError, PackageNotFound, load
 from fintel.strategy.lock import StrategyLock, build_lock, read_lock
 from fintel.strategy.preflight import PreflightError, PreflightResult, preflight
+from fintel.strategy.views import (
+    AlphaViewLibrary,
+    PackContext,
+    apply_alpha_view,
+    compose_mission,
+    load_pack_context,
+)
 
 __all__ = [
+    "AlphaViewLibrary",
     "ManifestError",
     "PackageNotFound",
+    "PackContext",
+    "PackReport",
     "PreflightError",
     "PreflightResult",
     "StrategyLock",
     "StrategyPaths",
+    "apply_alpha_view",
     "build_lock",
+    "compose_mission",
+    "inspect_pack",
     "load",
     "load_and_prepare",
+    "load_pack_context",
     "preflight",
     "read_lock",
 ]
@@ -47,7 +62,7 @@ def load_and_prepare(
 
     `write_lock=True` writes `strategy.lock` into the package root so a later
     `fintel report` can read identity without re-deriving. Set False for a
-    read-only inspection (e.g. `--list-strategy`).
+    read-only inspection (e.g. `fintel check`).
     """
     paths = load(package_dir)
     result = preflight(paths, env=env)

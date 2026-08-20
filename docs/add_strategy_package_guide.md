@@ -22,6 +22,8 @@ packages/systematic_stockrate_djia_weekly/
   strategy.toml          # required — manifest (universe, schedule, data, scoring)
   mission.md             # required — agent character / scoring rubric
   output_schema.json     # required — submit_views / View contract
+  alpha_view.md          # optional — standing thesis, composed into every prompt
+  alpha_views/           # optional — dated research notes (YYYY-MM-DD.md)
   strategy.lock          # written by load_and_prepare (identity digests)
   company_names.json     # optional — display names for evidence packs
   my_sources.py          # optional — bring-your-own DataSource(s)
@@ -29,12 +31,16 @@ packages/systematic_stockrate_djia_weekly/
 ```
 
 The platform never edits these files. It loads them, validates them, and
-freezes a `strategy.lock` recording what was loaded. Three concerns map to
-three files:
+freezes a `strategy.lock` recording what was loaded. Four concerns map to
+the pack files:
 
 - **`strategy.toml`** — *what* and *when*: universe, schedule, data kinds,
   scoring wiring.
 - **`mission.md`** — *how to judge*: the rubric the agent reasons against.
+- **`alpha_view.md`** — *optional thesis*: a standing view composed into the
+  mission and into every sub-agent prompt. Dated overlays live in
+  `alpha_views/YYYY-MM-DD.md` and are point-in-time (latest note with date ≤
+  decision date).
 - **`output_schema.json`** — *what to hand back*: the shape of a `View`.
 
 ## 2. `strategy.toml` — the manifest
@@ -168,8 +174,11 @@ the package owns what the signal *is* and what *good* means. See
 
 ## 3. `mission.md` — the rubric
 
-The mission is the agent's character. The platform passes it through
-unchanged — it never edits it. The demo's mission opens:
+The mission is the agent's character. The platform does not rewrite the
+rubric; it composes an optional **alpha view** onto it (see below) and
+hands the result to every agent.
+
+The demo's mission opens:
 
 > You are a systematic equity research analyst. You will be asked,
 > independently for one company at a time, to rate that company's
@@ -193,6 +202,29 @@ A good mission tells the agent:
   actually shown.
 - **What not to do** — e.g. "do not discuss position sizing; that is handled
   downstream."
+
+### Alpha view (optional)
+
+`alpha_view.md` is a standing thesis, separate from the scoring rubric. The
+platform composes it into the mission **and** into every sub-agent prompt —
+including specialists that never see `mission.md`. Keep the rubric stable
+across A/B packs; vary the thesis here.
+
+Dated overlays live in `alpha_views/YYYY-MM-DD.md`. At each cell the
+platform appends the latest note whose date is ≤ the decision date.
+Future-dated files are hashed into the lock (package identity) but never
+shown, so a backtest can carry a sequence of PM research notes without
+lookahead.
+
+Override filenames in `strategy.toml` if needed:
+
+```toml
+alpha_view_file = "alpha_view.md"
+alpha_views_dir = "alpha_views"
+```
+
+A pack with neither file is the default: no extra block, lock
+`alpha_view_digest` is null.
 
 ## 4. `output_schema.json` — the View contract
 
@@ -390,8 +422,13 @@ print("lock:", lock.strategy_digest)
 PY
 ```
 
-Fix every preflight problem before spending LLM tokens. Then smoke with a
-tiny universe/date override:
+Fix every preflight problem before spending LLM tokens:
+
+```bash
+fintel check packages/systematic_stockrate_djia_weekly --agent optimized
+```
+
+Then smoke with a tiny universe/date override:
 
 ```bash
 fintel simulation packages/systematic_stockrate_djia_weekly \
@@ -409,7 +446,8 @@ fintel simulation packages/systematic_stockrate_djia_weekly \
 - [ ] Computed-kind upstreams bound explicitly
 - [ ] `output_schema.json` declares `symbol` + `score` in `required` (platform hooks)
 - [ ] `mission.md` + `output_schema.json` agree with the agent
+- [ ] Optional `alpha_view.md` / `alpha_views/` is the thesis you meant (PIT dates)
 - [ ] Required env vars documented / present in `.env/keys.env`
 - [ ] Custom sources clamp on `cutoff.decision_date`
-- [ ] `load_and_prepare` is green; `strategy.lock` written
+- [ ] `fintel check <pack> --agent <name>` is clean (wired vs default is what you meant)
 - [ ] Smoke run on 1–2 names × 1 date before a full job

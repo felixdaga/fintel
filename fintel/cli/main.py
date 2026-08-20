@@ -197,10 +197,21 @@ def build_parser() -> argparse.ArgumentParser:
         help="Price cache root (default: <output-root>/cache)",
     )
     rep.add_argument(
-        "--shared-concurrency",
-        type=int,
+        "--start",
         default=None,
-        help="Parallelism for agent-on-agent eval cells (default: sequential)",
+        help="Restrict evaluation to decision dates on/after this ISO date. "
+        "Writes report/window-YYYYMMDD.json — does not overwrite report.json",
+    )
+    rep.add_argument(
+        "--end",
+        default=None,
+        help="Restrict evaluation to decision dates on/before this ISO date",
+    )
+    rep.add_argument(
+        "--dates",
+        default=None,
+        help="Comma-separated decision dates YYYY-MM-DD (narrow only). "
+        "Writes a window-* sidecar instead of report.json",
     )
 
     cache = sub.add_parser("cache", help="Inspect the central data cache (read-only)")
@@ -230,6 +241,33 @@ def build_parser() -> argparse.ArgumentParser:
         help="Cache directory (default: <output-root>/cache)",
     )
     cache_status.add_argument("--output-root", default="runs", help="Output root (default: runs)")
+
+    check = sub.add_parser(
+        "check",
+        help="Show what a strategy pack wires vs defaults, and whether agents accept that surface",
+    )
+    check.add_argument("package", help="Path to strategy package directory")
+    check.add_argument(
+        "--agent",
+        action="append",
+        default=[],
+        help="Agent name to inspect (repeatable, or comma-separated). Default: pack only",
+    )
+    check.add_argument(
+        "--all-agents",
+        action="store_true",
+        help="Inspect every registered adapter",
+    )
+    check.add_argument(
+        "--json",
+        action="store_true",
+        help="Print the report as JSON",
+    )
+    check.add_argument(
+        "--no-bootstrap",
+        action="store_true",
+        help="Do not load keys from .env/keys.env",
+    )
 
     forward_fill = sub.add_parser("forward-fill", help="Add new decision dates to a finished run")
     forward_fill.add_argument("job_id", help="Job id under --output-root")
@@ -317,6 +355,10 @@ def main(argv: list[str] | None = None) -> int:
         from fintel.cli.cache import run_cache
 
         return run_cache(args)
+    if args.command == "check":
+        from fintel.cli.check import run_check
+
+        return run_check(args)
 
     parser.print_help()
     return 2

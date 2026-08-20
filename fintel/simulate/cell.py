@@ -34,6 +34,7 @@ from fintel.models.decision import AgentResponse
 from fintel.models.trace import Usage
 from fintel.models.trial import CellRecord, CellResult
 from fintel.simulate.artifacts import write_cell
+from fintel.strategy.views import AlphaViewLibrary, apply_alpha_view
 
 
 @dataclass(frozen=True)
@@ -54,25 +55,42 @@ def build_agent(
     mission_text: str = "",
     output_schema_text: str = "",
     company_names: dict[str, str] | None = None,
+    alpha_view_text: str = "",
 ):
     """Resolve an `AgentSpec` into a live agent.
 
     The model pin and the opaque `options` are the platform's usual hand-off;
     `mission_text`/`output_schema_text` are the strategy pack's mission.md and
     output_schema.json, offered to every agent uniformly (an explicit `options`
-    entry still wins via `setdefault`). Every builtin declares both, so it
-    always gets them; a custom `module:Class` adapter that doesn't is built
-    without them rather than failing the cell — optional platform context, not
-    a contract a one-off adapter is forced into.
+    entry still wins via `setdefault`). `alpha_view_text` is the resolved
+    alpha-view block for this cell's decision date — already composed into
+    `mission_text` for single-prompt agents; multi-call agents also take the
+    block so sub-agents that never see the rubric still get the thesis.
+
+    Every builtin declares the pack fields, so it always gets them. Extra
+    injected kwargs the adapter does not declare (``company_names``, …) are
+    filtered out rather than TypeError-falling back and dropping the mission.
+    A custom ``module:Class`` adapter that rejects the remaining kwargs is
+    still built from ``options`` only — optional platform context, not a
+    contract a one-off adapter is forced into.
     """
+    from fintel.agents.contract import init_param_names
+    from fintel.utils.import_path import resolve
+
     params: dict = dict(spec.options)
     if spec.model.id:
         params.setdefault("model", spec.model.id)
     with_context = dict(params)
     with_context.setdefault("mission_text", mission_text)
     with_context.setdefault("output_schema_text", output_schema_text)
+    with_context.setdefault("alpha_view_text", alpha_view_text)
     if company_names:
         with_context.setdefault("company_names", company_names)
+    target = agent_factory.AGENTS.get(spec.name, spec.name if ":" in spec.name else None)
+    if target is not None:
+        accepted = init_param_names(resolve(target))
+        if accepted is not None:
+            with_context = {k: v for k, v in with_context.items() if k in accepted}
     try:
         return agent_factory.build(spec.name, **with_context)
     except TypeError:
@@ -105,6 +123,7 @@ def run_cell(
     mission_text: str = "",
     output_schema_text: str = "",
     company_names: dict[str, str] | None = None,
+    alpha_views: AlphaViewLibrary | None = None,
     market_config: MarketConfig | None = None,
     progress: Progress | None = None,
     retries: int = 1,
@@ -142,6 +161,7 @@ def run_cell(
             mission_text=mission_text,
             output_schema_text=output_schema_text,
             company_names=company_names,
+            alpha_views=alpha_views,
             market_config=market_config,
             progress=progress,
             retries=retries,
@@ -162,6 +182,7 @@ def _run_cell_body(
     mission_text: str = "",
     output_schema_text: str = "",
     company_names: dict[str, str] | None = None,
+    alpha_views: AlphaViewLibrary | None = None,
     market_config: MarketConfig | None = None,
     progress: Progress | None = None,
     retries: int = 1,
@@ -170,6 +191,12 @@ def _run_cell_body(
     started = time.perf_counter()
     started_at = _now_iso()
     progress.emit("cell_start", cell=cell.name, decision_date=cell.decision_date.isoformat())
+
+    composed_mission, alpha_view_text = mission_text, ""
+    if alpha_views is not None:
+        composed_mission, alpha_view_text = apply_alpha_view(
+            mission_text, alpha_views, cell.decision_date
+        )
 
     response: AgentResponse | None = None
     total_usage = Usage()
@@ -189,9 +216,10 @@ def _run_cell_body(
         )
         agent = build_agent(
             agent_spec,
-            mission_text=mission_text,
+            mission_text=composed_mission,
             output_schema_text=output_schema_text,
             company_names=company_names,
+            alpha_view_text=alpha_view_text,
         )
         response = invoke(agent, env)
         total_usage = total_usage.merge(response.usage)

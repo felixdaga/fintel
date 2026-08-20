@@ -11,8 +11,16 @@ The host (a fintel adapter, or any other backtesting platform) supplies:
 * a ``submit_tool`` spec (name + description + JSON schema) defining the
   output contract the PM must emit via a forced tool call,
 * pre-rendered evidence strings (``quant_evidence``, ``qual_evidence``),
-* optional ``mission_text`` / ``output_schema_text`` and an ``on_stage``
-  listener for live progress.
+* optional ``mission_text`` / ``output_schema_text`` / ``alpha_view_text``
+  and an ``on_stage`` listener for live progress.
+
+``mission_text`` is the pack rubric, already composed with the resolved
+alpha view when the host is fintel. ``alpha_view_text`` is the same
+resolved block on its own, injected into specialist and verifier system
+prompts — those stages never see ``mission.md``. A one-line caveat
+follows the view on those prompts: it may not apply equally to every
+sub-task / source. The PM must not also append ``alpha_view_text`` or
+the thesis is doubled.
 
 The pipeline returns :class:`AgentResult` — the PM's raw ``submit`` arguments
 plus the specialist/verifier reports and one :class:`CallRecord` per LLM call.
@@ -41,11 +49,13 @@ logger = logging.getLogger(__name__)
 
 
 def _strip_comments(text: str) -> str:
-    """Drop ``$comment`` keys from a JSON schema body before it reaches the agent.
+    """Drop pack-internal keys from a JSON schema body before it reaches the agent.
 
     Local (stdlib-only) so this module stays free of platform imports. Pack
-    authors may keep ``$comment`` notes for humans; they must not leak into the
-    agent-visible prompt.
+    authors may keep ``$comment`` and numeric ``minimum``/``maximum`` for humans;
+    those must not leak into the agent-visible prompt or tool grammar.
+    OpenRouter mimo treats a bounded ``number`` as an integer range and
+    collapses every negative score to -1.
     """
     import json
 
@@ -58,7 +68,9 @@ def _strip_comments(text: str) -> str:
 
     def _scrub(node: Any) -> Any:
         if isinstance(node, dict):
-            return {k: _scrub(v) for k, v in node.items() if k != "$comment"}
+            return {
+                k: _scrub(v) for k, v in node.items() if k not in ("$comment", "minimum", "maximum")
+            }
         if isinstance(node, list):
             return [_scrub(v) for v in node]
         return node
@@ -273,8 +285,23 @@ These notes guide the Portfolio Manager; they are not a hard gate."""
 # by parse_completion and only risks truncating the call. This directive and
 # the matching rule in _PM_RULES make the model emit submit_views directly.
 # Thesis / score scale / horizon / lane weights live in the strategy pack's
-# mission.md (wired into pm_system as mission_text). The agent only owns
+# mission.md, composed with the pack's alpha view and wired into pm_system
+# as mission_text. Sub-agents (specialists, verifier) do not see the rubric;
+# they receive alpha_view_text plus a relevance caveat. The agent only owns
 # pipeline mechanics below — do not restate package policy here.
+# Specialist system prompts already agree with a typical alpha view
+# (fundamentals first, news/sentiment not the driver, no momentum-chase).
+# Do not restate the pack thesis in those strings — that would fork it.
+
+# After alpha_view_text on specialist / verifier system prompts only (not
+# the PM). The view is pack policy; a given lane's sources may not speak to it.
+_ALPHA_VIEW_SUBAGENT_NOTE = (
+    "This standing view may not be equally relevant to every part of your "
+    "task — that depends on the sources in your pack. Keep it at the back "
+    "of your mind. Do not leave your lane or invent evidence to apply it."
+)
+
+
 _PM_LEAD = (
     "RESPOND WITH ONLY THE submit_views TOOL CALL. Do not write any prose, "
     "essay, reasoning, or narrative before the tool call — that text is "
@@ -594,6 +621,10 @@ class OptimizedAgent:
     # Strategy-pack context (wired by the host; optional).
     mission_text: str = ""
     output_schema_text: str = ""
+    # Resolved alpha-view block for this decision date. Injected into
+    # specialist and verifier system prompts. Already composed into
+    # mission_text for the PM — do not append it there as well.
+    alpha_view_text: str = ""
 
     # The PM's output contract. The host normally overrides ``submit_tool`` on
     # the call so the schema can list the exact symbol(s) being decided.
@@ -611,6 +642,19 @@ class OptimizedAgent:
                 self.on_stage(name, symbol)
             except Exception:  # noqa: BLE001 - a listener must not break the pipeline
                 logger.debug("on_stage listener raised", exc_info=True)
+
+    def _system_with_alpha_view(self, system: str) -> str:
+        """Append the resolved alpha view to a sub-agent system prompt.
+
+        The specialist / verifier prompts already rank sources (quant does
+        not have news; qual does not have filings). The view is standing
+        pack policy, not a second rubric — a one-line caveat follows so
+        a lane does not invent evidence to force it.
+        """
+        view = (self.alpha_view_text or "").strip()
+        if not view:
+            return system
+        return f"{system.rstrip()}\n\n{view}\n\n{_ALPHA_VIEW_SUBAGENT_NOTE}\n"
 
     def _call(
         self,
@@ -702,14 +746,14 @@ class OptimizedAgent:
             q_fut = ex.submit(
                 self._call,
                 stage="quantitative_specialist",
-                system=QUANTITATIVE_SPECIALIST_SYSTEM,
+                system=self._system_with_alpha_view(QUANTITATIVE_SPECIALIST_SYSTEM),
                 user=q_user,
                 max_tokens=self.specialist_max_tokens,
             )
             l_fut = ex.submit(
                 self._call,
                 stage="qualitative_specialist",
-                system=QUALITATIVE_SPECIALIST_SYSTEM,
+                system=self._system_with_alpha_view(QUALITATIVE_SPECIALIST_SYSTEM),
                 user=l_user,
                 max_tokens=self.specialist_max_tokens,
             )
@@ -739,7 +783,7 @@ class OptimizedAgent:
             )
             v_call = self._call(
                 stage="independent_verifier",
-                system=VERIFIER_SYSTEM,
+                system=self._system_with_alpha_view(VERIFIER_SYSTEM),
                 user=v_user,
                 tools=(v_tool,),
                 force_tool=SUBMIT_VERIFICATION,

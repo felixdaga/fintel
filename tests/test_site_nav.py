@@ -45,9 +45,7 @@ def test_last_on_or_before_holds_between_decisions():
 def test_walk_nav_marks_every_session_with_last_book():
     # Fri / Mon / Tue. Decision only on Friday; 10% then 10% on A.
     daily = [Date(2026, 4, 24), Date(2026, 4, 27), Date(2026, 4, 28)]
-    prices = FakePrices(
-        {"A": {daily[0]: 100.0, daily[1]: 110.0, daily[2]: 121.0}}
-    )
+    prices = FakePrices({"A": {daily[0]: 100.0, daily[1]: 110.0, daily[2]: 121.0}})
     books = {daily[0]: {"A": 1.0}}
 
     def book_on(d: Date) -> dict[str, float]:
@@ -107,9 +105,7 @@ def test_benchmark_is_daily_price_weighted():
 
 def test_weighted_return_renormalizes_missing_names():
     prices = FakePrices({"A": {Date(2026, 4, 24): 100.0, Date(2026, 4, 27): 110.0}})
-    r = weighted_return(
-        {"A": 0.5, "MISSING": 0.5}, Date(2026, 4, 24), Date(2026, 4, 27), prices
-    )
+    r = weighted_return({"A": 0.5, "MISSING": 0.5}, Date(2026, 4, 24), Date(2026, 4, 27), prices)
     assert r == pytest.approx(0.10)
 
 
@@ -127,12 +123,8 @@ def test_observed_price_days_skips_cache_gaps():
     class P:
         store = _FakeStore(
             {
-                "A": pd.DataFrame(
-                    {"date": [Date(2026, 4, 24), Date(2026, 4, 28)]}
-                ),
-                "B": pd.DataFrame(
-                    {"date": [Date(2026, 4, 24), Date(2026, 4, 28)]}
-                ),
+                "A": pd.DataFrame({"date": [Date(2026, 4, 24), Date(2026, 4, 28)]}),
+                "B": pd.DataFrame({"date": [Date(2026, 4, 24), Date(2026, 4, 28)]}),
             }
         )
 

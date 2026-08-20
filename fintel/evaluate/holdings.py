@@ -61,7 +61,9 @@ def _thr_key(prefix: str, threshold: float) -> str:
     return f"{prefix}_{threshold:.1f}"
 
 
-def _price_weighted(signal: dict[Symbol, float], prices: PriceLookup, d: Date) -> dict[Symbol, float]:
+def _price_weighted(
+    signal: dict[Symbol, float], prices: PriceLookup, d: Date
+) -> dict[Symbol, float]:
     price_at = getattr(prices, "price_at", None)
     if price_at is None:
         n = len(signal)
@@ -98,9 +100,7 @@ def _equal_weight_long(signal: dict[Symbol, float], threshold: float) -> dict[Sy
     return {s: w for s in longs}
 
 
-def _cov_matrix(
-    prices: PriceLookup, universe: list[Symbol], d: Date, *, lookback: int
-):
+def _cov_matrix(prices: PriceLookup, universe: list[Symbol], d: Date, *, lookback: int):
     """Daily-return covariance annualized ×252 from cached bars on or before `d`."""
     store = getattr(prices, "store", None)
     bars_fn = getattr(store, "bars_on_or_before", None) if store is not None else None
@@ -232,9 +232,7 @@ def _nav_series(
         w = weights_fn(decision) or {}
         if w:
             fwd = {
-                s: r
-                for s, r in ((s, prices.forward_return(s, d, end)) for s in w)
-                if r is not None
+                s: r for s, r in ((s, prices.forward_return(s, d, end)) for s in w) if r is not None
             }
             if fwd:
                 w_common = {s: w[s] for s in fwd}
@@ -309,9 +307,7 @@ def _metrics(
     if not is_bench and bench_rets is not None and n >= 2:
         k = min(n, len(bench_rets))
         active = [rets[i] - bench_rets[i] for i in range(k)]
-        te = (
-            (sum((a - sum(active) / k) ** 2 for a in active) / (k - 1)) ** 0.5 if k >= 2 else 0.0
-        )
+        te = (sum((a - sum(active) / k) ** 2 for a in active) / (k - 1)) ** 0.5 if k >= 2 else 0.0
         ir = (sum(active) / k / te) if te > 1e-12 else None
     sqrt_ppy = ppy**0.5
     ann_ret = (1.0 + total) ** (1.0 / years) - 1.0 if total > -1 and years > 0 else None

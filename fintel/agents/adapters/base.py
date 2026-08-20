@@ -140,6 +140,10 @@ class SubprocessAgent:
     # agent has no separate system/user split to put them in.
     mission_text: str = ""
     output_schema_text: str = ""
+    # Resolved alpha view is already composed into mission_text for CLI hosts
+    # (one --message / stdin instruction). Declared so build_agent does not
+    # TypeError-fallback and drop the composed mission.
+    alpha_view_text: str = ""
     CLI_FLAGS: ClassVar[list[CliFlag]] = []
     # A CLI that reads its MCP servers from a fixed config file (Claude Code's
     # `~/.claude.json`) declares this; the default `materialize_mcp` below then

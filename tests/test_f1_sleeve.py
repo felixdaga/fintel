@@ -9,16 +9,14 @@ import pytest
 
 f1_deploy = pytest.importorskip("f1_deploy")
 
-from f1_deploy.sleeve import f1_sleeve, held_symbols, load_sleeve  # noqa: E402
+from f1_deploy.fund import f1_sleeve, held_symbols, load_sleeve  # noqa: E402
 
 
 def test_sleeve_unions_allowlist_held_and_targets(tmp_path: Path):
-    (tmp_path / "sleeve.json").write_text(
-        json.dumps({"symbols": ["AAPL", "MSFT"]}) + "\n"
-    )
-    fund = tmp_path / "fund"
-    fund.mkdir()
-    (fund / "positions.json").write_text(
+    records = tmp_path / "fund" / "records"
+    records.mkdir(parents=True)
+    (records / "sleeve.json").write_text(json.dumps({"symbols": ["AAPL", "MSFT"]}) + "\n")
+    (records / "positions.json").write_text(
         json.dumps({"positions": [{"symbol": "CRM"}, {"symbol": "GS"}]}) + "\n"
     )
     got = f1_sleeve(tmp_path, target_symbols=["NVDA", "MSFT"])

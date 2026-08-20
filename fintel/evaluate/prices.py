@@ -82,9 +82,7 @@ def ensure_job_prices(
         try:
             src.ensure(sym, since, through)
         except Exception as exc:  # noqa: BLE001 — analytics warm path must not crash
-            logger.warning(
-                "ensure_job_prices: %s failed for %s: %s", type(src).__name__, sym, exc
-            )
+            logger.warning("ensure_job_prices: %s failed for %s: %s", type(src).__name__, sym, exc)
     prices = price_lookup_for(job_dir, cache_root=cache_root)
     n_after = sum(
         len(interior_session_holes(prices.store.read(sym), since, through)) for sym in syms

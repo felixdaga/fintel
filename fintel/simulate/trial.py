@@ -34,6 +34,7 @@ from fintel.simulate.artifacts import write_decision, write_trial_result
 from fintel.simulate.cell import CellOutcome, run_cell
 from fintel.simulate.queue import map_parallel
 from fintel.simulate.record import reduce_decision, reduce_trial
+from fintel.strategy.views import AlphaViewLibrary
 
 
 def finalize_trial(
@@ -104,6 +105,7 @@ def run_trial(
     mission_text: str = "",
     output_schema_text: str = "",
     company_names: dict[str, str] | None = None,
+    alpha_views: AlphaViewLibrary | None = None,
     market_config: MarketConfig | None = None,
     progress: Progress | None = None,
     cell_slots: Any | None = None,
@@ -151,6 +153,7 @@ def run_trial(
                 mission_text=mission_text,
                 output_schema_text=output_schema_text,
                 company_names=company_names or {},
+                alpha_views=alpha_views,
                 market_config=market_config,
                 progress=progress,
                 cell_slots=cell_slots,

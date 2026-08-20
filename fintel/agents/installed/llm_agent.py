@@ -74,6 +74,10 @@ class LLMAgent:
     # only when no pack mission is supplied (e.g. bare unit tests).
     mission_text: str = ""
     output_schema_text: str = ""
+    # Accepted so build_agent can pass the resolved alpha-view block without a
+    # TypeError fallback that would drop mission_text. Already composed into
+    # mission_text for this single-prompt agent; stored, not re-appended.
+    alpha_view_text: str = ""
     # Override the default PIT rules. The default RULES tell the agent not to
     # use memory ("your memory postdates the decision date") — correct for
     # simulation, wrong for an agent-on-agent rater that has hindsight. Pass

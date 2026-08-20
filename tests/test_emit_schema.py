@@ -151,6 +151,22 @@ def test_abstain_skips_item_validation():
     )
 
 
+def test_for_agent_text_strips_numeric_bounds_and_comments():
+    from fintel.environment.submit_schema import for_agent_text
+
+    text = json.dumps(
+        {
+            "properties": {
+                "score": {"type": "number", "minimum": -1.0, "maximum": 1.0},
+            },
+            "$comment": "internal",
+        }
+    )
+    out = json.loads(for_agent_text(text))
+    assert "$comment" not in out
+    assert out["properties"]["score"] == {"type": "number"}
+
+
 def test_item_schema_from_text_roundtrip():
     text = json.dumps(GEOPOL_ITEM)
     assert emit.item_schema_from_text(text)["title"] == "GeopolView"

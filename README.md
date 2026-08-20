@@ -94,9 +94,12 @@ fintel simulation packages/systematic_stockrate_djia_weekly \
 fintel report systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1
 ```
 
-The shipped demo run lives at
-`runs/systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1/`
-— inspect it directly or open `fintel/evaluate/run_analytics.ipynb` for deeper analysis.
+Shipped `runs/` (everything else is gitignored):
+
+- `runs/systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1/` — weekly DJIA demo
+- `runs/geopol-abl-mimo-llm/`, `geopol-abl-mimo-oc/`, `geopol-abl-deepseek-oc/`, `geopol-abl-grok-oc/` — published geopol ablations
+
+Inspect them directly or open `fintel/evaluate/run_analytics.ipynb` for deeper analysis.
 
 ## CLI
 
@@ -108,6 +111,7 @@ The shipped demo run lives at
 | `fintel backfill <job_id>`              | Rerun failed cells, rewrite artifacts in place |
 | `fintel health <job_id>`                | Audit tool / data path                         |
 | `fintel report <job_id>`                | KPI + stochasticity + holdings → `report.md`   |
+| `fintel report <job_id> --start DATE`   | Same eval on a date window → `window-*.json`   |
 | `fintel cache status`                   | Inspect the central cache (gap-aware)          |
 
 
@@ -131,15 +135,15 @@ The shipped demo run lives at
 ## Example packages
 
 - `packages/systematic_stockrate_djia_weekly` — weekly DJIA single-name rating
-- `packages/systematic_stockrate_djia_biweekly` — same stack, every-other-Friday grid (2025-06-06 .. 2026-08-14)
-- `packages/systematic_stockrate_djia_monthly` — same stack, monthly first-trading-day grid (2022-07-01 ..)
+- `packages/geopol_trade_war_2018` — 2018 trade-war country/event pack
+- `packages/the_challenge` — factor-challenge demo
 
 
 
 ## Repository hygiene
 
 - Secrets: only `.env.example` is tracked; real keys live in `.env/keys.env`
-- Artifacts: `runs/` and `cache/` are gitignored (the demo run is negated in)
+- Artifacts: `runs/` and `cache/` are gitignored (weekly demo + geopol ablation runs are negated in)
 - Operator surface: the `fintel` CLI (no `scripts/` one-offs)
 - Contributing: see [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`AGENTS.md`](AGENTS.md)
 - Changes: see [`CHANGELOG.md`](CHANGELOG.md)

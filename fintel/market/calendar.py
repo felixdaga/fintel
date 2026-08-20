@@ -11,9 +11,15 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 from dataclasses import dataclass, field
+from datetime import UTC, datetime, timedelta
 from datetime import date as Date
-from datetime import timedelta
 from functools import lru_cache
+
+# US cash-equity session close is 16:00 Eastern. In UTC that is 20:00 (EDT, summer)
+# or 21:00 (EST, winter). We gate a session as "completed" at 21:00 UTC so the
+# close has rung in both DST regimes; the canonical returns.jsonl stamp remains
+# 20:00 UTC (see f1_deploy.reporting.persist_mark).
+US_CLOSE_UTC_HOUR = 21
 
 # Days the NYSE closed outside the standard holiday rules. Only affects
 # daily-frequency work, but a missing entry looks exactly like missing data.
@@ -141,9 +147,31 @@ class TradingCalendar:
         """The audit direction — which of these dates have no session."""
         return [d for d in dates if not self.is_trading_day(d)]
 
-    def interior_missing_sessions(
-        self, have: Iterable[Date], start: Date, end: Date
-    ) -> list[Date]:
+    def last_completed_session(
+        self, now_utc: datetime | None = None, *, close_utc_hour: int = US_CLOSE_UTC_HOUR
+    ) -> Date:
+        """Most recent US session whose close has passed as of ``now_utc``.
+
+        A session ``D`` is completed when ``now_utc >= D @ close_utc_hour:00 UTC``.
+        Default ``close_utc_hour=21`` is past the 16:00 ET close in both DST
+        regimes (20:00 UTC in summer, 21:00 UTC in winter), so a mark produced
+        after this gate reflects a real session close, not intraday prices.
+
+        Returns today if today trades and the close has passed; otherwise the
+        prior trading day. This is the ``as_of`` for the daily NAV mark — it is
+        derived from the trading calendar + wall clock, never from the MCP pull
+        stamp, so a stale or next-UTC-day snapshot cannot mislabel the session.
+        """
+        if now_utc is None:
+            now_utc = datetime.now(UTC)
+        elif now_utc.tzinfo is None:
+            now_utc = now_utc.replace(tzinfo=UTC)
+        today = now_utc.date()
+        if self.is_trading_day(today) and now_utc.hour >= close_utc_hour:
+            return today
+        return self.prev(today)
+
+    def interior_missing_sessions(self, have: Iterable[Date], start: Date, end: Date) -> list[Date]:
         """NYSE sessions between the first and last date in ``have`` ∩ [start, end]
         that are absent from ``have``.
 

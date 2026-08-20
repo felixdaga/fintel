@@ -21,8 +21,6 @@ safely re-run in isolation).
 
 from __future__ import annotations
 
-import json
-import logging
 import time
 from dataclasses import dataclass
 from datetime import date as Date
@@ -47,8 +45,8 @@ from fintel.simulate.queue import map_parallel
 from fintel.simulate.record import reduce_job, reduce_run
 from fintel.simulate.store import read_json
 from fintel.simulate.trial import finalize_trial
-
-logger = logging.getLogger(__name__)
+from fintel.strategy import load
+from fintel.strategy.views import load_pack_context
 
 
 @dataclass(frozen=True)
@@ -141,7 +139,11 @@ def run_backfill(
     universe = build_universe(run_config.universe, config=market_config)
     sources = build_data_sources(run_config.data, config=market_config)
     sources = dedup_sources(sources)
-    mission_text, output_schema_text, company_names = _load_strategy_context(run_config)
+    pack = _load_strategy_context(run_config)
+    mission_text = pack.mission_text
+    output_schema_text = pack.output_schema_text
+    company_names = pack.company_names
+    alpha_views = pack.alpha_views
     runtime = RuntimeConfig(
         session_root=run_paths.root / "sessions",
         trace=True,
@@ -164,6 +166,7 @@ def run_backfill(
                 mission_text=mission_text,
                 output_schema_text=output_schema_text,
                 company_names=company_names,
+                alpha_views=alpha_views,
                 market_config=market_config,
                 progress=progress,
             )
@@ -314,32 +317,9 @@ def _find_error_cells(run_result: RunResult, run_paths: RunPaths) -> list[_Error
     return errors
 
 
-def _load_strategy_context(
-    run_config: RunConfig,
-) -> tuple[str, str, dict[str, str]]:
-    """Re-read mission.md, output_schema.json, company_names.json from the
-    strategy pack path frozen in RunConfig."""
-    strategy_root = Path(run_config.strategy.path)
-    mission_text = ""
-    output_schema_text = ""
-    company_names: dict[str, str] = {}
-
-    mission_path = strategy_root / "mission.md"
-    if mission_path.is_file():
-        mission_text = mission_path.read_text()
-
-    schema_path = strategy_root / "output_schema.json"
-    if schema_path.is_file():
-        output_schema_text = schema_path.read_text()
-
-    names_path = strategy_root / "company_names.json"
-    if names_path.is_file():
-        try:
-            company_names = json.loads(names_path.read_text())
-        except (json.JSONDecodeError, ValueError):
-            logger.warning("company_names.json is not valid JSON; ignored")
-
-    return mission_text, output_schema_text, company_names
+def _load_strategy_context(run_config: RunConfig):
+    """Re-read pack prompts from the strategy path frozen in RunConfig."""
+    return load_pack_context(load(run_config.strategy.path))
 
 
 def _build_work_items(

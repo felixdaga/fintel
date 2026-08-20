@@ -54,7 +54,9 @@ class FakeLLM:
         self.calls: list[dict] = []
 
     def complete(self, messages, *, tools=(), force_tool=None, max_tokens=None) -> FakeCompletion:
-        self.calls.append({"force_tool": force_tool, "max_tokens": max_tokens})
+        self.calls.append(
+            {"force_tool": force_tool, "max_tokens": max_tokens, "messages": messages}
+        )
         user = messages[-1]["content"]
         if force_tool == "submit_verification":
             return FakeCompletion(
@@ -210,3 +212,46 @@ def test_pm_not_calling_submit_is_reported_as_an_error():
     assert res.submit_args is None
     assert res.error is not None
     assert "submit_views" in res.error
+
+
+def test_specialists_and_verifier_receive_alpha_view_pm_does_not_double_it():
+    from fintel.agents.installed.optimized_agent import _ALPHA_VIEW_SUBAGENT_NOTE
+
+    llm = FakeLLM()
+    view = "## Alpha view\n\nRate the business, not the narrative."
+    mission = "Score companies on [-1, +1].\n\n" + view
+    agent = OptimizedAgent(llm=llm, mission_text=mission, alpha_view_text=view)
+    agent.decide_one(symbol="AAPL", trade_date="2026-04-24", quant_evidence="Q", qual_evidence="N")
+    systems = [(c["force_tool"], c["messages"][0]["content"]) for c in llm.calls]
+    specialist_systems = [s for tool, s in systems if tool is None]
+    verifier_system = next(s for tool, s in systems if tool == "submit_verification")
+    pm_system = next(s for tool, s in systems if tool == "submit_views")
+    assert len(specialist_systems) == 2
+    for system in specialist_systems:
+        assert "Rate the business, not the narrative." in system
+        assert _ALPHA_VIEW_SUBAGENT_NOTE in system
+        assert system.index(view) < system.index(_ALPHA_VIEW_SUBAGENT_NOTE)
+    assert "Rate the business, not the narrative." in verifier_system
+    assert _ALPHA_VIEW_SUBAGENT_NOTE in verifier_system
+    assert pm_system.count("Rate the business, not the narrative.") == 1
+    assert _ALPHA_VIEW_SUBAGENT_NOTE not in pm_system
+
+
+def test_pm_schema_dump_strips_numeric_bounds():
+    import json
+
+    from fintel.agents.installed.optimized_agent import _strip_comments
+
+    dumped = _strip_comments(
+        json.dumps(
+            {
+                "properties": {
+                    "score": {"type": "number", "minimum": -1.0, "maximum": 1.0},
+                },
+                "$comment": "internal",
+            }
+        )
+    )
+    out = json.loads(dumped)
+    assert "$comment" not in out
+    assert out["properties"]["score"] == {"type": "number"}

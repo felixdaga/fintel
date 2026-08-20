@@ -90,9 +90,11 @@ class OptimizedFintelAgent:
     # Strategy-pack context (wired by simulate.cell.build_agent; optional).
     mission_text: str = ""
     output_schema_text: str = ""
+    alpha_view_text: str = ""
 
     name: str = "optimized"
     version: str = "1.0.0"
+    subagents: ClassVar[bool] = True
     pit_enforcement: ClassVar[PitEnforcement] = "access"
 
     _pipeline: OptimizedPipeline | None = field(default=None, init=False, repr=False)
@@ -153,6 +155,7 @@ class OptimizedFintelAgent:
             enable_verification=self.enable_verification,
             mission_text=self.mission_text,
             output_schema_text=self.output_schema_text,
+            alpha_view_text=self.alpha_view_text,
             llm=self._client(),
             on_stage=_on_stage,
         )

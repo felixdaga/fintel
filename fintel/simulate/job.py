@@ -41,7 +41,7 @@ from fintel.simulate.artifacts import (
 from fintel.simulate.queue import map_parallel
 from fintel.simulate.record import reduce_job
 from fintel.simulate.run import run_run
-from fintel.strategy import build_lock, load, preflight
+from fintel.strategy import build_lock, load, load_pack_context, preflight
 from fintel.strategy.preflight import PreflightError
 
 logger = logging.getLogger(__name__)
@@ -97,20 +97,16 @@ def run_job(
     if agent_problems:
         raise PreflightError(agent_problems)
 
-    # The mission and output schema the strategy hands every agent — read once
-    # here, not per cell. Preflight above already guarantees the mission file
-    # exists; the schema is optional (a package may rely on submit_views' own
-    # JSON schema alone).
-    mission_text = paths.mission.read_text() if paths.mission.is_file() else ""
-    output_schema_text = paths.output_schema.read_text() if paths.output_schema.is_file() else ""
-    company_names: dict[str, str] = {}
-    if paths.company_names.is_file():
-        import json
-
-        try:
-            company_names = json.loads(paths.company_names.read_text())
-        except (json.JSONDecodeError, ValueError):
-            logger.warning("company_names.json is not valid JSON; ignored")
+    # The mission, schema, and alpha-view library the strategy hands every
+    # agent. Mission/schema are read once; the library is resolved per cell
+    # against that cell's decision date (PIT dated notes). Preflight above
+    # already guarantees the mission file exists; the schema and alpha view
+    # are optional.
+    pack = load_pack_context(paths)
+    mission_text = pack.mission_text
+    output_schema_text = pack.output_schema_text
+    company_names = pack.company_names
+    alpha_views = pack.alpha_views
 
     # Strategy-pack-controlled ablation knobs (``[ablation]`` in strategy.toml).
     # The platform only carries the values; the participating agent adapter
@@ -327,6 +323,7 @@ def run_job(
                 mission_text=mission_text,
                 output_schema_text=output_schema_text,
                 company_names=company_names,
+                alpha_views=alpha_views,
                 strategy_description=manifest.description,
                 progress=run_progress,
                 quiet=quiet,

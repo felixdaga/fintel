@@ -75,7 +75,7 @@ def compute_rebalance(
     universe = sorted(signals.universe)
     ensure_job_prices(jdir, universe)
     # Use close prices for rebalance sizing — this is what the agent saw.
-    # The backtest NAV (build_strategy_data.py) still uses open-to-open
+    # The backtest NAV (f1_rebalance.sh theoretical book) still uses open-to-open
     # for forward returns; only the rebalance report prices change here.
     prices = price_lookup_for(jdir)
     prices_close = PriceLookup(store=prices.store, price_field="close")

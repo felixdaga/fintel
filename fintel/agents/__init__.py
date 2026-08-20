@@ -19,6 +19,7 @@ from fintel.agents.base import (
     RateLimited,
     SafetyRefusal,
 )
+from fintel.agents.contract import PACK_CONTEXT_FIELDS, inspect_agent
 from fintel.agents.factory import AGENTS, build, names, preflight, register
 from fintel.agents.fingerprint import Fingerprint, fingerprint
 from fintel.agents.installed.llm_agent import LLMAgent
@@ -33,6 +34,7 @@ from fintel.agents.run import classify, invoke
 from fintel.agents.scripted import ConstantAgent, ScriptedAgent
 
 __all__ = [
+    "PACK_CONTEXT_FIELDS",
     "AGENTS",
     "CLAUDE_CODE_DENY",
     "FINTEL_MCP_SERVER",
@@ -59,6 +61,7 @@ __all__ = [
     "build",
     "classify",
     "fingerprint",
+    "inspect_agent",
     "invoke",
     "names",
     "preflight",

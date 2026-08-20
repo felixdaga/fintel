@@ -127,10 +127,57 @@ def load_run(run_dir: Path) -> RunData:
     )
 
 
-def load_job(job_dir: Path) -> list[RunData]:
+def _in_window(
+    d: Date,
+    *,
+    start: Date | None,
+    end: Date | None,
+    dates: frozenset[Date] | None,
+) -> bool:
+    if dates is not None:
+        return d in dates
+    if start is not None and d < start:
+        return False
+    if end is not None and d > end:
+        return False
+    return True
+
+
+def restrict_run(
+    run: RunData,
+    *,
+    start: Date | None = None,
+    end: Date | None = None,
+    dates: frozenset[Date] | None = None,
+) -> RunData:
+    """Keep only decision dates in the window. Views/behaviour outside it drop.
+
+    Used by ``fintel report --start/--dates`` so a longer job can be scored on
+    the same grid as a shorter sibling without re-running cells.
+    """
+    if start is None and end is None and dates is None:
+        return run
+    keep = [d for d in run.decision_dates if _in_window(d, start=start, end=end, dates=dates)]
+    keep_set = set(keep)
+    return run.model_copy(
+        update={
+            "decision_dates": keep,
+            "views_by_date": {d: v for d, v in run.views_by_date.items() if d in keep_set},
+            "behaviour_by_date": {d: v for d, v in run.behaviour_by_date.items() if d in keep_set},
+        }
+    )
+
+
+def load_job(
+    job_dir: Path,
+    *,
+    start: Date | None = None,
+    end: Date | None = None,
+    dates: frozenset[Date] | None = None,
+) -> list[RunData]:
     """Load all repeats of a job (`runs/<job>/`) — one `RunData` per `rK`."""
     paths = JobPaths(root=job_dir)
     runs: list[RunData] = []
     for run_dir in paths.run_dirs():
-        runs.append(load_run(run_dir))
+        runs.append(restrict_run(load_run(run_dir), start=start, end=end, dates=dates))
     return runs

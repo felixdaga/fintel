@@ -540,9 +540,10 @@ def test_detect_cadence_biweekly_before_weekly():
     biweekly = [Date(2025, 6, 6) + timedelta(days=14 * i) for i in range(8)]
     monthly = [Date(2025, m, 1) for m in range(1, 9)]
 
-    assert detect_cadence(name="systematic_stockrate_djia_biweekly", dates=weekly)[
-        "cadence"
-    ] == "biweekly"
+    assert (
+        detect_cadence(name="systematic_stockrate_djia_biweekly", dates=weekly)["cadence"]
+        == "biweekly"
+    )
     assert detect_cadence(name="systematic_stockrate_djia_weekly", dates=biweekly)["ppy"] == 52.0
     assert detect_cadence(name="", dates=biweekly)["ppy"] == 26.0
     assert detect_cadence(name="", dates=weekly)["ppy"] == 52.0
@@ -699,6 +700,86 @@ def test_cli_report_subparser_exists():
     args = parser.parse_args(["report", "some-job"])
     assert args.command == "report"
     assert args.job_id == "some-job"
+
+
+def test_cli_report_accepts_window_flags():
+    from fintel.cli.main import build_parser
+
+    args = build_parser().parse_args(
+        ["report", "some-job", "--start", "2026-01-02", "--end", "2026-08-14"]
+    )
+    assert args.start == "2026-01-02"
+    assert args.end == "2026-08-14"
+    dates = build_parser().parse_args(["report", "some-job", "--dates", "2026-01-02,2026-01-16"])
+    assert dates.dates == "2026-01-02,2026-01-16"
+
+
+def test_restrict_run_keeps_suffix():
+    from fintel.evaluate.read import restrict_run
+    from fintel.models.decision import View
+    from fintel.models.evaluate import RunData
+
+    d1, d2, d3 = Date(2025, 6, 6), Date(2026, 1, 2), Date(2026, 1, 16)
+    run = RunData(
+        run_id="r1",
+        k_index=1,
+        decision_dates=[d1, d2, d3],
+        universe=["AAPL"],
+        views_by_date={
+            d1: {"AAPL": View(symbol="AAPL", score=0.1)},
+            d2: {"AAPL": View(symbol="AAPL", score=0.2)},
+            d3: {"AAPL": View(symbol="AAPL", score=0.3)},
+        },
+    )
+    out = restrict_run(run, start=d2)
+    assert out.decision_dates == [d2, d3]
+    assert d1 not in out.views_by_date
+    assert restrict_run(run).decision_dates == [d1, d2, d3]
+
+
+def test_window_stem_names_sidecar():
+    from fintel.evaluate.report import window_stem
+
+    assert window_stem() is None
+    assert window_stem(start=Date(2026, 1, 2)) == "window-20260102"
+    assert window_stem(start=Date(2026, 1, 2), end=Date(2026, 8, 14)) == (
+        "window-20260102-20260814"
+    )
+
+
+def test_report_window_writes_sidecar_not_full_sample():
+    """A date window must not overwrite report.json."""
+    import tempfile
+
+    from fintel.evaluate.report import report, window_stem, write_report
+    from fintel.models.decision import View
+
+    dates = [Date(2025, 6, 6), Date(2026, 1, 2), Date(2026, 4, 1), Date(2026, 7, 1)]
+    signal = {d: {"A": -0.5, "B": 0.0, "C": 0.5} for d in dates}
+    with tempfile.TemporaryDirectory() as td:
+        job = Path(td) / "synth"
+        rdir = job / "r1"
+        for d in dates:
+            tdir = rdir / "trials" / d.isoformat()
+            tdir.mkdir(parents=True)
+            views = {s: View(symbol=s, score=signal[d][s]) for s in signal[d]}
+            (tdir / "decision.json").write_text(
+                json.dumps({s: v.model_dump(mode="json") for s, v in views.items()})
+            )
+        start = Date(2026, 1, 2)
+        payload = report(
+            job,
+            scoring=_scoring(params={"holdings": True}),
+            prices=_FakePriceLookup(dates),
+            start=start,
+        )
+        assert payload.decision_dates == dates[1:]
+        assert payload.meta["window"]["start"] == "2026-01-02"
+        stem = window_stem(start=start)
+        paths = write_report(payload, job, stem=stem)
+        assert paths["json"].name == "window-20260102.json"
+        assert (job / "report" / "report.json").is_file() is False
+        assert paths["json"].is_file()
 
 
 # --- Phase 6: architecture conformance ----------------------------------------
@@ -914,15 +995,11 @@ def test_dissimilar_package_runs_end_to_end():
 def test_djia_packs_declare_comprehensive_holdings():
     from fintel.strategy import load
 
-    root = Path(__file__).resolve().parent.parent / "packages"
-    for name in (
-        "systematic_stockrate_djia_weekly",
-        "systematic_stockrate_djia_monthly",
-        "systematic_stockrate_djia_biweekly",
-    ):
-        scoring = load(root / name).manifest.scoring
-        assert scoring.horizons == [1, 2, 4, 8]
-        assert scoring.params.get("holdings") is True
-        assert scoring.params.get("long_thresholds") == [0.0, 0.3]
-        assert scoring.params.get("books") == ["pw", "sw_long", "ew_long", "naive_tilt", "mvo"]
-
+    # weekly is the shipped DJIA demo; monthly/biweekly packs are local-only
+    scoring = load(
+        Path(__file__).resolve().parent.parent / "packages" / "systematic_stockrate_djia_weekly"
+    ).manifest.scoring
+    assert scoring.horizons == [1, 2, 4, 8]
+    assert scoring.params.get("holdings") is True
+    assert scoring.params.get("long_thresholds") == [0.0, 0.3]
+    assert scoring.params.get("books") == ["pw", "sw_long", "ew_long", "naive_tilt", "mvo"]

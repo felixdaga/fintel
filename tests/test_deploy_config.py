@@ -14,7 +14,7 @@ def test_live_toml_uses_explicit_job_and_toml_folder(tmp_path: Path):
     live.mkdir()
     (live / "f1.toml").write_text(
         'job_id = "job-b"\noutput_root = "runs"\n'
-        "[holdings]\nrule = \"score_weighted_long\"\nthreshold = 0.0\n"
+        '[holdings]\nrule = "score_weighted_long"\nthreshold = 0.0\n'
     )
     cfg = load_deploy_config(live / "f1.toml")
     assert cfg.job_id == "job-b"
@@ -34,8 +34,8 @@ def test_site_start_and_cadence_label(tmp_path: Path):
     live.mkdir()
     (live / "f1.toml").write_text(
         'job_id = "job-b"\noutput_root = "runs"\n'
-        "[schedule]\nkind = \"biweekly_fridays\"\n"
-        "[site]\nstart = \"2026-04-24\"\n"
+        '[schedule]\nkind = "biweekly_fridays"\n'
+        '[site]\nstart = "2026-04-24"\n'
     )
     cfg = load_deploy_config(live / "f1.toml")
     assert cfg.site.start == Date(2026, 4, 24)
@@ -45,7 +45,7 @@ def test_site_start_and_cadence_label(tmp_path: Path):
 def test_colocated_toml_still_infers_job_folder(tmp_path: Path):
     job = tmp_path / "runs" / "job-w"
     (job / "deploy").mkdir(parents=True)
-    (job / "deploy" / "f1.toml").write_text("[holdings]\nrule = \"ew_long_threshold\"\n")
+    (job / "deploy" / "f1.toml").write_text('[holdings]\nrule = "ew_long_threshold"\n')
     cfg = load_deploy_config(job / "deploy" / "f1.toml")
     assert cfg.job_id == "job-w"
     assert job_dir(cfg) == job

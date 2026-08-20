@@ -72,7 +72,13 @@ Open `packages/<strategy>/strategy.toml`:
 
 - `[decision].scope` — `single_name` vs portfolio (cells differ; adapter API does not)
 - `[[data]]` — every kind your agent needs must be listed (source + lookbacks)
-- `mission.md` / `output_schema.json` — passed into the adapter as `mission_text` / `output_schema_text` when the platform builds you
+- `mission.md` / `output_schema.json` / optional `alpha_view.md` — passed into
+  the adapter as `mission_text` / `output_schema_text` / `alpha_view_text`
+  when the platform builds you. `mission_text` is already composed with the
+  resolved alpha view. If you spawn sub-agents that do not see the rubric,
+  feed them `alpha_view_text` (the optimized pipeline does this for
+  specialists and the verifier, plus a one-line note that the view may
+  not apply equally to every sub-task / source).
 
 If a kind is missing, **extend the package’s** `[[data]]`, don’t bypass access.
 
@@ -106,6 +112,7 @@ class MyAgent:
     # Platform injects these from the package:
     mission_text: str = ""
     output_schema_text: str = ""
+    alpha_view_text: str = ""
 
     pit_enforcement: ClassVar[PitEnforcement] = "access"
 
@@ -225,6 +232,10 @@ fintel simulation packages/<strategy> \
 - [ ] No `market/` / `pit/` imports
 - [ ] Strategy `[[data]]` covers every kind you read
 - [ ] Views score in [-1, 1]; empty views ⇒ not `outcome="ok"`
+- [ ] Declare `mission_text` / `output_schema_text` / `alpha_view_text` (omitting them TypeError-drops pack context)
+- [ ] If you spawn sub-agents that do not see `mission_text`, append `alpha_view_text` to those prompts and set `subagents: ClassVar[bool] = True` (optimized pipeline is the exemplar)
+- [ ] `tests/test_agents.py` picks you up via the registry — pack-context + PIT checks must pass
+- [ ] `fintel check <pack> --agent <name>` shows the pack fields as accepted
 - [ ] Smoke: health ok, expected reads/cell, TUI stages if you emit them
 - [ ] Artifacts you care about land under `env.session.path` or cell JSON
 

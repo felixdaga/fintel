@@ -336,6 +336,8 @@ def test_lock_write_and_read_roundtrip(tmp_path):
     assert reread.name == lock.name
     assert reread.strategy_digest == lock.strategy_digest
     assert reread.mission_digest == lock.mission_digest
+    assert reread.alpha_view_digest is None
+    assert reread.alpha_view_digest == lock.alpha_view_digest
 
 
 def test_load_and_prepare_returns_paths_result_lock(tmp_path):

@@ -117,6 +117,10 @@ class StrategyManifest(BaseModel):
 
     mission_file: str = "mission.md"
     output_schema_file: str = "output_schema.json"
+    # Optional standing thesis + dated research notes. Missing files are
+    # empty, not an error — a pack without an alpha view is the default.
+    alpha_view_file: str = "alpha_view.md"
+    alpha_views_dir: str = "alpha_views"
     cache_dir: str = "cache"
 
     @model_validator(mode="after")
@@ -144,6 +148,16 @@ class StrategyPaths:
     @property
     def mission(self) -> Path:
         return self.root / self.manifest.mission_file
+
+    @property
+    def alpha_view(self) -> Path:
+        """Optional standing thesis (``alpha_view.md``). Missing = no view."""
+        return self.root / self.manifest.alpha_view_file
+
+    @property
+    def alpha_views_dir(self) -> Path:
+        """Optional dated notes (``alpha_views/YYYY-MM-DD.md``). Missing = none."""
+        return self.root / self.manifest.alpha_views_dir
 
     @property
     def output_schema(self) -> Path:

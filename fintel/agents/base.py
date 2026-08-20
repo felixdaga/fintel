@@ -29,8 +29,13 @@ class Agent(Protocol):
     Standard requirements every adapter must satisfy (enforced by preflight /
     conformance, not by this Protocol's structural type):
 
-      * ``mission_text`` / ``output_schema_text`` — accept the strategy pack's
-        content (builtins declare the fields; custom adapters may ignore).
+      * ``mission_text`` / ``output_schema_text`` / ``alpha_view_text`` —
+        accept the strategy pack's content (builtins declare the fields;
+        custom adapters may ignore). ``mission_text`` is already composed
+        with the resolved alpha view; multi-call agents also take
+        ``alpha_view_text`` for sub-agents that never see the rubric, and
+        declare ``subagents = True`` so ``fintel check`` can see that
+        obligation.
       * ``pit_enforcement`` — ``"access"`` (in-process: all reads via
         ``env.access``) or ``"cli_deny"`` (subprocess: apply the platform PIT
         deny list + isolate the fintel MCP server at launch). Missing or

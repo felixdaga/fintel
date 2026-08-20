@@ -14,12 +14,20 @@ uv sync                        # or: pip install -e ".[dev,llm,mcp]"
 mkdir -p .env && cp .env.example .env/keys.env
 # fill OPENROUTER_API_KEY, MASSIVE_API_KEY, BRAVE_API_KEY, FRED_API_KEY, …
 
-# confirm the package preflights
-python -c "from fintel.strategy import load_and_prepare; print(load_and_prepare('packages/systematic_stockrate_djia_weekly')[1])"
+# confirm the package and agent surface
+fintel check packages/systematic_stockrate_djia_weekly --agent optimized
 ```
 
 Keys load from `.env/keys.env` automatically. Pass `--no-bootstrap` to skip.
 Shell-exported vars always win over the file.
+
+`fintel check <pack> [--agent NAME … | --all-agents]` prints each pack feature
+as **wired** or **default**, then whether those agents accept the pack
+surface. Exit 1 on preflight problems or mismatches (adapter missing
+`alpha_view_text`, `[ablation].search_query` on a non-`llm` agent, …). The
+lists it walks live in code — `fintel.strategy.inspect.PACK_FEATURES` and
+`fintel.agents.contract.PACK_CONTEXT_FIELDS` — so a new feature cannot exist
+only as a docs checklist.
 
 ## 1. Run a simulation
 
@@ -156,6 +164,8 @@ fintel backfill djia-w-full-r1 --cell-concurrency 24
 
 # 4) evaluate
 fintel report djia-w-full-r1
+# optional: same-period sidecar for a shorter sibling job
+# fintel report djia-w-full-r1 --start 2026-01-02
 ```
 
 Next: [`evaluate_results_guide.md`](evaluate_results_guide.md).

@@ -52,6 +52,7 @@ from fintel.simulate.cell import CellOutcome, run_cell
 from fintel.simulate.queue import map_parallel
 from fintel.simulate.record import reduce_run, reduce_trial
 from fintel.simulate.trial import finalize_trial, run_trial
+from fintel.strategy.views import AlphaViewLibrary, compose_mission
 
 _log = logging.getLogger(__name__)
 
@@ -69,6 +70,7 @@ def run_run(
     mission_text: str = "",
     output_schema_text: str = "",
     company_names: dict[str, str] | None = None,
+    alpha_views: AlphaViewLibrary | None = None,
     strategy_description: str = "",
     progress: Progress | None = None,
     quiet: bool = True,
@@ -93,9 +95,11 @@ def run_run(
 
     `mission_text`/`output_schema_text` are the strategy pack's mission.md and
     output_schema.json (read once by `run_job`, passed down here rather than
-    re-read per trial). They flow to every cell's agent unchanged; a fingerprint
-    of them (plus the agent config) is sealed into `config.json` before any
-    trial runs, so a crash still leaves a readable identity for the run.
+    re-read per trial). `alpha_views` is the pack's alpha-view library, also
+    loaded once; each cell resolves it against that cell's decision date so
+    dated research notes stay point-in-time. The composed mission + the
+    library digest (not one date's resolution) are sealed into the run
+    fingerprint, so a crash still leaves a readable identity for the run.
     """
     # The run nerve: the live emit surface for this run, writing `<run>/run.log`
     # and streaming to the terminal. Built here, not in run_job, so each of K
@@ -148,7 +152,12 @@ def run_run(
     # to every kind/source here so all cell reads dedup against one in-flight table.
     sources = dedup_sources(sources)
 
-    fingerprint = _build_fingerprint(run_config, sources, mission_text)
+    fingerprint = _build_fingerprint(
+        run_config,
+        sources,
+        mission_text,
+        alpha_view_digest=alpha_views.digest if alpha_views is not None else None,
+    )
     # Freeze identity once sources + fingerprint are known: config carries the
     # digest (no sibling fingerprint.json / hollow lock.json).
     write_run_config(
@@ -161,11 +170,14 @@ def run_run(
     # text still lives in the strategy pack; the log keeps the scannable summary.
     from fintel.environment.echo import build_echo, render_echo
 
+    echo_mission = compose_mission(
+        mission_text, alpha_views.standing if alpha_views is not None else ""
+    )
     echo = build_echo(
         run_config=run_config,
         strategy_description=strategy_description,
         sources=sources,
-        mission_text=mission_text,
+        mission_text=echo_mission,
         output_schema_text=output_schema_text,
         fingerprint=fingerprint.to_dict(),
     )
@@ -192,6 +204,7 @@ def run_run(
             mission_text=mission_text,
             output_schema_text=output_schema_text,
             company_names=company_names or {},
+            alpha_views=alpha_views,
             market_config=market_config,
             progress=progress,
             cell_slots=cell_slots,
@@ -210,6 +223,7 @@ def run_run(
             mission_text=mission_text,
             output_schema_text=output_schema_text,
             company_names=company_names or {},
+            alpha_views=alpha_views,
             market_config=market_config,
             progress=progress,
             cell_slots=cell_slots,
@@ -250,6 +264,7 @@ def _run_nested(
     mission_text: str,
     output_schema_text: str,
     company_names: dict[str, str],
+    alpha_views: AlphaViewLibrary | None = None,
     market_config: MarketConfig,
     progress: Progress,
     cell_slots: Any | None = None,
@@ -276,6 +291,7 @@ def _run_nested(
                 mission_text=mission_text,
                 output_schema_text=output_schema_text,
                 company_names=company_names,
+                alpha_views=alpha_views,
                 market_config=market_config,
                 progress=progress,
                 cell_slots=cell_slots,
@@ -312,6 +328,7 @@ def _run_shared(
     mission_text: str,
     output_schema_text: str,
     company_names: dict[str, str],
+    alpha_views: AlphaViewLibrary | None = None,
     market_config: MarketConfig,
     progress: Progress,
     cell_slots: Any | None = None,
@@ -390,6 +407,7 @@ def _run_shared(
                 mission_text=mission_text,
                 output_schema_text=output_schema_text,
                 company_names=company_names,
+                alpha_views=alpha_views,
                 market_config=market_config,
                 progress=progress,
                 cell_slots=cell_slots,
@@ -439,7 +457,13 @@ def _agent_spec(run_config: RunConfig):
     return run_config.agent
 
 
-def _build_fingerprint(run_config: RunConfig, sources: dict, mission_text: str):
+def _build_fingerprint(
+    run_config: RunConfig,
+    sources: dict,
+    mission_text: str,
+    *,
+    alpha_view_digest: str | None = None,
+):
     """The run's reproducibility digest: agent identity, model, channel, prompt
     hash, data kinds and adapter params — everything that should make two runs
     identical. Built from the declared config, not a live agent instance, so
@@ -448,6 +472,10 @@ def _build_fingerprint(run_config: RunConfig, sources: dict, mission_text: str):
 
     PIT enforcement mode (and the deny list for cli_deny adapters) is part of
     the digest: a run that still had web/fs is not comparable to one that didn't.
+
+    The prompt hash covers the rubric plus the alpha-view *library* digest
+    (standing file + every dated note), not one date's resolution — two runs
+    of the same pack are the same pack even when cells see different as-of notes.
     """
     from fintel.agents.factory import AGENTS
     from fintel.agents.fingerprint import fingerprint as build_fingerprint
@@ -476,12 +504,15 @@ def _build_fingerprint(run_config: RunConfig, sources: dict, mission_text: str):
         "pit_enforcement": pit_enforcement,
         "pit_deny": pit_deny,
     }
+    prompt = mission_text
+    if alpha_view_digest:
+        prompt = f"{mission_text}\n#alpha_view:{alpha_view_digest}"
     return build_fingerprint(
         agent_name=agent.name,
         agent_version=version,
         model=agent.model.id or "",
         channel=channel,
-        prompt=mission_text,
+        prompt=prompt,
         data_kinds=tuple(sorted(sources)),
         adapter_params=params,
     )

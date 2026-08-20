@@ -419,6 +419,62 @@ def test_run_job_passes_the_packages_mission_and_schema_to_the_agent(tmp_path):
     assert RecordingAgent.last_schema == "{}"
 
 
+def test_run_job_composes_alpha_view_and_clips_future_dated_notes(tmp_path):
+    """Standing thesis + latest as-of note ≤ decision date reach the agent;
+    a later note must not leak. Also passed as alpha_view_text for sub-agents."""
+    import sys
+    from dataclasses import dataclass, field
+
+    from fintel.models.decision import AgentResponse, View
+
+    @dataclass
+    class RecordingAgent:
+        name: str = "recording-view"
+        version: str = "1"
+        mission_text: str = ""
+        output_schema_text: str = ""
+        alpha_view_text: str = ""
+        pit_enforcement: str = "access"
+        seen: list = field(default_factory=list, init=False)
+
+        def decide(self, env):
+            RecordingAgent.last_mission = self.mission_text
+            RecordingAgent.last_view = self.alpha_view_text
+            views = {
+                s: View(symbol=s, score=0.1, rationale="recording")
+                for s in sorted(env.policy.decidable)
+            }
+            return AgentResponse(views=views)
+
+    sys.modules["__test_recording_view__"] = type(sys)("__test_recording_view__")
+    sys.modules["__test_recording_view__"].RecordingAgent = RecordingAgent  # type: ignore[attr-defined]
+
+    package = _write_package(tmp_path / "pkg")
+    (package / "alpha_view.md").write_text("Rate the business, not the narrative.")
+    views_dir = package / "alpha_views"
+    views_dir.mkdir()
+    (views_dir / "2024-01-01.md").write_text("January note.")
+    (views_dir / "2024-06-01.md").write_text("June note must not leak.")
+
+    job = _job_config(package, agent_name="__test_recording_view__:RecordingAgent")
+    job.__dict__["output_root"] = str(tmp_path / "runs")
+
+    from fintel.market.settings import MarketConfig
+
+    result = run_job(job, market_config=MarketConfig(cache_root=tmp_path / "cache", offline=True))
+    assert result.status == "ok"
+    mission = RecordingAgent.last_mission
+    view = RecordingAgent.last_view
+    assert MISSION.strip() in mission
+    assert "## Alpha view" in mission
+    assert "Rate the business, not the narrative." in mission
+    assert "January note." in mission
+    assert "June note" not in mission
+    assert view.startswith("## Alpha view")
+    assert "January note." in view
+    assert "June note" not in view
+
+
 def test_run_job_fails_closed_when_the_agent_cannot_run(tmp_path, monkeypatch):
     """Agent preflight runs alongside strategy preflight — a job that can never
     call its adapter should never fan out a single cell."""

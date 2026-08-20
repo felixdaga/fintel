@@ -38,6 +38,7 @@ class ConstantAgent:
     # baseline has none — declared and ignored, not silently dropped.
     mission_text: str = ""
     output_schema_text: str = ""
+    alpha_view_text: str = ""
     # Standard adapter requirement: in-process hosts have no native tool
     # surface; PIT is the Environment.access chokepoint.
     pit_enforcement: ClassVar[PitEnforcement] = "access"
@@ -71,6 +72,7 @@ class ScriptedAgent:
     version: str = "1"
     mission_text: str = ""
     output_schema_text: str = ""
+    alpha_view_text: str = ""
     pit_enforcement: ClassVar[PitEnforcement] = "access"
     seen: dict[str, Any] = field(default_factory=dict, init=False)
 

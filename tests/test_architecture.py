@@ -254,3 +254,25 @@ def test_environment_never_reaches_for_a_bare_decision_date():
     assert not offenders, (
         "only environment/cell.py may construct a Cutoff; found one in:\n" + "\n".join(offenders)
     )
+
+
+# `runs/` is gitignored except this published set. Monthly/biweekly DJIA jobs
+# stay local; CI clones only what .gitignore un-ignores.
+SHIPPED_RUNS = (
+    "systematic_stockrate_djia_weekly_djia_strategy_adapter_for_llm_agent_20260807_mimo_v2_5_pro_k1_fee1",
+    "geopol-abl-mimo-llm",
+    "geopol-abl-mimo-oc",
+    "geopol-abl-deepseek-oc",
+    "geopol-abl-grok-oc",
+)
+
+
+def test_shipped_runs_are_the_weekly_demo_and_geopol_ablations():
+    repo = Path(fintel.__file__).resolve().parents[1]
+    runs = repo / "runs"
+    missing = []
+    for job_id in SHIPPED_RUNS:
+        root = runs / job_id
+        if not (root / "config.json").is_file() or not (root / "report" / "report.md").is_file():
+            missing.append(job_id)
+    assert not missing, "shipped runs missing from checkout:\n" + "\n".join(missing)

@@ -18,6 +18,7 @@ runs/<job_id>/
     sessions/…               # agent workspace / access.jsonl
   report/                    # written by `fintel report`
     report.json  report.md
+    window-YYYYMMDD.json     # optional: `fintel report --start` sidecar
   cache/                     # shared central cache (or --cache-root)
 ```
 
@@ -59,6 +60,10 @@ fintel health <job_id>
 ```bash
 fintel report <job_id>
 # writes runs/<job_id>/report/{report.json,report.md} and prints the markdown
+
+# same-period window (does not overwrite the full-sample report)
+fintel report <longer-job> --start 2026-01-02
+# writes runs/<longer-job>/report/window-20260102.{json,md}
 ```
 
 The report reads the frozen `ScoringSpec` from `rK/config.json` and runs the
@@ -103,6 +108,29 @@ MVO needs the optional extra: `pip install 'fintel[eval]'` (cvxpy). Without it,
 or when Σ cannot be built from cached bars, the report still includes an MVO
 row and records `mvo.reasons` / `distinct_from_naive`.
 
+### Same-period window
+
+Do not slice a full-sample `report.json` in the viewer. Mean IC, t, ICIR,
+Sharpe, IR, max DD, years, turnover, and cost all depend on which dates
+`fintel report` sees. NAV compounds from the first date in that window
+(first rebalance is free at the new start).
+
+`--start` / `--end` / `--dates` re-run the evaluation over a subset of the
+job's existing decisions (no new cells). The full-sample `report.json` is
+left alone; the window lands next to it:
+
+```
+runs/<job>/report/window-20260102.json
+runs/<job>/report/window-20260102.md
+```
+
+`--dates` is an explicit list (narrow only). Do not pass `--dates` and
+`--start` together.
+
+Use this when comparing a shorter sibling (e.g. alphaview from 2026-01-02)
+to a longer job on the **same decision grid**. Weekly vs monthly still
+should not share a window: `h=1` is a different calendar length.
+
 ### Custom KPI / signal
 
 Packages can point `[scoring].kpi` / `signal` / `transform` at
@@ -145,6 +173,17 @@ Requires the same Python env as fintel (`pandas`, `matplotlib`, optional
 attribution); `fintel report` is the CLI path for the same IC + holdings
 metrics.
 
+The F1 eval dashboard (`f1_deploy/eval_view/`) charts those reports.
+Register a job in `RUNS`, regenerate with `python -m f1_deploy.eval_view`.
+The **same period** compare tab is a paired A vs B view on shared
+decision dates: every holdings book (total, ret, vol, DD, Sharpe, IR,
+turnover, cost) and every IC horizon (Spearman + Pearson), each with a
+Δ column, plus NAV/drawdown charts you switch by book, an IC path
+you switch by horizon, and a per-period bar chart of the cross-sectional
+Spearman + Pearson correlation between the two runs' scores (reads
+`r1/trials/<date>/decision.json` directly, not `report.json`). Full-sample
+compare is a different tab and still not a shared calendar window.
+
 ## 6. Reproducibility checklist
 
 - [ ] `health.json` / `fintel health` is clean (or failures understood)
@@ -153,11 +192,14 @@ metrics.
 - [ ] Report horizons match the grid cadence you care about
 - [ ] For claims about alpha: quote IC/ICIR **and** holdings net NAV, with
       K and date window attached
+- [ ] Same-period compare uses a window sidecar on the longer job, not a
+      clipped full-sample chart
 - [ ] Cache root recorded if not the default (`--cache-root` / `FINTEL_CACHE`)
 
 ## 7. What we do **not** ship yet
 
-- Paired job compare (`fintel compare`)
+- A `fintel compare` CLI (the eval-view **same period** tab is the paired
+  compare for shared decision dates)
 - Production Barra / factor attribution in `fintel report` (MVO overlay is in the holdings layer; full factor models are not)
 - World-validity gate on tool evidence quality
 

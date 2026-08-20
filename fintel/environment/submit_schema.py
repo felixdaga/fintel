@@ -85,8 +85,9 @@ def _strip_internal_notes(node: Any) -> Any:
 
 
 def for_agent_text(text: str | None) -> str:
-    """Render a pack schema body for the agent: parsed, ``$comment``-stripped, re-dumped.
+    """Render a pack schema body for the agent: parsed, internals stripped, re-dumped.
 
+    Drops ``$comment`` and numeric ``minimum``/``maximum`` (see ``submit_schema``).
     Falls back to the raw text if it is not valid JSON, so a malformed schema
     still reaches the agent verbatim rather than vanishing.
     """
@@ -98,7 +99,8 @@ def for_agent_text(text: str | None) -> str:
         return text.strip()
     if not isinstance(data, dict):
         return text.strip()
-    return json.dumps(_strip_internal_notes(data), ensure_ascii=False, indent=2)
+    cleaned = _schema_without_numeric_bounds(_strip_internal_notes(data))
+    return json.dumps(cleaned, ensure_ascii=False, indent=2)
 
 
 def item_schema_from_text(text: str | None) -> dict[str, Any] | None:

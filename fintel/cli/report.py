@@ -2,14 +2,16 @@
 
 Reads the strategy's `ScoringSpec` from the job's run config (the strategy
 declares the KPI/signal/transform/horizons; the platform runs the mechanics),
-runs the full evaluation pipeline, writes `report.json` + `report.md`, and
-prints the markdown to stdout.
+runs the full evaluation pipeline, and writes `report.json` + `report.md`.
+``--start`` / ``--dates`` re-score a subset of decision dates into a sidecar
+(``report/window-YYYYMMDD.json``) so the full-sample report stays intact.
 """
 
 from __future__ import annotations
 
 import json
 from argparse import Namespace
+from datetime import date as Date
 from pathlib import Path
 
 from fintel.models.paths import JobPaths
@@ -84,13 +86,29 @@ def _load_strategy_root(job_dir: Path) -> Path | None:
     return None
 
 
+def _parse_window(args: Namespace) -> tuple[Date | None, Date | None, frozenset[Date] | None]:
+    start = Date.fromisoformat(args.start) if getattr(args, "start", None) else None
+    end = Date.fromisoformat(args.end) if getattr(args, "end", None) else None
+    raw_dates = getattr(args, "dates", None)
+    dates: frozenset[Date] | None = None
+    if raw_dates:
+        parsed = [Date.fromisoformat(p.strip()) for p in raw_dates.split(",") if p.strip()]
+        dates = frozenset(parsed)
+    if dates is not None and (start is not None or end is not None):
+        raise SystemExit("use --dates or --start/--end, not both")
+    if start is not None and end is not None and start > end:
+        raise SystemExit(f"--start {start} is after --end {end}")
+    return start, end, dates
+
+
 def run_report(args: Namespace) -> int:
-    from fintel.evaluate.report import report, write_report
+    from fintel.evaluate.report import report, window_stem, write_report
 
     root = Path(args.output_root)
     job_dir = root / args.job_id
     if not job_dir.is_dir():
         raise SystemExit(f"job not found: {job_dir}")
+    start, end, dates = _parse_window(args)
     scoring = _load_scoring(job_dir)
     eval_spec, strategy_root = _load_eval_spec(job_dir)
     # strategy_root is needed for the pack scoring import even without an eval,
@@ -104,8 +122,12 @@ def run_report(args: Namespace) -> int:
         eval_spec=eval_spec,
         strategy_root=strategy_root,
         shared_concurrency=getattr(args, "shared_concurrency", None),
+        start=start,
+        end=end,
+        dates=dates,
     )
-    paths = write_report(payload, job_dir)
+    stem = window_stem(start=start, end=end, dates=dates)
+    paths = write_report(payload, job_dir, stem=stem)
     print(render(payload))
     print(f"\n(written: {paths['json']} , {paths['markdown']})")
     return 0

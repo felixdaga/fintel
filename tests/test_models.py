@@ -204,6 +204,8 @@ def test_strategy_paths_follow_the_manifest():
     m = StrategyManifest.model_validate({**MANIFEST, "mission_file": "brief.md"})
     paths = StrategyPaths(root=Path("/pkg"), manifest=m)
     assert paths.mission == Path("/pkg/brief.md")
+    assert paths.alpha_view == Path("/pkg/alpha_view.md")
+    assert paths.alpha_views_dir == Path("/pkg/alpha_views")
     assert paths.cache_dir == Path("/pkg/cache")
     assert paths.lock == Path("/pkg/strategy.lock")
 
